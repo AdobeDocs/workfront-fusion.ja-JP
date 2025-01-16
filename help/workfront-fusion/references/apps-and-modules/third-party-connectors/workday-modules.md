@@ -5,10 +5,10 @@ description: Adobe Workfront Fusion のシナリオでは、 [!DNL Workday] を�
 author: Becky
 feature: Workfront Fusion
 exl-id: 77237a1b-2acd-4350-9cc0-ec43b8b08137
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 8bd08379fc88c4d4f31ba1faba922869d7957b4a
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 83%
+source-wordcount: '888'
+ht-degree: 84%
 
 ---
 
@@ -166,7 +166,7 @@ Workday コネクタでは、以下を使用します。
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>[!DNL Workday] アカウントを Workfront Fusion に接続する手順については、<a href="#Connect" class="MCXref xre[!DNL ]f" >[!DNL Workday] を [!DNL Workfront Fusion]</a> に接続を参照してください。</td>
+            <td>[!DNL Workday] アカウントを Workfront Fusion に接続する手順については、<a href="#Connect" class="MCXref xref" >[!DNL Workday] を [!DNL Workfront Fusion]</a> に接続を参照してください。</td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL Record Type]</td>
@@ -195,7 +195,7 @@ Workday コネクタでは、以下を使用します。
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>[!DNL Workday] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="#Connect" class="MCXref xre[!DNL ]f" >[!DNL Workday] を [!DNL Workfront Fusion]</a> に接続を参照してください。</td>
+            <td>[!DNL Workday] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="#Connect" class="MCXref xref" >[!DNL Workday] を [!DNL Workfront Fusion]</a> に接続を参照してください。</td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL Record type]</td>
@@ -231,7 +231,7 @@ Workday コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!DNL Connection]</p> </td> 
-            <td>[!DNL Workday] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="#Connect" class="MCXref xre[!DNL ]f" >[!DNL Workday] を [!DNL Workfront Fusion]</a> に接続を参照してください。</td>
+            <td>[!DNL Workday] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="#Connect" class="MCXref xref" >[!DNL Workday] を [!DNL Workfront Fusion]</a> に接続を参照してください。</td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -272,8 +272,8 @@ Workday コネクタでは、以下を使用します。
             <td>[!DNL Workday] アカウントをWorkfront Fusion に接続する手順については、Workfront Fusion への <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] のリンクを参照してください </a></td>
         </tr>
         <tr>
-            <td  role="rowheader">レコードタイプ</td>
-            <td>更新するレコード t[!UICONTROL ]hat のタイプを選択します。</td>
+            <td  role="rowheader">[!UICONTROL Record Type]</td>
+            <td>更新するレコードのタイプを選択します。</td>
         </tr>
         <tr>
             <td role="rowheader">[!UICONTROL ID] </td>

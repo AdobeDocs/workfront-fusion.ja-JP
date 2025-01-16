@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion]  シナリオでは、Markdown モ�
 author: Becky
 feature: Workfront Fusion
 exl-id: f1134bbf-c244-4f52-8744-f97453b2ce8a
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 1e95c93213c48aea9297a82669fb2012dbb27601
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '262'
 ht-degree: 70%
 
 ---
@@ -74,7 +74,7 @@ ht-degree: 70%
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL GitHub Flavored Markdown] </td> 
-   <td> <p>GitHub Flavored Markdown を HTML に変換する場合は、このオプションを有効にします。</p> <p>詳しくは、[!DNL ]Markdown のチートシート[!DNL GitHub]ドキュメントを参照してください。</p> </td> 
+   <td> <p>GitHub Flavored Markdown を HTML に変換する場合は、このオプションを有効にします。</p> <p>詳しくは、[!DNL GitHub] ドキュメントの Markdown のチートシートを参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Sanitize]</td> 

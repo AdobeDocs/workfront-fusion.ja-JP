@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion] シナリオでは、Google Calenda
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e514204-cd8e-4f30-bbbb-b8fbe48fc670
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 9cf9ccb282514efc0de7a836f0433f2db2f9caf1
 workflow-type: tm+mt
-source-wordcount: '3312'
-ht-degree: 83%
+source-wordcount: '3307'
+ht-degree: 84%
 
 ---
 
@@ -747,7 +747,7 @@ Google カレンダーコネクタは以下を使用します。
 
 ### イテレーター（廃止）
 
-[!UICONTROL iterate attachments] モジュールと [!UICONTROL iterate attendees] モジュールは非推奨（廃止予定）になりました。 添付ファイルまたは出席者を繰り返し処理するには、[!UICONTROL Flow Control]/[!UICONTROL Iterator] モジュールを使用します。 詳しくは、[ イテレータモジュール ] （/help/workfront-fusion/references/modules/iterator-module.md
+[!UICONTROL iterate attachments] モジュールと [!UICONTROL iterate attendees] モジュールは非推奨（廃止予定）になりました。 添付ファイルまたは出席者を繰り返し処理するには、[!UICONTROL Flow Control]/[!UICONTROL Iterator] モジュールを使用します。 詳しくは、[Iterator モジュール ](/help/workfront-fusion/references/modules/iterator-module.md) を参照してください
 
 ### その他
 

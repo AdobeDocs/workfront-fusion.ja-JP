@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Wor
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: b1b206a0554832aadc9c42ce0b4f952301474086
 workflow-type: tm+mt
-source-wordcount: '2730'
+source-wordcount: '2727'
 ht-degree: 84%
 
 ---
@@ -696,8 +696,8 @@ Workfront Proof コネクタでは、以下を使用します。
    <td> <p>[!DNL Workfront Proof] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>検索対象</td> 
-   <td> <p>モジュ [!UICONTROL ] ルで検索するレコードのタイプを選択します。</p> 
+   <td>[!UICONTROL Search for]</td> 
+   <td> <p>モジュールで検索するレコードのタイプを選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Proof]</strong> </p> <p>検索するプルーフのプルーフ名を入力します。</p> </li> 
      <li> <p><strong>[!UICONTROL Recipient]</strong> </p> <p>検索する受信者のメールアドレスを入力します。</p> </li> 

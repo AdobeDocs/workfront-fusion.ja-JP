@@ -4,9 +4,9 @@ description: Adobe Photoshop モジュールを使用すると、Adobe Photoshop
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 371adb5a5558674ecb8aa38b503b8a958c9fc5f5
 workflow-type: tm+mt
-source-wordcount: '3715'
+source-wordcount: '3714'
 ht-degree: 19%
 
 ---
@@ -143,7 +143,7 @@ Adobe Photoshop コネクタでは、以下を使用します。
               <p>ファイルのパスワードを入力します。</p>
             </li>
             <li value="5">
-              <p><b> 保存 </b> をクリックしてファイルを抽出し、th[!UICONTROL ]e 接続設定に戻ります。</p>
+              <p>「<b> 保存 </b>」をクリックしてファイルを抽出し、接続設定に戻ります。</p>
             </li>
           </ol>
         </td>

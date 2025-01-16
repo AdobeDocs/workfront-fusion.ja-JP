@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion]  シナリオでは、Gmail を使�
 author: Becky
 feature: Workfront Fusion
 exl-id: 62269eca-c3cf-42fe-a866-fb66d2363b8d
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 0581601a254a9492f4166d78eb0f11868d390f24
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1527'
 ht-degree: 82%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 82%
 
 ### [!DNL  Google Workspace] を使用して [!DNL Gmail] を [!DNL Workfront Fusion] に接続 {#connect-gmail-to-workfront-fusion-using-g-suite}
 
-[!DNL Google Workspace] アカウントを [!UICONTROL Workfront Fusion] に接続する手順については、[ 接続の作成 – 基本手順 ] （/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md）を参照してください。
+[!DNL Google Workspace] アカウントを [!UICONTROL Workfront Fusion] に接続する手順については、[ 接続の作成 – 基本的な手順 ](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md) を参照してください。
 
 ### [!DNL gmail.com] または [!DNL googlemail].com を使用して [!DNL Gmail] を [!DNL Workfront Fusion] に接続 {#connect-gmail-to-workfront-fusion-using-gmail-com-or-googlemail-com}
 
