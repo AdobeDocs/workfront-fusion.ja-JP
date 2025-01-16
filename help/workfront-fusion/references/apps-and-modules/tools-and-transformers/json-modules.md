@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion JSON アプリは、Adobe Workfront Fusion �
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: c895d496de66b475f907effaaf43fe2f7b7b457e
 workflow-type: tm+mt
-source-wordcount: '1094'
-ht-degree: 67%
+source-wordcount: '1122'
+ht-degree: 62%
 
 ---
 
@@ -17,44 +17,48 @@ ht-degree: 67%
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：[!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration], [!UICONTROL [!DNL Workfront Fusion] for Work Automation]</p>
+   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion]  ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
 
-## JSON を解析
++++
+
+## JSON 解析時の考慮事項
 
 * [データ構造](#data-structure)
 * [コレクションと配列](#collection-vs-array)
@@ -75,41 +79,45 @@ ht-degree: 67%
 
 「JSON 文字列」フィールドにコレクション `{ ... }` が含まれている場合、出力はコレクションの項目を含む単一のバンドルです。
 
->[!INFO]
->
->**例：**
->
->```
->{
->    "name" : "Peter",
->
->    "ID" : 1
->}
->```
->
->![](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
+>[!BEGINSHADEBOX]
+
+**例：**
+
+```
+{
+    "name" : "Peter",
+
+    "ID" : 1>}
+```
+
+
+![](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
+
+>[!ENDSHADEBOX]
 
 JSON 文字列フィールドに配列 `[ ... ]` が含まれている場合、出力は一連のバンドルになります。各バンドルには、配列の 1 つの要素が含まれます。
 
->[!INFO]
->
->**例：**
->
->```
->[
->  {
->    "name" : "Peter",
->    "ID" : 1
->  },
->
->  {
->    "name" : "Mike",
->    "ID" : 2
->  }
->]
->```
->
->![](/help/workfront-fusion/references/apps-and-modules/assets/json-array.png)
+>[!BEGINSHADEBOX]
+
+**例：**
+
+```
+[
+  {
+    "name" : "Peter",
+    "ID" : 1
+  },
+
+  {
+    "name" : "Mike",
+    "ID" : 2
+  }
+]
+```
+
+![](/help/workfront-fusion/references/apps-and-modules/assets/json-array.png)
+
+>[!ENDSHADEBOX]
 
 ## [!UICONTROL JSON] モジュールとそのフィールド
 
@@ -191,6 +199,10 @@ JSON 文字列フィールドに配列 `[ ... ]` が含まれている場合、�
    <td role="rowheader">データ構造</td> 
    <td> <p>JSON の作成に使用するデータ構造を選択します。詳しくは、この記事の<a href="#data-structure" class="MCXref xref">データ構造</a>を参照してください。</p> </td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">インデント</td> 
+   <td> <p>この JSON に使用するインデントを選択します。</p> </td> 
+  </tr> 
  </tbody> 
 </table>
 
@@ -222,6 +234,10 @@ JSON 文字列フィールドに配列 `[ ... ]` が含まれている場合、�
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
+   <td role="rowheader">インデント</td> 
+   <td> <p>この JSON に使用するインデントを選択します。</p> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader">[!UICONTROL Object]</td> 
    <td> <p>JSON に変換するオブジェクトを入力またはマッピングします。</p> </td> 
   </tr> 
@@ -230,55 +246,48 @@ JSON 文字列フィールドに配列 `[ ... ]` が含まれている場合、�
 
 ## データレコードを JSON に変換中
 
->[!INFO]
->
->**例：**&#x200B;次の例は、データレコードを [!DNL Google Sheets] から JSON 形式に変換する方法を示しています。
->
->1. [!DNL Google Sheets]/[!UICONTROL Select rows] モジュールをシナリオに配置して、データを取得します。 [!DNL Google] スプレッドシートから行を取得するモジュールを設定します。テスト目的で&#x200B;**[!UICONTROL Maximum number of returned rows]** を小さい数に、1 より大きい数に設定します（例：3）。 [!DNL Google Sheets] モジュールを右クリックして「**[!UICONTROL Run this module only]**」を選択し、実行します。 モジュールの出力を確認します。
->
->1. [!UICONTROL Array Aggregator] モジュールを [!DNL Google Sheets] モジュールの後に接続します。 モジュールの設定で、「**[!UICONTROL Source node]**」フィールドの [!DNL Google Sheets] モジュールを選択します。 その他のフィールドは、現時点ではそのままにしておきます。
->
->1. [!UICONTROL JSON]/[!UICONTROL Create JSON] モジュールを [!UICONTROL Array Aggregator] モジュールの後に接続します。 モジュールの設定には、JSON 形式を記述したデータ構造が必要です。「**[!UICONTROL Add]**」をクリックして、データ構造の設定を開きます。 このデータ構造を作成する最も簡単な方法は、JSON サンプルから自動的に生成することです。「**[!UICONTROL Generator]**」をクリックし、JSON サンプルを「**[!UICONTROL Sample data]**」フィールドに貼り付けます。
->
->     **例：**
->
->     ```
->     {
->     
->     "books": [
->     
->     {
->     
->     "id": "ID",
->     
->     "title": "Title",
->     
->     "author": "Author"
->     
->     }
->     
->     ]
->     
->     }
->     
->     ```
->
->1. 「**[!UICONTROL Save]**」をクリックします。 生成された構造がデータ構造内の [!UICONTROL Specification] フィールドに含まれるようになりました。
->1. データ構造の名前をより具体的な名前に変更し、「**[!UICONTROL Save]**」をクリックします。 ルート配列属性に対応するフィールドは、JSON モジュールの設定で、マッピング可能なフィールドとして表示されます。
->
->1. フィールドの横にある「**[!UICONTROL Map]**」ボタンをクリックし、配列アグリゲータ出力から `Array[]` の項目をフィールドにマップします。
->
->1. 「**[!UICONTROL OK]**」をクリックして、[!UICONTROL JSON] モジュールの設定を閉じます。
->
->1. [!UICONTROL Array Aggregator] モジュールの設定を開きます。 **[!UICONTROL Target structure]** を [!UICONTROL Custom] から、ルート配列属性に対応する [!UICONTROL JSON] モジュールのフィールドに変更します。 [!DNL Google Sheets] モジュールの項目を適切なフィールドにマッピングします。
->
->1. 「**[!UICONTROL OK]**」をクリックして、[!UICONTROL Array Aggregator] モジュールの設定を閉じます。
->
->1. シナリオを実行します。
->
->[!UICONTROL JSON] モジュールは、正しい JSON 形式を出力します。
->
->1. [!DNL Google Sheets] モジュールの設定を開き、[!UICONTROL Maximum number of returned rows] 数をスプレッドシートの行数より大きくして、すべてのデータを処理します。
+>[!BEGINSHADEBOX]
+
+**例：**&#x200B;次の例は、データレコードを [!DNL Google Sheets] から JSON 形式に変換する方法を示しています。
+
+1. [!DNL Google Sheets]/[!UICONTROL Select rows] モジュールをシナリオに配置して、データを取得します。 [!DNL Google] スプレッドシートから行を取得するモジュールを設定します。テスト目的で&#x200B;**[!UICONTROL Maximum number of returned rows]** を小さい数に、1 より大きい数に設定します（例：3）。 [!DNL Google Sheets] モジュールを右クリックして「**[!UICONTROL Run this module only]**」を選択し、実行します。 モジュールの出力を確認します。
+
+1. [!UICONTROL Array Aggregator] モジュールを [!DNL Google Sheets] モジュールの後に接続します。 モジュールの設定で、「**[!UICONTROL Source node]**」フィールドの [!DNL Google Sheets] モジュールを選択します。 その他のフィールドは、現時点ではそのままにしておきます。
+
+1. [!UICONTROL JSON]/[!UICONTROL Create JSON] モジュールを [!UICONTROL Array Aggregator] モジュールの後に接続します。 モジュールの設定には、JSON 形式を記述したデータ構造が必要です。「**[!UICONTROL Add]**」をクリックして、データ構造の設定を開きます。 このデータ構造を作成する最も簡単な方法は、JSON サンプルから自動的に生成することです。「**[!UICONTROL Generator]**」をクリックし、JSON サンプルを「**[!UICONTROL Sample data]**」フィールドに貼り付けます。
+
+   **例：**
+
+   ```
+   {
+   "books": [
+   {
+   "id": "ID",
+   "title": "Title",
+   "author": "Author"
+   }
+   ]
+   }
+   ```
+
+1. 「**[!UICONTROL Save]**」をクリックします。 生成された構造がデータ構造内の [!UICONTROL Specification] フィールドに含まれるようになりました。
+1. データ構造の名前をより具体的な名前に変更し、「**[!UICONTROL Save]**」をクリックします。 ルート配列属性に対応するフィールドは、JSON モジュールの設定で、マッピング可能なフィールドとして表示されます。
+
+1. フィールドの横にある「**[!UICONTROL Map]**」ボタンをクリックし、配列アグリゲータ出力から `Array[]` の項目をフィールドにマップします。
+
+1. 「**[!UICONTROL OK]**」をクリックして、[!UICONTROL JSON] モジュールの設定を閉じます。
+
+1. [!UICONTROL Array Aggregator] モジュールの設定を開きます。 **[!UICONTROL Target structure]** を [!UICONTROL Custom] から、ルート配列属性に対応する [!UICONTROL JSON] モジュールのフィールドに変更します。 [!DNL Google Sheets] モジュールの項目を適切なフィールドにマッピングします。
+
+1. 「**[!UICONTROL OK]**」をクリックして、[!UICONTROL Array Aggregator] モジュールの設定を閉じます。
+
+1. シナリオを実行します。
+
+   [!UICONTROL JSON] モジュールは、正しい JSON 形式を出力します。
+
+1. [!DNL Google Sheets] モジュールの設定を開き、[!UICONTROL Maximum number of returned rows] 数をスプレッドシートの行数より大きくして、すべてのデータを処理します。
+
+>[!ENDSHADEBOX]
 
 ## トラブルシューティング
 
@@ -290,8 +299,10 @@ JSON コンテンツが [!UICONTROL Parse JSON] モジュールに正しくマ�
 
 `if` などの条件ステートメントを JSON で使用する場合は、条件ステートメントの外側に引用符を挿入します。
 
->[!INFO]
->
->**例：**
->
->![](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
+>[!BEGINSHADEBOX]
+
+**例：**
+
+![](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
+
+>[!ENDSHADEBOX]

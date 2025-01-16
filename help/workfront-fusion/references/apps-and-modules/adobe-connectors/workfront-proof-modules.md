@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Wor
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: b1b206a0554832aadc9c42ce0b4f952301474086
+source-git-commit: 27c1d38d4c9e4b47d2d9da094b005a0e72ce9bd0
 workflow-type: tm+mt
-source-wordcount: '2727'
-ht-degree: 84%
+source-wordcount: '2664'
+ht-degree: 80%
 
 ---
 
@@ -25,6 +25,8 @@ ht-degree: 84%
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
 <table style="table-layout:auto">
@@ -32,35 +34,37 @@ ht-degree: 84%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：[!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration], [!UICONTROL [!DNL Workfront Fusion] for Work Automation]</p>
+   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 [!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+
++++
 
 ## Workfront Proof情報
 
@@ -100,11 +104,11 @@ Workfront Proof コネクタでは、以下を使用します。
                 <td>接続の名前を入力</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL connections.environmentType]</td>
+                <td  role="rowheader">[!UICONTROL Environment]</td>
                 <td>これが実稼動環境であるか、プレビューやサンドボックスなどの非実稼動環境であるかを選択します。</td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL connections.authenticationType]</td>
+                <td role="rowheader">[!UICONTROL Type]</td>
                 <td>これがサービスアカウントであるか、個人アカウントであるかを選択します。</td>
             </tr>
             <tr>
@@ -125,7 +129,7 @@ Workfront Proof コネクタでは、以下を使用します。
             </tr>
             <tr>
                 <td  role="rowheader">[!UICONTROL Production, Preview, or Custom Environment]</td>
-                <td>実稼動、プレビュー、またはカスタム環境への接続を選択します。</td>
+                <td>接続する実稼動、プレビューまたはカスタム環境。</td>
             </tr>
         </tbody>
     </table>
@@ -147,9 +151,61 @@ Workfront Proof コネクタでは、以下を使用します。
 
 ### トリガー
 
-* [プルーフの監視](#watch-proofs)
 * [PDF 概要の監視](#watch-for-pdf-summary)
 * [[!UICONTROL Watch Proof Activity]](#watch-proof-activity)
+* [プルーフの監視](#watch-proofs)
+
+#### [!UICONTROL Watch for PDF Summary]
+
+このインスタントトリガーモジュールは、誰かがプルーフの PDF 概要を作成する際にシナリオを実行します。
+
+このモジュールには web フックが必要です。
+
+このモジュールは、プルーフに関連付けられたすべての標準フィールドおよび接続がアクセスするカスタムフィールドおよび値を返します。また、PDF の概要に関する新しいイベント登録を作成し、ペイロードで送信される `pdf_url` 属性からコンテンツを出力します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
+
+このモジュールを設定する際には、次のフィールドが表示されます。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Webhook name]</td> 
+   <td>新しい Webhook の名前を入力またはマッピングします</td> 
+  </tr> 
+  <tr> 
+   <td>[!DNL Connection]</td> 
+   <td> <p>[!DNL Workfront Proof] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Watch Proof Activity]
+
+このトリガーモジュールは、プルーフで指定されたアクティビティが発生した場合にシナリオを実行します。
+
+このモジュールは、プルーフに関連付けられたすべての標準フィールドおよび接続がアクセスするカスタムフィールドおよび値を返します。また、PDF の概要に関する新しいイベント登録を作成し、ペイロードで送信される `pdf_url` 属性からコンテンツを出力します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
+
+このモジュールを設定する際には、次のフィールドが表示されます。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!DNL Connection]</td> 
+   <td> <p>[!DNL Workfront Proof] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Activity type]</td> 
+   <td>新しい決定（プルーフステータスの変更を含む）を監視するか、全体的なプルーフステータスの変更のみを監視するかを選択します。</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Limit]</td> 
+   <td>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Watch Proofs]
 
@@ -173,71 +229,15 @@ Workfront Proof コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">レコードタイプ</td> 
-   <td>モジュールが監視する [!DNL Workfront Proof] レコードのタイプを選択します。</td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">出力</td> 
-   <td> <p>このモジュールの出力バンドルに含める情報を選択します。</p> </td> 
+   <td>新しいプルーフを監視するか、プルーフ全体の新しい決定を監視するかを選択します。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">制限</td> 
    <td> <p>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</p> </td> 
   </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Watch for PDF Summary]
-
-このインスタントトリガーモジュールは、誰かがプルーフの PDF 概要を作成する際にシナリオを実行します。
-
-このモジュールには web フックが必要です。
-
-このモジュールは、プルーフに関連付けられたすべての標準フィールドおよび接続がアクセスするカスタムフィールドおよび値を返します。また、PDF の概要に対する新しいイベントの登録を作成し、ペイロードで送信される「pdf_url」属性からコンテンツを出力します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
-
-このモジュールを設定する際には、次のフィールドが表示されます。
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Webhook]</td> 
-   <td>既存の Web フックを選択するか、新規 Web フックを作成できます。詳細は、[!DNL Adobe Workfront Fusion]</a> の <!--<a href="For instructions, see [Instant triggers (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/).-->" class="MCXref xref"&gt; インスタント トリガー（Webhook）を参照してください。 </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Limit]</td> 
-   <td>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Watch Proof Activity]
-
-このトリガーモジュールは、プルーフで指定されたアクティビティが発生した場合にシナリオを実行します。
-
-このモジュールは、プルーフに関連付けられたすべての標準フィールドおよび接続がアクセスするカスタムフィールドおよび値を返します。また、PDF の概要に関する新しいイベント登録を作成し、ペイロードで送信される `pdf_url` 属性からコンテンツを出力します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
-
-このモジュールを設定する際には、次のフィールドが表示されます。
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Activity type]</td> 
-   <td>新しい決定（プルーフのステータスの変更を含む）を監視するか、全体的 [!UICONTROL proof] プルーフのステータスの変更のみを監視するかを選択します。</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Limit]</td> 
-   <td>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</td> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">1 ページあたりの項目数</td> 
+   <td> <p>結果にページ番号を付けるには、結果の各ページに表示する結果の数を入力するかマップします。 この数は 100 以下にする必要があります。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -254,11 +254,13 @@ Workfront Proof コネクタでは、以下を使用します。
 
 #### [!UICONTROL Create Proof]
 
+<!--Cannot test Jan 2025-->
+
 このアクションモジュールは、[!DNL Workfront Proof] で新規プルーフまたは新しいバージョンのプルーフを作成します。
 
-新しいバージョンを作成する場合は、新規プルーフとソースプルーフのパラメーターを指定します。
+新しいバージョンを作成する場合は、新しいプルーフのパラメーターと、ソースプルーフのパラメーターを指定します。
 
-モジュールは、新規プルーフまたはプルーフのバージョンの ID を返します。この情報は、シナリオの後続モジュールでマッピングできます。
+モジュールは、新しいプルーフまたはプルーフバージョンの ID を返します。 この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
@@ -372,7 +374,7 @@ Workfront Proof コネクタでは、以下を使用します。
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Require login]</td> 
-   <td> <p>作成されるプルーフにログインを必要とするかどうかを指定します。 </p> <!--<p>This is the same as the [!UICONTROL Login Required] setting explained in <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/configure-proof-settings.md" class="MCXref xref">[!UICONTROL Configure Proof Settings] in [!DNL Workfront Proof]</a></p>--> </td> 
+   <td> <p>作成されるプルーフにログインを必要とするかどうかを指定します。 </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Resolution ID]</td> 
@@ -400,6 +402,8 @@ Workfront Proof コネクタでは、以下を使用します。
   </tr> 
  </tbody> 
 </table>
+
+
 
 #### [!UICONTROL Custom API Call]
 
@@ -459,7 +463,7 @@ Workfront Proof コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>[!UICONTROL Proof Details] ページにある配達確認の一意の ID を入力します。<!--For more information, see <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/manage-proof-details.md" class="MCXref xref" data-mc-variable-override="">Manage Proof Details in [!DNL Workfront Proof]</a>.</p>--> </td> 
+   <td> <p>[!UICONTROL Proof Details] ページにある配達確認の一意の ID を入力します。  </td> 
   </tr> 
  </tbody> 
 </table>
@@ -557,11 +561,11 @@ Workfront Proof コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>[!UICONTROL Proof Details] ページにある配達確認の一意の ID を入力します。 <!--For more information, see <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/manage-proof-details.md" class="MCXref xref" data-mc-variable-override="">Manage Proof Details in [!DNL Workfront Proof]</a>.</p> --></td> 
+   <td> <p>[!UICONTROL Proof Details] ページにある配達確認の一意の ID を入力します。 </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Deadline]</td> 
-   <td> <p>プルーフを作成する期限を指定します。次の日付形式を使用します。</p> <p><code>YYYY-MM-DD hh:mm</code></p> </td> 
+   <td> <p>プルーフを作成する期限を指定します。日付形式 <code>YYYY-MM-DD hh:mm</code> を使用します。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Default email notifications for subscribers]</td> 
@@ -585,7 +589,7 @@ Workfront Proof コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Enable Subscriptions]</td> 
-   <td>参加者以外に対して、プルーフへの登録を許可するかどうかを選択します。<br> このオプションを選択すると、次の表で説明するように、購読者の [!UICONTROL Default Role] を選択することもできます。</td> 
+   <td>参加者以外に対して、プルーフへの登録を許可するかどうかを選択します。<br> このオプションを選択すると、[!UICONTROL Default Role] フィールドでオプションを選択することもできます。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Enable Subscriptions Validation]</td> 
@@ -613,7 +617,7 @@ Workfront Proof コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Require login]</td> 
-   <td> <p>作成されるプルーフにログインを必要とするかどうかを指定します。 </p> <!--<p>This is the same as the [!UICONTROL Login Required] setting explained in <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/configure-proof-settings.md" class="MCXref xref">[!UICONTROL Configure Proof Settings] in [!DNL Workfront Proof]</a></p>--> </td> 
+   <td> <p>作成されるプルーフにログインを必要とするかどうかを指定します。 </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Show Versions Like]</td> 
@@ -718,25 +722,3 @@ Workfront Proof コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL List Workflow Templates]
-
-この検索モジュールは、使用可能なすべてのワークフローテンプレートを一覧表示します。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Outputs]</td> 
-   <td> <p>このモジュールの出力バンドルに含める情報を選択します。</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Limit]</td> 
-   <td> <p>各シナリオの実行サイクル中に、モジュールが返すテンプレートの最大数を入力またはマッピングします。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
