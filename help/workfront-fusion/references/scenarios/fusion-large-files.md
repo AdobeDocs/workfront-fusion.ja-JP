@@ -4,9 +4,9 @@ description: 現在、Workfrontおよび HTTP コネクタでは大きなファ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: 4422a0d9236c4fe783b3b8d2757a86c91bcca748
+source-git-commit: c4696ad91dd0a2cf753147bffbb6e7b74bb99b02
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1042'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,9 @@ Workfront Fusion で強化されたデータ転送機能が使用できるよう
 * Adobe Experience Manager Assets / ドキュメントをアップロード
 * Workfront Proof / ファイルをアップロード
 * Adobe Authenticator / カスタム API 呼び出しを行う
+* SharePoint/ファイルを作成およびSharePoint/ファイルを取得
+* Salesforce / ファイルをアップロード
+* AWS S3/ファイルをアップロードおよびAWS S3/ファイルを取得
 * HTTP
 
 その他のコネクタは、今後のリリースでサポートされる予定です。

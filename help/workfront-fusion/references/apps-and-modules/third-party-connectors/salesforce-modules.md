@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion のシナリオでは、Salesforce を使用
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: c4696ad91dd0a2cf753147bffbb6e7b74bb99b02
 workflow-type: tm+mt
-source-wordcount: '2457'
-ht-degree: 80%
+source-wordcount: '2604'
+ht-degree: 76%
 
 ---
 
@@ -234,6 +234,7 @@ Salesforce コネクタでは、以下を使用します。
 * [[!UICONTROL Custom API Call]](#custom-api-call)
 * [[!UICONTROL Upload Attachment/Document]](#upload-attachmentdocument)
 * [[!UICONTROL Download Attachment/Document]](#download-attachmentdocument)
+* [ファイルをアップロード](#upload-file)
 
 #### [!UICONTROL Create a Record]
 
@@ -498,6 +499,41 @@ Salesforce コネクタでは、以下を使用します。
   </tr> 
  </tbody> 
 </table>
+
+#### ファイルをアップロード
+
+このアクションモジュールは、1 つのファイルをSalesforceにアップロードします。
+
+
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL  Adobe Workfront Fusion] への接続の作成 - 基本手順</a>を参照してください。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Document linking]</td> 
+   <td>コンテンツドキュメントリンクを適用するかどうかを選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL linkedEntityId]</td> 
+   <td>ドキュメントのリンクを使用する場合は、リンクされたオブジェクトの ID を入力またはマップします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ShareType]</td> 
+   <td>ドキュメントリンクを使用する場合は、ファイルの権限を選択します。<ul><li><b>閲覧者権限</b><p>ユーザーはファイルを表示できます。</p></li><li><b>共同作業者の権限</b><p>ユーザーはこのファイルを表示および編集できます。</p></li><li><b>推測される権限</b><p>権限は、ライブラリなど、関連するレコードに対するユーザーの権限に基づいています。</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Visibility]</td> 
+   <td>ドキュメントのリンクを使用する場合は、ドキュメントの表示を入力またはマッピングします。<ul><li><b>AllUsers</b><p>権限を持つすべてのユーザーが利用できます</p></li><li><b>InternalUsers</b><p>権限を持つ内部ユーザーが使用できます。</p></li><li><b>SharedUsers</b><p>ファイルの投稿先のフィードを表示できるユーザーが使用できます。</p></li></ul></td> 
+  </tr>
 
 ### 検索
 
