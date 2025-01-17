@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Jir
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 4e45e691ed453cec5af1fa7b52204031af83f869
 workflow-type: tm+mt
-source-wordcount: '1809'
-ht-degree: 85%
+source-wordcount: '1881'
+ht-degree: 72%
 
 ---
 
@@ -15,50 +15,54 @@ ht-degree: 85%
 
 [!DNL Adobe Workfront Fusion] のシナリオでは、[!DNL Jira Software] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
 
+これらの手順は、Jira Cloud と Jira Server の両方のモジュールに適用されます。
+
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
 モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
-<!-- Bob Fix this compared to original -->
-
 ## アクセス要件
+
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
 
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスの種類、アクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください
+[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+
++++
 
 ## 前提条件
 
@@ -110,10 +114,10 @@ Jira コネクタでは、以下を使用します。
 
 #### [!DNL Jira] での API トークンの作成
 
-1. [https://id.atlassian.com/manage/api-tokens](https://id.atlassian.com/manage/api-tokens) に移動してログインします。
-1. **[!UICONTROL Create API token]** をクリックします。
-1. トークンの名前を入力します（例：*Workfront Fusion*）。
-1. 「**[!UICONTROL Copy to clipboard]**」ボタンを使用してトークンをコピーします。
+1. Jira で API トークンを作成します。
+
+   手順については、Jira ドキュメントで「API トークンの作成」を検索することをお勧めします。
+1. トークンを作成したら、そのトークンを安全な場所にコピーします。
 
    >[!IMPORTANT]
    >
@@ -123,9 +127,11 @@ Jira コネクタでは、以下を使用します。
 
 #### [!DNL Jira][!DNL Workfront Fusion] の API トークンを設定
 
-1. [!DNL Workfront Fusion] では、シナリオに [!DNL Jira] モジュールを追加して、**[!UICONTROL Create a connection]** ボックスを開きます。
+1. [!DNL Workfront Fusion] の任意の [!DNL Jira Cloud] モジュールで、[!UICONTROL connection] フィールドの横にある「**[!UICONTROL Add]**」をクリックします。
 1. 次の情報を指定します。
 
+   * **環境**
+   * **タイプ**
    * **[!UICONTROL Service URL]:** これは、Jira アカウントへのアクセスに使用するベース URL です。 例：`yourorganization.atlassian.net`
    * **[!UICONTROL Username]**
    * **[!UICONTROL API token]:** この記事の [API トークンの作成  [!DNL Jira]](#create-an-api-token-in-jira) の節で作成した API トークンです。
@@ -133,10 +139,6 @@ Jira コネクタでは、以下を使用します。
 1. 「[!UICONTROL Continue]」をクリックして接続を作成し、モジュールに戻ります。
 
 ### [!DNL Jira Server] を [!DNL Workfront Fusion] に接続
-
-<!--
-<p style="color: #ff1493;">Becky: Find out and document how to find these things</p>
--->
 
 [!DNL Workfront Fusion] と [!DNL Jira Server] の間の接続を承認するには、コンシューマキー、プライベートキー、サービス URL が必要です。この情報については、[!DNL Jira] 管理者への問い合わせが必要になる場合があります。
 
@@ -160,8 +162,7 @@ Jira コネクタでは、以下を使用します。
 
    * `openssl pkcs8 -topk8 -nocrypt -in jira_privatekey.pem -out jira_privatekey.pcks8`
 
-     このコマンドは、秘密鍵（PKCS8 形式）を `jira_privatekey.pcks8`
-ファイルに抽出します。
+     このコマンドは、秘密キー（PKCS8 形式）を `jira_privatekey.pcks8` ファイルに抽出します。
 
    * `openssl x509 -pubkey -noout -in jira_publickey.cer  > jira_publickey.pem`
 
@@ -169,13 +170,13 @@ Jira コネクタでは、以下を使用します。
 
      >[!NOTE]
      >
-     >Windows を使用している場合は、公開キーを `jira_publickey.pem` ファイルに手動で保存する必要がある場合があります。
+     >Windows を使用している場合は、公開鍵を `jira_publickey.pem` ファイルに手動で保存する必要がある場合があります。
      >
      >1. ターミナルで、次のコマンドを実行します。
      >   
      >   `openssl x509 -pubkey -noout -in jira_publickey.cer`
      >   
-     >1. ターミナル出力をコピーする（`-------BEGIN PUBLIC KEY--------` と `-------END PUBLIC KEY--------` を含む）
+     >1. `-------BEGIN PUBLIC KEY--------` と `-------END PUBLIC KEY--------` を含むターミナル出力をコピーします。
      >   
      >1. ターミナル出力を `jira_publickey.pem` という名前のファイルに貼り付けます。
 
@@ -251,6 +252,14 @@ Jira コネクタでは、以下を使用します。
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
       <td> <p>接続の名前を入力</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Environment]</p> </td> 
+      <td> <p>実稼動環境と非実稼動環境のどちらを使用しているかを選択します。</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Type]</p> </td> 
+      <td> <p>サービスアカウントと個人用アカウントのどちらを使用するかを選択します。</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Consumer Key]</td> 
@@ -340,7 +349,7 @@ Jira コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Issue ID or Keys]</td> 
-   <td>スプリントに追加する各イシューのイシュー ID またはキーを追加します。</td> 
+   <td>エクスペリエンスを表示するイシューまたはキーごとに、「<b>[!UICONTROL Add item]</b>」をクリックして、イシュー ID またはキーを入力します。 1 つのモジュールに最大 50 個まで入力できます。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -363,7 +372,7 @@ Jira コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
-   <td> <p>モジュールで作成するレコードのタイプを選択します。レコードタイプを選択すると、そのレコードタイプに固有の他のフィールドがモジュールに表示されます。</p> 
+   <td> <p>モジュールで作成するレコードのタイプを選択し、そのレコードタイプに固有の他のフィールドを入力してモジュールに表示します。</p> 
     <ul> 
      <li>[!UICONTROL Attachment]</li> 
      <li>[!UICONTROL Comment]</li> 
@@ -378,7 +387,7 @@ Jira コネクタでは、以下を使用します。
 
 #### [!UICONTROL Custom API Call]
 
-このアクションモジュールでは、[!DNL Jira Software] API への認証済みのカスタム呼び出しを実行できます。これにより、他の [!DNL Jira Software] モジュールでは不可能なデータフロー自動処理を作成できます。
+このアクションモジュールでは、[!DNL Jira Software] API への認証済みのカスタム呼び出しを実行できます。このモジュールを使用して、他の [!DNL Jira Software] モジュールでは実現できないデータフローの自動化を作成します。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
@@ -416,7 +425,7 @@ Jira コネクタでは、以下を使用します。
 
 #### [!UICONTROL Delete a record]
 
-このアクションモジュールは、特定のレコードを削除します。
+このアクションモジュールは、指定されたレコードを削除します。
 
 レコードの ID を指定します。
 
@@ -542,7 +551,7 @@ Jira コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID or Key]</td> 
-   <td>アップデートするレコードの ID またはキーを入力またはマッピングします。</td> 
+   <td>更新するレコードの ID またはキーを入力またはマッピングし、そのレコードタイプに固有の他のフィールドを入力してモジュールに表示します。</td> 
   </tr> 
  </tbody> 
 </table>
