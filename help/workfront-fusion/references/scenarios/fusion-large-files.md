@@ -4,10 +4,10 @@ description: 現在、Workfrontおよび HTTP コネクタでは大きなファ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: c4696ad91dd0a2cf753147bffbb6e7b74bb99b02
+source-git-commit: 12620e137d2e536b90eb322de93fd39bb8374e51
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 0%
+source-wordcount: '1021'
+ht-degree: 3%
 
 ---
 
@@ -27,15 +27,26 @@ Workfront Fusion で強化されたデータ転送機能が使用できるよう
 
 ## 大きなファイルをサポートするコネクタ
 
-初回リリースの場合、次のコネクタは大きなファイルをサポートします。
+現在、次のコネクタは、大きなファイルをサポートしています。
 
-* Workfront / ドキュメントをアップロード
-* Adobe Experience Manager Assets / ドキュメントをアップロード
-* Workfront Proof / ファイルをアップロード
-* Adobe Authenticator / カスタム API 呼び出しを行う
-* SharePoint/ファイルを作成およびSharePoint/ファイルを取得
-* Salesforce / ファイルをアップロード
-* AWS S3/ファイルをアップロードおよびAWS S3/ファイルを取得
+* Workfront
+   * ドキュメントのアップロード
+   * ドキュメントのダウンロード
+* Adobe Experience Manager Assets
+   * ドキュメントをアップロード
+* Workfront Proof
+   * ファイルをアップロード
+   * プルーフをダウンロード
+* Adobe Authenticator
+   * カスタム API 呼び出しの実行
+* SharePoint
+   * ファイルを作成
+   * ファイルの取得
+* Salesforce
+   * ファイルをアップロード
+* AWS S3
+   * ファイルをアップロード
+   * ファイルを入手
 * HTTP
 
 その他のコネクタは、今後のリリースでサポートされる予定です。
@@ -74,7 +85,7 @@ Fusion がファイルを処理すると、大きなファイルが永続スト�
 
 ### Fusion の UI がファイル転送データを表示するように更新されるのはいつですか？
 
-ダッシュボードとシナリオ実行の詳細ページのファイル転送に関する Fusion の UI の更新に積極的に取り組んでおり、2025 年第 1 四半期にリリースを予定しています。
+この機能は既に完了しており、実稼動環境にデプロイされています。
 
 ### シナリオの設計に役立つ新しいファイル処理制限について考える方法を教えてください。
 
