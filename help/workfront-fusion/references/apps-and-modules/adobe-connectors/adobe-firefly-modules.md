@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Ado
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 200907bb8d80f874227493b489ef1ea450198dc6
 workflow-type: tm+mt
 source-wordcount: '1203'
 ht-degree: 28%
@@ -64,9 +64,9 @@ ht-degree: 28%
 
 * アクティブな [!DNL Adobe Firefly] アカウントが必要です。
 
-## Adobe Campaign API の情報
+## Adobe FireflyAPI に関する情報
 
-Adobe Campaign コネクタでは、以下を使用します。
+Adobe Fireflyコネクタでは、以下を使用します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -109,11 +109,11 @@ Adobe Campaign コネクタでは、以下を使用します。
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>[!UICONTROL Adobe] [!UICONTROL Client ID] を入力します。 これは、の [!UICONTROL Credentials] 細セクションにあります [!DNL Adobe Developer Console]</td>
+        <td>[!UICONTROL Adobe] [!UICONTROL Client ID] を入力します。 これは、[!DNL Adobe Developer Console] の「[!UICONTROL Credentials] 細」セクションで確認できます。</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。 これは、の [!UICONTROL Credentials] 細セクションにあります [!DNL Adobe Developer Console]</td>
+        <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。 これは、[!DNL Adobe Developer Console] の「[!UICONTROL Credentials] 細」セクションで確認できます。</td>
         </tr>
       </tbody>
     </table>

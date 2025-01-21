@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  Figma では、コメント、フ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
-source-git-commit: a509fb54c5143945b873b2d8b146b6543107ae03
+source-git-commit: 200907bb8d80f874227493b489ef1ea450198dc6
 workflow-type: tm+mt
-source-wordcount: '2108'
-ht-degree: 68%
+source-wordcount: '2247'
+ht-degree: 59%
 
 ---
 
@@ -89,6 +89,55 @@ Figma コネクタでは、以下を使用します。
  </tbody> 
  </table>
 
+## Figma への接続の作成
+
+Figma モジュールの接続を作成するには：
+
+1. 任意の Figma モジュールで、「接続」ボックスの横にある「**[!UICONTROL Add]**」をクリックします。
+
+1. 次のフィールドに入力します。
+
+   <table style="table-layout:auto"> 
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+      </col>
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+      </col>
+      <tbody>
+        <tr>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td>
+          <p> 新しい接続の場合は、従来のタグを付けずに <code>Figma</code> を選択します。 </p><p>Figma は、2025 年 1 月に認証要件を変更しました。 この <code>Figma</code> 接続タイプは新しい要件を満たしています。 <code>Figma (Legacy)</code> 接続タイプは今後削除されます。</p>
+        </td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>この接続の名前を入力します。</p>
+        </td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>[!UICONTROL Figme] [!UICONTROL Client ID] を入力します。</td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>Figma [!UICONTROL Client Secret] を入力します。</td>
+        </tr>
+        <tr>
+        <td role="rowheader">カスタム スコープ</td>
+        <td>この接続に必要なカスタム スコープを入力します。</td>
+        </tr>
+        <tr>
+        <td role="rowheader">カスタム接続確認 URL</td>
+        <td>接続が正常に作成されたことを検証するデフォルトのエンドポイントは次のとおりです。<code>https://api.figma.com/v1/me</code> この URL がカスタム範囲でサポートされていない場合は、カスタム検証 URL を指定します。</td>
+        </tr>
+      </tbody>
+    </table>
+
+1. 「**[!UICONTROL Continue]**」をクリックして接続を保存し、モジュールに戻ります。
+
+
+
 ## [!DNL Figma] モジュールとそのフィールド
 
 [!DNL Figma] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Figma] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
@@ -125,7 +174,7 @@ Figma コネクタでは、以下を使用します。
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 - 基本手順</a>を参照してください。</p>
+      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
       </td>
     </tr>
     <tr>
@@ -149,7 +198,7 @@ Figma コネクタでは、以下を使用します。
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 - 基本手順</a>を参照してください。</p>
+      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL File ID]</td>
@@ -183,7 +232,7 @@ Figma コネクタでは、以下を使用します。
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 - 基本手順</a>を参照してください。</p>
+      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
     </tr>
     <tr>
       <td  role="rowheader">[!UICONTROL File ID]</td>
@@ -228,7 +277,7 @@ Figma コネクタでは、以下を使用します。
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 - 基本手順</a>を参照してください。</p>
+      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Object type]</td>
@@ -451,7 +500,7 @@ Figma コネクタでは、以下を使用します。
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 - 基本手順</a>を参照してください。</p>
+      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
     <tr>
       <td role="rowheader">[!UICONTROL File ID]</td>
       <td>
@@ -483,7 +532,7 @@ Figma コネクタでは、以下を使用します。
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 - 基本手順</a>を参照してください。</p>
+      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL File ID]</td>
@@ -513,7 +562,7 @@ Figma コネクタでは、以下を使用します。
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 - 基本手順</a>を参照してください。</p>
+      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Team ID]</td>
@@ -539,7 +588,7 @@ Figma コネクタでは、以下を使用します。
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 - 基本手順</a>を参照してください。</p>
+      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
     </tr>
     <tr>
       <td role="rowheader">オブジェクト &gt; タイプ</td>
@@ -594,7 +643,7 @@ Figma コネクタでは、以下を使用します。
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 - 基本手順</a>を参照してください。</p>
+      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL URL]</td>
