@@ -5,7 +5,7 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e6fbbc20-4315-4668-9e11-af7cfa82ae66
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 757580687ff5d1617f83432952d9870bd697925e
 workflow-type: tm+mt
 source-wordcount: '3623'
 ht-degree: 77%
@@ -928,3 +928,4 @@ ZIP 形式で出力する場合、PDFはページごとに 1 つの画像に変�
   </tr> 
  </tbody> 
 </table>
+
