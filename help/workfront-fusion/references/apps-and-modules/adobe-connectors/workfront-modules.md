@@ -4,7 +4,7 @@ description: Adobe Workfront Fusion Adobe Workfront コネクタを使用する�
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 3ba5d67806e0d495bd4a91589d06cfb9adb25c0c
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
 source-wordcount: '6208'
 ht-degree: 52%
@@ -104,7 +104,7 @@ Workfront アカウントへの接続は、Workfront Fusion モジュール内�
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Workfront クライアント ID を入力します。 これは、Workfront の設定エリアの OAuth2 アプリケーションエリアにあります。Workfrontで OAuth2 アプリケーションのクライアント秘密鍵がない場合は、別の秘密鍵を生成できます。 手順については、Workfrontのドキュメントを参照してください。</td>
+        <td>Workfront クライアントの秘密鍵を入力します。 これは、Workfront の設定エリアの OAuth2 アプリケーションエリアにあります。Workfrontで OAuth2 アプリケーションのクライアント秘密鍵がない場合は、別の秘密鍵を生成できます。 手順については、Workfrontのドキュメントを参照してください。</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Authentication URL]</td>
