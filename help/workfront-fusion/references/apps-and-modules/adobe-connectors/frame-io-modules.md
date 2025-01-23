@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion Frame].io modules enable you to moni
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 7f25a8a118a3dba3de3d834497e047bd1aeabf0a
 workflow-type: tm+mt
-source-wordcount: '1969'
-ht-degree: 88%
+source-wordcount: '2128'
+ht-degree: 71%
 
 ---
 
@@ -21,42 +21,46 @@ Frame.io コネクタの紹介ビデオについては、以下を参照して�
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 [!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+
++++
 
 ## 前提条件
 
@@ -104,9 +108,8 @@ API トークンを使用して [!DNL Frame.io] アカウントを [!DNL Workfro
 1. 提供されたトークンをコピーします。
 1. [!DNL Workfront Fusion] に移動し、[!DNL Frame.io] モジュールの **[!UICONTROL Create a connection]** ダイアログを開きます。
 1. 「**[!UICONTROL Connection type]**」フィールドで「**[!DNL Frame.io]**」を選択します。
-1. 手順 5 でコピーしたトークンを「**[!UICONTROL Your [!DNL Frame.io] API Key]**」フィールドに入力し、「**[!UICONTROL Continue]**」をクリックして接続を確立します。
-
-接続が確立されました。モジュールの設定に進むことができます。
+1. 手順 5 でコピーしたトークンを「**[!UICONTROL Your [!DNL Frame.io] API Key]**」フィールドに入力します
+1. 「**[!UICONTROL Continue]**」をクリックして接続を確立し、モジュールに戻ります。
 
 ### OAuth 2.0 PKCE を使用した [!DNL Frame.io] への接続
 
@@ -120,9 +123,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
 1. [!DNL Workfront Fusion] に移動し、[!DNL Frame.io] モジュールの **[!UICONTROL Create a connection]** ダイアログを開きます。
 1. 「**[!UICONTROL Connection type]**」フィールドで「**[!UICONTROL [!DNL Frame.io] OAuth 2.0 PKCE]**」を選択します。
 1. 新しい接続の名前を **[!UICONTROL Connection name]** フィールドに入力します。
-1. 「**[!UICONTROL Continue]**」をクリックして接続を確立します。
-
-接続が確立されました。モジュールの設定に進むことができます。
+1. 「**[!UICONTROL Continue]**」をクリックして接続を確立し、モジュールに戻ります。
 
 #### OAuth 2.0 PKCE（クライアント ID あり）を使用した [!DNL Frame.io] への接続
 
@@ -134,9 +135,9 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
    >
    >* リダイレクト URI として次のように入力します。
    >   
-   >  南北アメリカ / APAC `https://app.workfrontfusion.com/oauth/cb/frame-io5`
+   >     * **アメリカ / APAC**:`https://app.workfrontfusion.com/oauth/cb/frame-io5`
    >
-   >  EMEA `https://app-eu.workfrontfusion.com/oauth/cb/frame-io5`
+   >     * **EMEA**: `https://app-eu.workfrontfusion.com/oauth/cb/frame-io5`
    >
    >* 「PCKE」オプションを有効にします。
 
@@ -147,9 +148,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
 1. 新しい接続の名前を **[!UICONTROL Connection name]** フィールドに入力します。
 1. **[!UICONTROL Show advanced settings]** をクリックします。
 1. 手順 2 でコピーした `client_id` を「**[!UICONTROL Client ID]**」フィールドに入力します。
-1. 「**[!UICONTROL Continue]**」をクリックして接続を確立します。
-
-接続が確立されました。モジュールの設定に進むことができます。
+1. 「**[!UICONTROL Continue]**」をクリックして接続を確立し、モジュールに戻ります。
 
 ## [!DNL Frame.io] モジュールとそのフィールド
 
@@ -185,7 +184,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frame-io-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Team ID] </td> 
@@ -219,11 +218,15 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
   --> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source URL] </td> 
-   <td> <p>アップロードするファイルの URL を入力します。</p> </td> 
+   <td> <p>ファイルを作成する場合、アップロードするファイルの URL を入力します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Description] </td> 
-   <td> <p>アセットの簡単な説明を入力します。</p> </td> 
+   <td> <p>ファイルを作成する場合、アセットの簡単な説明を入力します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Label] </td> 
+   <td> <p>ファイルを作成する場合は、ファイルが進行中か、レビューが必要か、承認済みかを選択します。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -238,7 +241,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frame-io-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Team ID] </td> 
@@ -269,7 +272,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frame-io-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Team ID] </td> 
@@ -302,7 +305,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frame-io-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Team ID] </td> 
@@ -318,12 +321,12 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>[!DNL Workfront Fusion] が 1 回の実行サイクルで返すアセット数の上限を設定します。</p> </td> 
+   <td> <p>各シナリオの実行サイクル中に、モジュールが返すアセットの最大数を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### `[!UICONTROL Update an Asset]`
+#### [!UICONTROL Update an Asset]
 
 このアクションモジュールを使用すると、既存のアセットの名前、説明、またはカスタムフィールドを更新できます。
 
@@ -333,7 +336,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frame-io-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Team ID] </td> 
@@ -348,6 +351,10 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
    <td> <p>アセットを更新するフォルダーを選択するか、フォルダーの ID をマッピングします。</p> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[!UICONTROL Asset ID] </td> 
+   <td> <p>更新するアセットの ID を入力またはマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader">[!UICONTROL Name] </td> 
    <td> <p>更新したファイルの名前を入力します。</p> </td> 
   </tr> 
@@ -360,7 +367,11 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
 
 #### [!UICONTROL Watch Asset Deleted]
 
-このトリガーモジュールは、アセットが削除されたときにシナリオを開始します。
+このトリガーモジュールは、指定されたチームに属するアセットが削除されると、シナリオを開始します。
+
+これはインスタントトリガーなので、使用するモジュールの Webhook を選択または作成する必要があります。
+
+Webhook を追加する場合は、次の情報を入力します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -368,11 +379,11 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook name]</td> 
-   <td> <p> Web フックの名前（例：削除済みアセット）を入力します。</p> </td> 
+   <td> <p> Webhook の名前（「Asset deleted」など）を入力します。</p> </td> 
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frame-io-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Team ID] </td> 
@@ -383,7 +394,11 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
 
 #### [!UICONTROL Watch Asset Label Updated]
 
-このトリガーモジュールは、アセットのステータスが設定、変更または削除されたときにシナリオを開始します。
+このトリガーモジュールは、指定されたチームセット、変更または削除されたアセットのラベルが所有する場合にシナリオを開始します。
+
+これはインスタントトリガーなので、使用するモジュールの Webhook を選択または作成する必要があります。
+
+Webhook を追加する場合は、次の情報を入力します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -391,11 +406,11 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook name]</td> 
-   <td> <p> Web フックの名前を入力します（例：更新されたアセットステータス）。</p> </td> 
+   <td> <p> Webhook の名前（「アセットステータスが更新されました」など）を入力します。</p> </td> 
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frame-io-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Team ID] </td> 
@@ -406,7 +421,11 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
 
 #### [!UICONTROL Watch New Asset]
 
-このトリガーモジュールは、新しいアセットが作成される際にシナリオを開始します。
+このトリガーモジュールは、指定されたチームの新しいアセットが作成されると、シナリオを開始します。
+
+これはインスタントトリガーなので、使用するモジュールの Webhook を選択または作成する必要があります。
+
+Webhook を追加する場合は、次の情報を入力します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -414,11 +433,11 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook name]</td> 
-   <td> <p> Web フックの名前を入力します（例：作成されたアセット）。</p> </td> 
+   <td> <p> Webhook の名前（「Asset created」など）を入力します。</p> </td> 
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frame-io-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Team ID] </td> 
@@ -447,7 +466,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frame-io-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Type] </td> 
@@ -494,7 +513,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frame-io-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Team ID]</td> 
@@ -510,11 +529,11 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset ID] </td> 
-   <td> <p>削除するコメントが含まれているアセットを選択します。</p> </td> 
+   <td> <p>削除するコメントを含むアセットの ID を入力またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Comment ID] </td> 
-   <td> <p>削除するコメントを選択します。</p> </td> 
+   <td> <p>削除するコメントの ID を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -529,7 +548,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frame-io-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Team ID] </td> 
@@ -564,7 +583,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frame-io-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Team ID] </td> 
@@ -584,7 +603,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>[!DNL Workfront Fusion] が 1 回の実行サイクルで返すコメントの最大数を設定します。</p> </td> 
+   <td> <p>各シナリオの実行サイクル中にモジュールが返すコメントの最大数を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -599,7 +618,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frame-io-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Team ID] </td> 
@@ -636,6 +655,10 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
 
 このトリガーモジュールは、コメントが編集されたときにシナリオを開始します。
 
+これはインスタントトリガーなので、使用するモジュールの Webhook を選択または作成する必要があります。
+
+Webhook を追加する場合は、次の情報を入力します。
+
 <table style="table-layout:auto"> 
  <col> 
  <col> 
@@ -646,7 +669,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frame-io-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Team ID] </td> 
@@ -659,6 +682,10 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
 
 このトリガーモジュールは、新しいコメントまたは返信が作成されたときにシナリオを開始します。
 
+これはインスタントトリガーなので、使用するモジュールの Webhook を選択または作成する必要があります。
+
+Webhook を追加する場合は、次の情報を入力します。
+
 <table style="table-layout:auto"> 
  <col> 
  <col> 
@@ -669,7 +696,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frame-io-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Team ID] </td> 
@@ -690,7 +717,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frame-io-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Team ID] </td> 
@@ -698,7 +725,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>[!DNL Workfront Fusion] が 1 回の実行サイクルで返すコメントの最大数を設定します。</p> </td> 
+   <td> <p>各シナリオ実行サイクルでモジュールが返すプロジェクトの最大数を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -715,7 +742,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frame-io-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
@@ -723,7 +750,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a>での HTTP リクエストメソッドを参照してください。</p> </td> 
+   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP リクエストメソッド </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -735,7 +762,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件ステートメントを JSON で使用する場合は、条件ステートメントの外側に引用符を挿入します。</p> 
+   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件文を JSON で使用する場合は、条件文を引用符で囲みます。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -743,16 +770,20 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
  </tbody> 
 </table>
 
-**例：** 次の API 呼び出しは、[!DNL Frame.io] アカウントのすべてのチームとその詳細を返します。
 
-URL：`/v2/teams`
+<!-- 
+**Example:** The following API call returns all teams and its details in your [!DNL Frame.io] account:
 
-メソッド：`GET`
+URL: `/v2/teams`
+
+Method: `GET`
 
 ![](/help/workfront-fusion/references/apps-and-modules/assets/api-call-example.png)
 
-結果は、モジュールの出力のバンドル／本文にあります。
+The result can be found in the module's Output under Bundle > Body.
 
-この例では、1 チームの詳細が返されました。
+In our example, the details of 1 team were returned:
 
 ![](/help/workfront-fusion/references/apps-and-modules/assets/api-call-output.png)
+
+-->
