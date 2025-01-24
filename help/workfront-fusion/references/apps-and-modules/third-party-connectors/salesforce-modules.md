@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion のシナリオでは、Salesforce を使用
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 17ac09a19562839a9fdfc11bd274a6ed11f6d8f5
 workflow-type: tm+mt
-source-wordcount: '2603'
-ht-degree: 76%
+source-wordcount: '2704'
+ht-degree: 75%
 
 ---
 
@@ -86,7 +86,7 @@ Salesforce コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">API バージョン</td> 
-   <td> v46.0 </td> 
+   <td> v62.0 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">API タグ</td> 
@@ -104,6 +104,60 @@ Salesforce コネクタでは、以下を使用します。
 * 完全に一致するフレーズを検索するには、引用符演算子（&quot; &quot;）を使用します。例：&quot;Monday meeting&quot;
 
 検索の可能性について詳しくは、SOQL および SOSL に関する [!DNL Salesforce] 開発者向けドキュメントを参照してください。
+
+## [!DNL Salesforce] への接続の作成
+
+[!DNL Salesforce] モジュールへの接続を作成するには、以下を実行します。
+
+1. 任意の [!DNL Salesforce] モジュールで、「接続」ボックスの横にある「**[!UICONTROL Add]**」をクリックします。
+
+1. 次のフィールドに入力します。
+
+   <table style="table-layout:auto"> 
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>新しい接続の名前を入力します。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td>
+          <p>本番環境と非本番環境のどちらに接続するかを選択します。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Type]</td>
+        <td>
+          <p>サービスアカウントと個人アカウントのどちらに接続するかを選択します。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>Salesforce クライアント ID を入力します。</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>Salesforce クライアントの秘密鍵を入力します。 </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Sandbox]</td>
+        <td>これがサンドボックス環境の場合は、このオプションを有効にします。</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL API Version]</td>
+        <td>使用するSalesforce API のバージョンを入力します。 デフォルトバージョンは 62.0 です。</td>
+      </tr>
+    </tbody>
+    </table>
+
+1. 「**[!UICONTROL Continue]**」をクリックして接続を保存し、モジュールに戻ります。
+
 
 ## [!DNL Salesforce] モジュールとそのフィールド
 
