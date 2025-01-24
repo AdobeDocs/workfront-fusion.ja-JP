@@ -4,9 +4,9 @@ description: 現在、Workfrontおよび HTTP コネクタでは大きなファ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: 12620e137d2e536b90eb322de93fd39bb8374e51
+source-git-commit: 0e69dfa23fc12cb20c3fed772d72ef348536ea24
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '991'
 ht-degree: 3%
 
 ---
@@ -15,15 +15,11 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->大容量ファイル機能は、Workfront Ultimateのお客様のみが利用でき、段階的なロールアウトです。 Workfront Ultimate プランを持つすべての Fusion 組織は、2025 年 1 月までにラージファイル機能を使用できるようになります。
+>大容量ファイルを使用できるのは、Workfront Ultimate パッケージに含まれている組織のみです。
 
 Workfront Fusion で強化されたデータ転送機能が使用できるようになり、シナリオで大幅に大きなファイルを処理できるようになりました。
 
 大きなファイルを処理するには、シナリオを更新する必要があります。
-
->[!NOTE]
->
->この機能は、Ultimate Workfront パッケージのユーザーのみが使用できます。
 
 ## 大きなファイルをサポートするコネクタ
 
