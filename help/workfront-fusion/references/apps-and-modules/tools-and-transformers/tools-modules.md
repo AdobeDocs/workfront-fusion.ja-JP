@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion Tools]  セクションには、シ�
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 757580687ff5d1617f83432952d9870bd697925e
+source-git-commit: 7d5188d1ee4e40f74c750e3ce3dcbd0e08bc6606
 workflow-type: tm+mt
-source-wordcount: '1962'
-ht-degree: 73%
+source-wordcount: '1994'
+ht-degree: 62%
 
 ---
 
@@ -79,7 +79,7 @@ ht-degree: 73%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Bundle]</td> 
-   <td> <p>配列項目を追加して、カスタムバンドルを作成します。この配列は、名前と値のペアで構成されます。</p> </td> 
+   <td> <p>配列項目を追加して、カスタムバンドルを作成します。バンドルに追加する項目ごとに、「<b> 項目を追加 </b>」をクリックし、項目の名前と値を入力します。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -97,32 +97,30 @@ ht-degree: 73%
 
 このモジュールは、[!UICONTROL Set Variable] モジュールまたは [!UICONTROL Set Multiple Variables] モジュールによって以前に作成された値を取得します。
 
-このモジュールは、変数が [!UICONTROL Get Multiple Variables] モジュールがある場所とは異なるルートに設定されている場合でも、シナリオの任意の場所に設定された変数を読み取ることができます。 唯一の要件は、[!UICONTROL Tools]/[!UICONTROL Set Variable] または [!UICONTROL Tools]/[!UICONTROL Set Multiple Variable] モジュールを [!UICONTROL Tools]/[!UICONTROL Get Multiple Variables] モジュールの前に実行することです。 モジュールの実行順序について詳しくは、[ [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)のルーターモジュールを参照してください。
+このモジュールは、変数が [!UICONTROL Get Multiple Variables] モジュールがある場所とは異なるルートに設定されている場合でも、シナリオの任意の場所に設定された変数を読み取ることができます。 唯一の要件は、[!UICONTROL Tools]/[!UICONTROL Set Variable] または [!UICONTROL Tools]/[!UICONTROL Set Multiple Variable] モジュールを [!UICONTROL Tools]/[!UICONTROL Get Multiple Variables] モジュールの前に実行することです。 モジュールの実行順序の詳細については、「[ ルーターモジュールの追加とルートの設定 ](/help/workfront-fusion/create-scenarios/add-modules/router-module.md) を参照してください。
 
 <table style="table-layout:auto">
     <tr>
         <td>[!UICONTROL Variables]</td>
-        <td>モジュールから取得する変数を追加します。</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL Variable name]</td>
-        <td>追加する変数ごとに、取得する変数の名前をマッピングします。</td>
+        <td>モジュールで取得する変数ごとに、「<b> 項目を追加 </b>」をクリックして変数の名前を入力します。</td>
     </tr>
 </table>
 
->[!INFO]
->
->**例：**[!UICONTROL Set]/[!UICONTROL Get (multiple) variable(s)] モジュールの使用例を次に示します。
->
->* 異なる経路でも、計算値を後で使用するために保存する場合。これは、値が複数のモジュールで使用され、値を計算する数式が過度に複雑な場合に役立ちます。
->* 式をデバッグする場合。モジュールで使用されている式が正しい結果を提供していないように見える場合は、式をコピーして、関連するモジュールの前に挿入する [!UICONTROL Set Variable] モジュールに貼り付けます。 [!UICONTROL Set Variable] モジュールの後にモジュールを切断し、シナリオを実行します。 [!UICONTROL Set Variable] モジュールの出力を確認し、式を調整または簡素化し、シナリオを再実行して、問題が解決するまで繰り返します。
+>[!BEGINSHADEBOX]
+
+**例：**[!UICONTROL Set]/[!UICONTROL Get (multiple) variable(s)] モジュールの使用例を次に示します。
+
+* 異なる経路でも、計算値を後で使用するために保存する場合。これは、値が複数のモジュールで使用され、値を計算する数式が過度に複雑な場合に役立ちます。
+* 式をデバッグする場合。モジュールで使用されている式が正しい結果を提供していないように見える場合は、式をコピーして、関連するモジュールの前に挿入する [!UICONTROL Set Variable] モジュールに貼り付けます。 [!UICONTROL Set Variable] モジュールの後にモジュールを切断し、シナリオを実行します。 [!UICONTROL Set Variable] モジュールの出力を確認し、式を調整または簡素化し、シナリオを再実行して、問題が解決するまで繰り返します。
+
+>[!ENDSHADEBOX]
 
 
 #### [!UICONTROL Get Variable]
 
 このモジュールは、[!UICONTROL Set Variable] または [!UICONTROL Set Multiple Variables] モジュールによって以前に作成された値を取得します。
 
-このモジュールは、変数が [!UICONTROL Get Variable] モジュールがある場所とは異なるルートに設定されている場合でも、シナリオの任意の場所に設定された変数を読み取ることができます。 唯一の要件は、[!UICONTROL Tools]/[!UICONTROL Set Variable] または [!UICONTROL Tools]/[!UICONTROL Set Multiple Variables] モジュールを [!UICONTROL Tools]/[!UICONTROL Get Variable] モジュールの前に実行することです。 モジュールの実行順序について詳しくは、[ [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)のルーターモジュールを参照してください。
+このモジュールは、変数が [!UICONTROL Get Variable] モジュールがある場所とは異なるルートに設定されている場合でも、シナリオの任意の場所に設定された変数を読み取ることができます。 唯一の要件は、[!UICONTROL Tools]/[!UICONTROL Set Variable] または [!UICONTROL Tools]/[!UICONTROL Set Multiple Variables] モジュールを [!UICONTROL Tools]/[!UICONTROL Get Variable] モジュールの前に実行することです。 モジュールの実行順序の詳細については、「[ ルーターモジュールの追加とルートの設定 ](/help/workfront-fusion/create-scenarios/add-modules/router-module.md) を参照してください。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -137,7 +135,7 @@ ht-degree: 73%
 
 #### [!UICONTROL Increment function]
 
-このモジュールは、各モジュールの操作後に 1 ずつ増加する値を返します。
+このモジュールは、各サイクルまたは各シナリオの実行の後に 1 ずつ増分された値を返します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -145,7 +143,7 @@ ht-degree: 73%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reset a value]</td> 
-   <td> <p>モジュールで値を増分する場合に選択します。 </p> 
+   <td> <p>モジュールで値をリセットするタイミングを選択します。 この場合は、値を最初の値からやり直します。</p> 
     <ul> 
      <li>[!UICONTROL After one cycle]</li> 
      <li>[!UICONTROL After one scenario run]</li> 
@@ -155,27 +153,30 @@ ht-degree: 73%
  </tbody> 
 </table>
 
->[!INFO]
->
->**例：**
->
->モジュールを使用する目的の 1 つは、タスク、リード、メールなどの「総当たり的な」割り当てをグループ内のユーザーに実装することです。アルゴリズムは、ある合理的な順序でグループから割り当て先を選択します。通常は、リストの上から下に移動します。アルゴリズムがリストの最後に到達すると、次の割り当てをリストの一番上のユーザーに行い、リストの下方に向かって割り当てを続けて行います。
->
->次のシナリオでは、奇数番号のシナリオを実行するたびに最初の受信者にメールを送信し、偶数番号のシナリオを実行するたびに 2 番目の受信者にメールを送信します。
->
->![](/help/workfront-fusion/references/apps-and-modules/assets/example-email-350x246.gif)
->
->1. このシナリオを作成するには：
->1. モジュールの「**[!UICONTROL Reset a value]**」フィールドを「なし」に設定します。
->1. 奇数値のルートを設定します。`1` の値に等しいモジュロ演算関数を使用して、このルートのフィルターを設定します。
->
->   ![](/help/workfront-fusion/references/apps-and-modules/assets/odd-350x459.png)
->
->  **注意**:[!UICONTROL Equal to] 演算子をデフォルトの [!UICONTROL Text] 演算子から [!UICONTROL Numeric] 演算子に変更することを忘れないでください。
->
->1. `0` の値に等しいモジュロ演算関数を使用して、このルートのフィルターを設定します。
->
->増分関数は、シナリオが実行されるたびに 1 つ追加します。フィルターで増分を確認し、その値に基づいて処理されるので、メールは均等に配信されます。
+>[!BEGINSHADEBOX]
+
+**例：**
+
+このモジュールを使用すると、グループ内のユーザーに対するタスク、リード、メールなどの「ラウンドロビン」割り当てを実装できます。 アルゴリズムは、ある合理的な順序でグループから割り当て先を選択します。通常は、リストの上から下に移動します。アルゴリズムがリストの最後に到達すると、次の割り当てをリストの一番上のユーザーに行い、リストの下方に向かって割り当てを続けて行います。
+
+次のシナリオでは、奇数番号のシナリオを実行するたびに最初の受信者にメールを送信し、偶数番号のシナリオを実行するたびに 2 番目の受信者にメールを送信します。
+
+![](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
+
+このシナリオを作成するには：
+
+1. モジュールの「**[!UICONTROL Reset a value]**」フィールドを「なし」に設定します。
+1. 奇数値のルートを設定します。`1` の値に等しいモジュロ演算関数を使用して、このルートのフィルターを設定します。
+
+   ![](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
+
+**注意**:[!UICONTROL Equal to] 演算子をデフォルトの [!UICONTROL Text] 演算子から [!UICONTROL Numeric] 演算子に変更することを忘れないでください。
+
+1. `0` の値に等しいモジュロ演算関数を使用して、このルートのフィルターを設定します。
+
+増分関数は、シナリオが実行されるたびに 1 つ追加します。フィルターで増分を確認し、その値に基づいて処理されるので、メールは均等に配信されます。
+
+>[!ENDSHADEBOX]
 
 #### [!UICONTROL Set Multiple Variables]
 
@@ -187,21 +188,13 @@ ht-degree: 73%
  <tbody> 
   <tr> 
    <td>[!UICONTROL Variables]</td> 
-   <td>モジュールで設定する変数を追加します。</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Variable name] </td> 
-   <td>各変数に、変数名を入力します。この名前は、他のモジュールで変数をマッピングする際に表示されます。 </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Variable value] </td> 
-   <td>各変数に、変数の値を入力します。 </td> 
+   <td>追加する変数ごとに、「<b> 項目を追加 </b> をクリックして、変数の名前と値を入力します。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Variable lifetime] </td> 
    <td> <p>変数の有効期間を選択します（同じ値を維持）。</p> 
     <ul> 
-     <li><strong>[!UICONTROL One cycle]</strong>：変数は 1 つのサイクルに対して有効です。 1 回のシナリオ実行で複数の web フックを受け取る場合に役立ちます（より多くの web フック = より多くのサイクル）。 </li> 
+     <li><strong>[!UICONTROL One cycle]</strong>：変数は 1 つのサイクルに対して有効です。 これは、1 回のシナリオ実行で複数の Webhook を受け取った場合に役立ちます。これは、より多くの Webhook がより多くのサイクルを作成するためです。 </li> 
      <li><strong>[!UICONTROL One execution]</strong>：変数は、1 つのシナリオ実行に対して有効です。 1 つの実行に 1 つ以上のサイクルを含めることができます。</li> 
     </ul> </td> 
   </tr> 
@@ -254,7 +247,7 @@ ht-degree: 73%
 
 >[!TIP]
 >
->フローの一時停止の時間を長くする場合は、シナリオを次の 2 つのシナリオに分割することをお勧めします。
+>フローを長期間一時停止する場合は、シナリオを次の 2 つのシナリオに分割することをお勧めします。
 >
 >* 最初のシナリオに、一時停止の前半部分を含める。
 >* 2 つ目のシナリオに、後半部分を含める。
@@ -358,19 +351,21 @@ ht-degree: 73%
    <td> <p>マッピングされた項目を 1 つ以上含む式を定義します。集計データは、同じ式の値を持つグループの下で分割されます。各グループは、評価された式と集計テキストを付属したキーを含む個別のバンドルとして出力されます。これにより、キーを後続のモジュールのフィルターとして使用できます。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Text]</td> 
-   <td> <p> モジュールを集計するテキストを入力またはマッピングします。</p> </td> 
-  </tr> 
-  <tr> 
    <td>[!UICONTROL Stop processing after an empty aggregation]</td> 
    <td>結果がない場合にシナリオを停止するには、このオプションを選択します。</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Text]</td> 
+   <td> <p> モジュールを集計するテキストを入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!INFO]
->
->**例：**&#x200B;テキスト集約を使用すると、1 つのバンドルにさらに多くの値（顧客名やメモなど）を挿入し、メールの本文または件名にあるすべての値を含むメールを送信できます。
+>[!BEGINSHADEBOX]
+
+**例：**&#x200B;テキスト集約を使用すると、1 つのバンドルにさらに多くの値（顧客名やメモなど）を挿入し、メールの本文または件名にあるすべての値を含むメールを送信できます。
+
+>[!ENDSHADEBOX]
 
 ### 変換サービス
 
@@ -380,7 +375,7 @@ ht-degree: 73%
 
 #### [!UICONTROL Compose a string]
 
-任意の値を文字列データタイプ（テキスト）に変換します。これにより、バイナリデータなどのマッピングが容易になります。
+任意の値を文字列データタイプ（テキスト）に変換します。これにより、バイナリデータなどのマッピングの際に、マッピングが容易になります。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -443,7 +438,7 @@ ht-degree: 73%
   </tr> 
   <tr> 
    <td>[!UICONTROL Cases] </td> 
-   <td> <p>入力に [!UICONTROL Pattern] フィールドに入力された値が含まれる場合、[!UICONTROL Output] フィールドに入力された値が返されます。</p> <p>入力が [!UICONTROL Pattern] フィールドに設定された値のいずれとも一致しない場合は、次のいずれかが発生します。</p> 
+   <td> 追加するケースごとに、<b> アイテムの追加 </b> をクリックし、アイテムのパターンと出力を入力します。 <p>入力に [!UICONTROL Pattern] フィールドに入力された値が含まれる場合、[!UICONTROL Output] フィールドに入力された値が返されます。</p> <p>入力が [!UICONTROL Pattern] フィールドに設定された値のいずれとも一致しない場合は、次のいずれかが発生します。</p> 
     <ul> 
      <li>[!UICONTROL Else] フィールドの値が返されます</li> 
      <li>[!UICONTROL Else] フィールドに値がない場合、出力は返されません。</li> 
