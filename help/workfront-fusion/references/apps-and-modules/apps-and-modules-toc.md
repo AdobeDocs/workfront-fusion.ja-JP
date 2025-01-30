@@ -6,10 +6,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: 91b65888e082d56bf510d0df522f405ff74384d8
+source-git-commit: e3ec0cf05665559790e4ae96c875e181a1ee36ff
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 49%
+source-wordcount: '415'
+ht-degree: 48%
 
 ---
 
@@ -98,6 +98,7 @@ Fusion には、多くのサードパーティアプリケーション用のコ�
 * [Microsoft Dynamicsの財務および運用モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dynamics-finance-operations-modules.md)
 * [Microsoft OneDrive モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-modules.md)
 * [Microsoft OneDrive for Business モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-for-business-modules.md)
+* [Microsoft SharePoint Online モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sharepoint-modules.md)
 * [Microsoft SQL Server モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-sql-server-modules.md)
 * [Microsoft Word テンプレートモジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md)
 * [NetSuite モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/netsuite.md)
@@ -108,7 +109,6 @@ Fusion には、多くのサードパーティアプリケーション用のコ�
 * [Salesforce モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/salesforce-modules.md)
 * [SDL Managed Translation モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sdl-managed-translation-modules.md)
 * [ServiceNow モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/servicenow-modules.md)
-* [SharePoint モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sharepoint-modules.md)
 * [Slack モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
 * [Split.io モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
 * [Trello モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)

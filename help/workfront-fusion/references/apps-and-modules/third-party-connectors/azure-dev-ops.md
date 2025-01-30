@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Azu
 author: Becky
 feature: Workfront Fusion
 exl-id: c0919a9a-ce99-485c-9627-45353741f6d8
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 66378d6f937f3b3b173447bd36fdef991d9956af
 workflow-type: tm+mt
-source-wordcount: '1537'
-ht-degree: 81%
+source-wordcount: '1546'
+ht-degree: 76%
 
 ---
 
@@ -21,6 +21,8 @@ ht-degree: 81%
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
 <table style="table-layout:auto">
@@ -28,35 +30,37 @@ ht-degree: 81%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 [!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+
++++
 
 ## 前提条件
 
@@ -104,6 +108,7 @@ Azure DevOps コネクタでは、次を使用します。
         </tr>
     </table>
 
+1. Azure DevOps アプリ ID またはクライアントシークレットを入力するには、「<b> 詳細設定を表示 </b>」をクリックし、開いたフィールドに入力します。
 1. 「**[!UICONTROL Continue]**」をクリックして接続の設定を完了し、シナリオの作成を続行します。
 
 ## [!UICONTROL Azure DevOps] モジュールとそのフィールド
@@ -134,7 +139,7 @@ Azure DevOps コネクタでは、次を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td> <p>モジュールの web フックを選択または追加します。</p> <!--<p>For more information on webhooks in trigger modules, see <a href="For instructions, see [Instant triggers (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/)." class="MCXref xref">Instant triggers (webhooks) in [!DNL Adobe Workfront Fusion]</a>.</p> <p>For information on how to create a webhook, see <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md" class="MCXref xref">Webhooks</a>.--></p> </td> 
+   <td> <p>モジュールの web フックを選択または追加します。</p> <p>トリガーモジュールの Webhook について詳しくは、<a href="/help/workfront-fusion/references/modules/webhooks-reference.md" class="MCXref xref"> インスタントトリガー（Webhook） </a> を参照してください。</p> <p>Web フックの作成方法については、<a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md" class="MCXref xref">Web フック</a>を参照してください。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -148,6 +153,43 @@ Azure DevOps コネクタでは、次を使用します。
 * [レコードの読み取り](#read-record)
 * [作業項目の更新](#update-a-work-item)
 * [[!UICONTROL Upload an attachment]](#upload-an-attachment)
+
+#### [!UICONTROL Create a record]
+
+このアクションモジュールは、新しいプロジェクトまたは作業アイテムを作成します。
+
+モジュールは、新しく作成された作業アイテムのオブジェクト ID、または新しく作成されたプロジェクトの URL とステータスコードを出力します。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>[!DNL Azure DevOps] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">[!DNL Azure DevOps] を [!UICONTROL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Record type]</td> 
+   <td> <p>作業アイテムを作成するか、プロジェクトを作成するかを選択します。</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Project]</strong> </p> <p>次のフィールドに入力します。</p> 
+      <ul> 
+       <li> <p><strong>[!UICONTROL Name]</strong>：新しいプロジェクトの名前を入力またはマッピングします。</p> </li> 
+       <li> <p><strong>[!UICONTROL Description]</strong>：新規プロジェクトの説明を入力またはマッピングします。 </p> </li> 
+       <li> <p><strong>[!UICONTROL Visibility]</strong>：プロジェクトをパブリックとプライベートのどちらにするかを選択します。 ユーザーが非公開プロジェクトとやり取りするには、組織にサインインし、プロジェクトへのアクセス権を付与されている必要があります。公開プロジェクトは、組織にサインインしていないユーザーに表示されます。</p> </li> 
+       <li> <p><strong>[!UICONTROL Version control]</strong>：プロジェクトでバージョン管理に [!DNL Git] と [!UICONTROL Team Foundation Version Control (TFCV)] のどちらを使用するかを選択します。</p> </li> 
+       <li> <p><strong>[!UICONTROL Work item process]</strong>：プロジェクトに使用する作業プロセスを選択します。 オプションは、[!UICONTROL Basic]、[!UICONTROL Scrum]、[!UICONTROL Capability Maturity Model Integration (CMMI)]、[!UICONTROL Agile] です。</p> <p>[!DNL Azure DevOps] のプロセスについて詳しくは、[!DNL Azure DevOps] ドキュメントの <a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=basic-process"> デフォルトのプロセスとプロセステンプレート </a> を参照してください。</p> </li> 
+      </ul> </li> 
+     <li> <p><strong>[!UICONTROL Work item]</strong> </p> <p>次のフィールドに入力します。</p> 
+      <ul> 
+       <li> <p><strong>[!UICONTROL Project]</strong>：作業項目を作成するプロジェクトを選択します。</p> </li> 
+       <li> <p><strong>[!UICONTROL Work item type]</strong>：作成する作業項目のタイプを選択します。</p> </li> 
+       <li> <p><strong>[!UICONTROL Other fields]</strong>：これらのフィールドで、指定したプロパティに作業項目に設定する値を入力します。 使用可能なフィールドは、作業アイテムのタイプによって異なります。</p> </li> 
+      </ul> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Custom API Call]
 
@@ -169,7 +211,7 @@ Azure DevOps コネクタでは、次を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Relative URL]</td> 
-   <td> <p>この API 呼び出しの接続先となる相対 URL を入力します。</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>例：</b></span></span><code>{organization}/_apis[/{area}]/{resource}</code> </p> </td> 
+   <td> <p>この API 呼び出しの接続先となる相対 URL を入力します。</p> <p><b>例：</b><code>{organization}/_apis[/{area}]/{resource}</code> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL API Version]</td> 
@@ -193,43 +235,6 @@ Azure DevOps コネクタでは、次を使用します。
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Create a record]
-
-このアクションモジュールは、新しいプロジェクトまたは作業アイテムを作成します。
-
-モジュールは、新しく作成された作業アイテムのオブジェクト ID、または新しく作成されたプロジェクトの URL とステータスコードを出力します。
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Azure DevOps] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">[!DNL Azure DevOps] を [!UICONTROL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Record type]</td> 
-   <td> <p>作業アイテムを作成するか、プロジェクトを作成するかを選択します。</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Project]</strong> </p> <p>次のフィールドに入力します。</p> 
-      <ul> 
-       <li> <p><strong>[!UICONTROL Name]</strong>：新しいプロジェクトの名前を入力またはマッピングします。</p> </li> 
-       <li> <p><strong>[!UICONTROL Description]</strong>：新しいプロジェクトの説明を入力またはマッピングします。 </p> </li> 
-       <li> <p><strong>[!UICONTROL Visibility]</strong>：プロジェクトをパブリックとプライベートのどちらにするかを選択します。 ユーザーが非公開プロジェクトとやり取りするには、組織にサインインし、プロジェクトへのアクセス権を付与されている必要があります。公開プロジェクトは、組織にサインインしていないユーザーに表示されます。</p> </li> 
-       <li> <p><strong>[!UICONTROL Version control]</strong>：プロジェクトでバージョン管理に [!DNL Git] と [!UICONTROL Team Foundation Version Control (TFCV)] のどちらを使用するかを選択します。</p> </li> 
-       <li> <p><strong>[!UICONTROL Work item process]</strong>：プロジェクトに使用する作業プロセスを選択します。 オプションは、[!UICONTROL Basic]、[!UICONTROL Scrum]、[!UICONTROL Capability Maturity Model Integration (CMMI)]、[!UICONTROL Agile] です。</p> <p>[!DNL Azure DevOps]プロセスについて詳しくは、「[!DNL Azure DevOps]</a> ドキュメントで<a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=basic-process">プロセスを選択」を参照してください。</p> </li> 
-      </ul> </li> 
-     <li> <p><strong>[!UICONTROL Work item]</strong> </p> <p>次のフィールドに入力します。</p> 
-      <ul> 
-       <li> <p><strong>[!UICONTROL Project]</strong>：作業項目を作成するプロジェクトを選択します。</p> </li> 
-       <li> <p><strong>[!UICONTROL Work item type]</strong>：作成する作業項目のタイプを選択します。</p> </li> 
-       <li> <p><strong>[!UICONTROL Other fields]</strong>：これらのフィールドで、指定したプロパティに作業項目に設定する値を入力します。 使用可能なフィールドは、作業アイテムのタイプによって異なります。</p> </li> 
-      </ul> </li> 
-    </ul> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -259,10 +264,6 @@ Azure DevOps コネクタでは、次を使用します。
 
 このアクションモジュールは、2 つの作業アイテムをリンクし、それらの間の関係を定義します。
 
-このモジュールは、主な作業アイテムの ID と関連するフィールドのほか、接続でアクセスするカスタムフィールドと値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
-
-このモジュールを設定する際には、次のフィールドが表示されます。
-
 <table style="table-layout:auto">
  <col> 
  <col> 
@@ -281,7 +282,7 @@ Azure DevOps コネクタでは、次を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Link Type]</td> 
-   <td> <p>リンクする作業アイテム間の関係を定義します。</p> <p>詳しくは、[!UICONTROL Azure DevOps] ドキュメントの <a href="https://docs.microsoft.com/en-us/azure/devops/boards/queries/link-type-reference?view=azure-devops"> リンクタイプの参照 </a> を参照してください。</p> </td> 
+   <td> <p>リンクする作業アイテム間の関係を定義します。</p> <p>詳しくは、[!UICONTROL Azure DevOps] ドキュメントの <a href="https://docs.microsoft.com/en-us/azure/devops/boards/queries/link-type-reference?view=azure-devops"> リンクタイプのリファレンスガイド </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Comment]</td> 
