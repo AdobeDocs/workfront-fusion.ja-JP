@@ -4,10 +4,10 @@ description: 項目をマッピングする場合、関数を使用して単純�
 author: Becky
 feature: Workfront Fusion
 exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 33%
+source-wordcount: '620'
+ht-degree: 32%
 
 ---
 
@@ -105,7 +105,7 @@ ht-degree: 33%
 
 この例では、サブ文字列関数は、プロジェクト名を 50 文字に制限します。
 
-![](assets/example-meet-length-restriction-350x184.png)
+![ ミーティングの長さ制限の例 ](assets/example-meet-length-restriction-350x184.png)
 
 >[!ENDSHADEBOX]
 
@@ -119,7 +119,7 @@ ht-degree: 33%
 
 この例では、substring 関数を使用すると、トリミングされたプロジェクト名を 50 文字に制限しています。
 
-![](assets/trimmed-name-under-50.png)
+![ トリム名 ](assets/trimmed-name-under-50.png)
 
 >[!ENDSHADEBOX]
 
@@ -150,9 +150,9 @@ ht-degree: 33%
 
       通常どおり、先行モジュールの出力を使用できます。
 
-      ![](assets/exploit-google-sheet-functions-350x218.png)
+      ![Google Sheets 関数の使用 ](assets/exploit-google-sheet-functions-350x218.png)
 
 1. **[!UICONTROL Google Sheets]>[!UICONTROL Get a cell]** モジュールを挿入して、計算結果を取得します。
 1. 手順 4 で使用した同じセル ID を使用して、モジュールを設定します。
 
-   ![](assets/exploit-google-sheet-functions-2-350x187.png)
+   ![Google Sheets 関数の使用 ](assets/exploit-google-sheet-functions-2-350x187.png)

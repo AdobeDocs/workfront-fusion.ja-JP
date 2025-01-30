@@ -4,9 +4,9 @@ description: ' [!DNL Google Sheets]  を  [!DNL Adobe Workfront Fusion],you need
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 80965570-2937-4ac8-97c0-54f7a813ec50
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '3372'
 ht-degree: 83%
 
 ---
@@ -726,7 +726,7 @@ Google シートコネクタでは、以下を使用します。
 1. シナリオを実行します。
 1. Google Sheets で、メインメニューバーから **[!UICONTROL Insert]** > **[!UICONTROL Drawing]**...を選択します。
 
-1. [!UICONTROL Drawing] ウィンドウで、ウィンドウの上部付近にある **[!UICONTROL Text box]** アイコン ![](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) をクリックします。
+1. [!UICONTROL Drawing] ウィンドウで、ウィンドウの上部付近にある **[!UICONTROL Text box]** アイコン ![ テキストボックス ](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) をクリックします。
 1. ボタンをデザインし、右上隅の「**[!UICONTROL Save and Close]**」ボタンをクリックします。
 1. ワークシートにボタンが配置されます。ボタンの右上隅にある 3 つの縦並びのドットをクリックします。
 1. 「**[!UICONTROL Assign script..]」を選択します。**」を選択します。
@@ -750,7 +750,7 @@ Google シートコネクタでは、以下を使用します。
 
 日付の値を書式設定なしでスプレッドシートに保存した場合、ISO 8601 形式のテキストとしてスプレッドシートに表示されます。ただし、このテキストを理解しない日付に対応する [!DNL Google Sheets] 数式または関数（例：数式 `=A1+10`) を呼び出すと、次のエラーが表示されます。
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/mceclip6-350x87.png)
+![エラー](/help/workfront-fusion/references/apps-and-modules/assets/mceclip6-350x87.png)
 
 日付を理解 [!DNL Google Sheets] やすくするには、[[!UICONTROL formatDate] （date; format; [timezone]） ](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md#formatda) 関数を使用して書式を設定します。 2 番目の引数として関数に渡される正しい形式は、スプレッドシートのロケール設定によって異なります。
 
@@ -764,7 +764,7 @@ Google シートコネクタでは、以下を使用します。
 
 **例**：米国ロケールの `MM/DD/YYYY HH:mm:ss` 形式の使用：
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/locale-time-350x83.png)
+![ ロケールの時間式 ](/help/workfront-fusion/references/apps-and-modules/assets/locale-time-350x83.png)
 
 ## [!DNL Google Sheets] 関数の活用
 

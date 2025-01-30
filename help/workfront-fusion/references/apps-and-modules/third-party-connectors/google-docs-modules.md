@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion [!DNL Google Docs] module を使用すると
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: cd44250d-c2cd-46b2-8773-15b30472a8d8
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '3215'
-ht-degree: 66%
+source-wordcount: '3221'
+ht-degree: 65%
 
 ---
 
@@ -609,11 +609,11 @@ Google Docs コネクタでは、以下を使用します。
 
 [!UICONTROL GET]
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/api-call-example.png)
+![API 呼び出しの例 ](/help/workfront-fusion/references/apps-and-modules/assets/api-call-example.png)
 
 取得したドキュメントの詳細は、モジュールの出力の [!UICONTROL Bundle] > [!UICONTROL Body] にあります。
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/api-output.png)
+![API 呼び出しの出力 ](/help/workfront-fusion/references/apps-and-modules/assets/api-output.png)
 
 #### [!UICONTROL Make All Links in a Document Clickable]
 

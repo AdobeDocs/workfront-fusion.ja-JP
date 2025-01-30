@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion] シナリオでは、Dropbox を使
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '2868'
-ht-degree: 88%
+source-wordcount: '2876'
+ht-degree: 87%
 
 ---
 
@@ -744,15 +744,15 @@ URL を自動的に変更するには、次のように `replace()` 関数を 2 
 
 * www を dl に置き換えます。
 
-  ![](/help/workfront-fusion/references/apps-and-modules/assets/www-to-dl-350x32.png)
+  ![www を dl に置き換えます ](/help/workfront-fusion/references/apps-and-modules/assets/www-to-dl-350x32.png)
 
 * さらに、?dl=0 を削除します。
 
-  ![](/help/workfront-fusion/references/apps-and-modules/assets/remove-dl0-350x33.png)
+  ![DL を削除 ](/help/workfront-fusion/references/apps-and-modules/assets/remove-dl0-350x33.png)
 
 これを 1 回で実行するには、これらの関数を次のように組み合わせます。
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/replace-both-350x47.png)
+![ 両方を置換 ](/help/workfront-fusion/references/apps-and-modules/assets/replace-both-350x47.png)
 
 次のコードをコピーして、フィールドにペーストすることもできます。`1.url` を URL に置き換えます。
 

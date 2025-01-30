@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion Google Forms]  モジュールを使
 author: Becky
 feature: Workfront Fusion
 exl-id: dc017957-c0f8-4206-916f-21ccda346fb9
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1185'
 ht-degree: 82%
 
 ---
@@ -85,7 +85,7 @@ Google Forms コネクタでは、以下を使用します。
 
 1. フォームを開きます。
 1. 「**[!UICONTROL Responses]**」タブに移動します。
-1. **[!UICONTROL Create Spreadsheet]** アイコンをクリックし ![](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png) す。
+1. **[!UICONTROL Create Spreadsheet]** アイコン ![ スプレッドシートアイコン ](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png) をクリックします。
 
 1. 新規スプレッドシートを作成するか、既存スプレッドシートを作成するかを選択します
 1. **[!UICONTROL Create]** をクリックします。

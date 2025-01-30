@@ -4,10 +4,10 @@ description: CloudConvert モジュール
 author: Becky
 feature: Workfront Fusion
 exl-id: 52c4d18a-8bee-44d6-9a2c-cc9e157e1dde
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '2486'
-ht-degree: 85%
+source-wordcount: '2498'
+ht-degree: 84%
 
 ---
 
@@ -541,7 +541,7 @@ ZIP、RAR、7Z、TAR、TAR.GZ または TAR.BZ2 アーカイブに 1 つまた�
 >* 配列アグリゲータを操作する場合（変換するファイルの形式が異なるなど）、[!UICONTROL Add a task] のダイアログで **[!UICONTROL I don't know the input format]** オプションを使用します。 それ以外の場合は、エラーが返されます。
 >* 業務内のタスクをリンクしています（名前／入力、名前／入力、…）：
 >
->  ![](/help/workfront-fusion/references/apps-and-modules/assets/linking-name-across-jobs-350x808.png)>
+>  ![ ジョブ間での名前のリンク ](/help/workfront-fusion/references/apps-and-modules/assets/linking-name-across-jobs-350x808.png)>
 
 ### タスク
 
@@ -745,13 +745,13 @@ URL：`/v2/tasks`
 
 メソッド：`GET`
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-input.png)
+![API 入力例 ](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-input.png)
 
 検索の一致は、モジュールの出力の [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL data] で見つけることができます。
 
 この例では、次の 6 つのタスクが返されました。
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-output.png)
+![API 出力例 ](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-output.png)
 
 ## トラブルシューティング {#troubleshooting}
 
@@ -817,6 +817,6 @@ URL：`/v2/tasks`
 >1. モジュールの設定を開きます。
 >1. 以下のようにモジュールを設定します。
 >
->   ![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-mp4-example.png)
+>   ![CloudConvert の例 ](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-mp4-example.png)
 >
 >1. 必ず、「コンバージョンとエンジン固有のオプション」フィールドのすべての設定を含めてください。手順 5 の各設定で、手順 13 の対応するパラメーターとそれに対応する値を探します。

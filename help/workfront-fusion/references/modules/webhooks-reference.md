@@ -4,9 +4,9 @@ description: 多くのサービスでは、サービスで特定の変更が発�
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: 4c0f050e40d28f236d6086e7dccea53d49252aa8
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '848'
 ht-degree: 28%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 28%
 
 多くのサービスでは、サービス内で特定の変更（イベント）が発生したときに即座に通知を配信する Webhook を提供しています。 これらのイベントを処理するには、インスタント トリガーを使用することをお勧めします。 インスタントトリガーは、特定のコネクタのモジュールのリストに `Instant` タグを表示します。
 
-![](assets/instant.png)
+![今すぐ](assets/instant.png)
 
 >[!TIP]
 >
@@ -39,7 +39,7 @@ Workfront Fusion の web フックの概要ビデオについて詳しくは、�
 
 インスタント トリガーを構成すると、実行時に選択するように求められます。
 
-![](assets/schedule-setting.png)
+![ スケジュール設定 ](assets/schedule-setting.png)
 
 サービスから新しいイベントを受け取るとすぐにシナリオを実行する [!DNL Workfront Fusion] 合は、「`Immediately`」を選択します。 これらのイベントは直ちにキューに送信され、データを受信するのと同じ順序で、シナリオで 1 つずつ処理されます。
 
@@ -62,7 +62,7 @@ Workfront Fusion の web フックの概要ビデオについて詳しくは、�
 
 [!UICONTROL Immediately] 以外のスケジュール設定を使用する場合、シナリオは指定した間隔で実行されます。 この間隔のキューには複数の Webhook が収集されるので、[!UICONTROL Maximum number of cycles] オプションをデフォルトの 1 より大きい値に設定して、1 回のシナリオ実行でより多くの Webhook を処理することをお勧めします。
 
-1. シナリオの下部にある「[!UICONTROL Scenario settings]」アイコン ![](assets/scenario-settings-icon.png) をクリックします。
+1. シナリオの下部にある [!UICONTROL Scenario settings] アイコン ![ シナリオ設定アイコン ](assets/scenario-settings-icon.png) をクリックします。
 1. 表示される **[!UICONTROL Scenario settings]** パネルで、「**[!UICONTROL Max number of cycles]**」フィールドに数値を入力し、シナリオを実行するたびに実行するキューのイベント数を指定します。
 
 キューに残っているイベントは、次回シナリオを実行するときに、「最大サイクル数」フィールドで設定された数まで処理されます。

@@ -4,10 +4,10 @@ description: この一般的なワークフローに従って、シナリオを�
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: f190217891c1d583e49cacb820e2076b995f6a3d
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 22%
+source-wordcount: '723'
+ht-degree: 21%
 
 ---
 
@@ -34,19 +34,19 @@ ht-degree: 22%
 ## シナリオの作成と命名
 
 1. [!DNL Workfront Fusion] アカウントにログインします。
-1. 左側 **[!UICONTROL Scenarios]** パネルで「![](assets/scenarios-icon.png)」をクリックします。
+1. 左側 **[!UICONTROL Scenarios]** パネルで ![ シナリオアイコン ](assets/scenarios-icon.png) をクリックします。
 
    >[!NOTE]
    >
    >左側のナビゲーションパネルまたはアイコンが表示されない場合は、メニュー ![メニュー](assets/main-menu-icon-left-nav.png) アイコンをクリックします。
 
-1. （オプション） [!UICONTROL **フォルダー**] パネルで、**[!UICONTROL Add folder]** アイコン ![](assets/add-folder-icon.png) をクリックし、最初のフォルダーの名前を「練習シナリオ」のように入力します。
+1. （オプション） [!UICONTROL **フォルダー**] パネルで、「**[!UICONTROL Add folder]**」アイコン ![ フォルダーアイコンを追加 ](assets/add-folder-icon.png) をクリックし、最初のフォルダーの「練習シナリオ」のような名前を入力します。
 
 1. （オプション）フォルダーを開き、ページの右上隅にある「**[!UICONTROL Create a new scenario]**」をクリックします。
 
 1. 左上隅の **[!UICONTROL New scenario]** プレースホルダー名を選択し、「練習シナリオ 1」などの名前を入力します。
 
-   ![](assets/name-the-scenario.png)
+   ![ シナリオに名前を付ける ](assets/name-the-scenario.png)
 
 1. 以下の [ 最初のモジュールを接続 ](#2-connect-the-first-module) に進みます。
 
@@ -106,7 +106,7 @@ Google、Microsoft、または専用コネクタのないアプリケーショ�
    * シナリオ実行情報の読み取りに関する一般的な情報については、[ シナリオ実行フロー ](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md) を参照してください。
    * 処理されたバンドルについて詳しくは、[ [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md) でのシナリオの実行、サイクル、フェーズを参照してください。
 
-1. [!DNL Workfront Fusion] では、左下隅付近 **[!UICONTROL Save]** ある ![](assets/save-icon.png) をクリックして、シナリオの進捗を保存します。
+1. [!DNL Workfront Fusion] では、左下隅付近 **[!UICONTROL Save]** ある ![ 保存アイコン ](assets/save-icon.png) をクリックして、シナリオの進捗を保存します。
 
    >[!IMPORTANT]
    >

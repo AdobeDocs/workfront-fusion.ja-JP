@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Azu
 author: Becky
 feature: Workfront Fusion
 exl-id: 96455ae4-ef68-46b5-a172-429cf9f982fb
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
 source-wordcount: '47'
 ht-degree: 100%
@@ -87,7 +87,7 @@ When you configure [!DNL Azure Active Directory] modules, [!DNL Workfront Fusion
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/mapping/map-information-between-modules.md).
 
-![](assets/map-toggle-350x74.png)
+![Map toggle](assets/map-toggle-350x74.png)
 
 * [Triggers](#triggers)
 * [Actions](#actions)

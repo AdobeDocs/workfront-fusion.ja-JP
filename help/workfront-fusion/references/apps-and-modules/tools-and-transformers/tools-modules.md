@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion Tools]  セクションには、シ�
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 7d5188d1ee4e40f74c750e3ce3dcbd0e08bc6606
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1994'
+source-wordcount: '2000'
 ht-degree: 62%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 62%
 
 [!DNL Adobe Workfront Fusion Tools] セクションには、シナリオを強化できる便利なモジュールがいくつか含まれています。
 
-[!UICONTROL Tools] モジュールは、アプリのリストから、または画面の下部にある [!UICONTROL Tools] アイコン ![](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) から使用できます。
+[!UICONTROL Tools] モジュールは、アプリのリストから、または画面下部の [!UICONTROL Tools] アイコン ![ ツールアイコン ](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) から使用できます。
 
 ## アクセス要件
 
@@ -161,14 +161,14 @@ ht-degree: 62%
 
 次のシナリオでは、奇数番号のシナリオを実行するたびに最初の受信者にメールを送信し、偶数番号のシナリオを実行するたびに 2 番目の受信者にメールを送信します。
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
+![ メールの例 ](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
 
 このシナリオを作成するには：
 
 1. モジュールの「**[!UICONTROL Reset a value]**」フィールドを「なし」に設定します。
 1. 奇数値のルートを設定します。`1` の値に等しいモジュロ演算関数を使用して、このルートのフィルターを設定します。
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
+   ![ 奇数 ](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
 
 **注意**:[!UICONTROL Equal to] 演算子をデフォルトの [!UICONTROL Text] 演算子から [!UICONTROL Numeric] 演算子に変更することを忘れないでください。
 

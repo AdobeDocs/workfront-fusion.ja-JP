@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Jir
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1880'
+source-wordcount: '1883'
 ht-degree: 72%
 
 ---
@@ -186,7 +186,7 @@ Jira コネクタでは、以下を使用します。
 #### [!DNL Jira] でクライアントアプリをコンシューマーとして設定する
 
 1. [!DNL Jira] インスタンスにログインします。
-1. 左側のナビゲーションパネルで、**[!UICONTROL [!DNL Jira] Settings]** ![](/help/workfront-fusion/references/apps-and-modules/assets/jira-settings-icon.png) > **[!UICONTROL Applications]**> **[!UICONTROL Application links]** をクリックします。
+1. 左側のナビゲーションパネルで **[!UICONTROL [!DNL Jira] Settings]**![ Jira 設定アイコン ](/help/workfront-fusion/references/apps-and-modules/assets/jira-settings-icon.png)/**[!UICONTROL Applications]**> **[!UICONTROL Application links]** をクリックします。
 1. 「**[!UICONTROL Enter the URL of the application you want to link]**」フィールドに、
 
    ```

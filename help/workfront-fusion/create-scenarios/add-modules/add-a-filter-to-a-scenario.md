@@ -4,9 +4,9 @@ description: 場合によっては、特定の条件を満たすバンドルの�
 author: Becky
 feature: Workfront Fusion
 exl-id: b507dca0-0e85-4ab7-8310-b6e6bcb7ae12
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '564'
 ht-degree: 30%
 
 ---
@@ -87,7 +87,7 @@ ht-degree: 30%
 
    例えば、フィルターで XML で終わる [!DNL Adobe Workfront] 内のファイルを渡す場合は、最初のボックスにと **[!UICONTROL File name]** を入力します。2 つ目のボックスに **[!UICONTROL xml]** を入力します。 それらの間のドロップダウンメニューで、「**[!UICONTROL Ends with (case insensitive)]**」を選択します。 このフィルターは、最初のモジュール（Workfront）からの受信バンドルに適用されます。XML ファイルを含むバンドルのみが次のモジュールに渡されます。
 
-   ![](assets/set-up-filter-box.png)
+   ![ フィルターの設定 ](assets/set-up-filter-box.png)
 
 1. **[!DNL OK]** をクリックします。
 
@@ -110,7 +110,7 @@ ht-degree: 30%
 
    開発ツールアイコンが表示されない場合、開発ツールを開く手順については [ シナリオのデバッグ ](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md) を参照してください。
 
-1. 左側のバーにある **[!UICONTROL Tools]** アイコン ![](assets/devtools-tools-icon.png) をクリックします。
+1. 左側のバーにある **[!UICONTROL Tools]** アイコン ![ 開発ツール ツール ](assets/devtools-tools-icon.png) をクリックします。
 
 1. 「**[!UICONTROL Copy Filter]**」をクリックして、右側のパネルで **[!UICONTROL Copy Filter]** ツールを設定します。
 

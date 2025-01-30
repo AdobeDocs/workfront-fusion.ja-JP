@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion]  シナリオ内では、Trello を
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '4256'
+source-wordcount: '4259'
 ht-degree: 69%
 
 ---
@@ -1212,7 +1212,7 @@ Trello コネクタでは、以下を使用します。
 
 カードを編集したり新しいコメントを作成したりする場合は、カードの ID やショートリンクを知っておく必要があります。この情報は、[!UICONTROL New Card] トリガーの出力から取得できます。 カードのショートリンクは、カードを開いて「[!UICONTROL Share]」ボタンをクリックすることでも取得できます。 ショートリンクは、`https://trello.com/c/` 後の URL の最後にある [!UICONTROL Link to this card] ボックスで確認できます。
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/share-and-more-350x575.png)
+![ 共有と詳細 ](/help/workfront-fusion/references/apps-and-modules/assets/share-and-more-350x575.png)
 
 ### [!DNL Trello] で他のオブジェクトの ID を見つける方法
 

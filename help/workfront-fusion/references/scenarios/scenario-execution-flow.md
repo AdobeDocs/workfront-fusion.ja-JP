@@ -5,9 +5,9 @@ description: この記事では、シナリオの実行方法とシナリオ内�
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '735'
 ht-degree: 27%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 27%
 
 最初のモジュールがバンドルを返した場合、そのバンドルは残りのシナリオに渡されていきます。この例では、バンドルは 2 番目のモジュールに移動し、リクエストをプロジェクトに変換します。
 
-![](assets/example-execution-flow-wf-only.png)
+![Workfront シナリオの実行フロー ](assets/example-execution-flow-wf-only.png)
 
 >[!ENDSHADEBOX]
 
@@ -50,7 +50,7 @@ ht-degree: 27%
 
 バンドルが返されると、そのバンドルは残りのシナリオに渡されていきます。この例では、残りのシナリオは、[!DNL Dropbox] フォルダーにバンドルをアップロードする secondmodule で構成されています。
 
-![](assets/example-execution-flow-wf-dropbox.png)
+![ 統合シナリオの実行フロー ](assets/example-execution-flow-wf-dropbox.png)
 
 最初のモジュールが複数のバンドルを返した場合、最初のバンドルが [!DNL Dropbox] にアップロードされてから、2 番目のバンドルがアップロードされます。次に、2 番目のバンドルがアップロードされたあと、3 番目のバンドルがアップロードされ、以下同様の処理が繰り返されます。
 
@@ -71,7 +71,7 @@ ht-degree: 27%
 
 シナリオの実行が完了すると、各モジュールに、実行された操作の数を示すアイコンが表示されます。 このアイコンをクリックすると、プロセス内の各ステップの処理済みバンドルに関する詳細情報が表示されます。 使用されたモジュール設定と、各モジュールによって返されたバンドルを確認できます。
 
-![](assets/Info-processed-bundles.png)
+![ 処理済みのバンドル ](assets/Info-processed-bundles.png)
 
 この例では、モジュールは次のような入力情報を受け取りました。
 

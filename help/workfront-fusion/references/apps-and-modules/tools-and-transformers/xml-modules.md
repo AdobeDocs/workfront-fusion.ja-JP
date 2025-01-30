@@ -4,10 +4,10 @@ description: XML アプリを使用すると、XML／Parse XML モジュール�
 author: Becky
 feature: Workfront Fusion
 exl-id: ab323361-cd04-4dcc-ab02-0fb468334fdb
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 64%
+source-wordcount: '1302'
+ht-degree: 63%
 
 ---
 
@@ -95,7 +95,7 @@ ht-degree: 64%
 >
 >   **URL**：XML ファイルの URL（例：`https://siftrss.com/f/rqLy05ayMBJ`）
 >
->   ![](/help/workfront-fusion/references/apps-and-modules/assets/url-of-xml-file-350x184.png)
+>   ![XML ファイルの URL の例 ](/help/workfront-fusion/references/apps-and-modules/assets/url-of-xml-file-350x184.png)
 >
 >1. 「**[!UICONTROL OK]**&#x200B;」をクリックして、モジュールの設定を保存して閉じます。
 1. [!UICONTROL XML]/[!UICONTROL Parse XML] モジュールを追加し、[!UICONTROL HTTP]/[!UICONTROL Get a file] モジュールの後に接続して、次のように設定します。
@@ -143,7 +143,7 @@ ht-degree: 64%
 
 は次のバンドルに変換されます。
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/xml-converted-to-bundle.png)
+![XML はバンドルに変換されました ](/help/workfront-fusion/references/apps-and-modules/assets/xml-converted-to-bundle.png)
 
 ## XML を作成
 
@@ -198,7 +198,7 @@ ht-degree: 64%
 >
 1. 「**[!UICONTROL Generator]**」ボタンをクリックし、XML サンプルを「[!UICONTROL Sample data]」フィールドに貼り付けます。
 >
-![](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
+![ サンプルデータフィールド ](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
 >
 1. 「**[!UICONTROL Save]**」をクリックします。 これで、データ構造の「仕様」フィールドに、生成された構造が含まれます。
 1. データ構造の名前をより具体的な名前に変更し、「**[!UICONTROL Save]**」をクリックします。 ルート配列属性に対応するフィールドは、JSON モジュールの設定で、マッピング可能なフィールドとして表示されます。

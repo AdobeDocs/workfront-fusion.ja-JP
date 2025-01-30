@@ -4,9 +4,9 @@ description: テキストパーサーツールを使用すると、他の [!DNL 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 4fa892b7875af2fcabaf26b375925af7a8cad2a0
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1156'
 ht-degree: 78%
 
 ---
@@ -267,21 +267,21 @@ ht-degree: 78%
 
 ただし、テキストパーサーにこの式を実装しても、一致しません。
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-you-dont-get-a-match-350x365.png)
+![ 一致なし ](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-you-dont-get-a-match-350x365.png)
 
 この理由は、「i」が一致あたりの一致数のみを示すので、この場合は 2 回一致があるので、「i」の後に数値「1」と「2」が続きます。このユースケースの場合、2 番目に一致した値のみをフィルターで照合または渡す必要がある場合は、数値で表される値を指定できます。
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
+![ 次に一致 ](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
 
 解析する部分に括弧を追加する必要のある一致値を取得するには（例えば、「filename.docx」から「docx」のみを抽出する）、このケースシナリオで使用する正規表現式に従って、括弧を \ に適用する必要があります。(.+)
 
 これにより、DOCX が取り込まれ、グループに配置され、「.」が残ります。それ以外
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-get-matches-350x592.png)
+![ 一致を取得 ](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-get-matches-350x592.png)
 
 次の図に示す出力では、キャプチャするグループは任意の文字（行末文字を除く）に一致します。
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-output-350x389.png)
+![ 出力 ](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-output-350x389.png)
 
 正規表現も組み込んだもう 1 つの回避策は、replace 関数を使用することです
 

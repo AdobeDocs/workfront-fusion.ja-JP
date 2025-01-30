@@ -4,7 +4,7 @@ description: SOAP モジュールを使用して、Adobe Workfront Fusion で SO
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: bf9af473f08463c00578a1a8b07c800239225f09
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 54%
@@ -119,7 +119,7 @@ ht-degree: 54%
     </tbody> 
    </table>
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/workaround-350x443.png)-->
+   <!--![Workaround](/help/workfront-fusion/references/apps-and-modules/assets/workaround-350x443.png)-->
 
 1. 新しい Web ブラウザーウィンドウまたはタブを開きます。
 1. WSDL URL を Web ブラウザーのアドレスバーに貼り付け、XML ファイルを取得します。
@@ -129,7 +129,7 @@ ht-degree: 54%
 1. WSDL ファイルが Web ブラウザーに直接表示されない場合は、ダウンロードしたファイルをテキストエディターで開きます。
 1. 次の `<service>` または `<wsdl:service>` タグを探します。
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
+   <!--![Service](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
 
 1. 見つかったら、`location` 属性から URL をコピーします。
 1. [!DNL Workfront Fusion] で、URL を HTTP モジュールの「URL」フィールドに貼り付けます。
@@ -141,7 +141,7 @@ ht-degree: 54%
 1. [!UICONTROL Workfront Fusion] で、コピーしたコンテンツをモジュールの URL フィールドに貼り付けます。
 1. 疑問符を実際の値に置き換えることで、選択したパラメーターの値を指定します。
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
+   <!--![Request](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
 
 1. 「**[!UICONTROL OK]**」をクリックしてモジュールの設定を閉じます。
 1. シナリオまたはモジュールを実行します。

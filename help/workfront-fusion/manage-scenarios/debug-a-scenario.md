@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion 開発ツールを使用すると、シナ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1324'
 ht-degree: 74%
 
 ---
@@ -103,7 +103,7 @@ Workfront Fusion 開発ツールは、3 つの主なセクションに分かれ�
 
 ライブストリームは、シナリオで「1 回実行」をクリックすると、バックグラウンドで発生していることを表示します。
 
-1. **[!UICONTROL Live Stream]** アイコンの ![](assets/live-stream-icon.png) をクリックして、「ライブストリーム」セクションを開きます。
+1. **[!UICONTROL Live Stream]** アイコン ![ ライブストリームアイコン ](assets/live-stream-icon.png) をクリックして、「ライブストリーム」セクションを開きます。
 1. 次のいずれかの操作を行います。
 
    <table style="table-layout:auto"> 
@@ -153,7 +153,7 @@ Workfront Fusion 開発ツールは、3 つの主なセクションに分かれ�
 
 シナリオデバッガーは、より複雑なシナリオで役に立ちます。シナリオ実行の履歴が表示され、名前または ID でモジュールを検索できます。
 
-1. **[!UICONTROL Scenario Debugger]** アイコン ![](assets/scenario-debugger-icon.png) をクリックして、シナリオデバッガーを開きます。
+1. **[!UICONTROL Scenario Debugger]** アイコン ![ デバッガーアイコン ](assets/scenario-debugger-icon.png) をクリックして、シナリオデバッガーを開きます。
 1. （オプション）検索フィールドに検索語句（名前またはモジュール ID）を入力します。
 1. モジュール名をクリックします。
 1. 操作をクリックすると、リクエストの詳細が表示されます。
@@ -162,7 +162,7 @@ Workfront Fusion 開発ツールは、3 つの主なセクションに分かれ�
 
 [!DNL Workfront Fusion] 開発ツールには、シナリオを設定しやすくするツールが備わっています。
 
-1. **[!UICONTROL Tools]** アイコンの ![](assets/console-tools-icon.png) をクリックして、ツールを開きます。
+1. **[!UICONTROL Tools]** アイコン ![ コンソールツールアイコン ](assets/console-tools-icon.png) をクリックして、ツールを開きます。
 1. 使用するツールを選択します。
 1. 下記のフィールドを設定します。
 1. **[!UICONTROL Run]** をクリックします。

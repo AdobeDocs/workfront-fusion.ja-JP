@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion JSON アプリは、Adobe Workfront Fusion �
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-source-git-commit: c895d496de66b475f907effaaf43fe2f7b7b457e
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1129'
 ht-degree: 62%
 
 ---
@@ -91,7 +91,7 @@ ht-degree: 62%
 ```
 
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
+![JSON コレクション ](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
 
 >[!ENDSHADEBOX]
 
@@ -115,7 +115,7 @@ JSON 文字列フィールドに配列 `[ ... ]` が含まれている場合、�
 ]
 ```
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/json-array.png)
+![JSON 配列 ](/help/workfront-fusion/references/apps-and-modules/assets/json-array.png)
 
 >[!ENDSHADEBOX]
 
@@ -303,6 +303,6 @@ JSON コンテンツが [!UICONTROL Parse JSON] モジュールに正しくマ�
 
 **例：**
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
+![JSON の引用符 ](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
 
 >[!ENDSHADEBOX]

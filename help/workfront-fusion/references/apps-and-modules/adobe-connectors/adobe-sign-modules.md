@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Acrobat Sign]  モジュールを使用すると、 [
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '5488'
+source-wordcount: '5501'
 ht-degree: 77%
 
 ---
@@ -82,7 +82,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
 
 [!DNL Adobe Sign] の契約では、フィールドを処理する必要があります。これを行うオプションはいくつかありますが、最も簡単で一般的な方法は、一時的なドキュメントをアップロードし、そのドキュメントを契約書にマッピングすることです。
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/adobe-sign-recommendations-350x168.png)
+![Adobe Signの推奨事項 ](/help/workfront-fusion/references/apps-and-modules/assets/adobe-sign-recommendations-350x168.png)
 
 ## [!DNL Adobe Acrobat Sign] モジュールとそのフィールド
 
@@ -941,11 +941,11 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
 
 **例：**&#x200B;このワークフローでは、署名するドキュメント（以前 Workfront からダウンロードしたもの）は、一時的なドキュメントとしてアップロードされます。
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-1-350x308.png)
+（/help/workfront-fusion/references/apps-and-modules/assets/sign-example-1-350x308.png）
 
 [!UICONTROL Upload document] モジュールは、後のモジュールで参照できる [!DNL Adobe Acrobat Sign] ID をドキュメントに与えます。 契約書を作成する際に、アップロードされたドキュメントの ID が「[!UICONTROL Files to send]」フィールドに含まれます。
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-2-350x356.png)
+![Sign の例 ](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-2-350x356.png)
 
 +++
 

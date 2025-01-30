@@ -4,9 +4,9 @@ description: 配列または個々の配列要素をAdobe Workfront Fusion の�
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '875'
 ht-degree: 22%
 
 ---
@@ -106,7 +106,7 @@ Workfront Fusion の一部のフィールドでは、要素を配列にマッピ
 
 配列要素は、配列名の後に角括弧で囲まれた数字として表示されます。 このインデックス番号を使用して、配列の個々の要素をフィールドにマッピングできます。
 
-![](assets/map-array-1st-element.png)
+![ 最初の要素をマッピング ](assets/map-array-1st-element.png)
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Workfront Fusion の一部のフィールドでは、要素を配列にマッピ
 
 1. 配列の別の要素をマッピングするには、[1 をクリックし ] マッピングする配列要素のインデックス番号を入力します。
 
-   ![](assets/access-another-element.png)
+   ![ 別の要素へのアクセス ](assets/access-another-element.png)
 
 ### 指定されたキーで配列の要素をマッピングする
 
@@ -138,13 +138,13 @@ Workfront Fusion の一部のフィールドでは、要素を配列にマッピ
 
 次の例は、[!DNL Jira] アプリの出力を示しています。
 
-![](assets/output-of-jira-app-350x100.png)
+![Jira モジュールの出力 ](assets/output-of-jira-app-350x100.png)
 
 この例では、ID が 10108 の特定の添付ファイルについて、添付ファイルの配列からファイル名を取得します。
 
 この例では、次の出力が生成されます。
 
-![](assets/output-from-jira-350x261.png)
+![Jira モジュールの出力 ](assets/output-from-jira-350x261.png)
 
 この式は次のように説明できます。
 
@@ -153,7 +153,7 @@ Workfront Fusion の一部のフィールドでは、要素を配列にマッピ
    1. `map()` の最初のパラメーター関数は配列の項目全体です。
    1. 2 つ目のパラメーターは、値の項目の未加工の名前です。生の名前を取得するには、[!UICONTROL mapping] のパネルの項目の上にマウスポインターを置きます。
 
-      ![](assets/obtain-raw-name-350x124.png)
+      ![ 生の名前を取得 ](assets/obtain-raw-name-350x124.png)
 
       >[!NOTE]
       >
@@ -161,7 +161,7 @@ Workfront Fusion の一部のフィールドでは、要素を配列にマッピ
 
    1. 3 番目のパラメーターは、キー項目の生の名前です。
 
-      ![](assets/3rd-parameter-350x166.png)
+      ![3 番目のパラメーター ](assets/3rd-parameter-350x166.png)
 
    1. 4 番目のパラメーターは指定されたキー値です。
 
@@ -175,7 +175,7 @@ Workfront Fusion の一部のフィールドでは、要素を配列にマッピ
 
 この例では、次の出力が生成されます。
 
-![](assets/output-from-jira-350x261.png)
+![Jira モジュールからの出力 ](assets/output-from-jira-350x261.png)
 
 >[!ENDSHADEBOX]
 
@@ -187,4 +187,4 @@ Workfront Fusion の一部のフィールドでは、要素を配列にマッピ
 
 配列は、[!UICONTROL Iterator] モジュールを使用して一連のバンドルに変換できます。 詳しくは、[[!UICONTROL Iterator] モジュール ](/help/workfront-fusion/references/modules/iterator-module.md) を参照してください。
 
-![](assets/series-of-bundles.png)
+![ 一連のバンドル ](assets/series-of-bundles.png)

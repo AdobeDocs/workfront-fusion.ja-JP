@@ -4,10 +4,10 @@ description: '[!UICONTROL Incomplete executions] フォルダーには、エラ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 34%
+source-wordcount: '821'
+ht-degree: 28%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 34%
 
    または
 
-   シナリオエディターでシナリオを操作している場合は、ウィンドウの左上隅付近にある左向き矢印 ![](assets/exit-editing-arrow.png) をクリックします。
+   シナリオエディターでシナリオに取り組んでいる場合は、ウィンドウの左上隅にある左矢印 ![ 編集を終了 ](assets/exit-editing-arrow.png) をクリックします。
 
 1. シナリオ名の近くにある **履歴** をクリックします。
    ![ 「履歴」タブ ](assets/history-tab.png)
@@ -115,7 +115,7 @@ ht-degree: 34%
 
    または
 
-   シナリオエディターでシナリオを操作している場合は、ウィンドウの左上隅付近にある左向き矢印 ![](assets/exit-editing-arrow.png) をクリックします。
+   シナリオエディターでシナリオに取り組んでいる場合は、ウィンドウの左上隅にある左矢印 ![ 編集を終了 ](assets/exit-editing-arrow.png) をクリックします。
 
 1. 右側のパネルの「**[!UICONTROL History]**」タブをクリックします。
 1. （任意）選択したシナリオ実行の詳細を確認するには、右側のパネルで「実行」をクリックします。
@@ -133,7 +133,7 @@ ht-degree: 34%
 実行履歴をフィルターして、指定した値を持つ実行のみを表示できます。
 
 1. この記事の [[[!UICONTROL History]] タブのシナリオ実行履歴の表示 ](#view-scenario-history-on-the-history-tab) の説明に従って、シナリオの全ページ履歴を開きます。
-1. フィルターの基準にする列のヘッダーに ![](assets/fusion-scenario-filter-icon.png) る「[!UICONTROL filter]」アイコンをクリックします。
+1. フィルタリングの基準にする列のヘッダーにある [!UICONTROL filter] のアイコン ![ シナリオフィルターアイコン ](assets/fusion-scenario-filter-icon.png) をクリックします。
 1. [!UICONTROL filter] ダイアログで、フィルターに使用する値を入力します。
 1. **[!UICONTROL Save]** をクリックします。
 

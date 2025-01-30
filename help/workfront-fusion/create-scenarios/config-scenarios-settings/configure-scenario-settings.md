@@ -5,10 +5,10 @@ description: シナリオ設定パネルで、シナリオに固有の設定を�
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 3afa631a44c6dae8b1e6def6f842a9ced9de741e
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1188'
-ht-degree: 44%
+source-wordcount: '1198'
+ht-degree: 43%
 
 ---
 
@@ -75,7 +75,7 @@ ht-degree: 44%
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
 1. ページの左下隅付近にある歯車アイコンをクリックします。
 
-   ![](assets/scenario-settings-350x221.png)
+   ![ シナリオ設定 ](assets/scenario-settings-350x221.png)
 
    表示される [!UICONTROL Scenario settings] パネルで、シナリオの様々な詳細設定を指定できます。
 1. 必要に応じて、シナリオ設定を有効または無効にします。 以下の [ シナリオ設定オプション ](#scenario-settings-options) を参照してください。
@@ -162,13 +162,13 @@ ht-degree: 44%
 
 **例：** [!DNL Workfront] > [!UICONTROL Watch record] は発生する新しいイシューを監視し、[!DNL Workfront] >[!UICONTROL Convert object] は新しい要求をプロジェクトに変換して、適切なテンプレートを割り当てます。
 
-![](assets/scenario-settings-ex-1-350x157.png)
+![ シナリオ設定 ](assets/scenario-settings-ex-1-350x157.png)
 
 [!UICONTROL more cycles] 設定は、シナリオの実行をスケジュールする場合にのみ適用されます。 「[!UICONTROL Run once]」ボタンを使用すると、サイクル設定が考慮されます。
 
 #### サイクルの最大数は 1 に設定されています（デフォルト）
 
-![](assets/max-number-cycles-1-350x201.png)
+![ 最大サイクル数 ](assets/max-number-cycles-1-350x201.png)
 
 Workfront/ レコードを監視モジュールの最大サイクル数は `10` に設定されています。
 [!DNL Workfront] に 100 件のリクエストが送信され、「最大サイクル数」フィールドが 10 に設定されている場合、1 つのシナリオの実行後、90 個のファイルが未処理のままになります。 次の 10 個のファイルは、スケジュールされた次のシナリオの実行で処理されます。
@@ -183,7 +183,7 @@ Dropbox フォルダに 100 個のファイルが追加され、[ 最大サイ�
 
 シナリオの詳細には、既に実行されたサイクルが表示されます。
 
-![](assets/scenario-detail-350x207.png)
+![ シナリオの詳細 ](assets/scenario-detail-350x207.png)
 
 このページについて詳しくは、[ シナリオの詳細 ](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md) を参照してください。
 

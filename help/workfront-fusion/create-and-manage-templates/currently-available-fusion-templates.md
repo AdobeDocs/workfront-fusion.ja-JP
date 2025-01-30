@@ -4,10 +4,10 @@ description: 現在、Adobe Workfront Fusion では、次のパブリックテ�
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: ba205314949f2b061ba483efa8b972367928f8fe
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1277'
-ht-degree: 88%
+source-wordcount: '1279'
+ht-degree: 87%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 88%
 
 チームまたは組織が他のチーム作成テンプレートを使用できる場合があります。
 
-使用可能なテンプレートを表示するには、Fusion のサイドナビゲーションメニューにある&#x200B;**テンプレート**&#x200B;アイコン ![](assets/templates-icon.png) をクリックします。
+使用可能なテンプレートを表示するには、Fusion のサイドナビゲーションメニューにある **テンプレート** アイコン ![ テンプレートアイコン ](assets/templates-icon.png) をクリックします。
 
 ## Workfront テンプレート
 

@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion マッピングパネルでは、以下の�
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 2c732659f3f3e81e13b7b12a5df5bde19c0e0928
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1773'
-ht-degree: 91%
+source-wordcount: '1800'
+ht-degree: 90%
 
 ---
 
@@ -333,7 +333,7 @@ ht-degree: 91%
 
 **例：**&#x200B;シナリオと web タイムゾーンは、これらの例ではどちらも `Europe/Prague` に設定されています。
 
-![](assets/date&time-functions-examples-350x61.png)
+![ 日時関数の例 ](assets/date&time-functions-examples-350x61.png)
 
 * `formatDate(1. Date created;MM/DD/YYYY)`
 
@@ -463,7 +463,7 @@ Date1 から Date2 が減算されます。
 
 月の n 番目の曜日（例：最初の火曜日、3 番目の金曜日など）に対応する日付を計算する必要がある場合、次の数式を使用できます。
 
-![](assets/date&time-functions-calc-nth-day-350x31.png)
+![n 日目を計算 ](assets/date&time-functions-calc-nth-day-350x31.png)
 
 ```
 {{addDays(setDate(1.date; 1); 1.n * 7 - formatDate(addDays(setDate(1.date; 1); "-" + 1.dow); "E"))}}
@@ -510,7 +510,7 @@ Date1 から Date2 が減算されます。
 * `1.dow` = `3`
 * `1.date` = `now`
 
-![](assets/nth-day-variable-value-350x33.png)
+![N 日目の変数値 ](assets/nth-day-variable-value-350x33.png)
 
 #### 説明：
 
@@ -521,7 +521,7 @@ Date1 から Date2 が減算されます。
 
 例えば、次の式を使用できます。
 
-![](assets/calculate-days-between-dates-350x68.png)
+![ 日付間の日数の計算 ](assets/calculate-days-between-dates-350x68.png)
 
 ```
 {{round((2.value - 1.value) / 1000 / 60 / 60 / 24)}}
@@ -541,7 +541,7 @@ Date1 から Date2 が減算されます。
 
 次の数式は、前月の最終日の計算方法の 1 つを示しています。
 
-![](assets/last-day-prev-month.png)
+![ 先月の最終日 ](assets/last-day-prev-month.png)
 
 ```
 {{addDays(setDate(now; 1); -1)}}
@@ -553,7 +553,7 @@ Date1 から Date2 が減算されます。
 
 この数式は、前月の直近ミリ秒を計算する方法の 1 つを示します。
 
-![](assets/last-millisecond-prev-month-350x45.png)
+![ 先月の最後のミリ秒 ](assets/last-millisecond-prev-month-350x45.png)
 
 ```
 {{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD"; "UTC") - 1; "x")}}
@@ -561,7 +561,7 @@ Date1 から Date2 が減算されます。
 
 タイムゾーン設定を使用するのに結果が必要な場合は、UTC 引数を省略します。
 
-![](assets/omit-utc-argument-350x45.png)
+![UTC を省略 ](assets/omit-utc-argument-350x45.png)
 
 `{{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD") - 1; "x")}}`
 

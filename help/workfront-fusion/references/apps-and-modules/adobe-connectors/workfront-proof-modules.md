@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Wor
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: 27c1d38d4c9e4b47d2d9da094b005a0e72ce9bd0
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '2664'
-ht-degree: 80%
+source-wordcount: '2668'
+ht-degree: 79%
 
 ---
 
@@ -439,7 +439,7 @@ Workfront Proof コネクタでは、以下を使用します。
 >
 >**例：**
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/wfp-api-module-example-350x586.png)
+>![Proof API モジュールの例 ](/help/workfront-fusion/references/apps-and-modules/assets/wfp-api-module-example-350x586.png)
 
 #### [!UICONTROL Download Proof]
 

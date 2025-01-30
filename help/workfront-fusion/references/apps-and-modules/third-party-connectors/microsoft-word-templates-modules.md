@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion のシナリオでは、Microsoft Word テ�
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-source-git-commit: 9e560995ff9f58a76bbecc521f7d2eef9d47fa48
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1245'
 ht-degree: 78%
 
 ---
@@ -84,11 +84,11 @@ ht-degree: 78%
 
 例えば、次の [!DNL Microsoft Word] テンプレートを使用できます。
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-before-filled-350x62.png)
+![ 前の Word テンプレート ](/help/workfront-fusion/references/apps-and-modules/assets/word-template-before-filled-350x62.png)
 
 このドキュメントを作成するには：
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-exampled-filled-350x85.png)
+![Word テンプレートが入力されました ](/help/workfront-fusion/references/apps-and-modules/assets/word-template-exampled-filled-350x85.png)
 
 ## 値タグについて
 
@@ -110,7 +110,7 @@ ht-degree: 78%
 
 それには、次のようにモジュールを設定します。
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-simple-value-350x286.png)
+![Word テンプレートのシンプルな値 ](/help/workfront-fusion/references/apps-and-modules/assets/word-template-simple-value-350x286.png)
 
 ### 条件タグ {#condition-tag}
 
@@ -125,7 +125,7 @@ ht-degree: 78%
 
 それには、次のようにモジュールを設定します。
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-conditional-350x501.png)
+![Word テンプレートの条件付き書式 ](/help/workfront-fusion/references/apps-and-modules/assets/word-template-conditional-350x501.png)
 
 このドキュメントでは、電話番号は次のように表示されます。
 
@@ -148,7 +148,7 @@ ht-degree: 78%
 それには、次のようにモジュールを設定します。
 
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-fill-out-a-document-350x732.png)
+![ドキュメントに入力](/help/workfront-fusion/references/apps-and-modules/assets/word-template-fill-out-a-document-350x732.png)
 
 このモジュールは、次のドキュメントを作成します。
 

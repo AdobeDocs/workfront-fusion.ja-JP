@@ -4,9 +4,9 @@ description: フィルタリングとネストを含めることで、エラー�
 author: Becky
 feature: Workfront Fusion
 exl-id: 745bfdc4-1327-4a28-a863-c217f15a7fc5
-source-git-commit: 0668441df8405610488e3e33658635e4cc7db270
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '902'
 ht-degree: 11%
 
 ---
@@ -89,11 +89,11 @@ Fusion が様々なデータタイプを評価して処理する方法につい�
 
 Dropbox/フォルダーモジュールを作成を使用したときに、同じ名前のフォルダーが既に存在する場合、モジュールは次の DataError をスローします。
 
-![](assets/dropbox.png)
+![Dropboxのエラー ](assets/dropbox.png)
 
 完全なシナリオは次のように機能します。
 
-![](assets/dropbox-scenario.png)
+![Dropboxシナリオ ](assets/dropbox-scenario.png)
 
 1. ツール/変数を設定モジュールにフォルダー名が含まれています。
 1. 「HTTP/ファイルを取得」モジュールは、フォルダーにアップロードする必要があるファイルを取得します
@@ -111,19 +111,19 @@ DataError ルートの詳細を以下に示します。
 
 ファイルのアップロードなど、後続のモジュールで既存のフォルダーを使用するには、モジュールにエラーハンドラールートを追加し、次に示す再開ディレクティブモジュールにマッピングするフォルダーパスを取得する必要があります。
 
-![](assets/add-error-handler-route.png)
+![ エラーハンドラールートの追加 ](assets/add-error-handler-route.png)
 
 最初のルートのフィルターは、同じ名前のフォルダーが既に存在する場合に表示される特定のエラー（DataError）のみを処理するように設定されています。
 
-![](assets/condition.png)
+![状況](assets/condition.png)
 
 Dropbox/フォルダーモジュール内のすべてのファイルをリストは、ターゲットフォルダー内のすべてのフォルダーを返すように設定されます。 次のフィルターは、最初に作成しようとしたフィルターのみを通過します。 （フォルダー名は 33 に保存されます。 フォルダー名項目。）
 
-![](assets/condition2.png)
+![状況](assets/condition2.png)
 
 次に、再開ディレクティブは、失敗したモジュールの出力としてフォルダーパスを提供します。 フォルダー ID は、「ファイルをアップロード」モジュールでは必要ないので、空白のままです。
 
-![](assets/flow-control.png)
+![ フロー制御 ](assets/flow-control.png)
 
 >[!ENDSHADEBOX]
 
@@ -137,7 +137,7 @@ Dropbox/フォルダーモジュール内のすべてのファイルをリスト
 
 フィルターを含むネストされたエラーハンドラールート：
 
-![](assets/nested-error-handling-route.png)
+![ ネストされたエラー処理ルート ](assets/nested-error-handling-route.png)
 
 このシナリオでは、2 つ目のエラーハンドラールートが 1 つ目のエラーハンドラールートの下にネストされています。
 

@@ -4,10 +4,10 @@ description: '[!UICONTROL Incomplete executions] フォルダーには、エラ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 57%
+source-wordcount: '602'
+ht-degree: 56%
 
 ---
 
@@ -79,7 +79,7 @@ ht-degree: 57%
 
 <!--
 
-![](assets/incomplete-executions-tab-350x102.png)
+![Incomplete executions tab](assets/incomplete-executions-tab-350x102.png)
 
 -->
 
@@ -113,7 +113,7 @@ ht-degree: 57%
 1. モジュールのログを開くと、モジュールのすべての操作が表示されます。
 1. 失敗した操作を見つけて、「**[!UICONTROL Resolve]**」をクリックします。
 
-   ![](assets/resolve-btn-350x188.png)
+   ![ 解決ボタン ](assets/resolve-btn-350x188.png)
 
 ## 未完了の実行に関連するオプション
 

@@ -4,10 +4,10 @@ description: この記事では、異なる状況でアクティブなシナリ�
 author: Becky
 feature: Workfront Fusion
 exl-id: ecfcab45-5492-4e20-af8d-63ec9d233046
-source-git-commit: d79f8ac6d678a874e05e606d7b9ff7c812d93db1
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 50%
+source-wordcount: '303'
+ht-degree: 49%
 
 ---
 
@@ -87,7 +87,7 @@ ht-degree: 50%
 
 ## シナリオをアクティブ化または非アクティブ化するには、次の手順に従います。
 
-1. 左側 **[!UICONTROL Scenarios]** パネルで ![](assets/scenarios-icon.png) をクリックし、シナリオをクリックして開きます。
+1. 左側 **[!UICONTROL Scenarios]** パネルで ![ シナリオアイコン ](assets/scenarios-icon.png) をクリックし、シナリオをクリックして開きます。
 1. シナリオの詳細ページの右上隅にある「オン/オフ」切り替えスイッチをクリックします。
 
    ![ 詳細アクティベーションの切り替え ](assets/active-toggle-details-page.png)
@@ -96,4 +96,4 @@ ht-degree: 50%
 
    図をクリックしてシナリオエディターに移動し、ウィンドウの左下にある「**[!UICONTROL On/Off]**」トグルをクリックします。
 
-   ![](assets/on-off-switch.jpg)
+   ![ オンオフスイッチ ](assets/on-off-switch.jpg)

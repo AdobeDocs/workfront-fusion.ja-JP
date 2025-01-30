@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion]  シナリオの場合、zip 形式
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b5ff3d5-601c-4119-ad70-3612ad5ba1ab
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '498'
 ht-degree: 76%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 76%
 >
 >**例：** 定義済みの [!DNL Dropbox] フォルダー（Archives など）から ZIP ファイルを取得し、[!UICONTROL Archive] モジュールを使用して抽出し、抽出したファイルを [!UICONTROL Email] または [!DNL Gmail] モジュールとの添付ファイルとして目的のメールアドレスに送信します。
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/example-dropbox-350x134.png)
+>![Dropboxの例 ](/help/workfront-fusion/references/apps-and-modules/assets/example-dropbox-350x134.png)
 
 ## [!UICONTROL Create an archive]
 
@@ -98,7 +98,7 @@ ht-degree: 76%
 >
 >**例：** [!DNL Gmail]/[!UICONTROL Watch emails] モジュールを使用して受信メールを監視します。 メールを受け取ると、添付ファイルは個々のバンドルに反復され、[!DNL ZIP] ファイルにアーカイブされて、定義された Dropbox フォルダーに保存されます。
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
+>![Gmail の例 ](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
 
 ## [!UICONTROL Inflate]
 

@@ -4,10 +4,10 @@ description: ' [!DNL Adobe] Workfront Fusion で新しいシナリオテンプ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 9cb9bd04-e9ae-4162-a1b9-d71566582b7a
-source-git-commit: 7acc27ab2ce80b964b7f9fbb302816aa75964ab5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 37%
+source-wordcount: '745'
+ht-degree: 36%
 
 ---
 
@@ -71,16 +71,16 @@ ht-degree: 37%
 
 ### テンプレートの作成
 
-1. 左側 **[!UICONTROL Templates]** ナビゲーションパネルで「![](assets/templates-icon.png)」をクリックします。
+1. 左側 **[!UICONTROL Templates]** ナビゲーションパネルで ![ テンプレートアイコン ](assets/templates-icon.png) をクリックします。
 1. 右上隅の「**[!UICONTROL Create a new template]**」をクリックします。
 1. （任意）左上隅のデフォルト **[!UICONTROL New template name]** を置き換えて、テンプレートの名前を変更します。
-1. （オプション）テンプレートの言語を変更するには、「言語」 **[!UICONTROL Set up a template]** クリックし、「![](assets/scenario-settings-icon.png)」ドロップダウンから言語を選択します。
+1. （オプション）テンプレートの言語を変更するには、![ シナリオ設定アイコン ](assets/scenario-settings-icon.png) をクリックし **[!UICONTROL Set up a template]**、「言語」ドロップダウンから言語を選択します。
 
    >[!IMPORTANT]
    >
    >言語の選択は、システム設定で使用できる言語に対応し、パブリックテンプレートの名前と説明にのみ関係します。テンプレートを保存した後は、テンプレート言語を変更することはできません。
 
-1. （オプション）テンプレートの説明を入力するには、「![](assets/scenario-settings-icon.png)」 **[!UICONTROL Set up a template]** クリックして説明を入力します。
+1. （オプション）テンプレートの説明を入力するには、![ シナリオ設定アイコン **[!UICONTROL Set up a template]** クリックし ](assets/scenario-settings-icon.png) 説明を入力します。
 1. シナリオにモジュールを追加するのと同じプロセスを使用して、アプリ、モジュール、ツールを追加します。
 
    手順については、「[ モジュールの追加 ](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md) の記事を参照してください。
@@ -94,7 +94,7 @@ ht-degree: 37%
    >接続、資格情報またはプライバシーの影響を受けるその他の情報を追加する必要があるモジュールがテンプレートに含まれている場合、この情報はテンプレートユーザーと共有されません。
 
 1. （任意）「**[!UICONTROL Run once]**」をクリックしてテンプレートをテストします。
-1. **[!UICONTROL Save]** アイコン ![](assets/save-icon.png) をクリックして、テンプレートを保存します。
+1. **[!UICONTROL Save]** アイコン ![ 保存アイコン ](assets/save-icon.png) をクリックして、テンプレートを保存します。
 
 テンプレートを保存すると、チームメンバーに表示されます。 チーム外でテンプレートにアクセスできるようにする場合は、リクエストを送信して承認および公開する必要があります。 リクエストはAdobe Workfront Fusion チームに送信され、承認が求められます。 承認されたテンプレートには、チーム外の他のユーザーがアクセスできます。
 
@@ -113,13 +113,13 @@ ht-degree: 37%
 
    シナリオが新規テンプレートページにコピーされます。
 1. （任意）左上隅のデフォルト **[!UICONTROL New template name]** を置き換えて、テンプレートの名前を変更します。
-1. （オプション）テンプレートの言語を変更するには、「言語」 **[!UICONTROL Set up a template]** クリックし、「![](assets/scenario-settings-icon.png)」ドロップダウンから言語を選択します。
+1. （オプション）テンプレートの言語を変更するには、![ シナリオ設定アイコン ](assets/scenario-settings-icon.png) をクリックし **[!UICONTROL Set up a template]**、「言語」ドロップダウンから言語を選択します。
 
    >[!IMPORTANT]
    >
    >言語の選択は、システム設定で使用できる言語に対応し、パブリックテンプレートの名前と説明にのみ関係します。テンプレートを保存した後は、テンプレート言語を変更することはできません。
 
-1. （オプション）テンプレートの説明を入力するには、「![](assets/scenario-settings-icon.png)」 **[!UICONTROL Set up a template]** クリックして説明を入力します。
+1. （オプション）テンプレートの説明を入力するには、![ シナリオ設定アイコン **[!UICONTROL Set up a template]** クリックし ](assets/scenario-settings-icon.png) 説明を入力します。
 1. シナリオにモジュールを追加するのと同じプロセスを使用して、必要に応じてアプリ、モジュール、ツールを編集します。
 
    手順については、「[ モジュールの追加 ](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md) の記事を参照してください。
@@ -131,7 +131,7 @@ ht-degree: 37%
    >接続、資格情報またはプライバシーの影響を受けるその他の情報を追加する必要があるモジュールがテンプレートに含まれている場合、この情報はテンプレートユーザーと共有されません。
 
 1. （任意）「**[!UICONTROL Run once]**」をクリックしてテンプレートをテストします。
-1. **[!UICONTROL Save]** アイコンをクリックし ![](assets/save-icon.png) す。
+1. **[!UICONTROL Save]** アイコン ![ 保存アイコン ](assets/save-icon.png) をクリックします。
 
 ## [!UICONTROL Wizard] 機能の設定 {#set-up-wizard-functionality}
 

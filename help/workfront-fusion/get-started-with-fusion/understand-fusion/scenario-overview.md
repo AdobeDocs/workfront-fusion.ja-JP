@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion を使用するには、Adobe Workfront ラ�
 author: Becky
 feature: Workfront Fusion
 exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '693'
 ht-degree: 27%
 
 ---
@@ -74,7 +74,7 @@ Workfront Fusion を使用すると、Workfront内のシンプルなワークフ
 
 この例では、指定したフィールドが [!DNL Workfront] のタスクまたはイシューで変更されるとシナリオがトリガーされます。トリガーされると、シナリオは関連プロジェクトの情報を取得し、プロジェクトの特定の役割に割り当てられたユーザーに合わせて更新を作成します。
 
-![](assets/fusion-template-example.png)
+![ テンプレートの例 ](assets/fusion-template-example.png)
 
 +++
 
@@ -90,7 +90,7 @@ Workfront Fusion は、他のアプリケーションや web サービスに接�
 
 この例では、ユーザーが [!DNL Excel] スプレッドシートに追加されるとシナリオがトリガーされます。シナリオでは、ユーザーが [!DNL Workfront] に存在するかどうかが確認されます。存在しない場合は [!DNL Workfront] でユーザーが作成され、その Workfront ユーザー ID がスプレッドシートに追加されます。
 
-![](assets/fusion-integration-example.png)
+![ 統合の例 ](assets/fusion-integration-example.png)
 
 専用コネクタのリストについては、[Fusion アプリケーションとそのモジュールのリファレンス：記事のインデックス ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md) を参照してください。
 

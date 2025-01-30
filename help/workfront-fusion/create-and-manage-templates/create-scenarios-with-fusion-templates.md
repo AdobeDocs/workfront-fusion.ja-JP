@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion テンプレート機能を使用すると�
 author: Becky
 feature: Workfront Fusion
 exl-id: 560c20b7-155c-40db-9018-5a51b40d6fb0
-source-git-commit: 7acc27ab2ce80b964b7f9fbb302816aa75964ab5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 39%
+source-wordcount: '338'
+ht-degree: 38%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 39%
 
 ## テンプレートからシナリオを作成
 
-1. 左側のナビゲーションパネルにある「**[!UICONTROL Templates]**」アイコン ![](assets/templates-icon.png) をクリックします。
+1. 左側のナビゲーションパネルで「**[!UICONTROL Templates]** ーザー」アイコン ![ テンプレートアイコン ](assets/templates-icon.png) をクリックします。
 1. 使用するテンプレートを含むタブ（公開テンプレートまたはチームテンプレート）をクリックします。
 1. 使用するテンプレートをクリックして、シナリオの作成を開始します。右上隅の検索ボックスを使用して、名前またはテンプレートに含まれるアプリの名前でテンプレートを見つけることができます。
 1. （条件付き）複数の組織またはチームのメンバーである場合、シナリオを作成する組織またはチームを選択し、「**[!UICONTROL Continue]**」をクリックします。
@@ -78,4 +78,4 @@ ht-degree: 39%
 
    シナリオの作成について詳しくは、[ シナリオ作成用ワークフロー ](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md) を参照してください。
 
-1. **[!UICONTROL Save]** アイコンの ![](assets/save-icon.png) をクリックして、シナリオを保存します。 シナリオは、Workfront Fusion のシナリオ領域に保存されます。
+1. **[!UICONTROL Save]** アイコン ![ 保存アイコン ](assets/save-icon.png) をクリックして、シナリオを保存します。 シナリオは、Workfront Fusion のシナリオ領域に保存されます。

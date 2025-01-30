@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion HTTP／リクエストモジュールの作�
 author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
-source-git-commit: 4377870d9441a3e84c51a547f17f154a78fb8f59
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 71%
+source-wordcount: '882'
+ht-degree: 70%
 
 ---
 
@@ -169,7 +169,7 @@ ht-degree: 71%
 >
 >**例：** この例では、JSON ペイロードを含んだ [!UICONTROL POST] リクエストを送信するようにモジュールを設定する方法を示します。
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
+>![ リクエストの例の作成 ](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
 
 >[!NOTE]
 >

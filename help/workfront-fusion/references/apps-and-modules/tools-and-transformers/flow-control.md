@@ -4,9 +4,9 @@ description: シナリオを作成または編集する際、シナリオ内で�
 author: Becky
 feature: Workfront Fusion
 exl-id: b3aed366-c399-44fa-8967-54ecb8647d96
-source-git-commit: ce2f13866fef97b5687991dfcf5d9579a5e539e4
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '585'
 ht-degree: 50%
 
 ---
@@ -62,13 +62,13 @@ ht-degree: 50%
 
 [!UICONTROL Repeater] モジュールを使用するには：
 
-1. 画面の下部に ![](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) る [!UICONTROL Flow Control] アイコンをクリックし、表示されるメニューで「**[!UICONTROL Repeater]**」をクリックします。
+1. 画面下部の [!UICONTROL Flow Control] アイコン ![ フロー制御アイコン ](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) をクリックし、表示されるメニューで「**[!UICONTROL Repeater]**」をクリックします。
 1. [!UICONTROL Repeater] バンドルをクリックしてから、表示されるボックスで **[!UICONTROL Connect automatically]** をクリックします。
 1. 表示される [!UICONTROL Flow Control] ボックスに、繰り返し（出力されたバンドル）の数を **[!UICONTROL Repeats]** ボックスに入力します。
 
    ここでのメールの例では、「5」と入力します。
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
+   ![ リピーター ](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
 
    項目の値は、**[!UICONTROL Step]** フィールドで指定されたこの値だけ繰り返し増加します。この値は、**[!UICONTROL Show advanced settings]** を選択すると表示できます。 この数値は、デフォルトでは 1 です。
 
@@ -79,7 +79,7 @@ ht-degree: 50%
 
    このメールの例では、[!UICONTROL Subject] ールボックスに「Hello」と入力し、リピーターのモジュールから `i` をマッピングします。
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
+   ![ リピーター ](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
 
 | 項目 | 説明 |
 |---|---|

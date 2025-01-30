@@ -4,9 +4,9 @@ description: 一部のサービスでは、Adobe Workfront Fusion などの統�
 author: Becky
 feature: Workfront Fusion
 exl-id: 4a8ac816-52de-41e8-96d7-1c8cde2ebe32
-source-git-commit: 362952ec85b0df2306ba117ba530e95201330cca
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '958'
 ht-degree: 42%
 
 ---
@@ -185,7 +185,7 @@ JSON モジュールについて詳しくは、[JSON モジュール](/help/work
 
 1. JSON を作成する元となる値を入力またはマッピングします。
 
-   ![](/help/workfront-fusion/create-scenarios/connect-to-apps/assets/json-values-350x288.png)
+   ![JSON 値 ](/help/workfront-fusion/create-scenarios/connect-to-apps/assets/json-values-350x288.png)
 
 1. JSON/JSON を作成モジュールを HTTP/ リクエストを行うモジュールに接続します。
 1. JSON を作成モジュールの JSON 文字列を「HTTP / リクエストを行う」モジュールの「リクエストコンテンツ」フィールドにマッピングします。

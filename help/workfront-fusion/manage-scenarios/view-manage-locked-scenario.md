@@ -7,9 +7,9 @@ description: ' [!DNL Adobe Workfront Fusion] でのロックされたシナリ�
 author: Becky
 feature: Workfront Fusion
 exl-id: b5e92bdc-cc1d-4b22-8c5f-42cc279d5590
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '324'
 ht-degree: 65%
 
 ---
@@ -92,4 +92,4 @@ ht-degree: 65%
 1. 画面の右上隅にある「**[!UICONTROL Options]**」をクリックします。
 1. 「**[!UICONTROL Unlock execution]**」を選択します。
 1. **[!UICONTROL Unlock]** をクリックします。
-   ![](assets/unlock-scenario.png)
+   ![ シナリオのロックを解除 ](assets/unlock-scenario.png)

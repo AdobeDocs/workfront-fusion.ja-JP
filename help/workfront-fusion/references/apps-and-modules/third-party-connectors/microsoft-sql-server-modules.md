@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  を使用して Microsoft SQL Serv
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f3293f7-8b45-4e42-8ad8-f9d4969b63fd
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 67%
+source-wordcount: '470'
+ht-degree: 66%
 
 ---
 
@@ -92,6 +92,6 @@ SQL モジュールが実行されると、トランザクションが開始さ�
 
 自動コミットをオンにします。自動コミットは、モジュールの実行が完了した直後にすべてのトランザクションを完了（コミット）します。
 
-1. 画面の下部にある「[!UICONTROL Scenario settings]」アイコン ![](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png) をクリックします。
+1. 画面の下部にある [!UICONTROL Scenario settings] アイコン ![ シナリオ設定アイコン ](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png) をクリックします。
 1. 「**[!UICONTROL Auto commit]**」チェックボックスをクリックします。
 1. 「**[!UICONTROL OK]**」をクリックして、シナリオ設定を保存します。

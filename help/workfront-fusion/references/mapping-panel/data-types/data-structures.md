@@ -4,10 +4,10 @@ description: データ構造は、Adobe Workfront Fusion に転送されるデ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 93abf8a5-a3a1-448e-834b-1cc81b88036b
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 83%
+source-wordcount: '216'
+ht-degree: 82%
 
 ---
 
@@ -24,4 +24,4 @@ ht-degree: 83%
 
 データ構造を作成する必要がない場合もあります。ビルトインジェネレーターのテンプレートを使用すると、作業を容易にすることができます。ジェネレーターは、データサンプルを指定することで、入力したデータサンプルに基づいてデータ構造を自動的に作成します。作成したデータ構造は手動で変更できます。
 
-![](assets/data-structure-generator-350x341.jpg)
+![ データ構造ジェネレーター ](assets/data-structure-generator-350x341.jpg)

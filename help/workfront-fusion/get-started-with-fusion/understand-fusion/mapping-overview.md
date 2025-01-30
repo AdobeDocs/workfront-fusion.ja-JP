@@ -4,10 +4,10 @@ description: マッピングとは、項目に構造化されたモジュール�
 author: Becky
 feature: Workfront Fusion
 exl-id: 9208ce20-0757-427a-9669-ce4274d05522
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 14%
+source-wordcount: '432'
+ht-degree: 13%
 
 ---
 
@@ -32,15 +32,15 @@ ht-degree: 14%
 
 単一項目
 
-![](assets/map-single.png)
+![ 単一項目をマッピング ](assets/map-single.png)
 
 テキストを含む複数の項目
 
-![](assets/map-multiple-with-text.png)
+![ 複数の項目をマッピング ](assets/map-multiple-with-text.png)
 
 複数の項目とテキストを持つ関数
 
-![](assets/map-formula-with-text.png)
+![ テキストを使用して数式をマッピング ](assets/map-formula-with-text.png)
 
 
 >[!ENDSHADEBOX]
@@ -56,11 +56,11 @@ ht-degree: 14%
 
 データをマッピングできるフィールドをクリックすると、マッピングパネルが開きます。
 
-最初のタブ ![](assets/toolbar-icon-functions-you-map-from-other-modules.png) には、他のモジュールからマッピングできる項目が表示されます。
+最初のタブ ![ 他のモジュールからマッピング ](assets/toolbar-icon-functions-you-map-from-other-modules.png) には、他のモジュールからマッピングできる項目が表示されます。
 
 その他のタブには、数式の作成に使用できる関数、演算子、およびキーワードが含まれます。 これらは、処理するデータのタイプに基づいて異なるタブに並べ替えられます。
 
-![](assets/mapping-panel-blank.png)
+![ マッピングパネル ](assets/mapping-panel-blank.png)
 
 
 関数タブについて詳しくは、[ 関数の概要 ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md) を参照してください。
@@ -73,13 +73,13 @@ ht-degree: 14%
 
 コレクションタイプのバンドルは、モジュール出力のバンドルラベルの横にの `(Collection)` 表示されます。
 
-![](assets/collection.png)
+![ コレクション ](assets/collection.png)
 
 ほとんどの場合、コレクション全体を表す項目をマッピングする代わりに、コレクションの要素をマッピングします。
 
 マッピングパネルでコレクションの要素を見つけるには、コレクションの横にある矢印をクリックします。
 
-![](assets/collection-dropdown.png)
+![ コレクションドロップダウン ](assets/collection-dropdown.png)
 
 コレクションの詳細については、「[ アイテム データ タイプ ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)」を参照してください。
 
@@ -93,6 +93,6 @@ ht-degree: 14%
 
 マッピングパネルでは、配列は正方形のブレスレットで表示されます。 配列タイプの項目は、項目のラベルの最後にある角括弧で識別できます。マッピングパネルで特定の配列要素を見つけるには、配列の横にある矢印をクリックします。
 
-![](assets/array.png)
+![ 配列 ](assets/array.png)
 
 配列および配列要素のマッピングについて詳しくは、[ 配列および配列要素のマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md) を参照してください。

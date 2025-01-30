@@ -4,9 +4,9 @@ description: この記事では、 [!DNL Adobe Workfront Fusion]  シナリオ�
 author: Becky
 feature: Workfront Fusion
 exl-id: abf41be5-df32-4eaf-b3f4-93ddf005bfe3
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '462'
 ht-degree: 31%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 31%
 >
 >ロールバック（トランザクション性とも呼ばれます）をサポートしているすべての [!DNL Workfront Fusion] モジュールは、ACID タグでマークされます。
 >
->![](assets/acid-modules.png)
+>![ 酸性モジュール ](assets/acid-modules.png)
 >
 >このタグでマークされていないモジュールは、他のモジュールでエラーが発生した場合でも、初期状態に戻すことはできません。ACID 以外のモジュールの典型的な例は、[!UICONTROL Email] >[!UICONTROL Send an Email] アクションです。 メールの送信後は、送信を取り消すことはできません。
 

@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  HTTP アプリは、Hypertext Tran
 author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
-source-git-commit: 6398261775584e33515c546de4e7a72d5830ebe0
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 86%
+source-wordcount: '394'
+ht-degree: 85%
 
 ---
 
@@ -105,7 +105,7 @@ ht-degree: 86%
 
 ヘッダー:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/jwt-header-350x19.png)
+![JWT ヘッダー ](/help/workfront-fusion/references/apps-and-modules/assets/jwt-header-350x19.png)
 
 コピーおよび貼り付けのコード：
 
@@ -115,7 +115,7 @@ ht-degree: 86%
 
 ペイロード：
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/jwt-payload-350x17.png)
+![JWT ペイロード ](/help/workfront-fusion/references/apps-and-modules/assets/jwt-payload-350x17.png)
 
 コピーおよび貼り付けのコード：
 
@@ -125,7 +125,7 @@ ht-degree: 86%
 
 トークン：
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/jwt-token-350x15.png)
+![JWT トークン ](/help/workfront-fusion/references/apps-and-modules/assets/jwt-token-350x15.png)
 
 コピーおよび貼り付けのコード：
 

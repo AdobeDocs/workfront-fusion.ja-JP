@@ -4,10 +4,10 @@ description: 一部のトリガーモジュールでは、バンドルの取得�
 author: Becky
 feature: Workfront Fusion
 exl-id: 83628fa5-82e2-4f67-bfed-70a4c3c19f7f
-source-git-commit: 9ec972ef7677874965d6b4cb646e87c0b2240214
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 53%
+source-wordcount: '325'
+ht-degree: 52%
 
 ---
 
@@ -73,7 +73,7 @@ ht-degree: 53%
 
    トリガーモジュールのアイコンを右クリックし、「**開始する場所を選択**」を選択します。
 
-   ![](assets/choose-where-to-start.png)
+   ![ 開始場所を選択 ](assets/choose-where-to-start.png)
 
 1. 表示される **[!UICONTROL Choose where to start]** ボックスでオプションを選択します。
 

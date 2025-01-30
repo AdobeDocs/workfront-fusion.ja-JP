@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion Google Slides モジュールを使用する
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 6f5f97b9-b06a-4336-b349-ee9e2606d4bf
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1236'
-ht-degree: 73%
+source-wordcount: '1243'
+ht-degree: 72%
 
 ---
 
@@ -457,17 +457,17 @@ ID で指定されたプレゼンテーションに保存されているチャ�
 >
 >**例：** API 呼び出しを使用して、入力したプレゼンテーション ID のプレゼンテーションの詳細を取得できます。プレゼンテーション ID は、[!DNL Google Slides] 内でプレゼンテーションを開いた時に URL の中で確認できます。
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/api-call-350x13.png)
+>![API 呼び出しの例 ](/help/workfront-fusion/references/apps-and-modules/assets/api-call-350x13.png)
 >
 >次の API 呼び出しは、プレゼンテーションの詳細を返します。
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
+>![ プレゼンテーションの詳細 ](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
 >
 >検索の一致は、モジュールの出力の [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL presentationId] で見つけることができます。
 >
 >この例では、要求されたプレゼンテーションの詳細が返されました。
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
+>![ プレゼンテーションの詳細 ](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
 
 #### [!UICONTROL Insert Links in a Presentation]
 

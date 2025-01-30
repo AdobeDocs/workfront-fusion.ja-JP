@@ -4,9 +4,9 @@ description: シナリオの以前のバージョンを復元できます。こ�
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '199'
 ht-degree: 60%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 60%
 ## シナリオバージョンを復元
 
 1. シナリオを開きます。
-1. 画面下部の [!UICONTROL More] アイコン ![](assets/more-icon.png) をクリックしてから、「**[!UICONTROL Previous Versions]**」をクリックします。
+1. 画面下部の「[!UICONTROL More]」アイコン ![ その他のアイコン ](assets/more-icon.png) をクリックし、「**[!UICONTROL Previous Versions]**」をクリックします。
 
 1. **[!UICONTROL Pick the version]** をクリックし、復元するバージョンをクリックします。
 1. **[!UICONTROL OK]** をクリックします。

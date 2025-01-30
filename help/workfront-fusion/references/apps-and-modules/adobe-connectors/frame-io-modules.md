@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Workfront Fusion Frame].io modules enable you to moni
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-source-git-commit: 7f25a8a118a3dba3de3d834497e047bd1aeabf0a
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
 source-wordcount: '2128'
 ht-degree: 71%
@@ -778,12 +778,12 @@ URL: `/v2/teams`
 
 Method: `GET`
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/api-call-example.png)
+![API call example](/help/workfront-fusion/references/apps-and-modules/assets/api-call-example.png)
 
 The result can be found in the module's Output under Bundle > Body.
 
 In our example, the details of 1 team were returned:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/api-call-output.png)
+![API call output](/help/workfront-fusion/references/apps-and-modules/assets/api-call-output.png)
 
 -->

@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion のテンプレート機能を使用する�
 author: Becky
 feature: Workfront Fusion
 exl-id: 9bc5f195-c406-45e9-9a1e-5c8a2a0e0ded
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 29%
+source-wordcount: '433'
+ht-degree: 28%
 
 ---
 
@@ -66,7 +66,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ## テンプレートからシナリオを作成
 
-1. 左側のナビゲーションパネルで **テンプレート** タブ ![](assets/templates-icon.png) をクリックします。
+1. 左側のナビゲーションパネルにある「**テンプレート**」タブ ![ テンプレートアイコン ](assets/templates-icon.png) をクリックします。
 1. 使用するテンプレート（**パブリックテンプレート**&#x200B;または&#x200B;**チームテンプレート**）が含まれているタブをクリックします。
 1. 画面の左上隅付近にある検索バーを使用して、特定のテンプレートを検索します。 テンプレート名または含まれるアプリケーションで検索できます。
 1. シナリオの作成に使用するテンプレートをクリックします。
@@ -84,6 +84,6 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 1. テンプレートに必要なすべての設定を設定すると、テンプレートの準備が整ったことを知らせる通知が届き、標準シナリオオプションが画面の下部に表示されます。これで、シナリオの作成に移れます。
 
-1. 画面の下部付近にある **保存** アイコン ![](assets/save-icon.png) ージをクリックして、シナリオを保存します。
+1. 画面の下部にある **保存** アイコン ![ 保存アイコン ](assets/save-icon.png) をクリックして、シナリオを保存します。
 
    このシナリオは、Workfront Fusion の「シナリオ」領域に保存されます。

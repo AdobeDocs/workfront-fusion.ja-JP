@@ -7,10 +7,10 @@ description: Adobe Workfront Fusion を使用するには、Adobe Workfront ラ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 97e3402c-d1d0-44f6-9752-11b0f5abee22
-source-git-commit: a252de430a3c712c48c1677433ce6176292bc6ce
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '833'
-ht-degree: 37%
+source-wordcount: '839'
+ht-degree: 36%
 
 ---
 
@@ -117,7 +117,7 @@ ht-degree: 37%
 
 「[!UICONTROL Team templates]」タブで使用できる任意のテンプレートを編集できます。
 
-1. サイドナビゲーションメニューの **[!UICONTROL Templates]** アイコン ![](assets/templates-icon.png) をクリックします。
+1. サイドナビゲーションメニューの **[!UICONTROL Templates]** アイコン ![ テンプレートアイコン ](assets/templates-icon.png) をクリックします。
 1. 「**[!UICONTROL Team templates]**」タブをクリックします。
 1. 「**[!UICONTROL Private]**」タブをクリックします。
 1. 編集するテンプレートをクリックします。
@@ -128,7 +128,7 @@ ht-degree: 37%
    テンプレートダイアグラムをクリックします。
 
 1. テンプレートに変更を加えます。テンプレートの作成時に使用できたすべてのオプションにアクセスできます。これらのオプションを確認するには、[ 新しいテンプレートの作成 ](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md) を参照してください。
-1. **[!UICONTROL Save]** アイコンをクリックし ![](assets/save-icon.png) す。
+1. **[!UICONTROL Save]** アイコン ![ 保存アイコン ](assets/save-icon.png) をクリックします。
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ ht-degree: 37%
 
 削除したテンプレートは復元できませんのでご注意ください。 チームテンプレートはチームのすべてのメンバーが使用できるので、テンプレートを削除する前にチームに問い合わせて、テンプレートが不要であることを確認することをお勧めします。
 
-1. サイドナビゲーションメニューの **[!UICONTROL Templates]** アイコン ![](assets/templates-icon.png) をクリックします。
+1. サイドナビゲーションメニューの **[!UICONTROL Templates]** アイコン ![ テンプレートアイコン ](assets/templates-icon.png) をクリックします。
 1. 「**[!UICONTROL Team templates]**」タブをクリックします。
 1. テンプレート名の横にある「**[!UICONTROL Delete]**」をクリックします
 

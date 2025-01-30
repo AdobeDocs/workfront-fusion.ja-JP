@@ -4,9 +4,9 @@ description: 失敗の理由がすぐに解決される可能性がある場合�
 author: Becky
 feature: Workfront Fusion
 exl-id: 08e19a1a-7ca9-4c79-a165-f200048a5cda
-source-git-commit: 0668441df8405610488e3e33658635e4cc7db270
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '717'
 ht-degree: 7%
 
 ---
@@ -124,7 +124,7 @@ Workfront Fusion は現在、`retry` のエラー処理ディレクティブを�
 
 このサンプルシナリオでは、[!UICONTROL HTTP]/[!UICONTROL Make a request] モジュールは失敗する可能性のあるモジュールを表します。
 
-![](assets/http-make-request.png)
+![HTTP リクエストの作成 ](assets/http-make-request.png)
 
 >[!ENDSHADEBOX]
 

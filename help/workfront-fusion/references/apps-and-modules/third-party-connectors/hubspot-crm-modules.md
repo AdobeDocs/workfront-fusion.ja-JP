@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] HubSpot CRM モジュールを使�
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '5655'
+source-wordcount: '5661'
 ht-degree: 33%
 
 ---
@@ -1969,13 +1969,13 @@ This action module associates two CRM objects.-->
 >
 >**メソッド**：`GET`
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/hubspot-api-config.png)
+>![Hubspot API 設定 ](/help/workfront-fusion/references/apps-and-modules/assets/hubspot-api-config.png)
 >
 >検索の一致は、モジュールの出力の [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL contacts] で見つけることができます。
 >
 >この例では、3 件の連絡先が返されました。
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/hubspot-api-output.png)
+>![Hubspot API 出力 ](/help/workfront-fusion/references/apps-and-modules/assets/hubspot-api-output.png)
 
 +++
 

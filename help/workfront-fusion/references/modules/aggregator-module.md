@@ -4,9 +4,9 @@ description: アグリゲーターモジュールは、複数のデータバン�
 author: Becky
 feature: Workfront Fusion
 exl-id: 93cde0d0-4013-463a-b19c-d58180632739
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '717'
 ht-degree: 11%
 
 ---
@@ -68,7 +68,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[[!DNL Adobe Wo
 
 次の画像は、[!UICONTROL Aggregator] モジュールの一般的な設定を示しています。
 
-![](assets/array-aggregator.png)
+![ 配列アグリゲータ ](assets/array-aggregator.png)
 
 <table style="table-layout:auto">
  <col> 
@@ -113,7 +113,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[[!DNL Adobe Wo
 
 このサンプルシナリオでは、すべてのメール添付ファイルを zip で圧縮し、その ZIP ファイルを [!DNL Dropbox] にアップロードする方法を示します。
 
-![](assets/dropbox-archive.png)
+![Dropboxアーカイブの例 ](assets/dropbox-archive.png)
 
 以下のシナリオでは、次の方法を示します。
 
@@ -129,4 +129,4 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[[!DNL Adobe Wo
 
 [!UICONTROL Archive]/[!UICONTROL Create an archive] アグリゲータの設定例を次に示します。
 
-![](assets/archive-create-an-archive.png)
+![アーカイブを作成](assets/archive-create-an-archive.png)

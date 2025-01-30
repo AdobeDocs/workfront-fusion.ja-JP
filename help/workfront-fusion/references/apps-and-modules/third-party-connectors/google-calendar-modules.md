@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] シナリオでは、Google Calenda
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e514204-cd8e-4f30-bbbb-b8fbe48fc670
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '3306'
+source-wordcount: '3314'
 ht-degree: 83%
 
 ---
@@ -829,7 +829,7 @@ Google カレンダーコネクタは以下を使用します。
 
 1. [!UICONTROL Google Calendar]/[!UICONTROL Update an event] モジュールを使用して、イベントにリマインダー用のメールを追加します。
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/trigger-scen-before-event-350x209.png)
+   ![ イベント前のトリガーシナリオ ](/help/workfront-fusion/references/apps-and-modules/assets/trigger-scen-before-event-350x209.png)
 
 1. [!UICONTROL Webhooks]/[!UICONTROL Custom mailhook] モジュールから始まる新しいシナリオを作成します。
 
@@ -847,11 +847,11 @@ Google カレンダーコネクタは以下を使用します。
    1. モジュールの上のバブルをクリックして、モジュールの出力を調べます。
    1. `Text` 項目を展開して、確認コードをコピーします。
 
-      ![](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
+      ![ 確認コード ](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
 
    1. Gmail で、編集ボックスに確認コードを貼り付けて、次の&#x200B;**[!UICONTROL Verify]** をクリックします。
 
-      ![](/help/workfront-fusion/references/apps-and-modules/assets/paste-code-350x46.png)
+      ![ コードを貼り付け ](/help/workfront-fusion/references/apps-and-modules/assets/paste-code-350x46.png)
 
    1. 「**[!UICONTROL Filters and Blocked Addresses]**」タブを開きます。
    1. **[!UICONTROL Create a new filter]** をクリックします。

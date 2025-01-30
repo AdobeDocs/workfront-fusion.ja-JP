@@ -4,10 +4,10 @@ description: 一部のモジュールには、ファイルを処理する機能�
 author: Becky
 feature: Workfront Fusion
 exl-id: 25c632f4-169e-4d3c-989a-f57b398bd3f0
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 34%
+source-wordcount: '419'
+ht-degree: 33%
 
 ---
 
@@ -92,10 +92,10 @@ ht-degree: 34%
 1. マッピング先のターゲットであるターゲットモジュールで、**Source ファイル** 領域を見つけます。
 1. 以前のモジュールで出力されたファイルをマッピングするには、ファイルを出力するモジュールを選択します。
 
-   ![](assets/wf-download-document.png)
+   ![Workfront ダウンロード ドキュメント ](assets/wf-download-document.png)
 
 1. 名前とデータを手動でマップするには、「マップ」を選択してから、ファイルの名前とデータを入力またはマップします。
 
-   ![](assets/use-the-map-option.png)
+   ![ マップオプションを使用 ](assets/use-the-map-option.png)
 
 1. モジュールの設定を続行するか、[**OK**] をクリックします。
