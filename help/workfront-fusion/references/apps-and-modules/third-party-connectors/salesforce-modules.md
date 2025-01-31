@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion のシナリオでは、Salesforce を使用
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ab94fe400af51d4beb4439c603ddd91a6b3f421d
 workflow-type: tm+mt
-source-wordcount: '2708'
-ht-degree: 75%
+source-wordcount: '2715'
+ht-degree: 73%
 
 ---
 
@@ -31,42 +31,46 @@ Salesforce コネクタの紹介ビデオについては、以下を参照して
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 [!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+
++++
 
 ## 前提条件
 
@@ -167,9 +171,36 @@ Salesforce コネクタでは、以下を使用します。
 
 ### トリガー
 
+* [[!UICONTROL Watch a field]](#watch-a-field)
 * [[!UICONTROL Watch for Records]](#watch-for-records)
 * [[!UICONTROL Watch Outbound Messages]](#watch-outbound-messages)
-* [[!UICONTROL Watch a field]](#watch-a-field)
+
+#### [!UICONTROL Watch a field]
+
+このトリガーモジュールは、[!DNL Salesforce] でフィールドがアップデートされたときにシナリオを開始します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Record Type] </td> 
+   <td> <p>モジュールで監視するフィールドが含まれているレコードのタイプを選択します。[!DNL Salesforce] の設定でオンになっているレコードタイプを選択する必要 [!UICONTROL Field History] あります。 詳しくは、[!DNL Salesforce] ドキュメントで<a href="https://help.salesforce.com/articleView?id=tracking_field_history.htm&amp;type=5">フィールド履歴のトラッキング</a>を参照してください。 </p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Field]</td> 
+   <td> <p>モジュールで変更を監視するフィールドを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Limit]</td> 
+   <td> <p>各シナリオの実行サイクル中に、モジュールが返すフィールドの最大数を入力またはマッピングします。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Watch for Records]
 
@@ -253,41 +284,14 @@ Salesforce コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### *[!UICONTROL Watch a field]*
-
-このトリガーモジュールは、[!DNL Salesforce] でフィールドがアップデートされたときにシナリオを開始します。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Record Type] </td> 
-   <td> <p>モジュールで監視するフィールドが含まれているレコードのタイプを選択します。[!DNL Salesforce] の設定でオンになっているレコードタイプを選択する必要 [!UICONTROL Field History] あります。 詳しくは、[!DNL Salesforce] ドキュメントで<a href="https://help.salesforce.com/articleView?id=tracking_field_history.htm&amp;type=5">フィールド履歴のトラッキング</a>を参照してください。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Field]</td> 
-   <td> <p>モジュールで変更を監視するフィールドを選択します。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Limit]</td> 
-   <td> <p>各シナリオの実行サイクル中に、モジュールが返すフィールドの最大数を入力またはマッピングします。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 ### アクション
 
 * [[!UICONTROL Create a Record]](#create-a-record)
-* [[!UICONTROL Read a Record]](#read-a-record)
-* [[!UICONTROL Delete a Record]](#delete-a-record)
 * [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Upload Attachment/Document]](#upload-attachmentdocument)
+* [[!UICONTROL Delete a Record]](#delete-a-record)
 * [[!UICONTROL Download Attachment/Document]](#download-attachmentdocument)
+* [[!UICONTROL Read a Record]](#read-a-record)
+* [[!UICONTROL Upload Attachment/Document]](#upload-attachmentdocument)
 * [ファイルをアップロード](#upload-file)
 
 #### [!UICONTROL Create a Record]
@@ -315,68 +319,6 @@ Salesforce コネクタでは、以下を使用します。
   <tr> 
    <td>[!UICONTROL Select fields to map]</td> 
    <td> <p>新しいレコードを作成する際にモジュールで設定するフィールドを選択します。必須フィールドはリストの上部にあります。 </p> <p>選択したフィールドがこのフィールドの下に開きます。これらのフィールドに値を入力できるようになります。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Read a Record]
-
-このアクションモジュールは、[!DNL Salesforce] の単一オブジェクトからデータを読み取ります。
-
-レコードの ID を指定します。
-
-このモジュールは、レコードの ID および関連するフィールドと共に、接続を介してアクセスされるカスタムフィールドとその値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
-
-このモジュールを設定する際には、次のフィールドが表示されます。
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr>
-    <td>[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
-  </tr> 
-  <tr>
-    <td>[!UICONTROL Record Type]</td>
-    <td>モジュールで [action] 読み取る [!DNL Salesforce] レコードのタイプを選択します。</td>
-  </tr> 
-  <tr>
-    <td>[!UICONTROL Record Fields]</td>
-    <td>モジュールで読み取るフィールドを選択します。少なくとも 1 つのフィールドを選択する必要があります。</td>
-  </tr> 
-  <tr>
-    <td>[!UICONTROL ID]</td>
-    <td> <p>モジュールが読み取るレコードの一意の [!DNL Salesforce] ID を入力またはマッピングします。</p> <p>ID を取得するには、ブラウザーで [!DNL Salesforce] オブジェクトを開いて、URL の末尾のフォワードスラッシュ（/）の後のテキストをコピーします。例： <code>https://eu5.salesforce.com/&lt;object ID&gt;</code></p> </td>
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Delete a Record]
-
-このアクションモジュールは、オブジェクト内の既存のレコードを削除します。
-
-レコードの ID を指定します。
-
-このモジュールは、レコードの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
-
-このモジュールを設定する際には、次のフィールドが表示されます。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Record Type] </td> 
-   <td> <p>モジュールで削除する [!DNL Salesforce] レコードのタイプを選択します。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL ID]</td> 
-   <td> <p>モジュールが削除するレコードの一意の [!DNL Salesforce] ID を入力またはマッピングします。</p> <p>ID を取得するには、ブラウザーで [!DNL Salesforce] オブジェクトを開いて、URL の末尾のフォワードスラッシュ（/）の後のテキストをコピーします。例： <code>https://eu5.salesforce.com/&lt;object ID&gt;</code></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -422,7 +364,7 @@ Salesforce コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件ステートメントを JSON で使用する場合は、条件ステートメントの外側に引用符を挿入します。</p> 
+   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件文を JSON で使用する場合は、条件文を引用符で囲みます。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -430,58 +372,31 @@ Salesforce コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
->[!INFO]
->
->**例：**&#x200B;次の API 呼び出しは、[!DNL Salesforce] アカウントのすべてのユーザーのリストを返します。
->
->* **URL**：`query`
->
->* **メソッド**：[!UICONTROL GET]
->
->* **クエリ文字列**：
->
->* **キー**：`q`
->
->* **値**：`SELECT Id, Name, CreatedDate, LastModifiedDate FROM User LIMIT 10`
->
->検索の一致は、モジュールの出力の **[!UICONTROL Bundle]> [!UICONTROL Body] >[!UICONTROL records]** で見つけることができます。
->
->この例では、6 人のユーザーが返されました。
->
->![ 検索に一致 ](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
+#### [!UICONTROL Delete a Record]
 
+このアクションモジュールは、オブジェクト内の既存のレコードを削除します。
 
-#### [!UICONTROL Upload Attachment/Document]
+レコードの ID を指定します。
 
-このアクションモジュールは、ファイルをアップロードして指定したレコードに添付するか、ドキュメントをアップロードします。
-
-このモジュールは、添付ファイルまたはドキュメントの ID、および関連するフィールドを返すほか、接続がアクセスするカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
+このモジュールは、レコードの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
 <table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
+ <col> 
+ <col> 
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
    <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Type of Upload]</td> 
-   <td>モジュールが添付ファイルまたはドキュメントのどちらをアップロードするかを選択します。</td> 
+   <td>[!UICONTROL Record Type] </td> 
+   <td> <p>モジュールで削除する [!DNL Salesforce] レコードのタイプを選択します。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL ID]</td> 
-   <td>添付ファイルのアップロード先のオブジェクトの ID を入力またはマッピングします。</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Folder]</td> 
-   <td>モジュールがアップロードするファイルを含むフォルダーを選択します。 </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Source File]</td> 
-   <td>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</td> 
+   <td> <p>モジュールが削除するレコードの一意の [!DNL Salesforce] ID を入力またはマッピングします。</p> <p>ID を取得するには、ブラウザーで [!DNL Salesforce] オブジェクトを開いて、URL の末尾のフォワードスラッシュ（/）の後のテキストをコピーします。例： <code>https://eu5.salesforce.com/&lt;object ID&gt;</code></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -520,6 +435,59 @@ Salesforce コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
+#### [!UICONTROL Read a Record]
+
+このアクションモジュールは、[!DNL Salesforce] の単一オブジェクトからデータを読み取ります。
+
+レコードの ID を指定します。
+
+このモジュールは、レコードの ID および関連するフィールドと共に、接続を介してアクセスされるカスタムフィールドとその値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
+
+このモジュールを設定する際には、次のフィールドが表示されます。
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr>
+    <td>[!UICONTROL Connection]</td>
+   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr>
+    <td>[!UICONTROL Record Type]</td>
+    <td>モジュールで [action] 読み取る [!DNL Salesforce] レコードのタイプを選択します。</td>
+  </tr> 
+  <tr>
+    <td>[!UICONTROL Record Fields]</td>
+    <td>モジュールで読み取るフィールドを選択します。少なくとも 1 つのフィールドを選択する必要があります。</td>
+  </tr> 
+  <tr>
+    <td>[!UICONTROL ID]</td>
+    <td> <p>モジュールが読み取るレコードの一意の [!DNL Salesforce] ID を入力またはマッピングします。</p> <p>ID を取得するには、ブラウザーで [!DNL Salesforce] オブジェクトを開いて、URL の末尾のフォワードスラッシュ（/）の後のテキストをコピーします。例： <code>https://eu5.salesforce.com/&lt;object ID&gt;</code></p> </td>
+  </tr> 
+ </tbody> 
+</table>
+
+>[!INFO]
+>
+>**例：**&#x200B;次の API 呼び出しは、[!DNL Salesforce] アカウントのすべてのユーザーのリストを返します。
+>
+>* **URL**：`query`
+>
+>* **メソッド**：[!UICONTROL GET]
+>
+>* **クエリ文字列**：
+>
+>* **キー**：`q`
+>
+>* **値**：`SELECT Id, Name, CreatedDate, LastModifiedDate FROM User LIMIT 10`
+>
+>検索の一致は、モジュールの出力の **[!UICONTROL Bundle]> [!UICONTROL Body] >[!UICONTROL records]** で見つけることができます。
+>
+>この例では、6 人のユーザーが返されました。
+>
+>![ 検索に一致 ](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
+
 
 #### [!UICONTROL Update a Record]
 
@@ -550,6 +518,42 @@ Salesforce コネクタでは、以下を使用します。
   <tr> 
    <td>[!UICONTROL Select fields to map]</td> 
    <td> <p>新しいレコードを作成する際にモジュールで設定するフィールドを選択します。必須フィールドはリストの上部にあります。 </p> <p>選択したフィールドがこのフィールドの下に開きます。これらのフィールドに値を入力できるようになります。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+#### [!UICONTROL Upload Attachment/Document]
+
+このアクションモジュールは、ファイルをアップロードして指定したレコードに添付するか、ドキュメントをアップロードします。
+
+このモジュールは、添付ファイルまたはドキュメントの ID、および関連するフィールドを返すほか、接続がアクセスするカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
+
+このモジュールを設定する際には、次のフィールドが表示されます。
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Type of Upload]</td> 
+   <td>モジュールが添付ファイルまたはドキュメントのどちらをアップロードするかを選択します。</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL ID]</td> 
+   <td>添付ファイルのアップロード先のオブジェクトの ID を入力またはマッピングします。</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Folder]</td> 
+   <td>モジュールがアップロードするファイルを含むフォルダーを選択します。 </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Source File]</td> 
+   <td>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</td> 
   </tr> 
  </tbody> 
 </table>

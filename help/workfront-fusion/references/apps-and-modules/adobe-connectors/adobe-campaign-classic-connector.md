@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Campaign]  モジュールを使用すると、 [!DNL
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 9bcda2cc1a5f483a8db49eae8e4f3d10f0d39c67
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 79%
+source-wordcount: '1097'
+ht-degree: 72%
 
 ---
 
@@ -17,49 +17,53 @@ ht-degree: 79%
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td> 
-   <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td> 
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 [!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+
++++
 
 ## 前提条件
 
 Fusion IP アドレスを [!DNL Adobe Campaign] に追加する必要があります。
 
 * Campaign の許可リストに IP アドレスを追加する手順については、Adobe Campaign ドキュメントの[許可リストへの IP アドレスの追加](https://experienceleague.adobe.com/ja/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list)を参照してください。
-* 許可リストに追加する IP アドレスのリストについては、[Adobe Workfront Fusion にアクセスするための IP アドレス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)を参照してください。
+* 許可リストに追加する IP アドレスのリストについては、組織の [許可リストの Fusion の IP アドレスの設定 ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md) を参照してください。
 
 ## Adobe Campaign API の情報
 
@@ -124,15 +128,7 @@ Adobe Campaign コネクタでは、以下を使用します。
           <td role="rowheader">[!UICONTROL Client Secret]</td>
           <td>サーバー間接続を作成する場合は、[!DNL Adobe] [!UICONTROL Client Secret] を入力します。 これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションにあります。
         </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Environment]</td>
-          <td>実稼動環境と非実稼動環境のどちらに接続するかを選択します。
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Type]</td>
-          <td>サービスアカウントと個人アカウントのどちらに接続するかを選択します。
-        </tr>
-   </tbody>
+     </tbody>
     </table>
 1. 「**[!UICONTROL Continue]**」をクリックして接続を作成し、モジュールに戻ります。
 
@@ -144,15 +140,15 @@ Adobe Campaign コネクタでは、以下を使用します。
 
 ![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [トリガー](#triggers)
+<!--* [Triggers](#triggers)-->
 * [アクション](#actions)
 * [検索](#searches)
 
-### トリガー
+<!--### Triggers
 
 #### [!UICONTROL Watch records]
 
-このスケジュール済みトリガーモジュールは、レコードが変更されたときにシナリオを開始します。
+This scheduled trigger module starts a scenario when a record changes.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -160,39 +156,39 @@ Adobe Campaign コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >[!DNL Adobe Campaign]</a> への接続を作成を参照してください。</td> 
+   <td>For instructions on creating a connection to [!DNL Adobe Campaign], see <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Create a connection to [!DNL Adobe Campaign]</a> in this article.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Filter]</td> 
-   <td>新しいレコードや更新されたレコード、またはその両方のどれを監視するかを選択します。</td> 
+   <td>Select whether you want to watch for new records, updated records, or both.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>監視するリソースを選択します。</td> 
+   <td>Select the resource that you want to watch for.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Fields to include in output]</td> 
-   <td>モジュールの出力に含めるフィールドを選択します。</td> 
+   <td>Select the fields that you want to include in the module's output.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Custom fields to include in output]</td> 
-   <td>出力に含めるカスタムフィールドごとに「<b>[!UICONTROL Add]</b>」をクリックし、カスタムフィールドの名前を入力します。</td> 
+   <td>For each custom field that you want to include in output, click <b>[!UICONTROL Add]</b> and enter the name of the custom field.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned results]</td> 
-   <td>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</td> 
+   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
   </tr> 
  </tbody> 
-</table>
+</table>-->
 
 
 ### アクション
 
 * [[!UICONTROL Create a record]](#create-a-record)
-* [[!UICONTROL Make a custom API call]](#make-a-custom-api-call)
 * [[!UICONTROL Delete a record]](#delete-record)
+* [[!UICONTROL Make a custom API call]](#make-a-custom-api-call)
 * [[!UICONTROL Perform an action]](#perform-an-action)
-* [[!UICONTROL Read a record]](#-read-a-record)
+* [[!UICONTROL Read a record]](#read-a-record)
 * [[!UICONTROL Subscribe or unsubscribe]](#subscribe-or-unsubscribe)
 * [[!UICONTROL Update a record]](#update-record)
 
@@ -219,6 +215,29 @@ Adobe Campaign コネクタでは、以下を使用します。
   <tr> 
    <td role="rowheader">[!UICONTROL Custom fields]</td> 
    <td> 新しいレコードに追加するカスタムフィールドごとに「<b>[!UICONTROL Add item]</b>」をクリックし、フィールドの名前と値を入力またはマッピングします。 </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Delete Record]
+
+このアクションモジュールは、[!DNL Adobe Campaign] から 1 つのレコードを削除します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td>
+   <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >[!DNL Adobe Campaign]</a> への接続を作成を参照してください。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Resource]</td> 
+   <td>削除するリソースのタイプを選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID]</td> 
+   <td>削除するリソースの ID を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -259,29 +278,6 @@ Adobe Campaign コネクタでは、以下を使用します。
   </tbody>
 </table>
 
-#### [!UICONTROL Delete Record]
-
-このアクションモジュールは、[!DNL Adobe Campaign] から 1 つのレコードを削除します。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td>
-   <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >[!DNL Adobe Campaign]</a> への接続を作成を参照してください。</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>削除するリソースのタイプを選択します。</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL ID]</td> 
-   <td>削除するリソースの ID を入力またはマッピングします。</td> 
-  </tr> 
- </tbody> 
-</table>
-
 
 #### [!UICONTROL Perform an action]
 
@@ -308,7 +304,7 @@ Adobe Campaign コネクタでは、以下を使用します。
    <li><p><b>[!UICONTROL Delete]</b></p><p> 使用可能なフィールドについては、この記事の <a href="#delete-record" class="MCXref xref" >[!UICONTROL Delete a record]</a> を参照してください。 </p></li>
    </ul>
    </td>
-</tr> 
+  </tr> 
  </tbody> 
 </table>
 
@@ -419,6 +415,10 @@ Adobe Campaign コネクタでは、以下を使用します。
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
    <td>作成する [!DNL Adobe Campaign] レコードのタイプを選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Search criteria]</td> 
+   <td>検索で使用するフィールドと値を入力します。 フィールドは、選択したリソースによって異なります。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
