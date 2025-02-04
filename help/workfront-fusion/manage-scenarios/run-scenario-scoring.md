@@ -4,14 +4,18 @@ description: シナリオスコアリングエキスパートは、ベストプ�
 author: Becky
 feature: Workfront Fusion
 exl-id: b668e7f6-dac5-4ac9-b3f3-109f70eaa2c4
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 1ac1c4358901ef81bb7375c24fcdf1a44119af13
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '349'
 ht-degree: 14%
 
 ---
 
 # シナリオスコアリングエキスパートの実行
+
+>[!IMPORTANT]
+>
+>シナリオスコアリングエキスパートは一時的に無効になっています。
 
 シナリオスコアリングエキスパートは、ベストプラクティスに従ってシナリオが確実に設定されるようにするのに役立ちます。 シナリオをチェックし、構造と組織に関する推奨事項を提供します。
 
