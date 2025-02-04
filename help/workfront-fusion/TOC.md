@@ -1,11 +1,11 @@
 ---
 user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
-user-guide-description: 組織でAdobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、ドキュメント、チュートリアル、その他のリソースを使用します。
+user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
 source-git-commit: e3ec0cf05665559790e4ae96c875e181a1ee36ff
 workflow-type: tm+mt
 source-wordcount: '1641'
-ht-degree: 59%
+ht-degree: 60%
 
 ---
 
