@@ -4,10 +4,10 @@ description: メール通知オプションは、チームレベルで設定さ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 570a09fc-01a9-4952-8a2b-8bfdd86d0bd8
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 410676b7def1e36de12fee9d6df79feba566d741
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 65%
+source-wordcount: '240'
+ht-degree: 60%
 
 ---
 
@@ -89,7 +89,7 @@ Workfront Fusion では、Adobeの通知領域を通じて通知を受け取り�
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Scenario deactivation]</p> </td> 
-      <td><p>シナリオが非アクティブ化された場合、メールを受信します。</p><p><b>メモ：</b>エラーが原因でシナリオが自動的に非アクティブ化された場合にのみ、シナリオの非アクティブ化についての通知を受けます。手動で非アクティブ化されたシナリオに関する通知は受け取りません。</p><p>場合によっては、シナリオがパフォーマンスやその他の問題を引き起こしているため、[!DNL Workfront Fusion] エンジニアリングチームによってシナリオが非アクティブ化されることがあります。このような場合、[!DNL Workfront Fusion] では通知を受け取りません。 </p></td>
+      <td><p>シナリオが非アクティブ化された場合、メールを受信します。</p><p>場合によっては、シナリオがパフォーマンスやその他の問題を引き起こしているため、[!DNL Workfront Fusion] エンジニアリングチームによってシナリオが非アクティブ化されることがあります。このような場合、[!DNL Workfront Fusion] では通知を受け取りません。 </p></td>
 
 </tr>
 </tbody>
