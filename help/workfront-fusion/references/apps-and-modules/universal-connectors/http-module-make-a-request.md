@@ -4,18 +4,14 @@ description: Adobe Workfront Fusion HTTP／リクエストモジュールの作�
 author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 70%
+source-wordcount: '819'
+ht-degree: 63%
 
 ---
 
 # [!UICONTROL HTTP] > [!UICONTROL Make a request] モジュール
-
->[!NOTE]
->
->Adobe Workfront Fusion には、[!DNL Adobe Workfront] ライセンスに加えて [!DNL Adobe Workfront Fusion] ライセンスが必要です。
 
 [!DNL Adobe Workfront Fusion] [!UICONTROL HTTP]/[!UICONTROL Make a request module] は、HTTP リクエストを設定してサーバーに送信できるユニバーサルモジュールです。 受信した HTTP 応答は、出力バンドルに含まれます。
 
@@ -27,50 +23,48 @@ ht-degree: 70%
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] プラン*</td> 
-   <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td> 
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
-   <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>Workfront Fusion のライセンス要件はありません。</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
 
-## [!UICONTROL HTTP] >[!UICONTROL Make a request] モジュールの設定
++++
+
+## [!UICONTROL HTTP]/[!UICONTROL Make a request] モジュール設定
 
 [!UICONTROL HTTP]/[!UICONTROL Make a request] モジュールを設定すると、以下に示 [!DNL Adobe Workfront Fusion] フィールドが表示されます。 モジュール内の太字のタイトルは、必須フィールドを示します。
-
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) でモジュールから別のモジュールに情報をマッピングを参照してください。
-
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 <table style="table-layout:auto"> 
  <col> 
@@ -82,7 +76,7 @@ ht-degree: 70%
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL] </td> 
-   <td> <p>API エンドポイント、ウェブサイトなど、リクエストの送信先 URL を入力します。</p> </td> 
+   <td> <p>API エンドポイント、web サイトなど、リクエストを送信する URL を入力します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
@@ -90,7 +84,7 @@ ht-degree: 70%
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers] </td> 
-   <td> <p>標準の JSON オブジェクトの形式でリクエストのヘッダーを追加します。例： <code>{"Content-type":"application/json"}</code></p> </td> 
+   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。例： <code>{"Content-type":"application/json"}</code></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 
@@ -110,13 +104,13 @@ ht-degree: 70%
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL  Multipart/form-data] は、ファイルおよびデータの送信に使用される HTTP マルチパートリクエストです。 通常、ファイルをサーバーにアップロードする際に使用されます。</p> <p>リクエストで送信するフィールドを追加します。各フィールドには、キーと値のペアが含まれている必要があります。</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>リクエスト本文内で送信するキーと値を入力します。</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>キーを入力し、リクエスト本文で送信するソースファイルを指定します。</p> <p>以前のモジュール（[!UICONTROL HTTP] &gt;[!UICONTROL Get a File] や [!UICONTROL Google Drive] &gt; など）からアップロードするファイルをマッピングするか、ファイル名とファイルデータを手動で入力 [!UICONTROL Download a File)] ます。</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>キーを入力し、リクエスト本文で送信するソースファイルを指定します。</p> <p>前のモジュール（[!UICONTROL HTTP]/[!UICONTROL Get a File] または [!UICONTROL Google Drive]/ファイルをダウンロードなど）からアップロードするファイルをマッピングするか、ファイル名とファイルデータを手動で入力します。</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Parse response]</p> </td> 
-   <td> <p>このオプションを有効にすると、応答を自動的に解析し、JSON および XML 応答を変換するので、[!UICONTROL JSON]/[!UICONTROL Parse JSON] または [!UICONTROL XML]/[!UICONTROL Parse XML] モジュールを使用する必要がなくなります。</p> <p>解析された JSON または XML コンテンツを使用する前に、モジュールを手動で 1 回実行して、モジュールが応答コンテンツを認識し、後続のモジュールにマッピングできるようにします。</p> </td> 
+   <td> <p>応答を自動的に解析し、JSON および XML 応答を変換するには、このオプションを有効にします。</p> <p>解析された JSON または XML コンテンツを使用する前に、モジュールを手動で 1 回実行して、モジュールが応答コンテンツを認識し、後続のモジュールにマッピングできるようにします。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL User name]</p> </td> 
@@ -136,7 +130,25 @@ ht-degree: 70%
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Self-signed certificate]</td> 
-   <td> <p> 自己署名証明書を使用して TLS を使用する場合は、証明書をアップロードします。</p> </td> 
+   <td> <p>自己署名証明書を追加するには：</p>
+          <ol>
+            <li value="1">
+              <p><b>[!UICONTROL Extract]</b> をクリックします。</p>
+            </li>
+            <li value="2">
+              <p>抽出するファイルのタイプを選択します。</p>
+            </li>
+            <li value="3">
+              <p>または証明書を含むファイルを選択します。</p>
+            </li>
+            <li value="4">
+              <p>ファイルのパスワードを入力します。</p>
+            </li>
+            <li value="5">
+              <p>「<b>[!UICONTROL Save]</b>」をクリックしてファイルを抽出し、モジュール設定に戻ります。</p>
+            </li>
+          </ol>
+</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reject connections that are using unverified (self-signed) certificates] </td> 
@@ -160,19 +172,17 @@ ht-degree: 70%
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Use Mutual TLS]</td> 
-   <td> <p>このオプションを有効にすると、HTTP リクエストで相互 TLS を使用できます。</p> <p>相互 TLS について詳しくは、<a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> の HTTP モジュールで相互 TLS を使用を参照してください。</p> </td> 
+   <td> <p>このオプションを有効にすると、HTTP リクエストで相互 TLS を使用できます。</p> <p>相互 TLS について詳しくは、<a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">HTTP モジュールで相互 TLS を使用する </a> を参照してください。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!INFO]
->
->**例：** この例では、JSON ペイロードを含んだ [!UICONTROL POST] リクエストを送信するようにモジュールを設定する方法を示します。
->
->![ リクエストの例の作成 ](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
+>[!BEGINSHADEBOX]
 
->[!NOTE]
->
->[!UICONTROL JSON] が有効であることを確認するには、[https://jsonlint.com/](https://jsonlint.com/) などの利用可能なオンライン サービスのいずれかを使用します。 [!UICONTROL JSON] >[!UICONTROL Create JSON module] を使用して JSON を動的に作成し、必要なエスケープをすべて処理することもできます。
->
->[!UICONTROL Request content] フィールドに JSON の一部を式と項目で直接混在させることは、無効な JSON になる可能性があるので、お勧めしません。
+**例：** この例では、JSON ペイロードを含んだ [!UICONTROL POST] リクエストを送信するようにモジュールを設定する方法を示します。
+
+![ リクエストの例の作成 ](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
+
+[!UICONTROL Request content] フィールドに直接 JSON 部分を式と項目と混在させることは、無効な JSON になる可能性があるので、お勧めしません。
+
+>[!ENDSHADEBOX]

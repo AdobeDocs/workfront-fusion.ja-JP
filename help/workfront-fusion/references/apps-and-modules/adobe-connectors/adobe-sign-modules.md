@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Acrobat Sign]  モジュールを使用すると、 [
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
 workflow-type: tm+mt
-source-wordcount: '5501'
+source-wordcount: '5503'
 ht-degree: 77%
 
 ---
@@ -229,7 +229,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td>標準の JSON オブジェクトの形式でリクエストのヘッダーを追加します。例： <code>{"Content-type":"application/json"}</code></td> 
+   <td>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。例： <code>{"Content-type":"application/json"}</code></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record type]</td> 
@@ -361,7 +361,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
 <td>[!DNL Adobe Acrobat Sign] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">[!DNL Adobe Workfront Fusion] への接続の作成 - 基本手順</a>を参照してください。</td>  </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td>標準の JSON オブジェクトの形式でリクエストのヘッダーを追加します。例： <code>{"Content-type":"application/json"}</code></td> 
+   <td>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。例： <code>{"Content-type":"application/json"}</code></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Files to send]</td> 

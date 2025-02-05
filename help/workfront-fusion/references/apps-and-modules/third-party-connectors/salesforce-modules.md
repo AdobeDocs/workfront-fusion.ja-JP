@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion のシナリオでは、Salesforce を使用
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: ab94fe400af51d4beb4439c603ddd91a6b3f421d
+source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
 workflow-type: tm+mt
-source-wordcount: '2715'
+source-wordcount: '2717'
 ht-degree: 73%
 
 ---
@@ -356,11 +356,11 @@ Salesforce コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>例えば <code>{"Content-type":"application/json"}</code> のように、標準の JSON オブジェクトの形式でリクエストのヘッダーを追加します。Workfront Fusion は認証ヘッダーを追加します。</p> </td> 
+   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。例えば、<code>{"Content-type":"application/json"}</code>。Workfront Fusion は認証ヘッダーを追加します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 
-   <td> <p>API 呼び出しのクエリを標準 JSON オブジェクトの形式で追加します。次に例を示します。 <code>{"name":"something-urgent"}</code></p> </td> 
+   <td> <p>標準の JSON オブジェクトの形式で API 呼び出しのクエリを追加します。 例： <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 

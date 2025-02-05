@@ -4,10 +4,10 @@ description: シナリオを作成または編集する際、シナリオ内で�
 author: Becky
 feature: Workfront Fusion
 exl-id: b3aed366-c399-44fa-8967-54ecb8647d96
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 50%
+source-wordcount: '600'
+ht-degree: 36%
 
 ---
 
@@ -17,56 +17,77 @@ ht-degree: 50%
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
-   <p>または</p>
-   <p>レガシーライセンス要件：[!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration], [!UICONTROL [!DNL Workfront Fusion] for Work Automation]</p>
+   <p>Workfront Fusion のライセンス要件はありません。</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 [!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+
++++
 
 ## リピーター
 
 [!UICONTROL Repeater] モジュールを使用すると、タスクを指定した回数繰り返すことができます。 [!UICONTROL Repeater] モジュールは、バンドルを順番に生成します。
 
+
+<table>
+    <tr>
+        <td>[!UICONTROL Initial value]</td>
+        <td>モジュールの最初のイテレーションに含める値を入力またはマッピングします。 デフォルト値は 1 です。</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Repeats]</td>
+        <td>モジュールが繰り返す回数を入力またはマッピングします。この数は、0 以上 10,000 以下である必要があります。</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Step]</td>
+        <td>これは、モジュールが値を増加させる数値です。 デフォルト値は 1 です。</td>
+    </tr>
+</table>
+
+>[!BEGINSHADEBOX]
+
 例えば、[!UICONTROL Repeater] モジュールを使用して、**[!UICONTROL Email]>[!UICONTROL Send me an email]** モジュールを [!UICONTROL Repeater] モジュールに接続することで、「Hello 1」、「Hello 2」などの件名が入った 5 通のメールを送信できます。
 
-[!UICONTROL Repeater] モジュールを使用するには：
-
 1. 画面下部の [!UICONTROL Flow Control] アイコン ![ フロー制御アイコン ](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) をクリックし、表示されるメニューで「**[!UICONTROL Repeater]**」をクリックします。
-1. [!UICONTROL Repeater] バンドルをクリックしてから、表示されるボックスで **[!UICONTROL Connect automatically]** をクリックします。
-1. 表示される [!UICONTROL Flow Control] ボックスに、繰り返し（出力されたバンドル）の数を **[!UICONTROL Repeats]** ボックスに入力します。
+1. [!UICONTROL Repeater] モジュールをクリックし、表示されるボックスで **[!UICONTROL Connect automatically]** をクリックします。
 
-   ここでのメールの例では、「5」と入力します。
+   リピーターのモジュールが開きます。
+
+1. 「**[!UICONTROL Repeats]**」フィールドに、モジュールで生成する繰り返し回数（出力されたバンドル）を入力します。
+
+   この例では、5 と入力します。
 
    ![ リピーター ](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
 
@@ -81,17 +102,13 @@ ht-degree: 50%
 
    ![ リピーター ](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
 
-| 項目 | 説明 |
-|---|---|
-| [!UICONTROL Initial value] | 最初の繰り返しでモジュールが `i` として設定する数値を入力またはマッピングします。デフォルト値は 1 です。 |
-| [!UICONTROL Repeats] | モジュールが繰り返す回数を入力またはマッピングします。この数は、0 以上 10,000 以下である必要があります。 |
-| [!UICONTROL Step] | モジュールは、`i` の値を、この数だけ増分します。デフォルト値は 1 です。 |
 
-{style="table-layout:auto"}
 
 >[!NOTE]
 >
 >繰り返し回数は、プログラミングのループとは異なり、`i` の値によって決まるわけではありません。モジュールは、「[!UICONTROL Repeats]」フィールドに示された回数を繰り返します。 値 `i` は [!DNL repeater] モジュールのイテレーションごとに変化し、後のモジュールにマッピングできます。ここでの例では、`i` の値を「こんにちは」メッセージにマッピングすると、「こんにちは 1」、「こんにちは 2」などのメッセージが表示されます。
+
+>[!ENDSHADEBOX]
 
 ## [!UICONTROL Iterator]
 
@@ -105,9 +122,9 @@ ht-degree: 50%
 
 [!UICONTROL Router] モジュールを使用すると、フローを複数のルートに分岐し、各ルート内のデータを異なる方法で処理できます。 [!UICONTROL Router] モジュールは、バンドルを受け取ると、ルートが [!UICONTROL Router] モジュールにアタッチされた順序で、接続された各ルートに転送します。 詳しくは、[ [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md) のルーターモジュールを参照してください。
 
-<!--
-<div>
-<h2>Directives</h2>
-<p>The error handling directives allow you to control how your scenario reacts to errors. For more information, see <a href="/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md" class="MCXref xref">Advanced error handling in Adobe Workfront Fusion</a> and <a href="/help/workfront-fusion/references/errors/directives-for-error-handling.md" class="MCXref xref">Directives for error handling in Adobe Workfront Fusion</a>.</p>
-</div>
--->
+## ディレクティブ
+
+エラー処理ディレクティブを使用すると、シナリオがエラーにどのように反応するかを制御できます。
+
+エラー処理ディレクティブについて詳しくは、「[ エラー処理用のディレクティブ ](/help/workfront-fusion/references/errors/directives-for-error-handling.md)」を参照してください。
+
