@@ -4,10 +4,10 @@ description: この一般的なワークフローに従って、シナリオを�
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: c34adf455ce01da52c321d3f997a58f8251d97bf
+source-git-commit: 394f80a2d7c124bbd00e1a5b51ad3dc6e73a996b
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 19%
+source-wordcount: '772'
+ht-degree: 20%
 
 ---
 
@@ -26,6 +26,7 @@ ht-degree: 19%
 * [シナリオ設定を指定](#onfigure-scenario-settings)
 * [テストと改訂](#test-and-revise)
 * [シナリオをアクティベート](#activate-the-scenario)
+* [Workfront Fusion のシナリオのキーボードショートカット](#workfront-fusion-scenario-keyboard-shortcuts)
 
 キーボードショートカット
 
