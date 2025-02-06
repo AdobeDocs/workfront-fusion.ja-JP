@@ -4,10 +4,10 @@ description: この一般的なワークフローに従って、シナリオを�
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: 0029e6a79c6fb7479ddd0948c773349efa075403
+source-git-commit: c34adf455ce01da52c321d3f997a58f8251d97bf
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 21%
+source-wordcount: '767'
+ht-degree: 19%
 
 ---
 
@@ -139,35 +139,41 @@ Google、Microsoft、または専用コネクタのないアプリケーショ�
   <tr> 
    <td role="rowheader">[!UICONTROL Save] </td> 
    <td>Ctrl + Shift + S</td> 
-   <td><span style="font-weight: normal;">Command + Shift + S</span> </td> 
+   <td>Cmd + Shift + S</span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Run Once]</td> 
    <td>Ctrl + Shift + Enter</td> 
-   <td><span style="font-weight: normal;">Command + Shift + Enter</span> </td> 
+   <td>Cmd + Shift + Enter </span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Open the DevTool]</td> 
    <td>F12</td> 
-   <td><span style="font-weight: normal;">Ctrl+Fn+F12</span> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Copy]</td> 
-   <td>Ctrl+C</td> 
-   <td><span style="font-weight: normal;">Cmd+C</span> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Paste]</td> 
-   <td>Ctrl+V</td> 
-   <td><span style="font-weight: normal;">Cmd+V</span> </td> 
+   <td>Ctrl + Fn + F12</span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Select multiple modules]</td> 
    <td>Shift + ドラッグ</td> 
-   <td><span style="font-weight: normal;">Shift キーを押しながらドラッグ </span> </td> 
+   <td>Shift キーを押しながらドラッグ </span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Copy]</td> 
+   <td>Ctrl+C</td> 
+   <td>Cmd+C</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Paste]</td> 
+   <td>Ctrl+V</td> 
+   <td>Cmd+V</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">cURL をシナリオに貼り付けて、HTTP モジュールを作成します</td> 
+   <td colspan="2">cURL をコピーし、シナリオエディターの任意の場所に貼り付けます。<p>詳しくは、<a href="/help/workfront-fusion/create-scenarios/add-modules/use-curl-create-http.md">cURL を使用した HTTP モジュールの追加 </a> を参照してください。</td> 
   </tr> 
  </tbody> 
 </table>
+
+
 
 
 
