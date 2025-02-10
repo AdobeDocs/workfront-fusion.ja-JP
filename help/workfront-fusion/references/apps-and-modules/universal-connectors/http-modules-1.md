@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion を使用するには、Adobe Workfront ラ�
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
-source-git-commit: 1be98b5f6d869f93e1786b1c2be7a325037d7c02
+source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 79%
+ht-degree: 65%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 79%
 
 HTTP アプリは、Hypertext Transfer Protocol（HTTP）プロトコルで通信するための様々なモジュールを提供します。HTTP は、World Wide Web のためのデータ通信基盤です。このモジュールを使用すると、web のページやファイルをダウンロードしたり、web フックや API エンドポイントを呼び出したりできます。
 
-アクセスするリソースが使用する認証認可のメカニズムに応じて、適切なモジュールを選択する必要があります。
+どのモジュールを選択するかは、アクセスするリソースで使用される認証/承認メカニズムによって異なります。
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ HTTP アプリは、Hypertext Transfer Protocol（HTTP）プロトコルで通�
 
 具体的なモジュールの手順については、次の記事を参照してください。
 
-* [HTTP >[!UICONTROL Make a request] モジュール](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-request.md)
+* [http/[!UICONTROL Make a request] モジュール](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-request.md)
 * [[!UICONTROL HTTP] >[!UICONTROL Make a Basic Authorization request] モジュール](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-basic-auth-request.md)
 * [[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] モジュール](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-an-oauth-2-request.md)
 * [[!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate Authorization request] モジュール](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-client-cert-auth-request.md)

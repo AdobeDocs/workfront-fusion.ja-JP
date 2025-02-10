@@ -4,7 +4,7 @@ description: OAuth 2.0 認証を必要とするサーバーに対する  [!DNL A
 author: Becky
 feature: Workfront Fusion
 exl-id: a302a1d4-fddf-4a71-adda-6b87ff7dba4b
-source-git-commit: d9d3f21279ba89f544adc0ffa9345543907aa777
+source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
 workflow-type: tm+mt
 source-wordcount: '1980'
 ht-degree: 69%
@@ -80,7 +80,7 @@ OAuth 2.0 認証について詳しくは、[OAuth 2.0 承認フレームワー�
 ## [!DNL OAuth] リクエストの接続の作成
 
 * [HTTPで接続を作成するための一般的な手順／OAuth 2.0 リクエスト作成モジュール](#general-instructions-for-creating-a-connection-in-the-http--make-an-oauth-20-request-module)
-* [HTTP >[!UICONTROL Make] an OAuth 2.0 request module でGoogleへの接続を作成する手順](#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module)
+* [http / [!UICONTROL Make] an OAuth 2.0 request module でGoogleへの接続を作成する手順](#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module)
 * [HTTP 経由で Microsoft Graph API への接続を作成するための手順／OAuth 2.0 リクエスト作成モジュール](#instructions-for-connecting-to-microsoft-graph-api-via-the-http--make-an-oauth-20-request-module)
 
 ### [!UICONTROL HTTP]/[!UICONTROL Make an OAuth 2.0 request] モジュールで接続を作成するための一般的な手順

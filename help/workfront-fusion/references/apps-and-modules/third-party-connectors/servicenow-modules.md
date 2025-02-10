@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Ser
 author: Becky
 feature: Workfront Fusion
 exl-id: 7b236869-bd83-4db5-a363-d6570f6e4aff
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 7357044d19f93a91d22cede81e7316ff86733fdf
 workflow-type: tm+mt
-source-wordcount: '1354'
-ht-degree: 79%
+source-wordcount: '1340'
+ht-degree: 72%
 
 ---
 
@@ -21,42 +21,46 @@ ht-degree: 79%
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 [!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+
++++
 
 ## 前提条件
 
@@ -97,6 +101,14 @@ ServiceNow コネクタでは、以下を使用します。
       <td>新しい [!DNL ServiceNow] 接続の名前を入力します。</td> 
      </tr> 
      <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Environment]</p> </td> 
+      <td>実稼動環境と非実稼動環境のどちらに接続するかを選択します。</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Password]</p> </td> 
+      <td>サービスアカウントと個人アカウントのどちらに接続するかを選択します。 </td> 
+     </tr> 
+     <tr> 
       <td role="rowheader"> <p>[!UICONTROL Username]</p> </td> 
       <td>[!DNL ServiceNow] ユーザー名を入力します。</td> 
      </tr> 
@@ -123,22 +135,13 @@ ServiceNow コネクタでは、以下を使用します。
 
 >[!NOTE]
 >
->「[!UICONTROL Record type]」フィールドでカスタムレコードが選択されている場合、カスタムフィールドの読み込みに時間がかかることがあります。
+>* 「[!UICONTROL Record type]」フィールドでカスタムレコードが選択されている場合、カスタムフィールドの読み込みに時間がかかることがあります。
 >
->カスタムレコードがない場合、ドロップダウンは空になります。
+>* カスタムレコードがない場合、「レコードタイプ」フィールドのドロップダウンは空になります。
 
-* [[!UICONTROL Watch records]](#watch-records)
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Read a record]](#read-a-record)
-* [[!UICONTROL Deactivate a User]](#deactivate-a-user)
-* [[!UICONTROL Download an attachment]](#download-an-attachment)
-* [[!UICONTROL Upload an attachment]](#upload-an-attachment)
-* [[!UICONTROL Create a record]](#create-a-record)
-* [[!UICONTROL Update a record]](#update-a-record)
-* [[!UICONTROL Delete a record]](#delete-a-record)
-* [[!UICONTROL Search for records]](#search-for-records)
+### トリガー
 
-### [!UICONTROL Watch records]
+#### [!UICONTROL Watch records]
 
 このトリガーモジュールは、レコードが作成またはアップデートされたときにシナリオをアクティブ化します。
 
@@ -177,7 +180,43 @@ ServiceNow コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-### [!UICONTROL Custom API Call]
+### アクション
+
+* [[!UICONTROL Create a record]](#create-a-record)
+* [[!UICONTROL Custom API Call]](#custom-api-call)
+* [[!UICONTROL Deactivate a User]](#deactivate-a-user)
+* [[!UICONTROL Delete a record]](#delete-a-record)
+* [[!UICONTROL Download an attachment]](#download-an-attachment)
+* [[!UICONTROL Read a record]](#read-a-record)
+* [[!UICONTROL Upload an attachment]](#upload-an-attachment)
+* [[!UICONTROL Update a record]](#update-a-record)
+
+#### [!UICONTROL Create a record]
+
+このアクションモジュールは、新しい [!DNL ServiceNow] レコードを作成します。
+
+このモジュールを設定する際には、次のフィールドが表示されます。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>ServiceNow アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]</a> に [!DNL ServiceNow] を接続する」を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Table type]</td> 
+   <td>カスタムテーブルと標準テーブルのどちらでレコードを作成するかを選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td>モジュールで作成する [!DNL ServiceNow] レコードのタイプを選択します。その後で、このレコードタイプで使用可能なフィールドに入力できます。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Custom API Call]
 
 このアクションモジュールでは、[!DNL ServiceNow] API への認証済みのカスタム呼び出しを実行できます。これにより、他の [!DNL ServiceNow] モジュールでは不可能なデータフロー自動処理を作成できます。
 
@@ -193,11 +232,11 @@ ServiceNow コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Relative URL]</td> 
-   <td> <p>モジュールとやり取りする web サーバー上のアドレスを入力します。</p> <p>相対 URL を入力できます。つまり、<code>http://</code> などのプロトコルを最初に含める必要はありません。これは、web サーバー上でやり取りが発生していることを示しています。</p> <p>例： <code>[!DNL /api/conversations].create</code></p> </td> 
+   <td> <code>https://&ltinstance_url&gt/api/</code> への相対パスを入力します。 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   td&gt; <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエストメソッド </a> を参照してください。</p> </td> 
+   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエストメソッド </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -217,7 +256,70 @@ ServiceNow コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-### [!UICONTROL Read a record]
+#### [!UICONTROL Deactivate a User]
+
+このアクションモジュールは、システム ID を使用することで [!DNL ServiceNow] でユーザーを非アクティブ化します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>ServiceNow アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]</a> に [!DNL ServiceNow] を接続する」を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL User System ID]</td> 
+   <td> モジュールを非アクティブ化するユーザーの一意の [!DNL ServiceNow] ID を入力またはマッピングします。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Delete a record]
+
+このアクションモジュールは、インシデントやユーザーを削除します。
+
+このモジュールを設定する際には、次のフィールドが表示されます。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>ServiceNow アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]</a> に [!DNL ServiceNow] を接続する」を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td>インシデントを削除するか、ユーザーを削除するかを選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL System ID]</td> 
+   <td>モジュールで削除するレコードの一意の [!DNL ServiceNow] ID を入力またはマッピングします。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Download an attachment]
+
+このアクションモジュールは、[!DNL ServiceNow] レコードの添付ファイルをダウンロードします。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>ServiceNow アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]</a> に [!DNL ServiceNow] を接続する」を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Attachment System ID]</td> 
+   <td> モジュールでダウンロードする添付ファイルの一意の [!DNL ServiceNow] ID を入力またはマッピングします。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Read a record]
 
 このアクションモジュールは、システム IDを使用して [!DNL ServiceNow] レコードを読み取ります。
 
@@ -256,101 +358,7 @@ ServiceNow コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-### [!UICONTROL Deactivate a User]
-
-このアクションモジュールは、システム ID を使用することで [!DNL ServiceNow] でユーザーを非アクティブ化します。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>ServiceNow アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]</a> に [!DNL ServiceNow] を接続する」を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL User System ID]</td> 
-   <td> モジュールを非アクティブ化するユーザーの一意の [!DNL ServiceNow] ID を入力またはマッピングします。</td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Download an attachment]
-
-このアクションモジュールは、[!DNL ServiceNow] レコードの添付ファイルをダウンロードします。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>ServiceNow アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]</a> に [!DNL ServiceNow] を接続する」を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Attachment System ID]</td> 
-   <td> モジュールでダウンロードする添付ファイルの一意の [!DNL ServiceNow] ID を入力またはマッピングします。</td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Upload an attachment]
-
-このアクションモジュールは、添付ファイルを [!DNL ServiceNow] レコードにアップロードします。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>ServiceNow アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]</a> に [!DNL ServiceNow] を接続する」を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Table name]</td> 
-   <td>添付ファイルをアップロードするテーブルの名前を入力またはマッピングします。</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL System ID]</td> 
-   <td>添付ファイルをアップロードするシステムの一意の [!DNL ServiceNow] ID を入力またはマッピングします。</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL File name]</td> 
-   <td>添付ファイルの名前を入力またはマッピングします</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL File content]</td> 
-   <td>[!DNL ServiceNow] にアップロードするファイルを入力またはマッピングします。</td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Create a record]
-
-このアクションモジュールは、新しい [!DNL ServiceNow] レコードを作成します。
-
-このモジュールを設定する際には、次のフィールドが表示されます。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>ServiceNow アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]</a> に [!DNL ServiceNow] を接続する」を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Table type]</td> 
-   <td>カスタムテーブルと標準テーブルのどちらでレコードを作成するかを選択します。</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
-   <td>モジュールで作成する [!DNL ServiceNow] レコードのタイプを選択します。その後で、このレコードタイプで使用可能なフィールドに入力できます。</td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Update a record]
+#### [!UICONTROL Update a record]
 
 このアクションモジュールは、新しい [!DNL ServiceNow] レコードを作成します。
 
@@ -379,11 +387,9 @@ ServiceNow コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-### [!UICONTROL Delete a record]
+#### [!UICONTROL Upload an attachment]
 
-このアクションモジュールは、インシデントやユーザーを削除します。
-
-このモジュールを設定する際には、次のフィールドが表示されます。
+このアクションモジュールは、添付ファイルを [!DNL ServiceNow] レコードにアップロードします。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -394,17 +400,23 @@ ServiceNow コネクタでは、以下を使用します。
    <td> <p>ServiceNow アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion]</a> に [!DNL ServiceNow] を接続する」を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
-   <td>インシデントを削除するか、ユーザーを削除するかを選択します。</td> 
+   <td role="rowheader">[!UICONTROL Table name]</td> 
+   <td>添付ファイルをアップロードするテーブルの名前を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL System ID]</td> 
-   <td>モジュールで削除するレコードの一意の [!DNL ServiceNow] ID を入力またはマッピングします。</td> 
+   <td>添付ファイルをアップロードする項目の一意の [!DNL ServiceNow] ID を入力またはマッピングします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Search for records]
+### 検索
+
+#### [!UICONTROL Search for records]
 
 このモジュールは、選択した条件を使用してレコードを検索します。
 
@@ -444,7 +456,7 @@ ServiceNow コネクタでは、以下を使用します。
       </ul> </li> 
      <li> <p><strong>[!UICONTROL Simple]</strong> </p> 
       <ul> 
-       <li> <p>[!UICONTROL Search Criteria]</p> <p>モジュールで検索する基準を入力します。<!--For more information on setting up search filters, see <a href="." class="MCXref xref">Add a filter to a scenario in Adobe Workfront Fusion</a>.</p>--> </li> 
+       <li> <p>[!UICONTROL Search Criteria]</p> <p>モジュールで検索する基準を入力します。 </li> 
        <li> <p>[!UICONTROL Sort by]</p> <p>モジュールで結果を並べ替える基準となるフィールドと、結果を昇順または降順のどちらで並べ替えるかを指定します。</p> </li> 
       </ul> </li> 
     </ul> <p> </p> </td> 
