@@ -1,13 +1,13 @@
 ---
-title: HTTP／リクエストモジュールの作成
-description: Adobe Workfront Fusion HTTP／リクエストモジュールの作成は、HTTP リクエストを設定してサーバーに送信できるユニバーサルモジュールです。受信した HTTP 応答は、出力バンドルに含まれます。
+title: HTTP／リクエストを作成モジュール
+description: Adobe Workfront Fusion HTTP/リクエストを行うモジュールは、HTTP リクエストを設定してサーバーに送信できるユニバーサルモジュールです。 受信した HTTP 応答は、出力バンドルに含まれます。
 author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 63%
+source-wordcount: '815'
+ht-degree: 59%
 
 ---
 

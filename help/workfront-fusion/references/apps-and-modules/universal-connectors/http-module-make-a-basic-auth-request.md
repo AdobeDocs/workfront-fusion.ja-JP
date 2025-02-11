@@ -1,12 +1,12 @@
 ---
-title: HTTP／基本認証リクエストの実行モジュール
+title: HTTP／ベーシック認証リクエストを作成モジュール
 description: Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンスに加えて、Adobe Workfront Fusion ライセンスが必要です。
 author: Becky
 feature: Workfront Fusion
 exl-id: e544768e-7023-473f-8d51-631b04183743
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '771'
 ht-degree: 77%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 77%
 
 [!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください
 
-## [!UICONTROL HTTP] >[!UICONTROL Make a Basic Authorization request] モジュールの設定
+## [!UICONTROL HTTP]/[!UICONTROL Make a Basic Authorization request] モジュール設定
 
 [!UICONTROL HTTP]/[!UICONTROL Make a Basic Authorization request] モジュールを設定すると、以下に示 [!DNL Adobe Workfront Fusion] フィールドが表示されます。 モジュール内の太字のタイトルは、必須フィールドを示します。
 

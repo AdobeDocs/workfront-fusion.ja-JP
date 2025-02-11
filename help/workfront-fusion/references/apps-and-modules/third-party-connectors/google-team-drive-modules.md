@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Workfront Fusion Google Team Drive] モジュール�
 author: Becky
 feature: Workfront Fusion
 exl-id: 95dd9d23-1df9-40da-8fd0-646cc697bfc8
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: cca7aa6e15df0fd313e9d4ca391994a8ef4c974a
 workflow-type: tm+mt
 source-wordcount: '1059'
 ht-degree: 74%
@@ -162,7 +162,7 @@ ht-degree: 74%
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Source File]</p> </td> 
-   <td> <p>共有ドライブにアップロードするファイルを指定します。</p> <p>前のモジュール（例：[!UICONTROL HTTP] &gt;[!UICONTROL Get a File] または [!UICONTROL Dropbox] &gt;[!UICONTROL Get a file)] からアップロードするファイルをマッピングするか、ファイル名とファイルデータを手動で入力します。</p> </td> 
+   <td> <p>共有ドライブにアップロードするファイルを指定します。</p> <p>前のモジュール（例：[!UICONTROL HTTP]/[!UICONTROL Get a File] または [!UICONTROL Dropbox]/[!UICONTROL Get a file)] からアップロードするファイルをマッピングするか、ファイル名とファイルデータを手動で入力します。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Title]</td> 

@@ -1,12 +1,12 @@
 ---
-title: HTTP／クライアント証明書認証リクエストモジュールの作成
+title: HTTP／クライアント証明書認証リクエストを作成モジュール
 description: この  [!DNL Adobe Workfront Fusion] モジュールを使用すると、HTTP クライアント証明書認証を使用して HTTP リクエストを設定し、サーバーに送信できます。受信した HTTP 応答は、出力バンドルに含まれます。
 author: Becky
 feature: Workfront Fusion
 exl-id: cc33530c-3010-4955-8819-5eb8373a0e10
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '804'
 ht-degree: 78%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 78%
 
 [!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください
 
-## [!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate Authorization request] モジュールの設定
+## [!UICONTROL HTTP]/[!UICONTROL Make a Client Certificate Authorization request] モジュール設定
 
 [!UICONTROL HTTP]/[!UICONTROL Make a Client Certificate Authorization request] モジュールを設定すると、以下に示 [!DNL Adobe Workfront Fusion] フィールドが表示されます。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
@@ -114,7 +114,7 @@ ht-degree: 78%
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] は、ファイルおよびデータの送信に使用される HTTP マルチパートリクエストです。 通常、ファイルをサーバーにアップロードする際に使用されます。</p> <p>リクエストで送信するフィールドを追加します。各フィールドには、キーと値のペアが含まれている必要があります。</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>リクエスト本文内で送信するキーと値を入力します。</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>キーを入力し、リクエスト本文で送信するソースファイルを指定します。</p> <p>以前のモジュール（[!UICONTROL HTTP] &gt;[!UICONTROL Get a File] や [!UICONTROL Google Drive] &gt; など）からアップロードするファイルをマッピングするか、ファイル名とファイルデータを手動で入力 [!UICONTROL Download a File)] ます。</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>キーを入力し、リクエスト本文で送信するソースファイルを指定します。</p> <p>前のモジュール（[!UICONTROL HTTP]/[!UICONTROL Get a File] または [!UICONTROL Google Drive]/[!UICONTROL Download a File)] からアップロードするファイルをマッピングするか、ファイル名とファイルデータを手動で入力します。</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 

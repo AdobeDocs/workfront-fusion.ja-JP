@@ -1,13 +1,13 @@
 ---
 title: Ms Graph REST API の呼び出し
-description: Adobe Workfront Fusion HTTP &gt; Make an OAuth 2.0 request module を使用して MS Graph REST API を呼び出す
+description: Adobe Workfront Fusion HTTP を介した MS Graph REST API の呼び出し&> OAuth 2.0 リクエストモジュールの作成
 author: Becky
 feature: Workfront Fusion
 exl-id: f411c807-955d-44fe-98b1-3ebba3fe0861
-source-git-commit: 362952ec85b0df2306ba117ba530e95201330cca
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 19%
+source-wordcount: '679'
+ht-degree: 20%
 
 ---
 
