@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion を使用するには、Adobe Workfront ラ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 3b445b50-5812-4ded-9788-f467991e0b52
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 7404dafc0b368a8f1785be7b6a65fe45c0f12172
 workflow-type: tm+mt
 source-wordcount: '1858'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -83,7 +83,7 @@ Airtable コネクタでは、以下を使用します。
 -->
 1. Workfront Fusion と、必要なモジュールの&#x200B;**接続を作成**&#x200B;ダイアログを開きます。
 1. 接続に名前を入力します。
-1. （オプション）「詳細設定を表示」をクリックし、Airtable のクライアント ID とクライアントシークレットを入力します。
+1. （任意）「詳細設定を表示」をクリックし、編集可能なクライアント ID とクライアントシークレットを入力します。
 1. 「**続行**」ボタンをクリックして接続を作成し、モジュールに戻ります。
 
 ## Airtable モジュールとそのフィールド

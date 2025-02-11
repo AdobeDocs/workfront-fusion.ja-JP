@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Byn
 author: Becky
 feature: Workfront Fusion
 exl-id: 0a45f8a7-12cc-41cc-9135-92f4779afac0
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 024176956d5ca9c88112a67c6948d6297f53810e
 workflow-type: tm+mt
-source-wordcount: '1425'
-ht-degree: 85%
+source-wordcount: '1467'
+ht-degree: 82%
 
 ---
 
@@ -83,6 +83,10 @@ Bynder コネクタでは、以下を使用します。
 
 ## [!DNL Bynder] を Workfront Fusion に接続  {#connect-bynder-to-workfront-fusion}
 
+>[!NOTE]
+>
+>Bynder は、認証コード/更新トークン付与タイプを使用します。 これは、Fusion Builder コネクタが使用する唯一の付与タイプです。
+
 * [ [!DNL Workfront Fusion] から  [!DNL Bynder]  への接続の作成](#create-a-connection-to-bynder-from-workfront-fusion)
 * [[!UICONTROL Client ID] と [!UICONTROL Client Secret] の生成  [!DNL Bynder]  （オプション）](#generate-a-client-id-and-client-secret-in-bynder-optional)
 
@@ -107,9 +111,10 @@ Bynder コネクタでは、以下を使用します。
 
 >[!NOTE]
 >
->[!DNL Bynder] でアプリを作成する場合、`redirect uri` として次を入力します。
+>* [!DNL Bynder] でアプリを作成する場合、`redirect uri` として次を入力します。
 >
->`https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
+>   `https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
+>* Bynder は、認証コード/更新トークン付与タイプを使用します。 これは、Fusion Builder コネクタが使用する唯一の付与タイプです。
 
 ## [!DNL Bynder] モジュールとそのフィールド
 
