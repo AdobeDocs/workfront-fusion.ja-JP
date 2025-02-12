@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion Adobe Creative Cloud]  ライブラ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 85607e4e-538a-427f-8a99-a0ab65a75ac2
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: fedf8f3f4031faaad9f81ed38fbc77e40e3a85b6
 workflow-type: tm+mt
-source-wordcount: '1188'
-ht-degree: 73%
+source-wordcount: '1223'
+ht-degree: 62%
 
 ---
 
@@ -25,47 +25,46 @@ ht-degree: 73%
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-      <td>
-        <p>[!UICONTROL Pro] またはそれ以降</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-      <td>
-        <p>[!UICONTROL Plan], [!UICONTROL Work]</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td>
-      <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
+   <td>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
-   </td>
-    </tr>
-    <tr>
-      <td role="rowheader">製品</td>
-      <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">製品</td> 
+   <td>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
-   </td>
-    </tr>
-  </tbody>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   </td> 
+  </tr>
+ </tbody> 
 </table>
 
-
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 [!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+
++++
 
 ## 前提条件
 
@@ -135,11 +134,11 @@ Adobe Creative Cloud ライブラリコネクタでは、以下を使用しま�
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Library ID]</td>
-      <td >アーカイブする要素を含むライブラリを選択します。</td>
+      <td >アーカイブする要素を含むライブラリを選択またはマッピングします。</td>
     </tr>
     <tr>
-      <td class="TableStyle-TableStyle-List-options-in-steps-BodyB-Column1-LightGray" role="rowheader">[!UICONTROL Element ID]</td>
-      <td class="TableStyle-TableStyle-List-options-in-steps-BodyA-Column2-LightGray">アーカイブする要素を選択します。</td>
+      <td role="rowheader">[!UICONTROL Element ID]</td>
+      <td>アーカイブする要素を選択またはマッピングします。</td>
     </tr>
   </tbody>
 </table>
@@ -158,7 +157,7 @@ Adobe Creative Cloud ライブラリコネクタでは、以下を使用しま�
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Library ID]</td>
-      <td >取得する要素を含むライブラリを選択します。</td>
+      <td>取得する要素を含むライブラリを選択またはマッピングします。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Element ID]</td>
@@ -204,15 +203,15 @@ Adobe Creative Cloud ライブラリコネクタでは、以下を使用しま�
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Library ID]</td>
-      <td >要素をリストするライブラリを選択します。</td>
+      <td >要素をリストするライブラリを選択またはマッピングします。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Order by]</td>
-      <td>結果を名前順に並べ替えるか、要素が最後に変更された日付順に並べ替えるかを選択します。</td>
+      <td>結果を名前で並べ替えるか、要素が最後に変更された日付で並べ替えるかを選択します。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Type]</td>
-      <td >MIME タイプを入力して、指定した MIME タイプで識別される要素に結果を制限します。例：<code>string</code>。</td>
+      <td >MIME タイプを入力またはマッピングして、指定した MIME タイプで識別される要素のみに結果を制限します。 例：<code>string</code>。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Selector]</td>
@@ -240,57 +239,6 @@ Adobe Creative Cloud ライブラリコネクタでは、以下を使用しま�
     <tr>
       <td role="rowheader">[!UICONTROL Limit]</td>
       <td>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</td>
-    </tr>
-  </tbody>
-</table>
-
-#### [!UICONTROL Upload an Element]
-
-このアクションモジュールは、小さなファイルアセットを既存のライブラリにアップロードします。最大ファイルサイズは 1 GB です。
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>既存のCreative Cloud Libraries接続を選択します。 現在、Creative Cloud Libraries コネクタでは接続を作成できません。 既存の接続は期待どおりに動作します。</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Library ID]</td>
-      <td >要素をリストするライブラリを選択します。</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Invocation Mode]</td>
-      <td>
-        <p>このリクエストプロセスを呼び出す処理モードを選択します。</p>
-        <ul>
-          <li>
-            <p><b>[!UICONTROL sync]</b>
-            </p>
-            <p>API 呼び出しが同期処理されます。処理が完了すると（呼び出しがタイムアウトしない限り）応答が配信されます。</p>
-          </li>
-          <li>
-            <p><b>[!UICONTROL async]</b>
-            </p>
-            <p>非同期モニター応答は直ちに返され、リクエスト処理は非同期で実行されます。呼び出しは、完了するまでエンドポイントをポーリングする役割を持ちます。</p>
-          </li>
-          <li>
-            <p><b>[!UICONTROL sync,async]</b> （デフォルト）</p>
-            <p>リクエストの同期処理が試行されます。処理時間が 5000 ミリ秒を超えると、非同期モニター応答が返されます。リクエストが完了するまで、モニター URL をポーリングする必要があります。</p>
-          </li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Type File]</td>
-      <td >アップロードしたファイルの MIME タイプを入力またはマッピングします。</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Source File]</td>
-      <td>
-        <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p>
-      </td>
     </tr>
   </tbody>
 </table>
@@ -389,6 +337,9 @@ Adobe Creative Cloud ライブラリコネクタでは、以下を使用しま�
 
 ### その他
 
+* [API 呼び出しを実行](#make-an-api-call)
+* [アセットのアップロード](#upload-an-asset)
+
 #### [!UICONTROL Make an API Call]
 
 このモジュールは、[!DNL Adobe Creative Cloud Libraries] API に対してカスタム API 呼び出しを実行します。
@@ -445,6 +396,66 @@ Adobe Creative Cloud ライブラリコネクタでは、以下を使用しま�
       <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p>
     </td>
     </tr>
-
 </tbody>
 </table>
+
+
+#### [!UICONTROL Upload an Asset]
+
+このアクションモジュールは、小さなファイルアセットを既存のライブラリにアップロードします。最大ファイルサイズは 1 GB です。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>既存のCreative Cloud Libraries接続を選択します。 現在、Creative Cloud Libraries コネクタでは接続を作成できません。 既存の接続は期待どおりに動作します。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Library ID]</td>
+      <td >アセットのアップロード先となるライブラリを選択します。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Invocation Mode]</td>
+      <td>
+        <p>このリクエストプロセスを呼び出す処理モードを選択します。</p>
+        <ul>
+          <li>
+            <p><b>[!UICONTROL sync]</b>
+            </p>
+            <p>API 呼び出しが同期処理されます。処理が完了すると（呼び出しがタイムアウトしない限り）応答が配信されます。</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL async]</b>
+            </p>
+            <p>非同期モニター応答は直ちに返され、リクエスト処理は非同期で実行されます。呼び出しは、完了するまでエンドポイントをポーリングする役割を持ちます。</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL sync,async]</b> （デフォルト）</p>
+            <p>リクエストの同期処理が試行されます。処理時間が 5000 ミリ秒を超えると、非同期モニター応答が返されます。リクエストが完了するまで、モニター URL をポーリングする必要があります。</p>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Element Type]</td>
+      <td >アップロードする要素のタイプを選択します</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL File Type]</td>
+      <td >アップロードしたファイルの MIME タイプを入力またはマッピングします。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Source File]</td>
+      <td>
+        <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+

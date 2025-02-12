@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Planning] modules を使用すると、 [!D
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 06ba97ec4245f9620f013711df9a77b76abb20be
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 68%
+source-wordcount: '1395'
+ht-degree: 55%
 
 ---
 
@@ -17,42 +17,54 @@ ht-degree: 68%
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
-   </td>  
+   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 [!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+
++++
+
+## 前提条件
+
+Workfront Planning にアクセスするには、次のものが必要です。
+
+* 新しいWorkfront パッケージおよびライセンス。 Workfront Planning は、従来のWorkfront パッケージまたはライセンスでは使用できません。
+* Workfront Planning パッケージ。
+* 組織のWorkfront インスタンスは、Adobe Unified Experience にオンボーディングされる必要があります。
 
 ## Adobe Workfront Planning API に関する情報
 
@@ -110,7 +122,7 @@ Adobe Workfront Planning コネクタでは、以下を使用します。
           <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。 これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションにあります。
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Authentication URL]<p>（オプション）</p></td>
+          <td role="rowheader">[!UICONTROL Authentication URL]</td>
           <td>Workfrontのインスタンスで、この接続の認証に使用する URL を入力します。 <p>デフォルト値は <code>https://oauth.my.workfront.com/integrations/oauth2</code> です。</p>
         </tr>
         <tr>
@@ -119,9 +131,22 @@ Adobe Workfront Planning コネクタでは、以下を使用します。
         </tr>
       </tbody>
     </table>
+
 1. 「**[!UICONTROL Continue]**」をクリックして接続を保存し、モジュールに戻ります。
 
 ## [!DNL Adobe Workfront Planning] モジュールとそのフィールド
+
+Workfront Fusion でWorkfront モジュールを設定する場合、以下に示すフィールドが表示されます。 これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加のWorkfront フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
+
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+
+
+![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+
+* [トリガー](#triggers)
+* [アクション](#actions)
+* [検索](#searches)
+* [未分類](#uncategorized)
 
 ### トリガー
 
@@ -199,7 +224,7 @@ Adobe Workfront Planning コネクタでは、以下を使用します。
       <td role="rowheader">
         <p>[!UICONTROL Record type ID]</p>
       </td>
-      <td>削除するフィールドの ID を入力またはマッピングします。</td> 
+      <td>削除するレコードタイプの ID を入力またはマッピングします。</td> 
       </tr>
   </tbody>
 </table>
@@ -246,21 +271,61 @@ Adobe Workfront Planning コネクタでは、以下を使用します。
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件文を JSON で使用する場合は、条件文を引用符で囲みます。</p> 
+   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件ステートメントを JSON で使用する場合は、条件ステートメントの外側に引用符を挿入します。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
   </tbody>
 </table>
 
-<!--
-### Searches
 
-#### Search records
+### 検索
 
-This action module retrieves a list of records based on criteria you specify.
+#### レコードの検索
 
--->
+このアクションモジュールは、指定した条件に基づいてレコードのリストを取得します。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>[!DNL Adobe Workfront Planning] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a> への接続を作成を参照してください。</td>
+    </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>検索するレコードを含むWorkspaceを入力またはマッピングします。</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>検索するレコードタイプを選択します。</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record Fields]</p>
+      </td>
+      <td>検索に使用する各フィールドについて、そのフィールドを見つけ、演算子を選択して、検索する値を入力またはマッピングします。 フィールドは、選択したレコードタイプに基づいて使用可能になります。</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Condition for filters]</p>
+      </td>
+      <td>フィルターの条件の選択：<ul><li><b>AND</b><p>モジュールは、選択したフィールド値の <b> すべて </b> を満たすレコードを返します。</p></li><li><b>または</b><p>モジュールは、選択したフィールド値の <b> いずれか </b> を満たすレコードを返します。</p></li></ul></td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Limit]</p>
+      </td>
+   <td> <p>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</p> </td> 
+      </tr>
+  </tbody>
+</table>
+
 
 ### 未分類
 
@@ -287,7 +352,7 @@ This action module retrieves a list of records based on criteria you specify.
       <td role="rowheader">
         <p>その他のフィールド</p>
       </td>
-      <td>これらのフィールドは、選択したレコードタイプに基づきます。</td> 
+      <td>新しいレコードに設定する値を入力します。 これらのフィールドは、選択したレコードタイプに基づきます。</td> 
       </tr>
      <tr>
   </tbody>
@@ -313,31 +378,6 @@ This action module retrieves a list of records based on criteria you specify.
       </tr>
   </tbody>
 </table>
-
-<!--
-
-### Get all records
-
-This action module retrieves all records from an [!DNL Adobe Workfront Planning] account.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximum number of returned records]</p>
-      </td>
-      <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
-      </tr>
-  </tbody>
-</table>
-
--->
 
 ### レコードを取得
 
@@ -378,11 +418,11 @@ This action module retrieves all records from an [!DNL Adobe Workfront Planning]
       <td role="rowheader">[!UICONTROL Record type]</td>
       <td>取得するレコードのタイプを選択します。</td>
     </tr>
-     <tr>
+     <!--<tr>
       <td role="rowheader">
         <p>[!UICONTROL Maximum number of returned records]</p>
       </td>
-      <td>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</td> 
+      <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> -->
   </tbody>
 </table>
 
@@ -397,6 +437,10 @@ This action module retrieves all records from an [!DNL Adobe Workfront Planning]
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
       <td>[!DNL Adobe Workfront Planning] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a> への接続を作成を参照してください。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td>取得するレコードタイプを含むワークスペースを選択またはマッピングします。</td>
     </tr>
   </tbody>
 </table>
@@ -423,7 +467,7 @@ Workfront Planning 内の 1 つのレコードを更新します。
       <td role="rowheader">
         <p>その他のフィールド</p>
       </td>
-      <td>これらのフィールドは、選択したレコードタイプに基づきます。</td> 
+      <td>レコードに追加する新しい値を入力します。 これらのフィールドは、選択したレコードタイプに基づきます。</td> 
       </tr>
      <tr>
   </tbody>

@@ -5,10 +5,10 @@ description: Adobe Workfront Fusion のシナリオでは、 [!DNL Workday] を�
 author: Becky
 feature: Workfront Fusion
 exl-id: 77237a1b-2acd-4350-9cc0-ec43b8b08137
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: fedf8f3f4031faaad9f81ed38fbc77e40e3a85b6
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 83%
+source-wordcount: '894'
+ht-degree: 79%
 
 ---
 
@@ -22,42 +22,46 @@ ht-degree: 83%
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 [!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+
++++
 
 ## 前提条件
 

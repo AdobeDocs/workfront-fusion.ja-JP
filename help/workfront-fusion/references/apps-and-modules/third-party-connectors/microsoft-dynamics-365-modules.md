@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion] シナリオでは、Microsoft Dyna
 author: Becky
 feature: Workfront Fusion
 exl-id: 16ae173b-10ce-481d-8f6c-1df0e65f7c0e
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: c377a24c2daeb25effffb28d9912d8c27ad0a08d
 workflow-type: tm+mt
-source-wordcount: '1548'
-ht-degree: 78%
+source-wordcount: '1623'
+ht-degree: 69%
 
 ---
 
@@ -18,6 +18,8 @@ ht-degree: 78%
 >[!NOTE]
 >
 >[!DNL Microsoft Dynamics 365] コネクタでは [!DNL Dynamics Finance and Operations] をサポートしていません。
+>
+>[!DNL Microsoft Dynamics 365 Finance and Operations] コネクタについては、[[!DNL Microsoft Dynamics 365 Finance and Operations]  モジュール ](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dynamics-finance-operations-modules.md) を参照してください。
 
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -25,42 +27,46 @@ ht-degree: 78%
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 [!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+
++++
 
 ## 前提条件
 
@@ -77,8 +83,48 @@ ht-degree: 78%
 >例えば、ユーザーが Excel コネクタを使用して「テーブルの読み取り」権限を付与され、Outlook コネクタにメールを読み取るための接続を作成した場合、権限の同意画面には、既に付与されている「テーブルの読み取り」権限と、新しく必要な「メールの書き込み」権限の両方が表示されます。
 
 1. 任意の [!DNL Microsoft Dynamics 365] モジュールで、[!UICONTROL Connection] フィールドの横にある「**[!UICONTROL Add]**」をクリックします。
-1. 接続に名前を入力します。
-1. 「**[!UICONTROL Resource]**」フィールドに、`https://` を付けずに [!DNL Dynamics 365] アカウントのアドレスを入力します。
+
+
+1. 次のフィールドに入力します。
+
+   <table style="table-layout:auto"> 
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+      </col>
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+      </col>
+      <tbody>
+        <tr>
+          <td role="rowheader">[!UICONTROL Connection name]</td>
+          <td>
+            <p>この接続の名前を入力します。</p>
+          </td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Environment]</td>
+          <td>実稼動環境と非実稼動環境のどちらに接続するかを選択します。</td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Type]</td>
+          <td>サービスアカウントに接続するか、個人アカウントに接続するかを選択します。</td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Client ID]<p>（オプション）</p></td>
+          <td>[!DNL Microsoft Dynamics] [!UICONTROL Client ID] を入力します。</td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Client Secret]<p>（オプション）</p></td>
+          <td>[!DNL Microsoft Dynamics] [!UICONTROL Client Secret] を入力します。
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Authentication URL]</td>
+          <td>Workfrontのインスタンスで、この接続の認証に使用する URL を入力します。 <p>デフォルト値は <code>https://oauth.my.workfront.com/integrations/oauth2</code> です。</p>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Resource]</td>
+          <td><code>>https://</code> なしで [!DNL Dynamics 365] アカウントのアドレスを入力します。</p>
+        </tr>
+      </tbody>
+    </table>
 1. 「**[!UICONTROL Continue]**」をクリックして接続を作成し、モジュールに戻ります。
 
 >[!NOTE]
@@ -96,53 +142,16 @@ ht-degree: 78%
 
 ![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [[!UICONTROL Watch Records (Scheduled)]](#watch-records-scheduled)
+* [トリガー](#triggers)
+* [アクション](#actions)
+* [検索](#searches)
+
+### トリガー
+
 * [[!UICONTROL Watch Records (Real Time)]](#watch-records-real-time)
-* [[!UICONTROL Create Record]](#create-record)
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
-* [[!UICONTROL Delete Record]](#delete-record)
-* [[!UICONTROL Read Records]](#read-records)
-* [[!UICONTROL Update Record]](#update-record)
-* [[!UICONTROL Search Records]](#search-records)
+* [[!UICONTROL Watch Records (Scheduled)]](#watch-records-scheduled)
 
-### [!UICONTROL Watch Records (Scheduled)]
-
-この定期的なトリガーモジュールでは、[!DNL Dynamics 365] でのスケジュールされた最後の実行後に、指定したオブジェクト内のレコードが作成または更新されたときにシナリオを実行します。
-
-このモジュールの出力は、検出されたレコードが新規か更新かを示します（期間内に追加された場合も更新された場合も、新規としてマークされます）。この情報は、シナリオ内の後続のモジュールにマッピングできます。
-
-この処理は、指定した間隔で定期的に実行されます。
-
-このモジュールを設定する際には、次のフィールドが表示されます。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Microsoft Dynamics 365] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Microsoft Dynamics 365] を [!DNL Workfront Fusion]</a> に接続を参照してください。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Include]</td> 
-   <td>モジュールで <strong>[!UICONTROL Only new records]</strong>、<strong>[!UICONTROL Updated records only]</strong>、<strong>[!UICONTROL New records and all changes]</strong> のいずれを監視するかを選択します。</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
-   <td>シナリオで監視する [!UICONTROL Microsoft Dynamics 365] レコードタイプを選択します。</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td> <p>このモジュールの出力バンドルに含める情報を選択します。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Max Records]</td> 
-   <td> <p>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Watch Records (Real Time)]
+#### [!UICONTROL Watch Records (Real Time)]
 
 このインスタントトリガーモジュールでは、指定したレコード（オブジェクト）が [!DNL Dynamics 365] で作成または更新されたときにシナリオを実行します。
 
@@ -165,7 +174,53 @@ ht-degree: 78%
  </tbody> 
 </table>
 
-### [!UICONTROL Create Record]
+#### [!UICONTROL Watch Records (Scheduled)]
+
+このスケジュールされたトリガーモジュールは、指定したオブジェクトのレコードが、このシナリオの最後のスケジュールされた実行の後に作成または更新されたときに、シナリオを実行します。
+
+モジュールの出力は、検出されたレコードが新規か更新かを示します。 期間内にレコードが追加され、更新された場合は、新しいレコードとして返されます。
+
+この処理は、指定した間隔で定期的に実行されます。
+
+このモジュールを設定する際には、次のフィールドが表示されます。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> “
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+  <td> <p>[!DNL Microsoft Dynamics 365] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Microsoft Dynamics 365] を [!DNL Workfront Fusion]</a> に接続を参照してください。 </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Include]</td> 
+   <td>モジュールで <strong>[!UICONTROL New Records Only]</strong>、<strong>[!UICONTROL Updated Records Only]</strong>、<strong>[!UICONTROL New and Updated Records]</strong> のいずれを監視するかを選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td>シナリオで監視する [!UICONTROL Microsoft Dynamics 365] レコードタイプを選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td> <p>このモジュールの出力バンドルに含める情報を選択します。フィールドは、選択したエンティティタイプに基づいて使用できます。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Max Records]</td> 
+   <td> <p>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### アクション
+
+* [[!UICONTROL Create Record]](#create-record)
+* [[!UICONTROL Make an API Call]](#make-an-api-call)
+* [[!UICONTROL Delete Record]](#delete-record)
+* [[!UICONTROL Read Records]](#read-records)
+* [[!UICONTROL Update Record]](#update-record)
+
+
+#### [!UICONTROL Create Record]
 
 このアクションモジュールでは、アポイントメントやタスクなどのエンティティを作成します。
 
@@ -198,7 +253,36 @@ ht-degree: 78%
  </tbody> 
 </table>
 
-### [!UICONTROL Make an API Call]
+#### [!UICONTROL Delete Record]
+
+このアクションモジュールは、エンティティを削除します。
+
+エンティティの ID を指定します。
+
+このモジュールは、エンティティの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
+
+このモジュールを設定する際には、次のフィールドが表示されます。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+  <td> <p>[!DNL Microsoft Dynamics 365] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Microsoft Dynamics 365] を [!DNL Workfront Fusion]</a> に接続を参照してください。 </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td> <p>このモジュールで削除するエンティティのタイプを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID]</td> 
+   <td> <p>モジュールで削除するレコードの一意の [!DNL Microsoft Dynamics 365] ID を入力またはマッピングします。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Make an API Call]
 
 このアクションモジュールでは、[!DNL Microsoft Dynamics 365] API への認証済みのカスタム呼び出しを実行できます。これにより、他の [!DNL Microsoft Dynamics 365] モジュールでは達成できないデータフローの自動化を作成できます。
 
@@ -242,36 +326,7 @@ ht-degree: 78%
  </tbody> 
 </table>
 
-### [!UICONTROL Delete Record]
-
-このアクションモジュールは、エンティティを削除します。
-
-エンティティの ID を指定します。
-
-このモジュールは、エンティティの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
-
-このモジュールを設定する際には、次のフィールドが表示されます。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Microsoft Dynamics 365] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Microsoft Dynamics 365] を [!DNL Workfront Fusion]</a> に接続を参照してください。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
-   <td> <p>このモジュールで削除するエンティティのタイプを選択します。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL ID]</td> 
-   <td> <p>モジュールで削除するレコードの一意の [!DNL Microsoft Dynamics 365] ID を入力またはマッピングします。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Read Records]
+#### [!UICONTROL Read Records]
 
 このアクションモジュールは、[!DNL Microsoft Dynamics 365] の 1 つのエンティティからデータを読み取ります。
 
@@ -304,7 +359,7 @@ ht-degree: 78%
  </tbody> 
 </table>
 
-### [!UICONTROL Update Record]
+#### [!UICONTROL Update Record]
 
 このアクションモジュールは、エンティティを更新します。
 
@@ -341,7 +396,9 @@ ht-degree: 78%
  </tbody> 
 </table>
 
-### [!UICONTROL Search Records]
+### 検索
+
+#### [!UICONTROL Search Records]
 
 この検索モジュールは、指定された検索クエリに一致するレコードを [!DNL Microsoft Dynamics 365] 内のオブジェクトで検索します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
