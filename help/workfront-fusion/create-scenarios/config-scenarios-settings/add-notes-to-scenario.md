@@ -5,24 +5,23 @@ description: 各モジュールに関するメモを追加する方法として�
 author: Becky
 feature: Workfront Fusion
 exl-id: 754601fa-b572-42c2-96a3-3c36a8ed2c56
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 167aae7d490a231a7b4e220d0aefb22bbf733f65
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 45%
+source-wordcount: '142'
+ht-degree: 9%
 
 ---
 
 # シナリオへのメモの追加
 
-各モジュールに関するメモを追加する方法として、任意ではあるものの便利な方法をお勧めします。
+シナリオにメモを追加する方法（オプションですが便利です）をお勧めします。 メモは個々のモジュールに添付され、シナリオエディターに表示されます。 メモのオンとオフを切り替えたり、1 つのモジュールに複数のメモを追加したりできます。
 
 1. [!DNL Workfront] モジュールを右クリックし、[**[!UICONTROL Add a note]**] をクリックします。
-1. 表示されるメモに、モジュールの概要を入力します。
+1. 表示されるメモで、編集アイコン ![ 編集アイコン ](assets/edit-note.png) をクリックします。
+1. メモのテキストを入力します。
+1. 「**完了**」をクリックして、メモを保存します。
+1. メモをシナリオエディターの目的の場所にドラッグします。
 
-   1 つのモジュールに複数のノートを追加できます。
+   シナリオにメモを追加すると、シナリオエディターの下部にあるメモ **[!UICONTROL Notes]** イコン ![ ドット付きのメモアイコン ](assets/notes-icon-w-dot.png) に青いドットが表示されます。
 
-1. **[!UICONTROL Notes]** 領域を閉じます。
-
-   シナリオにメモを追加すると、シナリオエディターの下部にあるメモ **[!UICONTROL Notes]** イコン ![ ドット付きのメモアイコン ](assets/notes-icon-w-dot.png) オレンジ色の点が表示されます。
-
-1. **[!UICONTROL Notes]** アイコン ![ ドット付きメモアイコン ](assets/notes-icon-w-dot.png) をクリックして、メモを表示します。
+1. すべてのメモを表示または非表示にするには、**[!UICONTROL Notes]** のアイコン ![ メモ アイコン（ドット付き ](assets/notes-icon-w-dot.png) をクリックします。
