@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion] シナリオでは、Dropbox を使
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 04f0678b67cf6bffdb791a9ab38be27a6417370c
 workflow-type: tm+mt
-source-wordcount: '2876'
-ht-degree: 87%
+source-wordcount: '2870'
+ht-degree: 78%
 
 ---
 
@@ -21,6 +21,8 @@ ht-degree: 87%
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
 <table style="table-layout:auto">
@@ -28,35 +30,37 @@ ht-degree: 87%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 [!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+
++++
 
 ## 前提条件
 
@@ -68,9 +72,9 @@ ht-degree: 87%
 >
 >詳しくは、Dropbox 開発者ガイドの「Production approval」を検索してください。
 
-## DropboxAPI に関する情報
+## Dropbox API の情報
 
-Dropboxコネクタでは、以下を使用します。
+Dropbox コネクタでは、以下を使用します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -131,6 +135,10 @@ Dropboxコネクタでは、以下を使用します。
         <td role="rowheader">[!UICONTROL Account Type]</td>
         <td>個人用 Dropbox アカウントとビジネス用アカウント（Dropbox Business）のどちらに接続するかを選択します。</td>
         </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Exclude dropbox-api-path-root header]</td>
+        <td>アプリのフォルダーアクセス権を持つDropbox アプリの dropbox-api-path-root ヘッダーを除外するには、このオプションを有効にします</td>
+        </tr>
       </tbody>
     </table>
 
@@ -180,52 +188,11 @@ Dropboxコネクタでは、以下を使用します。
 
 ### [!DNL Dropbox] ファイルおよびフォルダーを取得するためのモジュール
 
-* [[!UICONTROL Search Files/Folders]](#search-filesfolders)
 * [[!UICONTROL Download a File]](#download-a-file)
 * [[!UICONTROL Get a Folder Metadata]](#get-a-folder-metadata)
 * [[!UICONTROL List All Files/Subfolders in a Folder]](#list-all-filessubfolders-in-a-folder)
 * [[!UICONTROL List File Revisions]](#list-file-revisions)
-
-#### [!UICONTROL Search Files/Folders]
-
-この検索モジュールは、指定された検索クエリに一致するレコードを [!DNL Dropbox] のオブジェクト内で検索します。
-
-この情報は、シナリオ内の後続のモジュールにマッピングできます。
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Dropbox] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a> への接続の作成を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Search] </td> 
-   <td> <p>検索語句を入力します。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Folder] </td> 
-   <td> <p>検索するフォルダーを選択します。フォルダーを選択しない場合、このモジュールは [!DNL Dropbox] 全体を検索します。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>ファイルステータス</td> 
-   <td> <p> ファイルステータスを選択すると、選択したファイルステータスに検索を制限できます。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>ファイルカテゴリ</td> 
-   <td> <p> ファイルカテゴリを選択すると、選択したカテゴリに検索を制限できます。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>ファイル拡張子</td> 
-   <td> <p> 検索するファイル拡張子を選択します。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>制限 </td> 
-   <td> <p>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+* [[!UICONTROL Search Files/Folders]](#search-filesfolders)
 
 #### [!UICONTROL Download a File]
 
@@ -345,7 +312,7 @@ Dropboxコネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td> <p>ファイルパス／ファイル</p> </td> 
-   <td> <p style="font-weight: bold;">ファイルパス</p> <p>ターゲットパスを入力するか、ファイルにマッピングします。</p> <p style="font-weight: bold;">ファイル</p> <p>ファイルをメニューから選択します。</p> </td> 
+   <td> <p><b>ファイルパス</b></p> <p>ターゲットパスを入力するか、ファイルにマッピングします。</p> <p><b>ファイル</b></p> <p>ファイルをメニューから選択します。</p> </td> 
   </tr> 
   <tr> 
    <td> <p>制限</p> </td> 
@@ -354,28 +321,13 @@ Dropboxコネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-### [!DNL Dropbox] ファイルおよびフォルダーを作成および編集するためのモジュール
+#### [!UICONTROL Search Files/Folders]
 
-* [[!UICONTROL Upload] a ファイル](#upload-a-file)
-* [[!UICONTROL Create a Folder]](#create-a-folder)
-* [[!UICONTROL Create/Overwrite a Text File]](#createoverwrite-a-text-file)
-* [[!UICONTROL Create/Update a Share Link]](#createupdate-a-share-link)
-* [[!UICONTROL Restore a File]](#restore-a-file)
-* [[!UICONTROL Move a File/Folder]](#move-a-filefolder)
-* [[!UICONTROL Rename a File/Folder]](#rename-a-filefolder)
-* [[!UICONTROL Delete a File/Folder]](#delete-a-filefolder)
+この検索モジュールは、指定された検索クエリに一致するレコードを [!DNL Dropbox] のオブジェクト内で検索します。
 
-#### [!UICONTROL Upload a File]
+この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
-このアクションモジュールは、ファイルをフォルダーにアップロードします。
-
-ファイルの場所、アップロードするファイル、ファイルの新しい名前（オプション）などの情報を指定します。
-
-このモジュールは、ファイルの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
-
-このモジュールを設定する際には、次のフィールドが表示されます。
-
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
@@ -384,19 +336,42 @@ Dropboxコネクタでは、以下を使用します。
    <td> <p>[!DNL Dropbox] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a> への接続の作成を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder]</td> 
-   <td> <p> ファイルのアップロード先となる [!DNL Dropbox] のフォルダーを選択します。</p> </td> 
+   <td>[!UICONTROL Search] </td> 
+   <td> <p>検索語句を入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Source File]</p> </td> 
-   <td> <p>上記で選択した [!DNL Dropbox] フォルダーに追加するファイルを入力またはマッピングします。</p> <p style="font-weight: bold;">[!UICONTROL File name]</p> <p>ファイル拡張子を含むファイル名を入力またはマッピングします。</p> <p style="font-weight: bold;">[!UICONTROL File data]</p> <p>ファイル データを入力またはマップします（[!UICONTROL Google Drive] &gt; などの前のモジュールから [!UICONTROL Get a File)]。</p> <p>メモ：アップロードされるファイルの最大サイズは 150 MB です。</p> </td> 
+   <td>[!UICONTROL Folder] </td> 
+   <td> <p>検索するフォルダーを選択します。フォルダーを選択しない場合、このモジュールは [!DNL Dropbox] アカウント全体を検索します。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Overwrite an existing file]</td> 
-   <td> <p> 既存のファイルを新しいファイルで置き換えるには、このオプションを有効にします。このオプションを無効にしたままにすると、アップロードされたファイルの名前が変更されます。</p> </td> 
+   <td>ファイルステータス</td> 
+   <td> <p> 検索に含めるファイルステータスを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>ファイルカテゴリ</td> 
+   <td> <p> 検索に含めるファイル カテゴリを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>ファイル拡張子</td> 
+   <td> <p>検索に含めるファイル拡張子ごとに、「<b> 項目を追加 </b>」をクリックして、ファイル拡張子を入力またはマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>制限 </td> 
+   <td> <p>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+### [!DNL Dropbox] ファイルおよびフォルダーを作成および編集するためのモジュール
+
+* [[!UICONTROL Create a Folder]](#create-a-folder)
+* [[!UICONTROL Create/Overwrite a Text File]](#createoverwrite-a-text-file)
+* [[!UICONTROL Create/Update a Share Link]](#createupdate-a-share-link)
+* [[!UICONTROL Delete a File/Folder]](#delete-a-filefolder)
+* [[!UICONTROL Move a File/Folder]](#move-a-filefolder)
+* [[!UICONTROL Rename a File/Folder]](#rename-a-filefolder)
+* [[!UICONTROL Restore a File]](#restore-a-file)
+* [[!UICONTROL Upload] a ファイル](#upload-a-file)
 
 #### [!UICONTROL Create a Folder]
 
@@ -422,7 +397,7 @@ Dropboxコネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Folder]</p> </td> 
-   <td> <p>新規フォルダーを作成する場所のパスを入力またはマッピングします。</p> <p>メモ：   <p>[!DNL Dropbox Business] アカウント（チーム スペースを含む）を使用している場合は、スラッシュ <code>/</code> を削除するか、<strong>[!UICONTROL Click here] をクリックしてフォルダーを選択しないでください </strong> をクリックしてルートにチーム フォルダーを作成します。</p> <p>スラッシュが削除されない場合は、エラー <code>[409] path/malformed_path/..</code> が返されます。</p> </p> </td> 
+   <td> <p>新規フォルダーを作成する場所のパスを入力またはマッピングします。</p> <p>メモ：   <p>[!DNL Dropbox Business] アカウント（チーム スペースを含む）を使用している場合、スラッシュ <code>/</code> を削除するか、<strong> ここをクリックしてフォルダーを選択 </strong> をクリックせずに、ルートにチーム フォルダーを作成する必要があります。</p> <p>スラッシュが削除されない場合は、エラー <code>[409] path/malformed_path/..</code> が返されます。</p> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Auto rename]</td> 
@@ -433,11 +408,9 @@ Dropboxコネクタでは、以下を使用します。
 
 #### [!UICONTROL Create/Overwrite a Text File]
 
-このアクションモジュールは、DOC ファイルを作成するか、既存のファイルの内容を上書きします。
+このアクションモジュールは、DOC ファイルを作成するか、既存の DOC ファイルの内容を上書きします。
 
 ソースファイルとフォルダーを指定します。
-
-このモジュールは、フォルダーの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
@@ -451,15 +424,11 @@ Dropboxコネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Select to]</td> 
-   <td> <p> DOC ファイルを作成するか上書きするかを選択します。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Folder] </td> 
-   <td> <p>ファイルを作成するターゲットの場所を選択します。</p> </td> 
+   <td> <p> DOC ファイルを作成するか上書きするかを選択します。</p><ul><li><b>作成</b></p>ファイルを作成するフォルダを選択します。</li><li><b>上書き</b><p>上書きするファイルの選択方法を選択し、ファイルパスをマッピングするか、ファイルを選択します。 </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Source File]</p> </td> 
-   <td> <p>[!DNL Dropbox] フォルダーに追加するファイルを入力またはマッピングします。</p> <p style="font-weight: bold;">ファイル名</p> <p>新しい DOC ファイルのファイル名（拡張子を除く）を入力します。</p> <p style="font-weight: bold;">ファイルコンテンツ</p> <p>DOC ファイルのテキストコンテンツを入力します。</p> </td> 
+   <td> <p>前のモジュールからソースファイルを選択するか、ソースファイルのコンテンツをマッピングします。 </p> <p>ファイルを作成する場合は、「<b> 空 </b>」を選択します。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -488,30 +457,31 @@ Dropboxコネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL File Path / File]</p> </td> 
-   <td> <p style="font-weight: bold;">[!UICONTROL File Path]</p> <p>ターゲットパスを入力するか、ファイルにマッピングします。</p> <p style="font-weight: bold;">[!UICONTROL File]</p> <p>ファイルをメニューから選択します。</p> </td> 
+   <td> <p style="font-weight: bold;">[!UICONTROL File Path]</p> <p>ターゲットファイルへのパスを入力またはマッピングします。</p> <p style="font-weight: bold;">[!UICONTROL File]</p> <p>ターゲットファイルを選択します。</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Requested Visibility]</p> </td> 
-   <td> <p>リンクがパブリック、チーム用、またはパスワード制限されているかどうかを選択します。</p> <p>注意：[!UICONTROL Team only] および [!UICONTROL Access with password] オプションは、[!DNL Dropbox Pro] 以上のバージョンを持つユーザーのみが使用できます。</p> </td> 
+   <td> <p>リンクがパブリック、チーム用、またはパスワード制限されているかどうかを選択します。</p> <p><b>メモ：</b></p><p> [!UICONTROL Team only] は、Dropbox Business アカウントでのみ使用できます。 [!UICONTROL Access with password] は、[!DNL Dropbox Pro] またはDropbox Business アカウントでのみ使用できます。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Link's Expiration Date]</td> 
-   <td> <p> リンクの有効期限が切れて、アクセスできなくなる日時を入力します。このフィールドを空のままにした場合、リンクは期限切れになりません。サポートされる日付と時刻の形式の一覧については、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]</a> での型強制を参照してください。</p> <p>注意：[!UICONTROL Team only] および [!UICONTROL Access with password] オプションは、[!UICONTROL Dropbox Pro] 以上のバージョンを持つユーザーのみが使用できます。</p> </td> 
+   <td> <p> リンクの有効期限が切れて、アクセスできなくなる日時を入力します。このフィールドを空のままにした場合、リンクは期限切れになりません。サポートされる日付と時刻の形式の一覧については、「<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override=""> 型強制 </a>」を参照してください。</p>  </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Link's Access Level]</p> </td> 
-   <td> <p>リンクの受信者に対する権限を設定します。</p> <p><strong>[!UICONTROL Viewer]</strong> リンクを使用するユーザーは、コンテンツを表示してコメントできます。</p> <p><strong>[!UICONTROL Editor]</strong> リンクを使用するユーザーは、コンテンツを編集、表示およびコメントできます。</p> <p><strong>[!UICONTROL Max]</strong> リンクを使用するユーザーは、リンクを設定できる最大のアクセスレベルを受け取ります。</p> </td> 
+   <td> <p>リンクの受信者に対する権限を設定します。</p> <ul><li><strong>[!UICONTROL Viewer]</strong> <p>リンクを使用するユーザーは、コンテンツを表示してコメントできます。</p> </li><li><strong>[!UICONTROL Editor]</strong><p> リンクを使用するユーザーは、コンテンツを編集、表示およびコメントできます。 このアクセスレベルは、クラウドベースのドキュメントでのみ使用できます。</p> </li><li><strong>[!UICONTROL Max]</strong> <p>リンクを使用するユーザーは、リンクを設定できる最大のアクセスレベルを受け取ります。</p></li><ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Restore a File]
 
-このアクションモジュールは、ファイルの以前のバージョンを復元します。
+#### [!UICONTROL Delete a File/Folder]
 
-ファイルと必要なリビジョン番号を指定します。
+このアクションモジュールは、ファイルまたはフォルダーを削除します。
 
-このモジュールは、バージョンの ID と関連するフィールドのほか、接続でアクセスするカスタムフィールドと値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
+ファイルまたはフォルダーを指定します。
+
+このモジュールは、レコードの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
@@ -528,12 +498,8 @@ Dropboxコネクタでは、以下を使用します。
    <td> <p> ファイルパスをマッピングするか入力するか、手動でファイルを選択するかを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL File Path] / [!UICONTROL File]</p> </td> 
-   <td> <p><strong>[!UICONTROL File Path]</strong> </p> <p>ターゲットパスを入力するか、ファイルにマッピングします。</p> <p><strong>[!UICONTROL File]</strong> </p> <p>ファイルをメニューから選択します。</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <p>[!UICONTROL Revision]</p> </td> 
-   <td> <p>復元するリビジョンのリビジョン番号を入力またはマッピングします。</p> </td> 
+   <td> <p>[!UICONTROL File or Folder Path] / [!UICONTROL File or Folder]</p> </td> 
+   <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>ターゲットパスを入力するか、ファイルまたはフォルダーにマッピングします。</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>メニューからファイルまたはフォルダーを選択します。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -557,12 +523,12 @@ Dropboxコネクタでは、以下を使用します。
    <td> <p>[!DNL Dropbox] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a> への接続の作成を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Way of selecting files] </td> 
-   <td> <p>ファイルパスをマッピングするか入力するか、手動でファイルを選択するかを選択します。</p> </td> 
+   <td>[!UICONTROL Way of selecting files / folders] </td> 
+   <td> <p>ファイルまたはフォルダーのパスをマップするか入力するか、または手動で選択するかを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL File/Folder Path] / [!UICONTROL File/Folder]</p> </td> 
-   <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>ターゲットパスを入力するか、ファイルまたはフォルダーにマッピングします。</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>メニューからファイルまたはフォルダーを選択します。</p> </td> 
+   <td> <p>[!UICONTROL File / Folder Path] /</p> </td> 
+   <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>ターゲットパスを入力するか、ファイルまたはフォルダーにマッピングします。</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>ファイルまたはフォルダーを移動するかどうかを選択し、次にファイルまたはフォルダーを移動します。</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL To Folder]</p> </td> 
@@ -607,22 +573,23 @@ Dropboxコネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td> <p>ファイルまたはフォルダーのパス／ファイルまたはフォルダー</p> </td> 
-   <td> <p style="font-weight: bold;">ファイルまたはフォルダーのパス</p> <p>ターゲットパスを入力するか、ファイルまたはフォルダーにマッピングします。</p> <p style="font-weight: bold;">ファイルまたはフォルダー</p> <p>メニューからファイルまたはフォルダーを選択します。</p> </td> 
+   <td> <p style="font-weight: bold;">ファイルまたはフォルダーのパス</p> <p>ターゲットパスを入力するか、ファイルまたはフォルダーにマッピングします。</p> <p style="font-weight: bold;">ファイルまたはフォルダー</p> <p>ファイルまたはフォルダーを移動するかどうかを選択し、次にファイルまたはフォルダーを移動します。</p> </td> 
   </tr> 
   <tr> 
    <td>名前を変更 </td> 
-   <td> <p>ファイルの拡張子を含め、ファイルの [!UICONTROL target name] を入力します。</p> </td> 
+   <td> <p>ファイル拡張子を含む、ファイルの新しい名前を入力します。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a File/Folder]
 
-このアクションモジュールは、ファイルまたはフォルダーを削除します。
+#### [!UICONTROL Restore a File]
 
-ファイルまたはフォルダーを指定します。
+このアクションモジュールは、ファイルの以前のバージョンを復元します。
 
-このモジュールは、レコードの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
+ファイルと必要なリビジョン番号を指定します。
+
+このモジュールは、バージョンの ID と関連するフィールドのほか、接続でアクセスするカスタムフィールドと値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
@@ -640,10 +607,48 @@ Dropboxコネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL File Path] / [!UICONTROL File]</p> </td> 
-   <td> <p style="font-weight: bold;">[!UICONTROL File Path]</p> <p>ターゲットパスを入力するか、ファイルにマッピングします。</p> <p style="font-weight: bold;">[!UICONTROL File]</p> <p>ファイルをメニューから選択します。</p> </td> 
+   <td> <p><strong>[!UICONTROL File Path]</strong> </p> <p>ターゲットパスを入力するか、ファイルにマッピングします。</p> <p><strong>[!UICONTROL File]</strong> </p> <p>ファイルをメニューから選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL Revision]</p> </td> 
+   <td> <p>復元するリビジョンのリビジョン番号を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+#### [!UICONTROL Upload a File]
+
+このアクションモジュールは、ファイルをフォルダーにアップロードします。
+
+ファイルの場所、アップロードするファイル、ファイルの新しい名前（オプション）などの情報を指定します。
+
+このモジュールは、ファイルの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
+
+このモジュールを設定する際には、次のフィールドが表示されます。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection] </td> 
+   <td> <p>[!DNL Dropbox] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a> への接続の作成を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Folder]</td> 
+   <td> <p> ファイルのアップロード先となる [!DNL Dropbox] のフォルダーを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL Source File]</p> </td> 
+   <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> <p><b>メモ：</b></p><p> アップロードされるファイルの最大サイズは 150 MB です。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Overwrite an existing file]</td> 
+   <td> <p> 既存のファイルを新しいファイルで置き換えるには、このオプションを有効にします。このオプションを無効にしたままにすると、アップロードされたファイルの名前が変更されます。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 
 ### その他のモジュール
 
@@ -663,7 +668,7 @@ Dropboxコネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL URL]</p> </td> 
-   <td> <p><code>https://api.dropboxapi.com</code> からの相対パスを入力します。例： <code>/2/files/list_folder</code></p> <p>メモ：使用可能なエンドポイントの一覧については、<a href="https://www.dropbox.com/developers/documentation/http/documentation">Dropbox API v2 ドキュメント</a>を参照してください。</p> </td> 
+   <td> <p><code>https://api.dropboxapi.com</code> からの相対パスを入力します。例： <code>/2/files/list_folder</code></p>  </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Method]</p> </td> 
@@ -679,7 +684,7 @@ Dropboxコネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Body] </td> 
-   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：   <p><code>if</code> などの条件ステートメントを JSON で使用する場合は、条件ステートメントの外側に引用符を挿入します。</p> 
+   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：   <p><code>if</code> などの条件ステートメントを JSON で使用する場合、条件ステートメントの外側に引用符を挿入します。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>">  
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -687,29 +692,30 @@ Dropboxコネクタでは、以下を使用します。
  </tbody> 
 </table>
 
->[!INFO]
->
->**例：**&#x200B;次の API 呼び出しでは、お使いの [!DNL Dropbox] アカウントの [!DNL /Text files] フォルダーから最初の 10 個のファイルを返します。
->
->URL：`/2/files/list_folder`
->
->本文：
-> 
->`{`
->
->`"path": "/Text files",`
->
->`"limit": 10,`
->
->`"recursive": false,`
->
->`"include_deleted": false`
->
->`}`
->
->検索の一致は、モジュールの出力の [!UICONTROL Bundle] > [!UICONTROL Body] > エントリで見つけることができます。
->
->この例では、10 枚のチケットが返されています。
+>[!BEGINSHADEBOX]
+
+**例：**
+
+次の API 呼び出しは、[!DNL Dropbox] アカウントの [!DNL /Text files] フォルダーから最初の 10 個のファイルを返します。
+
+URL：`/2/files/list_folder`
+
+本文：
+
+```
+{
+"path": "/Text files",
+"limit": 10,
+"recursive": false,
+"include_deleted": false
+}
+```
+
+検索の一致は、モジュールの出力の [!UICONTROL Bundle] > [!UICONTROL Body] > エントリで見つけることができます。
+
+この例では、10 個のチケットが返されました。
+
+>[!ENDSHADEBOX]
 
 ## よくある問題
 
@@ -718,7 +724,7 @@ Dropboxコネクタでは、以下を使用します。
 
 ### ファイルをアップロードまたは更新できない
 
-ファイルのアップロードまたは更新に失敗する状況はいくつかあります。
+ファイルのアップロードまたは更新が失敗する原因として、次のことが考えられます。
 
 * アップロードされるファイルが大きすぎて、利用中の [!DNL Dropbox] プランで許可されている最大ファイルサイズを超えている場合や、[!DNL Dropbox] アカウントのストレージ割当をすべて使い切った場合。[!DNL Dropbox] アカウントから既存のファイルを削除するか、プランをアップグレードする必要があります。
 * ファイルをアップロードしようとしている選択済みのフォルダーが存在しなくなった場合。シナリオが停止するので、ターゲットフォルダーをもう一度選択する必要があります。
