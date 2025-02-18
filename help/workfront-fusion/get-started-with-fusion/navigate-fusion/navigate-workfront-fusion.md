@@ -4,9 +4,9 @@ description: Fusion を開くと、アクションに関する多くのオプシ
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
+source-git-commit: 45775149d8e4e8c2c25b4ebf0b5392f56a04633c
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '711'
 ht-degree: 8%
 
 ---
@@ -19,8 +19,8 @@ ht-degree: 8%
 
 | エリア | 説明 | 詳しくは、次を参照してください。 |
 |---|---|---|
-| 組織の概要 <br> ![ 組織アイコン ](assets/org-icon.png) | ここでは、Fusion 組織に関する情報を確認できます。 この組織のシナリオで実行された操作の数と、アクティブなシナリオのリストを表示できます。 また、この組織のチーム、ユーザー、環境のリストを表示することもできます。 | [ 組織とチーム ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
-| チームの概要 <br> ![ チームアイコン ](assets/team-icon.png) | ここでは、このチームのシナリオで実行された操作の数やアクティブなシナリオのリストなど、Fusion チームに関する情報を確認できます。 また、このチームのユーザーを表示および管理することもできます。 チームを表示する際に、このページの上部にあるドロップダウンから別のチームを選択できます。 | [ 組織とチーム ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
+| 組織の概要 <br> ![ 組織アイコン ](assets/org-icon.png) | ここでは、Fusion 組織に関する情報を確認できます。 この組織のシナリオで実行された操作の数と、アクティブなシナリオのリストを表示できます。 また、この組織のチーム、ユーザー、環境のリストを表示することもできます。<br> 現在選択されている組織は、このアイコンの上に表示されます。 | [ 組織とチーム ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
+| チームの概要 <br> ![ チームアイコン ](assets/team-icon.png) | ここでは、このチームのシナリオで実行された操作の数やアクティブなシナリオのリストなど、Fusion チームに関する情報を確認できます。 また、このチームのユーザーを表示および管理することもできます。 チームを表示する際に、このページの上部にあるドロップダウンから別のチームを選択できます。<br> 現在選択されているチームは、このアイコンの上に表示されます。 | [ 組織とチーム ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
 | シナリオ <br> ![ シナリオアイコン ](assets/scenarios-icon.png) | Fusion のシナリオは、自動ワークフローを表します。 例えば、あるシナリオでは、受信するWorkfront リクエストを監視してプロジェクトにコンバージョンし、別のシナリオでは、画像を生成してドキュメントプロバイダーにアップロードし、Workfrontに承認タスクを追加するといった処理を行います。 Fusion での作業のほとんどは、シナリオの設定と管理です。 「シナリオ」領域では、チームのシナリオのリストを表示および整理したり、表示または変更する個々のシナリオを選択したり、新しいシナリオの作成を開始したりできます。 | [ シナリオの概要 ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md) |
 | テンプレート <br> ![ テンプレートアイコン ](assets/templates-icon.png) | テンプレートは、独自のユースケース用に設定できる事前定義済みシナリオです。 ここでは、Workfront Fusion が提供する公開シナリオと、チームが作成したテンプレートを確認できます。 | [ テンプレートの作成と管理：記事インデックス ](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md) |
 | 接続 <br> ![ 接続アイコン ](assets/connections-icon.png) | 接続には、Fusion が他のアプリケーションとやり取りするためのログイン資格情報と権限が含まれます。 特定のアプリケーション用の特定の資格情報セットと権限セットを持つ接続を作成し、その接続をシナリオで使用します。 その後、シナリオは、これらの資格情報と権限を持つユーザーが使用できるレコードやその他のデータにアクセスし、変更できます。 1 つのアプリケーションに対して複数の接続を作成し、複数のシナリオで接続を使用できます。 「接続」領域では、チームによって設定された接続のリストを表示および管理できます。 | [ 接続の概要 ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md) |
