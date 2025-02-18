@@ -4,10 +4,10 @@ description: 多数の [!DNL Adobe Workfront Fusion] コネクタでは、接続
 author: Becky
 feature: Workfront Fusion
 exl-id: e47ab4d9-6612-4d9a-a024-da508a8bbfb2
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: ef1a96d9ef4c2c82eaf376c84188e3ed6ea7b2cf
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 21%
+source-wordcount: '457'
+ht-degree: 19%
 
 ---
 
@@ -72,6 +72,8 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 1. [!UICONTROL Connection] ボックスの横にある「**[!UICONTROL Add]**」をクリックして、**[!UICONTROL Create a connection]** パネルを開きます。
 1. （任意）デフォルト **[!UICONTROL Connection name]** を変更します。
+1. 「環境」フィールドで、実稼動環境か非実稼動環境かを選択します。 この情報は、Fusion の「接続」領域に表示されます。
+1. 「タイプ」フィールドで、サービスか個人アカウントかを選択します。 この情報は、Fusion の「接続」領域に表示されます。
 1. （条件付き）アプリで ID、キー、[!UICONTROL secret] などの高度な接続設定が必要な場合は、その情報を入力します。
 
    このような情報を入力できるフィールドを表示するには、[**[!UICONTROL Show advanced settings]**] をクリックする必要がある場合があります。
