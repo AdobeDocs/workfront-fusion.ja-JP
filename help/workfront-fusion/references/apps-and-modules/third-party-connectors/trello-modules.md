@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  シナリオ内では、Trello を
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: a0a53d5c5af0956635f5026bbf8f8ee681946d86
+source-git-commit: 46bb455ecc0820dc68468f9f810bd51074c224fa
 workflow-type: tm+mt
-source-wordcount: '4320'
-ht-degree: 60%
+source-wordcount: '4370'
+ht-degree: 58%
 
 ---
 
@@ -872,7 +872,7 @@ Trello コネクタでは、以下を使用します。
 
 +++ **[!UICONTROL Watch cards]**
 
-このトリガーモジュールは、新しいカードが追加されると有効になります。
+このトリガーモジュールは、新しいカードが追加されると、シナリオを開始します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -893,7 +893,7 @@ Trello コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>[!DNL Workfront Fusion] が 1 回の実行サイクルで返すボードの最大数。</p> </td> 
+   <td> <p>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -947,7 +947,7 @@ Trello コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query] </td> 
-   <td> <p>検索するユーザーのフルネームまたはユーザー名を入力します。</p> </td> 
+   <td> <p>検索するユーザーの名前またはユーザー名を入力します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Partial] </td> 
@@ -955,7 +955,7 @@ Trello コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned members]</td> 
-   <td> <p> [!DNL Workfront Fusion] が 1 回の実行サイクルで返すメンバーの最大数。</p> </td> 
+   <td> <p>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -996,11 +996,11 @@ Trello コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Position] </td> 
-   <td> <p>チェックリストをカードの上部に追加するか、下部 [!UICONTROL append the] 追加するかを選択します。</p> </td> 
+   <td> <p>チェックリストを上部に追加するか、カードの下部に追加するかを選択します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Enter checklist ID]</p> </td> 
-   <td> <p>新規チェックリストにコピーするソースチェックリストの ID を入力またはマッピングします。</p> </td> 
+   <td> <p>既存のチェックリストをコピーしてチェックリストを作成する場合、新しいチェックリストにコピーするソースチェックリストの ID を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1021,7 +1021,7 @@ Trello コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter checklist ID]</td> 
-   <td> <p> 項目を追加するチェックリストの ID を入力する方法を選択します。</p> 
+   <td> <p> 既存のチェックリストをコピーして新しいチェックリストを作成する場合、項目を追加するチェックリストの ID を入力する方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p><strong>[!UICONTROL Checklist ID]</strong> フィールドで、チェックリストを追加するカードの ID を入力またはマッピングします。<br></p> </li> 
      <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>チェックリストを追加するカードが含まれるボードを選択し、カードが含まれるリストを選択して、カード、チェックリストの順に選択します。</p> </li> 
@@ -1136,7 +1136,7 @@ Trello コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Comment] </td> 
-   <td> <p>選択したカードに追加するコメントを入力します。</p> </td> 
+   <td> <p>選択したカードに追加するコメントを入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1180,7 +1180,7 @@ Trello コネクタでは、以下を使用します。
 
 +++ **[!UICONTROL Watch Comments]**
 
-指定された場所に新しいコメントがある場合に、コメントの詳細を取得します。
+このトリガーモジュールは、コメントが追加されると、シナリオを開始します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1203,7 +1203,7 @@ Trello コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>[!DNL Workfront Fusion] が 1 回の実行サイクルで返すコメントの最大数。</p> </td> 
+   <td> <p>各シナリオの実行サイクル中にモジュールが返すコメントの最大数を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1223,4 +1223,4 @@ Trello コネクタでは、以下を使用します。
 
 ### [!DNL Trello] で他のオブジェクトの ID を見つける方法
 
-ボード ID、リスト ID、コメント ID は、トリガーを使用してのみ取得できます。[!DNL trello.com] web サイトには、これらの ID は表示されません。
+ボード ID、リスト ID、コメント ID は、トリガーを使用してのみ取得できます。[!DNL `trello.com`] web サイトには、これらの ID は表示されません。
