@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion Google Forms]  モジュールを使
 author: Becky
 feature: Workfront Fusion
 exl-id: dc017957-c0f8-4206-916f-21ccda346fb9
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ca8cee58b6586dbcd1a7ff7bffb0131b59dbb897
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 82%
+source-wordcount: '1199'
+ht-degree: 76%
 
 ---
 
@@ -23,42 +23,46 @@ ht-degree: 82%
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 [!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+
++++
 
 ## 前提条件
 
@@ -81,7 +85,7 @@ Google Forms コネクタでは、以下を使用します。
 
 ## フォームからスプレッドシートの作成
 
-フォームの応答を操作するには、応答のスプレッドシートを作成する必要があります。
+フォームの応答を操作するには、まず応答スプレッドシートを作成する必要があります。
 
 1. フォームを開きます。
 1. 「**[!UICONTROL Responses]**」タブに移動します。
@@ -151,8 +155,8 @@ Google Forms コネクタでは、以下を使用します。
 ### アクション
 
 * [[!UICONTROL Add a Response]](#add-a-response)
-* [[!UICONTROL Update a Response]](#update-a-response)
 * [[!UICONTROL Delete a Response]](#delete-a-response)
+* [[!UICONTROL Update a Response]](#update-a-response)
 
 #### [!UICONTROL Add a Response]
 
@@ -178,7 +182,7 @@ Google Forms コネクタでは、以下を使用します。
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader"> <p>[!UICONTROL Values]</p> </td> 
-   <td> <p>シートの列に必要な値を入力します。</p> <p>正しい形式の [!UICONTROL Timestamp] 列には、次の値を使用します。</p><pre>formatDate(now;DD/MM/YYYY HH:mm;UTC)</pre> </td> 
+   <td> <p>シートの列に目的の値を入力します。 列は、シートに基づいて使用できます。</p> <p>[!UICONTROL Timestamp] 列には、次の値を使用します。</p><pre>formatDate(now;DD/MM/YYYY HH:mm;UTC)</pre> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL Value input option]</td> 
@@ -195,6 +199,33 @@ Google Forms コネクタでは、以下を使用します。
      <li> <p><strong>[!UICONTROL Overwrite]</strong> </p> <p>新しいデータは、書き込まれたエリアの既存のデータを上書きします。シートの末尾にデータを追加すると、新しい行または列が挿入され、データを書き込むことができます。</p> </li> 
      <li> <p><strong>[!UICONTROL Insert rows]</strong></p> <p>行が新しいデータ用に挿入されます。</p> </li> 
     </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Delete a Response]
+
+このモジュールは、選択した応答を削除します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>[!DNL Google] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Spreadsheet]</td> 
+   <td> <p>応答を削除するシートを含むスプレッドシートを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Sheet]</td> 
+   <td> <p> フォームの応答を含むシートを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Row number]</p> </td> 
+   <td> <p>削除する行の数を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -227,7 +258,7 @@ Google Forms コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Values]</p> </td> 
-   <td> <p>目的の列に新しい値を入力します。</p> </td> 
+   <td> <p>目的の列に新しい値を入力します。 列は、シートに基づいて使用できます。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL Value input option]</td> 
@@ -236,33 +267,6 @@ Google Forms コネクタでは、以下を使用します。
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p> ユーザーが入力した値は解析されず、そのまま保存されます。 </p> </li> 
      <li> <p><strong>[!UICONTROL User entered]</strong></p> <p>値は、ユーザーが UI に入力したかのように解析されます。数値は数値のまま保持されますが、文字列の場合は [!DNL Google Sheets] UI を経由してセルにテキストを入力する時に適用されるルールと同じルールに従って数値、日付、もしくは他の形式に変換される可能性があります。</p> </li> 
     </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Delete a Response]
-
-このモジュールは、選択した応答を削除します。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Google] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Spreadsheet]</td> 
-   <td> <p>応答を削除するシートを含むスプレッドシートを選択します。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Sheet]</td> 
-   <td> <p> フォームの応答を含むシートを選択します。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Row number]</p> </td> 
-   <td> <p>削除する行の数を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -348,7 +352,7 @@ Google Forms コネクタでは、以下を使用します。
    <td> <p> フォームの応答を含むシートを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Filter]</td> 
+   <td role="rowheader">[!UICONTROL Query]</td> 
    <td> <p><a href="https://developers.google.com/chart/interactive/docs/querylanguage?hl=ja">[!DNL Google Charts Query Language]</a> を使用して検索クエリを定義します。</p> <p>例：<code>select * where C = "John"</code> は、C 列が「John」である行のすべての値を取得します。</p> </td> 
   </tr> 
   <tr>
