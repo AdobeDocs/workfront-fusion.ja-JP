@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] HubSpot CRM モジュールを使�
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 9cea5de748873720247db39161cea12c7e9c7186
 workflow-type: tm+mt
-source-wordcount: '5661'
+source-wordcount: '5530'
 ht-degree: 33%
 
 ---
@@ -17,42 +17,46 @@ ht-degree: 33%
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 [!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+
++++
 
 ## 前提条件
 
@@ -107,19 +111,17 @@ HubSpot CRM コネクタは以下を使用します。
 * [フォーム](#forms)
 * [ソーシャルメディア（放送）](#social-media-broadcast)
 * [ ブログ投稿 ](#blog-posts)
-  <!--* [Workflows]-->
+  <!--* [Workflows]()-->
 * [ 購読 ](#subscriptions)
-  <!--* [Associations](#associations)-->
+  <!--* [Associations]()-->
 * [その他](#other)
-
-+++**CRM オブジェクト**
 
 ### CRM オブジェクト
 
-* [CRM オブジェクトの検索](#search-for-crm-objects)
-* [CRM オブジェクトの監視](#watch-crm-objects)
+<!--* [Search for CRM objects](#search-for-crm-objects)
+* [Watch CRM objects](#watch-crm-objects)-->
 
-#### [!UICONTROL Search for CRM Objects]
++++ **[!UICONTROL Search for CRM Objects]**
 
 この検索モジュールは、カスタムプロパティまたはクエリで CRM オブジェクトを検索します。製品や明細項目を検索するには、必要なカスタムスコープで特別な接続を使用します。
 
@@ -166,7 +168,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### CRM オブジェクトの監視
++++
+
++++ **CRM オブジェクトの監視**
 
 このトリガーモジュールは、CRM オブジェクトが作成または更新されると、シナリオを開始します。
 
@@ -203,20 +207,18 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++**レコード （取引、連絡先、会社）**
-
 ### レコード（契約、連絡先、会社）
 
-* [レコードを作成](#create-a-record)
+<!--* [Create a Record](#create-a-record)
 * [[!UICONTROL Create a Record (Legacy)]](#create-a-record-legacy)
 * [[!UICONTROL Delete a Record]](#delete-a-record)
 * [[!UICONTROL Get a Record]](#get-a-record)
 * [[!UICONTROL Get a Record Property]](#get-a-record-property)
-* [レコードのリスト](#list-records)
+* [List Records](#list-records)
 * [[!UICONTROL Update a Record]](#update-a-record)
-* [[!UICONTROL Watch Records]](#watch-records)
+* [[!UICONTROL Watch Records]](#watch-records)-->
 
-#### レコードを作成
++++ **レコードを作成**
 
 このアクションモジュールは、連絡先、会社または取引を作成します。
 
@@ -239,7 +241,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a Record (Legacy)]
++++
+
++++ **[!UICONTROL Create a Record (Legacy)]**
 
 このアクションモジュールは、連絡先、会社または契約を作成します。
 
@@ -262,7 +266,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Record]
++++
+
++++ **[!UICONTROL Delete a Record]**
 
 このアクションモジュールは、連絡先、会社または契約を削除します。
 
@@ -285,7 +291,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Record]
++++
+
++++ [!UICONTROL Get a Record]
 
 このアクションモジュールは、連絡先、会社または契約の詳細を取得します。
 
@@ -321,7 +329,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Record Property]
++++
+
++++ **[!UICONTROL Get a Record Property]**
 
 このアクションモジュールは、（内部）名で特定のレコードプロパティのメタデータを取得します。
 
@@ -348,7 +358,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### レコードのリスト
++++
+
++++ **レコードの一覧表示**
 
 この検索モジュールは、連絡先、会社、または取引のリストを返します。 出力は、5,000 の連絡先、12,500 の会社、または 12,500 の取引に制限されています。
 
@@ -371,12 +383,13 @@ HubSpot CRM コネクタは以下を使用します。
     <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
    <td> <p>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</p> </td> 
-  </tr>
-
-</tbody> 
+  </tr> 
+ </tbody> 
 </table>
 
-#### [!UICONTROL Update a Record]
++++
+
++++ **[!UICONTROL Update a Record]**
 
 このアクションモジュールは、連絡先、会社または契約を更新します。
 
@@ -415,7 +428,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Records]
++++
+
++++ **[!UICONTROL Watch Records]**
 
 このトリガーモジュールは、過去 30 日以内に連絡先、会社または契約が変更または作成された場合にシナリオを開始します。出力できるレコード数は 10,000 個に制限されます。
 
@@ -448,12 +463,10 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++**連絡先**
-
 ### 連絡先
 
-* [[!UICONTROL Add Contacts to a List]](#add-contacts-to-a-list)
-* [連絡先の作成/更新](#createupdate-a-contact)
+<!--* [[!UICONTROL Add Contacts to a List]](#add-contacts-to-a-list)
+* [Create/Update a contact](#createupdate-a-contact)
 * [[!UICONTROL Create/Update a Contact (Legacy)]](#createupdate-a-contact-legacy)
 * [[!UICONTROL Create/Update a Group of Contacts]](#createupdate-a-group-of-contacts)
 * [[!UICONTROL List Contacts]](#list-contacts)
@@ -461,9 +474,9 @@ HubSpot CRM コネクタは以下を使用します。
 * [[!UICONTROL Merge contacts]](#merge-contacts)
 * [[!UICONTROL Remove a Contact from a List]](#remove-a-contact-from-a-list)
 * [[!UICONTROL Search for Contacts]](#search-for-contacts)
-* [リストに追加された連絡先を見る](#watch-contacts-added-to-a-list)
+* [Watch Contacts Added to a List](#watch-contacts-added-to-a-list)-->
 
-#### [!UICONTROL Add Contacts to a List]
++++ **[!UICONTROL Add Contacts to a List]**
 
 このモジュールは、システムで既に作成されている連絡先レコードを、連絡先リストに追加します。
 
@@ -490,7 +503,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### 連絡先の作成/更新
++++
+
++++ **連絡先の作成/更新**
 
 このアクションモジュールは、ポータルに連絡先が存在しない場合、連絡先を作成します。 連絡先がポータルに存在する場合、このモジュールは指定された値で連絡先を更新します。
 
@@ -509,7 +524,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Create/Update a Contact (Legacy)]
++++
+
++++ **[!UICONTROL Create/Update a Contact (Legacy)]**
 
 ポータルに存在しない場合は連絡先を作成します。または存在する場合は最新のプロパティ値で更新します。
 
@@ -528,7 +545,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Create/Update a Group of Contacts]
++++
+
++++ **[!UICONTROL Create/Update a Group of Contacts]**
 
 連絡先のグループを作成するか、既に存在する場合は更新します。バッチサイズが 100 件の連絡先以下に制限されている場合は、最適なパフォーマンスが実現します。このエンドポイントを通じて行われた変更は非同期で処理されるので、連絡先レコードに変更が適用されるまで数分かかる場合があります。
 
@@ -555,7 +574,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL List Contacts]
++++
+
++++ **[!UICONTROL List Contacts]**
 
 ポータルで作成されたすべての連絡先を返します。出力できる連絡先は 5000 に制限されます。前または次の連絡先をリストするには、[!UICONTROL advanced] パラメーターを使用してリストをオフセットできます。
 
@@ -582,7 +603,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL List Contacts of a Company]
++++
+
++++ **[!UICONTROL List Contacts of a Company]**
 
 会社内の連絡先リストを取得します。出力できる連絡先は 5000 に制限されます。前または次の連絡先をリストするには、[!UICONTROL advanced] パラメーターを使用してリストをオフセットできます。
 
@@ -609,7 +632,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Merge contacts]
++++
+
++++ **[!UICONTROL Merge contacts]**
 
 このアクション モジュールは連絡先を結合します
 
@@ -632,7 +657,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Remove a Contact from a List]
++++
+
++++ **[!UICONTROL Remove a Contact from a List]**
 
 連絡先リストから連絡先を削除。
 
@@ -659,7 +686,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Search for Contacts]
++++
+
++++ **[!UICONTROL Search for Contacts]**
 
 検索クエリを使用して連絡先のリストを取得します。
 
@@ -682,7 +711,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch contacts added to a list]
++++
+
++++ **[!UICONTROL Watch contacts added to a list]**
 
 このトリガーモジュールは、新しい連絡先がリストに追加されると、シナリオを開始します。これは、有料マーケティングアカウントを持つユーザーのみが利用できます。
 
@@ -711,14 +742,12 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++**取引**
-
 ### 契約
 
-* [[!UICONTROL Get a Deal's CRM Pipeline]](#get-a-deals-crm-pipeline)
-* [[!UICONTROL List Deal/Ticket Pipelines]](#list-dealticket-pipelines)
+<!--* [[!UICONTROL Get a Deal's CRM Pipeline]](#get-a-deals-crm-pipeline)
+* [[!UICONTROL List Deal/Ticket Pipelines]](#list-dealticket-pipelines)-->
 
-#### [!UICONTROL Get a Deal's CRM Pipeline]
++++ **[!UICONTROL Get a Deal's CRM Pipeline]**
 
 特定の契約パイプラインを返します。
 
@@ -741,7 +770,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL List Deal/Ticket Pipelines]
++++
+
++++ **[!UICONTROL List Deal/Ticket Pipelines]**
 
 指定されたポータルのすべての契約とチケットのパイプラインを返します。
 
@@ -762,11 +793,9 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++**会社**
-
 ### 会社
 
-#### [!UICONTROL Search for Companies by domain]
++++ **[!UICONTROL Search for Companies by domain]**
 
 ドメインプロパティとの完全一致に基づいて、会社のリストを取得します。
 
@@ -795,16 +824,14 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++**業務**
-
 ### エンゲージメント
 
-* [エンゲージメントと CRM オブジェクトの関連付け](#associate-an-engagement-with-a-crm-object)
-* [エンゲージメントの作成](#create-an-engagement)
-* [エンゲージメントの削除](#delete-an-engagement)
-* [エンゲージメントの監視](#watch-engagements)
+<!--* [Associate an Engagement with a CRM object](#associate-an-engagement-with-a-crm-object)
+* [Create an Engagement](#create-an-engagement)
+* [Delete an Engagement](#delete-an-engagement)
+* [Watch Engagements](#watch-engagements)-->
 
-#### エンゲージメントと CRM オブジェクトの関連付け
++++ **エンゲージメントと CRM オブジェクトの関連付け**
 
 このアクションモジュールは、エンゲージメントを連絡先、会社または取引に関連付けます。
 
@@ -831,7 +858,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### エンゲージメントの作成
++++
+
++++ **エンゲージメントの作成**
 
 このアクションモジュールは、HubSpot の CRM オブジェクトとのエンゲージメント（メモ、タスク、アクティビティなど）を作成します。 エンゲージメントとは、CRM に記録する必要がある連絡先とのインタラクションです。
 
@@ -898,7 +927,7 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-##### メールメタデータ
+#### メールメタデータ
 
 <table style="table-layout:auto"> 
  <col> 
@@ -935,7 +964,7 @@ HubSpot CRM コネクタは以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">HTML</td> 
-   <td>HTML形式のメールを送信するには、メールの本文をHTMLタグを含めて入力するかマッピングします。</td> 
+   <td>HTML形式のメールを送信するには、メールの本文（HTML タグを含む）を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">テキスト</td> 
@@ -944,7 +973,7 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-##### メタデータの呼び出し
+#### メタデータの呼び出し
 
 <table style="table-layout:auto"> 
  <col> 
@@ -986,7 +1015,7 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-##### 会議フィールド
+#### 会議フィールド
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1012,7 +1041,7 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-##### タスクフィールド
+#### タスクフィールド
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1038,7 +1067,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### エンゲージメントの削除
++++
+
++++ **契約の削除**
 
 このアクションモジュールは、ID によってエンゲージメントを削除します。
 
@@ -1057,7 +1088,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### エンゲージメントの監視
++++
+
++++ **エンゲージメントの監視**
 
 このトリガーモジュールは、ポータルで新しいエンゲージメントが作成されたときにシナリオを開始します。 このモジュールは、過去 30 日間に作成されたレコード、または最近作成された 10,000 件のレコードのみを返します。
 
@@ -1082,16 +1115,14 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++**イベントと通知**
-
 ### イベントと通知
 
-* [タイムラインイベントの作成/更新](#create--update-a-timeline-event)
-* [タイムラインイベントタイプのリスト](#list-timeline-event-types)
-* [カレンダーイベントを見る](#watch-calendar-events)
-* [通知を見る](#watch-notifications)
+<!--* [Create / Update a Timeline Event](#create--update-a-timeline-event)
+* [List Timeline Event Types](#list-timeline-event-types)
+* [Watch Calendar Events](#watch-calendar-events)
+* [Watch Notifications](#watch-notifications)-->
 
-#### タイムラインイベントの作成/更新
++++ **タイムラインイベントの作成/更新**
 
 このアクションモジュールは、タイムラインイベントを作成または更新します。 このモジュールは、ユーザー識別子、HubSpot API キー、クライアント ID およびクライアント秘密鍵を含む開発者接続でのみ使用できます。
 
@@ -1134,7 +1165,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### タイムラインイベントタイプのリスト
++++
+
++++ **タイムラインイベントタイプのリスト**
 
 この検索モジュールは、特定のアプリケーションのすべてのタイムラインイベントのリストを返します。 このモジュールは、ユーザー識別子、HubSpot API キー、クライアント ID およびクライアント秘密鍵を含む開発者接続でのみ使用できます。
 
@@ -1153,7 +1186,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### カレンダーイベントを見る
++++
+
++++ **カレンダーイベントを見る**
 
 このトリガーモジュールは、新しいイベントがカレンダーに追加されたときにシナリオを開始します。 開始日と終了日の間の間隔には、最大 500 個のタスクが含まれます。 このモジュールは、ユーザー識別子、HubSpot API キー、クライアント ID およびクライアント秘密鍵を含む開発者接続でのみ使用できます。
 
@@ -1184,7 +1219,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### 通知を見る
++++
+
++++ **通知を見る**
 
 このトリガーモジュールは、変更に関する新しい通知が送信されると、シナリオを開始します。  開始日と終了日の間の間隔には、最大 500 個のタスクが含まれます。 このモジュールは、ユーザー識別子、HubSpot API キー、クライアント ID およびクライアント秘密鍵を含む開発者接続でのみ使用できます。 HubSpot では、開発者アプリケーションごとに 1 つの Webhook URL のみを持つことができます。
 
@@ -1215,19 +1252,17 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++**ファイル**
-
 ### ファイル
 
-* [[!UICONTROL Create a Folder]](#create-a-folder)
-* [ファイルの削除](#delete-a-file)
+<!--* [[!UICONTROL Create a Folder]](#create-a-folder)
+* [Delete a File](#delete-a-file)
 * [[!UICONTROL Delete a Folder]](#delete-a-folder)
-* [ファイルのリスト](#list-files)
+* [List Files](#list-files)
 * [[!UICONTROL Move a File]](#move-a-file)
-* [ファイルのアップロード](#upload-a-file)
-* [ファイルを見る](#watch-files)
+* [Upload a file](#upload-a-file)
+* [Watch files](#watch-files)-->
 
-#### [!UICONTROL Create a Folder]
++++ **[!UICONTROL Create a Folder]**
 
 このモジュールは、フォルダーを作成します。
 
@@ -1250,7 +1285,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### ファイルの削除
++++
+
++++ **ファイルを削除**
 
 このアクション モジュールは、ファイル マネージャからファイルとすべての関連データとサムネイルを完全に削除します。
 
@@ -1269,7 +1306,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Folder]
++++
+
++++ **[!UICONTROL Delete a Folder]**
 
 フォルダーを削除済みとしてマークします。
 
@@ -1288,7 +1327,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### ファイルのリスト
++++
+
++++ **ファイルをリストする**
 
 この検索モジュールは、ファイルマネージャに格納されているファイルのリストを返します。
 
@@ -1315,7 +1356,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Move a File]
++++
+
++++ **[!UICONTROL Move a File]**
 
 ファイルを別のフォルダーに移動します。
 
@@ -1342,7 +1385,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### ファイルのアップロード
++++
+
++++ **ファイルをアップロード**
 
 このアクションモジュールは、ファイルマネージャーにファイルをアップロードします。
 
@@ -1373,7 +1418,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-### 監視ファイル
++++
+
++++ **ファイルの監視**
 
 このトリガーモジュールは、新しいファイルがファイルマネージャーに保存されたときにシナリオを開始します。
 
@@ -1402,15 +1449,13 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++**タスク**
-
 ### タスク
 
-* [カレンダータスクの作成](#create-a-calendar-task)
-* [カレンダータスクの削除](#create-a-calendar-task)
-* [タスクイベントを見る](#watch-task-events)
+<!--* [Create a Calendar Task](#create-a-calendar-task)
+* [Delete a Calendar Task](#create-a-calendar-task)
+* [Watch Task Events](#watch-task-events)-->
 
-#### カレンダータスクを作成する
++++ **カレンダータスクの作成**
 
 このアクションモジュールは、カレンダーに新しいタスクを作成します。 このモジュールで使用される接続では、有料のマーケティングアカウントを持つユーザーの資格情報を使用する必要があります。
 
@@ -1453,7 +1498,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### カレンダータスクの削除
++++
+
++++ **カレンダータスクの削除**
 
 このアクションモジュールは、カレンダータスクを削除します。 このモジュールで使用される接続では、有料のマーケティングアカウントを持つユーザーの資格情報を使用する必要があります。
 
@@ -1472,7 +1519,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### タスクイベントを見る
++++
+
++++ **タスクイベントの監視**
 
 このトリガーモジュールは、カレンダーに新しいタスクイベントが発生するとシナリオを開始します。 このモジュールで使用される接続では、有料のマーケティングアカウントを持つユーザーの資格情報を使用する必要があります。 このモジュールは最大 500 個のイベントを返します。
 
@@ -1501,14 +1550,12 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++**ユーザー**
-
 ### ユーザー
 
-* [所有者の取得](#get-an-owner)
-* [リスト所有者](#list-owners)
+<!--* [Get an Owner](#get-an-owner)
+* [List Owners](#list-owners)-->
 
-#### 所有者の取得
++++ **所有者の取得**
 
 このアクションモジュールは、所有者の詳細を返します。
 
@@ -1527,7 +1574,9 @@ HubSpot CRM コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### リスト所有者
++++
+
++++ **リスト所有者**
 
 この検索モジュールは、HubSpot アカウントのすべての所有者のリストを返します。
 
@@ -1544,20 +1593,18 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++**チケット**
-
 ### チケット
 
 <!--* [Create a Ticket]-->
-* [チケットの削除](#delete-a-ticket)
-  <!--* [Create a Ticket]-->
-  <!--* [Create a Ticket]-->
-  <!--* [Create a Ticket]-->
-  <!--* [Create a Ticket]-->
+<!--* [Delete a Ticket](#delete-a-ticket)-->
+<!--* [Create a Ticket]-->
+<!--* [Create a Ticket]-->
+<!--* [Create a Ticket]-->
+<!--* [Create a Ticket]-->
 
 <!-- Create a Ticket Need to find a working connection-->
 
-#### [!UICONTROL Delete a Ticket]
++++ **[!UICONTROL Delete a Ticket]**
 
 ID を指定して既存のチケットを削除します。
 
@@ -1576,6 +1623,8 @@ ID を指定して既存のチケットを削除します。
  </tbody> 
 </table>
 
++++
+
 <!-- Get a Ticket  Need to find a working connection-->
 
 <!-- List Tickets  Need to find a working connection-->
@@ -1584,18 +1633,14 @@ ID を指定して既存のチケットを削除します。
 
 <!-- Watch Tickets Need to find a working connection-->
 
-+++
-
-+++**Forms**
-
 ### フォーム
 
-* [フォーム経由でアップロードされたファイルの取得](#get-a-file-uploaded-via-form)
-* [ リストForms](#list-forms)
-  <!--* [Submit Data to a Form]-->
-  <!--* [Watch Submissions for a Form]-->
+<!--* [Get a File Uploaded via Form](#get-a-file-uploaded-via-form)
+* [List Forms](#list-forms)-->
+<!--* [Submit Data to a Form]-->
+<!--* [Watch Submissions for a Form]-->
 
-#### フォーム経由でアップロードされたファイルの取得
++++ **フォーム経由でアップロードされたファイルの取得**
 
 このアクションモジュールは、フォームを通じてアップロードされたファイルを返します。
 
@@ -1614,7 +1659,9 @@ ID を指定して既存のチケットを削除します。
  </tbody> 
 </table>
 
-#### リストのForms
++++
+
++++ **リストForms**
 
 このアクションモジュールは、このモジュールに使用される接続に関連付けられたアカウントで作成されたすべてのフォームを返します。
 
@@ -1633,25 +1680,23 @@ ID を指定して既存のチケットを削除します。
  </tbody> 
 </table>
 
++++
+
 <!--#### Submit Data to a Form Need to find a working connection-->
 
 
 
 &lt;!—#### フォームの送信を監視する – 有効な接続を見つける必要がある >—>
 
-+++
-
-+++**ソーシャルメディア（放送）**
-
 ### ソーシャルメディア（放送）
 
-* [ブロードキャストメッセージのキャンセル](#cancel-a-broadcast-message)
-* [ブロードキャストメッセージの作成](#create-a-broadcast-message)
-* [放送メッセージを見る](#watch-broadcast-messages)
+<!--* [Cancel a Broadcast Message](#cancel-a-broadcast-message)
+* [Create a Broadcast Message](#create-a-broadcast-message)
+* [Watch Broadcast Messages](#watch-broadcast-messages)-->
 
-#### ブロードキャストメッセージのキャンセル
++++ **ブロードキャスト メッセージのキャンセル**
 
-このアクションモジュールは、ツイートやFacebook投稿など、スケジュールされたブロードキャストをキャンセルします。
+このアクションモジュールは、ツイートや Facebook 投稿など、スケジュールされたブロードキャストをキャンセルします。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1668,7 +1713,9 @@ ID を指定して既存のチケットを削除します。
  </tbody> 
 </table>
 
-#### ブロードキャストメッセージの作成
++++
+
++++ **ブロードキャストメッセージの作成**
 
 このアクションモジュールは、指定されたソーシャルメディアチャネルでメッセージを作成して直ちに公開します。
 
@@ -1707,7 +1754,9 @@ ID を指定して既存のチケットを削除します。
  </tbody> 
 </table>
 
-#### 放送メッセージを見る
++++
+
++++ **放送メッセージを見る**
 
 このトリガーモジュールは、HubSpot から指定されたソーシャルメディアチャンネルにメッセージが投稿されたときにシナリオを開始します。
 
@@ -1740,22 +1789,20 @@ ID を指定して既存のチケットを削除します。
 
 +++
 
-+++**ブログ投稿**
-
 ### ブログ投稿
 
 <!--* [Create a Blog Post]-->
-* [ ブログ投稿の削除 ](#delete-a-blog-post)
-  <!--* [List Blog Posts]-->
-* [ ブログ投稿のPublish/非公開 ](#publish--unpublish-a-blog-post)
-  <!--* [Watch Blog Posts]-->
+<!--* [Delete a Blog Post](#delete-a-blog-post)-->
+<!--* [List Blog Posts]-->
+&lt;!—* [ ブログ投稿の公開/非公開 ](#publish--unpublish-a-blog-post)—>
+<!--* [Watch Blog Posts]-->
 
 <!--
 #### Create a Blog Post May need connection
 -->
 
 
-#### ブログ投稿の削除
++++ **ブログ投稿の削除**
 
 このアクションモジュールは、1 つのブログ投稿を削除します。
 
@@ -1774,11 +1821,13 @@ ID を指定して既存のチケットを削除します。
  </tbody> 
 </table>
 
++++
+
 <!--#### List Blog Posts May need connection
 
 This search module retrieves posts from a HubSpot blog.-->
 
-#### Publish/ブログ投稿の非公開
++++ **ブログ投稿の公開/非公開**
 
 このアクション モジュールは、ブログ投稿の公開をスケジュールまたはキャンセルします。
 
@@ -1801,9 +1850,9 @@ This search module retrieves posts from a HubSpot blog.-->
  </tbody> 
 </table>
 
-<!--#### Watch Blog PostsMay need connection-->
-
 +++
+
+<!--#### Watch Blog PostsMay need connection-->
 
 <!--+++**Workflows**>
 
@@ -1818,14 +1867,12 @@ This search module retrieves posts from a HubSpot blog.-->
 
 <!--+++-->
 
-+++**購読**
-
 ### 購読
 
-* [E メール購読の更新](#update-email-subscription)
-* [ポータルの購読タイムラインを見る](#watch-subscriptions-timeline-for-a-portal)
+<!--* [Update Email Subscription](#update-email-subscription)
+* [Watch Subscriptions Timeline for a Portal](#watch-subscriptions-timeline-for-a-portal)-->
 
-#### E メール購読の更新
++++ **E メール サブスクリプションの更新**
 
 このアクションモジュールは、HubSpot のメールサブスクリプションを更新します。
 
@@ -1856,7 +1903,9 @@ This search module retrieves posts from a HubSpot blog.-->
  </tbody> 
 </table>
 
-#### ポータルの購読タイムラインを見る
++++
+
++++ **ポータルの購読タイムラインを見る**
 
 このトリガーモジュールは、新しいメールタイムラインサブスクリプションがポータルに追加されたときにシナリオを開始します。
 
@@ -1909,11 +1958,9 @@ This action module associates two CRM objects.-->
 
 <!--+++-->
 
-+++**その他**
-
 ### その他
 
-#### [!UICONTROL Make an API Call]
++++ **[!UICONTROL Make an API Call]**
 
 カスタム API 呼び出しを実行できます。
 

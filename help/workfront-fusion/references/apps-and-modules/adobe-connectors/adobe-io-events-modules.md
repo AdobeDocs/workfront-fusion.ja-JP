@@ -1,60 +1,72 @@
 ---
-title: Adobe I/Oイベントモジュール
-description: Adobe I/Oイベントモジュールを使用すると、Adobeアプリケーションのイベントに基づいてAdobe Workfront Fusion シナリオを開始できます。
+title: Adobe I/O Events モジュール
+description: Adobe I/O Events モジュールを使用すると、Adobe アプリケーションのイベントに基づいてAdobe Workfront Fusion シナリオを開始できます。
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 9cea5de748873720247db39161cea12c7e9c7186
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 38%
+source-wordcount: '901'
+ht-degree: 33%
 
 ---
 
-# Adobe I/Oイベントモジュール
+# Adobe I/O Events モジュール
 
-Adobe I/Oイベントモジュールを使用すると、専用のAdobe Workfront Fusion コネクタがないAdobeアカウントとサービスのイベントに基づいてWorkfront Fusion シナリオを開始できます。
+Adobe I/O Events モジュールを使用すると、専用のAdobe Workfront Fusion コネクタがないAdobe アカウントとサービスのイベントに基づいて、Workfront Fusion シナリオを開始できます。
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront プラン*</td> 
-   <td> <p>Pro 以上</p> </td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン*</td> 
-   <td> <p>プラン、作業</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
-   <td> <p>Workfront Fusion for Work Automation and Integration </p>  </td> 
+   <td>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>または</p>
+   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
-   <td>この記事で説明する機能を使用するには、Adobe Workfront Fusion と Adobe Workfront を購入する必要があります。</td> 
-  </tr> 
+   <td>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
+   <p>または</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   </td> 
+  </tr>
  </tbody> 
 </table>
 
-&#42;保有するプラン、ライセンスタイプ、アクセス権を確認するには、Workfront 管理者に問い合わせてください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-&#42;&#42;Adobe Workfront Fusion ライセンスについては、[Adobe Workfront Fusion ライセンスを参照してください ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
+[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+
++++
 
 ## 前提条件
 
-Adobe I/Oイベントコネクタを使用する前に、次の前提条件が満たされていることを確認する必要があります。
+Adobe I/O Events コネクタを使用する前に、次の前提条件が満たされていることを確認する必要があります。
 
-* 有効なAdobeアカウントが必要です。
+* 有効なAdobe アカウントが必要です。
 
-## Adobe I/Oイベント API の情報
+## Adobe I/O Events API の情報
 
-Adobe I/Oイベントコネクタは、次を使用します。
+Adobe I/O Events コネクタでは、以下を使用します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -71,9 +83,9 @@ Adobe I/Oイベントコネクタは、次を使用します。
  </tbody> 
  </table>
 
-## Adobe I/Oイベントへの接続の作成
+## Adobe I/O Eventsへの接続の作成
 
-Adobe I/Oイベントモジュールの接続を作成するには：
+Adobe I/O Events モジュールの接続を作成するには：
 
 1. 「接続」ボックスの横にある「追加」をクリックします。
 
@@ -103,11 +115,11 @@ Adobe I/Oイベントモジュールの接続を作成するには：
       </tr>
       <tr>
         <td role="rowheader">クライアント ID</td>
-        <td>Adobeクライアント ID を入力します。 これは、Adobe Developer Consoleの「資格情報の詳細」セクションにあります</td>
+        <td>Adobe クライアント ID を入力します。 これは、Adobe Developer Consoleの「資格情報の詳細」セクションにあります</td>
       </tr>
       <tr>
         <td role="rowheader">クライアントシークレット</td>
-        <td>Adobeクライアントの秘密鍵を入力します。 これは、Adobe Developer Consoleの「資格情報の詳細」セクションにあります</td>
+        <td>Adobeのクライアントシークレットを入力します。 これは、Adobe Developer Consoleの「資格情報の詳細」セクションにあります</td>
       </tr>
       </tr>
         <tr>
@@ -120,7 +132,7 @@ Adobe I/Oイベントモジュールの接続を作成するには：
       </tr>
       <tr>
         <td role="rowheader">IMS 組織 ID</td>
-        <td>Adobe組織 ID を入力します。 これは、Adobe Developer Consoleの「資格情報の詳細」セクションにあります</td>
+        <td>Adobeの組織 ID を入力します。 これは、Adobe Developer Consoleの「資格情報の詳細」セクションにあります</td>
       </tr>
         <tr>
         <td role="rowheader">プロジェクト ID</td>
@@ -135,7 +147,7 @@ Adobe I/Oイベントモジュールの接続を作成するには：
 
 1. 「**続行**」をクリックして接続を保存し、モジュールに戻ります。
 
-## Adobe I/Oイベントモジュールとそのフィールド
+## Adobe I/O Events モジュールとそのフィールド
 
 [!DNL Adobe I/O Events] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Adobe I/O Events] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
@@ -309,7 +321,7 @@ Webhook を作成するには：
 
 #### プロバイダー ID とイベント ID の取得
 
-この検索モジュールは、指定されたプロバイダーおよびイベントのAdobe I/Oイベント ID を取得します。
+この検索モジュールは、指定されたプロバイダーおよびイベントのAdobe I/O Events ID を取得します。
 
 <table>
      <col/>
