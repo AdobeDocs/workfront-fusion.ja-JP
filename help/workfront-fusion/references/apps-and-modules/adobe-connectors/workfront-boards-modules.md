@@ -4,9 +4,9 @@ description: Adobe Workfront Boards コネクタを使用すると、Workfront B
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 7895e65dd040f28e6028c24928abe2829b58d9db
 workflow-type: tm+mt
-source-wordcount: '2439'
+source-wordcount: '2659'
 ht-degree: 11%
 
 ---
@@ -25,6 +25,8 @@ Adobe Workfront ボード モジュールを使用すると、レコードの読
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
 <table style="table-layout:auto">
@@ -32,29 +34,29 @@ Adobe Workfront ボード モジュールを使用すると、レコードの読
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td>
-  <td> <p>任意</p> </td>
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td>
-   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Plan]、 [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：[!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration], [!UICONTROL [!DNL Workfront Fusion] for Work Automation]</p>
+   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
@@ -62,6 +64,7 @@ Adobe Workfront ボード モジュールを使用すると、レコードの読
 
 [!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
 
++++
 
 ## 前提条件
 
@@ -148,51 +151,6 @@ Workfront ボードモジュールを設定すると、以下に示 [!DNL Workfr
 * [タグ](#tags)
 * [コメント](#comments)
 * [その他](#other)
-
-<!--
-
-### Watch
-
-#### Watch events
-
-This trigger module starts a scenario when an event occurs on a board.
-
-1. Click **[!UICONTROL Add]** to the right of the **Webhook** box.
-
-1. Configure the webhook in the **[!UICONTROL Add a hook]** box that displays.
-
-   When you are configuring this module, the following fields display.
-
-   <table style="table-layout:auto"> 
-    <col> 
-    <col> 
-    <tbody> 
-     <tr> 
-      <td>[!UICONTROL Webhook name]</td> 
-      <td>(Optional) Type a new name for the webhook</td> 
-     </tr> 
-     <tr> 
-      <td>[!UICONTROL Connection]</td> 
-      <td> <p>You can use an existing Workfront connection to connect to Workfront Boards, or you can use a specific Workfront Boards connection. </p><p>For instructions about connecting your [!DNL Workfront] app to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Create a connection to Workfront Boards</a> in this article.</p> </td> 
-     </tr> 
-     <tr> 
-      <td>[!UICONTROL Object type]</td> 
-      <td>Select the type of [!DNL Workfront] object that you want the module to watch.</td> 
-     </tr> 
-     <tr> 
-      <td> <p>[!UICONTROL Objects to watch]</p> </td> 
-      <td> Select whether you want to trigger a scenario when there is a new object, an updated object, a new or updated object, or a deleted object. </td> 
-     </tr> 
-     <tr data-mc-conditions=""> 
-      <td>Exclude events made by this connection</td> 
-      <td>Enable this option to exclude events created or updated using the same connector that this trigger module uses. This can prevent situations where a scenario might trigger itself, causing it to repeat in an endless loop.</td> 
-     </tr> 
-    </tbody> 
-   </table>
-
-After the webhook is created, you can view the address of the endpoint that events are sent to.
-
--->
 
 ### カード
 
@@ -298,7 +256,7 @@ Workfrontのボード上に新しいカードを作成します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Board ID]</td> 
-   <td>移動するカードを含むボードの ID を入力またはマッピングします。<p>Workfrontでカードを表示すると、URL にカード ID が表示されます。</p></td> 
+   <td>移動するカードを含むボードの ID を入力またはマッピングします。<p>Workfrontでボードを表示する際に、URL にボード ID が含まれています。</p></td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Destination column ID]</td> 
@@ -327,6 +285,10 @@ Workfrontのボード上に新しいカードを作成します。
    <td>[!UICONTROL Card ID]</td> 
    <td>読み取るカードの ID を入力またはマッピングします。<p>Workfrontでカードを表示すると、URL にカード ID が表示されます。</p></td> 
   </tr> 
+  <tr> 
+   <td>[!UICONTROL Card ID]</td> 
+   <td>読み取るカードを含むボードの ID を入力またはマッピングします。<p>Workfrontでボードを表示する際に、URL にボード ID が含まれています。</p></td> 
+  </tr> 
  </tbody> 
 </table>
 
@@ -348,15 +310,29 @@ Workfrontのボード上に新しいカードを作成します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Board ID]</td> 
-   <td>更新するカードを含むボードの ID を入力またはマッピングします。<p>Workfrontでカードを表示すると、URL にカード ID が表示されます。</p></td> 
+   <td>更新するカードを含むボードの ID を入力またはマッピングします。<p>Workfrontでボードを表示する際に、URL にボード ID が含まれています。</p></td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Name]</td> 
    <td>カードの新しい名前を入力またはマッピングします。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Card ID]</td> 
+   <td>[!UICONTROL Description]</td> 
    <td>カードの新しい説明を入力またはマッピングします。</p></td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Estimation]</td> 
+   <td>このカードを完了するのに必要な推定時間を入力またはマップします。</p></td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Due date]</td> 
+   <td>このカードの期日を入力またはマッピングします。</p>
+   <p>サポートされる日付と時刻の形式の一覧については、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">型強制：[!DNL Adobe Workfront Fusion]</a> を参照してください。</p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Status]</td> 
+   <td>カードの新しいステータスを選択します。</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -383,8 +359,8 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
    <td>新しいボードの名前を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Type]</td> 
-   <td>作成するボードのタイプを選択します。</td> 
+   <td>[!UICONTROL Template]</td> 
+   <td>作成するボードのタイプに合ったテンプレートを選択します。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -438,10 +414,6 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
    <td>[!UICONTROL Column name]</td> 
    <td>列の新しい名前を入力またはマッピングします。</td> 
   </tr> 
-  <tr> 
-   <td>[!UICONTROL WIP Limit]</td> 
-   <td>列の新しい WIP 制限を入力またはマップします。</td> 
-  </tr> 
  </tbody> 
 </table>
 
@@ -488,12 +460,16 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
    <td>[!UICONTROL Column Name]</td> 
    <td>取得する列の名前を入力またはマッピングします。</td> 
   </tr> 
+  <tr> 
+   <td>[!UICONTROL WIP Limit]</td> 
+   <td>列の新しい WIP 制限を入力またはマップします。</td> 
+  </tr> 
  </tbody> 
 </table>
 
 ### タグ
 
-* [カードにタグを追加](#add-card-tag)
+* [カードにタグを追加](#add-a-tag-to-a-card)
 * [タグの作成](#create-a-tag)
 
 #### カードにタグを追加
@@ -621,7 +597,7 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエストメソッド </a> を参照してください。</p><p>ほとんどのボードの場合、メソッドはPOSTです。 </td> 
+   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエストメソッド </a> を参照してください。</p><p>ほとんどのボードでは、メソッドは POST です。 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -638,5 +614,45 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
   </tr> 
+ </tbody> 
+</table>
+
+
+#### カスタム GraphQL API 呼び出しを行う
+
+このアクションモジュールは、Workfront Boards API に対してカスタム GraphQL リクエストを実行します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+      <td> <p>既存のWorkfront接続を使用してWorkfront Boards に接続することも、特定のWorkfront Boards 接続を使用することもできます。 </p><p>[!DNL Workfront] アプリを [!DNL Workfront Fusion] に接続する手順については、こちらの <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront ボードへの接続の作成 </a> を参照してください。</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td> <p>この呼び出しのメソッドを選択します。 </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Query]</td> 
+   <td> <p>API 呼び出しのクエリを標準 JSON オブジェクトの形式で追加します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Operation name]</td> 
+   <td> <p>この操作の名前を入力します。 これにより、呼び出しのトレースとデバッグが容易になります。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Variables data source]</td> 
+   <td> <p>変数をフォームから取得するか、コレクションから取得するかを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Variables]</td> 
+   <td> <p>追加する変数ごとに、「<b> 項目を追加 </b> をクリックして、変数のキーと値を入力します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</td> 
+   </tr> 
  </tbody> 
 </table>

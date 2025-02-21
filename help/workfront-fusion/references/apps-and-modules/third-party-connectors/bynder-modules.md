@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Byn
 author: Becky
 feature: Workfront Fusion
 exl-id: 0a45f8a7-12cc-41cc-9135-92f4779afac0
-source-git-commit: 024176956d5ca9c88112a67c6948d6297f53810e
+source-git-commit: 1861522827aa782877f612bf3f9dc522f6ca221e
 workflow-type: tm+mt
-source-wordcount: '1467'
-ht-degree: 82%
+source-wordcount: '1534'
+ht-degree: 75%
 
 ---
 
@@ -21,6 +21,8 @@ ht-degree: 82%
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
 <table style="table-layout:auto">
@@ -28,35 +30,37 @@ ht-degree: 82%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 [!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+
++++
 
 ## 前提条件
 
@@ -113,7 +117,9 @@ Bynder コネクタでは、以下を使用します。
 >
 >* [!DNL Bynder] でアプリを作成する場合、`redirect uri` として次を入力します。
 >
->   `https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
+>   * US クラスター：`https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
+>   * EU クラスター：`https://app-eu.workfrontfusion.com/oauth/cb/workfront-bynder`
+>   * Azure クラスター：`https://app-az.workfrontfusion.com/oauth/cb/workfront-bynder`
 >* Bynder は、認証コード/更新トークン付与タイプを使用します。 これは、Fusion Builder コネクタが使用する唯一の付与タイプです。
 
 ## [!DNL Bynder] モジュールとそのフィールド
@@ -130,15 +136,61 @@ Bynder コネクタでは、以下を使用します。
 
 ### アクション
 
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Read asset metadata]](#read-asset-metadata)
-* [[!UICONTROL Update asset metadata]](#update-asset-metadata)
-* [[!UICONTROL Add assets to a collection]](#add-assets-to-a-collection)
-* [[!UICONTROL Remove assets from collection]](#remove-assets-from-collection)
 * [[!UICONTROL Add a tag to assets]](#add-a-tag-to-assets)
-* [アセットから [!UICONTROL Remove a tag]](#remove-a-tag-from-assets)
+* [[!UICONTROL Add assets to a collection]](#add-assets-to-a-collection)
+* [[!UICONTROL Custom API Call]](#custom-api-call)
 * [[!UICONTROL Download asset]](#download-asset)
+* [[!UICONTROL Read asset metadata]](#read-asset-metadata)
+* [アセットから [!UICONTROL Remove a tag]](#remove-a-tag-from-assets)
+* [[!UICONTROL Remove assets from collection]](#remove-assets-from-collection)
+* [[!UICONTROL Update asset metadata]](#update-asset-metadata)
 * [[!UICONTROL Upload asset]](#upload-asset)
+
+#### [!UICONTROL Add a tag to assets]
+
+このアクションモジュールは、1 つ以上のアセットにタグを追加します
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>[!DNL Bynder] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder] を [!DNL Workfront Fusion] へ接続</a>を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tag ID]</td> 
+   <td> <p>アセットに追加するタグの ID を入力またはマッピングします。</p> <p> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
+   <td> <p>タグ付けするアセットごとに「<strong>[!UICONTROL Add item]</strong>」をクリックし、アセット ID を入力またはマッピングします。</p> </td> 
+  </tr> 
+ </tbody> 
+ </table>
+
+#### [!UICONTROL Add assets to a collection]
+
+このアクションモジュールは、1 つ以上のアセットをコレクションに追加します。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>[!DNL Bynder] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder] を [!DNL Workfront Fusion] へ接続</a>を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Collection ID]</td> 
+   <td> <p>アセットを追加するコレクションの ID を入力またはマッピングします。</p> <p> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
+   <td> <p>コレクションに追加するアセットごとに「<strong>[!UICONTROL Add item]</strong>」をクリックし、アセット ID を入力またはマッピングします。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Custom API Call]
 
@@ -162,7 +214,7 @@ Bynder コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   td&gt; <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエストメソッド </a> を参照してください。</p> </td> 
+   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエストメソッド </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -178,6 +230,29 @@ Bynder コネクタでは、以下を使用します。
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Download asset]
+
+このアクションモジュールは、1 つのアセットをダウンロードします。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>[!DNL Bynder] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder] を [!DNL Workfront Fusion] へ接続</a>を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset ID]</td> 
+   <td>ダウンロードするアセットの ID を入力またはマッピングします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset version]</td> 
+   <td> <p>ダウンロードするアセットのバージョンを入力またはマッピングします。アセットの最新バージョンをダウンロードするには、フィールドを空のままにします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -201,6 +276,52 @@ Bynder コネクタでは、以下を使用します。
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
    <td> <p>このモジュールの出力バンドルに含める情報を選択します。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Remove a tag from assets]
+
+このアクションモジュールは、1 つ以上のアセットからタグを削除します
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>[!DNL Bynder] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder] を [!DNL Workfront Fusion] へ接続</a>を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tag ID]</td> 
+   <td> <p>アセットから削除するタグの ID を入力またはマッピングします。</p> <p> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
+   <td> <p>タグを削除するアセットごとに「<strong>[!UICONTROL Add item]</strong>」をクリックし、アセット ID を入力またはマッピングします。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Remove assets from collection]
+
+このアクションモジュールは、1 つ以上のアセットをコレクションから削除します。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>[!DNL Bynder] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder] を [!DNL Workfront Fusion] へ接続</a>を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Collection ID]</td> 
+   <td> <p>アセットを削除するコレクションの ID を入力またはマッピングします。</p> <p> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
+   <td> <p>コレクションから削除するアセットごとに「<strong>[!UICONTROL Add item]</strong>」をクリックし、アセット ID を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -232,121 +353,6 @@ Bynder コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Add assets to a collection]
-
-このアクションモジュールは、1 つ以上のアセットをコレクションに追加します。
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Bynder] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder] を [!DNL Workfront Fusion] へ接続</a>を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Collection ID]</td> 
-   <td> <p>アセットを追加するコレクションの ID を入力またはマッピングします。</p> <p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>コレクションに追加するアセットごとに「<strong>[!UICONTROL Add item]</strong>」をクリックし、アセット ID を入力またはマッピングします。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Remove assets from collection]
-
-このアクションモジュールは、1 つ以上のアセットをコレクションから削除します。
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Bynder] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder] を [!DNL Workfront Fusion] へ接続</a>を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Collection ID]</td> 
-   <td> <p>アセットを削除するコレクションの ID を入力またはマッピングします。</p> <p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>コレクションから削除するアセットごとに「<strong>[!UICONTROL Add item]</strong>」をクリックし、アセット ID を入力またはマッピングします。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Add a tag to assets]
-
-1 つ以上のアセットへのタグの追加
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Bynder] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder] を [!DNL Workfront Fusion] へ接続</a>を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Tag ID]</td> 
-   <td> <p>アセットに追加するタグの ID を入力またはマッピングします。</p> <p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>タグ付けするアセットごとに「<strong>[!UICONTROL Add item]</strong>」をクリックし、アセット ID を入力またはマッピングします。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Remove a tag from assets]
-
-1 つ以上のアセットからのタグの削除
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Bynder] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder] を [!DNL Workfront Fusion] へ接続</a>を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Tag ID]</td> 
-   <td> <p>アセットから削除するタグの ID を入力またはマッピングします。</p> <p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>タグを削除するアセットごとに「<strong>[!UICONTROL Add item]</strong>」をクリックし、アセット ID を入力またはマッピングします。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Download asset]
-
-このアクションモジュールは、1 つのアセットをダウンロードします。
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Bynder] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder] を [!DNL Workfront Fusion] へ接続</a>を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID]</td> 
-   <td>ダウンロードするアセットの ID を入力またはマッピングします。</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset version]</td> 
-   <td> <p>ダウンロードするアセットのバージョンを入力またはマッピングします。アセットの最新バージョンをダウンロードするには、フィールドを空のままにします。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 #### [!UICONTROL Upload asset]
 
 このアクションモジュールは、1 つのアセットをアップロードします。
@@ -371,13 +377,17 @@ Bynder コネクタでは、以下を使用します。
    <td role="rowheader">[!UICONTROL Source file]</td> 
    <td>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asynchronous file upload]</td> 
+   <td>大きなファイルをアップロードする場合は、このオプションを有効にします。 これにより、大きなファイルがシナリオの実行をブロックするのを防ぎます。</td> 
+  </tr> 
  </tbody> 
 </table>
 
 ### 検索
 
 * [[!UICONTROL List record]](#list-record)
-* [[!UICONTROL Search for assets]](#search-for-assets)
+* [[!UICONTROL Search Assets]](#search-assets)
 
 #### [!UICONTROL List record]
 
@@ -411,7 +421,7 @@ Bynder コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Search for assets]
+#### [!UICONTROL Search Assets]
 
 この検索モジュールは、指定した条件に基づいてアセットを検索します。
 
@@ -424,12 +434,12 @@ Bynder コネクタでは、以下を使用します。
    <td> <p>[!DNL Bynder] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder] を [!DNL Workfront Fusion] へ接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Criteria]</td> 
+   <td role="rowheader">[!UICONTROL Search criteria]</td> 
    <td> <p>検索条件を入力します。 </p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Field]</strong> </p> <p>検索で使用するフィールドを選択します</p> </li> 
      <li> <p><strong>[!UICONTROL Logical Operator]</strong> </p> <p>検索に使用する演算子を選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>選択したフィールドに、検索する値を入力またはマッピングします。値のタイプは、選択したフィールドのデータタイプと同じである必要があります。 </p> <p>データタイプについて詳しくは、<a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> の項目データタイプを参照してください。</p> </li> 
+     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>選択したフィールドに、検索する値を入力またはマッピングします。値のタイプは、選択したフィールドのデータタイプと同じである必要があります。 </p> <p>データ型の詳細については、「<a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref"> アイテム データ型 </a>」を参照してください。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -469,21 +479,17 @@ Bynder コネクタでは、以下を使用します。
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>[!DNL Bynder] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder] を [!DNL Workfront Fusion] へ接続</a>を参照してください。</p> </td> 
   </tr> 
-  <tr> <!--
-    <td role="rowheader">Event type</td>
-   --> <!--
-    <td>Select whether you want to start the scenario when a new asset is created or when an existing asset is updated.</td>
-   --> 
+  <tr> 
+    <td role="rowheader">イベントタイプ</td>
+    <td>新しいアセットが作成されたとき、または既存のアセットが更新されたときに、シナリオを開始するかどうかを選択します。</td>
   </tr> 
   <tr>
      <td role="rowheader">[!UICONTROL Collections]</td>
    <td> <p>新しいアセットを監視するコレクションを選択します。すべてのコレクションを監視するには、このフィールドを空のままにします。</p> </td> 
   </tr> 
-  <tr> <!--
-    <td role="rowheader">Outputs</td>
-   --> <!--
-    <td>Select the fields that you want to include in the output.</td>
-   --> 
+  <tr> 
+    <td role="rowheader">出力</td>
+    <td>出力に含めるフィールドを選択します。</td>
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL Limit]</td>
