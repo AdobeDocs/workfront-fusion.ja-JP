@@ -4,10 +4,10 @@ description: この  [!DNL Adobe Workfront Fusion] モジュールを使用す�
 author: Becky
 feature: Workfront Fusion
 exl-id: cc33530c-3010-4955-8819-5eb8373a0e10
-source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
+source-git-commit: c2680972c616a90b55fdaf2c907920e435f23469
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 78%
+source-wordcount: '847'
+ht-degree: 71%
 
 ---
 
@@ -105,7 +105,7 @@ ht-degree: 78%
    <td> <p>HTTP 本文は、使用するヘッダーがある場合、そのヘッダーの直後に HTTP トランザクションメッセージで送信されるデータバイトです。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>Raw 本文タイプは、開発者向けドキュメントで送信するデータが指定されていない場合でも、通常、ほとんどの HTTP 本文リクエストに適しています。</p> <p>[!UICONTROL Content type] フィールドでデータ解析の形式を指定します。</p> <p>選択したコンテンツタイプにもかかわらず、モジュールは開発者ドキュメントで規定されているか必要とされている任意の形式でデータを入力します。</p> </li> 
-     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>このボディタイプは、<code>application/x-www-form-urlencoded</code> を使用してデータを [!UICONTROL POST] します。</p> <p><code>[!UICONTROL application/x-www-form-urlencoded]</code> の場合、サーバーに送信される HTTP メッセージの本文は基本的に 1 つのクエリ文字列になります。キーと値は、<code>&amp;</code> で区切られ、キーと値の間に <code>=</code> を持つキーと値のペアでエンコードされています。 </p> <p>バイナリデータの場合は、代わりに <code>[!UICONTROL multipart/form-data]</code> を使用します。</p> 
+     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>このボディタイプは、<code>application/x-www-form-urlencoded</code> を使用してデータを [!UICONTROL POST] します。</p> <p><code>[!UICONTROL application/x-www-form-urlencoded]</code> の場合、サーバーに送信される HTTP メッセージの本文は基本的に 1 つのクエリ文字列になります。キーと値は、<code>&amp;</code> で区切られ、キーと値の間に <code>=</code> を持つキーと値のペアでエンコードされています。 </p> <p>バイナリデータの場合は、代わりに <code>[!UICONTROL multipart/form-data]</code> を使用します。</p> <p>追加するキーと値のペアごとに、「フィールド」フィールドで <b> 項目を追加 </b> をクリックし、キーと値を入力します。</p>
       <div class="example" data-mc-autonum="<b>Example: </b>">
        <span class="autonumber"><span><b>例：</b></span></span> 
        <p>結果の HTTP リクエスト形式の例は、次のようになります。</p> 
@@ -114,7 +114,7 @@ ht-degree: 78%
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] は、ファイルおよびデータの送信に使用される HTTP マルチパートリクエストです。 通常、ファイルをサーバーにアップロードする際に使用されます。</p> <p>リクエストで送信するフィールドを追加します。各フィールドには、キーと値のペアが含まれている必要があります。</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>リクエスト本文内で送信するキーと値を入力します。</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>キーを入力し、リクエスト本文で送信するソースファイルを指定します。</p> <p>前のモジュール（[!UICONTROL HTTP]/[!UICONTROL Get a File] または [!UICONTROL Google Drive]/[!UICONTROL Download a File)] からアップロードするファイルをマッピングするか、ファイル名とファイルデータを手動で入力します。</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>キーを入力し、送信するソースファイルをリクエスト本文で指定します。 前のモジュールからソースファイルを選択するか、ファイルの名前とデータをマッピングします。</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
@@ -132,7 +132,25 @@ ht-degree: 78%
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Self-signed certificate]</td> 
-   <td> <p> 自己署名証明書を使用して TLS を使用する場合は、証明書をアップロードします。</p> </td> 
+   <td> <p>自己署名証明書を追加するには：</p>
+          <ol>
+            <li value="1">
+              <p><b>[!UICONTROL Extract]</b> をクリックします。</p>
+            </li>
+            <li value="2">
+              <p>抽出するファイルのタイプを選択します。</p>
+            </li>
+            <li value="3">
+              <p>または証明書を含むファイルを選択します。</p>
+            </li>
+            <li value="4">
+              <p>ファイルのパスワードを入力します。</p>
+            </li>
+            <li value="5">
+              <p>「<b>[!UICONTROL Save]</b>」をクリックしてファイルを抽出し、モジュール設定に戻ります。</p>
+            </li>
+          </ol>
+</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reject connections that are using unverified (self-signed) certificates] </td> 
@@ -156,7 +174,7 @@ ht-degree: 78%
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Use Mutual TLS]</td> 
-   <td> <p>このオプションを有効にすると、HTTP リクエストで相互 TLS を使用できます。</p> <p>相互 TLS について詳しくは、<a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> の HTTP モジュールで相互 TLS を使用を参照してください。</p> </td> 
+   <td> <p>このオプションを有効にすると、HTTP リクエストで相互 TLS を使用できます。</p> <p>相互 TLS について詳しくは、<a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">HTTP モジュールで相互 TLS を使用する </a> を参照してください。</p> </td> 
   </tr> 
  </tbody> 
 </table>
