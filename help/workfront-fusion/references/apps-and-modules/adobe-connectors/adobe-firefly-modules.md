@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Ado
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: a3494479614a4930427842fa68e6b586edca0833
+source-git-commit: 70038b21d9b486da23895533cad0fa1f58850e76
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2248'
+ht-degree: 16%
 
 ---
 
