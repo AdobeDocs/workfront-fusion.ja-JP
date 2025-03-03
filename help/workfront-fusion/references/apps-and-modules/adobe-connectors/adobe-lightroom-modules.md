@@ -4,10 +4,10 @@ description: Adobe Lightroom モジュールを使用すると、Adobe Lightroom
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
 workflow-type: tm+mt
-source-wordcount: '2025'
-ht-degree: 21%
+source-wordcount: '2019'
+ht-degree: 22%
 
 ---
 
@@ -190,10 +190,10 @@ Adobe Lightroom コネクタでは、以下を使用します。
 
 * [アセットオリジナルファイルの作成](#create-an-asset-external-xmp-develop-setting-file)
 * [アセットの作成](#create-an-asset)
-* [外部XMP開発設定ファイルのアセットを作成します。](#create-an-asset-external-xmp-develop-setting-file)
+* [外部アセットのXMP開発設定ファイルの作成](#create-an-asset-external-xmp-develop-setting-file)
 * [元のファイルのレンディションの生成](#generate-renditions-for-an-original-file)
 * [カタログアセットの取得](#get-a-catalog-asset)
-* [最新の asset external XMP develop 設定の取得](#get-the-latest-asset-external-xmp-develop-setting-file)
+* [最新の asset external XMP開発設定の取得](#get-the-latest-asset-external-xmp-develop-setting-file)
 * [最新のアセットレンディションの取得](#get-the-latest-asset-rendition)
 * [アセットの取得](#retrieve-assets)
 
@@ -295,9 +295,9 @@ Adobe Lightroom コネクタでは、以下を使用します。
   </tbody>
 </table>
 
-#### 外部XMP開発設定ファイルのアセットを作成します。
+#### 外部アセットのXMP開発設定ファイルの作成
 
-このアクションモジュールは、2 つのワークフローをサポートします。 1 つ目のワークフローでは、アセットの外部XMP開発設定ファイルをアップロードします。 2 つ目のワークフローは、別のアセットの外部 xmp 開発設定ファイルからコピーして、外部XMP開発設定ファイルを作成することです。
+このアクションモジュールは、2 つのワークフローをサポートします。 最初のワークフローでは、外部のXMP開発設定ファイルをアップロードします。 2 つ目のワークフローは、別のアセットの外部 xmp 開発設定ファイルからコピーして、外部のXMP開発設定ファイルを作成することです。
 
 <table style="table-layout:auto"> 
   <col/>
@@ -407,7 +407,7 @@ Adobe Lightroom コネクタでは、以下を使用します。
 </table>
 
 
-#### 最新の asset external XMP develop 設定ファイルの取得
+#### 最新の外部アセットの取得XMP開発設定ファイル
 
 このアクションモジュールは、最新のアセットの外部XMP設定ファイルを取得します。
 
@@ -500,7 +500,7 @@ Adobe Lightroom コネクタでは、以下を使用します。
     <tr>
       <td role="rowheader">[!UICONTROL Maximum number of returned assets]</td>
       <td>
-        <p>1 つの実行サイクル中に返 [!DNL Workfront Fusion] アセットの最大数を設定します。 この数は 100 以下にする必要があります。</p>
+        <p>シナリオの実行サイクルごとにモジュールが返すレコードの最大数を入力します。</p>
       </td>
     </tr>
     <tr>
