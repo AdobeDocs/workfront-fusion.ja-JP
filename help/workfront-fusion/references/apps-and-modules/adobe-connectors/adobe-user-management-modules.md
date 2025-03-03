@@ -4,11 +4,11 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: apps-and-their-modules
 title: Adobe User Management モジュール
-description: シナリオ  [!DNL Adobe Workfront Fusion]  は、Adobeアカウントのユーザーを管理するワークフローを自動化できます。
+description: シナリオ  [!DNL Adobe Workfront Fusion]  は、Adobe アカウントのユーザーを管理するワークフローを自動化できます。
 author: Becky
 feature: Workfront Fusion
 exl-id: e8fe8ec4-4b00-4c9a-81a5-acb2039b153b
-source-git-commit: 640fec2de63ad59ba89fae5373f85b8147d8dac0
+source-git-commit: 234a6a537718328e92eec13672a73bc43add17c1
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 13%
@@ -17,7 +17,7 @@ ht-degree: 13%
 
 # Adobe User Management モジュール
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、Adobeアカウントのユーザーを管理するワークフローを自動化できます。
+[!DNL Adobe Workfront Fusion] のシナリオでは、Adobe アカウントのユーザーを管理するワークフローを自動化できます。
 
 シナリオの作成手順については、[ シナリオを作成：記事インデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -104,7 +104,7 @@ ht-degree: 13%
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL IMS Organization ID]</td>
-        <td>[!DNL Adobe] IMS 資格情報を入力します。 組織の一意の ID。 これは、A495E53@AdobeOrgの形式の文字列で、@の前のプレフィックスは 16 進数です。 この値は、Admin Consoleの組織の URL パスの一部として、または User Management 統合の adobe.io コンソールで確認できます。</td>
+        <td>[!DNL Adobe] IMS 資格情報を入力します。 組織の一意の ID。 これは、A495E53@AdobeOrgの形式の文字列で、@の前のプレフィックスは 16 進数です。 この値は、Admin Consoleの組織の URL パスの一部として、または User Management 統合用の adobe.io コンソールで確認できます。</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Additional scopes]</td>
@@ -119,7 +119,7 @@ ht-degree: 13%
 
 ## Adobe User Management モジュールとそのフィールド
 
-Workfront Fusion でAdobe User Management モジュールを設定する場合、以下に示すフィールドが表示されます。 これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加のAdobeUser Management フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
+Adobe User Management モジュールを設定する場合、Workfront Fusion は以下に示すフィールドを表示します。 これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加のAdobe User Management フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -287,7 +287,7 @@ Workfront Fusion でAdobe User Management モジュールを設定する場合�
   </tr> 
   <tr> 
    <td role="rowheader">ログイン</td> 
-   <td>Federated IDを持つユーザーを作成する場合は、ログインの種類を選択します。</td> 
+   <td>Federated IDでユーザーを作成する場合は、ログインタイプを選択します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">メール</td> 
@@ -295,11 +295,11 @@ Workfront Fusion でAdobe User Management モジュールを設定する場合�
   </tr> 
   <tr> 
    <td role="rowheader">ドメイン</td> 
-   <td>ドメインベースのログインを持つFederated IDを持つユーザーを作成する場合は、ドメインを入力またはマッピングします。</td> 
+   <td>ドメインベースのログインを持つFederated IDでユーザーを作成する場合は、ドメインを入力またはマッピングします。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">ユーザー</td> 
-   <td>ドメインベースのログインでFederated IDを持つユーザーを作成する場合は、新しいユーザーが表すユーザーを入力またはマッピングします。</td> 
+   <td>ドメインベースのログインでFederated IDを使用してユーザーを作成する場合は、新しいユーザーが表すユーザーを入力またはマッピングします。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">名</td> 
@@ -319,7 +319,7 @@ Workfront Fusion でAdobe User Management モジュールを設定する場合�
   </tr> 
   <tr> 
    <td role="rowheader">Adobe IDの使用</td> 
-   <td>True の場合、Enterprise またはFederated IDが同じ名前で存在していても、ユーザー ID は既存のAdobe IDを参照するように解釈されます。</td> 
+   <td>true の場合、Enterprise またはFederated IDが同じ名前で存在していても、ユーザー ID は既存のAdobe IDを参照するように解釈されます。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -528,13 +528,15 @@ Workfront Fusion でAdobe User Management モジュールを設定する場合�
    <td role="rowheader">元のグループ名</td> 
    <td>更新したグループの説明を入力またはマッピングします。</td> 
   </tr> 
- </tbody>
+ </tbody> 
+ </table>
 
 ### その他
 
-このアクションモジュールは、AdobeUser Management API へのカスタム呼び出しを行います。
 
 #### カスタム API 呼び出しの実行
+
+このアクションモジュールは、Adobe User Management API へのカスタム呼び出しを行います。
 
 <table style="table-layout:auto"> 
   <col/>

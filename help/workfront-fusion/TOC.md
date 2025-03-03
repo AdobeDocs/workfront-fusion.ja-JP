@@ -2,10 +2,10 @@
 user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
-source-git-commit: a3494479614a4930427842fa68e6b586edca0833
+source-git-commit: df86b190a21bfd871387d5e6174f62b8ae184bcb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1665'
+ht-degree: 61%
 
 ---
 
@@ -307,6 +307,7 @@ ht-degree: 0%
          * [Adobe Marketo モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
          * [Adobe PDF サービスモジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
          * [Adobe Photoshop モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-photoshop-modules.md)
+         * [Adobe ストレージモジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-storage-modules.md)
          * [Adobe Target モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
          * [Adobe User Management モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
          * [Adobe Workfront モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)

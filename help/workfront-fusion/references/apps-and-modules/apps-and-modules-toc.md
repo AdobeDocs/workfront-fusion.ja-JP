@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: cca7aa6e15df0fd313e9d4ca391994a8ef4c974a
+source-git-commit: 234a6a537718328e92eec13672a73bc43add17c1
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '418'
 ht-degree: 48%
 
 ---
@@ -52,6 +52,7 @@ Fusion は、Adobeの多くの製品とサービスに対してコネクタを�
 * [Adobe Marketo モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
 * [Adobe PDF サービスモジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
 * [Adobe Photoshop モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-photoshop-modules.md)
+* [Adobe ストレージモジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-storage-modules.md)
 * [Adobe Target モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
 * [Adobe User Management モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
 * [Adobe Workfront モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
