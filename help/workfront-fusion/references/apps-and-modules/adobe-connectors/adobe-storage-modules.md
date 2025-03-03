@@ -7,10 +7,12 @@ title: Adobe ストレージモジュール
 description: シナリオでは、Adobe Admin Console [!DNL Adobe Workfront Fusion]  プロジェクトを作成および管理できます。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: e027c93b77d825337b7fb2582c3de2a93c5c71f6
+hide: true
+hidefromtoc: true
+source-git-commit: 70a2d06da6be6c892df12faa3a168e66daef118e
 workflow-type: tm+mt
-source-wordcount: '1328'
-ht-degree: 19%
+source-wordcount: '1351'
+ht-degree: 17%
 
 ---
 
@@ -116,30 +118,25 @@ Adobe Admin Consoleページで、上部のナビゲーションバーの「製�
       </col>
       <tbody>
         <tr>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td>「<code>Server to server</code>」を選択します。</td>
+        </tr>
+        <tr>
         <td role="rowheader">[!UICONTROL Connection name]</td>
         <td>
           <p>この接続の名前を入力します。</p>
         </td>
         </tr>
-        <tr>
-        <td role="rowheader">[!UICONTROL Environment]</td>
-        <td>実稼動環境と非実稼動環境のどちらに接続するかを選択します。</td>
-        </tr>
-        <tr>
-        <td role="rowheader">[!UICONTROL Type]</td>
-        <td>サービスアカウントと個人アカウントのどちらに接続するかを選択します。</td>
-        </tr>
-        <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>[!UICONTROL Adobe] [!UICONTROL Client ID] を入力します。 これは、のプロジェクトの「[!UICONTROL Credential details]」セクションにあります。 [!DNL Adobe Developer Console]</td>
+        <td>[!UICONTROL Adobe] [!UICONTROL Client ID] を入力します。 これは、[!DNL Adobe Developer Console] のプロジェクトの [!UICONTROL Credential details] セクションにあります。</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。 これは、のプロジェクトの「[!UICONTROL Credential details]」セクションにあります。 [!DNL Adobe Developer Console]</td>
+        <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。 これは、[!DNL Adobe Developer Console] のプロジェクトの [!UICONTROL Credential details] セクションにあります。</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Authentication URL]</td>
-        <td>認証 URL を入力します。 デフォルトは <code>https://ims-na1.adobelogin.com</code> です。 </td>
+        <td role="rowheader">[!UICONTROL IMS Organization ID]</td>
+        <td>Adobe IMS組織 ID を入力またはマッピングします。 これは <code> 123abc@AdobeOrg</code> という形式の文字列で、@の前のセクションは 16 進数です。 この値は、Adobe Admin Consoleまたは User Management 統合用のAdobe.IO コンソールで、組織の URL パスの一部として見つけることができます。</td>
         </tr>
       </tbody>
     </table>
