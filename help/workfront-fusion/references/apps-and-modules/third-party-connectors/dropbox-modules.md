@@ -4,16 +4,16 @@ description: ' [!DNL Adobe Workfront Fusion] シナリオでは、Dropbox を使
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: 04f0678b67cf6bffdb791a9ab38be27a6417370c
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '2870'
-ht-degree: 78%
+source-wordcount: '3203'
+ht-degree: 82%
 
 ---
 
 # [!DNL Dropbox] モジュール
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、[!UICONTROL Dropbox] または [!DNL Dropbox Business] を使用するワークフローを自動化でき、複数のサードパーティのアプリケーションおよびサービスに接続できます。これにより、[!UICONTROL Dropbox] 内のファイルやフォルダーの監視、検索、取得、一覧表示、作成、編集などのアクティビティを自動化できます。
+[!DNL Adobe Workfront Fusion] シナリオでは、[!UICONTROL Dropbox] または [!DNL Dropbox Business] を使用するワークフローを自動化できるほか、複数のサードパーティアプリケーションおよびサービスに接続できます。これにより、[!UICONTROL Dropbox] 内のファイルやフォルダーの監視、検索、取得、一覧表示、作成、編集などのアクティビティを自動化できます。
 
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -100,7 +100,7 @@ Dropbox コネクタでは、以下を使用します。
 
 [!DNL Dropbox] モジュールへの接続を作成するには、以下を実行します。
 
-1. 「接続」ボックスの横にある「**[!UICONTROL Add]**」をクリックします。
+1. 任意のモジュールで、「接続」ボックスの横にある **[!UICONTROL 追加]** をクリックします。
 
 1. 次のフィールドに入力します。
 
@@ -136,13 +136,13 @@ Dropbox コネクタでは、以下を使用します。
         <td>個人用 Dropbox アカウントとビジネス用アカウント（Dropbox Business）のどちらに接続するかを選択します。</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Exclude dropbox-api-path-root header]</td>
+        <td role="rowheader">[!UICONTROL 除外 dropbox-api-path-root ヘッダー ]</td>
         <td>アプリのフォルダーアクセス権を持つDropbox アプリの dropbox-api-path-root ヘッダーを除外するには、このオプションを有効にします</td>
         </tr>
       </tbody>
     </table>
 
-1. 「**[!UICONTROL Continue]**」をクリックして接続を保存し、モジュールに戻ります。## [!DNL Dropbox] モジュールとそのフィールド
+1. 「**[!UICONTROL 続行]**」をクリックして接続を保存し、モジュールに戻ります。## [!DNL Dropbox] モジュールとそのフィールド
 
 ## [!DNL Dropbox] モジュールとそのフィールド
 
@@ -159,7 +159,7 @@ Dropbox コネクタでは、以下を使用します。
 
 ### トリガーモジュール
 
-#### [!UICONTROL Watch Files]
+#### [!UICONTROL ファイルを監視]
 
 このトリガータイプのモジュールは、指定されたフォルダー内のファイルが変更されたときに、ファイルの詳細を返します。
 
@@ -188,13 +188,13 @@ Dropbox コネクタでは、以下を使用します。
 
 ### [!DNL Dropbox] ファイルおよびフォルダーを取得するためのモジュール
 
-* [[!UICONTROL Download a File]](#download-a-file)
-* [[!UICONTROL Get a Folder Metadata]](#get-a-folder-metadata)
-* [[!UICONTROL List All Files/Subfolders in a Folder]](#list-all-filessubfolders-in-a-folder)
-* [[!UICONTROL List File Revisions]](#list-file-revisions)
-* [[!UICONTROL Search Files/Folders]](#search-filesfolders)
+* [[!UICONTROL ファイルをダウンロード]](#download-a-file)
+* [[!UICONTROL フォルダーメタデータを取得]](#get-a-folder-metadata)
+* [[!UICONTROL フォルダー内のすべてのファイル／サブフォルダーを一覧表示]](#list-all-filessubfolders-in-a-folder)
+* [[!UICONTROL ファイルリビジョンを一覧表示]](#list-file-revisions)
+* [[!UICONTROL ファイル／フォルダーを検索]](#search-filesfolders)
 
-#### [!UICONTROL Download a File]
+#### [!UICONTROL ファイルをダウンロード]
 
 このアクションモジュールは、フォルダーからファイルをダウンロードします。
 
@@ -227,7 +227,7 @@ Dropbox コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Folder Metadata]
+#### [!UICONTROL フォルダーメタデータを取得]
 
 このアクションモジュールは、共有フォルダーの詳細を取得します。
 
@@ -252,7 +252,7 @@ Dropbox コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL List All Files/Subfolders in a Folder]
+#### [!UICONTROL フォルダー内のすべてのファイル／サブフォルダーを一覧表示]
 
 このアクションモジュールは、特定のフォルダー内のファイルまたはフォルダーを一覧表示します。
 
@@ -289,7 +289,7 @@ Dropbox コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL List File Revisions]
+#### [!UICONTROL ファイルリビジョンを一覧表示]
 
 このアクションモジュールは、特定のファイルのすべてのファイルリビジョン（バージョン履歴）を取得します。\
 ファイルの ID を指定します。
@@ -321,7 +321,7 @@ Dropbox コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Files/Folders]
+#### [!UICONTROL ファイル／フォルダーを検索]
 
 この検索モジュールは、指定された検索クエリに一致するレコードを [!DNL Dropbox] のオブジェクト内で検索します。
 
@@ -364,16 +364,16 @@ Dropbox コネクタでは、以下を使用します。
 
 ### [!DNL Dropbox] ファイルおよびフォルダーを作成および編集するためのモジュール
 
-* [[!UICONTROL Create a Folder]](#create-a-folder)
-* [[!UICONTROL Create/Overwrite a Text File]](#createoverwrite-a-text-file)
-* [[!UICONTROL Create/Update a Share Link]](#createupdate-a-share-link)
-* [[!UICONTROL Delete a File/Folder]](#delete-a-filefolder)
-* [[!UICONTROL Move a File/Folder]](#move-a-filefolder)
-* [[!UICONTROL Rename a File/Folder]](#rename-a-filefolder)
-* [[!UICONTROL Restore a File]](#restore-a-file)
-* [[!UICONTROL Upload] a ファイル](#upload-a-file)
+* [[!UICONTROL フォルダーを作成]](#create-a-folder)
+* [[!UICONTROL テキストファイルを作成／上書き]](#createoverwrite-a-text-file)
+* [[!UICONTROL 共有リンクを作成／更新]](#createupdate-a-share-link)
+* [[!UICONTROL ファイル／フォルダーを削除]](#delete-a-filefolder)
+* [[!UICONTROL ファイル／フォルダーを移動]](#move-a-filefolder)
+* [[!UICONTROL ファイル／フォルダーの名前を変更]](#rename-a-filefolder)
+* [[!UICONTROL ファイルを復元]](#restore-a-file)
+* [ファイルを[!UICONTROL アップロード]](#upload-a-file)
 
-#### [!UICONTROL Create a Folder]
+#### [!UICONTROL フォルダーを作成]
 
 このアクションモジュールは、新規フォルダーを作成します。
 
@@ -406,7 +406,7 @@ Dropbox コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Create/Overwrite a Text File]
+#### [!UICONTROL テキストファイルを作成／上書き]
 
 このアクションモジュールは、DOC ファイルを作成するか、既存の DOC ファイルの内容を上書きします。
 
@@ -433,7 +433,7 @@ Dropbox コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Create/Update a Share Link]
+#### [!UICONTROL 共有リンクを作成／更新]
 
 このアクションモジュールは、ファイルへの公開リンクを作成します。
 
@@ -461,7 +461,7 @@ Dropbox コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Requested Visibility]</p> </td> 
-   <td> <p>リンクがパブリック、チーム用、またはパスワード制限されているかどうかを選択します。</p> <p><b>メモ：</b></p><p> [!UICONTROL Team only] は、Dropbox Business アカウントでのみ使用できます。 [!UICONTROL Access with password] は、[!DNL Dropbox Pro] またはDropbox Business アカウントでのみ使用できます。</p> </td> 
+   <td> <p>リンクがパブリック、チーム用、またはパスワード制限されているかどうかを選択します。</p> <p><b>メモ：</b></p><p> [!UICONTROL チームのみ ] は、Dropbox Business アカウントでのみ使用できます。 [!UICONTROL Access with password] は、[!DNL Dropbox Pro] またはDropbox Business アカウントでのみ使用できます。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Link's Expiration Date]</td> 
@@ -469,13 +469,13 @@ Dropbox コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Link's Access Level]</p> </td> 
-   <td> <p>リンクの受信者に対する権限を設定します。</p> <ul><li><strong>[!UICONTROL Viewer]</strong> <p>リンクを使用するユーザーは、コンテンツを表示してコメントできます。</p> </li><li><strong>[!UICONTROL Editor]</strong><p> リンクを使用するユーザーは、コンテンツを編集、表示およびコメントできます。 このアクセスレベルは、クラウドベースのドキュメントでのみ使用できます。</p> </li><li><strong>[!UICONTROL Max]</strong> <p>リンクを使用するユーザーは、リンクを設定できる最大のアクセスレベルを受け取ります。</p></li><ul> </td> 
+   <td> <p>リンクの受信者に対する権限を設定します。</p> <ul><li><strong>[!UICONTROL ビューア ]</strong> <p>リンクを使用するユーザーは、コンテンツを表示してコメントできます。</p> </li><li><strong>[!UICONTROL エディター ]</strong><p> リンクを使用するユーザーは、コンテンツを編集、表示およびコメントできます。 このアクセスレベルは、クラウドベースのドキュメントでのみ使用できます。</p> </li><li><strong>[!UICONTROL Max]</strong> <p>リンクを使用するユーザーは、リンクを設定できる最大のアクセスレベルを受け取ります。</p></li><ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
 
-#### [!UICONTROL Delete a File/Folder]
+#### [!UICONTROL ファイル／フォルダーを削除]
 
 このアクションモジュールは、ファイルまたはフォルダーを削除します。
 
@@ -498,13 +498,13 @@ Dropbox コネクタでは、以下を使用します。
    <td> <p> ファイルパスをマッピングするか入力するか、手動でファイルを選択するかを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL File or Folder Path] / [!UICONTROL File or Folder]</p> </td> 
+   <td> <p>[!UICONTROL ファイルまたはフォルダーのパス ] / [!UICONTROL ファイルまたはフォルダー ]</p> </td> 
    <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>ターゲットパスを入力するか、ファイルまたはフォルダーにマッピングします。</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>メニューからファイルまたはフォルダーを選択します。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Move a File/Folder]
+#### [!UICONTROL ファイル／フォルダーを移動]
 
 このアクションモジュールは、ファイルまたはフォルダーを別の場所に移動します。
 
@@ -523,11 +523,11 @@ Dropbox コネクタでは、以下を使用します。
    <td> <p>[!DNL Dropbox] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a> への接続の作成を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Way of selecting files / folders] </td> 
+   <td>[!UICONTROL ファイル/フォルダーの選択方法 ] </td> 
    <td> <p>ファイルまたはフォルダーのパスをマップするか入力するか、または手動で選択するかを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL File / Folder Path] /</p> </td> 
+   <td> <p>[!UICONTROL ファイル / フォルダーパス ] /</p> </td> 
    <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>ターゲットパスを入力するか、ファイルまたはフォルダーにマッピングします。</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>ファイルまたはフォルダーを移動するかどうかを選択し、次にファイルまたはフォルダーを移動します。</p> </td> 
   </tr> 
   <tr> 
@@ -540,7 +540,7 @@ Dropbox コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Auto Rename]</p> </td> 
-   <td> <p>このオプションを有効にすると、同じ名前のファイルまたはフォルダーが存在する場合、モジュールはファイルまたはフォルダー名の後に（[!UICONTROL NUMBER]）を付けて、新しいファイルまたはフォルダーの名前を変更します。 それ以外の場合は、ターゲットの場所にあるファイルまたはフォルダーが上書きされます。</p> </td> 
+   <td> <p>このオプションを有効にすると、同じ名前のファイルまたはフォルダーが存在する場合、モジュールはファイルまたはフォルダー名の後に ([!UICONTROL NUMBER]) を付加して、新しいファイルまたはフォルダーの名前を変更します。それ以外の場合は、ターゲットの場所にあるファイルまたはフォルダーが上書きされます。</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Allow ownership transfer]</p> </td> 
@@ -549,7 +549,7 @@ Dropbox コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Rename a File/Folder]
+#### [!UICONTROL ファイル／フォルダーの名前を変更]
 
 このアクションモジュールは、ファイルまたはフォルダーの名前を変更します。
 
@@ -583,7 +583,7 @@ Dropbox コネクタでは、以下を使用します。
 </table>
 
 
-#### [!UICONTROL Restore a File]
+#### [!UICONTROL ファイルを復元]
 
 このアクションモジュールは、ファイルの以前のバージョンを復元します。
 
@@ -616,7 +616,7 @@ Dropbox コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload a File]
+#### [!UICONTROL ファイルをアップロード]
 
 このアクションモジュールは、ファイルをフォルダーにアップロードします。
 
@@ -652,7 +652,7 @@ Dropbox コネクタでは、以下を使用します。
 
 ### その他のモジュール
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL API 呼び出しを実行]
 
 このアクションモジュールでは、[!DNL Dropbox] API への認証済みのカスタム呼び出しを実行できます。これにより、他の [!DNL Dropbox] モジュールでは不可能なデータフロー自動処理を作成できます。
 
@@ -711,7 +711,7 @@ URL：`/2/files/list_folder`
 }
 ```
 
-検索の一致は、モジュールの出力の [!UICONTROL Bundle] > [!UICONTROL Body] > エントリで見つけることができます。
+検索結果は、[!UICONTROL バンドル]／[!UICONTROL 本文]にあるエントリ内のモジュールの「出力」に表示されます。
 
 この例では、10 個のチケットが返されました。
 
@@ -731,7 +731,7 @@ URL：`/2/files/list_folder`
 
 ### 共有リンクで参照された画像がレンダリングされない
 
-[!UICONTROL Dropbox] >[!UICONTROL Create a shared link] によって返される URL は、画像に直接リンクするのではなく、[!DNL Dropbox] のページにリンクします。 画像を強制的にダウンロードするには、末尾の `?dl=0` を `?dl=1` に置き換えます。（Web ブラウザーや Facebook メッセンジャーなどで）画像を強制的にレンダリングするには、URL の末尾に `&raw=1` を追加します。
+[!UICONTROL Dropbox]／[!UICONTROL 共有リンクを作成]で返される URL は、画像に直接リンクされるのではなく、[!DNL Dropbox] ページにリンクされています。画像を強制的にダウンロードするには、末尾の `?dl=0` を `?dl=1` に置き換えます。（Web ブラウザーや Facebook メッセンジャーなどで）画像を強制的にレンダリングするには、URL の末尾に `&raw=1` を追加します。
 
 Web サイトまたはその他の [!DNL Workfront Fusion] モジュールの画像の直接リンクまたは生のリンクを取得する必要がある場合は、最初の共有 URL を次のように変更する必要があります。
 

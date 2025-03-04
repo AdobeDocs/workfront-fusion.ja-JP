@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion SFTP]  モジュールを使用す�
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '1851'
-ht-degree: 79%
+source-wordcount: '2077'
+ht-degree: 82%
 
 ---
 
@@ -95,25 +95,25 @@ SFTP アカウントを [!DNL Workfront Fusion] に接続するには、ター�
    <td> <p>SFTP サーバーへの接続に使用する認証メソッドを選択します。</p> 
     <ul> 
      <li><strong>[!UICONTROL User name and password]</strong>：資格情報を入力します。</li> 
-     <li> <p><strong>[!UICONTROL User name and key]</strong>：ユーザー名と秘密鍵/証明書を入力します</p> <p>秘密鍵をアップロードしてクライアント側の認証を使用するか、自己署名証明書を使用して TLS を使用する場合には、自分の証明書（P12 または PFX ファイル）をアップロードします。クライアント側の証明書認証を使用している場合は、ここに CA 証明書を入力できます。</p> <p>[!DNL Workfront Fusion] ここで指定したデータ（ファイル、パスワード）を保持または保存しません。ファイルとパスワードは、秘密鍵や証明書を抽出する場合にのみ使用します。</p> </li> 
+     <li> <p><strong>[!UICONTROL User name and key]</strong>：ユーザー名と秘密鍵／証明書を入力します。</p> <p>秘密鍵をアップロードしてクライアント側の認証を使用するか、自己署名証明書を使用して TLS を使用する場合には、自分の証明書（P12 または PFX ファイル）をアップロードします。クライアント側の証明書認証を使用している場合は、ここに CA 証明書を入力できます。</p> <p>[!DNL Workfront Fusion] ここで指定したデータ（ファイル、パスワード）を保持または保存しません。ファイルとパスワードは、秘密鍵や証明書を抽出する場合にのみ使用します。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Key exchange algorithms] </td> 
+   <td role="rowheader">[!UICONTROL キー交換アルゴリズム ] </td> 
    <td> <p>キー交換用の一連のアルゴリズムを入力できます。 モジュールは、追加された順序に基づいてアルゴリズムの優先順位を設定します。 追加するアルゴリズムごとに「<b> 項目を追加 </b>」をクリックし、アルゴリズムを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Ciphers] </td> 
+   <td role="rowheader">[!UICONTROL 暗号 ] </td> 
    <td> <p>キー交換用の暗号のセットを入力できます。 モジュールは、追加された順序に基づいて暗号の優先順位を設定します。 追加する暗号ごとに [<b> 項目の追加 </b>] をクリックし、暗号を選択します。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-接続情報を入力したら、[**[!UICONTROL Continue]**] をクリックして接続を確立します。
+接続情報を入力したら、「**[!UICONTROL 続行]**」をクリックして接続を確立します。
 
 ## [!UICONTROL SFTP] モジュールとそのフィールド
 
-[!UICONTROL SFTP] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!UICONTROL SFTP] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL SFTP] モジュールを設定すると、[!DNL Workfront Fusion] には以下のフィールドが表示されます。これらと共に、アプリやサービスのアクセスレベルなどの要因に応じて、追加の [!UICONTROL SFTP] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -124,7 +124,7 @@ SFTP アカウントを [!DNL Workfront Fusion] に接続するには、ター�
 * [フォルダー内のファイルの監視](#watch-files-in-a-folder)
 * [フォルダー内のサブフォルダーの監視](#watch-subfolders-in-a-folder)
 
-#### [!UICONTROL Watch Files in a Folder]
+#### [!UICONTROL フォルダー内のファイルを監視]
 
 特定のフォルダー内でファイルが作成または変更された場合に、詳細を含むファイルを返します。
 
@@ -151,7 +151,7 @@ SFTP アカウントを [!DNL Workfront Fusion] に接続するには、ター�
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Subfolders in a Folder]
+#### [!UICONTROL フォルダ内のサブフォルダーの監視]
 
 特定のフォルダー内でフォルダーが作成または変更された場合に、詳細を含むフォルダーを返します。
 
@@ -187,13 +187,13 @@ SFTP アカウントを [!DNL Workfront Fusion] に接続するには、ター�
 * [ファイル権限の更新](#update-file-permissions)
 * [ファイルのアップロード](#upload-a-file)
 
-#### [!UICONTROL Create a folder]
+#### [!UICONTROL フォルダーを作成]
 
 指定された場所に新しいフォルダーを作成します。
 
 >[!NOTE]
 >
->フォルダーが既に存在する場合はエラーが返されます。フローを中断せずに続行するには、エラーハンドラールートをモジュールに添付してエラーをキャッチし、[!UICONTROL Resume] ディレクティブを使用してフローを続行します。 エラーハンドラールートのアタッチについて詳しくは、[ [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md) でのエラー処理を参照してください。エラーハンドラールートについて詳しくは、[ [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/errors/directives-for-error-handling.md) でのエラー処理用のディレクティブを参照してください。
+>フォルダーが既に存在する場合はエラーが返されます。フローを中断せずに続行するには、エラーハンドラールートをモジュールに接続してエラーを検出し、[!UICONTROL 再開]ディレクティブを適用します。エラーハンドラールートのアタッチについて詳しくは、[ [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md) でのエラー処理を参照してください。エラーハンドラールートについて詳しくは、[ [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/errors/directives-for-error-handling.md) でのエラー処理用のディレクティブを参照してください。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -218,7 +218,7 @@ SFTP アカウントを [!DNL Workfront Fusion] に接続するには、ター�
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a file]
+#### [!UICONTROL ファイルを削除]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -226,7 +226,7 @@ SFTP アカウントを [!DNL Workfront Fusion] に接続するには、ター�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事にある <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への SFTP の接続を参照してください。</p> </td> 
+   <td> <p>SFTP アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への SFTP の接続を参照してください</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File Path]</td> 
@@ -235,7 +235,7 @@ SFTP アカウントを [!DNL Workfront Fusion] に接続するには、ター�
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a folder]
+#### [!UICONTROL フォルダーを削除]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -252,7 +252,7 @@ SFTP アカウントを [!DNL Workfront Fusion] に接続するには、ター�
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a file]
+#### [!UICONTROL ファイルを取得]
 
 このモジュールでは、ファイルのデータなど、ファイルの詳細を取得します。
 
@@ -262,7 +262,7 @@ SFTP アカウントを [!DNL Workfront Fusion] に接続するには、ター�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事にある <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への SFTP の接続を参照してください。</p> </td> 
+   <td> <p>SFTP アカウントの [!DNL Workfront Fusion] への接続手順については、この記事の<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への SFTP の接続を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Buffer Size [B]]</td> 
@@ -275,7 +275,7 @@ SFTP アカウントを [!DNL Workfront Fusion] に接続するには、ター�
  </tbody> 
 </table>
 
-#### [!UICONTROL Get files]
+#### [!UICONTROL  ファイルを取得 ]
 
 このモジュールは、指定されたフォルダーからファイルを返します。
 
@@ -285,7 +285,7 @@ SFTP アカウントを [!DNL Workfront Fusion] に接続するには、ター�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事にある <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への SFTP の接続を参照してください。</p> </td> 
+   <td> <p>SFTP アカウントの [!DNL Workfront Fusion] への接続手順については、この記事の<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への SFTP の接続を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Buffer Size [B]]</td> 
@@ -318,7 +318,7 @@ SFTP アカウントを [!DNL Workfront Fusion] に接続するには、ター�
  </tbody> 
 </table>
 
-#### [!UICONTROL List a folder's content]
+#### [!UICONTROL フォルダーのコンテンツのリスト]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -359,7 +359,7 @@ SFTP アカウントを [!DNL Workfront Fusion] に接続するには、ター�
  </tbody> 
 </table>
 
-#### [!UICONTROL Move a File]
+#### [!UICONTROL ファイルの移動]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -367,11 +367,11 @@ SFTP アカウントを [!DNL Workfront Fusion] に接続するには、ター�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事にある <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への SFTP の接続を参照してください。</p> </td> 
+   <td> <p>SFTP アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への SFTP の接続を参照してください</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File Path]</td> 
-   <td> <p> 移動するファイルのパスを入力します。ここでは、<code>/home/user/file.txt</code> などの絶対パスを指定できます。または、<code>./file.txt</code> など、ログインしたユーザーの特定のフォルダーを指す相対パスを指定できます。</p> </td> 
+   <td> <p> 移動するファイルのパスを入力します。ここでは、<code>/home/user/file.txt</code> などの絶対パスを指定できます。また、<code>./file.txt</code> など、ログインしたユーザーの特定のフォルダーを指す相対パスを指定できます。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL New Folder]</td> 
@@ -380,7 +380,7 @@ SFTP アカウントを [!DNL Workfront Fusion] に接続するには、ター�
  </tbody> 
 </table>
 
-#### [!UICONTROL Rename a File]
+#### [!UICONTROL ファイル名の変更]
 
 ファイル名を変更します。
 
@@ -390,7 +390,7 @@ SFTP アカウントを [!DNL Workfront Fusion] に接続するには、ター�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事にある <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への SFTP の接続を参照してください。</p> </td> 
+   <td> <p>SFTP アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への SFTP の接続を参照してください</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File Path]</td> 
@@ -403,7 +403,7 @@ SFTP アカウントを [!DNL Workfront Fusion] に接続するには、ター�
  </tbody> 
 </table>
 
-#### [!UICONTROL Update file permissions]
+#### [!UICONTROL ファイル権限の更新]
 
 ファイルの権限は変更することができます。
 
@@ -413,7 +413,7 @@ SFTP アカウントを [!DNL Workfront Fusion] に接続するには、ター�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事にある <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への SFTP の接続を参照してください。</p> </td> 
+   <td> <p>SFTP アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への SFTP の接続を参照してください</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File Path]</td> 
@@ -426,7 +426,7 @@ SFTP アカウントを [!DNL Workfront Fusion] に接続するには、ター�
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload a File]
+#### [!UICONTROL ファイルのアップロード]
 
 このモジュールでは、SFTP サーバーにファイルをアップロードできます。
 

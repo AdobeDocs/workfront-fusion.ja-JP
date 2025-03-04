@@ -4,10 +4,10 @@ description: FTP モジュールを使用すると、選択したフォルダー
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e14f778-ab8c-421f-a4b4-c57be66c7cad
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: c5e9c643c828e5556e386a5f46e1d17680b7d4e9
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 84%
+source-wordcount: '1328'
+ht-degree: 93%
 
 ---
 
@@ -17,46 +17,50 @@ FTP モジュールを使用すると、選択したフォルダー内のファ�
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 [!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
 
++++
+
 ## 前提条件
 
-[Fusion App] を [!DNL Workfront Fusion] で使用するには、FTP アカウントが必要です。
+FTP モジュールを使用するには、FTP アカウントが必要です。
 
 ## FTP モジュールでの接続の作成 {#create-a-connection}
 
@@ -94,7 +98,7 @@ FTP モジュールを使用すると、選択したフォルダー内のファ�
     <ul> 
      <li>ルート<a href="https://en.wikipedia.org/wiki/Certificate_authority">認証局</a>で署名されていること</li> 
      <li>中間認証局で署名されていること（詳しくは、<a href="https://knowledge.digicert.com/solution/SO16297.html">How Certificate Chains Work</a> などを参照してください）。この場合は、すべての中間証明書を FTP サーバーにインストールする必要があります。</li> 
-     <li>[!UICONTROL Self-signed certificate] フィールドで提供される自己署名証明書である（以下を参照）</li> </ul>
+     <li>「[!UICONTROL Self-signed certificate]」フィールドで指定されている自己署名証明書であること（下記を参照）</li> </ul>
 
 このオプションが無効になっている場合、FTP サーバー証明書は検証されません。このオプションを無効にすると接続が安全でなくなり、重大なセキュリティリスクが生じるので、このオプションを無効にしないことを強くお勧めします。</td>
 </tr> 
@@ -112,9 +116,9 @@ FTP モジュールを使用すると、選択したフォルダー内のファ�
 
 ### トリガー
 
-#### [!UICONTROL Watch files]
+#### [!UICONTROL ファイルの監視]
 
-[!UICONTROL Watch files] は FTP 用の唯一のトリガーモジュールです。 選択されたフォルダーのファイルコンテンツを監視します。指定したフォルダーに新しいファイルが挿入されると、トリガーが実行されます。
+[!UICONTROL ファイルの監視]は、FTP の唯一のトリガーモジュールです。選択されたフォルダーのファイルコンテンツを監視します。指定したフォルダーに新しいファイルが挿入されると、トリガーが実行されます。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -122,7 +126,7 @@ FTP モジュールを使用すると、選択したフォルダー内のファ�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>FTP アカウントへの接続を確立する手順については、この記事の「FTP モジュールでの <a href="#create-a-connection" class="MCXref xref">[!UICONTROL Create a connection]」を参照 </a> てください。</p> </td> 
+   <td> <p>FTP アカウントへの接続を確立する手順については、この記事の <a href="#create-a-connection" class="MCXref xref">FTP モジュールでの[!UICONTROL Create a connection]</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Folder]</p> </td> 
@@ -137,16 +141,16 @@ FTP モジュールを使用すると、選択したフォルダー内のファ�
 
 ### アクション
 
-* [[!UICONTROL Change permissions]](#change-permissions)
-* [[!UICONTROL Create a folder]](#create-a-folder)
-* [[!UICONTROL Delete a file]](#delete-a-file)
-* [[!UICONTROL Delete a folder]](#delete-a-folder)
-* [[!UICONTROL Get a file]](#get-a-file)
-* [[!UICONTROL List of files in a folder]](#list-of-files-in-a-folder)
-* [[!UICONTROL Move a file or folder]](#move-a-file-or-folder)
-* [ファイルの [!UICONTROL Upload] 成](#upload-a-file)
+* [[!UICONTROL 権限の変更]](#change-permissions)
+* [[!UICONTROL フォルダーの作成]](#create-a-folder)
+* [[!UICONTROL ファイルの削除]](#delete-a-file)
+* [[!UICONTROL フォルダーの削除]](#delete-a-folder)
+* [[!UICONTROL ファイルの取得]](#get-a-file)
+* [[!UICONTROL フォルダー内のファイルのリスト]](#list-of-files-in-a-folder)
+* [[!UICONTROL ファイルまたはフォルダーの移動]](#move-a-file-or-folder)
+* [ファイルの[!UICONTROL アップロード]](#upload-a-file)
 
-#### [!UICONTROL Change permissions]
+#### [!UICONTROL 権限の変更]
 
 このアクションモジュールは、ファイルまたはフォルダーの権限設定を変更します。
 
@@ -156,7 +160,7 @@ FTP モジュールを使用すると、選択したフォルダー内のファ�
    <tbody>
          <tr class="TableStyle-TableStyle-List-options-in-steps-Body-LightGray">
             <td class="TableStyle-TableStyle-List-options-in-steps-BodyE-Column1-LightGray" role="rowheader">[!UICONTROL Connection]</td>
-            <td class="TableStyle-TableStyle-List-options-in-steps-BodyD-Column2-LightGray">FTP アカウントへの接続を確立する手順については、この記事の「FTP モジュールでの <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection]」を参照 </a> てください。</td>
+            <td class="TableStyle-TableStyle-List-options-in-steps-BodyD-Column2-LightGray">FTP アカウントへの接続を確立する手順については、この記事の <a href="#Create" class="MCXref xref" >FTP モジュールでの[!UICONTROL Create a connection]</a>を参照してください。</td>
          </tr>
          <tr class="TableStyle-TableStyle-List-options-in-steps-Body-MediumGray">
             <td class="TableStyle-TableStyle-List-options-in-steps-BodyE-Column1-MediumGray" role="rowheader">[!UICONTROL Change permission settings of]</td>
@@ -178,7 +182,7 @@ FTP モジュールを使用すると、選択したフォルダー内のファ�
    </tbody>
 </table>
 
-#### [!UICONTROL Create a folder]
+#### [!UICONTROL フォルダーの作成]
 
 このアクションモジュールは、新規フォルダーを作成します。
 
@@ -188,7 +192,7 @@ FTP モジュールを使用すると、選択したフォルダー内のファ�
    <tbody>
          <tr class="TableStyle-TableStyle-List-options-in-steps-Body-LightGray">
             <td class="TableStyle-TableStyle-List-options-in-steps-BodyE-Column1-LightGray" role="rowheader">[!UICONTROL Connection]</td>
-            <td class="TableStyle-TableStyle-List-options-in-steps-BodyD-Column2-LightGray">FTP アカウントへの接続を確立する手順については、この記事の「FTP モジュールでの <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection]」を参照 </a> てください。</td>
+            <td class="TableStyle-TableStyle-List-options-in-steps-BodyD-Column2-LightGray">FTP アカウントへの接続を確立する手順については、この記事の <a href="#Create" class="MCXref xref" >FTP モジュールでの[!UICONTROL Create a connection]</a>を参照してください。</td>
          </tr>
          <tr class="TableStyle-TableStyle-List-options-in-steps-Body-MediumGray">
             <td class="TableStyle-TableStyle-List-options-in-steps-BodyE-Column1-MediumGray" role="rowheader">[!UICONTROL Folder path]</td>
@@ -203,7 +207,7 @@ FTP モジュールを使用すると、選択したフォルダー内のファ�
    </tbody>
 </table>
 
-#### [!UICONTROL Delete a file]
+#### [!UICONTROL ファイルの削除]
 
 指定されたフォルダーからファイルを削除します。
 
@@ -213,7 +217,7 @@ FTP モジュールを使用すると、選択したフォルダー内のファ�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-            <td class="TableStyle-TableStyle-List-options-in-steps-BodyD-Column2-LightGray">FTP アカウントへの接続を確立する手順については、この記事の「FTP モジュールでの <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection]」を参照 </a> てください。</td>
+            <td class="TableStyle-TableStyle-List-options-in-steps-BodyD-Column2-LightGray">FTP アカウントへの接続を確立する手順については、この記事の <a href="#Create" class="MCXref xref" >FTP モジュールでの[!UICONTROL Create a connection]</a>を参照してください。</td>
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder] </td> 
@@ -226,7 +230,7 @@ FTP モジュールを使用すると、選択したフォルダー内のファ�
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a folder]
+#### [!UICONTROL フォルダーの削除]
 
 このアクションモジュールは、指定されたフォルダーを完全に削除します。
 
@@ -236,7 +240,7 @@ FTP モジュールを使用すると、選択したフォルダー内のファ�
    <tbody>
          <tr class="TableStyle-TableStyle-HeaderRow-Body-LightGray">
             <td class="TableStyle-TableStyle-HeaderRow-BodyE-Column1-LightGray" style="font-weight: bold;">[!UICONTROL Connection]</td>
-            <td class="TableStyle-TableStyle-HeaderRow-BodyD-Column1-LightGray">FTP アカウントへの接続を確立する手順については、この記事の「FTP モジュールでの <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection]」を参照 </a> てください。</td>
+            <td class="TableStyle-TableStyle-HeaderRow-BodyD-Column1-LightGray">FTP アカウントへの接続を確立する手順については、この記事の <a href="#Create" class="MCXref xref" >FTP モジュールでの[!UICONTROL Create a connection]</a>を参照してください。</td>
          </tr>
          <tr class="TableStyle-TableStyle-HeaderRow-Body-MediumGray">
             <td class="TableStyle-TableStyle-HeaderRow-BodyB-Column1-MediumGray" style="font-weight: bold;">[!UICONTROL Folder]</td>
@@ -247,7 +251,7 @@ FTP モジュールを使用すると、選択したフォルダー内のファ�
    </tbody>
 </table>
 
-#### [!UICONTROL Get a file]
+#### [!UICONTROL ファイルの取得]
 
 さらに処理できるファイル（例：[!DNL Dropbox] にアップロードできるファイル）を FTP サーバーから取得します。
 
@@ -266,7 +270,7 @@ FTP モジュールを使用すると、選択したフォルダー内のファ�
  </tbody> 
 </table>
 
-#### [!UICONTROL List of files in a folder]
+#### [!UICONTROL フォルダー内のファイルのリスト]
 
 ファイルやフォルダーの情報を取得します。
 
@@ -297,7 +301,7 @@ FTP モジュールを使用すると、選択したフォルダー内のファ�
  </tbody> 
 </table>
 
-#### [!UICONTROL Move a file or folder]
+#### [!UICONTROL ファイルまたはフォルダーの移動]
 
 このアクションモジュールは、ファイルまたはフォルダーを別の場所に移動します。
 
@@ -307,7 +311,7 @@ FTP モジュールを使用すると、選択したフォルダー内のファ�
    <tbody>
          <tr class="TableStyle-TableStyle-HeaderRow-Body-LightGray">
             <td class="TableStyle-TableStyle-HeaderRow-BodyE-Column1-LightGray" style="font-weight: bold;">[!UICONTROL Connection]</td>
-            <td class="TableStyle-TableStyle-HeaderRow-BodyD-Column1-LightGray">FTP アカウントへの接続を確立する手順については、この記事の「FTP モジュールでの <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection]」を参照 </a> てください。</td>
+            <td class="TableStyle-TableStyle-HeaderRow-BodyD-Column1-LightGray">FTP アカウントへの接続を確立する手順については、この記事の <a href="#Create" class="MCXref xref" >FTP モジュールでの[!UICONTROL Create a connection]</a>を参照してください。</td>
          </tr>
          <tr class="TableStyle-TableStyle-HeaderRow-Body-MediumGray">
             <td class="TableStyle-TableStyle-HeaderRow-BodyE-Column1-MediumGray" style="font-weight: bold;">[!UICONTROL Old file path]</td>
@@ -325,7 +329,7 @@ FTP モジュールを使用すると、選択したフォルダー内のファ�
 </table>
 
 
-#### [!UICONTROL Upload a file]
+#### [!UICONTROL ファイルのアップロード]
 
 FTP サーバーにファイルをアップロードします。
 

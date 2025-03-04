@@ -4,14 +4,14 @@ description: OAuth 2.0 認証を必要とするサーバーに対する  [!DNL A
 author: Becky
 feature: Workfront Fusion
 exl-id: a302a1d4-fddf-4a71-adda-6b87ff7dba4b
-source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '1978'
-ht-degree: 69%
+source-wordcount: '2256'
+ht-degree: 81%
 
 ---
 
-# [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] モジュール
+# [!UICONTROL HTTP]／[!UICONTROL OAuth 2.0 リクエスト作成]モジュール
 
 >[!NOTE]
 >
@@ -80,12 +80,12 @@ OAuth 2.0 認証について詳しくは、[OAuth 2.0 承認フレームワー�
 ## [!DNL OAuth] リクエストの接続の作成
 
 * [HTTPで接続を作成するための一般的な手順／OAuth 2.0 リクエスト作成モジュール](#general-instructions-for-creating-a-connection-in-the-http--make-an-oauth-20-request-module)
-* [http / [!UICONTROL Make] an OAuth 2.0 request module でGoogleへの接続を作成する手順](#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module)
+* [OAuth 2.0 リクエストモジュール http / [!UICONTROL  作成 ] でGoogleへの接続を作成する手順](#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module)
 * [HTTP 経由で Microsoft Graph API への接続を作成するための手順／OAuth 2.0 リクエスト作成モジュール](#instructions-for-connecting-to-microsoft-graph-api-via-the-http--make-an-oauth-20-request-module)
 
-### [!UICONTROL HTTP]/[!UICONTROL Make an OAuth 2.0 request] モジュールで接続を作成するための一般的な手順
+### [!UICONTROL HTTP] で接続を作成するための一般的な手順／[!UICONTROL OAuth 2.0 リクエスト作成]モジュール
 
-1. [!DNL Adobe Workfront Fusion] と通信する [!DNL target] サービスに OAuth クライアントを作成します。このオプションは、指定されたサービスの [!UICONTROL Developer] セクションにある可能性が最も高いです。
+1. [!DNL Adobe Workfront Fusion] と通信する [!DNL target] サービスに OAuth クライアントを作成します。このオプションは、所定のサービスの[!UICONTROL 開発者]セクションに含まれていることが多いです。
 
    1. クライアントを作成する際に、適切な URL を `[!UICONTROL Redirect URL]` または `[!UICONTROL Callback URL]` フィールドに入力します：
 
@@ -103,7 +103,7 @@ OAuth 2.0 認証について詳しくは、[OAuth 2.0 承認フレームワー�
 
 1. （条件付き）ターゲットサービスでスコープ（アクセス権）を使用する場合、サービスで個々のスコープがどのように区切られるかを確認し、それに応じて詳細設定で区切り文字を設定してください。区切り文字が正しく設定されていない場合、[!DNL Workfront Fusion] は接続の作成に失敗し、範囲無効エラーが表示されます。
 1. 上記の手順を完了したら、[!DNL Workfront Fusion] で OAuth 接続の作成を開始できます。「HTTP / OAuth 2 リクエストを行う」モジュールをシナリオに追加します。
-1. モジュールの「接続」フィールドで、「**[!UICONTROL Add]**」をクリックします。
+1. モジュールの「接続」フィールドで、「**[!UICONTROL 追加]**」をクリックします。
 
 1. 次のフィールドに入力して、接続を作成します。
 
@@ -127,8 +127,8 @@ OAuth 2.0 認証について詳しくは、[OAuth 2.0 承認フレームワー�
       <td role="rowheader"> <p>[!UICONTROL Flow type]</p> </td> 
       <td> <p>トークンを取得するフローを選択します。</p> 
        <ul> 
-        <li><strong>[!UICONTROL Authorization Code]</strong>：サービスの API ドキュメントから <code>[!UICONTROL Authorize URI]</code> と <code>[!UICONTROL Token URI]</code> を入力します。</li> 
-        <li><strong>[!UICONTROL Implicit]</strong>：サービスの API ドキュメントから <code>[!UICONTROL Authorize URI]</code> を入力します。</li> 
+        <li><strong>[!UICONTROL Authorization Code]</strong>：サービスの API ドキュメントにある <code>[!UICONTROL Authorize URI]</code> と <code>[!UICONTROL Token URI]</code> を入力します。</li> 
+        <li><strong>[!UICONTROL Implicit]</strong>：サービスの API ドキュメントにある <code>[!UICONTROL Authorize URI]</code> を入力してください。</li> 
        </ul> </td> 
      </tr> 
      <tr> 
@@ -151,7 +151,7 @@ OAuth 2.0 認証について詳しくは、[OAuth 2.0 承認フレームワー�
       <td role="rowheader"> <p>[!UICONTROL Authorize parameters]</p> </td> 
       <td> <p>認証呼び出しに含めるパラメーターを追加します。次の標準パラメーターは常に自動的に含まれるため、追加する必要はありません。</p> <p>標準パラメーター：</p> 
        <ul> 
-        <li> <p><strong>[!UICONTROL response_type]</strong> </p> <p> <code>code </code>[!UICONTROL Authorization Code flow] の場合は、<code>token </code> の場合は [!UICONTROL Implicit flow]</p> </li> 
+        <li> <p><strong>[!UICONTROL response_type]</strong> </p> <p> [!UICONTROL Authorization Code flow] 用の <code>code </code> および [!UICONTROL Implicit flow] 用の <code>token </code> の場合</p> </li> 
         <li> <p><strong>[!UICONTROL redirect_uri]</strong> </p> 
          <table style="table-layout:auto">  
           <col> 
@@ -174,8 +174,8 @@ OAuth 2.0 認証について詳しくは、[OAuth 2.0 承認フレームワー�
       <td role="rowheader"> <p>[!UICONTROL Access token parameters]</p> </td> 
       <td> <p>トークン呼び出しに含めるパラメーターを追加します。次の標準パラメーターは常に自動的に含まれるため、追加する必要はありません。</p> <p>標準パラメーター：</p> 
        <ul> 
-        <li><strong>[!UICONTROL grant_type]</strong>: <code>authorization_code</code></li> 
-        <li> <p><strong>[!UICONTROL redirect_uri]:</strong> </p> 
+        <li><strong>[!UICONTROL grant_type]</strong>： <code>authorization_code</code></li> 
+        <li> <p><strong>[!UICONTROL redirect_uri]：</strong> </p> 
          <table style="table-layout:auto">  
           <col> 
           <col> 
@@ -200,18 +200,18 @@ OAuth 2.0 認証について詳しくは、[OAuth 2.0 承認フレームワー�
       <td> <p>トークン呼び出しに含めるパラメーターを追加します。次の標準パラメーターは常に自動的に含まれるため、追加する必要はありません。</p> <p>標準パラメーター：</p> 
        <ul> 
         <li> <p><strong>[!UICONTROL grant_type]</strong>: <code>refresh_token</code></p> </li> 
-        <li> <p><strong>[!UICONTROL refresh_token]</strong>：接続先のサービスから取得された最新の更新トークン</p> </li> 
+        <li> <p><strong>[!UICONTROL refresh_token]</strong>：接続しているサービスで取得された最新の更新トークン。</p> </li> 
         <li> <p><strong>[!UICONTROL client_id]</strong>：アカウントの作成時に受け取ったクライアント ID は、リクエスト本文に自動的に含まれます</p> </li> 
-        <li> <p><strong>[!UICONTROL client_secret]</strong>：アカウントの作成時に受け取ったクライアントの秘密鍵は、リクエスト本文に自動的に含まれます</p> </li> 
-       </ul> <p>メモ：  <p>OAuth 2.0 標準は、この手順で少なくとも 2 つのクライアント認証方法（<code>[!UICONTROL client_secret_basic]</code> および <code>[!UICONTROL client_secret_post]</code>）をサポートします。[!DNL Workfront Fusion] は、指定したクライアント ID と暗号鍵を <code>[!UICONTROL client_secret_post]</code> メソッドで自動送信します。したがって、これらのパラメーターは、トークンのリクエスト本文に自動的に含まれます。 </p> <p>OAuth 2.0 認証について詳しくは、<a href="https://tools.ietf.org/html/rfc6749">OAuth 2.0 承認フレームワーク</a>を参照してください。</p> </p> </td> 
+        <li> <p><strong>[!UICONTROL client_secret]</strong>：アカウントの作成時に受け取ったクライアント秘密鍵は、リクエスト本文に自動的に含まれます</p> </li> 
+       </ul> <p>メモ：  <p>OAuth 2.0 標準は、この手順で少なくとも 2 つのクライアント認証方法（<code>[!UICONTROL client_secret_basic]</code> および <code>[!UICONTROL client_secret_post]</code>）をサポートします。[!DNL Workfront Fusion] は、指定したクライアント ID と暗号鍵を <code>[!UICONTROL client_secret_post]</code> メソッドで自動送信します。したがって、これらのパラメーターは、トークンのリクエスト本文に自動的に含まれます。 </p> <p>OAuth 2.0 認証について詳しくは、<a href="https://tools.ietf.org/html/rfc6749">OAuth 2.0 認証フレームワーク</a>を参照してください。</p> </p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Custom Headers]</p> </td> 
-      <td> <p>[!UICONTROL Token] および R[!UICONTROL efresh Token] ステップのヘッダーに含める追加のキーと値を指定してください。</p> <p>メモ：  <p>OAuth 2.0 標準は、この手順で少なくとも 2 つのクライアント認証方法（<code>[!UICONTROL client_secret_basic]</code> および <code>[!UICONTROL client_secret_post]</code>）をサポートします。[!DNL Workfront Fusion] は自動的には <code>[!UICONTROL client_secret_basic]</code> メソッドをサポートしません。接続しているサービスで、クライアント ID とクライアント秘密鍵が 1 つの文字列に結合され、Authorization ヘッダーに base64 がエンコードされると想定される場合は、そのヘッダーとキーの値をここに追加する必要があります。</p> <p> OAuth 2.0 認証について詳しくは、<a href="https://tools.ietf.org/html/rfc6749">OAuth 2.0 承認フレームワーク</a>を参照してください。</p> </p> </td> 
+      <td> <p>[!UICONTROL Token] および R[!UICONTROL efresh Token] の手順のヘッダーに含める追加のキーと値を指定します。</p> <p>メモ：  <p>OAuth 2.0 標準は、この手順で少なくとも 2 つのクライアント認証方法（<code>[!UICONTROL client_secret_basic]</code> および <code>[!UICONTROL client_secret_post]</code>）をサポートします。[!DNL Workfront Fusion] は自動的には <code>[!UICONTROL client_secret_basic]</code> メソッドをサポートしません。接続しているサービスで、クライアント ID とクライアント秘密鍵が 1 つの文字列に結合され、Authorization ヘッダーに base64 がエンコードされると想定される場合は、そのヘッダーとキーの値をここに追加する必要があります。</p> <p> OAuth 2.0 認証について詳しくは、<a href="https://tools.ietf.org/html/rfc6749">OAuth 2.0 承認フレームワーク</a>を参照してください。</p> </p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Token placement]</p> </td> 
-      <td> <p>指定した URL に接続する際に、トークンを [!UICONTROL header]、[!UICONTROL query string]、またはその両方で送信するかどうかを選択します。</p> <p>トークンは、最も一般的にリクエストヘッダーで送信されます。</p> </td> 
+      <td> <p>指定した URL に接続する際に、[!UICONTROL header]、[!UICONTROL query string]、またはその両方でトークンを送信するかどうかを選択します。</p> <p>トークンは、最も一般的にリクエストヘッダーで送信されます。</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Header token name] </td> 
@@ -224,16 +224,16 @@ OAuth 2.0 認証について詳しくは、[OAuth 2.0 承認フレームワー�
     </tbody> 
    </table>
 
-1. 「**[!UICONTROL Continue]**」をクリックして接続を保存し、モジュールに戻ります。
+1. 「**[!UICONTROL 続行]**」をクリックして接続を保存し、モジュールに戻ります。
 1. [OAuth 2.0 リクエストを行うモジュールの設定 ](#configure-the-make-an-oauth-20-request-module) を続行します。
 
-### [!UICONTROL HTTP]/[!UICONTROL Make an OAuth 2.0 request module] で [!DNL Google] への接続を作成する手順
+### [!UICONTROL HTTP]/[!UICONTROL OAuth 2.0 リクエストモジュールで [!DNL Google] への接続を作成する手順 ]
 
-次の例は、[!UICONTROL HTTP]/[!UICONTROL Make an OAuth 2.0] リクエストモジュールを使用して [!DNL Google] に接続する方法を示しています。
+次の例は、[!UICONTROL HTTP]／[!UICONTROL OAuth 2.0 実行]リクエストモジュールを使用して [!DNL Google] に接続する方法を示しています。
 
 1. 記事 [ カスタム OAuth クライアントを使用したへの接続 ](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md) の説明に従って、プロジェクトの作成、OAuth 設定の指定、資格情報の生成が完了し  [!DNL Adobe Workfront Fusion]  いることを確認してください  [!DNL Google Services] 
-1. [!UICONTROL HTTP]/[!UICONTROL Make an OAuth 2.0 request] モジュールを開きます。
-1. 接続ボックスの横にある「**[!UICONTROL Add]**」をクリックします。
+1. [!UICONTROL HTTP]/[!UICONTROL OAuth 2.0 リクエストを作成 ] モジュールを開きます。
+1. 任意のモジュールで、「接続」ボックスの横にある **[!UICONTROL 追加]** をクリックします。
 1. 次の値を入力します。
 
    <table style="table-layout:auto">  
@@ -287,14 +287,14 @@ OAuth 2.0 認証について詳しくは、[OAuth 2.0 承認フレームワー�
     </tbody> 
    </table>
 
-1. 「**[!UICONTROL Continue]**」をクリックして、接続設定を保存します。
+1. 「**[!UICONTROL 続行]**」をクリックして接続設定を保存します。
 1. [OAuth 2.0 リクエストを行うモジュールの設定 ](#configure-the-make-an-oauth-20-request-module) を続行します。
 
 ## 「OAuth 2.0 リクエストを行う」モジュールの設定
 
 OAuth 2.0 接続を確立したら、必要に応じてモジュールの設定を続行します。 すべての認証トークンは、このリクエストと、同じ接続を使用する他のリクエストに自動的に含まれます。
 
-[!UICONTROL HTTP]/[!UICONTROL Make an OAuth 2.0 request] モジュールを設定すると、以下に示 [!DNL Workfront Fusion] フィールドが表示されます。 モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL HTTP]/[!UICONTROL OAuth 2.0 リクエストを行う ] モジュールを設定すると、以下に示 [!DNL Workfront Fusion] フィールドが表示されます。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) でモジュールから別のモジュールに情報をマッピングを参照してください。
 
@@ -332,23 +332,23 @@ OAuth 2.0 接続を確立したら、必要に応じてモジュールの設定�
    <td role="rowheader"> <p>[!UICONTROL Body type]</p> </td> 
    <td> <p>HTTP 本文は、使用するヘッダーがある場合、そのヘッダーの直後に HTTP トランザクションメッセージで送信されるデータバイトです。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>Raw 本文タイプは、開発者向けドキュメントで送信するデータが指定されていない場合でも、通常、ほとんどの HTTP 本文リクエストに適しています。</p> <p>[!UICONTROL Content type] フィールドでデータ解析の形式を指定します。</p> <p>選択したコンテンツタイプに関係なく、データは開発者ドキュメントで規定または必須されている形式で入力されます。</p> </li> 
+     <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>Raw 本文タイプは、開発者向けドキュメントで送信するデータが指定されていない場合でも、通常、ほとんどの HTTP 本文リクエストに適しています。</p> <p>データを解析する形式を [!UICONTROL Content type] フィールドに指定します。</p> <p>選択したコンテンツタイプに関係なく、データは開発者ドキュメントで規定または必須されている形式で入力されます。</p> </li> 
      <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>この本文タイプは、<code>[!UICONTROL application/x-www-form-urlencoded]</code> を使用したデータの投稿です。</p> <p><code>[!UICONTROL application/x-www-form-urlencoded]</code> の場合、サーバーに送信される HTTP メッセージの本文は基本的に 1 つのクエリ文字列になります。キーと値はキーと値のペアでエンコードされます。ペア同士は <code>&amp;</code> で区切られ、各ペアのキーと値の間には <code>=</code> が入ります。 </p> <p>バイナリデータの場合は、代わりに <code>use [!UICONTROL multipart/form-data]</code>。</p> 
       <div class="example" data-mc-autonum="<b>Example: </b>">
        <span class="autonumber"><span><b>例：</b></span></span> 
        <p>結果の HTTP リクエスト形式の例は、次のようになります。</p> 
        <p><code>field1=value1&amp;field2=value2</code> </p> 
       </div> </li> 
-     <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] は、ファイルおよびデータの送信に使用される HTTP マルチパートリクエストです。 通常、ファイルをサーバーにアップロードする際に使用されます。</p> <p>リクエストで送信するフィールドを追加します。各フィールドには、キーと値のペアが含まれている必要があります。</p> 
+     <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] は、ファイルとデータの送信に使用される HTTP マルチパートリクエストです。通常、ファイルをサーバーにアップロードする際に使用されます。</p> <p>リクエストで送信するフィールドを追加します。各フィールドには、キーと値のペアが含まれている必要があります。</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>リクエスト本文内で送信するキーと値を入力します。</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>キーを入力し、リクエスト本文で送信するソースファイルを指定します。</p> <p>前のモジュール（[!UICONTROL HTTP]/[!UICONTROL Get a File] など）からアップロードするファイルをマッピングするか、ファイル名とファイルデータを手動で入力します。</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>キーを入力し、リクエスト本文で送信するソースファイルを指定します。</p> <p>前のモジュールからアップロードするファイルをマッピングするか（[!UICONTROL HTTP] &gt; [!UICONTROL ファイルを取得 ] など）、ファイル名とファイルデータを手動で入力します。</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Parse response]</p> </td> 
-   <td> <p>このオプションを有効にすると、応答を自動的に解析し、JSON および XML 応答を変換するので、[!UICONTROL JSON]/[!UICONTROL Parse JSON] または [!UICONTROL XML]/[!UICONTROL Parse XML] モジュールを使用する必要がなくなります。</p> <p>解析された JSON または XML コンテンツを使用する前に、モジュールを手動で 1 回実行して、モジュールが応答コンテンツを認識し、後続のモジュールにマッピングできるようにします。</p> </td> 
+   <td> <p>このオプションを有効にすると、応答を自動的に解析し、JSON および XML 応答を変換するので、[!UICONTROL JSON]／[!UICONTROL Parse JSON] または [!UICONTROL XML]／[!UICONTROL Parse XML] モジュールを使用する必要がなくなります。</p> <p>解析された JSON または XML コンテンツを使用する前に、モジュールを手動で 1 回実行して、モジュールが応答コンテンツを認識し、後続のモジュールにマッピングできるようにします。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Timeout] </td> 

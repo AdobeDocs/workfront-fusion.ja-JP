@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion] シナリオ内で、 [!DNL Adobe T
 author: Becky
 feature: Workfront Fusion
 exl-id: f3c1ed7b-b69b-478a-8240-1a2ab89e11e5
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '1922'
-ht-degree: 65%
+source-wordcount: '2261'
+ht-degree: 83%
 
 ---
 
@@ -31,13 +31,13 @@ ht-degree: 65%
     <tr>
       <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
       <td>
-        <p>[!UICONTROL Pro] またはそれ以降</p>
+        <p>[!UICONTROL Pro] 以降</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
       <td>
-        <p>[!UICONTROL Plan], [!UICONTROL Work]</p>
+        <p>[!UICONTROL Plan]、[!UICONTROL Work]</p>
       </td>
     </tr>
     <tr>
@@ -45,13 +45,13 @@ ht-degree: 65%
       <td>
    <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のライセンス要件：[!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
    </td>
     </tr>
     <tr>
       <td role="rowheader">製品</td>
       <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランをご利用の場合、この記事で説明されている機能を使用するには、組織は [!DNL Adobe Workfront] に加えて [!DNL Adobe Workfront Fusion] も購入する必要があります。[!DNL Workfront Fusion] は、[!DNL Workfront] [!UICONTROL Ultimate] プランに含まれています。</p>
    <p>または</p>
    <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
    </td>
@@ -97,7 +97,7 @@ Adobe Target コネクタでは、以下を使用します。
 
 [!DNL Adobe Target] モジュールへの接続を作成するには、以下を実行します。
 
-1. 「接続」ボックスの横にある「**[!UICONTROL Add]**」をクリックします。
+1. 任意のモジュールで、「接続」ボックスの横にある **[!UICONTROL 追加]** をクリックします。
 
 1. 次のフィールドに入力します。
 
@@ -130,19 +130,19 @@ Adobe Target コネクタでは、以下を使用します。
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>[!DNL Adobe] クライアント ID を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションにあります。
+        <td>[!DNL Adobe] クライアント ID を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>[!DNL Adobe] クライアントの秘密鍵を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションにあります。
+        <td>[!DNL Adobe] クライアントの秘密鍵を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Technical account ID]</td>
-        <td>[!DNL Adobe] テクニカルアカウント ID を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションにあります。
+        <td>[!DNL Adobe] テクニカルアカウント ID を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Organization ID]</td>
-        <td>[!DNL Adobe] 組織 ID を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションにあります。
+        <td>[!DNL Adobe] 組織 ID を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Tenant]</td>
@@ -174,7 +174,7 @@ Adobe Target コネクタでは、以下を使用します。
               <p>ファイルのパスワードを入力します。</p>
             </li>
             <li value="5">
-              <p>「<b>[!UICONTROL Save]</b>」をクリックしてファイルを抽出し、接続設定に戻ります。</p>
+              <p><b>[!UICONTROL Save]</b> をクリックしてファイルを抽出し、接続設定に戻ります。</p>
             </li>
           </ol>
         </td>
@@ -182,7 +182,7 @@ Adobe Target コネクタでは、以下を使用します。
     </tbody>
     </table>
 
-1. 「**[!UICONTROL Continue]**」をクリックして接続を保存し、モジュールに戻ります。
+1. 「**[!UICONTROL 続行]**」をクリックして接続を保存し、モジュールに戻ります。
 
 ## [!DNL Adobe Target] モジュールとそのフィールド
 
@@ -199,18 +199,18 @@ Adobe Target コネクタでは、以下を使用します。
 
 ### アクション
 
-* [[!UICONTROL Create a record]](#create-a-record)
+* [[!UICONTROL レコードを作成]](#create-a-record)
 
-* [[!UICONTROL Make a custom API call]](#make-a-custom-api-call)
+* [[!UICONTROL カスタム API 呼び出しの実行]](#make-a-custom-api-call)
 
-* [[!UICONTROL Delete a record]](#delete-a-record)
+* [[!UICONTROL レコードを削除]](#delete-a-record)
 
-* [[!UICONTROL Read a record]](#read-a-record)
+* [[!UICONTROL レコードの読み取り]](#read-a-record)
 
-* [[!UICONTROL Update a record]](#update-a-record)
+* [[!UICONTROL レコードを更新]](#update-a-record)
 
 
-#### [!UICONTROL Create a record]
+#### [!UICONTROL レコードを作成]
 
 このアクションモジュールは、AB または XT のアクティビティ、オファーまたはオーディエンスを作成します。
 
@@ -234,34 +234,34 @@ Adobe Target コネクタでは、以下を使用します。
         <b> オファーの推奨事項 </b><p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Offers/operation/createOffer"> 新しい recs オファーの作成 </a> を参照してください。</p>
         </li>
         <li>
-          <b>[!UICONTROL Offer JSON]</b>
+          <b>[!UICONTROL オファー JSON]</b>
           <p><a href="#offer-fields" class="MCXref xref" >オファーフィールド</a>に進みます。</p>
         </li>
         <li>
-          <b>[!UICONTROL Offer Content]</b>
+          <b>[!UICONTROL オファーコンテンツ ]</b>
           <p><a href="#offer-fields" class="MCXref xref" >オファーフィールド</a>に進みます。</p>
         </li>
         <li>
         <b> 環境 </b><p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Environments/operation/createEnvironment"> 環境の作成 </a> を参照してください。</p>
         </li>
         <li>
-          <b>[!UICONTROL Audience]</b>
+          <b>[!UICONTROL オーディエンス ]</b>
           <p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Audiences/operation/createAudience_1_1"> オーディエンスの作成 </a> を参照してください。</p>
         </li>
         <li>
-          <b>[!UICONTROL AB Activity]</b>
+          <b>[!UICONTROL AB アクティビティ ]</b>
           <p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Activities/operation/createActivity_4_1">AB アクティビティを作成 </a> を参照してください。</p>
         </li>
         <li>
-          <b>[!UICONTROL XT Activity]</b>
+          <b>[!UICONTROL XT アクティビティ ]</b>
           <p><a href="#xt-activity-fields" class="MCXref xref" >XT アクティビティフィールド</a>に進みます。</p>
         </li>
         <li>
-          <b>[!UICONTROL AP Activity]</b>
+          <b>[!UICONTROL AP アクティビティ ]</b>
           <p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Activities/operation/createActivity_2">AP アクティビティの作成 </a> を参照してください。</p>
         </li>
         <li>
-          <b>[!UICONTROL Response Token]</b>
+          <b>[!UICONTROL 応答トークン ]</b>
           <p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Response-tokens/operation/createResponseToken"> 応答トークンの作成 </a> を参照してください。</p>
         </li>
       </ul>
@@ -486,7 +486,7 @@ Adobe Target コネクタでは、以下を使用します。
     <tr>
       <td role="rowheader">[!UICONTROL Options]</td>
       <td>
-        <p>アクティビティに追加するオプションごとに、「<b>[!UICONTROL Add item]</b>」をクリックして次のフィールドに入力します。</p>
+        <p>アクティビティに追加する各オプションで、<b>[!UICONTROL Add item]</b> をクリックして、次のフィールドに入力します。</p>
         <ul>
           <li>
             <p><b>[!UICONTROL Option local ID]</b>
@@ -511,11 +511,11 @@ Adobe Target コネクタでは、以下を使用します。
     <tr>
       <td role="rowheader">[!UICONTROL Locations]</td>
       <td>
-        <p>アクティビティに追加する Mbox ごとに、「<b>[!UICONTROL Add item]</b>」をクリックし、次のフィールドに入力します。</p>
+        <p>アクティビティに追加する mbox ごとに、<b>[!UICONTROL Add item]</b> をクリックして、次のフィールドに入力します。</p>
         <ul>
           <li>
             <p>[!UICONTROL Audience IDs]</p>
-            <p>Mbox に追加するオーディエンスごとに「<b>[!UICONTROL Add item]</b>」をクリックし、オーディエンス ID を選択します。</p>
+            <p>mbox に追加するオーディエンスごとに、<b>[!UICONTROL Add item]</b> をクリックして、「オーディエンス ID 」を選択します。</p>
           </li>
           <li>
             <p><b>[!UICONTROL Location local ID]</b>
@@ -537,7 +537,7 @@ Adobe Target コネクタでは、以下を使用します。
 </p>
         <ul>
           <li>
-            <p><b>[!UICONTROL Experience local ID]</b>
+            <p><b>[!UICONTROL Experience Local ID]</b>
             </p>
             <p>エクスペリエンスの ID の入力またはマッピング</p>
           </li>
@@ -551,7 +551,7 @@ Adobe Target コネクタでは、以下を使用します。
           <li>
             <p><b>[!DNL Audience IDs]</b>
             </p>
-            <p>エクスペリエンスを表示するオーディエンスごとに「<b>[!UICONTROL Add item]</b>」をクリックし、オーディエンス ID を入力します。
+            <p>エクスペリエンスを表示するオーディエンスごとに、<b>[!UICONTROL Add item]</b> をクリックして、オーディエンス ID を入力します。
 
 </p>
           </li>
@@ -619,12 +619,12 @@ Adobe Target コネクタでは、以下を使用します。
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Property IDs] </td>
-      <td>アクティビティに追加するプロパティごとに「<b>[!UICONTROL Add item]</b>」をクリックし、プロパティの ID を選択またはマッピングします。</td>
+      <td>アクティビティに追加する各プロパティで、「<b>[!UICONTROL Add item]</b>」をクリックして、プロパティの ID を選択またはマッピングします。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Reporting audiences]</td>
       <td>
-        <p>アクティビティに追加するレポートオーディエンスごとに「[!UICONTROL Add item]」をクリックし、次の情報を入力します。</p>
+        <p>アクティビティに追加するレポートオーディエンスごとに、「[!UICONTROL Add item]」をクリックし、次の情報を入力します。</p>
         <ul>
           <li>
             <p><b>[!UICONTROL Reporting Audience local ID]</b>
@@ -750,7 +750,7 @@ Adobe Target コネクタでは、以下を使用します。
 
 -->
 
-#### [!UICONTROL Make a custom API call]
+#### [!UICONTROL カスタム API 呼び出しの実行]
 
 このモジュールは、[!DNL Adobe Target] API に対してカスタム API 呼び出しを実行します。
 
@@ -760,10 +760,10 @@ Adobe Target コネクタでは、以下を使用します。
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Target] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-target" class="MCXref xref" >[!DNL Adobe Target]</a> への接続を作成を参照してください。</td>
+      <td>[!DNL Adobe Target] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-target" class="MCXref xref" >[!DNL Adobe Target]</a> への接続の作成を参照してください。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL [!DNL Target] ベース URL]</td>
+      <td role="rowheader">[!UICONTROL [!DNL Target] Base URL]</td>
       <td>[!DNL Target] ベース URL を入力またはマッピングします。</td>
     </tr>
     <tr>
@@ -796,14 +796,14 @@ Adobe Target コネクタでは、以下を使用します。
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件文を JSON で使用する場合は、条件文を引用符で囲みます。</p> 
+   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件ステートメントを JSON で使用する場合は、条件ステートメントの外側に引用符を挿入します。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL Delete a record]
+#### [!UICONTROL レコードの削除]
 
 このアクションモジュールは、1 つの AB アクティビティ、XT アクティビティ、オファーまたはオーディエンスを削除します。
 
@@ -826,7 +826,7 @@ Adobe Target コネクタでは、以下を使用します。
 </tbody>
 </table>
 
-#### [!UICONTROL Read a record]
+#### [!UICONTROL レコードの読み取り]
 
 このアクションモジュールは、1 つのアクティビティ、オファー、オーディエンス、プロパティまたはレポートのデータを取得します。
 
@@ -849,7 +849,7 @@ Adobe Target コネクタでは、以下を使用します。
 </tbody>
 </table>
 
-#### [!UICONTROL Update a record]
+#### [!UICONTROL レコードの更新]
 
 このアクションモジュールは、Target のレコードを更新します。
 
@@ -868,7 +868,7 @@ Adobe Target コネクタでは、以下を使用します。
        </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Field names]</td>
+      <td role="rowheader">[!UICONTROL フィールド名 ]</td>
       <td>更新するフィールドを選択します。 フィールドが下に表示されます。
           <p>フィールドについて詳しくは、<a href="https://developer.adobe.com/target/administer/admin-api/">Adobe Target API ドキュメント </a> を参照してください。</p>
       </td>
@@ -878,12 +878,12 @@ Adobe Target コネクタでは、以下を使用します。
 
 ### 検索
 
-* [[!UICONTROL Get records]](#get-records)
+* [[!UICONTROL レコードの取得]](#get-records)
 
-* [[!UICONTROL Search]](#search)
+* [[!UICONTROL 検索]](#search)
 
 
-#### [!UICONTROL Get records]
+#### [!UICONTROL レコードの取得]
 
 この検索モジュールは、選択したタイプのレコードのリストを取得します。
 
@@ -901,7 +901,7 @@ Adobe Target コネクタでは、以下を使用します。
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Sort by]</td>
-      <td>並べ替えの基準にするフィールドごとに [<b>[!UICONTROL Add item]</b>] をクリックし、フィールドを選択して、返される結果を昇順と降順のどちらにするかを選択します。</td>
+      <td>並べ替えるフィールドごとに、「<b>[!UICONTROL Add item]</b>」をクリックして、フィールドを選択して、返される結果を昇順または降順のどちらにするかを選択します。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Starts At]</td>
@@ -920,7 +920,7 @@ Adobe Target コネクタでは、以下を使用します。
   </tbody>
 </table>
 
-#### [!UICONTROL Search]
+#### [!UICONTROL 検索]
 
 この検索モジュールは、指定した条件に基づいてアクティビティ、オファーまたはオーディエンスを検索します。
 
@@ -938,24 +938,24 @@ Adobe Target コネクタでは、以下を使用します。
   </tr>
   <tr>
     <td role="rowheader">[!UICONTROL Sort by]</td>
-    <td>並べ替えの基準にするフィールドごとに [<b>[!UICONTROL Add item]</b>] をクリックし、フィールドを選択して、返される結果を昇順と降順のどちらにするかを選択します。</td>
+    <td>並べ替えるフィールドごとに、「<b>[!UICONTROL Add item]</b>」をクリックして、フィールドを選択し、返される結果を昇順または降順のどちらにするかを選択します。</td>
   </tr>
   <tr>
     <td role="rowheader">[!UICONTROL Search criteria]</td>
-    <td>設定するルールごとに、フィールド、演算子および値を選択します。追加のルールを作成するには、「<b>[!UICONTROL Add AND rule]</b>」をクリックします。</td>
+    <td>設定するルールごとに、フィールド、演算子および値を選択します。「<b>[!UICONTROL Add AND rule]</b>」をクリックして、追加のルールを作成します。</td>
   </tr>
   <tr>
     <td role="rowheader">[!UICONTROL Offset]</td>
     <td>
-      <p>モジュールが返す最初の応答の数を入力します。最初に返された応答のオフセットは <code>0</code> です。このフィールドを [!UICONTROL Maximum number of returned results] フィールドと組み合わせて使用し、応答にページ番号を付けます。</p>
-      <p>例えば、応答の 3 ページ目を表示するには、各ページの応答が 10 個ある場合に [!UICONTROL Offset] を 20 に設定し、結果 [!UICONTROL Maximum number of returned]10 に設定します。</p>
+      <p>モジュールが返す最初の応答の数を入力します。最初に返された応答のオフセットは <code>0</code> です。このフィールドを [!UICONTROL Maximum number of returned results] フィールドと組み合わせて使用し、応答をページ番号付けします。</p>
+      <p>例えば、応答の 3 ページ目を表示する際、各ページに 10 件の応答がある場合、[!UICONTROL Offset] を 20 に、[!UICONTROL Maximum number of returned] の結果を 10 に設定します。</p>
     </td>
   </tr>
   <tr>
     <td role="rowheader">[!UICONTROL Limit]</td>
     <td>
-      <p>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。このフィールドを [!UICONTROL Offset] フィールドと組み合わせて使用し、応答にページ番号を付けます。</p>
-      <p>例えば、応答の 3 ページ目を表示するには、各ページの応答が 10 個ある場合に [!UICONTROL Offset] を 20 に設定し、結果 [!UICONTROL Maximum number of returned]10 に設定します。</p>
+      <p>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。このフィールドを [!UICONTROL Offset] フィールドと組み合わせて使用し、応答をページ番号付けします。</p>
+      <p>例えば、応答の 3 ページ目を表示する際、各ページに 10 件の応答がある場合、[!UICONTROL Offset] を 20 に、[!UICONTROL Maximum number of returned] の結果を 10 に設定します。</p>
     </td>
   </tr>
 </tbody>

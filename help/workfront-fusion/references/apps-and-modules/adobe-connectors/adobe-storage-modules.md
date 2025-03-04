@@ -8,10 +8,10 @@ description: シナリオでは、Adobe Admin Console [!DNL Adobe Workfront Fusi
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ee905f-4713-44a4-bffb-c64cdb3665c2
-source-git-commit: 284e5bda7fef82bac02f3200efe1662fd55586bf
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 17%
+source-wordcount: '1386'
+ht-degree: 19%
 
 ---
 
@@ -106,7 +106,7 @@ Adobe Admin Consoleページで、上部のナビゲーションバーの「製�
 
 [!DNL Adobe Storage] モジュールへの接続を作成するには、以下を実行します。
 
-1. 「接続」ボックスの横にある「**[!UICONTROL Add]**」をクリックします。
+1. 任意のモジュールで、「接続」ボックスの横にある **[!UICONTROL 追加]** をクリックします。
 
 1. 次のフィールドに入力します。
 
@@ -127,20 +127,20 @@ Adobe Admin Consoleページで、上部のナビゲーションバーの「製�
         </td>
         </tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>[!UICONTROL Adobe] [!UICONTROL Client ID] を入力します。 これは、[!DNL Adobe Developer Console] のプロジェクトの [!UICONTROL Credential details] セクションにあります。</td>
+        <td>[!UICONTROL Adobe] [!UICONTROL クライアント ID] を入力します。 これは、[!DNL Adobe Developer Console] のプロジェクトの [!UICONTROL 資格情報の詳細 ] セクションにあります。</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。 これは、[!DNL Adobe Developer Console] のプロジェクトの [!UICONTROL Credential details] セクションにあります。</td>
+        <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、[!DNL Adobe Developer Console] のプロジェクトの [!UICONTROL 資格情報の詳細 ] セクションにあります。</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL IMS Organization ID]</td>
+        <td role="rowheader">[!UICONTROL IMS 組織 ID]</td>
         <td>Adobe IMS組織 ID を入力またはマッピングします。 これは <code> 123abc@AdobeOrg</code> という形式の文字列で、@の前のセクションは 16 進数です。 この値は、Adobe Admin Consoleまたは User Management 統合用のAdobe.IO コンソールで、組織の URL パスの一部として見つけることができます。</td>
         </tr>
       </tbody>
     </table>
 
-1. 「**[!UICONTROL Continue]**」をクリックして接続を保存し、モジュールに戻ります。
+1. 「**[!UICONTROL 続行]**」をクリックして接続を保存し、モジュールに戻ります。
 
 ## Adobe ストレージモジュールとそのフィールド
 

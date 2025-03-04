@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Ado
 author: Becky
 feature: Workfront Fusion
 exl-id: 1d0ccf4d-9f06-4210-86ec-7da7970f6a47
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '3275'
-ht-degree: 26%
+source-wordcount: '3704'
+ht-degree: 28%
 
 ---
 
@@ -33,13 +33,13 @@ ht-degree: 26%
     <tr>
       <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
       <td>
-        <p>[!UICONTROL Pro] またはそれ以降</p>
+        <p>[!UICONTROL Pro] 以降</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
       <td>
-        <p>[!UICONTROL Plan], [!UICONTROL Work]</p>
+        <p>[!UICONTROL Plan]、[!UICONTROL Work]</p>
       </td>
     </tr>
     <tr>
@@ -47,13 +47,13 @@ ht-degree: 26%
       <td>
    <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のライセンス要件：[!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
    </td>
     </tr>
     <tr>
       <td role="rowheader">製品</td>
       <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランをご利用の場合、この記事で説明されている機能を使用するには、組織は [!DNL Adobe Workfront] に加えて [!DNL Adobe Workfront Fusion] も購入する必要があります。[!DNL Workfront Fusion] は、[!DNL Workfront] [!UICONTROL Ultimate] プランに含まれています。</p>
    <p>または</p>
    <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
    </td>
@@ -97,7 +97,7 @@ Adobe Journey Optimizer コネクタでは、以下を使用します。
 
 接続は任意のAdobe Journey Optimizer モジュールで作成できます。
 
-1. 「接続」ボックスの横にある「**[!UICONTROL Add]**」をクリックします。
+1. 任意のモジュールで、「接続」ボックスの横にある **[!UICONTROL 追加]** をクリックします。
 
 1. 次のフィールドに入力します。
 
@@ -123,18 +123,18 @@ Adobe Journey Optimizer コネクタでは、以下を使用します。
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>[!UICONTROL Adobe] [!UICONTROL Client ID] を入力します。 これは、の [!UICONTROL Credentials] 細セクションにあります [!DNL Adobe Developer Console]</td>
+        <td>[!UICONTROL Adobe] [!UICONTROL クライアント ID] を入力します。 これは、の [!UICONTROL 資格情報 ] の詳細セクションにあります [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。 これは、の [!UICONTROL Credentials] 細セクションにあります [!DNL Adobe Developer Console]</td>
+        <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、の [!UICONTROL 資格情報 ] の詳細セクションにあります [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Organization ID]</td>
-        <td>[!DNL Adobe] [!UICONTROL Organization ID] を入力します。 これは、の [!UICONTROL Credentials] 細セクションにあります [!DNL Adobe Developer Console]</td>
+        <td>[!DNL Adobe] [!UICONTROL Organization ID] を入力します。これは、の [!UICONTROL 資格情報 ] の詳細セクションにあります [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Sandbox Name]</td>
+        <td role="rowheader">[!UICONTROL サンドボックス名 ]</td>
         <td>この接続で使用するサンドボックスの名前を入力します。</td>
         </tr>
       </tbody>
@@ -187,7 +187,7 @@ Adobe Journey Optimizer コネクタでは、以下を使用します。
    <td>[!DNL Adobe Journey Optimizer] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >[!DNL Adobe Journey Optimizer]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select configuration type]</td> 
+   <td role="rowheader">[!UICONTROL 設定タイプの選択 ]</td> 
    <td>キャッピング設定とスロットル設定のどちらを作成するかを選択します。<ul><li><p><b>Capping</b></p><a href="#capping-fields" class="MCXref xref" > キャッピングフィールド </a> に進みます。</li><li><p><b>制限</b></p>引き続き <a href="#throttling-fields" class="MCXref xref" > フィールドのスロットル </a> を行います。</li></ul></td> 
   </tr> 
    </tbody> 
@@ -203,27 +203,27 @@ Adobe Journey Optimizer コネクタでは、以下を使用します。
    <td>設定するエンドポイントの URL を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL IMS Org ID]</td> 
+   <td role="rowheader">[!UICONTROL IMS 組織 ID]</td> 
    <td>組織のAdobe IMSID を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Methods]</td> 
+   <td role="rowheader">[!UICONTROL メソッド ]</td> 
    <td>この設定で使用するメソッドを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Service]</td> 
+   <td role="rowheader">[!UICONTROL サービス ]</td> 
    <td>この設定にアクションとデータソースのどちらを使用するかを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum HTTP connections]</td> 
+   <td role="rowheader">[!UICONTROL 最大 HTTP 接続数 ]</td> 
    <td>このエンドポイントへの同時接続の最大数を入力またはマップします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum calls]</td> 
+   <td role="rowheader">[!UICONTROL 最大呼び出し数 ]</td> 
    <td>「期間」フィールドで指定した期間に実行されるコールの最大数を入力またはマップします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Time period (milliseconds)]</td> 
+   <td role="rowheader">[!UICONTROL 期間（ミリ秒） ]</td> 
    <td>最大呼び出し数フィールドに関連するミリ秒数を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -242,24 +242,24 @@ Adobe Journey Optimizer コネクタでは、以下を使用します。
    <td>この設定の説明を入力またはマッピングします。</td> 
   </tr> 
 <tr> 
-   <td role="rowheader">[!UICONTROL URL pattern]</td> 
+   <td role="rowheader">[!UICONTROL URL パターン ]</td> 
    <td>スロットルするエンドポイントの URL を入力またはマップします。</td> 
   </tr> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Methods]</td> 
+   <td role="rowheader">[!UICONTROL メソッド ]</td> 
    <td>この設定で使用するメソッドを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Max throughput]</td> 
+   <td role="rowheader">[!UICONTROL の最大スループット ]</td> 
    <td>この設定にアクションとデータソースのどちらを使用するかを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum HTTP connections]</td> 
+   <td role="rowheader">[!UICONTROL 最大 HTTP 接続数 ]</td> 
    <td>このエンドポイントへの同時接続の最大数を入力またはマップします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum calls]</td> 
+   <td role="rowheader">[!UICONTROL 最大呼び出し数 ]</td> 
    <td>このエンドポイントに必要な最大スループットを入力またはマッピングします。 この値は 200 ～ 5000 の間にする必要があります。</td> 
   </tr> 
  </tbody> 
@@ -278,11 +278,11 @@ Adobe Journey Optimizer コネクタでは、以下を使用します。
    <td>[!DNL Adobe Journey Optimizer] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >[!DNL Adobe Journey Optimizer]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select configuration type]</td> 
+   <td role="rowheader">[!UICONTROL 設定タイプの選択 ]</td> 
    <td>キャッピング設定とスロットル設定のどちらをデプロイするかを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Configuration ID]</td> 
+   <td role="rowheader">[!UICONTROL 設定 ID]</td> 
    <td>デプロイする設定の ID を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -301,7 +301,7 @@ Adobe Journey Optimizer コネクタでは、以下を使用します。
    <td>[!DNL Adobe Journey Optimizer] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >[!DNL Adobe Journey Optimizer]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select configuration type]</td> 
+   <td role="rowheader">[!UICONTROL 設定タイプの選択 ]</td> 
    <td>キャッピング設定とスロットル設定のどちらを更新するかを選択します。<ul><li><p><b>Capping</b></p>フィールドについては、この記事の「設定を作成」の節の <a href="#capping-fields" class="MCXref xref" > キャッピングフィールド </a> を参照してください。</li><li><p><b>制限</b></p>フィールドについては、この記事の設定の作成の節の <a href="#throttling-fields" class="MCXref xref" > フィールドのスロットル </a> を参照してください。</li></ul></td> 
   </tr> 
   </tbody> 
@@ -320,11 +320,11 @@ Adobe Journey Optimizer コネクタでは、以下を使用します。
    <td>[!DNL Adobe Journey Optimizer] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >[!DNL Adobe Journey Optimizer]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select configuration type]</td> 
+   <td role="rowheader">[!UICONTROL 設定タイプの選択 ]</td> 
    <td>キャッピング設定とスロットル設定のどちらをデプロイ解除するかを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Configuration ID]</td> 
+   <td role="rowheader">[!UICONTROL 設定 ID]</td> 
    <td>デプロイ解除する設定の ID を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -343,11 +343,11 @@ Adobe Journey Optimizer コネクタでは、以下を使用します。
    <td>[!DNL Adobe Journey Optimizer] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >[!DNL Adobe Journey Optimizer]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select configuration type]</td> 
+   <td role="rowheader">[!UICONTROL 設定タイプの選択 ]</td> 
    <td>キャッピング設定とスロットル設定のどちらを確認するかを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Configuration ID]</td> 
+   <td role="rowheader">[!UICONTROL 設定 ID]</td> 
    <td>確認する設定の ID を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -368,11 +368,11 @@ Adobe Journey Optimizer コネクタでは、以下を使用します。
    <td>[!DNL Adobe Journey Optimizer] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >[!DNL Adobe Journey Optimizer]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select configuration type]</td> 
+   <td role="rowheader">[!UICONTROL 設定タイプの選択 ]</td> 
    <td>キャッピング設定とスロットル設定のどちらを削除するかを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Configuration ID]</td> 
+   <td role="rowheader">[!UICONTROL 設定 ID]</td> 
    <td>削除する設定の ID を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -391,11 +391,11 @@ Adobe Journey Optimizer コネクタでは、以下を使用します。
    <td>[!DNL Adobe Journey Optimizer] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >[!DNL Adobe Journey Optimizer]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select configuration type]</td> 
+   <td role="rowheader">[!UICONTROL 設定タイプの選択 ]</td> 
    <td>取得する設定がキャッピング設定かスロットル設定かを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Configuration ID]</td> 
+   <td role="rowheader">[!UICONTROL 設定 ID]</td> 
    <td>取得する設定の ID を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -411,7 +411,7 @@ Adobe Journey Optimizer コネクタでは、以下を使用します。
 * [パッケージを削除](#delete-a-package)
 * [パッケージの検索](#look-up-a-package)
 * [パッケージのインポート](#import-a-package)
-* [パッケージのPublish](#publish-a-package)
+* [パッケージの公開](#publish-a-package)
 * [読み込みを送信](#submit-an-import)
 
 
@@ -441,11 +441,11 @@ Adobe Journey Optimizer コネクタでは、以下を使用します。
    <td>パッケージの有効期限を定義するタイムスタンプを入力またはマッピングします。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Package type]</td> 
+   <td role="rowheader">[!UICONTROL パッケージの種類 ]</td> 
    <td>作成するパッケージのタイプを選択します。<ul><li><p><b>フル</b></p>パッケージにはすべてのアーティファクトが含まれます</p></li><li><p><b>一部</b></p><p>パッケージには、追加したアーティファクトのみが含まれます。 </p></li><ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Artifacts]</td> 
+   <td role="rowheader">[!UICONTROL アーティファクト ]</td> 
    <td>部分パッケージを作成する場合は、追加するアーティファクトごとに「<b> アーティファクトを追加 </b> をクリックし、アーティファクトの ID、タイプおよびタイトルを指定します。 </td> 
   </tr> 
   <tr> 
@@ -468,7 +468,7 @@ Adobe Journey Optimizer コネクタでは、以下を使用します。
    <td>[!DNL Adobe Journey Optimizer] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >[!DNL Adobe Journey Optimizer]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select action]</td> 
+   <td role="rowheader">[!UICONTROL 選択アクション ]</td> 
    <td>実行するアクションを選択します。<ul><li><p><b>アーティファクトを追加</b></p><p>追加するアーティファクトごとに、「<b> アーティファクトを追加 </b>」をクリックし、アーティファクトの ID、タイプおよびタイトルを指定してから、パッケージの有効期限を入力またはマップします。 </p></li><li><p><b>アーティファクトを削除</b></p><p>削除するアーティファクトごとに「<b> アーティファクトを追加 </b>」をクリックし、アーティファクトの ID、タイプおよびタイトルを指定します。 </p></li><li><p><b>メタデータを更新</b></p><p>名前、説明、またはソースサンドボックスの名前または IMS 組織 ID に対して新しい値を入力します。</p></li></ul></td> 
   </tr> 
  </tbody> 
@@ -487,7 +487,7 @@ Adobe Journey Optimizer コネクタでは、以下を使用します。
    <td>[!DNL Adobe Journey Optimizer] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >[!DNL Adobe Journey Optimizer]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Package ID]</td> 
+   <td role="rowheader">[!UICONTROL パッケージ ID]</td> 
    <td>削除するパッケージの ID を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -506,7 +506,7 @@ Adobe Journey Optimizer コネクタでは、以下を使用します。
    <td>[!DNL Adobe Journey Optimizer] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >[!DNL Adobe Journey Optimizer]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Package ID]</td> 
+   <td role="rowheader">[!UICONTROL パッケージ ID]</td> 
    <td>詳細を返すパッケージの ID を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -527,17 +527,17 @@ Adobe Journey Optimizer コネクタでは、以下を使用します。
    <td>[!DNL Adobe Journey Optimizer] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >[!DNL Adobe Journey Optimizer]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Package ID]</td> 
+   <td role="rowheader">[!UICONTROL パッケージ ID]</td> 
    <td>読み込むパッケージの ID を入力またはマッピングします。</td> 
   </tr> 
     <tr> 
-   <td role="rowheader">[!UICONTROL Target sandbox]</td> 
+   <td role="rowheader">[!UICONTROL Target サンドボックス ]</td> 
    <td>パッケージを読み込むサンドボックスの名前を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### パッケージのPublish
+#### パッケージの公開
 
 パッケージを読み込むには、まず公開する必要があります。
 
@@ -550,7 +550,7 @@ Adobe Journey Optimizer コネクタでは、以下を使用します。
    <td>[!DNL Adobe Journey Optimizer] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >[!DNL Adobe Journey Optimizer]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Package ID]</td> 
+   <td role="rowheader">[!UICONTROL パッケージ ID]</td> 
    <td>公開するパッケージの ID を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -569,7 +569,7 @@ Adobe Journey Optimizer コネクタでは、以下を使用します。
    <td>[!DNL Adobe Journey Optimizer] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >[!DNL Adobe Journey Optimizer]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Package ID]</td> 
+   <td role="rowheader">[!UICONTROL パッケージ ID]</td> 
    <td>公開するパッケージの ID を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
@@ -581,23 +581,23 @@ Adobe Journey Optimizer コネクタでは、以下を使用します。
    <td>インポートジョブの説明を入力またはマッピング</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL (Destination sandbox) Name]</td> 
+   <td role="rowheader">[!UICONTROL （宛先サンドボックス）名 ]</td> 
    <td>読み込みの送信先となるサンドボックスの名前を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL (Destination sandbox) IMS Org ID]</td> 
+   <td role="rowheader">[!UICONTROL （宛先サンドボックス） IMS 組織 ID]</td> 
    <td>読み込みの送信先となるAdobe IMSのサンドボックス組織 ID を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL (Source sandbox) ID]</td> 
+   <td role="rowheader">[!UICONTROL （Source サンドボックス） ID]</td> 
    <td>公開するパッケージを含むサンドボックスの ID を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL (Source sandbox) Type]</td> 
+   <td role="rowheader">[!UICONTROL （Source サンドボックス）タイプ ]</td> 
    <td></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL (Source sandbox) Link]</td> 
+   <td role="rowheader">[!UICONTROL （Source サンドボックス）リンク ]</td> 
    <td>公開するパッケージのリンクを入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -824,7 +824,7 @@ This action module imports a snapshot containing artifacts.
    <td>[!DNL Adobe Journey Optimizer] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >[!DNL Adobe Journey Optimizer]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select content type]</td> 
+   <td role="rowheader">[!UICONTROL コンテンツ タイプの選択 ]</td> 
    <td>コンテンツテンプレートとコンテンツフラグメントのどちらを作成するかを選択します。<ul><li><p><b>コンテンツテンプレート</b></p><a href="#template-fields" class="MCXref xref" > テンプレートフィールド </a> に進みます。</li><li><p><b>コンテンツフラグメント</b></p><a href="#fragment-fields" class="MCXref xref" > フラグメントフィールド </a> に進みます。</li></ul></td> 
   </tr> 
   </tbody> 
@@ -848,11 +848,11 @@ This action module imports a snapshot containing artifacts.
   </tr> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Channels]</td> 
+   <td role="rowheader">[!UICONTROL チャンネル ]</td> 
    <td>このテンプレートに含めるチャネルを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Content template origin]</td> 
+   <td role="rowheader">[!UICONTROL コンテンツ テンプレート オリジン ]</td> 
    <td>このテンプレートのソースを選択します。</td>  
   </tr> 
   <tr> 
@@ -860,11 +860,11 @@ This action module imports a snapshot containing artifacts.
    <td>新しいテンプレートにカスタムプロパティを含めるには、「メタデータを追加」を選択し、メタデータのキーと値を入力またはマッピングします。 含める各カスタムフィールドに対して繰り返します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Email HTML]</td> 
-   <td>このテンプレートに含める電子メールのHTMLを入力またはマップします。</td> 
+   <td role="rowheader">[!UICONTROL メールHTML]</td> 
+   <td>このテンプレートに含まれるメールのHTMLを入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Editor context]</td> 
+   <td role="rowheader">[!UICONTROL エディターコンテキスト ]</td> 
    <td>メールにカスタムプロパティを含めるには、「エディターコンテキストを追加」を選択し、コンテキストのキーと値を入力またはマッピングします。 含める各カスタムフィールドに対して繰り返します。</td> 
   </tr> 
  </tbody> 
@@ -888,11 +888,11 @@ This action module imports a snapshot containing artifacts.
   </tr> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Channels]</td> 
+   <td role="rowheader">[!UICONTROL チャンネル ]</td> 
    <td>このテンプレートに含めるチャネルを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Content fragment origin]</td> 
+   <td role="rowheader">[!UICONTROL コンテンツフラグメントオリジン ]</td> 
    <td>このフラグメントのソースを選択します。</td> 
   </tr> 
   <tr> 
@@ -904,7 +904,7 @@ This action module imports a snapshot containing artifacts.
    <td>フラグメントのコンテンツを入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Editor context]</td> 
+   <td role="rowheader">[!UICONTROL エディターコンテキスト ]</td> 
    <td>メールにカスタムプロパティを含めるには、「エディターコンテキストを追加」を選択し、コンテキストのキーと値を入力またはマッピングします。 含める各カスタムフィールドに対して繰り返します。</td> 
   </tr> 
  </tbody> 
@@ -923,7 +923,7 @@ This action module imports a snapshot containing artifacts.
    <td>[!DNL Adobe Journey Optimizer] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >[!DNL Adobe Journey Optimizer]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select content type]</td> 
+   <td role="rowheader">[!UICONTROL コンテンツ タイプの選択 ]</td> 
    <td>キャッピング設定とスロットル設定のどちらを更新するかを選択します。<ul><li><p><b>テンプレート</b></p>フィールドについては、この記事の「レコードの作成」の節の <a href="#template-fields" class="MCXref xref" > テンプレートフィールド </a> を参照してください。</li><li><p><b>フラグメント</b></p>フィールドについては、この記事の「レコードの作成」の節の <a href="#fragment-fields" class="MCXref xref" > フラグメントフィールド </a> を参照してください。</li></ul></td> 
   </tr> 
   </tbody> 
@@ -942,11 +942,11 @@ This action module imports a snapshot containing artifacts.
    <td>[!DNL Adobe Journey Optimizer] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >[!DNL Adobe Journey Optimizer]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select content type]</td> 
+   <td role="rowheader">[!UICONTROL コンテンツ タイプの選択 ]</td> 
    <td>コンテンツテンプレートとコンテンツフラグメントのどちらを削除するかを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Template/Fragment ID]</td> 
+   <td role="rowheader">[!UICONTROL テンプレート/フラグメント ID]</td> 
    <td>削除するテンプレートまたはフラグメントの ID を入力するかマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -954,7 +954,7 @@ This action module imports a snapshot containing artifacts.
 
 #### レコードにパッチを適用
 
-JSON ポインター形式のPATCHを使用してレコードを更新します
+このアクションモジュールは、JSON ポインター形式のPATCHを使用してレコードを更新します
 
 <table style="table-layout:auto"> 
  <col> 
@@ -965,15 +965,15 @@ JSON ポインター形式のPATCHを使用してレコードを更新します
    <td>[!DNL Adobe Journey Optimizer] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >[!DNL Adobe Journey Optimizer]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select content type]</td> 
+   <td role="rowheader">[!UICONTROL コンテンツ タイプの選択 ]</td> 
    <td>コンテンツテンプレートまたはコンテンツフラグメントにパッチを適用するかどうかを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Template/Fragment ID]</td> 
+   <td role="rowheader">[!UICONTROL テンプレート/フラグメント ID]</td> 
    <td>パッチを適用するテンプレートまたはフラグメントの ID を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Payload data]</td> 
+   <td role="rowheader">[!UICONTROL ペイロード データ ]</td> 
    <td>このパッチのペイロードにレコードを追加するには： <ol><li><b> レコードを追加 </b> をクリックします。</li><li>操作（追加、削除、置換）を選択します。</li><li>「パス」フィールドで、名前と説明のどちらをパッチするかを選択します。</li><li> 「送信元」フィールドに、JSON ポインター値を含む文字列を入力またはマップします。</li><li>「値」フィールドに、操作で使用する値を入力します。</li></ol></td> 
   </tr> 
  </tbody> 
@@ -992,11 +992,11 @@ JSON ポインター形式のPATCHを使用してレコードを更新します
    <td>[!DNL Adobe Journey Optimizer] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >[!DNL Adobe Journey Optimizer]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select content type]</td> 
+   <td role="rowheader">[!UICONTROL コンテンツ タイプの選択 ]</td> 
    <td>コンテンツテンプレートとコンテンツフラグメントのどちらを取得するかを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Template/Fragment ID]</td> 
+   <td role="rowheader">[!UICONTROL テンプレート/フラグメント ID]</td> 
    <td>取得するテンプレートまたはフラグメントの ID を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -1024,7 +1024,7 @@ JSON ポインター形式のPATCHを使用してレコードを更新します
    <td>[!DNL Adobe Journey Optimizer] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >[!DNL Adobe Journey Optimizer]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Request ID]</td> 
+   <td role="rowheader">[!UICONTROL リクエスト ID]</td> 
    <td>このメッセージに関連付けられているリクエストの ID を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
@@ -1061,7 +1061,7 @@ JSON ポインター形式のPATCHを使用してレコードを更新します
    <td>[!DNL Adobe Journey Optimizer] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >[!DNL Adobe Journey Optimizer]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Request ID]</td> 
+   <td role="rowheader">[!UICONTROL リクエスト ID]</td> 
    <td>このメッセージに関連付けられているリクエストの ID を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
@@ -1069,7 +1069,7 @@ JSON ポインター形式のPATCHを使用してレコードを更新します
    <td>このメッセージに関連付けられているキャンペーンの ID を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Product]</td> 
+   <td role="rowheader">[!UICONTROL 製品 ]</td> 
    <td>このメッセージに関連付けられている製品を入力またはマップします。 これは、メッセージコンテンツの動的変数の置換に使用されます。</td> 
   </tr> 
  </tbody> 
@@ -1088,7 +1088,7 @@ JSON ポインター形式のPATCHを使用してレコードを更新します
    <td>[!DNL Adobe Journey Optimizer] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >[!DNL Adobe Journey Optimizer]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Message execution ID]</td> 
+   <td role="rowheader">[!UICONTROL メッセージ実行 ID]</td> 
    <td>確認するメッセージ実行の ID を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -1132,11 +1132,11 @@ This action module checks that the service represented by the connection is runn
    <td>[!DNL Adobe Journey Optimizer] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >[!DNL Adobe Journey Optimizer]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Package ID]</td> 
+   <td role="rowheader">[!UICONTROL パッケージ ID]</td> 
    <td>権限を確認するパッケージの ID を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Target sandbox]</td> 
+   <td role="rowheader">[!UICONTROL Target サンドボックス ]</td> 
    <td>パッケージの読み込み先のサンドボックスの名前を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -1182,15 +1182,15 @@ This action module checks that the service represented by the connection is runn
    <td>[!DNL Adobe Journey Optimizer] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >[!DNL Adobe Journey Optimizer]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Package objects]</td> 
+   <td role="rowheader">[!UICONTROL パッケージ オブジェクト ]</td> 
    <td>依存オブジェクトを返すパッケージ内のオブジェクトごとに、<b> オブジェクトの追加 </b> をクリックし、オブジェクトの名前と種類を入力します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Package ID]</td> 
+   <td role="rowheader">[!UICONTROL パッケージ ID]</td> 
    <td>依存オブジェクトをリストするパッケージの ID を入力またはマップします。</td> 
   </tr> 
     <tr> 
-   <td role="rowheader">[!UICONTROL Target sandbox]</td> 
+   <td role="rowheader">[!UICONTROL Target サンドボックス ]</td> 
    <td>依存オブジェクトをリストするパッケージを含むサンドボックスの名前を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -1209,7 +1209,7 @@ This action module checks that the service represented by the connection is runn
    <td>[!DNL Adobe Journey Optimizer] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >[!DNL Adobe Journey Optimizer]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select configuration type]</td> 
+   <td role="rowheader">[!UICONTROL 設定タイプの選択 ]</td> 
    <td>キャッピング設定をリストするか、スロットル設定をリストするかを選択します。</td> 
   </tr> 
  </tbody> 
@@ -1240,7 +1240,7 @@ This action module checks that the service represented by the connection is runn
       <td>作成日または変更日のどちらで結果を並べ替えるかを選択します。</td>
   </tr> 
     <tr> 
-   <td role="rowheader">[!UICONTROL Query parameter]</td> 
+   <td role="rowheader">[!UICONTROL クエリパラメーター ]</td> 
    <td>フィルターの条件にする各クエリパラメーターに対して「<b> クエリパラメーターを追加 </b>」をクリックし、フィールドと演算子を選択して、フィルターのフィールド値を入力します。</td> 
   </tr> 
  </tbody> 
@@ -1273,7 +1273,7 @@ This action module checks that the service represented by the connection is runn
       <td>作成日または変更日のどちらで結果を並べ替えるかを選択します。</td>
   </tr> 
     <tr> 
-   <td role="rowheader">[!UICONTROL Query parameter]</td> 
+   <td role="rowheader">[!UICONTROL クエリパラメーター ]</td> 
    <td>フィルターの条件にする各クエリパラメーターに対して「<b> クエリパラメーターを追加 </b>」をクリックし、フィールドと演算子を選択して、フィルターのフィールド値を入力します。</td> 
   </tr> 
  </tbody> 
@@ -1292,7 +1292,7 @@ This action module checks that the service represented by the connection is runn
    <td>[!DNL Adobe Journey Optimizer] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >[!DNL Adobe Journey Optimizer]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select content type]</td> 
+   <td role="rowheader">[!UICONTROL コンテンツ タイプの選択 ]</td> 
    <td>コンテンツテンプレートとコンテンツフラグメントのどちらを取得するかを選択します。</td> 
   </tr> 
   <tr> 
@@ -1308,7 +1308,7 @@ This action module checks that the service represented by the connection is runn
    <td>このリストを並べ替えるパラメーター名を入力またはマッピングします。 降順または昇順に並べ替えるには、<code>-</code> または <code>+</code> を追加します。 記号を指定しない場合、リストは降順に並べ替えられます。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Filter by property]</td> 
+   <td role="rowheader">[!UICONTROL プロパティによるフィルタ ]</td> 
    <td>追加するプロパティ フィルタごとに、[<b> アイテムの追加 </b>] をクリックし、プロパティのキーと値を入力します。 プロパティに指定した値を含むレコードがリストに含まれます。</td> 
   </tr> 
  </tbody> 
