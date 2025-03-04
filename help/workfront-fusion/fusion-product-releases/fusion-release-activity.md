@@ -9,9 +9,9 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: c37aea95-7cc3-4939-a4d7-9a6a75557b85
-source-git-commit: 70a2d06da6be6c892df12faa3a168e66daef118e
+source-git-commit: 284e5bda7fef82bac02f3200efe1662fd55586bf
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '870'
 ht-degree: 97%
 
 ---
@@ -22,9 +22,9 @@ Adobe Workfront Fusion は、アプリと web サービスをシームレスに�
 
 ## 2025年の Fusion リリース
 
-<!--### March 2025
+### 2025年3月
 
-* [Workfront Fusion release activity: Week of March 3, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-3.md)-->
+* [Workfront Fusion リリースアクティビティ：2025年3月3日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-3.md)
 
 ### 2025 年 2 月
 

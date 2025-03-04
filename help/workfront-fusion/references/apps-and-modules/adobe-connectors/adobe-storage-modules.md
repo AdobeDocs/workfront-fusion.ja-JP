@@ -7,9 +7,8 @@ title: Adobe ストレージモジュール
 description: シナリオでは、Adobe Admin Console [!DNL Adobe Workfront Fusion]  プロジェクトを作成および管理できます。
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
-source-git-commit: 70a2d06da6be6c892df12faa3a168e66daef118e
+exl-id: 78ee905f-4713-44a4-bffb-c64cdb3665c2
+source-git-commit: 284e5bda7fef82bac02f3200efe1662fd55586bf
 workflow-type: tm+mt
 source-wordcount: '1351'
 ht-degree: 17%
@@ -361,6 +360,3 @@ Adobe User Management モジュールを設定する場合、Workfront Fusion �
      </div> </p> </td>     </tr>
   </tbody>
 </table>
-
-
-
