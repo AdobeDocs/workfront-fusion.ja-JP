@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion を使用するには、Adobe Workfront ラ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 73eb70e1-3f3d-419d-9cde-3ec3cda224f8
-source-git-commit: 9e560995ff9f58a76bbecc521f7d2eef9d47fa48
+source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
 workflow-type: tm+mt
-source-wordcount: '2089'
-ht-degree: 90%
+source-wordcount: '2494'
+ht-degree: 93%
 
 ---
 
@@ -63,9 +63,9 @@ ht-degree: 90%
 
 +++
 
-## Microsoft Power BI API 情報
+## Microsoft Power BI API に関する情報
 
-Microsoft Power BIコネクタでは、以下を使用します。
+Microsoft Power BI コネクタでは、以下を使用します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -108,7 +108,7 @@ Microsoft Power BIコネクタでは、以下を使用します。
 * [ダッシュボードタイルの一覧表示](#list-dashboard-tiles)
 * [ダッシュボードのリスト](#list-dashboards)
 
-#### [!UICONTROL Create a Dashboard]
+#### [!UICONTROL ダッシュボードを作成]
 
 このアクションモジュールは、新しいダッシュボードを作成します。
 
@@ -131,7 +131,7 @@ Microsoft Power BIコネクタでは、以下を使用します。
   </tbody>
 </table>
 
-#### [!UICONTROL Get a Dashboard]
+#### [!UICONTROL ダッシュボードを取得]
 
 このアクションモジュールは、指定されたダッシュボードのメタデータを取得します。
 
@@ -162,7 +162,7 @@ Microsoft Power BIコネクタでは、以下を使用します。
   </tbody>
 </table>
 
-#### [!UICONTROL Get a Dashboard Tile]
+#### [!UICONTROL ダッシュボードタイルを取得]
 
 このアクションモジュールは、指定されたダッシュボードタイルのメタデータを取得します。
 
@@ -197,7 +197,7 @@ Microsoft Power BIコネクタでは、以下を使用します。
   </tbody>
 </table>
 
-#### [!UICONTROL List Dashboard Tiles]
+#### [!UICONTROL ダッシュボードタイルのリスト]
 
 この検索モジュールは、ダッシュボードタイルのリストを取得します。
 
@@ -234,7 +234,7 @@ Microsoft Power BIコネクタでは、以下を使用します。
 </tbody>
 </table>
 
-#### [!UICONTROL List Dashboards]
+#### [!UICONTROL ダッシュボードのリスト]
 
 この検索モジュールは、ダッシュボードのリストを取得します。
 
@@ -268,7 +268,7 @@ Microsoft Power BIコネクタでは、以下を使用します。
 * [レポートの取得](#get-a-report)
 * [List Reports](#list-reports)
 
-#### [!UICONTROL Copy a Report]
+#### [!UICONTROL レポートをコピー]
 
 このアクションモジュールは、既存のレポートをコピーします。
 
@@ -303,7 +303,7 @@ Microsoft Power BIコネクタでは、以下を使用します。
   </tbody>
 </table>
 
-#### [!UICONTROL Delete a Report]
+#### [!UICONTROL レポートを削除]
 
 このアクションモジュールは、レポートを削除します。
 
@@ -334,7 +334,7 @@ Microsoft Power BIコネクタでは、以下を使用します。
   </tbody>
 </table>
 
-#### [!UICONTROL Get a Report]
+#### [!UICONTROL レポートを取得]
 
 このアクションモジュールは、指定されたレポートのメタデータを取得します。
 
@@ -365,7 +365,7 @@ Microsoft Power BIコネクタでは、以下を使用します。
   </tbody>
 </table>
 
-#### [!UICONTROL List Reports]
+#### [!UICONTROL レポートをリスト]
 
 この検索モジュールは、レポートのリストを取得します。
 
@@ -402,7 +402,7 @@ Microsoft Power BIコネクタでは、以下を使用します。
 * [リストデータセット](#list-datasets)
 * [データセットを更新](#refresh-a-dataset)
 
-#### [!UICONTROL Add or Delete Rows in a Dataset Table]
+#### [!UICONTROL データセットテーブルの行の追加または削除]
 
 このアクションモジュールは、指定したプッシュデータセットテーブルの行を追加または削除します。
 
@@ -485,7 +485,7 @@ Microsoft Power BIコネクタでは、以下を使用します。
   </tbody>
 </table>
 
-#### [!UICONTROL Create a Dataset]
+#### [!UICONTROL データセットを作成]
 
 このアクションモジュールは、新しいデータセットを作成します。
 
@@ -511,10 +511,10 @@ Microsoft Power BIコネクタでは、以下を使用します。
         <p>データセットのデフォルトモードを選択またはマッピングします。</p>
         <ul>
           <li>
-            <p><b>[!UICONTROL As Azure]</b>：へのライブ接続があるデータセット [!DNL Azure Analysis Service]</p>
+            <p><b>[!UICONTROL As Azure]</b>：次とのライブ接続を持つデータセット [!DNL Azure Analysis Service]</p>
           </li>
           <li>
-            <p><b>[!UICONTROL As on Prem]</b>:[!DNL On-premise Analysis] Service へのライブ接続を持つデータセット</p>
+            <p><b>[!UICONTROL As on Prem]</b>：[!DNL On-premise Analysis] サービスとのライブ接続を持つデータセット</p>
           </li>
           <li>
             <p><b>[!DNL Push]</b>：次にデータをプッシュするためのプログラムでアクセスできるデータセット [!DNL Power BI]</p>
@@ -656,7 +656,7 @@ Microsoft Power BIコネクタでは、以下を使用します。
   </tbody>
 </table>
 
-#### [!UICONTROL Delete a Dataset]
+#### [!UICONTROL データセットの削除]
 
 このアクションモジュールでは、データセットを削除します。
 
@@ -687,7 +687,7 @@ Microsoft Power BIコネクタでは、以下を使用します。
   </tbody>
 </table>
 
-#### [!UICONTROL Get a Dataset]
+#### [!UICONTROL データセットを取得]
 
 このアクションモジュールは、指定したデータセットのメタデータを取得します。
 
@@ -718,7 +718,7 @@ Microsoft Power BIコネクタでは、以下を使用します。
   </tbody>
 </table>
 
-#### [!UICONTROL List Datasets]
+#### [!UICONTROL データセットをリスト]
 
 この検索モジュールは、データセットのリストを取得します。
 
@@ -737,13 +737,13 @@ Microsoft Power BIコネクタでは、以下を使用します。
     <tr>
       <td role="rowheader">[!UICONTROL Limit]</td>
       <td>
-        <p>各シナリオ実行サイクルでモジュールに実行させる「アクション」の対象となるレコードの最大数を入力またはマッピングします。</p>
+        <p>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</p>
       </td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL Refresh a Dataset]
+#### [!UICONTROL データセットの更新]
 
 このアクションモジュールは、指定したデータセットを更新します。
 
@@ -803,7 +803,7 @@ Microsoft Power BIコネクタでは、以下を使用します。
 * [アプリのリスト](#list-apps)
 * [アプリを見る](#watch-apps)
 
-#### [!UICONTROL Get an App]
+#### [!UICONTROL アプリの入手]
 
 このアクションモジュールでは、指定されたアプリのメタデータを取得します。
 
@@ -824,7 +824,7 @@ Microsoft Power BIコネクタでは、以下を使用します。
   </tbody>
 </table>
 
-#### [!UICONTROL Get an App's Dashboard]
+#### [!UICONTROL アプリのダッシュボードの取得]
 
 このアクションモジュールでは、指定したアプリのダッシュボードのメタデータを取得します。
 
@@ -851,7 +851,7 @@ Microsoft Power BIコネクタでは、以下を使用します。
   </tbody>
 </table>
 
-#### [!UICONTROL Get an App's Report]
+#### [!UICONTROL アプリのレポートの取得]
 
 このアクションモジュールでは、指定したアプリのレポートのメタデータを取得します。
 
@@ -878,7 +878,7 @@ Microsoft Power BIコネクタでは、以下を使用します。
   </tbody>
 </table>
 
-#### [!UICONTROL List Apps]
+#### [!UICONTROL アプリのリスト]
 
 この検索モジュールでは、インストールされているすべてのアプリのリストが取得されます。
 
@@ -899,7 +899,7 @@ Microsoft Power BIコネクタでは、以下を使用します。
   </tbody>
 </table>
 
-#### [!UICONTROL List App's Dashboards]
+#### [!UICONTROL アプリのダッシュボードのリスト]
 
 この検索モジュールでは、指定されたアプリからダッシュボードのリストを取得します。
 
@@ -924,7 +924,7 @@ Microsoft Power BIコネクタでは、以下を使用します。
   </tbody>
 </table>
 
-#### [!UICONTROL List App's Reports]
+#### [!UICONTROL アプリのレポートのリスト]
 
 この検索モジュールでは、指定したアプリからすべてのレポートのリストを取得します。
 
@@ -949,7 +949,7 @@ Microsoft Power BIコネクタでは、以下を使用します。
   </tbody>
 </table>
 
-#### [!UICONTROL Watch Apps]
+#### [!UICONTROL アプリの監視]
 
 このトリガーモジュールでは、アプリが更新された時点でシナリオを開始します。
 
@@ -972,7 +972,7 @@ Microsoft Power BIコネクタでは、以下を使用します。
 
 ### その他
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL API 呼び出しの実行]
 
 このアクションモジュールは、[!DNL Power BI] API に対して API 呼び出しを実行します。　
 
@@ -997,7 +997,7 @@ Microsoft Power BIコネクタでは、以下を使用します。
         <p>[!UICONTROL Method]</p>
       </td>
       <td>
-        <p>API 呼び出しの設定に必要な [!UICONTROL HTTP] リクエストメソッドを選択します。 詳しくは、[!UICONTROL HTTP] リクエストメソッドを参照してください。</p>
+        <p>API 呼び出しを設定する必要がある [!UICONTROL HTTP] リクエストメソッドを選択します。詳しくは、[!UICONTROL HTTP] リクエストメソッドを参照してください。</p>
       </td>
     </tr>
     <tr>

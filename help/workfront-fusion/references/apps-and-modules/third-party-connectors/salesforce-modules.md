@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion のシナリオでは、Salesforce を使用
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
 workflow-type: tm+mt
-source-wordcount: '2717'
-ht-degree: 73%
+source-wordcount: '3042'
+ht-degree: 85%
 
 ---
 
@@ -113,7 +113,7 @@ Salesforce コネクタでは、以下を使用します。
 
 [!DNL Salesforce] モジュールへの接続を作成するには、以下を実行します。
 
-1. 任意の [!DNL Salesforce] モジュールで、「接続」ボックスの横にある「**[!UICONTROL Add]**」をクリックします。
+1. 任意の [!DNL Salesforce] モジュールで、「接続」ボックスの横にある「**[!UICONTROL 追加]**」をクリックします。
 
 1. 次のフィールドに入力します。
 
@@ -150,7 +150,7 @@ Salesforce コネクタでは、以下を使用します。
         <td>Salesforce クライアントの秘密鍵を入力します。 </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Sandbox]</td>
+        <td role="rowheader">[!UICONTROL サンドボックス ]</td>
         <td>これがサンドボックス環境の場合は、このオプションを有効にします。</td>
       </tr>
       <tr>
@@ -160,7 +160,7 @@ Salesforce コネクタでは、以下を使用します。
     </tbody>
     </table>
 
-1. 「**[!UICONTROL Continue]**」をクリックして接続を保存し、モジュールに戻ります。
+1. 「**[!UICONTROL 続行]**」をクリックして接続を保存し、モジュールに戻ります。
 
 
 ## [!DNL Salesforce] モジュールとそのフィールド
@@ -171,11 +171,11 @@ Salesforce コネクタでは、以下を使用します。
 
 ### トリガー
 
-* [[!UICONTROL Watch a field]](#watch-a-field)
-* [[!UICONTROL Watch for Records]](#watch-for-records)
-* [[!UICONTROL Watch Outbound Messages]](#watch-outbound-messages)
+* [[!UICONTROL フィールドの監視]](#watch-a-field)
+* [[!UICONTROL レコードの監視]](#watch-for-records)
+* [[!UICONTROL アウトバウンドメッセージの監視]](#watch-outbound-messages)
 
-#### [!UICONTROL Watch a field]
+#### [!UICONTROL フィールドを監視]
 
 このトリガーモジュールは、[!DNL Salesforce] でフィールドがアップデートされたときにシナリオを開始します。
 
@@ -189,7 +189,7 @@ Salesforce コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type] </td> 
-   <td> <p>モジュールで監視するフィールドが含まれているレコードのタイプを選択します。[!DNL Salesforce] の設定でオンになっているレコードタイプを選択する必要 [!UICONTROL Field History] あります。 詳しくは、[!DNL Salesforce] ドキュメントで<a href="https://help.salesforce.com/articleView?id=tracking_field_history.htm&amp;type=5">フィールド履歴のトラッキング</a>を参照してください。 </p> </td> 
+   <td> <p>モジュールで監視するフィールドが含まれているレコードのタイプを選択します。[!DNL Salesforce] 設定で [!UICONTROL Field History] がオンになっているレコードタイプを選択する必要があります。詳しくは、[!DNL Salesforce] ドキュメントで<a href="https://help.salesforce.com/articleView?id=tracking_field_history.htm&amp;type=5">フィールド履歴のトラッキング</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Field]</td> 
@@ -202,7 +202,7 @@ Salesforce コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch for Records]
+#### [!UICONTROL レコードの監視]
 
 このトリガーモジュールは、オブジェクト内のレコードが作成または更新されたときにシナリオを実行します。このモジュールは、レコードに関連付けられたすべての標準フィールドと、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
@@ -235,7 +235,7 @@ Salesforce コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Outbound Messages]
+#### [!UICONTROL アウトバウンドメッセージを監視]
 
 このトリガーモジュールは、誰かがメッセージを送信したときにシナリオを実行します。このモジュールは、レコードに関連付けられたすべての標準フィールドと、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
@@ -243,25 +243,25 @@ Salesforce コネクタでは、以下を使用します。
 
 1. [!DNL Salesforce] 設定ページに移動します。
 
-   設定ページにアクセスするには、[!DNL Salesforce] アカウントの右上隅にある「[!UICONTROL Setup]」というラベルの付いたボタンを見つけてクリックします。 [!DNL Salesforce] 設定ページで、左側にある「[!UICONTROL Quick Find / Search]」バーを見つけます。 「[!UICONTROL Workflow Rules]」を検索します。
+   設定ページにアクセスするには、[!DNL Salesforce] アカウントの右上隅にある「[!UICONTROL 設定]」というラベルのボタンを見つけてクリックします。[!DNL Salesforce] 設定ページから、左側にある「[!UICONTROL クイック検索／検索]」バーを見つけます。「[!UICONTROL ワークフロールール]」を検索します。
 
-1. **[!UICONTROL Workflow Rules]** をクリックします。
-1. 表示された [!UICONTROL Workflow Rules] ページで「**[!UICONTROL New Rule]**」をクリックし、ルールを適用するオブジェクトタイプ（商談レコードの更新を監視する場合は「[!UICONTROL Opportunity]」など）を選択します。
-1. **[!UICONTROL Next]** をクリックします。
-1. ルール名、評価条件およびルール条件を設定し、「**[!UICONTROL Save]**」、「**[!UICONTROL Next]**」の順にクリックします。
+1. 「**[!UICONTROL ワークフロールール]**」をクリックします。
+1. 表示される[!UICONTROL ワークフロールール]ページで、「**[!UICONTROL 新規ルール]**」をクリックし、ルールを適用するオブジェクトタイプ（「[!UICONTROL 機会]」など）を選択します（商談レコードの更新を監視している場合）。
+1. 「**[!UICONTROL 次へ]**」をクリックします。
+1. ルール名、評価基準およびルール基準を設定し、**[!UICONTROL 保存]**／**[!UICONTROL 次へ]**&#x200B;をクリックします。
 
-1. **[!UICONTROL Done]** をクリックします。
-1. 新しく作成したワークフロールールから、「**[!UICONTROL Edit]**..」をクリックします。
-1. 「**[!UICONTROL Add Workflow Action]**」ドロップダウン・リストから「**[!UICONTROL New Outbound Message]**」を選択します。
+1. 「**[!UICONTROL 完了]**」をクリックします。
+1. 新しく作成したワークフロールールで、「**[!UICONTROL 編集]**」をクリックします。
+1. **[!UICONTROL ワークフローアクションを追加]**&#x200B;ドロップダウンリストで、「**[!UICONTROL 新規アウトバウンドメッセージ]**」を選択します。
 
-1. 新しい送信メッセージに含める名前、説明、エンドポイント URL、フィールドを指定し、「**[!UICONTROL Save]**」をクリックします。
+1. 名前、説明、エンドポイント URL、新しいアウトバウンドメッセージに含めるフィールドを指定し、「**[!UICONTROL 保存]**」をクリックします。
 
-   **[!UICONTROL Endpoint URL]** フィールドには、[!DNL Workfront Fusion] の [!DNL Salesforce] [!UICONTROL Outbound Message] で提供される URL が含まれます。
+   「**[!UICONTROL エンドポイント URL]**」フィールドには、[!DNL Workfront Fusion] の「[!DNL Salesforce] [!UICONTROL  送信メッセージ]」で提供された URL が含まれています。
 
-1. [!UICONTROL Outbound Message] イベントで始まるシナリオを設定します。
+1. [!UICONTROL アウトバウンドメッセージ]イベント次で始まるシナリオを設定します。
 
 1. 右下にある **&lt;/>** アイコンをクリックし、提供された URL をコピーします。
-1. **[!UICONTROL Workflow Rules]** ページに戻り、新しく作成したルールを見つけ、「**[!UICONTROL Activate]**」をクリックします。
+1. **[!UICONTROL ワークフロールール]**&#x200B;ページに戻り、新しく作成されたルールを探し、「**[!UICONTROL アクティブ化]**」をクリックします。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
@@ -271,7 +271,7 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Webhook]</td> 
-   <td> <p>送信メッセージの監視に使用する web フックを選択します。Webhook を追加するには、「<strong>[!UICONTROL Add]</strong>」をクリックして Webhook の名前と接続を入力します。</p> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!UICONTROL Adobe Workfront Fusion] への接続の作成 - 基本手順</a>を参照してください。</p> </td> 
+   <td> <p>送信メッセージの監視に使用する web フックを選択します。Web フックを追加するには、「<strong>[!UICONTROL Add]</strong>」をクリックして、web フックの名前と接続を入力します。</p> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!UICONTROL Adobe Workfront Fusion] への接続の作成 - 基本的な手順</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type] </td> 
@@ -286,15 +286,15 @@ Salesforce コネクタでは、以下を使用します。
 
 ### アクション
 
-* [[!UICONTROL Create a Record]](#create-a-record)
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Delete a Record]](#delete-a-record)
-* [[!UICONTROL Download Attachment/Document]](#download-attachmentdocument)
-* [[!UICONTROL Read a Record]](#read-a-record)
-* [[!UICONTROL Upload Attachment/Document]](#upload-attachmentdocument)
+* [[!UICONTROL レコードの作成]](#create-a-record)
+* [[!UICONTROL カスタム API 呼び出し]](#custom-api-call)
+* [[!UICONTROL レコードの削除]](#delete-a-record)
+* [[!UICONTROL 添付ファイル／ドキュメントをダウンロード]](#download-attachmentdocument)
+* [[!UICONTROL レコードを読み取り]](#read-a-record)
+* [[!UICONTROL 添付ファイル／ドキュメントをアップロード]](#upload-attachmentdocument)
 * [ファイルをアップロード](#upload-file)
 
-#### [!UICONTROL Create a Record]
+#### [!UICONTROL レコードの作成]
 
 このアクションモジュールは、オブジェクトに新しいレコードを作成します。
 
@@ -314,7 +314,7 @@ Salesforce コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Record Type] </p> </td> 
-   <td> <p>モジュールで作成する [!DNL Salesforce] レコードのタイプを選択します。フィールドは、「[!UICONTROL Record Type]」フィールドで選択されたレコードのタイプに基づいて使用可能になります。 これらのフィールドは [!DNL Salesforce] API に基づいています。</p> </td> 
+   <td> <p>モジュールで作成する [!DNL Salesforce] レコードのタイプを選択します。フィールドは、「[!UICONTROL Record Type]」フィールドで選択したレコードのタイプに基づいて使用できるようになります。これらのフィールドは [!DNL Salesforce] API に基づいています。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Select fields to map]</td> 
@@ -323,18 +323,18 @@ Salesforce コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Custom API Call]
+#### [!UICONTROL カスタム API 呼び出し]
 
-このアクションモジュールでは、[!DNL Salesforce] API への認証済みのカスタム呼び出しを実行できます。これにより、他の [!DNL Salesforce] モジュールでは不可能なデータフロー自動処理を実現できます。
+このアクションモジュールは、[!DNL Salesforce] API に対して認証済みのカスタム呼び出しを実行します。これにより、他の [!DNL Salesforce] モジュールでは不可能なデータフロー自動処理を実現できます。
 
 このモジュールは、次の値を返します。
 
-* **[!UICONTROL Status Code]** （数字）:HTTP リクエストの成功または失敗を示します。 これらはインターネット上で検索できる標準コードです。
-* **[!UICONTROL Headers]** （オブジェクト）：出力本文に関連しない、応答/ステータスコードのより詳細なコンテキスト。 応答ヘッダーに表示されるすべてのヘッダーが応答ヘッダーではないので、不要なヘッダーも含まれている可能性があります。
+* **[!UICONTROL ステータスコード]**（数値）：HTTP リクエストの成功または失敗を示します。これらはインターネット上で検索できる標準コードです。
+* **[!UICONTROL ヘッダー]**（オブジェクト）：出力本文に関連しない応答／ステータスコードのより詳細なコンテキスト。応答ヘッダーに表示されるすべてのヘッダーが応答ヘッダーではないので、不要なヘッダーも含まれている可能性があります。
 
   応答ヘッダーは、モジュールの設定時に選択した HTTP リクエストによって異なります。
 
-* **[!UICONTROL Body]** （オブジェクト）：モジュールの設定時に選択した HTTP リクエストによっては、一部のデータが返される場合があります。 そのデータ（[!UICONTROL GET] リクエストからのデータなど）は、このオブジェクトに含まれます。
+* **[!UICONTROL 本文]**（オブジェクト）：モジュールの設定時に選択した HTTP リクエストに応じて、一部のデータを受け取る場合があります。このデータ（[!UICONTROL GET] リクエストからのデータなど）は、このオブジェクトに含まれます。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
@@ -372,7 +372,7 @@ Salesforce コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Record]
+#### [!UICONTROL レコードを削除]
 
 このアクションモジュールは、オブジェクト内の既存のレコードを削除します。
 
@@ -401,7 +401,7 @@ Salesforce コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Download Attachment/Document]
+#### [!UICONTROL 添付ファイル／ドキュメントをダウンロード]
 
 このアクションモジュールは、レコードからドキュメントまたは添付ファイルをダウンロードします。
 
@@ -425,7 +425,7 @@ Salesforce コネクタでは、以下を使用します。
      <ul> 
       <li>[!UICONTROL Attachment]</li> 
       <li>[!UICONTROL Document]</li> 
-      <li>[!UICONTROL ContentDocument] （これは、[!DNL Saleforce CRM Content] または [!DNL Salesforce Files] のライブラリにアップロードされたドキュメントです。）</li> 
+      <li>[!UICONTROL ContentDocument]（これは、[!DNL Saleforce CRM Content] または [!DNL Salesforce Files] のライブラリにアップロードされたドキュメントです）</li> 
      </ul> </td>
   </tr> 
   <tr>
@@ -435,7 +435,7 @@ Salesforce コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Read a Record]
+#### [!UICONTROL レコードの読み取り]
 
 このアクションモジュールは、[!DNL Salesforce] の単一オブジェクトからデータを読み取ります。
 
@@ -455,7 +455,7 @@ Salesforce コネクタでは、以下を使用します。
   </tr> 
   <tr>
     <td>[!UICONTROL Record Type]</td>
-    <td>モジュールで [action] 読み取る [!DNL Salesforce] レコードのタイプを選択します。</td>
+    <td>モジュールが読み取る [!DNL Salesforce] レコードのタイプを選択します。</td>
   </tr> 
   <tr>
     <td>[!UICONTROL Record Fields]</td>
@@ -482,14 +482,14 @@ Salesforce コネクタでは、以下を使用します。
 >
 >* **値**：`SELECT Id, Name, CreatedDate, LastModifiedDate FROM User LIMIT 10`
 >
->検索の一致は、モジュールの出力の **[!UICONTROL Bundle]> [!UICONTROL Body] >[!UICONTROL records]** で見つけることができます。
+>一致した検索結果は、**[!UICONTROL バンドル]／[!UICONTROL 本文]／[!UICONTROL レコード]**&#x200B;下のモジュールの出力に表示されます。
 >
 >この例では、6 人のユーザーが返されました。
 >
 >![ 検索に一致 ](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
 
 
-#### [!UICONTROL Update a Record]
+#### [!UICONTROL レコードを更新]
 
 このアクションモジュールは、オブジェクト内のレコードを編集します。
 
@@ -523,7 +523,7 @@ Salesforce コネクタでは、以下を使用します。
 </table>
 
 
-#### [!UICONTROL Upload Attachment/Document]
+#### [!UICONTROL 添付ファイル／ドキュメントをアップロード]
 
 このアクションモジュールは、ファイルをアップロードして指定したレコードに添付するか、ドキュメントをアップロードします。
 
@@ -577,7 +577,7 @@ Salesforce コネクタでは、以下を使用します。
    <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Document linking]</td> 
+   <td role="rowheader">[!UICONTROL ドキュメント リンク ]</td> 
    <td>コンテンツドキュメントリンクを適用するかどうかを選択します。</td> 
   </tr> 
   <tr> 
@@ -595,7 +595,7 @@ Salesforce コネクタでは、以下を使用します。
 
 ### 検索
 
-#### [!UICONTROL Search with Query]
+#### [!UICONTROL クエリによる検索]
 
 この検索モジュールは、指定された検索クエリに一致するレコードを [!DNL Salesforce] 内のオブジェクトで検索します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
@@ -623,8 +623,8 @@ Salesforce コネクタでは、以下を使用します。
    <td> <p>「シンプル」検索タイプを選択した場合は、モジュールで検索する [!DNL Salesforce] レコードのタイプを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Query] / [!UICONTROL SOSL Query] / [!UICONTROL SOQL Query]</td> 
-   <td> <p>検索に使用するクエリを入力します。</p> <p>SOSL について詳しくは、[!DNL Salesforce] ドキュメントの <a href="https://developer.salesforce.com/docs/atlas.ja-jp.soql_sosl.meta/soql_sosl/sforce_api_calls_sosl.htm">Salesforce Object Search Language（SOSL）</a>を参照してください。</p> <p>SOQL について詳しくは、[!DNL Salesforce] ドキュメントの <a href="https://developer.salesforce.com/docs/atlas.ja-jp.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm">Salesforce Object Query Language（SOQL）</a>を参照してください。</p> <p>メモ：モジュールの出力は、パラメーター <code>RETURNING </code> の値に左右されます。<code>LIMIT</code> を使用すると、[!DNL Fusion] は [!UICONTROL Maximal count of records] フィールドの設定を無視します。 制限を設定しない場合、Fusion は値 [!UICONTROL LIMIT = Maximal count of records] を挿入します。</p> </td> 
+   <td>[!UICONTROL Query]／[!UICONTROL SOSL Query]／[!UICONTROL SOQL Query]</td> 
+   <td> <p>検索に使用するクエリを入力します。</p> <p>SOSL について詳しくは、[!DNL Salesforce] ドキュメントの <a href="https://developer.salesforce.com/docs/atlas.ja-jp.soql_sosl.meta/soql_sosl/sforce_api_calls_sosl.htm">Salesforce Object Search Language（SOSL）</a>を参照してください。</p> <p>SOQL について詳しくは、[!DNL Salesforce] ドキュメントの <a href="https://developer.salesforce.com/docs/atlas.ja-jp.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm">Salesforce Object Query Language（SOQL）</a>を参照してください。</p> <p>メモ：モジュールの出力は、パラメーター <code>RETURNING </code> の値に左右されます。<code>LIMIT</code> を使用する場合、[!DNL Fusion] は「[!UICONTROL Maximal count of records]」フィールドの設定を無視します。制限を設定しない場合、Fusion は [!UICONTROL LIMIT = Maximal count of records] という値を挿入します。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximal count of records]</td> 
@@ -633,7 +633,7 @@ Salesforce コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Search]
+#### [!UICONTROL 検索]
 
 このアクションモジュールは、指定された条件を満たすすべてのレコードを取得します。
 

@@ -4,10 +4,10 @@ description: ' [!DNL Google Sheets]  を  [!DNL Adobe Workfront Fusion],you need
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 80965570-2937-4ac8-97c0-54f7a813ec50
-source-git-commit: 994dffd83d5b7d8b72396f147df352dfb74d6219
+source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
 workflow-type: tm+mt
-source-wordcount: '3464'
-ht-degree: 62%
+source-wordcount: '3957'
+ht-degree: 70%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 62%
 
 ## 前提条件
 
-[!UICONTROL Google Sheets] モジュールを使用するには、[!UICONTROL Google] アカウントが必要です。
+[!UICONTROL Google スプレッドシート]モジュールを使用するには、[!UICONTROL Google] アカウントが必要です。
 
 ## Google Sheets API 情報
 
@@ -97,7 +97,7 @@ Google シートコネクタでは、以下を使用します。
 
 ### トリガー
 
-#### [!UICONTROL Watch Rows]
+#### [!UICONTROL 行を監視]
 
 スプレッドシートに新しく追加された行から値を取得します。
 
@@ -156,19 +156,19 @@ Google シートコネクタでは、以下を使用します。
 
 ### アクション
 
-* [[!UICONTROL Add a Row]](#add-a-row)
-* [[!UICONTROL Add a Sheet]](#add-a-sheet)
-* [[!UICONTROL Clear a Cell]](#clear-a-cell)
-* [[!UICONTROL Clear a Row]](#clear-a-row)
-* [[!UICONTROL Create a Spreadsheet]](#create-a-spreadsheet)
-* [[!UICONTROL Delete a Row]](#delete-a-row)
-* [[!UICONTROL Delete a Sheet]](#delete-a-sheet)
-* [[!UICONTROL Get a Cell]](#get-a-cell)
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
-* [[!UICONTROL Update a Cell]](#update-a-cell)
-* [[!UICONTROL Update a Row]](#update-a-row)
+* [[!UICONTROL 行追加]](#add-a-row)
+* [[!UICONTROL シートを追加]](#add-a-sheet)
+* [[!UICONTROL セルのクリア]](#clear-a-cell)
+* [[!UICONTROL 行のクリア]](#clear-a-row)
+* [[!UICONTROL スプレッドシートの作成]](#create-a-spreadsheet)
+* [[!UICONTROL 行を削除]](#delete-a-row)
+* [[!UICONTROL シートを削除]](#delete-a-sheet)
+* [[!UICONTROL セルを取得]](#get-a-cell)
+* [[!UICONTROL API 呼び出しの実行]](#make-an-api-call)
+* [[!UICONTROL セルを更新]](#update-a-cell)
+* [[!UICONTROL 行を更新]](#update-a-row)
 
-#### [!UICONTROL Add a Row]
+#### [!UICONTROL 行を追加]
 
 このモジュールは、シートに行を追加します。
 
@@ -233,7 +233,7 @@ Google シートコネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Add a Sheet]
+#### [!UICONTROL シートを追加]
 
 選択したスプレッドシートにシートを新規作成します。
 
@@ -260,7 +260,7 @@ Google シートコネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Clear a Cell]
+#### [!UICONTROL セルのクリア]
 
 指定したセルから値を削除します。
 
@@ -287,7 +287,7 @@ Google シートコネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Clear a Row]
+#### [!UICONTROL 行のクリア]
 
 指定した行から値を削除します。
 
@@ -314,7 +314,7 @@ Google シートコネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a Spreadsheet]
+#### [!UICONTROL スプレッドシートの作成]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -347,16 +347,16 @@ Google シートコネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Number format]</td> 
-   <td> <p>スプレッドシート内のすべてのセルのデフォルトの形式を選択します。</p> <p><strong>[!UICONTROL Text]</strong>：テキストの書式設定。 例： <code>1000. 12</code></p> <p><strong>[!UICONTROL Number]</strong>：数値の書式設定。 例： <code>1,000.12</code></p> <p><strong>[!UICONTROL Percent]</strong>：パーセントの書式設定。 例： <code>10. 12%</code></p> <p><strong>[!UICONTROL Currency]</strong>：通貨の書式設定。 例： <code>$1,000.12</code></p> <p><strong>[!UICONTROL Date]</strong>：日付の書式設定。 例： <code>9/26/2008</code></p> <p><strong>[!UICONTROL Time]</strong>：時間のフォーマット。 例： <code>3:59:00 PM</code></p> <p><strong>[!UICONTROL Date time]</strong>：日付と時刻のフォーマット。 例： <code>9/26/08 15:59:00</code> </p> <p><strong>[!UICONTROL Scientific]</strong>：科学的な数値の書式設定。 例： <code>1. 01E+03</code></p> </td> 
+   <td> <p>スプレッドシート内のすべてのセルのデフォルトの形式を選択します。</p> <p><strong>[!UICONTROL Text]</strong>：テキストの書式設定。例： <code>1000. 12</code></p> <p><strong>[!UICONTROL Number]</strong>：数値の書式設定。例： <code>1,000.12</code></p> <p><strong>[!UICONTROL Percent]</strong>：割合の書式設定。例： <code>10. 12%</code></p> <p><strong>[!UICONTROL Currency]</strong>：通貨の書式設定。例： <code>$1,000.12</code></p> <p><strong>[!UICONTROL Date]</strong>：日付の書式設定。例： <code>9/26/2008</code></p> <p><strong>[!UICONTROL Time]</strong>：時間の形式設定。例： <code>3:59:00 PM</code></p> <p><strong>[!UICONTROL Date time]</strong>：日付と時刻の書式設定。例：<code>9/26/08 15:59:00</code> </p> <p><strong>[!UICONTROL Scientific]</strong>：科学的な数値の書式設定。 例： <code>1. 01E+03</code></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Sheets] </td> 
-   <td> <p>スプレッドシートに追加するシートごとに、[<strong>[!UICONTROL Add item]</strong>] をクリックして、シートのタイトルとシートのインデックスを入力またはマップします。 インデックス 0 は最初のシートを表します。</p> </td> 
+   <td> <p>スプレッドシートに追加する各シートに対して、<strong>[!UICONTROL Add item] をクリックし </strong> シートのタイトルとシートのインデックスを入力またはマップします。 インデックス 0 は最初のシートを表します。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Row]
+#### [!UICONTROL 行を削除]
 
 指定した行を削除します。
 
@@ -383,7 +383,7 @@ Google シートコネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Sheet]
+#### [!UICONTROL シートを削除]
 
 特定のシートを削除します。
 
@@ -406,7 +406,7 @@ Google シートコネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Cell]
+#### [!UICONTROL セルを取得]
 
 選択したセルから値を取得します。
 
@@ -441,7 +441,7 @@ Google シートコネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL API 呼び出しを実行]
 
 このアクションモジュールでは、カスタム API 呼び出しを実行できます。
 
@@ -451,7 +451,7 @@ Google シートコネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[Fusion App] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>Google Sheets アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
@@ -479,7 +479,7 @@ Google シートコネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Cell]
+#### [!UICONTROL セルを更新]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -516,7 +516,7 @@ Google シートコネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Row]
+#### [!UICONTROL 行の更新]
 
 このモジュールでは、選択した行のセルの内容を変更できます。
 
@@ -530,7 +530,7 @@ Google シートコネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Mode]</td> 
-   <td> <p>スプレッドシートとシートを手動で選択するか、マッピングを行うかを選択します。</p> <p>注意：手動マッピングは、例えば、[!UICONTROL Workfront Fusion] のシナリオで新規スプレッドシートを作成し、その新規に作成したスプレッドシートにシナリオで直接データを追加する場合に便利です。</p> </td> 
+   <td> <p>スプレッドシートとシートを手動で選択するか、マッピングを行うかを選択します。</p> <p>メモ：手動マッピングは、新しいスプレッドシートが [!UICONTROL Workfront Fusion] シナリオで作成され、新しく作成されたスプレッドシートにデータをシナリオ内で直接追加する場合などに役立ちます。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -569,12 +569,12 @@ Google シートコネクタでは、以下を使用します。
 
 ### 検索
 
-* [[!UICONTROL Get Range Values]](#get-range-values)
-* [[!UICONTROL List Sheets]](#list-sheets)
-* [[!UICONTROL Search Rows]](#search-rows)
-* [[!UICONTROL Search Rows (Advanced)]](#search-rows-advanced)
+* [[!UICONTROL 範囲の値を取得]](#get-range-values)
+* [[!UICONTROL シートをリスト]](#list-sheets)
+* [[!UICONTROL 行を検索]](#search-rows)
+* [[!UICONTROL 行を検索（詳細）]](#search-rows-advanced)
 
-#### [!UICONTROL Get Range Values]
+#### [!UICONTROL 範囲の値を取得]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -615,7 +615,7 @@ Google シートコネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL List Sheets]
+#### [!UICONTROL シートをリスト]
 
 このモジュールは、スプレッドシート内のすべてのシートのリストを返します。
 
@@ -634,7 +634,7 @@ Google シートコネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Rows]
+#### [!UICONTROL 行を検索]
 
 フィルターオプションを使用して行を検索します。
 
@@ -644,7 +644,7 @@ Google シートコネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[Fusion App] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>Google Sheets アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -656,7 +656,7 @@ Google シートコネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Table contains headers]</td> 
-   <td> <p> スプレッドシートにヘッダー行を含めるかどうかを選択します。[!UICONTROL Yes] オプションが選択されている場合、モジュールは出力データとしてヘッダー行を取得せず、出力の変数名がヘッダーによって呼び出されます。 [!UICONTROL No] オプションが選択されている場合、モジュールはテーブルの最初の行も取得し、出力内の変数名は A、B、C、D と呼ばれます。</p> </td> 
+   <td> <p> スプレッドシートにヘッダー行を含めるかどうかを選択します。[!UICONTROL Yes] オプションが選択されている場合、出力データと出力内の変数名がヘッダーによって呼び出されるので、モジュールはヘッダー行を取得しません。[!UICONTROL No] オプションが選択されている場合、モジュールはまた、出力内の最初のテーブル行と変数名を取得し、その後 A、B、C、D などと呼ばれます。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Column range]</td> 
@@ -689,7 +689,7 @@ Google シートコネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Rows (Advanced)]
+#### [!UICONTROL 行の検索（詳細）]
 
 指定された条件に一致する結果を返します。
 
@@ -731,7 +731,7 @@ Google シートコネクタでは、以下を使用します。
 
 ### [!DNL Google Sheet] からの空のセルの取得
 
-空のセルを取得するには、[!UICONTROL Search Rows (Advanced)] モジュールを使用します。 この式を使用して、空の列を取得します。
+空のセルを取得するには、[!UICONTROL  行を検索（詳細） ] モジュールを使用できます。 この式を使用して、空の列を取得します。
 
 ```
 select * where E is null
@@ -741,18 +741,18 @@ select * where E is null
 
 ### シートへのシナリオを実行するためのボタンの追加
 
-1. [!DNL Workfront Fusion] で、シナリオに **[!UICONTROL Webhook]**/**[!UICONTROL Custom webhooks]** モジュールを挿入し、設定します。 手順については、[Webhook](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md) を参照してください。
+1. [!DNL Workfront Fusion] では、シナリオに **[!UICONTROL Webhook]**/**[!UICONTROL カスタム Webhook]** モジュールを挿入し、設定します。 手順については、[Webhook](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md) を参照してください。
 
 1. Web フックの URL をコピーします。
 1. シナリオを実行します。
-1. Google Sheets で、メインメニューバーから **[!UICONTROL Insert]** > **[!UICONTROL Drawing]**...を選択します。
+1. Google Sheet のメインメニューバーから&#x200B;**[!UICONTROL 挿入]**／**[!UICONTROL 図面]**... を選択します。
 
-1. [!UICONTROL Drawing] ウィンドウで、ウィンドウの上部付近にある **[!UICONTROL Text box]** アイコン ![ テキストボックス ](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) をクリックします。
-1. ボタンをデザインし、右上隅の「**[!UICONTROL Save and Close]**」ボタンをクリックします。
+1. [!UICONTROL  図面 ] ウィンドウで、ウィンドウの上部付近にある **[!UICONTROL テキスト ボックス]** アイコン ![ テキスト ボックス ](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) をクリックします。
+1. ボタンをデザインし、右上隅にある「**[!UICONTROL 保存して閉じる]**」ボタンをクリックします。
 1. ボタンはワークシートに配置されます。 ボタンの右上隅にある 3 つの縦並びのドットをクリックします。
-1. 「**[!UICONTROL Assign script..]」を選択します。**」を選択します。
-1. スクリプト（関数）の名前（例：`runScenario`）を入力し、「**[!UICONTROL OK]**」をクリックします。
-1. メインメニューバーから **[!UICONTROL Tools]** > **[!UICONTROL Script editor]** を選択します。
+1. メニューから「**[!UICONTROL スクリプトを割り当て].**」を選択します。
+1. スクリプト（関数）の名前（例：`runScenario`）を入力して、「**[!UICONTROL OK]**」をクリックします。
+1. メインメニューバーから&#x200B;**[!UICONTROL ツール]**／**[!UICONTROL スクリプトエディター]**&#x200B;を選択します。
 
 1. 次のコードを挿入します。
 
@@ -765,7 +765,7 @@ select * where E is null
      }
      ```
 
-1. **[!UICONTROL Ctrl+S]** キーを押してスクリプトファイルを保存し、プロジェクト名を入力して「**[!UICONTROL OK]**」をクリックします。
+1. **[!UICONTROL Ctrl + S]** を押してスクリプトファイルを保存し、プロジェクト名を入力して「**[!UICONTROL OK]**」をクリックします。
 
 1. [!DNL Google Sheets] に戻って、新しいボタンをクリックします。
 1. スクリプトに必要な認証を付与します。
@@ -779,15 +779,15 @@ select * where E is null
 
 日付を理解 [!DNL Google Sheets] やすくするには、`formatDate` 関数を使用して書式設定します。 2 番目の引数として関数に渡される正しい形式は、スプレッドシートのロケール設定によって異なります。
 
-この関数の詳細については、「日付と時刻の関数」の [[!UICONTROL formatDate] （date; format; [timezone]） ](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md#formatdate-date-format-timezone) 参照してください。
+この関数の詳細については、「日付と時刻の関数」の「[[!UICONTROL formatDate] （date; format; [timezone]）」を参照し ](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md#formatdate-date-format-timezone) ください。
 
 正しい形式を判断するには、次の手順を実行します。
 
 1. Google Sheets で、メインメニューから **[!UICONTROL File]** > **[!UICONTROL Spreadsheet]** settings を選択し、ロケールを確認して設定します。
 
-1. 適切なロケールを確認または設定したら、メインメニューから **[!UICONTROL Format]** > **[!UICONTROL Number]** を選択して、対応する日付と時刻の形式を決定します。 形式は、日付と時刻メニュー項目の横に表示されます。
+1. 適切なロケールを確認または設定したら、メインメニューから **[!UICONTROL 形式]** > **[!UICONTROL 数値]** を選択して、対応する日時の形式を決定します。 形式は、日付と時刻メニュー項目の横に表示されます。
 
-1. [!UICONTROL formatDate()] 関数に渡す必要がある正しい形式を作成するには、[ 日付と時間のフォーマット用のトークン ](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md) のリストを参照してください。
+1. [!UICONTROL formatDate （） ] 関数に渡すべき正しい形式を作成するには、[ 日付と時刻のフォーマット用トークン ](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md) のリストを参照してください。
 
 >[!BEGINSHADEBOX]
 
@@ -808,6 +808,6 @@ Google Sheets の組み込み関数を使用するには、この関数を利用
 テキストとして使用している数値の文字列が [!DNL Google] ワークシートの日付として解釈される場合は、数値をプレーンテキストとして事前に書式設定して、これを防ぐことができます。 例えば、1-2019 と入力した場合、テキストとして解釈する必要があるので、Googleでは日付として解釈する場合があります。
 
 1. [!DNL Google Sheets] で、数値を含む列またはセルをハイライト表示します。
-1. **[!UICONTROL Format]**/**[!UICONTROL Number]**/**[!UICONTROL Plain text]** をクリックします。
+1. **[!UICONTROL 形式]**／**[!UICONTROL 数字]**／**[!UICONTROL プレインテキスト]**&#x200B;をクリックします。
 
 [!DNL Workfront Fusion] での別の回避策は、数値の前にアポストロフィ（&#39;）を入力することです（例：&#39;1-2019 または &#39;1/47）。[!DNL Workfront Fusion] からデータが送信された後、セルにはアポストロフィが表示されません。

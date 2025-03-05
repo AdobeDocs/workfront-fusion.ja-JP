@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Acrobat Sign]  モジュールを使用すると、 [
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
 workflow-type: tm+mt
-source-wordcount: '5503'
-ht-degree: 77%
+source-wordcount: '6666'
+ht-degree: 97%
 
 ---
 
@@ -25,24 +25,24 @@ ht-degree: 77%
  <tbody> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+  <td> <p>[!UICONTROL Pro] 以降</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td> <p>[!UICONTROL Plan]、[!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
    <td>
    <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のライセンス要件：[!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
    </td>  
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランをご利用の場合、この記事で説明されている機能を使用するには、組織は [!DNL Adobe Workfront] に加えて [!DNL Adobe Workfront Fusion] も購入する必要があります。[!DNL Workfront Fusion] は、[!DNL Workfront] [!UICONTROL Ultimate] プランに含まれています。</p>
    <p>または</p>
    <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
    </td> 
@@ -82,7 +82,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
 
 [!DNL Adobe Sign] の契約では、フィールドを処理する必要があります。これを行うオプションはいくつかありますが、最も簡単で一般的な方法は、一時的なドキュメントをアップロードし、そのドキュメントを契約書にマッピングすることです。
 
-![Adobe Signの推奨事項 ](/help/workfront-fusion/references/apps-and-modules/assets/adobe-sign-recommendations-350x168.png)
+![Adobe Sign の推奨事項 ](/help/workfront-fusion/references/apps-and-modules/assets/adobe-sign-recommendations-350x168.png)
 
 ## [!DNL Adobe Acrobat Sign] モジュールとそのフィールド
 
@@ -103,7 +103,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
 * [Watch for events](#watch-for-events)
 -->
 
-+++ **[!UICONTROL Watch for agreements]**
++++ **[!UICONTROL 契約を監視]**
 
 このトリガーモジュールは、契約が作成または更新されたときにシナリオを開始します。
 
@@ -135,7 +135,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
 
 +++
 
-+++ **[!UICONTROL Watch for events]**
++++ **[!UICONTROL イベントの監視]**
 
 このトリガーモジュールは、選択したイベントが発生したときにシナリオを開始します。
 
@@ -145,7 +145,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td>使用する Webhook を選択するか、「<b>[!UICONTROL Add]</b>」をクリックして次のフィールドに入力します。</td> 
+   <td>使用する web フックを選択するか、「<b>[!UICONTROL Add]</b>」をクリックして次のフィールドに入力します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook name]</td> 
@@ -189,11 +189,11 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Problem notification emails]</td> 
-   <td> <p>この設定は、管理者アカウントに対してのみ機能します。</p> <p>問題の通知メールの送信先のメールアドレスごとに「<b>[!UICONTROL Add]</b>」をクリックし、メールアドレスを入力します。</p> </td> 
+   <td> <p>この設定は、管理者アカウントに対してのみ機能します。</p> <p>問題通知メールの送信先とするメールアドレスごとに、「<b>[!UICONTROL Add]</b>」をクリックしてメールアドレスを入力します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Agreement conditional parameters]</td> 
-   <td>条件付きパラメーターを追加する場合は、パラメーターを追加するレコードタイプで「<b>[!UICONTROL Yes]</b>」を選択し、有効にするパラメーターで「<b>[!UICONTROL Yes]</b>」を選択します。</td> 
+   <td>条件付きパラメーターを追加する場合は、パラメーターを追加するレコードタイプで「<b>[!UICONTROL Yes]</b>」を選択し、有効にするパラメーターで「<b>[!UICONTROL Yes]</b>」をクリックします。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -215,7 +215,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
 * [Upload document](#upload-document)
 -->
 
-+++ **[!UICONTROL Create a record]**
++++ **[!UICONTROL レコードを作成]**
 
 このアクションモジュールは、選択したタイプの新しいレコードを作成します。
 
@@ -238,18 +238,18 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
      <li> <p><b>[!UICONTROL Group]</b> </p> </li> 
      <li> <p><b>[!UICONTROL Library document]</b> </p> </li> 
      <li> <p><b>[!UICONTROL User]</b> </p> </li> 
-     <li> <p><b>[!UICONTROL Web form] ([!UICONTROL Widget])</b> </p> </li> 
+     <li> <p><b>[!UICONTROL Web form]（[!UICONTROL Widget]）</b> </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Group info]</td> 
-   <td> <p>グループの [!UICONTROL Name] と [!UICONTROL ID] を入力またはマッピングし、このグループがアカウントのデフォルトのグループかどうかを指定します。</p> </td> 
+   <td> <p>グループの [!UICONTROL Name] と [!UICONTROL ID] を入力またはマッピングし、このグループがアカウントのデフォルトのグループであるかどうかを表示します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Library document info]</td> 
    <td> <p>次のフィールドに入力します。</p> 
     <ul> 
-     <li> <p><b>[!UICONTROL Files to send]</b> </p> <p>追加するファイルごとに「<b>[!UICONTROL Add item]</b>」をクリックし、フィールドに入力します。</p> 
+     <li> <p><b>[!UICONTROL Files to send]</b> </p> <p>追加するそれぞれのファイルに対して、「<b>[!UICONTROL Add item]</b>」をクリックし、フィールドに入力します。</p> 
       <ul> 
        <li><b>[!UICONTROL Transient document ID]</b> <p>一時的なドキュメントの ID の入力</p> </li> 
        <li> <p><b>[!UICONTROL URL file transfer]</b> </p> <p>次のフィールドに入力します。</p> 
@@ -263,7 +263,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
      <li> <p><b>[!UICONTROL Library template name]</b> </p> <p>ライブラリテンプレートの名前を入力またはマッピング</p> </li> 
      <li> <p><b>[!UICONTROL Sharing mode]</b> </p> <p>ライブラリドキュメントへのアクセス権を持つユーザーを指定します。</p> </li> 
      <li> <p><b>[!UICONTROL Library document state]</b> </p> <p>ドキュメントがオーサリング状態かアクティブ状態かを選択します。</p> </li> 
-     <li> <p><b>[!UICONTROL Library template type]</b> </p> <p>使用するライブラリ テンプレートの種類ごとに [<b>[!UICONTROL Add item]</b>] をクリックし、テンプレートの種類を選択します。</p> </li> 
+     <li> <p><b>[!UICONTROL Library template type]</b> </p> <p>使用するライブラリテンプレートタイプごとに、「<b>[!UICONTROL Add item]</b>」をクリックし、テンプレートタイプを選択します。</p> </li> 
      <li> <p><b>[!UICONTROL Last event date]</b> </p> <p>ライブラリドキュメントでイベントが発生した最後の日付を入力します。</p> <p>サポートされる日付と時刻の形式の一覧については、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> での型強制を参照してください。</p> </li> 
      <li> <p><b>[!UICONTROL Library document status]</b> </p> <p>ライブラリドキュメントのステータスを選択します。</p> </li> 
     </ul> </td> 
@@ -300,33 +300,33 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
      <li> <p><b>[!UICONTROL Web form state]</b> </p> <p>Web フォームを新規作成するステートを選択します。</p> </li> 
      <li> <p><b>[!UICONTROL Web form participant set info]</b> </p> 
       <ul> 
-       <li> <p><b>[!UICONTROL Member info]</b> </p> <p>参加者セットに追加するメンバーごとに、「<b>[!UICONTROL Add item]</b>」をクリックします。 </p> 
+       <li> <p><b>[!UICONTROL Member info]</b> </p> <p>参加者セットに追加する各メンバーに対して、「<b>[!UICONTROL Add item]</b>」をクリックします。 </p> 
         <ul> 
          <li> <p><b>[!UICONTROL Email]</b> </p> <p>このオプションは空白のままにします。</p> </li> 
-         <li> <p><b>[!UICONTROL Security option]</b> </p> <p>このユーザーを認証するためのセキュリティ オプションを追加する場合は、<b>[!UICONTROL Yes]</b> を選択してからセキュリティ オプションを選択し、必要なフィールドに入力してください。</p> </li> 
+         <li> <p><b>[!UICONTROL Security option]</b> </p> <p>このユーザーを認証するセキュリティオプションを追加する場合は、「<b>[!UICONTROL Yes]</b>」、セキュリティオプションの順に選択し、必要なフィールドに入力します。</p> </li> 
         </ul> </li> 
        <li> <p><b>[!UICONTROL Role]</b> </p> <p>役割を選択します。この参加者セットのすべてのメンバーは、その役割を共有します。</p> </li> 
       </ul> </li> 
      <li> <p><b>[!UICONTROL Web form additional participant sets info]</b> </p> 
       <ul> 
-       <li> <p><b>[!UICONTROL Member info]</b> </p> <p>参加者セットに追加するメンバーごとに、「<b>[!UICONTROL Add item]</b>」をクリックします。</p> 
+       <li> <p><b>[!UICONTROL Member info]</b> </p> <p>参加者セットに追加する各メンバーに対して、「<b>[!UICONTROL Add item]</b>」をクリックします。</p> 
         <ul> 
          <li> <p><b>[!UICONTROL Email]</b> </p> <p>このオプションは空白のままにします。</p> </li> 
-         <li> <p><b>[!UICONTROL Security option]</b> </p> <p>このユーザーを認証するためのセキュリティ オプションを追加する場合は、<b>[!UICONTROL Yes]</b> を選択してからセキュリティ オプションを選択し、必要なフィールドに入力してください。</p> </li> 
+         <li> <p><b>[!UICONTROL Security option]</b> </p> <p>このユーザーを認証するセキュリティオプションを追加する場合は、「<b>[!UICONTROL Yes]</b>」、セキュリティオプションの順に選択し、必要なフィールドに入力します。</p> </li> 
         </ul> </li> 
        <li> <p><b>[!UICONTROL Role]</b> </p> </li> 
-       <li> <p><b>[!UICONTROL Web form participant ID] </b> </p> <p>Web フォーム参加者の ID を入力します。</p> </li> 
+       <li> <p><b>[!UICONTROL Web form participant ID]</b> </p> <p>Web フォーム参加者の ID を入力します。</p> </li> 
        <li> <p><b>[!UICONTROL Order]</b> </p> <p>この参加者セットが web フォームを操作する順序を指定します。例えば、順序値が 1 の参加者グループが最初に進む必要があり、2 の参加者グループが次に進む、のように続きます。注文番号は 1 から始まり、連続している必要があります。 </p> </li> 
        <li> <p><b>[!UICONTROL Provider participant set info]</b> </p> <p>参加者が不明な場合は、プロバイダーが参加者の詳細を提供する必要があるかどうかを入力し、不明な参加者に必要な詳細を含むメッセージを入力します。</p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL Authentication failure info]</b> </p> <p>ユーザーにエラーページまたはエラーページを提供する場合は、「<b>[!UICONTROL Yes]</b>」を選択し、次のフィールドに入力します。</p> 
+     <li> <p><b>[!UICONTROL Authentication failure info]</b> </p> <p>ユーザーに失敗ページまたはエラーページを示す場合は、「<b>[!UICONTROL Yes]</b>」を選択して次のフィールドに入力します。</p> 
       <ul> 
        <li> <p><b>[!UICONTROL URL]</b> </p> <p>エラーページの URL を入力します。</p> </li> 
        <li> <p><b>[!UICONTROL Deframe]</b> </p> <p>Web フォーム内にエラーページを表示する場合は、このオプションを有効にします。</p> </li> 
        <li> <p><b>[!UICONTROL Delay]</b> </p> <p>ユーザーがエラーページにリダイレクトされるまでの遅延時間（秒）を入力します。</p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL CC info]</b> </p> <p>Web フォーム上の最終契約の署名時にメールを受信するメールアドレスごとに、「<b>[!UICONTROL Add item]</b>」をクリックしてメールアドレスを入力します。</p> </li> 
-     <li> <p><b>[!UICONTROL Completion info]</b> </p> <p style="font-style: normal;">ユーザーに成功ページを提供する場合は、「<b>[!UICONTROL Yes]</b>」を選択し、次のフィールドに入力します。</p> 
+     <li> <p><b>[!UICONTROL CC info]</b> </p> <p>Web フォームに対する最終契約が署名されたときにメールを受け取るメールアドレスごとに、「<b>[!UICONTROL Add item]</b>」をクリックしてメールアドレスを入力します。</p> </li> 
+     <li> <p><b>[!UICONTROL Completion info]</b> </p> <p style="font-style: normal;">ユーザーに成功ページを示す場合は、「<b>[!UICONTROL Yes]</b>」を選択して次のフィールドに入力します。</p> 
       <ul> 
        <li> <p><b>[!UICONTROL URL]</b> </p> <p>成功ページの URL を入力します。</p> </li> 
        <li> <p><b>[!UICONTROL Deframe]</b> </p> <p>成功ページを web フォーム内に表示する場合は、このオプションを有効にします。</p> </li> 
@@ -335,7 +335,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
      <li> <p><b>[!UICONTROL Group ID]</b> </p> <p>Web フォームが属するグループの ID を入力します。何も入力しなかった場合、web フォームはアカウントユーザーのプライマリグループに属します。</p> </li> 
      <li> <p><b>[!UICONTROL Last event date]</b> </p> <p>Web フォーム上で最後のイベントが発生した日付を入力します。<code>yyyy-MM-dd'T'HH:mm:ssZ</code> の形式を使用します。</p> </li> 
      <li> <p><b>[!UICONTROL Locale]</b> </p> <p>ユーザーのロケールを入力します。これによって、UI の言語が決まります。 </p> </li> 
-     <li> <p><b>[!UICONTROL Security optio]n</b> </p> <p>ドキュメントの保護に使用するパスワードを入力します。このパスワードは、各関係者に個別に伝える必要があります。</p> </li> 
+     <li> <p><b>[!UICONTROL Security option]</b> </p> <p>ドキュメントの保護に使用するパスワードを入力します。このパスワードは、各関係者に個別に伝える必要があります。</p> </li> 
      <li> <p><b>[!UICONTROL Vaulting info]</b> </p> <p>アカウントがドキュメント保管用に設定され、契約ごとに有効にするオプションが設定されている場合、このオプションを有効にしてこの契約を保管できます。</p> </li> 
     </ul> </td> 
   </tr> 
@@ -344,13 +344,13 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
 
 +++
 
-+++ **[!UICONTROL Create an agreement]**
++++ **[!UICONTROL 契約を作成]**
 
 このアクションモジュールは、契約を作成し、署名用に送信し、契約 ID を返します。
 
 >[!NOTE]
 >
->一時的なドキュメントとして署名するドキュメントをアップロードし、[!UICONTROL Create an agreement] モジュールの [!UICONTROL File to send] フィールドにマッピングすることをお勧めします。 例については、この記事の「ドキュメントをアップロード」を参照してください。
+>ドキュメントをアップロードして一時的なドキュメントとして署名し、[!UICONTROL 契約を作成]モジュールの[!UICONTROL 送信するファイル]フィールドにマッピングすることをお勧めします。例については、この記事の「ドキュメントをアップロード」を参照してください。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -365,7 +365,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Files to send]</td> 
-   <td> <p>契約書に含める項目ごとに「<b>[!UICONTROL Add Item]</b>」をクリックし、次のフィールドに入力します。</p> 
+   <td> <p>契約に含める項目ごとに、「<b>[!UICONTROL Add Item]</b>」をクリックして次のフィールドに入力します。</p> 
     <ul> 
      <li> <p><b>[!UICONTROL File Type]</b> </p> 
       <ul> 
@@ -397,9 +397,9 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Participant sets info]</td> 
-   <td> <p>追加する参加者セットごとに「<b>[!UICONTROL Add item]</b>」をクリックし、次のフィールドに入力します。</p> 
+   <td> <p>追加する参加者セットに対して、「<b>[!UICONTROL Add item]</b>」をクリックして、次のフィールドに入力します。</p> 
     <ul> 
-     <li> <p><b>[!UICONTROL Members]</b> </p> <p>参加者セットに追加するユーザーごとに「<b>[!UICONTROL Add item]</b>」をクリックし、そのユーザーのメールアドレスを入力します。</p> </li> 
+     <li> <p><b>[!UICONTROL Members]</b> </p> <p>参加者セットに追加する各ユーザーに対して、「<b>[!UICONTROL Add item]</b>」をクリックして、ユーザーのメールアドレスを入力します。</p> </li> 
      <li> <p><b>[!UICONTROL Order]</b> </p> <p>この参加者セットが契約に署名する順序を指定します。例えば、注文値が 1 の参加者グループは最初に署名し、2 は次に署名する必要があります。注文番号は 1 から始まり、連続している必要があります。 </p> </li> 
      <li> <p><b>[!UICONTROL Role]</b> </p> <p>この参加者セットの役割を選択します。セット内のすべての参加者がこの役割を受け取ります。</p> </li> 
      <li> <p><b>[!UICONTROL ID]</b> </p> <p>この参加者セットの ID を入力またはマッピングします。</p> </li> 
@@ -428,7 +428,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL CCs]</td> 
-   <td> <p>関係者など、署名する必要のない人に対して、この契約を送信できます。署名プロセスの開始時にメールを受信し、最終署名を受信するときにも別のメールを受信します。また、契約書の PDF コピーも受け取ります。 </p> <p>この契約書に対して CC を設定するユーザーごとに、「<b>[!UICONTROL Add item]</b>」をクリックし、次のフィールドに入力します。</p> 
+   <td> <p>関係者など、署名する必要のない人に対して、この契約を送信できます。署名プロセスの開始時にメールを受信し、最終署名を受信するときにも別のメールを受信します。また、契約書の PDF コピーも受け取ります。 </p> <p>この契約を CC 送信する担当者ごとに、「<b>[!UICONTROL Add item]</b>」をクリックして次のフィールドに入力します。</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Email]</b> </p> <p>契約の CC 送信先のメールアドレスを入力またはマッピングします。</p> </li> 
      <li> <p><b>[!UICONTROL Label]</b> </p> <p>ワークフローの説明に示すように、このメールアドレスのラベルを入力またはマッピングします。</p> </li> 
@@ -451,7 +451,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Merge field info]</td> 
-   <td> <p>デフォルト値を設定する免除承諾の各フィールドで「<b>[!UICONTROL Add item]</b>」をクリックし、デフォルト値とフィールド名を入力します。</p> <p>この値は、編集可能フィールドの署名者に表示されます。読み取り専用フィールドの場合、指定された値は署名プロセス中に編集できません。</p> </td> 
+   <td> <p>デフォルト値を設定する契約の各フィールドについて、「<b>[!UICONTROL Add item]</b>」をクリックしてデフォルト値とフィールド名を入力します。</p> <p>この値は、編集可能フィールドの署名者に表示されます。読み取り専用フィールドの場合、指定された値は署名プロセス中に編集できません。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Notary info]</td> 
@@ -469,7 +469,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Post sign option]</td> 
-   <td> <p>契約の署名後に署名者を成功ページに誘導するかどうかを選択します。<b>[!UICONTROL Yes]</b> を選択した場合は、次のフィールドに入力します。</p> 
+   <td> <p>契約の署名後に署名者を成功ページに誘導するかどうかを選択します。「<b>[!UICONTROL Yes]</b>」を選択した場合は、以下のフィールドに入力します。</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Redirect delay]</b> </p> <p>署名者が成功ページにリダイレクトされるまでの秒数を入力またはマッピングします。この値が 0 より大きい場合、最初に標準の [!DNL Adobe Sign] の成功メッセージが表示され、そのしばらく後に所定の成功ページにリダイレクトされます。</p> </li> 
      <li> <p><b>[!UICONTROL Redirect URL]</b> </p> <p>署名プロセスが正常に完了した後にユーザーに表示される、一般にアクセス可能な URL を入力またはマッピングします。</p> </li> 
@@ -488,7 +488,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
 
 +++
 
-+++ **[!UICONTROL Create related records]**
++++ **[!UICONTROL 関連レコードを作成]**
 
 このアクションモジュールは、選択したモジュールにリンクされたレコードを作成します。
 
@@ -509,7 +509,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
    <td>作成したレコードを関連付ける、元のレコードのレコードタイプを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Agreement]/[!UICONTROL Library document]/[!UICONTROL User]/[!UICONTROL Widget ID]</td> 
+   <td role="rowheader">[!UICONTROL Agreement]／[!UICONTROL Library document]/[!UICONTROL User]／[!UICONTROL Widget ID]</td> 
    <td>作成したレコードを関連付けるオブジェクトの ID を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
@@ -519,12 +519,12 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
      <li> <p><b>[!UICONTROL Form fields]</b> </p> <p>作成するフィールドが含まれるテンプレートのテンプレート ID を入力します。</p> </li> 
      <li> <p><b>[!UICONTROL Reminders]</b> </p> <p>次のフィールドに入力します。</p> 
       <ul> 
-       <li> <p><b>[!UICONTROL Recipient participant ID]</b> </p> <p>リマインダーを受け取る参加者ごとに「[!UICONTROL Add item]」をクリックし、その参加者の ID を入力します。</p> </li> 
-       <li> <p><b>[!UICONTROL Status]</b> </p> <p>新しいレコードの場合、ステータスは [!UICONTROL Active] にする必要があります。</p> </li> 
+       <li> <p><b>[!UICONTROL Recipient participant ID]</b> </p> <p>リマインダーを受け取る参加者ごとに、「[!UICONTROL Add item]」をクリックして、参加者の ID を入力します。</p> </li> 
+       <li> <p><b>[!UICONTROL Status]</b> </p> <p>新しいレコードの場合、ステータスは「[!UICONTROL Active]」である必要があります。</p> </li> 
        <li> <p><b>[!UICONTROL First reminder delay]</b> </p> <p>最初のリマインダーを送信するまでの遅延時間を時間単位で入力します。許可される最小値は 1 時間で、最大値は契約の作成時間と有効期限の時間単位の差を超えることはできません。この遅延を設定しない場合、最初のリマインダーは頻度に基づいて行われます。</p> </li> 
        <li> <p><b>[!UICONTROL Reminder frequency]</b> </p> <p>リマインダーを送信する頻度を設定します。頻度を指定しない場合、リマインダーは 1 回だけ送信されます。</p> </li> 
        <li> <p><b>[!UICONTROL Last sent date]</b> </p> <p>このフィールドはシステムによって設定されます。</p> </li> 
-       <li> <p><b>[!UICONTROL Next sent date]</b> </p> <p>このフィールドは空白にするか、[!UICONTROL ONCE] に設定する必要があります。</p> </li> 
+       <li> <p><b>[!UICONTROL Next sent date]</b> </p> <p>このフィールドは空白にするか、[!UICONTROL ONCE]に設定する必要があります。</p> </li> 
        <li> <p><b>[!UICONTROL Note]</b> </p> <p>リマインダーに含めるメモを入力します。参加が必要な理由を参加者に伝えるのに役立ちます。</p> </li> 
        <li> <p><b>[!UICONTROL Start reminder counter from]</b> </p> <p>リマインダーを送信するタイミングを、使用可能になった時点で契約が作成されるタイミングに基づいて選択します。</p> </li> 
       </ul> </li> 
@@ -532,21 +532,21 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
      <li> <p><b>[!UICONTROL Views]</b> </p> <p>次のフィールドを入力します。</p> 
       <ul> 
        <li> <p><b>[!UICONTROL Name]</b> </p> <p>作成するビューの名前を選択します。</p> </li> 
-       <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p><b>[!UICONTROL Yes]</b> を選択すると、返された URL にユーザーが自動的にログインします。</p> </li> 
+       <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>「<b>[!UICONTROL Yes]</b>」を選択すると、返された URL にユーザーが自動的にログインします。</p> </li> 
        <li> <p><b>[!UICONTROL Frame Parent]</b> </p> <p>返された URL を iFrame で表示する親ドメイン URL のコンマ区切りのリストを入力またはマッピングします。空白の場合、[!DNL Adobe Acrobat Sign] ページを iFrame で表示できません。</p> </li> 
        <li> <p><b>[!UICONTROL Locale]</b> </p> <p>ビューを作成する言語を入力します。 </p> </li> 
-       <li> <p><b>[!UICONTROL No chrome flag]</b> </p> <p>ナビゲーションのヘッダーやフッターを含まない埋め込みページを表示する場合は、「<b>[!UICONTROL Yes]</b>」を選択します。</p> </li> 
-       <li> <p><b>[!UICONTROL Can edit files]</b> </p> <p>ファイルを追加または削除してファイルのアップロードセクションを編集する場合は、「<b>[!UICONTROL Yes]</b>」を選択します。 これはアクセス制御メカニズムではありません。デフォルトは [!UICONTROL Yes] です。</p> </li> 
-       <li> <p><b>[!UICONTROL Library document]</b> </p> <p>ライブラリドキュメントリンクを表示する場合は、「<b>[!UICONTROL Yes]</b>」を選択します。 デフォルトは [!UICONTROL Yes] です。</p> </li> 
-       <li> <p><b>[!UICONTROL Local file]</b> </p> <p>ローカルファイルのアップロードボタンを表示する場合は、「<b>[!UICONTROL Yes]</b>」を選択します。 デフォルトは [!UICONTROL Yes] です。</p> </li> 
-       <li> <p><b>[!UICONTROL Web connectors]</b> </p> <p>Web ソースからドキュメントに添付するリンクを表示する場合は、「<b>[!UICONTROL Yes]</b>」を選択します。 デフォルトは「Yes」です。</p> </li> 
-       <li> <p><b>[!UICONTROL Is preview selected]</b> </p> <p>「<b>[!UICONTROL Yes]</b>」を選択して、作成ページをオーサリングモードに設定します。</p> </li> 
+       <li> <p><b>[!UICONTROL No chrome flag]</b> </p> <p>「<b>[!UICONTROL Yes]</b>」を選択すると、ナビゲーションのヘッダーやフッターを含めずに埋め込みページを表示します。</p> </li> 
+       <li> <p><b>[!UICONTROL Can edit files]</b> </p> <p>「<b>[!UICONTROL Yes]</b>」を選択すると、ファイルを追加または削除してファイルのアップロードセクションを編集できます。これはアクセス制御メカニズムではありません。デフォルト値は「[!UICONTROL Yes]」です。</p> </li> 
+       <li> <p><b>[!UICONTROL Library document]</b> </p> <p>ライブラリドキュメントのリンクを表示する場合は、「<b>[!UICONTROL Yes]</b>」を選択します。デフォルト値は「[!UICONTROL Yes]」です。</p> </li> 
+       <li> <p><b>[!UICONTROL Local file]</b> </p> <p>ローカルファイルのアップロードボタンを表示する場合は、「<b>[!UICONTROL Yes]</b>」を選択します。デフォルト値は「[!UICONTROL Yes]」です。</p> </li> 
+       <li> <p><b>[!UICONTROL Web connectors]</b> </p> <p>Web ソースのドキュメントを添付するリンクを表示する場合は、「<b>[!UICONTROL Yes]</b>」を選択します。デフォルトは「Yes」です。</p> </li> 
+       <li> <p><b>[!UICONTROL Is preview selected]</b> </p> <p>作成ページをオーサリングモードに設定する場合は、「<b>[!UICONTROL Yes]</b>」を選択します。</p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL Member share]</b> </p> <p>契約書を共有するメンバーごとに「<b>[!UICONTROL Add item]</b>」をクリックし、メンバーのメールアドレスとそのメンバーへのメッセージを入力します。</p> </li> 
+     <li> <p><b>[!UICONTROL Member share]</b> </p> <p>契約を共有するメンバーごとに「<b>[!UICONTROL Add item]</b>」をクリックし、メンバーのメールアドレスと、そのメンバーへのメッセージを入力します。</p> </li> 
      <li> <p>[!UICONTROL Delegate participant set]</p> 
       <ul> 
        <li> <p><b>[!UICONTROL Participant set ID]</b> </p> <p>参加者セットの ID を入力します。</p> </li> 
-       <li> <p><b>[!UICONTROL Member info]</b> </p> <p>追加するメンバーごとに「[!UICONTROL Add item]」をクリックし、メンバーの電子メールアドレスと電話情報を入力します。</p> </li> 
+       <li> <p><b>[!UICONTROL Member info]</b> </p> <p>追加するメンバーごとに「[!UICONTROL Add item]」をクリックし、そのメンバーのメールアドレスと電話番号を入力します。</p> </li> 
        <li> <p><b>[!UICONTROL Private message]</b> </p> <p>メッセージを入力します。このメッセージは、参加者セットのすべてのメンバーが受け取ります。</p> </li> 
       </ul> </li> 
     </ul> </td> 
@@ -556,17 +556,17 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
    <td> <p>次のフィールドに入力します。</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Name]</b> </p> <p>ライブラリテンプレートの名前を入力します。この名前はメールや web サイトで使用されます。</p> </li> 
-     <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p><b>[!UICONTROL Yes]</b> を選択すると、返された URL にユーザーが自動的にログインします。</p> </li> 
+     <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>「<b>[!UICONTROL Yes]</b>」を選択すると、返された URL にユーザーが自動的にログインします。</p> </li> 
      <li> <p><b>[!UICONTROL Frame parent]</b> </p> <p>返された URL を iFrame で表示する親ドメイン URL のコンマ区切りのリストを入力またはマッピングします。空白の場合、[!DNL Adobe Acrobat Sign] ページを iFrame で表示できません。</p> </li> 
      <li> <p><b>[!UICONTROL Locale]</b> </p> <p>ビューを作成する言語を入力します。 </p> </li> 
-     <li> <p><b>[!UICONTROL No chrome flag]</b> </p> <p>ナビゲーションのヘッダーやフッターを含まない埋め込みページを表示する場合は、「<b>[!UICONTROL Yes]</b>」を選択します。</p> </li> 
-     <li> <p><b>[!UICONTROL Send view configuration]</b> </p> <p>[!UICONTROL Send] ビューを設定する場合は「<b>[!UICONTROL Yes]</b>」を選択し、次のフィールドに入力します。</p> 
+     <li> <p><b>[!UICONTROL No chrome flag]</b> </p> <p>「<b>[!UICONTROL Yes]</b>」を選択すると、ナビゲーションのヘッダーやフッターを含めずに埋め込みページを表示します。</p> </li> 
+     <li> <p><b>[!UICONTROL Send view configuration]</b> </p> <p>[!UICONTROL Send] ビューを設定する場合は、「<b>[!UICONTROL Yes]</b>」を選択して、次のフィールドに入力します。</p> 
       <ul> 
        <li> <p><b>[!UICONTROL Agreement name]</b> </p> <p>作成ページでライブラリドキュメントの契約名を入力またはマッピングします。</p> </li> 
-       <li> <p><b>[!UICONTROL Can edit files]</b> </p> <p>ファイルを追加または削除してファイルのアップロードセクションを編集する場合は、「<b>[!UICONTROL Yes]</b>」を選択します。 これはアクセス制御メカニズムではありません。デフォルトは [!UICONTROL Yes] です。</p> </li> 
-       <li> <p><b>[!UICONTROL Local file]</b> </p> <p>ライブラリドキュメントリンクを表示する場合は、「<b>[!UICONTROL Yes]</b>」を選択します。 デフォルトは [!UICONTROL Yes] です。</p> </li> 
-       <li> <p><b>[!UICONTROL Web connectors]</b> </p> <p>Web ソースからドキュメントに添付するリンクを表示する場合は、「<b>[!UICONTROL Yes]</b>」を選択します。 デフォルトは [!UICONTROL Yes] です。</p> </li> 
-       <li> <p><b>プレビューを選択済み</b> </p> <p>「<b>[!UICONTROL Yes]</b>」を選択して、作成ページをオーサリングモードに設定します。</p> </li> 
+       <li> <p><b>[!UICONTROL Can edit files]</b> </p> <p>「<b>[!UICONTROL Yes]</b>」を選択すると、ファイルを追加または削除してファイルのアップロードセクションを編集できます。これはアクセス制御メカニズムではありません。デフォルト値は「[!UICONTROL Yes]」です。</p> </li> 
+       <li> <p><b>[!UICONTROL Local file]</b> </p> <p>ライブラリドキュメントのリンクを表示する場合は、「<b>[!UICONTROL Yes]</b>」を選択します。デフォルト値は「[!UICONTROL Yes]」です。</p> </li> 
+       <li> <p><b>[!UICONTROL Web connectors]</b> </p> <p>Web ソースのドキュメントを添付するリンクを表示する場合は、「<b>[!UICONTROL Yes]</b>」を選択します。デフォルト値は「[!UICONTROL Yes]」です。</p> </li> 
+       <li> <p><b>プレビューを選択済み</b> </p> <p>作成ページをオーサリングモードに設定する場合は、「<b>[!UICONTROL Yes]</b>」を選択します。</p> </li> 
       </ul> <p> </p> </li> 
     </ul> </td> 
   </tr> 
@@ -575,9 +575,9 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
    <td> <p>次のフィールドに入力します。</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Name]</b> </p> <p>リクエストされるユーザービューの名前を選択します。</p> </li> 
-     <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>ユーザーを自動的にログインするには、「<b>[!UICONTROL Yes]</b>」を選択します。 資格情報を要求するには、「<b>[!UICONTROL No]</b>」を選択します。 デフォルトは [!UICONTROL No] です。</p> </li> 
+     <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>「<b>[!UICONTROL Yes]</b>」を選択すると、ユーザーが自動的にログインします。資格情報が必要な場合は、「<b>[!UICONTROL No]</b>」を選択します。デフォルト値は「[!UICONTROL No]」です。</p> </li> 
      <li> <p><b>[!UICONTROL Frame parent]</b> </p> <p>返された URL を iFrame で表示する親ドメイン URL のコンマ区切りのリストを入力またはマッピングします。空白の場合、[!DNL Adobe Acrobat Sign] ページを iFrame で表示できません。</p> </li> 
-     <li> <p><b>クロムフラグなし</b> </p> <p>ナビゲーションのヘッダーやフッターを含まない埋め込みページを表示する場合は、「<b>[!UICONTROL Yes]</b>」を選択します。</p> </li> 
+     <li> <p><b>クロムフラグなし</b> </p> <p>「<b>[!UICONTROL Yes]</b>」を選択すると、ナビゲーションのヘッダーやフッターを含めずに埋め込みページを表示します。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -587,19 +587,19 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
      <li> <p>[!UICONTROL Views]</p> <p>次のフィールドに入力します。</p> 
       <ul> 
        <li> <p><b>[!UICONTROL Name]</b> </p> <p>リクエストされる web フォームビューの名前を選択します。</p> </li> 
-       <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>ユーザーを自動的にログインするには、「<b>[!UICONTROL Yes]</b>」を選択します。 資格情報を要求するには、「<b>[!UICONTROL No]</b>」を選択します。 デフォルトは [!UICONTROL No] です。</p> </li> 
+       <li> <p><b>[!UICONTROL Auto login user]</b> </p> <p>「<b>[!UICONTROL Yes]</b>」を選択すると、ユーザーが自動的にログインします。資格情報が必要な場合は、「<b>[!UICONTROL No]</b>」を選択します。デフォルト値は「[!UICONTROL No]」です。</p> </li> 
        <li> <p><b>[!UICONTROL Frame parent]</b> </p> <p>返された URL を iFrame で表示する親ドメイン URL のコンマ区切りのリストを入力またはマッピングします。空白の場合、[!DNL Adobe Acrobat Sign] ページを iFrame で表示できません。</p> </li> 
        <li> <p><b>[!UICONTROL Locale]</b> </p> <p>ビューを作成する言語を入力します。 </p> </li> 
-       <li> <p><b>[!UICONTROL No chrome flag]</b> </p> <p>ナビゲーションのヘッダーやフッターを含まない埋め込みページを表示する場合は、「<b>[!UICONTROL Yes]</b>」を選択します。</p> </li> 
-       <li> <p>[!UICONTROL Personalized signing view configuration]</p> <p>パーソナライズされた署名ビューを設定する場合は、「<b>[!UICONTROL Yes]</b>」を選択し、次のフィールドに入力します。</p> 
+       <li> <p><b>[!UICONTROL No chrome flag]</b> </p> <p>「<b>[!UICONTROL Yes]</b>」を選択すると、ナビゲーションのヘッダーやフッターを含めずに埋め込みページを表示します。</p> </li> 
+       <li> <p>[!UICONTROL Personalized signing view configuration]</p> <p>パーソナライズした署名ビューを設定する場合は、「<b>[!UICONTROL Yes]</b>」を選択して次のフィールドに入力します。</p> 
         <ul> 
          <li> <p><b>[!UICONTROL Email]</b> </p> <p>新しく作成された web フォームを受け取るユーザーのメールアドレスを入力します。</p> </li> 
          <li> <p><b>[!UICONTROL Comment]</b> </p> <p>API 呼び出し元が署名者の ID を確立する方法を説明するコメントを入力します。この情報は、[!DNL Adobe Acrobat Sign] 監査証跡に表示されます。</p> </li> 
          <li> <p><b>[!UICONTROL Expiration]</b> </p> <p>この web フォームのパーソナライズ機能の有効期限を入力します。 </p> <p>サポートされる日付と時刻の形式の一覧については、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]</a> での型強制を参照してください。</p> </li> 
-         <li> <p><b>[!UICONTROL Reusable]</b> </p> <p>対象の署名者がフォームに複数回署名できるようにする場合は、「<b>[!UICONTROL Yes]</b>」を選択します。</p> </li> 
+         <li> <p><b>[!UICONTROL Reusable]</b> </p> <p>対象の署名者が複数回フォームに署名できるようにする場合は、「<b>[!UICONTROL Yes]</b>」を選択します。</p> </li> 
         </ul> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL Member share]</b> </p> <p>契約書を共有するメンバーごとに「<b>[!UICONTROL Add item]</b>」をクリックし、メンバーのメールアドレスとそのメンバーへのメッセージを入力します。</p> </li> 
+     <li> <p><b>[!UICONTROL Member share]</b> </p> <p>契約を共有するメンバーごとに「<b>[!UICONTROL Add item]</b>」をクリックして、メンバーのメールアドレスと、そのメンバーへのメッセージを入力します。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -607,8 +607,8 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
 
 +++
 
-+++ **[!UICONTROL Custom API Call]**
-このモジュールを使用すると、カスタム API 呼び出しを実行できます。
++++ **[!UICONTROL カスタム API 呼び出し]**
+このモジュールでは、カスタム API 呼び出しを実行できます。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -636,7 +636,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件文を JSON で使用する場合は、条件文を引用符で囲みます。</p> 
+   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件ステートメントを JSON で使用する場合は、条件ステートメントの外側に引用符を挿入します。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -650,7 +650,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
 
 +++
 
-+++ **[!UICONTROL List records]**
++++ **[!UICONTROL レコードをリスト]**
 
 このアクションモジュールは、アカウントがアクセスできる選択したタイプのすべてのレコードをリスト表示します。
 
@@ -687,12 +687,12 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
    <td>結果に非表示のレコードを含める場合は、このオプションを有効にします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Cursor] / [!UICONTROL Start index]</td> 
-   <td> <p>モジュールが返す最初のレコードの数を入力します。 </p> <p>メモ：このフィールドは、ページネーションの [!UICONTROL Maximum number of returned records] フィールドと組み合わされます。 例えば、[!UICONTROL Maximum number of returned events] が 100 で、[!UICONTROL Start index] が 101 の場合、モジュールはレコード 101 ～ 200 を返し、つまり結果の 2 ページ目を返します。</p> </td> 
+   <td role="rowheader">[!UICONTROL Cursor]／[!UICONTROL Start index]</td> 
+   <td> <p>モジュールが返す最初のレコードの数を入力します。 </p> <p>メモ：このフィールドは、ページネーション用に [!UICONTROL Maximum number of returned records] フィールドと組み合わせることができます。例えば、[!UICONTROL Maximum number of returned events] が 100 で、[!UICONTROL Start index] が 101 の場合、モジュールは 101～200 個のレコード、または結果の 2 ページ目を返します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned records]</td> 
-   <td> <p>各シナリオ実行サイクルでモジュールに実行させる「アクション」の対象となるレコードの最大数を入力またはマッピングします。</p> <p>メモ：このフィールドは、ページネーションの [!UICONTROL Cursor] または [!UICONTROL Start Index] フィールドと組み合わされます。 例えば、[!UICONTROL Maximum number of returned events] が 100 で、[!UICONTROL Start index] が 101 の場合、モジュールはレコード 101 ～ 200 を返し、つまり結果の 2 ページ目を返します。</p> </td> 
+   <td> <p>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</p> <p>メモ：このフィールドは、ページネーション用に [!UICONTROL Cursor] フィールドまたは [!UICONTROL Start Index] フィールドと組み合わせることができます。例えば、[!UICONTROL Maximum number of returned events] が 100 で、[!UICONTROL Start index] が 101 の場合、モジュールは 101～200 個のレコード、または結果の 2 ページ目を返します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Parent domain URLs]</td> 
@@ -703,7 +703,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
 
 +++
 
-+++ **[!UICONTROL Read a record]**
++++ **[!UICONTROL レコードを読み取り]**
 
 このアクションモジュールは、1 つのレコードから情報を取得します。
 
@@ -732,7 +732,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
 
 +++
 
-+++ **[!UICONTROL Read related records]**
++++ **[!UICONTROL 関連レコードを読み取り]**
 
 1 つのレコードに関する追加情報を読み取ります。
 
@@ -753,7 +753,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
    <td>関連レコードを取得するレコードのタイプを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record ID] （例：[!UICONTROL Account ID]）</td> 
+   <td role="rowheader">[!UICONTROL Record ID]（例：[!UICONTROL Account ID]）</td> 
    <td>関連レコードを取得するレコードの ID を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
@@ -765,7 +765,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
 
 +++
 
-+++ **[!UICONTROL Update a record]**
++++ **[!UICONTROL レコードを更新]**
 
 このアクションモジュールは、[!DNL Adobe Acrobat Sign] 内の 1 つのレコードを更新します。
 
@@ -807,7 +807,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
        <li> <p><b>[!UICONTROL Status]</b> </p> <p>ライブラリドキュメントの新しいステータスを選択します。</p> </li> 
        <li> <p><b>[!UICONTROL Name]</b> </p> <p>ライブラリテンプレートの名前を入力またはマッピング</p> </li> 
        <li> <p><b>[!UICONTROL Sharing mode]</b> </p> <p>ライブラリドキュメントへのアクセス権を持つユーザーを指定します。</p> </li> 
-       <li> <p><b>[!UICONTROL Library template type]</b> </p> <p>使用するライブラリ テンプレートの種類ごとに [<b>[!UICONTROL Add item]</b>] をクリックし、テンプレートの種類を選択します。</p> </li> 
+       <li> <p><b>[!UICONTROL Library template type]</b> </p> <p>使用するライブラリテンプレートタイプごとに、「<b>[!UICONTROL Add item]</b>」をクリックし、テンプレートタイプを選択します。</p> </li> 
       </ul> </li> 
      <li> <p><b>[!UICONTROL User]</b> </p> <p>更新するフィールドを選択し、選択したフィールドに入力します。</p> 
       <ul> 
@@ -818,7 +818,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
        <li> <p><b>[!UICONTROL Primary group ID]</b> </p> <p>新しいユーザーを追加するグループを入力します。何も入力しなかった場合、ユーザーはアカウントのデフォルトのグループに追加されます。</p> </li> 
        <li> <p><b>[!UICONTROL Job title]</b> </p> <p>ユーザーの職位を入力します。</p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL Web form] ([!UICONTROL widget])</b> </p> <p>レコードタイプおよび関連するフィールドに基づいて、特定のフィールドに情報を入力します。</p> </li> 
+     <li> <p><b>[!UICONTROL Web form]（[!UICONTROL widget]）</b> </p> <p>レコードタイプおよび関連するフィールドに基づいて、特定のフィールドに情報を入力します。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -826,7 +826,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
 
 +++
 
-+++ **[!UICONTROL Update related record]**
++++ **[!UICONTROL 関連レコードを更新]**
 
 このアクションモジュールは、特定のオブジェクトに関連するレコードを更新します。
 
@@ -855,7 +855,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
    <td>関連するフィールドが関連付けられているレコードのレコードタイプを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Agreement]/[!UICONTROL Library document]/[!UICONTROL User]/[!UICONTROL Widget ID]</td> 
+   <td role="rowheader">[!UICONTROL Agreement]／[!UICONTROL Library document]/[!UICONTROL User]／[!UICONTROL Widget ID]</td> 
    <td>作成したレコードを関連付けるオブジェクトの ID を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
@@ -875,9 +875,9 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
         <ul> 
          <li> <p><b>[!UICONTROL Status]</b> </p> <p>ユーザーの新しいステータスを選択します。</p> </li> 
          <li> <p><b>[!UICONTROL ID]</b> </p> <p>グループの一意の ID を入力</p> </li> 
-         <li> <p><b>[!UICONTROL Is group admin]</b> </p> <p>このユーザーをグループ管理者にするには、[<b>[!UICONTROL Yes]</b>] を選択します。</p> </li> 
-         <li> <p><b>プライマリグループです</b> </p> <p><b>[!UICONTROL Yes]</b> を選択して、このグループをユーザーのプライマリグループに更新します。</p> </li> 
-         <li> <p><b>[!UICONTROL Created date]</b> </p> <p>グループの作成日を入力します。</p> <p>サポートされる日付と時刻の形式の一覧については、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">型強制：[!UICONTROL Adobe Workfront Fusion]</a> を参照してください。</p> </li> 
+         <li> <p><b>[!UICONTROL Is group admin]</b> </p> <p>「<b>[!UICONTROL Yes]</b>」を選択して、このユーザーをグループ管理者にします。</p> </li> 
+         <li> <p><b>プライマリグループです</b> </p> <p>「<b>[!UICONTROL Yes]</b>」を選択して、このグループをユーザーのプライマリグループにアップデートします。</p> </li> 
+         <li> <p><b>[!UICONTROL Created date]</b> </p> <p>グループの作成日を入力します。</p> <p>サポートされる日付と時刻の形式のリストについては、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">[!UICONTROL Adobe Workfront Fusion] での型強制</a>を参照してください。</p> </li> 
          <li> <p><b>[!UICONTROL Name]</b> </p> <p>グループの名前を入力またはマッピングします。</p> </li> 
          <li> <p><b>[!UICONTROL Library document creation visible]</b> </p> <p>これらの設定は、ユーザーがライブラリドキュメントを作成できるかどうかを決定します</p> 
           <ul> 
@@ -900,7 +900,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
        <li> <p><b>[!UICONTROL State]</b> </p> <p>ユーザーの新しい状態を選択し、ユーザーをアクティブ化または非アクティブ化する理由に関するコメントを入力します。</p> </li> 
        <li> <p><b>[!UICONTROL Locale]</b> </p> <p>ユーザーのロケールを入力します。これによって、UI の言語が決まります。 </p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL Web form] ([!UICONTROL widget])</b> </p> <p>レコードタイプおよび関連するフィールドに基づいて、特定のフィールドに情報を入力します。</p> </li> 
+     <li> <p><b>[!UICONTROL Web form]（[!UICONTROL widget]）</b> </p> <p>レコードタイプおよび関連するフィールドに基づいて、特定のフィールドに情報を入力します。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -908,7 +908,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
 
 +++
 
-+++ **[!UICONTROL Upload document]**
++++ **[!UICONTROL ドキュメントをアップロード]**
 
 一時的なドキュメントをアップロードします。一時的なドキュメントは、アップロード後 7 日間使用できます。
 
@@ -943,7 +943,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
 
 （/help/workfront-fusion/references/apps-and-modules/assets/sign-example-1-350x308.png）
 
-[!UICONTROL Upload document] モジュールは、後のモジュールで参照できる [!DNL Adobe Acrobat Sign] ID をドキュメントに与えます。 契約書を作成する際に、アップロードされたドキュメントの ID が「[!UICONTROL Files to send]」フィールドに含まれます。
+[!UICONTROL ドキュメントをアップロード]モジュールは、後のモジュールで参照できる [!DNL Adobe Acrobat Sign] ID をドキュメントに与えます。契約が作成されると、アップロードされたドキュメントの ID が「[!UICONTROL 送信するファイル]」フィールドに含まれます。
 
 ![Sign の例 ](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-2-350x356.png)
 
@@ -951,7 +951,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
 
 ### 検索
 
-+++ **[!UICONTROL Search agreements]**
++++ **[!UICONTROL 契約を検索]**
 
 この検索モジュールは、指定した基準に基づいて契約を検索します。
 
@@ -1016,7 +1016,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
    <td>モジュールで結果を並べ替える場合は、結果の並べ替えに使用するフィールドを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Sort orde]r</td> 
+   <td role="rowheader">[!UICONTROL Sort order]</td> 
    <td>モジュールで結果を並べ替える場合は、昇順と降順のどちらで並べ替えるかを選択します。</td> 
   </tr> 
   <tr> 
@@ -1041,11 +1041,11 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Start index]</td> 
-   <td> <p>返す最初の結果の位置を入力します。これを [!UICONTROL maximum returned results] と組み合わせて結果をページ分割します</p> <p>例：一度に 100 個の結果を返す場合は、100 と入力して 100～200 個の結果を返します。</p> </td> 
+   <td> <p>返す最初の結果の位置を入力します。これを [!UICONTROL maximum returned results] と組み合わせて、結果にページ番号を付けます。</p> <p>例：一度に 100 個の結果を返す場合は、100 と入力して 100～200 個の結果を返します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned results]</td> 
-   <td> <p>各シナリオ実行サイクルでモジュールに実行させる「アクション」の対象となるレコードの最大数を入力またはマッピングします。</p> </td> 
+   <td> <p>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>

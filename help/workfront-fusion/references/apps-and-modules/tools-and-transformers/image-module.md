@@ -4,65 +4,108 @@ description: Adobe Workfront Fusion 画像モジュールを使用すると、�
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: a7696c9d-002d-4bb4-ae10-1f69dc5e66fe
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3834bb9c7f07e0097783c44558fd656d455337b4
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 81%
+source-wordcount: '743'
+ht-degree: 79%
 
 ---
 
 # 画像モジュール
 
-[!UICONTROL Image] モジュールを使用する [!DNL Adobe Workfront Fusion]、特定の画像（サイズや種類など）に関する情報を取得したり、画像を別のファイル形式に変換したり、画像のサイズを直接変更したりできます。
+[!DNL Adobe Workfront Fusion] [!UICONTROL 画像]モジュールを使用すると、特定の画像に関する情報（サイズ、タイプなど）を取得し、画像を別のファイル形式に変換し、画像のサイズを直接変更できます。
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
-   <p>または</p>
-   <p>レガシーライセンス要件：[!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration], [!UICONTROL [!DNL Workfront Fusion] for Work Automation]</p>
+   <p>Workfront Fusion のライセンス要件はありません。</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
+  </tr>
+ </tbody> 
+</table>
+
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+
+[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+
++++
+
+## [!UICONTROL 画像]モジュールとそのフィールド
+
+このモジュールを設定する際には、次のフィールドが表示されます。モジュール内の太字のタイトルは、必須フィールドを示します。
+
+* [[!UICONTROL 形式の変換]](#convert-a-format)
+* [[!UICONTROL メタデータの抽出]](#extract-metadata)
+* [[!UICONTROL サイズ変更]](#resize)
+
+### [!UICONTROL 形式の変換]
+
+この変換モジュールは、画像ファイルの形式を変更します。このモジュールは、以下の形式と互換性があります。
+
+* PNG
+* JPG
+* GIF
+* BMP
+
+ソースファイルと出力の両方が、これらのいずれかの形式である必要があります。例えば、[!UICONTROL 画像]／[!UICONTROL 形式を変換]するモジュールは、PNG ファイルを BMP ファイルに、または BMP を JPG に変換できます。
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Output format]</td> 
+   <td>モジュールでソースファイルを変換する形式を選択します。 </td> 
   </tr> 
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+### [!UICONTROL メタデータの抽出]
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+この変換モジュールは、モジュールに関する基本情報を返します。
 
-## [!UICONTROL Image] モジュールとそのフィールド
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
-このモジュールを設定する際には、次のフィールドが表示されます。モジュール内の太字のタイトルは、必須フィールドを示します。
-
-* [[!UICONTROL Resize]](#resize)
-* [[!UICONTROL Convert a format]](#convert-a-format)
-* [[!UICONTROL Extract metadata]](#extract-metadata)
-
-### [!UICONTROL Resize]
+### [!UICONTROL サイズ変更]
 
 この変換モジュールは、指定した条件に従って画像の高さと幅を変更します。
 
@@ -72,15 +115,7 @@ ht-degree: 81%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p>変換する画像のソースを選択します。前のモジュールから出力を選択するか、データファイルとファイル名をマッピングできます。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Data]</td> 
-   <td>変換するファイルをマッピングします。このフィールドは、「[!UICONTROL Source file]」フィールドで「[!UICONTROL Map]」を選択した場合に使用できます。</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL File name]</td> 
-   <td>変換ファイルの名前を入力します。このフィールドは、「[!UICONTROL Source file]」フィールドで「[!UICONTROL Map]」を選択した場合に使用できます。</td> 
+   <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL I want to]</td> 
@@ -107,72 +142,19 @@ ht-degree: 81%
    <td role="rowheader">[!UICONTROL Height]</td> 
    <td>サイズ変更した画像の希望の高さをピクセル単位で入力またはマッピングします。</td> 
   </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Convert a format]
-
-この変換モジュールは、画像ファイルの形式を変更します。このモジュールは、以下の形式と互換性があります。
-
-* PNG
-* JPG
-* GIF
-* BMP
-
-ソースファイルと出力の両方が、これらのいずれかの形式である必要があります。例えば、[!UICONTROL Image] >[!UICONTROL Convert a format] モジュールを使用すると、PNG ファイルを BMP ファイルに、または BMP をJPGに変換できます。
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p>変換する画像のソースを選択します。前のモジュールから出力を選択するか、データファイルとファイル名をマッピングできます。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Data]</td> 
-   <td>変換するファイルをマッピングします。このフィールドは、「[!UICONTROL Source file]」フィールドで「[!UICONTROL Map]」を選択した場合に使用できます。</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL File name]</td> 
-   <td>変換ファイルの名前を入力します。このフィールドは、「[!UICONTROL Source file]」フィールドで「[!UICONTROL Map]」を選択した場合に使用できます。</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Output format]</td> 
-   <td>モジュールでソースファイルを変換する形式を選択します。 </td> 
+   <td role="rowheader">[!UICONTROL 変更率 ]</td> 
+   <td>画像の変更率をパーセントで指定した場合は、画像の変更率を入力またはマップします。</td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Extract metadata]
-
-この変換モジュールは、モジュールに関する基本情報を返します。
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p>変換する画像のソースを選択します。前のモジュールから出力を選択するか、データファイルとファイル名をマッピングできます。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Data]</td> 
-   <td>変換するファイルをマッピングします。このフィールドは、「[!UICONTROL Source file]」フィールドで「マップ」を選択した場合に使用できます。</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL File name]</td> 
-   <td>変換ファイルの名前を入力します。このフィールドは、「[!UICONTROL Source file]」フィールドで「マップ」を選択した場合に使用できます。</td> 
-  </tr> 
- </tbody> 
-</table>
-
-## 考えられる問題
+## トラブルシューティング
 
 ### エラーによりアクションが終了しました
 
-エラーでアクションが終了する場合は、次の 3 つの場合があります。
+アクションは、次のいずれかの原因により、エラーで終了することがあります。
 
-* 受信したデータが JPG、GIF、PNG、BMP の形式ではありません
-* 画像の寸法を変更する際に、幅や高さの上限を超えました。画像サイズは、幅 3840 ピクセルと高さ 2160 ピクセルを超えないようにする必要があります
-* 画像のサイズまたは形式を変更する際に、画像の最大許容サイズを超えました。
+* 受信したデータがJPG/GIF/PNG/BMP 形式ではない
+* 画像のサイズを変更中に、幅/高さの上限を超えました。 画像サイズは、幅 3840 ピクセルと高さ 2160 ピクセルを超えないようにする必要があります
+* 画像のサイズまたは形式の変更中に、画像の最大許容サイズを超えました。
