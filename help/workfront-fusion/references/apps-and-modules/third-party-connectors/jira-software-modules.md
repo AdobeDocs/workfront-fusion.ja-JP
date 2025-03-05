@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Jir
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: d4187aff574ceaf4d27112fc2ce8880421e77d0d
 workflow-type: tm+mt
-source-wordcount: '1883'
-ht-degree: 72%
+source-wordcount: '2208'
+ht-degree: 80%
 
 ---
 
@@ -110,7 +110,7 @@ Jira コネクタでは、以下を使用します。
 
 [!DNL Jira Cloud] を [!DNL Workfront Fusion] に接続
 
-[!DNL Jira Software] を [!DNL Workfront Fusion] に接続するには、API トークンを作成し、それをサービス URL およびユーザー名と共に [!DNL Workfront Fusion] の [!UICONTROL Create a connection] フィールドに挿入する必要があります。
+[!DNL Jira Software] を [!DNL Workfront Fusion] に接続するには、API トークンを作成し、それをサービス URL とユーザー名とともに [!DNL Workfront Fusion] の「[!UICONTROL 接続の作成]」フィールドに挿入する必要があります。
 
 #### [!DNL Jira] での API トークンの作成
 
@@ -127,16 +127,16 @@ Jira コネクタでは、以下を使用します。
 
 #### [!DNL Jira][!DNL Workfront Fusion] の API トークンを設定
 
-1. [!DNL Workfront Fusion] の任意の [!DNL Jira Cloud] モジュールで、[!UICONTROL connection] フィールドの横にある「**[!UICONTROL Add]**」をクリックします。
+1. [!DNL Workfront Fusion] で任意の [!DNL Jira Cloud] モジュールで、「[!UICONTROL 接続]」フィールドの横にある「**[!UICONTROL 追加]**」をクリックします。
 1. 次の情報を指定します。
 
    * **環境**
    * **タイプ**
-   * **[!UICONTROL Service URL]:** これは、Jira アカウントへのアクセスに使用するベース URL です。 例：`yourorganization.atlassian.net`
-   * **[!UICONTROL Username]**
-   * **[!UICONTROL API token]:** この記事の [API トークンの作成  [!DNL Jira]](#create-an-api-token-in-jira) の節で作成した API トークンです。
+   * **[!UICONTROL サービス URL]:** これは、Jira アカウントへのアクセスに使用するベース URL です。 例：`yourorganization.atlassian.net`
+   * **[!UICONTROL ユーザー名]**
+   * **[!UICONTROL API トークン]：** これは、この記事の [ [!DNL Jira]](#create-an-api-token-in-jira) での API トークンの作成の節で作成した API トークンです。
 
-1. 「[!UICONTROL Continue]」をクリックして接続を作成し、モジュールに戻ります。
+1. 「[!UICONTROL 続行]」をクリックして接続を作成し、モジュールに戻ります。
 
 ### [!DNL Jira Server] を [!DNL Workfront Fusion] に接続
 
@@ -148,7 +148,7 @@ Jira コネクタでは、以下を使用します。
 
 #### [!DNL Jira] 接続の公開鍵と秘密鍵の生成
 
-[!DNL Workfront Fusion Jira] 接続の秘密鍵を取得するには、公開鍵と秘密鍵を生成する必要があります。
+[!DNL Workfront Fusion Jira] 接続の秘密鍵を取得するには、公開鍵と秘密鍵を生成する必要があります。 これは、コンピューターのターミナルを介して行われます。 [ スタート ] メニューまたはコンピュータの検索バー（ブラウザの検索バーではなく）でターミナルを検索して、ターミナルを見つけることができます。
 
 1. ターミナルで、次の `openssl` コマンドを実行します。
 
@@ -186,19 +186,19 @@ Jira コネクタでは、以下を使用します。
 #### [!DNL Jira] でクライアントアプリをコンシューマーとして設定する
 
 1. [!DNL Jira] インスタンスにログインします。
-1. 左側のナビゲーションパネルで **[!UICONTROL [!DNL Jira] Settings]**![ Jira 設定アイコン ](/help/workfront-fusion/references/apps-and-modules/assets/jira-settings-icon.png)/**[!UICONTROL Applications]**> **[!UICONTROL Application links]** をクリックします。
-1. 「**[!UICONTROL Enter the URL of the application you want to link]**」フィールドに、
+1. 左側のナビゲーションパネルで、**[!UICONTROL [!DNL Jira]設定]**![Jira 設定アイコン ](/help/workfront-fusion/references/apps-and-modules/assets/jira-settings-icon.png)/**[!UICONTROL アプリケーション]**/**[!UICONTROL アプリケーションリンク]** をクリックします。
+1. 「**[!UICONTROL リンクするアプリケーションの URL を入力]**」フィールドに、次のように入力します。
 
    ```
    https://app.workfrontfusion.com/oauth/cb/workfront-jiraserver-oauth1
    ```
 
-1. 「**[!UICONTROL Create new link]**」をクリックします。 「入力した URL から応答が受信しませんでした」というエラーメッセージを無視します。
-1. **[!UICONTROL Link applications]** ウィンドウで、「**[!UICONTROL Consumer key]**」フィールドと「**[!UICONTROL Shared secret]**」フィールドに値を入力します。
+1. 「**[!UICONTROL 新しいリンクを作成]**」をクリックします。「入力した URL から応答が受信しませんでした」というエラーメッセージを無視します。
+1. **[!UICONTROL アプリケーションをリンク]**&#x200B;ウィンドウで、**[!UICONTROL Consumer key]** および **[!UICONTROL 共有シークレット]**&#x200B;フィールドに値を入力します。
 
    これらのフィールドの値を選択できます。
 
-1. **[!UICONTROL Consumer key]** フィールドと **[!UICONTROL Shared secret]** フィールドの値を安全な場所にコピーします。
+1. **[!UICONTROL Consumer key]** および&#x200B;**[!UICONTROL 共有シークレット]**&#x200B;フィールドの値を安全な場所にコピーします。
 
    これらの値は、設定プロセスの後半で必要になります。
 
@@ -206,13 +206,13 @@ Jira コネクタでは、以下を使用します。
 
    | フィールド | 説明 |
    |---|---|
-   | [!UICONTROL Request Token URL] | `<Jira base url>/plugins/servlet/oauth/request-token` |
-   | [!UICONTROL Authorization URL] | `<Jira base url>/plugins/servlet/oauth/authorize` |
-   | [!UICONTROL Access Token URL] | `<Jira base url>/plugins/servlet/oauth/access-token` |
+   | [!UICONTROL リクエストトークン URL] | `<Jira base url>/plugins/servlet/oauth/request-token` |
+   | [!UICONTROL 認証 URL] | `<Jira base url>/plugins/servlet/oauth/authorize` |
+   | [!UICONTROL アクセストークン URL] | `<Jira base url>/plugins/servlet/oauth/access-token` |
 
-1. 「**[!UICONTROL Create incoming link]**」チェックボックスをオンにします。
-1. **[!UICONTROL Continue]** をクリックします。
-1. **[!UICONTROL Link applications]** ウィンドウで、次のフィールドに入力します。
+1. **[!UICONTROL 受信リンクを作成]**&#x200B;チェックボックスを選択します。
+1. 「**[!UICONTROL 続行]**」をクリックします。
+1. **[!UICONTROL アプリケーションをリンク]**&#x200B;ウィンドウで、次のフィールドに入力します。
 
    <table style="table-layout:auto"> 
     <col data-mc-conditions=""> 
@@ -233,7 +233,7 @@ Jira コネクタでは、以下を使用します。
     </tbody> 
    </table>
 
-1. **[!UICONTROL Continue]** をクリックします。
+1. 「**[!UICONTROL 続行]**」をクリックします。
 1.  [!DNL Workfront Fusion]](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion) で  [!DNL Jira Server]  または  [!DNL Jira Data Center]  への[接続を作成
 
 #### [!DNL Workfront Fusion] で [!DNL Jira Server] または [!DNL Jira Data Center] への接続を作成
@@ -242,8 +242,8 @@ Jira コネクタでは、以下を使用します。
 >
 >[!DNL Jira Server] アプリで [!DNL Jira Server] または [!DNL Jira Data Center] に接続します。
 
-1. [!DNL Workfront Fusion] の任意の [!DNL Jira Server] モジュールで、[!UICONTROL connection] フィールドの横にある「**[!UICONTROL Add]**」をクリックします。
-1. [!UICONTROL Create a connection] パネルで、次のフィールドに入力します。
+1. [!DNL Workfront Fusion] で任意の [!DNL Jira Server] モジュールで、「[!UICONTROL 接続]」フィールドの横にある「**[!UICONTROL 追加]**」をクリックします。
+1. [!UICONTROL 接続の作成]パネルで、次のフィールドに入力します。
 
    <table style="table-layout:auto"> 
     <col> 
@@ -276,7 +276,7 @@ Jira コネクタでは、以下を使用します。
     </tbody> 
    </table>
 
-1. 「**[!UICONTROL Continue]**」をクリックして接続を作成し、モジュールに戻ります。
+1. 「**[!UICONTROL 続行]**」をクリックし、接続を作成して、モジュールに戻ります。
 
 ## [!DNL Jira Software] モジュールとそのフィールド
 
@@ -292,7 +292,7 @@ Jira コネクタでは、以下を使用します。
 
 ### トリガー
 
-#### [!UICONTROL Watch for records]
+#### [!UICONTROL レコードの監視]
 
 このトリガーモジュールは、レコードが追加、更新または削除された時点でシナリオを開始します。
 
@@ -304,7 +304,7 @@ Jira コネクタでは、以下を使用します。
    <td role="rowheader">[!UICONTROL Webhook]</td> 
    <td> <p>レコードの監視に使用する Web フックを選択します。 </p> <p>新規の web フックを追加するには、次の手順に従います。</p> 
     <ol> 
-     <li value="1">クリック <strong>[!UICONTROL Add]</strong></li> 
+     <li value="1"><strong>[!UICONTROL Add]</strong> をクリックします。</li> 
      <li value="2">Web フックの名前を入力します。</li> 
      <li value="3"> <p>Web フックに使用する接続を選択します。 </p> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </li> 
      <li value="4"> <p>ソフトウェアで監視するレコードの種類を選択します。</p> 
@@ -321,15 +321,15 @@ Jira コネクタでは、以下を使用します。
 
 ### アクション
 
-* [[!UICONTROL Add issue to sprint]](#add-issue-to-sprint)
-* [[!UICONTROL Create a Record]](#create-a-record)
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Delete a record]](#delete-a-record)
-* [[!UICONTROL Download an attachment]](#download-an-attachment)
-* [[!UICONTROL Read a record]](#read-a-record)
-* [[!UICONTROL Update a record]](#update-a-record)
+* [[!UICONTROL スプリントへのイシューの追加]](#add-issue-to-sprint)
+* [[!UICONTROL レコードを作成]](#create-a-record)
+* [[!UICONTROL カスタム API 呼び出し]](#custom-api-call)
+* [[!UICONTROL レコードの削除]](#delete-a-record)
+* [[!UICONTROL 添付ファイルのダウンロード]](#download-an-attachment)
+* [[!UICONTROL レコードの読み取り]](#read-a-record)
+* [[!UICONTROL レコードの更新]](#update-a-record)
 
-#### [!UICONTROL Add issue to sprint]
+#### [!UICONTROL スプリントへのイシューの追加]
 
 このアクションモジュールは、スプリントに 1 つ以上のイシューを追加します。
 
@@ -341,7 +341,7 @@ Jira コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] と [!DNL Workfront Fusion]</a> の接続を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Sprint ID]</td> 
@@ -349,12 +349,12 @@ Jira コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Issue ID or Keys]</td> 
-   <td>エクスペリエンスを表示するイシューまたはキーごとに、「<b>[!UICONTROL Add item]</b>」をクリックして、イシュー ID またはキーを入力します。 1 つのモジュールに最大 50 個まで入力できます。</td> 
+   <td>エクスペリエンスを表示するイシューまたはキーごとに、<b>[!UICONTROL アイテムの追加 ]</b> をクリックして、イシュー ID またはキーを入力します。 1 つのモジュールに最大 50 個まで入力できます。</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a Record]
+#### [!UICONTROL レコードを作成]
 
 このアクションモジュールは、Jira に新しいレコードを作成します。
 
@@ -368,7 +368,7 @@ Jira コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -385,9 +385,9 @@ Jira コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Custom API Call]
+#### [!UICONTROL カスタム API 呼び出し]
 
-このアクションモジュールでは、[!DNL Jira Software] API への認証済みのカスタム呼び出しを実行できます。このモジュールを使用して、他の [!DNL Jira Software] モジュールでは実現できないデータフローの自動化を作成します。
+このアクションモジュールは、[!DNL Jira Software] API に対して認証済みのカスタム呼び出しを実行します。このモジュールを使用して、他の [!DNL Jira Software] モジュールでは実現できないデータフローの自動化を作成します。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
@@ -397,7 +397,7 @@ Jira コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事内の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software]を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -417,13 +417,13 @@ Jira コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件文を JSON で使用する場合は、条件文を引用符で囲みます。</p> 
+   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件ステートメントを JSON で使用する場合は、条件ステートメントの外側に引用符を挿入します。</p> 
      <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png">  </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a record]
+#### [!UICONTROL レコードを削除]
 
 このアクションモジュールは、指定されたレコードを削除します。
 
@@ -439,7 +439,7 @@ Jira コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -459,7 +459,7 @@ Jira コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Download an attachment]
+#### [!UICONTROL 添付ファイルをダウンロード]
 
 このアクションモジュールは、特定の添付ファイルをダウンロードします。
 
@@ -471,7 +471,7 @@ Jira コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事内の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
@@ -480,7 +480,7 @@ Jira コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Read a record]
+#### [!UICONTROL レコードの読み取り]
 
 このアクションモジュールは、[!DNL Jira Software] の単一レコードからデータを読み取ります。
 
@@ -496,7 +496,7 @@ Jira コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -511,7 +511,7 @@ Jira コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td>受け取る出力を選択します。「[!UICONTROL Record Type]」フィールドで選択したレコードのタイプに基づいて、出力オプションを使用できます。</td> 
+   <td>受け取る出力を選択します。出力オプションは、「[!UICONTROL Record Type]」フィールドで選択したレコードのタイプに基づいて使用できます。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
@@ -520,7 +520,7 @@ Jira コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a record]
+#### [!UICONTROL レコードを更新]
 
 このアクションモジュールは、イシューやプロジェクトなどの既存のレコードを更新します。
 
@@ -536,7 +536,7 @@ Jira コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -558,10 +558,10 @@ Jira コネクタでは、以下を使用します。
 
 ### 検索
 
-* [[!UICONTROL List records]](#list-records)
-* [[!UICONTROL Search for records]](#search-for-records)
+* [[!UICONTROL レコードをリスト表示]](#list-records)
+* [[!UICONTROL レコードを検索]](#search-for-records)
 
-#### [!UICONTROL List records]
+#### [!UICONTROL レコードをリスト表示]
 
 この検索モジュールは、検索クエリに一致する特定のタイプのすべての項目を取得します
 
@@ -575,7 +575,7 @@ Jira コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -600,7 +600,7 @@ Jira コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Search for records]
+#### [!UICONTROL レコードを検索]
 
 この検索モジュールは、指定された検索クエリに一致するレコードを [!DNL Jira Software] のオブジェクト内で検索します。
 
@@ -614,7 +614,7 @@ Jira コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
