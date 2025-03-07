@@ -3,10 +3,10 @@ description: ' [!DNL Adobe Workfront Fusion]  シナリオ内では、Anaplan �
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 81c9b141-4e40-430f-99f1-c44b7a833bcd
-source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
+source-git-commit: defc5aa9b2e3ffa5c698c5a19dd8d9d8768d72c2
 workflow-type: tm+mt
-source-wordcount: '1859'
-ht-degree: 91%
+source-wordcount: '1983'
+ht-degree: 82%
 
 ---
 
@@ -87,7 +87,7 @@ Anaplan コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">API タグ</td> 
-   <td>v1.11.5/td&gt; 
+   <td>v1.11.5</td> 
  </tbody> 
 </table>
 
@@ -96,7 +96,49 @@ Anaplan コネクタでは、以下を使用します。
 [!DNL Anaplan] モジュールへの接続を作成するには、以下を実行します。
 
 1. [!UICONTROL 接続]ボックスの横にある「**[!UICONTROL 追加]**」をクリックします。
-1. 接続タイプを選択します。
+1. 次のフィールドに入力します。
+
+   <table style="table-layout:auto"> 
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>新しい接続の名前を入力します。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td>
+          <p>本番環境と非本番環境のどちらに接続するかを選択します。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Type]</td>
+        <td>
+          <p>サービスアカウントと個人アカウントのどちらに接続するかを選択します。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL メール ]</td>
+        <td>
+          <p>この Anaplan アカウントのメールアドレスを入力してください</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Password]</td>
+        <td>この Anaplan アカウントのパスワードを入力します。</td>
+      </tr>
+     </tbody>
+    </table>
+
+1. 「**[!UICONTROL 続行]**」をクリックして接続を保存し、モジュールに戻ります。
+
+<!--1. Click **[!UICONTROL Add]** next to the [!UICONTROL Connection] box.
+1. Select the connection type.
 
    <table style="table-layout:auto">
     <col> 
@@ -104,16 +146,16 @@ Anaplan コネクタでは、以下を使用します。
     <tbody> 
      <tr> 
       <td role="rowheader">[!DNL Anaplan] [!UICONTROL Basic]</td> 
-      <td> <p>[!DNL Anaplan] [!UICONTROL Basic] 接続では、接続を作成するには、メールアドレスとパスワードのみが必要です。 </p> <p>接続の名前を入力してから、メールアドレスと、[!DNL Anaplan] アカウントのパスワードを入力します。</p> </td> 
+      <td> <p>An [!DNL Anaplan] [!UICONTROL Basic] connection requires only an email address and password to create the connection. </p> <p>Enter a name for the connection, then enter your email address and the password of your [!DNL Anaplan] account.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!DNL Anaplan] [!UICONTROL CA Certificate]</td> 
-      <td> <p>[!DNL Anaplan] [!UICONTROL CA Certificate] 接続には、[!UICONTROL Certificate Key]、[!UICONTROL Encoded Data] および [!UICONTROL Encoded Signed Data] が必要です。これらは、[!DNL Anaplan] アカウントで生成できます。手順については、[!DNL Anaplan] ドキュメントを参照してください。</p> <p>接続の名前を入力し、次に [!DNL Anaplan] アカウントで生成した [!UICONTROL Certificate Key]、[!UICONTROL Encoded Data]、および [!UICONTROL Encoded Signed Data] を入力します。</p> </td> 
+      <td> <p>An [!DNL Anaplan] [!UICONTROL CA Certificate] connection requires a [!UICONTROL Certificate Key], [!UICONTROL Encoded Data], and [!UICONTROL Encoded Signed Data]. You can generate these in your [!DNL Anaplan] account. For instructions, see the [!DNL Anaplan] documentation.</p> <p>Enter a name for the connection, then enter the [!UICONTROL Certificate Key], [!UICONTROL Encoded Data], and [!UICONTROL Encoded Signed Data] that you generated in your [!DNL Anaplan] account.</p> </td> 
      </tr> 
     </tbody> 
    </table>
 
-1. 「**[!UICONTROL 続行]**」をクリックして接続を保存し、モジュールに戻ります。
+1. Click **[!UICONTROL Continue]** to save the connection and return to the module.-->
 
 ## [!DNL Anaplan] モジュールとそのフィールド
 
@@ -163,6 +205,9 @@ Anaplan コネクタでは、以下を使用します。
 ### アクション
 
 * [[!UICONTROL リスト項目の作成]](#create-a-list-item)
+* [レコードの削除](#delete-a-record)
+* [データの書き出し](#export-data)
+* [データの読み込み](#import-data)
 * [[!UICONTROL カスタム API 呼び出しの実行]](#make-a-custom-api-call)
 * [[!UICONTROL レコードの読み取り]](#read-a-record)
 * [[!UICONTROL アクションの実行]](#run-an-action)
@@ -208,8 +253,98 @@ Anaplan コネクタでは、以下を使用します。
     </tr>
     <tr>
         <td>[!UICONTROL Subsets]</td>
-        <td>項目を追加するリストにカスタムサブセットがある場合は、項目を追加するサブセットを選択し、「<b>[!UICONTROL Yes]</b>を」選択してそのサブセットに新しい項目を追加します。</td>
+        <td>項目を追加するリストにカスタムサブセットがある場合は、項目を追加するサブセットを選択します。</td>
     </tr>
+</table>
+
+#### [!UICONTROL レコードを削除]
+
+このアクションモジュールは既存のレコードを削除します。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>[!DNL Anaplan] への接続を作成する手順については、この記事で <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への [!DNL Anaplan] の接続を参照してください。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
+   <td>削除するオブジェクトを含む Anaplan ワークスペースの ID を選択またはマッピングします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Model ID]</td> 
+   <td>削除するオブジェクトを含む Anaplan ワークスペースの ID を選択またはマッピングします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">レコードタイプ</td> 
+   <td> <p>削除するオブジェクトのタイプを選択します。</p> 
+    <ul> 
+     <li> <p><b>アクション</b> </p> <p>削除するアクションを選択またはマッピングします。</p> </li> 
+     <li> <p><b>リスト項目</b> </p> <p>アイテムを削除するリストを選択し、削除するアイテムの ID またはコードを入力またはマッピングします。</p>  </li> 
+     <li> <p><b>[!UICONTROL File]</b> </p> <p>削除するファイルを選択またはマッピングします。</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+
+#### [!UICONTROL データの書き出し]
+
+このアクションモジュールは、書き出し定義を使用して Anaplan からデータを取得します。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>[!DNL Anaplan] への接続を作成する手順については、この記事で <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への [!DNL Anaplan] の接続を参照してください。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
+   <td>書き出すデータを含む Anaplan Workspaceの ID を選択またはマッピングします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Model ID]</td> 
+   <td>書き出すデータを含むモデルの ID を入力またはマッピングします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">書き出し定義 ID</td> 
+   <td> <p>使用する Anaplan エクスポート定義の ID を入力またはマッピングします。</p> 
+   </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### データの読み込み
+
+このアクションモジュールは Anaplan にデータをインポートします。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>[!DNL Anaplan] への接続を作成する手順については、この記事で <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への [!DNL Anaplan] の接続を参照してください。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
+   <td>データのインポート先となる Anaplan Workspaceの ID を選択またはマッピングします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Model ID]</td> 
+   <td>データをインポートするモデルの ID を入力またはマップします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">書き出し定義 ID</td> 
+   <td> <p>使用する Anaplan インポート定義の ID を入力またはマップします。</p> 
+   </td> 
+  </tr> 
+ </tbody> 
 </table>
 
 #### [!UICONTROL カスタム API 呼び出しの実行]
@@ -242,42 +377,10 @@ Anaplan コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件ステートメントを JSON で使用する場合は、条件ステートメントの外側に引用符を挿入します。</p> 
+   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などを条件ステートメントを JSON で使用する場合は、条件ステートメントの外側に引用符を置きます。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL レコードを削除]
-
-このアクションモジュールは既存のレコードを削除します。
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Anaplan] への接続を作成する手順については、この記事で <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への [!DNL Anaplan] の接続を参照してください。</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
-   <td>削除するオブジェクトを含む Anaplan ワークスペースの ID を選択またはマッピングします。</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Model ID]</td> 
-   <td>削除するオブジェクトを含む Anaplan ワークスペースの ID を選択またはマッピングします。</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">削除</td> 
-   <td> <p>削除するオブジェクトのタイプを選択します。</p> 
-    <ul> 
-     <li> <p><b>アクション</b> </p> <p>削除するアクションを選択またはマッピングします。</p> </li> 
-     <li> <p><b>リスト項目</b> </p> <p>アイテムを削除するリストを選択し、削除するアイテムの ID またはコードを入力またはマッピングします。</p>  </li> 
-     <li> <p><b>[!UICONTROL File]</b> </p> <p>削除するファイルを選択またはマッピングします。</p> </li> 
-    </ul> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -303,6 +406,7 @@ Anaplan コネクタでは、以下を使用します。
      <li> <p><b>モデルのバージョン</b> </p> <p>読み取りたいモデルの ID を選択またはマッピングします。</p> </li> 
      <li> <p><b>ユーザー</b> </p> <p>使用されているアカウントの所有者に関するデータを返すか、別のユーザーに関するデータを返すかを選択します。別のユーザーを選択する場合は、ユーザーの名前を選択します。</p> </li> 
      <li> <p><b>ワークスペース</b> </p> <p>読み取りたい Workspace の ID を選択またはマッピングします。</p> </li> 
+     <li> <p><b>表示</b> </p> <p>読み取るビューを含むモデルの ID を選択またはマッピングします。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -410,9 +514,9 @@ Anaplan コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL ファイルをアップロード]
+#### [!UICONTROL  アクション用にファイルをアップロード ]
 
-このアクションモジュールは、Anaplan にファイルをアップロードします。ファイルは、既に Anaplan にアップロードされている必要があります。このモジュールを使用して、Analyplan 内の追加の場所にアップロードできます。
+このアクションモジュールは、Anaplan の既存のファイルを Anaplan 内の追加の場所にアップロードします。
 <table style="table-layout:auto">
 <col>
 <col>
