@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion の組織とチームの機能を使用す�
 author: Becky
 feature: Workfront Fusion
 exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: d76f199b766d6f18e371f2ce1107a96529afbfd1
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 45%
+source-wordcount: '518'
+ht-degree: 62%
 
 ---
 
@@ -19,6 +19,8 @@ ht-degree: 45%
 
 チームは組織内の小さなグループで、シナリオ、接続、テンプレートなどの Fusion リソースを共有します。
 
+チームの作成手順については、[ チームの作成 ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/create-a-team.md) を参照してください。
+
 ## 組織
 
 [!DNL Workfront Fusion] ユーザーは組織に属しています。
@@ -29,11 +31,11 @@ ht-degree: 45%
 
 ユーザーには、組織内で次のいずれかの役割があります。
 
-* **[!UICONTROL Owner]**：所有者は、組織で使用可能なすべての権限を持っています。
-* **[!UICONTROL Admin]**：管理者は、組織のチームとユーザーを作成および管理したり、テンプレートを承認したりできます。
-* **[!UICONTROL Member]**: メンバーは [!DNL Workfront Fusion] を使用できますが、組織を変更することはできません。
-* **[!UICONTROL Accountant]**：会計士は、組織ダッシュボードでライセンス情報を表示できますが、アクションは実行できません。
-* **[!UICONTROL App Developer]**：この役割の機能は現在利用できません。近い将来に利用できるようになります。 現時点では、この役割にユーザーを割り当てることはお勧めしません。
+* **[!UICONTROL 所有者]**：所有者は、組織で使用可能なすべての権限を持っています。
+* **[!UICONTROL 管理者]**：管理者は、組織のチームとユーザーを作成および管理したり、テンプレートを承認したりできます。
+* **[!UICONTROL メンバー]**: メンバーは [!DNL Workfront Fusion] を使用できますが、組織を変更することはできません。
+* **[!UICONTROL 会計士]**：会計士は、組織ダッシュボードでライセンス情報を表示できますが、アクションを実行できません。
+* **[!UICONTROL アプリ開発者]**：この役割の機能は現在使用できません。近い将来に使用可能になる予定です。現時点では、この役割にユーザーを割り当てることはお勧めしません。
 
 各組織の役割でユーザーが使用できる特定のアクションについて詳しくは、[組織とチームの役割](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md)を参照してください。
 
@@ -61,10 +63,10 @@ ht-degree: 45%
 
 ユーザーは、各チームで次の役割のいずれかを持ちます。
 
-* **[!UICONTROL Team Admin]**：管理者は、チームメンバーの役割を追加、削除、変更できます。 また、他のチームの役割が実行できるアクションを実行することもできます。
-* **[!UICONTROL Team Member]**: チームメンバーの役割を使用すると、ユーザーはシナリオを作成および実行できます。
-* **[!UICONTROL Team Monitoring]**: [!UICONTROL monitoring] の役割を持つユーザーはシナリオの実行情報にアクセスできますが、シナリオをデザインしたり、「アクティブ」ステータスを変更したりすることはできません。
-* **[!UICONTROL Team Operator]**:[!UICONTROL operator] の役割を持つユーザーは、実行データを表示し、シナリオの「アクティブ」ステータスを変更できます。
-* **[!UICONTROL Team Restricted Member]**：この役割の機能は現在利用できません。近い将来に利用できるようになります。 現時点では、この役割にユーザーを割り当てることはお勧めしません。
+* **[!UICONTROL チーム管理者]**：管理者は、チームメンバーの役割を追加、削除、変更できます。 また、他のチームの役割が実行できるアクションを実行することもできます。
+* **[!UICONTROL チームメンバー]**：チームメンバーの役割として、ユーザーはシナリオを作成および実行できます。
+* **[!UICONTROL チームモニタリング]**：[!UICONTROL モニタリング]の役割を使用すると、ユーザーはシナリオの実行情報にアクセスできますが、シナリオを設計したり、「アクティブ」ステータスを変更したりすることはできません。
+* **[!UICONTROL チームオペレーター]**：[!UICONTROL オペレーター]の役割を使用すると、ユーザーは実行データを表示し、シナリオの「アクティブ」ステータスを変更できます。
+* **[!UICONTROL チーム制限メンバー]**：この役割の機能は現在使用できません。近い将来に使用可能になる予定です。現時点では、この役割にユーザーを割り当てることはお勧めしません。
 
 各チームの役割でユーザーが使用できる特定のアクションについて詳しくは、[組織とチームの役割](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md)を参照してください。
