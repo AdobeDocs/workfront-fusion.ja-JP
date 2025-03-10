@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  シナリオでは、OneDrive を�
 author: Becky
 feature: Workfront Fusion
 exl-id: d21eafad-9c67-4f42-b718-0aa4223846e6
-source-git-commit: 632128bdcb6f8b8361f5a28e4a5fb527eb274d54
+source-git-commit: 337a6918dc20f2e7523438dea752393a1b3f50ee
 workflow-type: tm+mt
-source-wordcount: '4087'
-ht-degree: 93%
+source-wordcount: '4088'
+ht-degree: 92%
 
 ---
 
@@ -207,8 +207,6 @@ OneDrive コネクタでは、次の機能を使用します。
  </tbody> 
 </table>
 
-<!-- Start audit here-->
-
 #### [!UICONTROL フォルダーの作成]
 
 このアクションモジュールは、指定されたドライブに新規フォルダーを作成します。
@@ -236,7 +234,7 @@ OneDrive コネクタでは、次の機能を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Drive ID]</td> 
-   <td> <p>フォルダーを作成するドライブを選択します。「[!UICONTROL Enable to Enter a Drive ID]」フィールドで [!UICONTROL No] を選択した場合、このフィールドは使用できません。</p> </td> 
+   <td> <p>フォルダを作成するドライブを選択します。 「[!UICONTROL Enable to Enter a Drive ID]」フィールドで [!UICONTROL No] を選択した場合、このフィールドは使用できません。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Folder]</td> 
@@ -253,7 +251,7 @@ OneDrive コネクタでは、次の機能を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL ファイル／フォルダーの削除]
+#### [!UICONTROL ファイル／フォルダーを削除]
 
 このアクションモジュールは、選択されたファイルまたはフォルダーを削除します。
 
@@ -730,7 +728,7 @@ OneDrive コネクタでは、次の機能を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   td&gt; <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエストメソッド </a> を参照してください。</p> </td> 
+   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエストメソッド </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
