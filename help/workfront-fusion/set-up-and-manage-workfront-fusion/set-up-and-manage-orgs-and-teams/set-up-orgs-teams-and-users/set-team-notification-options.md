@@ -4,16 +4,18 @@ description: メール通知オプションは、チームレベルで設定さ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 570a09fc-01a9-4952-8a2b-8bfdd86d0bd8
-source-git-commit: 410676b7def1e36de12fee9d6df79feba566d741
+source-git-commit: 0689cfee7cf546a6c1f5f72c79a1e7be9df85a8c
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 60%
+source-wordcount: '300'
+ht-degree: 59%
 
 ---
 
 # チーム通知オプションの設定
 
-Workfront Fusion では、Adobeの通知領域を通じて通知を受け取ります。 チームが受け取る通知を選択できます。 通知はチームレベルで設定されます。
+Adobe統合シェルを使用している組織では、Adobe通知エリアを通じて通知を受け取ります。
+
+組織がAdobe統合シェルに移行されていない場合は、チームが受け取る通知を選択できます。 通知はチームレベルで設定されます。
 
 ## アクセス要件
 
@@ -31,7 +33,7 @@ Workfront Fusion では、Adobeの通知領域を通じて通知を受け取り�
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規： [!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td> <p>新規：[!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
@@ -44,7 +46,7 @@ Workfront Fusion では、Adobeの通知領域を通じて通知を受け取り�
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：組織は [!DNL Adobe Workfront Fusion] を購入する必要があります。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：[!DNL Adobe Workfront Fusion] を購入してください。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
    <p>または</p>
    <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
    </td> 
@@ -69,10 +71,12 @@ Workfront Fusion では、Adobeの通知領域を通じて通知を受け取り�
 
 ## 通知オプションの設定
 
+組織がAdobe統合シェル上にない場合は、Fusion で直接通知を設定できます。
+
 メール通知オプションは、チームレベルで設定されます。
 
-1. 左側のナビゲーションパネルで、「**[!UICONTROL Team]**」をクリックします
-1. 「**[!UICONTROL Notification Options]**」タブを選択します。
+1. 左側のナビゲーションパネルで、「**[!UICONTROL チーム]**」をクリック
+1. 「**[!UICONTROL 通知オプション]**」タブを選択します。
 1. チームが受け取る通知を有効にします。
 
    <table style="table-layout:auto"> 
@@ -80,7 +84,7 @@ Workfront Fusion では、Adobeの通知領域を通じて通知を受け取り�
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">'[!UICONTROL Warning in scenario run]'</td> 
+      <td role="rowheader">「[!UICONTROL Warning in scenario run]」</td> 
       <td> <p>シナリオの実行で警告が発生した場合にメールを受信</p> </td> 
      </tr> 
      <tr> 
