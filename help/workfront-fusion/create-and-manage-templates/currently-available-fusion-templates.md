@@ -4,10 +4,10 @@ description: 現在、Adobe Workfront Fusion では、次のパブリックテ�
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 47f1e2b6a812f4ac44e2daf08cb1937f1ef02981
 workflow-type: tm+mt
-source-wordcount: '1279'
-ht-degree: 87%
+source-wordcount: '1351'
+ht-degree: 82%
 
 ---
 
@@ -25,11 +25,15 @@ ht-degree: 87%
 
 ### [!BADGE 新規]{type=Informative}
 
+<!--New March 12, 2025-->
+
+指定したボードの指定した列から、アーカイブしたカードをオンデマンドで削除します。
+
+### Workfront ボード / ボード列に基づいて標準チェックリストを作成
+
 この Fusion テンプレートは、特定のボードで特定の列に時間をかけて入力するすべてのカードの標準チェックリストを作成します。
 
-### [!BADGE 新規]{type=Informative}
-
-<!--new Aug 1. 2024-->
+### Workfront/Workfront ボード – カスタム設定からボードを作成します
 
 このシナリオは、新しいプロジェクトが作成されることでトリガーされます。 このシナリオでは、プロジェクトにちなんで名前の付いたボードを作成し、必要に応じて列の名前を変更または作成し、カスタムタグを作成し、取り込み列フィルターを元のプロジェクトに関連付けることができます。  何千もの変更を加えることができますが、ここから始めて、組織のボード標準化の出発点を作成する可能性を確認できます。
 
@@ -96,6 +100,12 @@ ht-degree: 87%
 ## Workfront - Workfront Proof テンプレート
 
 これらのテンプレートは、Workfront と Workfront Proof を組み合わせたワークフローを自動化します。
+
+### [!BADGE 新規]{type=Informative}
+
+<!--New March 12, 2025-->
+
+このテンプレートは、却下、完了または停止と等しいステータスに更新されるプロジェクトを監視します。 次に、プルーフ決定が保留中のすべてのユーザーを読み取り専用に変更します。 最後に、プルーフがロックされ、ドキュメントに更新が送信されます。
 
 ### Workfront Proof／Workfront - プルーフ決定におけるプロジェクトの更新
 
