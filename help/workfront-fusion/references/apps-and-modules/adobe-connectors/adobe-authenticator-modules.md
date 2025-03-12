@@ -1,23 +1,23 @@
 ---
 title: Adobe Authenticator モジュール
-description: Adobe Authenticator モジュールを使用すると、1 回の接続で、API を使用して任意のAdobe製品に接続できます。
+description: Adobe Authenticator モジュールを使用すると、1 つの接続を使用して、API で任意のAdobe製品に接続できます。
 author: Becky
 feature: Workfront Fusion
 exl-id: af4da661-eeee-4033-a2bb-a2196e446a3d
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 7652acb6654f4b1b0edc57d110478b309655a124
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 21%
+source-wordcount: '1277'
+ht-degree: 31%
 
 ---
 
 # Adobe Authenticator モジュール
 
-Adobe Authenticator モジュールを使用すると、1 回の接続で、任意のAdobeAPI に接続できます。 これにより、まだ専用の Fusion コネクタがないAdobe製品に、より簡単に接続できます。
+Adobe Authenticator モジュールでは、1 回の接続を使用して任意のAdobe API に接続できます。 これにより、専用の Fusion コネクタがまだないAdobe製品に、より簡単に接続できます。
 
 HTTP モジュールより有利な点は、専用のアプリのように接続を作成できることです。
 
-使用可能なAdobeAPI の一覧については、[AdobeAPI](https://developer.adobe.com/apis) を参照してください。 割り当てられている API のみを使用できる場合があります。
+使用可能なAdobe API のリストについては、[Adobe API](https://developer.adobe.com/apis) を参照してください。 割り当てられている API のみを使用できる場合があります。
 
 ## アクセス要件
 
@@ -34,7 +34,7 @@ HTTP モジュールより有利な点は、専用のアプリのように接続
     <tr>
       <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td>
       <td>
-        <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Plan]、 [!UICONTROL Work]</p>
+        <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL 計画 ]、[!UICONTROL 作業 ]</p>
       </td>
     </tr>
     <tr>
@@ -42,13 +42,13 @@ HTTP モジュールより有利な点は、専用のアプリのように接続
       <td>
    <p>現在の Fusion ライセンス要件：[!DNL Workfront Fusion] ライセンス要件はありません。</p>
    <p>または</p>
-   <p>従来の Fusion ライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion] 要 ] </p>
+   <p>従来の Fusion ライセンス要件：[!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
    </td>
     </tr>
     <tr>
       <td role="rowheader">製品</td>
       <td>
-   <p>新しいWorkfront プラン：[!UICONTROL Select] または [!UICONTROL Prime] の [!DNL Adobe Workfront] プランがある場合、この記事に記載されている機能を使用するには、組織で [!DNL Adobe Workfront Fusion] の購入 [!DNL Adobe Workfront] 必要です。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>新しいWorkfront プラン：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、この記事に記載されている機能を使用するには、組織で [!DNL Adobe Workfront Fusion] の購入 [!DNL Adobe Workfront] 必要です。 [!DNL Workfront Fusion] は、[!DNL Workfront] [!UICONTROL Ultimate] プランに含まれています。</p>
    <p>または</p>
    <p>現在のWorkfront プラン：この記事に記載されている機能を使用するには、[!DNL Adobe Workfront Fusion] を購入する必要が [!DNL Adobe Workfront] ります。</p>
    </td>
@@ -58,7 +58,7 @@ HTTP モジュールより有利な点は、専用のアプリのように接続
 
 ## 前提条件
 
-* モジュールの接続先となるAdobe製品へのアクセス権が必要です。
+* モジュールを接続するAdobe製品へのアクセス権が必要です。
 * Adobe Developer Consoleにアクセスできる必要があります。
 * Adobe Developer Consoleに、モジュールの接続先となる API を含むプロジェクトがある必要があります。 実行できる操作：
 
@@ -67,7 +67,7 @@ HTTP モジュールより有利な点は、専用のアプリのように接続
      または
    * API を既存のプロジェクトに追加します。
 
-  Adobe Developer Consoleを使用したプロジェクトへの API の作成または追加については、Adobeドキュメントの [ プロジェクトの作成 ](https://developer.adobe.com/dep/guides/dev-console/create-project/) を参照してください。
+  Adobeでの API のプロジェクトへの作成または追加については、Adobe Developer Console ドキュメントの [ プロジェクトの作成 ](https://developer.adobe.com/dep/guides/dev-console/create-project/) を参照してください。
 
 ## Adobe Authenticator API の情報
 
@@ -86,7 +86,7 @@ Adobe Authenticator コネクタでは、以下を使用します。
 
 ## 接続の作成
 
-Adobe Authenticator接続は、Adobe Developer Console上の 1 つのプロジェクトに接続します。 複数のAdobeAPI に同じコネクションを使用するには、API を同じプロジェクトに追加して、そのプロジェクトへのコネクションを作成します。
+Adobe Authenticator接続は、Adobe Developer Console上の 1 つのプロジェクトに接続します。 複数のAdobe API に同じ接続を使用するには、API を同じプロジェクトに追加して、そのプロジェクトへの接続を作成します。
 
 個別のプロジェクトに対して個別の接続を作成できますが、接続を使用して、その接続で指定されたプロジェクトにない API にアクセスすることはできません。
 
@@ -94,7 +94,7 @@ Adobe Authenticator接続は、Adobe Developer Console上の 1 つのプロジ�
 >
 >Adobe Authenticator コネクタでは、OAuth サーバー間接続を使用するか、サービスアカウント（JWT）接続を使用するかを選択できます。 Adobeでは、JWT 資格情報を廃止しました。この資格情報は 2025 年 1 月 1 日（PT）以降、機能しなくなります。 **したがって、OAuth 接続を作成することを強くお勧めします。**
 >
->これらのAdobeの詳細については、接続ドキュメントの [ サーバーからサーバーへの認証 ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) を参照してください
+>これらの接続の詳細については、Adobe ドキュメントの [ サーバーからサーバーへの認証 ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) を参照してください
 
 接続を作成するには：
 
@@ -121,11 +121,11 @@ Adobe Authenticator接続は、Adobe Developer Console上の 1 つのプロジ�
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>[!DNL Adobe] クライアント ID を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションにあります。
+        <td>[!DNL Adobe] クライアント ID を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>[!DNL Adobe] クライアントの秘密鍵を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションにあります。
+        <td>[!DNL Adobe] クライアントの秘密鍵を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Scopes]</td>
@@ -133,11 +133,11 @@ Adobe Authenticator接続は、Adobe Developer Console上の 1 つのプロジ�
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Technical account ID]</td>
-        <td>[!DNL Adobe] テクニカルアカウント ID を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションにあります。
+        <td>[!DNL Adobe] テクニカルアカウント ID を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Organization ID]</td>
-        <td>JWT 接続を選択した場合は、[!DNL Adobe] 組織 ID を入力します。 これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションにあります。
+        <td>JWT 接続を選択した場合は、[!DNL Adobe] 組織 ID を入力します。 これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Meta Scopes]</td>
@@ -162,13 +162,13 @@ Adobe Authenticator接続は、Adobe Developer Console上の 1 つのプロジ�
               <p>ファイルのパスワードを入力します。</p>
             </li>
             <li value="5">
-              <p>「<b>[!UICONTROL Save]</b>」をクリックしてファイルを抽出し、接続設定に戻ります。</p>
+              <p><b>[!UICONTROL Save]</b> をクリックしてファイルを抽出し、接続設定に戻ります。</p>
             </li>
           </ol>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Base URLs]</td>
+        <td role="rowheader">[!UICONTROL ベース URL]</td>
         <td>この認証を許可するベース URL を追加する必要があります。 シナリオの後半で「カスタム API 呼び出しを行う」モジュールを使用する場合、選択した URL への相対パスを追加します。 ここに URL を入力すると、カスタム API 呼び出しを行うモジュールが何に接続できるかを制御でき、セキュリティが強化されます。<p>認証サーバーに追加するベース URL ごとに、「<b> 項目を追加 </b>」をクリックしてベース URL を入力します。</td>
       </tr>
       <tr>
@@ -186,7 +186,7 @@ Adobe Authenticator接続は、Adobe Developer Console上の 1 つのプロジ�
     </tbody>
     </table>
 
-1. 「**[!UICONTROL Continue]**」をクリックして接続を保存し、モジュールに戻ります。
+1. 「**[!UICONTROL 続行]**」をクリックして接続を保存し、モジュールに戻ります。
 
 ## モジュール
 
@@ -246,17 +246,29 @@ Adobe Authenticator接続は、Adobe Developer Console上の 1 つのプロジ�
       <td role="rowheader">[!UICONTROL Body Type]</td>
    <td> この API リクエストの本文タイプを選択：
    <ul>
-   <li>application/x-www-form-urlencoded</li>
    <li>生</li>
+   <li>application/x-www-form-urlencoded</li>
    <li>multipart/form-data</li>
    </ul>
       </td>
+      </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Request content]  </td>
+      <td>
+        <p>リクエストのコンテンツを入力します。 このオプションは、<code>Raw</code> の本文タイプを選択した場合に使用できます</p>
+      </td>
+    </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Fields]  </td>
       <td>
-        <p>APU 要求に追加するファイルごとに、<b> アイテムを追加 </b> をクリックしてファイルのテキストを入力するか（生データの場合）、キー <code>uploadedFile</code> を入力してファイルのデータをマッピングします。</p>
+        <p>API リクエストに追加するファイルごとに、「<b> 項目を追加 </b>」をクリックしてファイルのテキスト （生データの場合）を入力するか、キー <code>uploadedFile</code> を入力してファイルのデータをマッピングします。このオプションは、「<code>application</code>」または「<code>multipart</code>」本文タイプを選択した場合に使用できます。</p>
       </td>
     </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 出力タイプ ]  </td>
+      <td>
+        <p>モジュールが出力するデータのタイプを選択します。 タイプを選択しない場合、モジュールは自動的にタイプを選択します。</p>
+      </td>
     </tr>
   </tbody>
 </table>
@@ -310,7 +322,7 @@ Adobe Authenticator接続は、Adobe Developer Console上の 1 つのプロジ�
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件文を JSON で使用する場合は、条件文を引用符で囲みます。</p> 
+   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件ステートメントを JSON で使用する場合は、条件ステートメントの外側に引用符を挿入します。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"></p> 
      </div> </p> </td>     </tr>
