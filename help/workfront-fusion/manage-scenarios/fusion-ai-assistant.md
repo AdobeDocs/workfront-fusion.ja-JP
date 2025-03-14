@@ -4,7 +4,7 @@ description: Workfront Fusion の AI アシスタント
 author: Becky
 feature: Workfront Fusion
 exl-id: 22f24c0e-4eb3-4ef7-b012-374ee5e8a844
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 15%
@@ -13,7 +13,7 @@ ht-degree: 15%
 
 # Workfront Fusion の AI アシスタント
 
-AI アシスタントは、Workfrontのドキュメントから情報を見つけることができるため、必要なヘルプを受けるためにAdobe Experience Leagueにアクセスする必要がなくなります。
+AI アシスタントは、Workfrontのドキュメントから情報を見つけることができるため、Adobe Experience League にアクセスして必要なヘルプを受ける必要がなくなります。
 
 ## アクセス要件
 
@@ -36,7 +36,7 @@ AI アシスタントは、Workfrontのドキュメントから情報を見つ�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -68,9 +68,9 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ## 前提条件
 
-Adobeは、ファイルに署名済みのAdobe生成 AI 契約が必要です。
+Adobeには、Adobe生成 AI 契約がファイルに署名済みである必要があります。
 
-契約への署名について詳しくは、Workfront ドキュメントの AI アシスタントの概要の記事の [Adobe生成 AI 契約への署名 ](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) を参照してください。
+契約の署名について詳しくは、Workfront ドキュメントの AI アシスタントの概要の記事の [Adobe Gen AI 契約に署名する ](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) を参照してください。
 
 ## AI アシスタントから情報を取得
 
@@ -83,4 +83,4 @@ AI アシスタントを使用してWorkfront Fusion ドキュメントから情
 
 1. 応答を AI アシスタント パネルに表示します。
 1. （オプション）応答に必要な情報が含まれていない場合は、応答を調整して再試行してください。
-1. （オプションおよび条件付き）応答にAdobe Experience League記事へのリンクが含まれている場合は、リンクをクリックして新しいウィンドウで記事を開きます。
+1. （オプションおよび条件付き）応答に Adobe Experience League の記事へのリンクが含まれている場合は、リンクをクリックして新しいウィンドウで記事を開きます。

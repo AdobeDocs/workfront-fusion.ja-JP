@@ -5,10 +5,10 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e6fbbc20-4315-4668-9e11-af7cfa82ae66
-source-git-commit: 757580687ff5d1617f83432952d9870bd697925e
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '3623'
-ht-degree: 77%
+source-wordcount: '4125'
+ht-degree: 90%
 
 ---
 
@@ -27,7 +27,7 @@ PDF サービスに使用される API については、[Adobe Document Generat
 [!DNL Adobe PDF Services] はファイルの読み取り、変換、変更はできますが、[!DNL Adobe] も [!DNL Workfront Fusion] もファイルやデータを保存しません。つまり、次のようになります。
 
 * ユーザーは、ファイルのセキュリティを含め、ファイルの制御を維持する
-* PDFサービスを使用するために、[!UICONTROL Adobe] ストレージまたはクラウドストレージのアカウントを持っている必要はありません。
+* PDF サービスを使用するのに[!UICONTROL アドビ]ストレージやクラウドストレージアカウントは必要ありません。
 
 ## アクセス要件
 
@@ -50,7 +50,7 @@ PDF サービスに使用される API については、[Adobe Document Generat
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -74,7 +74,7 @@ PDF サービスに使用される API については、[Adobe Document Generat
 
 ## 前提条件
 
-OAuth サーバー間接続を作成するには、Adobe開発者コンソールでAdobe PDF サービス API を追加する必要があります。 API を追加する場合は、OAuth サーバー間オプションを選択します。
+OAuth サーバー間接続を作成するには、Adobe デベロッパーコンソールでAdobe PDF サービス API を追加する必要があります。 API を追加する場合は、OAuth サーバー間オプションを選択します。
 
 手順については、アドビデベロッパー向けドキュメントで [OAuth を使用したプロジェクトへの API の追加](https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/)を参照してください。
 
@@ -101,7 +101,7 @@ Adobe PDF サービスコネクタは、以下を使用します。
 
 [!DNL Adobe PDF Services] モジュールへの接続を作成するには、以下を実行します。
 
-1. 任意の [!DNL Adobe PDF Services] モジュールで、「接続」ボックスの横にある「**[!UICONTROL Add]**」をクリックします。
+1. 任意の [!DNL Adobe PDF Services] モジュールで、「接続」ボックスの横にある「**[!UICONTROL 追加]**」をクリックします。
 
 1. 次のフィールドに入力します。
 
@@ -125,22 +125,22 @@ Adobe PDF サービスコネクタは、以下を使用します。
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]</td>
-          <td>[!DNL Adobe] [!UICONTROL Client ID] を入力します。 これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションにあります。<p>資格情報の検索手順については、アドビデベロッパー向けドキュメントで<a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >資格情報</a>を参照してください。</p></td>
+          <td>[!DNL Adobe] [!UICONTROL Client ID] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。<p>資格情報の検索手順については、アドビデベロッパー向けドキュメントで<a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >資格情報</a>を参照してください。</p></td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret]</td>
-          <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。 これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションにあります。<p>資格情報の検索手順については、アドビデベロッパー向けドキュメントで<a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >資格情報</a>を参照してください。</p>
+          <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。<p>資格情報の検索手順については、アドビデベロッパー向けドキュメントで<a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >資格情報</a>を参照してください。</p>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Technical account ID] （JWT のみ）</td>
-          <td>[!DNL Adobe] [!UICONTROL Technical account ID] を入力します。 これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションにあります。<p>資格情報の検索手順については、アドビデベロッパー向けドキュメントで<a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >資格情報</a>を参照してください。</p>
+          <td role="rowheader">[!UICONTROL Technical account ID]（JWT のみ）</td>
+          <td>[!DNL Adobe] [!UICONTROL Technical account ID] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。<p>資格情報の検索手順については、アドビデベロッパー向けドキュメントで<a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >資格情報</a>を参照してください。</p>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Organization ID] （JWT のみ）</td>
-          <td>[!DNL Adobe] [!UICONTROL Organization ID] を入力します。 これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションにあります。<p>資格情報の検索手順については、アドビデベロッパー向けドキュメントで<a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >資格情報</a>を参照してください。</p>
+          <td role="rowheader">[!UICONTROL Organization ID]（JWT のみ）</td>
+          <td>[!DNL Adobe] [!UICONTROL Organization ID] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。<p>資格情報の検索手順については、アドビデベロッパー向けドキュメントで<a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >資格情報</a>を参照してください。</p>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Meta scopes] （JWT のみ）</td>
+          <td role="rowheader">[!UICONTROL Meta scopes]（JWT のみ）</td>
           <td>
             接続に必要なメタスコープを入力します。
           </td>
@@ -164,14 +164,14 @@ Adobe PDF サービスコネクタは、以下を使用します。
               <p>ファイルのパスワードを入力します。</p>
             </li>
             <li value="5">
-              <p>「<b>[!UICONTROL Save]</b>」をクリックしてファイルを抽出し、接続設定に戻ります。</p>
+              <p><b>[!UICONTROL Save]</b> をクリックしてファイルを抽出し、接続設定に戻ります。</p>
             </li>
           </ol>
         </td>
       </tr>
        </tbody>
     </table>
-1. 「**[!UICONTROL Continue]**」をクリックして接続を保存し、モジュールに戻ります。
+1. 「**[!UICONTROL 続行]**」をクリックして接続を保存し、モジュールに戻ります。
 
 
 ## [!DNL Adobe PDF Services] モジュールとそのフィールド
@@ -182,28 +182,28 @@ Adobe PDF サービスコネクタは、以下を使用します。
 
 ![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [[!UICONTROL Combine PDF files]](#combine-pdf-files)
-* [[!UICONTROL Compress PDF files]](#compress-pdf-files)
-* [[!UICONTROL Convert document to PDF file]](#convert-document-to-pdf-file)
-* [[!UICONTROL Convert HTML to PDF file]](#convert-html-to-pdf-file)
-* [[!UICONTROL Convert image to PDF file]](#convert-image-to-pdf-file)
-* [[!UICONTROL Convert PDF to document]](#convert-pdf-to-document)
-* [[!UICONTROL Convert PDF to image]](#convert-pdf-to-image)
-* [[!UICONTROL Extract Text / Table]](#extract-text--table)
-* [[!UICONTROL Generate document]](#generate-document)
-* [[!UICONTROL Linearize a PDF file]](#linearize-a-pdf-file)
+* [[!UICONTROL PDF ファイルの結合]](#combine-pdf-files)
+* [[!UICONTROL PDF ファイルの圧縮]](#compress-pdf-files)
+* [[!UICONTROL PDF ファイルへのドキュメントの変換]](#convert-document-to-pdf-file)
+* [[!UICONTROL PDF ファイルへの HTML の変換]](#convert-html-to-pdf-file)
+* [[!UICONTROL PDF ファイルへの画像の変換]](#convert-image-to-pdf-file)
+* [[!UICONTROL ドキュメントへの PDF の変換]](#convert-pdf-to-document)
+* [[!UICONTROL 画像への PDF の変換]](#convert-pdf-to-image)
+* [[!UICONTROL テキスト／テーブルの抽出]](#extract-text--table)
+* [[!UICONTROL ドキュメントの生成]](#generate-document)
+* [[!UICONTROL PDF ファイルのリニアライズ]](#linearize-a-pdf-file)
 * [カスタム API 呼び出しの実行](#make-a-custom-api-call)
-* [[!UICONTROL OCR for PDF file]](#ocr-for-pdf-file)
-* [[!UICONTROL Page manipulation]](#page-manipulation)
-* [[!UICONTROL PDF accessibility auto-tag]](#pdf-accessibility-auto-tag)
-* [[!UICONTROL PDF file properties]](#pdf-file-properties)
-* [[!UICONTROL Protect PDF file]](#protect-pdf-file)
-* [[!UICONTROL Remove protection of a PDF file]](#remove-protection-of-a-pdf-file)
+* [[!UICONTROL PDF ファイルの OCR]](#ocr-for-pdf-file)
+* [[!UICONTROL ページ操作]](#page-manipulation)
+* [[!UICONTROL PDF アクセシビリティの自動タグ付け]](#pdf-accessibility-auto-tag)
+* [[!UICONTROL PDF ファイルのプロパティ]](#pdf-file-properties)
+* [[!UICONTROL PDF ファイルの保護]](#protect-pdf-file)
+* [[!UICONTROL PDF ファイルの保護の解除]](#remove-protection-of-a-pdf-file)
 * [PDF ファイルの分割](#split-a-pdf-file)
 
-### [!UICONTROL Combine PDF files]
+### [!UICONTROL PDF ファイルの結合]
 
-このアクションモジュールは、複数の PDF ファイルを取得し、それらを 1 つの PDF ファイルに結合します。例えば、このモジュールでは、プロジェクトが完了すると、[!UICONTROL Workfront] のプロジェクトのすべてのドキュメントを 1 つのPDFにまとめることができます。
+このアクションモジュールは、複数の PDF ファイルを取得し、それらを 1 つの PDF ファイルに結合します。例えばこのモジュールは、[!UICONTROL Workfront] プロジェクトのすべてのドキュメントを、プロジェクトの完了時に 1 つの PDF に結合します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -211,22 +211,22 @@ Adobe PDF サービスコネクタは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>このモジュールに使用する接続を選択します。</p> [!DNL Adobe PDF Services] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-pdf-services" class="MCXref xref" >[!DNL Adobe PDF Services]</a> への接続の作成を参照してください。 </td> 
+   <td> <p>このモジュールに使用する接続を選択します。</p> [!DNL Adobe PDF Services] への接続を作成する方法については、この記事内の <a href="#create-a-connection-to-adobe-pdf-services" class="MCXref xref" >[!DNL Adobe PDF Services]</a> への接続の作成を参照してください。 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Documents]</td> 
-   <td> <p>集約モジュールを使用して、ドキュメントを収集して PDF に組み合わせることも、手動でドキュメントを追加することもできます。 </p> <p>[!UICONTROL Array Aggregator] モジュールを使用して、以前のモジュールからの出力を集計することをお勧めします。 集約を使用すると、結合するファイルの名前、場所、数を把握する必要がなくなります。したがって、集約を使用すると、結合するドキュメントを手動で入力するよりも、高い柔軟性と拡張性が得られます。</p> <p>アグリゲータで [!UICONTROL Combine PDF] ファイルモジュールを使用するには、[!UICONTROL Documents] フィールドでマッピングを有効にする必要があります。 </p> <p>この例では、[!UICONTROL Read Related Records] モジュールはプロジェクトに関連付けられたドキュメントを識別し、[!UICONTROL Download Documents] モジュールは各ドキュメントをダウンロードします。 すべてのPDFが配列に集計され、[!UICONTROL Combine PDF] ファイルモジュールに渡されます。</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/combine-example-350x104.png" style="width: 350;height: 104;"> </p> <p>手動でドキュメントを入力することもできます。</p> <p>結合 PDF に含めるドキュメントごとに、次の手順を実行します。</p> 
+   <td> <p>集約モジュールを使用して、ドキュメントを収集して PDF に組み合わせることも、手動でドキュメントを追加することもできます。 </p> <p>[!UICONTROL Array Aggregator] モジュールを使用して、以前のモジュールの出力を集計することをお勧めします。集約を使用すると、結合するファイルの名前、場所、数を把握する必要がなくなります。したがって、集約を使用すると、結合するドキュメントを手動で入力するよりも、高い柔軟性と拡張性が得られます。</p> <p>[!UICONTROL Combine PDF] モジュールを集約と共に使用するには、[!UICONTROL Documents] フィールドでマッピングを有効にする必要があります。 </p> <p>この例では、[!UICONTROL Read Related Records] モジュールはプロジェクトに関連付けられたドキュメントを識別し、[!UICONTROL Download Documents] モジュールは各ドキュメントをダウンロードします。すべての PDF は配列に集計され、[!UICONTROL Combine PDF] ファイルモジュールに渡されます。</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/combine-example-350x104.png" style="width: 350;height: 104;"> </p> <p>手動でドキュメントを入力することもできます。</p> <p>結合 PDF に含めるドキュメントごとに、次の手順を実行します。</p> 
     <ol> 
-     <li value="1"> <p>クリック [!UICONTROL Add a Document]</p> </li> 
-     <li value="2"> <p>「[!UICONTROL Source file]」フィールドで、組み込むドキュメントを出力するモジュールを選択するか、ソースファイルの名前とデータをマッピングします。 </p> </li> 
-     <li value="3"> <p>（オプション）ソースファイルから特定のページのみを追加する場合は、追加する各ページ範囲に対して「[!UICONTROL Pages]」フィールドの「<strong>[!UICONTROL Add item]</strong>」をクリックし、追加するページ範囲の最初と最後のページを入力して「<strong>[!UICONTROL Add]</strong>」をクリックします。 1 つのドキュメントから複数のページ範囲を含めることができます。</p> </li> 
-     <li value="4"> <p><strong>[!UICONTROL Add]</strong> をクリックします。 </p> </li> 
+     <li value="1"> <p>「[!UICONTROL Add a Document]」をクリックします。</p> </li> 
+     <li value="2"> <p>「[!UICONTROL Source file]」フィールドで、含めるドキュメントを出力するモジュールを選択するか、ソースファイルの名前とデータをマッピングします。 </p> </li> 
+     <li value="3"> <p>（オプション）ソースファイルの特定のページのみを含める場合は、追加するページ範囲ごとに、「[!UICONTROL Pages]」フィールドの「<strong>[!UICONTROL Add item]</strong>」をクリックし、含めるページ範囲の最初と最後のページを入力し、「<strong>[!UICONTROL Add]</strong>」をクリックします。1 つのドキュメントから複数のページ範囲を含めることができます。</p> </li> 
+     <li value="4"> <p>「<strong>[!UICONTROL Add]</strong>」をクリックします。 </p> </li> 
     </ol> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Compress PDF files]
+### [!UICONTROL PDF ファイルを圧縮]
 
 このアクションモジュールは PDF ファイルを取得し、圧縮します。これは、帯域幅やメモリの節約に役立ちます。
 
@@ -251,7 +251,7 @@ Adobe PDF サービスコネクタは、以下を使用します。
  </tbody> 
 </table>
 
-### [!UICONTROL Convert document to PDF file]
+### [!UICONTROL ドキュメントを PDF ファイルに変換]
 
 このツールは、ドキュメントを PDF ファイルに変換します。ソースファイルは、次のいずれかのドキュメント形式である必要があります。
 
@@ -326,7 +326,7 @@ Adobe PDF サービスコネクタは、以下を使用します。
  </tbody> 
 </table>
 
-### [!UICONTROL Convert HTML to PDF file]
+### [!UICONTROL HTML を PDF ファイルに変換]
 
 このツールは、HTML ファイルを PDF ファイルに変換します。
 
@@ -346,7 +346,7 @@ Adobe PDF サービスコネクタは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL JSON]</td> 
-   <td> <p>HTML で JavaScript 変数を参照する場合、これらの変数を含めることができます。 </p> <p>各変数に対して「<strong>[!UICONTROL Add item]</strong>」をクリックし、変数のキーと値を含めます。</p> <p>メモ：   
+   <td> <p>HTML で JavaScript 変数を参照する場合、これらの変数を含めることができます。 </p> <p>変数ごとに、「<strong>[!UICONTROL Add item]</strong>」をクリックし、変数のキーと値を含めます。</p> <p>メモ：   
      <ul> 
       <li> <p>ZIP ファイルから PDF を作成する場合、ソースの付随事項には <code> &lt;script src='./json.js' type='text/javascript'&gt;&lt;/script&gt;</code> のようなスクリプト要素が含まれている必要があります。 </p> </li> 
       <li> <p>URL から PDF を作成する場合、ページがレンダリングされる前に、この JSON オブジェクトのコンテンツがブラウザー VM に挿入されます。 </p> </li> 
@@ -371,7 +371,7 @@ Adobe PDF サービスコネクタは、以下を使用します。
  </tbody> 
 </table>
 
-### [!UICONTROL Convert image to PDF file]
+### [!UICONTROL 画像を PDF ファイルに変換]
 
 このツールは、画像を PDF ファイルに変換します。
 
@@ -392,7 +392,7 @@ Adobe PDF サービスコネクタは、以下を使用します。
  </tbody> 
 </table>
 
-### [!UICONTROL Convert PDF to document]
+### [!UICONTROL PDF を文書に変換]
 
 このツールは、PDF ファイルをドキュメントに変換します。出力ファイルには、次のいずれかの形式を選択できます。
 
@@ -471,11 +471,11 @@ Adobe PDF サービスコネクタは、以下を使用します。
  </tbody> 
 </table>
 
-### [!UICONTROL Convert PDF to image]
+### [!UICONTROL PDF を画像に変換]
 
 このツールは、PDFを PNG 形式またはJPEG形式の画像に変換し、リストとして出力するか、ZIP に組み合わせます。
 
-ZIP 形式で出力する場合、PDFはページごとに 1 つの画像に変換され、各画像はページ番号で終わります。 その後、画像ファイルは ZIP ファイルに結合されます。
+ZIP 形式で出力する場合、PDFは 1 ページにつき 1 つの画像に変換され、各画像はページ番号で終わります。 その後、画像ファイルは ZIP ファイルに結合されます。
 
 例えば、8 ページの「TestFile」という名前のファイルでは、「TestFile_1」から「TestFile_8」までの 8 つの画像が生成されます。このモジュールの出力は、8 つの画像を含む ZIP ファイルです。
 
@@ -502,14 +502,14 @@ ZIP 形式で出力する場合、PDFはページごとに 1 つの画像に変�
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Output type]</td> 
+   <td role="rowheader">[!UICONTROL 出力タイプ ]</td> 
    <td> <p>ファイルをファイルのリストとして出力するか、ZIP ファイルとして出力するかを選択します。</td> 
   </tr> 
   <tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Extract Text / Table]
+### [!UICONTROL テキスト／テーブルの抽出]
 
 このアクションモジュールを使用すると、データを PDF ファイルから抽出できます。このモジュールは、段落やテーブルの単一セル内のテキストなど、個々のテキスト要素を出力します。
 
@@ -544,28 +544,28 @@ ZIP 形式で出力する場合、PDFはページごとに 1 つの画像に変�
  </tbody> 
 </table>
 
-### [!UICONTROL Generate document]
+### [!UICONTROL ドキュメントの生成]
 
-[!UICONTROL Generate document] モジュールは、選択したデータを含むPDFを作成する強力な方法です。 [!DNL Microsoft Word] テンプレートを使用するか、JSON 形式でデータを指定することで、形式設定できます。
+[!UICONTROL ドキュメントの生成]モジュールは、選択したデータを含む PDF を作成する強力な方法です。[!DNL Microsoft Word] テンプレートを使用するか、JSON 形式でデータを指定することで、形式設定できます。
 
-[!UICONTROL [!DNL Adobe PDF Services] Generate document] 機能について詳しくは、[!DNL Adobe Document Services] ドキュメントの [ ドキュメント生成の概要 ](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html) を参照してください。
+[!UICONTROL [!DNL Adobe PDF Services]ドキュメントの生成]機能について詳しくは、[!DNL Adobe Document Services] ドキュメントの[ドキュメント生成の概要](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html)を参照してください。
 
-* [ テンプレートでの [!UICONTROL Generate document] モジュール  [!DNL Microsoft Word]  使用 ](#use-the-generate-document-module-with-a-microsoft-word-template)
-* [JSON での [!UICONTROL Generate document] モジュールの使用](#use-the-generate-document-module-with-json)
+* [ [!DNL Microsoft Word]  テンプレートで[!UICONTROL ドキュメントの生成]モジュールの使用](#use-the-generate-document-module-with-a-microsoft-word-template)
+* [JSON で[!UICONTROL ドキュメントの生成]モジュールの使用](#use-the-generate-document-module-with-json)
 
-#### [!DNL Microsoft Word] テンプレートでの [!UICONTROL Generate document] モジュールの使用
+#### [!DNL Microsoft Word] テンプレートで[!UICONTROL ドキュメントの生成]モジュールの使用
 
 
 >[!NOTE]
 >
 >Microsoft Word テンプレートについては、[Microsoft Word テンプレートモジュール ](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md) を参照してください。
 >
->PDFサービスの Generate document module でMicrosoft Word テンプレートを使用する場合、Microsoft Word テンプレートモジュールを使用する必要はありません。
+>PDF Services Generate Document Module でMicrosoft Word テンプレートを使用する場合、Microsoft Word テンプレートモジュールを使用する必要はありません。
 
 
-[!UICONTROL Microsoft Word] テンプレートで [!UICONTROL Generate document] モジュールを使用するには、まずテンプレートを作成する必要があります。 手順については、[!DNL Microsoft Office] ドキュメントで「テンプレートの作成」を検索してください。
+[!UICONTROL Microsoft Word] テンプレートで[!UICONTROL ドキュメントの生成]モジュールを使用するには、まずテンプレートを作成する必要があります。手順については、[!DNL Microsoft Office] ドキュメントで「テンプレートの作成」を検索してください。
 
-[!UICONTROL Generate document] モジュールのフィールドに次のように入力します。
+[!UICONTROL ドキュメントの生成]モジュールのフィールドに次のように入力します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -577,7 +577,7 @@ ZIP 形式で出力する場合、PDFはページごとに 1 つの画像に変�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source File]</td> 
-   <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> <p>このソースファイルは、モジュールが新しいPDFを生成するために使用する [!DNL Microsoft Word] テンプレートです。</p> <p>[!DNL Workfront Fusion] で使用する [!DNL Microsoft Word] テンプレート用に [!DNL Workfront] にプロジェクトを作成することをお勧めします。その後、[!DNL Workfront]/[!UICONTROL Download document] モジュールを使用して、適切なテンプレートをシナリオに取り込むことができます。</p> </td> 
+   <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> <p>このソースファイルは、モジュールが新しいPDFを生成するために使用する [!DNL Microsoft Word] テンプレートです。</p> <p>[!DNL Workfront Fusion] で使用する [!DNL Microsoft Word] テンプレート用に [!DNL Workfront] にプロジェクトを作成することをお勧めします。その後、[!DNL Workfront]／[!UICONTROL Download document] モジュールを使用して、適切なテンプレートをシナリオに取り込みます。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output Format]</td> 
@@ -599,9 +599,9 @@ ZIP 形式で出力する場合、PDFはページごとに 1 つの画像に変�
  </tbody> 
 </table>
 
-#### JSON での [!UICONTROL Generate document] モジュールの使用
+#### JSON で[!UICONTROL ドキュメントの生成]モジュールの使用
 
-[!UICONTROL Generate document] モジュールを JSON で使用するには、次のようにフィールドに入力します。
+JSON で[!UICONTROL ドキュメントの生成]モジュールを使用するには、次のようにフィールドに入力します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -630,7 +630,7 @@ ZIP 形式で出力する場合、PDFはページごとに 1 つの画像に変�
  </tbody> 
 </table>
 
-### [!UICONTROL Linearize a PDF file]
+### [!UICONTROL PDF ファイルのリニアライズ]
 
 このツールは、PDF ドキュメントをリニアライズして、web 用に最適化された PDF ドキュメントを作成します。リニアライズド PDF ドキュメントは、ドキュメント全体をダウンロードする必要なく、ページごとに表示できます。
 
@@ -653,7 +653,7 @@ ZIP 形式で出力する場合、PDFはページごとに 1 つの画像に変�
 
 ## カスタム API 呼び出しの実行
 
-これは、PDFサービス API へのカスタム HTTP リクエストをモジュール化します。
+これは、PDF サービス API へのカスタム HTTP リクエストをモジュール化します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -690,7 +690,7 @@ ZIP 形式で出力する場合、PDFはページごとに 1 つの画像に変�
 </table>
 
 
-### [!UICONTROL OCR for PDF file]
+### [!UICONTROL PDF ファイルの OCR]
 
 このツールは、ファイルに対して光学式文字認識（OCR）を実行し、PDF を生成します。
 
@@ -710,20 +710,20 @@ ZIP 形式で出力する場合、PDFはページごとに 1 つの画像に変�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Language]</td> 
-   <td>このドキュメントの言語を選択します。<p>言語オプションについては、この記事の <a href="#convert-document-to-pdf-file" class="MCXref xref" > ドキュメントをPDFファイルに変換する </a> を参照してください。 </td> 
+   <td>このドキュメントの言語を選択します。<p>言語オプションについては、この記事の <a href="#convert-document-to-pdf-file" class="MCXref xref" > ドキュメントをPDF ファイルに変換 </a> を参照してください。 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL OCR type]</td> 
    <td> 
     <ul> 
-     <li> <p>[!UICONTROL Modified original image] タイプを指定すると、テキストは検索および選択可能になりますが、非表示のテキストレイヤーをテキストの上に配置する前に、クリーンアップ処理中に（テキストを置くなど）元の画像が変更されます。 このタイプでは、不要なアーティファクトが削除され、シナリオによっては文書がより読みやすくなる可能性があります。 </p> </li> 
-     <li> <p>[!UICONTROL Unchanged original image] タイプは、検索可能なテキストレイヤーを元の画像の上にオーバーレイすることもありますが、この場合、元の画像は変更されません。 このタイプでは、元の画像に最大限の忠実度が得られます。</p> </li> 
+     <li> <p>[!UICONTROL Modified original image] タイプでは、テキストが検索可能および選択可能であることが保証されますが、クリーンアッププロセス中に元の画像が変更されてから（例えば、傾き補正など）、非表示のテキストレイヤーがその上に配置されます。このタイプでは、不要なアーティファクトが削除され、シナリオによっては文書がより読みやすくなる可能性があります。 </p> </li> 
+     <li> <p>[!UICONTROL Unchangedoriginal image] タイプでも、元の画像の上に検索可能なテキストレイヤーがオーバーレイされますが、この場合、元の画像は変更されません。このタイプでは、元の画像に最大限の忠実度が得られます。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Page manipulation]
+### [!UICONTROL ページ操作]
 
 このモジュールを使用すると、PDF ドキュメント内のページを選択的に回転または削除できます。例えば、縦表示を横表示に変更したり、PDF ドキュメントから特定のページを削除したりできます。
 
@@ -745,7 +745,7 @@ ZIP 形式で出力する場合、PDFはページごとに 1 つの画像に変�
    <td role="rowheader">[!UICONTROL Action]</td> 
    <td> <p>ファイルに対して実行するアクションを選択します。</p> 
     <ul> 
-     <li> <p><b>[!UICONTROL Delete]</b> </p> <p>ドキュメントからページを削除するには、このオプションを選択します。</p><p>削除するページ範囲ごとに「<strong>[!UICONTROL Add]</strong>」をクリックし、ページ範囲の最初のページと最後のページを入力します。 </p> <p>メモ：   
+     <li> <p><b>[!UICONTROL Delete]</b> </p> <p>ドキュメントからページを削除するには、このオプションを選択します。</p><p>削除する各ページ範囲で、「<strong>[!UICONTROL Add]</strong>」をクリックし、ページ範囲の最初と最後のページを入力します。 </p> <p>メモ：   
      <ul> 
       <li> <p>負の数を使用して、ドキュメントの最後から前方向に数えることができます。ドキュメントの最後のページは -1、最後から 2 番目のページは -2 というふうになります。</p> </li> 
       <li> <p>単一ページを削除するには、範囲の開始と終了の両方に同じページ番号を設定します。</p></ul> </li> 
@@ -754,7 +754,7 @@ ZIP 形式で出力する場合、PDFはページごとに 1 つの画像に変�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Pages]</td> 
-   <td> <p>削除するページ範囲ごとに「<strong>[!UICONTROL Add]</strong>」をクリックし、ページ範囲の最初のページと最後のページを入力します。 </p> <p>メモ：   
+   <td> <p>削除する各ページ範囲で、「<strong>[!UICONTROL Add]</strong>」をクリックし、ページ範囲の最初と最後のページを入力します。 </p> <p>メモ：   
      <ul> 
       <li> <p>負の数を使用して、ドキュメントの最後から前方向に数えることができます。ドキュメントの最後のページは -1、最後から 2 番目のページは -2 というふうになります。</p> </li> 
       <li> <p>単一ページを削除するには、範囲の開始と終了の両方に同じページ番号を設定します。</p> </li> 
@@ -767,7 +767,7 @@ ZIP 形式で出力する場合、PDFはページごとに 1 つの画像に変�
  </tbody> 
 </table>
 
-### [!UICONTROL PDF accessibility auto-tag]
+### [!UICONTROL PDF アクセシビリティの自動タグ付け]
 
 このアクションモジュールは、アクセシビリティのユースケースにタグ付けされた PDF を作成します。また、問題をリストアップし修正を提案する、オプションの Microsoft Excel レポートも作成します。
 
@@ -790,13 +790,13 @@ ZIP 形式で出力する場合、PDFはページごとに 1 つの画像に変�
    <td> <p>文書の見出しを移動するには、このオプションを有効にします。</p> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Generate Report]</td> 
+   <td role="rowheader">[!UICONTROL レポートの生成 ]</td> 
    <td> <p>PDF のアクセシビリティの問題とその場所を記載したレポートを生成し、これらの問題の修正方法に関する提案を出すには、このオプションを有効にします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL PDF file properties]
+### [!UICONTROL PDF ファイルのプロパティ]
 
 このツールは、次のようなドキュメントに関する基本情報を抽出します。
 
@@ -823,7 +823,7 @@ ZIP 形式で出力する場合、PDFはページごとに 1 つの画像に変�
  </tbody> 
 </table>
 
-### [!UICONTROL Protect a PDF file]
+### [!UICONTROL PDF ファイルの保護 ]
 
 このツールは、ユーザーまたは所有者のパスワードを使用して PDF ドキュメントを保護します。また、PDF ドキュメントにおける印刷、編集、コピーなど、特定の機能に対する制限も設定します。暗号化するコンテンツのタイプと暗号化アルゴリズムを選択します。
 
@@ -845,8 +845,8 @@ ZIP 形式で出力する場合、PDFはページごとに 1 つの画像に変�
    <td role="rowheader">[!UICONTROL Password Protection Type]</td> 
    <td> <p>パスワードを使用して入力 PDF ドキュメントを暗号化するには、このオプションを有効にします。このオプションを有効にする場合、次のいずれかまたは両方の値を指定して入力する必要があります。 </p> 
     <ul> 
-     <li> <p>[!UICONTROL User Password]</p> </li> 
-     <li> <p>[!UICONTROL Owner Password] </p> </li> 
+     <li> <p>[!UICONTROL ユーザーパスワード ]</p> </li> 
+     <li> <p>[!UICONTROL 所有者パスワード ] </p> </li> 
     </ul> <p>各パスワードは最大 128 文字までです。</p> </td> 
   </tr> 
   <tr> 
@@ -864,16 +864,16 @@ ZIP 形式で出力する場合、PDFはページごとに 1 つの画像に変�
      <li> <p>[!UICONTROL All content]</p> </li> 
      <li> <p>[!UICONTROL All content except metadata]</p> </li> 
      <li> <p>[!UICONTROL Only embedded data] </p> </li> 
-    </ul> <p>「[!UICONTROL Only embedded data]」を選択すると、提供されたアクセス権限が無効になります。</p> </td> 
+    </ul> <p>「[!UICONTROL Only embedded data]」を選択すると、指定されたアクセス権限が無効になります。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Permissions]</td> 
-   <td> <p>印刷、編集、コンテンツのコピーを許可する権限を選択します。</p> <p>権限設定は、[!UICONTROL Password Protection Type] フィールドに [!UICONTROL Owner Password] が設定されている場合にのみ使用されます。</p> </td> 
+   <td> <p>印刷、編集、コンテンツのコピーを許可する権限を選択します。</p> <p>権限設定は、[!UICONTROL パスワード保護の種類 ] フィールドに [!UICONTROL 所有者パスワード ] が設定されている場合にのみ使用されます。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Remove protection of a PDF file]
+### [!UICONTROL PDF ファイルの保護を解除]
 
 このツールは、PDF ドキュメントからセキュリティ（パスワード保護）を削除します。
 
@@ -898,7 +898,7 @@ ZIP 形式で出力する場合、PDFはページごとに 1 つの画像に変�
  </tbody> 
 </table>
 
-### [!UICONTROL Split a PDF file]
+### [!UICONTROL PDF ファイルの分割]
 
 このアクションモジュールは、PDF ドキュメントを複数の小さなドキュメントに分割します。ファイル数、ファイルあたりのページ数、ページ範囲のどちらで分割するかを指定します。
 

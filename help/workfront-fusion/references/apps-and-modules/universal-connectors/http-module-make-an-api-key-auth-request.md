@@ -4,14 +4,14 @@ description: この  [!DNL Adobe Workfront Fusion]  アクションモジュー�
 author: Becky
 feature: Workfront Fusion
 exl-id: 362b80b5-42f4-4b82-b06c-39c7c5a1eb1a
-source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 72%
+source-wordcount: '1020'
+ht-degree: 79%
 
 ---
 
-# HTTP > [!UICONTROL Make an API Key Authorization request]
+# HTTP > [!UICONTROL API キー認証リクエストの作成 ]
 
 この [!DNL Adobe Workfront Fusion] アクションモジュールは、API キー認証を必要とする指定された URL に HTTPS リクエストを送信し、応答を処理します。
 
@@ -42,7 +42,7 @@ ht-degree: 72%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -64,9 +64,9 @@ ht-degree: 72%
 
 +++
 
-## [!UICONTROL HTTP]/[!UICONTROL Make an API Key Authorization request] モジュール設定
+## [!UICONTROL HTTP] > [!UICONTROL API キー認証リクエストを行う ] モジュール設定
 
-[!UICONTROL HTTP]/[!UICONTROL Make an API Key Authorization request] モジュールを設定すると、以下に示 [!DNL Adobe Workfront Fusion] フィールドが表示されます。 モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL HTTP]/[!UICONTROL API キー認証リクエストを行う ] モジュールを設定すると、以下に示 [!DNL Adobe Workfront Fusion] フィールドが表示されます。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) でモジュールから別のモジュールに情報をマッピングを参照してください。
 
@@ -78,7 +78,7 @@ ht-degree: 72%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Credentials]</td> 
-   <td> <p>API キー認証資格情報を含むキーを選択します。新しいキーを追加するには、「<strong>[!UICONTROL Add]</strong>」をクリックして次の情報を設定します。</p> 
+   <td> <p>API キー認証資格情報を含むキーを選択します。新しいキーを追加するには、<strong>[!UICONTROL Add]</strong> をクリックして、次の情報を設定します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Key name]</strong></p> <p>この API 資格情報セットの名前を入力します。</p> </li> 
      <li> <p><strong>[!UICONTROL Key]</strong> </p> <p>API キーを入力します。</p> </li> 
@@ -110,23 +110,23 @@ ht-degree: 72%
    <td role="rowheader"> <p>[!UICONTROL Body type]</p> </td> 
    <td> <p>HTTP 本文は、使用するヘッダーがある場合、そのヘッダーの直後に HTTP トランザクションメッセージで送信されるデータバイトです。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>Raw 本文タイプは、開発者向けドキュメントで送信するデータが指定されていない場合でも、通常、ほとんどの HTTP 本文リクエストに適しています。</p> <p>[!UICONTROL Content type] フィールドでデータ解析の形式を指定します。</p> <p>選択したコンテンツタイプにもかかわらず、モジュールは開発者ドキュメントで規定されているか必要とされている任意の形式でデータを入力します。</p> </li> 
-     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>このボディタイプは、<code>application/x-www-form-urlencoded</code> を使用してデータを [!UICONTROL POST] します。</p> <p><code>[!UICONTROL application/x-www-form-urlencoded]</code> の場合、サーバーに送信される HTTP メッセージの本文は基本的に 1 つのクエリ文字列になります。キーと値は、<code>&amp;</code> で区切られ、キーと値の間に <code>=</code> を持つキーと値のペアでエンコードされています。 </p> <p>バイナリデータの場合は、代わりに <code>[!UICONTROL multipart/form-data]</code> を使用します。</p> 
+     <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>Raw 本文タイプは、開発者向けドキュメントで送信するデータが指定されていない場合でも、通常、ほとんどの HTTP 本文リクエストに適しています。</p> <p>データを解析する形式を [!UICONTROL Content type] フィールドに指定します。</p> <p>選択したコンテンツタイプにもかかわらず、モジュールは開発者ドキュメントで規定されているか必要とされている任意の形式でデータを入力します。</p> </li> 
+     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>この本文タイプは、<code>application/x-www-form-urlencoded</code> を使用してデータを [!UICONTROL POST] します。</p> <p><code>[!UICONTROL application/x-www-form-urlencoded]</code> の場合、サーバーに送信される HTTP メッセージの本文は基本的に 1 つのクエリ文字列になります。キーと値は、<code>&amp;</code> で区切られ、キーと値の間に <code>=</code> を持つキーと値のペアでエンコードされています。 </p> <p>バイナリデータの場合は、代わりに <code>[!UICONTROL multipart/form-data]</code> を使用します。</p> 
       <div class="example" data-mc-autonum="<b>Example: </b>">
        <span class="autonumber"><span><b>例：</b></span></span> 
        <p>結果の HTTP リクエスト形式の例は、次のようになります。</p> 
        <p><code>field1=value1&amp;field2=value2</code> </p> 
       </div> </li> 
-     <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] は、ファイルおよびデータの送信に使用される HTTP マルチパートリクエストです。 通常、ファイルをサーバーにアップロードする際に使用されます。</p> <p>リクエストで送信するフィールドを追加します。各フィールドには、キーと値のペアが含まれている必要があります。</p> 
+     <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] は、ファイルとデータの送信に使用される HTTP マルチパートリクエストです。通常、ファイルをサーバーにアップロードする際に使用されます。</p> <p>リクエストで送信するフィールドを追加します。各フィールドには、キーと値のペアが含まれている必要があります。</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>リクエスト本文内で送信するキーと値を入力します。</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>キーを入力し、リクエスト本文で送信するソースファイルを指定します。</p> <p>前のモジュール（[!UICONTROL HTTP]/[!UICONTROL Get a File] または [!UICONTROL Google Drive]/[!UICONTROL Download a File] など）からアップロードするファイルをマッピングするか、ファイル名とファイルデータを手動で入力します。</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>キーを入力し、リクエスト本文で送信するソースファイルを指定します。</p> <p>前のモジュールからアップロードするファイルをマッピングするか（例：[!UICONTROL HTTP] &gt; [!UICONTROL ファイルを取得 ] または [!UICONTROL Google Drive] &gt; [!UICONTROL ファイルをダウンロード ]）、ファイル名とファイルデータを手動で入力します。</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Parse response]</p> </td> 
-   <td> <p>このオプションを有効にすると、応答を自動的に解析し、JSON および XML 応答を変換するので、[!UICONTROL JSON]/[!UICONTROL Parse JSON] または [!UICONTROL XML]/[!UICONTROL Parse XML] モジュールを使用する必要がなくなります。</p> <p>解析された JSON または XML コンテンツを使用する前に、モジュールを手動で 1 回実行して、モジュールが応答コンテンツを認識し、後続のモジュールにマッピングできるようにします。</p> </td> 
+   <td> <p>このオプションを有効にすると、応答を自動的に解析し、JSON および XML 応答を変換するので、[!UICONTROL JSON]／[!UICONTROL Parse JSON] または [!UICONTROL XML]／[!UICONTROL Parse XML] モジュールを使用する必要がなくなります。</p> <p>解析された JSON または XML コンテンツを使用する前に、モジュールを手動で 1 回実行して、モジュールが応答コンテンツを認識し、後続のモジュールにマッピングできるようにします。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Timeout] </td> 
@@ -153,7 +153,7 @@ ht-degree: 72%
               <p>ファイルのパスワードを入力します。</p>
             </li>
             <li value="5">
-              <p>「<b>[!UICONTROL Save]</b>」をクリックしてファイルを抽出し、モジュール設定に戻ります。</p>
+              <p><b>[!UICONTROL 保存 ]</b> をクリックしてファイルを抽出し、モジュール設定に戻ります。</p>
             </li>
           </ol>
 </p> </td> 

@@ -4,10 +4,10 @@ description: 接続エリアで、チームの接続を表示および管理で�
 author: Becky
 feature: Workfront Fusion
 exl-id: 7bedf002-061b-40fc-a0f8-c12d2930bcf9
-source-git-commit: 945fd574afef0cfdd8b36ba5a24f5262e772ed8b
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 30%
+source-wordcount: '224'
+ht-degree: 49%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 30%
 
 [!DNL Adobe Workfront Fusion] アカウントの次の領域で、シナリオ要素を保存および削除できます。
 
-* [!UICONTROL Scenario]
-* [!UICONTROL Connections]
-* [!UICONTROL Webhooks]
-* [!UICONTROL Keys]
-* [!UICONTROL Devices]
-* [!UICONTROL Data stores]
-* [!UICONTROL User profiles]
+* [!UICONTROL シナリオ]
+* [!UICONTROL 接続]
+* [!UICONTROL Webhook]
+* [!UICONTROL キー]
+* [!UICONTROL デバイス]
+* [!UICONTROL データストア]
+* [!UICONTROL ユーザープロファイル]
 
 
 ## アクセス要件
@@ -45,7 +45,7 @@ ht-degree: 30%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -82,7 +82,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 1. 左側のパネルのエリアをクリックします。
 
-   例えば、シナリオを削除する場合は、左側のパネルの「**[!UICONTROL Scenario]**」をクリックします。
+   例えば、シナリオを削除する場合は、左側のパネルの「**[!UICONTROL シナリオ]**」をクリックします。
 
-1. 削除する項目の右側にある下矢印をクリックし、[**[!UICONTROL Delete]**] をクリックします。
-1. 「**[!UICONTROL Really]**」をクリックして確認します。
+1. 削除する項目の右にある下向き矢印をクリックし、「**[!UICONTROL 削除]**」をクリックします。
+1. 「**[!UICONTROL はい]**」をクリックして確定します。

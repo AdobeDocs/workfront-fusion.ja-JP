@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  Figma では、コメント、フ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2246'
-ht-degree: 58%
+source-wordcount: '2560'
+ht-degree: 78%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 58%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -93,7 +93,7 @@ Figma コネクタでは、以下を使用します。
 
 Figma モジュールの接続を作成するには：
 
-1. 任意の Figma モジュールで、「接続」ボックスの横にある「**[!UICONTROL Add]**」をクリックします。
+1. 任意の Figma モジュールで、「接続」ボックスの横にある **[!UICONTROL 追加]** をクリックします。
 
 1. 次のフィールドに入力します。
 
@@ -117,7 +117,7 @@ Figma モジュールの接続を作成するには：
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>[!UICONTROL Figme] [!UICONTROL Client ID] を入力します。</td>
+        <td>[!UICONTROL 形式 ] [!UICONTROL クライアント ID] を入力します。</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
@@ -134,7 +134,7 @@ Figma モジュールの接続を作成するには：
       </tbody>
     </table>
 
-1. 「**[!UICONTROL Continue]**」をクリックして接続を保存し、モジュールに戻ります。
+1. 「**[!UICONTROL 続行]**」をクリックして接続を保存し、モジュールに戻ります。
 
 
 
@@ -164,7 +164,7 @@ Figma モジュールの接続を作成するには：
 * [コメントを投稿](#post-a-comment)
 
 
-#### [!UICONTROL Delete a comment]
+#### [!UICONTROL コメントを削除]
 
 このアクションモジュールは、ファイルから 1 つのコメントを削除します。
 
@@ -188,7 +188,7 @@ Figma モジュールの接続を作成するには：
   </tbody>
 </table>
 
-#### [!UICONTROL List comments]
+#### [!UICONTROL コメントを一覧表示]
 
 この検索モジュールは、[!DNL Figma] の単一ファイルについたすべてのコメントを一覧表示します。
 
@@ -206,10 +206,10 @@ Figma モジュールの接続を作成するには：
         <p>コメントを取得するファイルのファイル ID を入力またはマッピングします。 </p>
         <ul>
           <li>
-            <p>ID が不明な場合は、「<b>[!UICONTROL Find Files]</b>」をクリックし、ファイルが関連付けられているプロジェクトの ID を入力またはマッピングしてから、ファイルを選択します。</p>
+            <p>ID が不明な場合は、<b>[!UICONTROL Find Files]</b> をクリックし、ファイルが関連付けられているプロジェクトの ID を入力またはマッピングし、ファイルを選択します。</p>
           </li>
           <li>
-            <p>プロジェクトの ID がわからない場合は、「<b>[!UICONTROL Find Projects]</b>」をクリックし、ファイルが関連付けられているプロジェクトを所有するチームの ID を入力またはマップして、プロジェクトを選択し、ファイルを選択します。</p>
+            <p>プロジェクトの ID が不明な場合は、<b>[!UICONTROL Find Projects]</b> をクリックし、ファイルが関連付けられているプロジェクトを所有するチームの ID を入力またはマッピングして、プロジェクトを選択してから、ファイルを選択します。</p>
           </li>
         </ul>
       </td>
@@ -222,7 +222,7 @@ Figma モジュールの接続を作成するには：
 </table>
 
 
-#### [!UICONTROL Post a comment]
+#### [!UICONTROL コメントを投稿]
 
 このアクションモジュールは、Figma ファイルにコメントを投稿します。
 
@@ -240,10 +240,10 @@ Figma モジュールの接続を作成するには：
         <p>コメントを投稿するファイルのファイル ID を入力またはマッピングします。 </p>
         <ul>
           <li>
-            <p>ファイルの ID がわからない場合は、[<b>[!UICONTROL Find Files]</b>] をクリックして、ファイルが関連付けられているプロジェクトの ID を入力またはマッピングし、ファイルを選択します。</p>
+            <p>ファイルの ID が不明な場合は、<b>[!UICONTROL Find Files]</b> をクリックし、ファイルが関連付けられているプロジェクトの ID を入力またはマッピングして、ファイルを選択します。</p>
           </li>
           <li>
-            <p>ファイルの ID を見つけようとして、プロジェクトの ID が分からない場合は、「<b>[!UICONTROL Find Projects]</b>」をクリックし、ファイルが関連付けられているプロジェクトを所有するチームの ID を入力またはマップします。 プロジェクトを選択したあと、ファイルを選択します。</p>
+            <p>ファイルの ID を探していて、プロジェクトの ID が不明な場合は、<b>[!UICONTROL Find Projects]</b> をクリックし、ファイルが関連付けられているプロジェクトを所有するチームの ID を入力またはマッピングします。プロジェクトを選択したあと、ファイルを選択します。</p>
           </li>
         </ul>
       </td>
@@ -267,7 +267,7 @@ Figma モジュールの接続を作成するには：
 * [プロジェクトのリスト](#list-projects)
 
 
-#### [!UICONTROL Get a file or image]
+#### [!UICONTROL ファイルまたは画像の取得]
 
 このアクションモジュールは、Figma ライブラリから 1 つのファイルまたは画像を取得します
 
@@ -287,26 +287,26 @@ Figma モジュールの接続を作成するには：
           <li>
             <p><b>[!UICONTROL File]</b>
             </p>
-            <p>モジュールは、[!UICONTROL Key] によって参照されるドキュメントを JSON オブジェクトとして返します。 ファイルキーは、任意の Figma ファイル URL から解析できます。</p>
-            <p>フィールドについては、<a href="#get-a-file-or-image-file" class="MCXref xref" >[!UICONTROL Get a file or image: File]</a> を参照してください。</p>
+            <p>このモジュールは、[!UICONTROL Key]で参照されるドキュメントを JSON オブジェクトとして返します。ファイルキーは、任意の Figma ファイル URL から解析できます。</p>
+            <p>フィールドについては、<a href="#get-a-file-or-image-file" class="MCXref xref" >[!UICONTROL Get a file or image: File]</a>を参照してください。</p>
           </li>
           <li>
             <p><b>[!UICONTROL File nodes]</b>
             </p>
-            <p>ID で参照されるノードを JSON オブジェクトとして返します。ノードは、[!UICONTROL Key] によって参照される [!DNL Figma] ファイルから取得されます。</p>
-            <p>フィールドについては、<a href="#get-a-file-or-image-file-nodes" class="MCXref xref" >[!UICONTROL Get a file or image: File nodes]</a> を参照してください。</p>
+            <p>ID で参照されるノードを JSON オブジェクトとして返します。ノードは、[!UICONTROL Key]で参照される [!DNL Figma] ファイルから取得されます。</p>
+            <p>フィールドについては、<a href="#get-a-file-or-image-file-nodes" class="MCXref xref" >[!UICONTROL Get a file or image: File nodes]</a>を参照してください。</p>
           </li>
           <li>
             <p><b>[!UICONTROL Image]</b>
             </p>
             <p>このモジュールは、ファイルから画像をレンダリングします。</p>
-            <p>フィールドについては、<a href="#get-a-file-or-image-image" class="MCXref xref" >[!UICONTROL Get a file or image: Image]</a> を参照してください。</p>
+            <p>フィールドについては、<a href="#get-a-file-or-image-image" class="MCXref xref" >[!UICONTROL Get a file or image: Image]</a>を参照してください。</p>
           </li>
           <li>
             <p><b>[!UICONTROL Image fills]</b>
             </p>
             <p>このモジュールは、ドキュメント内の画像の塗りに存在するすべての画像のダウンロードリンクを返します。画像の塗りは、ユーザーが指定した画像を [!DNL Figma] で表現する方法です。画像を [!DNL Figma] にドラッグすると、その画像を表す単一の塗りを持つ長方形が [!DNL Figma] で作成されます。ユーザーは、その長方形（および塗りのプロパティ）を変形できます。</p>
-            <p>フィールドについては、<a href="#get-a-file-or-image-image-fills" class="MCXref xref" >[!UICONTROL Get a file or image: Image fills]</a> を参照してください。</p>
+            <p>フィールドについては、<a href="#get-a-file-or-image-image-fills" class="MCXref xref" >[!UICONTROL Get a file or image: Image fills]</a>を参照してください。</p>
           </li>
         </ul>
       </td>
@@ -333,7 +333,7 @@ Figma モジュールの接続を作成するには：
       <td role="rowheader">[!UICONTROL Node IDs]</td>
       <td>
         <p>ドキュメントのサブセットのみを返すには、モジュールが返すノードを入力します。このモジュールは、リストされたノード、その子、およびルートノードとリストされたノードの間のすべてのノードを返します。</p>
-        <p>返すノードごとに「<b>[!UICONTROL Add]</b>」をクリックし、ノードのテキストを入力します。</p>
+        <p>返すノードごとに、「<b>[!UICONTROL Add]</b>」をクリックしてノードのテキストを入力します。</p>
       </td>
     </tr>
     <tr>
@@ -359,7 +359,7 @@ Figma モジュールの接続を作成するには：
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Plugin data]</td>
-      <td>プラグイン ID や文字列「[!UICONTROL shared]」のコンマ区切りリスト。 これらのプラグインによって書き込まれたドキュメント内に存在するすべてのデータは、<code>pluginData</code> プロパティと <code>sharedPluginData</code> プロパティの結果に含まれます。</td>
+      <td>プラグイン ID や文字列「[!UICONTROL shared]」のコンマ区切りリスト。これらのプラグインによって書き込まれたドキュメント内に存在するすべてのデータは、<code>pluginData</code> プロパティと <code>sharedPluginData</code> プロパティの結果に含まれます。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Branch data]</td>
@@ -382,7 +382,7 @@ Figma モジュールの接続を作成するには：
       <td role="rowheader">[!UICONTROL Node IDs]</td>
       <td>
         <p>モジュールが返し、変換するノードを入力します。</p>
-        <p>返すノードごとに「<b>[!UICONTROL Add]</b>」をクリックし、ノードのテキストを入力します。</p>
+        <p>返すノードごとに、「<b>[!UICONTROL Add]</b>」をクリックしてノードのテキストを入力します。</p>
       </td>
     </tr>
     <tr>
@@ -432,7 +432,7 @@ Figma モジュールの接続を作成するには：
       <td role="rowheader">[!UICONTROL Node IDs]</td>
       <td>
         <p>モジュールがレンダリングするノードを入力します。</p>
-        <p>レンダリングするノードごとに「<b>[!UICONTROL Add]</b>」をクリックし、ノードのテキストを入力します。</p>
+        <p>レンダリングするノードごとに、「<b>[!UICONTROL Add]</b>」をクリックしてノードのテキストを入力します。</p>
       </td>
     </tr>
     <tr>
@@ -461,15 +461,15 @@ Figma モジュールの接続を作成するには：
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL SVG - Include ID]</td>
-      <td>すべての SVG 要素の ID 属性を含めるには、このオプションを有効にします。デフォルト：[!UICONTROL false]</td>
+      <td>すべての SVG 要素の ID 属性を含めるには、このオプションを有効にします。デフォルト：[!UICONTROL false]。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL SVG - Simplify Stroke]</td>
-      <td>内部や外部のストロークを簡略化し、可能な場合に &lt;mask&gt; の代わりにストローク属性を使用するには、このオプションを有効にします。デフォルト：[!UICONTROL true]</td>
+      <td>内部や外部のストロークを簡略化し、可能な場合に &lt;mask&gt; の代わりにストローク属性を使用するには、このオプションを有効にします。デフォルト：[!UICONTROL true]。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Use absolute bounds]</td>
-      <td>ノードがトリミングされているか、ノードの周囲のスペースが空であるかに関係なく、ノードの全寸法を使用するには、このオプションを有効にします。トリミングせずにテキストノードを書き出すには、このオプションを使用します。デフォルト：[!UICONTROL false]</td>
+      <td>ノードがトリミングされているか、ノードの周囲のスペースが空であるかに関係なく、ノードの全寸法を使用するには、このオプションを有効にします。トリミングせずにテキストノードを書き出すには、このオプションを使用します。デフォルト：[!UICONTROL false]。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Version]</td>
@@ -491,9 +491,9 @@ Figma モジュールの接続を作成するには：
   </tbody>
 </table>
 
-### [!UICONTROL List file version history]
+### [!UICONTROL ファイルのバージョン履歴のリスト]
 
-この検索モジュールは、[!UICONTROL Figma] 内の 1 つのファイルのバージョン履歴を返します。
+この検索モジュールは、[!UICONTROL Figma] 内の単一ファイルのバージョン履歴を返します。
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -507,10 +507,10 @@ Figma モジュールの接続を作成するには：
         <p>バージョン履歴を取得するファイルのファイル ID を入力またはマッピングします。 </p>
         <ul>
           <li>
-            <p>ファイルの ID がわからない場合は、[<b>[!UICONTROL Find Files]</b>] をクリックして、ファイルが関連付けられているプロジェクトの ID を入力またはマッピングし、ファイルを選択します。</p>
+            <p>ファイルの ID が不明な場合は、「<b>[!UICONTROL Find Files]</b>」をクリックして、ファイルが関連付けられているプロジェクトの ID を入力またはマッピングしたあと、ファイルを選択します。</p>
           </li>
           <li>
-            <p>ファイルの ID を見つけようとして、プロジェクトの ID が分からない場合は、「<b>[!UICONTROL Find Projects]</b>」をクリックし、ファイルが関連付けられているプロジェクトを所有するチームの ID を入力またはマップします。 プロジェクトを選択したあと、ファイルを選択します。</p>
+            <p>ファイルの ID を探していて、プロジェクトの ID が不明な場合は、<b>[!UICONTROL Find Projects]</b> をクリックし、ファイルが関連付けられているプロジェクトを所有するチームの ID を入力またはマッピングします。プロジェクトを選択したあと、ファイルを選択します。</p>
           </li>
         </ul>
       </td>
@@ -522,7 +522,7 @@ Figma モジュールの接続を作成するには：
   </tbody>
 </table>
 
-#### [!UICONTROL List project files]
+#### [!UICONTROL プロジェクトファイルのリスト]
 
 この検索モジュールは、指定されたプロジェクト内のすべてのファイルのリストを返します。
 
@@ -540,7 +540,7 @@ Figma モジュールの接続を作成するには：
         <p>ファイルを取得するプロジェクトのプロジェクト ID を入力またはマッピングします。 </p>
         <ul>
           <li>
-            <p>プロジェクトの ID が不明な場合は、「<b>[!UICONTROL Find Projects]</b>」をクリックし、プロジェクトが関連付けられているチームの ID を入力またはマッピングしてから、プロジェクトを選択します。</p>
+            <p>プロジェクトの ID が不明な場合は、「<b>[!UICONTROL Find Projects]</b>」をクリックして、プロジェクトが関連付けられているチームの ID を入力またはマッピングしたあと、プロジェクトを選択します。</p>
           </li>
         </ul>
       </td>
@@ -552,7 +552,7 @@ Figma モジュールの接続を作成するには：
   </tbody>
 </table>
 
-#### [!UICONTROL List projects]
+#### [!UICONTROL プロジェクトのリスト]
 
 この検索モジュールは、指定したチーム内のすべてのプロジェクトのリストを返します。
 
@@ -569,7 +569,7 @@ Figma モジュールの接続を作成するには：
       <td>ファイルを取得するプロジェクトのプロジェクト ID を入力またはマッピングします。チーム ID は、Figma のチームのページの URL で確認できます。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Maximum number of returned projects]</td>
+      <td role="rowheader">[!UICONTROL 返されるプロジェクトの最大数 ]</td>
       <td>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</td>
     </tr>
   </tbody>
@@ -578,7 +578,7 @@ Figma モジュールの接続を作成するには：
 
 ### コンポーネントとスタイル
 
-#### [!UICONTROL Get a style or component]
+#### [!UICONTROL スタイルまたはコンポーネントを取得]
 
 このアクションモジュールは、1 つのスタイルまたはコンポーネント、またはスタイルまたはコンポーネントのセットを取得します。
 
@@ -595,7 +595,7 @@ Figma モジュールの接続を作成するには：
       <td>取得するオブジェクトのタイプを選択します。</td>
     </tr>
     <tr>
-      <td role="rowheader">&lt;[!UICONTROL Object> key]</td>
+      <td role="rowheader">&lt;[!UICONTROL Object&gt; key]</td>
       <td>取得するオブジェクトのキー（一意の ID）を入力します。</td>
     </tr>
     <tr>
@@ -609,7 +609,7 @@ Figma モジュールの接続を作成するには：
     <tr>
       <td role="rowheader">[!UICONTROL After]</td>
       <td>
-        <p>チームコンポーネントまたはチームコンポーネントセットを取得する場合は、結果の数を入力するかマッピングして、その数を超えると結果の取得が開始されるようにします。 これを [!UICONTROL Page Size] フィールドと組み合わせると、結果にページ番号を付けることができます。</p>
+        <p>チームコンポーネントまたはチームコンポーネントセットを取得する場合は、結果の数を入力するかマッピングして、その数を超えると結果の取得が開始されるようにします。 これを [!UICONTROL Page Size] フィールドと組み合わせて、結果をページ分割することができます。</p>
         <p>この値はオブジェクト ID に対応していません。</p>
         <p>このフィールドは、[!UICONTROL Before] フィールドと組み合わせて使用することはできません。</p>
       </td>
@@ -617,9 +617,9 @@ Figma モジュールの接続を作成するには：
     <tr>
       <td role="rowheader">[!UICONTROL Before]</td>
       <td>
-        <p>チームコンポーネントまたはチームコンポーネントセットを取得する場合は、結果の数を入力するかマッピングしてから、結果の取得を開始します。 これを [!UICONTROL Page Size] フィールドと組み合わせると、結果にページ番号を付けることができます。</p>
+        <p>チームコンポーネントまたはチームコンポーネントセットを取得する場合は、結果の数を入力するかマッピングしてから、結果の取得を開始します。 これを [!UICONTROL Page Size] フィールドと組み合わせて、結果をページ分割することができます。</p>
         <p>この値はオブジェクト ID に対応していません。</p>
-        <p>このフィールドは、[!UICONTROL After] フィールドと組み合わせて使用することはできません。</p>
+        <p>このフィールドは、[!UICONTROL After] フィールドと組み合わせて使用できません。</p>
       </td>
     </tr>
   </tbody>
@@ -633,7 +633,7 @@ Figma モジュールの接続を作成するには：
 * [イベントを監視する](#watch-events)
 
 
-#### [!UICONTROL Make an API call]
+#### [!UICONTROL API 呼び出しを実行]
 
 このアクションモジュールは、認証について考えることなく、Figma API に対して認証済みのカスタム呼び出しを実行できます。これにより、他のモジュールでは不可能なデータフローオートメーションを作成できます。
 
@@ -673,14 +673,14 @@ Figma モジュールの接続を作成するには：
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件文を JSON で使用する場合は、条件文を引用符で囲みます。</p> 
+   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件ステートメントを JSON で使用する場合は、条件ステートメントの外側に引用符を挿入します。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL Watch events]
+#### [!UICONTROL イベントを見る]
 
 このトリガーモジュールでは、[!DNL Figma] のチームスペースの特定のチームに対して次のいずれかのイベントが発生した場合、シナリオが開始されます。
 
@@ -726,7 +726,7 @@ Figma モジュールの接続を作成するには：
             <p>Webhook の説明を入力します。</p>
           </li>
           <li>
-            <p>「<b>[!UICONTROL Save]</b>」をクリックして Webhook を保存し、モジュールに戻ります。</p>
+            <p>「<b>[!UICONTROL Save]</b>」をクリックして web フックを保存し、モジュールに戻ります。</p>
           </li>
         </ol>
       </td>

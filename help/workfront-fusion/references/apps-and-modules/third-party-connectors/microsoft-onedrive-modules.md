@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Workfront Fusion]  シナリオでは、OneDrive を�
 author: Becky
 feature: Workfront Fusion
 exl-id: d21eafad-9c67-4f42-b718-0aa4223846e6
-source-git-commit: 337a6918dc20f2e7523438dea752393a1b3f50ee
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '4088'
 ht-degree: 92%
@@ -40,7 +40,7 @@ ht-degree: 92%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 

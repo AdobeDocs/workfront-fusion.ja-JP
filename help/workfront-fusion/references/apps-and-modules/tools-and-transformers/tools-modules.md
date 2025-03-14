@@ -4,18 +4,18 @@ description: ' [!DNL Adobe Workfront Fusion Tools]  セクションには、シ�
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 62%
+source-wordcount: '2286'
+ht-degree: 86%
 
 ---
 
-# [!UICONTROL Tools]
+# [!UICONTROL ツール]
 
 [!DNL Adobe Workfront Fusion Tools] セクションには、シナリオを強化できる便利なモジュールがいくつか含まれています。
 
-[!UICONTROL Tools] モジュールは、アプリのリストから、または画面下部の [!UICONTROL Tools] アイコン ![ ツールアイコン ](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) から使用できます。
+[!UICONTROL  ツール ] モジュールは、アプリのリストから、または画面の下部にある [!UICONTROL  ツール ] アイコン ![ ツールアイコン ](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) から使用できます。
 
 ## アクセス要件
 
@@ -38,7 +38,7 @@ ht-degree: 62%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>Workfront Fusion のライセンス要件はありません。</p>
+   <p>Workfront Fusion ライセンス要件なし</p>
    </td> 
   </tr> 
   <tr> 
@@ -54,11 +54,11 @@ ht-degree: 62%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+[!DNL Adobe Workfront Fusion] ライセンスについては、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
 
 +++
 
-## [!UICONTROL Tools] とそのフィールド
+## [!UICONTROL ツール]とそのフィールド
 
 * [トリガー](#triggers)
 * [アクション](#actions)
@@ -67,11 +67,11 @@ ht-degree: 62%
 
 ### トリガー
 
-#### [!UICONTROL Basic trigger]
+#### [!UICONTROL 基本トリガー]
 
 このモジュールでは、カスタムトリガーを作成し、その入力バンドルを定義できます。
 
-このモジュールは、例えば、連絡先やその他のリストが指定のメールアドレス（[!UICONTROL Email] >[!UICONTROL Send an Email] や [!DNL Gmail] >[!UICONTROL Send an Email] モジュールなど）に送信されるようにスケジュールされている場合や、必要に応じてトリガーされる簡単なリマインダーとして使用できます。
+例えば、連絡先や、指定したメールアドレス（[!UICONTROL メール]／[!UICONTROL メールの送信]または [!DNL Gmail]／[!UICONTROL メールを送信]モジュール）、または必要に応じてトリガーされる簡単なリマインダーとして使用できます。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -86,18 +86,18 @@ ht-degree: 62%
 
 ### アクション
 
-* [[!UICONTROL Get Multiple Variables]](#get-multiple-variables)
-* [[!UICONTROL Get Variable]](#get-variable)
-* [[!UICONTROL Increment function]](#increment-function)
-* [[!UICONTROL Set Multiple Variables]](#set-multiple-variables)
-* [[!UICONTROL Set Variable]](#set-variable)
-* [[!UICONTROL Sleep]](#sleep)
+* [[!UICONTROL 複数の変数を取得]](#get-multiple-variables)
+* [[!UICONTROL 変数を取得]](#get-variable)
+* [[!UICONTROL 増分関数]](#increment-function)
+* [[!UICONTROL 複数の変数を設定]](#set-multiple-variables)
+* [[!UICONTROL 変数を設定]](#set-variable)
+* [[!UICONTROL スリープ]](#sleep)
 
-#### [!UICONTROL Get Multiple Variables]
+#### [!UICONTROL 複数の変数を取得]
 
-このモジュールは、[!UICONTROL Set Variable] モジュールまたは [!UICONTROL Set Multiple Variables] モジュールによって以前に作成された値を取得します。
+このモジュールは、[!UICONTROL 変数を設定]または[!UICONTROL 複数の変数を設定]モジュールによって以前に作成された値を取得します。
 
-このモジュールは、変数が [!UICONTROL Get Multiple Variables] モジュールがある場所とは異なるルートに設定されている場合でも、シナリオの任意の場所に設定された変数を読み取ることができます。 唯一の要件は、[!UICONTROL Tools]/[!UICONTROL Set Variable] または [!UICONTROL Tools]/[!UICONTROL Set Multiple Variable] モジュールを [!UICONTROL Tools]/[!UICONTROL Get Multiple Variables] モジュールの前に実行することです。 モジュールの実行順序の詳細については、「[ ルーターモジュールの追加とルートの設定 ](/help/workfront-fusion/create-scenarios/add-modules/router-module.md) を参照してください。
+このモジュールは、[!UICONTROL 複数の変数を取得]モジュールが配置されている場所とは異なるルートに変数が設定されている場合でも、シナリオ内の任意の場所に設定された変数を読み取ることができます。唯一の要件は、[!UICONTROL ツール]／[!UICONTROL 変数の設定]または[!UICONTROL ツール]／[!UICONTROL 複数の変数の設定]モジュールが、[!UICONTROL ツール]／[!UICONTROL 複数変数の取得]モジュールの前に実行されることです。モジュールの実行順序の詳細については、「[ ルーターモジュールの追加とルートの設定 ](/help/workfront-fusion/create-scenarios/add-modules/router-module.md) を参照してください。
 
 <table style="table-layout:auto">
     <tr>
@@ -108,19 +108,19 @@ ht-degree: 62%
 
 >[!BEGINSHADEBOX]
 
-**例：**[!UICONTROL Set]/[!UICONTROL Get (multiple) variable(s)] モジュールの使用例を次に示します。
+**例：**&#x200B;以下は、（複数の）変数を[!UICONTROL 設定]／[!UICONTROL 取得]モジュールの可能な使用例です。
 
 * 異なる経路でも、計算値を後で使用するために保存する場合。これは、値が複数のモジュールで使用され、値を計算する数式が過度に複雑な場合に役立ちます。
-* 式をデバッグする場合。モジュールで使用されている式が正しい結果を提供していないように見える場合は、式をコピーして、関連するモジュールの前に挿入する [!UICONTROL Set Variable] モジュールに貼り付けます。 [!UICONTROL Set Variable] モジュールの後にモジュールを切断し、シナリオを実行します。 [!UICONTROL Set Variable] モジュールの出力を確認し、式を調整または簡素化し、シナリオを再実行して、問題が解決するまで繰り返します。
+* 式をデバッグする場合。モジュールで使用されている数式が正しい結果を提供していないように見える場合は、数式をコピーし、関連するモジュールの前に挿入する[!UICONTROL 変数を設定]モジュールに貼り付けます。[!UICONTROL 変数を設定]モジュールの後でモジュールを切断し、シナリオを実行します。[!UICONTROL 変数の設定]モジュールの出力を確認し、数式を調整または簡素化し、シナリオを再実行して、問題が解決するまで引き続き実行します。
 
 >[!ENDSHADEBOX]
 
 
-#### [!UICONTROL Get Variable]
+#### [!UICONTROL 変数の取得]
 
-このモジュールは、[!UICONTROL Set Variable] または [!UICONTROL Set Multiple Variables] モジュールによって以前に作成された値を取得します。
+このモジュールは、[!UICONTROL 変数の設定]または[!UICONTROL 複数の変数の設定]モジュールによって以前に作成された値を取得します。
 
-このモジュールは、変数が [!UICONTROL Get Variable] モジュールがある場所とは異なるルートに設定されている場合でも、シナリオの任意の場所に設定された変数を読み取ることができます。 唯一の要件は、[!UICONTROL Tools]/[!UICONTROL Set Variable] または [!UICONTROL Tools]/[!UICONTROL Set Multiple Variables] モジュールを [!UICONTROL Tools]/[!UICONTROL Get Variable] モジュールの前に実行することです。 モジュールの実行順序の詳細については、「[ ルーターモジュールの追加とルートの設定 ](/help/workfront-fusion/create-scenarios/add-modules/router-module.md) を参照してください。
+このモジュールは、[!UICONTROL 変数の取得]モジュールが配置されている場所とは異なるルートに変数が設定されている場合でも、シナリオ内の任意の場所に設定された変数を読み取ることができます。唯一の要件は、[!UICONTROL ツール]／[!UICONTROL 変数の設定]または[!UICONTROL ツール]／[!UICONTROL 複数の変数の設定]モジュールが、[!UICONTROL ツール]／[!UICONTROL 変数の取得]モジュールの前に実行されることです。モジュールの実行順序の詳細については、「[ ルーターモジュールの追加とルートの設定 ](/help/workfront-fusion/create-scenarios/add-modules/router-module.md) を参照してください。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -133,7 +133,7 @@ ht-degree: 62%
  </tbody> 
 </table>
 
-#### [!UICONTROL Increment function]
+#### [!UICONTROL Increment 関数]
 
 このモジュールは、各サイクルまたは各シナリオの実行の後に 1 ずつ増分された値を返します。
 
@@ -165,12 +165,12 @@ ht-degree: 62%
 
 このシナリオを作成するには：
 
-1. モジュールの「**[!UICONTROL Reset a value]**」フィールドを「なし」に設定します。
+1. モジュールの「**[!UICONTROL 値をリセット]**」フィールドを「なし」に設定します。
 1. 奇数値のルートを設定します。`1` の値に等しいモジュロ演算関数を使用して、このルートのフィルターを設定します。
 
    ![ 奇数 ](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
 
-**注意**:[!UICONTROL Equal to] 演算子をデフォルトの [!UICONTROL Text] 演算子から [!UICONTROL Numeric] 演算子に変更することを忘れないでください。
+**メモ**：「[!UICONTROL 次と等しい]」演算子を、デフォルトの「[!UICONTROL テキスト]」演算子から「[!UICONTROL 数値]」演算子に必ず変更します。
 
 1. `0` の値に等しいモジュロ演算関数を使用して、このルートのフィルターを設定します。
 
@@ -178,9 +178,9 @@ ht-degree: 62%
 
 >[!ENDSHADEBOX]
 
-#### [!UICONTROL Set Multiple Variables]
+#### [!UICONTROL 複数の変数を設定]
 
-このモジュールでは、ルート内の他のモジュールでマッピングできる変数を作成します。変数は、シナリオ内の任意のルートの [!UICONTROL Get Variable] モジュールまたは [!UICONTROL Get Multiple Variables] モジュールにマッピングすることもできます。
+このモジュールでは、ルート内の他のモジュールでマッピングできる変数を作成します。変数は、シナリオ内の任意のルートについて、[!UICONTROL 変数を取得]または[!UICONTROL 複数の変数を取得]モジュールにマッピングすることもできます。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -194,16 +194,16 @@ ht-degree: 62%
    <td>[!UICONTROL Variable lifetime] </td> 
    <td> <p>変数の有効期間を選択します（同じ値を維持）。</p> 
     <ul> 
-     <li><strong>[!UICONTROL One cycle]</strong>：変数は 1 つのサイクルに対して有効です。 これは、1 回のシナリオ実行で複数の Webhook を受け取った場合に役立ちます。これは、より多くの Webhook がより多くのサイクルを作成するためです。 </li> 
-     <li><strong>[!UICONTROL One execution]</strong>：変数は、1 つのシナリオ実行に対して有効です。 1 つの実行に 1 つ以上のサイクルを含めることができます。</li> 
+     <li><strong>[!UICONTROL One cycle]</strong>：変数は 1 サイクルの間有効です。これは、1 回のシナリオ実行で複数の Webhook を受け取った場合に役立ちます。これは、より多くの Webhook がより多くのサイクルを作成するためです。 </li> 
+     <li><strong>[!UICONTROL One execution]</strong>：変数は、1 回のシナリオ実行において有効です。1 つの実行に 1 つ以上のサイクルを含めることができます。</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Set Variable]
+#### [!UICONTROL 変数を設定]
 
-このモジュールでは、ルート内の他のモジュールによってマッピングできる変数を作成します。変数は、シナリオ内の任意のルートの [!UICONTROL Get Variable] モジュールまたは [!UICONTROL Get Multiple Variables] モジュールにマッピングすることもできます。
+このモジュールでは、ルート内の他のモジュールによってマッピングできる変数を作成します。変数は、シナリオ内の任意のルートについても、[!UICONTROL 変数を取得]モジュールまたは[!UICONTROL 複数の変数を取得]モジュールにマッピングすることができます。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -217,8 +217,8 @@ ht-degree: 62%
    <td>[!UICONTROL Variable lifetime] </td> 
    <td> <p>変数の有効期間を選択します（同じ値を維持）。</p> 
     <ul> 
-     <li><strong>[!UICONTROL One cycle]</strong>：変数は 1 つのサイクルに対して有効です。 1 回のシナリオ実行で複数の web フックを受け取る場合に役立ちます（より多くの web フック = より多くのサイクル）。 </li> 
-     <li><strong>[!UICONTROL One execution]</strong>：変数は、1 つのシナリオ実行に対して有効です。 1 つの実行に 1 つ以上のサイクルを含めることができます。</li> 
+     <li><strong>[!UICONTROL One cycle]</strong>：変数は 1 サイクルの間有効です。1 回のシナリオ実行で複数の web フックを受け取る場合に役立ちます（より多くの web フック = より多くのサイクル）。 </li> 
+     <li><strong>[!UICONTROL One execution]</strong>：変数は、1 回のシナリオ実行において有効です。1 つの実行に 1 つ以上のサイクルを含めることができます。</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -228,7 +228,7 @@ ht-degree: 62%
  </tbody> 
 </table>
 
-#### [!UICONTROL Sleep]
+#### [!UICONTROL スリープ]
 
 このモジュールにより、シナリオのフローを最大 300 秒（5 分）まで遅延することができます。
 
@@ -256,15 +256,15 @@ ht-degree: 62%
 >
 ><!--For more information on data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]]().-->
 >
->特定のデータストアモジュールについて詳しくは、データストアモジュールを参照 [[!UICONTROL Data store] てください ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md)
+>特定のデータストアモジュールについて詳しくは、[[!UICONTROL データストア]モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md)を参照してください。
 
 ### アグリゲーター
 
-* [[!UICONTROL Numeric aggregator]](#numeric-aggregator)
-* [[!UICONTROL Table aggregator]](#table-aggregator)
-* [[!UICONTROL Text aggregator]](#text-aggregator)
+* [[!UICONTROL 数値アグリゲーター]](#numeric-aggregator)
+* [[!UICONTROL テーブルアグリゲーター]](#table-aggregator)
+* [[!UICONTROL テキストアグリゲーター]](#text-aggregator)
 
-#### [!UICONTROL Numeric aggregator]
+#### [!UICONTROL 数値アグリゲーター]
 
 このモジュールでは、数値を取得し、選択した関数（SUM、AVG、COUNT、MAX、MIN）の 1 つを適用して、結果を 1 つのバンドルで返すことができます。
 
@@ -295,7 +295,7 @@ ht-degree: 62%
  </tbody> 
 </table>
 
-#### [!UICONTROL Table aggregator]
+#### [!UICONTROL テーブルアグリゲーター]
 
 このモジュールは、受け取ったバンドルの選択されたフィールドの値を、指定された列と行の区切り記号（テーブルの作成に使用）を使用して 1 つのバンドルに結合します。
 
@@ -313,11 +313,11 @@ ht-degree: 62%
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Column separator]</p> </td> 
-   <td> <p>結果のバンドルでフィールド値の列を区切る区切り文字の種類を選択または入力します。「[!UICONTROL Other]」を選択した場合は、区切り文字フィールドに値の区切りに使用する文字を入力します。</p> </td> 
+   <td> <p>結果のバンドルでフィールド値の列を区切る区切り文字の種類を選択または入力します。[!UICONTROL Other] を選択した場合は、値の区切りに使用する文字を区切り文字フィールドに入力します。</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Row separator]</p> </td> 
-   <td> <p>結果のバンドルでフィールド値の行を区切る区切り文字の種類を選択または入力します。「[!UICONTROL Other]」を選択した場合は、区切り文字フィールドに値の区切りに使用する文字を入力します。</p> </td> 
+   <td> <p>結果のバンドルでフィールド値の行を区切る区切り文字の種類を選択または入力します。[!UICONTROL Other] を選択した場合は、値の区切りに使用する文字を区切り文字フィールドに入力します。</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Group by]</p> </td> 
@@ -330,7 +330,7 @@ ht-degree: 62%
  </tbody> 
 </table>
 
-#### [!UICONTROL Text aggregator]
+#### [!UICONTROL テキストアグリゲーター]
 
 このモジュールは、受け取ったバンドルの選択されたフィールドの値を 1 つのバンドルに結合します。
 
@@ -344,7 +344,7 @@ ht-degree: 62%
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Row separator]</p> </td> 
-   <td> <p>結果のバンドルでフィールド値の行を区切る区切り文字の種類を選択または入力します。「[!UICONTROL Other]」を選択した場合は、区切り文字フィールドに値の区切りに使用する文字を入力します。</p> </td> 
+   <td> <p>結果のバンドルでフィールド値の行を区切る区切り文字の種類を選択または入力します。[!UICONTROL Other] を選択した場合は、値の区切りに使用する文字を区切り文字フィールドに入力します。</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Group by]</p> </td> 
@@ -369,11 +369,11 @@ ht-degree: 62%
 
 ### 変換サービス
 
-* [[!UICONTROL Compose a string]](#compose-a-string)
-* [[!UICONTROL Convert the encoding of the text]](#convert-the-encoding-of-the-text)
-* [[!UICONTROL Switch]](#switch)
+* [[!UICONTROL 文字列を構成]](#compose-a-string)
+* [[!UICONTROL テキストのエンコーディングを変換]](#convert-the-encoding-of-the-text)
+* [[!UICONTROL 切り替え]](#switch)
 
-#### [!UICONTROL Compose a string]
+#### [!UICONTROL 文字列を構成]
 
 任意の値を文字列データタイプ（テキスト）に変換します。これにより、バイナリデータなどのマッピングの際に、マッピングが容易になります。
 
@@ -388,7 +388,7 @@ ht-degree: 62%
  </tbody> 
 </table>
 
-#### [!UICONTROL Convert the encoding of the text]
+#### [!UICONTROL テキストのエンコーディングを変換]
 
 入力された入力テキスト（またはバイナリデータ）を選択されたエンコーディングに変換します。
 
@@ -411,7 +411,7 @@ ht-degree: 62%
  </tbody> 
 </table>
 
-#### [!UICONTROL Switch]
+#### [!UICONTROL 切り替え]
 
 入力値が提供された値のリストと一致するかどうかを確認します。結果に基づいて出力を返します。
 
@@ -438,9 +438,9 @@ ht-degree: 62%
   </tr> 
   <tr> 
    <td>[!UICONTROL Cases] </td> 
-   <td> 追加するケースごとに、<b> アイテムの追加 </b> をクリックし、アイテムのパターンと出力を入力します。 <p>入力に [!UICONTROL Pattern] フィールドに入力された値が含まれる場合、[!UICONTROL Output] フィールドに入力された値が返されます。</p> <p>入力が [!UICONTROL Pattern] フィールドに設定された値のいずれとも一致しない場合は、次のいずれかが発生します。</p> 
+   <td> 追加するケースごとに、<b> アイテムの追加 </b> をクリックし、アイテムのパターンと出力を入力します。 <p>入力に、[!UICONTROL Pattern] フィールドに入力された値が含まれている場合、[!UICONTROL Output] フィールドに入力された値が返されます。</p> <p>入力が、[!UICONTROL Pattern] フィールドに設定した値のいずれにも一致しない場合、次のいずれかが発生します。</p> 
     <ul> 
-     <li>[!UICONTROL Else] フィールドの値が返されます</li> 
+     <li>[!UICONTROL Else] フィールドの値が返されます。</li> 
      <li>[!UICONTROL Else] フィールドに値がない場合、出力は返されません。</li> 
     </ul> </td> 
   </tr> 

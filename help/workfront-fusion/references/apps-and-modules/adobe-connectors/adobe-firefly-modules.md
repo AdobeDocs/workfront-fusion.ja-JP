@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Ado
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '2432'
 ht-degree: 17%
@@ -40,7 +40,7 @@ ht-degree: 17%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 

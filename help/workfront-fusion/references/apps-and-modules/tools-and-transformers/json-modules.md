@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion JSON アプリは、Adobe Workfront Fusion �
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1129'
-ht-degree: 62%
+source-wordcount: '1236'
+ht-degree: 90%
 
 ---
 
 # [!UICONTROL JSON] モジュール
 
-[!DNL Adobe Workfront Fusion] [!UICONTROL JSON] アプリは、データを JSON 形式で処理するモジュールを提供し、[!DNL Adobe Workfront Fusion] ーザーがデータコンテンツをさらに操作したり、新しい JSON コンテンツを作成したりできます。
+[!DNL Adobe Workfront Fusion][!UICONTROL JSON] アプリは、[!DNL Adobe Workfront Fusion] がデータコンテンツとより深く連携したり、新しい JSON コンテンツを作成したりできるように、JSON 形式のデータを処理するモジュールを提供します。
 
 ## アクセス要件
 
@@ -36,7 +36,7 @@ ht-degree: 62%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -67,13 +67,13 @@ ht-degree: 62%
 
 データ構造は、JSON データの編成方法を記述し、個々の JSON 項目をシナリオ内の他のモジュールにマッピングできるようにします。データ構造を指定しない場合、モジュールを手動で実行すると、[!DNL Workfront Fusion] が指定された JSON から構造を作成します。
 
-1. [!UICONTROL Parse JSON] モジュールをシナリオに追加します。
-1. 「**[!UICONTROL JSON String]**」フィールドに、データ構造を構築する JSON を入力します。
-1. その他のモジュールはまだ [!UICONTROL Parse JSON] モジュールに接続しないでください。 [!DNL Workfront Fusion] は JSON データの構造をまだ知らないので、[!UICONTROL Parse JSON] モジュールのデータをシナリオ内の他のモジュールにマッピングすることはまだできません。
-1. シナリオを手動で実行します。これにより、指定した JSON から [!UICONTROL Parse JSON] モジュールが JSON 構造を識別できるようになります。
+1. [!UICONTROL JSON を解析]モジュールをシナリオに追加します。
+1. 「**[!UICONTROL JSON 文字列]**」フィールドで、データ構造を作成する JSON を入力します。
+1. 他のモジュールを [!UICONTROL JSON を解析]モジュールにはまだ結びつけません。[!DNL Workfront Fusion] はまだ JSON データの構造を把握していないので、[!UICONTROL JSON を解析]モジュールのデータをシナリオ内の他のモジュールにマッピングすることはまだできません。
+1. シナリオを手動で実行します。これにより、[!UICONTROL JSON を解析]モジュールが、指定した JSON から JSON 構造を識別できるようになります。
 1. 次のモジュールを接続できるようになりました。JSON を解析モジュールの項目をマッピングに使用できるようになりました。
 
-詳しくは、[[!UICONTROL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md) のデータ構造を参照してください。
+詳しくは、[[!UICONTROL Adobe Workfront Fusion のデータ構造]](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
 
 ### コレクションと配列
 
@@ -134,7 +134,7 @@ JSON 文字列フィールドに配列 `[ ... ]` が含まれている場合、�
 
 ### アグリゲーター
 
-#### [!UICONTROL Aggregate to JSON]
+#### [!UICONTROL JSON に集計]
 
 この集約モジュールは、以前のモジュールからの出力を JSON に集計します。
 
@@ -172,7 +172,7 @@ JSON 文字列フィールドに配列 `[ ... ]` が含まれている場合、�
 * [JSON を解析](#parse-json)
 * [JSON を変換](#transform-json)
 
-#### [!UICONTROL Convert JSON to XML]
+#### [!UICONTROL JSON を XML に変換]
 
 このアクションモジュールは、JSON 文字列を XML に変換します。
 
@@ -187,7 +187,7 @@ JSON 文字列フィールドに配列 `[ ... ]` が含まれている場合、�
  </tbody> 
 </table>
 
-#### [!UICONTROL Create JSON]
+#### [!UICONTROL JSON を作成]
 
 このアクションモジュールは、データ構造から JSON を作成します。
 
@@ -206,7 +206,7 @@ JSON 文字列フィールドに配列 `[ ... ]` が含まれている場合、�
  </tbody> 
 </table>
 
-#### [!UICONTROL Parse JSON]
+#### [!UICONTROL JSON を解析]
 
 このアクションモジュールは、JSON 文字列を解析してデータ構造にし、JSON 文字列内のデータにアクセスできるようにします。
 
@@ -225,7 +225,7 @@ JSON 文字列フィールドに配列 `[ ... ]` が含まれている場合、�
  </tbody> 
 </table>
 
-#### [!UICONTROL Transform JSON]
+#### [!UICONTROL JSON を変換]
 
 このアクションモジュールは、オブジェクトを json 文字列に変換します。
 
@@ -250,11 +250,11 @@ JSON 文字列フィールドに配列 `[ ... ]` が含まれている場合、�
 
 **例：**&#x200B;次の例は、データレコードを [!DNL Google Sheets] から JSON 形式に変換する方法を示しています。
 
-1. [!DNL Google Sheets]/[!UICONTROL Select rows] モジュールをシナリオに配置して、データを取得します。 [!DNL Google] スプレッドシートから行を取得するモジュールを設定します。テスト目的で&#x200B;**[!UICONTROL Maximum number of returned rows]** を小さい数に、1 より大きい数に設定します（例：3）。 [!DNL Google Sheets] モジュールを右クリックして「**[!UICONTROL Run this module only]**」を選択し、実行します。 モジュールの出力を確認します。
+1. データを取得するには、シナリオに [!DNL Google Sheets]／[!UICONTROL 行を選択]モジュールを配置します。[!DNL Google] スプレッドシートから行を取得するモジュールを設定します。「**[!UICONTROL 返される行の最大数]**」を小さい数に設定しますが、テスト用に 1 より大きい値（例：3）に設定します。[!DNL Google Sheets] モジュールを右クリックし、「**[!UICONTROL このモジュールのみを実行]**」を選択して実行します。モジュールの出力を確認します。
 
-1. [!UICONTROL Array Aggregator] モジュールを [!DNL Google Sheets] モジュールの後に接続します。 モジュールの設定で、「**[!UICONTROL Source node]**」フィールドの [!DNL Google Sheets] モジュールを選択します。 その他のフィールドは、現時点ではそのままにしておきます。
+1. [!DNL Google Sheets] モジュールの後に、[!UICONTROL 配列アグリゲーター]モジュールを接続します。モジュール設定で、「**[!UICONTROL ソースノード]**」フィールドから [!DNL Google Sheets] モジュール を選択します。その他のフィールドは、現時点ではそのままにしておきます。
 
-1. [!UICONTROL JSON]/[!UICONTROL Create JSON] モジュールを [!UICONTROL Array Aggregator] モジュールの後に接続します。 モジュールの設定には、JSON 形式を記述したデータ構造が必要です。「**[!UICONTROL Add]**」をクリックして、データ構造の設定を開きます。 このデータ構造を作成する最も簡単な方法は、JSON サンプルから自動的に生成することです。「**[!UICONTROL Generator]**」をクリックし、JSON サンプルを「**[!UICONTROL Sample data]**」フィールドに貼り付けます。
+1. [!UICONTROL 配列アグリゲーター]モジュールの後に [!UICONTROL JSON]／[!UICONTROL JSON を作成]モジュールを接続します。モジュールの設定には、JSON 形式を記述したデータ構造が必要です。「**[!UICONTROL 追加]**」をクリックして、データ構造の設定を開きます。このデータ構造を作成する最も簡単な方法は、JSON サンプルから自動的に生成することです。「**[!UICONTROL ジェネレーター]**」をクリックし、JSON サンプルを「**[!UICONTROL サンプルデータ]**」フィールドに貼り付けます。
 
    **例：**
 
@@ -270,30 +270,30 @@ JSON 文字列フィールドに配列 `[ ... ]` が含まれている場合、�
    }
    ```
 
-1. 「**[!UICONTROL Save]**」をクリックします。 生成された構造がデータ構造内の [!UICONTROL Specification] フィールドに含まれるようになりました。
-1. データ構造の名前をより具体的な名前に変更し、「**[!UICONTROL Save]**」をクリックします。 ルート配列属性に対応するフィールドは、JSON モジュールの設定で、マッピング可能なフィールドとして表示されます。
+1. 「**[!UICONTROL 保存]**」をクリックします。これで、データ構造の「[!UICONTROL 仕様]」フィールドに、生成された構造が含まれます。
+1. データ構造の名前をより具体的なものに変更し、「**[!UICONTROL 保存]**」をクリックします。ルート配列属性に対応するフィールドは、JSON モジュールの設定で、マッピング可能なフィールドとして表示されます。
 
-1. フィールドの横にある「**[!UICONTROL Map]**」ボタンをクリックし、配列アグリゲータ出力から `Array[]` の項目をフィールドにマップします。
+1. フィールドの横にある「**[!UICONTROL マップ]**」ボタンをクリックし、Array aggregator から出力された `Array[]` 項目をマッピングします。
 
 1. 「**[!UICONTROL OK]**」をクリックして、[!UICONTROL JSON] モジュールの設定を閉じます。
 
-1. [!UICONTROL Array Aggregator] モジュールの設定を開きます。 **[!UICONTROL Target structure]** を [!UICONTROL Custom] から、ルート配列属性に対応する [!UICONTROL JSON] モジュールのフィールドに変更します。 [!DNL Google Sheets] モジュールの項目を適切なフィールドにマッピングします。
+1. [!UICONTROL Array Aggregator] モジュールの設定を開きます。**[!UICONTROL ターゲット構造]**&#x200B;を[!UICONTROL カスタム]から、ルート配列属性に対応する [!UICONTROL JSON] モジュールのフィールドに変更します。[!DNL Google Sheets] モジュールの項目を適切なフィールドにマッピングします。
 
 1. 「**[!UICONTROL OK]**」をクリックして、[!UICONTROL Array Aggregator] モジュールの設定を閉じます。
 
 1. シナリオを実行します。
 
-   [!UICONTROL JSON] モジュールは、正しい JSON 形式を出力します。
+   [!UICONTROL JSON] モジュールは正しい JSON 形式を出力します。
 
-1. [!DNL Google Sheets] モジュールの設定を開き、[!UICONTROL Maximum number of returned rows] 数をスプレッドシートの行数より大きくして、すべてのデータを処理します。
+1. [!DNL Google Sheets] モジュールの設定を開き、「[!UICONTROL 返される行の最大数]」の数値を増やしてスプレッドシートの行数よりも大きくなるようにし、すべてのデータを処理できるようにします。
 
 >[!ENDSHADEBOX]
 
 ## トラブルシューティング
 
-### [!UICONTROL Parse JSON] モジュールからデータをマッピングできません
+### [!UICONTROL JSON を解析]モジュールからデータをマッピングできません
 
-JSON コンテンツが [!UICONTROL Parse JSON] モジュールに正しくマッピングされ、データ構造が正しく定義されていることを確認します。 詳しくは、この記事の[データレコードを JSON に変換](#transforming-data-records-to-json)を参照してください。
+JSON コンテンツが [!UICONTROL JSON を解析]モジュールに適切にマッピングされ、データ構造が正しく定義されていることを確認します。詳しくは、この記事の[データレコードを JSON に変換](#transforming-data-records-to-json)を参照してください。
 
 ### JSON で条件ステートメントを使用するとモジュールが失敗する
 

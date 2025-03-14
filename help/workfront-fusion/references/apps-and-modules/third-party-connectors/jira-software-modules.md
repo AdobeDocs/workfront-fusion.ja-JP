@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Jir
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: d4187aff574ceaf4d27112fc2ce8880421e77d0d
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '2208'
 ht-degree: 80%
@@ -42,7 +42,7 @@ ht-degree: 80%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 

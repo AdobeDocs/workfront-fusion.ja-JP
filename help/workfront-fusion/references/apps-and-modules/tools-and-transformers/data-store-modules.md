@@ -4,14 +4,14 @@ description: データベースやシンプルなテーブルと同様に、 [!D
 author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
-source-git-commit: 7404dafc0b368a8f1785be7b6a65fe45c0f12172
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 86%
+source-wordcount: '1135'
+ht-degree: 87%
 
 ---
 
-# [!UICONTROL Data store] モジュール
+# [!UICONTROL データストア]モジュール
 
 データベースやシンプルなテーブルと同様に、[!DNL Adobe Workfront Fusion] データストアではシナリオのデータを保存して、個々のシナリオやシナリオ実行の間でデータを転送することができます。データストアを使用すると、同期中に様々なシステムから新しいデータを保存できます。
 
@@ -44,7 +44,7 @@ Workfront Fusion のデータストアの紹介ビデオについては、以下
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>Workfront Fusion のライセンス要件はありません。</p>
+   <p>Workfront Fusion ライセンス要件なし</p>
    </td> 
   </tr> 
   <tr> 
@@ -66,11 +66,11 @@ Workfront Fusion のデータストアの紹介ビデオについては、以下
 
 ## 前提条件
 
-[!UICONTROL Data Store] モジュールを使用するには、まずデータストアを作成する必要があります。
+[!UICONTROL データストア]を使用するには、まずデータストアを作成する必要があります。
 
 データストアの作成について詳しくは、[ データストアの作成と管理 ](/help/workfront-fusion/create-scenarios/map-data/data-stores.md) を参照してください。
 
-## [!UICONTROL Data store] モジュールとそのフィールド
+## [!UICONTROL  データストア ] モジュールとそのフィールド
 
 データストアモジュールを設定する際、[!DNL Workfront Fusion] には以下のフィールドが表示されます。これらのほか、アプリやサービスでのアクセスレベルなどの要因に応じて、追加のデータストアフィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
@@ -90,7 +90,7 @@ Workfront Fusion のデータストアの紹介ビデオについては、以下
 * [レコードの検索](#search-records)
 * [レコードの更新](#update-a-record)
 
-### [!UICONTROL Add/Replace a Record]
+### [!UICONTROL レコードを追加 / 置換]
 
 このアクションモジュールは、レコードを追加または置き換えます。
 
@@ -100,7 +100,7 @@ Workfront Fusion のデータストアの紹介ビデオについては、以下
 
 >[!NOTE]
 >
->既に同じ名前のデータストアにあるレコードを追加しようとして、[!UICONTROL Overwrite an existing record] オプションが無効になると、モジュールはエラーをスローします。
+>既にデータストアに存在するレコードを同じ名前で追加しようとしたときに、「[!UICONTROL  既存のレコードを上書き ]」オプションが無効になっている場合、モジュールはエラーをスローします。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
@@ -127,7 +127,7 @@ Workfront Fusion のデータストアの紹介ビデオについては、以下
  </tbody> 
 </table>
 
-### [!UICONTROL Check the Existence of a Record]
+### [!UICONTROL レコードの存在の確認]
 
 このアクションモジュールは、特定のレコードが存在するかどうかを指定します。
 
@@ -148,7 +148,7 @@ Workfront Fusion のデータストアの紹介ビデオについては、以下
  </tbody> 
 </table>
 
-### [!UICONTROL Count Records]
+### [!UICONTROL レコードをカウント]
 
 このアクションモジュールは、データストア内のレコードに番号を付けます。
 
@@ -167,7 +167,7 @@ Workfront Fusion のデータストアの紹介ビデオについては、以下
  </tbody> 
 </table>
 
-### [!UICONTROL Delete a Record]
+### [!UICONTROL レコードの削除]
 
 このアクションモジュールは、レコードを削除します。
 
@@ -190,7 +190,7 @@ Workfront Fusion のデータストアの紹介ビデオについては、以下
  </tbody> 
 </table>
 
-### [!UICONTROL Delete All Records]
+### [!UICONTROL すべてのレコードを削除]
 
 このアクションモジュールは、特定のデータストアからすべてのレコードを削除します。
 
@@ -207,7 +207,7 @@ Workfront Fusion のデータストアの紹介ビデオについては、以下
  </tbody> 
 </table>
 
-### [!UICONTROL Get a Record]
+### [!UICONTROL レコードの取得]
 
 このアクションモジュールは、レコードを取得します。
 
@@ -230,7 +230,7 @@ Workfront Fusion のデータストアの紹介ビデオについては、以下
  </tbody> 
 </table>
 
-### [!UICONTROL Search Records]
+### [!UICONTROL レコードを検索]
 
 この検索モジュールは、指定した検索クエリに一致する、データストア内のオブジェクト内のレコードを検索します。
 
@@ -265,7 +265,7 @@ Workfront Fusion のデータストアの紹介ビデオについては、以下
  </tbody> 
 </table>
 
-### [!UICONTROL Update a Record]
+### [!UICONTROL レコードの更新]
 
 このアクションモジュールは、レコードを更新します。
 

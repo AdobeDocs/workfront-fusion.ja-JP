@@ -8,9 +8,9 @@ description: 場合によっては、Adobe Workfront Fusion でシナリオの�
 author: Becky
 feature: Workfront Fusion
 exl-id: 4bf2a6c7-16b2-4545-9adf-be3947a7017d
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '383'
 ht-degree: 28%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 28%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -72,7 +72,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ## `throw` の回避策
 
-条件付きでエラーをスローするには、操作中に意図的に失敗するようにモジュールを設定します。 オプションでエラーをスローするように設定された [!UICONTROL JSON]/[!UICONTROL Parse JSON] モジュールを使用する方法も考えられます（この場合は `BundleValidationError`）。
+条件付きでエラーをスローするには、操作中に意図的に失敗するようにモジュールを設定します。 オプションでエラーをスローするように設定された [!UICONTROL JSON]/[!UICONTROL JSON を解析 ] モジュールを使用する可能性があります（この場合は `BundleValidationError`）。
 
 ![JSON エラー ](assets/json-parse-json.png)
 

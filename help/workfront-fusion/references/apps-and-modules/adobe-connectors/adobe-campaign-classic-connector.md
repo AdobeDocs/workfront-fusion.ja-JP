@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Campaign]  モジュールを使用すると、 [!DNL
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: 9bcda2cc1a5f483a8db49eae8e4f3d10f0d39c67
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 72%
+source-wordcount: '1307'
+ht-degree: 89%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 72%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -88,7 +88,7 @@ Adobe Campaign コネクタでは、以下を使用します。
 >
 >Campaign の新しい接続要件について詳しくは、Campaign ドキュメント内の [Campaign テクニカルオペレーターの Adobe Developer Console への移行](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html?lang=ja)を参照してください。
 
-1. 任意の [!DNL Adobe Campaign] モジュールで、[!UICONTROL Connection] フィールドの横にある「**[!UICONTROL Add]**」をクリックします。
+1. 任意の [!DNL Adobe Campaign] モジュールで、「[!UICONTROL 接続]」フィールドの横にある「**[!UICONTROL 追加]**」をクリックします。
 1. 次のフィールドに入力します。
    <table style="table-layout:auto"> 
       <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
@@ -122,15 +122,15 @@ Adobe Campaign コネクタでは、以下を使用します。
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]</td>
-          <td>サーバー間接続を作成する場合は、[!DNL Adobe] [!UICONTROL Client ID] を入力します。 これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションにあります。</td>
+          <td>サーバー間接続を作成する場合は、[!DNL Adobe] [!UICONTROL Client ID] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret]</td>
-          <td>サーバー間接続を作成する場合は、[!DNL Adobe] [!UICONTROL Client Secret] を入力します。 これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションにあります。
+          <td>サーバー間接続を作成する場合は、[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。
         </tr>
      </tbody>
     </table>
-1. 「**[!UICONTROL Continue]**」をクリックして接続を作成し、モジュールに戻ります。
+1. 「**[!UICONTROL 続行]**」をクリックし、接続を作成して、モジュールに戻ります。
 
 ## [!DNL Adobe Campaign] モジュールとそのフィールド
 
@@ -184,15 +184,15 @@ This scheduled trigger module starts a scenario when a record changes.
 
 ### アクション
 
-* [[!UICONTROL Create a record]](#create-a-record)
-* [[!UICONTROL Delete a record]](#delete-record)
-* [[!UICONTROL Make a custom API call]](#make-a-custom-api-call)
-* [[!UICONTROL Perform an action]](#perform-an-action)
-* [[!UICONTROL Read a record]](#read-a-record)
-* [[!UICONTROL Subscribe or unsubscribe]](#subscribe-or-unsubscribe)
-* [[!UICONTROL Update a record]](#update-record)
+* [[!UICONTROL レコードを作成]](#create-a-record)
+* [[!UICONTROL レコードを削除]](#delete-record)
+* [[!UICONTROL カスタム API 呼び出しを実行]](#make-a-custom-api-call)
+* [[!UICONTROL アクションを実行]](#perform-an-action)
+* [[!UICONTROL レコードの読み取り]](#read-a-record)
+* [[!UICONTROL 登録または登録解除]](#subscribe-or-unsubscribe)
+* [[!UICONTROL レコードを更新]](#update-record)
 
-#### [!UICONTROL Create a record]
+#### [!UICONTROL レコードを作成]
 
 このアクションモジュールは、[!DNL Adobe Campaign] に新しいレコードを作成します。
 
@@ -214,12 +214,12 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Custom fields]</td> 
-   <td> 新しいレコードに追加するカスタムフィールドごとに「<b>[!UICONTROL Add item]</b>」をクリックし、フィールドの名前と値を入力またはマッピングします。 </td> 
+   <td> 新しいレコードに追加するカスタムフィールドごとに、「<b>[!UICONTROL Add item]</b>」をクリックし、フィールドの名前と値を入力またはマッピングします。 </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete Record]
+#### [!UICONTROL レコードの削除]
 
 このアクションモジュールは、[!DNL Adobe Campaign] から 1 つのレコードを削除します。
 
@@ -242,7 +242,7 @@ This scheduled trigger module starts a scenario when a record changes.
  </tbody> 
 </table>
 
-#### [!UICONTROL Make a custom API call]
+#### [!UICONTROL カスタム API 呼び出しを実行]
 
 このアクションモジュールは、[!DNL Adobe Campaign] API へのカスタム API リクエストをモジュール化します
 
@@ -252,7 +252,7 @@ This scheduled trigger module starts a scenario when a record changes.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >[!DNL Adobe Campaign]</a> への接続を作成を参照してください。</td> 
+   <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >[!DNL Adobe Campaign]</a> への接続の作成を参照してください。</td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Action]</td>
@@ -268,8 +268,8 @@ This scheduled trigger module starts a scenario when a record changes.
       <td role="rowheader">[!UICONTROL Headers]</td>
       <td>
         <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p>
-        <p>例： <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] は、[!UICONTROL x-security] トークンヘッダーを自動的に追加します。</p>
+        <p>例えば、 <code>{"Content-type":"application/json"}</code></p>
+        <p>[!DNL Workfront Fusion] が [!UICONTROL x-security] トークンヘッダーを自動的に追加します。</p>
       </td>
     </tr>
     <tr>
@@ -279,7 +279,7 @@ This scheduled trigger module starts a scenario when a record changes.
 </table>
 
 
-#### [!UICONTROL Perform an action]
+#### [!UICONTROL アクションを実行]
 
 このアクションモジュールは、[!DNL Adobe Campaign] API で、選択されたアクションをオブジェクトに対して実行します。
 
@@ -291,24 +291,24 @@ This scheduled trigger module starts a scenario when a record changes.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td>
-   <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >[!DNL Adobe Campaign]</a> への接続を作成を参照してください。</td> 
+   <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >[!DNL Adobe Campaign]</a> への接続の作成を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Action]</td> 
    <td><p>オブジェクトに対して実行するアクションを選択します。</p>
    <ul>
-   <li><p><b>[!DNL List]</b></p><p> 使用可能なフィールドについては、この記事の <a href="#search" class="MCXref xref" >[!UICONTROL Search]</a> を参照してください。 </p></li>
-     <li><p><b>[!UICONTROL Get]</b></p><p> 使用可能なフィールドについては、この記事の <a href="#search" class="MCXref xref" >[!UICONTROL Search]</a> を参照してください。 </p></li> 
-   <li><p><b>[!UICONTROL Create]</b></p><p> 使用可能なフィールドについては、この記事の <a href="#create-a-record" class="MCXref xref" >[!UICONTROL Create a record]</a> を参照してください。 </p></li>
-   <li><p><b>[!UICONTROL Update]</b></p><p> 使用可能なフィールドについては、この記事の <a href="#update-record" class="MCXref xref" >[!UICONTROL Update a record]</a> を参照してください。 </p></li>
-   <li><p><b>[!UICONTROL Delete]</b></p><p> 使用可能なフィールドについては、この記事の <a href="#delete-record" class="MCXref xref" >[!UICONTROL Delete a record]</a> を参照してください。 </p></li>
+   <li><p><b>[!DNL List]</b></p><p> 使用可能なフィールドについては、この記事の<a href="#search" class="MCXref xref" >[!UICONTROL Search]</a>を参照してください。 </p></li>
+     <li><p><b>[!UICONTROL Get]</b></p><p> 使用可能なフィールドについては、この記事の<a href="#search" class="MCXref xref" >[!UICONTROL Search]</a>を参照してください。 </p></li> 
+   <li><p><b>[!UICONTROL Create]</b></p><p> 使用可能なフィールドについては、この記事の<a href="#create-a-record" class="MCXref xref" >[!UICONTROL Create a record]</a>を参照してください。 </p></li>
+   <li><p><b>[!UICONTROL Update]</b></p><p> 使用可能なフィールドについては、この記事の<a href="#update-record" class="MCXref xref" >[!UICONTROL Update a record]</a>を参照してください。 </p></li>
+   <li><p><b>[!UICONTROL Delete]</b></p><p> 使用可能なフィールドについては、この記事の<a href="#delete-record" class="MCXref xref" >[!UICONTROL Delete a record]</a>を参照してください。 </p></li>
    </ul>
    </td>
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Read a record]
+#### [!UICONTROL レコードの読み取り]
 
 このアクションモジュールは、[!DNL Adobe Campaign] からレコードを読み取ります。
 
@@ -334,13 +334,13 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Custom fields to include in output]</td> 
-   <td>出力に含めるカスタムフィールドごとに「<b>[!UICONTROL Add]</b>」をクリックし、カスタムフィールドの名前を入力します。</td> 
+   <td>出力に含めるカスタムフィールドごとに、「<b>[!UICONTROL Add]</b>」をクリックし、カスタムフィールドの名前を入力します。</td> 
   </tr> 
  </tbody> 
 </table>
 
 
-#### [!UICONTROL Subscribe or unsubscribe]
+#### [!UICONTROL 登録または登録解除]
 
 このアクションモジュールは、情報サービスにユーザーを登録したり、情報サービスからユーザーの登録を解除したりします。
 
@@ -350,7 +350,7 @@ This scheduled trigger module starts a scenario when a record changes.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td>
-   <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >[!DNL Adobe Campaign]</a> への接続を作成を参照してください。</td> 
+   <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >[!DNL Adobe Campaign]</a>への接続の作成を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Subscribe or unsubscribe]</td> 
@@ -367,9 +367,9 @@ This scheduled trigger module starts a scenario when a record changes.
  </tbody> 
 </table>
 
-#### [!UICONTROL Update record]
+#### [!UICONTROL レコードの更新]
 
-このアクションモジュールは [!DNL Adobe Campaign] で 1 つのレコードを更新します。
+このアクションモジュールは、[!DNL Adobe Campaign] 内の 1 つのレコードを更新します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -393,14 +393,14 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Custom fields]</td> 
-   <td> 更新するカスタムフィールドごとに「<b>[!UICONTROL Add item]</b>」をクリックし、フィールドの名前と値を入力またはマッピングします。 </td> 
+   <td> 更新するカスタム フィールドごとに、「<b>[!UICONTROL Add item]</b>」をクリックし、フィールドの名前と値を入力またはマッピングします。 </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### 検索
 
-#### [!UICONTROL Search]
+#### [!UICONTROL 検索]
 
 この検索モジュールは、指定された条件に基づいてレコードを返します。
 

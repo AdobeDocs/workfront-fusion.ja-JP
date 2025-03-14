@@ -4,16 +4,16 @@ description: ' [!DNL Adobe Workfront Fusion]  を使用して Microsoft SQL Serv
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f3293f7-8b45-4e42-8ad8-f9d4969b63fd
-source-git-commit: ef1a96d9ef4c2c82eaf376c84188e3ed6ea7b2cf
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 58%
+source-wordcount: '498'
+ht-degree: 63%
 
 ---
 
 # [!DNL Microsoft SQL Server] モジュール
 
-[!DNL Adobe Workfront Fusion] を使用して [!UICONTROL Microsoft SQL Server] に接続できます。
+[!DNL Adobe Workfront Fusion] を使用して、[!UICONTROL Microsoft SQL Server] に接続することができます。
 
 ## アクセス要件
 
@@ -36,7 +36,7 @@ ht-degree: 58%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -60,7 +60,7 @@ ht-degree: 58%
 
 ## [!DNL Microsoft SQL Server] サービスを [!DNL Workfront Fusion] に接続
 
-[!DNL Microsoft SQL Server] アカウントを [!UICONTROL Workfront Fusion] に接続する手順については、[[!UICONTROL Adobe Workfront Fusion] への接続の作成 - 基本手順](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)を参照してください。
+[!DNL Microsoft SQL Server] アカウントを [!UICONTROL Workfront Fusion] に接続する方法については、[[!UICONTROL Adobe Workfront Fusion] への接続の作成 - 基本手順](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)を参照してください。
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ ht-degree: 58%
 >
 >[!DNL Workfront Fusion] では、複数のレコードセットをサポートしていません。最初の処理のみが処理されます。
 
-## エラー [!UICONTROL ER_LOCK_WAIT_TIMEOUT: Lock wait timeout exceeded; try restarting transaction] のトラブルシューティング
+## エラーのトラブルシューティング [!UICONTROL ER_LOCK_WAIT_TIMEOUT：ロック待機タイムアウトを超えました。トランザクションを再起動してください]
 
 このエラーは、複数のモジュールを使用して同じデータを変更する場合に発生します。SQL トランザクションが原因です。
 
@@ -94,6 +94,6 @@ SQL モジュールが実行されると、トランザクションが開始さ�
 
 自動コミットをオンにします。自動コミットは、モジュールの実行が完了した直後にすべてのトランザクションを完了（コミット）します。
 
-1. 画面の下部にある [!UICONTROL Scenario settings] アイコン ![ シナリオ設定アイコン ](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png) をクリックします。
-1. 「**[!UICONTROL Auto commit]**」チェックボックスをクリックします。
+1. 画面下部の [!UICONTROL  シナリオ設定 ] アイコン ![ シナリオ設定アイコン ](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png) をクリックします。
+1. **[!UICONTROL 自動コミット]**&#x200B;チェックボックスをクリックします。
 1. 「**[!UICONTROL OK]**」をクリックして、シナリオ設定を保存します。

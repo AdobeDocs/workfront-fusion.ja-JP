@@ -4,10 +4,10 @@ description: Adobe Workfront Boards コネクタを使用すると、Workfront B
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: 7895e65dd040f28e6028c24928abe2829b58d9db
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2659'
-ht-degree: 11%
+source-wordcount: '2869'
+ht-degree: 17%
 
 ---
 
@@ -44,7 +44,7 @@ Adobe Workfront ボード モジュールを使用すると、レコードの読
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -93,7 +93,7 @@ Adobe Workfront ボードコネクタでは、以下を使用します。
 
 Workfront ボード接続を作成するには：
 
-1. 任意の [!DNL Adobe Workfront Boards] モジュールで、「接続」ボックスの横にある「**[!UICONTROL Add]**」をクリックします。
+1. 任意の [!DNL Adobe Workfront Boards] モジュールで、「接続」ボックスの横にある「**[!UICONTROL 追加]**」をクリックします。
 
 1. 次のフィールドに入力します。
 
@@ -119,11 +119,11 @@ Workfront ボード接続を作成するには：
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]<p>（オプション）</p></td>
-          <td>[!DNL Adobe] [!UICONTROL Client ID] を入力します。 これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションにあります。</td>
+          <td>[!DNL Adobe] [!UICONTROL Client ID] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret]<p>（オプション）</p></td>
-          <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。 これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションにあります。
+          <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Authentication URL]<p>（オプション）</p></td>
@@ -135,7 +135,7 @@ Workfront ボード接続を作成するには：
         </tr>
       </tbody>
     </table>
-1. 「**[!UICONTROL Continue]**」をクリックして接続を保存し、モジュールに戻ります。
+1. 「**[!UICONTROL 続行]**」をクリックして接続を保存し、モジュールに戻ります。
 
 ## Adobe Workfront Boards モジュールとそのフィールド
 
@@ -178,7 +178,7 @@ Workfront ボードモジュールを設定すると、以下に示 [!DNL Workfr
    <td>チェックリスト項目を追加するカードの ID を入力またはマッピングします<p>Workfrontでカードを表示すると、URL にカード ID が表示されます。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Checklist items]</td> 
+   <td>[!UICONTROL チェックリスト項目 ]</td> 
    <td>追加するチェックリスト項目ごとに、「項目を追加」をクリックし、チェックリスト項目の名前を入力して、項目が完了したかどうかを選択します。</p></td> 
   </tr> 
  </tbody> 
@@ -197,7 +197,7 @@ Workfront ボードモジュールを設定すると、以下に示 [!DNL Workfr
       <td> <p>既存のWorkfront接続を使用してWorkfront Boards に接続することも、特定のWorkfront Boards 接続を使用することもできます。 </p><p>[!DNL Workfront] アプリを [!DNL Workfront Fusion] に接続する手順については、こちらの <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront ボードへの接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Parent card ID]</td> 
+   <td>[!UICONTROL 親カード ID]</td> 
    <td>サブタスクの追加先となるカードの ID を入力またはマッピングします。<p>Workfrontでカードを表示すると、URL にカード ID が表示されます。</p></td> 
   </tr> 
   <tr> 
@@ -228,7 +228,7 @@ Workfrontのボード上に新しいカードを作成します。
    <td>カードを追加するボードの ID を入力またはマッピングします。<p>Workfrontでボードを表示する際に、URL にボード ID が含まれています。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column ID]</td> 
+   <td>[!UICONTROL 列 ID]</td> 
    <td>サブタスクを追加する列の ID を入力またはマッピングします。<p>列 ID は、ボードを読み取りモジュールから返される情報で見つけることができます。</p></td> 
   </tr> 
   <tr> 
@@ -259,11 +259,11 @@ Workfrontのボード上に新しいカードを作成します。
    <td>移動するカードを含むボードの ID を入力またはマッピングします。<p>Workfrontでボードを表示する際に、URL にボード ID が含まれています。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Destination column ID]</td> 
+   <td>[!UICONTROL 宛先列 ID]</td> 
    <td>カードの移動先の列の ID を入力またはマッピングします。<p>列 ID は、ボードを読み取りモジュールから返される情報で見つけることができます。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL To index]</td> 
+   <td>[!UICONTROL からインデックスへ ]</td> 
    <td>新しい列にカードを配置する位置を入力またはマップします。<p>インデックス 0 の列の一番上の位置。</p></td> 
   </tr> 
  </tbody> 
@@ -355,7 +355,7 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
       <td> <p>既存のWorkfront接続を使用してWorkfront Boards に接続することも、特定のWorkfront Boards 接続を使用することもできます。 </p><p>[!DNL Workfront] アプリを [!DNL Workfront Fusion] に接続する手順については、こちらの <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront ボードへの接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Board name]</td> 
+   <td>[!UICONTROL ボード名 ]</td> 
    <td>新しいボードの名前を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
@@ -407,11 +407,11 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
    <td>列を追加するボードの ID を入力またはマッピングします。<p>Workfrontでボードを表示する際に、URL にボード ID が含まれています。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column ID]</td> 
+   <td>[!UICONTROL 列 ID]</td> 
    <td>更新する列の ID を入力またはマッピングします。<p>列 ID は、ボードを読み取りモジュールから返される情報で見つけることができます。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column name]</td> 
+   <td>[!UICONTROL 列名 ]</td> 
    <td>列の新しい名前を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -434,7 +434,7 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
    <td>取得する列を含むボードの ID を入力またはマッピングします。<p>Workfrontでボードを表示する際に、URL にボード ID が含まれています。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column Name]</td> 
+   <td>[!UICONTROL 列名 ]</td> 
    <td>取得する列の名前を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -457,11 +457,11 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
    <td>取得する列を含むボードの ID を入力またはマッピングします。<p>Workfrontでボードを表示する際に、URL にボード ID が含まれています。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column Name]</td> 
+   <td>[!UICONTROL 列名 ]</td> 
    <td>取得する列の名前を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL WIP Limit]</td> 
+   <td>[!UICONTROL の WIP 制限 ]</td> 
    <td>列の新しい WIP 制限を入力またはマップします。</td> 
   </tr> 
  </tbody> 
@@ -516,11 +516,11 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
    <td>タグを作成するボードの ID を入力またはマッピングします。<p>Workfrontでボードを表示する際に、URL にボード ID が含まれています。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Tag name]</td> 
+   <td>[!UICONTROL タグ名 ]</td> 
    <td>新しいタグの名前を入力またはマッピングします。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Tag Color]</td> 
+   <td>[!UICONTROL タグの色 ]</td> 
    <td>このタグのカラーを選択します。</td> 
   </tr> 
  </tbody> 
@@ -639,11 +639,11 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
    <td> <p>API 呼び出しのクエリを標準 JSON オブジェクトの形式で追加します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Operation name]</td> 
+   <td role="rowheader">[!UICONTROL 操作名 ]</td> 
    <td> <p>この操作の名前を入力します。 これにより、呼び出しのトレースとデバッグが容易になります。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Variables data source]</td> 
+   <td role="rowheader">[!UICONTROL 変数のデータ ソース ]</td> 
    <td> <p>変数をフォームから取得するか、コレクションから取得するかを選択します。</p> </td> 
   </tr> 
   <tr> 

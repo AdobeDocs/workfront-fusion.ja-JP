@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Mar
 author: Becky
 feature: Workfront Fusion
 exl-id: da417ac7-e532-45f7-86d9-3643b5f9f203
-source-git-commit: 975c67b557e4576ee1f81df6db3049b0739d919e
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '2165'
 ht-degree: 76%
@@ -44,7 +44,7 @@ Marketo コネクタの紹介ビデオについては、次を参照してくだ
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 

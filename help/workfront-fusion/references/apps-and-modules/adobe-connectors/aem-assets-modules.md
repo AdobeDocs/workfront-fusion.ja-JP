@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion] 用の  [!DNL Adobe Experience Mana
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1488'
-ht-degree: 63%
+source-wordcount: '1727'
+ht-degree: 75%
 
 ---
 
@@ -40,7 +40,7 @@ Adobe Experience Manager Assets コネクタの概要ビデオについては、
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -65,9 +65,9 @@ Adobe Experience Manager Assets コネクタの概要ビデオについては、
 ## 前提条件
 
 * これらのモジュールを使用するには、[!DNL Adobe Experience Manager Assets] アカウントが必要です。
-* [!DNL Adobe Developer console] でフロー [!UICONTROL Server-to-server] 設定する必要があります。
+* [!UICONTROL サーバー間]のフローを [!DNL Adobe Developer console] に設定する必要があります。
 
-  [!DNL Adobe Developer console] でフロー [!UICONTROL Server-to-server] 設定する手順については、[ サーバーサイド API のアクセストークンの生成 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow) を参照してください。
+  [!UICONTROL サーバー間]のフローを [!DNL Adobe Developer console] で設定する手順については、[サーバー側 API のアクセストークンの生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow)を参照してください。
 * Adobe Experience Manager テクニカルアカウントには、書き込み権限が必要です。
 
   Adobe Experience Manager テクニカルアカウントに書き込み権限を追加する手順については、Adobe Experience Manager ドキュメントの [ サービス資格情報 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) を参照してください。
@@ -91,7 +91,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
 
 [!DNL Adobe Experience Manager Assets] モジュールへの接続を作成するには、以下を実行します。
 
-1. [!UICONTROL Connection] ボックスの横にある [[!UICONTROL Add]] をクリックします。
+1. [!UICONTROL 接続]ボックスの横にある「[!UICONTROL 追加]」をクリックします。
 
 2. 作成する接続のタイプを選択します。
 
@@ -107,18 +107,18 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
 
    [!DNL AEM Assets as a Cloud Service] の場合、[接続の設定対象 [!DNL AEM Assets as a Cloud Service]](#configure-the-connection-for-aem-assets-as-a-cloud-service)を参照してください。
 
-   [!UICONTROL AEM Assets Basic] （[!DNL Adobe Managed Services]）については、[[!UICONTROL AEM Assets Basic]](#configure-the-connection-for-aemassets-basic-adobe-managed-services) の接続の設定」を参照してください。
+   [!UICONTROL AEM Assets Basic]（[!DNL Adobe Managed Services]）の場合は、[[!UICONTROL AEM Assets Basic 用の接続の設定対象]](#configure-the-connection-for-aemassets-basic-adobe-managed-services)を参照してください。
 
-4. 「**[!UICONTROL Continue]**」をクリックして接続を保存し、モジュールに戻ります。
+4. 「**[!UICONTROL 続行]**」をクリックして接続を保存し、モジュールに戻ります。
 
 
 ### [!DNL AEM Assets as a Cloud Service] 用の接続の設定対象
 
 >[!NOTE]
 >
->* これらのフィールドの情報は、[!DNL Adobe Developer Console] でのフローの設定 [!UICONTROL Server-to-server] 一部として生成されます。 これらの値は、設定の一環として生成されるサービス資格情報 JSON ファイルに含まれています。
+>* これらのフィールドの情報は、[!DNL Adobe Developer Console] で[!UICONTROL サーバー間]のフローを設定の一環として生成されます。これらの値は、設定の一環として生成されるサービス資格情報 JSON ファイルに含まれています。
 >
->   [!UICONTROL Adobe Developer Console] ーバー上でフロー [!UICONTROL Server-to-server] 設定する手順については、[ サーバーサイド API のアクセストークンの生成 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow) を参照してください。
+>   [!UICONTROL サーバー間]のフローを [!UICONTROL Adobe Developer Console] で設定する手順については、[サーバー側 API のアクセストークンの生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow)参照してください。
 >
 >* Adobe Experience Manager テクニカルアカウントには、書き込み権限が必要です。
 >
@@ -140,20 +140,20 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
                   <td>[!DNL Adobe Experience Manager] インスタンスの URL を入力します。URL の末尾にスラッシュ <code>/</code> を含めないでください。</td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL Account details fill options]</td>
+                  <td role="rowheader">[!UICONTROL アカウントの詳細入力オプション ]</td>
                   <td>アカウントの詳細を説明する JSON を提供するか、詳細を手動で入力するかを選択します。</td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL Technical account details in JSON format]</td>
+                  <td role="rowheader">[!UICONTROL テクニカルアカウントの詳細（JSON 形式） ]</td>
                   <td>JSON を指定する場合は、アカウントの詳細を説明する JSON を入力または貼り付けます。</td>
               </tr>
               <tr>
                   <td role="rowheader">[!UICONTROL Client ID]</td>
-                  <td>詳細を手動で入力する場合は、[!UICONTROL Server-to-server] 設定で生成されたクライアント ID を入力します。</td>
+                  <td>詳細を手動で入力する場合は、[!UICONTROL サーバー間 ] 設定で生成されたクライアント ID を入力します。</td>
               </tr>
               <tr>
                   <td role="rowheader">[!UICONTROL Client Secret]</td>
-                  <td>詳細を手動で入力する場合は、[!UICONTROL Server-to-server] 設定で生成されたクライアント秘密鍵を入力します。</td>
+                  <td>詳細を手動で入力する場合は、[!UICONTROL サーバー間 ] 設定で生成されたクライアントの秘密鍵を入力します。</td>
               </tr>
               <tr>
                   <td role="rowheader">[!UICONTROL Technical account ID]</td>
@@ -165,11 +165,11 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
               </tr>
               <tr>
                   <td role="rowheader">[!UICONTROL Meta Scopes]</td>
-                  <td>[!UICONTROL Server-to-server] 設定で生成されたメタ・スコープを入力します。</td>
+                  <td>[!UICONTROL Server-to-server] 設定で生成したメタスコープを入力します。</td>
               </tr>
               <tr>
                   <td role="rowheader">[!UICONTROL Private key]</td>
-                  <td>[!UICONTROL Server-to-server] 設定で生成された秘密鍵を入力します。 秘密鍵を抽出するには、「[!UICONTROL Extract]」をクリックし、抽出するファイルとファイルのパスワードを入力します。</td>
+                  <td>[!UICONTROL Server-to-server] 設定で生成された秘密鍵を入力します。秘密鍵を抽出するには、「[!UICONTROL Extract]」をクリックし、抽出するファイルとファイルのパスワードを入力します。</td>
               </tr>
               <tr>
                   <td role="rowheader">[!UICONTROL Authentication URL]</td>
@@ -179,7 +179,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
       </table>
 
 
-### AEM Assets Basic の接続の設定（AdobeManaged Services）
+### AEM Assets Basic （Adobe Managed Services）の接続の設定
 
 <table style="table-layout:auto"> 
         <col/>
@@ -224,7 +224,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
 * [レコードの更新](#update-a-record)
 * [アセットのアップロード](#upload-an-asset)
 
-### [!UICONTROL Copy a folder or asset]
+### [!UICONTROL フォルダーまたはアセットのコピー]
 
 このアクションモジュールは、フォルダーまたはアセットをAdobe Experience Manager Assets アカウントの別の場所にコピーします。
 
@@ -234,14 +234,14 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Adobe Experience Manager Assets] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">[!DNL Adobe Experience Manager Assets] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Adobe Experience Manager Assets] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事で<a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への [!DNL Adobe Experience Manager Assets] の接続を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record type]</td> 
    <td> <p>フォルダーとアセットのどちらをコピーするかを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder] / [!UICONTROL Asset]</td> 
+   <td role="rowheader">[!UICONTROL Folder]／[!UICONTROL Asset]</td> 
    <td>コピーするフォルダーまたはアセットを選択するか、マッピングします。</td> 
   </tr> 
   <tr> 
@@ -263,7 +263,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-### [!UICONTROL Create a record]
+### [!UICONTROL レコードを作成]
 
 このアクションモジュールでは、フォルダーまたはアセットのコメントを作成します。
 
@@ -273,7 +273,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Adobe Experience Manager Assets] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">[!DNL Adobe Experience Manager Assets] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Adobe Experience Manager Assets] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事で <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">[!DNL Adobe Experience Manager Assets] への [!DNL Workfront Fusion]</a> の接続を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Object type]</td> 
@@ -294,7 +294,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-### [!UICONTROL Delete a folder, asset, or rendition]
+### [!UICONTROL  フォルダー、アセットまたはレンディションの削除 ]
 
 このアクションモジュールは、フォルダー、アセットまたはレンディションを削除します。
 
@@ -304,7 +304,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Adobe Experience Manager Assets] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">[!DNL Adobe Experience Manager Assets] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Adobe Experience Manager Assets] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事で<a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への [!DNL Adobe Experience Manager Assets] の接続を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record type]</td> 
@@ -318,7 +318,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-### [!UICONTROL Get a folder listing]
+### [!UICONTROL フォルダーの一覧を取得]
 
 このアクションモジュールは、既存のフォルダーとその子エンティティ（フォルダーまたはアセット）の表現を取得します。
 
@@ -328,7 +328,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Adobe Experience Manager Assets] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">[!DNL Adobe Experience Manager Assets] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Adobe Experience Manager Assets] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">[!DNL Adobe Experience Manager Assets] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Folder]</td> 
@@ -337,7 +337,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-### [!UICONTROL Make a custom API call]
+### [!UICONTROL カスタム API 呼び出しの実行]
 
 このモジュールは、[!DNL Adobe Experience Manager Assets] API に対してカスタム API 呼び出しを実行します。
 
@@ -347,7 +347,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Adobe Experience Manager Assets] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">[!DNL Adobe Experience Manager Assets] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Adobe Experience Manager Assets] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事内の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">[!DNL Adobe Experience Manager Assets]を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
@@ -363,7 +363,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String] </td> 
-   <td> <p>リクエストクエリ文字列を入力します。キーと値のペアごとに「<b>[!UICONTROL Add item]</b>」をクリックし、[!UICONTROL Key] と [!UICONTROL Value] を入力します。</p> </td> 
+   <td> <p>リクエストクエリ文字列を入力します。キーと値のペアごとに、「<b>[!UICONTROL Add item]</b>」をクリックし、[!UICONTROL Key]と[!UICONTROL Value]を入力します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
@@ -375,7 +375,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-### [!UICONTROL Move a folder or asset]
+### [!UICONTROL フォルダーまたはアセットの移動]
 
 このアクションモジュールは、指定されたパスのアセットまたはフォルダーを新しい場所に移動します。
 
@@ -385,14 +385,14 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Adobe Experience Manager Assets] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">[!DNL Adobe Experience Manager Assets] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Adobe Experience Manager Assets] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事で<a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への [!DNL Adobe Experience Manager Assets] の接続を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record type]</td> 
    <td> <p>フォルダーを移動するかアセットを移動するかを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder] / [!UICONTROL Asset]</td> 
+   <td role="rowheader">[!UICONTROL Folder]／[!UICONTROL Asset]</td> 
    <td>移動するフォルダーまたはアセットを選択またはマッピングします。</td> 
   </tr> 
   <tr> 
@@ -400,7 +400,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
    <td>フォルダーまたはアセットの移動先を選択またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name of moved folder] / [!UICONTROL asset]</td> 
+   <td role="rowheader">[!UICONTROL Name of moved folder]／[!UICONTROL asset]</td> 
    <td>移動後のフォルダーまたはアセットの新しい名前を入力します。[!DNL Adobe Experience Manager Assets] に表示されるフォルダー名は元の名前と同じです。ここで入力した名前は、移動後のフォルダーまたはアセットの URL に表示されます。</td> 
   </tr> 
   <tr> 
@@ -410,7 +410,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-### [!UICONTROL Update a record]
+### [!UICONTROL レコードを更新]
 
 このアクションモジュールは、既存のレコードを更新します。
 
@@ -420,7 +420,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Adobe Experience Manager Assets] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">[!DNL Adobe Experience Manager Assets] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Adobe Experience Manager Assets] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事で<a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への [!DNL Adobe Experience Manager Assets] の接続を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record type]</td> 
@@ -441,7 +441,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-### [!UICONTROL Upload an asset]
+### [!UICONTROL アセットのアップロード]
 
 このアクションモジュールは、アセットを [!DNL Adobe Experience Manager Assets] アカウントにアップロードします。
 
@@ -451,7 +451,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Adobe Experience Manager Assets] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">[!DNL Adobe Experience Manager Assets] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Adobe Experience Manager Assets] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事で <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への [!DNL Adobe Experience Manager Assets] の接続を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Destination]</td> 

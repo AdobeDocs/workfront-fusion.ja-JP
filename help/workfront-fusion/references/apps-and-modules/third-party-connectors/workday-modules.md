@@ -5,10 +5,10 @@ description: Adobe Workfront Fusion のシナリオでは、 [!DNL Workday] を�
 author: Becky
 feature: Workfront Fusion
 exl-id: 77237a1b-2acd-4350-9cc0-ec43b8b08137
-source-git-commit: fedf8f3f4031faaad9f81ed38fbc77e40e3a85b6
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 79%
+source-wordcount: '1027'
+ht-degree: 86%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 79%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -92,7 +92,7 @@ Workday コネクタでは、以下を使用します。
 
 ## [!DNL Workday] を [!DNL Workfront Fusion] に接続
 
-1. 任意の [!DNL Workfront Fusion] モジュールで、[!UICONTROL Connection] フィールドの横にある「[!UICONTROL Add]」をクリックします
+1. 任意の [!DNL Workfront Fusion] モジュールで、「[!UICONTROL 接続]」フィールドの横にある「[!UICONTROL 追加]」をクリックします。
 
 2. 次のフィールドに入力します。
 
@@ -134,7 +134,7 @@ Workday コネクタでは、以下を使用します。
     </table>
 
 
-3. 「[!UICONTROL Continue]」をクリックして接続を保存し、モジュールに戻ります
+3. 「[!UICONTROL 続行]」をクリックして接続を保存し、モジュールに戻ります。
 
 ## [!DNL Workday] モジュールとそのフィールド
 
@@ -151,16 +151,16 @@ Workday コネクタでは、以下を使用します。
 
 ### アクション
 
-* [[!UICONTROL Create a record]](#create-a-record)
+* [[!UICONTROL レコードを作成]](#create-a-record)
 
-* [[!UICONTROL Delete a record]](#delete-a-record)
+* [[!UICONTROL レコードを削除]](#delete-a-record)
 
-* [[!UICONTROL Make a custom API call]](#make-a-custom-api-call)
+* [[!UICONTROL カスタム API 呼び出しを実行]](#make-a-custom-api-call)
 
-* [[!UICONTROL Update a record]](#update-a-record)
+* [[!UICONTROL レコードを更新]](#update-a-record)
 
 
-#### [!UICONTROL Create a record]
+#### [!UICONTROL レコードを作成]
 
 このアクションモジュールは、[!DNL Workday] 内で 1 つのレコードを作成します。
 
@@ -187,7 +187,7 @@ Workday コネクタでは、以下を使用します。
     </tbody>
 </table>
 
-#### [!UICONTROL Delete a record]
+#### [!UICONTROL レコードを削除]
 
 このアクションモジュールは、[!DNL Workday] 内のレコードを 1 つ削除します。
 
@@ -221,7 +221,7 @@ Workday コネクタでは、以下を使用します。
 </table>
 
 
-### [!UICONTROL Make a custom API call]
+### [!UICONTROL カスタム API 呼び出しを実行]
 
 このアクションモジュールでは、[!DNL Workday] API への認証済みのカスタム呼び出しを実行できます。これにより、他の [!DNL Workday] モジュールでは不可能なデータフロー自動処理を作成できます。
 
@@ -247,7 +247,7 @@ Workday コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p> <p>例： <code>{"Content-type":"application/json"}</code></p> <p>[!UICONTROL Workfront Fusion] によって、認証ヘッダーが追加されます。</p> </td> 
+   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p> <p>例： <code>{"Content-type":"application/json"}</code></p> <p>[!UICONTROL Workfront Fusion] によって認証ヘッダーが追加されます。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 
@@ -255,7 +255,7 @@ Workday コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件文を JSON で使用する場合は、条件文を引用符で囲みます。</p> 
+   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p>JSON で <code>if</code> のような条件文を使用する場合は、条件文を引用符で囲みます。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -263,7 +263,7 @@ Workday コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a record]
+#### [!UICONTROL レコードの更新]
 
 このアクションモジュールは [!DNL Workday] で 1 つのレコードを更新します。
 
@@ -273,7 +273,7 @@ Workday コネクタでは、以下を使用します。
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>[!DNL Workday] アカウントをWorkfront Fusion に接続する手順については、Workfront Fusion への <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] のリンクを参照してください </a></td>
+            <td>[!DNL Workday] アカウントを Workfront Fusion に接続する方法について詳しくは、<a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] to Workfront Fusion]</a>を参照してください。</td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL Record Type]</td>
@@ -292,12 +292,12 @@ Workday コネクタでは、以下を使用します。
 
 ### 検索
 
-* [[!UICONTROL Read a record]](#read-a-record)
+* [[!UICONTROL レコードの読み取り]](#read-a-record)
 
-* [[!UICONTROL List records]](#list-records)
+* [[!UICONTROL レコードのリスト]](#list-records)
 
 
-#### [!UICONTROL Read a record]
+#### [!UICONTROL レコードの読み取り]
 
 このアクションモジュールは 1 つのレコードを読み取ります。
 
@@ -309,7 +309,7 @@ Workday コネクタでは、以下を使用します。
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>[!DNL Workday] アカウントをWorkfront Fusion に接続する手順については、Workfront Fusion への <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] のリンクを参照してください </a></td>
+            <td>[!DNL Workday] アカウントを Workfront Fusion に接続する方法について詳しくは、<a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] to Workfront Fusion]</a>を参照してください。</td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL Record type]</td>
@@ -326,7 +326,7 @@ Workday コネクタでは、以下を使用します。
     </tbody>
 </table>
 
-#### [!UICONTROL List records]
+#### [!UICONTROL レコードのリスト]
 
 この検索モジュールは、指定されたタイプのレコードのリストを取得します。
 

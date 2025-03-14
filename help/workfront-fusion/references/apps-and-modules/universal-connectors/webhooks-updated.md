@@ -4,10 +4,10 @@ description: Web フックは、イベントによってトリガーされる HT
 author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1331'
-ht-degree: 66%
+source-wordcount: '1445'
+ht-degree: 89%
 
 ---
 
@@ -40,7 +40,7 @@ Web フックは、イベントによってトリガーされる HTTP 呼び出�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -70,12 +70,12 @@ Web フックは、イベントによってトリガーされる HTTP 呼び出�
 
 Web フックを使用してアプリを [!DNL Workfront Fusion] に接続するには、次の手順に従います。
 
-1. **[!UICONTROL Webhooks]**/**[!UICONTROL Custom Webhook]** インスタントトリガーモジュールをシナリオに追加します。
+1. **[!UICONTROL Web フック]**／**[!UICONTROL カスタム web フック]**&#x200B;インスタントトリガーモジュールを、シナリオに追加します。
 
-1. Webhook フィールドの横にある「**[!UICONTROL Add]**」をクリックし、新しい Webhook の名前を入力します。
-1. （任意）「**[!UICONTROL Advanced Settings]**」をクリックします。
-1. 「**[!UICONTROL IP restrictions]**」フィールドに、モジュールがデータを受け入れ可能な IP アドレスのコンマ区切りリストを入力します。
-1. **[!UICONTROL Save]** をクリック
+1. Web フックフィールドの横にある「**[!UICONTROL 追加]**」をクリックして、新規 web フックの名前を入力します。
+1. （オプション）「**[!UICONTROL 詳細設定]**」をクリックします。
+1. **[!UICONTROL IP 制限]**&#x200B;フィールドに、モジュールがデータを受け入れることができる IP アドレスのカンマ区切りのリストを入力します。
+1. 「**[!UICONTROL 保存]**」をクリックします。
 
 Web フックを作成すると、一意の URL が表示されます。これは、web フックがデータを送信するアドレスです。Workfront Fusion は、このアドレスに送信されたデータを検証し、そのデータをシナリオでの処理に渡します。
 
@@ -87,9 +87,9 @@ Web フックを作成すると、一意の URL が表示されます。これ�
 
 受信ペイロードのデータ構造を認識するために、[!DNL Workfront Fusion] は、表示されたアドレスに送信したサンプルデータを解析します。 サンプルデータを指定するには、そのサービスまたはアプリを変更して、サービスまたはアプリが web フックを呼び出すようにします。例えば、ファイルを削除できます。
 
-または、[!UICONTROL HTTP]/[!UICONTROL Make a request] モジュールを介してサンプルデータを送信できます。
+または、[!UICONTROL HTTP]/[!UICONTROL  リクエストを行う ] モジュールを介してサンプルデータを送信できます。
 
-1. **[!UICONTROL HTTP]**/**[!UICONTROL Make a request]** モジュールを使用して新しいシナリオを作成します
+1. **[!UICONTROL HTTP]**／**[!UICONTROL リクエストを実行]**&#x200B;モジュールを使用して、新しいシナリオを作成します。
 
 1. 次の値を使用してモジュールを設定します。
 
@@ -99,7 +99,7 @@ Web フックを作成すると、一意の URL が表示されます。これ�
     <tbody> 
      <tr> 
       <td role="rowheader"><p>[!UICONTROL URL] </p></td> 
-      <td>Web フックの URL を入力します。この URL は、Webhook の設定に使用した [!UICONTROL Webhooks] モジュールにあります。</td> 
+      <td>Web フックの URL を入力します。この URL は、web フックの設定に使用した [!UICONTROL Webhooks] モジュールに含まれています。</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Method] </td> 
@@ -122,15 +122,15 @@ Web フックを作成すると、一意の URL が表示されます。これ�
 
    ![ 新しいシナリオの設定 ](/help/workfront-fusion/references/apps-and-modules/assets/new-scenario-set-up-like-this-350x446.png)
 
-1. 別のブラウザータブまたはウィンドウで、[!UICONTROL Webhooks] モジュールを使用してシナリオを開きます。
-1. Webhook モジュールで、「**[!UICONTROL Redetermine data structure]**」をクリックします。
+1. 別のブラウザーのタブまたはウィンドウで、[!UICONTROL Webhooks] モジュールを使用してシナリオを開きます。
+1. Webhooks モジュールで、「**[!UICONTROL データ構造を再決定]**」をクリックします。
 
    Webhooks モジュールから他のモジュールのリンクを解除する必要はありません。
 
-1. [!UICONTROL HTTP] モジュールでシナリオに切り替えて実行します。
+1. [!UICONTROL HTTP] モジュールを使用してシナリオに切り替え、実行します。
 1. Webhooks モジュールを使用してシナリオに戻ります。
 
-   「[!UICONTROL Successfully determined]」メッセージは、モジュールがデータ構造を正常に決定したことを意味します。
+   「[!UICONTROL 正常に決定されました]」というメッセージは、モジュールがデータ構造を正常に決定したことを意味します。
 
    ![ 正常に決定されました ](/help/workfront-fusion/references/apps-and-modules/assets/successfully-determined-350x175.png)
 
@@ -148,23 +148,23 @@ Web フックがデータを受け取り、そのデータを期待するアク�
 
 ## サポートされる受信データ形式
 
-[!DNL Workfront Fusion] は、[!UICONTROL Query String]、[!UICONTROL Form Data]、[!UICONTROL JSON] の 3 種類の受信データ形式をサポートしています。
+[!DNL Workfront Fusion] は、[!UICONTROL クエリ文字列]、[!UICONTROL フォームデータ]、[!UICONTROL JSON] の 3 つの受信データ形式をサポートします。
 
 [!DNL Workfront Fusion] は、選択したデータ構造に対するすべての受信データを検証します。次に、シナリオの設定に応じて、データは処理用のキューに格納されるか、すぐに処理されます。
 
-データのいずれかの部分が検証に合格しない場合、[!DNL Workfront Fusion] は 400 HTTP ステータスコードを返し、HTTP 応答の本文で、受信データが検証チェックに失敗した理由を指定します。受信データの検証が成功した場合、Workfront Fusion は「[!UICONTROL 200 Accepted]」ステータスを返します。
+データのいずれかの部分が検証に合格しない場合、[!DNL Workfront Fusion] は 400 HTTP ステータスコードを返し、HTTP 応答の本文で、受信データが検証チェックに失敗した理由を指定します。受信データの検証が成功した場合、Workfront Fusion は「[!UICONTROL 200 受理]」ステータスを返します。
 
-* [[!UICONTROL Query String]](#query-string)
-* [[!UICONTROL Form Data]](#form-data)
+* [[!UICONTROL クエリ文字列]](#query-string)
+* [[!UICONTROL フォームデータ]](#form-data)
 * [[!UICONTROL JSON]](#json)
 
-### [!UICONTROL Query String]
+### [!UICONTROL クエリ文字列]
 
 ```
 GET https://app.workfrontfusion.com/wh/<yourunique32characterslongstring>?name=<yourname>&job=automate
 ```
 
-### [!UICONTROL Form Data]
+### [!UICONTROL フォームデータ]
 
 ```
 POST https://app.workfrontfusion.com/wh/<yourunique32characterslongstring>
@@ -220,18 +220,18 @@ Content-Type: application/json
 >
 >元の JSON にアクセスする場合は、web フックの設定時に JSON パススルーを有効にします。
 >
->1. 「**[!UICONTROL Add]**」をクリックして、新しい Webhook を追加します。
->1. **[!UICONTROL Show advanced settings]** をクリックします。
->1. **[!UICONTROL JSON pass-through]** をクリックします。
+>1. 「**[!UICONTROL 追加]**」をクリックして、新しい web フックを追加します。
+>1. 「**[!UICONTROL 詳細設定を表示]**」をクリックします。
+>1. 「**[!UICONTROL JSON パススルー]**」をクリックします。
 >
 
 ## Web フックヘッダー
 
 Web フックのヘッダーにアクセスするには、web フックの設定時に GET リクエストヘッダーを有効にします。
 
-1. 「**[!UICONTROL Add]**」をクリックして、新しい Webhook を追加します。
-1. **[!UICONTROL Show advanced settings]** をクリックします。
-1. **[!UICONTROL Get request headers]** をクリックします。
+1. 「**[!UICONTROL 追加]**」をクリックして、新しい web フックを追加します。
+1. 「**[!UICONTROL 詳細設定を表示]**」をクリックします。
+1. 「**[!UICONTROL リクエストヘッダーを取得]**」をクリックします。
 
 `map()` 関数と `get()` 関数を組み合わせて、特定のヘッダー値を抽出することができます。
 
@@ -255,24 +255,24 @@ Web フック呼び出しに対するデフォルトの応答は、「受理」�
 
 ### Web フックへの応答をテスト
 
-1. シナリオに **[!UICONTROL Custom Webhook]** モジュールを含めます。
+1. **[!UICONTROL カスタム web フック]**&#x200B;モジュールを含めます。
 1. モジュールに新しい web フックを追加します。
 1. Web フックの URL をクリップボードにコピーします。
 1. シナリオを実行します。
 
-   [!UICONTROL Custom Webhook] モジュールの稲妻アイコンが点を回転するように変わります。 これは、モジュールが web フック呼び出しを待機していることを示しています。
+   [!UICONTROL カスタム web フック]モジュールの稲妻アイコンが回転する点に変わります。これは、モジュールが web フック呼び出しを待機していることを示しています。
 
-1. 新しいブラウザーウィンドウを開き、コピーした URL をアドレスバーに貼り付け、**[!UICONTROL Enter]** キーを押します。
+1. 新しいブラウザーウィンドウを開き、コピーした URL をアドレスバーにペーストして、**[!UICONTROL Enter]** キーを押します。
 
-   [!UICONTROL Custom Webhook] モジュールがトリガーされ、ブラウザーに新しいページが表示されます。
+   [!UICONTROL カスタム web フック]モジュールがトリガーされ、ブラウザーに新しいページが表示されます。
 
 Web フックの応答をカスタマイズする場合は、web フックの応答モジュールを使用します。
 
-モジュールの設定には、[!UICONTROL Status] と [!UICONTROL Body] の 2 つのフィールドが含まれています。
+モジュールの設定には、[!UICONTROL ステータス]および[!UICONTROL 本文]の 2 つのフィールドが含まれます。
 
-* [!UICONTROL Status] フィールドには、成功の場合は 2xx （例：OK の場合は `200`）、リダイレクトの場合は 3xx （例：一時的なリダイレクトの場合は `307`）、クライアントエラーの場合は 4xx （例：無効なリクエストの場合は `400`）などの HTTP 応答ステータスコードが含まれています。
+* [!UICONTROL ステータス]フィールドには、成功の 2xx（OK の `200` など）、リダイレクトの 3xx（一時リダイレクトの `307` など）、4xx のクライアントエラー（例えば、無効なリクエストの `400`）などの HTTP 応答ステータスコードが含まれます。
 
-* [!UICONTROL Body] フィールドには、Webhook の呼び出しで受け入れられるすべての項目が含まれます。 シンプルなテキスト、HTML、XML、JSON などが含まれます。
+* [!UICONTROL 本文]フィールドには、web フックの呼び出しで受け入れられるすべてが含まれます。シンプルなテキスト、HTML、XML、JSON などが含まれます。
 
   >[!TIP]
   >
@@ -286,7 +286,7 @@ Web フックの応答をカスタマイズする場合は、web フックの応
 >
 >**例：**
 >
->[!UICONTROL Webhook Response] モジュールを次のように設定します。
+>[!UICONTROL Web フック応答]モジュールを次のように設定します。
 >
 ><table style="table-layout:auto"> 
 &gt; <col> 
@@ -321,7 +321,7 @@ Web フックの応答をカスタマイズする場合は、web フックの応
 
 >[!INFO]
 >
->**例：**[!UICONTROL Webhook Response] モジュールを次のように設定します。
+>**例：**[!UICONTROL web フック応答]モジュールを次のように設定します。
 >
 ><table style="table-layout:auto"> 
 &gt; <col> 
@@ -358,7 +358,7 @@ Web フックの応答をカスタマイズする場合は、web フックの応
 
 ### マッピングパネルに項目がありません
 
-[!UICONTROL Webhooks]/[!UICONTROL Custom Webhook] モジュールに続くモジュールの設定のマッピングパネルに一部の項目がない場合は、**[!UICONTROL Webhooks]/[!UICONTROL Custom Webhook]** モジュールをクリックして設定を開き、「**[!UICONTROL Re-determine data structure]**」をクリックします。
+[!UICONTROL Web フック]／[!UICONTROL カスタム web フック]モジュールに続くモジュールの設定でマッピングパネルに一部の項目が欠落している場合は、**[!UICONTROL Web フック]／[!UICONTROL カスタム web フック]**&#x200B;モジュールを選択して設定を開き、「**[!UICONTROL データ構造を再決定]**」をクリックします。
 
 ![ データ構造の再定義 ](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
 

@@ -4,7 +4,7 @@ description: OAuth 2.0 認証を必要とするサーバーに対する  [!DNL A
 author: Becky
 feature: Workfront Fusion
 exl-id: a302a1d4-fddf-4a71-adda-6b87ff7dba4b
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '2256'
 ht-degree: 81%
@@ -55,7 +55,7 @@ OAuth 2.0 認証について詳しくは、[OAuth 2.0 承認フレームワー�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 

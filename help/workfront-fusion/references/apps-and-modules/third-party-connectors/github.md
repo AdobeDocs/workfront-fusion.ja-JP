@@ -4,16 +4,16 @@ description: ' [!DNL Adobe Workfront Fusion]  シナリオでは、GitHub を使
 author: Becky
 feature: Workfront Fusion
 exl-id: d9e6c26c-8770-40bc-a83a-8c05f86e4a3f
-source-git-commit: e11c73482a3844bbc96c8d08f8e50a53bc302513
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1519'
-ht-degree: 64%
+source-wordcount: '1851'
+ht-degree: 72%
 
 ---
 
 # [!DNL GitHub] モジュール
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、[!UICONTROL GitHub] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
+[!DNL Adobe Workfront Fusion] シナリオでは、[!UICONTROL GitHub] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりすることができます。
 
 ## アクセス要件
 
@@ -36,7 +36,7 @@ ht-degree: 64%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -64,7 +64,7 @@ ht-degree: 64%
 
 ## [!DNL GitHub] から [!DNL Workfront Fusion] への接続
 
-[!DNL GitHub] アカウントを [!UICONTROL Workfront Fusion] に接続する手順については、[[!UICONTROL Adobe Workfront Fusion] への接続の作成 - 基本手順](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)を参照してください。
+[!DNL GitHub] アカウントを [!UICONTROL Workfront Fusion] に接続する手順に関しては、[[!UICONTROL Adobe Workfront Fusion] への接続を作成 - 基本手順](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)を参照してください。
 
 ## [!DNL GitHub] モジュールとそのフィールド。
 
@@ -79,13 +79,13 @@ ht-degree: 64%
 
 ### トリガー
 
-* [[!UICONTROL Watch Comments]](#watch-comments)
-* [[!UICONTROL Watch Forks]](#watch-forks)
-* [[!UICONTROL Watch Issues]](#watch-issues)
-* [[!UICONTROL Watch Pull Requests]](#watch-pull-requests)
-* [[!UICONTROL Watch Repositories]](#watch-repositories)
+* [[!UICONTROL コメントを監視]](#watch-comments)
+* [[!UICONTROL フォークを監視]](#watch-forks)
+* [[!UICONTROL イシューを監視]](#watch-issues)
+* [[!UICONTROL 取得リクエストを監視]](#watch-pull-requests)
+* [[!UICONTROL リポジトリーを監視]](#watch-repositories)
 
-#### [!UICONTROL Watch Comments]
+#### [!UICONTROL コメントを監視]
 
 このトリガーモジュールは、新しいコメントが追加されたとき、または既存のコメントが変更されたときに、シナリオを開始します。
 
@@ -116,7 +116,7 @@ ht-degree: 64%
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Forks]
+#### [!UICONTROL フォークを監視]
 
 このトリガーモジュールは、新しいフォークが作成されるとシナリオを開始します。
 
@@ -139,7 +139,7 @@ ht-degree: 64%
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Issues]
+#### [!UICONTROL イシューを監視]
 
 このトリガーモジュールは、新しいイシューが追加されたとき、または既存のイシューが変更されたときにシナリオを開始します。
 
@@ -189,7 +189,7 @@ ht-degree: 64%
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Pull Requests]
+#### [!UICONTROL 取得リクエストを監視]
 
 このモジュールは、新しい取得リクエストが追加されたり、または既存の取得リクエストが変更されたりするとトリガーします。
 
@@ -211,7 +211,7 @@ ht-degree: 64%
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL State]</td> 
-   <td>[!UICONTROL only open pull] リクエスト、[!UICONTROL only closed ones]、またはすべてのプルリクエストを監視するかどうかを選択します。 </td> 
+   <td>[!UICONTROL only open pull]リクエスト、[!UICONTROL only closed ones]またはすべてのプルリクエストのどれを監視するかを選択します。 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Watch]</td> 
@@ -220,7 +220,7 @@ ht-degree: 64%
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Repositories]
+#### [!UICONTROL リポジトリーを監視]
 
 このトリガーモジュールは、リポジトリが作成または変更されると、シナリオを開始します。
 
@@ -245,18 +245,18 @@ ht-degree: 64%
 
 ### アクション
 
-* [[!UICONTROL Add assignees]](#add-assignees)
-* [[!UICONTROL Add labels to an issue]](#add-labels-to-an-issue)
-* [[!UICONTROL Create a comment]](#create-a-comment)
-* [[!UICONTROL Create an issue]](#create-an-issue)
-* [[!UICONTROL Get an issue]](#get-an-issue)
-* [[!UICONTROL List comments]](#list-comments)
-* [[!UICONTROL Remove a label from an issue]](#remove-a-label-from-an-issue)
-* [[!UICONTROL Remove assignees]](#remove-assignees)
-* [[!UICONTROL Search for an issue]](#search-for-an-issue)
-* [[!UICONTROL Update an issue]](#update-an-issue)
+* [[!UICONTROL 割り当て先の追加]](#add-assignees)
+* [[!UICONTROL イシューへのラベルの追加]](#add-labels-to-an-issue)
+* [[!UICONTROL コメントの作成]](#create-a-comment)
+* [[!UICONTROL 問題の作成]](#create-an-issue)
+* [[!UICONTROL イシューの取得]](#get-an-issue)
+* [[!UICONTROL コメントの一覧表示]](#list-comments)
+* [[!UICONTROL イシューからのラベルの削除]](#remove-a-label-from-an-issue)
+* [[!UICONTROL 割り当て先の削除]](#remove-assignees)
+* [[!UICONTROL イシューの検索]](#search-for-an-issue)
+* [[!UICONTROL イシューの更新]](#update-an-issue)
 
-#### [!UICONTROL Add assignees]
+#### [!UICONTROL 割り当て先を追加]
 
 このモジュールは、指定されたイシューに割り当て先を追加します
 
@@ -283,7 +283,7 @@ ht-degree: 64%
  </tbody> 
 </table>
 
-#### [!UICONTROL Add labels to an issue]
+#### [!UICONTROL イシューにラベルを追加]
 
 このモジュールは、イシューにラベルを追加します。ラベルはリポジトリーレベルで定義され、リポジトリーへの書き込みアクセス権を持つユーザーのみが作成できます。
 
@@ -310,7 +310,7 @@ ht-degree: 64%
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a comment]
+#### [!UICONTROL コメントを作成]
 
 このモジュールは、指定されたイシューに対するコメントを作成します。
 
@@ -337,7 +337,7 @@ ht-degree: 64%
  </tbody> 
 </table>
 
-#### [!UICONTROL Create an issue]
+#### [!UICONTROL 問題の作成]
 
 このモジュールでは、選択したリポジトリに新しいイシューを作成します。
 
@@ -376,7 +376,7 @@ ht-degree: 64%
  </tbody> 
 </table>
 
-#### [!UICONTROL Get an issue]
+#### [!UICONTROL イシューを取得]
 
 このモジュールは、指定されたイシューに関する詳細を取得します
 
@@ -399,7 +399,7 @@ ht-degree: 64%
  </tbody> 
 </table>
 
-#### [!UICONTROL List comments]
+#### [!UICONTROL コメントを一覧表示]
 
 このモジュールは、指定されたイシューに関するすべてのコメントを一覧表示します。
 
@@ -430,7 +430,7 @@ ht-degree: 64%
  </tbody> 
 </table>
 
-#### [!UICONTROL Remove a label from an issue]
+#### [!UICONTROL イシューからラベルを削除]
 
 このモジュールは、1 つのラベルをイシューから削除します。
 
@@ -457,7 +457,7 @@ ht-degree: 64%
  </tbody> 
 </table>
 
-#### [!UICONTROL Remove assignees]
+#### [!UICONTROL 割り当て先を削除]
 
 このモジュールは、指定されたイシューから割り当て先を削除します。
 
@@ -484,7 +484,7 @@ ht-degree: 64%
  </tbody> 
 </table>
 
-#### [!UICONTROL Search for an issue]
+#### [!UICONTROL イシューの検索]
 
 このモジュールでは、検索条件に一致するイシューを検索します。
 
@@ -512,7 +512,7 @@ ht-degree: 64%
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Sort direction]</td> 
-   <td> <p>昇順または降順を選択します。 </p> <p>日付の場合、「<strong>[!UICONTROL descending]</strong>」を選択すると、最新の日付が最初に返されます。 </p> <p>[!UICONTROL number of comments] の場合、「<strong>[!UICONTROL descending]</strong>」を選択すると、コメント数が最も多いイシューが最初に返されます。</p> </td> 
+   <td> <p>昇順または降順を選択します。 </p> <p>日付の場合、<strong>[!UICONTROL descending]</strong>を選択すると、最新の日付が最初に返されます。 </p> <p>[!UICONTROL number of comments]の場合、<strong>[!UICONTROL descending]</strong>を選択すると、コメントが最も多いイシューが最初に返されます。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query]</td> 
@@ -521,7 +521,7 @@ ht-degree: 64%
  </tbody> 
 </table>
 
-#### [!UICONTROL Update an issue]
+#### [!UICONTROL イシューを更新]
 
 このモジュールは、既存の [!DNL GitHub] イシューを更新します。
 

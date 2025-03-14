@@ -4,10 +4,10 @@ description: 失敗の理由がすぐに解決される可能性がある場合�
 author: Becky
 feature: Workfront Fusion
 exl-id: 08e19a1a-7ca9-4c79-a165-f200048a5cda
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 7%
+source-wordcount: '756'
+ht-degree: 16%
 
 ---
 
@@ -38,7 +38,7 @@ Adobe Workfront Fusion では現在、`retry` のエラー処理ディレクテ�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -60,7 +60,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 +++
 
-## [!UICONTROL Retry] エラー処理ディレクティブの回避策
+## [!UICONTROL 再試行]エラー処理ディレクティブの回避策
 
 Workfront Fusion は現在、`retry` のエラー処理ディレクティブを提供していません。 次のいずれかの回避策を使用して、再試行機能を模倣します。
 
@@ -80,9 +80,9 @@ Workfront Fusion は現在、`retry` のエラー処理ディレクティブを�
 #### 欠点
 
 * 最小再試行間隔は 1 分です。
-* モジュールで複数のバンドルが処理され、バンドルの処理が失敗した場合、部分実行（エラーの原因となったバンドルのみ）が不完全な実行フォルダーに移動され、[!UICONTROL Break] のディレクティブ設定に従って再試行がスケジュールされます。 ただし、現在の実行は続行され、モジュールは後続のバンドルの処理を続行します。
+* モジュールが複数のバンドルを処理していて、バンドルの処理が失敗した場合、部分的な実行（エラーの原因となったバンドルのみ）が未完了の実行フォルダーに移動され、[!UICONTROL 一時停止]ディレクティブの設定に従って再試行がスケジュールされます。ただし、現在の実行は続行され、モジュールは後続のバンドルの処理を続行します。
 
-  不完全な実行フォルダーに保存された実行が正常に解決されるまでシナリオが再び実行されないようにするには、[!UICONTROL Scenario settings] で「[!UICONTROL Sequential processing]」オプションを有効にします。
+  不完全な実行フォルダーに保存された実行が正常に解決されるまでシナリオが再び実行されないようにするには、「シナリオ設定 [!UICONTROL  の「[!UICONTROL  順次処理 ]」オプションを有効に ] ます。
 
 不完全な実行について詳しくは、[ 不完全な実行の表示と解決 ](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md) を参照してください。
 
@@ -92,37 +92,37 @@ Workfront Fusion は現在、`retry` のエラー処理ディレクティブを�
 
 #### エラーハンドラールートの設定
 
-1. 左側のパネルで「**[!UICONTROL Scenarios]**」タブをクリックします。
+1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. 回避策を追加するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
 1. **フロー制御** アイコン ![ フロー制御 ](assets/flow-control-icon.png) をクリックし、「**リピータ**」を選択します。
-1. リピーターモジュールで、「**[!UICONTROL Repeats]**」フィールドを、シナリオを再試行する最大回数に設定します。
-1. 問題が発生する可能性があるモジュールを **[!UICONTROL Repeater]** のモジュールの後に取り付けます。
+1. リピーターモジュールで、「**[!UICONTROL 繰り返し]**」フィールドを、シナリオを再試行する最大回数に設定します。
+1. 失敗する可能性があるモジュールを **[!UICONTROL リピーター]** モジュールの後に取り付けます。
 1. 失敗する可能性があるモジュールにエラーハンドラールートを添付します。
 
    手順については、「[ エラー処理の追加 ](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md) を参照してください。
-1. **[!UICONTROL Tools]/[!UICONTROL Sleep]** モジュールをエラーハンドラールートに追加し、その「**[!UICONTROL Delay]**」フィールドを再試行間の秒数に設定します。
+1. **[!UICONTROL ツール ]/[!UICONTROL  スリープ]** モジュールをエラーハンドラールートに追加し、その「**[!UICONTROL 遅延]**」フィールドを再試行間の秒数に設定します。
 
-1. **[!UICONTROL Tools]/[!UICONTROL Sleep]** モジュールの後に **[!UICONTROL Ignore]** ディレクティブを追加します。
+1. **[!UICONTROL 無視]** ディレクティブは **[!UICONTROL ツール ]/[!UICONTROL  スリープ]** モジュールの後に追加します。
 1. [ デフォルトルートの設定 ](#configure-the-default-route) を続行します。
 
 #### デフォルトルートの設定
 
-1. **[!UICONTROL Tools]/[!UICONTROL Set variable]** モジュールを、失敗する可能性があるモジュールの後の別の（エラーハンドラー以外の）ルートに追加し、モジュールの結果を `Result` などの名前の変数に格納するように設定します。
+1. **[!UICONTROL ツール ]/[!UICONTROL  変数を設定]** モジュールを、失敗する可能性があるモジュールの後の別の（エラーハンドラー以外の）ルートに追加し、モジュールの結果を `Result` などの名前の変数に格納するように設定します。
 
-1. **[!UICONTROL Tools]/[!UICONTROL Set variable]** の後に **[!UICONTROL Array aggregator]** モジュールを追加し、その「Source モジュール」フィールドで **[!DNL Repeater]** モジュールを選択します。
+1. **[!UICONTROL ツール ]/[!UICONTROL  変数を設定]** の後に **[!UICONTROL 配列アグリゲータ]** モジュールを追加し、その「Sourceモジュール」フィールドで **[!DNL Repeater]** モジュールを選択します。
 
-1. **[!UICONTROL Tools]/[!UICONTROL Get variable]** モジュールを **[!UICONTROL Array aggregator]** モジュールの後に追加し、`Result` 変数の値をそれにマッピングします。
+1. **[!UICONTROL ツール ]/[!UICONTROL  変数を取得]** モジュールを **[!UICONTROL 配列アグリゲータ]** モジュールの後に追加し、`Result` 変数の値をそれにマッピングします。
 
-1. **[!UICONTROL Tools]/[!UICONTROL Get variable]** モジュールを **[!UICONTROL Repeater]** モジュールと失敗する可能性のあるモジュールの間に挿入し、`Result` 変数の値をそれにマッピングします。
+1. **[!UICONTROL ツール ]/[!UICONTROL  変数の取得]** モジュールを **[!UICONTROL リピーター]** モジュールと潜在的に失敗するモジュールの間に挿入し、`Result` 変数の値をそれにマッピングします。
 
-1. この **[!UICONTROL Tools]/[!UICONTROL Get variable]** モジュールと失敗する可能性のあるモジュールの間にフィルターを挿入し、`Result` 変数が存在しない場合にのみ続行します。
+1. `Result` 変数が存在しない場合にのみ続行するには、この&#x200B;**[!UICONTROL ツール]／[!UICONTROL 変数の取得]**&#x200B;モジュールと失敗する可能性があるモジュールの間にフィルターを挿入します。
 
 >[!BEGINSHADEBOX]
 
 **例：**
 
-このサンプルシナリオでは、[!UICONTROL HTTP]/[!UICONTROL Make a request] モジュールは失敗する可能性のあるモジュールを表します。
+このサンプルシナリオでは、[!UICONTROL HTTP]/[!UICONTROL  リクエストを行う ] モジュールは、失敗する可能性のあるモジュールを表しています。
 
 ![HTTP リクエストの作成 ](assets/http-make-request.png)
 

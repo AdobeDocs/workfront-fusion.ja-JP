@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion Frame].io modules enable you to moni
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2128'
-ht-degree: 71%
+source-wordcount: '2510'
+ht-degree: 80%
 
 ---
 
@@ -40,7 +40,7 @@ Frame.io コネクタの紹介ビデオについては、以下を参照して�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -89,7 +89,7 @@ Frame.io コネクタでは、以下を使用します。
  </tbody> 
  </table>
 
-## [!DNL Frame.io] を [!UICONTROL Adobe Workfront Fusion] に接続
+## [!DNL Frame.io] から [!UICONTROL Adobe Workfront Fusion] への接続
 
 [!DNL Frame.io] には、API トークンまたは OAuth 2.0 を使用して接続できます。
 
@@ -99,17 +99,17 @@ Frame.io コネクタでは、以下を使用します。
 
 ### API トークンを使用した [!DNL Frame.io] への接続
 
-API トークンを使用して [!DNL Frame.io] アカウントを [!DNL Workfront Fusion] に接続するには、[!DNL Frame.io] アカウントで API トークンを作成し、[!DNL Workfront Fusion] [!DNL Frame.io] [!UICONTROL Create a connection] ダイアログに挿入する必要があります。
+API トークンを使用して [!DNL Frame.io] アカウントを [!DNL Workfront Fusion] に接続するには、[!DNL Frame.io] アカウントで API トークンを作成して [!DNL Workfront Fusion] [!DNL Frame.io] の「[!UICONTROL 接続を作成]」ダイアログに挿入する必要があります。
 
 1. [!DNL Frame.io] アカウントにログインします。
-1. [!DNL Frame.io] Developer の **[!UICONTROL Tokens]** ページに移動します。
-1. **[!UICONTROL New]** をクリックします。
-1. トークンの名前を入力し、使用する範囲を選択して「**[!UICONTROL Create]**」をクリックします。
+1. [!DNL Frame.io] Developer の「**[!UICONTROL トークン]**」ページに移動します。
+1. 「**[!UICONTROL 新規]**」をクリックします。
+1. トークンの名前を入力して使用する範囲を選択し、「**[!UICONTROL 作成]**」をクリックします。
 1. 提供されたトークンをコピーします。
-1. [!DNL Workfront Fusion] に移動し、[!DNL Frame.io] モジュールの **[!UICONTROL Create a connection]** ダイアログを開きます。
-1. 「**[!UICONTROL Connection type]**」フィールドで「**[!DNL Frame.io]**」を選択します。
-1. 手順 5 でコピーしたトークンを「**[!UICONTROL Your [!DNL Frame.io] API Key]**」フィールドに入力します
-1. 「**[!UICONTROL Continue]**」をクリックして接続を確立し、モジュールに戻ります。
+1. [!DNL Workfront Fusion] に移動して、[!DNL Frame.io] モジュールの「**[!UICONTROL 接続を作成]**」ダイアログを開きます。
+1. 「**[!UICONTROL 接続タイプ]**」フィールドで「**[!DNL Frame.io]**」を選択します。
+1. 手順 5 でコピーしたトークンを「**[!UICONTROL [!DNL Frame.io] API キー]** フィールドに入力します
+1. 「**[!UICONTROL 続行]**」をクリックして接続を確立し、モジュールに戻ります。
 
 ### OAuth 2.0 PKCE を使用した [!DNL Frame.io] への接続
 
@@ -120,14 +120,14 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
 
 #### OAuth 2.0 PKCE（クライアント ID なし）を使用した [!DNL Frame.io] への接続
 
-1. [!DNL Workfront Fusion] に移動し、[!DNL Frame.io] モジュールの **[!UICONTROL Create a connection]** ダイアログを開きます。
-1. 「**[!UICONTROL Connection type]**」フィールドで「**[!UICONTROL [!DNL Frame.io] OAuth 2.0 PKCE]**」を選択します。
-1. 新しい接続の名前を **[!UICONTROL Connection name]** フィールドに入力します。
-1. 「**[!UICONTROL Continue]**」をクリックして接続を確立し、モジュールに戻ります。
+1. [!DNL Workfront Fusion] に移動して、[!DNL Frame.io] モジュールの「**[!UICONTROL 接続を作成]**」ダイアログを開きます。
+1. 「**[!UICONTROL 接続タイプ]**」フィールドで「**[!UICONTROL [!DNL Frame.io]OAuth 2.0 PKCE]**」を選択します。
+1. 新しい接続の名前を「**[!UICONTROL 接続名]**」フィールドに入力します。
+1. 「**[!UICONTROL 続行]**」をクリックして接続を確立し、モジュールに戻ります。
 
 #### OAuth 2.0 PKCE（クライアント ID あり）を使用した [!DNL Frame.io] への接続
 
-1. [!DNL Frame.io] で OAuth 2.0 アプリを作成します。手順については、[!UICONTROL OAuth 2.0 Code Authorization Flow] の [!DNL Frame.io] ドキュメントを参照してください。
+1. [!DNL Frame.io] で OAuth 2.0 アプリを作成します。手順については、[!DNL Frame.io] ドキュメントの [!UICONTROL OAuth 2.0 コード承認フロー] を参照してください。
 
    >[!IMPORTANT]
    >
@@ -143,12 +143,12 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
 
 
 1. 提供された `client_id` をコピーします。
-1. [!DNL Workfront Fusion] に移動し、[!DNL Frame.io] モジュールの **[!UICONTROL Create a connection]** ダイアログを開きます。
-1. 「**[!UICONTROL Connection type]**」フィールドで「**[!UICONTROL [!DNL Frame.io] OAuth 2.0 PKCE]**」を選択します。
-1. 新しい接続の名前を **[!UICONTROL Connection name]** フィールドに入力します。
-1. **[!UICONTROL Show advanced settings]** をクリックします。
-1. 手順 2 でコピーした `client_id` を「**[!UICONTROL Client ID]**」フィールドに入力します。
-1. 「**[!UICONTROL Continue]**」をクリックして接続を確立し、モジュールに戻ります。
+1. [!DNL Workfront Fusion] に移動して、[!DNL Frame.io] モジュールの「**[!UICONTROL 接続を作成]**」ダイアログを開きます。
+1. 「**[!UICONTROL 接続タイプ]**」フィールドで「**[!UICONTROL [!DNL Frame.io]OAuth 2.0 PKCE]**」を選択します。
+1. 新しい接続の名前を「**[!UICONTROL 接続名]**」フィールドに入力します。
+1. 「**[!UICONTROL 詳細設定を表示]**」をクリックします。
+1. 手順 2 でコピーした `client_id` を「**[!UICONTROL クライアント ID]**」フィールドに入力します。
+1. 「**[!UICONTROL 続行]**」をクリックして接続を確立し、モジュールに戻ります。
 
 ## [!DNL Frame.io] モジュールとそのフィールド
 
@@ -165,16 +165,16 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
 
 ### アセット
 
-* [[!UICONTROL Create an Asset]](#create-an-asset)
-* [[!UICONTROL Delete an Asset]](#delete-an-asset)
-* [[!UICONTROL Get an Asset]](#get-an-asset)
-* [[!UICONTROL List Assets]](#list-assets)
-* [[!UICONTROL Update an Asset]](#update-an-asset)
-* [[!UICONTROL Watch Asset Deleted]](#watch-asset-deleted)
-* [[!UICONTROL Watch Asset Label Updated]](#watch-asset-label-updated)
-* [[!UICONTROL Watch New Asset]](#watch-new-asset)
+* [[!UICONTROL アセットの作成]](#create-an-asset)
+* [[!UICONTROL アセットの削除]](#delete-an-asset)
+* [[!UICONTROL アセットの取得]](#get-an-asset)
+* [[!UICONTROL アセットの一覧表示]](#list-assets)
+* [[!UICONTROL アセットの更新]](#update-an-asset)
+* [[!UICONTROL 削除されたアセットの監視]](#watch-asset-deleted)
+* [[!UICONTROL 更新されたアセットラベルの監視]](#watch-asset-label-updated)
+* [[!UICONTROL 新しいアセットの監視]](#watch-new-asset)
 
-#### [!UICONTROL Create an Asset]
+#### [!UICONTROL アセットの作成]
 
 このアクションモジュールでは、新しいアセットを作成できます。
 
@@ -225,13 +225,13 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
    <td> <p>ファイルを作成する場合、アセットの簡単な説明を入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Label] </td> 
+   <td role="rowheader">[!UICONTROL ラベル ] </td> 
    <td> <p>ファイルを作成する場合は、ファイルが進行中か、レビューが必要か、承認済みかを選択します。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete an Asset]
+#### [!UICONTROL アセットを削除]
 
 このアクションモジュールは、指定したアセットを削除します。
 
@@ -262,7 +262,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
  </tbody> 
 </table>
 
-#### [!UICONTROL Get an Asset]
+#### [!UICONTROL アセットを取得]
 
 このアクションモジュールは、アセットの詳細を取得します。
 
@@ -293,7 +293,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
  </tbody> 
 </table>
 
-#### [!UICONTROL List Assets]
+#### [!UICONTROL アセットを一覧表示]
 
 この検索モジュールは、指定されたプロジェクトのフォルダー内のすべてのアセットを取得します。
 
@@ -326,7 +326,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
  </tbody> 
 </table>
 
-#### [!UICONTROL Update an Asset]
+#### [!UICONTROL アセットの更新]
 
 このアクションモジュールを使用すると、既存のアセットの名前、説明、またはカスタムフィールドを更新できます。
 
@@ -365,7 +365,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Asset Deleted]
+#### [!UICONTROL 削除されたアセットを監視]
 
 このトリガーモジュールは、指定されたチームに属するアセットが削除されると、シナリオを開始します。
 
@@ -392,7 +392,7 @@ Webhook を追加する場合は、次の情報を入力します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Asset Label Updated]
+#### [!UICONTROL 更新されたアセットラベルを監視]
 
 このトリガーモジュールは、指定されたチームセット、変更または削除されたアセットのラベルが所有する場合にシナリオを開始します。
 
@@ -419,7 +419,7 @@ Webhook を追加する場合は、次の情報を入力します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch New Asset]
+#### [!UICONTROL 新しいアセットを見つける]
 
 このトリガーモジュールは、指定されたチームの新しいアセットが作成されると、シナリオを開始します。
 
@@ -448,15 +448,15 @@ Webhook を追加する場合は、次の情報を入力します。
 
 ### コメント
 
-* [[!UICONTROL Create a Comment]](#create-a-comment)
-* [[!UICONTROL Delete a Comment]](#delete-a-comment)
-* [[!UICONTROL Get a Comment]](#get-a-comment)
-* [[!UICONTROL List Comments]](#list-comments)
-* [[!UICONTROL Update a Comment]](#update-a-comment)
-* [[!UICONTROL Watch Comment Updated]](#watch-comment-updated)
-* [[!UICONTROL Watch New Comment]](#watch-new-comment)
+* [[!UICONTROL コメントを作成]](#create-a-comment)
+* [[!UICONTROL コメントを削除]](#delete-a-comment)
+* [[!UICONTROL コメントを取得]](#get-a-comment)
+* [[!UICONTROL コメントをリスト]](#list-comments)
+* [[!UICONTROL コメントをアップデート]](#update-a-comment)
+* [[!UICONTROL 更新されたコメントを監視]](#watch-comment-updated)
+* [[!UICONTROL 新規コメントを監視]](#watch-new-comment)
 
-#### [!UICONTROL Create a Comment]
+#### [!UICONTROL コメントを作成]
 
 このアクションモジュールは、新しいコメントまたは返信をアセットに追加します。
 
@@ -466,7 +466,7 @@ Webhook を追加する場合は、次の情報を入力します。
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io] を [!DNL Adobe Workfront Fusion]</a> に接続を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Type] </td> 
@@ -503,7 +503,7 @@ Webhook を追加する場合は、次の情報を入力します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Comment]
+#### [!UICONTROL コメントの削除]
 
 このアクションモジュールは、既存のコメントを削除します。
 
@@ -538,7 +538,7 @@ Webhook を追加する場合は、次の情報を入力します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Comment]
+#### [!UICONTROL コメントを取得]
 
 このアクションモジュールは、指定されたコメントの詳細を取得します。
 
@@ -573,7 +573,7 @@ Webhook を追加する場合は、次の情報を入力します。
  </tbody> 
 </table>
 
-#### [!UICONTROL List Comments]
+#### [!UICONTROL コメントをリスト]
 
 この検索モジュールは、指定されたアセットのすべてのコメントを取得します。
 
@@ -608,7 +608,7 @@ Webhook を追加する場合は、次の情報を入力します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Comment]
+#### [!UICONTROL コメントの更新]
 
 このアクションモジュールは、既存のコメントを編集します。
 
@@ -651,7 +651,7 @@ Webhook を追加する場合は、次の情報を入力します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Comment Updated]
+#### [!UICONTROL 更新されたコメントを監視]
 
 このトリガーモジュールは、コメントが編集されたときにシナリオを開始します。
 
@@ -678,7 +678,7 @@ Webhook を追加する場合は、次の情報を入力します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch New Comment]
+#### [!UICONTROL 新規コメントを監視]
 
 このトリガーモジュールは、新しいコメントまたは返信が作成されたときにシナリオを開始します。
 
@@ -707,7 +707,7 @@ Webhook を追加する場合は、次の情報を入力します。
 
 ### プロジェクト
 
-#### [!UICONTROL List Projects]
+#### [!UICONTROL プロジェクトのリスト]
 
 この検索モジュールは、指定したチームのすべてのプロジェクトを取得します。
 
@@ -732,7 +732,7 @@ Webhook を追加する場合は、次の情報を入力します。
 
 ### その他
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL API 呼び出しの実行]
 
 このモジュールでは、カスタム API 呼び出しを実行できます。
 
@@ -742,7 +742,7 @@ Webhook を追加する場合は、次の情報を入力します。
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Frame.io] を [!DNL Adobe Workfront Fusion]</a> に接続を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
@@ -758,7 +758,7 @@ Webhook を追加する場合は、次の情報を入力します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String] </td> 
-   <td> <p>リクエストクエリ文字列を入力します。クエリ文字列に含めるパラメーターごとに「<b>[!UICONTROL Add item]</b>」をクリックし、フィールドの名前と目的の値を入力します。</p> </td> 
+   <td> <p>リクエストクエリ文字列を入力します。クエリ文字列に含める各パラメーターに対して、<b>[!UICONTROL Add item]</b> をクリックして、フィールドの名前と必要な値を入力します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 

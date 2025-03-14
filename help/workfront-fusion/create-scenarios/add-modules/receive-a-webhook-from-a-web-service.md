@@ -4,9 +4,9 @@ description: 現在Workfront Fusion に専用のコネクタがなく、Webhook 
 author: Becky
 feature: Workfront Fusion
 exl-id: 51ef13fb-2978-4927-8d5f-7d83995f11e0
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '373'
 ht-degree: 17%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 17%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -60,7 +60,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ## Web フックを受信
 
-1. 左側のパネルで「**[!UICONTROL Scenarios]**」タブをクリックします。
+1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. Webhook を追加するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
 1. **Webhook/カスタム Webhook** モジュールを追加し、シナリオを開始します。

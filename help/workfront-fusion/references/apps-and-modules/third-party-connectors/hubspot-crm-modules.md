@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion] HubSpot CRM モジュールを使�
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: 9cea5de748873720247db39161cea12c7e9c7186
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '5530'
-ht-degree: 33%
+source-wordcount: '6203'
+ht-degree: 39%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 33%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -121,7 +121,7 @@ HubSpot CRM コネクタは以下を使用します。
 <!--* [Search for CRM objects](#search-for-crm-objects)
 * [Watch CRM objects](#watch-crm-objects)-->
 
-+++ **[!UICONTROL Search for CRM Objects]**
++++ **[!UICONTROL CRM オブジェクトを検索]**
 
 この検索モジュールは、カスタムプロパティまたはクエリで CRM オブジェクトを検索します。製品や明細項目を検索するには、必要なカスタムスコープで特別な接続を使用します。
 
@@ -187,7 +187,7 @@ HubSpot CRM コネクタは以下を使用します。
    <td>モジュールが 1 回の実行サイクルで返す最大項目数を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Object type to search]</td> 
+   <td role="rowheader">[！検索する UICONTROL オブジェクトの種類 ]</td> 
    <td> <p>検索するオブジェクトのタイプを選択します。</p> </td> 
   </tr> 
   <tr> 
@@ -195,7 +195,7 @@ HubSpot CRM コネクタは以下を使用します。
    <td>このモジュールの出力に含めるプロパティを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Created/Updated]</td> 
+   <td role="rowheader">[!UICONTROL が作成/更新されました ]</td> 
    <td>作成された（新規）オブジェクトと更新された（変更済み）オブジェクトのどちらをウォッチするかを選択します。</td> 
   </tr> 
   <tr> 
@@ -235,7 +235,7 @@ HubSpot CRM コネクタは以下を使用します。
    <td> <p>作成するレコードのタイプを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Property groups]</td> 
+   <td role="rowheader">[!UICONTROL プロパティ グループ ]</td> 
    <td>レコードの作成時に追加するプロパティごとに、プロパティがあるグループを選択します。 プロパティグループが開き、プロパティの値を入力できます。 使用できるプロパティグループとプロパティは、作成するレコードのタイプによって異なります。</td> 
   </tr> 
  </tbody> 
@@ -243,7 +243,7 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++ **[!UICONTROL Create a Record (Legacy)]**
++++ **[!UICONTROL レコードを作成（レガシー）]**
 
 このアクションモジュールは、連絡先、会社または契約を作成します。
 
@@ -268,7 +268,7 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++ **[!UICONTROL Delete a Record]**
++++ **[!UICONTROL レコードを削除]**
 
 このアクションモジュールは、連絡先、会社または契約を削除します。
 
@@ -293,7 +293,7 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++ [!UICONTROL Get a Record]
++++ [!UICONTROL レコードを取得]
 
 このアクションモジュールは、連絡先、会社または契約の詳細を取得します。
 
@@ -331,7 +331,7 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++ **[!UICONTROL Get a Record Property]**
++++ **[!UICONTROL レコードプロパティを取得]**
 
 このアクションモジュールは、（内部）名で特定のレコードプロパティのメタデータを取得します。
 
@@ -389,7 +389,7 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++ **[!UICONTROL Update a Record]**
++++ **[!UICONTROL レコードを更新]**
 
 このアクションモジュールは、連絡先、会社または契約を更新します。
 
@@ -430,7 +430,7 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++ **[!UICONTROL Watch Records]**
++++ **[!UICONTROL レコードを監視]**
 
 このトリガーモジュールは、過去 30 日以内に連絡先、会社または契約が変更または作成された場合にシナリオを開始します。出力できるレコード数は 10,000 個に制限されます。
 
@@ -476,7 +476,7 @@ HubSpot CRM コネクタは以下を使用します。
 * [[!UICONTROL Search for Contacts]](#search-for-contacts)
 * [Watch Contacts Added to a List](#watch-contacts-added-to-a-list)-->
 
-+++ **[!UICONTROL Add Contacts to a List]**
++++ **[!UICONTROL リストに連絡先を追加]**
 
 このモジュールは、システムで既に作成されている連絡先レコードを、連絡先リストに追加します。
 
@@ -518,7 +518,7 @@ HubSpot CRM コネクタは以下を使用します。
    <td> <p>[!DNL HubSpot CRM] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Property groups]</td> 
+   <td role="rowheader">[!UICONTROL プロパティ グループ ]</td> 
    <td>連絡先を作成するときに追加するプロパティごとに、プロパティがあるグループを選択します。 プロパティグループが開き、プロパティの値を入力できます。</td> 
   </tr> 
  </tbody> 
@@ -526,7 +526,7 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++ **[!UICONTROL Create/Update a Contact (Legacy)]**
++++ **[!UICONTROL 連絡先を作成／更新（レガシー）]**
 
 ポータルに存在しない場合は連絡先を作成します。または存在する場合は最新のプロパティ値で更新します。
 
@@ -547,7 +547,7 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++ **[!UICONTROL Create/Update a Group of Contacts]**
++++ **[!UICONTROL 連絡先グループを作成／更新]**
 
 連絡先のグループを作成するか、既に存在する場合は更新します。バッチサイズが 100 件の連絡先以下に制限されている場合は、最適なパフォーマンスが実現します。このエンドポイントを通じて行われた変更は非同期で処理されるので、連絡先レコードに変更が適用されるまで数分かかる場合があります。
 
@@ -561,7 +561,7 @@ HubSpot CRM コネクタは以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Batch of Contacts to Create/Update] </td> 
-   <td> <p>連絡先のバッチを追加します。</p> <p>「<strong>[!UICONTROL Add item]</strong>」をクリックして、新しい連絡先を追加します。 表示されるウィンドウで、次の情報を入力またはマッピングします。</p> 
+   <td> <p>連絡先のバッチを追加します。</p> <p><strong>[!UICONTROL Add item]</strong> をクリックして、新しい連絡先を追加します。表示されるウィンドウで、次の情報を入力またはマッピングします。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Search Type]</strong> </p> <p>連絡先を識別する方法を選択してください。</p> 
       <ul> 
@@ -576,9 +576,9 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++ **[!UICONTROL List Contacts]**
++++ **[!UICONTROL 連絡先のリスト]**
 
-ポータルで作成されたすべての連絡先を返します。出力できる連絡先は 5000 に制限されます。前または次の連絡先をリストするには、[!UICONTROL advanced] パラメーターを使用してリストをオフセットできます。
+ポータルで作成されたすべての連絡先を返します。出力できる連絡先は 5000 に制限されます。前の連絡先または次の連絡先を一覧表示するには、[!UICONTROL 詳細]パラメーターを使用して、リストをオフセットします。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -605,9 +605,9 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++ **[!UICONTROL List Contacts of a Company]**
++++ **[!UICONTROL 会社の連絡先リスト]**
 
-会社内の連絡先リストを取得します。出力できる連絡先は 5000 に制限されます。前または次の連絡先をリストするには、[!UICONTROL advanced] パラメーターを使用してリストをオフセットできます。
+会社内の連絡先リストを取得します。出力できる連絡先は 5000 に制限されます。前の連絡先または次の連絡先を一覧表示するには、[!UICONTROL 詳細]パラメーターを使用して、リストをオフセットします。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -634,7 +634,7 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++ **[!UICONTROL Merge contacts]**
++++ **[!UICONTROL 連絡先を結合]**
 
 このアクション モジュールは連絡先を結合します
 
@@ -659,7 +659,7 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++ **[!UICONTROL Remove a Contact from a List]**
++++ **[!UICONTROL リストから連絡先を削除]**
 
 連絡先リストから連絡先を削除。
 
@@ -688,7 +688,7 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++ **[!UICONTROL Search for Contacts]**
++++ **[!UICONTROL 連絡先を検索]**
 
 検索クエリを使用して連絡先のリストを取得します。
 
@@ -713,7 +713,7 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++ **[!UICONTROL Watch contacts added to a list]**
++++ **[!UICONTROL リストに追加された連絡先を監視]**
 
 このトリガーモジュールは、新しい連絡先がリストに追加されると、シナリオを開始します。これは、有料マーケティングアカウントを持つユーザーのみが利用できます。
 
@@ -747,7 +747,7 @@ HubSpot CRM コネクタは以下を使用します。
 <!--* [[!UICONTROL Get a Deal's CRM Pipeline]](#get-a-deals-crm-pipeline)
 * [[!UICONTROL List Deal/Ticket Pipelines]](#list-dealticket-pipelines)-->
 
-+++ **[!UICONTROL Get a Deal's CRM Pipeline]**
++++ **[!UICONTROL 契約の CRM パイプラインの取得]**
 
 特定の契約パイプラインを返します。
 
@@ -772,7 +772,7 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++ **[!UICONTROL List Deal/Ticket Pipelines]**
++++ **[!UICONTROL 契約パイプラインまたはチケットパイプラインのリスト]**
 
 指定されたポータルのすべての契約とチケットのパイプラインを返します。
 
@@ -795,7 +795,7 @@ HubSpot CRM コネクタは以下を使用します。
 
 ### 会社
 
-+++ **[!UICONTROL Search for Companies by domain]**
++++ **[!UICONTROL ドメインで会社を検索]**
 
 ドメインプロパティとの完全一致に基づいて、会社のリストを取得します。
 
@@ -848,7 +848,7 @@ HubSpot CRM コネクタは以下を使用します。
    <td>契約を関連付ける CRM レコードのタイプを選択します。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Engagement ID]</td> 
+   <td role="rowheader">[!UICONTROL エンゲージメント ID]</td> 
   <td>オブジェクトに関連付ける契約の ID を入力またはマッピングします。</td> 
    </tr> 
   <tr> 
@@ -873,7 +873,7 @@ HubSpot CRM コネクタは以下を使用します。
    <td> <p>[!DNL HubSpot CRM] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Is Active?]</td> 
+   <td role="rowheader">[!UICONTROL はアクティブですか？]</td> 
    <td>新しいエンゲージメントが作成時にアクティブになる場合は、このオプションを有効にします。 タイムラインに表示するには、エンゲージメントがアクティブである必要があります。</td> 
   </tr> 
   <tr> 
@@ -934,7 +934,7 @@ HubSpot CRM コネクタは以下を使用します。
  <col> 
  <tbody> 
   <tr> 
-   <td> <p>[!UICONTROL From > Email]</p> </td> 
+   <td> <p>[!UICONTROL From &gt; Email]</p> </td> 
    <td> <p>メールの送信元のメールアドレスを入力またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
@@ -980,7 +980,7 @@ HubSpot CRM コネクタは以下を使用します。
  <col> 
  <tbody> 
   <tr> 
-   <td> <p>[!UICONTROL To Number]</p> </td> 
+   <td> <p>[!UICONTROL から Number へ ]</p> </td> 
    <td> <p>通話の宛先の電話番号を入力またはマップします。</p> </td> 
   </tr> 
   <tr> 
@@ -1030,7 +1030,7 @@ HubSpot CRM コネクタは以下を使用します。
    <td>ミーティングの説明または詳細のテキストを入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Start Time]</td> 
+   <td role="rowheader">[!UICONTROL 開始時刻 ]</td> 
   <td>会議の開始時刻を UNIX タイムスタンプとして入力またはマップします。
   </td> 
    </tr> 
@@ -1060,7 +1060,7 @@ HubSpot CRM コネクタは以下を使用します。
    <td>タスクのステータスを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL For Object Type]</td> 
+   <td role="rowheader">[!UICONTROL （オブジェクト型） ]</td> 
   <td><code>CONTACT</code> または <code>COMPANY</code> を入力します。
   </td> 
    </tr> 
@@ -1135,7 +1135,7 @@ HubSpot CRM コネクタは以下を使用します。
    <td> <p>[!DNL HubSpot CRM] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Application ID]</td> 
+   <td role="rowheader">[!UICONTROL アプリケーション ID]</td> 
    <td>このイベントが属するアプリケーションの ID を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
@@ -1143,7 +1143,7 @@ HubSpot CRM コネクタは以下を使用します。
    <td>このイベントの ID を入力またはマッピングします。 イベント ID はシステムによって生成されません。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Event Type ID]</td> 
+   <td role="rowheader">[!UICONTROL イベント タイプ ID]</td> 
    <td>このイベントのイベントタイプの ID を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
@@ -1151,7 +1151,7 @@ HubSpot CRM コネクタは以下を使用します。
    <td>イベントを作成する連絡先のメールアドレスを入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Object ID]</td> 
+   <td role="rowheader">[!UICONTROL オブジェクト ID]</td> 
    <td>イベントを作成する連絡先の ID を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
@@ -1159,7 +1159,7 @@ HubSpot CRM コネクタは以下を使用します。
    <td>このイベントのタイムスタンプを入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Custom data]</td> 
+   <td role="rowheader">[!UICONTROL カスタム データ ]</td> 
    <td>このイベントに追加するカスタム データの項目ごとに、[<b> 項目の追加 </b>] をクリックし、項目の名前と値を入力します。</td> 
   </tr> 
  </tbody> 
@@ -1180,7 +1180,7 @@ HubSpot CRM コネクタは以下を使用します。
    <td> <p>[!DNL HubSpot CRM] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Application ID]</td> 
+   <td role="rowheader">[!UICONTROL アプリケーション ID]</td> 
    <td>このイベントが属するアプリケーションの ID を入力またはマッピングします。 </td> 
   </tr> 
  </tbody> 
@@ -1201,7 +1201,7 @@ HubSpot CRM コネクタは以下を使用します。
    <td> <p>[!DNL HubSpot CRM] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Events Type]</td> 
+   <td role="rowheader">[!UICONTROL イベントの種類 ]</td> 
    <td>ソーシャルイベント、コンテンツイベントまたはすべてのイベントのどちらを視聴するかを選択します。</td> 
   </tr> 
   <tr> 
@@ -1236,15 +1236,15 @@ HubSpot CRM コネクタは以下を使用します。
    <td> <p>[!DNL HubSpot CRM] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Application ID]</td> 
+   <td role="rowheader">[!UICONTROL アプリケーション ID]</td> 
    <td>この Webhook に使用するアプリケーション ID を入力します。 ID は、HubSpot 開発者ポータルで確認できます。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Subscriptions]</td> 
+   <td role="rowheader">[!UICONTROL 購読 ]</td> 
    <td> <p>監視する通知のタイプごとに、「<b> 項目を追加 </b>」をクリックし、購読のタイプを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Force to Remove Old Subscriptions]</td> 
+   <td role="rowheader">[!UICONTROL 古いサブスクリプションを強制的に削除 ]</td> 
    <td>このオプションを有効にすると、この Webhook に添付されている古いサブスクリプションがデタッチまたは削除されます。</td> 
   </tr> 
  </tbody> 
@@ -1262,7 +1262,7 @@ HubSpot CRM コネクタは以下を使用します。
 * [Upload a file](#upload-a-file)
 * [Watch files](#watch-files)-->
 
-+++ **[!UICONTROL Create a Folder]**
++++ **[!UICONTROL フォルダーを作成]**
 
 このモジュールは、フォルダーを作成します。
 
@@ -1308,7 +1308,7 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++ **[!UICONTROL Delete a Folder]**
++++ **[!UICONTROL フォルダーを削除]**
 
 フォルダーを削除済みとしてマークします。
 
@@ -1358,7 +1358,7 @@ HubSpot CRM コネクタは以下を使用します。
 
 +++
 
-+++ **[!UICONTROL Move a File]**
++++ **[!UICONTROL ファイルの移動]**
 
 ファイルを別のフォルダーに移動します。
 
@@ -1404,7 +1404,7 @@ HubSpot CRM コネクタは以下を使用します。
    <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Access type] </td> 
+   <td role="rowheader">[!UICONTROL アクセスの種類 ] </td> 
    <td>ファイルをプライベート、パブリックだがインデックス不可、またはパブリックでインデックス可能にするかどうかを選択します。 </td> 
   </tr> 
   <tr> 
@@ -1476,11 +1476,11 @@ HubSpot CRM コネクタは以下を使用します。
    <td>新しいカレンダータスクの説明を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Owner ID]</td> 
+   <td role="rowheader">[!UICONTROL 所有者 ID]</td> 
    <td>このタスクに割り当てるユーザーの所有者 ID を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Event Date]</td> 
+   <td role="rowheader">[!UICONTROL イベントの日付 ]</td> 
    <td>このタスクの日付を入力またはマップします。<p>サポートされる日付と時刻の形式の一覧については、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">型強制：[!DNL Adobe Workfront Fusion]</a> を参照してください。</p></td> 
   </tr> 
   <tr> 
@@ -1492,7 +1492,7 @@ HubSpot CRM コネクタは以下を使用します。
    <td>イベントの状態が「やること」か「完了」かを入力します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Campaign GUID]</td> 
+   <td role="rowheader">[!UICONTROL キャンペーン GUID]</td> 
    <td>このイベントが含まれているキャンペーンの内部ハブスポット ID を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -1568,7 +1568,7 @@ HubSpot CRM コネクタは以下を使用します。
    <td> <p>[!DNL HubSpot CRM] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Owner ID]</td> 
+   <td role="rowheader">[!UICONTROL 所有者 ID]</td> 
    <td> <p>詳細を返す所有者の ID を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
@@ -1604,7 +1604,7 @@ HubSpot CRM コネクタは以下を使用します。
 
 <!-- Create a Ticket Need to find a working connection-->
 
-+++ **[!UICONTROL Delete a Ticket]**
++++ **[!UICONTROL チケットの削除]**
 
 ID を指定して既存のチケットを削除します。
 
@@ -1707,7 +1707,7 @@ ID を指定して既存のチケットを削除します。
    <td> <p>[!DNL HubSpot CRM] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Broadcast ID]</td> 
+   <td role="rowheader">[!UICONTROL ブロードキャスト ID]</td> 
    <td>キャンセルするブロードキャストの ID を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -1740,15 +1740,15 @@ ID を指定して既存のチケットを削除します。
    <td>放送のテキストを入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Photo URL]</td> 
+   <td role="rowheader">[!UICONTROL 写真 URL]</td> 
    <td>ブロードキャストに含める写真の URL を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Thumbnail URL]</td> 
+   <td role="rowheader">[!UICONTROL サムネール URL]</td> 
    <td>このブロードキャストに使用するサムネールの URL を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Trigger at]</td> 
+   <td role="rowheader">[!UICONTROL トリガー]</td> 
    <td>ブロードキャストを送信する日時を入力またはマッピングします。 空白のままにすると、ブロードキャストは直ちに送信されます。<p>サポートされる日付と時刻の形式の一覧については、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">型強制：[!DNL Adobe Workfront Fusion]</a> を参照してください。</p></td> 
   </tr> 
  </tbody> 
@@ -1773,15 +1773,15 @@ ID を指定して既存のチケットを削除します。
    <td>モジュールが 1 回の実行サイクルで返す最大項目数を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Filter by Status]</td> 
+   <td role="rowheader">[！ステータスによる UICONTROL フィルター ]</td> 
    <td>メッセージが特定のステータスの場合にのみシナリオを開始するには、ステータスを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Filter by Channel]</td> 
+   <td role="rowheader">[！チャネルによる UICONTROL フィルター ]</td> 
    <td>メッセージが特定のチャネル上にあるときにのみシナリオを開始するには、チャネルを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Broadcast ID]</td> 
+   <td role="rowheader">[!UICONTROL ブロードキャスト ID]</td> 
    <td>メッセージが特定の日付以降の場合にのみシナリオを開始するには、日付を <code>MM/DD/YYYY</code> の形式で入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -1893,11 +1893,11 @@ This search module retrieves posts from a HubSpot blog.-->
    <td>購読を更新するステータスごとに、「<b> 項目を追加 </b>」をクリックし、ステータスの ID と、メールアドレスがそのステータスを購読するかどうかを入力します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Portal Subscription Legal Status]</td> 
+   <td role="rowheader">[!UICONTROL ポータル登録の法的状態 ]</td> 
    <td>このサブスクリプションの GDPR に対する法的根拠を記録するには、このサブスクリプションの法的状態を選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Portal Subscription Legal Basis Explanation]</td> 
+   <td role="rowheader">[!UICONTROL ポータル登録法的根拠の説明 ]</td> 
    <td>この GDPR 向けサブスクリプションの法的根拠に関するメモを追加するには、メモのテキストを入力またはマップします。</td> 
   </tr> 
  </tbody> 
@@ -1922,11 +1922,11 @@ This search module retrieves posts from a HubSpot blog.-->
    <td>モジュールが 1 回の実行サイクルで返す最大項目数を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Start Timestamp]</td> 
+   <td role="rowheader">[!UICONTROL 開始タイムスタンプ ]</td> 
    <td>特定の日付以降の結果を返すには、形式に日付を入力します <code>MM/DD/YYYY.</code></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL End Timestamp]</td> 
+   <td role="rowheader">[!UICONTROL 終了タイムスタンプ ]</td> 
    <td>特定の日付以前の結果を返すには、形式で日付を入力します <code>MM/DD/YYYY.</code></td> 
   </tr> 
  </tbody> 
@@ -1960,7 +1960,7 @@ This action module associates two CRM objects.-->
 
 ### その他
 
-+++ **[!UICONTROL Make an API Call]**
++++ **[!UICONTROL API 呼び出しの実行]**
 
 カスタム API 呼び出しを実行できます。
 
@@ -2018,7 +2018,7 @@ This action module associates two CRM objects.-->
 >
 >![Hubspot API 設定 ](/help/workfront-fusion/references/apps-and-modules/assets/hubspot-api-config.png)
 >
->検索の一致は、モジュールの出力の [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL contacts] で見つけることができます。
+>一致した検索結果は、[!UICONTROL バンドル]／[!UICONTROL 本文]／[!UICONTROL 連絡先]下のモジュールの出力に表示されます。
 >
 >この例では、3 件の連絡先が返されました。
 >
@@ -2029,14 +2029,14 @@ This action module associates two CRM objects.-->
 ## 新規アプリケーションの作成
 
 1. [!DNL HubSpot] 開発者アカウントにログインします。
-1. **[!UICONTROL Create an App]** オプションを選択します。
-1. アプリ名を入力し、ダイアログ [!UICONTROL Save] 表示します。
+1. 「**[!UICONTROL アプリを作成]**」オプションを選択します。
+1. アプリ名を入力し、ダイアログを[!UICONTROL 保存]します。
 1. Web フックに必要なスコープを選択します。
 
    例えば、新規連絡先が作成または削除された場合にモジュールをトリガーするための連絡先スコープを追加します。
 
-   連絡先、取引、会社イベントの Webhook を受け取るために必要なのは [!UICONTROL contacts scope] だけです。
+   連絡先、契約および会社イベントの web フックを受け取るために必要な情報は、[!UICONTROL 連絡先スコープ]だけです。
 
    >[!IMPORTANT]
    >
-   >[!UICONTROL Redirect URL] フィールドには入力しないでください。
+   >「[!UICONTROL リダイレクト URL]」フィールドには入力しないでください。

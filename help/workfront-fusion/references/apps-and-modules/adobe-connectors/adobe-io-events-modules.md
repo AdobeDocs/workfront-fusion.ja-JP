@@ -4,10 +4,10 @@ description: Adobe I/O Events モジュールを使用すると、Adobe アプ�
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 9cea5de748873720247db39161cea12c7e9c7186
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 33%
+source-wordcount: '957'
+ht-degree: 35%
 
 ---
 
@@ -36,7 +36,7 @@ Adobe I/O Events モジュールを使用すると、専用のAdobe Workfront Fu
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -184,7 +184,7 @@ Webhook を作成するには：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Webhook description]
+           [!UICONTROL Webhook の説明 ]
          </td>
          <td>
            この Webhook の説明を入力します。
@@ -192,7 +192,7 @@ Webhook を作成するには：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Event provider]
+           [!UICONTROL イベント プロバイダー ]
          </td>
          <td>
            イベントを作成する製品またはアカウントを選択します。
@@ -227,7 +227,7 @@ Webhook を作成するには：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Registration ID]
+           [!UICONTROL 登録 ID]
          </td>
          <td>
            イベントを取得する登録を選択します。
@@ -243,21 +243,21 @@ Webhook を作成するには：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Return events that occur after]
+           [!UICONTROL 後に発生するイベントを返す ]
          </td>
          <td>
          </td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Seek]
+           [!UICONTROL シーク ]
          </td>
          <td>
          </td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Latest]
+           [!UICONTROL 最新 ]
          </td>
          <td>
          最新のイベントを返すには、このオプションを有効にします。
@@ -333,7 +333,7 @@ Webhook を作成するには：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Event provider]
+           [!UICONTROL イベント プロバイダー ]
          </td>
          <td>
            ID を取得するプロバイダーを選択します。

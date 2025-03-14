@@ -4,7 +4,7 @@ description: Googleでは、ユーザーが API を使用する方法に制限�
 author: Becky
 feature: Workfront Fusion
 exl-id: eac7ba26-664e-464c-b05c-8c2ebf407fb3
-source-git-commit: 362952ec85b0df2306ba117ba530e95201330cca
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 15%
@@ -36,7 +36,7 @@ Googleでは、ユーザーが API を使用する方法に制限が導入され
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 

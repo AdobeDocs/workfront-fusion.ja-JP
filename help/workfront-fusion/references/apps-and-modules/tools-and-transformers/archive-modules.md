@@ -4,33 +4,34 @@ description: ' [!DNL Adobe Workfront Fusion]  シナリオの場合、zip 形式
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b5ff3d5-601c-4119-ad70-3612ad5ba1ab
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 640aae1f4b7563545d7f9aa3f801671aa3d45fca
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 76%
+source-wordcount: '552'
+ht-degree: 84%
 
 ---
 
-# [!UICONTROL Archive] モジュール
+# [!UICONTROL アーカイブ]モジュール
 
 [!DNL Adobe Workfront Fusion] シナリオの場合、zip 形式のファイルなどのアーカイブをシナリオで使用して、自動化または統合で使用できます。
 
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。 モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
-## [!UICONTROL Archive] モジュールとそのフィールド
+## [!UICONTROL アーカイブ]モジュールとそのフィールド
 
-[!UICONTROL Archive] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!UICONTROL Archive] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL アーカイブ]モジュールの設定時に、[!DNL Workfront Fusion] には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!UICONTROL アーカイブ]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
 ![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [[!UICONTROL Extract an archive]](#extract-an-archive)
-* [[!UICONTROL Create an archive]](#create-an-archive)
-* [[!UICONTROL Inflate]](#inflate)
-* [[!UICONTROL Deflate]](#deflate)
+* [アクション](#actions)
+* [アグリゲーター](#aggregators)
+* [変換サービス](#transformers)
 
-## [!UICONTROL Extract an archive]
+## アクション
+
+### [!UICONTROL アーカイブを抽出]
 
 このアクションモジュールは、指定したファイルをアーカイブから抽出します。
 
@@ -42,20 +43,24 @@ ht-degree: 76%
  <tbody> 
   <tr> 
    <td>[!UICONTROL Source file]</td> 
-   <td> <p> インポートするファイルを選択してください。このファイルは、以前のモジュール（[!DNL Workfront] &gt;[!UICONTROL Download a document] モジュールなど）からマッピングできます。</p>  </td> 
+   <td> <p>  <p>前のモジュールからソースファイルを選択するか、ソースデータをマッピングします。</p></p>  </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!INFO]
->
->**例：** 定義済みの [!DNL Dropbox] フォルダー（Archives など）から ZIP ファイルを取得し、[!UICONTROL Archive] モジュールを使用して抽出し、抽出したファイルを [!UICONTROL Email] または [!DNL Gmail] モジュールとの添付ファイルとして目的のメールアドレスに送信します。
->
->![Dropboxの例 ](/help/workfront-fusion/references/apps-and-modules/assets/example-dropbox-350x134.png)
+>[!BEGINSHADEBOX]
 
-## [!UICONTROL Create an archive]
+**例：**&#x200B;定義された [!DNL Dropbox] フォルダー（アーカイブなど）から ZIP ファイルを取得し、[!UICONTROL アーカイブ]モジュールを使用して抽出し、[!UICONTROL メール]または [!DNL Gmail] モジュールを使用して、抽出したファイルを目的のメールアドレスに添付ファイルとして送信します。
 
-この集約モジュールは、目的のファイルを [!UICONTROL ZIP] または [!UICONTROL TAR] のアーカイブに追加します。
+![Dropboxの例 ](/help/workfront-fusion/references/apps-and-modules/assets/example-dropbox-350x134.png)
+
+>[!ENDSHADEBOX]
+
+## アグリゲーター
+
+### [!UICONTROL アーカイブを作成]
+
+この集計モジュールは、必要なファイルを [!UICONTROL ZIP]、GZIP または [!UICONTROL TAR] アーカイブに追加します。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
@@ -69,7 +74,7 @@ ht-degree: 76%
   </tr> 
   <tr> 
    <td>[!UICONTROL Type] </td> 
-   <td> <p>[!UICONTROL ZIP] アーカイブまたは [!UICONTROL TAR] アーカイブにファイルを追加するかどうかを選択します。</p> </td> 
+   <td> <p>[!UICONTROL ZIP]、GZIP、または [!UICONTROL TAR] アーカイブにファイルを追加するかどうかを選択します。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Comment]</td> 
@@ -94,28 +99,20 @@ ht-degree: 76%
  </tbody> 
 </table>
 
->[!INFO]
->
->**例：** [!DNL Gmail]/[!UICONTROL Watch emails] モジュールを使用して受信メールを監視します。 メールを受け取ると、添付ファイルは個々のバンドルに反復され、[!DNL ZIP] ファイルにアーカイブされて、定義された Dropbox フォルダーに保存されます。
->
->![Gmail の例 ](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
+>[!BEGINSHADEBOX]
 
-## [!UICONTROL Inflate]
+**例：**[!DNL Gmail]／[!UICONTROL メールを監視]モジュールを使用して受信メールを見ます。メールを受け取ると、添付ファイルは個々のバンドルに反復され、[!DNL ZIP] ファイルにアーカイブされて、定義された Dropbox フォルダーに保存されます。
 
-この変換モジュールは、インフレーションアルゴリズムを用いてバイナリデータを解凍します。
+![Gmail の例 ](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
 
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Data] </td> 
-   <td> <p>インフレート関数を使用して、インフレートするデータを入力またはマッピングします。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+>[!ENDSHADEBOX]
 
-## [!UICONTROL Deflate]
+## 変換サービス
+
+* [[!UICONTROL デフレート]](#deflate)
+* [[!UICONTROL インフレート]](#inflate)
+
+### [!UICONTROL デフレート]
 
 この変換モジュールは、デフレーションアルゴリズムを使用してバイナリデータを圧縮します。
 
@@ -126,6 +123,21 @@ ht-degree: 76%
   <tr> 
    <td>[!UICONTROL Data] </td> 
    <td> <p>deflate 関数を使用して、圧縮するデータを入力またはマッピングします。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### [!UICONTROL インフレート]
+
+この変換モジュールは、インフレーションアルゴリズムを用いてバイナリデータを解凍します。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Data] </td> 
+   <td> <p>インフレート関数を使用して、インフレートするデータを入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion Adobe Workfront コネクタを使用する�
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '6213'
-ht-degree: 52%
+source-wordcount: '6684'
+ht-degree: 60%
 
 ---
 
@@ -38,7 +38,7 @@ Adobe Workfront Fusion Adobe Workfront コネクタを使用すると、Workfron
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -117,7 +117,7 @@ Workfront アカウントへの接続は、Workfront Fusion モジュール内�
     </tbody>
     </table>
 
-1. 「**[!UICONTROL Continue]**」をクリックして接続を保存し、モジュールに戻ります。
+1. 「**[!UICONTROL 続行]**」をクリックして接続を保存し、モジュールに戻ります。
 
    Workfrontにログインしていない場合は、ログイン画面が表示されます。 ログイン後、接続を許可できます。
 
@@ -152,15 +152,15 @@ Workfront Fusion でWorkfront モジュールを設定する場合、以下に�
 * [Watch Field](#watch-field)
 -->
 
-+++ **[!UICONTROL Watch Events]**
++++ **[!UICONTROL イベントを監視]**
 
 このトリガーモジュールは、Workfront で特定のタイプのオブジェクトが追加、更新、または削除された場合に、シナリオをリアルタイムで実行します。
 
 このモジュールは、レコードに関連付けられた標準フィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
-1. **Webhook** ボックスの右側にある **[!UICONTROL Add]** をクリックします。
+1. 「**Web フック**」ボックスの右側にある「**[!UICONTROL 追加]**」をクリックします。
 
-1. 表示される **[!UICONTROL Add a hook]** ボックスで Webhook を設定します。
+1. 表示される「**[!UICONTROL フックを追加]**」ボックスで Web フックを設定します。
 
    <table style="table-layout:auto"> 
     <col> 
@@ -180,11 +180,11 @@ Workfront Fusion でWorkfront モジュールを設定する場合、以下に�
      </tr> 
      <tr> 
       <td>[!UICONTROL State]</td> 
-      <td>古い状態と新しい状態のどちらを監視するかを選択します。<ul><li><p><b>[!UICONTROL New state]</b></p><p>レコードが指定された値<b>に</b>変化したときにシナリオをトリガーします。</p><p>例えば、ステートが [!UICONTROL New State] に設定され、フィルターが [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress] に設定されている場合、Webhook は、以前のステータスに関係なく、[!UICONTROL Status] が [!UICONTROL In Progress] に変わると、シナリオをトリガーします。 </p></li><li><p><b>[!UICONTROL Old state]</b></p><p>レコードが指定された値<b>から</b>変化したときにシナリオをトリガーします。</p><p>例えば、ステートが [!UICONTROL Old State] に設定され、フィルターが [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress] に設定されている場合、現在 [!UICONTROL In Progress] の [!UICONTROL Status] が別のステータスに変わると、Webhook はシナリオをトリガーします。 </p></li></ul></td> 
+      <td>古い状態と新しい状態のどちらを監視するかを選択します。<ul><li><p><b>[!UICONTROL New state]</b></p><p>レコードが指定された値<b>に</b>変化したときにシナリオをトリガーします。</p><p>例えば、状態が [!UICONTROL New State] に設定され、フィルターが [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress] に設定されている場合、[!UICONTROL Status] が [!UICONTROL In Progress] に変わると、以前のステータスに関係なく、web フックがシナリオをトリガーします。 </p></li><li><p><b>[!UICONTROL Old state]</b></p><p>レコードが指定された値<b>から</b>変化したときにシナリオをトリガーします。</p><p>例えば、状態が [!UICONTROL Old State] に設定され、フィルターが [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress] に設定されている場合、現在 [!UICONTROL In Progress] である [!UICONTROL Status] が別のステータスに変わると、web フックがシナリオをトリガーします。 </p></li></ul></td> 
      </tr> 
      <tr data-mc-conditions=""> 
       <td> <p>[!UICONTROL Events filters]</p> </td> 
-      <td> <p>選択した条件を満たすレコードのみを監視するフィルターを設定できます。</p> <p>各フィルターに対して、フィルターを評価するフィールド、演算子、およびフィルターに許可する値を入力します。AND ルールを追加すると、複数のフィルターを使用できます。</p> <p><b> メモ </b>：既存のWorkfront Webhook ではフィルターを編集できません。 Workfront イベント購読用に異なるフィルターを設定するには、現在の Webhook を削除して、新しい Webhook を作成します。</p> <p>イベントフィルターについて詳しくは、この記事の <a href="#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Workfront/[!UICONTROL Watch Events] モジュールのイベント購読フィルター </a> を参照してください。</p> </td> 
+      <td> <p>選択した条件を満たすレコードのみを監視するフィルターを設定できます。</p> <p>各フィルターに対して、フィルターを評価するフィールド、演算子、およびフィルターに許可する値を入力します。AND ルールを追加すると、複数のフィルターを使用できます。</p> <p><b> メモ </b>：既存のWorkfront Webhook ではフィルターを編集できません。 Workfront イベント購読用に異なるフィルターを設定するには、現在の Webhook を削除して、新しい Webhook を作成します。</p> <p>イベントフィルターについて詳しくは、この記事の <a href="#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Workfront &gt; [!UICONTROL Watch Events] モジュールのイベント購読フィルター </a> を参照してください。</p> </td> 
      </tr> 
      <tr data-mc-conditions=""> 
       <td>Exclude events made by this connection</td> 
@@ -193,8 +193,8 @@ Workfront Fusion でWorkfront モジュールを設定する場合、以下に�
      <tr> 
       <td>[!UICONTROL Record Origin]</td> 
       <td>
-       <p>シナリオで [!UICONTROL New Records Only]、[!UICONTROL Updated Records Only]、[!UICONTROL New and Updated Records]、[!DNL Deleted Records Only] のいずれを監視するかを選択します。</p>
-       <p><b> メモ </b>:[!UICONTROL New and Updated Records] を選択すると、Webhook の作成により（同じ Webhook アドレスに対して） 2 つのイベント購読が作成されます。</p>
+       <p>シナリオで [!UICONTROL New Records Only]、[!UICONTROL Updated Records Only]、[!UICONTROL New and Updated Records]、または [!DNL Deleted Records Only] を監視するかどうかを選択します。</p>
+       <p><b> メモ </b>: [!UICONTROL 新規および更新されたレコード ] を選択する場合、Webhook の作成により（同じ Webhook アドレスに対して） 2 つのイベント購読が作成されます。</p>
        </td> 
      </tr> 
     </tbody> 
@@ -212,7 +212,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 
 +++
 
-+++ **[!UICONTROL Watch Field]**
++++ **[!UICONTROL フィールドを監視]**
 
 このトリガーモジュールは、指定したフィールドが更新されるとシナリオを実行します。モジュールは、指定されたフィールドの古い値と新しい値の両方を返します。 この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
@@ -228,7 +228,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
-   <td> <p>モジュールで監視するWorkfront レコードのタイプを選択します。</p> <p>例えば、タスクでレコードフィールドが更新されるたびにシナリオの実行を開始する場合は、「[!UICONTROL Task]」を選択します。</p> </td> 
+   <td> <p>モジュールで監視するWorkfront レコードのタイプを選択します。</p> <p>例えば、タスクでレコードフィールドが更新されるたびにシナリオの実行を開始する場合は、[!UICONTROL Task] を選択します。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Field]</td> 
@@ -249,7 +249,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 
 +++
 
-+++ **[!UICONTROL Watch Record]**
++++ **[!UICONTROL レコードを監視]**
 
 このトリガーモジュールは、特定のタイプのオブジェクトが追加、更新、またはその両方が行われた場合にシナリオを実行します。このモジュールは、レコードに関連付けられたすべての標準フィールドと、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
@@ -269,18 +269,18 @@ Web フックを作成した後、イベントの送信先エンドポイント�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Filter]</td> 
-   <td> <p>シナリオで [!UICONTROL New Records Only]、[!UICONTROL Updated Records Only]、[!UICONTROL New and Updated Records] のいずれを監視するかを選択します。</p> </td> 
+   <td> <p>シナリオで [!UICONTROL New Records Only]、[!UICONTROL Updated Records Only]、または [!UICONTROL New and Updated Records] を監視するかどうかを選択します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
-   <td> <p>モジュールで監視するWorkfront レコードのタイプを選択します。</p> <p>例えば、新しいプロジェクトが作成されるたびにシナリオを開始する場合は、を選択します。 [!UICONTROL Project]</p> </td> 
+   <td> <p>モジュールで監視するWorkfront レコードのタイプを選択します。</p> <p>例えば、新しいプロジェクトが作成されるたびにシナリオを開始するには、「[!UICONTROL Project]」を選択します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
    <td> <p>このモジュールの出力バンドルに含めるフィールドを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Reference]</td> 
+   <td role="rowheader">[!UICONTROL 参照 ]</td> 
    <td> <p>このモジュールの出力バンドルに含める参照フィールドを選択します。</p> </td> 
   </tr> 
   <tr> 
@@ -318,7 +318,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 * [Upload Document](#upload-document)
 -->
 
-+++ **[!UICONTROL Convert object]**
++++ **[!UICONTROL オブジェクトの変換]**
 
 このアクションモジュールは、次のいずれかの変換を行います。
 
@@ -347,7 +347,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
    <td>変換先のオブジェクトを選択します。これは、変換後のオブジェクトのタイプです。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL <Object> ID]</td> 
+   <td>[!UICONTROL &lt;Object&gt; ID]</td> 
    <td> <p>オブジェクトの ID を入力します。 </p> <p>メモ：オブジェクトの ID を入力する場合は、オブジェクトの名前を入力していき、目的のオブジェクトがリストに表示されたら、それを選択します。そうすると、モジュールが適切な ID をフィールドに入力します。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -363,11 +363,11 @@ Web フックを作成した後、イベントの送信先エンドポイント�
    <td> <p>オブジェクトの変換時に必要なオプションを有効にします。変換先または変換元のオブジェクトに応じて、オプションを使用できます。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Copy native fields]</td> 
+   <td>[!UICONTROL ネイティブ フィールドのコピー ]</td> 
    <td> <p>このオプションを有効にすると、元のオブジェクトから新しいオブジェクトにネイティブフィールドがコピーされます。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Copy custom forms]</td> 
+   <td>[!UICONTROL カスタム フォームのコピー ]</td> 
    <td> <p>このオプションを有効にすると、元のオブジェクトから新しいオブジェクトにネイティブフィールドがコピーされます。</p> </td> 
   </tr> 
  </tbody> 
@@ -375,7 +375,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 
 +++
 
-+++ **[!UICONTROL Create a record (attaching custom forms)]**
++++ **[!UICONTROL レコードを作成（カスタムフォームを添付）]**
 
 このアクションモジュールは、Workfrontのプロジェクト、タスク、イシューなどのオブジェクトを作成し、新しいオブジェクトにカスタムフォームを追加できます。 モジュールを使用すると、モジュールで使用可能なオブジェクトのフィールドを選択できます。
 
@@ -399,11 +399,11 @@ Web フックを作成した後、イベントの送信先エンドポイント�
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
-   <td> <p>モジュールで作成するWorkfront レコードのタイプを選択します。</p> <p>例えば、プロジェクトを作成する場合は、ドロップダウンリストから「[!UICONTROL Project]」を選択します。</p> </td> 
+   <td> <p>モジュールで作成するWorkfront レコードのタイプを選択します。</p> <p>例えば、プロジェクトを作成する場合は、ドロップダウンリストから「[!UICONTROL プロジェクト ]」を選択します。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Select fields to map]</td> 
-   <td> <p>データ入力に使用するフィールドを選択します。これにより、不要なフィールドをスクロールしなくても、これらのフィールドを使用できます。 その後、これらのフィールドにデータを入力またはマッピングできます。</p> <p>カスタムフォームのフィールドには、<b>[!UICONTROL Attach Custom Form]</b> フィールドを使用します。</p> </td> 
+   <td> <p>データ入力に使用するフィールドを選択します。これにより、不要なフィールドをスクロールしなくても、これらのフィールドを使用できます。 その後、これらのフィールドにデータを入力またはマッピングできます。</p> <p>カスタムフォームのフィールドの場合は、「<b>[!UICONTROL Attach Custom Form]</b>」フィールドを使用します。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Attach Custom Form]</td> 
@@ -417,12 +417,12 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 >[!NOTE]
 >
 >* オブジェクトの ID を入力する際に、オブジェクトの名前を入力し、リストから選択できます。そうすると、モジュールが適切な ID をフィールドに入力します。
->* カスタムフィールドまたは [!UICONTROL Note] オブジェクト（コメントまたは返信）のテキストを入力する際に、[!UICONTROL Note Text] フィールドにHTMLタグを使用して、太字や斜体などのリッチテキストを作成できます。
+>* カスタムフィールドまたは[!UICONTROL メモ]オブジェクト（コメントまたは返信）にテキストを入力する際、「[!UICONTROL メモテキスト]」フィールドで HTML タグを使用して、太字や斜体などのリッチテキストを作成できます。
 >
 
 +++
 
-+++ **[!UICONTROL Create Record]**
++++ **[!UICONTROL レコードを作成]**
 
 このアクションモジュールは、Workfront でプロジェクト、タスク、イシューなどのオブジェクトを作成します。モジュールを使用すると、モジュールで使用可能なオブジェクトのフィールドを選択できます。
 
@@ -432,7 +432,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 
 入力フィールドの最小数を指定してください。例えば、イシューを作成する場合は、「プロジェクト ID」フィールドに有効な親プロジェクト ID を指定して、Workfront でイシューの配置先を示す必要があります。マッピングパネルを使用してシナリオ内の別のモジュールからこの情報をマッピングするか、名前を入力してリストから選択し、手動で入力することもできます。
 
-このモジュールでは、オブジェクトを作成する際にカスタムフォームを添付しません。 オブジェクトの作成時にカスタムフォームを添付するには、[!UICONTROL Create a record (attaching custom forms)] モジュールを使用します。
+このモジュールでは、オブジェクトを作成する際にカスタムフォームを添付しません。 オブジェクトの作成時にカスタムフォームを添付するには、[!UICONTROL  レコードの作成（カスタムフォームの添付） ] モジュールを使用します。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
@@ -448,7 +448,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
-   <td> <p>モジュールで作成するWorkfront レコードのタイプを選択します。</p> <p>例えば、プロジェクトを作成する場合は、ドロップダウンリストから「[!UICONTROL Project]」を選択します。</p> </td> 
+   <td> <p>モジュールで作成するWorkfront レコードのタイプを選択します。</p> <p>例えば、プロジェクトを作成する場合は、ドロップダウンリストから「[!UICONTROL プロジェクト ]」を選択します。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Select fields to map]</td> 
@@ -462,22 +462,22 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 >[!NOTE]
 >
 >* オブジェクトの ID を入力する際に、オブジェクトの名前を入力し、リストから選択できます。そうすると、モジュールが適切な ID をフィールドに入力します。
->* カスタムフィールドまたは [!UICONTROL Note] オブジェクト（コメントまたは返信）のテキストを入力する際に、[!UICONTROL Note Text] フィールドにHTMLタグを使用して、太字や斜体などのリッチテキストを作成できます。
+>* カスタムフィールドまたは[!UICONTROL メモ]オブジェクト（コメントまたは返信）にテキストを入力する際、「[!UICONTROL メモテキスト]」フィールドで HTML タグを使用して、太字や斜体などのリッチテキストを作成できます。
 
 +++
 
-+++ **[!UICONTROL Custom API Call]**
++++ **[!UICONTROL カスタム API 呼び出し]**
 
 このアクションモジュールを使用すると、Workfront API に対してカスタム認証呼び出しを行うことができます。 これにより、他のWorkfront モジュールでは実現できないデータフローの自動処理を作成できます。
 
 このモジュールは、次の情報を返します。
 
-* **[!UICONTROL Status Code]** （数字）:HTTP リクエストの成功または失敗を示します。 これらはインターネット上で検索できる標準コードです。
-* **[!UICONTROL Headers]** （オブジェクト）：出力本文に関連しない、応答/ステータスコードのより詳細なコンテキスト。 応答ヘッダーに表示されるすべてのヘッダーが応答ヘッダーではないので、不要なヘッダーも含まれている可能性があります。
+* **[!UICONTROL ステータスコード]**（数値）：HTTP リクエストの成功または失敗を示します。これらはインターネット上で検索できる標準コードです。
+* **[!UICONTROL ヘッダー]**（オブジェクト）：出力本文に関連しない応答／ステータスコードのより詳細なコンテキスト。応答ヘッダーに表示されるすべてのヘッダーが応答ヘッダーではないので、不要なヘッダーも含まれている可能性があります。
 
   応答ヘッダーは、モジュールの設定時に選択した HTTP リクエストによって異なります。
 
-* **[!UICONTROL Body]** （オブジェクト）：モジュールの設定時に選択した HTTP リクエストによっては、一部のデータが返される場合があります。 GET リクエストからのデータなどは、このオブジェクトに含まれます。
+* **[!UICONTROL 本文]**（オブジェクト）：モジュールの設定時に選択した HTTP リクエストによっては、データの一部を受け取る場合があります。GET リクエストからのデータなどは、このオブジェクトに含まれます。
 
 この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
@@ -525,7 +525,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 
 +++
 
-+++ **[!UICONTROL Delete Record]**
++++ **[!UICONTROL レコードを削除]**
 
 このアクションモジュールは、Workfront のプロジェクト、タスクまたはイシューなどのオブジェクトを削除します。
 
@@ -548,7 +548,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
    <td>このオプションを有効にすると、Workfront UI から削除の確認がリクエストされる場合でも、レコードが確実に削除されます。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Async delete]</td> 
+   <td>[!UICONTROL 非同期削除 ]</td> 
    <td>モジュールを非同期で削除できるようにするには、このオプションを有効にします。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -574,7 +574,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 
 +++
 
-+++ **[!UICONTROL Download Document]**
++++ **[!UICONTROL ドキュメントのダウンロード]**
 
 このアクションモジュールは、Workfront からドキュメントをダウンロードします。
 
@@ -603,7 +603,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 
 +++
 
-+++ **[!UICONTROL Misc Action]**
++++ **[!UICONTROL その他のアクション]**
 
 このアクションモジュールを使用すると、API に対してアクションを実行できます。
 
@@ -627,7 +627,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Action]</td> 
-   <td> <p>モジュールで実行するアクションを選択します。</p> <p>選択した [!UICONTROL Record Type] や [!UICONTROL Action] に応じて、追加のフィールドに入力する必要が生じる場合があります。 これら 2 つの設定の組み合わせには、レコード ID のみが必要なものもあれば（<strong>[!UICONTROL Record Type]</strong> のプロジェクトや <strong>[!UICONTROL Action]</strong> の [!UICONTROL Attach Template] など）、追加情報（オブジェクト ID やテンプレート ID など）が必要なものもあります。</p><p>一部のアクションで使用できるオプションについては、この記事の <a href="#misc-action-options" class="MCXref xref"> その他のアクションオプション </a> を参照してください。</p> <p>個々のフィールドについて詳しくは、<a href="http://developer.workfront.com/">Workfront 開発者ドキュメント</a>を参照してください。 <p><strong>メモ</strong>：開発者ドキュメントサイトには、API バージョン 14 を通じた情報のみが含まれていますが、API 呼び出しに関する有用な情報がまだ含まれています。 </p> 
+   <td> <p>モジュールで実行するアクションを選択します。</p> <p>選択した [!UICONTROL Record Type] と [!UICONTROL Action] に応じて、追加のフィールドに入力する必要がある場合があります。この 2 つの設定の組み合わせによっては、レコード ID しか必要ないものもあれば、追加情報（オブジェクト ID やテンプレート ID など）を必要とするもの（<strong>[!UICONTROL Record Type]</strong> のプロジェクトや <strong>[!UICONTROL Action]</strong> の [!UICONTROL Attach Template] など）もあります。</p><p>一部のアクションで使用できるオプションについては、この記事の <a href="#misc-action-options" class="MCXref xref"> その他のアクションオプション </a> を参照してください。</p> <p>個々のフィールドについて詳しくは、<a href="http://developer.workfront.com/">Workfront 開発者ドキュメント</a>を参照してください。 <p><strong>メモ</strong>：開発者ドキュメントサイトには、API バージョン 14 を通じた情報のみが含まれていますが、API 呼び出しに関する有用な情報がまだ含まれています。 </p> 
     <ol> 
      <li value="1"> <p>Workfront開発者ドキュメントページの左側のナビゲーションからレコードタイプを選択します。 以下のタイプには、独自のページがあります。</p> 
       <ul> 
@@ -636,10 +636,10 @@ Web フックを作成した後、イベントの送信先エンドポイント�
        <li> <p>[!UICONTROL Issues]</p> </li> 
        <li> <p>[!UICONTROL Users]</p> </li> 
        <li> <p>[!UICONTROL Documents]</p> </li> 
-      </ul> <p>他のすべてのレコードタイプの場合は、「<b>[!UICONTROL Other objects and endpoints]</b>」を選択し、アルファベット順に並べ替えられたページでレコードタイプを探します。</p> </li> 
+      </ul> <p>その他のすべてのレコードタイプに対して、<b>[!UICONTROL Other objects and endpoints]</b> を選択し、アルファベット順に並べ替えられたページでレコードタイプを探します。</p> </li> 
      <li value="2"> <p>適切なレコードタイプのページで、アクションを検索（Ctrl + F キーまたは Command + F キー）します。</p> </li> 
      <li value="3"> <p>選択したアクションで使用可能なフィールドの説明を表示します。</p> </li> 
-    </ol> <p>メモ：  <p>Workfront [!UICONTROL Misc Action] モジュールを使用してプルーフを作成する場合、ベストプラクティスは、詳細オプションを使用せずにプルーフを作成し、[!DNL Workfront Proof] SOAP API を使用してプルーフを更新することです。</p><p>Workfront API （このモジュールが使用）を使用したプルーフの作成について詳しくは、<a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Adobe Workfront API でプルーフを作成する際の詳細プルーフオプションの追加 </a> を参照してください</p> </p> </td> 
+    </ol> <p>メモ：  <p>Workfront [!UICONTROL その他アクション ] モジュールを使用してプルーフを作成する場合、ベストプラクティスは、詳細なオプションを使用せずにプルーフを作成し、[!DNL Workfront Proof] SOAP API を使用してプルーフを更新することです。</p><p>Workfront API （このモジュールが使用）を使用したプルーフの作成について詳しくは、<a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Adobe Workfront API でプルーフを作成する際の詳細プルーフオプションの追加 </a> を参照してください</p> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
@@ -802,7 +802,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 
 +++
 
-+++ **[!UICONTROL Read a Record]**
++++ **[!UICONTROL レコードを読み取り]**
 
 このアクションモジュールは、1 つのレコードからデータを取得します。
 
@@ -852,7 +852,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 
 +++
 
-+++ **[!UICONTROL Update Record]**
++++ **[!UICONTROL レコードを更新]**
 
 このアクションモジュールは、プロジェクト、タスク、イシューなどのオブジェクトを更新します。モジュールを使用すると、モジュールで使用可能なオブジェクトのフィールドを選択できます。
 
@@ -892,11 +892,11 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 >[!NOTE]
 >
 >* オブジェクトの ID を入力する際に、オブジェクトの名前を入力し、リストから選択できます。そうすると、モジュールが適切な ID をフィールドに入力します。
->* カスタムフィールドまたは [!UICONTROL Note] オブジェクト（コメントまたは返信）のテキストを入力する際に、[!UICONTROL Note Text] フィールドにHTMLタグを使用して、太字や斜体などのリッチテキストを作成できます。
+>* カスタムフィールドまたは[!UICONTROL メモ]オブジェクト（コメントまたは返信）にテキストを入力する際、「[!UICONTROL メモテキスト]」フィールドで HTML タグを使用して、太字や斜体などのリッチテキストを作成できます。
 
 +++
 
-+++ **[!UICONTROL Upload Document]**
++++ **[!UICONTROL ドキュメントをアップロード]**
 
 このアクションモジュールは、プロジェクト、タスク、イシューなどのWorkfront オブジェクトにドキュメントをアップロードします。 このモジュールは、ドキュメントをチャンク単位でアップロードするので、Workfrontのアップロードプロセスがスムーズになります。
 
@@ -939,7 +939,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 
 +++
 
-+++ **[!UICONTROL Upload Document (Legacy)]**
++++ **[!UICONTROL ドキュメントのアップロード（レガシー）]**
 
 このアクションモジュールは、プロジェクト、タスク、イシューなどのWorkfront オブジェクトにドキュメントをアップロードします。 ドキュメント全体を一度にアップロードします。
 
@@ -987,7 +987,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 * [Search](#search)
 -->
 
-+++ **[!UICONTROL Read Related Records]**
++++ **[!UICONTROL 関連レコードを読み取る]**
 
 この検索モジュールは、特定の親オブジェクト内で、指定した検索クエリに一致するレコードを読み取ります。
 
@@ -1024,7 +1024,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 
 +++
 
-+++ **[!UICONTROL Search]**
++++ **[!UICONTROL 検索]**
 
 この検索モジュールは、指定した検索クエリに一致するWorkfront内のオブジェクト内のレコードを検索します。
 
@@ -1406,7 +1406,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 >[!NOTE]
 >
->Workfront オブジェクトタイプは設定に含まれていないので、[!UICONTROL Download Document] モジュールはこのテーブルに含まれていません。
+>Workfront オブジェクトタイプは設定に含まれていないので、「[!UICONTROL  ドキュメントをダウンロード ]」モジュールはこのテーブルに含まれていません。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -2026,15 +2026,15 @@ See a list of the Workfront object types for which you can use this module in [W
 
 +++
 
-## Workfront/[!UICONTROL Watch Events] モジュールでのイベント購読フィルター
+## Workfront / [!UICONTROL Watch Events] モジュールのイベント購読フィルター
 
 >[!NOTE]
 >
->[!UICONTROL Watch Events] モジュールでは、イベント購読フィルターを使用することを強くお勧めします。
+>[!UICONTROL イベントの監視]モジュールでは、イベント登録フィルターを使用することを強くお勧めします。
 
-Workfront [!UICONTROL Watch Events] モジュールは、Workfront API でイベント購読を作成する Webhook に基づくシナリオをトリガーします。 イベント登録は、web フックに送信されるイベントを決定する一連のデータです。例えば、問題を監視する [!UICONTROL Watch Events] モジュールを設定した場合、イベント購読は問題に関連するイベントのみを送信します。
+Workfront [!UICONTROL Watch Events] モジュールは、Workfront API でイベント購読を作成する Webhook に基づくシナリオをトリガーします。 イベント登録は、web フックに送信されるイベントを決定する一連のデータです。例えば、イシューを監視する[!UICONTROL イベントの監視]モジュールを設定した場合、イベント登録はイシューに関連するイベントのみを送信します。
 
-Fusion ユーザーは、イベント登録フィルターを使用して、ユースケースに適したイベント登録を作成できます。例えば、Workfront API でイベント購読を設定して、特定のプロジェクトの問題のみを Webhook に送信し、[!UICONTROL Watch Events] モジュールがそのプロジェクトの問題のみをトリガーするようにできます。 より範囲の狭いトリガーを作成できるので、無関係なトリガーの数が減り、シナリオの設計を改善できます。
+Fusion ユーザーは、イベント登録フィルターを使用して、ユースケースに適したイベント登録を作成できます。例えば、Workfront API でイベント購読を設定して、特定のプロジェクトの問題のみを Webhook に送信し、「[!UICONTROL  イベントをウォッチ ]」モジュールでそのプロジェクトの問題のみをトリガーできるようにします。 より範囲の狭いトリガーを作成できるので、無関係なトリガーの数が減り、シナリオの設計を改善できます。
 
 これは、Workfront Fusion シナリオでフィルターを設定する場合とは異なります。 イベント登録フィルターを使用しない場合、web フックは、選択されたオブジェクトタイプに関連するすべてのイベントを受信します。これらのイベントのほとんどはシナリオとは無関係と思われるので、シナリオを続行する前に除外する必要があります。
 
@@ -2074,7 +2074,7 @@ Workfront／イベントの監視フィルターで使用できる演算子は�
 >
 >### シナリオ内でのイベントのフィルタリング（非推奨）
 >
->イベントをフィルタリングして、Ana に割り当てられたイシューのみを処理するには、[!UICONTROL Watch Events] モジュールの後にフィルターを作成します。
+>Ana に割り当てられたイシューのみを処理するようにイベントをフィルタリングするには、[!UICONTROL イベントを監視]モジュールの後にフィルターを作成できます。
 >
 >![ イベントフィルターなし ](/help/workfront-fusion/references/apps-and-modules/assets/watch-events-non-event-filter-350x206.png)
 >

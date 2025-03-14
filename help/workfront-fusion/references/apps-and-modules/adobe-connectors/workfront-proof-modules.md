@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Wor
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2668'
-ht-degree: 79%
+source-wordcount: '3050'
+ht-degree: 84%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 79%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -89,7 +89,7 @@ Workfront Proof コネクタでは、以下を使用します。
 
 [!DNL Workfront Proof] アカウントへの接続を、[!DNL Workfront Fusion] モジュール内から直接作成できます。
 
-1. 任意の [!DNL Workfront Fusion] モジュールで、[!UICONTROL Connection] フィールドの横にある [!UICONTROL **追加**] をクリックします
+1. 任意の [!DNL Workfront Fusion] モジュールで、「[!UICONTROL 接続]」フィールドの横にある「[!UICONTROL **追加**]」をクリックします。
 
 2. 次のフィールドに入力します。
 
@@ -120,7 +120,7 @@ Workfront Proof コネクタでは、以下を使用します。
                 <td>[!DNL Workfront Proof] アカウントのパスワードを入力します。</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL Tenant ID]</td>
+                <td  role="rowheader">[!UICONTROL テナント ID]</td>
                 <td><strong>メモ</strong>：BYOK を使用しないお客様は、このフィールドを空白のままにしておく必要があります。 <p>このアカウントのテナント ID を入力します。テナント ID の検索について不明な点がある場合は、Workfront カスタマーサポートにお問い合わせください。</p></td>
             </tr>
             <tr>
@@ -152,10 +152,10 @@ Workfront Proof コネクタでは、以下を使用します。
 ### トリガー
 
 * [PDF 概要の監視](#watch-for-pdf-summary)
-* [[!UICONTROL Watch Proof Activity]](#watch-proof-activity)
+* [[!UICONTROL プルーフアクティビティの監視]](#watch-proof-activity)
 * [プルーフの監視](#watch-proofs)
 
-#### [!UICONTROL Watch for PDF Summary]
+#### [!UICONTROL PDF 概要の監視]
 
 このインスタントトリガーモジュールは、誰かがプルーフの PDF 概要を作成する際にシナリオを実行します。
 
@@ -180,7 +180,7 @@ Workfront Proof コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Proof Activity]
+#### [!UICONTROL プルーフアクティビティの監視]
 
 このトリガーモジュールは、プルーフで指定されたアクティビティが発生した場合にシナリオを実行します。
 
@@ -207,7 +207,7 @@ Workfront Proof コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Proofs]
+#### [!UICONTROL プルーフの監視]
 
 このスケジュール済みトリガーモジュールは、誰かがプルーフを作成またはプルーフでの決定する際にシナリオを実行します。
 
@@ -244,15 +244,15 @@ Workfront Proof コネクタでは、以下を使用します。
 
 ### アクション
 
-* [[!UICONTROL Create Proof]](#create-proof)
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Download Proof]](#download-proof)
-* [[!UICONTROL Read a Record]](#read-a-record)
-* [[!UICONTROL Request PDF Summary]](#request-pdf-summary)
-* [[!UICONTROL Update Proof]](#update-proof)
-* [[!UICONTROL Upload File]](#upload-file)
+* [[!UICONTROL プルーフの作成]](#create-proof)
+* [[!UICONTROL カスタム API 呼び出し]](#custom-api-call)
+* [[!UICONTROL プルーフのダウンロード]](#download-proof)
+* [[!UICONTROL レコードの読み取り]](#read-a-record)
+* [[!UICONTROL PDF 概要のリクエスト]](#request-pdf-summary)
+* [[!UICONTROL プルーフの更新]](#update-proof)
+* [[!UICONTROL ファイルをアップロード]](#upload-file)
 
-#### [!UICONTROL Create Proof]
+#### [!UICONTROL プルーフの作成]
 
 <!--Cannot test Jan 2025-->
 
@@ -274,7 +274,7 @@ Workfront Proof コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof Type]</td> 
-   <td> <p>作成するプルーフに基本ワークフローと [!UICONTROL Automated Workflow] ークフローのどちらを設定するかを指定します。</p> <p>次に、選択したプルーフタイプに対して表示するフィールドに入力します。例えば、[!UICONTROL Automated Workflow] を選択した場合は、<strong>[!UICONTROL Workflow Stages]</strong> のフィールドに入力してステージを設定します。</p></td> 
+   <td> <p>作成するプルーフに対して、基本ワークフローまたは [!UICONTROL Automated Workflow] のどちらを使用するかを指定します。</p> <p>次に、選択したプルーフタイプに対して表示するフィールドに入力します。例えば、[!UICONTROL Automated Workflow] を選択した場合、<strong>[!UICONTROL Workflow Stages]</strong> フィールドを使用してステージを設定します。</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Allow original file to be downloaded]</td> 
@@ -290,7 +290,7 @@ Workfront Proof コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Create a new proof version]</td> 
-   <td>モジュールで既存のプルーフの新しいバージョンを作成する場合は、このオプションを選択します。次に、表示される <strong>[!UICONTROL Existing Proof ID]</strong> フィールドで、プルーフの一意の ID をマッピングまたは入力します。</td> 
+   <td>モジュールで既存のプルーフの新しいバージョンを作成する場合は、このオプションを選択します。次に、表示される <strong>[!UICONTROL Existing Proof ID]</strong> フィールドに、プルーフの一意の ID をマッピングまたは入力します。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Custom Link Label]</td> 
@@ -385,7 +385,7 @@ Workfront Proof コネクタでは、以下を使用します。
    <td>SWF プルーフのタイプを入力します。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Show] [ 項目 ]</td> 
+   <td>[!UICONTROL Show] [item]</td> 
    <td>各項目について、プルーフに表示するかどうかを選択します。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -405,9 +405,9 @@ Workfront Proof コネクタでは、以下を使用します。
 
 
 
-#### [!UICONTROL Custom API Call]
+#### [!UICONTROL カスタム API 呼び出し]
 
-このアクションモジュールでは、[!DNL Workfront Proof] API への認証済みのカスタム呼び出しを実行できます。これにより、他の [!DNL Workfront Proof] モジュールでは達成できないデータフローの自動化を作成できます。
+このアクションモジュールは、[!DNL Workfront Proof] API に対して認証済みのカスタム呼び出しを実行します。これにより、他の [!DNL Workfront Proof] モジュールでは達成できないデータフローの自動化を作成できます。
 
 このモジュールは、ステータスコード、ヘッダーおよび本文を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
@@ -441,7 +441,7 @@ Workfront Proof コネクタでは、以下を使用します。
 >
 >![Proof API モジュールの例 ](/help/workfront-fusion/references/apps-and-modules/assets/wfp-api-module-example-350x586.png)
 
-#### [!UICONTROL Download Proof]
+#### [!UICONTROL プルーフのダウンロード]
 
 このアクションモジュールは、ID を使用して識別する特定のプルーフのソースファイルをダウンロードします。
 
@@ -463,12 +463,12 @@ Workfront Proof コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>[!UICONTROL Proof Details] ページにある配達確認の一意の ID を入力します。  </td> 
+   <td> <p>[!UICONTROL プルーフの詳細 ] ページにあるプルーフの一意の ID を入力します。  </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Read a Record]
+#### [!UICONTROL レコードの読み込み]
 
 このアクションモジュールは、[!DNL Workfront Proof] の単一のプルーフからデータを読み込みます。
 
@@ -498,12 +498,12 @@ Workfront Proof コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL ID]</td> 
-   <td>モジュールが読み取るレコードの一意の [!DNL Workfront Proof] ID を入力またはマッピングします。</td> 
+   <td>モジュールで読み取るレコードの一意の [!DNL Workfront Proof] ID を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Request PDF Summary]
+#### [!UICONTROL PDF 概要をリクエスト]
 
 このアクションモジュールは、[!DNL Workfront Proof] の特定のプルーフの PDF 概要をリクエストします。
 
@@ -536,10 +536,10 @@ Workfront Proof コネクタでは、以下を使用します。
 
 ##### 考えられるエラー
 
-* **エラー** : &quot;[!UICONTROL You do not have privilege to perform this request. The stage must contain at least one recipient.]&quot;
+* **エラー**：「[!UICONTROL このリクエストを実行する権限がありません。ステージには少なくとも 1 人の受信者が含まれている必要があります]」
 * **解決策**：ワークフローのステージに自分だけしか割り当てられていないことを確認します。ワークフローのステージに別のユーザーを割り当てる必要があります。
 
-#### [!UICONTROL Update Proof]
+#### [!UICONTROL プルーフを更新]
 
 このアクションモジュールは、[!DNL Workfront Proof] で既存のプルーフを更新します。
 
@@ -561,7 +561,7 @@ Workfront Proof コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>[!UICONTROL Proof Details] ページにある配達確認の一意の ID を入力します。 </td> 
+   <td> <p>[!UICONTROL プルーフの詳細 ] ページにあるプルーフの一意の ID を入力します。 </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Deadline]</td> 
@@ -589,7 +589,7 @@ Workfront Proof コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Enable Subscriptions]</td> 
-   <td>参加者以外に対して、プルーフへの登録を許可するかどうかを選択します。<br> このオプションを選択すると、[!UICONTROL Default Role] フィールドでオプションを選択することもできます。</td> 
+   <td>参加者以外に対して、プルーフへの登録を許可するかどうかを選択します。<br> このオプションを選択すると、[!UICONTROL のデフォルトの役割 ] フィールドでオプションを選択することもできます。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Enable Subscriptions Validation]</td> 
@@ -630,9 +630,9 @@ Workfront Proof コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload File]
+#### [!UICONTROL ファイルをアップロード]
 
-このアクションモジュールは、[!DNL Workfront Proof] の [!UICONTROL Create Proof] モジュールで使用するファイルをアップロードします。
+このアクションモジュールは [!DNL Workfront Proof] の[!UICONTROL プルーフを作成]モジュールで使用するファイルをアップロードします。
 
 このモジュールは、アップロードされたファイルのハッシュ ID を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
@@ -655,10 +655,10 @@ Workfront Proof コネクタでは、以下を使用します。
 
 ### 検索
 
-* [[!UICONTROL List Workflow Templates]](#list-workflow-templates)
-* [[!UICONTROL Search]](#search)
+* [[!UICONTROL ワークフローテンプレートをリスト]](#list-workflow-templates)
+* [[!UICONTROL 検索]](#search)
 
-#### [!UICONTROL List Workflow Templates]
+#### [!UICONTROL ワークフローテンプレートをリスト]
 
 この検索モジュールは、使用可能なすべてのワークフローテンプレートを一覧表示します。
 
@@ -681,7 +681,7 @@ Workfront Proof コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Search]
+#### [!UICONTROL 検索]
 
 この検索モジュールは、指定された検索クエリに一致するレコードを [!DNL Workfront Proof] のオブジェクト内で検索します。
 
@@ -700,7 +700,7 @@ Workfront Proof コネクタでは、以下を使用します。
    <td> <p>[!DNL Workfront Proof] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Search for]</td> 
+   <td>[!UICONTROL 検索 ]</td> 
    <td> <p>モジュールで検索するレコードのタイプを選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Proof]</strong> </p> <p>検索するプルーフのプルーフ名を入力します。</p> </li> 
@@ -709,7 +709,7 @@ Workfront Proof コネクタでは、以下を使用します。
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Result Set]</td> 
-   <td>モジュールで <strong>[!UICONTROL All Matching Records]</strong> を検索するか、<strong>[!UICONTROL First Matching Record]</strong> のみを検索するかを指定します。</td> 
+   <td>モジュールが <strong>[!UICONTROL All Matching Records]</strong> を検索または <strong>[!UICONTROL First Matching Record]</strong> のみを検索するかどうかを示します。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Sort By]</td> 

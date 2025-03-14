@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion] [!UICONTROL JWT] アプリには、
 author: Becky
 feature: Workfront Fusion
 exl-id: 380f60db-b2ec-411a-86ee-0d5699f19b41
-source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 6%
+source-wordcount: '525'
+ht-degree: 7%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 6%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>Workfront Fusion のライセンス要件はありません。</p>
+   <p>Workfront Fusion ライセンス要件なし</p>
    </td> 
   </tr> 
   <tr> 
@@ -82,7 +82,7 @@ JWT コネクタでは、以下を使用します。
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Algorithm]</td> 
+   <td role="rowheader">[!UICONTROL アルゴリズム ]</td> 
    <td> <p>JWT の生成に使用するアルゴリズムを選択します。</p> <ul>
    <li><b>HS256</b>: SHA-256 ハッシュ アルゴリズムを使用する HMAC</li>
    <li><b>HS384</b>: SHA-384 ハッシュ アルゴリズムを使用する HMAC</li>
@@ -99,7 +99,7 @@ JWT コネクタでは、以下を使用します。
    </ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Payload] </td> 
+   <td role="rowheader">[!UICONTROL ペイロード ] </td> 
    <td> <p>追加するペイロード項目ごとに、「<b> 項目を追加 </b>」をクリックし、項目のキーと値を入力します。</p> </td> 
   </tr> 
   <tr> 

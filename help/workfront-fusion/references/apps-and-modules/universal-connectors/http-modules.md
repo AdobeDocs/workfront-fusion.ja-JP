@@ -4,16 +4,16 @@ description: ' [!DNL Adobe Workfront Fusion]  HTTP アプリは、Hypertext Tran
 author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
-source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 58%
+source-wordcount: '603'
+ht-degree: 63%
 
 ---
 
 # HTTP／その他のモジュール
 
-[!DNL Adobe Workfront Fusion] [!UICONTROL HTTP] アプリは、Hypertext Transfer Protocol （HTTP; ハイパーテキスト転送プロトコル）プロトコルに基づく通信用の様々なモジュールを提供します。 HTTP は、World Wide Web のためのデータ通信基盤です。このモジュールを使用すると、web のページやファイルをダウンロードしたり、web フックや API エンドポイントを呼び出したりできます。
+[!UICONTROL HTTP][!DNL Adobe Workfront Fusion] アプリは、Hypertext Transfer Protocol（HTTP）で通信するための様々なモジュールを提供します。HTTP は、World Wide Web のためのデータ通信基盤です。このモジュールを使用すると、web のページやファイルをダウンロードしたり、web フックや API エンドポイントを呼び出したりできます。
 
 モジュールの適切な選択は、アクセスするリソースが使用する認証 / 承認メカニズムによって異なります。次に、モジュールの例を示します。
 
@@ -50,7 +50,7 @@ ht-degree: 58%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -76,18 +76,18 @@ ht-degree: 58%
 
 特定のリクエストモジュールの手順については、次の記事を参照してください。
 
-* [[!UICONTROL HTTP] > [!UICONTROL Make a request] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make an API Key Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL  リクエストを作成 ] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL  基本認証リクエストを行う ] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
+* [[!UICONTROL HTTP]／[!UICONTROL OAuth 2.0 リクエストを実行]モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL  クライアント証明書認証リクエストを作成 ] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL API キー認証リクエストの作成 ]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
 
 ## その他のアクションモジュール
 
-* [[!UICONTROL Get a File]](#get-a-file)
-* [[!UICONTROL Resolve a target URL]](#resolve-a-target-url)
+* [[!UICONTROL ファイルの取得]](#get-a-file)
+* [[!UICONTROL ターゲット URL の解決]](#resolve-a-target-url)
 
-### [!UICONTROL Get a File]
+### [!UICONTROL ファイルの取得]
 
 このアクションモジュールでは、指定した URL からファイルをダウンロードします。ファイルがダウンロードされたら、シナリオ内の他のモジュールを使用して、ファイルをさらに処理（ファイルデータをマッピング）できます。
 
@@ -110,7 +110,7 @@ ht-degree: 58%
  </tbody> 
 </table>
 
-### [!UICONTROL Resolve a target URL]
+### [!UICONTROL ターゲット URL の解決]
 
 このアクションモジュールは、HTTP リダイレクトの連鎖を解決し、ターゲット URL を返します。
 
@@ -131,7 +131,7 @@ ht-degree: 58%
 
 ## イテレータモジュール
 
-### [!UICONTROL Retrieve headers]
+### [!UICONTROL ヘッダーの取得]
 
 このモジュールは、指定された HTTP モジュールの各ヘッダー（名前と値）を個別のバンドルで返します。
 

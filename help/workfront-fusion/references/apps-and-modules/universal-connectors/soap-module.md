@@ -4,16 +4,16 @@ description: SOAP モジュールを使用して、Adobe Workfront Fusion で SO
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: 3a27a51e10438e6cf8862bf28b1d58273bbaff36
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '608'
-ht-degree: 37%
+source-wordcount: '669'
+ht-degree: 55%
 
 ---
 
 # [!UICONTROL SOAP] モジュール
 
-[!UICONTROL SOAP] モジュールを使用して、[!UICONTROL Adobe Workfront Fusion] の [!UICONTROL SOAP] API に接続できます。
+[!UICONTROL SOAP]モジュールを使用して、[!UICONTROL Adobe Workfront Fusion]で[!UICONTROL SOAP]API に接続できます。
 
 ## SOAP モジュールとそのフィールド
 
@@ -46,7 +46,7 @@ SOAP コネクタには、「SOAPを実行」アクションという 1 つの�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -91,15 +91,15 @@ SOAP モジュールを設定すると、以下に示 [!DNL Workfront Fusion] �
    <td> モジュールで使用する WSDL を選択します。 WSDL を作成するには、フィールドの横にある <b> 追加 </b> をクリックし、フィールドに入力します。 </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL HTTP headers]</td> 
+   <td>[!UICONTROL HTTP ヘッダー ]</td> 
    <td> 追加する HTTP ヘッダーごとに「<b> 項目を追加 </b>」をクリックし、ヘッダーの名前と値を入力します。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL SOAP headers]</td> 
+   <td>[!UICONTROL SOAP ヘッダー ]</td> 
    <td> 追加するSOAP ヘッダーごとに「<b> 項目を追加 </b>」をクリックし、ヘッダーの名前、値、名前空間および XMLNS を入力します。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Force SOAP headers]</td> 
+   <td>[!UICONTROL 強制SOAP ヘッダー ]</td> 
    <td> SOAP 1.2 のヘッダーを設定する場合は、このオプションを有効にします。 </td> 
   </tr> 
   </tbody> 
@@ -111,7 +111,7 @@ SOAP モジュールを設定すると、以下に示 [!DNL Workfront Fusion] �
 >
 >WDSL 読み込み中は、リダイレクトは無効になります。 これはセキュリティ機能ですが、モジュールの実行時に未検証のリダイレクトがブロックされる可能性があります。
 
-[!UICONTROL SOAP] モジュールは現在ベータ版で、次の機能をサポートしていません。
+[!UICONTROL SOAP] モジュールは現在ベータ版であり、次の機能をサポートしていません。
 
 * 要素の再定義
 * 小数部桁数の制限
@@ -124,7 +124,7 @@ SOAP モジュールを設定すると、以下に示 [!DNL Workfront Fusion] �
 
 **例：**
 
-次の項目は [!UICONTROL Workfront Fusion] で正しく認識されません：
+以下は、[!UICONTROL Workfront Fusion] では正しく認識されません。
 
 ```
 <complexType name="ArrayOfFloat">
@@ -137,16 +137,16 @@ SOAP モジュールを設定すると、以下に示 [!DNL Workfront Fusion] �
 </complexType>
 ```
 
-この例には、[!UICONTROL Workfront Fusion] でまだサポートされていない `soapenc:Array`、`soapenc:arrayType` および `wsdl:arrayType` 参照が含まれています。
+この例には、[!UICONTROL Workfront Fusion] でまだサポートされていない `soapenc:Array`、`soapenc:arrayType` および `wsdl:arrayType` の参照が含まれています。
 
 >[!ENDSHADEBOX]
 
 ## 回避策
 
-[!UICONTROL SOAP] モジュールが WSDL ファイルの処理を拒否した場合や、モジュールの設定で様々なエラーがスローされた場合は、代わりに universal **[!UICONTROL HTTP]/[!UICONTROL Make a request]** モジュールを使用してみてください。
+[!UICONTROL SOAP] モジュールが WSDL ファイルの処理を拒否するか、モジュールの設定で様々なエラーが発生する場合は、代わりに、汎用の **[!UICONTROL HTTP]／[!UICONTROL リクエストの実行]**&#x200B;モジュールを使用してみてください。
 
 1. [!DNL Workfront Fusion] で新しいシナリオを作成します。
-1. シナリオで **[!UICONTROL HTTP]/[!UICONTROL Make a request]** モジュールを挿入します。
+1. シナリオに **[!UICONTROL HTTP]／[!UICONTROL リクエストの実行]**&#x200B;モジュールを挿入します。
 1. モジュールの設定を開き、次のフィールドに入力します。
 
    <table style="table-layout:auto"> 
@@ -186,12 +186,12 @@ SOAP モジュールを設定すると、以下に示 [!DNL Workfront Fusion] �
 
 1. 見つかったら、`location` 属性から URL をコピーします。
 1. [!DNL Workfront Fusion] で、URL を HTTP モジュールの「URL」フィールドに貼り付けます。
-1. 新しい web ブラウザーのウィンドウまたはタブで [Online [!UICONTROL SOAP] Client](https://wsdlbrowser.com/) を開きます。
+1. 新しい Web ブラウザーウィンドウまたはタブで、「[オンライン [!UICONTROL SOAP] クライアント](https://wsdlbrowser.com/)」を開きます。
 1. WSDL URL を「WSDL URL」フィールドに貼り付けます。
-1. **[!UICONTROL Browse]** をクリックします。
+1. 「**[!UICONTROL 参照]**」をクリックします。
 1. 左側の機能のリストから選択します。例：`getLanguages`
-1. [!UICONTROL Request XML] のテキスト領域のコンテンツをコピーします。
-1. [!UICONTROL Workfront Fusion] で、コピーしたコンテンツをモジュールの URL フィールドに貼り付けます。
+1. 「[!UICONTROL XML をリクエスト]」テキストエリアの内容をコピーします。
+1. [!UICONTROL Workfront Fusion] で、コピーした内容をモジュールの「URL」フィールドに貼り付けます。
 1. 疑問符を実際の値に置き換えることで、選択したパラメーターの値を指定します。
 
    <!--![Request](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->

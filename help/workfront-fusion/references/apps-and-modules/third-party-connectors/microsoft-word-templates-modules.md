@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion のシナリオでは、Microsoft Word テ�
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1245'
-ht-degree: 78%
+source-wordcount: '1339'
+ht-degree: 79%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 78%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -70,7 +70,7 @@ ht-degree: 78%
 
 ## [!DNL Office] サービスを [!DNL Workfront Fusion] に接続
 
-[!DNL Office] アカウントを [!UICONTROL Workfront Fusion] に接続する手順については、[[!UICONTROL Adobe Workfront Fusion] への接続の作成 - 基本手順](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)を参照してください。
+[!DNL Office] アカウントを [!UICONTROL Workfront Fusion] に接続する方法については、[[!UICONTROL Adobe Workfront Fusion] への接続の作成 - 基本手順](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)を参照してください。
 
 >[!NOTE]
 >
@@ -100,7 +100,7 @@ ht-degree: 78%
 
 ### 単純な値タグ {#simple-value-tag}
 
-単純な値タグは、対応する値に置き換えられるだけです。タグの名前は、[!UICONTROL Key] フィールドの値に対応しています。これは、二重中括弧の中に配置されています（例：`{{name}}`）。
+単純な値タグは、対応する値に置き換えられるだけです。タグの名前は、「[!UICONTROL  キー ]」フィールドの値に対応しています。このフィールドは二重の中括弧で囲まれています（例：`{{name}}`）。
 
 **例**：「こんにちは、ピーターさん。」と書かれたドキュメントを作成するには、[!DNL Microsoft Word Template]モジュールを使用して、次のテンプレートを作成します。
 
@@ -164,7 +164,7 @@ ht-degree: 78%
 * [ドキュメントに入力](#fill-out-a-document)
 * [一連のデータをドキュメントに入力する](#fill-a-document-with-a-batch-of-data)
 
-### [!UICONTROL Fill out a document] {#fill-out-a-document}
+### [!UICONTROL ドキュメントに入力] {#fill-out-a-document}
 
 この変換サービスモジュールでは、指定したデータをドキュメントに入力できます。単純な値のタグ、条件付きタグ、またはループタグで使用できます。
 
@@ -203,7 +203,7 @@ ht-degree: 78%
     </ul> 
     <p>エントリを追加するには、次の手順に従います。</p>
     <ol> 
-     <li> <b>[!UICONTROL Add Item]</b> をクリックします。 </li> 
+     <li> 「<b>[!UICONTROL Add item]</b>」をクリックします。 </li> 
      <li>エントリの値のタイプを選択します。</li> 
      <li>名前と値を追加します。詳しくは、この記事で選択した値のタイプの例を参照してください。 
       <ul> 
@@ -216,7 +216,7 @@ ht-degree: 78%
  </tbody> 
 </table>
 
-### [!UICONTROL Fill a document with a batch of data] {#fill-a-document-with-a-batch-of-data}
+### [!UICONTROL 一連のデータをドキュメントに入力] {#fill-a-document-with-a-batch-of-data}
 
 この集約モジュールは、データエントリが別々のバンドルとして提供される場合に役立ちます。このモジュールを使用すると、「値」フィールドに必要な構造を簡単に設定し、各値項目に項目をマッピングできます。ドキュメントの入力モジュールとは異なり、一連のデータを使用してドキュメントに入力モジュールの「値」フィールドでは、変数を含む 1 つのエントリのみを使用できます。
 
@@ -269,7 +269,7 @@ ht-degree: 78%
     </ul> 
     <p>エントリを追加するには、次の手順に従います。</p>
     <ol> 
-     <li> <b>[!UICONTROL Add Item]</b> をクリックします。 </li> 
+     <li> 「<b>[!UICONTROL Add item]</b>」をクリックします。 </li> 
      <li>エントリの値のタイプを選択します。</li> 
      <li>名前と値を追加します。詳しくは、この記事で選択した値のタイプの例を参照してください。 
       <ul> 

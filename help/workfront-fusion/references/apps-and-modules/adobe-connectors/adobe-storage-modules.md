@@ -8,7 +8,7 @@ description: シナリオでは、Adobe Admin Console [!DNL Adobe Workfront Fusi
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ee905f-4713-44a4-bffb-c64cdb3665c2
-source-git-commit: 61a523398f00a9d9439b9e74bfbd1ae3f94b0749
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '1386'
 ht-degree: 19%
@@ -44,7 +44,7 @@ ht-degree: 19%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 

@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion Google Forms]  モジュールを使
 author: Becky
 feature: Workfront Fusion
 exl-id: dc017957-c0f8-4206-916f-21ccda346fb9
-source-git-commit: ca8cee58b6586dbcd1a7ff7bffb0131b59dbb897
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1199'
-ht-degree: 76%
+source-wordcount: '1383'
+ht-degree: 80%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 76%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -88,11 +88,11 @@ Google Forms コネクタでは、以下を使用します。
 フォームの応答を操作するには、まず応答スプレッドシートを作成する必要があります。
 
 1. フォームを開きます。
-1. 「**[!UICONTROL Responses]**」タブに移動します。
-1. **[!UICONTROL Create Spreadsheet]** アイコン ![ スプレッドシートアイコン ](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png) をクリックします。
+1. 「**[!UICONTROL 応答]**」タブに移動します。
+1. **[!UICONTROL スプレッドシートを作成]** アイコン ![ スプレッドシートアイコン ](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png) をクリックします。
 
 1. 新規スプレッドシートを作成するか、既存スプレッドシートを作成するかを選択します
-1. **[!UICONTROL Create]** をクリックします。
+1. 「**[!UICONTROL 作成]**」をクリックします。
 
 ## [!DNL Google Forms] モジュールとそのフィールド
 
@@ -108,7 +108,7 @@ Google Forms コネクタでは、以下を使用します。
 
 ### トリガー
 
-#### [!UICONTROL Watch Responses]
+#### [!UICONTROL 応答の監視]
 
 フォームで新しい応答を監視します。
 
@@ -154,11 +154,11 @@ Google Forms コネクタでは、以下を使用します。
 
 ### アクション
 
-* [[!UICONTROL Add a Response]](#add-a-response)
-* [[!UICONTROL Delete a Response]](#delete-a-response)
-* [[!UICONTROL Update a Response]](#update-a-response)
+* [[!UICONTROL 応答の追加]](#add-a-response)
+* [[!UICONTROL 応答の削除]](#delete-a-response)
+* [[!UICONTROL 応答の更新]](#update-a-response)
 
-#### [!UICONTROL Add a Response]
+#### [!UICONTROL 応答の追加]
 
 このモジュールは、フォームのスプレッドシートの下部に新しい応答を追加します。
 
@@ -203,7 +203,7 @@ Google Forms コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Response]
+#### [!UICONTROL 応答の削除]
 
 このモジュールは、選択した応答を削除します。
 
@@ -230,7 +230,7 @@ Google Forms コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Response]
+#### [!UICONTROL 応答の更新]
 
 このモジュールは、選択された応答を更新します。
 
@@ -273,10 +273,10 @@ Google Forms コネクタでは、以下を使用します。
 
 ### 検索
 
-* [[!UICONTROL Search Responses]](#search-responses)
-* [[!UICONTROL Search Responses (Advanced]）](#search-responses-advanced)
+* [[!UICONTROL 応答の検索]](#search-responses)
+* [[!UICONTROL 応答の検索（詳細]）](#search-responses-advanced)
 
-#### [!UICONTROL Search Responses]
+#### [!UICONTROL 応答の検索]
 
 このモジュールは、指定された条件に一致する応答を返します。
 
@@ -322,7 +322,7 @@ Google Forms コネクタでは、以下を使用します。
   </tr> 
   <tr data-mc-conditions="">
     <td>[!UICONTROL Date and time render option]</td>
-    <td>日付、時間および期間を出力に表示する方法を選択します。Option が Formatted Value に設定されている場合 [!UICONTROL Value Render] このフィールドは無視されます。 </td>
+    <td>日付、時間および期間を出力に表示する方法を選択します。「[!UICONTROL Value Render]」オプションが「Formatted Value」に設定されている場合、このフィールドは無視されます。 </td>
   </tr> 
   <tr>
     <td role="rowheader">[!UICONTROL Maximum number of returned responses]</td>
@@ -331,7 +331,7 @@ Google Forms コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Responses (Advanced)]
+#### [!UICONTROL 応答の検索（詳細）]
 
 このモジュールは、[[!DNL Google Charts Query Language]](https://developers.google.com/chart/interactive/docs/querylanguage?hl=ja) を使用して検索を実行します。このモジュールは行番号を返しません。
 

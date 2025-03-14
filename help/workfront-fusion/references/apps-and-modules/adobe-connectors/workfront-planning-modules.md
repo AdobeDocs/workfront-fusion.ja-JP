@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Planning] modules を使用すると、 [!D
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 06ba97ec4245f9620f013711df9a77b76abb20be
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1395'
-ht-degree: 55%
+source-wordcount: '1532'
+ht-degree: 61%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 55%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -89,7 +89,7 @@ Adobe Workfront Planning コネクタでは、以下を使用します。
 
 [!DNL Workfront Planning] アカウントへの接続を、[!DNL Workfront Fusion] モジュール内から直接作成できます。
 
-1. 任意の [!DNL Adobe Workfront Planning] モジュールで、「接続」ボックスの横にある「**[!UICONTROL Add]**」をクリックします。
+1. 任意の [!DNL Adobe Workfront Planning] モジュールで、「接続」ボックスの横にある「**[!UICONTROL 追加]**」をクリックします。
 
 1. 次のフィールドに入力します。
 
@@ -115,11 +115,11 @@ Adobe Workfront Planning コネクタでは、以下を使用します。
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]<p>（オプション）</p></td>
-          <td>[!DNL Adobe] [!UICONTROL Client ID] を入力します。 これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションにあります。</td>
+          <td>[!DNL Adobe] [!UICONTROL Client ID] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret]<p>（オプション）</p></td>
-          <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。 これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションにあります。
+          <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Authentication URL]</td>
@@ -132,7 +132,7 @@ Adobe Workfront Planning コネクタでは、以下を使用します。
       </tbody>
     </table>
 
-1. 「**[!UICONTROL Continue]**」をクリックして接続を保存し、モジュールに戻ります。
+1. 「**[!UICONTROL 続行]**」をクリックして接続を保存し、モジュールに戻ります。
 
 ## [!DNL Adobe Workfront Planning] モジュールとそのフィールド
 
@@ -184,7 +184,7 @@ Workfront Fusion でWorkfront モジュールを設定する場合、以下に�
     </tr>
      <tr data-mc-conditions=""> 
       <td> <p>[!UICONTROL Events filters]</p> </td> 
-      <td> <p>選択した条件を満たすレコードのみを監視するフィルターを設定できます。</p> <p>各フィルターに対して、フィルターを評価するフィールド、演算子、およびフィルターに許可する値を入力します。AND ルールを追加すると、複数のフィルターを使用できます。</p> <p>メモ：既存の [!DNL Workfront] web フックのフィルターは編集できません。[!DNL Workfront] イベントのサブスクリプションに別のフィルターを設定するには、現在の web フックを削除し、新しい web フックを作成します。</p> <p>イベントフィルターについて詳しくは、Workfront モジュール記事の <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">[!DNL Workfront]/[!UICONTROL Watch Events] モジュールのイベント購読フィルター </a> を参照してください。</p> </td> 
+      <td> <p>選択した条件を満たすレコードのみを監視するフィルターを設定できます。</p> <p>各フィルターに対して、フィルターを評価するフィールド、演算子、およびフィルターに許可する値を入力します。AND ルールを追加すると、複数のフィルターを使用できます。</p> <p>メモ：既存の [!DNL Workfront] web フックのフィルターは編集できません。[!DNL Workfront] イベントのサブスクリプションに別のフィルターを設定するには、現在の web フックを削除し、新しい web フックを作成します。</p> <p>イベントフィルターについて詳しくは、Workfront モジュール記事の <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">[!DNL Workfront] &gt; [!UICONTROL Watch Events] モジュールのイベント購読フィルター </a> を参照してください。</p> </td> 
      </tr> 
     <tr>
       <td role="rowheader">[!UICONTROL Objects to watch]</td>
@@ -313,7 +313,7 @@ Workfront Fusion でWorkfront モジュールを設定する場合、以下に�
       </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Condition for filters]</p>
+        <p>[！フィルターの UICONTROL 条件 ]</p>
       </td>
       <td>フィルターの条件の選択：<ul><li><b>AND</b><p>モジュールは、選択したフィールド値の <b> すべて </b> を満たすレコードを返します。</p></li><li><b>または</b><p>モジュールは、選択したフィールド値の <b> いずれか </b> を満たすレコードを返します。</p></li></ul></td> 
       </tr>

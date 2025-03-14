@@ -4,16 +4,16 @@ description: テキストパーサーツールを使用すると、他の [!DNL 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 78%
+source-wordcount: '1290'
+ht-degree: 85%
 
 ---
 
-# [!UICONTROL Text parser]
+# [!UICONTROL テキストパーサー]
 
-[!UICONTROL Text parser tool] を使用して、他の [!DNL Adobe Workfront Fusion] シナリオモジュールで使用するテキストを解析できます。 [!UICONTROL Text parser] には接続は必要ありません。
+[!UICONTROL テキストパーサーツール]を使用すると、他の [!DNL Adobe Workfront Fusion] シナリオモジュールで使用できるようにテキストを解析できます。[!UICONTROL テキストパーサー]には接続は必要ありません。
 
 ## アクセス要件
 
@@ -36,7 +36,7 @@ ht-degree: 78%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>Workfront Fusion のライセンス要件はありません。</p>
+   <p>Workfront Fusion ライセンス要件なし</p>
    </td> 
   </tr> 
   <tr> 
@@ -71,9 +71,9 @@ ht-degree: 78%
  </tbody> 
  </table>
 
-## [!UICONTROL Text parser] モジュールとそのフィールド
+## [!UICONTROL テキストパーサー]モジュールとそのフィールド
 
-[!UICONTROL Text parser] モジュールを設定する際、[!DNL Adobe Workfront Fusion] に以下のフィールドが表示されます。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL テキストパーサー]モジュールを設定すると、[!DNL Adobe Workfront Fusion] には、以下のフィールドが表示されます。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -81,13 +81,13 @@ ht-degree: 78%
 
 ### 変換サービス
 
-* [[!UICONTROL Get Elements from HTML]](#get-elements-from-html)
-* [[!UICONTROL Get Elements from text]](#get-elements-from-text)
-* [[!UICONTROL HTML to Text]](#html-to-text)
-* [[!UICONTROL Match Pattern]](#match-pattern)
-* [[!UICONTROL Replace]](#replace)
+* [[!UICONTROL HTML から要素を取得]](#get-elements-from-html)
+* [[!UICONTROL テキストから要素を取得]](#get-elements-from-text)
+* [[!UICONTROL HTML をテキストに変換]](#html-to-text)
+* [[!UICONTROL パターンを照合]](#match-pattern)
+* [[!UICONTROL 置き換え]](#replace)
 
-#### [!UICONTROL Get Elements from HTML]
+#### [!UICONTROL HTML から要素を取得]
 
 必要な要素を HTML コードから取得します。
 
@@ -115,7 +115,7 @@ ht-degree: 78%
  </tbody> 
 </table>
 
-#### [!UICONTROL Get Elements from text]
+#### [!UICONTROL テキストから要素を取得]
 
 指定されたパターンに基づいてテキストから要素を解析します。
 
@@ -138,7 +138,7 @@ ht-degree: 78%
  </tbody> 
 </table>
 
-#### [!UICONTROL HTML to Text]
+#### [!UICONTROL HTML からテキスト]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -159,9 +159,9 @@ ht-degree: 78%
  </tbody> 
 </table>
 
-#### [!UICONTROL Match Pattern]
+#### [!UICONTROL 一致パターン]
 
-[!UICONTROL Match pattern] モジュールを使用すると、指定されたテキストから検索パターンに一致する文字列要素を見つけて抽出できます。 このモジュールは正規表現（regex または regexp と表記される場合もあります）を使用します。
+[!UICONTROL 一致パターン]モジュールを使用すると、指定したテキストから検索パターンに一致する文字列要素を検索して抽出できます。このモジュールは正規表現（regex または regexp と表記される場合もあります）を使用します。
 
 正規表現とは、各文字が特別な意味を持つメタ文字、またはリテラルの意味を持つ正規文字のいずれかである文字のシーケンスです。これらの文字とメタ文字は、テキストの検索に使用できるパターンを識別します。例えば、名前を検索する場合、大文字で始まる 2 つの連続した単語で構成されるパターンを検索する正規表現を設定できます。正規表現は、テキストを検索および操作するための強力なツールです。
 
@@ -206,7 +206,7 @@ ht-degree: 78%
  </tbody> 
 </table>
 
-#### [!UICONTROL Replace]
+#### [!UICONTROL 置き換え]
 
 指定した値または正規表現について入力したテキストを検索し、結果を新しい値に置き換えます。
 
@@ -249,7 +249,7 @@ ht-degree: 78%
 
 データスクレーピング（web スクレーピング、データ抽出、web 収集とも呼ばれます）とは、web サイトからデータを収集し、ローカルのデータベースまたはスプレッドシートに保存するプロセスです。Web サイトからデータを削除する場合で、かつ正規表現に慣れていない場合は、データスクレーピングツールを使用できます。
 
-データ収集ツールが REST API を提供する場合は、アドビのユニバーサルエクスペリ [[!UICONTROL HTTP] ンスモジュールおよび [Webhook](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md) モジュールを使用して ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors) このツールに接続できます。
+データスクレーピングツールが REST API を提供している場合は、ユニバーサル [[!UICONTROL HTTP] モジュール](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)および [Web フック](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)モジュールを通じて接続できます。
 
 ## テキストパーサーのトラブルシューティング
 
@@ -259,7 +259,7 @@ ht-degree: 78%
 
 例：
 
-ファイルのファイル形式「filename.docx」をパースする必要があり、ファイル名の拡張子は DOCX から CSV までPDFによって異なります。
+モジュールはファイルドキュメント「filename.docx」のファイルタイプを解析する必要があり、ファイル名の拡張子は DOCX からPDFまで CSV まで異なります。
 
 この場合に使用できる式は [!DNL \..+] です。
 

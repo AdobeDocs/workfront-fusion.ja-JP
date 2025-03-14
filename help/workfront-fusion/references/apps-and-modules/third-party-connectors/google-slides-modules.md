@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion Google Slides モジュールを使用する
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 6f5f97b9-b06a-4336-b349-ee9e2606d4bf
-source-git-commit: c9c2957aad4c885a622a80b9f25303517db0c506
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1552'
-ht-degree: 42%
+source-wordcount: '1970'
+ht-degree: 56%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 42%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -102,16 +102,16 @@ Google スライド コネクタでは、次を使用します。
 
 ### プレゼンテーション
 
-* [[!UICONTROL Add/Delete a Slide]](#adddelete-a-slide)
-* [[!UICONTROL Create a Presentation From a Template]](#create-a-presentation-from-a-template)
-* [[!UICONTROL Get a Page/Thumbnail]](#get-a-pagethumbnail)
-* [[!UICONTROL Get a Presentation]](#get-a-presentation)
-* [[!UICONTROL List Presentations]](#list-presentations)
-* [[!UICONTROL Refresh a Chart]](#refresh-a-chart)
-* [[!UICONTROL Upload an Image To a Presentation]](#upload-an-image-to-a-presentation)
-* [[!UICONTROL Watch Presentations]](#watch-presentations)
+* [[!UICONTROL スライドを追加または削除]](#adddelete-a-slide)
+* [[!UICONTROL テンプレートからプレゼンテーションを作成]](#create-a-presentation-from-a-template)
+* [[!UICONTROL ページ／サムネールを取得]](#get-a-pagethumbnail)
+* [[!UICONTROL プレゼンテーションを取得]](#get-a-presentation)
+* [[!UICONTROL プレゼンテーションをリスト]](#list-presentations)
+* [[!UICONTROL グラフを更新]](#refresh-a-chart)
+* [[!UICONTROL プレゼンテーションに画像をアップロード]](#upload-an-image-to-a-presentation)
+* [[!UICONTROL プレゼンテーションを監視]](#watch-presentations)
 
-#### [!UICONTROL Add/Delete a Slide]
+#### [!UICONTROL スライドを追加または削除]
 
 指定したプレゼンテーションのスライドを作成するか、既存のスライドを削除します。
 
@@ -141,7 +141,7 @@ Google スライド コネクタでは、次を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Predefined layout type]</td> 
-   <td> <p> 追加したスライドで使用する定義済みのスライドレイアウトを選択します。その他のフィールド（[!UICONTROL Title] など）の値を指定します。</p> 
+   <td> <p> 追加したスライドで使用する定義済みのスライドレイアウトを選択します。追加のフィールド（[!UICONTROL Title] など）の値を指定します。</p> 
     <ul> 
      <li>[!UICONTROL Blank layout, with no placeholders]</li> 
      <li>[!UICONTROL Layout with a caption at the bottom]</li> 
@@ -163,7 +163,7 @@ Google スライド コネクタでは、次を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a Presentation From a Template]
+#### [!UICONTROL テンプレートからプレゼンテーションを作成]
 
 このアクション モジュールは、プレゼンテーションをコピーし、`{{Name}}` のようなすべてのタグを指定されたデータに置き換えることで `{{Email}}` 新しいプレゼンテーションを作成します。
 
@@ -193,11 +193,11 @@ Google スライド コネクタでは、次を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Choose a drive]</td> 
-   <td> <p>リストするプレゼンテーションが格納されている [!DNL Google Drive] を選択します。</p> 
+   <td> <p>リストするプレゼンテーションがある [!DNL Google Drive] を選択します。</p> 
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] 共有ドライブ ]</li> 
+     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
     </ul> <p>このフィールドは、プレゼンテーション [!UICONTROL By Dropdown] を作成する場合に表示されます。</p> </td> 
   </tr> 
   <tr> 
@@ -208,35 +208,35 @@ Google スライド コネクタでは、次を使用します。
    <td role="rowheader">[!UICONTROL Values] </td> 
    <td> <p>次の値を追加します。</p> 
     <ul> 
-     <li><strong>[!UICONTROL Tag]</strong>：プレゼンテーションで置き換えるタグを入力します。 例： <code>&#123;&#123;Name&#125;&#125;</code></li> 
-     <li><strong>[!UICONTROL Replaced Value]</strong>：既存のタグを置き換える値を入力します。 たとえば、プレゼンテーションに文字列 <code>&#123;&#123;Name&#125;&#125;</code> があり、置き換えられた値が Sample の場合、<code>&#123;&#123;Name&#125;&#125;</code> は <code>Sample</code> に置き換えられます。</li> 
+     <li><strong>[!UICONTROL Tag]</strong>：プレゼンテーションで置き換えるタグを入力します。例： <code>&#123;&#123;Name&#125;&#125;</code></li> 
+     <li><strong>[!UICONTROL Replaced Value]</strong>：既存のタグを置き換える値を入力します。たとえば、プレゼンテーションに文字列 <code>&#123;&#123;Name&#125;&#125;</code> があり、置き換えられた値が Sample の場合、<code>&#123;&#123;Name&#125;&#125;</code> は <code>Sample</code> に置き換えられます。</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL New Drive Location]</td> 
+   <td role="rowheader">[!UICONTROL 新しいドライブの場所 ]</td> 
    <td> <p>新しいプレゼンテーションを保存または追加する [!DNL Google Drive] を選択してください：</p> 
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] 共有ドライブ ]</li> 
+     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL New Document's Location]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 新しいドキュメントの場所 ]</p> </td> 
    <td> <p>プレゼンテーションを保存または追加するフォルダを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Shared] </td> 
+   <td role="rowheader">[!UICONTROL 共有 ] </td> 
    <td> <p>プレゼンテーションを共有する場合に選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Sharing with Other's Email Address]</td> 
+   <td role="rowheader">[!UICONTROL 他者の電子メール アドレスと共有 ]</td> 
    <td> <p> プレゼンテーションを共有する電子メール アドレスを入力します。 このフィールドに電子メールを入力せずに [ 共有 ] オプションを有効にすると、プレゼンテーションはすべてのユーザーと共有できます。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Page/Thumbnail]
+#### [!UICONTROL ページ／サムネールを取得]
 
 このアクション モジュールは、指定されたページまたはプレゼンテーション内のページのサムネイルの最新バージョンを取得します。
 
@@ -249,7 +249,7 @@ Google スライド コネクタでは、次を使用します。
    <td> <p>[!DNL Google Slides] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Enter a Presentation and Page ID]</td> 
+   <td role="rowheader">[!UICONTROL プレゼンテーションとページ ID を入力 ]</td> 
    <td> <p> プレゼンテーションとページ ID を手動で入力するか、リストから選択するかを選択します。</p> </td> 
   </tr> 
   <tr> 
@@ -267,7 +267,7 @@ Google スライド コネクタでは、次を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Presentation]
+#### [!UICONTROL プレゼンテーションを取得]
 
 指定したプレゼンテーションの最新バージョンを取得します。
 
@@ -281,11 +281,11 @@ Google スライド コネクタでは、次を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Choose a drive]</td> 
-   <td> <p>リストするプレゼンテーションが格納されている [!DNL Google Drive] を選択します。</p> 
+   <td> <p>リストするプレゼンテーションがある [!DNL Google Drive] を選択します。</p> 
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] 共有ドライブ ]</li> 
+     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -295,7 +295,7 @@ Google スライド コネクタでは、次を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL List Presentations]
+#### [!UICONTROL プレゼンテーションをリスト]
 
 このモジュールは、指定された場所にあるすべてのプレゼンテーションのリストを取得します。
 
@@ -313,7 +313,7 @@ Google スライド コネクタでは、次を使用します。
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] 共有ドライブ ]</li> 
+     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -327,7 +327,7 @@ Google スライド コネクタでは、次を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Refresh a Chart]
+#### [!UICONTROL グラフを更新]
 
 アクション モジュールは、ID で指定されたプレゼンテーションに保存されているグラフ データを更新します。
 
@@ -340,7 +340,7 @@ Google スライド コネクタでは、次を使用します。
    <td> <p>[!DNL Google Slides] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Enter a Presentation ID]</td> 
+   <td role="rowheader">[!UICONTROL プレゼンテーション ID を入力 ]</td> 
    <td> <p> プレゼンテーション ID を手動で入力するか、リストから選択するかを選択します。</p> </td> 
   </tr> 
   <tr> 
@@ -349,7 +349,7 @@ Google スライド コネクタでは、次を使用します。
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] 共有ドライブ ]</li> 
+     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -363,7 +363,7 @@ Google スライド コネクタでは、次を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload an Image To a Presentation]
+#### [!UICONTROL プレゼンテーションに画像をアップロード]
 
 指定したデータを使用して画像をアップロードします。
 
@@ -389,7 +389,7 @@ Google スライド コネクタでは、次を使用します。
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] 共有ドライブ ]</li> 
+     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
     </ul>  </td> 
   </tr> 
   <tr> 
@@ -397,7 +397,7 @@ Google スライド コネクタでは、次を使用します。
    <td> <p> 画像のアップロード先のプレゼンテーションのプレゼンテーション ID を選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select the Method]</td> 
+   <td role="rowheader">[!UICONTROL メソッドの選択 ]</td> 
    <td> <p> 画像の置き換え方法を選択します。</p>
    <ul>
    <li><p><b>テキストタグを置換して画像をアップロード</b></p><p>「値」フィールドで、アップロードする各画像に対して <b> 項目を追加 </b> をクリックし、画像のタグと新しい画像の URL を入力します。</p></li>
@@ -408,7 +408,7 @@ Google スライド コネクタでは、次を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Presentations]
+#### [!UICONTROL プレゼンテーションを監視]
 
 このトリガー モジュールは、新しいプレゼンテーションが作成または更新されたときにシナリオを開始します。
 
@@ -437,10 +437,10 @@ Google スライド コネクタでは、次を使用します。
 
 ### その他
 
-* [[!UICONTROL Insert Links in a Presentation]](#insert-links-in-a-presentation)
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
+* [[!UICONTROL プレゼンテーションへのリンクの挿入]](#insert-links-in-a-presentation)
+* [[!UICONTROL API 呼び出しの実行]](#make-an-api-call)
 
-#### [!UICONTROL Insert Links in a Presentation]
+#### [!UICONTROL プレゼンテーションへのリンクの挿入]
 
 このモジュールは、プレゼンテーション内のすべてのリンクをクリック可能にするか、一致するすべての入力テキストにリンクを挿入します。
 
@@ -462,11 +462,11 @@ Google スライド コネクタでは、次を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Choose a drive]</td> 
-   <td> <p>リストするプレゼンテーションが格納されている [!DNL Google Drive] を選択します。</p> 
+   <td> <p>リストするプレゼンテーションがある [!DNL Google Drive] を選択します。</p> 
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] 共有ドライブ ]</li> 
+     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
     </ul> <p>このフィールドは、プレゼンテーション [!UICONTROL By Dropdown] を作成する場合に表示されます。</p> </td> 
   </tr> 
   <tr> 
@@ -484,7 +484,7 @@ Google スライド コネクタでは、次を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL API 呼び出しの実行]
 
 許可された任意の API 呼び出しを実行します。
 
@@ -532,7 +532,7 @@ Google スライド コネクタでは、次を使用します。
 
 ![ プレゼンテーションの詳細 ](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
 
-検索の一致は、モジュールの出力の [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL presentationId] で見つけることができます。
+一致した検索結果は、モジュールの「出力」にある[!UICONTROL バンドル]／[!UICONTROL 本文]／[!UICONTROL presentationId] で確認できます。
 
 この例では、要求されたプレゼンテーションの詳細が返されました。
 

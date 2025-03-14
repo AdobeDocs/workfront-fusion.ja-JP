@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion Adobe Creative Cloud]  ライブラ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 85607e4e-538a-427f-8a99-a0ab65a75ac2
-source-git-commit: fedf8f3f4031faaad9f81ed38fbc77e40e3a85b6
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1223'
-ht-degree: 62%
+source-wordcount: '1393'
+ht-degree: 66%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 62%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -89,9 +89,9 @@ Adobe Creative Cloud ライブラリコネクタでは、以下を使用しま�
  </tbody> 
  </table>
 
-## [!UICONTROL Adobe Creative Cloud Libraries] モジュールとそのフィールド
+## [!UICONTROL Adobe Creative Cloud ライブラリ]モジュールおよびそのフィールド
 
-[!UICONTROL Adobe Creative Cloud Libraries] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Adobe Creative Cloud Libraries] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL Adobe Creative Cloud ライブラリ]モジュール設定時に、[!DNL Workfront Fusion] には以下のフィールドが表示されます。これらと共に、アプリやサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Adobe Creative Cloud Libraries] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -107,20 +107,20 @@ Adobe Creative Cloud ライブラリコネクタでは、以下を使用しま�
 
 ### 要素
 
-* [[!UICONTROL Archive an Element]](#archive-an-element)
+* [[!UICONTROL 要素のアーカイブ]](#archive-an-element)
 
-* [[!UICONTROL Get an Element]](#get-an-element)
+* [[!UICONTROL 要素の取得]](#get-an-element)
 
-* [[!UICONTROL List Elements]](#list-elements)
+* [[!UICONTROL 要素のリスト]](#list-elements)
 
-* [[!UICONTROL Upload an Element]](#upload-an-element)
+* [[!UICONTROL 要素のアップロード]](#upload-an-element)
 
 * [!UICONTROL [Watch New Element in Library]](#watch-new-element-in-library)
 
-* [[!UICONTROL Watch Updated Elements]](#watch-updated-elements)
+* [[!UICONTROL 更新された要素の監視]](#watch-updated-elements)
 
 
-#### [!UICONTROL Archive an Element]
+#### [!UICONTROL 要素のアーカイブ]
 
 このアクションモジュールは、要素をライブラリからアーカイブします。
 
@@ -143,7 +143,7 @@ Adobe Creative Cloud ライブラリコネクタでは、以下を使用しま�
   </tbody>
 </table>
 
-#### [!UICONTROL Get an Element]
+#### [!UICONTROL 要素の取得]
 
 このアクションモジュールは、ライブラリから単一の要素を返します。
 
@@ -189,7 +189,7 @@ Adobe Creative Cloud ライブラリコネクタでは、以下を使用しま�
   </tbody>
 </table>
 
-#### [!UICONTROL List Elements]
+#### [!UICONTROL リスト要素]
 
 このアクションモジュールは、ライブラリ内の要素のリストを取得します。
 
@@ -243,7 +243,7 @@ Adobe Creative Cloud ライブラリコネクタでは、以下を使用しま�
   </tbody>
 </table>
 
-#### [!UICONTROL Watch New Element in Library]
+#### [!UICONTROL ライブラリの新しい要素を監視]
 
 このトリガーモジュールは、要素がライブラリに追加されると、シナリオを開始します。
 
@@ -267,7 +267,7 @@ Adobe Creative Cloud ライブラリコネクタでは、以下を使用しま�
 </table>
 
 
-#### [!UICONTROL Watch Updated Elements]
+#### [!UICONTROL アップデートされた要素を監視]
 
 このトリガーモジュールは、ライブラリ内の要素がアップデートされると、シナリオを開始します。
 
@@ -292,12 +292,12 @@ Adobe Creative Cloud ライブラリコネクタでは、以下を使用しま�
 
 ### ライブラリ
 
-* [[!UICONTROL Watch New Libraries]](#watch-new-libraries)
+* [[!UICONTROL 新しいライブラリを監視]](#watch-new-libraries)
 
-* [[!UICONTROL Watch Updated Libraries]](#watch-updated-libraries)
+* [[!UICONTROL アップデートされたライブラリを監視]](#watch-updated-libraries)
 
 
-#### [!UICONTROL Watch New Libraries]
+#### [!UICONTROL 新しいライブラリを監視]
 
 このトリガーモジュールは、新しいライブラリの作成時にシナリオを開始します。
 
@@ -316,7 +316,7 @@ Adobe Creative Cloud ライブラリコネクタでは、以下を使用しま�
   </tbody>
 </table>
 
-#### [!UICONTROL Watch Updated Libraries]
+#### [!UICONTROL アップデートされたライブラリを監視]
 
 このトリガーモジュールは、既存のライブラリの更新時にシナリオを開始します。
 
@@ -340,7 +340,7 @@ Adobe Creative Cloud ライブラリコネクタでは、以下を使用しま�
 * [API 呼び出しを実行](#make-an-api-call)
 * [アセットのアップロード](#upload-an-asset)
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL API 呼び出しを実行]
 
 このモジュールは、[!DNL Adobe Creative Cloud Libraries] API に対してカスタム API 呼び出しを実行します。
 
@@ -385,7 +385,7 @@ Adobe Creative Cloud ライブラリコネクタでは、以下を使用しま�
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件文を JSON で使用する場合は、条件文を引用符で囲みます。</p> 
+   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件ステートメントを JSON で使用する場合は、条件ステートメントの外側に引用符を挿入します。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
@@ -400,7 +400,7 @@ Adobe Creative Cloud ライブラリコネクタでは、以下を使用しま�
 </table>
 
 
-#### [!UICONTROL Upload an Asset]
+#### [!UICONTROL  アセットをアップロード ]
 
 このアクションモジュールは、小さなファイルアセットを既存のライブラリにアップロードします。最大ファイルサイズは 1 GB です。
 
@@ -432,18 +432,18 @@ Adobe Creative Cloud ライブラリコネクタでは、以下を使用しま�
             <p>非同期モニター応答は直ちに返され、リクエスト処理は非同期で実行されます。呼び出しは、完了するまでエンドポイントをポーリングする役割を持ちます。</p>
           </li>
           <li>
-            <p><b>[!UICONTROL sync,async]</b> （デフォルト）</p>
+            <p><b>[!UICONTROL sync,async]</b>（デフォルト）</p>
             <p>リクエストの同期処理が試行されます。処理時間が 5000 ミリ秒を超えると、非同期モニター応答が返されます。リクエストが完了するまで、モニター URL をポーリングする必要があります。</p>
           </li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Element Type]</td>
+      <td role="rowheader">[!UICONTROL 要素タイプ ]</td>
       <td >アップロードする要素のタイプを選択します</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL File Type]</td>
+      <td role="rowheader">[!UICONTROL ファイルの種類 ]</td>
       <td >アップロードしたファイルの MIME タイプを入力またはマッピングします。</td>
     </tr>
     <tr>

@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion] シナリオ内では、Microsoft O
 author: Becky
 feature: Workfront Fusion
 exl-id: fdecf740-e735-4569-b1a2-7c25c751ba42
-source-git-commit: ddebec2d03d9d843c46182d92df6c8a871799999
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1560'
-ht-degree: 58%
+source-wordcount: '1962'
+ht-degree: 75%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 58%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -87,7 +87,7 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
 
 ## [!DNL Office 365 Calendar] サービスを [!DNL Workfront Fusion] に接続
 
-[!DNL Office 365 Calendar] アカウントを [!UICONTROL Workfront Fusion] に接続する手順については、[[!UICONTROL Adobe Workfront Fusion] への接続の作成 - 基本手順](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)を参照してください。
+[!DNL Office 365 Calendar] アカウントを [!UICONTROL Workfront Fusion] に接続する方法については、[[!UICONTROL Adobe Workfront Fusion] への接続の作成 - 基本手順](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)を参照してください。
 
 >[!NOTE]
 >
@@ -109,14 +109,14 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
 
 ### イベント
 
-* [[!UICONTROL Create an Event]](#create-an-event)
-* [[!UICONTROL Delete an Event]](#delete-an-event)
-* [[!UICONTROL Get an Event]](#get-an-event)
-* [[!UICONTROL Search Events]](#search-events)
-* [[!UICONTROL Update an Event]](#update-an-event)
-* [[!UICONTROL Watch Events]](#watch-events)
+* [[!UICONTROL イベントを作成]](#create-an-event)
+* [[!UICONTROL イベントを削除]](#delete-an-event)
+* [[!UICONTROL イベントを取得]](#get-an-event)
+* [[!UICONTROL イベントの検索]](#search-events)
+* [[!UICONTROL イベントの更新]](#update-an-event)
+* [[!UICONTROL イベントの監視]](#watch-events)
 
-#### [!UICONTROL Create an Event]
+#### [!UICONTROL イベントを作成]
 
 このアクションモジュールは、イベントを新規作成します。
 
@@ -163,7 +163,7 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
     <ul> 
      <li><strong>[!UICONTROL Normal]</strong> </li> 
      <li> <p><strong>[!UICONTROL Personal]</strong> </p> <p>受信者に「[!UICONTROL Please treat this as Personal]」というメッセージが表示されます。</p> </li> 
-     <li> <p><strong>[!UICONTROL Private]</strong> </p> <p>受信者に「[!UICONTROL Please treat this as Private]」というメッセージが表示されます。 このイベントは、受信者の受信ボックスルールによって転送またはリダイレクトされません。</p> </li> 
+     <li> <p><strong>[!UICONTROL Private]</strong> </p> <p>受信者に「[!UICONTROL Please treat this as Private]」というメッセージが表示されます。このイベントは、受信者の受信ボックスルールによって転送またはリダイレクトされません。</p> </li> 
      <li> <p><strong>[!UICONTROL Confidential]</strong> </p> <p>受信者に「[!UICONTROL Please treat this as Confidential]」というメッセージが表示されます。 </p> </li> 
     </ul> </td> 
   </tr> 
@@ -173,7 +173,7 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body content]</td> 
-   <td>イベントに関連付けられたメッセージの本文を入力またはマッピングします。HTMLまたはテキスト形式（上記の [!UICONTROL Body Content Type] フィールドで指定したもの）にすることができます。</td> 
+   <td>イベントに関連付けられたメッセージの本文を入力またはマッピングします。HTML 形式またはテキスト形式で指定できます（上記の「[!UICONTROL Body Content Type]」フィールドで指定）。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Location]</td> 
@@ -181,7 +181,7 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Response requested]</td> 
-   <td>「<strong>[!UICONTROL Yes]</strong>」を選択して、招待者にイベント招待への応答を送信するようリクエストします。</td> 
+   <td>招待者に、イベントへの招待状への返信をリクエストする場合には、「<strong>[!UICONTROL Yes]</strong>」を選択します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Show as]</td> 
@@ -204,13 +204,13 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Categories]</td> 
+   <td role="rowheader">[!UICONTROL カテゴリ ]</td> 
    <td>イベントをカレンダーに表示するカテゴリごとに、「<b> 項目を追加 </b>」をクリックして、カテゴリを入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete an Event]
+#### [!UICONTROL イベントを削除]
 
 このアクションモジュールは、既存のイベントを削除します。
 
@@ -229,7 +229,7 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Get an Event]
+#### [!UICONTROL イベントを取得]
 
 このアクションモジュールは、指定されたイベントの詳細を取得します。
 
@@ -248,7 +248,7 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Events]
+#### [!UICONTROL イベントの検索]
 
 この検索モジュールは、選択したカレンダーでイベントが作成、アップデート、削除、開始、終了されたときに、イベントの詳細を取得します。
 
@@ -262,7 +262,7 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
-   <td>イベントを監視するカレンダーを含む [!UICONTROL calendar group] を選択します。</td> 
+   <td>イベントを監視するカレンダーが含まれている [!UICONTROL calendar group] を選択します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar]</td> 
@@ -283,9 +283,9 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
    <td role="rowheader">[!UICONTROL Order by]</td> 
    <td> <p>結果の並べ替え方法を選択します。</p> 
     <ul> 
-     <li><strong>[!UICONTROL Subject]</strong>、昇順または降順。</li> 
-     <li><strong>[!UICONTROL Created Date Time]</strong>、昇順または降順。</li> 
-     <li><strong>[!UICONTROL Last Modified Date Time]</strong>、昇順または降順。</li> 
+     <li><strong>[!UICONTROL Subject]</strong>、昇順または降順</li> 
+     <li><strong>[!UICONTROL Created Date Time]</strong>、昇順または降順</li> 
+     <li><strong>[!UICONTROL Last Modified Date Time]</strong>、昇順または降順</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -295,7 +295,7 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Update an Event]
+#### [!UICONTROL イベントの更新]
 
 このアクションモジュールは、既存のイベントを更新します。
 
@@ -321,7 +321,7 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL End date]</td> 
-   <td> イベントが終了する時点を、日付と時間の組み合わせで入力します。<code>({date}T{time}</code> 形式を使用します。例：<code>2017-08-29T04:00:00.0000000</code>。サポートされる日付と時刻の形式の一覧については、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">型強制：[!DNL Adobe Workfront Fusion]</a> を参照してください。</td> 
+   <td> イベントが終了する時点を、日付と時間の組み合わせで入力します。<code>({date}T{time}</code> 形式を使用します。例：<code>2017-08-29T04:00:00.0000000</code>。サポートされる日付と時刻の形式の一覧については、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> での型強制を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reminder on]</td> 
@@ -346,7 +346,7 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
     <ul> 
      <li><strong>[!UICONTROL Normal]</strong> </li> 
      <li> <p><strong>[!UICONTROL Personal]</strong> </p> <p>受信者に「[!UICONTROL Please treat this as Personal]」というメッセージが表示されます。</p> </li> 
-     <li> <p><strong>[!UICONTROL Private]</strong> </p> <p>受信者に「[!UICONTROL Please treat this as Private]」というメッセージが表示されます。 このイベントは、受信者の受信ボックスルールによって転送またはリダイレクトされません。</p> </li> 
+     <li> <p><strong>[!UICONTROL Private]</strong> </p> <p>受信者に「[!UICONTROL Please treat this as Private]」というメッセージが表示されます。このイベントは、受信者の受信ボックスルールによって転送またはリダイレクトされません。</p> </li> 
      <li> <p><strong>[!UICONTROL Confidential]</strong> </p> <p>受信者に「[!UICONTROL Please treat this as Confidential]」というメッセージが表示されます。 </p> </li> 
     </ul> </td> 
   </tr> 
@@ -356,7 +356,7 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body content]</td> 
-   <td>イベントに関連付けられたメッセージの本文を入力またはマッピングします。HTMLまたはテキスト形式（上記の [!UICONTROL Body Content Type] フィールドで指定したもの）にすることができます。</td> 
+   <td>イベントに関連付けられたメッセージの本文を入力またはマッピングします。HTML 形式またはテキスト形式で指定できます（上記の「[!UICONTROL Body Content Type]」フィールドで指定）。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Location]</td> 
@@ -364,7 +364,7 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Response requested]</td> 
-   <td>「<strong>[!UICONTROL Yes]</strong>」を選択して、招待者にイベント招待への応答を送信するようリクエストします。</td> 
+   <td>招待者に、イベントへの招待状への返信をリクエストする場合には、「<strong>[!UICONTROL Yes]</strong>」を選択します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Show as]</td> 
@@ -393,13 +393,13 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Events]
+#### [!UICONTROL イベントの監視]
 
 このトリガーモジュールは、選択したカレンダーでイベントが作成、アップデート、削除、開始、終了されたときに、イベントの詳細を取得します。
 
 >[!NOTE]
 >
->イベントシリーズの削除された回数を監視するには、[!UICONTROL Watch events] のフィールドで「[!UICONTROL By Updated Time]」を選択します。 このモジュールは、削除された単一のイベントや、削除された一連のイベントを監視しません。
+>削除された一連のイベントを監視するには、[!UICONTROL イベントを監視]フィールドで[!UICONTROL アップデート時刻別]を選択します。このモジュールは、削除された単一のイベントや、削除された一連のイベントを監視しません。
 
 
 <table style="table-layout:auto"> 
@@ -420,7 +420,7 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
-   <td>イベントを監視するカレンダーを含む [!UICONTROL calendar group] を選択します。</td> 
+   <td>イベントを監視するカレンダーが含まれている [!UICONTROL calendar group] を選択します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar]</td> 
@@ -439,15 +439,15 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
 
 ### カレンダー
 
-* [[!UICONTROL Create a Calendar]](#create-a-calendar)
-* [[!UICONTROL Delete a Calendar]](#delete-a-calendar)
-* [[!UICONTROL Get a Calendar]](#get-a-calendar)
-* [[!UICONTROL List Calendars]](#list-calendars)
-* [[!UICONTROL Update a Calendar]](#update-a-calendar)
+* [[!UICONTROL カレンダーを作成]](#create-a-calendar)
+* [[!UICONTROL カレンダーを削除]](#delete-a-calendar)
+* [[!UICONTROL カレンダーを取得]](#get-a-calendar)
+* [[!UICONTROL カレンダーをリスト表示]](#list-calendars)
+* [[!UICONTROL カレンダーをアップデート]](#update-a-calendar)
 
 
 
-#### [!UICONTROL Create a Calendar]
+#### [!UICONTROL カレンダーを作成]
 
 このアクション モジュールは、Office 365 アカウントに新しいカレンダーを作成します。
 
@@ -466,7 +466,7 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Calendar]
+#### [!UICONTROL カレンダーの削除]
 
 このアクションモジュールは、既存のカレンダーを削除します。
 
@@ -480,12 +480,12 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar ID]</td> 
-   <td>削除するカレンダーの [!UICONTROL Calendar] ID を入力します。</td> 
+   <td>削除するカレンダーの[!UICONTROL Calendar] ID を入力します。</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Calendar]
+#### [!UICONTROL カレンダーを取得]
 
 このアクションモジュールは、1 つのカレンダーに関する詳細を取得します。
 
@@ -504,7 +504,7 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL List Calendars]
+#### [!UICONTROL カレンダーをリスト表示]
 
 この検索モジュールは、認証済みユーザーのカレンダーのすべてのリストを取得します。
 
@@ -518,7 +518,7 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
-   <td>リストを取得するカレンダーが含まれている [!UICONTROL calendar group] を選択します。</td> 
+   <td>リストに表示するカレンダーが含まれている [!UICONTROL calendar group] を選択します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
@@ -527,7 +527,7 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Calendar]
+#### [!UICONTROL カレンダーの更新]
 
 このアクションモジュールは、既存のカレンダーを編集します。
 
@@ -541,7 +541,7 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar ID]</td> 
-   <td>更新するカレンダーの [!UICONTROL Calendar ID] を入力します。 </td> 
+   <td>アップデートするカレンダーの[!UICONTROL Calendar ID] を入力します。 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL New Calendar name]</td> 
@@ -552,7 +552,7 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
 
 ### その他
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL API 呼び出しの実行]
 
 このモジュールでは、カスタム API 呼び出しを実行できます。
 

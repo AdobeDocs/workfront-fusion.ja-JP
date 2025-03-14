@@ -4,7 +4,7 @@ description: Adobe Workfront Fusion を使用して、カスタム OAuth クラ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 2f0bc289-4ecf-4a31-9d7b-641bbca6fc95
-source-git-commit: 5971b2210eaac8f8a75fd7a4aac5a9f7954d27ef
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '964'
 ht-degree: 26%
@@ -36,7 +36,7 @@ Adobe Workfront Fusion を使用して、カスタム OAuth クライアント�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 

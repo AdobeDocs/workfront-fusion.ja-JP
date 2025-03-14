@@ -4,10 +4,10 @@ description: シナリオの実行中にエラーが発生する場合、通常�
 author: Becky
 feature: Workfront Fusion
 exl-id: 82ddaf73-ecf9-4fd6-8f8e-909351023c77
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 24%
+source-wordcount: '668'
+ht-degree: 28%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 24%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -77,10 +77,10 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 モジュールにエラーハンドラーを追加するには：
 
-1. 左側のパネルで「**[!UICONTROL Scenarios]**」タブをクリックします。
+1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. エラー処理ルートを追加するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
-1. エラーハンドラールートを追加するモジュールを右クリックし、**[!UICONTROL Add error handler]** のモジュールを選択します。
+1. エラーハンドラールートを追加するモジュールを右クリックし、「**[!UICONTROL エラーハンドラーを追加]**」を選択します。
 
    ![ エラーハンドラールート ](assets/error-handler-route.png)
 
@@ -114,16 +114,16 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 次のディレクティブを使用して、シナリオの実行が継続されるようにします。
 
-* **[!UICONTROL Resume]**: エラーが発生したモジュールの代替出力を指定できます。 シナリオの実行ステータスは成功とマークされます。
-* **[!UICONTROL Ignore]**: エラーを無視します。 シナリオの実行ステータスは成功とマークされます。
-* **[!UICONTROL Break]**：不完全な実行のキューへの入力を格納します。 シナリオの実行ステータスは、警告とマークされます。
+* **[!UICONTROL 再開]**：エラーを含むモジュールの代替出力を指定できます。シナリオの実行ステータスは成功とマークされます。
+* **[!UICONTROL 無視]**：エラーを無視します。シナリオの実行ステータスは成功とマークされます。
+* **[!UICONTROL 一時停止]**：入力を不完全な実行のキューに保存します。シナリオの実行ステータスは、警告とマークされます。
 
   詳しくは、[ 不完全な実行の表示と解決 ](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md) を参照してください。
 
 エラーが発生したときにシナリオの実行が停止する場合は、次のいずれかのディレクティブを使用します。
 
-* **[!UICONTROL Rollback]**: シナリオの実行を直ちに停止し、ステータスをエラーとしてマークします。
-* **[!UICONTROL Commit]**: シナリオの実行を直ちに停止し、成功としてステータスをマークします。
+* **[!UICONTROL ロールバック]**：シナリオの実行を直ちに停止し、ステータスをエラーとしてマークします。
+* **[!UICONTROL コミット]**：シナリオの実行を直ちに停止し、ステータスを成功としてマークします。
 
 ## リソース
 

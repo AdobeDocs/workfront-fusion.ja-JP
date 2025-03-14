@@ -4,7 +4,7 @@ description: 接続エリアで、チームの接続を表示および管理で�
 author: Becky
 feature: Workfront Fusion
 exl-id: b7e4d3ac-ccbe-4ee2-ba73-b37032980696
-source-git-commit: d79f8ac6d678a874e05e606d7b9ff7c812d93db1
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 14%
@@ -36,7 +36,7 @@ ht-degree: 14%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 

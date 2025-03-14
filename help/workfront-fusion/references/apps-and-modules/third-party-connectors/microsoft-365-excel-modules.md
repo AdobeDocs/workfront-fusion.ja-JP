@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  シナリオの場合、Microsoft 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
-source-git-commit: 2ef98aa858c1459f214b12be3bf52f4f731012a2
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2260'
-ht-degree: 66%
+source-wordcount: '2637'
+ht-degree: 74%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 66%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -93,7 +93,7 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
 
 ## [!DNL Office 365 Excel] サービスを [!DNL Workfront Fusion] に接続
 
-[!DNL Office 365 Excel] アカウントを [!UICONTROL Workfront Fusion] に接続する手順については、[[!UICONTROL Adobe Workfront Fusion] への接続の作成 - 基本手順](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)を参照してください。
+[!DNL Office 365 Excel] アカウントを [!UICONTROL Workfront Fusion] に接続する方法については、[[!UICONTROL Adobe Workfront Fusion] への接続の作成 - 基本手順](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)を参照してください。
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
 * [ワークブックを検索](#search-workbooks)
 * [ワークブックを監視](#watch-workbooks)
 
-#### [!UICONTROL Download a Workbook]
+#### [!UICONTROL ワークブックをダウンロード]
 
 このアクションモジュールは、指定した Excel ブックの内容をダウンロードします。
 
@@ -136,13 +136,13 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
    <td role="rowheader">[!UICONTROL Download a workbook]</td> 
    <td> <p>モジュールでダウンロードするワークブックを識別する方法を選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL By entering an ID manually]</strong> </p> <p>[!UICONTROL Workbook ID] フィールドに、モジュールでダウンロードする特定のワークブックの ID を入力またはマッピングします。</p> </li> 
-     <li> <p><strong>[!UICONTROL By selecting from the path]</strong> </p> <p>「[!UICONTROL Workbook]」フィールドで、モジュールでダウンロードするワークブックを選択します。ルートフォルダー内にない場合は、パスも選択します。</p> </li> 
+     <li> <p><strong>[!UICONTROL By entering an ID manually]</strong> </p> <p>「[!UICONTROL Workbook ID]」フィールドに、モジュールでダウンロードする特定のワークブックの ID を入力またはマッピングします。</p> </li> 
+     <li> <p><strong>[!UICONTROL By selecting from the path]</strong> </p> <p>[!UICONTROL ワークブック ] フィールドで、モジュールでダウンロードするワークブックを選択します。このワークブックのパスは、ルートフォルダーにない場合に含めます。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody>
 
-#### [!UICONTROL Search Workbooks]
+#### [!UICONTROL ワークブックを検索]
 
 このアクションモジュールは、[!DNL Excel] ワークブックを検索します。
 
@@ -170,7 +170,7 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
 </table>
 </table>
 
-#### [!UICONTROL Watch Workbooks]
+#### [!UICONTROL ワークブックを監視]
 
 このトリガーモジュールは、ワークブックの作成時にシナリオを開始します。
 
@@ -199,15 +199,15 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
 
 ### ワークシート
 
-* [[!UICONTROL Add a Worksheet]](#add-a-worksheet)
-* [[!UICONTROL Add a Worksheet Row]](#add-a-worksheet-row)
-* [[!UICONTROL Delete a Worksheet Row]](#delete-a-worksheet-row)
-* [[!UICONTROL List Worksheet Rows]](#list-worksheet-rows)
-* [[!UICONTROL List Worksheets]](#list-worksheets)
-* [[!UICONTROL Update a Worksheet Row]](#update-a-worksheet-row)
-* [[!UICONTROL Watch Worksheet Rows]](#watch-worksheet-rows)
+* [[!UICONTROL ワークシートを追加]](#add-a-worksheet)
+* [[!UICONTROL ワークシート行を追加]](#add-a-worksheet-row)
+* [[!UICONTROL ワークシート行を削除]](#delete-a-worksheet-row)
+* [[!UICONTROL リストワークシート行をリスト]](#list-worksheet-rows)
+* [[!UICONTROL ワークシートをリスト]](#list-worksheets)
+* [[!UICONTROL ワークシート行の更新]](#update-a-worksheet-row)
+* [[!UICONTROL ワークシート行を監視]](#watch-worksheet-rows)
 
-#### [!UICONTROL Add a Worksheet]
+#### [!UICONTROL ワークシートを追加]
 
 このアクションモジュールは、選択したワークブック内に新しいワークシートを作成します。
 
@@ -230,7 +230,7 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
  </tbody> 
 </table>
 
-#### [!UICONTROL Add a Worksheet Row]
+#### [!UICONTROL ワークシート行を追加]
 
 このアクションモジュールは、選択したワークシートに新しい行を追加します。
 
@@ -266,7 +266,7 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Worksheet Row]
+#### [!UICONTROL ワークシート行を削除]
 
 このアクションモジュールは、ワークシートから行を削除します。
 
@@ -293,7 +293,7 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
  </tbody> 
 </table>
 
-#### [!UICONTROL List Worksheet Rows]
+#### [!UICONTROL ワークシート行をリスト]
 
 このアクションモジュールは、指定されたワークシートの行のリストを取得します。
 
@@ -320,7 +320,7 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
  </tbody> 
 </table>
 
-#### [!UICONTROL List Worksheets]
+#### [!UICONTROL ワークシートをリスト]
 
 このアクションモジュールは、指定されたワークブック内のワークシートのリストを取得します。
 
@@ -343,7 +343,7 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Worksheet Row]
+#### [!UICONTROL ワークシート行の更新]
 
 このアクションモジュールは、既存のワークシートの行を更新します。
 
@@ -383,7 +383,7 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Worksheet Rows]
+#### [!UICONTROL ワークシート行を監視]
 
 このトリガーモジュールは、新しい行がシートに追加されると、シナリオを開始します。
 
@@ -416,16 +416,16 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
 
 ### テーブル
 
-* [[!UICONTROL Add a table]](#add-a-table)
-* [[!UICONTROL Add a table row]](#add-a-table-row)
-* [[!UICONTROL Delete a table]](#delete-a-table)
-* [[!UICONTROL Get a Table]](#get-a-table)
-* [[!UICONTROL List table rows]](#list-table-rows)
-* [[!UICONTROL List tables]](#list-tables)
-* [[!UICONTROL Update a table]](#update-a-table)
-* [[!UICONTROL Watch table rows]](#watch-table-rows)
+* [[!UICONTROL テーブルを追加]](#add-a-table)
+* [[!UICONTROL テーブル行を追加]](#add-a-table-row)
+* [[!UICONTROL テーブルを削除]](#delete-a-table)
+* [[!UICONTROL テーブルを取得]](#get-a-table)
+* [[!UICONTROL テーブル行をリスト]](#list-table-rows)
+* [[!UICONTROL テーブルをリスト]](#list-tables)
+* [[!UICONTROL テーブルを更新]](#update-a-table)
+* [[!UICONTROL テーブル行を監視]](#watch-table-rows)
 
-#### [!UICONTROL Add a table]
+#### [!UICONTROL テーブルを追加]
 
 このアクションモジュールは、Excel ワークシート内にテーブル要素を作成します。
 
@@ -456,7 +456,7 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
  </tbody> 
 </table>
 
-#### [!UICONTROL Add a table row]
+#### [!UICONTROL テーブル行を追加]
 
 このアクションモジュールは、既存のテーブルを変更します。
 
@@ -491,7 +491,7 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a table]
+#### [!UICONTROL テーブルを削除]
 
 このアクションモジュールは、指定されたテーブルを [!DNL Excel] ワークシートから削除します。
 
@@ -504,7 +504,7 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
    <td> <p>[!DNL Office 365] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Delete a table]</td> 
+   <td role="rowheader">[!UICONTROL テーブルを削除する ]</td> 
    <td> <p>削除するテーブルを識別する方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>削除する表を含むワークブックの ID を入力またはマップしてから、表を含むワークシートの ID を入力またはマップします。</p> <p>[!UICONTROL Table Name] フィールドに、削除するテーブルの名前を入力またはマッピングします。</p> </li> 
@@ -514,7 +514,7 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Table]
+#### [!UICONTROL テーブルを取得]
 
 このアクションモジュールは、指定されたテーブルのメタデータを取得します。
 
@@ -541,7 +541,7 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
  </tbody> 
 </table>
 
-#### [!UICONTROL List table rows]
+#### [!UICONTROL テーブル行をリスト]
 
 この検索モジュールは、ワークブック内のすべてのテーブル行のリストを取得します。
 
@@ -572,7 +572,7 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
  </tbody> 
 </table>
 
-#### [!UICONTROL List tables]
+#### [!UICONTROL テーブルをリスト]
 
 この検索モジュールは、すべてのテーブルオブジェクトのリストを取得します。
 
@@ -599,7 +599,7 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a table]
+#### [!UICONTROL テーブルを更新]
 
 このアクションモジュールは、既存のテーブルを更新します。
 
@@ -638,7 +638,7 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch table rows]
+#### [!UICONTROL テーブル行を監視]
 
 これは、テーブルに新しい行が追加されるとシナリオを開始するトリガーです。
 
@@ -677,10 +677,10 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
 
 ### その他
 
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
-* [[!UICONTROL Retrieve data]](#retrieve-data)
+* [[!UICONTROL API 呼び出しの実行]](#make-an-api-call)
+* [[!UICONTROL データを取得]](#retrieve-data)
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL API 呼び出しを実行]
 
 このアクションモジュールを使用すると、カスタム API 呼び出しを実行できます。
 
@@ -718,7 +718,7 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
  </tbody> 
 </table>
 
-#### [!UICONTROL Retrieve data]
+#### [!UICONTROL データを取得]
 
 このアクションは、定義されたワークシート範囲からデータを取得し、各行のバンドルを返します。
 

@@ -4,7 +4,7 @@ description: この  [!DNL Adobe Workfront Fusion] モジュールを使用す�
 author: Becky
 feature: Workfront Fusion
 exl-id: cc33530c-3010-4955-8819-5eb8373a0e10
-source-git-commit: 337a6918dc20f2e7523438dea752393a1b3f50ee
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 77%
@@ -46,7 +46,7 @@ ht-degree: 77%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 

@@ -1,13 +1,13 @@
 ---
 title: Draft.js モジュール
-description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、Draft.js モジュールを使用して Draft.js をHTMLに、HTMLを Draft.js に変換できます。'
+description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、Draft.js モジュールを使用して Draft.js をHTMLに変換し、HTMLを Draft.js に変換できます。'
 author: Becky
 feature: Workfront Fusion
 exl-id: 0116e379-cef8-4036-875b-46ca79a9e94d
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 54098f2da1db85d9a596f3fc4753aebb298d5b78
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 21%
+source-wordcount: '244'
+ht-degree: 16%
 
 ---
 
@@ -21,6 +21,8 @@ ht-degree: 21%
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
 <table style="table-layout:auto">
@@ -28,27 +30,25 @@ ht-degree: 21%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
    <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規： [!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：[!DNL Workfront Fusion] ライセンスは必要ありません。</p>
-   <p>または</p>
-   <p>レガシー：任意 </p>
+   <p>Workfront Fusion ライセンス要件なし</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：組織は [!DNL Adobe Workfront Fusion] を購入する必要があります。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
   </tr>
  </tbody> 
@@ -58,7 +58,9 @@ ht-degree: 21%
 
 [!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
 
-## [!UICONTROL Draft.js to HTML]
++++
+
+## [!UICONTROL Draft.js からHTMLへ ]
 
 このモジュールは Draft.js をHTMLに変換します。
 
@@ -70,14 +72,14 @@ ht-degree: 21%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Draft.js]</td> 
-   <td> <p>Draft.js テキストを入力します。</p> </td> 
+   <td> <p>HTMLに変換する Draft.js テキストを入力するか、マッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## [!UICONTROL HTML to Draft.js]
+## [!UICONTROL HTMLから Draft.js へ ]
 
-このモジュールはHTMLコードを Draft.js に変換します。
+このモジュールはHTML コードを Draft.js に変換します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -85,7 +87,7 @@ ht-degree: 21%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Draft.js]</td> 
-   <td> <p>Draft.js に変換するHTMLコードを入力します。</p> </td> 
+   <td> <p>Draft.js に変換するHTML コードを入力するか、マッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion HTTP/リクエストを行うモジュール
 author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
-source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '815'
-ht-degree: 59%
+source-wordcount: '946'
+ht-degree: 69%
 
 ---
 
-# [!UICONTROL HTTP] > [!UICONTROL Make a request] モジュール
+# [!UICONTROL HTTP] > [!UICONTROL  リクエストを作成 ] モジュール
 
-[!DNL Adobe Workfront Fusion] [!UICONTROL HTTP]/[!UICONTROL Make a request module] は、HTTP リクエストを設定してサーバーに送信できるユニバーサルモジュールです。 受信した HTTP 応答は、出力バンドルに含まれます。
+[!DNL Adobe Workfront Fusion] HTTP／[!UICONTROL リクエストモジュールの作成]は、HTTP リクエストを設定し、サーバーに送信できるユニバーサルモジュールです。受信した HTTP 応答は、出力バンドルに含まれます。
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ ht-degree: 59%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>Workfront Fusion のライセンス要件はありません。</p>
+   <p>Workfront Fusion ライセンス要件なし</p>
    </td> 
   </tr> 
   <tr> 
@@ -62,9 +62,9 @@ ht-degree: 59%
 
 +++
 
-## [!UICONTROL HTTP]/[!UICONTROL Make a request] モジュール設定
+## [!UICONTROL HTTP] > [!UICONTROL  リクエストを行う ] モジュール設定
 
-[!UICONTROL HTTP]/[!UICONTROL Make a request] モジュールを設定すると、以下に示 [!DNL Adobe Workfront Fusion] フィールドが表示されます。 モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL HTTP]/[!UICONTROL  リクエストを行う ] モジュールを設定すると、以下に示 [!DNL Adobe Workfront Fusion] フィールドが表示されます。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -94,17 +94,17 @@ ht-degree: 59%
    <td role="rowheader"> <p>[!UICONTROL Body type]</p> </td> 
    <td> <p>HTTP 本文は、使用するヘッダーがある場合、そのヘッダーの直後に HTTP トランザクションメッセージで送信されるデータバイトです。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>Raw 本文タイプは、開発者向けドキュメントで送信するデータが指定されていない場合でも、通常、ほとんどの HTTP 本文リクエストに適しています。</p> <p>[!UICONTROL Content type] フィールドでデータ解析の形式を指定します。</p> <p>選択したコンテンツタイプに関係なく、データは開発者ドキュメントで規定または必須されている形式で入力されます。</p> </li> 
-     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>このボディタイプは、<code>[!UICONTROL application/x-www-form-urlencoded]</code> を使用してデータを [!UICONTROL POST] します。</p> <p><code>application/x-www-form-urlencoded</code> の場合、サーバーに送信される HTTP メッセージの本文は基本的に 1 つのクエリ文字列になります。キーと値は、<code>&amp;</code> で区切られ、キーと値の間に <code>=</code> を持つキーと値のペアでエンコードされています。 </p> <p>バイナリデータの場合は、代わりに <code>[!UICONTROL multipart/form-data]</code> を使用します。</p> 
+     <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>Raw 本文タイプは、開発者向けドキュメントで送信するデータが指定されていない場合でも、通常、ほとんどの HTTP 本文リクエストに適しています。</p> <p>データを解析する形式を [!UICONTROL Content type] フィールドに指定します。</p> <p>選択したコンテンツタイプに関係なく、データは開発者ドキュメントで規定または必須されている形式で入力されます。</p> </li> 
+     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>この本文タイプは、<code>[!UICONTROL application/x-www-form-urlencoded]</code> を使用してデータを [!UICONTROL POST] します。</p> <p><code>application/x-www-form-urlencoded</code> の場合、サーバーに送信される HTTP メッセージの本文は基本的に 1 つのクエリ文字列になります。キーと値は、<code>&amp;</code> で区切られ、キーと値の間に <code>=</code> を持つキーと値のペアでエンコードされています。 </p> <p>バイナリデータの場合は、代わりに <code>[!UICONTROL multipart/form-data]</code> を使用します。</p> 
       <div class="example" data-mc-autonum="<b>Example: </b>">
        <span class="autonumber"><span><b>例：</b></span></span> 
        <p>結果の HTTP リクエスト形式の例は、次のようになります。</p> 
        <p><code>field1=value1&amp;field2=value2</code> </p> 
       </div> </li> 
-     <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL  Multipart/form-data] は、ファイルおよびデータの送信に使用される HTTP マルチパートリクエストです。 通常、ファイルをサーバーにアップロードする際に使用されます。</p> <p>リクエストで送信するフィールドを追加します。各フィールドには、キーと値のペアが含まれている必要があります。</p> 
+     <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL  Multipart/form-data] は、ファイルとデータの送信に使用される HTTP マルチパートリクエストです。通常、ファイルをサーバーにアップロードする際に使用されます。</p> <p>リクエストで送信するフィールドを追加します。各フィールドには、キーと値のペアが含まれている必要があります。</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>リクエスト本文内で送信するキーと値を入力します。</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>キーを入力し、リクエスト本文で送信するソースファイルを指定します。</p> <p>前のモジュール（[!UICONTROL HTTP]/[!UICONTROL Get a File] または [!UICONTROL Google Drive]/ファイルをダウンロードなど）からアップロードするファイルをマッピングするか、ファイル名とファイルデータを手動で入力します。</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>キーを入力し、リクエスト本文で送信するソースファイルを指定します。</p> <p>前のモジュールからアップロードするファイルをマッピングするか（[!UICONTROL HTTP] &gt; [!UICONTROL ファイルを取得 ] や [!UICONTROL Google Drive] &gt; ファイルのダウンロードなど）、ファイル名とファイルデータを手動で入力します。</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
@@ -145,7 +145,7 @@ ht-degree: 59%
               <p>ファイルのパスワードを入力します。</p>
             </li>
             <li value="5">
-              <p>「<b>[!UICONTROL Save]</b>」をクリックしてファイルを抽出し、モジュール設定に戻ります。</p>
+              <p><b>[!UICONTROL 保存 ]</b> をクリックしてファイルを抽出し、モジュール設定に戻ります。</p>
             </li>
           </ol>
 </p> </td> 
@@ -179,10 +179,10 @@ ht-degree: 59%
 
 >[!BEGINSHADEBOX]
 
-**例：** この例では、JSON ペイロードを含んだ [!UICONTROL POST] リクエストを送信するようにモジュールを設定する方法を示します。
+**例：**&#x200B;この例では、JSON ペイロードを使用して [!UICONTROL POST] リクエストを送信するようにモジュールを設定する方法を示します。
 
 ![ リクエストの例の作成 ](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
 
-[!UICONTROL Request content] フィールドに直接 JSON 部分を式と項目と混在させることは、無効な JSON になる可能性があるので、お勧めしません。
+[!UICONTROL  リクエストコンテンツ ] フィールドに直接 JSON 部分を式と項目と混在させることは、無効な JSON になる可能性があるので、お勧めしません。
 
 >[!ENDSHADEBOX]

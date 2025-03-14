@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Mic
 author: Becky
 feature: Workfront Fusion
 exl-id: 657bea46-064e-4333-8e86-81678bb1c3bd
-source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 62%
+source-wordcount: '1109'
+ht-degree: 67%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 62%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -68,7 +68,7 @@ ht-degree: 62%
 
 ## [!DNL Microsoft OneDrive for Business] サービスを [!DNL Workfront Fusion] に接続
 
-[!DNL Microsoft OneDrive for Business] アカウントを [!UICONTROL Workfront Fusion] に接続する手順については、[[!UICONTROL Adobe Workfront Fusion] への接続の作成 - 基本手順](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)を参照してください。
+[!DNL Microsoft OneDrive for Business] アカウントを [!UICONTROL Workfront Fusion] に接続する方法については、[[!UICONTROL Adobe Workfront Fusion] への接続の作成 - 基本手順](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)を参照してください。
 
 >[!NOTE]
 >
@@ -89,10 +89,10 @@ ht-degree: 62%
 
 ### トリガー
 
-* [[!UICONTROL Watch files]](#watch-files)
-* [[!UICONTROL Watch folders]](#watch-folders)
+* [[!UICONTROL ファイルを監視]](#watch-files)
+* [[!UICONTROL フォルダーを監視]](#watch-folders)
 
-#### [!UICONTROL Watch files]
+#### [!UICONTROL ファイルを監視]
 
 このトリガーモジュールは、監視対象のフォルダーに新しいファイルが追加または更新されると、アクティブ化されます。
 
@@ -123,7 +123,7 @@ ht-degree: 62%
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch folders]
+#### [!UICONTROL フォルダーを監視]
 
 このトリガーモジュールは、監視対象のフォルダーに新しいフォルダーが追加されるとアクティブになります。
 
@@ -156,14 +156,14 @@ ht-degree: 62%
 
 ### アクション
 
-* [[!UICONTROL Create a folder]](#create-a-folder)
-* [[!UICONTROL Delete a file]](#delete-a-file)
-* [[!UICONTROL Delete a folder]](#delete-a-folder)
-* [[!UICONTROL Get a file]](#get-a-file)
-* [[!UICONTROL Get a sharing link]](#get-a-sharing-link)
-* [[!UICONTROL Upload a file]](#upload-a-file)
+* [[!UICONTROL フォルダーの作成]](#create-a-folder)
+* [[!UICONTROL ファイルの削除]](#delete-a-file)
+* [[!UICONTROL フォルダーの削除]](#delete-a-folder)
+* [[!UICONTROL ファイルの取得]](#get-a-file)
+* [[!UICONTROL 共有リンクを取得]](#get-a-sharing-link)
+* [[!UICONTROL ファイルをアップロード]](#upload-a-file)
 
-#### [!UICONTROL Create a folder]
+#### [!UICONTROL フォルダーを作成]
 
 指定された親フォルダー内にフォルダーを作成します。
 
@@ -191,7 +191,7 @@ ht-degree: 62%
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a file]
+#### [!UICONTROL ファイルを削除]
 
 このアクションモジュールは、指定されたファイルをごみ箱に移動します。
 
@@ -215,7 +215,7 @@ ht-degree: 62%
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a folder]
+#### [!UICONTROL フォルダーを削除]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -237,7 +237,7 @@ ht-degree: 62%
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a file]
+#### [!UICONTROL ファイルを取得]
 
 このアクションモジュールは、指定された ID を持つファイルを取得します。
 
@@ -261,7 +261,7 @@ ht-degree: 62%
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a sharing link]
+#### [!UICONTROL 共有リンクを取得]
 
 このモジュールは、指定されたファイルにアクセスするために共有できるリンクを取得します。
 
@@ -293,7 +293,7 @@ ht-degree: 62%
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload a file]
+#### [!UICONTROL ファイルをアップロード]
 
 このアクションモジュールは、指定されたフォルダーにバイナリまたはテキストファイルをアップロードします
 

@@ -4,16 +4,16 @@ description: XML アプリを使用すると、XML／Parse XML モジュール�
 author: Becky
 feature: Workfront Fusion
 exl-id: ab323361-cd04-4dcc-ab02-0fb468334fdb
-source-git-commit: 5351c2386ed6f2d030df1df01fcf9ea0de7d813f
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1292'
-ht-degree: 55%
+source-wordcount: '1442'
+ht-degree: 86%
 
 ---
 
 # XML
 
-[!UICONTROL XML] アプリを使用すると、[!UICONTROL XML]/[!UICONTROL Parse XML] モジュールを介して XML 形式のテキストを解析し、バンドルに変換して、他のモジュールでデータを使用できるようになります。 また、[!UICONTROL XML] / [!UICONTROL Create XML] モジュールを使用して、バンドルを XML 形式のテキストに変換できます
+[!UICONTROL XML] アプリを使用すると、[!UICONTROL XML]／[!UICONTROL Parse XML] モジュールを介して XML 形式のテキストを解析し、それをバンドルに変換して、他のモジュールでデータの使用が可能になります。[!UICONTROL XML]／[!UICONTROL Create XML] モジュールを使用して、バンドルを XML 形式のテキストに変換することもできます。
 
 ## アクセス要件
 
@@ -36,7 +36,7 @@ ht-degree: 55%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>Workfront Fusion のライセンス要件はありません。</p>
+   <p>Workfront Fusion ライセンス要件なし</p>
    </td> 
   </tr> 
   <tr> 
@@ -58,7 +58,7 @@ ht-degree: 55%
 
 ## XML を作成
 
-[!UICONTROL XML]/[!UICONTROL Create XML] モジュールは、バンドルを XML 形式のテキストに変換します。
+[!UICONTROL XML]／[!UICONTROL XML を作成]モジュールは、バンドルを XML 形式のテキストに変換します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -68,10 +68,10 @@ ht-degree: 55%
    <td role="rowheader"> <p>[!UICONTROL Data structure]</p> </td> 
    <td> <p>データ構造は、結果の XML の構造を記述します。作成する XML のサンプルがある場合は、それを使用してデータ構造を生成できます。</p> 
     <ol> 
-     <li value="1"><strong>[!UICONTROL Add]</strong> ボタンをクリックします。</li> 
-     <li value="2"><strong>[!UICONTROL Generator]</strong> ボタンをクリックします。</li> 
+     <li value="1">「<strong>[!UICONTROL Add]</strong> 」ボタンをクリックします。</li> 
+     <li value="2">「<strong>[!UICONTROL Generator]</strong>」ボタンをクリックします。</li> 
      <li value="3">XML サンプルをコピーして、「サンプルデータ」フィールドに貼り付けます。</li> 
-     <li value="4"><strong>[!UICONTROL Save]</strong> ボタンをクリックします。</li> 
+     <li value="4">「<strong>[!UICONTROL Save]</strong>」ボタンをクリックします。</li> 
      <li value="5">データ構造が正常に生成されたことを確認します。</li> 
      <li value="6">「<strong>[!UICONTROL Save]</strong>」をクリックして、データ構造を保存します。</li> 
     </ol> </td> 
@@ -101,31 +101,31 @@ ht-degree: 55%
 
 一般的なユースケースは、[!DNL Google] スプレッドシートを XML に変換することです。
 
-1. [!DNL Google Sheets]/[!UICONTROL Select rows] モジュールをシナリオに配置して、データを取得します。 [!DNL Google] スプレッドシートから行を取得するモジュールを設定します。テスト目的で&#x200B;**[!UICONTROL Maximum number of returned rows]** を小さい数に、1 より大きい数に設定します（例：3）。 [!DNL Google Sheets] モジュールを右クリックして「**[!UICONTROL Run this module only]**」を選択し、実行します。 モジュールの出力を確認します。
-1. [!UICONTROL Array Aggregator] モジュールを [!DNL Google Sheets] モジュールの後に接続します。 モジュールの設定で、「**[!UICONTROL Source node]**」フィールドの [!DNL Google Sheets] モジュールを選択します。 その他のフィールドは、現時点ではそのままにしておきます。
-1. [!UICONTROL XML]/[!UICONTROL Create XML] モジュールを [!UICONTROL Array Aggregator] モジュールの後に接続します。
+1. [!DNL Google Sheets]／[!UICONTROL 行を選択]モジュールを使用してデータを取得します。[!DNL Google] スプレッドシートから行を取得するモジュールを設定します。「**[!UICONTROL 返される行の最大数]**」を小さい数に設定しますが、テスト用に 1 より大きい値（例：3）に設定します。[!DNL Google Sheets] モジュールを右クリックし、「**[!UICONTROL このモジュールのみを実行]**」を選択して実行します。モジュールの出力を確認します。
+1. [!DNL Google Sheets] モジュールの後に、[!UICONTROL 配列アグリゲーター]モジュールを接続します。モジュール設定で、「**[!UICONTROL ソースノード]**」フィールドから [!DNL Google Sheets] モジュール を選択します。その他のフィールドは、現時点ではそのままにしておきます。
+1. [!UICONTROL Array Aggregator] モジュールの後に [!UICONTROL XML]／[!UICONTROL Create XML] モジュールを 接続します。
 
-   モジュールの設定には、XML 出力の構造を記述したデータ構造が必要です。「**[!UICONTROL Add]**」ボタンをクリックして、データ構造の設定を開きます。 このデータ構造を作成する最も簡単な方法は、XML サンプルから自動的に生成することです。
+   モジュールの設定には、XML 出力の構造を記述したデータ構造が必要です。「**[!UICONTROL 追加]**」ボタンをクリックして、データ構造の設定を開きます。このデータ構造を作成する最も簡単な方法は、XML サンプルから自動的に生成することです。
 
-1. 「**[!UICONTROL Generator]**」ボタンをクリックし、XML サンプルを「[!UICONTROL Sample data]」フィールドに貼り付けます。
+1. 「**[!UICONTROL ジェネレーター]**」ボタンをクリックし、XML サンプルを「[!UICONTROL サンプルデータ]」フィールドに貼り付けます。
 
    ![ サンプルデータフィールド ](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
 
-1. **[!UICONTROL Save]** をクリックします。
+1. **[!UICONTROL 保存]**&#x200B;をクリックします。
 
    これで、データ構造の「仕様」フィールドに、生成された構造が含まれます。
-1. データ構造の名前をより具体的な名前に変更し、「**[!UICONTROL Save]**」をクリックします。
+1. データ構造の名前をより具体的な名前に変更し、「**[!UICONTROL 保存]**」をクリックします。
 
    ルート配列属性に対応するフィールドは、JSON モジュールの設定で、マッピング可能なフィールドとして表示されます。
-1. フィールドの横にある「**[!UICONTROL Map]**」ボタンをクリックし、[!UICONTROL Array aggregator] 出力の `Array[]` の項目をフィールドにマッピングします。
+1. フィールドの横にある「**[!UICONTROL マップ]**」ボタンをクリックし、[!UICONTROL Array aggregator] から出力された `Array[]` 項目をそれにマッピングします。
 1. 「**[!UICONTROL OK]**」をクリックして、XML モジュールの設定を閉じます。
-1. [!UICONTROL Array Aggregator] モジュールの設定を開きます。 **[!UICONTROL Target structure]** を「カスタム」から、親 XML 要素に対応する XML モジュールのフィールドに変更します。[!DNL Google Sheets] モジュールの項目を適切なフィールドにマッピングします。
-1. 「**[!UICONTROL OK]**」をクリックして、配列アグリゲータモジュールの設定を閉じます。
+1. [!UICONTROL Array Aggregator] モジュールの設定を開きます。**[!UICONTROL ターゲット構造]**&#x200B;をカスタムから、親 XML 要素に対応する XML モジュールのフィールドに変更します。[!DNL Google Sheets] モジュールの項目を適切なフィールドにマッピングします。
+1. 「**[!UICONTROL OK]**」をクリックして、Array Aggregator モジュールの設定を閉じます。
 1. シナリオを実行します。
 
    XML モジュールは、正しい XML ファイルを出力します。
 
-1. [!DNL Google Sheets] モジュールの設定を開き、[!UICONTROL Maximum number of returned rows] 数をスプレッドシートの行数より大きくして、すべてのデータを処理します。
+1. [!DNL Google Sheets] モジュールの設定を開き、すべてのデータを処理するためのスプレッドシートの行数よりも大きくなるように「[!UICONTROL 返される行の最大数]」の数値を増やします。
 
    結果の XML は [!DNL Dropbox] に保存したり、メールで添付ファイルとして送信したり、FTP 経由でサーバーにアップロードしたりできます。
 
@@ -158,9 +158,9 @@ ht-degree: 55%
 }
 ```
 
-## [!UICONTROL Parse XML]
+## [!UICONTROL XML を解析]
 
-[!UICONTROL XML]/[!UICONTROL Parse XML] モジュールは、XML 形式のテキストを解析し、XML から抽出されたすべての情報を含む単一のバンドルを出力します。
+[!UICONTROL XML]／[!UICONTROL Parse XML] モジュールは、XML 形式のテキストを解析し、XML から抽出されたすべての情報を含む単一のバンドルを出力します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -170,10 +170,10 @@ ht-degree: 55%
    <td role="rowheader"> <p>[!UICONTROL Data structure]</p> </td> 
    <td> <p>データ構造は、XML の構造を記述し、以下のモジュールのマッピングパネルでモジュールの出力を使用できるようにします。</p> <p>解析する XML のサンプルがある場合は、それを使用してデータ構造を生成できます。</p> 
     <ol> 
-     <li value="1"><strong>[!UICONTROL Add]</strong> ボタンをクリックします。</li> 
-     <li value="2"><strong>[!UICONTROL Generator]</strong> ボタンをクリックします。</li> 
-     <li value="3">XML サンプルをコピーして、「<strong>[!UICONTROL Sample data]</strong>」フィールドに貼り付けます。</li> 
-     <li value="4"><strong>[!UICONTROL Save]</strong> をクリックします。</li> 
+     <li value="1">「<strong>[!UICONTROL Add]</strong> 」ボタンをクリックします。</li> 
+     <li value="2">「<strong>[!UICONTROL Generator]</strong>」ボタンをクリックします。</li> 
+     <li value="3">XML サンプルを「<strong>[!UICONTROL Sample data]</strong>」フィールドに入力します。</li> 
+     <li value="4">「<strong>[!UICONTROL Save]</strong>」をクリックします。</li> 
      <li value="5">データ構造が正常に生成されたことを確認します。</li> 
      <li value="6"> <p>「<strong>[!UICONTROL Save]</strong>」ボタンをクリックして、データ構造を保存します。</p> <p>手順 2～5 をスキップして、空のデータ構造を指定できます。データ構造が空の場合、モジュールが少なくとも 1 回実行されるまで、モジュールの出力はマッピングパネルで使用できません。</p> </li> 
     </ol> <p>詳しくは、<a href="/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md" class="MCXref xref"> データ構造 </a> を参照してください。</p> </td> 
@@ -184,7 +184,7 @@ ht-degree: 55%
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL XML]</p> </td> 
-   <td> <p>解析する XML 形式のテキストを入力またはマップします。</p> <p>数式を使用する場合は、その結果の値の型が [!UICONTROL Text] のデータ型であることを確認してください。 </p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/if-you-use-a-formula-350x164.png" style="width: 350;height: 164;"> </p> <p>結果の値の型が [!UICONTROL Buffer] （バイナリ データ）の場合は、<code>toString()</code> 関数を使用してテキスト データ型に変換します。 詳細については、「<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref"> 型強制 </a> および <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref"> 項目データ型 </a>」を参照してください。</p> </td> 
+   <td> <p>解析する XML 形式のテキストを入力またはマップします。</p> <p>数式を使用する場合、結果の値のタイプが [!UICONTROL Text] データ型である（または自動的に強制的に適用される）ことを確認します。 </p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/if-you-use-a-formula-350x164.png" style="width: 350;height: 164;"> </p> <p>結果の値の型が [!UICONTROL Buffer] （バイナリデータ）の場合、 <code>toString()</code> 関数を使用して、テキストデータ型に変換します。詳細については、「<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref"> 型強制 </a> および <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref"> 項目データ型 </a>」を参照してください。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -196,15 +196,15 @@ ht-degree: 55%
 XML ファイルを URL からダウンロードしてコンテンツを解析するには：
 
 1. 新しいシナリオを開始します。
-1. [!UICONTROL HTTP]/[!UICONTROL Get a file] モジュールを追加します。
+1. [!UICONTROL HTTP]/[!UICONTROL  ファイルを取得 ] モジュールを追加します
 1. モジュールの設定を開き、次のように設定します。
 
    **URL**：XML ファイルの URL（例：`https://siftrss.com/f/rqLy05ayMBJ`）
 
    ![XML ファイルの URL の例 ](/help/workfront-fusion/references/apps-and-modules/assets/url-of-xml-file-350x184.png)
 
-1. 「**[!UICONTROL OK]**」をクリックして、モジュールの設定を保存して閉じます。
-1. [!UICONTROL XML]/[!UICONTROL Parse XML] モジュールを追加し、[!UICONTROL HTTP]/[!UICONTROL Get a file] モジュールの後に接続して、次のように設定します。
+1. **[!UICONTROL OK]** をクリックして、モジュールの設定を保存して閉じます。
+1. [!UICONTROL XML]／[!UICONTROL XML を解析]モジュールを追加して、[!UICONTROL HTTP]／[!UICONTROL ファイルを取得]モジュールの後に接続し、次のように設定します。
 
    <table style="table-layout:auto"> 
     <col> 
@@ -214,30 +214,30 @@ XML ファイルを URL からダウンロードしてコンテンツを解析�
       <td role="rowheader">[!UICONTROL Data structure]</td> 
       <td> 
        <ol> 
-        <li value="1"><strong>[!UICONTROL Add]</strong> ボタンをクリックします。</li> 
-        <li value="2"><strong>[!UICONTROL Generator]</strong> ボタンをクリックします。</li> 
+        <li value="1">「<strong>[!UICONTROL Add]</strong> 」ボタンをクリックします。</li> 
+        <li value="2">「<strong>[!UICONTROL Generator]</strong>」ボタンをクリックします。</li> 
         <li value="3">Web ブラウザーで、新しいタブまたはウィンドウを開きます。</li> 
         <li value="4">3 番目の手順で使用した URL をアドレスバーに入れ、XML ファイルを取得します。</li> 
         <li value="5">すべての XML テキストを選択し、クリップボードにコピーします。</li> 
         <li value="6">タブまたはウィンドウを閉じて、シナリオに戻ります。</li> 
         <li value="7">コピーした XML テキストを「サンプルデータ」フィールドに貼り付けます。</li> 
-        <li value="8"><strong>[!UICONTROL Save]</strong> をクリックします。</li> 
+        <li value="8">「<strong>[!UICONTROL Save]</strong>」をクリックします。</li> 
         <li value="9">データ構造が正常に生成されたことを確認します。</li> 
         <li value="10">「<strong>[!UICONTROL Save]</strong>」をクリックして、データ構造を保存します。</li> 
        </ol> <p>手順 2～9 をスキップして、空のデータ構造を指定できます。データ構造が空の場合、モジュールが少なくとも 1 回実行されるまで、モジュールの出力はマッピングパネルで使用できません。</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL XML]</td> 
-      <td> <p>[!UICONTROL HTTP]/[!UICONTROL Get a file] モジュールの出力から <code>Data </code>item をフィールドにマッピングします。 <code>toString()</code> 関数を使用して、[!UICONTROL Buffer] （バイナリデータ）型から [!UICONTROL Text] データ型に値を変換します。</p> <p>式のコードをコピーしてフィールドに貼り付けることができます。 <code>&#123;&#123;toString(1.data)&#125;&#125;</code></p> <p>バッファとテキストのデータ型の詳細については、「<a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref"> アイテム データ型 </a>」を参照してください。</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/paste-formula-code-350x99.png"> </p> </td> 
+      <td> <p>[!UICONTROL HTTP]／[!UICONTROL Get a file] モジュールの出力からの <code>Data </code> 項目をフィールドにマップします。<code>toString()</code> 関数を使用して、値を [!UICONTROL Buffer]（バイナリデータ）型から [!UICONTROL Text] 型に変換します。</p> <p>式のコードをコピーしてフィールドに貼り付けることができます。 <code>&#123;&#123;toString(1.data)&#125;&#125;</code></p> <p>バッファとテキストのデータ型の詳細については、「<a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref"> アイテム データ型 </a>」を参照してください。</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/paste-formula-code-350x99.png"> </p> </td> 
      </tr> 
     </tbody> 
    </table>
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL Parsing XML attributes]
+### [!UICONTROL XML 属性の解析]
 
-デフォルトでは、[!UICONTROL XML] / [!UICONTROL Parse XML] モジュールは、属性を、これらの属性を持つノードの子として、特別なコレクション `_attributes` に配置します。 ノードがテキストノードで、そのノードに属性が含まれている場合、属性の `_attributes` とノードのテキストコンテンツの `_value` の 2 つの特別なプロパティが追加されます。
+デフォルトでは、[!UICONTROL XML]／[!UICONTROL XML を解析]モジュールは、属性をこれらの属性を持つノードの子として特別なコレクション `_attributes` に配置します。ノードがテキストノードで、そのノードに属性が含まれている場合、属性の `_attributes` とノードのテキストコンテンツの `_value` の 2 つの特別なプロパティが追加されます。
 
 >[!BEGINSHADEBOX]
 
@@ -255,6 +255,6 @@ XML ファイルを URL からダウンロードしてコンテンツを解析�
 
 >[!ENDSHADEBOX]
 
-## トラブルシューティング：[!UICONTROL Parse XML] モジュールからデータをマッピングできない
+## トラブルシューティング：[!UICONTROL XML を解析]モジュールからデータをマッピングできません
 
 データ構造が正しく定義されていることを確認します。または、空のデータ構造を使用し、モジュールを少なくとも 1 回実行して XML 入力を処理することもできます。

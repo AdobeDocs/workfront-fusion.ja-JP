@@ -4,14 +4,14 @@ description: Adobe Workfront Fusion を使用するには、Adobe Workfront ラ�
 author: Becky
 feature: Workfront Fusion
 exl-id: e544768e-7023-473f-8d51-631b04183743
-source-git-commit: c2680972c616a90b55fdaf2c907920e435f23469
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 65%
+source-wordcount: '949'
+ht-degree: 75%
 
 ---
 
-# [!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request] モジュール
+# [!UICONTROL HTTP] > [!UICONTROL  基本認証リクエストを行う ] モジュール
 
 この [!DNL Adobe Workfront Fusion] モジュールを使用すると、HTTP リクエストに HTTP 基本認証を設定して、サーバーに送信できます。受信した HTTP 応答は、出力バンドルに含まれます。
 
@@ -42,7 +42,7 @@ ht-degree: 65%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -64,7 +64,7 @@ ht-degree: 65%
 
 +++
 
-## [!UICONTROL HTTP]/[!UICONTROL Make a Basic Authorization request] モジュール設定
+## [!UICONTROL HTTP] > [!UICONTROL  基本認証リクエストを行う ] モジュール設定
 
 [!UICONTROL HTTP]/[!UICONTROL Make a Basic Authorization request] モジュールを設定すると、以下に示 [!DNL Adobe Workfront Fusion] フィールドが表示されます。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
@@ -78,7 +78,7 @@ ht-degree: 65%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Credentials]</td> 
-   <td> <p>基本認証資格情報が含まれているキーを選択するか、[<strong>[!UICONTROL Add]</strong>] をクリックして資格情報を新しいキーに追加します。 </p> <p>メモ：接続を切り替えやすくするために、資格情報をさらに追加できます。</p> </td> 
+   <td> <p>基本認証の資格情報を含んだキーを選択するか、「<strong>[!UICONTROL Add]</strong>」をクリックして資格情報を新しいキーに追加します。 </p> <p>メモ：接続を切り替えやすくするために、資格情報をさらに追加できます。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Evaluate all states as errors (except for 2xx and 3xx )] </td> 
@@ -104,14 +104,14 @@ ht-degree: 65%
    <td role="rowheader"> <p>[!UICONTROL Body type]</p> </td> 
    <td> <p>HTTP 本文は、使用するヘッダーがある場合、そのヘッダーの直後に HTTP トランザクションメッセージで送信されるデータバイトです。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>Raw 本文タイプは、開発者向けドキュメントで送信するデータが指定されていない場合でも、通常、ほとんどの HTTP 本文リクエストに適しています。</p> <p>[!UICONTROL Content type] フィールドでデータ解析の形式を指定します。</p> <p>選択したコンテンツタイプに関係なく、データは開発者ドキュメントで規定または必須されている形式で入力されます。</p> </li> 
-     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>このボディタイプは、<code>application/x-www-form-urlencoded</code> を使用してデータを [!UICONTROL POST] します。</p> <p><code>[!UICONTROL application/x-www-form-urlencoded]</code> の場合、サーバーに送信される HTTP メッセージの本文は基本的に 1 つのクエリ文字列になります。キーと値は、<code>&amp;</code> で区切られ、キーと値の間に <code>=</code> を持つキーと値のペアでエンコードされています。 </p> <p>バイナリデータの場合は、代わりに <code>[!UICONTROL multipart/form-data]</code> を使用します。</p> <p>追加するキーと値のペアごとに、「フィールド」フィールドで <b> 項目を追加 </b> をクリックし、キーと値を入力します。</p>
+     <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>Raw 本文タイプは、開発者向けドキュメントで送信するデータが指定されていない場合でも、通常、ほとんどの HTTP 本文リクエストに適しています。</p> <p>データを解析する形式を [!UICONTROL Content type] フィールドに指定します。</p> <p>選択したコンテンツタイプに関係なく、データは開発者ドキュメントで規定または必須されている形式で入力されます。</p> </li> 
+     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>この本文タイプは、<code>application/x-www-form-urlencoded</code> を使用してデータを [!UICONTROL POST] します。</p> <p><code>[!UICONTROL application/x-www-form-urlencoded]</code> の場合、サーバーに送信される HTTP メッセージの本文は基本的に 1 つのクエリ文字列になります。キーと値は、<code>&amp;</code> で区切られ、キーと値の間に <code>=</code> を持つキーと値のペアでエンコードされています。 </p> <p>バイナリデータの場合は、代わりに <code>[!UICONTROL multipart/form-data]</code> を使用します。</p> <p>追加するキーと値のペアごとに、「フィールド」フィールドで <b> 項目を追加 </b> をクリックし、キーと値を入力します。</p>
       <div class="example" data-mc-autonum="<b>Example: </b>">
        <span class="autonumber"><span><b>例：</b></span></span> 
        <p>結果の HTTP リクエスト形式の例は、次のようになります。</p> 
        <p><code>field1=value1&amp;field2=value2</code> </p> 
       </div> </li> 
-     <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] は、ファイルおよびデータの送信に使用される HTTP マルチパートリクエストです。 通常、ファイルをサーバーにアップロードする際に使用されます。</p> <p>リクエストで送信するフィールドを追加します。各フィールドには、キーと値のペアが含まれている必要があります。</p> 
+     <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] は、ファイルとデータの送信に使用される HTTP マルチパートリクエストです。通常、ファイルをサーバーにアップロードする際に使用されます。</p> <p>リクエストで送信するフィールドを追加します。各フィールドには、キーと値のペアが含まれている必要があります。</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>リクエスト本文内で送信するキーと値を入力します。</p> </li> 
        <li> <p><strong>[!UICONTROL File]</strong> </p> <p>キーを入力し、送信するソースファイルをリクエスト本文で指定します。 前のモジュールからソースファイルを選択するか、ファイルの名前とデータをマッピングします。</p> </li> 
@@ -120,7 +120,7 @@ ht-degree: 65%
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Parse response]</p> </td> 
-   <td> <p>このオプションを有効にすると、応答を自動的に解析し、JSON および XML 応答を変換するので、[!UICONTROL JSON]/[!UICONTROL Parse JSON] または [!UICONTROL XML]/[!UICONTROL Parse XML] モジュールを使用する必要がなくなります。</p> <p>解析された JSON または XML コンテンツを使用する前に、モジュールを手動で 1 回実行して、モジュールが応答コンテンツを認識し、後続のモジュールにマッピングできるようにします。</p> </td> 
+   <td> <p>このオプションを有効にすると、応答を自動的に解析し、JSON および XML 応答を変換するので、[!UICONTROL JSON]／[!UICONTROL Parse JSON] または [!UICONTROL XML]／[!UICONTROL Parse XML] モジュールを使用する必要がなくなります。</p> <p>解析された JSON または XML コンテンツを使用する前に、モジュールを手動で 1 回実行して、モジュールが応答コンテンツを認識し、後続のモジュールにマッピングできるようにします。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Timeout] </td> 
@@ -147,7 +147,7 @@ ht-degree: 65%
               <p>ファイルのパスワードを入力します。</p>
             </li>
             <li value="5">
-              <p>「<b>[!UICONTROL Save]</b>」をクリックしてファイルを抽出し、モジュール設定に戻ります。</p>
+              <p><b>[!UICONTROL 保存 ]</b> をクリックしてファイルを抽出し、モジュール設定に戻ります。</p>
             </li>
           </ol>
 </p> </td> 

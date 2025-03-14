@@ -4,10 +4,10 @@ description: 1 つのシナリオで  [!DNL Adobe Workfront Fusion] 、Microsoft
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2526'
-ht-degree: 52%
+source-wordcount: '3124'
+ht-degree: 59%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 52%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
    <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
@@ -102,15 +102,15 @@ SharePoint コネクタでは、以下を使用します。
 
 [!DNL Microsoft] アカウントを使用せずにMicrosoft SharePoint Onlineを [!DNL Workfront Fusion] に接続するには、クライアント ID、クライアント秘密鍵、テナント ID が必要です。
 
-1. 「**Microsoft SharePoint Online**」ボックスの上部付近にある「**[!UICONTROL Add]**」をクリックして、**[!UICONTROL Create a connection]** のボックスを開きます。
+1. **[!UICONTROL 2}Microsoft SharePoint Online]** ボックスの上部付近にある「追加 **をクリックして、**[!UICONTROL  接続を作成 ]**ボックスを開きます。**
 
-1. （任意）デフォルト **[!UICONTROL Connection name]** を変更します。
-1. **[!UICONTROL Show advanced settings]** をクリックします。
-1. 「Microsoft SharePoint Online **[!UICONTROL Client ID]**」と「**[!UICONTROL Client Secret]**」を入力します。
+1. （オプション）デフォルトの&#x200B;**[!UICONTROL 接続名]**&#x200B;を変更
+1. 「**[!UICONTROL 詳細設定を表示]**」をクリック
+1. Microsoft SharePoint Online **[!UICONTROL クライアント ID]** と **[!UICONTROL クライアントシークレット]** を入力します。
 
-1. **[!UICONTROL Continue]** をクリックします。
+1. 「**[!UICONTROL 続行]**」をクリックします。
 1. 表示されるログインウィンドウで、アプリにログインするための資格情報を入力します（まだ入力していない場合）。
-1. （条件付き） **[!UICONTROL Allow]** ボタンが表示された場合は、ボタンをクリックしてアプリを [!DNL Workfront Fusion] に接続します。
+1. （条件付き）「**[!UICONTROL 許可]**」ボタンが表示されたら、ボタンをクリックしてアプリを [!DNL Workfront Fusion] に接続します。
 
 ## Microsoft SharePoint Online モジュールとそのフィールド
 
@@ -150,7 +150,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
    <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
    <td> <p>変更を取得するフォルダーの場所を識別する方法を選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>ファイルを作成する場所の <strong>[!UICONTROL Site ID]</strong>、<strong>[!UICONTROL Drive ID]</strong>、<strong>[!UICONTROL Folder ID]</strong> を入力またはマップします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p><strong>[!UICONTROL サイト ID]</strong>、<strong>[!UICONTROL ドライブ ID]</strong>、および <strong>[!UICONTROL フォルダー ID]</strong> を、ファイルを作成する場所に入力するかマップします。</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>ファイルを作成する場所を選択します。 </p> </li> 
     </ul> </td> 
   </tr> 
@@ -176,7 +176,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
    <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
    <td> <p>作成するフォルダーの場所を識別する方法を選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>フォルダーを作成する場所の <strong>[!UICONTROL Site ID]</strong>、<strong>[!UICONTROL Drive ID]</strong>、<strong>[!UICONTROL Folder ID]</strong> を入力するかマッピングします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p><strong>[!UICONTROL サイト ID]</strong>、<strong>[!UICONTROL ドライブ ID]</strong>、および <strong>[!UICONTROL フォルダー ID]</strong> を入力するか、フォルダーを作成する場所にマップします。</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>フォルダーを作成する場所を選択します。 </p> </li> 
     </ul> </td> 
   </tr> 
@@ -203,7 +203,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
    <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
    <td> <p>取得するファイルの場所を特定する方法を選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>取得するファイルの <strong>[!UICONTROL Site ID]</strong>、<strong>[!UICONTROL List ID]</strong>、<strong>[!UICONTROL File ID]</strong> を入力またはマップします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>取得するファイルの <strong>[!UICONTROL サイト ID]</strong>、<strong>[!UICONTROL リスト ID]</strong>、および <strong>[!UICONTROL ファイル ID]</strong> を入力またはマップします。</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>ファイルの場所を選択します。 </p> </li> 
     </ul> </td> 
   </tr> 
@@ -226,7 +226,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
    <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
    <td> <p>取得するファイルの場所を特定する方法を選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>表示されるフィールドに <strong>[!UICONTROL Site ID]</strong>、<strong>[!UICONTROL List ID]</strong>、<strong>[!UICONTROL folder ID]</strong> を入力するかマッピングします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>表示されるフィールドに、<strong>[!UICONTROL Site ID]</strong>、<strong>[!UICONTROL List ID]</strong> および<strong>[!UICONTROL folder ID]</strong> を入力またはマッピングします。</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>監視するフォルダーの場所を選択します。 </p> </li> 
     </ul> </td> 
   </tr> 
@@ -239,17 +239,17 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
 
 ### 項目
 
-* [[!UICONTROL Copy an item]](#copy-an-item)
-* [[!UICONTROL Create an item]](#create-an-item)
-* [[!UICONTROL Delete an item]](#delete-an-item)
-* [[!UICONTROL Get an Item]](#get-an-item)
-* [[!UICONTROL List Items]](#list-items)
-* [[!UICONTROL Move Item]](#move-an-item)
-* [[!UICONTROL Update an item]](#update-an-item)
-* [[!UICONTROL Watch Items] （スケジュール型）](#watch-items-scheduled)
+* [[!UICONTROL  項目をコピー ]](#copy-an-item)
+* [[!UICONTROL 項目の作成]](#create-an-item)
+* [[!UICONTROL 項目の削除]](#delete-an-item)
+* [[!UICONTROL 項目の取得]](#get-an-item)
+* [[!UICONTROL 項目のリスト]](#list-items)
+* [[!UICONTROL 項目の移動]](#move-an-item)
+* [[!UICONTROL 項目の更新]](#update-an-item)
+* [[!UICONTROL 項目の監視]（予定）](#watch-items-scheduled)
 
 
-#### [!UICONTROL Copy an Item]
+#### [!UICONTROL  項目をコピー ]
 
 このアクションモジュールは、SharePoint リスト内の既存の項目をコピーします。
 
@@ -265,7 +265,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
    <td role="rowheader">サイト ID、ドライブ ID およびフォルダー ID の入力</td> 
    <td> <p>コピーする項目を含むサイトとドライブの識別方法を選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>コピーする項目の <strong>[!UICONTROL Site ID]</strong>、<strong>[!UICONTROL Drive ID]</strong>、<strong>[!UICONTROL Item ID]</strong> を入力またはマップします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>コピーする項目の <strong>[!UICONTROL サイト ID]</strong>、<strong>[!UICONTROL ドライブ ID]</strong>、および <strong>[!UICONTROL 項目 ID]</strong> を入力またはマップします。</p> </li> 
      <li> <p><strong>[!UICONTROL Select from list that you follow]</strong> </p> <p>「項目タイプ」フィールドで、フィールドを移動するかフォルダーを移動するかを選択します。コピーする項目を含むサイトを選択し、リストを選択して、項目を選択します。 </p> </li> 
     </ul> </td> 
   </tr> 
@@ -280,7 +280,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  </tbody> 
 </table>
 
-#### [!UICONTROL Create an item]
+#### [!UICONTROL 項目の作成]
 
 このアクションモジュールは、SharePoint リストに新しい項目を作成します。
 
@@ -296,7 +296,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
    <td role="rowheader">[!UICONTROL Create an Item]</td> 
    <td> <p>アイテムを作成するサイトとドライブの識別方法を選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>項目を作成する <strong>[!UICONTROL Site ID]</strong> と <strong>[!UICONTROL List ID]</strong> を入力またはマッピングします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p><strong>[!UICONTROL サイト ID]</strong> と <strong>[!UICONTROL リスト ID]</strong> を入力またはマップし、アイテムを作成します。</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>項目の作成先となるリストが含まれているサイトを選択したあと、そのリストを選択します。 </p> </li> 
     </ul> </td> 
   </tr> 
@@ -307,7 +307,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete an item]
+#### [!UICONTROL 項目の削除]
 
 このアクションモジュールは、SharePoint リスト内の既存の項目を削除します。
 
@@ -323,7 +323,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
    <td role="rowheader">[!UICONTROL Update an Item]</td> 
    <td> <p>削除する項目を含んだサイトおよびリストを特定する方法を選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>削除する項目の <strong>[!UICONTROL Site ID]</strong>、<strong>[!UICONTROL List ID]</strong>、<strong>[!UICONTROL Item ID]</strong> を入力またはマップします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>削除する項目の <strong>[!UICONTROL サイト ID]</strong>、<strong>[!UICONTROL リスト ID]</strong>、および <strong>[!UICONTROL アイテム ID]</strong> を入力またはマップします。</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>削除する項目が含まれているサイトを選択し、リストを選択したあと、項目を選択します。 </p> </li> 
     </ul> </td> 
   </tr> 
@@ -346,14 +346,14 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
    <td role="rowheader">[!UICONTROL Get an Item]</td> 
    <td> <p>取得する項目を含むサイトとリストを識別する方法を選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>データを返す項目の <strong>[!UICONTROL Site ID]</strong>、<strong>[!UICONTROL List ID]</strong>、<strong>[!UICONTROL Item ID]</strong> を入力またはマップします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>データを返すアイテムの <strong>[!UICONTROL サイト ID]</strong>、<strong>[!UICONTROL リスト ID]</strong>、および <strong>[!UICONTROL アイテム ID]</strong> を入力するか、マップします。</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>項目の取得元のリストが含まれるサイトを選択し、リストを選択して、項目を選択します。 </p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List Items]
+#### [!UICONTROL 項目をリスト]
 
 このアクションモジュールは、指定されたリスト内のすべての項目のリストを取得します。
 
@@ -369,7 +369,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
    <td role="rowheader">[!UICONTROL List Items]</td> 
    <td> <p>項目を取得するリストを識別する方法を選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>項目を一覧表示するリストの <strong>[!UICONTROL Site ID]</strong> と <strong>[!UICONTROL List ID]</strong> を入力またはマッピングします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>項目を一覧表示するリストの <strong>[!UICONTROL サイト ID]</strong> と <strong>[!UICONTROL リスト ID]</strong> を入力またはマップします。</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>項目の取得元のリストが含まれるサイトを選択し、リストを選択します。 </p> </li> 
     </ul> </td> 
   </tr> 
@@ -380,7 +380,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  </tbody> 
 </table>
 
-#### [!UICONTROL Move an Item]
+#### [!UICONTROL 項目を移動]
 
 このアクションモジュールは、SharePoint リスト内の既存の項目をコピーします。
 
@@ -396,7 +396,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
    <td role="rowheader">サイト ID、ドライブ ID およびフォルダー ID の入力</td> 
    <td> <p>移動する項目を含むサイトとリストを識別する方法を選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>移動する項目の <strong>[!UICONTROL Site ID]</strong>、<strong>[!UICONTROL List ID]</strong>、<strong>[!UICONTROL Item ID]</strong> を入力またはマップします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>移動する項目の <strong>[!UICONTROL サイト ID]</strong>、<strong>[!UICONTROL リスト ID]</strong>、および <strong>[!UICONTROL アイテム ID]</strong> を入力またはマップします。</p> </li> 
      <li> <p><strong>[!UICONTROL Select from list that you follow]</strong> </p> <p>「項目タイプ」フィールドで、フィールドを移動するかフォルダーを移動するかを選択します。コピーする項目を含むサイトを選択し、リストを選択して、項目を選択します。 </p> </li> 
     </ul> </td> 
   </tr> 
@@ -411,7 +411,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  </tbody> 
 </table>
 
-#### [!UICONTROL Update an item]
+#### [!UICONTROL 項目を更新]
 
 このアクションモジュールは、SharePoint リスト内の既存の項目を更新します。
 
@@ -427,7 +427,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
    <td role="rowheader">[!UICONTROL Update an Item]</td> 
    <td> <p>更新する項目を含むサイトとリストを識別する方法を選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>更新する項目の <strong>[!UICONTROL Site ID]</strong>、<strong>[!UICONTROL List ID]</strong>、<strong>[!UICONTROL Item ID]</strong> を入力またはマップします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>更新する項目の <strong>[!UICONTROL サイト ID]</strong>、<strong>[!UICONTROL リスト ID]</strong>、および <strong>[!UICONTROL アイテム ID]</strong> を入力またはマップします。</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>更新する項目が含まれるサイトを選択し、リストを選択して、項目を選択します。 </p> </li> 
     </ul> </td> 
   </tr> 
@@ -438,7 +438,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Items] （スケジュール型）
+#### [!UICONTROL 項目を監視]（予定）
 
 このトリガーモジュールは、項目が作成または変更されたときにシナリオを開始します。
 
@@ -458,7 +458,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
    <td role="rowheader">[!UICONTROL Enter Site and List ID]</td> 
    <td> <p>監視するサイトとリストを識別する方法を選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>監視する <strong>[!UICONTROL Site ID]</strong> と <strong>[!UICONTROL List ID]</strong> を入力またはマッピングします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>監視する <strong>[!UICONTROL サイト ID]</strong> と <strong>[!UICONTROL リスト ID]</strong> を入力またはマップします。</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>監視するサイトを選択し、リストを選択します。これらのドロップダウンは、後続のサイトのみを取得します。</p> </li> 
     </ul> </td> 
   </tr> 
@@ -471,12 +471,12 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
 
 ### リスト
 
-* [[!UICONTROL Create a List]](#create-a-list)
-* [[!UICONTROL Get a List]](#get-a-list)
-* [[!UICONTROL List Lists]](#list-lists)
-* [[!UICONTROL Watch Lists]](#watch-lists)
+* [[!UICONTROL リストを作成]](#create-a-list)
+* [[!UICONTROL リストを取得]](#get-a-list)
+* [[!UICONTROL リストをリスト]](#list-lists)
+* [[!UICONTROL リストを監視]](#watch-lists)
 
-#### [!UICONTROL Create a List]
+#### [!UICONTROL リストを作成]
 
 このアクションモジュールは、SharePoint に新しいリストを作成します。
 
@@ -506,12 +506,12 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Add Columns]</td> 
-   <td>新しいリストに設定する列ごとに、[<b> アイテムの追加 </b>] をクリックし、フィールドの <strong>[!UICONTROL Name]</strong> を入力して、新しい列に設定する値の <strong>[!UICONTROL Type]</strong> を選択します。</td> 
+   <td>新しいリストに設定する列ごとに、[<b> 項目の追加 </b>] をクリックし、フィールドに <strong>[!UICONTROL 名 ]</strong> を入力して、新しい列に設定する値の <strong>[!UICONTROL 型 ]</strong> を選択します。</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a List]
+#### [!UICONTROL リストを取得]
 
 このアクションモジュールは、指定されたリストのデータを返します。
 
@@ -527,14 +527,14 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
    <td role="rowheader">[!UICONTROL Get a List]</td> 
    <td> <p>取得する項目を含むサイトとリストを識別する方法を選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>返す <strong>[!UICONTROL Site ID]</strong> と <strong> リスト ID</strong> を入力またはマッピングします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>返す <strong>[!UICONTROL サイト ID]</strong> と <strong> リスト ID</strong> を入力またはマップします。</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>取得するリストが含まれるサイトを選択し、リストを選択します。 </p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List Lists]
+#### [!UICONTROL リストを一覧表示]
 
 このアクションモジュールは、指定したサイト内のすべての項目のリストを取得します。
 
@@ -550,7 +550,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
    <td role="rowheader">[!UICONTROL List Lists]</td> 
    <td> <p>リストを取得するサイトを識別する方法を選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>返すリストを含む <strong>[!UICONTROL Site ID]</strong> を入力またはマッピングします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>返すリストを含む <strong>[!UICONTROL サイト ID]</strong> を入力するか、マップします。</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>取得するリストが含まれているサイトを選択します。ドロップダウンは、フォローしているサイトのみを取得します。</p> </li> 
     </ul> </td> 
   </tr> 
@@ -561,7 +561,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Lists]
+#### [!UICONTROL リストを監視]
 
 このトリガーモジュールは、リストの作成または変更時にシナリオを開始します。
 
@@ -578,10 +578,10 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
    <td>作成時刻（新しい項目）または変更時刻（更新された項目）のどちらでリストを監視するかを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Enter Site ID]</td> 
+   <td role="rowheader">[!UICONTROL サイト ID の入力 ]</td> 
    <td> <p>リストで監視するサイトの識別方法を選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>リストを監視する <strong>[!UICONTROL Site ID]</strong> を入力またはマッピングします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>リストを監視する場所に <strong>[!UICONTROL サイト ID]</strong> 入力するかマップします。</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>監視するサイトを選択します。ドロップダウンは、ユーザーがフォローしているサイトのみを取得します。</p> </li> 
     </ul> </td> 
   </tr> 
@@ -598,7 +598,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
 >
 >[!DNL Microsoft Graph] のバージョン `beta` の API は変更される場合があります。実稼動アプリケーションでのこれらの API の使用はサポートされていません。
 
-#### [!UICONTROL Get a Page]
+#### [!UICONTROL ページを取得]
 
 このアクションモジュールは、指定されたページのデータを返します。
 
@@ -614,7 +614,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
    <td role="rowheader">[!UICONTROL Get a Page]</td> 
    <td> <p>取得するページを識別する方法を選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p><strong>[!UICONTROL Site ID]</strong> と <strong>[!UICONTROL Page ID]</strong> を入力またはマッピングします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p><strong>[!UICONTROL Site ID]</strong> および <strong>[!UICONTROL Page ID]</strong> を入力またはマッピングします。</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>取得するページを含むサイトを選択し、ページを選択します。</p> </li> 
     </ul> </td> 
   </tr> 
@@ -623,10 +623,10 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
 
 ### サイト
 
-* [[!UICONTROL Get a Site]](#get-a-site)
-* [[!UICONTROL Search Sites]](#search-sites)
+* [[!UICONTROL サイトを取得]](#get-a-site)
+* [[!UICONTROL サイトを検索]](#search-sites)
 
-#### [!UICONTROL Get a Site]
+#### [!UICONTROL サイトを取得]
 
 このアクションモジュールは、指定されたサイトのデータを返します。
 
@@ -649,7 +649,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Sites]
+#### [!UICONTROL サイトを検索]
 
 このアクションモジュールは、指定したパラメーターでサイトを検索します。
 
@@ -694,7 +694,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
    <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
    <td> <p>更新する項目を含むサイトとドライブの識別方法を選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>表示されるフィールドに <strong>[!UICONTROL Site ID]</strong>、<strong>[!UICONTROL Drive ID]</strong>、<strong>[!UICONTROL Folder ID]</strong> を入力するかマッピングします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>表示されるフィールドに、<strong>[!UICONTROL Site ID]</strong>、<strong>[!UICONTROL Drive ID]</strong>、<strong>[!UICONTROL Folder ID]</strong> を入力またはマッピングします。</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>更新する項目が含まれるサイトを選択し、ドライブを選択して、フォルダーを選択します。 </p> </li> 
     </ul> </td> 
   </tr> 
@@ -705,7 +705,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  </tbody> 
 </table>
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL API 呼び出しを実行]
 
 このモジュールでは、カスタム API 呼び出しを実行できます。
 
