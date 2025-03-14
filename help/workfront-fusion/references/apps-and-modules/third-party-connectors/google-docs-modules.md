@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion [!DNL Google Docs] module を使用すると
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: cd44250d-c2cd-46b2-8773-15b30472a8d8
-source-git-commit: eac874d588e026cab3a01017d32e291d5c8b7b74
+source-git-commit: 2af808aaf8136253c623ee65641d0e57d4f6cf10
 workflow-type: tm+mt
-source-wordcount: '3999'
-ht-degree: 84%
+source-wordcount: '4045'
+ht-degree: 81%
 
 ---
 
@@ -498,8 +498,12 @@ Google Docs コネクタでは、以下を使用します。
     </ul> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[!UICONTROL Document ID]</td> 
+   <td> <p>テキストを置き換えるドキュメントをマッピングまたは選択します。</p> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader"> <p>[!UICONTROL Replace a Text]</p> </td> 
-   <td> <p>置き換える各テキストを追加します。</p> 
+   <td> <p>置き換えるテキストごとに「<b> アイテムの追加 </b>」をクリックし、以下を入力します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Old text to be replaced]</strong> </p> <p>置き換えるテキストを入力します。</p> </li> 
      <li> <p><strong>[!UICONTROL New text to be inserted]</strong> </p> <p>新しいテキストを入力します。</p> </li> 
@@ -538,8 +542,12 @@ Google Docs コネクタでは、以下を使用します。
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Image URL]</p> </td> 
-   <td> <p>既存の画像を置き換える新しい画像の URL を入力またはマッピングします。</p> <p>画像は、ドキュメント内での表示順に表示されます。例えば、<code>Body: Image No. 1</code> はドキュメント内の最初の画像です。</p> </td> 
+   <td role="rowheader">[!UICONTROL Document ID]</td> 
+   <td> <p>画像を置換するドキュメントをマッピングまたは選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL イメージの置き換え ]</p> </td> 
+   <td> 置き換える画像ごとに、「<b> 項目を追加 </b>」をクリックして既存の画像 ID を入力し、既存の画像を置き換える新しい画像の URL を入力またはマップします。 <p>画像は、ドキュメント内での表示順に表示されます。例えば、<code>Body: Image No. 1</code> はドキュメント内の最初の画像です。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -579,8 +587,48 @@ Google Docs コネクタでは、以下を使用します。
 
 ### その他
 
-* [[!UICONTROL API 呼び出しを実行]](#make-an-api-call)
 * [[!UICONTROL ドキュメント内のすべてのリンクをクリック可能にする]](#make-all-links-in-a-document-clickable)
+* [[!UICONTROL API 呼び出しを実行]](#make-an-api-call)
+
+#### [!UICONTROL ドキュメント内のすべてのリンクをクリック可能にする]
+
+このアクションモジュールは、ドキュメント内のすべてのリンクを検索し、クリック可能にします。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>[!DNL Google] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Make All Links in a Document]</p> </td> 
+   <td> 
+    <ul> 
+     <li><strong>[!UICONTROL By Mapping]</strong> <br>ドキュメントテンプレートをマッピングするには、このオプションを選択します。</li> 
+     <li><strong>[!UICONTROL By Dropdown]</strong> <br>ドロップダウンメニューからドキュメントを選択するには、このオプションを選択します。</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
+   <td> <p>リンクをクリック可能にするドキュメントが存在するドライブのタイプを選択します。このオプションは、前のフィールドで [!UICONTROL By Dropdown] を選択した場合に使用できます。</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>リンクをクリック可能にするドキュメントがあるフォルダーを選択します。</p> </li> 
+     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>リンクをクリック可能にするドキュメントがあるフォルダーを選択します。</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみ使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。[!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>リンクをクリック可能にするドキュメントが存在する共有ドライブを選択し、ドキュメントを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Shared Drive]</td> 
+   <td> <p>リンクを更新するドキュメントが含まれているドライブを選択し、ドキュメントを選択します。このオプションは、「[!UICONTROL Choose a Drive field]」フィールドで「[!DNL My Drive]」を選択した場合に有効です。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Document ID]</td> 
+   <td> <p> リンクを更新するドキュメントを選択またはマッピングします。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL API 呼び出しを実行]
 
@@ -620,6 +668,8 @@ Google Docs コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
+>[!BEGINSHADEBOX]
+
 **例：**&#x200B;次の API 呼び出しでは、Google ドキュメントの指定したドキュメントの詳細を取得します。
 
 **URL：**
@@ -636,42 +686,4 @@ Google Docs コネクタでは、以下を使用します。
 
 ![API 呼び出しの出力 ](/help/workfront-fusion/references/apps-and-modules/assets/api-output.png)
 
-#### [!UICONTROL ドキュメント内のすべてのリンクをクリック可能にする]
-
-このアクションモジュールは、ドキュメント内のすべてのリンクを検索し、クリック可能にします。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Google] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Make All Links in a Document]</p> </td> 
-   <td> 
-    <ul> 
-     <li><strong>[!UICONTROL By Mapping]</strong> <br>ドキュメントテンプレートをマッピングするには、このオプションを選択します。</li> 
-     <li><strong>[!UICONTROL By Dropdown]</strong> <br>ドロップダウンメニューからドキュメントを選択するには、このオプションを選択します。</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
-   <td> <p>リンクをクリック可能にするドキュメントが存在するドライブのタイプを選択します。このオプションは、前のフィールドで [!UICONTROL By Dropdown] を選択した場合に使用できます。</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>リンクをクリック可能にするドキュメントが存在するフォルダーを選択し、ドキュメントを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>リンクをクリック可能にするドキュメントが存在するフォルダーを選択し、ドキュメントを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみが使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。[!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>リンクをクリック可能にするドキュメントが存在する共有ドライブを選択し、ドキュメントを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Shared Drive]</td> 
-   <td> <p>リンクを更新するドキュメントが含まれているドライブを選択し、ドキュメントを選択します。このオプションは、「[!UICONTROL Choose a Drive field]」フィールドで「[!DNL My Drive]」を選択した場合に有効です。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Document ID]</td> 
-   <td> <p> リンクを更新するドキュメントを選択またはマッピングします。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+>[!ENDSHADEBOX]
