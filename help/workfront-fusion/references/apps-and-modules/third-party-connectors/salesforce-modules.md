@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion のシナリオでは、Salesforce を使用
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 87b15e32338b798983adbf0016709752ee862567
 workflow-type: tm+mt
-source-wordcount: '3042'
-ht-degree: 85%
+source-wordcount: '2952'
+ht-degree: 80%
 
 ---
 
@@ -185,15 +185,15 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type] </td> 
-   <td> <p>モジュールで監視するフィールドが含まれているレコードのタイプを選択します。[!DNL Salesforce] 設定で [!UICONTROL Field History] がオンになっているレコードタイプを選択する必要があります。詳しくは、[!DNL Salesforce] ドキュメントで<a href="https://help.salesforce.com/articleView?id=tracking_field_history.htm&amp;type=5">フィールド履歴のトラッキング</a>を参照してください。 </p> </td> 
+   <td> <p>モジュールで監視するフィールドが含まれているレコードのタイプを選択します。[!DNL Salesforce] 設定で [!UICONTROL Field History] がオンになっているレコードタイプを選択する必要があります。詳しくは、[!DNL Salesforce] ドキュメントで<a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&amp;type=5">フィールド履歴のトラッキング</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Field]</td> 
-   <td> <p>モジュールで変更を監視するフィールドを選択します。</p> </td> 
+   <td> <p>モジュールで変更を監視するフィールドを選択します。 使用可能なフィールドは、選択したレコードタイプによって異なります。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Limit]</td> 
@@ -214,7 +214,7 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Type] </td> 
@@ -239,29 +239,36 @@ Salesforce コネクタでは、以下を使用します。
 
 このトリガーモジュールは、誰かがメッセージを送信したときにシナリオを実行します。このモジュールは、レコードに関連付けられたすべての標準フィールドと、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
-このモジュールには、追加の設定が必要です。
+このモジュールには、追加の設定が必要です。 アウトバウンドメッセージ用に設定されたフローが必要です。
 
-1. [!DNL Salesforce] 設定ページに移動します。
+* Salesforceのフローについては、Salesforce ドキュメントの [ フローを使用したタスクの自動化 ](https://help.salesforce.com/s/articleView?id=platform.flow.htm) を参照してください。
+* Salesforceでのアウトバウンドメッセージの設定について詳しくは、Salesforce ドキュメントの [ レコードトリガーフローからのアウトバウンドメッセージの送信 ](https://help.salesforce.com/s/articleView?id=release-notes.rn_automate_flow_builder_outbound_message.htm) を参照してください
 
-   設定ページにアクセスするには、[!DNL Salesforce] アカウントの右上隅にある「[!UICONTROL 設定]」というラベルのボタンを見つけてクリックします。[!DNL Salesforce] 設定ページから、左側にある「[!UICONTROL クイック検索／検索]」バーを見つけます。「[!UICONTROL ワークフロールール]」を検索します。
+<!--
 
-1. 「**[!UICONTROL ワークフロールール]**」をクリックします。
-1. 表示される[!UICONTROL ワークフロールール]ページで、「**[!UICONTROL 新規ルール]**」をクリックし、ルールを適用するオブジェクトタイプ（「[!UICONTROL 機会]」など）を選択します（商談レコードの更新を監視している場合）。
-1. 「**[!UICONTROL 次へ]**」をクリックします。
-1. ルール名、評価基準およびルール基準を設定し、**[!UICONTROL 保存]**／**[!UICONTROL 次へ]**&#x200B;をクリックします。
+1. Go to the [!DNL Salesforce] setup page.
 
-1. 「**[!UICONTROL 完了]**」をクリックします。
-1. 新しく作成したワークフロールールで、「**[!UICONTROL 編集]**」をクリックします。
-1. **[!UICONTROL ワークフローアクションを追加]**&#x200B;ドロップダウンリストで、「**[!UICONTROL 新規アウトバウンドメッセージ]**」を選択します。
+   To access the setup page, locate and click the button labeled "[!UICONTROL Setup]" in the upper-right hand corner of the [!DNL Salesforce] account. From the [!DNL Salesforce] setup page, locate the "[!UICONTROL Quick Find / Search]" bar on the left hand side. Search for "[!UICONTROL Workflow Rules]." 
 
-1. 名前、説明、エンドポイント URL、新しいアウトバウンドメッセージに含めるフィールドを指定し、「**[!UICONTROL 保存]**」をクリックします。
+1. Click **[!UICONTROL Workflow Rules]**. 
+1. On the the [!UICONTROL Workflow Rules] page that appears, click **[!UICONTROL New Rule]** and select the object type the rule will apply to (such as "[!UICONTROL Opportunity]" if you are monitoring updates to Opportunity records).
+1. Click **[!UICONTROL Next]**.
+1. Set a rule name, evaluation criteria, and rule criteria, then click **[!UICONTROL Save]** and **[!UICONTROL Next]**.
 
-   「**[!UICONTROL エンドポイント URL]**」フィールドには、[!DNL Workfront Fusion] の「[!DNL Salesforce] [!UICONTROL  送信メッセージ]」で提供された URL が含まれています。
+1. Click **[!UICONTROL Done]**.
+1. From the newly created Workflow rule, click **[!UICONTROL Edit]**..
+1. From the **[!UICONTROL Add Workflow Action]** drop-down list, select **[!UICONTROL New Outbound Message]**.
 
-1. [!UICONTROL アウトバウンドメッセージ]イベント次で始まるシナリオを設定します。
+1. Specify name, description, Endpoint URL, and fields you want to include in the new outbound message, then click **[!UICONTROL Save]**.
 
-1. 右下にある **&lt;/>** アイコンをクリックし、提供された URL をコピーします。
-1. **[!UICONTROL ワークフロールール]**&#x200B;ページに戻り、新しく作成されたルールを探し、「**[!UICONTROL アクティブ化]**」をクリックします。
+   The **[!UICONTROL Endpoint URL]** field contains the URL provided on the [!DNL Salesforce] [!UICONTROL Outbound Message] in [!DNL Workfront Fusion].
+
+1. Configure a scenario beginning with the [!UICONTROL Outbound Message] event. 
+
+1. Click the **</>** icon in the bottom right and copy the provided URL.
+1. Return to the **[!UICONTROL Workflow Rules]** page, locate the newly created rule, then click **[!UICONTROL Activate]**.
+
+-->
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
@@ -300,7 +307,7 @@ Salesforce コネクタでは、以下を使用します。
 
 モジュールを使用すると、モジュールで使用可能なオブジェクトのフィールドを選択できます。これにより、モジュールを設定する際にスクロールしなければならないフィールドの数が減ります。
 
-このモジュールは、レコードの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
+このモジュールは、レコードの ID および関連するフィールドと共に、接続を介してアクセスされるカスタムフィールドとその値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
@@ -310,7 +317,7 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Record Type] </p> </td> 
@@ -344,15 +351,15 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
-   <td> <p><code> &lt;Instance URL&gt;/services/data/v46.0/</code> への相対パスを入力します。</p> <p>使用可能なエンドポイントの一覧について詳しくは、<a href="https://developer.salesforce.com/docs/atlas.ja-jp.246.0.api_rest.meta/api_rest/intro_what_is_rest_api.htm">Salesforce REST API 開発者ガイド</a>を参照してください。</p> </td> 
+   <td> <p><code> &lt;Instance URL&gt;/services/data/v62.0/</code> への相対パスを入力します。</p> <p>使用可能なエンドポイントの一覧について詳しくは、<a href="https://developer.salesforce.com/docs/atlas.ja-jp.246.0.api_rest.meta/api_rest/intro_what_is_rest_api.htm">Salesforce REST API 開発者ガイド</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   td&gt; <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエストメソッド </a> を参照してください。</p> </td> 
+   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエストメソッド </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -364,13 +371,35 @@ Salesforce コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件文を JSON で使用する場合は、条件文を引用符で囲みます。</p> 
+   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件ステートメントを JSON で使用する場合は、条件ステートメントの外側に引用符を挿入します。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+>[!BEGINSHADEBOX]
+
+**例：**&#x200B;次の API 呼び出しは、[!DNL Salesforce] アカウントのすべてのユーザーのリストを返します。
+
+* **URL**：`query`
+
+* **メソッド**：[!UICONTROL GET]
+
+* **クエリ文字列**：
+
+* **キー**：`q`
+
+* **値**：`SELECT Id, Name, CreatedDate, LastModifiedDate FROM User LIMIT 10`
+
+一致した検索結果は、**[!UICONTROL バンドル]／[!UICONTROL 本文]／[!UICONTROL レコード]**&#x200B;下のモジュールの出力に表示されます。
+
+この例では、6 人のユーザーが返されました。
+
+![ 検索に一致 ](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
+
+>[!ENDSHADEBOX]
 
 #### [!UICONTROL レコードを削除]
 
@@ -388,7 +417,7 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type] </td> 
@@ -417,7 +446,7 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr>
     <td>[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr>
     <td>[!UICONTROL Type of Download]</td>
@@ -451,7 +480,7 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr>
     <td>[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr>
     <td>[!UICONTROL Record Type]</td>
@@ -459,7 +488,7 @@ Salesforce コネクタでは、以下を使用します。
   </tr> 
   <tr>
     <td>[!UICONTROL Record Fields]</td>
-    <td>モジュールで読み取るフィールドを選択します。少なくとも 1 つのフィールドを選択する必要があります。</td>
+    <td>モジュールで読み取るフィールドを選択します。少なくとも 1 つのフィールドを選択する必要があります。 使用可能なフィールドは、レコードのタイプによって異なります。</td>
   </tr> 
   <tr>
     <td>[!UICONTROL ID]</td>
@@ -467,26 +496,6 @@ Salesforce コネクタでは、以下を使用します。
   </tr> 
  </tbody> 
 </table>
-
->[!INFO]
->
->**例：**&#x200B;次の API 呼び出しは、[!DNL Salesforce] アカウントのすべてのユーザーのリストを返します。
->
->* **URL**：`query`
->
->* **メソッド**：[!UICONTROL GET]
->
->* **クエリ文字列**：
->
->* **キー**：`q`
->
->* **値**：`SELECT Id, Name, CreatedDate, LastModifiedDate FROM User LIMIT 10`
->
->一致した検索結果は、**[!UICONTROL バンドル]／[!UICONTROL 本文]／[!UICONTROL レコード]**&#x200B;下のモジュールの出力に表示されます。
->
->この例では、6 人のユーザーが返されました。
->
->![ 検索に一致 ](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
 
 
 #### [!UICONTROL レコードを更新]
@@ -505,7 +514,7 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL ID]</td> 
@@ -537,7 +546,7 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Type of Upload]</td> 
@@ -549,7 +558,7 @@ Salesforce コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder]</td> 
-   <td>モジュールがアップロードするファイルを含むフォルダーを選択します。 </td> 
+   <td>ドキュメントをアップロードするフォルダーを選択します。 </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Source File]</td> 
@@ -561,8 +570,6 @@ Salesforce コネクタでは、以下を使用します。
 #### ファイルをアップロード
 
 このアクションモジュールは、1 つのファイルをSalesforceにアップロードします。
-
-
 
 <table style="table-layout:auto"> 
  <col> 
@@ -591,47 +598,14 @@ Salesforce コネクタでは、以下を使用します。
   <tr> 
    <td role="rowheader">[!UICONTROL Visibility]</td> 
    <td>ドキュメントのリンクを使用する場合は、ドキュメントの表示を入力またはマッピングします。<ul><li><b>AllUsers</b><p>権限を持つすべてのユーザーが利用できます</p></li><li><b>InternalUsers</b><p>権限を持つ内部ユーザーが使用できます。</p></li><li><b>SharedUsers</b><p>ファイルの投稿先のフィードを表示できるユーザーが使用できます。</p></li></ul></td> 
-  </tr>
-
-### 検索
-
-#### [!UICONTROL クエリによる検索]
-
-この検索モジュールは、指定された検索クエリに一致するレコードを [!DNL Salesforce] 内のオブジェクトで検索します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
-
-このモジュールを設定する際には、次のフィールドが表示されます。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Search Type]</td> 
-   <td> <p>モジュールで実行する検索のタイプを選択します。</p> 
-    <ul> 
-     <li> <p>[!UICONTROL Simple]</p> </li> 
-     <li> <p>[!UICONTROL Using SOSL (Salesforce Object Search Language)]</p> </li> 
-     <li> <p>[!UICONTROL Using SOQL (Salesforce Object Query Language)]</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td> <p>[!UICONTROL Type] </p> </td> 
-   <td> <p>「シンプル」検索タイプを選択した場合は、モジュールで検索する [!DNL Salesforce] レコードのタイプを選択します。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Query]／[!UICONTROL SOSL Query]／[!UICONTROL SOQL Query]</td> 
-   <td> <p>検索に使用するクエリを入力します。</p> <p>SOSL について詳しくは、[!DNL Salesforce] ドキュメントの <a href="https://developer.salesforce.com/docs/atlas.ja-jp.soql_sosl.meta/soql_sosl/sforce_api_calls_sosl.htm">Salesforce Object Search Language（SOSL）</a>を参照してください。</p> <p>SOQL について詳しくは、[!DNL Salesforce] ドキュメントの <a href="https://developer.salesforce.com/docs/atlas.ja-jp.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm">Salesforce Object Query Language（SOQL）</a>を参照してください。</p> <p>メモ：モジュールの出力は、パラメーター <code>RETURNING </code> の値に左右されます。<code>LIMIT</code> を使用する場合、[!DNL Fusion] は「[!UICONTROL Maximal count of records]」フィールドの設定を無視します。制限を設定しない場合、Fusion は [!UICONTROL LIMIT = Maximal count of records] という値を挿入します。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Maximal count of records]</td> 
-   <td> <p>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+### 検索
+
+* [検索](#search)
+* [クエリを使用して検索](#search-with-query)
 
 #### [!UICONTROL 検索]
 
@@ -655,7 +629,7 @@ Salesforce コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td>モジュールの出力に含めるフィールドを選択します。</td> 
+   <td>モジュールの出力に含めるフィールドを選択します。フィールドは、レコードタイプに基づいて使用できます。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Result set]</td> 
@@ -664,6 +638,44 @@ Salesforce コネクタでは、以下を使用します。
   <tr> 
    <td role="rowheader">[!UICONTROL Maximal]</td> 
    <td>シナリオの実行サイクルごとにモジュールが取得するレコードの最大数を入力またはマッピングします。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL クエリによる検索]
+
+この検索モジュールは、指定された検索クエリに一致するレコードを [!DNL Salesforce] 内のオブジェクトで検索します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
+
+このモジュールを設定する際には、次のフィールドが表示されます。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Search Type]</td> 
+   <td> <p>モジュールで実行する検索のタイプを選択します。</p> 
+    <ul> 
+     <li> <p>[!UICONTROL Simple]</p> </li> 
+     <li> <p>[!UICONTROL Using SOSL (Salesforce Object Search Language)]</p> </li> 
+     <li> <p>[!UICONTROL Using SOQL (Salesforce Object Query Language)]</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL Type] </p> </td> 
+   <td> <p>「シンプル」検索タイプを選択した場合は、モジュールで検索する [!DNL Salesforce] レコードのタイプを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Query]／[!UICONTROL SOSL Query]／[!UICONTROL SOQL Query]</td> 
+   <td> <p>検索に使用するクエリを入力します。</p> <p>SOSL について詳しくは、[!DNL Salesforce] ドキュメントの <a href="https://developer.salesforce.com/docs/atlas.ja-jp.soql_sosl.meta/soql_sosl/sforce_api_calls_sosl.htm">Salesforce Object Search Language（SOSL）</a>を参照してください。</p> <p>SOQL について詳しくは、[!DNL Salesforce] ドキュメントの <a href="https://developer.salesforce.com/docs/atlas.ja-jp.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm">Salesforce Object Query Language（SOQL）</a>を参照してください。</p> <p>メモ：モジュールの出力は、パラメーター <code>RETURNING </code> の値に左右されます。<code>LIMIT</code> を使用する場合、[!DNL Fusion] は「[!UICONTROL Maximal count of records]」フィールドの設定を無視します。制限を設定しない場合、Fusion は [!UICONTROL LIMIT = Maximal count of records] という値を挿入します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Maximal count of records]</td> 
+   <td> <p>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
