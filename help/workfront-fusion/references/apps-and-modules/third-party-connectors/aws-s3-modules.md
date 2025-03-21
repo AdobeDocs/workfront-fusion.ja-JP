@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion AWS]  S3 モジュールを使用す
 author: Becky
 feature: Workfront Fusion
 exl-id: 6b2d9dd5-0b33-4297-aea0-aba26072b26a
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: d98d49cdca997caa2d1601d0163ae3f50e21ed66
 workflow-type: tm+mt
-source-wordcount: '1217'
-ht-degree: 79%
+source-wordcount: '1417'
+ht-degree: 76%
 
 ---
 
@@ -17,6 +17,8 @@ ht-degree: 79%
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
 <table style="table-layout:auto">
@@ -24,39 +26,41 @@ ht-degree: 79%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 [!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
 
++++
+
 ## 前提条件
 
-[!UICONTROL AWS S3] モジュールを使用するには、[!DNL Amazon Web Service] アカウントが必要です。
+[!UICONTROL AWS S3] モジュールを使用するには [!DNL Amazon Web Service] アカウントが必要です。
 
 ## AWS S3 API の情報
 
@@ -79,20 +83,20 @@ AWS S3 コネクタでは、以下を使用します。
 
 ## [!DNL AWS] を [!DNL Workfront Fusion] に接続 {#connect-aws-to-workfront-fusion}
 
-[!DNL AWS S3] を [!DNL Workfront Fusion] に接続するには、[!DNL AWS] アカウントを [!DNL Workfront Fusion] に接続する必要があります。それには、まず [!DNL AWS] [!UICONTROL IAM] で API ユーザーを作成する必要があります。
+[!DNL AWS S3] を [!DNL Workfront Fusion] に接続するには、[!DNL AWS] アカウントを [!DNL Workfront Fusion] に接続する必要があります。これを行うには、まず [!DNL AWS] [!UICONTROL IAM] で API ユーザーを作成します。
 
 1. [!DNL AWS] [!UICONTROL IAM] アカウントにログインします。
-1. **[!UICONTROL Identity and Access Management]**/**[!UICONTROL Access Management]**/**[!UICONTROL Users]** に移動します。
+1. **[!UICONTROL ID とアクセスの管理]**／**[!UICONTROL アクセス管理]**／**[!UICONTROL ユーザー]**&#x200B;に移動します。
 
-1. **[!UICONTROL Add User]** をクリックします。
-1. 新しいユーザーの名前を入力し、「[!UICONTROL Access type]」セクションで「**[!UICONTROL Programmatic access]**」オプションを選択します。
-1. 「**[!UICONTROL Attach existing policies directly]**」をクリックして、検索バーで **[!UICONTROL AmazonS3FullAccess]** を検索します。 表示されたらクリックし、「**[!UICONTROL Next]**」をクリックします。
+1. 「**[!UICONTROL ユーザーを追加]**」をクリックします。
+1. 新しいユーザーの名前を入力し、「[!UICONTROL アクセスタイプ]」セクションで「**[!UICONTROL プログラムアクセス]**」オプションを選択します。
+1. 「**[!UICONTROL 既存のポリシーを直接添付]**」をクリックして、検索バーで **[!UICONTROL AmazonS3FullAccess]** を検索します。それが表示されたら選択して「**[!UICONTROL 次へ]**」をクリックします。
 
-1. 他のダイアログ画面に進み、「**[!UICONTROL Create User]**」をクリックします。
-1. 指定された **[!UICONTROL Access key ID]** と **[!UICONTROL Secret access key]** をコピーします。
+1. 他のダイアログ画面を進み、「**[!UICONTROL ユーザーを作成]**」をクリックします。
+1. 提供された&#x200B;**[!UICONTROL アクセスキー ID]** および&#x200B;**[!UICONTROL 秘密アクセスキー]**&#x200B;をコピーします。
 
-1. [!DNL Workfront Fusion] に移動し、[!DNL AWS S3] モジュールの **[!UICONTROL Create a connection]** ダイアログを開きます。
-1. 手順 7 の [!UICONTROL Access key ID] と [!UICONTROL Secret access key] を各フィールドに入力し、「**[!UICONTROL Continue]**」をクリックして接続を確立します。
+1. [!DNL Workfront Fusion] に移動して、[!DNL AWS S3] モジュールの&#x200B;**[!UICONTROL 接続を作成]**&#x200B;ダイアログを開きます。
+1. 手順7の「[!UICONTROL アクセスキー ID]」および「[!UICONTROL 秘密アクセスキー]」をそれぞれのフィールドに入力し、「**[!UICONTROL 続行]**」をクリックして接続を確立します。
 
 接続が確立されました。モジュールの設定に進むことができます。
 
@@ -109,12 +113,14 @@ AWS S3 コネクタでは、以下を使用します。
 
 ### アクション
 
-* [[!UICONTROL Create Bucket]](#create-bucket)
-* [[!UICONTROL Get File]](#get-file)
-* [[!UICONTROL Upload File]](#upload-file)
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
+* [[!UICONTROL バケットを作成]](#create-bucket)
+* [[!UICONTROL ファイルを取得]](#get-file)
+* [[!UICONTROL API 呼び出しの実行]](#make-an-api-call)
+* [[!UICONTROL ファイルをアップロード]](#upload-file)
 
-#### [!UICONTROL Create Bucket]
+#### [!UICONTROL バケットを作成]
+
+このアクションモジュールは、AWSにバケットを作成します。
 
 <table style="table-layout:auto">
  <col> 
@@ -122,7 +128,7 @@ AWS S3 コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL AWS] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-aws-to-workfront-fusion" class="MCXref xref">[!DNL AWS] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL AWS] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事内の<a href="#connect-aws-to-workfront-fusion" class="MCXref xref">[!DNL AWS] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Name] </td> 
@@ -130,14 +136,14 @@ AWS S3 コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Region] </td> 
-   <td> <p>地域のエンドポイントを選択します。詳しくは、AWS ドキュメントで<a href="https://docs.aws.amazon.com/general/latest/gr/rande.html">地域エンドポイント</a>についての説明を参照してください。</p> </td> 
+   <td> <p>地域のエンドポイントを選択します。詳しくは、AWS ドキュメントの <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints"> 地域エンドポイント </a> を参照してください。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get File]
+#### [!UICONTROL ファイルを取得]
 
-バケットからファイルをダウンロードします。
+このアクションモジュールは、バケットからファイルをダウンロードします。
 
 <table style="table-layout:auto">
  <col> 
@@ -149,7 +155,7 @@ AWS S3 コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Region] </td> 
-   <td> <p>地域のエンドポイントを選択します。詳しくは、[!DNL AWS] ドキュメントで<a href="https://docs.aws.amazon.com/general/latest/gr/rande.html">地域エンドポイント</a>についての説明を参照してください。</p> </td> 
+   <td> <p>地域のエンドポイントを選択します。詳しくは、[!DNL AWS] ドキュメントの <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints"> 地域エンドポイント </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Bucket] </td> 
@@ -162,38 +168,11 @@ AWS S3 コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload File]
+#### [!UICONTROL API 呼び出しの実行]
 
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL AWS] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-aws-to-workfront-fusion" class="MCXref xref">[!DNL AWS] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Region] </td> 
-   <td> <p>地域のエンドポイントを選択します。詳しくは、[!DNL AWS] ドキュメントで<a href="https://docs.aws.amazon.com/general/latest/gr/rande.html">地域エンドポイント</a>についての説明を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Folder] （オプション） </p> </td> 
-   <td> <p>ファイルのアップロード先であるターゲットフォルダーを指定します。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Headers] （オプション）</p> </td> 
-   <td> <p> リクエストヘッダーを挿入します。使用可能なヘッダーは、<a href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html">[!DNL AWS S3] ドキュメント - [!UICONTROL PUT] オブジェクト </a> にあります。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+このアクションモジュールは、AWS S3 API に対してカスタム呼び出しを行います。
 
-#### [!UICONTROL Make an API Call]
-
-[!DNL Amazon S3] API について詳しくは、「[[!DNL Amazon S3] [!UICONTROL REST] API の概要」を参照してください ](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html)
+[!DNL Amazon S3] API について詳しくは、「[[!DNL Amazon S3] [!UICONTROL REST] API の概要 ](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html)」を参照してください。
 
 <table style="table-layout:auto">
  <col> 
@@ -205,19 +184,19 @@ AWS S3 コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Region] </td> 
-   <td> <p>地域のエンドポイントを選択します。詳しくは、[!DNL AWS] ドキュメントで<a href="https://docs.aws.amazon.com/general/latest/gr/rande.html">地域エンドポイント</a>についての説明を参照してください。</p> </td> 
+   <td> <p>地域のエンドポイントを選択します。詳しくは、[!DNL AWS] ドキュメントの <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints"> 地域エンドポイント </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL URL]</td> 
-   <td> <p>URL でホスト URL を入力します。パスは <code> https://s3.&lt;selected-region>.amazonaws.com/</code> を基準として指定する必要があります。</p> </td> 
+   <td> <p>ホスト URL を入力します。 パスは <code> https://s3.&lt;selected-region>.amazonaws.com/</code> を基準として指定する必要があります。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Method]</td> 
-   <td> <p>API 呼び出しの設定に必要な [!UICONTROL HTTP] リクエストメソッドを選択します。 詳しくは、[!DNL Adobe Workfront Fusion]</a> の <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">[!UICONTROL HTTP] リクエストメソッドを参照してください。</p> </td> 
+   <td> <p>API 呼び出しを設定する必要がある [!UICONTROL HTTP] リクエストメソッドを選択します。詳細情報は、[!DNL Adobe Workfront Fusion]</a> の <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">[!UICONTROL HTTP] リクエストメソッドを参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Headers]</td> 
-   <td> <p>リクエストヘッダーを追加します。次の共通のリクエストヘッダーを使用できます。リクエストヘッダーについて詳細は、<a href="https://docs.aws.amazon.com/AmazonS3/latest/API/RESTCommonRequestHeaders.html">[!DNL AWS S3]API ドキュメント</a>を参照してください。</p> <p>[!DNL Workfront Fusion] 認証ヘッダーを自動的に追加します。</p> 
+   <td> <p>リクエストヘッダーを追加します。追加するヘッダーごとに、「<b> 項目を追加 </b>」をクリックしてヘッダーを入力します。 次の共通のリクエストヘッダーを使用できます。リクエストヘッダーについて詳細は、<a href="https://docs.aws.amazon.com/AmazonS3/latest/API/RESTCommonRequestHeaders.html">[!DNL AWS S3]API ドキュメント</a>を参照してください。</p> <p>[!DNL Workfront Fusion] 認証ヘッダーを自動的に追加します。</p> 
     <table style="table-layout:auto">
      <col> 
      <col> 
@@ -230,7 +209,7 @@ AWS S3 コネクタでは、以下を使用します。
      <tbody> 
       <tr> 
        <td role="rowheader"> <p>[!UICONTROL Content-Length]</p> </td> 
-       <td> <p>RFC 2616 に従ったメッセージの長さ（ヘッダーなし）。このヘッダーは、[!UICONTROL PUT] および XML を読み込む操作（ログや ACL など）に必要です。</p> </td> 
+       <td> <p>RFC 2616 に従ったメッセージの長さ（ヘッダーなし）。このヘッダーは、[!UICONTROL PUT] や、XML を読み込む操作（ログや ACL など）に必要です。</p> </td> 
       </tr> 
       <tr> 
        <td role="rowheader"> <p>[!UICONTROL Content-Type]</p> </td> 
@@ -238,7 +217,7 @@ AWS S3 コネクタでは、以下を使用します。
       </tr> 
       <tr> 
        <td role="rowheader"> <p>[!UICONTROL Content-MD5]</p> </td> 
-       <td> <p>RFC 1864 に従って、base64 エンコードされた 128 ビットの MD5 ダイジェスト（ヘッダーなし）。このヘッダーをメッセージの整合性チェックとして使用し、データが最初に送信されたのと同じデータであることを検証できます。これはオプションですが、エンドツーエンドの整合性チェックとして [!UICONTROL Content-MD5] メカニズムを使用することをお勧めします。 [!UICONTROL REST] リクエストの認証の詳細については、『 <i>[!DNL Amazon] Simple Storage Service デベロッパーガイド </a> の <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAuthentication.html?r=1821">[!UICONTROL REST] 認証 </i> を参照してください。</p> </td> 
+       <td> <p>RFC 1864 に従って、base64 エンコードされた 128 ビットの MD5 ダイジェスト（ヘッダーなし）。このヘッダーをメッセージの整合性チェックとして使用し、データが最初に送信されたのと同じデータであることを検証できます。これはオプションですが、[!UICONTROL Content-MD5] メカニズムをエンドツーエンドの整合性チェックとして使用することをお勧めします。[!UICONTROL REST] リクエスト認証について詳しくは、AWS ドキュメントの <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAuthentication.html?r=1821">REST リクエストの署名と認証 </a> を参照してください。</p> </td> 
       </tr> 
       <tr> 
        <td role="rowheader"> <p>[!UICONTROL Date]</p> </td> 
@@ -246,15 +225,15 @@ AWS S3 コネクタでは、以下を使用します。
       </tr> 
       <tr> 
        <td role="rowheader"> <p>[!UICONTROL Expect]</p> </td> 
-       <td> <p>アプリケーションが [!UICONTROL 100-continue] を使用する場合、確認を受け取るまでリクエスト本文は送信されません。 ヘッダーに基づいてメッセージを拒否した場合、メッセージの本文は送信されません。このヘッダーは、本文を送信する場合にのみ使用できます。</p> <p>有効な値： [!UICONTROL 100-continue]</p> </td> 
+       <td> <p>アプリケーションで [!UICONTROL 100-continue] を使用する場合、確認を受け取るまでリクエスト本文は送信されません。ヘッダーに基づいてメッセージを拒否した場合、メッセージの本文は送信されません。このヘッダーは、本文を送信する場合にのみ使用できます。</p> <p>有効な値：[!UICONTROL 100-continue]</p> </td> 
       </tr> 
       <tr> 
        <td role="rowheader"> <p>[!UICONTROL Host]</p> </td> 
-       <td> <p>パススタイルのリクエストの場合、値は <code>s3.amazonaws.com</code> です。仮想スタイルのリクエストの場合、値は <code>BucketName.s3.amazonaws.com</code> です。詳細情報については、<i>[!DNL Amazon]シンプルストレージサービス開発者ガイド</i>の<a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/VirtualHosting.html">仮想ホスティング</a>を参照してください。</p> <p>このヘッダーは HTTP 1.1 に必要であり、ほとんどのツールキットで自動的に追加されます。HTTP/1.0 リクエストの場合はオプションです。</p> </td> 
+       <td> <p>パススタイルのリクエストの場合、値は <code>s3.amazonaws.com</code> です。仮想スタイルのリクエストの場合、値は <code>BucketName.s3.amazonaws.com</code> です。詳しくは、AWS ドキュメントの <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/VirtualHosting.html"> 仮想ホスティング </a> を参照してください。</p> <p>このヘッダーは HTTP 1.1 に必要であり、ほとんどのツールキットで自動的に追加されます。HTTP/1.0 リクエストの場合はオプションです。</p> </td> 
       </tr> 
       <tr> 
        <td role="rowheader"> <p>[!UICONTROL x-amz-content-sha256]</p> </td> 
-       <td> <p>署名バージョン 4 を使用してリクエストを認証する場合は、このヘッダーによってリクエストペイロードのハッシュが提供されます。オブジェクトをチャンク単位でアップロードする場合は、値を <code>STREAMING-AWS4-HMAC-SHA256-PAYLOAD</code> に設定して、署名がヘッダーのみを対象とし、ペイロードがないことを示します。詳細情報については、<a href="https://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-streaming.html">認証ヘッダーの署名の計算：複数チャンクでのペイロードの転送（チャンクアップロード）（[!DNL AWS]署名バージョン 4）</a>を参照してください。</p> </td> 
+       <td> <p>署名バージョン 4 を使用してリクエストを認証する場合は、このヘッダーによってリクエストペイロードのハッシュが提供されます。オブジェクトをチャンク単位でアップロードする場合は、値を <code>STREAMING-AWS4-HMAC-SHA256-PAYLOAD</code> に設定して、署名がヘッダーのみを対象とし、ペイロードがないことを示します。詳しくは、AWS ドキュメントの <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-streaming.html">Authorization Header の署名計算 </a> を参照してください。</p> </td> 
       </tr> 
       <tr> 
        <td role="rowheader"> <p>[!UICONTROL x-amz-date]</p> </td> 
@@ -277,7 +256,7 @@ AWS S3 コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Body]</td> 
-   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：   <p><code>if</code> などの条件ステートメントを JSON で使用する場合は、条件ステートメントの外側に引用符を挿入します。</p> 
+   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：   <p><code>if</code> などの条件文を JSON で使用する場合は、条件文を引用符で囲みます。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>">  
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -285,12 +264,43 @@ AWS S3 コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
+#### [!UICONTROL ファイルをアップロード]
+
+このアクションモジュールは、AWS S3 バケットにファイルをアップロードします。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>[!DNL AWS] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-aws-to-workfront-fusion" class="MCXref xref">[!DNL AWS] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Region] </td> 
+   <td> <p>地域のエンドポイントを選択します。詳しくは、[!DNL AWS] ドキュメントの <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints"> 地域エンドポイント </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Folder] </p> </td> 
+   <td> <p>ファイルのアップロード先であるターゲットフォルダーを指定します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Headers]（オプション）</p> </td> 
+   <td> <p> 追加するヘッダーごとに「<b> 項目を追加 </b>」をクリックし、ヘッダーのキーと値を入力します。</p><p> 使用可能なヘッダーについては、AWS ドキュメントの <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html">PutObject</a> を参照してください。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 ### 検索
 
-* [[!UICONTROL List Files]](#list-files)
-* [[!UICONTROL List Folders]](#list-folders)
+* [[!UICONTROL ファイルをリストする]](#list-files)
+* [[!UICONTROL フォルダーをリストする]](#list-folders)
 
-#### [!UICONTROL List Files]
+#### [!UICONTROL ファイルをリストする]
 
 指定された場所からファイルのリストを返します。
 
@@ -304,20 +314,20 @@ AWS S3 コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Region] </td> 
-   <td> <p>地域のエンドポイントを選択します。詳しくは、[!DNL AWS] ドキュメントで<a href="https://docs.aws.amazon.com/general/latest/gr/rande.html">地域エンドポイント</a>についての説明を参照してください。</p> </td> 
+   <td> <p>地域のエンドポイントを選択します。詳しくは、[!DNL AWS] ドキュメントの <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints"> 地域エンドポイント </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Bucket] </td> 
    <td> <p>ファイルを検索する [!DNL Amazon S3] バケットを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Prefix] （オプション）</p> </td> 
-   <td> <p> ファイルを検索するフォルダーのパス（例： <code>workfrontfusion/work.</code></p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL プレフィックス ]</p> </td> 
+   <td> <p> ファイルを検索するフォルダーへのパス（例：）を入力します <code>workfrontfusion/work.</code></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List Folders]
+#### [!UICONTROL フォルダーをリストする]
 
 指定された場所からフォルダーのリストを返します。
 
@@ -331,15 +341,15 @@ AWS S3 コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Region] </td> 
-   <td> <p>地域のエンドポイントを選択します。詳しくは、AWS ドキュメントで<a href="https://docs.aws.amazon.com/general/latest/gr/rande.html">地域エンドポイント</a>についての説明を参照してください。</p> </td> 
+   <td> <p>地域のエンドポイントを選択します。詳しくは、[!DNL AWS] ドキュメントの <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints"> 地域エンドポイント </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Bucket] </td> 
    <td> <p>フォルダーを検索する [!DNL Amazon S3] バケットを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Prefix] （オプション）</p> </td> 
-   <td> <p> フォルダーを検索するフォルダーのパス（例： <code>workfrontfusion/work.</code></p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Prefix]（オプション）</p> </td> 
+   <td> <p> フォルダーを検索するフォルダーへのパス（例：） <code>workfrontfusion/work.</code></p> </td> 
   </tr> 
  </tbody> 
 </table>
