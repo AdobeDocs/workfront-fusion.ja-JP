@@ -4,9 +4,9 @@ description: Adobe Photoshop モジュールを使用すると、Adobe Photoshop
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: ad5701c5484da802dea8668c9c4aad58a6dba3eb
 workflow-type: tm+mt
-source-wordcount: '4334'
+source-wordcount: '4352'
 ht-degree: 20%
 
 ---
@@ -68,6 +68,7 @@ ht-degree: 20%
 [!DNL Adobe Photoshop] コネクタを使用する前に、次の前提条件が満たされていることを確認する必要があります。
 
 * アクティブな [!DNL Adobe Photoshop] アカウントが必要です。
+* クライアント ID とクライアント秘密鍵が必要です。 これらはAdobe Developer Consoleから入手できます。
 
 ## Adobe Photoshop API の情報
 
