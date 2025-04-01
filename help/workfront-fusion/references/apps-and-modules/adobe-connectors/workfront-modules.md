@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion Adobe Workfront コネクタを使用する�
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: dab5aacd091cec2644f3e8ddac2549dac7b927b8
+source-git-commit: 76272b2e9f084f670075d9b975ffa26c0be07fe5
 workflow-type: tm+mt
-source-wordcount: '7075'
-ht-degree: 59%
+source-wordcount: '7796'
+ht-degree: 57%
 
 ---
 
@@ -375,7 +375,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 
 +++
 
-+++ **[!UICONTROL レコードを作成（カスタムフォームを添付）]**
++++ **[!UICONTROL レコードを作成]**
 
 このアクションモジュールは、Workfrontのプロジェクト、タスク、イシューなどのオブジェクトを作成し、新しいオブジェクトにカスタムフォームを追加できます。 モジュールを使用すると、モジュールで使用可能なオブジェクトのフィールドを選択できます。
 
@@ -422,7 +422,12 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 
 +++
 
-+++ **[!UICONTROL レコードを作成]**
++++ **[!UICONTROL レコードを作成（レガシー）]**
+
+>[!IMPORTANT]
+>
+>このモジュールは、レコードを作成モジュールに置き換えられました。 新しいシナリオでは、そのモジュールを使用することをお勧めします。
+>このモジュールを使用する既存のシナリオは、引き続き期待どおりに機能します。 このモジュールは、2025 年 5 月にモジュールセレクターから削除されます。
 
 このアクションモジュールは、Workfront でプロジェクト、タスク、イシューなどのオブジェクトを作成します。モジュールを使用すると、モジュールで使用可能なオブジェクトのフィールドを選択できます。
 
@@ -820,8 +825,65 @@ Web フックを作成した後、イベントの送信先エンドポイント�
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
+    <td> <p>Workfront アプリケーションをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">WorkfrontをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Record Type]</td>
 
-<td> <p>Workfront アプリケーションをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">WorkfrontをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+<td>モジュールで読み取るWorkfront オブジェクトタイプを選択します。</td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Outputs]</td>
+
+<td> <p>このモジュールの出力バンドルに含める情報を選択します。</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL 出力のカスタム フォーム ]</td>
+     <td> <p>このモジュールの出力バンドルに含めるカスタムフォームを選択し、出力に含めるカスタムフォームから特定のフィールドを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL References]</td>
+   <td>出力に含める参照フィールドを選択します。</td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Collections]</td>
+   <td>出力に含める参照フィールドを選択します。</td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL ID]</td>
+   <td> <p>モジュールで読み取るレコードの一意のWorkfront ID を入力します。</p> <p>ID を取得するには、ブラウザーでWorkfront オブジェクトを開き、URL の末尾にある「ID=」の後のテキストをコピーします。 例：https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+
++++
+
++++ **[!UICONTROL レコードの読み取り（レガシー）]**
+
+>[!IMPORTANT]
+>
+>このモジュールは、レコードを読み取りモジュールに置き換えられました。 新しいシナリオでは、そのモジュールを使用することをお勧めします。
+>このモジュールを使用する既存のシナリオは、引き続き期待どおりに機能します。 このモジュールは、2025 年 5 月にモジュールセレクターから削除されます。
+
+このアクションモジュールは、1 つのレコードからデータを取得します。
+
+レコードの ID を指定します。また、モジュールで読み取る関連レコードを指定することもできます。
+
+例えば、モジュールが読み取っているレコードがプロジェクトの場合、プロジェクトのタスクを読み込むように指定できます。
+
+モジュールは、指定した出力フィールドからデータの配列を返します。
+
+このモジュールを設定する際には、次のフィールドが表示されます。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td>[!UICONTROL Connection]</td>
+    <td> <p>Workfront アプリケーションをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">WorkfrontをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Record Type]</td>
@@ -876,7 +938,12 @@ Workfrontは最近、イベント購読サービスの新しいバージョン�
 
 +++
 
-+++ **レコードの更新（カスタムフォームの添付を使用）**
++++ **レコードを更新**
+
+>[!IMPORTANT]
+>
+>このモジュールは、レコードを更新モジュールに置き換えられました。 新しいシナリオでは、そのモジュールを使用することをお勧めします。
+>このモジュールを使用する既存のシナリオは、引き続き期待どおりに機能します。 このモジュールは、2025 年 5 月にモジュールセレクターから削除されます。
 
 
 このアクションモジュールは、プロジェクト、タスク、イシューなどのオブジェクトを更新します。モジュールを使用すると、モジュールで使用可能なオブジェクトのフィールドを選択できます。
@@ -925,7 +992,7 @@ Workfrontは最近、イベント購読サービスの新しいバージョン�
 
 +++
 
-+++ **[!UICONTROL レコードを更新]**
++++ **[!UICONTROL レコードを更新（レガシー）]**
 
 このアクションモジュールは、プロジェクト、タスク、イシューなどのオブジェクトを更新します。モジュールを使用すると、モジュールで使用可能なオブジェクトのフィールドを選択できます。
 
@@ -1095,9 +1162,69 @@ Workfrontは最近、イベント購読サービスの新しいバージョン�
  </tbody> 
 </table>
 
++++ **[!UICONTROL レコードを検索]**
+
+この検索モジュールは、指定した検索クエリに一致するWorkfront内のオブジェクト内のレコードを検索します。
+
+この情報は、シナリオ内の後続のモジュールにマッピングできます。
+
+このモジュールを設定する際には、次のフィールドが表示されます。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>Workfront アプリケーションをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">WorkfrontをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Record Type]</td> 
+   <td> <p>モジュールで検索するWorkfront レコードのタイプを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL カスタム フォーム リスト ]</td> 
+   <td> <p>1 つ以上のカスタムフォームを選択します。 これらのカスタムフォームのフィールドは、検索クエリで使用できるようになります。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Result Set]</td> 
+   <td>モジュールが検索条件に一致する最初の結果を取得するか、一致するすべての結果を取得するかを指定するオプションを選択します。</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Maximal]</td> 
+   <td> <p>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Search criteria fields]</td> 
+   <td> <p>検索条件に使用するフィールドを選択します。これらのフィールドは、検索条件ドロップダウンで使用できるようになります。</p></td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Search criteria]</td> 
+   <td> <p>検索するフィールド、クエリで使用する演算子、およびそのフィールドで検索する値を入力します。</p> <p>メモ：検索条件に <code>username </code> を使用しないでください。Workfrontへの API クエリに <code>username </code> を含めると、ユーザーがWorkfrontにログインし、検索が成功しなくなります。</p> <p>メモ：<code>In</code> と <code>NotIn</code> は配列で動作します。入力は配列形式である必要があります。</p></td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL Outputs]</td> 
+   <td> <p>このモジュールの出力に含めるフィールドを選択します。</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL References]</td> 
+   <td>検索に含める参照フィールドを選択します。</td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL Collections]</td> 
+   <td>検索に追加するコレクションを選択します。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 +++
 
-+++ **[!UICONTROL 検索]**
++++ **[!UICONTROL 検索（レガシー）]**
+
+>[!IMPORTANT]
+>
+>このモジュールは、レコードを検索モジュールに置き換えられました。 新しいシナリオでは、そのモジュールを使用することをお勧めします。
+>このモジュールを使用する既存のシナリオは、引き続き期待どおりに機能します。 このモジュールは、2025 年 5 月にモジュールセレクターから削除されます。
 
 この検索モジュールは、指定した検索クエリに一致するWorkfront内のオブジェクト内のレコードを検索します。
 
