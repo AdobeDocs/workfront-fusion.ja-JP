@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  シナリオでは、Slack を使�
 author: Becky
 feature: Workfront Fusion
 exl-id: c9c68a4c-f592-42d1-b15f-a525b9aa3944
-source-git-commit: e52af924094722b0d212098ae2af5eded12a5309
+source-git-commit: eb0518ba0d1a0c758cb547e362c722f4be3674c7
 workflow-type: tm+mt
-source-wordcount: '1864'
-ht-degree: 76%
+source-wordcount: '1954'
+ht-degree: 66%
 
 ---
 
@@ -186,8 +186,6 @@ Slack コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-<!--Becky start here-->
-
 
 #### [!UICONTROL メッセージを削除]
 
@@ -207,7 +205,11 @@ Slack コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Message ID]</td> 
-   <td> <p> 削除するメッセージのタイムスタンプを入力またはマッピングします。</p> <p>メモ：タイムスタンプは、パブリックチャネルを監視モジュールなどの別のモジュールを使用して取得できます。</p> </td> 
+   <td> <p> 削除するメッセージのタイムスタンプを入力またはマッピングします。</p> <p>メモ：タイムスタンプは、プライベートチャネルメッセージを監視モジュールなどの別のモジュールを使用して取得できます。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[！ユーザーとしての UICONTROL]</td> 
+   <td> <p> 接続で使用された資格情報を持つユーザーとしてメッセージを削除する場合は、このオプションを有効にします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -230,14 +232,14 @@ Slack コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Message ID (Time stamp)]</p> </td> 
-   <td> <p> 情報を取得するメッセージのメッセージタイムスタンプを入力またはマッピングします。</p> <p>メモ：タイムスタンプは、[!UICONTROL Watch Public Channel] モジュールなどの別のモジュールを使用して取得できます。</p> </td> 
+   <td> <p> 情報を取得するメッセージのメッセージタイムスタンプを入力またはマッピングします。</p> <p>メモ：タイムスタンプは、[!UICONTROL Watch Private Channel Messages] モジュールなどの別のモジュールを使用して取得できます。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### [!UICONTROL  公開チャネルメッセージの取得 ]**
 
-このアクションモジュールは、指定されたパブリックチャネルから指定された ID を持つメッセージを返します。
+このアクションモジュールは、指定された公開チャネルから、指定された ID を持つメッセージを返します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -253,7 +255,7 @@ Slack コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Message ID (Time stamp)]</td> 
-   <td> <p> 情報を取得するメッセージのメッセージタイムスタンプを入力またはマッピングします。</p> <p>メモ：タイムスタンプは、[!UICONTROL Watch Public Channel] モジュールなどの別のモジュールを使用して取得できます。</p> </td> 
+   <td> <p> 情報を取得するメッセージのメッセージタイムスタンプを入力またはマッピングします。</p> <p>注意：タイムスタンプは、[!UICONTROL Watch Public Channel Messages] モジュールなどの別のモジュールを使用して取得できます。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -270,21 +272,33 @@ Slack コネクタでは、以下を使用します。
    <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>[!DNL Slack] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
-  <tr> 
+<!--  <tr> 
    <td role="rowheader"> <p>[!UICONTROL Enter a channel ID or name]</p> </td> 
-   <td> <p>必要なメッセージを選択する方法を選択します。</p> 
+   <td> <p>Choose how you want to select the message you want to .</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p><strong>[!UICONTROL Channel ID or name]</strong> フィールドで、チャネル ID またはメッセージを含むチャネルを入力またはマッピングし、メッセージの <strong>[!UICONTROL Time Stamp (Message ID)]</strong> を入力します。</p> <p>メモ：チャネル ID は、[!UICONTROL List Channels] モジュールを使用して取得できます。</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>チャネルのタイプを選択し、チャネルを選択して、メッセージを選択します。</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>In the <strong>[!UICONTROL Channel ID or name]</strong> field, enter or map the Channel ID or of the channel that contains the message, then enter the <strong>[!UICONTROL Time Stamp (Message ID)]</strong> of the message.</p> <p>Note: The Channel ID can be retrieved using the [!UICONTROL List Channels] module.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Select the type of channel, then select the channel, then select the message.</p> </li> 
     </ul> </td> 
+  </tr> -->
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Channel ID]</p> </td> 
+   <td> <p>更新するメッセージを含むチャネルの ID を入力またはマッピングします。</p> <p>メモ：チャネル ID は、[!UICONTROL List Channels] モジュールを使用して取得できます。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Message ID (Time stamp)]</p> </td> 
+   <td> <p> 情報を取得するメッセージのメッセージタイムスタンプを入力またはマッピングします。</p> <p>注意：タイムスタンプは、[!UICONTROL Watch Public Channel Messages] モジュールなどの別のモジュールを使用して取得できます。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Text]</p> </td> 
    <td> <p>更新するメッセージの新しいテキストコンテンツを入力します。</p> <p>詳しくは、[!DNL Slack] ドキュメントの<a href="https://api.slack.com/docs/formatting">アプリケーションサーフェスのテキストの書式</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Blocks]</td> 
-   <td>ブロックは、メッセージをカスタマイズおよび整理するために使用できる再利用可能なコンポーネントです。ブロックについて詳しくは、[!DNL Slack] ドキュメント内の <a href="https://api.slack.com/block-kit">Block Kit</a> を参照してください。</td> 
+   <td role="rowheader">[！ユーザーとしての UICONTROL]</td> 
+   <td>このオプションを有効にすると、このモジュールの接続で使用される資格情報を所有するユーザーとしてメッセージが更新されます。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Attachments]</td> 
+   <td>メッセージに添付する項目ごとに、「<b> 項目を追加 </b>」をクリックして項目の詳細を入力します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Link names]</p> </td> 
@@ -409,14 +423,14 @@ Slack コネクタでは、以下を使用します。
    <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>[!DNL Slack] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Channel type]</td> 
-   <td>一覧表示するメンバーのリストを含むチャネルのタイプを選択します。</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Public]／[!UICONTROL Private Channel]</td> 
-   <td>メンバーを一覧表示するチャネルを選択します。</td> 
-  </tr> 
+<tr> 
+   <td role="rowheader"> <p>[!UICONTROL Enter a channel ID or name]</p> </td> 
+   <td> <p>必要なメッセージを選択する方法を選択します。</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>「<strong>[!UICONTROL チャネル ID または名前 ]</strong>」フィールドに、ユーザーのリストを表示するチャネル ID またはチャネルのマッピングを入力します。</p> <p>メモ：チャネル ID は、[!UICONTROL List Channels] モジュールを使用して取得できます。</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>チャネルのタイプを選択し、チャネルを選択します。</p> </li> 
+    </ul> </td> 
+  </tr>
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
    <td> <p>[!DNL Workfront Fusion]が 1 回の実行サイクルで返すメンバーの最大数を設定します。</p> </td> 
@@ -465,6 +479,10 @@ Slack コネクタでは、以下を使用します。
   <tr> 
    <td role="rowheader">[!UICONTROL Base URL]</td> 
    <td>API 呼び出しに使用するベース URL を選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL アクセストークンを送信 ]</td> 
+   <td>アクセストークンをヘッダーとして送信するか、クエリパラメーターとして送信するかを選択します。</td> 
   </tr> 
  </tbody> 
 </table>
