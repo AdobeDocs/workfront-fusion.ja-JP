@@ -5,16 +5,18 @@ description: この記事では、シナリオの実行方法とシナリオ内�
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 27%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # シナリオ実行フロー
 
 この記事では、シナリオの実行方法、シナリオ内でのデータのフロー、各モジュールで処理されるデータの表示方法について説明します。
+
+アクティブなシナリオでのデータのフローを表示するには、[ 実行中のシナリオでのデータフローの表示 ](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md) を参照してください。
 
 ## シナリオ実行フロー
 

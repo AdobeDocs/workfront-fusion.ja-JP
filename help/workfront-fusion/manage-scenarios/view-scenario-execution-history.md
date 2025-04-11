@@ -1,13 +1,13 @@
 ---
-title: 不完全な実行の表示と解決
-description: '[!UICONTROL Incomplete executions] フォルダーには、エラーが原因で正常に完了しなかったシナリオ実行が格納されます。 保存された未完了の実行は、手動または自動で解決できます。'
+title: シナリオの実行履歴の表示
+description: シナリオのイベントや実行に関する情報を表示したり、シナリオのすべての実行で特定のデータを検索したりできます。
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 28%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 28%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規： [!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td> <p>新規：[!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
@@ -52,7 +52,7 @@ ht-degree: 28%
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：組織は [!DNL Adobe Workfront Fusion] を購入する必要があります。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：[!DNL Adobe Workfront Fusion] を購入してください。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
    <p>または</p>
    <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
    </td> 
@@ -80,9 +80,9 @@ ht-degree: 28%
 
 ### 「履歴」タブでのシナリオ履歴の表示
 
-「[!UICONTROL History]」タブには、「[!UICONTROL Scenario detail]」ページで使用可能な詳細情報よりも詳細に表示されます。 また、「[!UICONTROL History]」タブで、実行をフィルタリングして並べ替えることもできます。
+「[!UICONTROL 履歴]」タブには、[!UICONTROL シナリオの詳細]ページよりも詳細な情報が表示されます。また、[!UICONTROL 履歴]タブで実行のフィルタリングや並べ替えができます。
 
-1. 左側のパネルで「**[!UICONTROL Scenario]**」タブをクリックし、シナリオをクリックします。
+1. 左パネルの「**[!UICONTROL シナリオ]**」タブをクリックし、シナリオをクリックします。
 
    または
 
@@ -93,31 +93,31 @@ ht-degree: 28%
 
    シナリオの実行ごとに、次の詳細が表示されます。
 
-   * 実行が **[!UICONTROL Started]** 行された日付
+   * 実行が&#x200B;**[!UICONTROL 開始]**&#x200B;した日付
    * 実行 ID
-   * **[!UICONTROL Status]** （成功または失敗）
-   * 実行 **[!UICONTROL Duration]**
-   * **[!UICONTROL Operations]** 数
-   * **[!UICONTROL Data Transfer]** のサイズ
+   * **[!UICONTROL ステータス]**（成功または失敗）
+   * 実行&#x200B;**[!UICONTROL 期間]**
+   * **[!UICONTROL 操作]**&#x200B;の回数
+   * **[!UICONTROL データ転送]**&#x200B;のサイズ
 
    >[!NOTE]
    >
    >実行の詳細がストレージに書き込まれる一方で、シナリオ履歴では、最近実行されたシナリオの横に&#x200B;**処理**&#x200B;バッジが表示されます。処理は、シナリオの実行直後に行われます。数分以上続くことはありません。シナリオ実行の処理中は、シナリオ実行の詳細が表示されない場合があります。
 
-1. 特定のシナリオ実行の詳細を表示するには、右端の **詳細** をクリックします。 [!UICONTROL details] リンクは、実行に詳細がある場合にのみ表示されます。
+1. 特定のシナリオ実行の詳細を表示するには、右端の **詳細** をクリックします。 [!UICONTROL 詳細]リンクは、実行に詳細が含まれる場合にのみ表示されます。
 1. イベントを表示するには、「イベントを表示 **をオンに切り替え** す。
 
 
 ### 「シナリオ詳細」ページでのシナリオ履歴の表示
 
 
-1. 左側のパネルで「**[!UICONTROL Scenario]**」タブをクリックし、シナリオをクリックします。
+1. 左パネルの「**[!UICONTROL シナリオ]**」タブ、シナリオの順にクリックします。
 
    または
 
    シナリオエディターでシナリオに取り組んでいる場合は、ウィンドウの左上隅にある左矢印 ![ 編集を終了 ](assets/exit-editing-arrow.png) をクリックします。
 
-1. 右側のパネルの「**[!UICONTROL History]**」タブをクリックします。
+1. 右側のパネルの **[!UICONTROL 履歴]** タブをクリックします。
 1. （任意）選択したシナリオ実行の詳細を確認するには、右側のパネルで「実行」をクリックします。
 
    バンドルの処理について詳しくは、[ シナリオ実行フロー ](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md) を参照してください
@@ -132,10 +132,10 @@ ht-degree: 28%
 
 実行履歴をフィルターして、指定した値を持つ実行のみを表示できます。
 
-1. この記事の [[[!UICONTROL History]] タブのシナリオ実行履歴の表示 ](#view-scenario-history-on-the-history-tab) の説明に従って、シナリオの全ページ履歴を開きます。
-1. フィルタリングの基準にする列のヘッダーにある [!UICONTROL filter] のアイコン ![ シナリオフィルターアイコン ](assets/fusion-scenario-filter-icon.png) をクリックします。
-1. [!UICONTROL filter] ダイアログで、フィルターに使用する値を入力します。
-1. **[!UICONTROL Save]** をクリックします。
+1. この記事の[「[!UICONTROL 履歴]」タブでシナリオの実行履歴を表示](#view-scenario-history-on-the-history-tab)で説明されているように、シナリオの全ページ履歴を開きます。
+1. フィルタリングの基準にする列のヘッダーにある [!UICONTROL  フィルター ] アイコン ![ シナリオフィルターアイコン ](assets/fusion-scenario-filter-icon.png) をクリックします。
+1. 「[!UICONTROL フィルター]」ダイアログで、フィルタリングしたい値を入力します。
+1. 「**[!UICONTROL 保存]**」をクリックします。
 
 フィルターがアクティブな列のフィルターアイコンはオレンジ色です。
 
@@ -151,48 +151,48 @@ You can sort the scenario execution history.
 
 ## シナリオのすべての実行を検索
 
-1. この記事の [[[!UICONTROL History]] タブのシナリオ実行履歴の表示 ](#view-scenario-history-on-the-history-tab) の説明に従って、シナリオの全ページ履歴を開きます。
-1. 実行リストの上部にある「**[!UICONTROL Fulltext search]**」をクリックします。
+1. この記事の[「[!UICONTROL 履歴]」タブでシナリオの実行履歴を表示](#view-scenario-history-on-the-history-tab)で説明されているように、シナリオの全ページ履歴を開きます。
+1. 実行リスト上部にある「**[!UICONTROL フルテキスト検索]**」をクリックします。
 
    または
 
-   **Ctrl + Shift + F** （Windows）または **Cmd + Shift + F** （Mac）と入力します
-[!UICONTROL Search in history] ウィンドウが開きます。
+   **Ctrl+Shift+F**（Windows）または **Cmd+Shift+F**（MAC）
+[!UICONTROL 履歴で検索]ウィンドウが開きます。
 
-1. （オプション）特定のテキストを含む実行を検索するには、検索ウィンドウの検索バーにテキス **[!UICONTROL Search in history]** を入力します。
+1. (オプション）特定のテキストを含む実行を検索するには、**[!UICONTROL 履歴で検索]**&#x200B;ウィンドウの検索バーにテキストを入力します。
 
    正確にテキストを検索するには、テキストを二重引用符（&quot;例&quot;）で囲みます。
 
    >[!INFO]
    >
-   >**例：** 特定のプロジェクトを作成した実行を検索する場合は、[!UICONTROL Fulltext search] のバーにプロジェクト ID を入力します。
+   >**例：**&#x200B;特定のプロジェクトを作成した実行を検索したい場合、[!UICONTROL フルテキスト検索]バーにプロジェクトIDを入力します。
    >
    >&quot;625ef2ef0006036bd1794b6e52d737c5&quot;
 
-1. （オプション）日付範囲で検索を制限するには、検索の開始日と終了日を [!UICONTROL By date range] の領域で選択します。
+1. (オプション）日付範囲で検索を制限するには、[!UICONTROL 日付範囲別]エリアで検索の開始日と終了日を選択します。
 
    >[!NOTE]
    >
    >* 過去 30 日間のみ実行できます。
    >
-   >* [!DNL Workfront Fusion] は、30 日間、ebhook ペイロードを保存します。Webhook ペイロードが作成されてから 30 日以上アクセスすると、「[!UICONTROL Failed to read file from storage.]」というエラーが発生する
+   >* [!DNL Workfront Fusion] は、30 日間、ebhook ペイロードを保存します。作成後 30 日を超える web フックペイロードにアクセスすると、「[!UICONTROL ストレージからファイルを読み取れませんでした。]」というエラーが発生します。
 
 
-1. （オプション）ステータスで検索を制限するには、**[!UICONTROL By status]** ールドロップダウンで目的のステータスを選択します。
+1. （オプション）検索をステータスで制限するには、**[!UICONTROL ステータス別]**&#x200B;ドロップダウンで目的のステータスを選択します。
 
 
    利用可能なステータスは、次のとおりです。
 
-   * [!UICONTROL All]
+   * [!UICONTROL すべて]
 
-   * [!UICONTROL Error]
+   * [!UICONTROL エラー]
 
-   * [!UICONTROL Warning]
+   * [!UICONTROL 警告]
 
-   * [!UICONTROL Success]
+   * [!UICONTROL 成功]
 
-1. （オプション） **[!UICONTROL Sort by dates]** ドロップダウンに表示する結果の順序を変更します。
+1. （オプション）**[!UICONTROL 日付順に並べ替え]**&#x200B;ドロップダウンで表示される結果の順序を変更します。
 
-1. （任意）シナリオ実行 ID をコピーするには、「**[!UICONTROL Copy execution ID]**」アイコンをクリックします 目的の実行の行に <img src="assets/copy-fusion-execution-id-icon.png"> ります。
+1. （オプション）シナリオ実行 ID をコピーするには、**[!UICONTROL 実行 ID をコピー]**&#x200B;アイコンをクリックします。 目的の実行の行に <img src="assets/copy-fusion-execution-id-icon.png"> ります。
 
-1. （任意） [!UICONTROL Fulltext search] の結果をクリックして、情報を含むシナリオモジュール出力バンドルを調べます。
+1. （オプション）[!UICONTROL  フルテキスト検索]の結果をクリックして、その情報を含むシナリオモジュール出力バンドルを調べます。
