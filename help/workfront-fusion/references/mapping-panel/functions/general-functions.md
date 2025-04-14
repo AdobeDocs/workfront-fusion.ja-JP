@@ -4,16 +4,23 @@ description: Adobe Workfront Fusion マッピングパネルでは、次の一�
 author: Becky
 feature: Workfront Fusion
 exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
-source-git-commit: 2c732659f3f3e81e13b7b12a5df5bde19c0e0928
+source-git-commit: 295004ab7536b85124bc366d6832c08365338d08
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '303'
 ht-degree: 49%
 
 ---
 
 # 一般的な関数
 
-## [!UICONTROL get (object or array; path)]
+## 変数
+
+実行に関する詳細を識別するために使用できる一般的な変数が 2 つあります。
+
+* `executionID`：このシナリオ実行の ID
+* `triggerTimestamp`：この実行がトリガーされた時間
+
+## [!UICONTROL GET（オブジェクトまたは配列パス）]
 
 オブジェクトまたは配列の値のパスを返します。ネストされたオブジェクトにアクセスするには、ドット表記を使用します。配列内の最初の項目はインデックス 1 です。
 
@@ -28,7 +35,7 @@ ht-degree: 49%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL if (expression; value1; value2)]
+## [!UICONTROL IF（式；値 1；値 2）]
 
 式が true に評価される場合は、`value1` を返します。それ以外の場合は `value2` を返します。
 
@@ -116,7 +123,7 @@ ht-degree: 49%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL pick(object; key1; [key2; ...])]
+## [!UICONTROL pick(オブジェクト; キー1; [キー2; ...])]
 
 オブジェクトから指定されたキーのみを選択します。
 
