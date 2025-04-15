@@ -4,16 +4,31 @@ description: ' [!DNL Adobe Workfront Fusion Frame].io modules enable you to moni
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 31487c8b5b6efad1e6d7817dfe7dda67eea88e43
 workflow-type: tm+mt
-source-wordcount: '2510'
-ht-degree: 80%
+source-wordcount: '2586'
+ht-degree: 77%
 
 ---
 
-# [!DNL Frame.io] モジュール
+# [!DNL Frame.io] レガシーモジュール
+
+>[!IMPORTANT]
+>
+>この記事では、Frame.io コネクタのレガシーバージョンについて説明します。 このコネクタは、Frame.io バージョン 3 への接続に使用されます。
+>
+>Frame.io コネクタの新しい（ベータ版）バージョンについて詳しくは、[Frame.io Beta コネクタ ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md) を参照してください。
 
 [!DNL Adobe Workfront Fusion] [!DNL Frame.io] モジュールでは、[!DNL Frame.io] アカウント内のアセットとコメントを監視、作成、更新、取得、削除できます。
+
+Workfrontには、接続先の Frame.io のバージョンに基づく 2 つの Frame.io コネクタが用意されています。
+
+| コネクタ | Frame.io バージョン |
+|---|---|
+| Frame.io （Beta） | V4 |
+| Frame.io （レガシー） | V3 |
+
+Frame.io コネクタの新しい（ベータ版）バージョンについて詳しくは、[Frame.io Beta コネクタ ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md) を参照してください。
 
 Frame.io コネクタの紹介ビデオについては、以下を参照してください。
 
@@ -626,7 +641,7 @@ Webhook を追加する場合は、次の情報を入力します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID] </td> 
-   <td> <p>コメントを更新するアセットを含むプロジェクトを選択します。</p> </td> 
+   <td> <p>コメントを更新するアセットを含んだプロジェクトを選択します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Folder ID] </td> 

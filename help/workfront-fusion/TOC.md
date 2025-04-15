@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
-source-git-commit: 0115892ccd9569efbd5d5ed585847c763280ddca
+source-git-commit: a23517da30b4e51ef55bcc13241a03cd1d6153a0
 workflow-type: tm+mt
-source-wordcount: '1730'
+source-wordcount: '1737'
 ht-degree: 61%
 
 ---
@@ -252,7 +252,7 @@ ht-degree: 61%
       * [シナリオ実行フロー](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)
       * [シナリオの実行、サイクル、フェーズ](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)
       * [大きなファイルの操作](/help/workfront-fusion/references/scenarios/fusion-large-files.md)
-   * Modules {#modules}
+   * モジュール {#modules}
       * [モジュール](/help/workfront-fusion/references/modules/modules-toc.md)
       * [Webhook （インスタントトリガー）](/help/workfront-fusion/references/modules/webhooks-reference.md)
       * [集約モジュール](/help/workfront-fusion/references/modules/aggregator-module.md)
@@ -305,7 +305,8 @@ ht-degree: 61%
          * [Adobe Experience Manager Assets モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
          * [Adobe Experience Manager Forms モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
          * [Adobe Firefly モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
-         * [Adobe Frame.io モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
+         * [Adobe Frame.io Beta（V4）モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)
+         * [Adobe Frame.io レガシー（V3）モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
          * [Adobe I/O Events モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
          * [Adobe Journey Optimizer モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-journey-optimizer-modules.md)
          * [Adobe Lightroom モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-lightroom-modules.md)

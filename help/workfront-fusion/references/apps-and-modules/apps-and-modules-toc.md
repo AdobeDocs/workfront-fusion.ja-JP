@@ -6,10 +6,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: 234a6a537718328e92eec13672a73bc43add17c1
+source-git-commit: 830ac0085c1dce174b9ad167de7305d43143ed44
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 48%
+source-wordcount: '455'
+ht-degree: 46%
 
 ---
 
@@ -23,12 +23,12 @@ ht-degree: 48%
 
 これらのコネクタを使用すると、パブリック API を持つすべてのアプリまたは web サービスに接続できます。
 
-* [http/[!UICONTROL Make a request] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make an API Key Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
-* [[!UICONTROL HTTP] > その他のモジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-modules.md)
+* [http > [!UICONTROL  リクエストを作成 ] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL  基本認証リクエストを行う ] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
+* [[!UICONTROL HTTP]／[!UICONTROL OAuth 2.0 リクエストを実行]モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL  クライアント証明書認証リクエストを作成 ] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL API キー認証リクエストの作成 ]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
+* [[!UICONTROL HTTP]／その他のモジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-modules.md)
 * [SOAP モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/soap-module.md)
 * [FTP モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)
 * [SFTP モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/sftp.md)
@@ -45,7 +45,8 @@ Fusion は、Adobeの多くの製品とサービスに対してコネクタを�
 * [Adobe Experience Manager Assets モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
 * [Adobe Experience Manager Forms モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
 * [Adobe Firefly モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
-* [Adobe Frame.io モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
+* [Adobe Frame.io Beta（V4）モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
+* [Adobe Frame.io レガシー（V3）モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
 * [Adobe I/O Events モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
 * [Adobe Journey Optimizer モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-journey-optimizer-modules.md)
 * [Adobe Lightroom モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-lightroom-modules.md)
