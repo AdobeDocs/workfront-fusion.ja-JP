@@ -5,10 +5,10 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion
 exl-id: 41179cfe-c0f9-4d18-ab7e-374670ac688b
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 77%
+source-wordcount: '621'
+ht-degree: 81%
 
 ---
 
@@ -22,42 +22,46 @@ ht-degree: 77%
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 [!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+
++++
 
 ## 前提条件
 
@@ -67,7 +71,7 @@ ht-degree: 77%
 
 [!DNL MariaDB] アカウントへの接続を、[!DNL MariaDB] モジュール内から直接作成できます。
 
-1. 任意の [!DNL MariaDB] モジュールで、[!UICONTROL Connection] フィールドの横にある「**[!UICONTROL Add]**」をクリックします。
+1. 任意の [!DNL MariaDB] モジュールで、「[!UICONTROL 接続]」フィールドの横にある「**[!UICONTROL 追加]**」をクリックします。
 1. 次のフィールドを設定します。
 
    <table style="table-layout:auto"> 
@@ -78,6 +82,14 @@ ht-degree: 77%
       <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
       <td> <p>新しい接続の名前を入力します。</p> </td> 
      </tr> 
+        <tr>
+        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td>この接続を実稼動環境と非実稼動環境のどちらで使用するかを選択します。</td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Type]</td>
+        <td>サービスアカウントと個人アカウントのどちらに接続するかを選択します。</td>
+        </tr>
      <tr> 
       <td role="rowheader">[!UICONTROL Host]</td> 
       <td> <p>データベースインスタンスの IP アドレスまたはホスト名を入力します。このホストは、ネットワークの外部からアクセスできる必要があります。</p> <p>例： <code>[!DNL mariadb.hwoh2j5h.us-east-1.rds.amazon.com]</code></p> </td> 
@@ -87,11 +99,11 @@ ht-degree: 77%
       <td>デフォルトのポートは 3306 です。非標準のポートを使用している場合は、この番号をポートに設定します。 </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Database Name]</td> 
+      <td role="rowheader">[!UICONTROL データベース ]</td> 
       <td>操作するデータベースの名前を入力します。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Username]</td> 
+      <td role="rowheader">[!UICONTROL User]</td> 
       <td>ユーザー名を入力してください.</td> 
      </tr> 
      <tr> 
@@ -101,7 +113,7 @@ ht-degree: 77%
     </tbody> 
    </table>
 
-1. 「**[!UICONTROL Continue]**」をクリックして接続を作成し、モジュールに戻ります。
+1. 「**[!UICONTROL 続行]**」をクリックして接続を作成し、モジュールに戻ります。
 
 ## [!DNL MariaDB] モジュールとそのフィールド
 
@@ -121,7 +133,7 @@ ht-degree: 77%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL MariaDB] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">[!DNL MariaDB] を [!DNL Workfront Fusion]</a> に接続を参照してください。</td> 
+   <td>[!DNL MariaDB] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の「<a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">[!DNL MariaDB] を [!DNL Workfront Fusion]</a> へ接続」を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query]</td> 
@@ -130,7 +142,7 @@ ht-degree: 77%
  </tbody> 
 </table>
 
-### [!UICONTROL Select rows from a table (advanced)]
+### [!UICONTROL テーブルから行を選択（上級）]
 
 このモジュールは、データベースからレコードを読み取ります。
 
@@ -140,7 +152,7 @@ ht-degree: 77%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL MariaDB] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">[!DNL MariaDB] を [!DNL Workfront Fusion]</a> に接続を参照してください。</td> 
+   <td>[!DNL MariaDB] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">[!DNL MariaDB] を [!DNL Workfront Fusion]</a> に接続を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Table]</td> 
@@ -157,7 +169,7 @@ ht-degree: 77%
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Sort] </td> 
-   <td> <p>結果の並べ替え基準にするレベルごとに [<strong>[!UICONTROL Add item]</strong>] をクリックし、結果の並べ替え基準にするフィールドを選択し、昇順と降順のどちらで並べ替えるかを選択します</p> </td> 
+   <td> <p>結果を並べ替える各レベルで「<strong>[!UICONTROL Add item]</strong>」をクリックし、次に、結果の並べ替えの基準となるフィールドを選択し、昇順または降順のどちらで並べ替えるかを選択します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 

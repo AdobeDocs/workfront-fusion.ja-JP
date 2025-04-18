@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  シナリオでは、Datadog を�
 author: Becky
 feature: Workfront Fusion
 exl-id: c8c5f2e3-5af1-4957-bb6f-6c19c35102c5
-source-git-commit: 7edfe4a7b19597ea6e56bb2ca3969d742dbaf999
+source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 79%
+source-wordcount: '920'
+ht-degree: 75%
 
 ---
 
@@ -108,29 +108,33 @@ Datadog コネクタは以下を使用します。
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Connection Type]</td> 
-      <td> <p> [!DNL Datadog] API へのフルアクセスを取得するには、[!UICONTROL [!DNL Datadog] Application] オプションを選択します。</p> </td> 
-     </tr> 
-     <tr> 
       <td role="rowheader">[!UICONTROL Connection Name]</td> 
       <td> <p> 接続に名前を入力します。</p> </td> 
      </tr> 
+        <tr>
+        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td>この接続を実稼動環境と非実稼動環境のどちらで使用するかを選択します。</td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Type]</td>
+        <td>サービスアカウントと個人アカウントのどちらに接続するかを選択します。</td>
+        </tr>
      <tr> 
       <td role="rowheader">[!UICONTROL Domain] </td> 
       <td> <p>接続先のドメイン（米国または EU）を選択します。</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL API Key]</td> 
-      <td> <p> [!DNL Datadog] API キーを入力します。 </p> <p>API キーの取得手順については、この記事の<a href="#retrieve-your-api-key-and-application-key" class="MCXref xref">API キーとアプリケーションキーを取得</a>を参照してください。</p> </td> 
+      <td role="rowheader">[!UICONTROL API キーの場所 ] </td> 
+      <td> <p>API キーをヘッダーに含めるか、クエリ文字列に含めるかを選択します。</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Application Key]</td> 
-      <td> <p> [!DNL Datadog] アプリケーションキーを入力します。 </p> <p>アプリケーションキーの取得手順については、この記事の<a href="#retrieve-your-api-key-and-application-key" class="MCXref xref">API キーとアプリケーションキーを取得</a>を参照してください。</p> </td> 
+      <td role="rowheader">[!UICONTROL API Key]</td> 
+      <td> <p> [!DNL Datadog] API キーを入力します。 </p> <p>API キーの取得手順については、この記事の<a href="#retrieve-your-api-key-and-application-key" class="MCXref xref">API キーとアプリケーションキーを取得</a>を参照してください。</p> </td> 
      </tr> 
     </tbody> 
    </table>
 
-1. 「**[!UICONTROL 続行]**」をクリックして接続を作成し、モジュールに戻ります。
+1. 「**[!UICONTROL 続行]**」をクリックし、接続を作成して、モジュールに戻ります。
 
 ## [!DNL Datadog] モジュールとそのフィールド
 
@@ -217,18 +221,28 @@ URL：`/v1/dashboard`
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Type]</td> 
-   <td> 使用する指標のタイプを選択します。 </td> 
+   <td> 使用する指標のタイプを選択します。 
+   <ul>
+   <li>ゲージ</li>
+   <li>レート</li>
+   <li>カウント</li>
+   </ul>
+   </td> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 間隔 ]</td> 
+   <td> 指標のタイプがレートまたは数の場合は、対応する間隔を定義します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Series]</td> 
-   <td> <p>送信する時系列を [!DNL Datadog] に追加します。</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Metric]</strong> </p> <p>時系列の名前を入力します。</p> </li> 
-     <li> <p><strong>[!UICONTROL Type]</strong> </p> <p>指標のタイプを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL Interval]</strong> </p> <p> 指標のタイプがレートまたは数の場合は、対応する間隔を定義します。</p> </li> 
-     <li> <p><strong>[!UICONTROL Points]</strong> </p> <p>指標に関連するポイントを追加します。</p> <p>これは、ポイントの JSON 配列です。それぞれのポイントの形式は以下のとおりです。 <code>[[POSIX_timestamp, numeric_value], ...] </code></p> <p>メモ：  <p>タイムスタンプは秒単位で指定する必要があります。</p> <p>タイムスタンプは最新である必要があります。「最新」とは、10 分より後または 1 時間より前と定義されています。</p> <p> 数値の形式は、浮動小数値にする必要があります。</p> </p> <p>このフィールドには少なくとも 1 つの項目を含める必要があります。</p> </li> 
-     <li> <p><strong>[!UICONTROL Host]</strong> </p> <p>指標を作成したホストの名前を入力します。</p> </li> 
-    </ul> </td> 
+   <td role="rowheader">[!UICONTROL Points]</td> 
+   <td><p>指標に関連するポイントを追加します。</p> <p>これは、ポイントの JSON 配列です。それぞれのポイントの形式は以下のとおりです。 <code>[[POSIX_timestamp, numeric_value], ...] </code></p> <p>メモ：  <p>タイムスタンプは秒単位で指定する必要があります。</p> <p>タイムスタンプは最新である必要があります。「最新」とは、10 分より後または 1 時間より前と定義されています。</p> <p> 数値の形式は、浮動小数値にする必要があります。</p> </p> <p>このフィールドには少なくとも 1 つの項目を含める必要があります。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Host]</td> 
+   <td>指標を作成したホストの名前を入力します。 </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tags]</td> 
+   <td> 指標に追加するタグごとに、「<b> 項目を追加 </b>」をクリックしてタグの値を入力します。</td> 
   </tr> 
  </tbody> 
 </table>
