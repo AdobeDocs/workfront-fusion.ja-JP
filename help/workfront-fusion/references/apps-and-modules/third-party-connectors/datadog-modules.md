@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  シナリオでは、Datadog を�
 author: Becky
 feature: Workfront Fusion
 exl-id: c8c5f2e3-5af1-4957-bb6f-6c19c35102c5
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 7edfe4a7b19597ea6e56bb2ca3969d742dbaf999
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 81%
+source-wordcount: '914'
+ht-degree: 79%
 
 ---
 
@@ -21,6 +21,8 @@ ht-degree: 81%
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
 <table style="table-layout:auto">
@@ -28,35 +30,37 @@ ht-degree: 81%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 [!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+
++++
 
 ## 前提条件
 
@@ -84,11 +88,11 @@ Datadog コネクタは以下を使用します。
 [!DNL Datadog] アカウントを [!DNL Workfront Fusion] に接続するには、[!DNL Datadog] アカウントから API キーとアプリケーションキーを取得する必要があります。
 
 1. [!DNL Datadog] アカウントにログインします。
-1. 左側のナビゲーションパネルで「**[!UICONTROL Integrations]**」をクリックし、「**[!UICONTROL APIs]**」をクリックします。
-1. メイン画面で「**[!UICONTROL API Keys]**」をクリックします。
+1. 左側のナビゲーションパネルで、「**[!UICONTROL 統合]**」をクリックして、「**[!UICONTROL API]**」をクリックします。
+1. メイン画面で、「**[!UICONTROL API キー]**」をクリックします。
 1. 紫色のバーにポインタを合わせると、API キーが表示されます。
 1. API キーを安全な場所にコピーします。
-1. メイン画面で「**[!UICONTROL Application Keys]**」をクリックします。
+1. メイン画面で、「**[!UICONTROL アプリケーションキー]**」をクリックします。
 1. 紫色のバーにポインタを合わせると、アプリケーションキーが表示されます。
 1. アプリケーションキーを安全な場所にコピーします。
 
@@ -96,16 +100,16 @@ Datadog コネクタは以下を使用します。
 
 [!DNL Datadog] アカウントへの接続を、[!UICONTROL Datadog] モジュール内から直接作成できます。
 
-1. 任意の [!UICONTROL Datadog] モジュールで、[!UICONTROL Connection] フィールドの横にある「**[!UICONTROL Add]**」をクリックします。
+1. 任意の [!UICONTROL Datadog] モジュールで、「[!UICONTROL 接続]」フィールドの横にある「**[!UICONTROL 追加]**」をクリックします。
 1. モジュールのフィールドに次のように入力します。
 
-<table style="table-layout:auto">
+   <table style="table-layout:auto">
     <col> 
     <col> 
     <tbody> 
      <tr> 
       <td role="rowheader">[!UICONTROL Connection Type]</td> 
-      <td> <p> [!UICONTROL [!DNL Datadog] Application] オプションを選択して、API に完全にアクセス [!DNL Datadog] ます。</p> </td> 
+      <td> <p> [!DNL Datadog] API へのフルアクセスを取得するには、[!UICONTROL [!DNL Datadog] Application] オプションを選択します。</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Connection Name]</td> 
@@ -126,7 +130,7 @@ Datadog コネクタは以下を使用します。
     </tbody> 
    </table>
 
-1. 「**[!UICONTROL Continue]**」をクリックして接続を作成し、モジュールに戻ります。
+1. 「**[!UICONTROL 続行]**」をクリックして接続を作成し、モジュールに戻ります。
 
 ## [!DNL Datadog] モジュールとそのフィールド
 
@@ -138,38 +142,10 @@ Datadog コネクタは以下を使用します。
 
 ### アクション
 
-* [[!UICONTROL Post Timeseries Points]](#post-timeseries-points)
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
+* [[!UICONTROL API 呼び出しを実行]](#make-an-api-call)
+* [[!UICONTROL 時系列のポイントを投稿]](#post-timeseries-points)
 
-#### [!UICONTROL Post Timeseries Points]
-
-モジュールを使用すると、[!DNL Datadog] のダッシュボードにグラフ化可能な時系列データを投稿できます。
-
-圧縮ペイロードの上限は 3.2 MB（3200000）で、圧縮解除ペイロードの場合は 62 MB（62914560）です。
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Datadog] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">[!DNL Datadog] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Series]</td> 
-   <td> <p>送信する時系列を [!DNL Datadog] に追加します。</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Metric]</strong> </p> <p>時系列の名前を入力します。</p> </li> 
-     <li> <p><strong>[!UICONTROL Type]</strong> </p> <p>指標のタイプを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL Interval]</strong> </p> <p> 指標のタイプがレートまたは数の場合は、対応する間隔を定義します。</p> </li> 
-     <li> <p><strong>[!UICONTROL Points]</strong> </p> <p>指標に関連するポイントを追加します。</p> <p>これは、ポイントの JSON 配列です。それぞれのポイントの形式は以下のとおりです。 <code>[[POSIX_timestamp, numeric_value], ...] </code></p> <p>メモ：  <p>タイムスタンプは秒単位で指定する必要があります。</p> <p>タイムスタンプは最新である必要があります。「最新」とは、10 分より後または 1 時間より前と定義されています。</p> <p> 数値の形式は、浮動小数値にする必要があります。</p> </p> <p>このフィールドには少なくとも 1 つの項目を含める必要があります。</p> </li> 
-     <li> <p><strong>[!UICONTROL Host]</strong> </p> <p>指標を作成したホストの名前を入力します。</p> </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL API 呼び出しを実行]
 
 このアクションモジュールでは、カスタム API 呼び出しを実行できます。
 
@@ -180,6 +156,10 @@ Datadog コネクタは以下を使用します。
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>[!DNL Datadog] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">[!DNL Datadog] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL で専用ドメインを使用 ]</td> 
+   <td>多くの受信トラフィックを想定している Datadog API エンドポイントの一部は、専用ドメインで動作しています。 API 呼び出しに専用ドメインを使用するには、このボックスをオンにします。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -220,3 +200,35 @@ URL：`/v1/dashboard`
 この例では、3 つのダッシュボードが返されました。
 
 ![Datadog API 応答 ](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-response-example.png)
+
+#### [!UICONTROL 時系列のポイントを投稿]
+
+モジュールを使用すると、[!DNL Datadog] のダッシュボードにグラフ化可能な時系列データを投稿できます。
+
+圧縮ペイロードの上限は 3.2 MB（3200000）で、圧縮解除ペイロードの場合は 62 MB（62914560）です。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>[!DNL Datadog] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">[!DNL Datadog] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Type]</td> 
+   <td> 使用する指標のタイプを選択します。 </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Series]</td> 
+   <td> <p>送信する時系列を [!DNL Datadog] に追加します。</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Metric]</strong> </p> <p>時系列の名前を入力します。</p> </li> 
+     <li> <p><strong>[!UICONTROL Type]</strong> </p> <p>指標のタイプを選択します。</p> </li> 
+     <li> <p><strong>[!UICONTROL Interval]</strong> </p> <p> 指標のタイプがレートまたは数の場合は、対応する間隔を定義します。</p> </li> 
+     <li> <p><strong>[!UICONTROL Points]</strong> </p> <p>指標に関連するポイントを追加します。</p> <p>これは、ポイントの JSON 配列です。それぞれのポイントの形式は以下のとおりです。 <code>[[POSIX_timestamp, numeric_value], ...] </code></p> <p>メモ：  <p>タイムスタンプは秒単位で指定する必要があります。</p> <p>タイムスタンプは最新である必要があります。「最新」とは、10 分より後または 1 時間より前と定義されています。</p> <p> 数値の形式は、浮動小数値にする必要があります。</p> </p> <p>このフィールドには少なくとも 1 つの項目を含める必要があります。</p> </li> 
+     <li> <p><strong>[!UICONTROL Host]</strong> </p> <p>指標を作成したホストの名前を入力します。</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>

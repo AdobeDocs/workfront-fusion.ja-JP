@@ -4,10 +4,10 @@ description: MIME タイプは、Adobe Workfront Fusion で使用できます。
 author: Becky
 feature: Workfront Fusion
 exl-id: 9259356b-5b42-4b6d-9854-fce9718d14e3
-source-git-commit: e14f49dbb7b57a7247a62a27205df1b6da11a259
+source-git-commit: 7edfe4a7b19597ea6e56bb2ca3969d742dbaf999
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 73%
+source-wordcount: '367'
+ht-degree: 74%
 
 ---
 
@@ -36,9 +36,7 @@ MIME タイプは、Adobe Workfront Fusion で使用できます。多目的イ�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンス要件なし</p>
-   <p>または</p>
-   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
+   <p>Workfront Fusion ライセンス要件なし</p>
    </td> 
   </tr> 
   <tr> 
