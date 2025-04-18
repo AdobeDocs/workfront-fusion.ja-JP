@@ -4,10 +4,10 @@ description: MIME タイプは、Adobe Workfront Fusion で使用できます。
 author: Becky
 feature: Workfront Fusion
 exl-id: 9259356b-5b42-4b6d-9854-fce9718d14e3
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e14f49dbb7b57a7247a62a27205df1b6da11a259
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 88%
+source-wordcount: '377'
+ht-degree: 73%
 
 ---
 
@@ -17,48 +17,70 @@ MIME タイプは、Adobe Workfront Fusion で使用できます。多目的イ�
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
+   <td>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
+   <p>または</p>
+   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">製品</td> 
+   <td>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
+   <p>または</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+
+[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+
++++
+
+## [!UICONTROL MIME] モジュールとそのフィールド
+
+* [ファイル拡張子の取得](#get-a-file-extension)
+* [MIME タイプの取得](#get-a-mime-type)
+
+### [!UICONTROL ファイル拡張子を取得]
+
+この変換サービスモジュールは、指定された MIME タイプの元のファイル拡張子を返します。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
-   <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
-   <p>または</p>
-   <p>レガシーライセンス要件：[!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration], [!UICONTROL [!DNL Workfront Fusion] for Work Automation]</p>
-   </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">製品</td> 
-   <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
-   <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
-   </td> 
+   <td role="rowheader">[!UICONTROL MIME type]</td> 
+   <td> <p>ファイル拡張子を決定する MIME タイプを入力またはマッピングします。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+### [!UICONTROL MIME タイプの取得]
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
-
-## [!UICONTROL MIME] モジュールとそのフィールド
-
-### [!UICONTROL Get a MIME type]
-
-この変換サービスモジュールは、指定された名前、パス、または拡張子に関連付けられた MIME タイプを返します。
+この変換モジュールは、指定されたファイル名、パスまたは拡張子に関連付けられた MIME タイプを返します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -72,21 +94,6 @@ MIME タイプは、Adobe Workfront Fusion で使用できます。多目的イ�
      <li><strong>[!UICONTROL File name]</strong>  <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>例：</b></span></span>image.jpeg</p> </li> 
      <li><strong>[!UICONTROL File extension]</strong>  <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>例：</b></span></span>jpeg</p> </li> 
     </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Get a file extension]
-
-この変換サービスモジュールは、指定された MIME タイプの元のファイル拡張子を返します。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL MIME type]</td> 
-   <td> <p>ファイル拡張子を決定する MIME タイプを入力またはマッピングします。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
