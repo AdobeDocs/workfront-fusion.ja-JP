@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion] HubSpot CRM モジュールを使�
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 0e4986d0d66b98213efabd487e6701f8385161e3
 workflow-type: tm+mt
-source-wordcount: '6203'
-ht-degree: 39%
+source-wordcount: '7003'
+ht-degree: 35%
 
 ---
 
@@ -118,9 +118,6 @@ HubSpot CRM コネクタは以下を使用します。
 
 ### CRM オブジェクト
 
-<!--* [Search for CRM objects](#search-for-crm-objects)
-* [Watch CRM objects](#watch-crm-objects)-->
-
 +++ **[!UICONTROL CRM オブジェクトを検索]**
 
 この検索モジュールは、カスタムプロパティまたはクエリで CRM オブジェクトを検索します。製品や明細項目を検索するには、必要なカスタムスコープで特別な接続を使用します。
@@ -208,15 +205,6 @@ HubSpot CRM コネクタは以下を使用します。
 +++
 
 ### レコード（契約、連絡先、会社）
-
-<!--* [Create a Record](#create-a-record)
-* [[!UICONTROL Create a Record (Legacy)]](#create-a-record-legacy)
-* [[!UICONTROL Delete a Record]](#delete-a-record)
-* [[!UICONTROL Get a Record]](#get-a-record)
-* [[!UICONTROL Get a Record Property]](#get-a-record-property)
-* [List Records](#list-records)
-* [[!UICONTROL Update a Record]](#update-a-record)
-* [[!UICONTROL Watch Records]](#watch-records)-->
 
 +++ **レコードを作成**
 
@@ -464,17 +452,6 @@ HubSpot CRM コネクタは以下を使用します。
 +++
 
 ### 連絡先
-
-<!--* [[!UICONTROL Add Contacts to a List]](#add-contacts-to-a-list)
-* [Create/Update a contact](#createupdate-a-contact)
-* [[!UICONTROL Create/Update a Contact (Legacy)]](#createupdate-a-contact-legacy)
-* [[!UICONTROL Create/Update a Group of Contacts]](#createupdate-a-group-of-contacts)
-* [[!UICONTROL List Contacts]](#list-contacts)
-* [[!UICONTROL List Contacts of a Company]](#list-contacts-of-a-company)
-* [[!UICONTROL Merge contacts]](#merge-contacts)
-* [[!UICONTROL Remove a Contact from a List]](#remove-a-contact-from-a-list)
-* [[!UICONTROL Search for Contacts]](#search-for-contacts)
-* [Watch Contacts Added to a List](#watch-contacts-added-to-a-list)-->
 
 +++ **[!UICONTROL リストに連絡先を追加]**
 
@@ -744,9 +721,6 @@ HubSpot CRM コネクタは以下を使用します。
 
 ### 契約
 
-<!--* [[!UICONTROL Get a Deal's CRM Pipeline]](#get-a-deals-crm-pipeline)
-* [[!UICONTROL List Deal/Ticket Pipelines]](#list-dealticket-pipelines)-->
-
 +++ **[!UICONTROL 契約の CRM パイプラインの取得]**
 
 特定の契約パイプラインを返します。
@@ -825,11 +799,6 @@ HubSpot CRM コネクタは以下を使用します。
 +++
 
 ### エンゲージメント
-
-<!--* [Associate an Engagement with a CRM object](#associate-an-engagement-with-a-crm-object)
-* [Create an Engagement](#create-an-engagement)
-* [Delete an Engagement](#delete-an-engagement)
-* [Watch Engagements](#watch-engagements)-->
 
 +++ **エンゲージメントと CRM オブジェクトの関連付け**
 
@@ -1117,11 +1086,6 @@ HubSpot CRM コネクタは以下を使用します。
 
 ### イベントと通知
 
-<!--* [Create / Update a Timeline Event](#create--update-a-timeline-event)
-* [List Timeline Event Types](#list-timeline-event-types)
-* [Watch Calendar Events](#watch-calendar-events)
-* [Watch Notifications](#watch-notifications)-->
-
 +++ **タイムラインイベントの作成/更新**
 
 このアクションモジュールは、タイムラインイベントを作成または更新します。 このモジュールは、ユーザー識別子、HubSpot API キー、クライアント ID およびクライアント秘密鍵を含む開発者接続でのみ使用できます。
@@ -1253,14 +1217,6 @@ HubSpot CRM コネクタは以下を使用します。
 +++
 
 ### ファイル
-
-<!--* [[!UICONTROL Create a Folder]](#create-a-folder)
-* [Delete a File](#delete-a-file)
-* [[!UICONTROL Delete a Folder]](#delete-a-folder)
-* [List Files](#list-files)
-* [[!UICONTROL Move a File]](#move-a-file)
-* [Upload a file](#upload-a-file)
-* [Watch files](#watch-files)-->
 
 +++ **[!UICONTROL フォルダーを作成]**
 
@@ -1451,10 +1407,6 @@ HubSpot CRM コネクタは以下を使用します。
 
 ### タスク
 
-<!--* [Create a Calendar Task](#create-a-calendar-task)
-* [Delete a Calendar Task](#create-a-calendar-task)
-* [Watch Task Events](#watch-task-events)-->
-
 +++ **カレンダータスクの作成**
 
 このアクションモジュールは、カレンダーに新しいタスクを作成します。 このモジュールで使用される接続では、有料のマーケティングアカウントを持つユーザーの資格情報を使用する必要があります。
@@ -1552,9 +1504,6 @@ HubSpot CRM コネクタは以下を使用します。
 
 ### ユーザー
 
-<!--* [Get an Owner](#get-an-owner)
-* [List Owners](#list-owners)-->
-
 +++ **所有者の取得**
 
 このアクションモジュールは、所有者の詳細を返します。
@@ -1595,13 +1544,6 @@ HubSpot CRM コネクタは以下を使用します。
 
 ### チケット
 
-<!--* [Create a Ticket]-->
-<!--* [Delete a Ticket](#delete-a-ticket)-->
-<!--* [Create a Ticket]-->
-<!--* [Create a Ticket]-->
-<!--* [Create a Ticket]-->
-<!--* [Create a Ticket]-->
-
 <!-- Create a Ticket Need to find a working connection-->
 
 +++ **[!UICONTROL チケットの削除]**
@@ -1634,11 +1576,6 @@ ID を指定して既存のチケットを削除します。
 <!-- Watch Tickets Need to find a working connection-->
 
 ### フォーム
-
-<!--* [Get a File Uploaded via Form](#get-a-file-uploaded-via-form)
-* [List Forms](#list-forms)-->
-<!--* [Submit Data to a Form]-->
-<!--* [Watch Submissions for a Form]-->
 
 +++ **フォーム経由でアップロードされたファイルの取得**
 
@@ -1689,10 +1626,6 @@ ID を指定して既存のチケットを削除します。
 &lt;!—#### フォームの送信を監視する – 有効な接続を見つける必要がある >—>
 
 ### ソーシャルメディア（放送）
-
-<!--* [Cancel a Broadcast Message](#cancel-a-broadcast-message)
-* [Create a Broadcast Message](#create-a-broadcast-message)
-* [Watch Broadcast Messages](#watch-broadcast-messages)-->
 
 +++ **ブロードキャスト メッセージのキャンセル**
 
@@ -1791,16 +1724,90 @@ ID を指定して既存のチケットを削除します。
 
 ### ブログ投稿
 
-<!--* [Create a Blog Post]-->
-<!--* [Delete a Blog Post](#delete-a-blog-post)-->
-<!--* [List Blog Posts]-->
-&lt;!—* [ ブログ投稿の公開/非公開 ](#publish--unpublish-a-blog-post)—>
-<!--* [Watch Blog Posts]-->
++++ **ブログ投稿の作成**
 
-<!--
-#### Create a Blog Post May need connection
--->
+新しいブログ投稿を作成します。
 
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>[!DNL HubSpot CRM] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">名前</td> 
+   <td>投稿のタイトル（投稿の内部名）を入力またはマッピングします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ポスト ボディ</td> 
+   <td>HTML形式で投稿の本文を入力またはマッピングします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">投稿の概要</td> 
+   <td>投稿の概要を入力またはマッピングします。 この概要は、メインのリストページに表示されます。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ブログ作成者 ID</td> 
+   <td>投稿に関連付けられた作成者の ID を入力またはマッピングします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">コンテンツグループ ID</td> 
+   <td>この投稿が属するブログの ID を入力またはマッピングします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">フッターHTML</td> 
+   <td>ページのタグの前に配置する埋め込みコードまたは Javascript について、HTMLを入力またはマッピングします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ヘッドHTML</td> 
+   <td>先頭に配置する埋め込みコードまたは JavaScript のHTMLを入力またはマッピングします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">キャンペーン ID</td> 
+   <td>この投稿が関連付けられているキャンペーンの ID を入力またはマッピングします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">アイキャッチ画像</td> 
+   <td>この POST でアイキャッチ画像として使用する画像の URL を入力またはマッピングします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">キーワード</td> 
+   <td>この投稿に追加するキーワードごとに、[<b> 項目の追加 </b>] をクリックし、キーワードとキーワード GUID を入力します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">メタ説明</td> 
+   <td>ページ上の <code>meta</code> タグのテキストを入力またはマッピングします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">公開日</td> 
+   <td>ブログ投稿を公開する日付を入力またはマッピングします。 <p>サポートされる日付と時刻の形式の一覧については、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">型強制：[!DNL Adobe Workfront Fusion]</a> を参照してください。</p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">名前</td> 
+   <td>ブログ投稿を作成時にすぐに公開するには、このオプションを有効にします。 「はい」に設定すると、このオプションでは「公開日」フィールドが無視されます。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">スラッグ</td> 
+   <td>支柱のスラグを入力またはマッピングします。 このスラグはドメインの末尾に追加され、ブログ投稿の URL が形成されます。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">トピック ID</td> 
+   <td>投稿に追加するトピックごとに、「<b> 項目を追加 </b>」をクリックし、トピック ID を入力します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">アイキャッチ画像を使用</td> 
+   <td>ブログ投稿にアイキャッチ画像を使用するには、このオプションを有効にします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ウィジェット</td> 
+   <td>このブログ投稿のすべてのモジュールの日付を含むデータ構造を入力またはマップします。 これは、Fusion モジュールではなく、ブログ投稿のモジュールを指します。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
 
 +++ **ブログ投稿の削除**
 
@@ -1823,9 +1830,70 @@ ID を指定して既存のチケットを削除します。
 
 +++
 
-<!--#### List Blog Posts May need connection
++++ **ブログ投稿のリスト**
 
-This search module retrieves posts from a HubSpot blog.-->
+この検索モジュールは、HubSpot ブログから投稿を取得します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>[!DNL HubSpot CRM] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">制限</td> 
+   <td>1 回の実行サイクルで返されるブログ投稿の最大数を入力またはマップします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">アーカイブ済み</td> 
+   <td>アーカイブした投稿を結果に含めるには、このオプションを有効にします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ブログ作成者 ID</td> 
+   <td>作成者の ID を入力またはマッピングして、その作成者に関連付けられた投稿を返します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">キャンペーン ID</td> 
+   <td>キャンペーンの ID を入力またはマッピングして、そのキャンペーンに関連付けられた投稿を返します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">コンテンツグループ ID</td> 
+   <td>ブログの ID を入力またはマッピングして、そのブログに関連付けられた投稿を返します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">名前</td> 
+   <td>投稿名を入力すると、その名前の投稿のみが返されます。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">作成済みでフィルター</td> 
+   <td>「フィルター」を選択し、作成した時間値に基づいて投稿を返します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">更新でフィルター</td> 
+   <td>更新された時間値で投稿を返すには、「フィルター」を選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">削除でフィルター</td> 
+   <td>削除した時間の値で投稿を返すには、「フィルター」を選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">スラッグ</td> 
+   <td>スラグを入力またはマップして、スラグに一致するポストを返します。 このスラグはドメインの末尾に追加され、ブログ投稿の URL が形成されます。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">状態</td> 
+   <td>状態（ドラフト、公開済み、またはスケジュール済み）を選択すると、その状態の結果のみが含まれます。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">公開日で並べ替え</td> 
+   <td>公開日を基準に結果を昇順または降順で並べ替えるかどうかを選択します。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
 
 +++ **ブログ投稿の公開/非公開**
 
@@ -1852,7 +1920,70 @@ This search module retrieves posts from a HubSpot blog.-->
 
 +++
 
-<!--#### Watch Blog PostsMay need connection-->
++++ **ブログ投稿を見る**
+
+このトリガーモジュールでは、設定した条件に一致するブログ投稿が作成、更新、または削除されると、シナリオを開始します。
+
+
+
+この検索モジュールは、HubSpot ブログから投稿を取得します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>[!DNL HubSpot CRM] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">制限</td> 
+   <td>1 回の実行サイクルで返されるブログ投稿の最大数を入力またはマップします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">アーカイブ済み</td> 
+   <td>アーカイブした投稿を結果に含めるには、このオプションを有効にします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ブログ作成者 ID</td> 
+   <td>作成者の ID を入力またはマッピングして、その作成者に関連付けられた投稿を返します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">キャンペーン ID</td> 
+   <td>キャンペーンの ID を入力またはマッピングして、そのキャンペーンに関連付けられた投稿を返します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">コンテンツグループ ID</td> 
+   <td>ブログの ID を入力またはマッピングして、そのブログに関連付けられた投稿を返します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">名前</td> 
+   <td>投稿名を入力すると、その名前の投稿のみが返されます。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">作成済みでフィルター</td> 
+   <td>「フィルター」を選択し、作成した時間値に基づいて投稿を返します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">更新でフィルター</td> 
+   <td>更新された時間値で投稿を返すには、「フィルター」を選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">削除でフィルター</td> 
+   <td>削除した時間の値で投稿を返すには、「フィルター」を選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">スラッグ</td> 
+   <td>スラグを入力またはマップして、スラグに一致するポストを返します。 このスラグはドメインの末尾に追加され、ブログ投稿の URL が形成されます。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">状態</td> 
+   <td>状態（ドラフト、公開済み、またはスケジュール済み）を選択すると、その状態の結果のみが含まれます。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
 
 <!--+++**Workflows**>
 
@@ -1868,9 +1999,6 @@ This search module retrieves posts from a HubSpot blog.-->
 <!--+++-->
 
 ### 購読
-
-<!--* [Update Email Subscription](#update-email-subscription)
-* [Watch Subscriptions Timeline for a Portal](#watch-subscriptions-timeline-for-a-portal)-->
 
 +++ **E メール サブスクリプションの更新**
 
