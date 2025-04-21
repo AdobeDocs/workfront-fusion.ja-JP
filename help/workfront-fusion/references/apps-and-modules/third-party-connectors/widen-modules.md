@@ -1,20 +1,20 @@
 ---
 title: Widen モジュール
-description: 1 つのシナリオで  [!DNL Adobe Workfront Fusion] 、[!UICONTROL Widen] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
+description: ' [!DNL Adobe Workfront Fusion]  シナリオでは、[!UICONTROL Widen] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりすることができます。'
 author: Becky
 draft: Probably
 feature: Workfront Fusion
 exl-id: 11376e58-a44b-4766-85dc-e2421b0112de
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: b5387e4ba84d67d6ea2472282c212e396ba93d4f
 workflow-type: tm+mt
-source-wordcount: '1362'
-ht-degree: 89%
+source-wordcount: '1601'
+ht-degree: 82%
 
 ---
 
 # [!DNL Widen] モジュール
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、[!UICONTROL Widen] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
+[!DNL Adobe Workfront Fusion] シナリオでは、[!UICONTROL Widen] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりすることができます。
 
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -22,42 +22,46 @@ ht-degree: 89%
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 [!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+
++++
 
 ## 前提条件
 
@@ -82,14 +86,15 @@ Widen コネクタでは、次の機能を使用します。
  </tbody> 
  </table>
 
-## [!DNL Widen] を [!DNL Workfront Fusion] に接続 {#connect-widen-to-workfront-fusion}
+## [!DNL Widen] を [!DNL Workfront Fusion] に接続  {#connect-widen-to-workfront-fusion}
 
 [!DNL Widen] アカウントへの接続を、[!DNL Widen] モジュール内から直接作成できます。
 
-1. 任意の [!DNL Widen] モジュールで、[!UICONTROL Connection] フィールドの横にある「**[!UICONTROL Add]**」をクリックします。
+1. 任意の [!DNL Widen] モジュールで、「[!UICONTROL 接続]」フィールドの横にある「**[!UICONTROL 追加]**」をクリックします。
+1. 接続先の環境とアカウントのタイプを選択します。 これは情報提供のみを目的としており、Fusion の「接続」領域に表示されます。
 1. 接続する [!DNL Widen] ドメインを選択します。
 1. [!DNL Widen] アカウントのトークンを入力します。このトークンの場所について詳しくは、[[!DNL Widen] API に関する FAQ](https://community.widen.com/collective/s/article/API-FAQs)を参照してください。
-1. 「**[!UICONTROL Continue]**」をクリックして接続を作成し、モジュールに戻ります。
+1. 「**[!UICONTROL 続行]**」をクリックして接続を作成し、モジュールに戻ります。
 
 ## [!DNL Widen] モジュールとそのフィールド
 
@@ -105,7 +110,7 @@ Widen コネクタでは、次の機能を使用します。
 
 ### トリガーモジュール
 
-#### [!UICONTROL Watch assets]
+#### [!UICONTROL アセットを監視]
 
 このトリガーモジュールは、アセットが作成または更新されたときにシナリオを開始します。
 
@@ -138,17 +143,46 @@ Widen コネクタでは、次の機能を使用します。
 
 ### アクションモジュール
 
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Read asset info]](#read-asset-info)
-* [[!UICONTROL Add assets to collections]](#add-assets-to-collections)
-* [[!UICONTROL Remove assets from collection]](#remove-assets-from-collection)
-* [[!UICONTROL Update asset metadata]](#update-asset-metadata)
-* [[!UICONTROL Download File]](#download-file)
-* [ファイルの [!UICONTROL Upload] 成](#upload-a-file)
+* [[!UICONTROL コレクションへのアセットの追加]](#add-assets-to-collections)
+* [[!UICONTROL カスタム API 呼び出し]](#custom-api-call)
+* [[!UICONTROL ファイルをダウンロード]](#download-file)
+* [[!UICONTROL アセット情報の読み取り]](#read-asset-info)
+* [[!UICONTROL コレクションからアセットを削除]](#remove-assets-from-collection)
+* [[!UICONTROL アセットのメタデータの更新]](#update-asset-metadata)
+* [[!UICONTROL ファイルをアップロード]](#upload-a-file)
 
-#### [!UICONTROL Custom API Call]
+#### [!UICONTROL コレクションへのアセットの追加]
 
-このアクションモジュールでは、[!DNL Widen] API への認証済みのカスタム呼び出しを実行できます。これにより、他の [!DNL Widen] モジュールでは不可能なデータフロー自動処理を作成できます。
+このアクションモジュールは、1 つ以上のアセットをコレクションに追加します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+  <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事内の <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Collections ID]</td> 
+   <td>アセットの追加先のコレクションごとに「<strong>[ コレクション ID]</strong> をクリックし、[!UICONTROL コレクション ID] を入力またはマッピングします。</li> 
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Assets ID]</td> 
+   <td> コレクションに追加するアセットごとに、「<strong>[!UICONTROL Assets ID]</strong> をクリックし、アセット ID を入力またはマッピングします。</p> </li> 
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>各シナリオの実行サイクル中に、モジュールが操作するアセットの最大数を入力またはマッピングします。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL カスタム API 呼び出し]
+
+このアクションモジュールは、[!DNL Widen] API に対して認証済みのカスタム呼び出しを実行します。これにより、他の [!DNL Widen] モジュールでは不可能なデータフロー自動処理を作成できます。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
@@ -158,10 +192,10 @@ Widen コネクタでは、次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] へ接続</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL API Version]</td> 
+   <td role="rowheader">[!UICONTROL API Version]</td> 
    <td>最新バージョンの [!DNL Widen] API とバージョン 1.0 のどちらを使用するかを選択します。</td> 
   </tr> 
   <tr> 
@@ -174,7 +208,7 @@ Widen コネクタでは、次の機能を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p> <p>例： <code>{"Content-type":"application/json"}</code></p> <p>[!UICONTROL Workfront Fusion] によって、認証ヘッダーが追加されます。</p> </td> 
+   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p> <p>例： <code>{"Content-type":"application/json"}</code></p> <p>[!UICONTROL Workfront Fusion] によって認証ヘッダーが追加されます。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 
@@ -190,7 +224,26 @@ Widen コネクタでは、次の機能を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Read asset info]
+#### [!UICONTROL ファイルをダウンロード]
+
+このアクションモジュールは、[!DNL Widen] アカウントからアセットをダウンロードします。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+  <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset ID]</td> 
+   <td> <p>ダウンロードするアセットの ID を入力またはマッピングします。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL アセット情報の読み取り]
 
 このアクションモジュールは、個々のアセットを一意の ID で取得します。
 
@@ -200,7 +253,7 @@ Widen コネクタでは、次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] へ接続</a>を参照してください。</p> </td> 
+  <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset ID]</td> 
@@ -217,44 +270,7 @@ Widen コネクタでは、次の機能を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Add assets to collections]
-
-このアクションモジュールは、1 つ以上のアセットをコレクションに追加します。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] へ接続</a>を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Collections ID]</td> 
-   <td> <p>アセットの追加先の各コレクションについて、次の操作を行います。</p> 
-    <ol> 
-     <li value="1"> <p> <strong>[!UICONTROL Add]</strong> をクリックします。</p> </li> 
-     <li value="2"> <p>[!UICONTROL Collection ID] を入力またはマッピングします。</p> </li> 
-     <li value="3"> <p><strong>[!UICONTROL Add item]</strong> をクリックします。</p> </li> 
-    </ol> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Assets ID]</td> 
-   <td> <p>コレクションに追加する各アセットに対して、次の操作を行います。</p> 
-    <ol> 
-     <li value="1"> <p> <strong>[!UICONTROL Add]</strong> をクリックします。</p> </li> 
-     <li value="2"> <p>アセット ID を入力またはマッピングします。</p> </li> 
-     <li value="3"> <p><strong>[!UICONTROL Add item]</strong> をクリックします。</p> </li> 
-    </ol> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p>各シナリオの実行サイクル中に、モジュールが操作するアセットの最大数を入力またはマッピングします。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Remove assets from collection]
+#### [!UICONTROL コレクションからアセットを削除]
 
 このアクションモジュールは、コレクションから 1 つ以上のアセットを削除します。
 
@@ -264,25 +280,18 @@ Widen コネクタでは、次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] へ接続</a>を参照してください。</p> </td> 
+  <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事内の <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
   </tr> 
+  <tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Collections ID]</td> 
-   <td> <p>アセットを削除する各コレクションに対して、次の操作を実行します。</p> 
-    <ol> 
-     <li value="1"> <p> <strong>[!UICONTROL Add]</strong> をクリックします。</p> </li> 
-     <li value="2"> <p>コレクション ID を入力またはマッピングします。</p> </li> 
-     <li value="3"> <p><strong>[!UICONTROL Add item]</strong> をクリックします。</p> </li> 
-    </ol> </td> 
+   <td>アセットを削除するコレクションごとに、「<strong>[ コレクション ID]</strong>」をクリックして、[!UICONTROL コレクション ID] を入力またはマッピングします。</li> 
+   </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">アセット ID</td> 
-   <td> <p>コレクションから削除する各アセットに対して、次の操作を実行します。</p> 
-    <ol> 
-     <li value="1"> <p> <strong>[!UICONTROL Add]</strong> をクリックします。</p> </li> 
-     <li value="2"> <p>アセット ID を入力またはマッピングします。</p> </li> 
-     <li value="3"> <p><strong>[!UICONTROL Add item]</strong> をクリックします。</p> </li> 
-    </ol> </td> 
+   <td role="rowheader">[!UICONTROL Assets ID]</td> 
+   <td> コレクションから削除する各アセットに対して、<strong>[!UICONTROL Assets ID] をクリックし </strong> アセット ID を入力またはマッピングします。</p> </li> 
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
@@ -291,7 +300,7 @@ Widen コネクタでは、次の機能を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Update asset metadata]
+#### [!UICONTROL アセットメタデータを更新]
 
 このアクションモジュールは、アセットのメタデータフィールドを更新します。
 
@@ -301,7 +310,7 @@ Widen コネクタでは、次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] へ接続</a>を参照してください。</p> </td> 
+  <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset ID]</td> 
@@ -322,26 +331,7 @@ Widen コネクタでは、次の機能を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Download File]
-
-このアクションモジュールは、[!DNL Widen] アカウントからアセットをダウンロードします。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] へ接続</a>を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID]</td> 
-   <td> <p>ダウンロードするアセットの ID を入力またはマッピングします。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Upload a file]
+#### [!UICONTROL ファイルをアップロード]
 
 このアクションモジュールは、ファイルを [!DNL Widen] アカウントにアップロードします。
 
@@ -351,7 +341,7 @@ Widen コネクタでは、次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] へ接続</a>を参照してください。</p> </td> 
+  <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Upload Profile]</td> 
@@ -375,17 +365,17 @@ Widen コネクタでは、次の機能を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Metadata]</td> 
-   <td>ファイルのアップロードに含めるメタデータフィールドを選択します。各フィールドに、フィールドの [!UICONTROL value] を入力します。</td> 
+   <td>ファイルのアップロードに含めるメタデータフィールドを選択します。各フィールドに、そのフィールド用の [!UICONTROL value] を入力します。</td> 
   </tr> 
  </tbody> 
 </table>
 
 ### モジュールの検索
 
-* [[!UICONTROL Read collection assets]](#read-collection-assets)
-* [[!UICONTROL Search assets]](#search-assets)
+* [[!UICONTROL コレクションアセットの読み取り]](#read-collection-assets)
+* [[!UICONTROL アセットの検索]](#search-assets)
 
-#### [!UICONTROL Read collection assets]
+#### [!UICONTROL コレクションアセットの読み取り]
 
 このアクションモジュールは、コレクション内のアセットのリストを取得します。
 
@@ -395,7 +385,7 @@ Widen コネクタでは、次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] へ接続</a>を参照してください。</p> </td> 
+  <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Collection ID]</td> 
@@ -424,7 +414,7 @@ Widen コネクタでは、次の機能を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Search assets]
+#### [!UICONTROL アセットの検索]
 
 この検索モジュールは、特定の検索条件に一致するアセットのリストを取得します。
 
@@ -434,7 +424,7 @@ Widen コネクタでは、次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] へ接続</a>を参照してください。</p> </td> 
+  <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search query]</td> 
@@ -458,7 +448,7 @@ Widen コネクタでは、次の機能を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search document text]</td> 
-   <td>検索にドキュメントテキストを含める場合はこのオプションを有効にし、検索条件に一致するタイトルを持つアセットのみを含める場合は false にします。</td> 
+   <td>このオプションを有効にして検索にドキュメントテキストを含めるか、false に設定してタイトルが検索条件に一致するアセットのみを含めます。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
