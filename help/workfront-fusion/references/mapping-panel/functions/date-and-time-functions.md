@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion マッピングパネルでは、以下の�
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 9249223c6fbe0360b11d41988fe8b9c35e45dbb8
 workflow-type: tm+mt
-source-wordcount: '1800'
-ht-degree: 90%
+source-wordcount: '1876'
+ht-degree: 92%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 90%
 
 ## 関数
 
-### [!UICONTROL addSeconds (date; number)]
+### [!UICONTROL addSeconds（date; number）]
 
 指定された秒数を日付に追加した結果として、新しい日付を返します。秒数を減算するには、負の数を入力します。
 
@@ -43,7 +43,7 @@ ht-degree: 90%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addMinutes (date; number)] {#addminutes-date-number}
+### [!UICONTROL addMinutes（date; number）] {#addminutes-date-number}
 
 指定された分数を日付に追加した結果として、新しい日付を返します。分数を減算するには、負の数を入力します。
 
@@ -61,7 +61,7 @@ ht-degree: 90%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addHours (date; number)] {#addhours-date-number}
+### [!UICONTROL addHours（date; number）] {#addhours-date-number}
 
 指定した時間数を日付に追加した結果として、新しい日付を返します。時間数を減算するには、負の数を入力します。
 
@@ -97,7 +97,7 @@ ht-degree: 90%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addMonths (date; number)]
+### [!UICONTROL addMonths（date, number）]
 
 指定された月数を日付に追加した結果として、新しい日付を返します。月数を減算するには、負の数を入力します。
 
@@ -115,7 +115,7 @@ ht-degree: 90%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addYears (date; number)]
+### [!UICONTROL addYears（date; number）]
 
 指定された年数を日付に追加した結果として、新しい日付を返します。年数を減算するには、負の数を入力します。
 
@@ -133,13 +133,13 @@ ht-degree: 90%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setSecond (date; number)]
+### [!UICONTROL setSecond（date; number）]
 
 この関数は、パラメーターで指定された秒数を持つ新しい日付を返します。
 
 0 ～ 59 の数値を指定します。数値がその範囲外にある場合、この関数は、前の分（負の数の場合）または後続の分（正の数の場合）からの秒数を返します。
 
-範囲外の数値を指定する必要がある場合は、前述の [addSeconds （date; number） ](#addseconds-date-number) の節で説明されているように、[!UICONTROL  addSeconds] を使用することをお勧めします。
+範囲外の数値を指定する必要がある場合は、上記の [addSeconds（date; number）](#addseconds-date-number)の節の説明に従って、[!UICONTROL addSeconds] を使用することをお勧めします。
 
 >[!BEGINSHADEBOX]
 
@@ -149,13 +149,13 @@ ht-degree: 90%
 
   2015-10-07T11:36:10.138Z を返します。
 
-* `setSecond(2015-10-07T11:36:39.138Z; 6)`
+* `setSecond(2015-10-07T11:36:39.138Z; 61)`
 
   2015-10-07T11:37:01.138Z を返します。
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setMinute (date; number)]
+### [!UICONTROL setMinute（date; number）]
 
 この関数は、パラメーターで指定された分数を持つ新しい日付を返します。
 
@@ -177,7 +177,7 @@ ht-degree: 90%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setHour (date; number)]
+### [!UICONTROL setHour（date; number）]
 
 この関数は、パラメーターで指定された時間数を持つ新しい日付を返します。
 
@@ -283,7 +283,7 @@ ht-degree: 90%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL formatDate (date; format; [timezone])]
+### [!UICONTROL formatDate（date; format; [timezone]）]
 
 この関数は、`12-10-2021 20:30` などの日付値を `Dec 10, 2021 8:30 PM` などのテキスト値として書式設定する場合に使用します。
 
@@ -353,7 +353,7 @@ ht-degree: 90%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL parseDate (text; format; [timezone])]
+### [!UICONTROL parseDate（テキスト、フォーマット、[タイムゾーン]）]
 
 日付を表すテキスト値（`12-10-2019 20:30` または `Aug 18, 2019 10:00 AM`）の場合、この関数を使用して、日付値（バイナリマシンが読み取り可能な表現）に変換（解析）する必要があります。詳細については、「[ アイテム データの種類 ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)」の「日付とテキスト」を参照してください。
 
