@@ -4,10 +4,10 @@ description: この記事では、シナリオにモジュールを追加する�
 author: Becky
 feature: Workfront Fusion
 exl-id: f3757468-3e11-4862-a83e-ed447805545b
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 4%
+source-wordcount: '628'
+ht-degree: 5%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 4%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規： [!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td> <p>新規：[!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
@@ -46,7 +46,7 @@ ht-degree: 4%
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：組織は [!DNL Adobe Workfront Fusion] を購入する必要があります。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：[!DNL Adobe Workfront Fusion] を購入してください。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
    <p>または</p>
    <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
    </td> 
@@ -66,7 +66,7 @@ ht-degree: 4%
 
 トリガーモジュールについて詳しくは、「モジュールの概要」の [トリガーモジュール ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules) を参照してください。
 
-1. 左側のパネルで「**[!UICONTROL Scenarios]**」タブをクリックします。
+1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. 画面の右上隅にある「**新しいシナリオを作成**」をクリックして、シナリオの作成を開始します。
 
    シナリオエディターが開き、プレースホルダー（疑問符）モジュールと使用可能なコネクタのリストが表示されます。
@@ -84,8 +84,7 @@ ht-degree: 4%
 
 ## シナリオに別のモジュールを追加
 
-1. モジュールを追加するシナリオのシナリオエディターを開いていない場合は、左パネルの「**[!UICONTROL Scenarios]**」タブをクリックします。
-1. ブループリントを書き出すシナリオを選択します。
+1. モジュールを追加するシナリオのシナリオエディターを開いていない場合は、左パネルの **[!UICONTROL シナリオ]** タブをクリックします。
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
 1. 別のモジュールにモジュールを追加するには、モジュールの右側のハンドルをポイントして、そのハンドルの後にモジュールを追加します。次に、表示されたら **別のモジュールを追加** をクリックします。
 
@@ -98,8 +97,7 @@ ht-degree: 4%
 
 ## シナリオ内の既存のモジュール間にモジュールを挿入します
 
-1. モジュールを追加するシナリオのシナリオエディターを開いていない場合は、左パネルの「**[!UICONTROL Scenarios]**」タブをクリックします。
-1. ブループリントを書き出すシナリオを選択します。
+1. モジュールを追加するシナリオのシナリオエディターを開いていない場合は、左パネルの **[!UICONTROL シナリオ]** タブをクリックします。
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
 1. モジュールを挿入するモジュール間の点線パスをクリックします。
 1. 表示されるメニューで、「**モジュールを追加**」を選択します。

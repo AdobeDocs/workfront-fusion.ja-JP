@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion では、モジュール、モジュール�
 author: Becky
 feature: Workfront Fusion
 exl-id: 5cece7d4-b2c7-4276-8a6f-f65bad799c7a
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 50%
+source-wordcount: '908'
+ht-degree: 63%
 
 ---
 
@@ -31,7 +31,7 @@ Adobe Workfront Fusion では、モジュール、モジュールのグループ
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規： [!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td> <p>新規：[!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
@@ -44,7 +44,7 @@ Adobe Workfront Fusion では、モジュール、モジュールのグループ
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：組織は [!DNL Adobe Workfront Fusion] を購入する必要があります。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：[!DNL Adobe Workfront Fusion] を購入してください。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
    <p>または</p>
    <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
    </td> 
@@ -77,18 +77,18 @@ Adobe Workfront Fusion では、モジュール、モジュールのグループ
 
 モジュールのグループをコピーする方法は、単一のモジュールをコピーする場合と似ています。
 
-1. 左側のパネルで「**[!UICONTROL Scenarios]**」タブをクリックします。
+1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. モジュールをコピーするシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
 1. コピーするモジュールを右クリックします。
 
    >[!NOTE]
    >
-   >複数のモジュールを選択するには、[!UICONTROL shift] を押したまま、コピーするモジュールをクリックします。 モジュールのグループをコピーすると、接続線、フィルター、ルーティングロジックもコピーされます。
+   >[!UICONTROL shift] を押しながらコピーするモジュールをクリックすると、複数のモジュールを選択できます。モジュールのグループをコピーすると、接続線、フィルター、ルーティングロジックもコピーされます。
 
-1. 「**[!UICONTROL Copy module]**」を選択します。
+1. 「**[!UICONTROL モジュールをコピー]**」を選択します。
 1. シナリオのコピー先となる領域にカーソルを移動します。
-1. 右クリックし、「**[!UICONTROL Paste]**」を選択します。
+1. 右クリックし、「**[!UICONTROL ペースト]**」を選択します。
 1. ペーストしたモジュールをシナリオ内の適切な場所にドラッグして、シナリオに接続します。
 
    キーボードショートカットを使用してコピー＆ペーストすることもできます。
@@ -99,17 +99,17 @@ Adobe Workfront Fusion では、モジュール、モジュールのグループ
 
 1. シナリオの詳細ページを開きます。
 
-   1. 左側のパネルで「**[!UICONTROL Scenario]**」タブをクリックし、詳細を表示するシナリオをクリックします。
+   1. 左パネルの「**[!UICONTROL シナリオ]**」タブをクリックし、詳細が必要なシナリオをクリックします。
 
       または
 
       シナリオエディターでシナリオに取り組んでいる場合は、ウィンドウの左上隅にある左矢印 ![ 編集を終了 ](assets/exit-editing-arrow.png) をクリックします。
 
-1. ページの右上にある **[!UICONTROL Options]** を右クリックします。
-1. 「**[!UICONTROL Clone]**」を選択します。
+1. ページの右上隅にある「**[!UICONTROL オプション]**」を右クリックします。
+1. 「**[!UICONTROL クローン]**」を選択します。
 1. （オプション）新しいシナリオの名前を入力します。
-1. （オプション） **[!UICONTROL Keep the states of any new modules the same as those being duplicated]** を有効にして、コピーしたシナリオに、元のシナリオで処理された最新のレコードに関する情報も含まれるようにします。
-1. 「**[!UICONTROL Save]**」をクリックして、シナリオを作成します。
+1. （オプション）「**[!UICONTROL 新しいモジュールの状態を複製されるモジュールと同じ状態に保つ]**」を有効にして、コピーされたシナリオに元のシナリオで処理された最新のレコードに関する情報も確実に含まれるようにします。
+1. 「**[!UICONTROL 保存]**」をクリックしてシナリオを作成します。
 
 ## ブループリントを使用したシナリオのコピー
 
@@ -119,13 +119,17 @@ Adobe Workfront Fusion では、モジュール、モジュールのグループ
 
 ### シナリオのブループリントの書き出し
 
-1. 左側のパネルで「**[!UICONTROL Scenarios]**」タブをクリックします。
+1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. ブループリントを書き出すシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
-1. シナリオで、シナリオ設定領域の **[!UICONTROL More]** メニューをクリックします。
-1. **[!UICONTROL Export Blueprint]** をクリックします。
+1. シナリオのシナリオ設定エリアで、**[!UICONTROL その他]**&#x200B;メニューをクリックします。
+1. 「**[!UICONTROL ブループリントを書き出し]**」をクリックします。
 
    JSON ファイルが作成され、コンピューターにダウンロードされます。このファイルは、[!DNL Downloads] フォルダーにあります。
+
+>[!NOTE]
+>
+>以前のバージョンのシナリオのブループリントを書き出すには、[ シナリオバージョンの表示と管理 ](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md) を参照してください。
 
 ### ブループリントの読み込み
 
@@ -134,13 +138,13 @@ Adobe Workfront Fusion では、モジュール、モジュールのグループ
 >ブループリントを既存のシナリオに読み込むと、既存のシナリオがシナリオのブループリントに置き換えられます。既存のシナリオにブループリントを追加することはできません。
 
 1. シナリオの新規作成を開始します。
-1. シナリオで、シナリオ設定領域の **[!UICONTROL More]** メニューをクリックします。
-1. **[!UICONTROL Import Blueprint]** をクリックします。
-1. 表示されるダイアログで、「**[!UICONTROL Browse]**」をクリックします
-1. 読み込むブループリントに移動し、「**[!UICONTROL Open]**」をクリックします。
-1. **[!UICONTROL Save]** をクリックします。
+1. シナリオのシナリオ設定エリアで、**[!UICONTROL その他]**&#x200B;メニューをクリックします。
+1. 「**[!UICONTROL ブループリントを読み込み]**」をクリックします。
+1. 表示されるダイアログで、「**[!UICONTROL 参照]**」をクリックします。
+1. 読み込むブループリントに移動し、「**[!UICONTROL 開く]**」をクリックします。
+1. 「**[!UICONTROL 保存]**」をクリックします。
 
-   JSON ファイルが作成され、コンピューターにダウンロードされます。このファイルは、[!UICONTROL Downloads] フォルダーにあります。
+   JSON ファイルが作成され、コンピューターにダウンロードされます。このファイルは、[!UICONTROL ダウンロード]フォルダーにあります。
 
 ## テンプレートを使用したシナリオのコピーおよび再利用
 
