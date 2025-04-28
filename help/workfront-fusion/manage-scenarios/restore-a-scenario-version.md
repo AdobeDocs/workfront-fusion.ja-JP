@@ -1,19 +1,19 @@
 ---
-title: シナリオバージョンを復元
-description: シナリオの以前のバージョンを復元できます。これにより、シナリオに変更を加えることができ、以前の機能を使用したい場合には、加えた変更を簡単に元に戻すことができます。
+title: シナリオのバージョンの表示と管理
+description: シナリオの以前のバージョンのブループリントを表示、復元、名前変更またはダウンロードできます。
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
+source-git-commit: 2270b386bbf62cfc3b82bd4f9c293b36d3b7a35a
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 37%
+source-wordcount: '298'
+ht-degree: 27%
 
 ---
 
 # シナリオのバージョンの表示と管理
 
-シナリオの以前のバージョンを表示、復元または名前変更できます。
+シナリオの以前のバージョンのブループリントを表示、復元、名前変更またはダウンロードできます。
 
 ## アクセス要件
 
