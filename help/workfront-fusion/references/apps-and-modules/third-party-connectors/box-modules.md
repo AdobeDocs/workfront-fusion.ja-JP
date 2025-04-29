@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  シナリオでは、Box を使用
 author: Becky
 feature: Workfront Fusion
 exl-id: 9e741dce-05a6-4e13-8d58-fbe3b4900d7e
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: f02c4df01c7fad6bb9cdf4911512eef97e71c82b
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 79%
+source-wordcount: '918'
+ht-degree: 69%
 
 ---
 
@@ -19,6 +19,8 @@ ht-degree: 79%
 
 ## アクセス要件
 
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
 この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
 <table style="table-layout:auto">
@@ -26,35 +28,37 @@ ht-degree: 79%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 [!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+
++++
 
 ## 前提条件
 
@@ -92,12 +96,15 @@ ht-degree: 79%
 
 ![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
+* [トリガー](#triggers)
+* [アクション](#actions)
+
 ### トリガー
 
-* [[!UICONTROL New event]](#new-event)
-* [[!UICONTROL Watch files]](#watch-files)
+* [[!UICONTROL 新しいイベント]](#new-event)
+* [[!UICONTROL ファイルを監視]](#watch-files)
 
-#### [!UICONTROL New event]
+#### [!UICONTROL 新しいイベント]
 
 このインスタントトリガーモジュールは、ファイルが追加、移動、コピー、削除、ロックまたはロック解除されたときにシナリオを開始します。
 
@@ -107,7 +114,7 @@ ht-degree: 79%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td> <p>送信メッセージの監視に使用する web フックを選択します。Webhook を追加するには、「<strong>[!UICONTROL Add]</strong>」をクリックして Webhook の名前と接続を入力します。</p> <p> [!UICONTROL Box] アカウントを [!UICONTROL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> サービスへの接続 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>送信メッセージの監視に使用する web フックを選択します。Web フックを追加するには、「<strong>[!UICONTROL Add]</strong>」をクリックして、web フックの名前と接続を入力します。</p> <p> [!UICONTROL Box] アカウントを [!UICONTROL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> サービスへの接続 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Maximum number of returned events]</p> </td> 
@@ -116,7 +123,7 @@ ht-degree: 79%
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch files]
+#### [!UICONTROL ファイルを監視]
 
 このトリガーモジュールは、新しいファイルが追加されたとき、または既存のファイルが監視対象のフォルダー内で更新されたときに、シナリオを開始します。
 
@@ -125,7 +132,13 @@ ht-degree: 79%
  <col> 
  <tbody> 
   <tr> 
+   <td role="rowheader">接続</td> 
    <td> <p>[!DNL Box] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+  <tr> 
+   <td role="rowheader">フォルダー</td> 
+   <td> <p>監視するフォルダーを選択します。 シナリオでは、1 つのフォルダーを監視できます。</p> 
+   </td> 
+  </tr> 
   <tr> 
    <td role="rowheader">監視</td> 
    <td> <p>監視するファイルのタイプを選択します。</p> 
@@ -143,20 +156,14 @@ ht-degree: 79%
 
 ### アクション
 
-* [ファイルの [!UICONTROL Upload] 成](#upload-a-file)
-* [[!UICONTROL Update a file]](#update-a-file)
-* [[!UICONTROL Delete a file]](#delete-a-file)
-* [[!UICONTROL Get a file]](#get-a-file)
+* [[!UICONTROL ファイルを削除]](#delete-a-file)
+* [[!UICONTROL ファイルを取得]](#get-a-file)
+* [[!UICONTROL ファイルを更新]](#update-a-file)
+* [ファイルを[!UICONTROL アップロード]](#upload-a-file)
 
-#### [!UICONTROL Upload a file]
+#### [!UICONTROL ファイルを削除]
 
-ファイルをアップロードするアクションモジュールです。
-
-ファイルを指定します。また、ファイルの新しいファイル名を指定することもできます。
-
-このモジュールは、ファイルの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
-
-このモジュールを設定する際には、次のフィールドが表示されます。
+ファイルを削除するアクションモジュールです。
 
 <table style="table-layout:auto">
  <col> 
@@ -165,6 +172,78 @@ ht-degree: 79%
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>[!DNL Box] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL File ID]</td> 
+   <td>モジュールで削除するファイルの一意の ID を入力またはマップします。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL ファイルの取得]
+
+このアクションモジュールは、ファイルをダウンロードします。
+
+ファイルの ID を指定します。
+
+>[!NOTE]
+>
+>このモジュールは、後続のモジュールにファイルを提供するのに役立ちます。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>[!DNL Box] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL File ID]</td> 
+   <td>モジュールで取得するファイルの一意の ID を入力またはマッピングします。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL ファイルを更新]
+
+ファイルを更新するアクションモジュールです。
+
+ファイルの ID を指定します。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>[!DNL Box] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL File ID]</td> 
+   <td>モジュールを更新するファイルの一意の ID を入力またはマッピングします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL ファイルをアップロード]
+
+ファイルをアップロードするアクションモジュールです。
+
+ファイルを指定します。また、ファイルの新しいファイル名を指定することもできます。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>[!DNL Box] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td> <p>ファイルをアップロードするフォルダーを選択します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
@@ -178,104 +257,4 @@ ht-degree: 79%
 >このモジュールが正常に動作しない場合は、次の点を考慮してください。
 >
 >* ファイルのサイズが [!DNL Box] プランでのファイルサイズの上限を超えているか、[!DNL Box] アカウントのストレージ割り当てをすべて使用している可能性があります。ストレージスペースを増やすには、[!DNL Box] から既存のファイルを削除するか、[!DNL Box] アカウントをアップグレードしてください。
->* [!DNL Box] では、同じ名前の複数のファイルは 1 つのフォルダーにアップロードされません。アップロード先のフォルダーにアップロードするファイルと同じ名前のファイルが含まれている場合、シナリオの実行はエラーで終了します。この問題を回避するには、ファイルの名前を変更します。ファイルを更新する場合は、**[!UICONTROL Update a file]** モジュールを使用します。
-
-#### [!UICONTROL Update a file]
-
-ファイルを更新するアクションモジュールです。
-
-ファイルの ID を指定します。
-
-このモジュールは、ファイルの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
-
-このモジュールを設定する際には、次のフィールドが表示されます。
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Box] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL File ID]</td> 
-   <td>モジュールを更新するファイルの一意の ID を入力またはマッピングします。</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Delete a file]
-
-ファイルを削除するアクションモジュールです。
-
-ファイルの ID を指定します。
-
-このモジュールは、ファイルの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
-
-このモジュールを設定する際には、次のフィールドが表示されます。
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Box] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL File ID]</td> 
-   <td>モジュールを更新するファイルの一意の ID を入力またはマッピングします。</td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Get a file]
-
-このアクションモジュールは、ファイルをダウンロードします。
-
-ファイルの ID を指定します。
-
-このモジュールは、ファイルの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
-
->[!NOTE]
->
->このモジュールは、後続のモジュールにファイルを提供するのに役立ちます。
-
-このモジュールを設定する際には、次のフィールドが表示されます。
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Box] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL File ID]</td> 
-   <td>モジュールを更新するファイルの一意の ID を入力またはマッピングします。</td> 
-  </tr> 
- </tbody> 
-</table>
-
-<!--
-<h2>Possible problems</h2>
-
-<p style="color: #ff1493;">This is drafted out because we don't have a download module for Box yet</p>
-
-
-<h3>Watch files trigger module doesn't download a file contained in the folder.</h3>
-
-<p>There are several situations when downloading a file fails:</p>
-
-
-
-  <li>The current file lock setting does not allow the file to be downloaded or the downloading of the file is disabled. In this case, the file is ignored.</li>
-
-
-
-  <li>When the scenario started, the file was being uploaded to the server and was not ready to be downloaded. The scenario run gets stopped and Workfront Fusion tries downloading the file again during the next execution of the scenario.</li>
-  
--->
+>* [!DNL Box] では、同じ名前の複数のファイルは 1 つのフォルダーにアップロードされません。アップロード先のフォルダーにアップロードするファイルと同じ名前のファイルが含まれている場合、シナリオの実行はエラーで終了します。この問題を回避するには、ファイルの名前を変更します。ファイルを更新する場合は、**[!UICONTROL ファイルを更新]**&#x200B;モジュールを使用します。
