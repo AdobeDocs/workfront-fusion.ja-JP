@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
-source-git-commit: a23517da30b4e51ef55bcc13241a03cd1d6153a0
+source-git-commit: 6ebfd07e24f77bd8c162d53554ddf1fcaefafeb8
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1744'
 ht-degree: 61%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 61%
 * Fusion リリースアクティビティ {#fusion-release-activity}
    * [Adobe Workfront Fusion リリースアクティビティ](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion リリース - 2025 年 {#fusion-releases-2025}
+      * [Workfront Fusion リリースアクティビティ：2025年4月21日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-21.md)
       * [Workfront Fusion リリースアクティビティ：2025年4月14日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-14.md)
       * [Workfront Fusion リリースアクティビティ：2025年3月31日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-31.md)
       * [Workfront Fusion リリースアクティビティ：2025年3月10日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-10.md)
@@ -119,9 +120,9 @@ ht-degree: 61%
       * [Workfront Fusion リリースアクティビティ：2020年9月21日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-sept-21.md)
       * [Workfront Fusion リリースアクティビティ：2020年8月24日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-aug-24.md)
       * [Workfront Fusion リリースアクティビティ：2020年8月17日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-aug-17.md)
-* Workfront Fusion {#get-started-with-fusion} の基本を学ぶ
+* Workfront Fusion の基本を学ぶ {#get-started-with-fusion}
    * [Workfront Fusion の基本を学ぶ](/help/workfront-fusion/get-started-with-fusion/get-started-fusion-toc.md)
-   * Workfront Fusion {#understand-workfront-fusion} について
+   * Workfront Fusion について {#understand-workfront-fusion}
       * [Workfront Fusion について](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)
       * [Adobe Workfront Fusion の概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/workfront-fusion-overview.md)
       * [Adobe Workfront Fusion の用語](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md)
@@ -130,14 +131,14 @@ ht-degree: 61%
       * [モジュールの概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md)
       * [マッピングの概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md)
       * [関数の概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
-   * Workfront Fusion {#navigate-workfront-fusion} に移動する
+   * Workfront Fusion に移動する {#navigate-workfront-fusion}
       * [Workfront Fusion に移動：記事インデックス](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-fusion-toc.md)
       * [Adobe Workfront Fusion に移動する](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md)
       * [シナリオエディターの概要](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)
       * [シナリオの詳細の概要](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md)
       * [組織またはチームを切り替える](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/switch-orgs-or-teams.md)
       * [プロファイル設定を変更](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/change-profile-settings.md)
-* Workfront Fusion {#set-up-and-manage-fusion} のセットアップと管理
+* Workfront Fusion の設定と管理 {#set-up-and-manage-fusion}
    * [Workfront Fusion の設定と管理](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-workfront-fusion-toc.md)
    * ライセンスと運用の概要 {#licensing-and-operations-overviews}
       * [ライセンスと運用の概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
@@ -145,7 +146,7 @@ ht-degree: 61%
       * [操作](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
    * 組織とチームの設定と管理 {#set-up-and-manage-orgs-and-teams}
       * [組織とチームの設定と管理：記事インデックス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
-      * 組織とチームの {#set-up-orgs-teams-and-users} 定
+      * 組織とチームの設定 {#set-up-orgs-teams-and-users}
          * [組織、チーム、ユーザーの設定：記事インデックス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-orgs-and-teams.md)
          * [組織とチームの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md)
          * [許可リストに加える組織の Fusion の IP アドレスの設定](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)
@@ -154,7 +155,7 @@ ht-degree: 61%
          * [チームにユーザーを追加する](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md)
          * [チーム通知オプションの設定](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)
          * [組織のアクティビティログの表示](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-activity-logs-for-an-org.md)
-      * のユーザーとチーム {#manage-users-and-teams} 管理
+      * ユーザーとチームの管理 {#manage-users-and-teams}
          * [ユーザーとチームの管理：記事インデックス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/manage-users-and-teams.md)
          * [ユーザーの詳細を表示または編集](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-details.md)
          * [ユーザーの役割を表示または編集](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md)
@@ -165,12 +166,12 @@ ht-degree: 61%
       * [テンプレートを編集](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/edit-templates.md)
 * シナリオの作成 {#create-scenarios}
    * [シナリオの作成](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
-   * シナリオプラン {#plan-a-scenario}
+   * シナリオの計画 {#plan-a-scenario}
       * [シナリオの計画：記事インデックス](/help/workfront-fusion/create-scenarios/plan-a-scenario/plan-a-scenario-toc.md)
       * [シナリオプランニングに関するよくある質問](/help/workfront-fusion/create-scenarios/plan-a-scenario/faq.md)
       * [ビデオの概要](/help/workfront-fusion/create-scenarios/plan-a-scenario/fusion-basics-videos.md)
       * [シナリオ作成のワークフロー](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md)
-   * モジュールの追加 {#add-modules}
+   * モジュールを追加 {#add-modules}
       * [モジュールを追加](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)
       * [シナリオへのモジュールの追加](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-basic.md)
       * [モジュールの設定](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
@@ -182,7 +183,7 @@ ht-degree: 61%
       * [ルーターモジュールの追加とルートの設定](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)
       * [シナリオへのフィルターの追加](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md)
       * [トリガーモジュールの開始場所を選択](/help/workfront-fusion/create-scenarios/add-modules/choose-where-trigger-module-starts.md)
-   * データ {#map-data} ースのマッピング
+   * データをマッピング {#map-data}
       * [データをマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
       * [モジュール間で情報をマッピングする](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)
       * [関数を使用した項目のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
@@ -198,14 +199,14 @@ ht-degree: 61%
       * [カスタム OAuth クライアントを使用して Google Services に Adobe Workfront Fusion を接続](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)
       * [Ms Graph REST API の呼び出し](/help/workfront-fusion/create-scenarios/connect-to-apps/call-the-ms-graph-rest-api.md)
       * [接続の管理](/help/workfront-fusion/create-scenarios/connect-to-apps/manage-connections.md)
-   * エラー処理 {#configure-error-handling} の設定
+   * エラー処理の設定 {#configure-error-handling}
       * [エラー処理の設定](/help/workfront-fusion/create-scenarios/config-error-handling/config-error-handling-toc.md)
       * [エラー処理の追加](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)
       * [エラー処理ルートへのフィルタリングとネストの追加](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md)
       * [スローエラーの回避策を設定](/help/workfront-fusion/create-scenarios/config-error-handling/throw.md)
       * [再試行エラー処理の回避策を設定](/help/workfront-fusion/create-scenarios/config-error-handling/retry.md)
       * [一時停止ディレクティブで処理されたエラーを解決します](/help/workfront-fusion/create-scenarios/config-error-handling/resolve-error-from-break-directive.md)
-   * でのシナリオ設定 {#configure-scenario-settings} 指定
+   * シナリオ設定を指定 {#configure-scenario-settings}
       * [シナリオ設定を指定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)
       * [シナリオのスケジュール](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)
       * [シナリオ設定を指定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)
@@ -225,7 +226,7 @@ ht-degree: 61%
    * [Workfront Fusion の AI アシスタント](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
    * [シナリオスコアリングエキスパートの実行](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
    * [シナリオ要素の削除](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
-* {#build-practice-scenarios} での練習シナリオの作成
+* 練習シナリオの作成 {#build-practice-scenarios}
    * [練習シナリオの作成](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
    * [基本的なシナリオの作成](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)
    * [基本シナリオへのトリガーモジュールの追加](/help/workfront-fusion/build-practice-scenarios/add-trigger-to-basic-scenario.md)
@@ -283,7 +284,7 @@ ht-degree: 61%
    * 接続 {#connections}
       * [接続リファレンス：記事インデックス](/help/workfront-fusion/references/connections/connection-reference-toc.md)
       * [接続メタデータ](/help/workfront-fusion/references/connections/connection-metadata.md)
-   * アプリとそのモジュ {#apps-and-their-modules} ル
+   * アプリとそのモジュール {#apps-and-their-modules}
       * [アプリとそのモジュール](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)
       * ユニバーサルコネクタ {#universal-connectors}
          * [HTTP > [!UICONTROL  リクエストを作成 ] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
