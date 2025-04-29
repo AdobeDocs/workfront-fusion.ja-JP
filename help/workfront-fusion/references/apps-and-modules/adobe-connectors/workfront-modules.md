@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion Adobe Workfront コネクタを使用する�
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 7287e0460318cf5328e703af7ecc948b1ce62257
+source-git-commit: 6fa7ab493112351d9480b21b23b3b6b7b14f2230
 workflow-type: tm+mt
-source-wordcount: '7795'
+source-wordcount: '7823'
 ht-degree: 57%
 
 ---
@@ -973,7 +973,7 @@ Workfrontは最近、イベント購読サービスの新しいバージョン�
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!DNL Attach Custom Form]</td> 
-   <td>新しいレコードに添付するカスタムフォームを選択します。 フォームを選択したら、そのフォーム上のフィールドのデータを入力します。</td> 
+   <td>新しいレコードのフィールド値を指定するカスタムフォームを選択します。 フォームを選択したら、そのフォーム上のフィールドのデータを入力します。<p> このモジュールに添付するフォームのフィールド値を指定するには、「マッピングするフィールド」セクションにカスタムフォーム ID を含めます。</td> 
   </tr> 
  </tbody> 
 </table>
