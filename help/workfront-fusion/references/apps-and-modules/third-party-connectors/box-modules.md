@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  シナリオでは、Box を使用
 author: Becky
 feature: Workfront Fusion
 exl-id: 9e741dce-05a6-4e13-8d58-fbe3b4900d7e
-source-git-commit: f02c4df01c7fad6bb9cdf4911512eef97e71c82b
+source-git-commit: 0ed33cbed2b8ed4ab2c89c86b7e8f37b2683ec75
 workflow-type: tm+mt
-source-wordcount: '918'
-ht-degree: 69%
+source-wordcount: '1494'
+ht-degree: 32%
 
 ---
 
@@ -98,15 +98,17 @@ ht-degree: 69%
 
 * [トリガー](#triggers)
 * [アクション](#actions)
+* [検索](#searches)
 
 ### トリガー
 
-* [[!UICONTROL 新しいイベント]](#new-event)
-* [[!UICONTROL ファイルを監視]](#watch-files)
+* [[!UICONTROL  新規ファイル イベント ]](#new-file-event)
+* [新規フォルダーイベント](#new-folder-event)
+* [[!UICONTROL ファイルの監視]](#watch-files)
 
-#### [!UICONTROL 新しいイベント]
+#### [!UICONTROL  新規ファイル イベント ]
 
-このインスタントトリガーモジュールは、ファイルが追加、移動、コピー、削除、ロックまたはロック解除されたときにシナリオを開始します。
+選択したアクションがファイルに対して実行されると、このインスタント トリガー モジュールはシナリオを開始します。
 
 <table style="table-layout:auto">
  <col> 
@@ -114,16 +116,27 @@ ht-degree: 69%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td> <p>送信メッセージの監視に使用する web フックを選択します。Web フックを追加するには、「<strong>[!UICONTROL Add]</strong>」をクリックして、web フックの名前と接続を入力します。</p> <p> [!UICONTROL Box] アカウントを [!UICONTROL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> サービスへの接続 – 基本手順 </a> を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Maximum number of returned events]</p> </td> 
-   <td> <p>各シナリオの実行サイクル中にモジュールが返すイベントの最大数を入力します。</p> </td> 
+   <td> <p>送信メッセージを監視するために使用する Webhook を選択するか、Webhook を追加します。 </p><p>Webhook を追加するには、<strong>[!UICONTROL Add]</strong> をクリックして、Webhook の名前と接続、監視するファイル、監視するトリガーを入力します。</p> <p> [!UICONTROL Box] アカウントを [!UICONTROL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> サービスへの接続 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL ファイルを監視]
+#### 新規フォルダーイベント
+
+このインスタントトリガーモジュールは、フォルダーで選択アクションが発生するとシナリオを開始します。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook]</td> 
+   <td> <p>送信メッセージを監視するために使用する Webhook を選択するか、Webhook を追加します。 </p><p>Webhook を追加するには、<strong>[!UICONTROL Add]</strong> をクリックして、Webhook の名前と接続、監視するフォルダー、監視するトリガーを入力します。</p> <p> [!UICONTROL Box] アカウントを [!UICONTROL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> サービスへの接続 – 基本手順 </a> を参照してください。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL ファイルの監視]
 
 このトリガーモジュールは、新しいファイルが追加されたとき、または既存のファイルが監視対象のフォルダー内で更新されたときに、シナリオを開始します。
 
@@ -135,7 +148,7 @@ ht-degree: 69%
    <td role="rowheader">接続</td> 
    <td> <p>[!DNL Box] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   <tr> 
-   <td role="rowheader">フォルダー</td> 
+   <td role="rowheader">監視フォルダー</td> 
    <td> <p>監視するフォルダーを選択します。 シナリオでは、1 つのフォルダーを監視できます。</p> 
    </td> 
   </tr> 
@@ -156,14 +169,19 @@ ht-degree: 69%
 
 ### アクション
 
-* [[!UICONTROL ファイルを削除]](#delete-a-file)
-* [[!UICONTROL ファイルを取得]](#get-a-file)
-* [[!UICONTROL ファイルを更新]](#update-a-file)
-* [ファイルを[!UICONTROL アップロード]](#upload-a-file)
+<!--* [[!UICONTROL Delete a file]](#delete-a-file)
+* [[!UICONTROL Get a file]](#get-a-file)
+* [[!UICONTROL Update a file]](#update-a-file)
+* [[!UICONTROL Upload] a file](#upload-a-file)-->
+* [フォルダーを作成](#create-a-folder)
+* [フォルダーの取得](#get-a-folder)
+* [フォルダーメタデータの取得](#get-folder-metadata)
+* [API 呼び出しを実行](#make-an-api-call)
+* [フォルダーメタデータの更新](#update-folder-metadata)
 
-#### [!UICONTROL ファイルを削除]
+<!--#### [!UICONTROL Delete a file] 
 
-ファイルを削除するアクションモジュールです。
+This action module deletes a file.
 
 <table style="table-layout:auto">
  <col> 
@@ -171,23 +189,23 @@ ht-degree: 69%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Box] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
-   <td>モジュールで削除するファイルの一意の ID を入力またはマップします。</td> 
+   <td>Enter or map the unique ID of the file that you want the module to delete.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL ファイルの取得]
+#### [!UICONTROL Get a file]
 
-このアクションモジュールは、ファイルをダウンロードします。
+This action module downloads a file.
 
-ファイルの ID を指定します。
+You specify the ID of the file.
 
 >[!NOTE]
 >
->このモジュールは、後続のモジュールにファイルを提供するのに役立ちます。
+>This module is useful for providing files to subsequent modules.
 
 <table style="table-layout:auto">
  <col> 
@@ -195,19 +213,19 @@ ht-degree: 69%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Box] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
-   <td>モジュールで取得するファイルの一意の ID を入力またはマッピングします。</td> 
+   <td>Enter or map the unique ID of the file that you want the module to retrieve.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL ファイルを更新]
+#### [!UICONTROL Update a file] 
 
-ファイルを更新するアクションモジュールです。
+This action module updates a file.
 
-ファイルの ID を指定します。
+You specify the ID of the file.
 
 <table style="table-layout:auto">
  <col> 
@@ -215,23 +233,84 @@ ht-degree: 69%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Box] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
-   <td>モジュールを更新するファイルの一意の ID を入力またはマッピングします。</td> 
+   <td>Enter or map the unique ID of the file that you want the module to update.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </td> 
+   <td> <p>Select a source file from a previous module, or map the source file's name and data.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL ファイルをアップロード]
+#### [!UICONTROL Upload a file] 
 
-ファイルをアップロードするアクションモジュールです。
+This action module uploads a file.
 
-ファイルを指定します。また、ファイルの新しいファイル名を指定することもできます。
+You specify the file. You can also provide a new filename for the file.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td> <p>Select the folder where you want to upload the file.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td> <p>Select a source file from a previous module, or map the source file's name and data.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+>[!NOTE]
+>
+>If this module is not successful, consider the following:
+>
+>* The size of the file might exceed the maximum file size limit for your [!DNL Box] plan, or you may have used all of your [!DNL Box] account's storage quota. To get more storage space, delete existing files from [!DNL Box] or upgrade your [!DNL Box] account.
+>* [!DNL Box] does not upload more than one files with the same name to a single folder. If the destination folder contains a file with the same name as the file being uploaded, the scenario run terminates with an error. To avoid this, rename the file. If you want to update the file, use the **[!UICONTROL Update a file]** module.-->
+
+#### フォルダーを作成
+
+このアクションモジュールは、指定された親フォルダー内に新しい空のフォルダーを作成します。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>[!DNL Box] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Name]</td> 
+   <td> <p>新しいフォルダーの名前を入力またはマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 親フォルダー ]</td> 
+   <td> <p>新しいフォルダーを作成するフォルダーを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL フォルダーアップロード E メール アクセス ]</td> 
+   <td> <p>このパラメーターを設定すると、ユーザーはこのフォルダー用に自動的に作成されたメールアドレスにファイルをメールで送信できます。 「共同作業者」オプションでは、共同作業者に対して登録済みのメールのみが許可されます。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 同期状態 ]</td> 
+   <td> <p>フォルダーをユーザーのデバイスに同期するかどうかを指定します。 これは Box Sync （廃止）で使用され、Box Drive では使用されません。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### フォルダーの取得
+
+このアクションモジュールは、フォルダーの最初の 100 エントリなど、フォルダーの詳細を取得します。
 
 <table style="table-layout:auto">
  <col> 
@@ -243,18 +322,177 @@ ht-degree: 69%
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Folder]</td> 
-   <td> <p>ファイルをアップロードするフォルダーを選択します。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </td> 
+   <td> <p>詳細を取得するフォルダーを選択します。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!NOTE]
->
->このモジュールが正常に動作しない場合は、次の点を考慮してください。
->
->* ファイルのサイズが [!DNL Box] プランでのファイルサイズの上限を超えているか、[!DNL Box] アカウントのストレージ割り当てをすべて使用している可能性があります。ストレージスペースを増やすには、[!DNL Box] から既存のファイルを削除するか、[!DNL Box] アカウントをアップグレードしてください。
->* [!DNL Box] では、同じ名前の複数のファイルは 1 つのフォルダーにアップロードされません。アップロード先のフォルダーにアップロードするファイルと同じ名前のファイルが含まれている場合、シナリオの実行はエラーで終了します。この問題を回避するには、ファイルの名前を変更します。ファイルを更新する場合は、**[!UICONTROL ファイルを更新]**&#x200B;モジュールを使用します。
+#### フォルダーメタデータの取得
+
+このアクションモジュールは、フォルダー ID でフォルダーメタデータを取得します。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>[!DNL Box] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Scope]</td> 
+   <td> <p>このメタデータ取得に使用する範囲を選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td> <p>メタデータを取得するフォルダーを選択します。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### API 呼び出しを実行
+
+このアクションモジュールは、Box API に対してカスタム呼び出しを行います。
+
+
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>[!DNL Bynder] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">URL</td> 
+   <td><code>https://api.box.com</code> への相対パスを入力します。 <p>例： <code>/2.0/users/me</code></p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエストメソッド </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p> <p>例： <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion は認証ヘッダーを追加します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td> <p>API 呼び出しのクエリを標準 JSON オブジェクトの形式で追加します。</p> <p>例： <code>{"name":"something-urgent"}</code></p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件文を JSON で使用する場合は、条件文を引用符で囲みます。</p> 
+     <div class="example" data-mc-autonum="<b>Example: </b>"> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+     </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### フォルダーメタデータの更新
+
+フォルダーのメタデータを作成または更新します。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>[!DNL Box] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Scope]</td> 
+   <td> <p>このメタデータの更新に使用する範囲を選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td> <p>メタデータを更新するフォルダーを選択します。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+### 検索
+
+#### コンテンツの検索
+
+この検索モジュールは、ユーザーまたは企業が使用できる項目を検索します。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>[!DNL Box] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Query]</td> 
+   <td> <p>検索する文字列を入力またはマッピングします。 このクエリは、項目名、説明、ファイルのテキストコンテンツおよび異なる項目タイプのその他の様々なフィールドと照合されます。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Scope]</td> 
+   <td> <p>このモジュールで使用される接続で資格情報が使用されるユーザーに関連付けられたコンテンツを検索するか、企業全体に関連付けられたコンテンツを検索するかを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Type]</td> 
+   <td> <p>ファイル、フォルダー、Web リンクのどちらを検索するかを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Sort]</td> 
+   <td> <p>関連度または変更日のどちらで並べ替えるかを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ごみ箱コンテンツ ]</td> 
+   <td> <p>ハッシュ化されたコンテンツとハッシュ化されていないコンテンツのどちらを検索するかを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 親フォルダー ID]</td> 
+   <td> <p>特定のフォルダーを検索するには、検索する各フォルダーに対して「<b> 項目を追加 </b>」をクリックし、フォルダーの ID を入力します。 </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL の作成元 ]</td> 
+   <td> <p>特定の日付範囲で作成されたアセットを検索するには、その範囲内の最も古い日付を入力します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL の作成先 ]</td> 
+   <td> <p>特定の日付範囲で作成されたアセットを検索するには、その日付範囲の最新の日付を入力します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL が次から更新されました：]</td> 
+   <td> <p>特定の日付範囲で更新されたアセットを検索するには、範囲内の最も古い日付を入力します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL の更新先 ]</td> 
+   <td> <p>特定の日付範囲で更新されたアセットを検索するには、その範囲の最新の日付を入力します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Fields]</td> 
+   <td> <p>モジュールの応答で返す属性ごとに、「<b> 項目を追加 </b>」をクリックしてフィールドを入力します。</p><p>これは、通常は標準応答で返されないフィールドをリクエストするために使用できます。 このパラメーターを指定すると、明示的に指定しない限り、応答で標準フィールドが返されないことに注意してください。 </p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ファイル拡張子 ]</td> 
+   <td> <p>検索を特定のファイル拡張子に制限するには、ファイル拡張子のコンマ区切りリストを入力します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL サイズの基点 ]</td> 
+   <td> <p>特定のサイズ範囲のアセットを検索するには、範囲の小さい方の端をバイト単位で入力します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL のサイズを指定 ]</td> 
+   <td> <p>特定のサイズ範囲のアセットを検索するには、範囲の大きい方の端をバイト単位で入力します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 所有者ユーザー ID]</td> 
+   <td> <p>特定のユーザーが所有するアセットを検索するには、所有者 ID のコンマ区切りリストを入力します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>各実行サイクルでモジュールが返す結果の最大数を入力またはマッピングします。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
