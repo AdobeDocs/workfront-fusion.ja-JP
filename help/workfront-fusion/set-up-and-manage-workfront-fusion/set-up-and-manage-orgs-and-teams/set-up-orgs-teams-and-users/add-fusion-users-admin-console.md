@@ -19,7 +19,7 @@ ht-degree: 55%
 
 ユーザーを [!DNL Adobe Admin Console] に追加して、[!DNL Adobe Workfront Fusion] に割り当てるか、[!DNL Adobe Admin Console] に既存のユーザーを [!DNL Workfront Fusion] に割り当てます。
 
-ユーザーの追加方法などを含む、[!DNL Adobe Admin Console] の [!DNL Workfront Fusion] を説明するビデオについて詳しくは、Adobe IMS](https://video.tv.adobe.com/v/3412464/){target=_blank} の [[!DNL Fusion]  を参照してください。
+ユーザーの追加方法などを含む、[!DNL Adobe Admin Console] の [!DNL Workfront Fusion] を説明するビデオについて詳しくは、Adobe IMS[&#128279;](https://video.tv.adobe.com/v/3412464/){target=_blank} の [!DNL Fusion]  を参照してください。
 
 
 

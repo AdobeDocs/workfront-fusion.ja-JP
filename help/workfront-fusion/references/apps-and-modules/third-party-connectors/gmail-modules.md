@@ -69,7 +69,7 @@ ht-degree: 91%
 * [接続  [!DNL Gmail]  使用  [!DNL Workfront Fusion]  接続  [!DNL Google Workspace]](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
 * [ [!DNL gmail.com]  または  [!DNL googlemail].comを使用して  [!DNL Gmail]  を  [!DNL Workfront Fusion]  に接続](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
 
-### [!DNL  Google Workspace] を使用して [!DNL Gmail] を [!DNL Workfront Fusion] に接続
+### [!DNL &#x200B; Google Workspace] を使用して [!DNL Gmail] を [!DNL Workfront Fusion] に接続
 
 [!DNL Google Workspace] アカウントを [!UICONTROL Workfront Fusion] に接続する手順については、[ 接続の作成 – 基本手順 ](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md) を参照してください。
 

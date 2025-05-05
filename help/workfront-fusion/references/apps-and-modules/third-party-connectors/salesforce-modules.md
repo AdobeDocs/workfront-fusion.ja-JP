@@ -150,7 +150,7 @@ Salesforce コネクタでは、以下を使用します。
         <td>Salesforce クライアントの秘密鍵を入力します。 </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL サンドボックス ]</td>
+        <td role="rowheader">[!UICONTROL サンドボックス &#x200B;]</td>
         <td>これがサンドボックス環境の場合は、このオプションを有効にします。</td>
       </tr>
       <tr>
@@ -577,14 +577,14 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL  Adobe Workfront Fusion] への接続の作成 - 基本手順</a>を参照してください。</td> 
+   <td>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL &#x200B; Adobe Workfront Fusion] への接続の作成 - 基本手順</a>を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
    <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ドキュメント リンク ]</td> 
+   <td role="rowheader">[!UICONTROL ドキュメント リンク &#x200B;]</td> 
    <td>コンテンツドキュメントリンクを適用するかどうかを選択します。</td> 
   </tr> 
   <tr> 
@@ -617,7 +617,7 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL  Adobe Workfront Fusion] への接続の作成 - 基本手順</a>を参照してください。</td> 
+   <td>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL &#x200B; Adobe Workfront Fusion] への接続の作成 - 基本手順</a>を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Type]</td> 

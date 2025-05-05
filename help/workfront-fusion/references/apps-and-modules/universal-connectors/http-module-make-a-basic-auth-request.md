@@ -11,7 +11,7 @@ ht-degree: 75%
 
 ---
 
-# [!UICONTROL HTTP] > [!UICONTROL  基本認証リクエストを行う ] モジュール
+# [!UICONTROL HTTP] > [!UICONTROL &#x200B; 基本認証リクエストを行う &#x200B;] モジュール
 
 この [!DNL Adobe Workfront Fusion] モジュールを使用すると、HTTP リクエストに HTTP 基本認証を設定して、サーバーに送信できます。受信した HTTP 応答は、出力バンドルに含まれます。
 
@@ -64,7 +64,7 @@ ht-degree: 75%
 
 +++
 
-## [!UICONTROL HTTP] > [!UICONTROL  基本認証リクエストを行う ] モジュール設定
+## [!UICONTROL HTTP] > [!UICONTROL &#x200B; 基本認証リクエストを行う &#x200B;] モジュール設定
 
 [!UICONTROL HTTP]/[!UICONTROL Make a Basic Authorization request] モジュールを設定すると、以下に示 [!DNL Adobe Workfront Fusion] フィールドが表示されます。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
@@ -147,7 +147,7 @@ ht-degree: 75%
               <p>ファイルのパスワードを入力します。</p>
             </li>
             <li value="5">
-              <p><b>[!UICONTROL 保存 ]</b> をクリックしてファイルを抽出し、モジュール設定に戻ります。</p>
+              <p><b>[!UICONTROL 保存 &#x200B;]</b> をクリックしてファイルを抽出し、モジュール設定に戻ります。</p>
             </li>
           </ol>
 </p> </td> 

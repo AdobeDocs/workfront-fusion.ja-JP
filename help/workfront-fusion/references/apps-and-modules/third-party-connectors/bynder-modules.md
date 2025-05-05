@@ -378,7 +378,7 @@ Bynder コネクタでは、以下を使用します。
    <td>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 非同期ファイルのアップロード ]</td> 
+   <td role="rowheader">[!UICONTROL 非同期ファイルのアップロード &#x200B;]</td> 
    <td>大きなファイルをアップロードする場合は、このオプションを有効にします。 これにより、大きなファイルがシナリオの実行をブロックするのを防ぎます。</td> 
   </tr> 
  </tbody> 
@@ -387,7 +387,7 @@ Bynder コネクタでは、以下を使用します。
 ### 検索
 
 * [[!UICONTROL レコードをリスト]](#list-record)
-* [[!UICONTROL Assetsを検索 ]](#search-assets)
+* [[!UICONTROL Assetsを検索 &#x200B;]](#search-assets)
 
 #### [!UICONTROL レコードをリスト]
 
@@ -421,7 +421,7 @@ Bynder コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Assetsを検索 ]
+#### [!UICONTROL Assetsを検索 &#x200B;]
 
 この検索モジュールは、指定した条件に基づいてアセットを検索します。
 

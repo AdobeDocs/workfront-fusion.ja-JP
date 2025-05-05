@@ -99,11 +99,11 @@ SFTP アカウントを [!DNL Workfront Fusion] に接続するには、ター�
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL キー交換アルゴリズム ] </td> 
+   <td role="rowheader">[!UICONTROL キー交換アルゴリズム &#x200B;] </td> 
    <td> <p>キー交換用の一連のアルゴリズムを入力できます。 モジュールは、追加された順序に基づいてアルゴリズムの優先順位を設定します。 追加するアルゴリズムごとに「<b> 項目を追加 </b>」をクリックし、アルゴリズムを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 暗号 ] </td> 
+   <td role="rowheader">[!UICONTROL 暗号 &#x200B;] </td> 
    <td> <p>キー交換用の暗号のセットを入力できます。 モジュールは、追加された順序に基づいて暗号の優先順位を設定します。 追加する暗号ごとに [<b> 項目の追加 </b>] をクリックし、暗号を選択します。</p> </td> 
   </tr> 
  </tbody> 
@@ -275,7 +275,7 @@ SFTP アカウントを [!DNL Workfront Fusion] に接続するには、ター�
  </tbody> 
 </table>
 
-#### [!UICONTROL  ファイルを取得 ]
+#### [!UICONTROL &#x200B; ファイルを取得 &#x200B;]
 
 このモジュールは、指定されたフォルダーからファイルを返します。
 

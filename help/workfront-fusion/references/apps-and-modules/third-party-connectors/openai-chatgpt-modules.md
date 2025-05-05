@@ -37,7 +37,7 @@ ht-degree: 92%
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
-   <td> <p>[!UICONTROL [!DNL Workfront Fusion] 作業の自動化と統合のために ] </p> </td> 
+   <td> <p>[!UICONTROL [!DNL Workfront Fusion] 作業の自動化と統合のために &#x200B;] </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 

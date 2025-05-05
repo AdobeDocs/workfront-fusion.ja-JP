@@ -96,18 +96,18 @@ ht-degree: 15%
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>[!UICONTROL Adobe] [!UICONTROL クライアント ID] を入力します。 これは、の [!UICONTROL 資格情報 ] の詳細セクションにあります [!DNL Adobe Developer Console]</td>
+        <td>[!UICONTROL Adobe] [!UICONTROL クライアント ID] を入力します。 これは、の [!UICONTROL 資格情報 &#x200B;] の詳細セクションにあります [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、の [!UICONTROL 資格情報 ] の詳細セクションにあります [!DNL Adobe Developer Console]</td>
+        <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、の [!UICONTROL 資格情報 &#x200B;] の詳細セクションにあります [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL IMS 組織 ID]</td>
         <td>[!DNL Adobe] IMS 資格情報を入力します。 組織の一意の ID。 これは、A495E53@AdobeOrgの形式の文字列で、@の前のプレフィックスは 16 進数です。 この値は、Admin Consoleの組織の URL パスの一部として、または User Management 統合用の adobe.io コンソールで確認できます。</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL 追加範囲 ]</td>
+        <td role="rowheader">[!UICONTROL 追加範囲 &#x200B;]</td>
         <td>追加する追加の範囲ごとに、「<b> 項目を追加 </b>」をクリックして範囲を入力します。</td>
         </tr>
       </tbody>

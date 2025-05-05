@@ -102,7 +102,7 @@ SharePoint コネクタでは、以下を使用します。
 
 [!DNL Microsoft] アカウントを使用せずにMicrosoft SharePoint Onlineを [!DNL Workfront Fusion] に接続するには、クライアント ID、クライアント秘密鍵、テナント ID が必要です。
 
-1. **[!UICONTROL 2}Microsoft SharePoint Online]** ボックスの上部付近にある「追加 **をクリックして、**[!UICONTROL  接続を作成 ]**ボックスを開きます。**
+1. **[!UICONTROL 2&rbrace;Microsoft SharePoint Online]** ボックスの上部付近にある「追加 **をクリックして、**&#x200B;[!UICONTROL &#x200B; 接続を作成 &#x200B;]&#x200B;**ボックスを開きます。**
 
 1. （オプション）デフォルトの&#x200B;**[!UICONTROL 接続名]**&#x200B;を変更
 1. 「**[!UICONTROL 詳細設定を表示]**」をクリック
@@ -239,7 +239,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
 
 ### 項目
 
-* [[!UICONTROL  項目をコピー ]](#copy-an-item)
+* [[!UICONTROL &#x200B; 項目をコピー &#x200B;]](#copy-an-item)
 * [[!UICONTROL 項目の作成]](#create-an-item)
 * [[!UICONTROL 項目の削除]](#delete-an-item)
 * [[!UICONTROL 項目の取得]](#get-an-item)
@@ -249,7 +249,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
 * [[!UICONTROL 項目の監視]（予定）](#watch-items-scheduled)
 
 
-#### [!UICONTROL  項目をコピー ]
+#### [!UICONTROL &#x200B; 項目をコピー &#x200B;]
 
 このアクションモジュールは、SharePoint リスト内の既存の項目をコピーします。
 
@@ -506,7 +506,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Add Columns]</td> 
-   <td>新しいリストに設定する列ごとに、[<b> 項目の追加 </b>] をクリックし、フィールドに <strong>[!UICONTROL 名 ]</strong> を入力して、新しい列に設定する値の <strong>[!UICONTROL 型 ]</strong> を選択します。</td> 
+   <td>新しいリストに設定する列ごとに、[<b> 項目の追加 </b>] をクリックし、フィールドに <strong>[!UICONTROL 名 &#x200B;]</strong> を入力して、新しい列に設定する値の <strong>[!UICONTROL 型 &#x200B;]</strong> を選択します。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -578,7 +578,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
    <td>作成時刻（新しい項目）または変更時刻（更新された項目）のどちらでリストを監視するかを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL サイト ID の入力 ]</td> 
+   <td role="rowheader">[!UICONTROL サイト ID の入力 &#x200B;]</td> 
    <td> <p>リストで監視するサイトの識別方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>リストを監視する場所に <strong>[!UICONTROL サイト ID]</strong> 入力するかマップします。</p> </li> 

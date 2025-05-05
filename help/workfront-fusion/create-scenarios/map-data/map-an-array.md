@@ -82,7 +82,7 @@ ht-degree: 22%
 
    1 つの配列には、任意の数の項目を追加できます。
 
-イテレータを使用して、配列を個々のバンドルに分割できます。詳しくは、 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/modules/iterator-module.md) の [[!UICONTROL Iterator] モジュールを参照してください。
+イテレータを使用して、配列を個々のバンドルに分割できます。詳しくは、 [!DNL Adobe Workfront Fusion][&#128279;](/help/workfront-fusion/references/modules/iterator-module.md) の [!UICONTROL Iterator] モジュールを参照してください。
 
 ## 新しい配列への項目のマッピング
 

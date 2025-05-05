@@ -94,6 +94,6 @@ SQL モジュールが実行されると、トランザクションが開始さ�
 
 自動コミットをオンにします。自動コミットは、モジュールの実行が完了した直後にすべてのトランザクションを完了（コミット）します。
 
-1. 画面下部の [!UICONTROL  シナリオ設定 ] アイコン ![ シナリオ設定アイコン ](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png) をクリックします。
+1. 画面下部の [!UICONTROL &#x200B; シナリオ設定 &#x200B;] アイコン ![ シナリオ設定アイコン ](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png) をクリックします。
 1. **[!UICONTROL 自動コミット]**&#x200B;チェックボックスをクリックします。
 1. 「**[!UICONTROL OK]**」をクリックして、シナリオ設定を保存します。

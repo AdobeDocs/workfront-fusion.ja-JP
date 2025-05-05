@@ -117,7 +117,7 @@ Split.io コネクタは以下を使用します。
         </td>
       </tr>
       <tr> 
-       <td role="rowheader">[!UICONTROL API キー ]</td> 
+       <td role="rowheader">[!UICONTROL API キー &#x200B;]</td> 
        <td>[!DNL Split.io] API キーを入力します。<p>[!DNL Split.io] API キーについて詳しくは、[!DNL Split.io] ドキュメントの<a href="https://help.split.io/hc/en-us/articles/360019916211-API-keys">API キー</a>を参照してください。</p></td> 
       </tr> 
      </tbody> 
@@ -256,7 +256,7 @@ Split.io コネクタは以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Treatments]</td> 
-   <td> <p>定義に追加する処理ごとに、<b>[!UICONTROL アイテムの追加 ]</b> をクリックし、処理とサイズを入力またはマップします。</p> </td> 
+   <td> <p>定義に追加する処理ごとに、<b>[!UICONTROL アイテムの追加 &#x200B;]</b> をクリックし、処理とサイズを入力またはマップします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -479,7 +479,7 @@ Split.io コネクタは以下を使用します。
 * [[!UICONTROL トラフィックタイプを取得]](#get-traffic-types)
 * [[!UICONTROL ワークスペースを取得]](#get-workspaces)
 * [[!UICONTROL 環境でスプリット定義をリスト]](#list-split-definitions-in-an-environment)
-* [[!UICONTROL  リスト分割 ]](#list-splits)
+* [[!UICONTROL &#x200B; リスト分割 &#x200B;]](#list-splits)
 
 #### [!UICONTROL 環境を取得]
 
@@ -565,7 +565,7 @@ Split.io コネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL  リスト分割 ]
+#### [!UICONTROL &#x200B; リスト分割 &#x200B;]
 
 この検索モジュールは、分割のリストを取得します。
 

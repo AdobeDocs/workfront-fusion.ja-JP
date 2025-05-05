@@ -72,7 +72,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ## `throw` の回避策
 
-条件付きでエラーをスローするには、操作中に意図的に失敗するようにモジュールを設定します。 オプションでエラーをスローするように設定された [!UICONTROL JSON]/[!UICONTROL JSON を解析 ] モジュールを使用する可能性があります（この場合は `BundleValidationError`）。
+条件付きでエラーをスローするには、操作中に意図的に失敗するようにモジュールを設定します。 オプションでエラーをスローするように設定された [!UICONTROL JSON]/[!UICONTROL JSON を解析 &#x200B;] モジュールを使用する可能性があります（この場合は `BundleValidationError`）。
 
 ![JSON エラー ](assets/json-parse-json.png)
 

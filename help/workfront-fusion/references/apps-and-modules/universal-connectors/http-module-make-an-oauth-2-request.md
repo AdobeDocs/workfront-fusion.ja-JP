@@ -80,7 +80,7 @@ OAuth 2.0 認証について詳しくは、[OAuth 2.0 承認フレームワー�
 ## [!DNL OAuth] リクエストの接続の作成
 
 * [HTTPで接続を作成するための一般的な手順／OAuth 2.0 リクエスト作成モジュール](#general-instructions-for-creating-a-connection-in-the-http--make-an-oauth-20-request-module)
-* [OAuth 2.0 リクエストモジュール http / [!UICONTROL  作成 ] でGoogleへの接続を作成する手順](#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module)
+* [OAuth 2.0 リクエストモジュール http / [!UICONTROL &#x200B; 作成 &#x200B;] でGoogleへの接続を作成する手順](#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module)
 * [HTTP 経由で Microsoft Graph API への接続を作成するための手順／OAuth 2.0 リクエスト作成モジュール](#instructions-for-connecting-to-microsoft-graph-api-via-the-http--make-an-oauth-20-request-module)
 
 ### [!UICONTROL HTTP] で接続を作成するための一般的な手順／[!UICONTROL OAuth 2.0 リクエスト作成]モジュール
@@ -227,12 +227,12 @@ OAuth 2.0 認証について詳しくは、[OAuth 2.0 承認フレームワー�
 1. 「**[!UICONTROL 続行]**」をクリックして接続を保存し、モジュールに戻ります。
 1. [OAuth 2.0 リクエストを行うモジュールの設定 ](#configure-the-make-an-oauth-20-request-module) を続行します。
 
-### [!UICONTROL HTTP]/[!UICONTROL OAuth 2.0 リクエストモジュールで [!DNL Google] への接続を作成する手順 ]
+### [!UICONTROL HTTP]/[!UICONTROL OAuth 2.0 リクエストモジュールで [!DNL Google] への接続を作成する手順 &#x200B;]
 
 次の例は、[!UICONTROL HTTP]／[!UICONTROL OAuth 2.0 実行]リクエストモジュールを使用して [!DNL Google] に接続する方法を示しています。
 
 1. 記事 [ カスタム OAuth クライアントを使用したへの接続 ](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md) の説明に従って、プロジェクトの作成、OAuth 設定の指定、資格情報の生成が完了し  [!DNL Adobe Workfront Fusion]  いることを確認してください  [!DNL Google Services] 
-1. [!UICONTROL HTTP]/[!UICONTROL OAuth 2.0 リクエストを作成 ] モジュールを開きます。
+1. [!UICONTROL HTTP]/[!UICONTROL OAuth 2.0 リクエストを作成 &#x200B;] モジュールを開きます。
 1. 任意のモジュールで、「接続」ボックスの横にある **[!UICONTROL 追加]** をクリックします。
 1. 次の値を入力します。
 
@@ -294,7 +294,7 @@ OAuth 2.0 認証について詳しくは、[OAuth 2.0 承認フレームワー�
 
 OAuth 2.0 接続を確立したら、必要に応じてモジュールの設定を続行します。 すべての認証トークンは、このリクエストと、同じ接続を使用する他のリクエストに自動的に含まれます。
 
-[!UICONTROL HTTP]/[!UICONTROL OAuth 2.0 リクエストを行う ] モジュールを設定すると、以下に示 [!DNL Workfront Fusion] フィールドが表示されます。 モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL HTTP]/[!UICONTROL OAuth 2.0 リクエストを行う &#x200B;] モジュールを設定すると、以下に示 [!DNL Workfront Fusion] フィールドが表示されます。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) でモジュールから別のモジュールに情報をマッピングを参照してください。
 
@@ -342,7 +342,7 @@ OAuth 2.0 接続を確立したら、必要に応じてモジュールの設定�
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] は、ファイルとデータの送信に使用される HTTP マルチパートリクエストです。通常、ファイルをサーバーにアップロードする際に使用されます。</p> <p>リクエストで送信するフィールドを追加します。各フィールドには、キーと値のペアが含まれている必要があります。</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>リクエスト本文内で送信するキーと値を入力します。</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>キーを入力し、リクエスト本文で送信するソースファイルを指定します。</p> <p>前のモジュールからアップロードするファイルをマッピングするか（[!UICONTROL HTTP] &gt; [!UICONTROL ファイルを取得 ] など）、ファイル名とファイルデータを手動で入力します。</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>キーを入力し、リクエスト本文で送信するソースファイルを指定します。</p> <p>前のモジュールからアップロードするファイルをマッピングするか（[!UICONTROL HTTP] &gt; [!UICONTROL ファイルを取得 &#x200B;] など）、ファイル名とファイルデータを手動で入力します。</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 

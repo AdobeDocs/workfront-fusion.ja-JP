@@ -143,7 +143,7 @@ ht-degree: 79%
    <td>サイズ変更した画像の希望の高さをピクセル単位で入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 変更率 ]</td> 
+   <td role="rowheader">[!UICONTROL 変更率 &#x200B;]</td> 
    <td>画像の変更率をパーセントで指定した場合は、画像の変更率を入力またはマップします。</td> 
   </tr> 
  </tbody> 

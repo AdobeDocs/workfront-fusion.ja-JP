@@ -99,7 +99,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
 
      この設定には、[!DNL Adobe Admin Console] からの情報が必要です。
 
-   * **[!DNL AEM Assets Basic]([!DNL Adobe Managed Services])**
+   * **[!DNL AEM Assets Basic] ([!DNL Adobe Managed Services])**
 
      この設定には、ユーザー名とパスワードが必要です。
 
@@ -140,20 +140,20 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
                   <td>[!DNL Adobe Experience Manager] インスタンスの URL を入力します。URL の末尾にスラッシュ <code>/</code> を含めないでください。</td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL アカウントの詳細入力オプション ]</td>
+                  <td role="rowheader">[!UICONTROL アカウントの詳細入力オプション &#x200B;]</td>
                   <td>アカウントの詳細を説明する JSON を提供するか、詳細を手動で入力するかを選択します。</td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL テクニカルアカウントの詳細（JSON 形式） ]</td>
+                  <td role="rowheader">[!UICONTROL テクニカルアカウントの詳細（JSON 形式） &#x200B;]</td>
                   <td>JSON を指定する場合は、アカウントの詳細を説明する JSON を入力または貼り付けます。</td>
               </tr>
               <tr>
                   <td role="rowheader">[!UICONTROL Client ID]</td>
-                  <td>詳細を手動で入力する場合は、[!UICONTROL サーバー間 ] 設定で生成されたクライアント ID を入力します。</td>
+                  <td>詳細を手動で入力する場合は、[!UICONTROL サーバー間 &#x200B;] 設定で生成されたクライアント ID を入力します。</td>
               </tr>
               <tr>
                   <td role="rowheader">[!UICONTROL Client Secret]</td>
-                  <td>詳細を手動で入力する場合は、[!UICONTROL サーバー間 ] 設定で生成されたクライアントの秘密鍵を入力します。</td>
+                  <td>詳細を手動で入力する場合は、[!UICONTROL サーバー間 &#x200B;] 設定で生成されたクライアントの秘密鍵を入力します。</td>
               </tr>
               <tr>
                   <td role="rowheader">[!UICONTROL Technical account ID]</td>
@@ -294,7 +294,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-### [!UICONTROL  フォルダー、アセットまたはレンディションの削除 ]
+### [!UICONTROL &#x200B; フォルダー、アセットまたはレンディションの削除 &#x200B;]
 
 このアクションモジュールは、フォルダー、アセットまたはレンディションを削除します。
 

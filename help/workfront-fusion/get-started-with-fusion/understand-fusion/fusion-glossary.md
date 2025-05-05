@@ -102,7 +102,7 @@ ht-degree: 28%
   </tr> 
   <tr> 
    <td role="rowheader"> <p>トリガー</p> </td> 
-   <td> <p>トリガーは、新しいデータや更新されたデータを監視し、モジュールで設定された特定の条件が適用されたときにシナリオを開始するモジュールです。 トリガーは、スケジュール（ポーリング）に従って、またはデータ変更が発生した場合（インスタントトリガーまたは webhook）に必ずシナリオを開始するように設定できます。</p> <p>詳細については、モジュールの概要の記事の </a>0}トリガー} を参照してください。<a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md" class="MCXref xref"></p> </td> 
+   <td> <p>トリガーは、新しいデータや更新されたデータを監視し、モジュールで設定された特定の条件が適用されたときにシナリオを開始するモジュールです。 トリガーは、スケジュール（ポーリング）に従って、またはデータ変更が発生した場合（インスタントトリガーまたは webhook）に必ずシナリオを開始するように設定できます。</p> <p>詳細については、モジュールの概要の記事の </a>0&rbrace;トリガー&rbrace; を参照してください。<a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md" class="MCXref xref"></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Webhook</p> </td> 

@@ -321,7 +321,7 @@ AWS S3 コネクタでは、以下を使用します。
    <td> <p>ファイルを検索する [!DNL Amazon S3] バケットを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL プレフィックス ]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL プレフィックス &#x200B;]</p> </td> 
    <td> <p> ファイルを検索するフォルダーへのパス（例：）を入力します <code>workfrontfusion/work.</code></p> </td> 
   </tr> 
  </tbody> 

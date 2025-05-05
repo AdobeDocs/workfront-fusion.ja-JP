@@ -83,7 +83,7 @@ ht-degree: 13%
 
 コレクションの詳細については、「[ アイテム データ タイプ ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)」を参照してください。
 
-コレクションのマッピング手順については、「あるモジュールから別のモジュールへの情報のマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md#map-an-item) の [ 項目のマッピング」を参照してください。
+コレクションのマッピング手順については、「あるモジュールから別のモジュールへの情報のマッピング [&#128279;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md#map-an-item) の  項目のマッピング」を参照してください。
 
 ## 配列
 

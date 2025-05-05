@@ -11,7 +11,7 @@ ht-degree: 77%
 
 ---
 
-# HTTP > [!UICONTROL  クライアント証明書認証リクエストを作成 ] モジュール
+# HTTP > [!UICONTROL &#x200B; クライアント証明書認証リクエストを作成 &#x200B;] モジュール
 
 >[!NOTE]
 >
@@ -68,9 +68,9 @@ ht-degree: 77%
 
 +++
 
-## [!UICONTROL HTTP] > [!UICONTROL  クライアント証明書認証リクエストを行う ] モジュール設定
+## [!UICONTROL HTTP] > [!UICONTROL &#x200B; クライアント証明書認証リクエストを行う &#x200B;] モジュール設定
 
-[!UICONTROL HTTP]/[!UICONTROL  クライアント証明書認証リクエストを行う ] モジュールを設定すると、以下に示 [!DNL Adobe Workfront Fusion] フィールドが表示されます。 モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL HTTP]/[!UICONTROL &#x200B; クライアント証明書認証リクエストを行う &#x200B;] モジュールを設定すると、以下に示 [!DNL Adobe Workfront Fusion] フィールドが表示されます。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) でモジュールから別のモジュールに情報をマッピングを参照してください。
 
@@ -168,7 +168,7 @@ ht-degree: 77%
               <p>ファイルのパスワードを入力します。</p>
             </li>
             <li value="5">
-              <p><b>[!UICONTROL 保存 ]</b> をクリックしてファイルを抽出し、モジュール設定に戻ります。</p>
+              <p><b>[!UICONTROL 保存 &#x200B;]</b> をクリックしてファイルを抽出し、モジュール設定に戻ります。</p>
             </li>
           </ol>
 </p> </td> 

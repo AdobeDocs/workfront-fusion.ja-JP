@@ -68,7 +68,7 @@ ht-degree: 33%
 
 1. 左側のナビゲーションパネルで、「**[!UICONTROL Templates]**」をクリックします。
 1. 「**[!UICONTROL Team templates]**」タブをクリックします。
-1. 公開するテンプレートの行で **0}Publish} をクリックします。**
+1. 公開するテンプレートの行で **0&rbrace;Publish&rbrace; をクリックします。**
 
    または
 

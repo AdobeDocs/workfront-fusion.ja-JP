@@ -47,7 +47,7 @@ Fusion でのファイルの操作について詳しくは、「[ モジュー�
 
 シナリオは、指定したスケジュールに従って、1 時間ごと、5 分ごとなど、一定の間隔で実行できます。 インスタントトリガー（Web フック）と呼ばれる特別なトリガーがあり、特定のサービスからデータを受け取った直後にシナリオを開始できます。Fusion は、次にスケジュールされた実行を待たずに、受信したデータを直ちに処理します。
 
-ポーリングされたモジュールとインスタント トリガーの違いについて詳しくは、「モジュールの概要」の ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules)0}トリガー モジュール」を参照してください。[
+ポーリングされたモジュールとインスタント トリガーの違いについて詳しくは、「モジュールの概要」の [&#128279;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules)0&rbrace;トリガー モジュール」を参照してください。
 
 ## 操作とは何ですか？
 

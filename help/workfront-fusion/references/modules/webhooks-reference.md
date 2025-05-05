@@ -21,7 +21,7 @@ ht-degree: 28%
 >
 >コネクタのモジュールのリストをチェックして、インスタントトリガーがあるかどうかを確認したり、[Fusion アプリケーションとそのモジュールのリファレンス ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md) にあるコネクタのドキュメントを確認したりできます。
 >
->Adobe Workfrontのインスタントトリガーのドキュメントについては、Workfront モジュールの記事の ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#triggers)0}トリガー} を参照してください。[
+>Adobe Workfrontのインスタントトリガーのドキュメントについては、Workfront モジュールの記事の [&#128279;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#triggers)0&rbrace;トリガー&rbrace; を参照してください。
 
 コネクタに Webhook が含まれていない場合は、次のいずれかを実行できます。
 

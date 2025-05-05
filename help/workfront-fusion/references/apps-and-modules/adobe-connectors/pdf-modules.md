@@ -502,7 +502,7 @@ ZIP 形式で出力する場合、PDFは 1 ページにつき 1 つの画像に�
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 出力タイプ ]</td> 
+   <td role="rowheader">[!UICONTROL 出力タイプ &#x200B;]</td> 
    <td> <p>ファイルをファイルのリストとして出力するか、ZIP ファイルとして出力するかを選択します。</td> 
   </tr> 
   <tr> 
@@ -790,7 +790,7 @@ JSON で[!UICONTROL ドキュメントの生成]モジュールを使用する�
    <td> <p>文書の見出しを移動するには、このオプションを有効にします。</p> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL レポートの生成 ]</td> 
+   <td role="rowheader">[!UICONTROL レポートの生成 &#x200B;]</td> 
    <td> <p>PDF のアクセシビリティの問題とその場所を記載したレポートを生成し、これらの問題の修正方法に関する提案を出すには、このオプションを有効にします。</p> </td> 
   </tr> 
  </tbody> 
@@ -823,7 +823,7 @@ JSON で[!UICONTROL ドキュメントの生成]モジュールを使用する�
  </tbody> 
 </table>
 
-### [!UICONTROL PDF ファイルの保護 ]
+### [!UICONTROL PDF ファイルの保護 &#x200B;]
 
 このツールは、ユーザーまたは所有者のパスワードを使用して PDF ドキュメントを保護します。また、PDF ドキュメントにおける印刷、編集、コピーなど、特定の機能に対する制限も設定します。暗号化するコンテンツのタイプと暗号化アルゴリズムを選択します。
 
@@ -845,8 +845,8 @@ JSON で[!UICONTROL ドキュメントの生成]モジュールを使用する�
    <td role="rowheader">[!UICONTROL Password Protection Type]</td> 
    <td> <p>パスワードを使用して入力 PDF ドキュメントを暗号化するには、このオプションを有効にします。このオプションを有効にする場合、次のいずれかまたは両方の値を指定して入力する必要があります。 </p> 
     <ul> 
-     <li> <p>[!UICONTROL ユーザーパスワード ]</p> </li> 
-     <li> <p>[!UICONTROL 所有者パスワード ] </p> </li> 
+     <li> <p>[!UICONTROL ユーザーパスワード &#x200B;]</p> </li> 
+     <li> <p>[!UICONTROL 所有者パスワード &#x200B;] </p> </li> 
     </ul> <p>各パスワードは最大 128 文字までです。</p> </td> 
   </tr> 
   <tr> 
@@ -868,7 +868,7 @@ JSON で[!UICONTROL ドキュメントの生成]モジュールを使用する�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Permissions]</td> 
-   <td> <p>印刷、編集、コンテンツのコピーを許可する権限を選択します。</p> <p>権限設定は、[!UICONTROL パスワード保護の種類 ] フィールドに [!UICONTROL 所有者パスワード ] が設定されている場合にのみ使用されます。</p> </td> 
+   <td> <p>印刷、編集、コンテンツのコピーを許可する権限を選択します。</p> <p>権限設定は、[!UICONTROL パスワード保護の種類 &#x200B;] フィールドに [!UICONTROL 所有者パスワード &#x200B;] が設定されている場合にのみ使用されます。</p> </td> 
   </tr> 
  </tbody> 
 </table>

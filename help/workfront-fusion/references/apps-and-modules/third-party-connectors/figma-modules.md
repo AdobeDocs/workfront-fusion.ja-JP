@@ -117,7 +117,7 @@ Figma モジュールの接続を作成するには：
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>[!UICONTROL 形式 ] [!UICONTROL クライアント ID] を入力します。</td>
+        <td>[!UICONTROL 形式 &#x200B;] [!UICONTROL クライアント ID] を入力します。</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
@@ -569,7 +569,7 @@ Figma モジュールの接続を作成するには：
       <td>ファイルを取得するプロジェクトのプロジェクト ID を入力またはマッピングします。チーム ID は、Figma のチームのページの URL で確認できます。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 返されるプロジェクトの最大数 ]</td>
+      <td role="rowheader">[!UICONTROL 返されるプロジェクトの最大数 &#x200B;]</td>
       <td>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</td>
     </tr>
   </tbody>

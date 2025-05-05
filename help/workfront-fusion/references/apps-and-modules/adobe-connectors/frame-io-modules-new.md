@@ -164,8 +164,8 @@ Frame.io コネクタは、次のものを使用します。
 * [[!UICONTROL アセット作成]](#create-an-asset)
 * [[!UICONTROL アセット削除]](#delete-an-asset)
 * [[!UICONTROL アセットを取得]](#get-an-asset)
-* [[!UICONTROL  アセットのリスト ]](#list-assets)
-* [[!UICONTROL  アセットの更新 ]](#update-an-asset)
+* [[!UICONTROL &#x200B; アセットのリスト &#x200B;]](#list-assets)
+* [[!UICONTROL &#x200B; アセットの更新 &#x200B;]](#update-an-asset)
 
 #### [!UICONTROL アセット作成] <!--different for v4-->
 
@@ -208,13 +208,13 @@ Frame.io コネクタは、次のものを使用します。
    <td> <p>ファイルを作成する場合、アップロードするファイルの URL を入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL メディアの種類 ] </td> 
+   <td role="rowheader">[!UICONTROL メディアの種類 &#x200B;] </td> 
    <td> <p>このアセットのメディアタイプを選択します。</p> </td> 
   </tr> 
   </tbody> 
 </table>
 
-#### [!UICONTROL  アセットの削除 ]
+#### [!UICONTROL &#x200B; アセットの削除 &#x200B;]
 
 このアクションモジュールは、指定したアセットを削除します。
 
@@ -237,7 +237,7 @@ Frame.io コネクタは、次のものを使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL  アセットの取得 ]
+#### [!UICONTROL &#x200B; アセットの取得 &#x200B;]
 
 このアクションモジュールは、アセットの詳細を取得します。
 
@@ -279,7 +279,7 @@ Frame.io コネクタは、次のものを使用します。
    <td> <p>アカウントを選択するか、リストするアセットを含むアカウントの ID をマップします。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 返されるアセットの最大数 ] </td> 
+   <td role="rowheader">[!UICONTROL 返されるアセットの最大数 &#x200B;] </td> 
    <td> <p>各シナリオの実行サイクル中に、モジュールが返すアセットの最大数を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
@@ -330,7 +330,7 @@ Frame.io コネクタは、次のものを使用します。
    <td> <p>コメントのリンク先となるビデオのフレーム番号を入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ページ ] </td> 
+   <td role="rowheader">[!UICONTROL ページ &#x200B;] </td> 
    <td> <p>アセットがPDFの場合は、コメントを添付するページを入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
@@ -359,7 +359,7 @@ Frame.io コネクタは、次のものを使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL  コメントを取得 ]
+#### [!UICONTROL &#x200B; コメントを取得 &#x200B;]
 
 このアクションモジュールは、指定されたコメントの詳細を取得します。
 
@@ -446,7 +446,7 @@ Frame.io コネクタは、次のものを使用します。
    <td> <p>コメントのリンク先となるビデオのフレーム番号を入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ページ ] </td> 
+   <td role="rowheader">[!UICONTROL ページ &#x200B;] </td> 
    <td> <p>アセットがPDFの場合は、コメントが添付されているページを入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
@@ -542,7 +542,7 @@ Frame.io コネクタは、次のものを使用します。
    <td> <p>プロジェクトを取得するアセットを含むワークスペースを選択またはマッピングします。</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL 返されるプロジェクトの最大数 ] </td> 
+   <td role="rowheader">[!UICONTROL 返されるプロジェクトの最大数 &#x200B;] </td> 
    <td> <p>プロジェクトの最大数を入力またはマッピング
    各シナリオ実行サイクル中にモジュールを返す必要があります。</p> </td> 
   </tr> 

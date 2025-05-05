@@ -103,19 +103,19 @@ ht-degree: 74%
    <td> <p> 監視するファイルのタイプを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Documents] ファイルをフォーマット ] </td> 
+   <td>[!UICONTROL Convert [!DNL Google Documents] ファイルをフォーマット &#x200B;] </td> 
    <td> <p>監視する [!DNL Google Documents] ファイルの変換先の形式を選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Sheets] ファイルをフォーマット ] </td> 
+   <td>[!UICONTROL Convert [!DNL Google Sheets] ファイルをフォーマット &#x200B;] </td> 
    <td> <p>監視する [!DNL Google Sheets] ファイルの変換先の形式を選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Slides] ファイルをフォーマット ] </td> 
+   <td>[!UICONTROL Convert [!DNL Google Slides] ファイルをフォーマット &#x200B;] </td> 
    <td> <p>監視する [!DNL Google Slides] ファイルの変換先の形式を選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Drawings] ファイルをフォーマット ] </td> 
+   <td>[!UICONTROL Convert [!DNL Google Drawings] ファイルをフォーマット &#x200B;] </td> 
    <td> <p>監視する [!DNL Google Drawings] ファイルの変換先の形式を選択します。</p> </td> 
   </tr> 
   <tr> 
@@ -296,19 +296,19 @@ ht-degree: 74%
    <td> <p>[!DNL Google Team Drive] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Documents] ファイルをフォーマット ] </td> 
+   <td>[!UICONTROL Convert [!DNL Google Documents] ファイルをフォーマット &#x200B;] </td> 
    <td> <p>[!DNL Google Documents] ファイルを変換する形式を選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Sheets] ファイルをフォーマット ] </td> 
+   <td>[!UICONTROL Convert [!DNL Google Sheets] ファイルをフォーマット &#x200B;] </td> 
    <td> <p>[!DNL Google Sheets] ファイルを変換する形式を選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Slides] ファイルをフォーマット ] </td> 
+   <td>[!UICONTROL Convert [!DNL Google Slides] ファイルをフォーマット &#x200B;] </td> 
    <td> <p>[!DNL Google Slides] ファイルを変換する形式を選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Drawings] ファイルをフォーマット ] </td> 
+   <td>[!UICONTROL Convert [!DNL Google Drawings] ファイルをフォーマット &#x200B;] </td> 
    <td> <p>[!DNL Google Drawings] ファイルを変換する形式を選択します。</p> </td> 
   </tr> 
   <tr> 

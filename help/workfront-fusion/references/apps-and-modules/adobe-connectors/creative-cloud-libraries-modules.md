@@ -115,7 +115,7 @@ Adobe Creative Cloud ライブラリコネクタでは、以下を使用しま�
 
 * [[!UICONTROL 要素のアップロード]](#upload-an-element)
 
-* [!UICONTROL [Watch New Element in Library]](#watch-new-element-in-library)
+* [[!UICONTROL [Watch New Element in Library]]](#watch-new-element-in-library)
 
 * [[!UICONTROL 更新された要素の監視]](#watch-updated-elements)
 
@@ -400,7 +400,7 @@ Adobe Creative Cloud ライブラリコネクタでは、以下を使用しま�
 </table>
 
 
-#### [!UICONTROL  アセットをアップロード ]
+#### [!UICONTROL &#x200B; アセットをアップロード &#x200B;]
 
 このアクションモジュールは、小さなファイルアセットを既存のライブラリにアップロードします。最大ファイルサイズは 1 GB です。
 
@@ -439,11 +439,11 @@ Adobe Creative Cloud ライブラリコネクタでは、以下を使用しま�
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 要素タイプ ]</td>
+      <td role="rowheader">[!UICONTROL 要素タイプ &#x200B;]</td>
       <td >アップロードする要素のタイプを選択します</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL ファイルの種類 ]</td>
+      <td role="rowheader">[!UICONTROL ファイルの種類 &#x200B;]</td>
       <td >アップロードしたファイルの MIME タイプを入力またはマッピングします。</td>
     </tr>
     <tr>

@@ -56,7 +56,7 @@ ht-degree: 23%
 
 &#42;ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
 
-&#42;&#42;[!DNL Adobe Workfront Fusion] ライセンスについては、[!DNL [Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+&#42;&#42;[!DNL Adobe Workfront Fusion] ライセンスについては、[[!DNL [Adobe Workfront Fusion] licenses]](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 ## 前提条件
 
@@ -115,11 +115,11 @@ Adobe Lightroom コネクタでは、以下を使用します。
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>[!UICONTROL Adobe] [!UICONTROL クライアント ID] を入力します。 これは、の [!UICONTROL 資格情報 ] の詳細セクションにあります [!DNL Adobe Developer Console]</td>
+        <td>[!UICONTROL Adobe] [!UICONTROL クライアント ID] を入力します。 これは、の [!UICONTROL 資格情報 &#x200B;] の詳細セクションにあります [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、の [!UICONTROL 資格情報 ] の詳細セクションにあります [!DNL Adobe Developer Console]</td>
+        <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、の [!UICONTROL 資格情報 &#x200B;] の詳細セクションにあります [!DNL Adobe Developer Console]</td>
         </tr>
       </tbody>
     </table>
@@ -223,13 +223,13 @@ Adobe Lightroom コネクタでは、以下を使用します。
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL コンテンツの長さ（バイト単位） ]</td>
+      <td role="rowheader">[!UICONTROL コンテンツの長さ（バイト単位） &#x200B;]</td>
       <td>
         <p>コンテンツの長さをバイト単位で入力またはマッピングします。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL バイト範囲 ]</td>
+      <td role="rowheader">[!UICONTROL バイト範囲 &#x200B;]</td>
       <td>
         <p>RFC 2616 で定義されている最初と最後のバイトおよびエンティティ長を含む、リクエストのバイト範囲を入力またはマッピングします。 データが大きすぎて 1 回の呼び出しでアップロードできない場合にのみ含める必要があります。</p>
       </td>
@@ -269,25 +269,25 @@ Adobe Lightroom コネクタでは、以下を使用します。
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL アセット タイプ ]</td>
+      <td role="rowheader">[!UICONTROL アセット タイプ &#x200B;]</td>
       <td>
         <p>アセットが画像かビデオかを選択します。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Datetime ユーザーが作成されました ]</td>
+      <td role="rowheader">[!UICONTROL Datetime ユーザーが作成されました &#x200B;]</td>
       <td>
         <p><code>YYYY-MM-DDT00:00:00-00:00</code> という形式で日付を入力またはマッピングします。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Datetime ユーザーが更新されました ]</td>
+      <td role="rowheader">[!UICONTROL Datetime ユーザーが更新されました &#x200B;]</td>
       <td>
         <p><code>YYYY-MM-DDT00:00:00-00:00</code> という形式で日付を入力またはマッピングします。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL キャプチャされた日付 ]</td>
+      <td role="rowheader">[!UICONTROL キャプチャされた日付 &#x200B;]</td>
       <td>
         <p><code>YYYY-MM-DDT00:00:00-00:00</code> という形式で日付を入力またはマッピングします。</p>
       </td>
@@ -308,13 +308,13 @@ Adobe Lightroom コネクタでは、以下を使用します。
       <td>[!DNL Adobe Lightroom] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >[!DNL Adobe Lightroom]</a> への接続を作成を参照してください。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL コンテンツの長さ（バイト単位） ]</td>
+      <td role="rowheader">[!UICONTROL コンテンツの長さ（バイト単位） &#x200B;]</td>
       <td>
         <p>コンテンツの長さをバイト単位で入力またはマッピングします。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 新しいファイルをアップロードするか、XMPをコピー/ファイルを作成 ]</td>
+      <td role="rowheader">[!UICONTROL 新しいファイルをアップロードするか、XMPをコピー/ファイルを作成 &#x200B;]</td>
       <td>
         <p>新しいファイルをアップロードするか、既存のアセットからファイルをコピーするかを選択します。</p>
       </td>
@@ -332,7 +332,7 @@ Adobe Lightroom コネクタでは、以下を使用します。
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!XMPへの UICONTROL リンク/ファイルを作成 ]</td>
+      <td role="rowheader">[!UICONTROL XMPへの リンク/ファイルを作成 &#x200B;]</td>
       <td>
         <p>アップロードまたはコピーするファイルへのリンクを入力またはマッピングします。</p><p>ファイルをコピーする場合、このファイルは JSON である必要があり、ファイルをアップロードする場合は XML である必要があります。</p>
       </td>
@@ -353,13 +353,13 @@ Adobe Lightroom コネクタでは、以下を使用します。
       <td>[!DNL Adobe Lightroom] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >[!DNL Adobe Lightroom]</a> への接続を作成を参照してください。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL レンディションの種類（セミコロン区切り） ]</td>
+      <td role="rowheader">[!UICONTROL レンディションの種類（セミコロン区切り） &#x200B;]</td>
       <td>
         <p>作成するレンディションのレンディションタイプを入力します。 複数の型を入力する場合は、セミコロン （;）で区切ります。 <p>可能なタイプ：</p><ul><li><code>fullsize</code></li><li><code>2560</code></li></ul></p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL コンテンツの長さ（バイト単位） ]</td>
+      <td role="rowheader">[!UICONTROL コンテンツの長さ（バイト単位） &#x200B;]</td>
       <td>
         <p>コンテンツの長さをバイト単位で入力またはマッピングします。</p>
       </td>
@@ -459,7 +459,7 @@ Adobe Lightroom コネクタでは、以下を使用します。
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL レンディションの種類 ]</td>
+      <td role="rowheader">[!UICONTROL レンディションの種類 &#x200B;]</td>
       <td>
         <p>取得するレンディションのタイプを選択します。</p>
       </td>
@@ -486,25 +486,25 @@ Adobe Lightroom コネクタでは、以下を使用します。
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 開始タイムスタンプ ]</td>
+      <td role="rowheader">[!UICONTROL 開始タイムスタンプ &#x200B;]</td>
       <td>
         <p>タイムスタンプを入力またはマッピングします。 モジュールは、このタイムスタンプ以降に更新されたレコードを返します。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[！以前に取り込んだアセットを UICONTROL で返す ]</td>
+      <td role="rowheader">[!UICONTROL 以前に取り込んだアセットを で返す &#x200B;]</td>
       <td>
         <p><code>YYYY-MM-DDT00:00:00</code> という形式で日付を入力します。 モジュールは、この日付より前にキャプチャされた結果を返します。</p><p> このフィールドはフィールド <code>Return assets captured after</code> と併用できません。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 返されるアセットの最大数 ]</td>
+      <td role="rowheader">[!UICONTROL 返されるアセットの最大数 &#x200B;]</td>
       <td>
         <p>シナリオの実行サイクルごとにモジュールが返すレコードの最大数を入力します。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL SHA256 元のファイルのハッシュ値 ]</td>
+      <td role="rowheader">[!UICONTROL SHA256 元のファイルのハッシュ値 &#x200B;]</td>
       <td>
         <p></p>
       </td>
@@ -516,7 +516,7 @@ Adobe Lightroom コネクタでは、以下を使用します。
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL アセットのサブタイプ値 ]</td>
+      <td role="rowheader">[!UICONTROL アセットのサブタイプ値 &#x200B;]</td>
       <td>
         <p></p>
       </td>
@@ -528,24 +528,24 @@ Adobe Lightroom コネクタでは、以下を使用します。
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[！除外するアセットの UICONTROL タイプ ]</td>
+      <td role="rowheader">[!UICONTROL 除外するアセットの タイプ &#x200B;]</td>
       <td>
         <p>完全なアセットまたは不完全なアセットを除外する場合に選択します。 すべてのアセットを含めるには、このフィールドを空白のままにします。</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL グループの値 ]</td>
+      <td role="rowheader">[!UICONTROL グループの値 &#x200B;]</td>
       <td>
         <p></p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 名の値 ]</td>
+      <td role="rowheader">[!UICONTROL 名の値 &#x200B;]</td>
       <td>
         <p></p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL お気に入りのステータス ]</td>
+      <td role="rowheader">[!UICONTROL お気に入りのステータス &#x200B;]</td>
       <td>
         <p></p>
       </td>
@@ -647,29 +647,29 @@ Lightroomに新しいアルバムを作成します。
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL サブタイプ ]</td>
+      <td role="rowheader">[!UICONTROL サブタイプ &#x200B;]</td>
       <td>
         <p>アルバムのサブタイプを選択します。</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL API キー ]</td>
+      <td role="rowheader">[!UICONTROL API キー &#x200B;]</td>
       <td>
         <p>アルバムを作成するサービスの API キーを入力します。</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Datetime ユーザーが作成されました ]</td>
+      <td role="rowheader">[!UICONTROL Datetime ユーザーが作成されました &#x200B;]</td>
       <td>
         <p><code>YYYY-MM-DDT00:00:00-00:00Z</code> という形式で日付を入力またはマッピングします。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Datetime ユーザーが更新されました ]</td>
+      <td role="rowheader">[!UICONTROL Datetime ユーザーが更新されました &#x200B;]</td>
       <td>
         <p><code>YYYY-MM-DDT00:00:00-00:00Z</code> という形式で日付を入力またはマッピングします。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL アルバム名 ]</td>
+      <td role="rowheader">[!UICONTROL アルバム名 &#x200B;]</td>
       <td>
         <p>新しいアルバムの名前を入力またはマップします。</p>
       </td>
@@ -690,7 +690,7 @@ Lightroomに新しいアルバムを作成します。
         <p><code>YYYY-MM-DDT00:00:00-00:00Z</code> という形式で日付を入力またはマッピングします。</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL 更新日 ]</td>
+      <td role="rowheader">[!UICONTROL 更新日 &#x200B;]</td>
       <td>
         <p><code>YYYY-MM-DDT00:00:00-00:00Z</code> という形式で日付を入力またはマッピングします。</p>
       </td>
@@ -702,13 +702,13 @@ Lightroomに新しいアルバムを作成します。
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[！関連コンテンツを編集する場所の UICONTROL URL]</td>
+      <td role="rowheader">[!UICONTROL 関連コンテンツを編集する場所の URL]</td>
       <td>
         <p>ユーザーがこのアルバムのコンテンツを編集できる URL がある場合は、ここに URL を入力してください。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[！関連コンテンツを表示する場所の UICONTROL URL]</td>
+      <td role="rowheader">[!UICONTROL 関連コンテンツを表示する場所の URL]</td>
       <td>
         <p>このアルバムのコンテンツを表示できる URL がある場合は、ここに URL を入力してください。</p>
       </td>
@@ -809,13 +809,13 @@ Lightroomに新しいアルバムを作成します。
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 現在の結果の前に付けるアルバム名 ]</td>
+      <td role="rowheader">[!UICONTROL 現在の結果の前に付けるアルバム名 &#x200B;]</td>
       <td>
         <p>結果をページに分ける場合は、前のページの最後のアルバムの名前を入力またはマップします。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 返されるアルバムの最大数 ]</td>
+      <td role="rowheader">[!UICONTROL 返されるアルバムの最大数 &#x200B;]</td>
       <td>
         <p>1 つの実行サイクル中に返 [!DNL Workfront Fusion] アセットの最大数を設定します。 このフィールドのデフォルト値は 100 です。このモジュールは、リミット境界にある複数のアルバムが同じ <code>name_after</code> 値を持つ場合、このリミットよりも多くのアルバムを返す可能性があります。</p>
       </td>

@@ -11,7 +11,7 @@ ht-degree: 69%
 
 ---
 
-# [!UICONTROL HTTP] > [!UICONTROL  リクエストを作成 ] モジュール
+# [!UICONTROL HTTP] > [!UICONTROL &#x200B; リクエストを作成 &#x200B;] モジュール
 
 [!DNL Adobe Workfront Fusion] HTTP／[!UICONTROL リクエストモジュールの作成]は、HTTP リクエストを設定し、サーバーに送信できるユニバーサルモジュールです。受信した HTTP 応答は、出力バンドルに含まれます。
 
@@ -62,9 +62,9 @@ ht-degree: 69%
 
 +++
 
-## [!UICONTROL HTTP] > [!UICONTROL  リクエストを行う ] モジュール設定
+## [!UICONTROL HTTP] > [!UICONTROL &#x200B; リクエストを行う &#x200B;] モジュール設定
 
-[!UICONTROL HTTP]/[!UICONTROL  リクエストを行う ] モジュールを設定すると、以下に示 [!DNL Adobe Workfront Fusion] フィールドが表示されます。 モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL HTTP]/[!UICONTROL &#x200B; リクエストを行う &#x200B;] モジュールを設定すると、以下に示 [!DNL Adobe Workfront Fusion] フィールドが表示されます。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -101,10 +101,10 @@ ht-degree: 69%
        <p>結果の HTTP リクエスト形式の例は、次のようになります。</p> 
        <p><code>field1=value1&amp;field2=value2</code> </p> 
       </div> </li> 
-     <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL  Multipart/form-data] は、ファイルとデータの送信に使用される HTTP マルチパートリクエストです。通常、ファイルをサーバーにアップロードする際に使用されます。</p> <p>リクエストで送信するフィールドを追加します。各フィールドには、キーと値のペアが含まれている必要があります。</p> 
+     <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL &#x200B; Multipart/form-data] は、ファイルとデータの送信に使用される HTTP マルチパートリクエストです。通常、ファイルをサーバーにアップロードする際に使用されます。</p> <p>リクエストで送信するフィールドを追加します。各フィールドには、キーと値のペアが含まれている必要があります。</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>リクエスト本文内で送信するキーと値を入力します。</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>キーを入力し、リクエスト本文で送信するソースファイルを指定します。</p> <p>前のモジュールからアップロードするファイルをマッピングするか（[!UICONTROL HTTP] &gt; [!UICONTROL ファイルを取得 ] や [!UICONTROL Google Drive] &gt; ファイルのダウンロードなど）、ファイル名とファイルデータを手動で入力します。</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>キーを入力し、リクエスト本文で送信するソースファイルを指定します。</p> <p>前のモジュールからアップロードするファイルをマッピングするか（[!UICONTROL HTTP] &gt; [!UICONTROL ファイルを取得 &#x200B;] や [!UICONTROL Google Drive] &gt; ファイルのダウンロードなど）、ファイル名とファイルデータを手動で入力します。</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
@@ -145,7 +145,7 @@ ht-degree: 69%
               <p>ファイルのパスワードを入力します。</p>
             </li>
             <li value="5">
-              <p><b>[!UICONTROL 保存 ]</b> をクリックしてファイルを抽出し、モジュール設定に戻ります。</p>
+              <p><b>[!UICONTROL 保存 &#x200B;]</b> をクリックしてファイルを抽出し、モジュール設定に戻ります。</p>
             </li>
           </ol>
 </p> </td> 
@@ -183,6 +183,6 @@ ht-degree: 69%
 
 ![ リクエストの例の作成 ](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
 
-[!UICONTROL  リクエストコンテンツ ] フィールドに直接 JSON 部分を式と項目と混在させることは、無効な JSON になる可能性があるので、お勧めしません。
+[!UICONTROL &#x200B; リクエストコンテンツ &#x200B;] フィールドに直接 JSON 部分を式と項目と混在させることは、無効な JSON になる可能性があるので、お勧めしません。
 
 >[!ENDSHADEBOX]

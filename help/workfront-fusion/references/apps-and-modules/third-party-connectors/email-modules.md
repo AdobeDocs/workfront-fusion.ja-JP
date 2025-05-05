@@ -307,11 +307,11 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>削除するメールのメール UID を入力します。</p> <p>メールのUIDは、メール / メールを監視モジュールまたは [!UICONTROL メールを検索 ] モジュールを使用して取得できます。</p> </td> 
+   <td> <p>削除するメールのメール UID を入力します。</p> <p>メールのUIDは、メール / メールを監視モジュールまたは [!UICONTROL メールを検索 &#x200B;] モジュールを使用して取得できます。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Expunge]</td> 
-   <td> <p>現在開いているメールボックスで [!UICONTROL Deleted] のフラグが設定されているすべてのメッセージを完全に削除するには、このオプションを有効にします。</p> <p>メモ：[!DNL Gmail] では、この動作は [!UICONTROL 設定 ] &gt;[!UICONTROL IMAP アクセスでの POP/IMAP 転送 ] セクションの設定によって駆動されます。</p> </td> 
+   <td> <p>現在開いているメールボックスで [!UICONTROL Deleted] のフラグが設定されているすべてのメッセージを完全に削除するには、このオプションを有効にします。</p> <p>メモ：[!DNL Gmail] では、この動作は [!UICONTROL 設定 &#x200B;] &gt;[!UICONTROL IMAP アクセスでの POP/IMAP 転送 &#x200B;] セクションの設定によって駆動されます。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -350,7 +350,7 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
    <td> <p>メールを取得する送信者のメールアドレスを入力またはマッピングします。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL 受信者の電子メール ]</td> 
+   <td role="rowheader">[!UICONTROL 受信者の電子メール &#x200B;]</td> 
    <td> <p> メールを取得する受信者のメールアドレスを入力またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
@@ -371,7 +371,7 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Email ID (UID)]</td> 
-   <td> <p> 詳細を取得するメールのメール ID（UID）を入力します。</p> <p>メールの UID は、[!DNL Workfront Fusion] の[!UICONTROL  Watch Email] モジュールまたは [!UICONTROL Search Email] モジュールを使用して取得できます。</p> </td> 
+   <td> <p> 詳細を取得するメールのメール ID（UID）を入力します。</p> <p>メールの UID は、[!DNL Workfront Fusion] の[!UICONTROL &#x200B; Watch Email] モジュールまたは [!UICONTROL Search Email] モジュールを使用して取得できます。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of results]</td> 
@@ -386,7 +386,7 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
 
 #### [!UICONTROL メールを既読としてマーク]
 
-このアクションモジュールは、[!UICONTROL  読み取り ] フラグを設定して、選択されたフォルダー内のメールまたはドラフトを読み取りとしてマークします。
+このアクションモジュールは、[!UICONTROL &#x200B; 読み取り &#x200B;] フラグを設定して、選択されたフォルダー内のメールまたはドラフトを読み取りとしてマークします。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -402,7 +402,7 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>既読としてマークするメールの UID を入力します。</p> <p>メールのUIDは、メール / メールを監視モジュールまたは [!UICONTROL メールを検索 ] モジュールを使用して取得できます。</p> </td> 
+   <td> <p>既読としてマークするメールの UID を入力します。</p> <p>メールのUIDは、メール / メールを監視モジュールまたは [!UICONTROL メールを検索 &#x200B;] モジュールを使用して取得できます。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -425,7 +425,7 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>未読としてマークするメールの UID を入力します。</p> <p>メールのUIDは、メール / メールを監視モジュールまたは [!UICONTROL メールを検索 ] モジュールを使用して取得できます。</p> </td> 
+   <td> <p>未読としてマークするメールの UID を入力します。</p> <p>メールのUIDは、メール / メールを監視モジュールまたは [!UICONTROL メールを検索 &#x200B;] モジュールを使用して取得できます。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -452,7 +452,7 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>宛先フォルダーに移動するメールの UID を入力します。</p> <p>メールのUIDは、メール / メールを監視モジュールまたは [!UICONTROL メールを検索 ] モジュールを使用して取得できます。</p> </td> 
+   <td> <p>宛先フォルダーに移動するメールの UID を入力します。</p> <p>メールのUIDは、メール / メールを監視モジュールまたは [!UICONTROL メールを検索 &#x200B;] モジュールを使用して取得できます。</p> </td> 
   </tr> 
  </tbody> 
 </table>

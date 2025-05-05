@@ -34,7 +34,7 @@ HTTP モジュールより有利な点は、専用のアプリのように接続
     <tr>
       <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td>
       <td>
-        <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL 計画 ]、[!UICONTROL 作業 ]</p>
+        <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL 計画 &#x200B;]、[!UICONTROL 作業 &#x200B;]</p>
       </td>
     </tr>
     <tr>
@@ -265,7 +265,7 @@ Adobe Authenticator接続は、Adobe Developer Console上の 1 つのプロジ�
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 出力タイプ ]  </td>
+      <td role="rowheader">[!UICONTROL 出力タイプ &#x200B;]  </td>
       <td>
         <p>モジュールが出力するデータのタイプを選択します。 タイプを選択しない場合、モジュールは自動的にタイプを選択します。</p>
       </td>

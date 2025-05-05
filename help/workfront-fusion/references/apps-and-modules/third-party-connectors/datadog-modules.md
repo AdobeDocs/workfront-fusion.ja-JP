@@ -124,7 +124,7 @@ Datadog コネクタは以下を使用します。
       <td> <p>接続先のドメイン（米国または EU）を選択します。</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL API キーの場所 ] </td> 
+      <td role="rowheader">[!UICONTROL API キーの場所 &#x200B;] </td> 
       <td> <p>API キーをヘッダーに含めるか、クエリ文字列に含めるかを選択します。</p> </td> 
      </tr> 
      <tr> 
@@ -162,7 +162,7 @@ Datadog コネクタは以下を使用します。
    <td> <p>[!DNL Datadog] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">[!DNL Datadog] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL で専用ドメインを使用 ]</td> 
+   <td role="rowheader">[!UICONTROL で専用ドメインを使用 &#x200B;]</td> 
    <td>多くの受信トラフィックを想定している Datadog API エンドポイントの一部は、専用ドメインで動作しています。 API 呼び出しに専用ドメインを使用するには、このボックスをオンにします。</td> 
   </tr> 
   <tr> 
@@ -229,7 +229,7 @@ URL：`/v1/dashboard`
    </ul>
    </td> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 間隔 ]</td> 
+   <td role="rowheader">[!UICONTROL 間隔 &#x200B;]</td> 
    <td> 指標のタイプがレートまたは数の場合は、対応する間隔を定義します。</td> 
   </tr> 
   <tr> 
