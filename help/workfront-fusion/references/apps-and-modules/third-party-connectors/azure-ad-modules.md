@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Azu
 author: Becky
 feature: Workfront Fusion
 exl-id: 96455ae4-ef68-46b5-a172-429cf9f982fb
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 719112fa82132b6294560fc9f9dff8355181e8df
 workflow-type: tm+mt
-source-wordcount: '47'
-ht-degree: 100%
+source-wordcount: '1050'
+ht-degree: 79%
 
 ---
 
@@ -15,91 +15,95 @@ ht-degree: 100%
 
 [!DNL Adobe Workfront Fusion] のシナリオでは、[!DNL Azure Active Directory] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
 
-<!--
+シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-If you need instructions on creating a scenario, see [Create a scenario in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/create-a-scenario.md). For information about modules, see [Modules in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/modules/modules.md).
+モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
-## Access requirements
+## アクセス要件
 
-You must have the following access to use the functionality in this article:
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
+この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
-   <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>現在：Workfront Fusion ライセンス要件なし</p>
+   <p>または</p>
+   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Product</td> 
+   <td role="rowheader">製品</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
-   <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
+   <p>または</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).
+[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
 
-## Prerequisites
++++
 
-To use [!DNL Azure Active Directory] modules, you must have an [!DNL Azure Active Directory] account.
+## 前提条件
 
-## [!DNL Azure Active Directory] API information
+[!DNL Azure Active Directory] モジュールを使用するには、[!DNL Azure Active Directory] アカウントが必要です。
 
-The Azure Active Directory connector uses the following:
+## [!DNL Azure Active Directory] API 情報
+
+Azure Active Directory コネクタでは、以下を使用します。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">API version</td> 
+   <td role="rowheader">API バージョン</td> 
    <td> v1.0 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">API tag</td> 
+   <td role="rowheader">API タグ</td> 
    <td>v1.4.5</td> 
   </tr>
  </tbody> 
 </table>
 
-## [!DNL Azure Active Directory] modules and their fields
+## [!DNL Azure Active Directory] モジュールとそのフィールド
 
-When you configure [!DNL Azure Active Directory] modules, [!DNL Workfront Fusion] displays the fields listed below. Along with these, additional [!DNL Azure Active Directory] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
+[!DNL Azure Active Directory] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Azure Active Directory] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/mapping/map-information-between-modules.md).
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) でモジュールから別のモジュールに情報をマッピングを参照してください。
 
-![Map toggle](assets/map-toggle-350x74.png)
+![ マップ切り替え ](../assets/map-toggle-350x74.png)
 
-* [Triggers](#triggers)
-* [Actions](#actions)
-* [Searches](#searches)
+* [トリガー](#triggers)
+* [アクション](#actions)
+* [検索](#searches)
 
-### Triggers 
+### トリガー
 
-#### [!UICONTROL Watch records] (scheduled)
+#### [!UICONTROL レコードを監視]（予定）
 
-This polling (scheduled) trigger module executes a scenario when a record in a selected object has been created since the last scheduled run in [!DNL Azure Active Directory]. It also returns all standard fields associated with the record or records, along with any custom fields and values that the connection accesses.You can map this information in subsequent modules in the scenario.
+このポーリング（スケジュール）トリガーモジュールは、選択したオブジェクトのレコードが、[!DNL Azure Active Directory] での前回のスケジュールされた実行以降に作成された場合に、シナリオを実行します。また、レコードに関連付けられたすべての標準フィールドと、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオの後続モジュールにマッピングできます。
 
-When you are configuring this module, the following fields display.
+このモジュールを設定する際には、次のフィールドが表示されます。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -107,36 +111,36 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Azure Active Directory] account to [!DNL Workfront Fusion], see <a href="../../workfront-fusion/connections/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td> <p>[!DNL Azure Active Directory] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Type]</td> 
-   <td>Select whether you want to watch User records or Group records.</td> 
+   <td>ユーザーレコードとグループレコードのどちらを監視するかを選択します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum Number of Records]</td> 
-   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
+   <td>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
 </table>
 
-### Actions 
+### アクション
 
-* [[!UICONTROL Read Record]](#read-record)
-* [[!UICONTROL Create Record]](#create-record)
-* [[!UICONTROL Custom API Call]](#custom-api-call)
+* [[!UICONTROL レコードの読み取り]](#read-record)
+* [[!UICONTROL レコードの作成]](#create-record)
+* [[!UICONTROL カスタム API 呼び出し]](#custom-api-call)
 
-#### [!UICONTROL Read Record] 
+#### [!UICONTROL レコードの読み取り]
 
-This action module reads data from a single record in [!DNL Azure Active Directory].
+このアクションモジュールは、[!DNL Azure Active Directory] の単一レコードからデータを読み取ります。
 
-You specify the ID of the record.
+レコードの ID を指定します。
 
-The module returns the ID of the record and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
+このモジュールは、レコードの ID および関連するフィールドと共に、接続を介してアクセスされるカスタムフィールドとその値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
-You must have sufficient permissions to access the record in [!DNL Azure Active Directory] in order to retrieve this information.
+この情報を取得するには、[!DNL Azure Active Directory] のレコードにアクセスするのに十分な権限が必要です。
 
-When you are configuring this module, the following fields display.
+このモジュールを設定する際には、次のフィールドが表示されます。
 
 <table style="table-layout:auto">
  <col> 
@@ -144,32 +148,32 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Azure Active Directory] account to [!DNL Workfront Fusion], see <a href="../../workfront-fusion/connections/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td> <p>[!DNL Azure Active Directory] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
-   <td>Select whether you want to read a [!UICONTROL User] record or a [!UICONTROL Group] record.</td> 
+   <td>[!UICONTROL User]レコードと[!UICONTROL Group]レコードのどちらを読み取るかを選択します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td>Select the information you want included in the output bundle for this module.</td> 
+   <td>このモジュールの出力バンドルに含める情報を選択します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
-   <td>Enter or map the unique [!DNL Azure Active Directory] ID of the record that you want the module to read.</td> 
+   <td>モジュールが読み取るレコードの一意の [!DNL Azure Active Directory] ID を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Create Record] 
+#### [!UICONTROL レコードの作成]
 
-This action module creates a new user or group record.
+このアクションモジュールは、新しいユーザーまたはグループレコードを作成します。
 
-You specify the type of the record you want.
+レコードのタイプを指定します。
 
-The module returns the ID of the  record and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
+このモジュールは、レコードの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
-When you are configuring this module, the following fields display.
+このモジュールを設定する際には、次のフィールドが表示されます。
 
 <table style="table-layout:auto">
  <col> 
@@ -177,24 +181,24 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Azure Active Directory] account to [!DNL Workfront Fusion], see <a href="../../workfront-fusion/connections/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td> <p>[!DNL Azure Active Directory] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
-   <td>Select whether you want to read a [!UICONTROL User] record or a [!UICONTROL Group] record.</td> 
+   <td>[!UICONTROL User]レコードと[!UICONTROL Group]レコードのどちらを読み取るかを選択します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Other Fields]</td> 
-   <td>Fill in these fields to set the values for the new record.</td> 
+   <td>新しいレコードの値を設定するには、このフィールドに入力します。</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Custom API Call] 
+#### [!UICONTROL カスタム API 呼び出し]
 
-This action module lets you make a custom authenticated call to the [!DNL Azure Active Directory] API. This way, you can create a data flow automation that can't be accomplished by the other [!DNL Azure Active Directory] modules.
+このアクションモジュールは、[!DNL Azure Active Directory] API に対して認証済みのカスタム呼び出しを実行します。これにより、他の [!DNL Azure Active Directory] モジュールでは不可能なデータフロー自動処理を作成できます。
 
-When you are configuring this module, the following fields display.
+このモジュールを設定する際には、次のフィールドが表示されます。
 
 <table style="table-layout:auto">
  <col> 
@@ -202,44 +206,44 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Azure Active Directory] account to [!DNL Workfront Fusion], see <a href="../../workfront-fusion/connections/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td> <p>[!DNL Azure Active Directory] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
-   <td>Enter or map a path relative to <code>https://graph.microsoft.com/{version}/{resource}?{query-parameters}</code></td> 
+   <td>次に対してパスを入力またはマッピングします： <code>https://graph.microsoft.com/{version}/{resource}?{query-parameters}</code></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="../../workfront-fusion/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP request methods</a>.</p> </td> 
+   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエストメソッド </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Add the headers of the request in the form of a standard JSON object.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> </td> 
+   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p> <p>例： <code>{"Content-type":"application/json"}</code></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 
-   <td> <p>Add the query for the API call in the form of a standard JSON object.</p> <p>For example: <code>{"name":"something-urgent"}</code></p> </td> 
+   <td> <p>API 呼び出しのクエリを標準 JSON オブジェクトの形式で追加します。</p> <p>例： <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Add the body content for the API call in the form of a standard JSON object.</p> <p>Note:  <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
+   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件ステートメントを JSON で使用する場合は、条件ステートメントの外側に引用符を挿入します。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
-      <p> <img src="assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+      <p> <img src="../assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### Searches 
+### 検索
 
-* [Search Users](#search-users)
-* [Search Users/Groups Delta](#search-usersgroups-delta)
+* [ユーザーの検索](#search-users)
+* [ユーザー/グループデルタの検索](#search-usersgroups-delta)
 
-#### [!UICONTROL Search Users] 
+#### [!UICONTROL ユーザーの検索]
 
-This search module looks for records in an object in [!DNL Azure Active Directory] that match the search query you specify. You can map this information in subsequent modules in the scenario.
+この検索モジュールは、指定した検索クエリに一致する [!DNL Azure Active Directory] 内のオブジェクト内のレコードを検索します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
-When you are configuring this module, the following fields display.
+このモジュールを設定する際には、次のフィールドが表示されます。
 
 <table style="table-layout:auto">
  <col> 
@@ -247,26 +251,26 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Azure Active Directory] account to [!DNL Workfront Fusion], see <a href="../../workfront-fusion/connections/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td> <p>[!DNL Azure Active Directory] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL Search Criteria]</td> 
-   <td> <p>Enter the criteria that you want to use in your search.</p> <p>For information about the parameters to use, such as "[!UICONTROL $filter]", see <a href="https://docs.microsoft.com/en-us/graph/query-parameters">Use query parameters to customize responses</a> in the [!DNL Microsoft] API documentation.</p> </td> 
+   <td> <p>検索に使用する条件を入力します。</p> <p>「[!UICONTROL $filter]」など、使用するパラメーターについては、[!DNL Microsoft] API ドキュメントで<a href="https://docs.microsoft.com/ja-jp/graph/query-parameters">クエリパラメーターを使用した応答のカスタマイズ</a>を参照してください。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td>Select the information you want included in the output bundle for this module.</td> 
+   <td>このモジュールの出力バンドルに含める情報を選択します。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL Maximal count of records]</td> 
-   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
+   <td>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Users/Groups Delta]  
+#### [!UICONTROL ユーザー／グループ差分の検索]
 
-This search module looks for records in [!DNL Azure AD] that have been created, updated, or deleted. You can map this information in subsequent modules in the scenario.
+この検索モジュールは、[!DNL Azure AD] で作成、更新または削除されたレコードを検索します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
 <table style="table-layout:auto">
  <col> 
@@ -274,13 +278,11 @@ This search module looks for records in [!DNL Azure AD] that have been created, 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Azure Active Directory] account to [!DNL Workfront Fusion], see <a href="../../workfront-fusion/connections/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td> <p>[!DNL Azure Active Directory] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
+   <td>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
 </table>
-
--->
