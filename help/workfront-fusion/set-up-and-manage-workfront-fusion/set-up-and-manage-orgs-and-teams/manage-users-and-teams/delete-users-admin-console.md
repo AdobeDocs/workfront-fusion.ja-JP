@@ -70,7 +70,7 @@ ht-degree: 62%
 
 他のAdobe製品の権限はそのままにして、Workfront Fusion からユーザーを削除できます。
 
-手順については、「Admin Consoleでの製品の管理 [ の「製品からユーザーおよびユーザーグループを削除する」を参照してくだ ](https://helpx.adobe.com/enterprise/using/manage-products.html) い。
+手順については、「Admin Consoleでの製品の管理 [ の「製品からユーザーおよびユーザーグループを削除する」を参照してくだ ](https://helpx.adobe.com/jp/enterprise/using/manage-products.html) い。
 
 ## [!DNL Adobe Admin Console] ージ内のすべての製品のユーザーをディアクティベート
 
