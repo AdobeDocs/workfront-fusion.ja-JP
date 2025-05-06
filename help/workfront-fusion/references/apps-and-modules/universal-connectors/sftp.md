@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion SFTP]  モジュールを使用す�
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 26c599a9887ad931763b787813153bb7791ce5d1
 workflow-type: tm+mt
-source-wordcount: '2077'
-ht-degree: 82%
+source-wordcount: '2121'
+ht-degree: 80%
 
 ---
 
@@ -99,11 +99,11 @@ SFTP アカウントを [!DNL Workfront Fusion] に接続するには、ター�
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL キー交換アルゴリズム &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL キー交換アルゴリズム ] </td> 
    <td> <p>キー交換用の一連のアルゴリズムを入力できます。 モジュールは、追加された順序に基づいてアルゴリズムの優先順位を設定します。 追加するアルゴリズムごとに「<b> 項目を追加 </b>」をクリックし、アルゴリズムを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 暗号 &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL 暗号 ] </td> 
    <td> <p>キー交換用の暗号のセットを入力できます。 モジュールは、追加された順序に基づいて暗号の優先順位を設定します。 追加する暗号ごとに [<b> 項目の追加 </b>] をクリックし、暗号を選択します。</p> </td> 
   </tr> 
  </tbody> 
@@ -275,7 +275,7 @@ SFTP アカウントを [!DNL Workfront Fusion] に接続するには、ター�
  </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; ファイルを取得 &#x200B;]
+#### [!UICONTROL  ファイルを取得 ]
 
 このモジュールは、指定されたフォルダーからファイルを返します。
 
@@ -449,6 +449,10 @@ SFTP アカウントを [!DNL Workfront Fusion] に接続するには、ター�
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
    <td> <p>ファイルまたはフォルダーに必要な権限を設定します。chmod パラメーターを使用します。例えば、<code>777</code> や <code>-rwxrwxrwx</code> です。</p> <p>これらの権限は、パターンに一致する必要があります <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>chmod について詳しくは、<a href="https://ss64.com/bash/chmod.html?lang=ja">chmod のドキュメント </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL バッファーサイズ （B） ]</p> </td> 
+   <td> <p>ファイルをアップロードする際に、各チャンクのサイズ（バイト単位）を設定します。 これは、サイズの大きいファイルや、サーバーのメモリ制限により小さなアップロードが必要な場合に便利です。 この値が設定されていない場合、ファイルは 1 回の操作で書き込まれます。</p> </td> 
   </tr> 
  </tbody> 
 </table>
