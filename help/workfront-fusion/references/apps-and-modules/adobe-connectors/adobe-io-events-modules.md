@@ -4,10 +4,10 @@ description: Adobe I/O Events モジュールを使用すると、Adobe アプ�
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 983ce043afbcc44ee8af2dfcd46738f170a2b257
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 35%
+source-wordcount: '969'
+ht-degree: 34%
 
 ---
 
@@ -104,6 +104,12 @@ Adobe I/O Events モジュールの接続を作成するには：
         </td>
       </tr>
       <tr>
+        <td role="rowheader">環境</td>
+        <td>
+          <p>実稼動環境と非実稼動環境のどちらに接続するかを選択します。</p>
+        </td>
+      </tr>
+      <tr>
         <td role="rowheader">タイプ</td>
         <td>
           <p>サービス アカウントに接続するか、個人アカウントに接続するかを選択します。</p>
@@ -161,6 +167,8 @@ Adobe I/O Events モジュールの接続を作成するには：
 
 ### トリガー
 
+<!--Becky start here-->
+
 #### イベント登録の作成
 
 このアクションモジュールは、Webhook を使用してイベントの説明を作成します。 ここで Webhook を設定できます。 既存の Webhook を使用している場合、このモジュールのフィールドは読み取り専用です。
@@ -184,7 +192,7 @@ Webhook を作成するには：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Webhook の説明 &#x200B;]
+           [!UICONTROL Webhook の説明 ]
          </td>
          <td>
            この Webhook の説明を入力します。
@@ -192,7 +200,7 @@ Webhook を作成するには：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL イベント プロバイダー &#x200B;]
+           [!UICONTROL イベント プロバイダー ]
          </td>
          <td>
            イベントを作成する製品またはアカウントを選択します。
@@ -243,21 +251,21 @@ Webhook を作成するには：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL 後に発生するイベントを返す &#x200B;]
+           [!UICONTROL 後に発生するイベントを返す ]
          </td>
          <td>
          </td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL シーク &#x200B;]
+           [!UICONTROL シーク ]
          </td>
          <td>
          </td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL 最新 &#x200B;]
+           [!UICONTROL 最新 ]
          </td>
          <td>
          最新のイベントを返すには、このオプションを有効にします。
@@ -333,7 +341,7 @@ Webhook を作成するには：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL イベント プロバイダー &#x200B;]
+           [!UICONTROL イベント プロバイダー ]
          </td>
          <td>
            ID を取得するプロバイダーを選択します。
