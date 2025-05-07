@@ -251,7 +251,7 @@ Adobe Authenticator接続は、Adobe Developer Console上の 1 つのプロジ�
       </td>
       </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 出力タイプ ]  </td>
+      <td role="rowheader">[!UICONTROL 出力タイプ &#x200B;]  </td>
       <td>
         <p>モジュールが出力するデータのタイプを選択します。 タイプを選択しない場合、モジュールは自動的にタイプを選択します。</p>
       </td>
