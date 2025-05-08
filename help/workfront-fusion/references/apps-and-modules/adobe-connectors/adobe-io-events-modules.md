@@ -4,10 +4,10 @@ description: Adobe I/O Events モジュールを使用すると、Adobe アプ�
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 983ce043afbcc44ee8af2dfcd46738f170a2b257
+source-git-commit: ef55cc62a0e0de70662440bc38d3eabbfe5e3c13
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 34%
+source-wordcount: '1077'
+ht-degree: 35%
 
 ---
 
@@ -192,7 +192,7 @@ Webhook を作成するには：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Webhook の説明 &#x200B;]
+           [!UICONTROL Webhook の説明 ]
          </td>
          <td>
            この Webhook の説明を入力します。
@@ -200,7 +200,7 @@ Webhook を作成するには：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL イベント プロバイダー &#x200B;]
+           [!UICONTROL イベント プロバイダー ]
          </td>
          <td>
            イベントを作成する製品またはアカウントを選択します。
@@ -221,9 +221,12 @@ Webhook を作成するには：
 
 ### アクション
 
-#### ジャーナルからすべてのイベントを取得
+* [プロバイダー ID とイベント ID の取得](#get-provider-and-event-ids)
+* [カスタム API 呼び出しの実行](#make-a-custom-api-call)
 
-この検索モジュールは、登録のすべてのイベントをジャーナルから取得します。
+#### プロバイダー ID とイベント ID の取得
+
+この検索モジュールは、指定されたプロバイダーおよびイベントのAdobe I/O Events ID を取得します。
 
 <table>
      <col/>
@@ -235,44 +238,23 @@ Webhook を作成するには：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL 登録 ID]
+           [!UICONTROL イベント プロバイダー ]
          </td>
          <td>
-           イベントを取得する登録を選択します。
+           ID を取得するプロバイダーを選択します。
         </td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Maximum number of returned records]
+           [!UICONTROL Event type]
          </td>
          <td>
-              各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。 
-         </td>
-       </tr>
-       <tr>
-         <td role="rowheader">
-           [!UICONTROL 後に発生するイベントを返す &#x200B;]
-         </td>
-         <td>
-         </td>
-       </tr>
-       <tr>
-         <td role="rowheader">
-           [!UICONTROL シーク &#x200B;]
-         </td>
-         <td>
-         </td>
-       </tr>
-       <tr>
-         <td role="rowheader">
-           [!UICONTROL 最新 &#x200B;]
-         </td>
-         <td>
-         最新のイベントを返すには、このオプションを有効にします。
+              ID を提供するイベントを選択します。 イベントは、イベントプロバイダーに基づいて使用できます。 
          </td>
        </tr>
      </tbody>
    </table>
+
 
 #### カスタム API 呼び出しの実行
 
@@ -327,9 +309,9 @@ Webhook を作成するには：
 
 ### 検索
 
-#### プロバイダー ID とイベント ID の取得
+#### ジャーナルからすべてのイベントを取得
 
-この検索モジュールは、指定されたプロバイダーおよびイベントのAdobe I/O Events ID を取得します。
+この検索モジュールは、登録のすべてのイベントをジャーナルから取得します。
 
 <table>
      <col/>
@@ -341,28 +323,49 @@ Webhook を作成するには：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL イベント プロバイダー &#x200B;]
+           [!UICONTROL 登録 ID]
          </td>
          <td>
-           ID を取得するプロバイダーを選択します。
+           イベントを取得する登録を選択します。
         </td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Event type]
+           [!UICONTROL Maximum number of returned events]
          </td>
          <td>
-              ID を提供するイベントを選択します。 イベントは、イベントプロバイダーに基づいて使用できます。 
+              各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。 
+         </td>
+       </tr>
+       <tr>
+         <td role="rowheader">
+           [!UICONTROL 後に発生するイベントを返す ]
+         </td>
+         <td>日付を入力またはマッピングします。 モジュールは、この日付以降に発生したイベントを返します。
+         </td>
+       </tr>
+<!--       <tr>
+         <td role="rowheader">
+           [!UICONTROL Seek]
+         </td>
+         <td>
+         </td>
+       </tr>-->
+       <tr>
+         <td role="rowheader">
+           [!UICONTROL 最新 ]
+         </td>
+         <td>
+         最新のイベントを返すには、このオプションを有効にします。
          </td>
        </tr>
      </tbody>
    </table>
+&lt;!--
 
-<!--
+イベントの監視
 
-Watch Events
-
-This trigger module starts a scenario when an event occurs in the chosen Adobe product or service.
+選択したAdobeの製品またはサービスでイベントが発生すると、このトリガーモジュールがシナリオを開始します。
 
 <table style="table-layout:auto"> 
    <col> 
@@ -370,7 +373,7 @@ This trigger module starts a scenario when an event occurs in the chosen Adobe p
    <tbody> 
    <tr> 
    <td role="rowheader">Webhook</td> 
-   <td><p>Select the webhook that you want to use for this trigger, or add a new webhook. </p><p>To add a new webhook, <ol><li>Click <b>Add</b> next to the webhook field.</li><li>Enter the following: <ul><li>A name for the webhook</li><li>The connection that you want to use for this webhook</li><li>The source of the events you want to watch</li></ul></li><li>Click <b>Save</b> to save the webhook and return to the module. </td> 
+   <td><p>このトリガーで使用する web フックを選択するか、新しい web フックを追加します。 </p><p>新しい web フックを追加するには、次の手順に従います。 <ol><li>Webhook フィールドの横にある「<b> 追加 </b>」をクリックします。</li><li>以下の情報を入力します。 <ul><li>Web フックの名前</li><li>この web フックに使用する接続</li><li>監視するイベントのソース</li></ul></li><li>「<b> 保存 </b>」をクリックして Webhook を保存し、モジュールに戻ります。 </td> 
    </tr> 
    </tbody> 
 </table>
