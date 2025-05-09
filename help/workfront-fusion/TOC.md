@@ -2,10 +2,10 @@
 user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
-source-git-commit: 26c599a9887ad931763b787813153bb7791ce5d1
+source-git-commit: f3921961b90d086c11dbad37bf277e69eb95f63f
 workflow-type: tm+mt
-source-wordcount: '1751'
-ht-degree: 61%
+source-wordcount: '1760'
+ht-degree: 62%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 61%
    * [Adobe Workfront Fusion リリースアクティビティ](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion リリース - 2025 年 {#fusion-releases-2025}
       * [Workfront Fusion リリースアクティビティ：2025年5月5日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-5-5.md)
+      * [Workfront Fusion リリースアクティビティ：2025年4月28日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-28.md)
       * [Workfront Fusion リリースアクティビティ：2025年4月21日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-21.md)
       * [Workfront Fusion リリースアクティビティ：2025年4月14日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-14.md)
       * [Workfront Fusion リリースアクティビティ：2025年3月31日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-31.md)
@@ -208,7 +209,7 @@ ht-degree: 61%
       * [再試行エラー処理の回避策を設定](/help/workfront-fusion/create-scenarios/config-error-handling/retry.md)
       * [一時停止ディレクティブで処理されたエラーを解決します](/help/workfront-fusion/create-scenarios/config-error-handling/resolve-error-from-break-directive.md)
    * シナリオ設定を指定 {#configure-scenario-settings}
-      * [シナリオ設定を指定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)
+      * [シナリオ設定を行う：記事インデックス](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)
       * [シナリオのスケジュール](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)
       * [シナリオ設定を指定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)
       * [シナリオへのメモの追加](/help/workfront-fusion/create-scenarios/config-scenarios-settings/add-notes-to-scenario.md)
@@ -288,11 +289,11 @@ ht-degree: 61%
    * アプリとそのモジュール {#apps-and-their-modules}
       * [アプリとそのモジュール](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)
       * ユニバーサルコネクタ {#universal-connectors}
-         * [HTTP > [!UICONTROL &#x200B; リクエストを作成 &#x200B;] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
-         * [[!UICONTROL HTTP] > [!UICONTROL &#x200B; 基本認証リクエストを行う &#x200B;] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
+         * [HTTP > [!UICONTROL  リクエストを作成 ] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+         * [[!UICONTROL HTTP] > [!UICONTROL  基本認証リクエストを行う ] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
          * [[!UICONTROL HTTP]／[!UICONTROL OAuth 2.0 リクエストを実行]モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
-         * [[!UICONTROL HTTP] > [!UICONTROL &#x200B; クライアント証明書認証リクエストを作成 &#x200B;] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
-         * [[!UICONTROL HTTP] > [!UICONTROL API キー認証リクエストの作成 &#x200B;]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
+         * [[!UICONTROL HTTP] > [!UICONTROL  クライアント証明書認証リクエストを作成 ] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
+         * [[!UICONTROL HTTP] > [!UICONTROL API キー認証リクエストの作成 ]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
          * [[!UICONTROL HTTP]／その他のモジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-modules.md)
          * [SOAP モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/soap-module.md)
          * [FTP モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)

@@ -5,10 +5,10 @@ description: シナリオ設定パネルで、シナリオに固有の設定を�
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: a7411649c0d65956552f40a7710315536755dc65
 workflow-type: tm+mt
-source-wordcount: '1198'
-ht-degree: 43%
+source-wordcount: '1288'
+ht-degree: 51%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 43%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規： [!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td> <p>新規：[!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
@@ -45,7 +45,7 @@ ht-degree: 43%
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：組織は [!DNL Adobe Workfront Fusion] を購入する必要があります。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：[!DNL Adobe Workfront Fusion] を購入する必要があります。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
    <p>または</p>
    <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
    </td> 
@@ -77,12 +77,12 @@ ht-degree: 43%
 
    ![ シナリオ設定 ](assets/scenario-settings-350x221.png)
 
-   表示される [!UICONTROL Scenario settings] パネルで、シナリオの様々な詳細設定を指定できます。
+   表示される[!UICONTROL シナリオ設定]パネルで、シナリオの様々な詳細設定ができます。
 1. 必要に応じて、シナリオ設定を有効または無効にします。 以下の [ シナリオ設定オプション ](#scenario-settings-options) を参照してください。
 
 ## シナリオ設定オプション
 
-### [!UICONTROL Sequential processing]
+### [!UICONTROL 順番に処理]
 
 このオプションは、すべての実行を順番に実行します。これは主に Webhook と不完全な実行に関連しています。
 
@@ -111,13 +111,13 @@ ht-degree: 43%
 
 ### データは機密情報
 
-シナリオを実行すると、シナリオ内のモジュールでどのデータが処理されたかに関する情報をデフォルトで表示できます。この情報を保存しない場合は、「[!UICONTROL Data is confidential]」オプションを有効にします。
+シナリオを実行すると、シナリオ内のモジュールでどのデータが処理されたかに関する情報をデフォルトで表示できます。この情報を保存しない場合は、「[!UICONTROL データは機密情報]」オプションを有効にします。
 
 >[!IMPORTANT]
 >
 >このオプションを有効にすると、シナリオの実行中に発生する可能性のあるエラーを解決するのが困難になる場合があります。
 
-### [!UICONTROL Allow storing incomplete executions]
+### [!UICONTROL 不完全な実行の保存を許可]
 
 このオプションでは、シナリオの実行中にエラーが発生した場合の [!DNL Adobe Workfront Fusion] での処理方法を指定します。このオプションを有効にすると、シナリオは一時停止し、不完全な実行フォルダーに移動します。 これにより、問題を修正し、シナリオが停止した場所から続行できます。このオプションを無効にした場合、シナリオの実行が停止し、ロールバックフェーズが開始します。
 
@@ -127,7 +127,7 @@ ht-degree: 43%
 
 このオプションは、空き容量の不足な [!DNL Workfront Fusion] め、不完全な実行のキューにバンドルを保存できない場合に、データの損失を有効にすることに関係しています。 このオプションを有効にすると、シナリオの実行全体で中断が発生しないように、データが失われます。これは、最も優先度が高いものが継続して実行され、入力時の誤りのあるデータがそれほど重要でないシナリオで役立ちます。
 
-その他、シナリオを実行する際に、モジュールで許容される最大サイズを超えるファイルが見つかることがあります。この場合、[!UICONTROL Enable data loss] オプションの設定に従って [!DNL Workfront Fusion] が進行し、警告メッセージが表示されます。
+その他、シナリオを実行する際に、モジュールで許容される最大サイズを超えるファイルが見つかることがあります。この場合、[!DNL Workfront Fusion] は「[!UICONTROL データ損失を有効にする]」オプションの設定に従って処理し、警告メッセージを表示します。
 
 不完全な実行について詳しくは、[ 不完全な実行の表示と解決 ](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md) を参照してください。
 
@@ -135,9 +135,9 @@ ht-degree: 43%
 
 警告について詳しくは、「[ エラータイプ ](/help/workfront-fusion/references/errors/error-processing.md)」を参照してください。
 
-### [!UICONTROL Auto commit]
+### [!UICONTROL 自動コミット]
 
-[!UICONTROL Auto commit] の設定はトランザクションに適用され、シナリオの処理方法を定義します。 「自動コミット」オプションがオンの場合、各モジュールのコミットフェーズは、操作フェーズが完了した直後に開始します。「自動コミット」オプションを無効にした場合、すべてのモジュールに対して操作が実行されるまでコミットは行われません（これはデフォルトのモードです）。
+[!UICONTROL 自動コミット]設定はトランザクションに適用され、シナリオの処理方法を定義するものです。「自動コミット」オプションがオンの場合、各モジュールのコミットフェーズは、操作フェーズが完了した直後に開始します。「自動コミット」オプションを無効にした場合、すべてのモジュールに対して操作が実行されるまでコミットは行われません（これはデフォルトのモードです）。
 
 ### サイクルの最大数
 
@@ -160,11 +160,11 @@ ht-degree: 43%
 
 >[!BEGINSHADEBOX]
 
-**例：** [!DNL Workfront] > [!UICONTROL Watch record] は発生する新しいイシューを監視し、[!DNL Workfront] >[!UICONTROL Convert object] は新しい要求をプロジェクトに変換して、適切なテンプレートを割り当てます。
+**例：**[!DNL Workfront]／[!UICONTROL レコードを監視]で、発生した新しいイシューを監視し、[!DNL Workfront]／[!UICONTROL オブジェクトを変換]で、新しいリクエストをプロジェクトに変換し、適切なテンプレートを割り当てます。
 
 ![ シナリオ設定 ](assets/scenario-settings-ex-1-350x157.png)
 
-[!UICONTROL more cycles] 設定は、シナリオの実行をスケジュールする場合にのみ適用されます。 「[!UICONTROL Run once]」ボタンを使用すると、サイクル設定が考慮されます。
+[!UICONTROL より多くのサイクル]設定は、シナリオの実行をスケジュールする場合にのみ適用されます。「[!UICONTROL 1 回実行]」ボタンを使用する場合、サイクル設定を考慮します。
 
 #### サイクルの最大数は 1 に設定されています（デフォルト）
 
@@ -177,7 +177,7 @@ Workfront/ レコードを監視モジュールの最大サイクル数は `10` 
 
 Workfront/ レコードを監視モジュールの最大サイクル数は `10` に設定されています。
 
-Dropbox フォルダに 100 個のファイルが追加され、[ 最大サイクル数 ] が 10 に設定されている場合は、1 回目のサイクルで 10 個のファイル、2 回目のサイクルで次の 10 個のファイル、3 回目のサイクルで次の 10 個のファイルというように、すべてのファイルが処理されるまで処理されます。
+100 ファイルがDropbox フォルダーに追加され、「最大サイクル数」オプションが 10 に設定されている場合、すべてのファイルが処理されるまで、1 回目のサイクルで 10 個のファイル、2 回目のサイクルで次の 10 個のファイル、3 回目のサイクルで次の 10 個のファイルが処理されます。
 
 すべてのファイルは、1 回のシナリオ実行の間に処理されます。
 
@@ -198,3 +198,14 @@ Dropbox フォルダに 100 個のファイルが追加され、[ 最大サイ�
 >[!NOTE]
 >
 >シナリオがインスタントトリガーで始まる場合、設定が無視され、最初のエラーが発生するとシナリオは直ちに非アクティブ化されます。
+
+### ワーカープール
+
+>[!NOTE]
+>
+>この設定は、次の 2 つの条件を満たす場合にのみ表示されます。
+>
+>* 組織管理者または所有者です
+>* 組織に複数のワーカープールが関連付けられています。
+
+この設定では、組織に関連付けられた特定のワーカープールにシナリオが割り当てられ、優先度の高いシナリオにリソースを割り当てることができます。
