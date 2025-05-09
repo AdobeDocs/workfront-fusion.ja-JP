@@ -160,7 +160,7 @@ ht-degree: 51%
 
 >[!BEGINSHADEBOX]
 
-**例：**[!DNL Workfront]／[!UICONTROL レコードを監視]で、発生した新しいイシューを監視し、[!DNL Workfront]／[!UICONTROL オブジェクトを変換]で、新しいリクエストをプロジェクトに変換し、適切なテンプレートを割り当てます。
+**例：**&#x200B;[!DNL Workfront]／[!UICONTROL レコードを監視]で、発生した新しいイシューを監視し、[!DNL Workfront]／[!UICONTROL オブジェクトを変換]で、新しいリクエストをプロジェクトに変換し、適切なテンプレートを割り当てます。
 
 ![ シナリオ設定 ](assets/scenario-settings-ex-1-350x157.png)
 
