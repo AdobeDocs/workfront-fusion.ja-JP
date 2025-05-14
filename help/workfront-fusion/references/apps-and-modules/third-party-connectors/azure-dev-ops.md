@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Azu
 author: Becky
 feature: Workfront Fusion
 exl-id: c0919a9a-ce99-485c-9627-45353741f6d8
-source-git-commit: 96270cbe7a8ef0b66cde7e8d008ed0360244911c
+source-git-commit: 58bda8289db60ce915613337880297e5c8ec7097
 workflow-type: tm+mt
-source-wordcount: '1768'
-ht-degree: 85%
+source-wordcount: '1821'
+ht-degree: 81%
 
 ---
 
@@ -89,65 +89,39 @@ Azure DevOps コネクタでは、次を使用します。
 
 1. [!DNL Azure DevOps] モジュールをシナリオに追加します。
 1. 「[!UICONTROL 接続]」フィールドの横にある「**[!UICONTROL 追加]**」をクリックします。
-1. 「[!UICONTROL 接続タイプ]」フィールドで、「**[!DNL Azure DevOps]**」を選択します。
+1. [!UICONTROL  接続タイプ ] フィールドで、使用する接続のタイプを選択します。
 
-   >[!IMPORTANT]
+   >[!NOTE]
    >
-   >「[!UICONTROL [!DNL Azure DevOps] (すべてのスコープをリクエスト)]」接続タイプは、近い将来廃止される予定です。したがって、使用はお勧めしません。
+   >[!UICONTROL [!DNL Azure DevOps] （EntraApp）を使用すると ] 接続のすべてのスコープをリクエストできます。
 
 1. 次のフィールドに入力します。
 
    <table style="table-layout:auto">
-        <tr>
+      <tr>
             <td>[!UICONTROL Connection name]</td>
             <td>作成する接続の名前を入力します。</td>
-        </tr>
+      </tr>
       <tr>
             <td>[!UICONTROL Organization]</td>
             <td>[!DNL Azure DevOps] アプリケーションを作成した組織の名前を入力します。</td>
-        </tr>
-    </table>
+      </tr>
+      <tr>
+            <td>[!UICONTROL App ID]</td>
+            <td>接続先の DevOps アプリケーションの ID を入力します。</td>
+      </tr>
+      <tr>
+            <td>[!UICONTROL Client Secret]</td>
+            <td>接続先の DevOps アプリケーションのクライアント秘密鍵を入力します。</td>
+      </tr>
+      <tr>
+            <td>[!UICONTROL すべてのスコープを要求 ]</td>
+            <td>[!DNL Azure DevOps] （EntraApp）接続タイプを使用している場合、このオプションを有効にして接続用のすべてのスコープをリクエストします。</td>
+      </tr>
+   </table>
 
 1. Azure DevOps アプリ ID またはクライアントシークレットを入力するには、「<b> 詳細設定を表示 </b>」をクリックし、開いたフィールドに入力します。
 1. 「**[!UICONTROL 続行]**」をクリックして接続の設定を終了し、シナリオの作成を続けます。
-
-<!--## Connect [!DNL Azure DevOps] to [!DNL Workfront Fusion] {#connect-azure-devops-to-workfront-fusion}
-
-1. Add an [!DNL Azure DevOps] module to your scenario.
-1. Click **[!UICONTROL Add]** next to the [!UICONTROL Connection] field.
-1. In the [!UICONTROL Connection Type] field, select the type of connection that you want to use.
-
-   >[!NOTE]
-   >
-   >The [!UICONTROL [!DNL Azure DevOps] (EntraApp)] allows you to request all scopes for the connection.
-
-1. Fill out the following fields:
-
-   <table style="table-layout:auto">
-        <tr>
-            <td>[!UICONTROL Connection name]</td>
-            <td>Enter a name for the connection that you are creating.</td>
-        </tr>
-      <tr>
-            <td>[!UICONTROL Organization]</td>
-            <td>Enter the name of the organization under which you created your [!DNL Azure DevOps] application.</td>
-        </tr>
-        <tr>
-            <td>[!UICONTROL App ID]</td>
-            <td>Enter the ID of the DevOps application that you are connecting to.</td>
-        </tr>
-      <tr>
-            <td>[!UICONTROL Client Secret]</td>
-            <td>Enter the client secret for the DevOps applications that you are connecting to.</td>
-        </tr>
-      <tr>
-            <td>[!UICONTROL Request All Scopes]</td>
-            <td>If you are using the [!DNL Azure DevOps] (EntraApp) connection type, enable this option to request all scopes for the connection.</td>
-        </tr>
-  </table>
-
-1. To enter an Azure DevOps App ID or Client Secret, click <b>Show advanced settings</b> and enter them in the fields that open.
-1. Click **[!UICONTROL Continue]** to finish setting up the connection and continue creating your scenario.-->
 
 ## [!UICONTROL Azure DevOps] モジュールとそのフィールド
 
@@ -212,8 +186,8 @@ Azure DevOps コネクタでは、次を使用します。
     <ul> 
      <li> <p><strong>[!UICONTROL Project]</strong> </p> <p>次のフィールドに入力します。</p> 
       <ul> 
-       <li> <p><strong>[!UICONTROL 名 &#x200B;]</strong>：新しいプロジェクトの名前を入力またはマッピングします。</p> </li> 
-       <li> <p><strong>[!UICONTROL 説明 &#x200B;]</strong>：新しいプロジェクトの説明を入力またはマッピングします。 </p> </li> 
+       <li> <p><strong>[!UICONTROL 名 ]</strong>：新しいプロジェクトの名前を入力またはマッピングします。</p> </li> 
+       <li> <p><strong>[!UICONTROL 説明 ]</strong>：新しいプロジェクトの説明を入力またはマッピングします。 </p> </li> 
        <li> <p><strong>[!UICONTROL Visibility]</strong>：プロジェクトを公開または非公開にするかを選択します。ユーザーが非公開プロジェクトとやり取りするには、組織にサインインし、プロジェクトへのアクセス権を付与されている必要があります。公開プロジェクトは、組織にサインインしていないユーザーに表示されます。</p> </li> 
        <li> <p><strong>[!UICONTROL Version control]</strong>：プロジェクトでバージョン管理に[!DNL Git]または[!UICONTROL Team Foundation Version Control (TFCV)]を使用するかどうかを選択します。</p> </li> 
        <li> <p><strong>[!UICONTROL Work item process]</strong>：プロジェクトに使用する作業プロセスを選択します。[!UICONTROL Basic]、[!UICONTROL Scrum]、[!UICONTROL Capability Maturity Model Integration (CMMI)]、[!UICONTROL Agile]を選択できます。</p> <p>[!DNL Azure DevOps] のプロセスについて詳しくは、[!DNL Azure DevOps] ドキュメントの <a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=basic-process"> デフォルトのプロセスとプロセステンプレート </a> を参照してください。</p> </li> 
@@ -351,7 +325,7 @@ Azure DevOps コネクタでは、次を使用します。
    <td role="rowheader">[!UICONTROL Record type]</td> 
    <td> <p>プロジェクトを読み取るか作業アイテムを読み取るかを選択</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL プロジェクト &#x200B;]</strong>：読み取るプロジェクトを選択します。</p> </li> 
+     <li> <p><strong>[!UICONTROL プロジェクト ]</strong>：読み取るプロジェクトを選択します。</p> </li> 
      <li> <p><strong>[!UICONTROL Work item]</strong>：読み取る作業アイテムを含むプロジェクトを選択し、作業アイテムのタイプを選択します。</p> </li> 
     </ul> </td> 
   </tr> 
