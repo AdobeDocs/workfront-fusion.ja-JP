@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Ser
 author: Becky
 feature: Workfront Fusion
 exl-id: 7b236869-bd83-4db5-a363-d6570f6e4aff
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 55418d9a25d44e107236898bb236e9daf9fe5bd1
 workflow-type: tm+mt
-source-wordcount: '1575'
+source-wordcount: '1586'
 ht-degree: 87%
 
 ---
@@ -122,6 +122,8 @@ ServiceNow コネクタでは、以下を使用します。
      </tr> 
     </tbody> 
    </table>
+
+1. 「**続行**」をクリックして接続を保存し、モジュールに戻ります。
 
    <!--Markdown placeholder-->
 

@@ -4,10 +4,10 @@ description: 1 つのシナリオで  [!DNL Adobe Workfront Fusion] 、Microsoft
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 2bd3a9ba84182307af9349163db284514dd12aca
 workflow-type: tm+mt
-source-wordcount: '3124'
-ht-degree: 59%
+source-wordcount: '3393'
+ht-degree: 57%
 
 ---
 
@@ -93,6 +93,7 @@ SharePoint コネクタでは、以下を使用します。
 
 * [Microsoft SharePoint Onlineと  [!DNL Workfront Fusion]  アカウントを使用した  [!DNL Microsoft]  の接続](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [詳細設定を使用して  [!DNL Workfront Fusion] Microsoft SharePoint Onlineのへの接続](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
+* [証明書認証を使用して  [!DNL Workfront Fusion] Microsoft SharePoint Onlineをに接続する](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 
 ### [!DNL Microsoft] アカウントを使用したMicrosoft SharePoint Onlineの [!DNL Workfront Fusion] への接続
 
@@ -100,19 +101,111 @@ SharePoint コネクタでは、以下を使用します。
 
 ### 詳細設定を使用したMicrosoft SharePoint Onlineの [!DNL Workfront Fusion] への接続
 
-[!DNL Microsoft] アカウントを使用せずにMicrosoft SharePoint Onlineを [!DNL Workfront Fusion] に接続するには、クライアント ID、クライアント秘密鍵、テナント ID が必要です。
+接続に資格情報を含めるには、「詳細設定を表示」オプションを有効にします。 このタイプの接続の場合は、クライアント ID、クライアント秘密鍵およびテナント ID が必要になります。
 
-1. **[!UICONTROL 2&rbrace;Microsoft SharePoint Online]** ボックスの上部付近にある「追加 **をクリックして、**&#x200B;[!UICONTROL &#x200B; 接続を作成 &#x200B;]&#x200B;**ボックスを開きます。**
+1. 任意のSharePoint モジュールで、「接続」フィールドの近くにある **[!UICONTROL 追加]** をクリックして、**[!UICONTROL 接続を作成]** ボックスを開きます。
+1. 「**[!UICONTROL 詳細設定を表示]**」をクリックします。
+1. 次のフィールドに入力します。
 
-1. （オプション）デフォルトの&#x200B;**[!UICONTROL 接続名]**&#x200B;を変更
-1. 「**[!UICONTROL 詳細設定を表示]**」をクリック
-1. Microsoft SharePoint Online **[!UICONTROL クライアント ID]** と **[!UICONTROL クライアントシークレット]** を入力します。
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Connection type]</p> </td> 
+      <td>クライアントの資格情報を使用するには、「<b>Microsoft 365 メール </b>」を選択します。</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
+      <td>接続に名前を入力します。</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Client ID]</p> </td> 
+      <td>接続先のSharePoint アプリケーションのクライアント ID を入力します。 </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Client secret]</p> </td> 
+      <td>接続先のSharePoint アプリケーションのクライアントの秘密鍵を入力します。</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL テナント ID]</p> </td> 
+      <td>接続先のSharePoint アプリケーションのテナント ID を入力します。</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Instance]</p> </td> 
+      <td> <p><code>https://</code>を付けずに[!DNL ServiceNow]アカウントのアドレスを入力します（通常は<code>&lt;company>.service-now.com</code>）。</p> </td> 
+     </tr> 
+    </tbody> 
+   </table>
 
-1. 「**[!UICONTROL 続行]**」をクリックします。
-1. 表示されるログインウィンドウで、アプリにログインするための資格情報を入力します（まだ入力していない場合）。
-1. （条件付き）「**[!UICONTROL 許可]**」ボタンが表示されたら、ボタンをクリックしてアプリを [!DNL Workfront Fusion] に接続します。
+1. 「**続行**」をクリックして接続を保存し、モジュールに戻ります。
 
-## Microsoft SharePoint Online モジュールとそのフィールド
+### 証明書認証を使用したMicrosoft SharePoint Onlineの [!DNL Workfront Fusion] への接続
+
+証明書認証を使用してSharePointに接続できます。
+
+>[!IMPORTANT]
+>
+>証明書認証を使用するには、まずMicrosoft Entra でアプリを作成し、そこに証明書をアップロードする必要があります。
+>
+>手順については、Microsoft ドキュメントの [Microsoft Entra 証明書ベースの認証の認証機関を設定する方法 ](https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-configure-certificate-authorities) を参照してください。
+
+1. 任意のSharePoint モジュールで、「接続」フィールドの近くにある **[!UICONTROL 追加]** をクリックして、**[!UICONTROL 接続を作成]** ボックスを開きます。
+1. 「**[!UICONTROL 詳細設定を表示]**」をクリックします。
+1. 次のフィールドに入力します。
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Connection type]</p> </td> 
+      <td>証明書認証を使用するには、<b>Microsoft SharePoint Online（証明書の認証） </b> を選択します。</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
+      <td>接続に名前を入力します。</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Client ID]</p> </td> 
+      <td>接続先のSharePoint アプリケーションのクライアント ID を入力します。 </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL 拇印 ]</p> </td> 
+      <td>接続先のSharePoint アプリケーションの拇印を入力します。</td> 
+     </tr> 
+      <tr>
+        <td role="rowheader">[!UICONTROL Private key]</td>
+        <td>
+          <p>Microsoftで資格情報を作成したときに生成された証明書または秘密鍵を入力します。 </p>
+          <p>秘密鍵または証明書を抽出するには：</p>
+          <ol>
+            <li>
+              <p><b>[!UICONTROL Extract]</b> をクリックします。</p>
+            </li>
+            <li>
+            <p>証明書と秘密鍵のどちらを抽出するかを選択します。</li>
+            <li>
+              <p>抽出するファイルのタイプを選択します。</p>
+            </li>
+            <li>
+              <p>秘密鍵または証明書を含むファイルを選択します。</p>
+            </li>
+            <li>
+              <p>ファイルのパスワードを入力します。</p>
+            </li>
+            <li>
+              <p><b>[!UICONTROL Save]</b> をクリックしてファイルを抽出し、接続設定に戻ります。</p>
+            </li>
+          </ol>
+        </td>
+      </tr>
+    </tbody> 
+   </table>
+
+1. 「**続行**」をクリックして接続を保存し、モジュールに戻ります。
+
+## Microsoft SharePoint モジュールとそのフィールド
 
 Microsoft SharePoint Online モジュールを設定すると、以下に示 [!DNL Workfront Fusion] フィールドが表示されます。 これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加のMicrosoft SharePoint Online フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
@@ -239,7 +332,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
 
 ### 項目
 
-* [[!UICONTROL &#x200B; 項目をコピー &#x200B;]](#copy-an-item)
+* [[!UICONTROL  項目をコピー ]](#copy-an-item)
 * [[!UICONTROL 項目の作成]](#create-an-item)
 * [[!UICONTROL 項目の削除]](#delete-an-item)
 * [[!UICONTROL 項目の取得]](#get-an-item)
@@ -249,7 +342,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
 * [[!UICONTROL 項目の監視]（予定）](#watch-items-scheduled)
 
 
-#### [!UICONTROL &#x200B; 項目をコピー &#x200B;]
+#### [!UICONTROL  項目をコピー ]
 
 このアクションモジュールは、SharePoint リスト内の既存の項目をコピーします。
 
@@ -506,7 +599,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Add Columns]</td> 
-   <td>新しいリストに設定する列ごとに、[<b> 項目の追加 </b>] をクリックし、フィールドに <strong>[!UICONTROL 名 &#x200B;]</strong> を入力して、新しい列に設定する値の <strong>[!UICONTROL 型 &#x200B;]</strong> を選択します。</td> 
+   <td>新しいリストに設定する列ごとに、[<b> 項目の追加 </b>] をクリックし、フィールドに <strong>[!UICONTROL 名 ]</strong> を入力して、新しい列に設定する値の <strong>[!UICONTROL 型 ]</strong> を選択します。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -578,7 +671,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
    <td>作成時刻（新しい項目）または変更時刻（更新された項目）のどちらでリストを監視するかを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL サイト ID の入力 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL サイト ID の入力 ]</td> 
    <td> <p>リストで監視するサイトの識別方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>リストを監視する場所に <strong>[!UICONTROL サイト ID]</strong> 入力するかマップします。</p> </li> 
