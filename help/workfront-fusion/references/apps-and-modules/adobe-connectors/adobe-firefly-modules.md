@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Ado
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 6219cd4406c2ccf22b1e94e5d264722e640fe3e4
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2466'
 ht-degree: 17%
 
 ---
@@ -113,11 +113,11 @@ Adobe Firefly コネクタでは、以下を使用します。
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>[!UICONTROL Adobe] [!UICONTROL クライアント ID] を入力します。 これは、[!DNL Adobe Developer Console] の [!UICONTROL 資格情報 &#x200B;] の詳細セクションにあります。</td>
+        <td>[!UICONTROL Adobe] [!UICONTROL クライアント ID] を入力します。 これは、[!DNL Adobe Developer Console] の [!UICONTROL 資格情報 ] の詳細セクションにあります。</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL 資格情報 &#x200B;] の詳細セクションにあります。</td>
+        <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL 資格情報 ] の詳細セクションにあります。</td>
         </tr>
       </tbody>
     </table>
@@ -147,11 +147,11 @@ Adobe Firefly コネクタでは、以下を使用します。
    <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL プロンプト &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL プロンプト ]</td> 
    <td>画像を展開するコンテンツのプロンプトを入力またはマップします。 プロンプトが指定されない場合、画像は元の画像に一致するコンテンツで展開されます。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL バリエーション数 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL バリエーション数 ]</td> 
    <td>1 ～ 4 の数字を入力してください。 モジュールは、この数の展開された画像バリエーションを生成します。</td> 
   </tr> 
   <tr> 
@@ -159,11 +159,11 @@ Adobe Firefly コネクタでは、以下を使用します。
    <td>ソースファイルの提供方法を選択：<ul><li><p><b>ファイル</b></p><p>前のモジュールからソースファイルを選択するか、ソースファイルの参照画像ファイル名と参照画像ファイルをマッピングします。</p></li><li><p><b>署名済み URL</b></p><p>ソース画像の URL を入力またはマッピングします。</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 拡張画像形式 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 拡張画像形式 ]</td> 
    <td>展開したイメージの保存先となるファイル形式を選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 拡張基準 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 拡張基準 ]</td> 
    <td>  <p>画像の配置またはマスクを使用して、画像を展開するかどうかを選択します。</p> 
    <ul>
    <li><b>プレースメント</b><p>水平方向と垂直方向の整列、およびエッジから配置した画像のインセットを入力します。</p></li>
@@ -173,11 +173,11 @@ Adobe Firefly コネクタでは、以下を使用します。
 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL サイズ &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL サイズ ]</td> 
    <td>展開画像の高さと幅を選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL シード &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL シード ]</td> 
    <td>モジュールが生成する各画像に対して、「<b> 項目を追加 </b>」をクリックし、整数を入力またはマッピングします。 この同じシードを別の画像を展開モジュールで使用して、異なるスタイルの類似した画像を生成することができます。 追加するシードの数は、「バリエーション数」フィールドと同じ数にする必要があります。</td> 
   </tr> 
  </tbody> 
@@ -210,24 +210,24 @@ Adobe Firefly コネクタでは、以下を使用します。
    <td>マスク ソース ファイルの提供方法を選択します。<ul><li><p><b>ファイル</b></p><p>前のモジュールからソースファイルを選択するか、ソースファイルの参照画像ファイル名と参照画像ファイルをマッピングします。</p></li><li><p><b>署名済み URL</b></p><p>ソース画像の URL を入力またはマッピングします。</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL プロンプト &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL プロンプト ]</td> 
    <td>イメージを埋めるコンテンツの入力を求めるプロンプトを入力またはマップします。 プロンプトが指定されない場合、画像には元の画像と一致するコンテンツが入力されます。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL バリエーション数 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL バリエーション数 ]</td> 
    <td>1 ～ 4 の数字を入力してください。 このモジュールは、この数の入力画像のバリエーションを生成します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 塗り潰し画像形式 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 塗り潰し画像形式 ]</td> 
    <td>塗りつぶし画像を保存するファイル形式を選択します。</td> 
   </tr> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL シード &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL シード ]</td> 
    <td>モジュールが生成する各画像に対して、「<b> 項目を追加 </b>」をクリックし、整数を入力またはマッピングします。 この同じシードを別の画像を展開モジュールで使用して、異なるスタイルの類似した画像を生成することができます。 追加するシードの数は、「バリエーション数」フィールドと同じ数にする必要があります。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL サイズ &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL サイズ ]</td> 
    <td>塗りつぶし画像のサイズを選択します。</td> 
   </tr> 
   <tr> 
@@ -241,7 +241,7 @@ Adobe Firefly コネクタでは、以下を使用します。
 
 このモジュールは非推奨（廃止予定）となり、近い将来に削除される予定です。 代わりに、画像を埋めるモジュールを使用します。
 
-## 画像を生成
+### 画像を生成
 
 このアクションモジュールは、指定されたプロンプトに基づいてと画像を生成します。 オプションで参照画像を指定することもできます。この場合、生成された画像は参照画像のスタイルと一致します。
 
@@ -256,55 +256,59 @@ Adobe Firefly コネクタでは、以下を使用します。
    <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL プロンプト &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL プロンプト ]</td> 
    <td>生成するイメージのプロンプトを入力またはマップします。 プロンプトの詳細を使用すると、画像に表示されるものを詳細に制御できます。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL バリエーション数 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL モデルのバージョン ]</td> 
+   <td>画像の生成に使用するFirefly モデルバージョンを選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL バリエーション数 ]</td> 
    <td>1 ～ 4 の数字を入力してください。 モジュールは、この数の画像バリエーションを生成します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL で生成されたイメージ形式 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL で生成されたイメージ形式 ]</td> 
    <td>展開したイメージの保存先となるファイル形式を選択します。 「デフォルト」を選択した場合、参照画像が指定されていないと、ファイルフォーマットはJPEGになります。 参照画像を指定した場合、生成される画像のファイル形式は参照画像と同じになります。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 構造/画像参照 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 構造/画像参照 ]</td> 
     <td>新しい画像の構造のソースファイルを指定する方法を選択します。<ul><li><p><b>ファイル</b></p><p>前のモジュールからソースファイルを選択するか、ソースファイルの参照画像ファイル名と参照画像ファイルをマッピングします。</p></li><li><p><b>署名済み URL</b></p><p>ソース画像の URL を入力またはマッピングします。</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 構造 &gt; 強度 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 構造 &gt; 強度 ]</td> 
     <td>0～100 の数字を入力して、Fireflyがソース画像の構造にどの程度厳密に従うかを制御します。 数字が大きいほど、Fireflyはより厳密に画像に従います。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL スタイル &gt; 画像参照 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL スタイル &gt; 画像参照 ]</td> 
     <td>新しい画像のスタイルのソースファイルを指定する方法を選択します。<ul><li><p><b>ファイル</b></p><p>前のモジュールからソースファイルを選択するか、ソースファイルの参照画像ファイル名と参照画像ファイルをマッピングします。</p></li><li><p><b>署名済み URL</b></p><p>ソース画像の URL を入力またはマッピングします。</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 構造 &gt; 強度 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 構造 &gt; 強度 ]</td> 
     <td>0～100 の数字を入力して、Fireflyがソース画像のスタイルに厳密に従う方法を制御します。 数字が大きいほど、Fireflyはより厳密に画像に従います。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL スタイル &gt; プリセット &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL スタイル &gt; プリセット ]</td> 
    <td>プリセットスタイルを使用する場合は、「項目を追加」をクリックし、使用するスタイルを入力またはマップします。<p>プリセットスタイルのリストについては、Adobe開発者向けドキュメントの <a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" > 画像モデルスタイル </a> を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 負のプロンプト &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 負のプロンプト ]</td> 
    <td>生成されたコンテンツで避ける単語を入力またはマッピングします。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL コンテンツ クラス &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL コンテンツ クラス ]</td> 
    <td>生成された画像を写真に近づけるのか、それとも作成されたアートに近づけるのかを選択します。 <ul><li><b>写真</b><p>「絞り」、「シャッタースピード」（秒単位）、「視野」（ミリメートル単位）の値を入力します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL シード &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL シード ]</td> 
    <td>モジュールが生成する各画像に対して、「<b> 項目を追加 </b>」をクリックし、整数を入力またはマッピングします。 この同じシードを別の画像を展開モジュールで使用して、異なるスタイルの類似した画像を生成することができます。 追加するシードの数は、「バリエーション数」フィールドと同じ数にする必要があります。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL サイズ &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL サイズ ]</td> 
    <td>生成される画像のサイズを選択します。</td> 
   </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL 視覚強度 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 視覚強度 ]</td> 
    <td>写真の既存の視覚特性の全体的な強度を表す整数を入力またはマッピングします。 </td> 
   </tr> 
   <tr> 
@@ -312,7 +316,7 @@ Adobe Firefly コネクタでは、以下を使用します。
    <td>ロケールが指定された場合、モジュールは指定されたロケールにより関連性の高いコンテンツを生成します。 <p>ロケールは、ISO 639-1 言語コードおよび ISO 3166-1 地域で提供する必要があります。</p><p> 例： <code>en-US</code></p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL タイル表示 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL タイル表示 ]</td> 
    <td>すべての方向で無限に繰り返すことができる画像を生成する場合は、このオプションを有効にします。</td> 
   </tr> 
  </tbody> 
@@ -335,15 +339,15 @@ Adobe Firefly コネクタでは、以下を使用します。
    <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL プロンプト &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL プロンプト ]</td> 
    <td>生成するイメージのプロンプトを入力またはマップします。 プロンプトの詳細を使用すると、画像に表示されるものを詳細に制御できます。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL バリエーション数 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL バリエーション数 ]</td> 
    <td>1 ～ 4 の数字を入力してください。 モジュールは、この数の画像バリエーションを生成します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL コンテンツ クラス &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL コンテンツ クラス ]</td> 
    <td>生成された画像を写真に近づけるのか、アートに近づけるのかを選択します。</td> 
   </tr> 
   <tr> 
@@ -351,23 +355,23 @@ Adobe Firefly コネクタでは、以下を使用します。
     <td>新しい画像の構造のソースファイルを指定する方法を選択します。<ul><li><p><b>ファイル</b></p><p>前のモジュールからソースファイルを選択するか、ソースファイルの参照画像ファイル名と参照画像ファイルをマッピングします。</p></li><li><p><b>署名済み URL</b></p><p>ソース画像の URL を入力またはマッピングします。</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL で生成されたイメージ形式 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL で生成されたイメージ形式 ]</td> 
    <td>展開したイメージの保存先となるファイル形式を選択します。 「デフォルト」を選択した場合、参照画像が指定されていないと、ファイルフォーマットはJPEGになります。 参照画像を指定した場合、生成される画像のファイル形式は参照画像と同じになります。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL スタイル &gt; 画像参照 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL スタイル &gt; 画像参照 ]</td> 
     <td>新しい画像のスタイルのソースファイルを指定する方法を選択します。<ul><li><p><b>ファイル</b></p><p>前のモジュールからソースファイルを選択するか、ソースファイルの参照画像ファイル名と参照画像ファイルをマッピングします。</p></li><li><p><b>署名済み URL</b></p><p>ソース画像の URL を入力またはマッピングします。</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 構造 &gt; 強度 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 構造 &gt; 強度 ]</td> 
     <td>0～100 の数字を入力して、Fireflyがソース画像のスタイルに厳密に従う方法を制御します。 数字が大きいほど、Fireflyはより厳密に画像に従います。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL スタイル &gt; プリセット &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL スタイル &gt; プリセット ]</td> 
    <td>プリセットスタイルを使用する場合は、「項目を追加」をクリックし、使用するスタイルを入力またはマップします。<p>プリセットスタイルのリストについては、Adobe開発者向けドキュメントの <a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" > 画像モデルスタイル </a> を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL サイズ &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL サイズ ]</td> 
    <td>生成される合成のサイズを選択します。 </td> 
   </tr> 
  </tbody> 
@@ -386,11 +390,15 @@ Adobe Firefly コネクタでは、以下を使用します。
    <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a> への接続を作成を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL バリエーション数 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL バリエーション数 ]</td> 
    <td>1 ～ 4 の数字を入力してください。 モジュールは、この数の画像バリエーションを生成します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL で生成されたイメージ形式 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL モデルのバージョン ]</td> 
+   <td>画像の生成に使用するFirefly モデルバージョンを選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL で生成されたイメージ形式 ]</td> 
    <td>展開したイメージの保存先となるファイル形式を選択します。 「デフォルト」を選択した場合、参照画像が指定されていないと、ファイルフォーマットはJPEGになります。 参照画像を指定した場合、生成される画像のファイル形式は参照画像と同じになります。</td> 
   </tr> 
    <tr> 
@@ -398,19 +406,19 @@ Adobe Firefly コネクタでは、以下を使用します。
     <td>新しい画像の構造のソースファイルを指定する方法を選択します。<ul><li><p><b>ファイル</b></p><p>前のモジュールからソースファイルを選択するか、ソースファイルの参照画像ファイル名と参照画像ファイルをマッピングします。</p></li><li><p><b>署名済み URL</b></p><p>ソース画像の URL を入力またはマッピングします。</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL スタイル &gt; 画像参照 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL スタイル &gt; 画像参照 ]</td> 
     <td>新しい画像のスタイルのソースファイルを指定する方法を選択します。<ul><li><p><b>ファイル</b></p><p>前のモジュールからソースファイルを選択するか、ソースファイルの参照画像ファイル名と参照画像ファイルをマッピングします。</p></li><li><p><b>署名済み URL</b></p><p>ソース画像の URL を入力またはマッピングします。</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL サイズ &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL サイズ ]</td> 
    <td>生成される合成のサイズを選択します。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL シード &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL シード ]</td> 
    <td>モジュールが生成する各画像に対して、「<b> 項目を追加 </b>」をクリックし、整数を入力またはマッピングします。 この同じシードを別の画像を展開モジュールで使用して、異なるスタイルの類似した画像を生成することができます。 追加するシードの数は、「バリエーション数」フィールドと同じ数にする必要があります。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL タイル表示 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL タイル表示 ]</td> 
    <td>すべての方向で無限に繰り返すことができる画像を生成する場合は、このオプションを有効にします。</td> 
   </tr> 
  </tbody> 
