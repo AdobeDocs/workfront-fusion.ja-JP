@@ -4,9 +4,9 @@ description: 一部のトリガーモジュールでは、バンドルの取得�
 author: Becky
 feature: Workfront Fusion
 exl-id: 83628fa5-82e2-4f67-bfed-70a4c3c19f7f
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '328'
 ht-degree: 52%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 52%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規： [!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td> <p>新規：[!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
@@ -48,7 +48,7 @@ ht-degree: 52%
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：組織は [!DNL Adobe Workfront Fusion] を購入する必要があります。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：[!DNL Adobe Workfront Fusion] を購入してください。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
    <p>または</p>
    <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
    </td> 
@@ -64,7 +64,7 @@ ht-degree: 52%
 
 ## トリガーモジュールの開始場所を選択
 
-1. 左側のパネルで「**[!UICONTROL Scenarios]**」タブをクリックします。
+1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. トリガーの開始位置を指定するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
 1. トリガーモジュールを設定して保存します。
@@ -75,7 +75,7 @@ ht-degree: 52%
 
    ![ 開始場所を選択 ](assets/choose-where-to-start.png)
 
-1. 表示される **[!UICONTROL Choose where to start]** ボックスでオプションを選択します。
+1. 表示される&#x200B;**[!UICONTROL 開始場所を選択]**&#x200B;ボックスでオプションを選択します。
 
    表示されるオプションは、特定のサービスの可能性に応じて異なります。含まれる可能性のあるものは、次のとおりです。
 
@@ -84,11 +84,11 @@ ht-degree: 52%
     <col> 
     <tbody>
     <tr>
-    <td>[!UICONTROL From now on] (デフォルト)</td>
+    <td>[!UICONTROL From now on]（デフォルト）</td>
     <td>このオプションを選択した後に追加または更新されたすべてのバンドルを取得します（設定による）</td>
     </tr>
      <tr>
-    <td>[!UICONTROL Since specific date]</td>
+    <td>[！特定の日付以降の UICONTROL]</td>
     <td>指定した日時以降に（設定に応じて）追加または更新されたすべてのバンドルを取得します</td>
       </tr>
       <tr>
@@ -96,27 +96,8 @@ ht-degree: 52%
     <td>使用可能なすべてのバンドルを取得します</td>
      </tr>
       <tr>
-    <td>[!UICONTROL Choose manually]</td>
+    <td>[!UICONTROL 手動で選択 ]</td>
     <td>バンドルの取得を開始する最初のバンドルを選択できます</td>
      </tr>
      </tbody>
    </table>
-
-
-
-   <table style="table-layout:auto">
-    <col> 
-    <col> 
-    <tbody> 
-     <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
-      <td>新しい [!DNL DocuSign] 接続の名前を入力します。</td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader">[!UICONTROL Account type]</td> 
-      <td>接続するアカウントが実稼動アカウントかデモアカウントかを選択します。</td> 
-     </tr> 
-    </tbody> 
-   </table>
-
-

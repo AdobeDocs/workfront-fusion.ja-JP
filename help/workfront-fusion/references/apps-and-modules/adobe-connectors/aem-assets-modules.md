@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Workfront Fusion] 用の  [!DNL Adobe Experience Mana
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 75%
@@ -67,10 +67,10 @@ Adobe Experience Manager Assets コネクタの概要ビデオについては、
 * これらのモジュールを使用するには、[!DNL Adobe Experience Manager Assets] アカウントが必要です。
 * [!UICONTROL サーバー間]のフローを [!DNL Adobe Developer console] に設定する必要があります。
 
-  [!UICONTROL サーバー間]のフローを [!DNL Adobe Developer console] で設定する手順については、[サーバー側 API のアクセストークンの生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=ja#the-server-to-server-flow)を参照してください。
+  [!UICONTROL サーバー間]のフローを [!DNL Adobe Developer console] で設定する手順については、[サーバー側 API のアクセストークンの生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow)を参照してください。
 * Adobe Experience Manager テクニカルアカウントには、書き込み権限が必要です。
 
-  Adobe Experience Manager テクニカルアカウントに書き込み権限を追加する手順については、Adobe Experience Manager ドキュメントの [ サービス資格情報 ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) を参照してください。
+  Adobe Experience Manager テクニカルアカウントに書き込み権限を追加する手順については、Adobe Experience Manager ドキュメントの [ サービス資格情報 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) を参照してください。
 
 ## Adobe Experience Manager Assets API の情報
 
@@ -99,7 +99,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
 
      この設定には、[!DNL Adobe Admin Console] からの情報が必要です。
 
-   * **[!DNL AEM Assets Basic] ([!DNL Adobe Managed Services])**
+   * **[!DNL AEM Assets Basic]([!DNL Adobe Managed Services])**
 
      この設定には、ユーザー名とパスワードが必要です。
 
@@ -118,11 +118,11 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
 >
 >* これらのフィールドの情報は、[!DNL Adobe Developer Console] で[!UICONTROL サーバー間]のフローを設定の一環として生成されます。これらの値は、設定の一環として生成されるサービス資格情報 JSON ファイルに含まれています。
 >
->   [!UICONTROL サーバー間]のフローを [!UICONTROL Adobe Developer Console] で設定する手順については、[サーバー側 API のアクセストークンの生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=ja#the-server-to-server-flow)参照してください。
+>   [!UICONTROL サーバー間]のフローを [!UICONTROL Adobe Developer Console] で設定する手順については、[サーバー側 API のアクセストークンの生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow)参照してください。
 >
 >* Adobe Experience Manager テクニカルアカウントには、書き込み権限が必要です。
 >
->   Adobe Experience Manager テクニカルアカウントに書き込み権限を追加する手順については、Adobe Experience Manager ドキュメントの [ サービス資格情報 ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) を参照してください。
+>   Adobe Experience Manager テクニカルアカウントに書き込み権限を追加する手順については、Adobe Experience Manager ドキュメントの [ サービス資格情報 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) を参照してください。
 
 
 <table style="table-layout:auto"> 
@@ -132,7 +132,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
               <tr>
                   <td role="rowheader">[!UICONTROL Connection name]</td>
                   <td>
-                      <p>この接続の名前を入力</p>
+                      <p>この接続の名前を入力します。</p>
                   </td>
               </tr>
               <tr>
@@ -140,20 +140,20 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
                   <td>[!DNL Adobe Experience Manager] インスタンスの URL を入力します。URL の末尾にスラッシュ <code>/</code> を含めないでください。</td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL アカウントの詳細入力オプション &#x200B;]</td>
+                  <td role="rowheader">[!UICONTROL アカウントの詳細入力オプション ]</td>
                   <td>アカウントの詳細を説明する JSON を提供するか、詳細を手動で入力するかを選択します。</td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL テクニカルアカウントの詳細（JSON 形式） &#x200B;]</td>
+                  <td role="rowheader">[!UICONTROL テクニカルアカウントの詳細（JSON 形式） ]</td>
                   <td>JSON を指定する場合は、アカウントの詳細を説明する JSON を入力または貼り付けます。</td>
               </tr>
               <tr>
                   <td role="rowheader">[!UICONTROL Client ID]</td>
-                  <td>詳細を手動で入力する場合は、[!UICONTROL サーバー間 &#x200B;] 設定で生成されたクライアント ID を入力します。</td>
+                  <td>詳細を手動で入力する場合は、[!UICONTROL サーバー間 ] 設定で生成されたクライアント ID を入力します。</td>
               </tr>
               <tr>
                   <td role="rowheader">[!UICONTROL Client Secret]</td>
-                  <td>詳細を手動で入力する場合は、[!UICONTROL サーバー間 &#x200B;] 設定で生成されたクライアントの秘密鍵を入力します。</td>
+                  <td>詳細を手動で入力する場合は、[!UICONTROL サーバー間 ] 設定で生成されたクライアントの秘密鍵を入力します。</td>
               </tr>
               <tr>
                   <td role="rowheader">[!UICONTROL Technical account ID]</td>
@@ -188,7 +188,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
             <tr>
                 <td role="rowheader">[!UICONTROL Connection name]</td>
                 <td>
-                    <p>この接続の名前を入力</p>
+                    <p>この接続の名前を入力します。</p>
                 </td>
             </tr>
             <tr>
@@ -294,7 +294,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-### [!UICONTROL &#x200B; フォルダー、アセットまたはレンディションの削除 &#x200B;]
+### [!UICONTROL  フォルダー、アセットまたはレンディションの削除 ]
 
 このアクションモジュールは、フォルダー、アセットまたはレンディションを削除します。
 
