@@ -67,10 +67,10 @@ Adobe Experience Manager Assets コネクタの概要ビデオについては、
 * これらのモジュールを使用するには、[!DNL Adobe Experience Manager Assets] アカウントが必要です。
 * [!UICONTROL サーバー間]のフローを [!DNL Adobe Developer console] に設定する必要があります。
 
-  [!UICONTROL サーバー間]のフローを [!DNL Adobe Developer console] で設定する手順については、[サーバー側 API のアクセストークンの生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow)を参照してください。
+  [!UICONTROL サーバー間]のフローを [!DNL Adobe Developer console] で設定する手順については、[サーバー側 API のアクセストークンの生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=ja#the-server-to-server-flow)を参照してください。
 * Adobe Experience Manager テクニカルアカウントには、書き込み権限が必要です。
 
-  Adobe Experience Manager テクニカルアカウントに書き込み権限を追加する手順については、Adobe Experience Manager ドキュメントの [ サービス資格情報 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) を参照してください。
+  Adobe Experience Manager テクニカルアカウントに書き込み権限を追加する手順については、Adobe Experience Manager ドキュメントの [ サービス資格情報 ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) を参照してください。
 
 ## Adobe Experience Manager Assets API の情報
 
@@ -118,11 +118,11 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
 >
 >* これらのフィールドの情報は、[!DNL Adobe Developer Console] で[!UICONTROL サーバー間]のフローを設定の一環として生成されます。これらの値は、設定の一環として生成されるサービス資格情報 JSON ファイルに含まれています。
 >
->   [!UICONTROL サーバー間]のフローを [!UICONTROL Adobe Developer Console] で設定する手順については、[サーバー側 API のアクセストークンの生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow)参照してください。
+>   [!UICONTROL サーバー間]のフローを [!UICONTROL Adobe Developer Console] で設定する手順については、[サーバー側 API のアクセストークンの生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=ja#the-server-to-server-flow)参照してください。
 >
 >* Adobe Experience Manager テクニカルアカウントには、書き込み権限が必要です。
 >
->   Adobe Experience Manager テクニカルアカウントに書き込み権限を追加する手順については、Adobe Experience Manager ドキュメントの [ サービス資格情報 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) を参照してください。
+>   Adobe Experience Manager テクニカルアカウントに書き込み権限を追加する手順については、Adobe Experience Manager ドキュメントの [ サービス資格情報 ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) を参照してください。
 
 
 <table style="table-layout:auto"> 
