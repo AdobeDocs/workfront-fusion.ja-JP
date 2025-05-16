@@ -463,7 +463,7 @@ Workfront Proof コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>[!UICONTROL プルーフの詳細 ] ページにあるプルーフの一意の ID を入力します。  </td> 
+   <td> <p>[!UICONTROL プルーフの詳細 &#x200B;] ページにあるプルーフの一意の ID を入力します。  </td> 
   </tr> 
  </tbody> 
 </table>
@@ -561,7 +561,7 @@ Workfront Proof コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>[!UICONTROL プルーフの詳細 ] ページにあるプルーフの一意の ID を入力します。 </td> 
+   <td> <p>[!UICONTROL プルーフの詳細 &#x200B;] ページにあるプルーフの一意の ID を入力します。 </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Deadline]</td> 
@@ -589,7 +589,7 @@ Workfront Proof コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Enable Subscriptions]</td> 
-   <td>参加者以外に対して、プルーフへの登録を許可するかどうかを選択します。<br> このオプションを選択すると、[!UICONTROL のデフォルトの役割 ] フィールドでオプションを選択することもできます。</td> 
+   <td>参加者以外に対して、プルーフへの登録を許可するかどうかを選択します。<br> このオプションを選択すると、[!UICONTROL のデフォルトの役割 &#x200B;] フィールドでオプションを選択することもできます。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Enable Subscriptions Validation]</td> 
@@ -700,7 +700,7 @@ Workfront Proof コネクタでは、以下を使用します。
    <td> <p>[!DNL Workfront Proof] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 検索 ]</td> 
+   <td>[!UICONTROL 検索 &#x200B;]</td> 
    <td> <p>モジュールで検索するレコードのタイプを選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Proof]</strong> </p> <p>検索するプルーフのプルーフ名を入力します。</p> </li> 

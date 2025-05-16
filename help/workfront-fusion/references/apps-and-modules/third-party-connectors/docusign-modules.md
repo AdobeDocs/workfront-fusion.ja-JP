@@ -167,7 +167,7 @@ DocuSign コネクタは以下を使用します。
 
 ### アクション
 
-* [[!UICONTROL  カスタムフィールドの追加 ]](#add-a-custom-field)
+* [[!UICONTROL &#x200B; カスタムフィールドの追加 &#x200B;]](#add-a-custom-field)
 * [[!UICONTROL エンベロープへの受信者の追加]](#add-recipient-to-envelope)
 * [[!UICONTROL エンベロープの新規作成]](#create-a-new-envelope)
 * [[!UICONTROL カスタム API 呼び出し]](#custom-api-call)
@@ -177,7 +177,7 @@ DocuSign コネクタは以下を使用します。
 * [[!UICONTROL エンベロープの送信]](#send-envelope)
 * [[!UICONTROL エンベロープにファイルをアップロード]](#upload-a-file-to-an-envelope)
 
-#### [!UICONTROL  カスタムフィールドの追加 ]
+#### [!UICONTROL &#x200B; カスタムフィールドの追加 &#x200B;]
 
 このアクションモジュールは、カスタムフィールドをドキュメントに追加します
 
@@ -325,31 +325,31 @@ DocuSign コネクタは以下を使用します。
     </tr>
   <tr> 
    <td role="rowheader">
-     [!UICONTROL で印刷と署名を許可する ]
+     [!UICONTROL で印刷と署名を許可する &#x200B;]
    </td> 
    <td> <p>受信者がドキュメントを印刷し、紙に署名できるようにするには、このオプションを有効にします。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">
-     [!UICONTROL の再割り当て許可 ]
+     [!UICONTROL の再割り当て許可 &#x200B;]
    </td> 
    <td> <p>受信者がドキュメントを別のユーザーに再割り当てできるようにする場合は、このオプションを有効にします。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">
-     [!UICONTROL 受信者再帰を許可 ]
+     [!UICONTROL 受信者再帰を許可 &#x200B;]
    </td> 
    <td> <p>受信者の再帰を許可するには、このオプションを有効にします。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">
-     [!UICONTROL 権限のあるコピー ]
+     [!UICONTROL 権限のあるコピー &#x200B;]
    </td> 
    <td> <p>このオプションを有効にすると、この封筒の文書が信頼できるコピーとしてマークされます。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">
-     [!UICONTROL 自動ナビゲーション ]
+     [!UICONTROL 自動ナビゲーション &#x200B;]
    </td> 
    <td> <p>受信者の自動ナビゲーションを設定するには、このオプションを有効にします。</p> </td> 
   </tr> 
@@ -361,13 +361,13 @@ DocuSign コネクタは以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">
-     [!UICONTROL マークアップ有効 ]
+     [!UICONTROL マークアップ有効 &#x200B;]
    </td> 
    <td> <p>ドキュメントのマークアップを有効にするには、このオプションを有効にします。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">
-     [!UICONTROL 有効期限切れ ]
+     [!UICONTROL 有効期限切れ &#x200B;]
    </td> 
    <td> <p>このオプションを有効にすると、このエンベロープの有効期限が設定されます。 このオプションを有効にする場合、次のフィールドに入力します。<ul><li><b>有効期限</b><p>この封筒が期限切れになるまでの日数を入力またはマップします。</p></li><li><b>期限切れ警告</b><p>リマインダーメールが受信者に送信される、有効期限までの日数を入力またはマッピングします。</p> </td> 
   </tr> 

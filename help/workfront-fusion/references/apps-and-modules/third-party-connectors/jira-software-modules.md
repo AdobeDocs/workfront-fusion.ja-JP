@@ -234,7 +234,7 @@ Jira コネクタでは、以下を使用します。
    </table>
 
 1. 「**[!UICONTROL 続行]**」をクリックします。
-1.  [!DNL Workfront Fusion]](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion) で  [!DNL Jira Server]  または  [!DNL Jira Data Center]  への[接続を作成
+1. [!DNL Workfront Fusion][&#128279;](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion) で  [!DNL Jira Server]  または  [!DNL Jira Data Center]  への接続を作成
 
 #### [!DNL Workfront Fusion] で [!DNL Jira Server] または [!DNL Jira Data Center] への接続を作成
 
@@ -349,7 +349,7 @@ Jira コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Issue ID or Keys]</td> 
-   <td>エクスペリエンスを表示するイシューまたはキーごとに、<b>[!UICONTROL アイテムの追加 ]</b> をクリックして、イシュー ID またはキーを入力します。 1 つのモジュールに最大 50 個まで入力できます。</td> 
+   <td>エクスペリエンスを表示するイシューまたはキーごとに、<b>[!UICONTROL アイテムの追加 &#x200B;]</b> をクリックして、イシュー ID またはキーを入力します。 1 つのモジュールに最大 50 個まで入力できます。</td> 
   </tr> 
  </tbody> 
 </table>
