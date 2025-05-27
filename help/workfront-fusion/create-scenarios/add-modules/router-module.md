@@ -4,9 +4,9 @@ description: ルーターモジュールを使用すると、フローを複数�
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: c1c11c6766678263b36488909c3799299a1c510a
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '850'
 ht-degree: 12%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 12%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規： [!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td> <p>新規：[!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
@@ -47,7 +47,7 @@ ht-degree: 12%
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：組織は [!DNL Adobe Workfront Fusion] を購入する必要があります。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：[!DNL Adobe Workfront Fusion] を購入してください。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
    <p>または</p>
    <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
    </td> 
@@ -65,17 +65,17 @@ ht-degree: 12%
 
 ルートを設定する前に、ルーターモジュールを追加する必要があります。
 
-1. 左側のパネルで「**[!UICONTROL Scenarios]**」タブをクリックします。
+1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. ルーターを追加するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
 1. シナリオエディターで、ルーターを追加するモジュールの右側のハンドルをクリックします。
-1. 表示されるモジュールのリストで、**[!UICONTROL Flow Control]** > **Router** を選択します。
+1. 表示されるモジュールのリストで、**[!UICONTROL フロー制御]**/**ルーター** を選択します。
 
    ![ ルートの接続 ](assets/connect-the-router-350x108.png)
 
    または
 
-   2 つのモジュールの間にルーターモジュールを挿入するには、2 つのモジュールを接続するルートの下にあるレンチアイコンをクリックして、メニューから **[!UICONTROL Add a router]** を選択します。
+   2 つのモジュールの間にルーターモジュールを挿入するには、2 つのモジュールを接続するルートの下にあるレンチアイコンをクリックし、メニューから **[!UICONTROL ルーターを追加]** を選択します。
 
    ![ ルーターの挿入 ](assets/insert-router-350x191.png)
 1. 任意のモジュールを追加するのと同様に、ルーターの右側のハンドルをクリックしてモジュールを追加することで、ルーターへの最初のルートを追加します。
@@ -87,7 +87,7 @@ ht-degree: 12%
 
    ルートは、実行する順序に並べられます。 最上位ルートが最初に実行されます。
 
-1. （オプション）ルートの順序を変更するには、ルータからのパスを右クリックして [ リンク解除 ] を選択し、目的の順序でルートをルータ モジュールにドラッグします。 接続された最初のルートが、実行する最初のルート（最上位ルート）になります。
+1. （オプション）ルートの順序を変更するには、ルーターモジュールを右クリックして **ルートを注文** を選択します。ルートを実行する順序でドラッグ&amp;ドロップします。 ルートは、ルータに続く最初のモジュール（ルートの最初のモジュール）によってマークされます。
 
 1. [ ルートへのフィルターの追加 ](#add-a-filter-to-a-route) を続行します。
 
@@ -97,7 +97,7 @@ ht-degree: 12%
 
 データが複数のルートのフィルターを通過した場合、データは両方のルートで処理されます。 最上位ルートが最初にデータを処理します。
 
-1. 左側のパネルで「**[!UICONTROL Scenarios]**」タブをクリックします。
+1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. フィルターを追加するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
 1. フィルターを設定するパス上のレンチアイコン ![ レンチ ](assets/wrench-icon.png) をクリックします。 これは、ルータ モジュールとルートの最初のモジュールの間のパスです。
@@ -107,7 +107,7 @@ ht-degree: 12%
 
    詳しくは、[ シナリオへのフィルターの追加 ](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md) を参照してください。
 
-1. 「**[!UICONTROL OK]**」をクリックして、フィルター設定を保存します。
+1. **[!UICONTROL OK]** をクリックして、フィルター設定を保存します。
 
 1. [ フォールバックルートの設定 ](#configure-a-fallback-route) を続行します。
 
@@ -117,7 +117,7 @@ ht-degree: 12%
 
 フィルターパネルでフォールバックルートを有効にすることができます。
 
-1. 左側のパネルで「**[!UICONTROL Scenarios]**」タブをクリックします。
+1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. フォールバックルートを追加するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
 1. フィルターを設定するパス上のレンチアイコン ![ レンチ ](assets/wrench-icon.png) をクリックします。 これは、ルータ モジュールとルートの最初のモジュールの間のパスです。
@@ -127,7 +127,7 @@ ht-degree: 12%
 
    ![ フォールバックルート ](assets/fallback-route-350x260.png)
 
-1. 「**[!UICONTROL OK]**」をクリックして、フィルター設定を保存します。
+1. **[!UICONTROL OK]** をクリックして、フィルター設定を保存します。
 
 フォールバック ルートは、ルータ モジュールで別の矢印でマークされます。
 
