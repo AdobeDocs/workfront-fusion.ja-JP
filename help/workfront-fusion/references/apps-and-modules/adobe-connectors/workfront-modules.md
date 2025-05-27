@@ -194,7 +194,7 @@ Workfront Fusion でWorkfront モジュールを設定する場合、以下に�
       <td>[!UICONTROL Record Origin]</td> 
       <td>
        <p>シナリオで [!UICONTROL New Records Only]、[!UICONTROL Updated Records Only]、[!UICONTROL New and Updated Records]、または [!DNL Deleted Records Only] を監視するかどうかを選択します。</p>
-       <p><b> メモ </b>: [!UICONTROL 新規および更新されたレコード ] を選択する場合、Webhook の作成により（同じ Webhook アドレスに対して） 2 つのイベント購読が作成されます。</p>
+       <p><b> メモ </b>: [!UICONTROL 新規および更新されたレコード &#x200B;] を選択する場合、Webhook の作成により（同じ Webhook アドレスに対して） 2 つのイベント購読が作成されます。</p>
        </td> 
      </tr> 
     </tbody> 
@@ -280,7 +280,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
    <td> <p>このモジュールの出力バンドルに含めるフィールドを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 参照 ]</td> 
+   <td role="rowheader">[!UICONTROL 参照 &#x200B;]</td> 
    <td> <p>このモジュールの出力バンドルに含める参照フィールドを選択します。</p> </td> 
   </tr> 
   <tr> 
@@ -363,11 +363,11 @@ Web フックを作成した後、イベントの送信先エンドポイント�
    <td> <p>オブジェクトの変換時に必要なオプションを有効にします。変換先または変換元のオブジェクトに応じて、オプションを使用できます。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL ネイティブ フィールドのコピー ]</td> 
+   <td>[!UICONTROL ネイティブ フィールドのコピー &#x200B;]</td> 
    <td> <p>このオプションを有効にすると、元のオブジェクトから新しいオブジェクトにネイティブフィールドがコピーされます。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL カスタム フォームのコピー ]</td> 
+   <td>[!UICONTROL カスタム フォームのコピー &#x200B;]</td> 
    <td> <p>このオプションを有効にすると、元のオブジェクトから新しいオブジェクトにネイティブフィールドがコピーされます。</p> </td> 
   </tr> 
  </tbody> 
@@ -399,7 +399,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
-   <td> <p>モジュールで作成するWorkfront レコードのタイプを選択します。</p> <p>例えば、プロジェクトを作成する場合は、ドロップダウンリストから「[!UICONTROL プロジェクト ]」を選択します。</p> </td> 
+   <td> <p>モジュールで作成するWorkfront レコードのタイプを選択します。</p> <p>例えば、プロジェクトを作成する場合は、ドロップダウンリストから「[!UICONTROL プロジェクト &#x200B;]」を選択します。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Select fields to map]</td> 
@@ -458,7 +458,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 
 入力フィールドの最小数を指定してください。例えば、イシューを作成する場合は、「プロジェクト ID」フィールドに有効な親プロジェクト ID を指定して、Workfront でイシューの配置先を示す必要があります。マッピングパネルを使用してシナリオ内の別のモジュールからこの情報をマッピングするか、名前を入力してリストから選択し、手動で入力することもできます。
 
-このモジュールでは、オブジェクトを作成する際にカスタムフォームを添付しません。 オブジェクトの作成時にカスタムフォームを添付するには、[!UICONTROL  レコードの作成（カスタムフォームの添付） ] モジュールを使用します。
+このモジュールでは、オブジェクトを作成する際にカスタムフォームを添付しません。 オブジェクトの作成時にカスタムフォームを添付するには、[!UICONTROL &#x200B; レコードの作成（カスタムフォームの添付） &#x200B;] モジュールを使用します。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
@@ -474,7 +474,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
-   <td> <p>モジュールで作成するWorkfront レコードのタイプを選択します。</p> <p>例えば、プロジェクトを作成する場合は、ドロップダウンリストから「[!UICONTROL プロジェクト ]」を選択します。</p> </td> 
+   <td> <p>モジュールで作成するWorkfront レコードのタイプを選択します。</p> <p>例えば、プロジェクトを作成する場合は、ドロップダウンリストから「[!UICONTROL プロジェクト &#x200B;]」を選択します。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Select fields to map]</td> 
@@ -574,7 +574,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
    <td>このオプションを有効にすると、Workfront UI から削除の確認がリクエストされる場合でも、レコードが確実に削除されます。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 非同期削除 ]</td> 
+   <td>[!UICONTROL 非同期削除 &#x200B;]</td> 
    <td>モジュールを非同期で削除できるようにするには、このオプションを有効にします。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -665,7 +665,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
       </ul> <p>その他のすべてのレコードタイプに対して、<b>[!UICONTROL Other objects and endpoints]</b> を選択し、アルファベット順に並べ替えられたページでレコードタイプを探します。</p> </li> 
      <li value="2"> <p>適切なレコードタイプのページで、アクションを検索（Ctrl + F キーまたは Command + F キー）します。</p> </li> 
      <li value="3"> <p>選択したアクションで使用可能なフィールドの説明を表示します。</p> </li> 
-    </ol> <p>メモ：  <p>Workfront [!UICONTROL その他アクション ] モジュールを使用してプルーフを作成する場合、ベストプラクティスは、詳細なオプションを使用せずにプルーフを作成し、[!DNL Workfront Proof] SOAP API を使用してプルーフを更新することです。</p><p>Workfront API （このモジュールが使用）を使用したプルーフの作成について詳しくは、<a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Adobe Workfront API でプルーフを作成する際の詳細プルーフオプションの追加 </a> を参照してください</p> </p> </td> 
+    </ol> <p>メモ：  <p>Workfront [!UICONTROL その他アクション &#x200B;] モジュールを使用してプルーフを作成する場合、ベストプラクティスは、詳細なオプションを使用せずにプルーフを作成し、[!DNL Workfront Proof] SOAP API を使用してプルーフを更新することです。</p><p>Workfront API （このモジュールが使用）を使用したプルーフの作成について詳しくは、<a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Adobe Workfront API でプルーフを作成する際の詳細プルーフオプションの追加 </a> を参照してください</p> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
@@ -859,7 +859,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 <td> <p>このモジュールの出力バンドルに含める情報を選択します。</p> </td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL 出力のカスタム フォーム ]</td>
+    <td>[!UICONTROL 出力のカスタム フォーム &#x200B;]</td>
      <td> <p>このモジュールの出力バンドルに含めるカスタムフォームを選択し、出力に含めるカスタムフォームから特定のフィールドを選択します。</p> </td> 
   </tr> 
   <tr> 
@@ -1208,7 +1208,7 @@ Workfrontは最近、イベント購読サービスの新しいバージョン�
    <td> <p>モジュールで検索するWorkfront レコードのタイプを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL カスタム フォーム リスト ]</td> 
+   <td>[!UICONTROL カスタム フォーム リスト &#x200B;]</td> 
    <td> <p>1 つ以上のカスタムフォームを選択します。 これらのカスタムフォームのフィールドは、検索クエリで使用できるようになります。</p> </td> 
   </tr> 
   <tr> 
@@ -1631,7 +1631,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 >[!NOTE]
 >
->Workfront オブジェクトタイプは設定に含まれていないので、「[!UICONTROL  ドキュメントをダウンロード ]」モジュールはこのテーブルに含まれていません。
+>Workfront オブジェクトタイプは設定に含まれていないので、「[!UICONTROL &#x200B; ドキュメントをダウンロード &#x200B;]」モジュールはこのテーブルに含まれていません。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -2265,7 +2265,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 Workfront [!UICONTROL Watch Events] モジュールは、Workfront API でイベント購読を作成する Webhook に基づくシナリオをトリガーします。 イベント登録は、web フックに送信されるイベントを決定する一連のデータです。例えば、イシューを監視する[!UICONTROL イベントの監視]モジュールを設定した場合、イベント登録はイシューに関連するイベントのみを送信します。
 
-Fusion ユーザーは、イベント登録フィルターを使用して、ユースケースに適したイベント登録を作成できます。例えば、Workfront API でイベント購読を設定して、特定のプロジェクトの問題のみを Webhook に送信し、「[!UICONTROL  イベントをウォッチ ]」モジュールでそのプロジェクトの問題のみをトリガーできるようにします。 より範囲の狭いトリガーを作成できるので、無関係なトリガーの数が減り、シナリオの設計を改善できます。
+Fusion ユーザーは、イベント登録フィルターを使用して、ユースケースに適したイベント登録を作成できます。例えば、Workfront API でイベント購読を設定して、特定のプロジェクトの問題のみを Webhook に送信し、「[!UICONTROL &#x200B; イベントをウォッチ &#x200B;]」モジュールでそのプロジェクトの問題のみをトリガーできるようにします。 より範囲の狭いトリガーを作成できるので、無関係なトリガーの数が減り、シナリオの設計を改善できます。
 
 これは、Workfront Fusion シナリオでフィルターを設定する場合とは異なります。 イベント登録フィルターを使用しない場合、web フックは、選択されたオブジェクトタイプに関連するすべてのイベントを受信します。これらのイベントのほとんどはシナリオとは無関係と思われるので、シナリオを続行する前に除外する必要があります。
 
