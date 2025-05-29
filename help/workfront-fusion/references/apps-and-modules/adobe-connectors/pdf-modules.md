@@ -5,7 +5,7 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e6fbbc20-4315-4668-9e11-af7cfa82ae66
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: bf3e35a287c3beb2310a7b8d2c21c65aebfb9076
 workflow-type: tm+mt
 source-wordcount: '4125'
 ht-degree: 90%
@@ -125,19 +125,19 @@ Adobe PDF サービスコネクタは、以下を使用します。
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]</td>
-          <td>[!DNL Adobe] [!UICONTROL Client ID] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。<p>資格情報の検索手順については、アドビデベロッパー向けドキュメントで<a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >資格情報</a>を参照してください。</p></td>
+          <td>[!DNL Adobe] [!UICONTROL Client ID] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。<p>資格情報の検索手順については、アドビデベロッパー向けドキュメントで<a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >資格情報</a>を参照してください。</p></td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret]</td>
-          <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。<p>資格情報の検索手順については、アドビデベロッパー向けドキュメントで<a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >資格情報</a>を参照してください。</p>
+          <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。<p>資格情報の検索手順については、アドビデベロッパー向けドキュメントで<a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >資格情報</a>を参照してください。</p>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Technical account ID]（JWT のみ）</td>
-          <td>[!DNL Adobe] [!UICONTROL Technical account ID] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。<p>資格情報の検索手順については、アドビデベロッパー向けドキュメントで<a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >資格情報</a>を参照してください。</p>
+          <td>[!DNL Adobe] [!UICONTROL Technical account ID] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。<p>資格情報の検索手順については、アドビデベロッパー向けドキュメントで<a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >資格情報</a>を参照してください。</p>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Organization ID]（JWT のみ）</td>
-          <td>[!DNL Adobe] [!UICONTROL Organization ID] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。<p>資格情報の検索手順については、アドビデベロッパー向けドキュメントで<a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >資格情報</a>を参照してください。</p>
+          <td>[!DNL Adobe] [!UICONTROL Organization ID] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。<p>資格情報の検索手順については、アドビデベロッパー向けドキュメントで<a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >資格情報</a>を参照してください。</p>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Meta scopes]（JWT のみ）</td>
@@ -502,7 +502,7 @@ ZIP 形式で出力する場合、PDFは 1 ページにつき 1 つの画像に�
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 出力タイプ &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 出力タイプ ]</td> 
    <td> <p>ファイルをファイルのリストとして出力するか、ZIP ファイルとして出力するかを選択します。</td> 
   </tr> 
   <tr> 
@@ -790,7 +790,7 @@ JSON で[!UICONTROL ドキュメントの生成]モジュールを使用する�
    <td> <p>文書の見出しを移動するには、このオプションを有効にします。</p> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL レポートの生成 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL レポートの生成 ]</td> 
    <td> <p>PDF のアクセシビリティの問題とその場所を記載したレポートを生成し、これらの問題の修正方法に関する提案を出すには、このオプションを有効にします。</p> </td> 
   </tr> 
  </tbody> 
@@ -823,7 +823,7 @@ JSON で[!UICONTROL ドキュメントの生成]モジュールを使用する�
  </tbody> 
 </table>
 
-### [!UICONTROL PDF ファイルの保護 &#x200B;]
+### [!UICONTROL PDF ファイルの保護 ]
 
 このツールは、ユーザーまたは所有者のパスワードを使用して PDF ドキュメントを保護します。また、PDF ドキュメントにおける印刷、編集、コピーなど、特定の機能に対する制限も設定します。暗号化するコンテンツのタイプと暗号化アルゴリズムを選択します。
 
@@ -845,8 +845,8 @@ JSON で[!UICONTROL ドキュメントの生成]モジュールを使用する�
    <td role="rowheader">[!UICONTROL Password Protection Type]</td> 
    <td> <p>パスワードを使用して入力 PDF ドキュメントを暗号化するには、このオプションを有効にします。このオプションを有効にする場合、次のいずれかまたは両方の値を指定して入力する必要があります。 </p> 
     <ul> 
-     <li> <p>[!UICONTROL ユーザーパスワード &#x200B;]</p> </li> 
-     <li> <p>[!UICONTROL 所有者パスワード &#x200B;] </p> </li> 
+     <li> <p>[!UICONTROL ユーザーパスワード ]</p> </li> 
+     <li> <p>[!UICONTROL 所有者パスワード ] </p> </li> 
     </ul> <p>各パスワードは最大 128 文字までです。</p> </td> 
   </tr> 
   <tr> 
@@ -868,7 +868,7 @@ JSON で[!UICONTROL ドキュメントの生成]モジュールを使用する�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Permissions]</td> 
-   <td> <p>印刷、編集、コンテンツのコピーを許可する権限を選択します。</p> <p>権限設定は、[!UICONTROL パスワード保護の種類 &#x200B;] フィールドに [!UICONTROL 所有者パスワード &#x200B;] が設定されている場合にのみ使用されます。</p> </td> 
+   <td> <p>印刷、編集、コンテンツのコピーを許可する権限を選択します。</p> <p>権限設定は、[!UICONTROL パスワード保護の種類 ] フィールドに [!UICONTROL 所有者パスワード ] が設定されている場合にのみ使用されます。</p> </td> 
   </tr> 
  </tbody> 
 </table>
