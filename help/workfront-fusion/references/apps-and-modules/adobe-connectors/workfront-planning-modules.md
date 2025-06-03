@@ -1,13 +1,13 @@
 ---
 title: Adobe Workfront Planning モジュール
-description: ' [!DNL Adobe Workfront Planning] modules を使用すると、 [!DNL Adobe Workfront Fusion] 2&rbrace;Workfront Planning アカウント内のイベントに基づくシナリオの開始、契約書およびその他のレコードの作成、読み取り、更新、設定した条件を使用したレコードの検索、およびドキュメントのアップロードを行うことができます。 [!DNL Adobe] '
+description: ' [!DNL Adobe Workfront Planning] modules を使用すると、 [!DNL Adobe Workfront Fusion] 2}Workfront Planning アカウント内のイベントに基づくシナリオの開始、契約書およびその他のレコードの作成、読み取り、更新、設定した条件を使用したレコードの検索、およびドキュメントのアップロードを行うことができます。 [!DNL Adobe] '
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 51bb87572f16f6194f6c37bbe52ea7f27050c303
 workflow-type: tm+mt
-source-wordcount: '1532'
-ht-degree: 61%
+source-wordcount: '1591'
+ht-degree: 59%
 
 ---
 
@@ -313,7 +313,7 @@ Workfront Fusion でWorkfront モジュールを設定する場合、以下に�
       </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL フィルターの 条件 &#x200B;]</p>
+        <p>[！フィルターの UICONTROL 条件 ]</p>
       </td>
       <td>フィルターの条件の選択：<ul><li><b>AND</b><p>モジュールは、選択したフィールド値の <b> すべて </b> を満たすレコードを返します。</p></li><li><b>または</b><p>モジュールは、選択したフィールド値の <b> いずれか </b> を満たすレコードを返します。</p></li></ul></td> 
       </tr>
@@ -472,3 +472,20 @@ Workfront Planning 内の 1 つのレコードを更新します。
      <tr>
   </tbody>
 </table>
+
+
+## 読み取り可能な `record-types` の分類に JSONata を使用
+
+次の JSONata 式は、レコードタイプの分類を示す、人間が判読できる Planning クエリの出力を作成します。 これにより、レコードタイプ名、フィールド名およびフィールドオプション名（該当する場合）が名前で人間によって読み取り、残りの構造はそのままの状態を維持します。
+
+```
+(
+    $s0 := ({"data":$ ~> | fields | {"options":(options){name:$}} |});
+    $s1 := ({"data":$s0.data ~> | **.fields | {"options_name":(options.*){displayName:$}} | });
+    $s2 := $s1 ~> | data | {"fields":(fields){displayName:$}} |; 
+    $s2.data{displayName:$}
+)
+```
+
+JSONata モジュールの使用について詳しくは、[JSONata モジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md) を参照してください。
+
