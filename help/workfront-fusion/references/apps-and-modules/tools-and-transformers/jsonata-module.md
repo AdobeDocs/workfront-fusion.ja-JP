@@ -77,7 +77,7 @@ ht-degree: 13%
    <td> 評価する JSON オブジェクトを入力します。  </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Stringify 出力 ] </td> 
+   <td role="rowheader">[!UICONTROL Stringify 出力 &#x200B;] </td> 
    <td> 出力を文字列に変換するには、このオプションを有効にします。  </td> 
   </tr> 
   </tbody>
@@ -124,11 +124,11 @@ ht-degree: 13%
    <td> <p>このモジュールに使用するラージ言語モデル （LLM）への接続に使用する接続を選択します。</p> <p>現在は、Anthropic API キーのみがサポートされています。</p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 入力スキーマ ]</td> 
+   <td role="rowheader">[!UICONTROL 入力スキーマ &#x200B;]</td> 
    <td> <p>この式に使用する入力スキーマを入力またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 出力スキーマ ]</td> 
+   <td role="rowheader">[!UICONTROL 出力スキーマ &#x200B;]</td> 
    <td> <p>この式に使用する出力スキーマを入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
