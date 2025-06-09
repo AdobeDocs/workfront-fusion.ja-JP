@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion JSONata コネクタは、Adobe Workfront Fu
 author: Becky
 feature: Workfront Fusion
 exl-id: 8c117ecb-3c05-47d4-a629-18dbc546e2a2
-source-git-commit: 2ba6ca5f5a82aea4979ff8f273bdeef1a8d22a06
+source-git-commit: da3bf98f8254228598372fed8c06d6318718721f
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 14%
+source-wordcount: '325'
+ht-degree: 13%
 
 ---
 
 # [!UICONTROL JSONata] モジュール
 
-[!DNL Adobe Workfront Fusion] [!UICONTROL JSONata] コネクタを使用すると、JSON オブジェクトに対してクエリを実行できます。 このモジュールには接続は必要ありません。
+[!DNL Adobe Workfront Fusion] [!UICONTROL JSONata] コネクタを使用すると、JSON オブジェクトをクエリできます。 このモジュールには接続は必要ありません。
 
 ## アクセス要件
 
@@ -31,7 +31,7 @@ ht-degree: 14%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規： [!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td> <p>新規：[!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
@@ -44,7 +44,7 @@ ht-degree: 14%
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：組織は [!DNL Adobe Workfront Fusion] を購入する必要があります。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：[!DNL Adobe Workfront Fusion] を購入してください。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
    <p>または</p>
    <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
    </td> 
@@ -77,7 +77,7 @@ ht-degree: 14%
    <td> 評価する JSON オブジェクトを入力します。  </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Stringify output] </td> 
+   <td role="rowheader">[!UICONTROL Stringify 出力 ] </td> 
    <td> 出力を文字列に変換するには、このオプションを有効にします。  </td> 
   </tr> 
   </tbody>
@@ -105,3 +105,31 @@ ht-degree: 14%
 モジュールは、JSON オブジェクトから取得した名前の配列を返します。
 
 >[!ENDSHADEBOX]
+
+
+
+### JSONata MCP
+
+このアクションモジュールは、指定された入出力スキーマを分析して JSONata 式を生成します。 入力を出力に変換する式の生成に Model Context Protocol （MCP）で使用されるスキーマを指定します。
+
+
+
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>このモジュールに使用するラージ言語モデル （LLM）への接続に使用する接続を選択します。</p> <p>現在は、Anthropic API キーのみがサポートされています。</p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 入力スキーマ ]</td> 
+   <td> <p>この式に使用する入力スキーマを入力またはマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 出力スキーマ ]</td> 
+   <td> <p>この式に使用する出力スキーマを入力またはマッピングします。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
