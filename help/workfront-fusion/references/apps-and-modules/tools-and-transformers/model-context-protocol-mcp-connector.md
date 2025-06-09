@@ -74,15 +74,15 @@ MCP モジュールを設定すると、以下に示 [!DNL Adobe Workfront Fusio
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 大規模言語モデル （LLM） キー ]</td> 
+   <td role="rowheader">[!UICONTROL 大規模言語モデル （LLM） キー &#x200B;]</td> 
    <td> <p>このプロンプトに使用する大規模言語モデルの API キーを入力またはマップします。 </p> <p>現在は、Anthropic API キーのみがサポートされています。</p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL MCP サーバー ]</td> 
+   <td role="rowheader">[!UICONTROL MCP サーバー &#x200B;]</td> 
    <td> <p>このプロンプトで使用可能にする各 MCP サーバに対して、<b> アイテムの追加 </b> をクリックし、サーバの名前とホストを入力します。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL プロンプトを入力 ]</td> 
+   <td role="rowheader">[!UICONTROL プロンプトを入力 &#x200B;]</td> 
    <td> <p>大言語モデルのプロンプトを入力またはマップします。 </p> </td> 
   </tr> 
  </tbody> 
