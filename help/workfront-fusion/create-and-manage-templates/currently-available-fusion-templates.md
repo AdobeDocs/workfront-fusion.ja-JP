@@ -23,7 +23,7 @@ ht-degree: 75%
 
 これらのテンプレートは、Workfront のプロセスとワークフローを自動化します。
 
-### [!BADGE  新規 ]{type=Informative} Workfront - タスクが早期に完了すると、プロジェクトタイムラインを自動調整します
+### [!BADGE &#x200B; 新規 &#x200B;]{type=Informative} Workfront - タスクが早期に完了すると、プロジェクトタイムラインを自動調整します
 
 <!--New June 10, 2025-->
 
@@ -33,7 +33,7 @@ ht-degree: 75%
 
 この Fusion テンプレートは、そのプロセスを自動化します。 タスクが早期に完了すると、すべての依存タスク（後続タスク）が自動的に再スケジュールされ、より早く開始されるようになり、チームの迅速な移行と機敏性の維持に役立ちます。
 
-### [!BADGE  新規 ]{type=Informative} Workfront ボード – 指定した列からアーカイブされたカードを削除（オンデマンド）
+### [!BADGE &#x200B; 新規 &#x200B;]{type=Informative} Workfront ボード – 指定した列からアーカイブされたカードを削除（オンデマンド）
 
 <!--New March 12, 2025-->
 
@@ -111,7 +111,7 @@ ht-degree: 75%
 
 これらのテンプレートは、Workfront と Workfront Proof を組み合わせたワークフローを自動化します。
 
-### [!BADGE  新規 Workfront/Workfront Proofの ]{type=Informative} プルーフユーザーの役割を読み取り専用に変更し、プロジェクトを閉じるときにプルーフをロックする
+### [!BADGE &#x200B; 新規 Workfront/Workfront Proofの &#x200B;]{type=Informative} プルーフユーザーの役割を読み取り専用に変更し、プロジェクトを閉じるときにプルーフをロックする
 
 <!--New March 12, 2025-->
 
