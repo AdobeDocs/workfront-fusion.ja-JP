@@ -178,7 +178,7 @@ ht-degree: 75%
 
 このテンプレートは Workfront と Anaplan の統合をサポートしており、Workfront と Anaplan の両方で特定の設定が必要です。このテンプレートと必要な設定について詳しくは、個々のテンプレートに関する記事を参照してください。
 
-Workfrontと Anaplan の統合について詳しくは、Workfront ドキュメントの [Anaplan のAdobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) を参照してください。
+Workfrontと Anaplan の統合について詳しくは、Workfront ドキュメントの [Anaplan のAdobe Workfront](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) を参照してください。
 
 >[!NOTE]
 >
@@ -186,19 +186,19 @@ Workfrontと Anaplan の統合について詳しくは、Workfront ドキュメ�
 
 ### 支出の最適化ワークフロー
 
-* [ [!DNL Adobe Workfront]  プロジェクトの更新を  [!DNL Anaplan]  リスト項目に送信](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
-* [ [!DNL Adobe Workfront]  費用を  [!DNL Anaplan]  リスト項目に送信](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
-* [ [!DNL Adobe Workfront]  の実際の時間数の更新を  [!DNL Anaplan]  リスト項目に送信](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
+* [ [!DNL Adobe Workfront]  プロジェクトの更新を  [!DNL Anaplan]  リスト項目に送信](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
+* [ [!DNL Adobe Workfront]  費用を  [!DNL Anaplan]  リスト項目に送信](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
+* [ [!DNL Adobe Workfront]  の実際の時間数の更新を  [!DNL Anaplan]  リスト項目に送信](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
 
 ### 予算リクエストをリンクするためのワークフロー
 
-* [ [!DNL Adobe Workfront]  予算リクエストから  [!DNL Anaplan]  リスト項目を作成](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
-* [ [!DNL Anaplan]  予算配分を  [!DNL Adobe Workfront]  プロジェクトに適用](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
+* [ [!DNL Adobe Workfront]  予算リクエストから  [!DNL Anaplan]  リスト項目を作成](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
+* [ [!DNL Anaplan]  予算配分を  [!DNL Adobe Workfront]  プロジェクトに適用](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
 
 ### キャンペーンリクエストをリンクするワークフロー
 
-* [ [!DNL Adobe Workfront]  キャンペーンリクエストから  [!DNL Anaplan]  リスト項目を作成](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
-* [ [!DNL Anaplan]  予算配分を  [!DNL Adobe Workfront]  キャンペーンリクエストまたはキャンペーンプロジェクトに適用する](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+* [ [!DNL Adobe Workfront]  キャンペーンリクエストから  [!DNL Anaplan]  リスト項目を作成](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
+* [ [!DNL Anaplan]  予算配分を  [!DNL Adobe Workfront]  キャンペーンリクエストまたはキャンペーンプロジェクトに適用する](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
 
 
 <!--[!BADGE New!]{type=Informative} -->
