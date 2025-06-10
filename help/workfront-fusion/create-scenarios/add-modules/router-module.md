@@ -4,9 +4,9 @@ description: ルーターモジュールを使用すると、フローを複数�
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: c1c11c6766678263b36488909c3799299a1c510a
+source-git-commit: e0058a54039f100ba82bc8a3ed8f5d3d4445ffeb
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '852'
 ht-degree: 12%
 
 ---
@@ -88,6 +88,8 @@ ht-degree: 12%
    ルートは、実行する順序に並べられます。 最上位ルートが最初に実行されます。
 
 1. （オプション）ルートの順序を変更するには、ルーターモジュールを右クリックして **ルートを注文** を選択します。ルートを実行する順序でドラッグ&amp;ドロップします。 ルートは、ルータに続く最初のモジュール（ルートの最初のモジュール）によってマークされます。
+
+   ![ 注文ルート ](assets/order-routes.png)
 
 1. [ ルートへのフィルターの追加 ](#add-a-filter-to-a-route) を続行します。
 

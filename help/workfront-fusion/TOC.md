@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
-source-git-commit: d03c4a68a69ea5302f6898418c3da9edaa404bad
+source-git-commit: e0058a54039f100ba82bc8a3ed8f5d3d4445ffeb
 workflow-type: tm+mt
-source-wordcount: '1791'
+source-wordcount: '1797'
 ht-degree: 62%
 
 ---
@@ -173,6 +173,7 @@ ht-degree: 62%
    * [シナリオの作成](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
    * シナリオの計画 {#plan-a-scenario}
       * [シナリオの計画：記事インデックス](/help/workfront-fusion/create-scenarios/plan-a-scenario/plan-a-scenario-toc.md)
+      * [複数のシナリオを連結する](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)
       * [シナリオプランニングに関するよくある質問](/help/workfront-fusion/create-scenarios/plan-a-scenario/faq.md)
       * [ビデオの概要](/help/workfront-fusion/create-scenarios/plan-a-scenario/fusion-basics-videos.md)
       * [シナリオ作成のワークフロー](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md)
@@ -293,11 +294,11 @@ ht-degree: 62%
    * アプリとそのモジュール {#apps-and-their-modules}
       * [アプリとそのモジュール](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)
       * ユニバーサルコネクタ {#universal-connectors}
-         * [HTTP > [!UICONTROL &#x200B; リクエストを作成 &#x200B;] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
-         * [[!UICONTROL HTTP] > [!UICONTROL &#x200B; 基本認証リクエストを行う &#x200B;] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
+         * [HTTP > [!UICONTROL  リクエストを作成 ] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+         * [[!UICONTROL HTTP] > [!UICONTROL  基本認証リクエストを行う ] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
          * [[!UICONTROL HTTP]／[!UICONTROL OAuth 2.0 リクエストを実行]モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
-         * [[!UICONTROL HTTP] > [!UICONTROL &#x200B; クライアント証明書認証リクエストを作成 &#x200B;] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
-         * [[!UICONTROL HTTP] > [!UICONTROL API キー認証リクエストの作成 &#x200B;]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
+         * [[!UICONTROL HTTP] > [!UICONTROL  クライアント証明書認証リクエストを作成 ] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
+         * [[!UICONTROL HTTP] > [!UICONTROL API キー認証リクエストの作成 ]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
          * [[!UICONTROL HTTP]／その他のモジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-modules.md)
          * [SOAP モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/soap-module.md)
          * [FTP モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)
@@ -381,6 +382,7 @@ ht-degree: 62%
          * [Workday モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/workday-modules.md)
       * 工具・変圧器 {#tools-and-transformers}
          * [モジュールのアーカイブ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/archive-modules.md)
+         * [チェーンモジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)
          * [CSV モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/csv.md)
          * [データストアモジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md)
          * [Draft.js モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/draft-js-modules.md)

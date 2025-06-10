@@ -1,23 +1,23 @@
 ---
 title: 不完全な実行の表示と解決
-description: '[!UICONTROL Incomplete executions] フォルダーには、エラーが原因で正常に完了しなかったシナリオ実行が格納されます。 保存された未完了の実行は、手動または自動で解決できます。'
+description: 「[!UICONTROL 未完了の実行]」フォルダーには、エラーが原因で正常に終了されなかったシナリオの実行が保存されます。保存された未完了の実行は、手動または自動で解決できます。
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ad304117fb6e9d1320b8e50d71a162609dc6e6f4
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 56%
+source-wordcount: '649'
+ht-degree: 69%
 
 ---
 
 # 不完全な実行の表示と解決
 
-[!UICONTROL Incomplete executions] フォルダーには、エラーが原因で正常に完了しなかったシナリオ実行が格納されます。 保存された未完了の実行は、手動または自動で解決できます。
+「[!UICONTROL 未完了の実行]」フォルダーには、エラーが原因で正常に終了されなかったシナリオの実行が保存されます。保存された未完了の実行は、手動または自動で解決できます。
 
 >[!NOTE]
 >
->デフォルトでは、未完了の実行の保存は無効になっています。有効にするには、シナリオの詳細設定で「[!UICONTROL Allow storing incomplete executions]」オプションを有効にします。
+>デフォルトでは、未完了の実行の保存は無効になっています。有効にするには、シナリオの詳細設定で「[!UICONTROL 未完了の実行の保存を許可]」オプションを有効にします。
 >
 >シナリオ設定について詳しくは、[ シナリオ設定の指定 ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md) を参照してください。
 
@@ -37,7 +37,7 @@ ht-degree: 56%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規： [!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td> <p>新規：[!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
@@ -50,7 +50,7 @@ ht-degree: 56%
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：組織は [!DNL Adobe Workfront Fusion] を購入する必要があります。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：[!DNL Adobe Workfront Fusion] を購入してください。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
    <p>または</p>
    <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
    </td> 
@@ -75,7 +75,7 @@ ht-degree: 56%
 
 ## 未完了の実行を表示
 
-モジュールの処理中にエラーが発生した場合、新しい未完了の実行が「未完了の実行」フォルダーに追加されます。未完了の実行にはそれぞれ、シナリオのブループリントと、失敗したモジュールにマッピングできるすべてのバンドルが含まれます。不完全な実行のリストは、シナリオの詳細ページの「[!UICONTROL Incomplete Executions]」タブをクリックすると開くことができます。
+モジュールの処理中にエラーが発生した場合、新しい未完了の実行が「未完了の実行」フォルダーに追加されます。未完了の実行にはそれぞれ、シナリオのブループリントと、失敗したモジュールにマッピングできるすべてのバンドルが含まれます。不完全な実行のリストを開くには、シナリオの詳細ページの「[!UICONTROL  不完全な実行 ]」タブをクリックします。
 
 <!--
 
@@ -99,25 +99,30 @@ ht-degree: 56%
 新しい未完了の実行が保存された場合、次のように解決できます。
 
 1. 該当するシナリオを開きます。
-1. 「**[!UICONTROL Incomplete Executions]**」タブをクリックします。
-1. 解決する不完全な実行を見つけて、「解 **[!UICONTROL Details]**」をクリックします。
+1. 「**[!UICONTROL 未完了の実行]**」タブをクリックします。
+1. 解決したい不完全な実行を見つけて、「**[!UICONTROL 詳細]**」をクリックします。
+1. モジュールのログを開くと、モジュールのすべての操作が表示されます。
+1. 失敗した操作を見つけ、「**[!UICONTROL 解決]**」をクリックします。
+
+   ![ 解決ボタン ](assets/resolve-btn-350x188.png)
+
 
 
 ## 「履歴」タブからの不完全な実行の解決
 
-不完全な実行を解決する前に、すべてのモジュールの操作のログを確認する場合は、[!UICONTROL History] フォルダーで不完全な実行を解決できます。
+未完了の実行を解決しようとする前に、すべてのモジュールの操作のログを確認したい場合は、「[!UICONTROL 履歴]」フォルダーから未完了の実行を解決できます。
 
 1. 該当するシナリオを開きます。
-1. 「**[!UICONTROL History]**」タブをクリックします。
-1. シナリオの失敗した実行を見つけて、「**[!UICONTROL Details]**」をクリックします。
+1. 「**[!UICONTROL 履歴]**」タブをクリックします。
+1. シナリオの失敗した実行を見つけ、「**[!UICONTROL 詳細]**」をクリックします。
 1. モジュールのログを開くと、モジュールのすべての操作が表示されます。
-1. 失敗した操作を見つけて、「**[!UICONTROL Resolve]**」をクリックします。
+1. 失敗した操作を見つけ、「**[!UICONTROL 解決]**」をクリックします。
 
    ![ 解決ボタン ](assets/resolve-btn-350x188.png)
 
 ## 未完了の実行に関連するオプション
 
-[!UICONTROL Scenario settings] パネルの次のオプションでは、不完全な実行を保存するかどうかと、どのように保存するかを決定します。
+[!UICONTROL シナリオ設定]パネルの次のオプションは、未完了の実行を保存するかどうかと、その方法を決定します。
 
 * 未完了の実行の保存を許可
 * 順次処理
@@ -136,6 +141,20 @@ ht-degree: 56%
 
 他のモジュールでエラーが発生し、エラーハンドラールートが添付されていない場合は、次のいずれかが発生します。
 
-* エラータイプが `ConnectionError`、`RateLimitError`、`OutOfSpaceError`、または `ModuleTimeoutError` の場合、自動再試行付きの未完了の実行レコードが保存されます。
-* エラータイプが `DataError`、`InvalidConfigurationError`、`InvalidAccessTokenError`、`UnexpectedError`、`MaxFileSizeExceededError`、または `MaxResultsExceededError` の場合、自動再試行なしの未完了の実行レコードが保存されます。
+* 自動再試行付きの不完全な実行レコードは、次のエラータイプで保存されます。
+
+   * `ConnectionError`
+   * `RateLimitError`
+   * `OutOfSpaceError`
+   * `ModuleTimeoutError`
+
+* 自動再試行を使用しない不完全な実行レコードは、次のエラータイプで保存されます。
+
+   * `DataError`
+   * `InvalidConfigurationError`
+   * `InvalidAccessTokenError`
+   * `UnexpectedError`
+   * `MaxFileSizeExceededError`
+   * `MaxResultsExceededError`
+
 * エラータイプが上記以外の場合、実行は失敗します。

@@ -4,10 +4,10 @@ description: 作業の自動化には高速な処理が必要  [!DNL Adobe Workf
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 1253470a23a2a9124824d5ab1ff2b5013d773517
+source-git-commit: 391675882c9f8c4e8f66e3b63da3e878c413d031
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 57%
+source-wordcount: '904'
+ht-degree: 56%
 
 ---
 
@@ -22,6 +22,8 @@ ht-degree: 57%
 ## シナリオ
 
 * デフォルトのシナリオ実行タイムアウトは、**40 分**&#x200B;です。実行がこのタイムアウトに達したら、[!DNL Workfront Fusion] はシナリオに応じて、次のサイクルの後、または操作の後にシナリオの実行を中断します。これにより、40 分の制限に達した直後にシナリオが強制的に停止します
+
+  シナリオの連鎖は、シナリオ実行タイムアウトに対してカウントされません。 親シナリオは、子シナリオの実行を待機している間、時間が経過することはありません。
 * シナリオのブループリントの最大サイズは **5 MB** ですが、シナリオのサイズは **3 MB** 以下にすることをお勧めします。
 
   多数のフィールドを持つデータを作成または更新するアプリモジュールは、非常に大きなブループリントが発生する可能性があります。
