@@ -5,7 +5,7 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 12315eca71d8febf7f3e5bb055d94cd5ccb9361e
+source-git-commit: 81b711d4793138deaffd00950667bdb75d634a90
 workflow-type: tm+mt
 source-wordcount: '34'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 現時点では、利用可能な MCP モジュールはありません。
 
-<!--
+<!-- SET UP REDIRECTS
 
 Model Context Protocol (MCP) is a way to securely connect AI language models with other applications. You configure MCP servers, which allow the AI model to access the application. You can then send a prompt to the AI model, and it can return information from the application.
 
