@@ -4,10 +4,10 @@ description: 作業の自動化には高速な処理が必要  [!DNL Adobe Workf
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 391675882c9f8c4e8f66e3b63da3e878c413d031
+source-git-commit: bebb30132a2cce66037f243563d61939625ea59d
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 56%
+source-wordcount: '926'
+ht-degree: 54%
 
 ---
 
@@ -92,3 +92,7 @@ ht-degree: 56%
 * **シナリオが再帰を引き起こしている場合、パフォーマンスの問題がさらに発生するのを防ぐために、Fusion エンジニアリングチームによって非アクティブ化されます。**
 * 再帰はシナリオの設計の結果なので、シナリオをトリガーにするアクションがシナリオに含まれないようにシナリオを設計する必要があります。
 
+## TLS
+
+* Fusion は現在、デフォルトで TLS バージョン 1.2 をサポートしています。
+* 組織は、Fusion インスタンスに対して TLS バージョン 1.3 を有効にするようリクエストできます。
