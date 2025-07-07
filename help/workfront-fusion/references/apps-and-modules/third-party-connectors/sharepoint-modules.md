@@ -4,9 +4,9 @@ description: 1 つのシナリオで  [!DNL Adobe Workfront Fusion] 、Microsoft
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: 2bd3a9ba84182307af9349163db284514dd12aca
+source-git-commit: b6997c2b160307489322fb6ede445336ef8bd85e
 workflow-type: tm+mt
-source-wordcount: '3393'
+source-wordcount: '3383'
 ht-degree: 57%
 
 ---
@@ -95,7 +95,7 @@ SharePoint コネクタでは、以下を使用します。
 * [詳細設定を使用して  [!DNL Workfront Fusion] Microsoft SharePoint Onlineのへの接続](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [証明書認証を使用して  [!DNL Workfront Fusion] Microsoft SharePoint Onlineをに接続する](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 
-### [!DNL Microsoft] アカウントを使用したMicrosoft SharePoint Onlineの [!DNL Workfront Fusion] への接続
+### [!DNL Workfront Fusion] アカウントを使用したMicrosoft SharePoint Onlineの [!DNL Microsoft] への接続
 
 [!DNL Microsoft] アカウントを使用して、Microsoft SharePoint Onlineへの接続を作成できます。 [!DNL Sharepoint] アカウントを [!DNL Workfront Fusion] に接続する手順については、[ [!DNL Adobe Workfront Fusion]  への接続の作成 - 基本手順](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)を参照してください。
 
@@ -130,10 +130,6 @@ SharePoint コネクタでは、以下を使用します。
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL テナント ID]</p> </td> 
       <td>接続先のSharePoint アプリケーションのテナント ID を入力します。</td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Instance]</p> </td> 
-      <td> <p><code>https://</code>を付けずに[!DNL ServiceNow]アカウントのアドレスを入力します（通常は<code>&lt;company>.service-now.com</code>）。</p> </td> 
      </tr> 
     </tbody> 
    </table>
@@ -171,7 +167,7 @@ SharePoint コネクタでは、以下を使用します。
       <td>接続先のSharePoint アプリケーションのクライアント ID を入力します。 </td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL 拇印 &#x200B;]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL 拇印 ]</p> </td> 
       <td>接続先のSharePoint アプリケーションの拇印を入力します。</td> 
      </tr> 
       <tr>
@@ -332,7 +328,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
 
 ### 項目
 
-* [[!UICONTROL &#x200B; 項目をコピー &#x200B;]](#copy-an-item)
+* [[!UICONTROL  項目をコピー ]](#copy-an-item)
 * [[!UICONTROL 項目の作成]](#create-an-item)
 * [[!UICONTROL 項目の削除]](#delete-an-item)
 * [[!UICONTROL 項目の取得]](#get-an-item)
@@ -342,7 +338,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
 * [[!UICONTROL 項目の監視]（予定）](#watch-items-scheduled)
 
 
-#### [!UICONTROL &#x200B; 項目をコピー &#x200B;]
+#### [!UICONTROL  項目をコピー ]
 
 このアクションモジュールは、SharePoint リスト内の既存の項目をコピーします。
 
@@ -599,7 +595,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Add Columns]</td> 
-   <td>新しいリストに設定する列ごとに、[<b> 項目の追加 </b>] をクリックし、フィールドに <strong>[!UICONTROL 名 &#x200B;]</strong> を入力して、新しい列に設定する値の <strong>[!UICONTROL 型 &#x200B;]</strong> を選択します。</td> 
+   <td>新しいリストに設定する列ごとに、[<b> 項目の追加 </b>] をクリックし、フィールドに <strong>[!UICONTROL 名 ]</strong> を入力して、新しい列に設定する値の <strong>[!UICONTROL 型 ]</strong> を選択します。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -671,7 +667,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
    <td>作成時刻（新しい項目）または変更時刻（更新された項目）のどちらでリストを監視するかを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL サイト ID の入力 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL サイト ID の入力 ]</td> 
    <td> <p>リストで監視するサイトの識別方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>リストを監視する場所に <strong>[!UICONTROL サイト ID]</strong> 入力するかマップします。</p> </li> 
