@@ -4,10 +4,10 @@ description: 作業の自動化には高速な処理が必要  [!DNL Adobe Workf
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: bebb30132a2cce66037f243563d61939625ea59d
+source-git-commit: 784516c1282f318a46b32c803064d869cc116790
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 54%
+source-wordcount: '968'
+ht-degree: 52%
 
 ---
 
@@ -95,4 +95,9 @@ ht-degree: 54%
 ## TLS
 
 * Fusion は現在、デフォルトで TLS バージョン 1.2 をサポートしています。
+* Fusion は、宛先サービスで TLS 1.3 が有効になっている場合、送信 HTTPS リクエストに TLS 1.3 を使用できます。
 * 組織は、Fusion インスタンスに対して TLS バージョン 1.3 を有効にするようリクエストできます。
+
+>[!NOTE]
+>
+> Workfrontに接続する場合、`https://<domain>.my.workfront.com` の形式を持つドメインへの呼び出しに対して、この TLS 機能がWorkfrontで有効になっていることに注意してください。
