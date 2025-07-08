@@ -4,10 +4,10 @@ description: 作業の自動化には高速な処理が必要  [!DNL Adobe Workf
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 784516c1282f318a46b32c803064d869cc116790
+source-git-commit: 74324fd5f2f68dfbbd0dfe1286c202c246f29d43
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 52%
+source-wordcount: '982'
+ht-degree: 51%
 
 ---
 
@@ -96,6 +96,7 @@ ht-degree: 52%
 
 * Fusion は現在、デフォルトで TLS バージョン 1.2 をサポートしています。
 * Fusion は、宛先サービスで TLS 1.3 が有効になっている場合、送信 HTTPS リクエストに TLS 1.3 を使用できます。
+* Fusion は、Webhook への受信 HTTPS リクエストに対して、TLS 1.2 と TLS 1.3 の両方をサポートしています。
 * 組織は、Fusion インスタンスに対して TLS バージョン 1.3 を有効にするようリクエストできます。
 
 >[!NOTE]
