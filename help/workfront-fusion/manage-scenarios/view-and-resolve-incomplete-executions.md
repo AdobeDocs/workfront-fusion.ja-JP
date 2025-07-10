@@ -4,10 +4,10 @@ description: 「[!UICONTROL 未完了の実行]」フォルダーには、エラ
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-source-git-commit: ad304117fb6e9d1320b8e50d71a162609dc6e6f4
+source-git-commit: f2ddf62d660c4709f1e7e59c4302cde5b062725f
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 69%
+source-wordcount: '662'
+ht-degree: 63%
 
 ---
 
@@ -75,7 +75,7 @@ ht-degree: 69%
 
 ## 未完了の実行を表示
 
-モジュールの処理中にエラーが発生した場合、新しい未完了の実行が「未完了の実行」フォルダーに追加されます。未完了の実行にはそれぞれ、シナリオのブループリントと、失敗したモジュールにマッピングできるすべてのバンドルが含まれます。不完全な実行のリストを開くには、シナリオの詳細ページの「[!UICONTROL &#x200B; 不完全な実行 &#x200B;]」タブをクリックします。
+モジュールの処理中にエラーが発生した場合、新しい未完了の実行が「未完了の実行」フォルダーに追加されます。未完了の実行にはそれぞれ、シナリオのブループリントと、失敗したモジュールにマッピングできるすべてのバンドルが含まれます。不完全な実行のリストを開くには、シナリオの詳細ページの「[!UICONTROL  不完全な実行 ]」タブをクリックします。
 
 <!--
 
@@ -87,9 +87,11 @@ ht-degree: 69%
 
 >[!NOTE]
 >
->組織ごとの未解決の未完了の実行フォルダーに対する現在のサイズ制限は 500 MB です。組織がこの制限を超えると、次のエラーが表示される場合があります。
+>シナリオごとの未解決の不完全な実行フォルダーの現在のサイズ制限は 10 MB です。 シナリオがこの制限を超えると、次のエラーが発生する場合があります。
 >
->`"There is NOT ENOUGH SPACE to add a bundle to the IEQ. The reason is: Too many incomplete executions."`
+>`DLQ limit per scenario has been exceeded`
+>
+>未解決の不完全な実行はすべて、チームが合計 500 MB に制限されます。
 >
 >詳しくは、「シナリオの設定」の [ データ損失の有効化 ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable-data-loss) を参照してください。
 
