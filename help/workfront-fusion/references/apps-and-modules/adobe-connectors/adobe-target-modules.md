@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion] シナリオ内で、 [!DNL Adobe T
 author: Becky
 feature: Workfront Fusion
 exl-id: f3c1ed7b-b69b-478a-8240-1a2ab89e11e5
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
 workflow-type: tm+mt
-source-wordcount: '2261'
-ht-degree: 83%
+source-wordcount: '2259'
+ht-degree: 82%
 
 ---
 
@@ -238,30 +238,30 @@ Adobe Target コネクタでは、以下を使用します。
           <p><a href="#offer-fields" class="MCXref xref" >オファーフィールド</a>に進みます。</p>
         </li>
         <li>
-          <b>[!UICONTROL オファーコンテンツ &#x200B;]</b>
+          <b>[!UICONTROL オファーコンテンツ ]</b>
           <p><a href="#offer-fields" class="MCXref xref" >オファーフィールド</a>に進みます。</p>
         </li>
         <li>
         <b> 環境 </b><p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Environments/operation/createEnvironment"> 環境の作成 </a> を参照してください。</p>
         </li>
         <li>
-          <b>[!UICONTROL オーディエンス &#x200B;]</b>
+          <b>[!UICONTROL オーディエンス ]</b>
           <p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Audiences/operation/createAudience_1_1"> オーディエンスの作成 </a> を参照してください。</p>
         </li>
         <li>
-          <b>[!UICONTROL AB アクティビティ &#x200B;]</b>
+          <b>[!UICONTROL AB アクティビティ ]</b>
           <p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Activities/operation/createActivity_4_1">AB アクティビティを作成 </a> を参照してください。</p>
         </li>
         <li>
-          <b>[!UICONTROL XT アクティビティ &#x200B;]</b>
+          <b>[!UICONTROL XT アクティビティ ]</b>
           <p><a href="#xt-activity-fields" class="MCXref xref" >XT アクティビティフィールド</a>に進みます。</p>
         </li>
         <li>
-          <b>[!UICONTROL AP アクティビティ &#x200B;]</b>
+          <b>[!UICONTROL AP アクティビティ ]</b>
           <p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Activities/operation/createActivity_2">AP アクティビティの作成 </a> を参照してください。</p>
         </li>
         <li>
-          <b>[!UICONTROL 応答トークン &#x200B;]</b>
+          <b>[!UICONTROL 応答トークン ]</b>
           <p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Response-tokens/operation/createResponseToken"> 応答トークンの作成 </a> を参照してください。</p>
         </li>
       </ul>
@@ -868,7 +868,7 @@ Adobe Target コネクタでは、以下を使用します。
        </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL フィールド名 &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL フィールド名 ]</td>
       <td>更新するフィールドを選択します。 フィールドが下に表示されます。
           <p>フィールドについて詳しくは、<a href="https://developer.adobe.com/target/administer/admin-api/">Adobe Target API ドキュメント </a> を参照してください。</p>
       </td>
@@ -907,14 +907,14 @@ Adobe Target コネクタでは、以下を使用します。
       <td role="rowheader">[!UICONTROL Starts At]</td>
       <td>
         <p>レコードを取得する最も早い日付を入力します。 </p>
-        <p>サポートされる日付と時刻の形式のリストについて詳しくは、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> での型強制を参照してください。</p>
+        <p>サポートされる日付と時刻の形式の一覧については、「<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref"> 型強制 </a>」を参照してください。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Ends At]</td>
       <td>
         <p>レコードを取得する最新の日付を入力します。 </p>
-        <p>サポートされる日付と時刻の形式のリストについて詳しくは、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> での型強制を参照してください。</p>
+        <p>サポートされる日付と時刻の形式の一覧については、「<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref"> 型強制 </a>」を参照してください。</p>
       </td>
     </tr>
   </tbody>

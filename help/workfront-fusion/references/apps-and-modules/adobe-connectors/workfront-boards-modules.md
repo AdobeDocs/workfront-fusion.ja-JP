@@ -4,10 +4,10 @@ description: Adobe Workfront Boards コネクタを使用すると、Workfront B
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
 workflow-type: tm+mt
-source-wordcount: '2869'
-ht-degree: 17%
+source-wordcount: '2868'
+ht-degree: 16%
 
 ---
 
@@ -178,7 +178,7 @@ Workfront ボードモジュールを設定すると、以下に示 [!DNL Workfr
    <td>チェックリスト項目を追加するカードの ID を入力またはマッピングします<p>Workfrontでカードを表示すると、URL にカード ID が表示されます。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL チェックリスト項目 &#x200B;]</td> 
+   <td>[!UICONTROL チェックリスト項目 ]</td> 
    <td>追加するチェックリスト項目ごとに、「項目を追加」をクリックし、チェックリスト項目の名前を入力して、項目が完了したかどうかを選択します。</p></td> 
   </tr> 
  </tbody> 
@@ -263,7 +263,7 @@ Workfrontのボード上に新しいカードを作成します。
    <td>カードの移動先の列の ID を入力またはマッピングします。<p>列 ID は、ボードを読み取りモジュールから返される情報で見つけることができます。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL からインデックスへ &#x200B;]</td> 
+   <td>[!UICONTROL からインデックスへ ]</td> 
    <td>新しい列にカードを配置する位置を入力またはマップします。<p>インデックス 0 の列の一番上の位置。</p></td> 
   </tr> 
  </tbody> 
@@ -327,7 +327,7 @@ Workfrontのボード上に新しいカードを作成します。
   <tr> 
    <td>[!UICONTROL Due date]</td> 
    <td>このカードの期日を入力またはマッピングします。</p>
-   <p>サポートされる日付と時刻の形式の一覧については、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">型強制：[!DNL Adobe Workfront Fusion]</a> を参照してください。</p>
+   <p>サポートされる日付と時刻の形式の一覧については、「<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref"> 型強制 </a>」を参照してください。</p>
    </td> 
   </tr> 
   <tr> 
@@ -355,7 +355,7 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
       <td> <p>既存のWorkfront接続を使用してWorkfront Boards に接続することも、特定のWorkfront Boards 接続を使用することもできます。 </p><p>[!DNL Workfront] アプリを [!DNL Workfront Fusion] に接続する手順については、こちらの <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront ボードへの接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL ボード名 &#x200B;]</td> 
+   <td>[!UICONTROL ボード名 ]</td> 
    <td>新しいボードの名前を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
@@ -411,7 +411,7 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
    <td>更新する列の ID を入力またはマッピングします。<p>列 ID は、ボードを読み取りモジュールから返される情報で見つけることができます。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 列名 &#x200B;]</td> 
+   <td>[!UICONTROL 列名 ]</td> 
    <td>列の新しい名前を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -434,7 +434,7 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
    <td>取得する列を含むボードの ID を入力またはマッピングします。<p>Workfrontでボードを表示する際に、URL にボード ID が含まれています。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 列名 &#x200B;]</td> 
+   <td>[!UICONTROL 列名 ]</td> 
    <td>取得する列の名前を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -457,11 +457,11 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
    <td>取得する列を含むボードの ID を入力またはマッピングします。<p>Workfrontでボードを表示する際に、URL にボード ID が含まれています。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 列名 &#x200B;]</td> 
+   <td>[!UICONTROL 列名 ]</td> 
    <td>取得する列の名前を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL の WIP 制限 &#x200B;]</td> 
+   <td>[!UICONTROL の WIP 制限 ]</td> 
    <td>列の新しい WIP 制限を入力またはマップします。</td> 
   </tr> 
  </tbody> 
@@ -516,11 +516,11 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
    <td>タグを作成するボードの ID を入力またはマッピングします。<p>Workfrontでボードを表示する際に、URL にボード ID が含まれています。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL タグ名 &#x200B;]</td> 
+   <td>[!UICONTROL タグ名 ]</td> 
    <td>新しいタグの名前を入力またはマッピングします。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL タグの色 &#x200B;]</td> 
+   <td>[!UICONTROL タグの色 ]</td> 
    <td>このタグのカラーを選択します。</td> 
   </tr> 
  </tbody> 
@@ -639,11 +639,11 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
    <td> <p>API 呼び出しのクエリを標準 JSON オブジェクトの形式で追加します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 操作名 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 操作名 ]</td> 
    <td> <p>この操作の名前を入力します。 これにより、呼び出しのトレースとデバッグが容易になります。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 変数のデータ ソース &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 変数のデータ ソース ]</td> 
    <td> <p>変数をフォームから取得するか、コレクションから取得するかを選択します。</p> </td> 
   </tr> 
   <tr> 

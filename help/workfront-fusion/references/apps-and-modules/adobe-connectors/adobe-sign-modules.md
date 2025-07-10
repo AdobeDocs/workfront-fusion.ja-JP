@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Acrobat Sign]  モジュールを使用すると、 [
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
+source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
 workflow-type: tm+mt
-source-wordcount: '6666'
-ht-degree: 97%
+source-wordcount: '6664'
+ht-degree: 96%
 
 ---
 
@@ -264,7 +264,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
      <li> <p><b>[!UICONTROL Sharing mode]</b> </p> <p>ライブラリドキュメントへのアクセス権を持つユーザーを指定します。</p> </li> 
      <li> <p><b>[!UICONTROL Library document state]</b> </p> <p>ドキュメントがオーサリング状態かアクティブ状態かを選択します。</p> </li> 
      <li> <p><b>[!UICONTROL Library template type]</b> </p> <p>使用するライブラリテンプレートタイプごとに、「<b>[!UICONTROL Add item]</b>」をクリックし、テンプレートタイプを選択します。</p> </li> 
-     <li> <p><b>[!UICONTROL Last event date]</b> </p> <p>ライブラリドキュメントでイベントが発生した最後の日付を入力します。</p> <p>サポートされる日付と時刻の形式の一覧については、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> での型強制を参照してください。</p> </li> 
+     <li> <p><b>[!UICONTROL Last event date]</b> </p> <p>ライブラリドキュメントでイベントが発生した最後の日付を入力します。</p> <p>サポートされる日付と時刻の形式の一覧については、「<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref"> 型強制 </a>」を参照してください。</p> </li> 
      <li> <p><b>[!UICONTROL Library document status]</b> </p> <p>ライブラリドキュメントのステータスを選択します。</p> </li> 
     </ul> </td> 
   </tr> 
@@ -595,7 +595,7 @@ Adobe Acrobat Sign コネクタでは、以下を使用します。
         <ul> 
          <li> <p><b>[!UICONTROL Email]</b> </p> <p>新しく作成された web フォームを受け取るユーザーのメールアドレスを入力します。</p> </li> 
          <li> <p><b>[!UICONTROL Comment]</b> </p> <p>API 呼び出し元が署名者の ID を確立する方法を説明するコメントを入力します。この情報は、[!DNL Adobe Acrobat Sign] 監査証跡に表示されます。</p> </li> 
-         <li> <p><b>[!UICONTROL Expiration]</b> </p> <p>この web フォームのパーソナライズ機能の有効期限を入力します。 </p> <p>サポートされる日付と時刻の形式の一覧については、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion]</a> での型強制を参照してください。</p> </li> 
+         <li> <p><b>[!UICONTROL Expiration]</b> </p> <p>この web フォームのパーソナライズ機能の有効期限を入力します。 </p> <p>サポートされる日付と時刻の形式の一覧については、「<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override=""> 型強制 </a>」を参照してください。</p> </li> 
          <li> <p><b>[!UICONTROL Reusable]</b> </p> <p>対象の署名者が複数回フォームに署名できるようにする場合は、「<b>[!UICONTROL Yes]</b>」を選択します。</p> </li> 
         </ul> </li> 
       </ul> </li> 

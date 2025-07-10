@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion]  シナリオ内では、Trello を
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
 workflow-type: tm+mt
-source-wordcount: '5217'
-ht-degree: 74%
+source-wordcount: '5213'
+ht-degree: 73%
 
 ---
 
@@ -248,14 +248,14 @@ Trello コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Background ID]</td> 
-   <td> <p> [!UICONTROL 背景 &#x200B;] フィールドでカスタム背景を使用することを選択した場合は、使用する背景の ID を入力またはマッピングします。</p> </td> 
+   <td> <p> [!UICONTROL 背景 ] フィールドでカスタム背景を使用することを選択した場合は、使用する背景の ID を入力またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Card aging]</p> </td> 
    <td> <p>カードの期間経過を表す 2 つのモードから選択します。 </p> 
     <ul> 
-     <li><strong>[!UICONTROL 海賊モード &#x200B;]</strong>：年老いた海賊の地図のように、カードが裂け、黄色くなり、ひび割れます。</li> 
-     <li><strong>[!UICONTROL 標準モード &#x200B;]</strong>: カードは、古くなるにつれて徐々に透明になります。 </li> 
+     <li><strong>[!UICONTROL 海賊モード ]</strong>：年老いた海賊の地図のように、カードが裂け、黄色くなり、ひび割れます。</li> 
+     <li><strong>[!UICONTROL 標準モード ]</strong>: カードは、古くなるにつれて徐々に透明になります。 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -270,95 +270,95 @@ Trello コネクタでは、以下を使用します。
 >[!SUCCESS]
 >
 ><table style="table-layout:auto">
-><col> 
-> <col> 
-> <tbody> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Connection] </td> 
->   <td> <p>[!UICONTROL Trello] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Board ID]</p> </td> 
->   <td> <p>モジュールで作成するボードの一意の [!UICONTROL Trello] ID を入力またはマッピングします。Watch Boards モジュールなどの別のモジュールを使用してボード ID を取得できます。</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/watch-boards.png"> </p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL New name]</td> 
->   <td> <p> ボードの新しい名前を入力またはマッピングします。</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL New description]</td> 
->   <td> <p> 新しいボードの説明を入力またはマッピングします。</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Organization ID]</p> </td> 
->   <td> <p>モジュールを編集するボードの一意の [!UICONTROL Trello] ID を入力またはマップします。  </p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Subscribe] </td> 
->   <td> <p>このモジュールで使用される接続を所有するユーザーがボードを購読するかどうかを指定するオプションを選択します。</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Permission level]</p> </td> 
->   <td> <p>ボードには、権限レベルごとに異なる投票ルールおよびコメントルールがあります。例えば、ボードが [!UICONTROL Private] で、投票ルールとコメントルールを [!UICONTROL All] として設定した場合、エラーが発生します。 </p> <p>投票とコメントは、権限レベルごとに次のグループに制限されます。</p> 
->    <ul> 
->     <li><strong>[!UICONTROL Private]</strong>: 
->      メンバー、メンバー、監視者</li> 
->     <li><strong>[!UICONTROL For Organization]</strong>: 
->      メンバー、メンバーおよびオブザーバー、組織メンバー</li> 
->     <li><strong>[!UICONTROL Public]</strong>: 
->      メンバー、メンバーおよびオブザーバー、組織メンバー、すべて</li> 
->    </ul> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Voting]</p> </td> 
->   <td> <p>このボードで投票できるユーザーを、オプションを選択して指定します。権限レベルでの投票の制限については、「[!UICONTROL Permission level]」フィールドを参照してください。</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Comments]</p> </td> 
->   <td> <p>このボードのカードにコメントできるユーザーを、オプションを選択して指定します。権限レベルでのコメントの制限については、「[!UICONTROL Permission level]」フィールドを参照してください。</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Invitations] </td> 
->   <td> <p>このボードにユーザーを招待できる担当者を選択します。</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Self-join]</td> 
->   <td> <p> チームメンバーが自分でボードに参加できるか、招待される必要があるかを選択します。</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Card covers]</td> 
->   <td> <p> このボードにカードの表紙を表示するかどうかを選択します。</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Background] </td> 
->   <td> <p>背景のカラーまたはカスタム背景を選択します。</p> <p>メモ：カスタム背景は、[!UICONTROL Trello Gold and Business Class] のサブスクライバーのみが使用できます。</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Background ID]</td> 
->   <td> <p> [!UICONTROL 背景 &#x200B;] フィールドでカスタム背景を使用することを選択した場合は、使用する背景の ID を入力またはマッピングします。</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Card aging]</p> </td> 
->   <td> <p>カードの期間経過を表す 2 つのモードから選択します。 </p> 
->    <ul> 
->     <li><strong>[!UICONTROL 海賊モード &#x200B;]</strong>：年老いた海賊の地図のように、カードが裂け、黄色くなり、ひび割れます。</li> 
->     <li><strong>[!UICONTROL 標準モード &#x200B;]</strong>: カードは、古くなるにつれて徐々に透明になります。 </li> 
->    </ul> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Calendar feed enabled]</td> 
->   <td> <p> カレンダーフィードを有効にするかどうかを選択します。</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL &lt;Color&gt; label name]</td> 
->   <td> <p> 目的のカラーラベルに名前を割り当てます。</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Archive] </td> 
->   <td> <p>ボードをアーカイブする（閉じる）かどうかを示すオプションを選択します。 </p> </td> 
->  </tr> 
-> </tbody> 
-></table>
+<col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>[!UICONTROL Trello] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Board ID]</p> </td> 
+   <td> <p>モジュールで作成するボードの一意の [!UICONTROL Trello] ID を入力またはマッピングします。Watch Boards モジュールなどの別のモジュールを使用してボード ID を取得できます。</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/watch-boards.png"> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL New name]</td> 
+   <td> <p> ボードの新しい名前を入力またはマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL New description]</td> 
+   <td> <p> 新しいボードの説明を入力またはマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Organization ID]</p> </td> 
+   <td> <p>モジュールを編集するボードの一意の [!UICONTROL Trello] ID を入力またはマップします。  </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Subscribe] </td> 
+   <td> <p>このモジュールで使用される接続を所有するユーザーがボードを購読するかどうかを指定するオプションを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Permission level]</p> </td> 
+   <td> <p>ボードには、権限レベルごとに異なる投票ルールおよびコメントルールがあります。例えば、ボードが [!UICONTROL Private] で、投票ルールとコメントルールを [!UICONTROL All] として設定した場合、エラーが発生します。 </p> <p>投票とコメントは、権限レベルごとに次のグループに制限されます。</p> 
+    <ul> 
+     <li><strong>[!UICONTROL Private]</strong>: 
+      メンバー、メンバー、監視者</li> 
+     <li><strong>[!UICONTROL For Organization]</strong>: 
+      メンバー、メンバーおよびオブザーバー、組織メンバー</li> 
+     <li><strong>[!UICONTROL Public]</strong>: 
+      メンバー、メンバーおよびオブザーバー、組織メンバー、すべて</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Voting]</p> </td> 
+   <td> <p>このボードで投票できるユーザーを、オプションを選択して指定します。権限レベルでの投票の制限については、「[!UICONTROL Permission level]」フィールドを参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Comments]</p> </td> 
+   <td> <p>このボードのカードにコメントできるユーザーを、オプションを選択して指定します。権限レベルでのコメントの制限については、「[!UICONTROL Permission level]」フィールドを参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Invitations] </td> 
+   <td> <p>このボードにユーザーを招待できる担当者を選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Self-join]</td> 
+   <td> <p> チームメンバーが自分でボードに参加できるか、招待される必要があるかを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Card covers]</td> 
+   <td> <p> このボードにカードの表紙を表示するかどうかを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Background] </td> 
+   <td> <p>背景のカラーまたはカスタム背景を選択します。</p> <p>メモ：カスタム背景は、[!UICONTROL Trello Gold and Business Class] のサブスクライバーのみが使用できます。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Background ID]</td> 
+   <td> <p> [!UICONTROL 背景 ] フィールドでカスタム背景を使用することを選択した場合は、使用する背景の ID を入力またはマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Card aging]</p> </td> 
+   <td> <p>カードの期間経過を表す 2 つのモードから選択します。 </p> 
+    <ul> 
+     <li><strong>[!UICONTROL 海賊モード ]</strong>：年老いた海賊の地図のように、カードが裂け、黄色くなり、ひび割れます。</li> 
+     <li><strong>[!UICONTROL 標準モード ]</strong>: カードは、古くなるにつれて徐々に透明になります。 </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Calendar feed enabled]</td> 
+   <td> <p> カレンダーフィードを有効にするかどうかを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL &lt;Color&gt; label name]</td> 
+   <td> <p> 目的のカラーラベルに名前を割り当てます。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Archive] </td> 
+   <td> <p>ボードをアーカイブする（閉じる）かどうかを示すオプションを選択します。 </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 
 +++
@@ -691,7 +691,7 @@ Trello コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due date]</td> 
-   <td> <p> カードの期限を入力します。サポートされる日付と時刻の形式の一覧については、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> での型強制を参照してください。</p> </td> 
+   <td> <p> カードの期限を入力します。サポートされる日付と時刻の形式の一覧については、「<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref"> 型強制 </a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due complete]</td> 
@@ -763,7 +763,7 @@ Trello コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due date]</td> 
-   <td> <p> カードの期限を入力します。サポートされる日付と時刻の形式の一覧については、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> での型強制を参照してください。</p> </td> 
+   <td> <p> カードの期限を入力します。サポートされる日付と時刻の形式の一覧については、「<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref"> 型強制 </a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due complete]</td> 
@@ -1167,11 +1167,11 @@ Trello コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Since] </td> 
-   <td> <p>コメントが作成された期間の開始日を設定します。サポートされる日付と時刻の形式の一覧については、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> での型強制を参照してください。</p> </td> 
+   <td> <p>コメントが作成された期間の開始日を設定します。サポートされる日付と時刻の形式の一覧については、「<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref"> 型強制 </a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Before] </td> 
-   <td> <p>コメントが作成された期間の終了日を設定します。サポートされる日付と時刻の形式の一覧については、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> での型強制を参照してください。</p> </td> 
+   <td> <p>コメントが作成された期間の終了日を設定します。サポートされる日付と時刻の形式の一覧については、「<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref"> 型強制 </a>」を参照してください。</p> </td> 
   </tr> 
  </tbody> 
 </table>

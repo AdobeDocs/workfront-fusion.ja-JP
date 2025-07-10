@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Workfront Fusion]  シナリオの場合、Microsoft 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: d967cb62018fde6a76639a8f25ee5ca23f80cd8b
 workflow-type: tm+mt
 source-wordcount: '2637'
 ht-degree: 74%
@@ -137,10 +137,11 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
    <td> <p>モジュールでダウンロードするワークブックを識別する方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL By entering an ID manually]</strong> </p> <p>「[!UICONTROL Workbook ID]」フィールドに、モジュールでダウンロードする特定のワークブックの ID を入力またはマッピングします。</p> </li> 
-     <li> <p><strong>[!UICONTROL By selecting from the path]</strong> </p> <p>[!UICONTROL ワークブック &#x200B;] フィールドで、モジュールでダウンロードするワークブックを選択します。このワークブックのパスは、ルートフォルダーにない場合に含めます。</p> </li> 
+     <li> <p><strong>[!UICONTROL By selecting from the path]</strong> </p> <p>[!UICONTROL ワークブック ] フィールドで、モジュールでダウンロードするワークブックを選択します。このワークブックのパスは、ルートフォルダーにない場合に含めます。</p> </li> 
     </ul> </td> 
   </tr> 
- </tbody>
+ </tbody> 
+</table>
 
 #### [!UICONTROL ワークブックを検索]
 
@@ -504,7 +505,7 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
    <td> <p>[!DNL Office 365] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL テーブルを削除する &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL テーブルを削除する ]</td> 
    <td> <p>削除するテーブルを識別する方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>削除する表を含むワークブックの ID を入力またはマップしてから、表を含むワークシートの ID を入力またはマップします。</p> <p>[!UICONTROL Table Name] フィールドに、削除するテーブルの名前を入力またはマッピングします。</p> </li> 
