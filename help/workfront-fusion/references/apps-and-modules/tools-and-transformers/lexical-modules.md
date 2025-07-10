@@ -1,19 +1,20 @@
 ---
-title: Draft.js モジュール
-description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、Draft.js モジュールを使用して Draft.js をHTMLに変換し、HTMLを Draft.js に変換できます。'
+title: 語彙モジュール
+description: Adobe Workfront Fusion シナリオでは、辞書モジュールを使用して、辞書をHTMLに、HTMLを辞書に変換できます。
 author: Becky
 feature: Workfront Fusion
-exl-id: 0116e379-cef8-4036-875b-46ca79a9e94d
-source-git-commit: d8c40e310931e5901a5c5a2be2357b5021452bc2
+source-git-commit: 3c9392b35e5f68706d7e6837e330ee98796b8922
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 17%
+source-wordcount: '254'
+ht-degree: 14%
 
 ---
 
-# [!UICONTROL Draft.js] モジュール
+# 語彙モジュール
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、[!UICONTROL Draft.js] モジュールを使用して Draft.js をHTMLに変換し、HTMLを Draft.js に変換できます。 これをWorkfront モジュールと組み合わせて使用すると、Workfront フィールドにリッチテキストを追加したり、フィールドからリッチテキストを読み取ったりできます。
+<!-- ADD REDIRECTS -->
+
+Adobe Workfront Fusion シナリオでは、辞書モジュールを使用して、辞書をHTMLに、HTMLを辞書に変換できます。  これをWorkfront モジュールと組み合わせて使用すると、Workfront フィールドにリッチテキストを追加したり、フィールドからリッチテキストを読み取ったりできます。
 
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -56,13 +57,29 @@ ht-degree: 17%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
-## [!UICONTROL Draft.js からHTMLへ ]
+## HTMLから語彙へ
 
-このモジュールは Draft.js をHTMLに変換します。
+HTMLのコードを字句に変換します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">HTML</td> 
+   <td> <p>字句に変換するHTML コードを入力またはマッピングします。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+## HTMLに対する語彙
+
+このモジュールは Lexical をHTMLに変換します。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
@@ -71,23 +88,9 @@ ht-degree: 17%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Draft.js]</td> 
-   <td> <p>HTMLに変換する Draft.js テキストを入力するか、マッピングします。</p> </td> 
+   <td role="rowheader">語彙の</td> 
+   <td> <p>HTMLに変換する字句テキストを入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## [!UICONTROL HTMLから Draft.js へ ]
-
-このモジュールはHTML コードを Draft.js に変換します。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL HTML]</td> 
-   <td> <p>Draft.js に変換するHTML コードを入力するか、マッピングします。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
