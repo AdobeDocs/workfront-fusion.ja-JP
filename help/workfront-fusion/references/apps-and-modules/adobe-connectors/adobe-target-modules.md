@@ -238,30 +238,30 @@ Adobe Target コネクタでは、以下を使用します。
           <p><a href="#offer-fields" class="MCXref xref" >オファーフィールド</a>に進みます。</p>
         </li>
         <li>
-          <b>[!UICONTROL オファーコンテンツ ]</b>
+          <b>[!UICONTROL オファーコンテンツ &#x200B;]</b>
           <p><a href="#offer-fields" class="MCXref xref" >オファーフィールド</a>に進みます。</p>
         </li>
         <li>
         <b> 環境 </b><p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Environments/operation/createEnvironment"> 環境の作成 </a> を参照してください。</p>
         </li>
         <li>
-          <b>[!UICONTROL オーディエンス ]</b>
+          <b>[!UICONTROL オーディエンス &#x200B;]</b>
           <p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Audiences/operation/createAudience_1_1"> オーディエンスの作成 </a> を参照してください。</p>
         </li>
         <li>
-          <b>[!UICONTROL AB アクティビティ ]</b>
+          <b>[!UICONTROL AB アクティビティ &#x200B;]</b>
           <p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Activities/operation/createActivity_4_1">AB アクティビティを作成 </a> を参照してください。</p>
         </li>
         <li>
-          <b>[!UICONTROL XT アクティビティ ]</b>
+          <b>[!UICONTROL XT アクティビティ &#x200B;]</b>
           <p><a href="#xt-activity-fields" class="MCXref xref" >XT アクティビティフィールド</a>に進みます。</p>
         </li>
         <li>
-          <b>[!UICONTROL AP アクティビティ ]</b>
+          <b>[!UICONTROL AP アクティビティ &#x200B;]</b>
           <p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Activities/operation/createActivity_2">AP アクティビティの作成 </a> を参照してください。</p>
         </li>
         <li>
-          <b>[!UICONTROL 応答トークン ]</b>
+          <b>[!UICONTROL 応答トークン &#x200B;]</b>
           <p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Response-tokens/operation/createResponseToken"> 応答トークンの作成 </a> を参照してください。</p>
         </li>
       </ul>
@@ -868,7 +868,7 @@ Adobe Target コネクタでは、以下を使用します。
        </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL フィールド名 ]</td>
+      <td role="rowheader">[!UICONTROL フィールド名 &#x200B;]</td>
       <td>更新するフィールドを選択します。 フィールドが下に表示されます。
           <p>フィールドについて詳しくは、<a href="https://developer.adobe.com/target/administer/admin-api/">Adobe Target API ドキュメント </a> を参照してください。</p>
       </td>
