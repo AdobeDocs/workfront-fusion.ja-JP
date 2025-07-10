@@ -60,7 +60,7 @@ ht-degree: 17%
 
 +++
 
-## [!UICONTROL Draft.js からHTMLへ ]
+## [!UICONTROL Draft.js からHTMLへ &#x200B;]
 
 このモジュールは Draft.js をHTMLに変換します。
 
@@ -77,7 +77,7 @@ ht-degree: 17%
  </tbody> 
 </table>
 
-## [!UICONTROL HTMLから Draft.js へ ]
+## [!UICONTROL HTMLから Draft.js へ &#x200B;]
 
 このモジュールはHTML コードを Draft.js に変換します。
 
