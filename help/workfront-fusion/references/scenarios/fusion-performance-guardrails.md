@@ -4,7 +4,7 @@ description: 作業の自動化には高速な処理が必要  [!DNL Adobe Workf
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: f2ddf62d660c4709f1e7e59c4302cde5b062725f
+source-git-commit: cf9e7def3ce406b693d22ff31f82571dd5eddd31
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 49%
@@ -73,7 +73,7 @@ ht-degree: 49%
 
 ## 不完全な実行
 
-* 不完全な実行は、シナリオごとの合計サイズが *10 MB**までに制限されています。 10 MB の制限に達した場合、そのシナリオで今後不完全な実行は保存されません。
+* 不完全な実行は、シナリオごとの合計サイズ **10 MB** に制限されます。 10 MB の制限に達した場合、そのシナリオで今後不完全な実行は保存されません。
 * 不完全な実行は、1 チームあたり合計 **500 MB** までに制限されています。 500 MB の制限に達した場合、そのチームで今後の不完全な実行は保存されません。
 
 ## 再試行
