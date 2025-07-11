@@ -4,10 +4,10 @@ description: 1 つのシナリオで  [!DNL Adobe Workfront Fusion] 、Microsoft
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: b6997c2b160307489322fb6ede445336ef8bd85e
+source-git-commit: 5af0b7ab4646502418f188854fdec43bcacc7549
 workflow-type: tm+mt
-source-wordcount: '3383'
-ht-degree: 57%
+source-wordcount: '3979'
+ht-degree: 51%
 
 ---
 
@@ -167,7 +167,7 @@ SharePoint コネクタでは、以下を使用します。
       <td>接続先のSharePoint アプリケーションのクライアント ID を入力します。 </td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL 拇印 &#x200B;]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL 拇印 ]</p> </td> 
       <td>接続先のSharePoint アプリケーションの拇印を入力します。</td> 
      </tr> 
       <tr>
@@ -221,6 +221,8 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
 * [ファイルを作成](#create-a-file)
 * [フォルダーを作成](#create-a-folder)
 * [ファイルの取得](#get-a-file)
+* [フォルダーの取得](#get-a-folder)
+* [フォルダーまたはファイルの更新](#update-a-folder-or-a-file)
 * [フォルダー項目の監視](#watch-folder-items)
 
 #### ファイルを作成
@@ -299,6 +301,56 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
 </tbody> 
 </table>
 
+#### フォルダーの取得
+
+このモジュールは、指定されたフォルダーに関する詳細を取得しました
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL サイト、ドライブ、およびファイルを入力                IDs]</td> 
+   <td> <p>取得するファイルの場所を特定する方法を選択します。</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>取得するフォルダーの <strong>[!UICONTROL サイト ID]</strong>、<strong>[!UICONTROL リスト ID]</strong>、および <strong>[!UICONTROL フォルダーパス ]</strong> を入力するか、マップします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>フォルダーの場所を選択します。 </p> </li> 
+    </ul> </td> 
+  </tr> 
+</tbody> 
+</table>
+
+#### フォルダーまたはファイルの更新
+
+フォルダーまたはファイルのメタデータを更新します
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL サイト、ドライブ、およびファイルを入力                IDs]</td> 
+   <td> <p>取得するファイルの場所を特定する方法を選択します。</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>取得するフォルダまたはファイルの <strong>[!UICONTROL サイト ID]</strong>、<strong>[!UICONTROL リスト ID]</strong>、および <strong>[!UICONTROL フォルダまたはアイテム ID]</strong> を入力またはマップします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>フォルダーの場所を選択します。 </p> </li> 
+    </ul> </td> 
+  </tr> 
+  </tr> 
+   <td role="rowheader">[!UICONTROL Fields]</td> 
+   <td>更新するメタデータフィールドごとに、「<b> 項目を追加 </b> をクリックし、フィールドのパスと値を入力します。</td> 
+  <tr>
+</tbody> 
+</table>
+
 #### フォルダー項目の監視
 
 このトリガーモジュールは、選択したフォルダー内の項目が更新されると、シナリオを開始します。
@@ -328,17 +380,18 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
 
 ### 項目
 
-* [[!UICONTROL &#x200B; 項目をコピー &#x200B;]](#copy-an-item)
+* [[!UICONTROL  項目をコピー ]](#copy-an-item)
 * [[!UICONTROL 項目の作成]](#create-an-item)
 * [[!UICONTROL 項目の削除]](#delete-an-item)
 * [[!UICONTROL 項目の取得]](#get-an-item)
+* [詳細を取得](#get-details)
 * [[!UICONTROL 項目のリスト]](#list-items)
-* [[!UICONTROL 項目の移動]](#move-an-item)
-* [[!UICONTROL 項目の更新]](#update-an-item)
+* [[!UICONTROL 項目を移動]](#move-an-item)
+* [[!UICONTROL  項目を更新 ]](#update-an-item)
 * [[!UICONTROL 項目の監視]（予定）](#watch-items-scheduled)
 
 
-#### [!UICONTROL &#x200B; 項目をコピー &#x200B;]
+#### [!UICONTROL  項目をコピー ]
 
 このアクションモジュールは、SharePoint リスト内の既存の項目をコピーします。
 
@@ -440,6 +493,25 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
     </ul> </td> 
   </tr> 
  </tbody> 
+</table>
+
+#### 詳細を取得
+
+このモジュールは、指定された URL から項目の詳細を取得します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Web URL</td> 
+   <td> 詳細を取得する項目の URL を入力またはマッピングします。 </td> 
+  </tr> 
+</tbody> 
 </table>
 
 #### [!UICONTROL 項目をリスト]
@@ -595,7 +667,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Add Columns]</td> 
-   <td>新しいリストに設定する列ごとに、[<b> 項目の追加 </b>] をクリックし、フィールドに <strong>[!UICONTROL 名 &#x200B;]</strong> を入力して、新しい列に設定する値の <strong>[!UICONTROL 型 &#x200B;]</strong> を選択します。</td> 
+   <td>新しいリストに設定する列ごとに、[<b> 項目の追加 </b>] をクリックし、フィールドに <strong>[!UICONTROL 名 ]</strong> を入力して、新しい列に設定する値の <strong>[!UICONTROL 型 ]</strong> を選択します。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -667,7 +739,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
    <td>作成時刻（新しい項目）または変更時刻（更新された項目）のどちらでリストを監視するかを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL サイト ID の入力 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL サイト ID の入力 ]</td> 
    <td> <p>リストで監視するサイトの識別方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>リストを監視する場所に <strong>[!UICONTROL サイト ID]</strong> 入力するかマップします。</p> </li> 
@@ -686,6 +758,11 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
 >[!NOTE]
 >
 >[!DNL Microsoft Graph] のバージョン `beta` の API は変更される場合があります。実稼動アプリケーションでのこれらの API の使用はサポートされていません。
+
+* [ページの取得](#get-a-page)
+* [リストページ](#list-pages)
+* [ページを公開](#publish-a-page)
+* [ページのウォッチ](#watch-pages)
 
 #### [!UICONTROL ページを取得]
 
@@ -706,6 +783,83 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p><strong>[!UICONTROL Site ID]</strong> および <strong>[!UICONTROL Page ID]</strong> を入力またはマッピングします。</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>取得するページを含むサイトを選択し、ページを選択します。</p> </li> 
     </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### リストページ
+
+このモジュールは、すべてのページのリストを取得します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL リスト ページ ]</td> 
+   <td> <p>リストするページの識別方法を選択します。</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>一覧表示するページを含むサイトの <strong>[!UICONTROL サイト ID]</strong> を入力するか、マップします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>リストするページを含むサイトを選択します。</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>各シナリオ実行サイクルでモジュールが返す最大ページ数を入力またはマッピングします。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### ページを公開
+
+このアクションモジュールは、選択したページの最新バージョンを公開します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ページを公開 ]</td> 
+   <td> <p>公開するページの識別方法を選択します。</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p><strong>[!UICONTROL Site ID]</strong> および <strong>[!UICONTROL Page ID]</strong> を入力またはマッピングします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>公開するページを含んだサイトを選択し、ページを選択します。</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### ページのウォッチ
+
+このトリガーモジュールは、指定したサイトでページが変更されたときにシナリオを開始します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL サイト ID の入力 ]</td> 
+   <td> <p>リストするページの識別方法を選択します。</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>監視するページを含むサイトの <strong>[!UICONTROL サイト ID]</strong> を入力するか、マップします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>ウォッチするページを含むサイトを選択します。</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>各シナリオ実行サイクルでモジュールが返す最大ページ数を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
