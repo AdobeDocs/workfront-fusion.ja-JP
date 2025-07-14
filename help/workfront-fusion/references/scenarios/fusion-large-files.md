@@ -4,9 +4,9 @@ description: 現在、Workfrontおよび HTTP コネクタでは大きなファ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: 0e69dfa23fc12cb20c3fed772d72ef348536ea24
+source-git-commit: a5a98d2e0b246d46389d4574e29f91c74f053472
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '1050'
 ht-degree: 3%
 
 ---
@@ -24,6 +24,11 @@ Workfront Fusion で強化されたデータ転送機能が使用できるよう
 ## 大きなファイルをサポートするコネクタ
 
 現在、次のコネクタは、大きなファイルをサポートしています。
+
+>[!NOTE]
+>
+>* 大きなファイルをサポートするモジュールを使用してファイルをダウンロードし、大きなファイルをサポートしないモジュールに渡した場合、そのモジュールはファイルを正常に処理できません。 大きなファイルは、ワークフロー全体でサポートされているモジュールでのみ処理する必要があります。
+>* 大きなファイルをサポートしないモジュールは、最大 200 MB のサイズのファイルを処理できます。
 
 * Workfront
    * ドキュメントのアップロード
