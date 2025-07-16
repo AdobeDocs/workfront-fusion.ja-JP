@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion の操作は、モジュールによって�
 author: Becky
 feature: Workfront Fusion
 exl-id: c14e2bb2-1cce-48ff-8bea-acc9829d3cf2
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3470f7a9658ac4e6214c27f94f5b41821f2f8665
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 78%
+source-wordcount: '352'
+ht-degree: 79%
 
 ---
 
@@ -20,7 +20,7 @@ Adobe Workfront Fusion の操作は、モジュールによって実行される
 * 一般的に、成功したアクションの手順の実行はすべて操作とみなします。
 * シナリオの最初のモジュールは 1 回だけ実行され、バンドルを返さない場合でも、常に 1 回の操作としてカウントされます。
 * 残りのモジュールが実行される回数は、処理する必要のあるバンドルの数によって異なります。1 つのバンドルに対するモジュールの 1 回の実行は、1 回の操作です。例外はアグリゲータモジュールで、処理されるバンドルのセットごとに 1 回の操作としてカウントされます。
-* 操作は、シナリオ実行の [!UICONTROL Finalization] の段階でカウントされます。
+* 操作は、シナリオ実行の[!UICONTROL 最終化]ステージでカウントされます。
 * 次は、操作としてカウント&#x200B;**されません**。
    * 任意のフィルター手順。
    * エラーまたは停止するアクション。
@@ -29,9 +29,16 @@ Adobe Workfront Fusion の操作は、モジュールによって実行される
 
 ## 操作の制限
 
-組織には月間の操作制限が設定されている場合があります。これは、組織が購入した [!DNL Workfront] プランに基づいています。[!UICONTROL Ultimate] [!DNL Workfront] プランでは、操作に制限はありません。
+組織には月間の操作制限が設定されている場合があります。これは、組織が購入した [!DNL Workfront] プランに基づいています。[!UICONTROL Ultimate] [!DNL Workfront] プランは無制限の操作を提供します。
 
 組織に 1 か月の上限がある場合は、組織が上限に近づくと通知されます。 組織が上限を超えた場合は、組織に連絡 [!DNL Workfront] て、プランがニーズを満たしていることを確認します。
+
+組織が 1 か月の上限について次の割合に達すると、Workfront Fusion は通知を送信します。
+
+* 50%
+* 75%
+* 90%
+* 100%
 
 ## 過去 30 日間に実行された操作数を表示
 
