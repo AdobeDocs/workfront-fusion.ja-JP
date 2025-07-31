@@ -4,18 +4,18 @@ description: ' [!DNL Adobe Workfront Fusion Frame].io modules enable you to moni
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: cc1ce10fccf159a0c17a3bba978d88c0d1013cbf
+source-git-commit: 7eaed8b6afd5de0d36c94605c9708d74b6ec8aa6
 workflow-type: tm+mt
-source-wordcount: '2936'
-ht-degree: 35%
+source-wordcount: '3471'
+ht-degree: 34%
 
 ---
 
-# [!DNL Frame.io] Beta（V4）モジュール
+# [!DNL Frame.io] V4 モジュール
 
 >[!IMPORTANT]
 >
->この記事では、Frame.io コネクタの新しい（ベータ版）バージョンについて説明します。 このコネクタは、Frame.io バージョン 4 への接続に使用します。
+>この記事では、Frame.io コネクタの新しいバージョンについて説明します。 このコネクタは、Frame.io バージョン 4 への接続に使用します。
 >
 >Frame.io コネクタのレガシーバージョンの手順については、[Frame.io レガシーコネクタ ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md) を参照してください。
 
@@ -25,7 +25,7 @@ Workfrontには、接続先の Frame.io のバージョンに基づく 2 つの 
 
 | コネクタ | Frame.io バージョン |
 |---|---|
-| Frame.io （Beta） | V4 |
+| Frame.io | V4 |
 | Frame.io （レガシー） | V3 |
 
 Frame.io コネクタのレガシーバージョンの手順については、[Frame.io レガシーコネクタ ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md) を参照してください。
@@ -162,7 +162,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
           </td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL リダイレクト URI パターン &#x200B;]</td>
+          <td role="rowheader">[!UICONTROL リダイレクト URI パターン ]</td>
           <td>
             <p><code>https://oauth\.app\.workfrontfusion\.com/oauth/cb/frame-io2</code></p>
           </td>
@@ -312,13 +312,14 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 
 ### アセット
 
-* [[!UICONTROL &#x200B; アセットの作成 &#x200B;]](#create-an-asset)
-* [[!UICONTROL &#x200B; アセットの削除 &#x200B;]](#delete-an-asset)
-* [[!UICONTROL &#x200B; アセットの取得 &#x200B;]](#get-an-asset)
-* [[!UICONTROL &#x200B; アセットのリスト &#x200B;]](#list-assets)
-* [[!UICONTROL &#x200B; アセットの更新 &#x200B;]](#update-an-asset)
+* [[!UICONTROL  アセットの作成 ]](#create-an-asset)
+* [[!UICONTROL  アセットの削除 ]](#delete-an-asset)
+* [[!UICONTROL  アセットの取得 ]](#get-an-asset)
+* [[!UICONTROL  アセットのリスト ]](#list-assets)
+* [ウォッチのアセットが削除されました](#watch-asset-deleted)
+* [新しいアセットをウォッチ](#watch-new-asset)
 
-#### [!UICONTROL &#x200B; アセットを作成 &#x200B;] <!--different for v4-->
+#### [!UICONTROL  アセットを作成 ] <!--different for v4-->
 
 このアクションモジュールでは、新しいアセットを作成できます。
 
@@ -359,13 +360,13 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>ファイルを作成する場合、アップロードするファイルの URL を入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL メディアの種類 &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL メディアの種類 ] </td> 
    <td> <p>このアセットのメディアタイプを選択します。</p> </td> 
   </tr> 
   </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; アセットの削除 &#x200B;]
+#### [!UICONTROL  アセットの削除 ]
 
 このアクションモジュールは、指定したアセットを削除します。
 
@@ -388,7 +389,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; アセットの取得 &#x200B;]
+#### [!UICONTROL  アセットの取得 ]
 
 このアクションモジュールは、アセットの詳細を取得します。
 
@@ -411,7 +412,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; アセットのリスト &#x200B;]
+#### [!UICONTROL  アセットのリスト ]
 
 この検索モジュールは、指定されたプロジェクトのフォルダー内のすべてのアセットを取得します。
 
@@ -430,8 +431,62 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>アカウントを選択するか、リストするアセットを含むアカウントの ID をマッピングします。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 返されるアセットの最大数 &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL 返されるアセットの最大数 ] </td> 
    <td> <p>各シナリオの実行サイクル中に、モジュールが返すアセットの最大数を入力またはマッピングします。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### ウォッチのアセットが削除されました
+
+このトリガーモジュールは、アセットが削除されたときにシナリオを開始します。
+
+このモジュールに使用する Webhook を選択するか、Webhook フィールドの横にある「追加」をクリックして、次の情報を入力します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook name] </td> 
+   <td> <p>新しい Webhook の名前を入力します。</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td> <p>アカウントを選択するか、削除されたアセットを監視するアカウントの ID をマッピングします。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 新しいアセットをウォッチ
+
+このトリガーモジュールは、新しいアセットが作成される際にシナリオを開始します。
+
+このモジュールに使用する Webhook を選択するか、Webhook フィールドの横にある「追加」をクリックして、次の情報を入力します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook name] </td> 
+   <td> <p>新しい Webhook の名前を入力します。</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td> <p>アカウントを選択するか、新しいアセットを監視するアカウントの ID をマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -443,6 +498,8 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 * [[!UICONTROL コメントを取得]](#get-a-comment)
 * [[!UICONTROL コメントをリスト]](#list-comments)
 * [[!UICONTROL コメントをアップデート]](#update-a-comment)
+* [コメントを見る更新されました](#watch-comment-updated)
+* [新しいコメントを見る](#watch-new-comment)
 
 #### [!UICONTROL コメントの作成]
 
@@ -481,7 +538,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>コメントのリンク先となるビデオのフレーム番号を入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ページ &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL ページ ] </td> 
    <td> <p>アセットがPDFの場合は、コメントを添付するページを入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
@@ -510,7 +567,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; コメントを取得 &#x200B;]
+#### [!UICONTROL  コメントを取得 ]
 
 このアクションモジュールは、指定されたコメントの詳細を取得します。
 
@@ -568,7 +625,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; コメントの更新 &#x200B;]
+#### [!UICONTROL  コメントの更新 ]
 
 このアクションモジュールは、既存のコメントを編集します。
 
@@ -597,8 +654,62 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>コメントのリンク先となるビデオのフレーム番号を入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ページ &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL ページ ] </td> 
    <td> <p>アセットがPDFの場合は、コメントが添付されているページを入力またはマッピングします。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### コメントを見る更新されました
+
+このトリガーモジュールは、コメントが更新されると、シナリオを開始します。
+
+このモジュールに使用する Webhook を選択するか、Webhook フィールドの横にある「追加」をクリックして、次の情報を入力します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook name] </td> 
+   <td> <p>新しい Webhook の名前を入力します。</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td> <p>アカウントを選択するか、更新されたコメントを監視するアカウントの ID をマッピングします。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 新しいコメントを見る
+
+このトリガーモジュールは、コメントが作成されるとシナリオを開始します。
+
+このモジュールに使用する Webhook を選択するか、Webhook フィールドの横にある「追加」をクリックして、次の情報を入力します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook name] </td> 
+   <td> <p>新しい Webhook の名前を入力します。</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td> <p>アカウントを選択するか、新しいコメントを監視するアカウントの ID をマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -643,6 +754,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 ### プロジェクト
 
 * [プロジェクトを作成](#create-a-project)
+* [Frame.io プロジェクトへのユーザーの招待](#invite-users-to-frameio-project)
 * [プロジェクトのリスト](#list-projects)
 
 #### プロジェクトを作成
@@ -672,6 +784,38 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  </tbody> 
 </table>
 
+#### Frame.io プロジェクトへのユーザーの招待
+
+このアクションモジュールは、指定された Frame.io プロジェクトにユーザーを招待します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td> <p>ユーザーを招待するプロジェクトを含むアカウントを選択またはマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>ユーザーを招待するプロジェクトを含んだワークスペースを選択またはマッピングします。</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">プロジェクト ID </td> 
+   <td> <p>ユーザーを招待するプロジェクトを選択またはマッピングします。</p> </td> 
+  </tr> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">ユーザー ID </td> 
+   <td> <p>プロジェクトに招待するユーザーを選択またはマッピングします。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 #### [!UICONTROL プロジェクトのリスト]
 
 この検索モジュールは、指定したチームのすべてのプロジェクトを取得します。
@@ -693,7 +837,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>プロジェクトを取得するアセットを含むワークスペースを選択またはマッピングします。</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL 返されるプロジェクトの最大数 &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL 返されるプロジェクトの最大数 ] </td> 
    <td> <p>プロジェクトの最大数を入力またはマッピング
    各シナリオ実行サイクル中にモジュールを返す必要があります。</p> </td> 
   </tr> 
@@ -825,7 +969,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>ワークスペースを取得するアセットを含むアカウントを選択またはマッピングします。</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL 返されるワークスペースの最大数 &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL 返されるワークスペースの最大数 ] </td> 
    <td> <p>ワークスペースの最大数を入力またはマッピング
    各シナリオ実行サイクル中にモジュールを返す必要があります。</p> </td> 
   </tr> 
@@ -833,6 +977,10 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 </table>
 
 ### その他
+
+* [カスタム API 呼び出しの実行](#make-a-custom-api-call)
+* [ウォッチのメタデータ値が更新されました](#watch-metadata-value-updated)
+
 
 #### [!UICONTROL カスタム API 呼び出しの実行]
 
@@ -859,7 +1007,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p> <p>例： <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] 認証ヘッダーを自動的に追加します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL クエリ文字列 &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL クエリ文字列 ] </td> 
    <td> <p>リクエストクエリ文字列を入力します。クエリ文字列に含める各パラメーターに対して、<b>[!UICONTROL Add item]</b> をクリックして、フィールドの名前と必要な値を入力します。</p> </td> 
   </tr> 
   <tr> 
@@ -868,6 +1016,33 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### ウォッチのメタデータ値が更新されました
+
+このトリガーモジュールは、コメントが更新されると、シナリオを開始します。
+
+このモジュールに使用する Webhook を選択するか、Webhook フィールドの横にある「追加」をクリックして、次の情報を入力します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook name] </td> 
+   <td> <p>新しい Webhook の名前を入力します。</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io] への接続を作成する手順については、この記事にある<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Frame.io] の接続を参照してください。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td> <p>アカウントを選択するか、更新されたメタデータ値を監視するアカウントの ID をマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
