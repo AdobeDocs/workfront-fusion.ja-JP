@@ -5,9 +5,10 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 454e06527fe1a624f36be3b7f3682ff49a61d42d
+exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
+source-git-commit: efab436edce8a5253b147c77b87a005f6efc63d0
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '628'
 ht-degree: 5%
 
 ---
@@ -105,6 +106,7 @@ ht-degree: 5%
    子シナリオのシナリオモジュールで設定されたフィールドは、子トリガーを呼び出しモジュールに表示されます。
 
 1. 子シナリオに渡す情報を「子シナリオを呼び出す」モジュールに入力するかマッピングします。
+1. （条件付き）子シナリオからの応答を待たずに親シナリオの実行を続行する場合は、「**実行して忘れる**」オプションを有効にします。
 1. **OK** をクリックして、モジュールを保存します。
 
 >[!NOTE]
@@ -128,4 +130,3 @@ ht-degree: 5%
    データ構造の作成手順については、[ データ構造 ](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md) を参照してください。
 
 1. **OK** をクリックして、モジュールを保存します。
-
