@@ -5,7 +5,7 @@ description: シナリオ設定パネルで、シナリオに固有の設定を�
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: a7411649c0d65956552f40a7710315536755dc65
+source-git-commit: 273a07a28563a0eb3a3446937964e8dcef8a68d3
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 51%
@@ -160,7 +160,7 @@ ht-degree: 51%
 
 >[!BEGINSHADEBOX]
 
-**例：**&#x200B;[!DNL Workfront]／[!UICONTROL レコードを監視]で、発生した新しいイシューを監視し、[!DNL Workfront]／[!UICONTROL オブジェクトを変換]で、新しいリクエストをプロジェクトに変換し、適切なテンプレートを割り当てます。
+**例：**[!DNL Workfront]／[!UICONTROL レコードを監視]で、発生した新しいイシューを監視し、[!DNL Workfront]／[!UICONTROL オブジェクトを変換]で、新しいリクエストをプロジェクトに変換し、適切なテンプレートを割り当てます。
 
 ![ シナリオ設定 ](assets/scenario-settings-ex-1-350x157.png)
 
@@ -191,7 +191,7 @@ Workfront/ レコードを監視モジュールの最大サイクル数は `10` 
 
 ### 連続エラー数
 
-シナリオの実行が無効になる前に連続して実行を試行する最大回数を定義します（`DataError`、`DuplicateDataError` および `ConnectionError` を除く）。
+シナリオの実行が無効化される前に連続して実行を試行する最大数（`DataError`、`DuplicateDataError`、`ModuleTimeoutError`、`ConnectionError` を除く）を定義します。
 
 エラーについて詳しくは、「[ エラータイプ ](/help/workfront-fusion/references/errors/error-processing.md)」を参照してください。
 
