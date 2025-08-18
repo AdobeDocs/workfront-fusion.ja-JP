@@ -9,10 +9,10 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: c37aea95-7cc3-4939-a4d7-9a6a75557b85
-source-git-commit: 14960edd32497a06620a9a039632a58ebd246c2b
+source-git-commit: 679a4f5c91625dfecf32e10904700bf75ea7a7cf
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 96%
+source-wordcount: '978'
+ht-degree: 100%
 
 ---
 
@@ -22,43 +22,49 @@ Adobe Workfront Fusion は、アプリと web サービスをシームレスに�
 
 ## 2025年の Fusion リリース
 
-### 2025 年 7 月
+### 2025年8月
 
+* [Workfront Fusion リリースアクティビティ：2025年8月18日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-8-18.md)
+
+
+### 2025年7月
+
+* [Workfront Fusion リリースアクティビティ：2025年7月31日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-7-31.md)
 * [Workfront Fusion リリースアクティビティ：2025年7月7日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-7-7.md)
 
 
-### 2025 年 6 月
+### 2025年6月
 
 * [Workfront Fusion リリースアクティビティ：2025年6月23日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-6-23.md)
 * [Workfront Fusion リリースアクティビティ：2025年6月6日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-6-9.md)
 
 
-### 2025 年 5 月
+### 2025年5月
 
 * [Workfront Fusion リリースアクティビティ：2025年5月26日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-5-26.md)
 * [Workfront Fusion リリースアクティビティ：2025年5月19日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-5-19.md)
 * [Workfront Fusion リリースアクティビティ：2025年5月12日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-5-12.md)
 * [Workfront Fusion リリースアクティビティ：2025年5月5日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-5-5.md)
 
-### 2025 年 4 月
+### 2025年4月
 
 * [Workfront Fusion リリースアクティビティ：2025年4月28日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-28.md)
 * [Workfront Fusion リリースアクティビティ：2025年4月21日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-21.md)
 * [Workfront Fusion リリースアクティビティ：2025年4月14日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-14.md)
 
-### 2025 年 3 月
+### 2025年3月
 
 * [Workfront Fusion リリースアクティビティ：2025年3月31日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-31.md)
 * [Workfront Fusion リリースアクティビティ：2025年3月10日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-10.md)
 * [Workfront Fusion リリースアクティビティ：2025年3月3日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-3.md)
 
-### 2025 年 2 月
+### 2025年2月
 
 * [Workfront Fusion リリースアクティビティ：2025年2月24日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-24.md)
 * [Workfront Fusion リリースアクティビティ：2025年2月17日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-17.md)
 * [Workfront Fusion リリースアクティビティ：2025年2月10日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-10.md)
 
-### 2025 年 1 月
+### 2025年1月
 
 * [Workfront Fusion リリースアクティビティ：2025年1月20日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-20.md)
 * [Workfront Fusion リリースアクティビティ：2025年1月13日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-13.md)
@@ -68,48 +74,48 @@ Adobe Workfront Fusion は、アプリと web サービスをシームレスに�
 
 +++ **クリックして開く**
 
-### 2024 年 12 月
+### 2024年12月
 
 * [Workfront Fusion リリースアクティビティ：2024年12月16日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-12-16.md)
 * [Workfront Fusion リリースアクティビティ：2024年12月2日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-12-2.md)
 
-### 2024 年 11 月
+### 2024年11月
 
 * [Workfront Fusion リリースアクティビティ：2024年11月25日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-11-25.md)
 * [Workfront Fusion リリースアクティビティ：2024年11月11日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-11-11.md)
 * [Workfront Fusion リリースアクティビティ：2024年11月4日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-11-4.md)
 
 
-### 2024 年 10 月
+### 2024年10月
 
 * [Workfront Fusion リリースアクティビティ：2024年10月21日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-10-21.md)
 * [Workfront Fusion リリースアクティビティ：2024年10月7日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-10-7.md)
 
-### 2024 年 9 月
+### 2024年9月
 
 * [Workfront Fusion リリースアクティビティ：2024年9月30日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-9-30.md)
 * [Workfront Fusion リリースアクティビティ：2024年9月9日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-9-9.md)
 
 
-### 2024 年 8 月
+### 2024年8月
 
 * [Workfront Fusion リリースアクティビティ：2024年8月19日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-8-19.md)
 * [Workfront Fusion リリースアクティビティ：2024年8月5日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-8-5.md)
 
-### 2024 年 7 月
+### 2024年7月
 
 * [Workfront Fusion リリースアクティビティ：2024年7月29日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-7-29.md)
 * [Workfront Fusion リリースアクティビティ：2024年7月22日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-7-22.md)
 * [Workfront Fusion リリースアクティビティ：2024年7月8日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-7-11.md)
 
 
-### 2024 年 6 月
+### 2024年6月
 
 * [Workfront Fusion リリースアクティビティ：2024年6月17日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-6-17.md)
 * [Workfront Fusion リリースアクティビティ：2024年6月3日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-6-3.md)
 
 
-### 2024 年 5 月
+### 2024年5月
 
 * [Workfront Fusion リリースアクティビティ：2024年5月20日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-5-20.md)
 * [Workfront Fusion リリースアクティビティ：2024年5月13日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-5-13.md)

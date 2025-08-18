@@ -4,10 +4,10 @@ description: テキストパーサーツールを使用すると、他の [!DNL 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 679a4f5c91625dfecf32e10904700bf75ea7a7cf
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 85%
+source-wordcount: '1311'
+ht-degree: 84%
 
 ---
 
@@ -129,7 +129,7 @@ ht-degree: 85%
   </tr> 
   <tr> 
    <td>[!UICONTROL Pattern]</td> 
-   <td> <p>テキストから解析する要素を反映するパターンを選択します。</p> </td> 
+   <td> <p>テキストから解析する要素を反映するパターンを選択します。</p> <p>カスタムの正規表現を入力するには、リストから「カスタム」を選択し、「カスタム正規表現」フィールドにカスタム式を入力します。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Ignore Duplicate Occurrences]</td> 
