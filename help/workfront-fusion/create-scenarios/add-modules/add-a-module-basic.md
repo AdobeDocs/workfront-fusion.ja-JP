@@ -4,9 +4,9 @@ description: この記事では、シナリオにモジュールを追加する�
 author: Becky
 feature: Workfront Fusion
 exl-id: f3757468-3e11-4862-a83e-ed447805545b
-source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
+source-git-commit: 62b09469c1d85fd2bd1f154cde339cc4a10fc34a
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '682'
 ht-degree: 5%
 
 ---
@@ -108,3 +108,14 @@ ht-degree: 5%
 1. モジュールを設定します。
 
    特定のモジュールの設定手順については、「[Fusion アプリケーションとそのモジュールのリファレンス：記事インデックス ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)」にリストされている選択したアプリケーションの記事を参照してください。
+
+>[!NOTE]
+>
+>特定のモジュールへのリンクを作成するには、次のページを表示する際に URL に `?moduleId=<module-id>` を追加します。
+>
+>* シナリオ編集ページ （URL は `/edit` で終わる）
+>* 特定のシナリオの実行（URL は `/logs/<log-id>` で終わる）
+>
+>`<module-id>` は、シナリオを表示する際のモジュールラベルの横の番号を指します。
+>
+>これは、シナリオのデバッグやモジュール設定のコピーを行う際に役立ちます。
