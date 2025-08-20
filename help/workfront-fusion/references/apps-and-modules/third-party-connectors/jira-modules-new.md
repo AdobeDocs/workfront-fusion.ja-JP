@@ -3,10 +3,11 @@ title: Jira モジュール
 description: Adobe Workfront Fusion シナリオでは、Jira ソフトウェアを使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: d16c1d9f257d44b72cfb93caa2a814fd62b0b733
+exl-id: b74a3618-c4a1-4965-a88d-1643bfab12db
+source-git-commit: 9865101fe57c2668ecb5ad743b3d6963833feb4a
 workflow-type: tm+mt
-source-wordcount: '1564'
-ht-degree: 33%
+source-wordcount: '1608'
+ht-degree: 32%
 
 ---
 
@@ -73,15 +74,50 @@ Jira モジュールを使用するには、Jira アカウントが必要です�
 
 ## Jira のWorkfront Fusion への接続
 
-Jira モジュール内から直接 Jira アカウントへの接続を作成できます。
+### 必要な認証情報を作成
 
->[!IMPORTANT]
->
->* Jira データセンターへの基本的な接続を作成するには、Jira 個人アクセストークンが必要です。
->* Jira Cloud への基本接続を作成するには、Jira API トークンが必要です
->* Jira クラウドまたは Jira データセンターへの OAuth 2 接続を作成するには、Jira クライアント ID およびクライアントシークレットが必要です。
->
->これらの作成方法については、Jira のドキュメントを参照してください。
+Jira への接続を作成するには、次が必要です。
+
+| 接続タイプ | アカウントタイプ | 資格情報が必要です |
+|---|---|---|
+| OAuth 2 | 任意 | クライアント ID とクライアント秘密鍵 |
+| 基本 | Jira Cloud | Jira API トークン |
+| 基本 | Jira データセンター | Jira 個人アクセストークン（PAT） |
+
+これらの作成方法については、Jira のドキュメントを参照してください。
+
+これらの資格情報を作成する際には、次の情報が必要です。
+
+* Oauth 2 の場合：
+
+  | Fusion データセンター | リダイレクト URL |
+  |---|---|
+  | US | `https://app.workfrontfusion.com/oauth/cb/workfront-jira2` |
+  | EU | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira2` |
+  | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira2` |
+
+
+
+* 個人用アクセストークン（PAT）の場合：
+
+  | Fusion データセンター | リダイレクト URL |
+  |---|---|
+  | US | `https://app.workfrontfusion.com/oauth/cb/workfront-jira` |
+  | EU | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira` |
+  | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira` |
+
+  >[!IMPORTANT]
+  >
+  >PAT を使用するには、ファイル `jira/bin/WEB-INF/classes` のファイル `jira-config.properties` で次の項目を有効にする必要があります。
+  >
+  >* `jira.rest.auth.allow.basic = true`
+  >* `jira.rest.csrf.disabled = true`
+  >
+  >このファイルが存在しない場合は、作成する必要があります。
+
+### Workfront Fusion で Jira への接続を作成します
+
+Workfront Fusion で接続を作成するには：
 
 1. 任意の Jira モジュールで、「接続」フィールドの横にある **追加** をクリックします。
 1. 次のフィールドを設定します。
