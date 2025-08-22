@@ -1,19 +1,19 @@
 ---
 title: Qualtrics モジュール
-description: ' [!DNL Adobe Workfront Fusion] シナリオでは、Qualtrics を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりすることができます。'
+description: Adobe Workfront Fusion シナリオでは、Qualtrics を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 author: Becky
 feature: Workfront Fusion
 exl-id: 80b441b7-c808-4c4f-b9ff-d614650dbb73
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 62%
+source-wordcount: '380'
+ht-degree: 48%
 
 ---
 
 # Qualtrics モジュール
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、[!DNL Qualtrics] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
+Adobe Workfront Fusion のシナリオでは、[!DNL Qualtrics] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -28,35 +28,35 @@ ht-degree: 62%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront プラン*</td>
+  <td> <p>[!UICONTROL Pro] 以降</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン*</td>
+   <td> <p>[!UICONTROL Plan]、[!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在のライセンス要件：Workfront Fusion のライセンス要件はありません。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のライセンス要件：[!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] Adobe Workfront プランがある場合、この記事に記載されている機能を使用するには、Adobe Workfront Fusion とAdobe Workfrontを購入する必要があります。 Workfront Fusion は、[!UICONTROL Ultimate] Workfront プランに含まれています。</p>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>従来の製品要件：この記事に記載されている機能を使用するには、Adobe Workfront Fusion とAdobe Workfrontを購入する必要があります。</p>
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、Workfront 管理者にお問い合わせください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 ## 前提条件
 
@@ -85,11 +85,11 @@ Qualtrics コネクタでは、以下を使用します。
  </tbody> 
  </table>
 
-## [!DNL Qualtrics] を [!DNL Workfront Fusion] に接続
+## Workfront Fusion への [!DNL Qualtrics] の接続
 
 [!DNL Qualtrics] アカウントへの接続を、[!UICONTROL Qualtrics] モジュール内から直接作成できます。
 
-1. 任意の [!UICONTROL Qualtrics] モジュールで、[!UICONTROL Connection] フィールドの横にある「**[!UICONTROL Add]**」をクリックします。
+1. 任意の [!UICONTROL Qualtrics] モジュールで、「[!UICONTROL 接続]」フィールドの横にある「**[!UICONTROL 追加]**」をクリックします。
 1. 次の情報を入力します。
 
    <table style="table-layout:auto"> 
@@ -111,18 +111,18 @@ Qualtrics コネクタでは、以下を使用します。
     </tbody> 
    </table>
 
-1. 「**[!UICONTROL Continue]**」をクリックして接続を作成し、モジュールに戻ります。
+1. 「**[!UICONTROL 続行]**」をクリックし、接続を作成して、モジュールに戻ります。
 
 ## [!DNL Qualtrics] モジュールとそのフィールド
 
 [!DNL Qualtrics] コネクターでは、以下のモジュールを使用できます。
 
-* [!UICONTROL Watch New Survey Response]
-* [!UICONTROL Create a Directory Contact]
-* [!UICONTROL Delete a Directory Contact]
-* [!UICONTROL Get a Directory Contact]
-* [!UICONTROL Update a Directory Contact]
-* [!UICONTROL Create a New Survey Distribution via SMS]
-* [!UICONTROL Distribute a Survey via Email]
-* [!UICONTROL Make an API call]
-* [!UICONTROL List Directory Contacts]
+* [!UICONTROL 新しい調査の回答を見る]
+* [!UICONTROL ディレクトリ連絡先の作成]
+* [!UICONTROL ディレクトリ連絡先の削除]
+* [!UICONTROL ディレクトリ連絡先の取得]
+* [!UICONTROL ディレクトリ連絡先の更新]
+* [!UICONTROL SMS を使用した新しい調査配布の作成]
+* [!UICONTROL メールでの調査配布]
+* [!UICONTROL API 呼び出し]
+* [!UICONTROL ディレクトリ連絡先をリスト]

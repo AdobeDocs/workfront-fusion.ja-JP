@@ -1,20 +1,20 @@
 ---
 title: MariaDB モジュール
-description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL MariaDB] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。'
+description: Adobe Workfront Fusion のシナリオでは、 [!DNL MariaDB] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりすることができます。
 author: Becky
 draft: Probably
 feature: Workfront Fusion
 exl-id: 41179cfe-c0f9-4d18-ab7e-374670ac688b
-source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 81%
+source-wordcount: '645'
+ht-degree: 71%
 
 ---
 
 # [!DNL MariaDB] モジュール
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、[!DNL MariaDB] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
+Adobe Workfront Fusion のシナリオでは、[!DNL MariaDB] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -59,7 +59,7 @@ ht-degree: 81%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -67,7 +67,7 @@ ht-degree: 81%
 
 [!DNL MariaDB] モジュールを使用するには、[!DNL MariaDB] アカウントが必要です。
 
-## [!DNL MariaDB] を [!DNL Workfront Fusion] に接続
+## [!DNL MariaDB] を Workfront Fusion に接続
 
 [!DNL MariaDB] アカウントへの接続を、[!DNL MariaDB] モジュール内から直接作成できます。
 
@@ -99,7 +99,7 @@ ht-degree: 81%
       <td>デフォルトのポートは 3306 です。非標準のポートを使用している場合は、この番号をポートに設定します。 </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL データベース &#x200B;]</td> 
+      <td role="rowheader">[!UICONTROL データベース ]</td> 
       <td>操作するデータベースの名前を入力します。</td> 
      </tr> 
      <tr> 
@@ -117,7 +117,7 @@ ht-degree: 81%
 
 ## [!DNL MariaDB] モジュールとそのフィールド
 
-[!DNL MariaDB] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL MariaDB] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL MariaDB] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL MariaDB]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -133,7 +133,7 @@ ht-degree: 81%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL MariaDB] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の「<a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">[!DNL MariaDB] を [!DNL Workfront Fusion]</a> へ接続」を参照してください。</td> 
+   <td>[!DNL MariaDB] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL MariaDB] の接続 </a> を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query]</td> 
@@ -152,7 +152,7 @@ ht-degree: 81%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL MariaDB] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">[!DNL MariaDB] を [!DNL Workfront Fusion]</a> に接続を参照してください。</td> 
+   <td>[!DNL MariaDB] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL MariaDB] の接続 </a> を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Table]</td> 

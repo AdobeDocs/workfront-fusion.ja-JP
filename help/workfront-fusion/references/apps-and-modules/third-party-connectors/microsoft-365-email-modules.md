@@ -1,19 +1,19 @@
 ---
 title: Microsoft Office 365 メール
-description: ' [!DNL Adobe Workfront Fusion]  のシナリオ内では、Microsoft Office 365 メールを使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりすることができます。'
+description: Adobe Workfront Fusion のシナリオでは、Microsoft Office 365 メールを使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 author: Becky
 feature: Workfront Fusion
 exl-id: 5d4072ba-c598-4347-a42f-c59c7add0a1b
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2823'
-ht-degree: 47%
+source-wordcount: '2915'
+ht-degree: 43%
 
 ---
 
 # [!DNL Microsoft Office 365 Email] モジュール
 
-[!DNL Adobe Workfront Fusion] シナリオ内では、[!UICONTROL Microsoft Office 365 メール]を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりすることができます。
+Adobe Workfront Fusion のシナリオでは、[!UICONTROL Microsoft Office 365 Email] を使用するワークフローを自動化できるほか、複数のサードパーティ製アプリケーションやサービスに接続することもできます。
 
 ## アクセス要件
 
@@ -54,7 +54,7 @@ ht-degree: 47%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -85,9 +85,9 @@ Microsoft Office 365 メールコネクタでは、次を使用します。
  </tbody> 
  </table>
 
-## [!DNL Office 365 Email] サービスを [!DNL Workfront Fusion] に接続
+## Workfront Fusion への [!DNL Office 365 Email] サービスの接続
 
-[!DNL Office 365 Email] アカウントを [!UICONTROL Workfront Fusion] に接続する方法については、[[!UICONTROL Adobe Workfront Fusion] への接続の作成 - 基本手順](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)を参照してください。
+[!DNL Office 365 Email] アカウントを [!UICONTROL Workfront Fusion] に接続する方法について詳しくは、[[!UICONTROL Adobe Workfront Fusion] への接続の作成 - 基本手順](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)を参照してください。
 
 >[!NOTE]
 >
@@ -97,7 +97,7 @@ Microsoft Office 365 メールコネクタでは、次を使用します。
 
 ## [!DNL Microsoft Office 365 Email] モジュールとそのフィールド
 
-[!DNL Microsoft Office 365 Email] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Microsoft Office 365 Email] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL Microsoft Office 365 Email] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Microsoft Office 365 Email]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -110,7 +110,7 @@ Microsoft Office 365 メールコネクタでは、次を使用します。
 
 ### メッセージ
 
-* [[!UICONTROL &#x200B; メッセージの作成と送信（レガシー） &#x200B;]](#create-and-send-a-message)
+* [[!UICONTROL  メッセージの作成と送信（レガシー） ]](#create-and-send-a-message)
 * [[!UICONTROL メッセージの削除]](#delete-a-message)
 * [[!UICONTROL メッセージの取得]](#get-a-message)
 * [[!UICONTROL メッセージの移動]](#move-a-message)
@@ -119,7 +119,7 @@ Microsoft Office 365 メールコネクタでは、次を使用します。
 
 
 
-#### [!UICONTROL &#x200B; メッセージの作成と送信（レガシー） &#x200B;]
+#### [!UICONTROL  メッセージの作成と送信（レガシー） ]
 
 このアクションモジュールは、メールメッセージを作成して送信します。
 
@@ -129,7 +129,7 @@ Microsoft Office 365 メールコネクタでは、次を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Office 365] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Office 365] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Subject]</td> 
@@ -176,7 +176,7 @@ Microsoft Office 365 メールコネクタでは、次を使用します。
    <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
    <td> <p>メールに追加する各添付ファイルに対して、「<b> 項目を追加 </b>」をクリックし、次の情報を入力します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Source ファイル &#x200B;]</strong> </p> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Source ファイル ]</strong> </p> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -200,10 +200,10 @@ Microsoft Office 365 メールコネクタでは、次を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Office 365] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Office 365] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 送信元メールアドレス &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 送信元メールアドレス ]</td> 
    <td> <p> 共有メールアドレスを使用するには、ここにアドレスを入力します。 このモジュールに使用される接続で使用される資格情報を持つユーザーは、共有フォルダーにアクセスできる必要があります。<p>接続所有者自身のメールアドレスを使用する場合は、このフィールドを空白のままにします。</p></p> </td> 
   </tr> 
    <td role="rowheader">[!UICONTROL Message ID]</td> 
@@ -223,10 +223,10 @@ Microsoft Office 365 メールコネクタでは、次を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Office 365] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Office 365] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 送信元メールアドレス &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 送信元メールアドレス ]</td> 
    <td> <p> 共有メールアドレスを使用するには、ここにアドレスを入力します。 このモジュールに使用される接続で使用される資格情報を持つユーザーは、共有フォルダーにアクセスできる必要があります。<p>接続所有者自身のメールアドレスを使用する場合は、このフィールドを空白のままにします。</p></p> </td> 
   </tr> 
   <tr> 
@@ -250,7 +250,7 @@ Microsoft Office 365 メールコネクタでは、次を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Office 365] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Office 365] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Message ID]</td> 
@@ -273,10 +273,10 @@ Microsoft Office 365 メールコネクタでは、次を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Office 365] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Office 365] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
     <tr> 
-   <td role="rowheader">[!UICONTROL 送信元メールアドレス &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 送信元メールアドレス ]</td> 
    <td> <p> 共有メールアドレスを使用するには、ここにアドレスを入力します。 このモジュールに使用される接続で使用される資格情報を持つユーザーは、共有フォルダーにアクセスできる必要があります。<p>接続所有者自身のメールアドレスを使用する場合は、このフィールドを空白のままにします。</p></p> </td> 
   </tr> 
 <tr> 
@@ -299,7 +299,7 @@ Microsoft Office 365 メールコネクタでは、次を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p>[!DNL Workfront Fusion] が 1 回のシナリオ実行サイクルで返すメッセージの最大数を入力します。</p> </td> 
+   <td> <p>Workfront Fusion が 1 つのシナリオ実行サイクルで返すメッセージの最大数を入力します。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -314,7 +314,7 @@ Microsoft Office 365 メールコネクタでは、次を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Office 365] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Office 365] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Watch Messages]</p> </td> 
@@ -335,7 +335,7 @@ Microsoft Office 365 メールコネクタでは、次を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>[!DNL Workfront Fusion] が 1 回のシナリオ実行サイクルで返すメッセージの最大数を入力します。</p> </td> 
+   <td> <p>Workfront Fusion が 1 つのシナリオ実行サイクルで返すメッセージの最大数を入力します。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -356,7 +356,7 @@ Microsoft Office 365 メールコネクタでは、次を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Office 365] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Office 365] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Subject]</td> 
@@ -407,11 +407,11 @@ Microsoft Office 365 メールコネクタでは、次を使用します。
    <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
    <td> <p>メールに追加する各添付ファイルに対して、「<b> 項目を追加 </b>」をクリックし、次の情報を入力します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Source ファイル &#x200B;]</strong> </p> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Source ファイル ]</strong> </p> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 送信元メールアドレス &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 送信元メールアドレス ]</td> 
    <td> <p> 共有メールアドレスを使用するには、ここにアドレスを入力します。 このモジュールに使用される接続で使用される資格情報を持つユーザーは、共有フォルダーにアクセスできる必要があります。<p>接続所有者自身のメールアドレスを使用する場合は、このフィールドを空白のままにします。</p></p> </td> 
   </tr> 
  </tbody> 
@@ -427,10 +427,10 @@ Microsoft Office 365 メールコネクタでは、次を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Office 365] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Office 365] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 送信元メールアドレス &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 送信元メールアドレス ]</td> 
    <td> <p> 共有メールアドレスを使用するには、ここにアドレスを入力します。 このモジュールに使用される接続で使用される資格情報を持つユーザーは、共有フォルダーにアクセスできる必要があります。<p>接続所有者自身のメールアドレスを使用する場合は、このフィールドを空白のままにします。</p></p> </td> 
   </tr> 
   <tr> 
@@ -450,10 +450,10 @@ Microsoft Office 365 メールコネクタでは、次を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Office 365] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Office 365] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 送信元メールアドレス &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 送信元メールアドレス ]</td> 
    <td> <p> 共有メールアドレスを使用するには、ここにアドレスを入力します。 このモジュールに使用される接続で使用される資格情報を持つユーザーは、共有フォルダーにアクセスできる必要があります。<p>接続所有者自身のメールアドレスを使用する場合は、このフィールドを空白のままにします。</p></p> </td> 
   </tr> 
   <tr> 
@@ -509,7 +509,7 @@ Microsoft Office 365 メールコネクタでは、次を使用します。
    <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
    <td> <p>メールに追加する各添付ファイルに対して、「<b> 項目を追加 </b>」をクリックし、次の情報を入力します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Source ファイル &#x200B;]</strong> </p> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Source ファイル ]</strong> </p> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -534,11 +534,11 @@ Microsoft Office 365 メールコネクタでは、次を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Office 365] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Office 365] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 送信元メールアドレス &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 送信元メールアドレス ]</td> 
    <td> <p> 共有メールアドレスを使用するには、ここにアドレスを入力します。 このモジュールに使用される接続で使用される資格情報を持つユーザーは、共有フォルダーにアクセスできる必要があります。<p>接続所有者自身のメールアドレスを使用する場合は、このフィールドを空白のままにします。</p></p> </td> 
   </tr> 
    <td role="rowheader">[!UICONTROL Message ID]</td> 
@@ -561,10 +561,10 @@ Microsoft Office 365 メールコネクタでは、次を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Office 365] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Office 365] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 送信元メールアドレス &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 送信元メールアドレス ]</td> 
    <td> <p> 共有メールアドレスを使用するには、ここにアドレスを入力します。 このモジュールに使用される接続で使用される資格情報を持つユーザーは、共有フォルダーにアクセスできる必要があります。<p>接続所有者自身のメールアドレスを使用する場合は、このフィールドを空白のままにします。</p></p> </td> 
   </tr> 
   <tr> 
@@ -594,10 +594,10 @@ Microsoft Office 365 メールコネクタでは、次を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Office 365] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Office 365] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 送信元メールアドレス &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 送信元メールアドレス ]</td> 
    <td> <p> 共有メールアドレスを使用するには、ここにアドレスを入力します。 このモジュールに使用される接続で使用される資格情報を持つユーザーは、共有フォルダーにアクセスできる必要があります。<p>接続所有者自身のメールアドレスを使用する場合は、このフィールドを空白のままにします。</p></p> </td> 
   </tr> 
   <tr> 
@@ -621,7 +621,7 @@ Microsoft Office 365 メールコネクタでは、次を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Office 365] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Office 365] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Subject]</td> 
@@ -667,7 +667,7 @@ Microsoft Office 365 メールコネクタでは、次を使用します。
    <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
    <td> <p>メールに追加する各添付ファイルに対して、「<b> 項目を追加 </b>」をクリックし、次の情報を入力します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Source ファイル &#x200B;]</strong> </p> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Source ファイル ]</strong> </p> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -678,7 +678,7 @@ Microsoft Office 365 メールコネクタでは、次を使用します。
      <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>ヘッダーの値を入力します。</p> </li> 
     </ul> </td> 
   </tr> 
-   <td role="rowheader">[!UICONTROL 送信元メールアドレス &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 送信元メールアドレス ]</td> 
    <td> <p> 共有メールアドレスを使用するには、ここにアドレスを入力します。 このモジュールに使用される接続で使用される資格情報を持つユーザーは、共有フォルダーにアクセスできる必要があります。<p>接続所有者自身のメールアドレスを使用する場合は、このフィールドを空白のままにします。</p></p> </td> 
   </tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
@@ -697,7 +697,7 @@ Microsoft Office 365 メールコネクタでは、次を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Office 365] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Office 365] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
@@ -709,7 +709,7 @@ Microsoft Office 365 メールコネクタでは、次を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。例えば、<code>{"Content-type":"application/json"}</code>。認証ヘッダーは [!DNL Workfront Fusion] によって追加されます。</p> </td> 
+   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。例えば、<code>{"Content-type":"application/json"}</code>。Workfront Fusion は認証ヘッダーを追加します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 

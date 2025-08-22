@@ -5,10 +5,10 @@ description: シナリオ実行中にエラーが発生する場合がありま�
 author: Becky
 feature: Workfront Fusion
 exl-id: abf5f844-d13b-416e-a8b8-2d4ee1786262
-source-git-commit: d618d5c4b2306a3b940af7e402f93ced988095a3
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 40%
+source-wordcount: '1235'
+ht-degree: 31%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 40%
 
 シナリオ実行中にエラーが発生する場合があります。これは通常、サービスへの接続エラーが原因でサービスが利用できなくなった場合や、検証に失敗した場合に発生します。
 
-[!DNL Adobe Workfront Fusion] は、いくつかの基本的なエラータイプを区別します。エラーのタイプによって、Fusion シナリオの次のアクションが決まります。
+Adobe Workfront Fusion は、いくつかの基本的なエラータイプを区別します。 エラーのタイプによって、Fusion シナリオの次のアクションが決まります。
 
 ## アクセス要件
 
@@ -29,17 +29,17 @@ ht-degree: 40%
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+    <td role="rowheader">Adobe Workfront パッケージ</td> 
    <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
    <td> 新規：標準<p>または</p><p>現在：ワーク以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Adobe Workfront Fusion] ライセンス</td> 
    <td>
-   <p>現在：[!DNL Workfront Fusion] ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -47,18 +47,18 @@ ht-degree: 40%
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：組織は [!DNL Adobe Workfront Fusion] を購入する必要があります。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、Workfront 管理者にお問い合わせください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion]  ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについては、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -68,13 +68,13 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[[!DNL Adobe Wo
 
 接続エラーは、最も一般的なエラーの 1 つです。 通常は、過負荷、メンテナンス、停止など、様々な理由でサードパーティのサービスが利用できないことが原因で発生します。 このエラーのデフォルトの処理は、エラーが発生したモジュールによって異なります。
 
-* 最初のモジュールでエラーが発生した場合、シナリオの実行は警告メッセージとともに終了します。その後、[!DNL Workfront Fusion] は時間間隔を増やしながら、繰り返しシナリオを再実行しようとします。すべての試行が失敗した場合、[!DNL Workfront Fusion] はシナリオを非アクティブ化します。
+* 最初のモジュールでエラーが発生した場合、シナリオの実行は警告メッセージとともに終了します。次に、Workfront Fusion は、一定の時間間隔でシナリオの再実行を繰り返し試みます。 すべての試行が失敗した場合、Workfront Fusion はシナリオをアクティベート解除します。
 * 接続エラーが最初のモジュール以外のモジュールで発生した場合、以降の手順は、シナリオの詳細設定の「不完全な実行の保存を許可」オプションによって異なります。
 
-   * このオプションを有効にした場合、シナリオの実行は [!UICONTROL Incomplete executions] フォルダーに移動され、[!DNL Workfront Fusion] では一定の時間間隔で繰り返しシナリオの再実行が試みられます。 すべての試行が失敗した場合、不完全な実行フォルダーに実行が残り、ユーザーが手動で解決するのを待ちます。
+   * このオプションを有効にした場合、シナリオの実行が [!UICONTROL  不完全な実行 ] フォルダーに移動し、Workfront Fusion はシナリオの再実行を繰り返し試みます。 すべての試行が失敗した場合、不完全な実行フォルダーに実行が残り、ユーザーが手動で解決するのを待ちます。
 
      不完全な実行について詳しくは、[ 不完全な実行の表示と解決 ](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md) を参照してください。
-   * このオプションが無効になっている場合、シナリオの実行はエラーで終了し、ロールバックフェーズに移ります。その後、[!DNL Workfront Fusion] は時間間隔を増やしながら、繰り返しシナリオを再実行しようとします。すべての試行が失敗した場合、[!DNL Workfront Fusion] はシナリオを非アクティブ化します。
+   * このオプションが無効になっている場合、シナリオの実行はエラーで終了し、ロールバックフェーズに移ります。次に、Workfront Fusion は、一定の時間間隔でシナリオの再実行を繰り返し試みます。 すべての試行が失敗した場合、Workfront Fusion はシナリオをアクティベート解除します。
 
   不完全な実行の保存を許可する設定について詳しくは、「シナリオの設定」の [ 不完全な実行の保存を許可する ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions) を参照してください。
 
@@ -94,7 +94,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[[!DNL Adobe Wo
 
 **例：**
 
-シナリオには、[!DNL Google Sheets] のトリガー[!UICONTROL Watch Rows] が含まれます。 [!DNL Workfront Fusion] が起動したとき、[!DNL Google Sheets] はメンテナンスのため 30 分間使用できません。そのため、新しい行を取得できません。シナリオは停止し、10 分後に再試行します。[!DNL Google Sheets] がまだ使用できないため、[!DNL Workfront Fusion] は新しい行に関する情報をまだ取得できません。次回のシナリオの実行は、1 時間後にスケジュールされます。[!DNL Google Sheets] はこの時点で再び使用可能になり、シナリオは正常に実行されます。
+シナリオには、[!DNL Google Sheets] トリガーの[!UICONTROL 行を監視]が含まれています。Workfront Fusion[!DNL Google Sheets] シナリオを開始する際、メンテナンスのため 30 分間使用できないので、新しい行を取得できません。 シナリオは停止し、10 分後に再試行します。[!DNL Google Sheets] はまだ利用できないので、Workfront Fusion は新しい行に関する情報を取得できません。 次回のシナリオの実行は、1 時間後にスケジュールされます。[!DNL Google Sheets] はこの時点で再び使用可能になり、シナリオは正常に実行されます。
 
 >[!ENDSHADEBOX]
 
@@ -102,17 +102,17 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[[!DNL Adobe Wo
 
 `DataError`
 
-項目が誤ってマッピングされ、サー [!DNL Workfront Fusion] パーティ側またはサードパーティサービス側で実行された検証に合格しない場合に、データエラーが生成されます。
+項目が誤ってマッピングされ、Workfront Fusion 側またはサードパーティサービス側で実行された検証に合格しない場合に、データエラーが生成されます。
 
 このエラーが発生した場合、シナリオは（モジュールが失敗した場所まで）不完全な実行フォルダーに移動され、問題のトラブルシューティングを行うことができます。 ただし、シナリオは停止せず、スケジュールに従って引き続き実行されます。 データエラーが表示されたときにシナリオの実行を停止するには、シナリオ設定パネルの「順番に処理」オプションを有効にします。
 
-シナリオ設定で「[!UICONTROL Allow storing incomplete executions]」オプションを有効にしていない場合、シナリオの実行はエラーで終了し、ロールバックが実行されます。
+シナリオ設定で「[!UICONTROL  不完全な実行の保存を許可 ]」オプションを有効にしていない場合、シナリオの実行はエラーで終了し、ロールバックが実行されます。
 
 ## 重複データエラー
 
 `DuplicateDataError`
 
-重複するデータを許可しないサービスに対して、[!DNL Workfront Fusion] が同じバンドルを 2 回挿入しようとすると、重複データエラーが生成されます。このエラーが発生した場合、[!DNL Workfront Fusion] はデータエラーの場合と同じ方法で処理します。
+Workfront Fusion が重複データを許可しないサービスに同じバンドルを 2 回挿入しようとすると、重複データエラーが発生します。 このエラーが発生した場合、Workfront Fusion はデータエラーの場合と同じように処理を進めます。
 
 詳しくは、この記事の [ データエラー ](#data-error) を参照してください。
 
@@ -121,7 +121,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[[!DNL Adobe Wo
 
 `InvalidAccessTokenError`
 
-サードパーティのサービスで登録されているアカウントに [!DNL Workfront Fusion] がアクセスできない場合に、無効なアクセストークンエラーが生成されます。これは、通常、特定のサービスの管理で [!DNL Workfront Fusion] のアクセス権を取り消したときに、そのサービスを使用するシナリオがスケジュールに従って実行され続ける場合に発生します。
+Workfront Fusion がサードパーティのサービスに登録されたアカウントにアクセスできない場合は、無効なアクセストークンエラーが発生します。 これは、通常、特定のサービスの管理でWorkfront Fusion のアクセス権を取り消したときに、そのサービスを使用するシナリオがスケジュールに従って動作し続ける場合に発生します。
 
 このエラーが発生した場合、シナリオの実行は直ちに停止します。 エラーが発生したモジュール以降のシナリオは、不完全な実行フォルダーに移動します。
 
@@ -129,7 +129,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[[!DNL Adobe Wo
 
 `RateLimitError`
 
-特定のサービスによって設定された制限を超えると、レート制限エラーが生成されます。このエラーが発生した場合、[!DNL Workfront Fusion] は接続エラーの場合と同様に処理を進めます。
+特定のサービスによって設定された制限を超えると、レート制限エラーが生成されます。このエラーが発生した場合、Workfront Fusion は Connection Error の場合と同じように処理を進めます。
 
 詳しくは、この記事の [ 接続エラー ](#connection-error) を参照してください。
 
@@ -139,7 +139,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[[!DNL Adobe Wo
 
 不完全なデータエラーは、トリガーでのみ発生します。トリガーが特定のサービスから必要なデータをダウンロードできなかった場合に、このエラーが生成されます。
 
-シナリオが `IncompleteDataError` で終了した場合、その後の動作は [!UICONTROL Max number of consecutive errors] の設定によって異なります。
+シナリオが `IncompleteDataError` で終了した場合、それ以降の動作は「[!UICONTROL 連続エラーの最大数]」の設定によって変わります。
 
 詳しくは、「シナリオの設定」の記事の [ 連続エラー数 ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors) を参照してください。
 
@@ -147,7 +147,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[[!DNL Adobe Wo
 
 **例：**
 
-シナリオには、ドキュメントを監視する [!DNL Workfront] トリガー[!UICONTROL Watch Record] が設定されています。 このシナリオは、長時間のビデオなどの大きなドキュメントのアップロード中に実行されます。Workfrontへのアップロード中に [!UICONTROL Workfront Fusion] がビデオのダウンロードを試みるので、シナリオは `IncompleteDataError` で終了します。
+シナリオでは、ドキュメントを監視するようにWorkfrontトリガー[!UICONTROL  レコードを監視 ] が設定されています。 このシナリオは、長時間のビデオなどの大きなドキュメントのアップロード中に実行されます。[!UICONTROL Workfront Fusion] は、Workfront へのアップロードが続いている間にビデオをダウンロードしようとするため、シナリオは `IncompleteDataError` で終了します。
 
 >[!ENDSHADEBOX]
 
@@ -157,15 +157,15 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[[!DNL Adobe Wo
 
 シナリオの実行中に発生し、これらのエラータイプに該当しないエラーは `RunTimeError` としてレポートされます。
 
-シナリオが `RuntimeError` で終了した場合、その後の動作は [!UICONTROL Max number of consecutive errors] の設定によって異なります。
+シナリオが `RuntimeError` で終了した場合、その後の動作は [!UICONTROL  連続エラーの最大数 ] の設定に依存します。
 
 詳しくは、「シナリオの設定」の記事の [ 連続エラー数 ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors) を参照してください。
 
 
 >[!NOTE]
 >
->シナリオがインスタントトリガーで始まり、このエラーが発生した場合、[!UICONTROL Max number of consecutive errors] の設定は無視され、シナリオは直ちに非アクティブ化されます。
->詳細については、「モジュールの概要」の「[ インスタント トリガー](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers)」を参照してください。
+>シナリオが「即時トリガー」で開始され、このエラーが発生した場合、「[!UICONTROL  連続エラーの最大数 ] の設定は無視され、シナリオは直ちに非アクティブ化されます。
+>>詳細については、「モジュールの概要」の「[ インスタント トリガー](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers)」を参照してください。
 
 ## 不整合エラー
 
@@ -179,7 +179,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[[!DNL Adobe Wo
 
 シナリオの実行中に、問題を知らせる警告が表示される場合があります。警告を表示しても、シナリオは正常に完了します。
 
-例えば、許可されている最大ファイルサイズを超え、[!UICONTROL Enable data loss] オプションが無効の場合は、警告が表示されることがあります。
+例えば、許可されている最大ファイルサイズを超え、「[!UICONTROL  データ損失を有効にする ]」オプションが無効の場合は、警告が表示される場合があります。
 
 ## リソース
 

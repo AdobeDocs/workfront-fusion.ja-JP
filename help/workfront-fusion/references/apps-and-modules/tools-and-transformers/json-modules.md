@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion JSON アプリは、Adobe Workfront Fusion �
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1236'
-ht-degree: 90%
+source-wordcount: '1254'
+ht-degree: 82%
 
 ---
 
 # [!UICONTROL JSON] モジュール
 
-[!DNL Adobe Workfront Fusion][!UICONTROL JSON] アプリは、[!DNL Adobe Workfront Fusion] がデータコンテンツとより深く連携したり、新しい JSON コンテンツを作成したりできるように、JSON 形式のデータを処理するモジュールを提供します。
+Adobe Workfront Fusion [!UICONTROL JSON] アプリには、Adobe Workfront Fusion がデータコンテンツをさらに操作したり、新しい JSON コンテンツを作成したりできるように、データを JSON 形式で処理するモジュールが用意されています。
 
 ## アクセス要件
 
@@ -54,7 +54,7 @@ ht-degree: 90%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -65,11 +65,11 @@ ht-degree: 90%
 
 ### データ構造
 
-データ構造は、JSON データの編成方法を記述し、個々の JSON 項目をシナリオ内の他のモジュールにマッピングできるようにします。データ構造を指定しない場合、モジュールを手動で実行すると、[!DNL Workfront Fusion] が指定された JSON から構造を作成します。
+データ構造は、JSON データの編成方法を記述し、個々の JSON 項目をシナリオ内の他のモジュールにマッピングできるようにします。データ構造を指定しない場合は、モジュールを手動で実行すると、Workfront Fusion は指定された JSON から構造を構築します。
 
 1. [!UICONTROL JSON を解析]モジュールをシナリオに追加します。
 1. 「**[!UICONTROL JSON 文字列]**」フィールドで、データ構造を作成する JSON を入力します。
-1. 他のモジュールを [!UICONTROL JSON を解析]モジュールにはまだ結びつけません。[!DNL Workfront Fusion] はまだ JSON データの構造を把握していないので、[!UICONTROL JSON を解析]モジュールのデータをシナリオ内の他のモジュールにマッピングすることはまだできません。
+1. 他のモジュールを [!UICONTROL JSON を解析]モジュールにはまだ結びつけません。Workfront Fusion は JSON データの構造をまだ把握していないので、「JSON を解析 [!UICONTROL  モジュールのデータを、シナリオ内の他のモジュールにマッピングすることはでき ] せん。
 1. シナリオを手動で実行します。これにより、[!UICONTROL JSON を解析]モジュールが、指定した JSON から JSON 構造を識別できるようになります。
 1. 次のモジュールを接続できるようになりました。JSON を解析モジュールの項目をマッピングに使用できるようになりました。
 
@@ -121,7 +121,7 @@ JSON 文字列フィールドに配列 `[ ... ]` が含まれている場合、�
 
 ## [!UICONTROL JSON] モジュールとそのフィールド
 
-[!DNL JSON] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリやサービスでのアクセスレベルなどの要因に応じて、追加の JSON フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL JSON] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらに加えて、アプリやサービスでのアクセスレベルなどの要因に応じて、追加の JSON フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 

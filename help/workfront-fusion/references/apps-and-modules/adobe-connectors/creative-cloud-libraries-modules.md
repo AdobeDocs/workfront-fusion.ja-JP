@@ -4,16 +4,16 @@ description: ' [!DNL Adobe Workfront Fusion Adobe Creative Cloud]  ライブラ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 85607e4e-538a-427f-8a99-a0ab65a75ac2
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1393'
-ht-degree: 66%
+source-wordcount: '1404'
+ht-degree: 63%
 
 ---
 
 # Adobe Creative Cloud ライブラリモジュール
 
-[!DNL Adobe Workfront Fusion] [!DNL Adobe Creative Cloud Libraries] モジュールを使用すると、要素やライブラリが作成または更新されたときにシナリオを開始できます。また、要素をアップロード、取得、アーカイブまたはリストすることも、[!DNL Adobe Creative Cloud Libraries] API を呼び出すこともできます。
+Adobe Workfront Fusion [!DNL Adobe Creative Cloud Libraries] モジュールを使用すると、要素やライブラリが作成または更新されたときに、シナリオを開始できます。 また、要素をアップロード、取得、アーカイブまたはリストすることも、[!DNL Adobe Creative Cloud Libraries] API を呼び出すこともできます。
 
 シナリオの作成手順については、[ シナリオを作成：記事インデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -62,7 +62,7 @@ ht-degree: 66%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -91,7 +91,7 @@ Adobe Creative Cloud ライブラリコネクタでは、以下を使用しま�
 
 ## [!UICONTROL Adobe Creative Cloud ライブラリ]モジュールおよびそのフィールド
 
-[!UICONTROL Adobe Creative Cloud ライブラリ]モジュール設定時に、[!DNL Workfront Fusion] には以下のフィールドが表示されます。これらと共に、アプリやサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Adobe Creative Cloud Libraries] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL Adobe Creative Cloud ライブラリ ] モジュールを設定すると、Workfront Fusion は以下にリストされたフィールドを表示します。 これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Adobe Creative Cloud Libraries] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -115,7 +115,7 @@ Adobe Creative Cloud ライブラリコネクタでは、以下を使用しま�
 
 * [[!UICONTROL 要素のアップロード]](#upload-an-element)
 
-* [[!UICONTROL [Watch New Element in Library]]](#watch-new-element-in-library)
+* [!UICONTROL [Watch New Element in Library]](#watch-new-element-in-library)
 
 * [[!UICONTROL 更新された要素の監視]](#watch-updated-elements)
 
@@ -400,7 +400,7 @@ Adobe Creative Cloud ライブラリコネクタでは、以下を使用しま�
 </table>
 
 
-#### [!UICONTROL &#x200B; アセットをアップロード &#x200B;]
+#### [!UICONTROL  アセットをアップロード ]
 
 このアクションモジュールは、小さなファイルアセットを既存のライブラリにアップロードします。最大ファイルサイズは 1 GB です。
 
@@ -439,11 +439,11 @@ Adobe Creative Cloud ライブラリコネクタでは、以下を使用しま�
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 要素タイプ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL 要素タイプ ]</td>
       <td >アップロードする要素のタイプを選択します</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL ファイルの種類 &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL ファイルの種類 ]</td>
       <td >アップロードしたファイルの MIME タイプを入力またはマッピングします。</td>
     </tr>
     <tr>

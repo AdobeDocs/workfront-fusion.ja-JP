@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion の組織とチームの機能を使用す�
 author: Becky
 feature: Workfront Fusion
 exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
-source-git-commit: d76f199b766d6f18e371f2ce1107a96529afbfd1
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 62%
+source-wordcount: '529'
+ht-degree: 58%
 
 ---
 
-# [!DNL Adobe Workfront Fusion] 組織とチームの概要
+# Adobe Workfront Fusion の組織とチームの概要
 
-[!DNL Adobe Workfront Fusion] の組織とチーム機能を使用すると、企業は Fusion 内のシナリオや他の機能へのアクセスを制御できます。
+Adobe Workfront Fusion の組織とチームの機能を使用すると、企業は Fusion 内のシナリオや他の機能へのアクセスを制御できます。
 
 組織は、Adobe Workfront Fusion の最大のエンティティです。 例えば、Fusion 組織は、会社全体の Fusion アカウントを表す場合があります。
 
@@ -23,7 +23,7 @@ ht-degree: 62%
 
 ## 組織
 
-[!DNL Workfront Fusion] ユーザーは組織に属しています。
+Workfront Fusion ユーザーは組織に属しています。
 
 ユーザーは、チームに追加される前に、組織に追加される必要があります。
 
@@ -33,7 +33,7 @@ ht-degree: 62%
 
 * **[!UICONTROL 所有者]**：所有者は、組織で使用可能なすべての権限を持っています。
 * **[!UICONTROL 管理者]**：管理者は、組織のチームとユーザーを作成および管理したり、テンプレートを承認したりできます。
-* **[!UICONTROL メンバー]**: メンバーは [!DNL Workfront Fusion] を使用できますが、組織を変更することはできません。
+* **[!UICONTROL メンバー]**：メンバーはWorkfront Fusion を使用できますが、組織的な変更を行うことはできません。
 * **[!UICONTROL 会計士]**：会計士は、組織ダッシュボードでライセンス情報を表示できますが、アクションを実行できません。
 * **[!UICONTROL アプリ開発者]**：この役割の機能は現在使用できません。近い将来に使用可能になる予定です。現時点では、この役割にユーザーを割り当てることはお勧めしません。
 
@@ -53,7 +53,7 @@ ht-degree: 62%
 
 >[!NOTE]
 >
->チームはリソースを共有するので、チームのメンバーを 1 人だけにすると便利な場合があります。 例えば、トレーニングのユーザーは、個人の [!DNL Workfront] アカウントへの接続を作成できます。チームメンバーは個々の [!DNL Workfront] アカウントに接続することもできます。 この場合、ユーザーをトレーニングチームの唯一のメンバーすることをお勧めします。
+>チームはリソースを共有するので、チームのメンバーを 1 人だけにすると便利な場合があります。 例えば、トレーニング中のユーザーは、個々のWorkfront アカウントへの接続を作成できます。 チームメンバーは誰でも、個々のWorkfront アカウントに接続できます。 この場合、ユーザーをトレーニングチームの唯一のメンバーすることをお勧めします。
 
 組織には必要な数のチームが含まれ、ユーザーは 1 つ以上のチームに属する場合があります。
 

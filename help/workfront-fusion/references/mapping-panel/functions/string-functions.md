@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion マッピングパネルでは、次の文�
 author: Becky
 feature: Workfront Fusion
 exl-id: d3e49fce-85bc-4ee6-9a94-497a306e0c74
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 95%
+source-wordcount: '619'
+ht-degree: 98%
 
 ---
 
 # 文字列関数
 
-## [!UICONTROL length (text or buffer)]
+## [!UICONTROL 長さ（テキストまたはバッファー）]
 
 テキスト文字列の長さ（文字数）またはバイナリバッファー（バイト単位のバッファーサイズ）を返します。
 
@@ -27,7 +27,7 @@ ht-degree: 95%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL lower (text)]
+## [!UICONTROL 小文字（テキスト）]
 
 文字列内のすべてのアルファベット文字を小文字に変換します。
 
@@ -41,7 +41,7 @@ ht-degree: 95%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL capitalize (text)]
+## [!UICONTROL 大文字（テキスト）]
 
 テキスト文字列の最初の文字を大文字に変換します。
 
@@ -51,7 +51,7 @@ ht-degree: 95%
 
 `capitalize( workfront )`
 
-戻り値：[!DNL Workfront]
+戻り値：Workfront
 
 >[!ENDSHADEBOX]
 
@@ -68,7 +68,7 @@ ht-degree: 95%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL ascii (text; [remove diacritics])]
+## [!UICONTROL ASCII（テキスト; [ダイアクリティカルマークを削除]）]
 
 テキスト文字列から非 ASCII 文字をすべて削除します。
 
@@ -78,7 +78,7 @@ ht-degree: 95%
 
 * `ascii(` `Wěošrčkřfžrýoáníté` `)`
 
-戻り値：[!DNL Workfront]
+戻り値：Workfront
 
 * `ascii(` `ěščřž` `;` `true` `)`
 
@@ -86,7 +86,7 @@ ht-degree: 95%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL replace (text;search string; replacement string)]
+## [!UICONTROL 置換（テキスト、検索文字列、置換文字列）]
 
 検索文字列を新しい文字列に置き換えます。
 
@@ -220,11 +220,11 @@ ht-degree: 95%
 
 任意の値を文字列に変換します。
 
-## [!UICONTROL encodeURL (text)]
+## [!UICONTROL encodeURL（テキスト）]
 
 一部のテキストの特殊文字を有効な URL アドレスにエンコードします。
 
-## [!UICONTROL decodeURL (text)]
+## [!UICONTROL decodeURL（テキスト）]
 
 URL 内の特殊文字をテキストにデコードします。
 
@@ -233,11 +233,11 @@ URL 内の特殊文字をテキストにデコードします。
 **例：**
 `decodeURL( Automate%20your%20workflow )`
 
-戻り値：[!UICONTROL Automate your workflow]
+戻り値：[!UICONTROL ワークフローを自動化]
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL escapeHTML (text)]
+## [!UICONTROL escapeHTML（テキスト）]
 
 テキスト内のすべての HTML タグをエスケープします。
 
@@ -251,7 +251,7 @@ URL 内の特殊文字をテキストにデコードします。
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL escapeMarkdown(text)]
+## [!UICONTROL escapeMarkdown（text）]
 
 テキスト内のすべての Markdown タグをエスケープします。
 
@@ -309,7 +309,7 @@ URL 内の特殊文字をテキストにデコードします。
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL md5 (text)]
+## [!UICONTROL md5（テキスト）]
 
 文字列の md5 ハッシュを計算します。
 
@@ -323,7 +323,7 @@ URL 内の特殊文字をテキストにデコードします。
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL sha1 (text; [encoding]; [key])]
+## [!UICONTROL sha1（テキスト、[エンコード]、[キー]）]
 
 文字列の sha1 ハッシュを計算します。キー引数が指定されている場合は、sha1 HMAC ハッシュが代わりに返されます。サポートされるエンコーディング：「hex」（デフォルト）、「base64」または「latin1」。
 
@@ -337,7 +337,7 @@ URL 内の特殊文字をテキストにデコードします。
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL sha256 (text; [encoding]; [key])]
+## [!UICONTROL sha256（テキスト、[エンコード]、[キー]）]
 
 文字列の sha256 ハッシュを計算します。キー引数が指定されている場合は、sha256 HMAC ハッシュが代わりに返されます。サポートされるエンコーディング：「hex」（デフォルト）、「base64」または「latin1」。>
 
@@ -351,7 +351,7 @@ URL 内の特殊文字をテキストにデコードします。
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL sha512 (text; [output encoding]; [key]; [key encoding])]
+## [!UICONTROL sha512（テキスト、[出力エンコーディング]、[キー]、[キーエンコード]）]
 
 文字列の sha512 ハッシュを計算します。キー引数が指定されている場合は、sha512 HMAC ハッシュが代わりに返されます。
 
@@ -363,11 +363,11 @@ URL 内の特殊文字をテキストにデコードします。
 
 サポートされるキーエンコーディングは次のとおりです。
 
-* 「[!UICONTROL text]」（デフォルト）
-* &quot;[!UICONTROL hex]&quot;
-* 「[!UICONTROL base64]」または「[!UICONTROL binary]」
+* 「[!UICONTROL テキスト]」（デフォルト）
+* 「[!UICONTROL hex]」
+* 「[!UICONTROL base64]」または「[!UICONTROL バイナリ]」
 
-「[!UICONTROL binary]」キーエンコーディングを使用する場合、キーは、文字列ではなく、バッファーである必要があります。
+「[!UICONTROL バイナリ]」キーエンコーディングを使用する場合、キーは文字列ではなく、バッファーである必要があります。
 
 >[!BEGINSHADEBOX]
 
@@ -379,7 +379,7 @@ URL 内の特殊文字をテキストにデコードします。
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL base64 (text)]
+## [!UICONTROL base64（text）]
 
 テキストを base64 に変換します。
 

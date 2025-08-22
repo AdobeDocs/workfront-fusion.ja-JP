@@ -3,14 +3,14 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: connections-annd-webhooks
 title: 接続の管理
-description: ほとんどのアプリでは、接続を作成する必要があります。それによって、 [!DNL Adobe Workfront Fusion]  は特定のシナリオの設定に従って、特定のサードパーティサービスと通信できます。
+description: ほとんどのアプリでは、特定のシナリオの設定に従って、Adobe Workfront Fusion が特定のサードパーティサービスと通信するための接続を作成する必要があります。
 author: Becky
 feature: Workfront Fusion
 exl-id: 26d7caad-8e12-4f04-ac7c-f71686c90ee6
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 21%
+source-wordcount: '476'
+ht-degree: 9%
 
 ---
 
@@ -33,17 +33,17 @@ ht-degree: 21%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
    <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規： [!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：[!DNL Workfront Fusion] ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -51,9 +51,9 @@ ht-degree: 21%
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：組織は [!DNL Adobe Workfront Fusion] を購入する必要があります。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
   </tr>
  </tbody> 
@@ -61,7 +61,7 @@ ht-degree: 21%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -86,13 +86,13 @@ ht-degree: 21%
 
 ## 接続を更新する
 
-[!DNL Workfront Fusion] は通常、任意のサービスに対するアクセス権を無制限で取得します。一部のアプリケーションでは、一定期間後にアクセス権限を更新する必要があります。 この場合、アクセス権が失効する直前に [!DNL Workfront Fusion] からメールで通知が届きます。
+Workfront Fusion は通常、特定のサービスに対するアクセス権を無制限に取得します。 一部のアプリケーションでは、一定期間後にアクセス権限を更新する必要があります。 このような場合、Workfront Fusion は、アクセス権の有効期限が切れる直前にメールで通知します。
 
 接続を更新するには：
 
 1. 「接続」領域を開くには、左側のナビゲーションで **接続** ![ 接続アイコン ](assets/connections-icon.png) をクリックします。
 1. 更新する接続を見つけます。
-1. その接続の行で、**[!UICONTROL Connections]** 領域の「**[!UICONTROL Reauthorize]**」ボタンをクリックします。
+1. その接続の行の **[!UICONTROL 接続]** 領域にある **[!UICONTROL 再認証]** ボタンをクリックします。
 
 ## リソース
 

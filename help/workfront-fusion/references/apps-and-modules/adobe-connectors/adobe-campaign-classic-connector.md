@@ -1,19 +1,19 @@
 ---
 title: Adobe Campaign v7／v8 モジュール
-description: ' [!DNL Adobe Campaign]  モジュールを使用すると、 [!DNL Adobe Campaign]  アカウント内のイベントに基づいて  [!DNL Adobe Workfront Fusion]  シナリオを開始したり、契約書やその他の記録を作成、読み取り、アップデートしたり、設定した条件を使用して記録を検索したり、ドキュメントをアップロードしたりできます。'
+description: ' [!DNL Adobe Campaign]  モジュールを使用すると、アカウント内のイベントに基づくAdobe Workfront Fusion シナリオの開始、契約書やその他のレコードの作成、読み取り、更新、設定した条件を使用したレコードの検索  [!DNL Adobe Campaign]  ドキュメントのアップロードを行うことができます。'
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 89%
+source-wordcount: '1326'
+ht-degree: 82%
 
 ---
 
 # [!DNL Adobe Campaign] モジュール
 
-[!DNL Adobe Campaign] モジュールを使用すると、[!DNL Adobe Campaign v7/v8] アカウント内のイベントに基づいて [!DNL Adobe Workfront Fusion] シナリオを開始したり、記録を作成、読み取り、アップデートしたり、設定した条件を使用して記録を検索したり、カスタム API 呼び出しを実行したりできます。
+[!DNL Adobe Campaign] モジュールを使用すると、[!DNL Adobe Campaign v7/v8] アカウント内のイベントに基づくAdobe Workfront Fusion シナリオの開始、レコードの作成、読み取りまたは更新、設定した条件を使用したレコードの検索、カスタム API 呼び出しの実行が可能です。
 
 ## アクセス要件
 
@@ -54,7 +54,7 @@ ht-degree: 89%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -80,7 +80,7 @@ Adobe Campaign コネクタでは、以下を使用します。
  </tbody> 
  </table>
 
-## [!DNL Adobe Campaign] を [!DNL Adobe Workfront Fusion] に接続
+## Adobe Workfront Fusion への [!DNL Adobe Campaign] の接続
 
 >[!IMPORTANT]
 >
@@ -134,7 +134,7 @@ Adobe Campaign コネクタでは、以下を使用します。
 
 ## [!DNL Adobe Campaign] モジュールとそのフィールド
 
-[!DNL Adobe Campaign] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Adobe Campaign] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL Adobe Campaign] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Adobe Campaign]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -268,8 +268,8 @@ This scheduled trigger module starts a scenario when a record changes.
       <td role="rowheader">[!UICONTROL Headers]</td>
       <td>
         <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p>
-        <p>例えば、 <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] が [!UICONTROL x-security] トークンヘッダーを自動的に追加します。</p>
+        <p>例： <code>{"Content-type":"application/json"}</code></p>
+        <p>Workfront Fusion は、[!UICONTROL x-security] トークンヘッダーを自動的に追加します。</p>
       </td>
     </tr>
     <tr>
@@ -283,7 +283,7 @@ This scheduled trigger module starts a scenario when a record changes.
 
 このアクションモジュールは、[!DNL Adobe Campaign] API で、選択されたアクションをオブジェクトに対して実行します。
 
-特定のアクションとフィールドについては、[[!DNL Adobe Campaign]  API ドキュメント](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=ja)を参照してください。
+特定のアクションとフィールドについては、[[!DNL Adobe Campaign]  API ドキュメント](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html)を参照してください。
 
 <table style="table-layout:auto"> 
  <col> 

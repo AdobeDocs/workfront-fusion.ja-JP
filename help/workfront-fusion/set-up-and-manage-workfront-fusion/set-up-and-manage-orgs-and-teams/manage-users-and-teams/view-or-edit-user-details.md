@@ -1,19 +1,19 @@
 ---
 title: ユーザーの詳細を表示または編集
-description: 組織内の  [!DNL Adobe Workfront Fusion]  ユーザーの管理
+description: 組織内のAdobe Workfront Fusion ユーザーの管理
 author: Becky
 feature: Workfront Fusion
 exl-id: 0eeed98c-0c87-4e34-9efe-027f3f03af1b
-source-git-commit: ef41c85010b53bbc80c5b44ba8a622027c9e4911
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 49%
+source-wordcount: '273'
+ht-degree: 33%
 
 ---
 
 # ユーザーの詳細を表示または編集
 
-管理者 [!DNL Adobe Workfront Fusion]、[!DNL Workfront Fusion] 内でユーザーの詳細を管理できます。
+Adobe Workfront Fusion 管理者は、Workfront Fusion 内のユーザーの詳細を管理できます。
 
 >[!NOTE]
 >
@@ -30,17 +30,17 @@ ht-degree: 49%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
    <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規：[!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：[!DNL Workfront Fusion] ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -48,16 +48,16 @@ ht-degree: 49%
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：[!DNL Adobe Workfront Fusion] を購入してください。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">アクセスレベル設定*</td> 
    <td> 
-     <p>組織の [!DNL Workfront Fusion] 管理者である必要があります。</p>
-     <p>チームの [!DNL Workfront Fusion] 管理者である必要があります。</p>
+     <p>組織の Workfront Fusion 管理者である必要があります。</p>
+     <p>チームのWorkfront Fusion 管理者である必要があります。</p>
    </td> 
   </tr> 
    </td> 
@@ -67,15 +67,15 @@ ht-degree: 49%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
 ## ユーザーの詳細を表示または編集
 
-[!DNL Adobe Workfront Fusion] 管理者は、ユーザーの詳細を表示および更新できます。
+Adobe Workfront Fusion 管理者は、ユーザーの詳細情報を表示および更新できます。
 
-1. [!DNL Workfront Fusion] 管理者としてログインし、左側のナビゲーションで **[!UICONTROL すべてのユーザー]** を選択します。
+1. Workfront Fusion 管理者としてログインし、左側のナビゲーションで **[!UICONTROL すべてのユーザー]** を選択します。
 1. 表示したいユーザーの行で&#x200B;**[!UICONTROL 詳細]**&#x200B;をクリックします。
 1. （オプション）ユーザーの詳細を更新するには、画面の右上隅にある&#x200B;**[!UICONTROL オプション]**&#x200B;をクリックし、「**[!UICONTROL 詳細を変更]**」を選択します。
 1. 詳細を編集し、「**保存**」をクリックします。

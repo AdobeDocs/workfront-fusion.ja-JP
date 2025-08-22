@@ -4,20 +4,20 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: apps-and-their-modules
 title: Adobe User Management モジュール
-description: シナリオ  [!DNL Adobe Workfront Fusion]  は、Adobe アカウントのユーザーを管理するワークフローを自動化できます。
+description: Adobe Workfront Fusion シナリオでは、Adobe アカウントのユーザーを管理するワークフローを自動化できます。
 author: Becky
 feature: Workfront Fusion
 exl-id: e8fe8ec4-4b00-4c9a-81a5-acb2039b153b
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2374'
-ht-degree: 15%
+source-wordcount: '2417'
+ht-degree: 14%
 
 ---
 
 # Adobe User Management モジュール
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、Adobe アカウントのユーザーを管理するワークフローを自動化できます。
+Adobe Workfront Fusion シナリオでは、Adobe アカウントのユーザーを管理するワークフローを自動化できます。
 
 シナリオの作成手順については、[ シナリオを作成：記事インデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -34,35 +34,35 @@ ht-degree: 15%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
+   <td role="rowheader">Adobe Workfront プラン*</td>
   <td> <p>[!UICONTROL Pro] 以降</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
+   <td role="rowheader">Adobe Workfront プラン*</td>
    <td> <p>[!UICONTROL Plan]、[!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在のライセンス要件：Workfront Fusion のライセンス要件はありません。</p>
    <p>または</p>
-   <p>従来のライセンス要件：[!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration]、[!UICONTROL [!DNL Workfront Fusion] for Work Automation]</p>
+   <p>従来のライセンス要件：[!UICONTROL Workfront Fusion for Work Automation and Integration]、[!UICONTROL Workfront Fusion for Work Automation]</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] の [!DNL Adobe Workfront] プランがある場合、この記事に記載されている機能を使用するには、組織で [!DNL Adobe Workfront Fusion] の購入 [!DNL Adobe Workfront] 必要です。 [!DNL Workfront Fusion] は、[!DNL Workfront] [!UICONTROL Ultimate] プランに含まれています。</p>
+   <p>現在の必要な商品：Adobe Workfrontのプランで [!UICONTROL Select] または [!UICONTROL Prime] をお持ちの場合、この記事に記載されている機能を使用するには、Adobe Workfront Fusion とAdobe Workfrontを購入する必要があります。 Workfront Fusion は、[!UICONTROL Ultimate] Workfront プランに含まれています。</p>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>従来の製品要件：この記事に記載されている機能を使用するには、Adobe Workfront Fusion とAdobe Workfrontを購入する必要があります。</p>
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、Workfront 管理者にお問い合わせください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -96,18 +96,18 @@ ht-degree: 15%
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>[!UICONTROL Adobe] [!UICONTROL クライアント ID] を入力します。 これは、の [!UICONTROL 資格情報 &#x200B;] の詳細セクションにあります [!DNL Adobe Developer Console]</td>
+        <td>[!UICONTROL Adobe] [!UICONTROL クライアント ID] を入力します。 これは、の [!UICONTROL 資格情報 ] の詳細セクションにあります [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、の [!UICONTROL 資格情報 &#x200B;] の詳細セクションにあります [!DNL Adobe Developer Console]</td>
+        <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、の [!UICONTROL 資格情報 ] の詳細セクションにあります [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL IMS 組織 ID]</td>
         <td>[!DNL Adobe] IMS 資格情報を入力します。 組織の一意の ID。 これは、A495E53@AdobeOrgの形式の文字列で、@の前のプレフィックスは 16 進数です。 この値は、Admin Consoleの組織の URL パスの一部として、または User Management 統合用の adobe.io コンソールで確認できます。</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL 追加範囲 &#x200B;]</td>
+        <td role="rowheader">[!UICONTROL 追加範囲 ]</td>
         <td>追加する追加の範囲ごとに、「<b> 項目を追加 </b>」をクリックして範囲を入力します。</td>
         </tr>
       </tbody>
@@ -306,7 +306,7 @@ Adobe User Management モジュールを設定する場合、Workfront Fusion �
    <td>ユーザーの名を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">名前 (姓)</td> 
+   <td role="rowheader">姓</td> 
    <td>ユーザーの姓を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
@@ -386,7 +386,7 @@ Adobe User Management モジュールを設定する場合、Workfront Fusion �
    <td>ユーザーの名を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">名前 (姓)</td> 
+   <td role="rowheader">姓</td> 
    <td>ユーザーの姓を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -565,7 +565,7 @@ Adobe User Management モジュールを設定する場合、Workfront Fusion �
       <td>
         <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p>
         <p>例： <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] 認証ヘッダーおよび x-api-key ヘッダーを自動的に追加します。</p>
+        <p>Workfront Fusion は、認証ヘッダーと x-api-key ヘッダーを自動的に追加します。</p>
       </td>
     </tr>
     <tr>

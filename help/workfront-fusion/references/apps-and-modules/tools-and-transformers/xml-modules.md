@@ -4,9 +4,9 @@ description: XML アプリを使用すると、XML／Parse XML モジュール�
 author: Becky
 feature: Workfront Fusion
 exl-id: ab323361-cd04-4dcc-ab02-0fb468334fdb
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1448'
 ht-degree: 86%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 86%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -196,7 +196,7 @@ ht-degree: 86%
 XML ファイルを URL からダウンロードしてコンテンツを解析するには：
 
 1. 新しいシナリオを開始します。
-1. [!UICONTROL HTTP]/[!UICONTROL &#x200B; ファイルを取得 &#x200B;] モジュールを追加します
+1. [!UICONTROL HTTP]/[!UICONTROL  ファイルを取得 ] モジュールを追加します
 1. モジュールの設定を開き、次のように設定します。
 
    **URL**：XML ファイルの URL（例：`https://siftrss.com/f/rqLy05ayMBJ`）

@@ -1,13 +1,13 @@
 ---
 title: シナリオの詳細の概要
-description: ' [!DNL Adobe Workfront Fusion] のシナリオの詳細'
+description: Adobe Workfront Fusion のシナリオの詳細
 author: Becky
 feature: Workfront Fusion
 exl-id: a6d07ed9-aa55-4993-9f78-7e691aa61049
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 53%
+source-wordcount: '620'
+ht-degree: 56%
 
 ---
 
@@ -30,17 +30,17 @@ ht-degree: 53%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
    <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規： [!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：[!DNL Workfront Fusion] ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -48,16 +48,16 @@ ht-degree: 53%
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：組織は [!DNL Adobe Workfront Fusion] を購入する必要があります。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">アクセスレベル設定*</td> 
    <td> 
-     <p>組織の [!DNL Workfront Fusion] 管理者である必要があります。</p>
-     <p>チームの [!DNL Workfront Fusion] 管理者である必要があります。</p>
+     <p>組織の Workfront Fusion 管理者である必要があります。</p>
+     <p>チームのWorkfront Fusion 管理者である必要があります。</p>
    </td> 
   </tr> 
    </td> 
@@ -67,13 +67,13 @@ ht-degree: 53%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
-## [!UICONTROL Scenario detail] ページを開きます。
+## [!UICONTROL シナリオの詳細]ページを開きます。
 
-1. 左側のパネルで「**[!UICONTROL Scenario]**」タブをクリックし、詳細を表示するシナリオをクリックします。
+1. 左パネルの「**[!UICONTROL シナリオ]**」タブをクリックし、詳細が必要なシナリオをクリックします。
 
    または
 
@@ -92,12 +92,12 @@ ht-degree: 53%
       <td>このタブには、シナリオが視覚的に表示されます。図は、シナリオエディターで表示されるものと同じです。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Reports] タブ </td> 
+      <td role="rowheader">[!UICONTROL レポート ] タブ </td> 
       <td> <p>このタブを開いて、過去 30 日間にこのシナリオで実行された操作数のグラフを表示します。</p>  </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL History] タブ </td> 
-      <td> <p>このタブを開いて、シナリオの編集内容を含むシナリオの履歴を表示します。 </p> <p>「[!UICONTROL History]」タブには、各実行のシナリオ実行履歴も表示されます。次の情報が含まれます。</p> 
+      <td role="rowheader">[!UICONTROL 履歴 ] タブ </td> 
+      <td> <p>このタブを開いて、シナリオの編集内容を含むシナリオの履歴を表示します。 </p> <p>「[!UICONTROL History]」タブには、各実行のシナリオ実行履歴も提供されます。これには次の情報が含まれます。</p> 
        <ul> 
         <li>各実行のステータス（成功またはエラー）</li> 
         <li>実行時間</li> 
@@ -118,7 +118,7 @@ ht-degree: 53%
        </ul> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Activate scenario] （オン/オフボタン）</td> 
+      <td role="rowheader">[!UICONTROL Activate scenario]（「オン／オフ」ボタン）</td> 
       <td>シナリオを作成したら、スケジュールに従って実行するために、アクティブ化する必要があります。右上隅近くの「オン／オフ」ボタンをクリックすると、シナリオをアクティブ化または非アクティブ化できます。オンにすると、シナリオはスケジュールに従って実行されます。</td> 
      </tr> 
      <tr> 
@@ -140,7 +140,7 @@ ht-degree: 53%
       <td>このエリアには、現在実行中の実行に関連する情報が表示されます。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL History] panel</p> <p> </p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL 履歴 ] パネル</p> <p> </p> </td> 
       <td> <p>このエリアには、シナリオの最後の実行に関連する情報が表示されます。実行ごとに、次の情報が表示されます。</p> 
        <ul> 
         <li>実行日</li> 
@@ -151,7 +151,7 @@ ht-degree: 53%
        </ul> </td> 
      </tr> 
          <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Events] panel</p>  </td> 
+      <td role="rowheader"> <p>[!UICONTROL イベント ] パネル</p>  </td> 
       <td>この領域には、シナリオに関連するイベントに関する情報が表示されます。  </td> 
      </tr> 
      <tr> 

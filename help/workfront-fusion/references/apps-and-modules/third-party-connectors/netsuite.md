@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion のシナリオでは、 [!DNL NetSuite] を
 author: Becky
 feature: Workfront Fusion
 exl-id: 9bf67fc4-d93b-4868-ad1a-021c98637905
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 68%
+source-wordcount: '616'
+ht-degree: 59%
 
 ---
 
 # [!DNL NetSuite] モジュール
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、[!DNL NetSuite] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
+Adobe Workfront Fusion のシナリオでは、[!DNL NetSuite] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -28,35 +28,35 @@ ht-degree: 68%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront プラン*</td>
+  <td> <p>[!UICONTROL Pro] 以降</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン*</td>
+   <td> <p>[!UICONTROL Plan]、[!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在のライセンス要件：Workfront Fusion のライセンス要件はありません。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のライセンス要件：[!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] Adobe Workfront プランがある場合、この記事に記載されている機能を使用するには、Adobe Workfront Fusion とAdobe Workfrontを購入する必要があります。 Workfront Fusion は、[!UICONTROL Ultimate] Workfront プランに含まれています。</p>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>従来の製品要件：この記事に記載されている機能を使用するには、Adobe Workfront Fusion とAdobe Workfrontを購入する必要があります。</p>
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、Workfront 管理者にお問い合わせください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 ## 前提条件
 
@@ -85,7 +85,7 @@ NetSuite コネクタは以下を使用します。
 
 [!DNL NetSuite] モジュールへの接続を作成するには、以下を実行します。
 
-1. [!DNL NetSuite] モジュールで、「接続」ボックスの横にある「**[!UICONTROL Add]**」をクリックします。
+1. [!DNL NetSuite] モジュールで、「接続」ボックスの横にある **[!UICONTROL 追加]** をクリックします。
 
 1. 次のフィールドに入力します。
 
@@ -106,7 +106,7 @@ NetSuite コネクタは以下を使用します。
           <td>サービスアカウントと個人アカウントのどちらに接続するかを選択します。</p>
         </tr>
        <tr>
-          <td role="rowheader">[!UICONTROL Account ID] </td>
+          <td role="rowheader">[!UICONTROL アカウント ID] </td>
           <td>NetSuite アカウントの ID を入力します。</p>
         </tr>
         <tr>
@@ -119,20 +119,20 @@ NetSuite コネクタは以下を使用します。
         </tr>
         </tbody>
     </table>
-1. 「**[!UICONTROL Continue]**」をクリックして接続を保存し、モジュールに戻ります。
+1. 「**[!UICONTROL 続行]**」をクリックして接続を保存し、モジュールに戻ります。
 
 ## [!DNL NetSuite] モジュールとそのフィールド
 
-[!DNL NetSuite] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL NetSuite] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL NetSuite] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL NetSuite]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
 ![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 
-### [!UICONTROL Custom API Call]
+### [!UICONTROL カスタム API 呼び出し]
 
-このアクションモジュールでは、[!DNL NetSuite] API への認証済みのカスタム呼び出しを実行できます。これにより、他の [!DNL NetSuite] モジュールでは不可能なデータフロー自動処理を実現できます。
+このアクションモジュールは、[!DNL NetSuite] API に対して認証済みのカスタム呼び出しを実行します。これにより、他の [!DNL NetSuite] モジュールでは不可能なデータフロー自動処理を実現できます。
 
 アクションは、指定したエンティティタイプ（Allocadia オブジェクトタイプ）に基づいて実行されます。
 

@@ -4,10 +4,10 @@ description: FTP モジュールを使用すると、選択したフォルダー
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e14f778-ab8c-421f-a4b4-c57be66c7cad
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1381'
-ht-degree: 80%
+source-wordcount: '1391'
+ht-degree: 77%
 
 ---
 
@@ -54,7 +54,7 @@ FTP モジュールを使用すると、選択したフォルダー内のファ�
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -115,7 +115,7 @@ FTP モジュールを使用するには、FTP サービスに関するアカウ
     </tr> 
     <tr> 
      <td> <p>[!UICONTROL Self-signed certificate]</p> </td> 
-     <td> <p>「<b>[!UICONTROL Extract]</b>」ボタンをクリックして、アップロードダイアログを開きます。</p> <p>自己署名証明書で TLS を使用するには、証明書をアップロードします。[!DNL Workfront Fusion] では、ファイルやパスワードなど、ユーザーが提供したデータを保持または保存することはありません。ファイルとパスワードは、証明書を抽出するためにのみ使用されます。</p> </td> 
+     <td> <p>「<b>[!UICONTROL Extract]</b>」ボタンをクリックして、アップロードダイアログを開きます。</p> <p>自己署名証明書で TLS を使用するには、証明書をアップロードします。Workfront Fusion では、ファイルやパスワードなど、ユーザーが提供するデータを保持または保存しません。 ファイルとパスワードは、証明書を抽出するためにのみ使用されます。</p> </td> 
     </tr> 
    </tbody> 
    </table>
@@ -147,7 +147,7 @@ FTP モジュールを使用するには、FTP サービスに関するアカウ
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of returned files] </td> 
-   <td> <p>1 回のサイクルでモジュールで使用する結果の最大数を設定します。 この値の設定が高すぎると、FTP サーバー側で接続が中断される場合があります。 [!DNL Workfront Fusion] はこれに影響しません。より小さい値を設定し、最大サイクル数としてより大きい値を定義するか、シナリオをより頻繁に実行することをお勧めします。</p> </td> 
+   <td> <p>1 回のサイクルでモジュールで使用する結果の最大数を設定します。 この値の設定が高すぎると、FTP サーバー側で接続が中断される場合があります。 Workfront Fusion はこの問題に影響を与えません。 より小さい値を設定し、最大サイクル数としてより大きい値を定義するか、シナリオをより頻繁に実行することをお勧めします。</p> </td> 
   </tr> 
  </tbody> 
 </table>

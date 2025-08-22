@@ -1,13 +1,13 @@
 ---
 title: 項目データタイプ
-description: お使いの  [!DNL Adobe Workfront Fusion]  シナリオには、バンドルに以下に示す項目のタイプを含めることができます。
+description: Adobe Workfront Fusion シナリオには、以下に示すタイプの項目をバンドルで含めることができます。
 author: Becky
 feature: Workfront Fusion
 exl-id: 3ad65959-5c19-4727-bc9d-4ff1d238ad8b
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 80%
+source-wordcount: '577'
+ht-degree: 70%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 80%
 
 バンドルには、以下に示す項目のタイプを含めることができます。
 
-[!DNL Workfront Fusion] が相互に変換できる項目のタイプについて詳しくは、[ 型の強制 ](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md) を参照してください。
+Workfront Fusion で相互に変換できる項目のタイプについて詳しくは、[ 型強制 ](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md) を参照してください。
 
 <table style="table-layout:auto">
  <col> 
@@ -23,11 +23,11 @@ ht-degree: 80%
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>テキスト</p> </td> 
-   <td> <p>最も一般的な項目タイプです。 一部のテキスト項目では、[!DNL Adobe Workfront Fusion] は許容される最大長または最小長を満たしているか、またはアイテムが形式検証（メール、URL、ファイル名）を実行しているかどうかを確認します。</p> </td> 
+   <td> <p>最も一般的な項目タイプです。 一部のテキスト項目では、Adobe Workfront Fusion は、許可されている最大長または最小値を満たしているか、書式の検証（メール、URL、ファイル名）を行っているかを確認します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>数値</p> </td> 
-   <td> <p>一部の数値項目では、[!DNL Workfront Fusion] は指定された範囲（許容される最小値または最大値）の入力を検証する場合があります。</p> </td> 
+   <td> <p>一部の数値項目については、Workfront Fusion は、指定された範囲（許容される最小値または最大値）の入力を検証する場合があります。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>ブール値（はい／いいえ）</p> </td> 
@@ -35,7 +35,7 @@ ht-degree: 80%
     <ul> 
      <li> <p>フィールドが必須で、入力が必要な場合は、必須のチェックボックスが表示されます。</p> <p> <img src="assets/boolean-checkbox-350x158.jpg" style="width: 350;height: 158;"> </p> </li> 
      <li> <p>空白のままにできるオプションのフィールドは選択ボックスとして表示され、<code>Yes</code>、<code>No</code>、<code>Not defined</code>（デフォルト）の 3 つの値から選択できます。</p> <p> <img src="assets/boolean-convert-file-350x129.jpg" style="width: 350;height: 129;"> </p> </li> 
-    </ul> <p>値を別のモジュールの項目にマッピングする必要がある場合は、「<strong>[!UICONTROL Map]</strong>」をクリックします。</p> </td> 
+    </ul> <p>値を別のモジュールの項目にマッピングする必要がある場合は、<strong>[!UICONTROL Map]</strong> をクリックします。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>日付</p> </td> 
@@ -43,7 +43,7 @@ ht-degree: 80%
   </tr> 
   <tr> 
    <td role="rowheader"> <p>バッファー（バイナリデータ）</p> </td> 
-   <td> <p>ファイルコンテンツは、通常、バッファータイプのコンテンツ（画像コンテンツ、ビデオファイルなど）として送信されます。 場合によっては、テキストデータがこのタイプに含まれることがあります（テキストファイルなど）。 [!DNL Workfront Fusion] では、バイナリコード内のテキストデータをテキストに、テキストをバイナリコード内のテキストデータに自動変換できます。 詳細については、「<a href="/help/workfront-fusion/create-scenarios/map-data/map-files.md" class="MCXref xref"> ファイルをマップする </a>」を参照してください。</p> </td> 
+   <td> <p>ファイルコンテンツは、通常、バッファータイプのコンテンツ（画像コンテンツ、ビデオファイルなど）として送信されます。 場合によっては、テキストデータがこのタイプに含まれることがあります（テキストファイルなど）。 Workfront Fusion は、バイナリコードのテキストデータをテキストに、テキストをバイナリコードのテキストデータに自動変換できます。 詳細については、「<a href="/help/workfront-fusion/create-scenarios/map-data/map-files.md" class="MCXref xref"> ファイルをマップする </a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>コレクション</p> </td> 
@@ -55,11 +55,11 @@ ht-degree: 80%
   </tr> 
   <tr> 
    <td role="rowheader"> <p>配列</p> </td> 
-   <td> <p>配列タイプを使用すると、コレクションを含む同じタイプの複数の値を操作できます。 例えば、[!UICONTROL Email] のモジュールでは、添付ファイルの配列が返され、各添付ファイルには、名前、コンテンツ、サイズなどが含まれます。 詳しくは、「<a href="/help/workfront-fusion/create-scenarios/map-data/map-an-array.md" class="MCXref xref"> 配列または配列要素のマッピング </a>」を参照してください。</p> </td> 
+   <td> <p>配列タイプを使用すると、コレクションを含む同じタイプの複数の値を操作できます。 [!UICONTROL Email] モジュールの例では、添付ファイルの配列を返し、各添付ファイルには名前、コンテンツ、サイズなどが含まれます。 詳しくは、「<a href="/help/workfront-fusion/create-scenarios/map-data/map-an-array.md" class="MCXref xref"> 配列または配列要素のマッピング </a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>検証</p> </td> 
-   <td> <p>[!DNL Workfront Fusion] では、項目のタイプごとに検証を実行する場合があります。項目が検証に合格しない場合、モジュールはデータエラーが原因で処理を停止します。 詳しくは、<a href="/help/workfront-fusion/references/errors/error-processing.md" class="MCXref xref"> エラータイプ </a> を参照してください。 </p> </td> 
+   <td> <p>Workfront Fusion は、各種類の項目に対して検証を実行する場合があります。 項目が検証に合格しない場合、モジュールはデータエラーが原因で処理を停止します。 詳しくは、<a href="/help/workfront-fusion/references/errors/error-processing.md" class="MCXref xref"> エラータイプ </a> を参照してください。 </p> </td> 
   </tr> 
  </tbody> 
 </table>

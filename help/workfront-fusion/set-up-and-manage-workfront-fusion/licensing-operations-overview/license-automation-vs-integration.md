@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion には、アクセス可能な機能を決�
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e2df1a0-c1f9-4833-b1c2-65efb3be9657
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '763'
 ht-degree: 28%
 
 ---
@@ -40,9 +40,9 @@ Workfront Fusion のライセンスの種類については、Workfront Fusion �
 
 #### 作業の自動化のためのWorkfront Fusion のメリット
 
-Workfront Fusion for Work Automation ライセンスを使用すると、[!DNL Workfront] ワークフローを自動化できます。 Workfront Fusion を作業自動化に使用すると、組織固有の作業プロセスを自動化するシナリオを作成できます。
+Workfront Fusion for Work Automation ライセンスを使用すると、Workfront ワークフローを自動化できます。 Workfront Fusion を作業自動化に使用すると、組織固有の作業プロセスを自動化するシナリオを作成できます。
 
-[!DNL Workfront] プロセスを自動化するメリットには、次のものがあります。
+Workfront プロセスを自動化する利点には、次のものがあります。
 
 * 自動化が迅速になり、エラーが発生しにくくなります。
 * 決定が必要ないワークフローや、決定があるワークフローは、if/then などの単純なロジックに基づいているので、自動化に適しています。
@@ -98,15 +98,15 @@ Workfront Fusion for Work Automation and Integration ライセンスの利点は
 
 >[!IMPORTANT]
 >
->Workfront Fusion は、ほぼすべての web サービスに接続できます。 使用するアプリに専用のコネクタがない場合は、[!UICONTROL HTTP]、[!UICONTROL SFTP]、または [!UICONTROL JSON] のコネクタを使用して、web サービスに直接接続できます。
+>Workfront Fusion は、ほぼすべての web サービスに接続できます。 操作するアプリに専用のコネクタがない場合は、[!UICONTROL HTTP]、[!UICONTROL SFTP] または [!UICONTROL JSON] コネクタを使って、web サービスに直接接続できます。
 
 #### 作業の自動化と統合のためのWorkfront Fusion の例
 
 次の例は、次のようなワークフローを示しています。
 
 1. 新規ユーザーに対してスプレッドシートを監視
-1. ユーザーが [!DNL Workfront] に存在するかどうかを確認
-1. ユーザーが存在しない場合は、[!DNL Workfront] にユーザーを作成
-1. [!DNL Workfront] ユーザー ID をスプレッドシートにアップロードして戻す
+1. ユーザーがWorkfrontに存在するかどうかを確認します
+1. ユーザーが存在しない場合、Workfrontにユーザーを作成します
+1. Workfront ユーザー ID をスプレッドシートにアップロードします。
 
 ![ 自動化シナリオの例 ](assets/fusion-integration-example.png)

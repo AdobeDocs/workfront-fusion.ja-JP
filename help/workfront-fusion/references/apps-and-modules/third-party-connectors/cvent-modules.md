@@ -1,19 +1,19 @@
 ---
 title: Cvent モジュール
-description: ' [!DNL Adobe Workfront Fusion]  シナリオでは、Cvent を使用するワークフローを自動化したり、複数のサードパーティアプリケーションおよびサービスに接続したりすることができます。'
+description: Adobe Workfront Fusion シナリオでは、Cvent を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 author: Becky
 feature: Workfront Fusion
 exl-id: b7e16180-1db8-4aff-bb7b-69ca98194b00
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 84%
+source-wordcount: '1156'
+ht-degree: 66%
 
 ---
 
 # [!DNL Cvent] モジュール
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、[!DNL Cvent] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
+Adobe Workfront Fusion のシナリオでは、[!DNL Cvent] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -28,35 +28,35 @@ ht-degree: 84%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront プラン*</td>
+  <td> <p>[!UICONTROL Pro] 以降</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン*</td>
+   <td> <p>[!UICONTROL Plan]、[!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在のライセンス要件：Workfront Fusion のライセンス要件はありません。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のライセンス要件：[!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] Adobe Workfront プランがある場合、この記事に記載されている機能を使用するには、Adobe Workfront Fusion とAdobe Workfrontを購入する必要があります。 Workfront Fusion は、[!UICONTROL Ultimate] Workfront プランに含まれています。</p>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>従来の製品要件：この記事に記載されている機能を使用するには、Adobe Workfront Fusion とAdobe Workfrontを購入する必要があります。</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、Workfront 管理者にお問い合わせください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 ## 前提条件
 
@@ -81,32 +81,32 @@ Cvent コネクタでは、以下を使用します。
  </tbody> 
  </table>
 
-## [!DNL Cvent] を [!DNL Adobe Workfront Fusion] に接続 {#connect-cvent-to-adobe-workfront-fusion}
+## Adobe Workfront Fusion への [!DNL Cvent] の接続 {#connect-cvent-to-adobe-workfront-fusion}
 
 >[!NOTE]
 >
->[!DNL Cvent] モジュールは、[!UICONTROL SOAP] API を介して動作します。 [!DNL Cvent] への接続を作成するには、次の点を確認する必要があります。
+>[!DNL Cvent] モジュールは、[!UICONTROL SOAP] API 経由で動作します。[!DNL Cvent] への接続を作成するには、次の点を確認する必要があります。
 >
->* [!DNL Cvent] API[!UICONTROL SOAP] アクセスできます。
->* [!DNL Workfront Fusion] IP アドレスが組織の許可リストに追加されている。
+>* [!DNL Cvent] API への [!UICONTROL SOAP] アクセス権を持っている
+>* Workfront Fusion の IP アドレスが組織の許可リストに追加されました。
 >
->  許可リストに加える [!DNL Workfront Fusion] の IP アドレスのリストについては、組織の [Fusion の IP アドレスの設定」を参照してください ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)
+>  Workfront 許可リストに加える Fusion の IP アドレスのリストについては、組織の [Fusion の IP アドレスの設定 ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md) を参照してください。
 
 
 [!DNL Cvent] アカウントへの接続を、[!DNL Cvent] モジュール内から直接作成できます。
 
-1. 任意の [!DNL Cvent] モジュールで、[!UICONTROL Connection] フィールドの横にある「**[!UICONTROL Add]**」をクリックします。
+1. 任意の [!DNL Cvent] モジュールで、[!UICONTROL 接続]フィールドの横にある「**[!UICONTROL 追加]**」をクリックします。
 1. 接続する地域を選択します。
 
-   * [!UICONTROL North America]
-   * [!UICONTROL Europe]
-   * [!UICONTROL Sandbox]
+   * [!UICONTROL 北米]
+   * [!UICONTROL ヨーロッパ]
+   * [!UICONTROL サンドボックス]
 
-1. 「**[!UICONTROL Continue]**」をクリックして接続を作成し、モジュールに戻ります。
+1. 「**[!UICONTROL 続行]**」をクリックして接続を作成し、モジュールに戻ります。
 
 ## [!DNL Cvent] モジュールとそのフィールド
 
-[!DNL Cvent] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Cvent] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL Cvent] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Cvent]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -117,17 +117,17 @@ Cvent コネクタでは、以下を使用します。
 
 ### アクション
 
-* [[!UICONTROL Custom API Call]](#create-meeting-request)
-* [[!UICONTROL Read a record]](#read-a-record)
-* [[!UICONTROL Register Invitee]](#register-invitee)
-* [[!UICONTROL Add Invitee]](#add-invitee)
-* [[!UICONTROL Delete Contact]](#delete-contact)
-* [[!UICONTROL Update Contact]](#update-contact)
-* [[!UICONTROL Create meeting request]](#create-meeting-request)
+* [[!UICONTROL カスタム API 呼び出し]](#create-meeting-request)
+* [[!UICONTROL レコードの読み取り]](#read-a-record)
+* [[!UICONTROL 招待者の登録]](#register-invitee)
+* [[!UICONTROL 招待者の追加]](#add-invitee)
+* [[!UICONTROL 連絡先の削除]](#delete-contact)
+* [[!UICONTROL 連絡先の更新]](#update-contact)
+* [[!UICONTROL 会議出席リクエストの作成]](#create-meeting-request)
 
-#### [!UICONTROL Custom API Call]
+#### [!UICONTROL カスタム API 呼び出し]
 
-このアクションモジュールでは、[!DNL Cvent] API への認証済みのカスタム呼び出しを実行できます。これにより、他の [!DNL Cvent] モジュールでは不可能なデータフロー自動処理を作成できます。
+このアクションモジュールは、[!DNL Cvent] API に対して認証済みのカスタム呼び出しを実行します。これにより、他の [!DNL Cvent] モジュールでは不可能なデータフロー自動処理を作成できます。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
@@ -139,7 +139,7 @@ Cvent コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Cvent] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Cvent] への [!DNL Adobe Workfront Fusion]</a> の接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Cvent] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Cvent] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">操作</td> 
@@ -152,7 +152,7 @@ Cvent コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Read a record]
+#### [!UICONTROL レコードの読み取り]
 
 このアクションモジュールは、特定のレコードに関する情報を読み取ります。
 
@@ -162,14 +162,14 @@ Cvent コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Cvent] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Cvent] を [!DNL Adobe Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Cvent] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Cvent] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Record type]</p> </td> 
    <td>読み取るレコードの項目タイプを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Contact] / [!UICONTROL Event] / [!UICONTROL Invitee ID]</td> 
+   <td role="rowheader">[!UICONTROL Contact]／[!UICONTROL Event]／[!UICONTROL Invitee ID]</td> 
    <td> <p>読み取る項目の ID を入力またはマップします。</p> </td> 
   </tr> 
   <tr> 
@@ -179,7 +179,7 @@ Cvent コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Register Invitee]
+#### [!UICONTROL 招待者の登録]
 
 このアクションモジュールでは、イベントの招待者を登録できます。
 
@@ -189,7 +189,7 @@ Cvent コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Cvent] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> への [!DNL Cvent] の接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Cvent] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Cvent] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>招待者 ID</p> </td> 
@@ -202,7 +202,7 @@ Cvent コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Add Invitee]
+#### [!UICONTROL 招待者の追加]
 
 このアクションモジュールでは、連絡先をイベントに招待できます。
 
@@ -212,7 +212,7 @@ Cvent コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Cvent] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Cvent] を [!DNL Adobe Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Cvent] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Cvent] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Contact ID]</p> </td> 
@@ -225,7 +225,7 @@ Cvent コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete Contact]
+#### [!UICONTROL 連絡先の削除]
 
 このアクションモジュールでは、Cvent 内の 1 つの連絡先を削除できます。
 
@@ -235,7 +235,7 @@ Cvent コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Cvent] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Cvent] を [!DNL Adobe Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Cvent] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Cvent] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Contact ID]</td> 
@@ -244,7 +244,7 @@ Cvent コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Update Contact]
+#### [!UICONTROL 連絡先の更新]
 
 このアクションモジュールは、ID を使用して既存の連絡先を更新します。
 
@@ -254,7 +254,7 @@ Cvent コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Cvent] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Cvent] を [!DNL Adobe Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Cvent] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Cvent] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Contact ID]</p> </td> 
@@ -271,7 +271,7 @@ Cvent コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Create meeting request]
+#### [!UICONTROL 会議出席リクエストの作成]
 
 このアクションモジュールは、お客様のアカウントに会議出席リクエストを追加します。
 
@@ -281,7 +281,7 @@ Cvent コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Cvent] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Cvent] を [!DNL Adobe Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Cvent] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Cvent] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Form ID]</p> </td> 
@@ -304,7 +304,7 @@ Cvent コネクタでは、以下を使用します。
 
 ### 検索
 
-#### [!UICONTROL List records]
+#### [!UICONTROL レコードのリスト]
 
 この検索モジュールは、特定のタイプのすべてのレコードに関する情報を取得します。
 
@@ -314,7 +314,7 @@ Cvent コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Cvent] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">[!DNL Cvent] を [!DNL Adobe Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Cvent] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Cvent] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Record type]</p> </td> 

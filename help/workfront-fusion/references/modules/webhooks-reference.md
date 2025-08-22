@@ -4,9 +4,9 @@ description: 多くのサービスでは、サービスで特定の変更が発�
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '868'
 ht-degree: 28%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 28%
 >
 >コネクタのモジュールのリストをチェックして、インスタントトリガーがあるかどうかを確認したり、[Fusion アプリケーションとそのモジュールのリファレンス ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md) にあるコネクタのドキュメントを確認したりできます。
 >
->Adobe Workfrontのインスタントトリガーのドキュメントについては、Workfront モジュールの記事の [&#128279;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#triggers)0&rbrace;トリガー&rbrace; を参照してください。
+>Adobe Workfrontのインスタントトリガーのドキュメントについては、Workfront モジュールの記事の [0}トリガー} を参照してください。](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#triggers)
 
 コネクタに Webhook が含まれていない場合は、次のいずれかを実行できます。
 
@@ -41,7 +41,7 @@ Workfront Fusion の web フックの概要ビデオについて詳しくは、�
 
 ![ スケジュール設定 ](assets/schedule-setting.png)
 
-サービスから新しいイベントを受け取るとすぐにシナリオを実行する [!DNL Workfront Fusion] 合は、「`Immediately`」を選択します。 これらのイベントは直ちにキューに送信され、データを受信するのと同じ順序で、シナリオで 1 つずつ処理されます。
+Workfront Fusion がサービスから新しいイベントを受け取るとすぐにシナリオを実行するには、「`Immediately`」を選択します。 これらのイベントは直ちにキューに送信され、データを受信するのと同じ順序で、シナリオで 1 つずつ処理されます。
 
 シナリオを実行すると、キューで待機している保留中のイベントの合計数がカウントされ、保留中のイベントがあるサイクルと同じ数のサイクルがシナリオで実行され、サイクルごとに 1 つのイベントが処理されます。
 
@@ -60,10 +60,10 @@ Workfront Fusion の web フックの概要ビデオについて詳しくは、�
 >
 
 
-[!UICONTROL Immediately] 以外のスケジュール設定を使用する場合、シナリオは指定した間隔で実行されます。 この間隔のキューには複数の Webhook が収集されるので、[!UICONTROL Maximum number of cycles] オプションをデフォルトの 1 より大きい値に設定して、1 回のシナリオ実行でより多くの Webhook を処理することをお勧めします。
+[!UICONTROL 即時]以外のスケジュール設定を使用する場合、シナリオは指定した間隔で実行されます。この間隔のキューには複数の Webhook が収集される可能性があるので、「[!UICONTROL  最大サイクル数 ]」オプションをデフォルトの 1 より大きい値に設定して、1 回のシナリオ実行でより多くの Webhook を処理することをお勧めします。
 
-1. シナリオの下部にある [!UICONTROL Scenario settings] アイコン ![ シナリオ設定アイコン ](assets/scenario-settings-icon.png) をクリックします。
-1. 表示される **[!UICONTROL Scenario settings]** パネルで、「**[!UICONTROL Max number of cycles]**」フィールドに数値を入力し、シナリオを実行するたびに実行するキューのイベント数を指定します。
+1. シナリオの下部にある [!UICONTROL  シナリオ設定 ] アイコン ![ シナリオ設定アイコン ](assets/scenario-settings-icon.png) をクリックします。
+1. 表示される **[!UICONTROL シナリオ設定]** パネルで、「**[!UICONTROL 最大サイクル数]**」フィールドに数値を入力して、シナリオを実行するたびに実行するキューのイベント数を指定します。
 
 キューに残っているイベントは、次回シナリオを実行するときに、「最大サイクル数」フィールドで設定された数まで処理されます。
 
@@ -81,20 +81,20 @@ Workfront Fusion では、パフォーマンスを高めるために、Webhook �
 
 ### Web フックペイロード
 
-[!DNL Workfront Fusion] は、30 日間、Web フックペイロードを保存します。Webhook ペイロードの作成後 30 日以上にアクセスすると、[!UICONTROL `Failed to read file from storage.`] というエラーが発生する
+Workfront Fusion は、Webhook ペイロードを 30 日間保存します。 Webhook ペイロードの作成後 30 日以上にアクセスすると、[!UICONTROL `Failed to read file from storage.`] というエラーが発生する
 
 ### エラー処理
 
 インスタントトリガーでシナリオにエラーが発生した場合は、次のようになります。
 
-* シナリオが [!UICONTROL Immediately] 実行に設定されると、直ちに停止します。
+* シナリオが実行されるように設定されている場合は、直ちに停止します [!UICONTROL  直ちに ]。
 * シナリオがスケジュールどおりに実行されるように設定されている場合に、3 回失敗（3 回のエラー）すると停止します。
 
 シナリオの実行中にエラーが発生した場合、そのイベントはインスタントトリガーのロールバックフェーズでキューに戻されます。 このような場合は、シナリオを修正して再実行できます。
 
 詳細については、「シナリオの実行、サイクル、およびフェーズ」の記事の [ ロールバック ](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback) を参照してください。
 
-シナリオに Web フックの応答モジュールがある場合、エラーは Web フックの応答に送信されます。Webhook 応答モジュールは常に最後に実行されます（シナリオ設定の「[!UICONTROL Auto commit]」オプションが有効になっていない場合）。
+シナリオに Web フックの応答モジュールがある場合、エラーは Web フックの応答に送信されます。Webhook 応答モジュールは常に最後に実行されます（シナリオ設定の [!UICONTROL  自動コミット ] オプションが有効になっていない場合）。
 
 詳しくは、Webhook の記事の [Webhook への応答 ](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md#responding-to-webhooks) を参照してください。
 

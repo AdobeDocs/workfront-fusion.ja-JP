@@ -1,19 +1,19 @@
 ---
 title: テキストパーサー
-description: テキストパーサーツールを使用すると、他の [!DNL Adobe Workfront Fusion] シナリオモジュールで使用できるようにテキストを解析できます。テキストパーサーには接続は必要ありません。
+description: テキストパーサーツールを使用して、他のAdobe Workfront Fusion シナリオモジュールで使用できるようにテキストを解析できます。 テキストパーサーには接続は必要ありません。
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 679a4f5c91625dfecf32e10904700bf75ea7a7cf
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 84%
+source-wordcount: '1326'
+ht-degree: 79%
 
 ---
 
 # [!UICONTROL テキストパーサー]
 
-[!UICONTROL テキストパーサーツール]を使用すると、他の [!DNL Adobe Workfront Fusion] シナリオモジュールで使用できるようにテキストを解析できます。[!UICONTROL テキストパーサー]には接続は必要ありません。
+[!UICONTROL  テキストパーサーツール ] を使用して、他のAdobe Workfront Fusion シナリオモジュールで使用するテキストを解析できます。 [!UICONTROL テキストパーサー]には接続は必要ありません。
 
 ## アクセス要件
 
@@ -52,7 +52,7 @@ ht-degree: 84%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -73,7 +73,7 @@ ht-degree: 84%
 
 ## [!UICONTROL テキストパーサー]モジュールとそのフィールド
 
-[!UICONTROL テキストパーサー]モジュールを設定すると、[!DNL Adobe Workfront Fusion] には、以下のフィールドが表示されます。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL  テキストパーサー ] モジュールを設定すると、Adobe Workfront Fusion は以下に示すフィールドを表示します。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 

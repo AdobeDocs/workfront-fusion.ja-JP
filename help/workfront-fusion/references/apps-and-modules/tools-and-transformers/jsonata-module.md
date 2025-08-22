@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion JSONata コネクタは、Adobe Workfront Fu
 author: Becky
 feature: Workfront Fusion
 exl-id: 8c117ecb-3c05-47d4-a629-18dbc546e2a2
-source-git-commit: da3bf98f8254228598372fed8c06d6318718721f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 13%
+source-wordcount: '352'
+ht-degree: 10%
 
 ---
 
 # [!UICONTROL JSONata] モジュール
 
-[!DNL Adobe Workfront Fusion] [!UICONTROL JSONata] コネクタを使用すると、JSON オブジェクトをクエリできます。 このモジュールには接続は必要ありません。
+Adobe Workfront Fusion [!UICONTROL JSONata] コネクタを使用すると、JSON オブジェクトをクエリできます。 このモジュールには接続は必要ありません。
 
 ## アクセス要件
 
@@ -26,17 +26,17 @@ ht-degree: 13%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
    <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規：[!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：[!DNL Workfront Fusion] ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -44,9 +44,9 @@ ht-degree: 13%
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：[!DNL Adobe Workfront Fusion] を購入してください。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
   </tr>
  </tbody> 
@@ -54,7 +54,7 @@ ht-degree: 13%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -77,7 +77,7 @@ ht-degree: 13%
    <td> 評価する JSON オブジェクトを入力します。  </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Stringify 出力 &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL Stringify 出力 ] </td> 
    <td> 出力を文字列に変換するには、このオプションを有効にします。  </td> 
   </tr> 
   </tbody>
@@ -85,7 +85,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-**例**:
+**例**：
 
 目的は、次の JSON オブジェクトから名前の配列を返すことです。
 
@@ -124,11 +124,11 @@ ht-degree: 13%
    <td> <p>このモジュールに使用するラージ言語モデル （LLM）への接続に使用する接続を選択します。</p> <p>現在は、Anthropic API キーのみがサポートされています。</p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 入力スキーマ &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 入力スキーマ ]</td> 
    <td> <p>この式に使用する入力スキーマを入力またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 出力スキーマ &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 出力スキーマ ]</td> 
    <td> <p>この式に使用する出力スキーマを入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 

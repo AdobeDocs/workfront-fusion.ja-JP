@@ -4,9 +4,9 @@ description: AI を使用すると、シナリオのセグメントで行う必�
 author: Becky
 feature: Workfront Fusion
 exl-id: d231e33a-6033-4e3c-b1d4-7034797c45a5
-source-git-commit: 9d29abc82a3bb09affc4d17d7ea214d7bb850294
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '635'
 ht-degree: 6%
 
 ---
@@ -36,17 +36,17 @@ AI から生成されるものと同様に、生成されたモジュールを�
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
    <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規： [!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：[!DNL Workfront Fusion] ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -54,9 +54,9 @@ AI から生成されるものと同様に、生成されたモジュールを�
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：組織は [!DNL Adobe Workfront Fusion] を購入する必要があります。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
   </tr>
  </tbody> 
@@ -64,7 +64,7 @@ AI から生成されるものと同様に、生成されたモジュールを�
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -75,7 +75,7 @@ AI から生成されるものと同様に、生成されたモジュールを�
 * 組織がWorkfront AI アシスタント Beta プログラムに参加している。
 * Adobeには、署名済みのAdobe生成 AI 契約が必要です。
 
-  契約への署名について詳しくは、Workfront ドキュメントの AI アシスタントの概要の記事の [Adobe生成 AI 契約への署名 ](https://experienceleague.adobe.com/ja/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) を参照してください。
+  契約の署名について詳しくは、Workfront ドキュメントの AI アシスタントの概要の記事の [Adobe Gen AI 契約に署名する ](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) を参照してください。
 
 ## 現在サポートされている AI モジュールアプリケーション
 
@@ -87,8 +87,8 @@ Fusion AI は、現在、次のアプリケーションに接続するモジュ�
 * Adobe Workfrontの計画
 * Adobe Analytics
 * Adobe PDF サービス
-* Adobe Marketo
-* Adobe フレーム.io
+* AdobeMarketo
+* Adobe Frame.io
 * Dropbox
 * NetSuite
 * Google カレンダー
@@ -101,7 +101,7 @@ Fusion AI は、現在、次のアプリケーションに接続するモジュ�
 
 ## モジュールの生成
 
-1. 左側のパネルで「**[!UICONTROL Scenarios]**」タブをクリックします。
+1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. モジュールを追加するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
 1. 画面の右上隅付近にある **AI アシスタント** アイコン ![AI アシスタント アイコン ](assets/ai-assistant-icon.png) をクリックします。

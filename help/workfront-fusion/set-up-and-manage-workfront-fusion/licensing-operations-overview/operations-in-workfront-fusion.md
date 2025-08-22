@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion の操作は、モジュールによって�
 author: Becky
 feature: Workfront Fusion
 exl-id: c14e2bb2-1cce-48ff-8bea-acc9829d3cf2
-source-git-commit: 3470f7a9658ac4e6214c27f94f5b41821f2f8665
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 79%
+source-wordcount: '355'
+ht-degree: 74%
 
 ---
 
@@ -29,9 +29,9 @@ Adobe Workfront Fusion の操作は、モジュールによって実行される
 
 ## 操作の制限
 
-組織には月間の操作制限が設定されている場合があります。これは、組織が購入した [!DNL Workfront] プランに基づいています。[!UICONTROL Ultimate] [!DNL Workfront] プランは無制限の操作を提供します。
+組織には月間の操作制限が設定されている場合があります。これは、お客様の組織が購入したWorkfront プランに基づいています。 [!UICONTROL Ultimate] Workfront プランは、操作に制限はありません。
 
-組織に 1 か月の上限がある場合は、組織が上限に近づくと通知されます。 組織が上限を超えた場合は、組織に連絡 [!DNL Workfront] て、プランがニーズを満たしていることを確認します。
+組織に 1 か月の上限がある場合は、組織が上限に近づくと通知されます。 組織が上限を超えた場合、Workfrontは組織に連絡して、プランがニーズを満たしていることを確認します。
 
 組織が 1 か月の上限について次の割合に達すると、Workfront Fusion は通知を送信します。
 

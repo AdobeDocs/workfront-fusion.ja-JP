@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion を使用するには、Adobe Workfront ラ�
 author: Becky
 feature: Workfront Fusion
 exl-id: fabbadce-5669-4363-834e-6d7428520f62
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '3554'
-ht-degree: 90%
+source-wordcount: '4122'
+ht-degree: 94%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 90%
 
 Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンスに加えて、Adobe Workfront Fusion ライセンスが必要です。
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、[!UICONTROL GitLab] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
+Adobe Workfront Fusion シナリオでは、[!UICONTROL GitLab] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
 >[!NOTE]
 >
@@ -34,39 +34,39 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront プラン*</td>
+  <td> <p>[!UICONTROL Pro] 以降</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン*</td>
+   <td> <p>[!UICONTROL Plan]、[!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在のライセンス要件：Workfront Fusion のライセンス要件はありません。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のライセンス要件：[!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] Adobe Workfront プランがある場合、この記事に記載されている機能を使用するには、Adobe Workfront Fusion とAdobe Workfrontを購入する必要があります。 Workfront Fusion は、[!UICONTROL Ultimate] Workfront プランに含まれています。</p>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>従来の製品要件：この記事に記載されている機能を使用するには、Adobe Workfront Fusion とAdobe Workfrontを購入する必要があります。</p>
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、Workfront 管理者にお問い合わせください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion]  ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
-## [!DNL GitLab] を [!DNL Workfront Fusion] に接続 {#connect-gitlab-to-workfront-fusion}
+## [!DNL GitLab] を Workfront Fusion に接続 {#connect-gitlab-to-workfront-fusion}
 
-1. 任意の [!DNL Workfront Fusion] [!DNL Gitlab] モジュールで、接続フィールドの横にある「**[!UICONTROL Add]**」をクリックします。
+1. 任意のWorkfront Fusion [!DNL Gitlab] モジュールで、接続フィールドの横にある **[!UICONTROL 追加]** をクリックします。
 1. 次のフィールドを設定します。
 
    <table style="table-layout:auto"> 
@@ -89,12 +89,12 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
    </table>
 
 
-1. **[!UICONTROL Continue]** をクリックします。
-1. 「**[!UICONTROL Authorize]**」をクリックして接続を作成し、モジュールに戻ります。
+1. 「**[!UICONTROL 続行]**」をクリックします。
+1. 「**[!UICONTROL 承認する]**」をクリックして接続を作成し、モジュールに戻ります。
 
 ## [!DNL GitLab] モジュールとそのフィールド
 
-[!DNL GitLab] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL GitLab] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL GitLab] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL GitLab]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -102,7 +102,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 ### トリガー
 
-+++**[!UICONTROL Watch build status]**
++++**[!UICONTROL ビルドステータスを監視]**
 
 このインスタントトリガーモジュールは、ビルドのステータスが変更されたときにシナリオを開始します。
 
@@ -112,14 +112,14 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>このトリガーで使用する web フックを選択するか、新しい web フックを追加します。 </p><p>新しい web フックを追加するには、次の手順に従います。 <ol><li>[!UICONTROL webhook] フィールドの横にある「<b>[!UICONTROL Add]</b>」をクリックします。</li><li>以下の情報を入力します。 <ul><li>Web フックの名前</li><li>この web フックに使用する接続</li><li>Web フックでビルドステータスの変更を監視するプロジェクト</li></ul></li><li>「<b>[!UICONTROL Save]</b>」をクリックして Webhook を保存し、モジュールに戻ります。 </td> 
+   <td><p>このトリガーで使用する web フックを選択するか、新しい web フックを追加します。 </p><p>新しい web フックを追加するには、次の手順に従います。 <ol><li>「[!UICONTROL webhook]」フィールドの横にある「<b>[!UICONTROL Add]</b>」をクリックします。</li><li>以下の情報を入力します。 <ul><li>Web フックの名前</li><li>この web フックに使用する接続</li><li>Web フックでビルドステータスの変更を監視するプロジェクト</li></ul></li><li>「<b>[!UICONTROL Save]</b>」をクリックして web フックを保存し、モジュールに戻ります。 </td> 
    </tr> 
    </tbody> 
 </table>
 
 +++
 
-+++**[!UICONTROL Watch commit/MR/issue/snippet comments]**
++++**[!UICONTROL コミット／MR／イシュー／スニペットのコメントを監視]**
 
 このインスタントトリガーモジュールは、コミット、結合リクエスト、イシュー、またはコードスニペットに対してコメントが追加されたときにシナリオを開始します。
 
@@ -129,14 +129,14 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>このトリガーで使用する web フックを選択するか、新しい web フックを追加します。 </p><p>新しい web フックを追加するには、次の手順に従います。 <ol><li>[!UICONTROL webhook] フィールドの横にある「<b>[!UICONTROL Add]</b>」をクリックします。</li><li>以下の情報を入力します。 <ul><li>Web フックの名前</li><li>この web フックに使用する接続</li><li>Web フックでコメントを監視するプロジェクト</li></ul></li><li>「<b>[!UICONTROL Save]</b>」をクリックして Webhook を保存し、モジュールに戻ります。 </td> 
+   <td><p>このトリガーで使用する web フックを選択するか、新しい web フックを追加します。 </p><p>新しい web フックを追加するには、次の手順に従います。 <ol><li>「[!UICONTROL webhook]」フィールドの横にある「<b>[!UICONTROL Add]</b>」をクリックします。</li><li>以下の情報を入力します。 <ul><li>Web フックの名前</li><li>この web フックに使用する接続</li><li>Web フックでコメントを監視するプロジェクト</li></ul></li><li>「<b>[!UICONTROL Save]</b>」をクリックして web フックを保存し、モジュールに戻ります。 </td> 
    </tr> 
    </tbody> 
 </table>
 
 +++
 
-+++**[!UICONTROL Watch commits (pushes)]**
++++**[!UICONTROL コミット（プッシュ）を監視]**
 
 このインスタントトリガーモジュールは、コミットがリポジトリにプッシュされたときにシナリオを開始します。タグがプッシュされた場合は、このモジュールはシナリオを開始しません。
 
@@ -146,14 +146,14 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>このトリガーで使用する web フックを選択するか、新しい web フックを追加します。 </p><p>新しい web フックを追加するには、次の手順に従います。 <ol><li>[!UICONTROL webhook] フィールドの横にある「<b>[!UICONTROL Add]</b>」をクリックします。</li><li>以下の情報を入力します。 <ul><li>Web フックの名前</li><li>この web フックに使用する接続</li><li>Web フックでコミットを監視するプロジェクト</li></ul></li><li>「<b>[!UICONTROL Save]</b>」をクリックして Webhook を保存し、モジュールに戻ります。 </td> 
+   <td><p>このトリガーで使用する web フックを選択するか、新しい web フックを追加します。 </p><p>新しい web フックを追加するには、次の手順に従います。 <ol><li>「[!UICONTROL webhook]」フィールドの横にある「<b>[!UICONTROL Add]</b>」をクリックします。</li><li>以下の情報を入力します。 <ul><li>Web フックの名前</li><li>この web フックに使用する接続</li><li>Web フックでコミットを監視するプロジェクト</li></ul></li><li><b>[!UICONTROL Save]</b> をクリックして web フックを保存し、モジュールに戻ります。 </td> 
    </tr> 
    </tbody> 
 </table>
 
 +++
 
-+++**[!UICONTROL Watch issue comment]**
++++**[!UICONTROL イシューのコメントを監視]**
 
 このインスタントトリガーモジュールは、イシューに対してコメントが作成されたときにシナリオを開始します。
 
@@ -163,16 +163,16 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>このトリガーで使用する web フックを選択するか、新しい web フックを追加します。 </p><p>新しい web フックを追加するには、次の手順に従います。 <ol><li>[!UICONTROL webhook] フィールドの横にある「<b>[!UICONTROL Add]</b>」をクリックします。</li><li>以下の情報を入力します。 <ul><li>Web フックの名前</li><li>この web フックに使用する接続</li><li>Web フックでイシューコメントを監視するプロジェクト</li></ul></li><li>「<b>[!UICONTROL Save]</b>」をクリックして Webhook を保存し、モジュールに戻ります。 </td> 
+   <td><p>このトリガーで使用する web フックを選択するか、新しい web フックを追加します。 </p><p>新しい web フックを追加するには、次の手順に従います。 <ol><li>「[!UICONTROL webhook]」フィールドの横にある「<b>[!UICONTROL Add]</b>」をクリックします。</li><li>以下の情報を入力します。 <ul><li>Web フックの名前</li><li>この web フックに使用する接続</li><li>Web フックでイシューコメントを監視するプロジェクト</li></ul></li><li>「<b>[!UICONTROL Save]</b>」をクリックして web フックを保存し、モジュールに戻ります。 </td> 
    </tr> 
    </tbody> 
 </table>
 
 +++
 
-+++**[!UICONTROL Watch issues]**
++++**[!UICONTROL イシューを監視]**
 
-この [!UICONTROL instant trigger] モジュールは、イシューが作成されたとき、または既存のイシューが更新、クローズ、再オープンされたときにシナリオを開始します。
+この[!UICONTROL インスタントトリガー]モジュールは、イシューが作成されたとき、または既存のイシューが更新、クローズ、または再度開かれたときにシナリオを開始します。
 
 <table style="table-layout:auto"> 
    <col> 
@@ -180,14 +180,14 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>このトリガーで使用する web フックを選択するか、新しい web フックを追加します。 </p><p>新しい web フックを追加するには、次の手順に従います。 <ol><li>[!UICONTROL webhook] フィールドの横にある「<b>[!UICONTROL Add]</b>」をクリックします。</li><li>以下の情報を入力します。 <ul><li>Web フックの名前</li><li>この web フックに使用する接続</li><li>Web フックでイシューを監視するプロジェクト</li></ul></li><li>「<b>[!UICONTROL Save]</b>」をクリックして Webhook を保存し、モジュールに戻ります。 </td> 
+   <td><p>このトリガーで使用する web フックを選択するか、新しい web フックを追加します。 </p><p>新しい web フックを追加するには、次の手順に従います。 <ol><li>「[!UICONTROL webhook]」フィールドの横にある「<b>[!UICONTROL Add]</b>」をクリックします。</li><li>以下の情報を入力します。 <ul><li>Web フックの名前</li><li>この web フックに使用する接続</li><li>Web フックでイシューを監視するプロジェクト</li></ul></li><li>「<b>[!UICONTROL Save]</b>」をクリックして web フック を保存し、モジュールに戻ります。 </td> 
    </tr> 
    </tbody> 
 </table>
 
 +++
 
-+++**[!UICONTROL Watch merge requests]**
++++**[!UICONTROL 結合リクエストを監視]**
 
 このインスタントトリガーモジュールは、次のいずれかが発生した場合にシナリオを開始します。
 
@@ -202,14 +202,14 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>このトリガーで使用する web フックを選択するか、新しい web フックを追加します。 </p><p>新しい web フックを追加するには、次の手順に従います。 <ol><li>[!UICONTROL webhook] フィールドの横にある「<b>[!UICONTROL Add]</b>」をクリックします。</li><li>以下の情報を入力します。 <ul><li>Web フックの名前</li><li>この web フックに使用する接続</li><li>Web フックで結合リクエストを監視するプロジェクト</li></ul></li><li>「<b>[!UICONTROL Save]</b>」をクリックして Webhook を保存し、モジュールに戻ります。 </td> 
+   <td><p>このトリガーで使用する web フックを選択するか、新しい web フックを追加します。 </p><p>新しい web フックを追加するには、次の手順に従います。 <ol><li>「[!UICONTROL webhook]」フィールドの横にある「<b>[!UICONTROL Add]</b>」をクリックします。</li><li>以下の情報を入力します。 <ul><li>Web フックの名前</li><li>この web フックに使用する接続</li><li>Web フックで結合リクエストを監視するプロジェクト</li></ul></li><li>「<b>[!UICONTROL Save]</b>」をクリックして web フックを保存し、モジュールに戻ります。 </td> 
    </tr> 
    </tbody> 
 </table>
 
 +++
 
-+++**[!UICONTROL Watch merge request comments]**
++++**[!UICONTROL 結合リクエストのコメントを監視]**
 
 このインスタントトリガーモジュールは、結合リクエストに対してコメントが作成されたときにシナリオを開始します。
 
@@ -219,14 +219,14 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>このトリガーで使用する web フックを選択するか、新しい web フックを追加します。 </p><p>新しい web フックを追加するには、次の手順に従います。 <ol><li>[!UICONTROL webhook] フィールドの横にある「<b>[!UICONTROL Add]</b>」をクリックします。</li><li>以下の情報を入力します。 <ul><li>Web フックの名前</li><li>この web フックに使用する接続</li><li>Web フックで結合リクエストのコメントを監視するプロジェクト</li></ul></li><li>「<b>[!UICONTROL Save]</b>」をクリックして Webhook を保存し、モジュールに戻ります。 </td> 
+   <td><p>このトリガーで使用する web フックを選択するか、新しい web フックを追加します。 </p><p>新しい web フックを追加するには、次の手順に従います。 <ol><li>「[!UICONTROL webhook]」フィールドの横にある「<b>[!UICONTROL Add]</b>」をクリックします。</li><li>以下の情報を入力します。 <ul><li>Web フックの名前</li><li>この web フックに使用する接続</li><li>Web フックで結合リクエストのコメントを監視するプロジェクト</li></ul></li><li>「<b>[!UICONTROL Save]</b>」をクリックして web フックを保存し、モジュールに戻ります。 </td> 
    </tr> 
    </tbody> 
 </table>
 
 +++
 
-+++**[!UICONTROL Watch pipeline status]**
++++**[!UICONTROL パイプラインステータスを監視]**
 
 このインスタントトリガーモジュールは、パイプラインのステータスが変更されたときにシナリオを開始します。
 
@@ -236,14 +236,14 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>このトリガーで使用する web フックを選択するか、新しい web フックを追加します。 </p><p>新しい web フックを追加するには、次の手順に従います。 <ol><li>[!UICONTROL webhook] フィールドの横にある「<b>[!UICONTROL Add]</b>」をクリックします。</li><li>以下の情報を入力します。 <ul><li>Web フックの名前</li><li>この web フックに使用する接続</li><li>Web フックでパイプラインステータスの変更を監視するプロジェクト</li></ul></li><li>「<b>[!UICONTROL Save]</b>」をクリックして Webhook を保存し、モジュールに戻ります。 </td> 
+   <td><p>このトリガーで使用する web フックを選択するか、新しい web フックを追加します。 </p><p>新しい web フックを追加するには、次の手順に従います。 <ol><li>「[!UICONTROL webhook]」フィールドの横にある「<b>[!UICONTROL Add]</b>」をクリックします。</li><li>以下の情報を入力します。 <ul><li>Web フックの名前</li><li>この web フックに使用する接続</li><li>Web フックでパイプラインステータスの変更を監視するプロジェクト</li></ul></li><li>「<b>[!UICONTROL Save]</b>」をクリックして web フックを保存し、モジュールに戻ります。 </td> 
    </tr> 
    </tbody> 
 </table>
 
 +++
 
-+++**[!UICONTROL Watch projects]**
++++**[!UICONTROL プロジェクトを監視]**
 
 このスケジュール済みトリガーモジュールは、認証済みユーザーがメンバーとなっている新しいプロジェクトが追加されたときにシナリオを開始します。
 
@@ -253,7 +253,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL GitLab] アカウントを [!DNL Workfront] Fusion に接続する手順については、この記事の <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">[!DNL GitLab] を [!DNL Workfront] Fusion に接続</a>を参照してください。</td> 
+   <td>[!DNL GitLab] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL GitLab] の接続 </a> を参照してください。</td> 
    </tr> 
    <tr> 
    <td role="rowheader">最大結果数</td> 
@@ -264,7 +264,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Watch repository branches]**
++++**[!UICONTROL リポジトリブランチを監視]**
 
 このスケジュール済みトリガーモジュールは、新しいブランチがリポジトリに追加されたときにシナリオを開始します。
 
@@ -274,7 +274,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL GitLab] アカウントを [!DNL Workfront] Fusion に接続する手順については、この記事の <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">[!DNL GitLab] を [!DNL Workfront] Fusion に接続</a>を参照してください。</td> 
+   <td>[!DNL GitLab] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL GitLab] の接続 </a> を参照してください。</td> 
    </tr> 
    <tr> 
    <td role="rowheader">最大結果数</td> 
@@ -285,7 +285,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Watch repository tags]**
++++**[!UICONTROL リポジトリタグを監視]**
 
 このインスタントトリガーモジュールは、リポジトリでタグが作成または削除されたときにシナリオを開始します。
 
@@ -295,14 +295,14 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>このトリガーで使用する web フックを選択するか、新しい web フックを追加します。 </p><p>新しい web フックを追加するには、次の手順に従います。 <ol><li>[!UICONTROL webhook] フィールドの横にある「<b>[!UICONTROL Add]</b>」をクリックします。</li><li>以下の情報を入力します。 <ul><li>Web フックの名前</li><li>この web フックに使用する接続</li><li>Web フックでタグを監視するプロジェクト</li></ul></li><li>「<b>[!UICONTROL Save]</b>」をクリックして Webhook を保存し、モジュールに戻ります。 </td> 
+   <td><p>このトリガーで使用する web フックを選択するか、新しい web フックを追加します。 </p><p>新しい web フックを追加するには、次の手順に従います。 <ol><li>「[!UICONTROL webhook]」フィールドの横にある「<b>[!UICONTROL Add]</b>」をクリックします。</li><li>以下の情報を入力します。 <ul><li>Web フックの名前</li><li>この web フックに使用する接続</li><li>Web フックでタグを監視するプロジェクト</li></ul></li><li>「<b>[!UICONTROL Save]</b>」をクリックして web フックを保存し、モジュールに戻ります。 </td> 
    </tr> 
    </tbody> 
 </table>
 
 +++
 
-+++**[!UICONTROL Watch snippet comments]**
++++**[!UICONTROL スニペットコメントを監視]**
 
 このインスタントトリガーモジュールは、スニペットに対して新しいコメントが作成されたときにシナリオを開始します。
 
@@ -312,14 +312,14 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>このトリガーで使用する web フックを選択するか、新しい web フックを追加します。 </p><p>新しい web フックを追加するには、次の手順に従います。 <ol><li>[!UICONTROL webhook] フィールドの横にある「<b>[!UICONTROL Add]</b>」をクリックします。</li><li>以下の情報を入力します。 <ul><li>Web フックの名前</li><li>この web フックに使用する接続</li><li>Web フックでコメントを監視するプロジェクト</li></ul></li><li>「<b>[!UICONTROL Save]</b>」をクリックして Webhook を保存し、モジュールに戻ります。 </td> 
+   <td><p>このトリガーで使用する web フックを選択するか、新しい web フックを追加します。 </p><p>新しい web フックを追加するには、次の手順に従います。 <ol><li>「[!UICONTROL webhook]」フィールドの横にある「<b>[!UICONTROL Add]</b>」をクリックします。</li><li>以下の情報を入力します。 <ul><li>Web フックの名前</li><li>この web フックに使用する接続</li><li>Web フックでコメントを監視するプロジェクト</li></ul></li><li>「<b>[!UICONTROL Save]</b>」をクリックして web フックを保存し、モジュールに戻ります。 </td> 
    </tr> 
    </tbody> 
 </table>
 
 +++
 
-+++**[!UICONTROL Watch todos]**
++++**[!UICONTROL To Do を監視]**
 
 このスケジュール済みスケジュールトリガーモジュールは、新しい TODO が追加されるとシナリオを開始します。フィルターが適用されない場合、トリガーは、新たな保留 TODO が追加されたときに実行されます。
 
@@ -327,7 +327,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Watch wiki page]**
++++**[!UICONTROL Wiki ページを監視]**
 
 このインスタントトリガーモジュールは、Wiki ページが作成または編集されたときにシナリオを開始します。
 
@@ -337,7 +337,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>このトリガーで使用する web フックを選択するか、新しい web フックを追加します。 </p><p>新しい web フックを追加するには、次の手順に従います。 <ol><li>[!UICONTROL webhook] フィールドの横にある「<b>[!UICONTROL Add]</b>」をクリックします。</li><li>以下の情報を入力します。 <ul><li>Web フックの名前</li><li>この web フックに使用する接続</li><li>Web フックで Wiki ページを監視するプロジェクト</li></ul></li><li>「<b>[!UICONTROL Save]</b>」をクリックして Webhook を保存し、モジュールに戻ります。 </td> 
+   <td><p>このトリガーで使用する web フックを選択するか、新しい web フックを追加します。 </p><p>新しい web フックを追加するには、次の手順に従います。 <ol><li>「[!UICONTROL webhook]」フィールドの横にある「<b>[!UICONTROL Add]</b>」をクリックします。</li><li>以下の情報を入力します。 <ul><li>Web フックの名前</li><li>この web フックに使用する接続</li><li>Web フックで Wiki ページを監視するプロジェクト</li></ul></li><li><b>[!UICONTROL Save]</b>をクリックして web フックを保存し、モジュールに戻ります。 </td> 
    </tr> 
    </tbody> 
 </table>
@@ -346,7 +346,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 ### アクション
 
-+++**[!UICONTROL Accept merge request]**
++++**[!UICONTROL 結合リクエストを承認]**
 
 このアクションモジュールは、送信された変更を指定された結合リクエストと結合します。
 
@@ -354,7 +354,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Cancel a build]**
++++**[!UICONTROL ビルドをキャンセル]**
 
 このアクションモジュールは、プロジェクトの単一のビルドをキャンセルします。
 
@@ -364,7 +364,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL GitLab] アカウントを [!DNL Workfront] Fusion に接続する手順については、この記事の <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">[!DNL GitLab] を [!DNL Workfront] Fusion に接続</a>を参照してください。</td> 
+   <td>[!DNL GitLab] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL GitLab] の接続 </a> を参照してください。</td> 
    </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL Project ID]</td> 
@@ -396,7 +396,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Cancel a pipeline's builds]**
++++**[!UICONTROL パイプラインのビルドをキャンセル]**
 
 このアクションモジュールは、単一のパイプラインのビルドをキャンセルします。
 
@@ -404,7 +404,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Cancel merge when pipeline succeeds]**
++++**[!UICONTROL パイプラインが成功した場合に結合をキャンセル]**
 
 パイプラインの成功時に結合リクエストが結合に設定されている場合、このアクションモジュールはそのアクションをキャンセルします。
 
@@ -412,7 +412,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Cherry pick a commit]**
++++**[!UICONTROL チェリーがコミットを選択]**
 
 このチェリーアクションモジュールは、特定のブランチへのコミットを選択します。
 
@@ -420,7 +420,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Create a new label]**
++++**[!UICONTROL ラベルを新規作成]**
 
 このアクションモジュールは、指定されたリポジトリのラベルを新規作成します。
 
@@ -428,7 +428,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Create a new pipeline]**
++++**[!UICONTROL パイプラインを新規作成]**
 
 このアクションモジュールは、指定されたプロジェクトにパイプラインを新規作成します。
 
@@ -436,7 +436,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Create a new release]**
++++**[!UICONTROL 新しいリリースを作成]**
 
 このアクションモジュールは、既存の Git タグにリリースノートを追加します。
 
@@ -444,7 +444,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Create a new tag]**
++++**[!UICONTROL 新しいタグを作成]**
 
 このアクションモジュールは、指定された参照を指すリポジトリに新しいタグを作成します。
 
@@ -452,7 +452,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Create a todo]**
++++**[!UICONTROL TODO を作成]**
 
 このアクションモジュールは、選択したイシューで、現在のユーザーの TODO を作成します。現在のユーザーは、このモジュールで使用される接続の資格情報で識別されるユーザーです。
 
@@ -460,7 +460,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Create a todo on a merge request]**
++++**[!UICONTROL 結合リクエストで TODO を作成]**
 
 このアクションモジュールは、選択した結合リクエストで、現在のユーザーの TODO を作成します。現在のユーザーは、このモジュールで使用される接続の資格情報で識別されるユーザーです。
 
@@ -468,7 +468,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Create merge request]**
++++**[!UICONTROL 結合リクエストを作成]**
 
 このアクションモジュールは、プロジェクトで新しい結合リクエストを作成します。
 
@@ -476,7 +476,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Create new file in repository]**
++++**[!UICONTROL リポジトリに新しいファイルを作成]**
 
 このアクションモジュールは、選択したリポジトリに新しいファイルを作成します。
 
@@ -484,7 +484,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Create new issue note]**
++++**[!UICONTROL 新しいイシューメモを作成]**
 
 このアクションモジュールは、単一のプロジェクトイシューに関するイシューメモを作成します。
 
@@ -492,7 +492,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Create new merge request note]**
++++**[!UICONTROL 新しい結合リクエストメモを作成]**
 
 このアクションモジュールは、単一の結合リクエストに関するメモを作成します。
 
@@ -500,7 +500,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Create a new milestone]**
++++**[!UICONTROL 新しいマイルストーンを作成]**
 
 このアクションモジュールは、プロジェクトの新しいマイルストーンを作成します。
 
@@ -508,7 +508,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Create new snippet note]**
++++**[!UICONTROL 新しいスニペットメモを作成]**
 
 このアクションモジュールは、単一のスニペットに関する新しいメモを作成します。スニペットメモとは、ユーザーがスニペットに対して投稿できるコメントのことです。
 
@@ -516,7 +516,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Create repository branch]**
++++**[!UICONTROL リポジトリブランチを作成]**
 
 このアクションモジュールは、単一のリポジトリブランチを作成します。
 
@@ -524,7 +524,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Create build variable]**
++++**[!UICONTROL ビルド変数を作成]**
 
 このアクションモジュールは、新しいビルド変数を作成します。
 
@@ -532,7 +532,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Delete a merge request]**
++++**[!UICONTROL 結合リクエストを削除]**
 
 このアクションモジュールは、管理者とプロジェクトの所有者専用です。該当する結合リクエストを削除します。
 
@@ -540,7 +540,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Delete existing file in repository]**
++++**[!UICONTROL リポジトリ内の既存のファイルを削除]**
 
 このアクションモジュールは、リポジトリから既存のファイルを削除します。
 
@@ -548,7 +548,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Delete repository branch]**
++++**[!UICONTROL リポジトリブランチを削除]**
 
 このアクションモジュールは、リポジトリからブランチを削除します。
 
@@ -556,7 +556,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Edit issue]**
++++**[!UICONTROL イシューを編集]**
 
 このアクションモジュールは、既存のプロジェクトイシューを更新します。この呼び出しは、イシューをクローズ済みとマークするためにも使用されます。
 
@@ -564,14 +564,14 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Edit Milestone]**
++++**[!UICONTROL マイルストーンの編集]**
 このアクションモジュールは、既存のプロジェクトマイルストーンを更新します。
 
 フィールドについて詳しくは、[!DNL GitLab] ドキュメントの[マイルストーンを編集](https://docs.gitlab.com/ee/api/milestones.html#edit-milestone)を参照してください。
 
 +++
 
-+++**[!UICONTROL Erase a build]**
++++**[!UICONTROL ビルドを消去]**
 
 このアクションモジュールは、プロジェクトのビルドを消去します（ジョブのアーティファクトとジョブのログを削除します）。
 
@@ -579,7 +579,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Get a list of todos]**
++++**[!UICONTROL TODO リストを取得]**
 
 この検索モジュールは、TODO 項目のリストを取得します。
 
@@ -587,7 +587,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Get a single build]**
++++**[!UICONTROL 単一のビルドを取得]**
 
 このアクションモジュールは、プロジェクトの単一のジョブを取得します。
 
@@ -595,7 +595,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Get a single repository tag]**
++++**[!UICONTROL 単一のリポジトリタグを取得]**
 
 このアクションモジュールは、名前によって決定された特定のリポジトリタグを取得します。
 
@@ -603,7 +603,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Get a specific deployment]**
++++**[!UICONTROL 特定のデプロイメントを取得]**
 
 このアクションモジュールは、特定のデプロイメントを取得します。
 
@@ -611,7 +611,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Get all issues assigned to a single milestone]**
++++**[!UICONTROL 単一のマイルストーンに割り当てられたすべてのイシューを取得]**
 
 この検索モジュールは、単一のプロジェクトマイルストーンに割り当てられたすべてのイシューを取得します。
 
@@ -619,7 +619,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Get file from repository]**
++++**[!UICONTROL リポジトリからファイルを取得]**
 
 このアクションモジュールは、名前、サイズ、コンテンツなど、リポジトリ内のファイルに関する情報を取得します。
 
@@ -627,7 +627,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Get project users]**
++++**[!UICONTROL プロジェクトユーザーを取得]**
 
 この検索モジュールは、プロジェクトのユーザーを取得します。
 
@@ -635,7 +635,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Get a single issue]**
++++**[!UICONTROL 単一のイシューを取得]**
 
 このアクションモジュールは、イシューの詳細を取得します。
 
@@ -645,7 +645,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>新しい接続を作成する方法については、この記事の <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a> を参照してください。</td> 
+   <td>新しい接続を作成するには、この記事の<a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a>を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project]</td> 
@@ -660,7 +660,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Get single issue note]**
++++**[!UICONTROL 単一のイシューのメモを取得]**
 
 このアクションモジュールは、特定のプロジェクトイシューに関する単一のメモを取得します。
 
@@ -668,7 +668,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Get single merge request]**
++++**[!UICONTROL 単一の結合リクエストを取得]**
 
 このアクションモジュールは、単一の結合リクエストに関する情報を取得します。
 
@@ -676,7 +676,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Get single merge request changes]**
++++**[!UICONTROL 単一の結合リクエストの変更を取得]**
 
 この検索モジュールは、ファイルや変更を含む、結合リクエストに関する情報を取得します。
 
@@ -684,7 +684,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Get single merge request commits]**
++++**[!UICONTROL 単一の結合リクエストのコミットを取得]**
 
 このアクションモジュールは、結合リクエストのコミットのリストを取得します。
 
@@ -692,7 +692,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Get single merge request note]**
++++**[!UICONTROL 単一の結合リクエストのメモを取得]**
 
 このアクションモジュールは、指定した結合リクエストの単一のメモを返します。
 
@@ -700,7 +700,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Get a Milestone]**
++++**[!UICONTROL マイルストーンを取得]**
 
 このアクションモジュールは、マイルストーンの詳細を取得します。
 
@@ -708,7 +708,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Get single project]**
++++**[!UICONTROL 単一のプロジェクトを取得]**
 
 このアクションモジュールは、プロジェクトの詳細を取得します。
 
@@ -716,7 +716,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Get single repository branch]**
++++**[!UICONTROL 単一のリポジトリブランチを取得]**
 
 このアクションモジュールは、リポジトリブランチの詳細を取得します。
 
@@ -724,7 +724,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Get snippet note]**
++++**[!UICONTROL スニペットのメモを取得]**
 
 このモジュールは、指定したスニペットの単一のメモを取得します。
 
@@ -732,7 +732,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Get the comments of a commit]**
++++**[!UICONTROL コミットのコメントを取得]**
 
 この検索モジュールは、プロジェクトのコミットのコメントを取得します。
 
@@ -740,7 +740,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Get the diff of a commit]**
++++**[!UICONTROL コミットの差分を取得]**
 
 このアクションモジュールは、プロジェクトのコミットの差分を取得します。
 
@@ -748,7 +748,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Keep artifacts]**
++++**[!UICONTROL アーティファクトを保持]**
 
 有効期限が設定されている場合にアーティファクトが削除されるのを防ぎます。
 
@@ -756,7 +756,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL List all merge request notes]**
++++**[!UICONTROL 結合リクエストのすべてのメモを一覧表示]**
 
 この検索モジュールは、単一の結合リクエストのすべてのメモのリストを取得します。
 
@@ -764,15 +764,15 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL List all snippet notes]**
++++**[!UICONTROL スニペットのすべてのメモを一覧表示]**
 
 このモジュールは、単一のスニペットのすべてのメモのリストを取得します。スニペットメモとは、ユーザーがスニペットに対して投稿できるコメントのことです。
 
-フィールドについて詳しくは、[!DNL GitLab] ドキュメントの[??](https://docs.gitlab.com/ee/api/notes.html#list-all-snippet-notes)を参照してください。
+フィールドについて詳しくは、[🔗 ドキュメントの ](https://docs.gitlab.com/ee/api/notes.html#list-all-snippet-notes)[!DNL GitLab] を参照してください。
 
 +++
 
-+++**[!UICONTROL List commit builds]**
++++**[!UICONTROL コミットのビルドを一覧表示]**
 
 この検索モジュールは、プロジェクトの特定のコミットに対するビルドのリストを返します。
 
@@ -782,7 +782,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>新しい接続を作成する方法については、この記事の <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a> を参照してください。</td> 
+   <td>新しい接続を作成するには、この記事の<a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a>を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID]</td> 
@@ -797,7 +797,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL List issues]**
++++**[!UICONTROL イシューを一覧表示]**
 
 この検索モジュールは、指定したフィルタリング設定に基づいてすべてのイシューを返します。
 
@@ -805,7 +805,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL List Issues That Close on Merge]**
++++**[!UICONTROL 結合時にクローズするイシューを一覧表示]**
 
 この検索モジュールは、指定した結合リクエストを結合することでクローズされるすべてのイシューを取得します。
 
@@ -813,7 +813,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL List Labels]**
++++**[!UICONTROL ラベルを一覧表示]**
 
 この検索モジュールは、プロジェクトのすべてのラベルを取得します。
 
@@ -821,7 +821,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL List merge requests]**
++++**[!UICONTROL 結合リクエストを一覧表示]**
 
 この検索モジュールは、フィルタリング設定に基づいてすべての結合リクエストを取得します。
 
@@ -829,7 +829,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL List Owned Projects]**
++++**[!UICONTROL 所有するプロジェクトを一覧表示]**
 
 この検索モジュールは、認証済みユーザーが所有者として設定されているプロジェクトを取得します。
 
@@ -837,7 +837,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL List project builds]**
++++**[!UICONTROL プロジェクトのビルドを一覧表示]**
 
 この検索モジュールは、プロジェクト内のビルドのリストを取得します。
 
@@ -845,7 +845,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL List project deployments]**
++++**[!UICONTROL プロジェクトのデプロイメントを一覧表示]**
 
 この検索モジュールは、プロジェクト内のデプロイメントのリストを取得します。
 
@@ -853,7 +853,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL List project issue notes]**
++++**[!UICONTROL プロジェクトのイシューメモを一覧表示]**
 
 この検索モジュールは、単一のイシューに関するすべてのメモのリストを取得します。
 
@@ -861,7 +861,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL List project issues]**
++++**[!UICONTROL プロジェクトのイシューを一覧表示]**
 
 この検索モジュールは、指定したプロジェクト内のすべてのイシューを返します。
 
@@ -869,7 +869,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL List project milestones]**
++++**[!UICONTROL プロジェクトのマイルストーンを一覧表示]**
 
 この検索モジュールは、プロジェクト内のすべてのマイルストーンを取得します。
 
@@ -877,7 +877,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL List project pipelines]**
++++**[!UICONTROL プロジェクトのパイプラインを一覧表示]**
 
 この検索モジュールは、プロジェクトのすべてのパイプラインを取得します。
 
@@ -885,7 +885,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL List project repository tags]**
++++**[!UICONTROL プロジェクトリポジトリタグを一覧表示]**
 
 この検索モジュールは、プロジェクトからリポジトリタグのリストを取得し、名前で逆アルファベット順に並べ替えます。
 
@@ -893,7 +893,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL List project variables]**
++++**[!UICONTROL プロジェクトの変数を一覧表示]**
 
 この検索モジュールは、プロジェクトの変数のリストを取得します。
 
@@ -901,7 +901,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL List projects]**
++++**[!UICONTROL プロジェクトを一覧表示]**
 
 この検索モジュールは、認証済みユーザーがメンバーであるすべてのプロジェクトを取得します。
 
@@ -909,7 +909,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL List repository branches]**
++++**[!UICONTROL リポジトリブランチを一覧表示]**
 
 このモジュールは、検索語でリポジトリブランチを検索します。
 
@@ -917,7 +917,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL List repository commits]**
++++**[!UICONTROL リポジトリのコミットを一覧表示]**
 
 この検索モジュールは、プロジェクト内のリポジトリのコミットのリストを取得します。
 
@@ -925,7 +925,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL List repository contributors]**
++++**[!UICONTROL リポジトリのコントリビューターを一覧表示]**
 
 この検索モジュールは、リポジトリのコントリビューターのリストを取得します。
 
@@ -933,7 +933,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL List repository tree]**
++++**[!UICONTROL リポジトリツリーを一覧表示]**
 
 この検索モジュールは、プロジェクト内のリポジトリファイルとディレクトリのリストを取得します。
 
@@ -941,7 +941,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Mark a todo as done]**
++++**[!UICONTROL TODO を完了としてマーク]**
 
 このアクションモジュールは、現在のユーザーの ID で指定された単一の保留中の TODO 項目を完了としてマークします。
 
@@ -949,7 +949,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Modify existing issue note]**
++++**[!UICONTROL 既存のイシューメモを変更]**
 
 イシューの既存のメモを変更します。
 
@@ -957,7 +957,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Modify existing merge request note]**
++++**[!UICONTROL 既存の結合リクエストメモを変更]**
 
 結合リクエストの既存のメモを変更します。
 
@@ -965,7 +965,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Modify existing snippet note]**
++++**[!UICONTROL 既存のスニペットメモを変更]**
 
 このアクションモジュールは、スニペットの既存のメモを変更します。
 
@@ -973,7 +973,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL New issue]**
++++**[!UICONTROL 新しい問題]**
 
 このアクションモジュールは、新しいプロジェクトイシューを作成します。
 
@@ -981,7 +981,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Play a build]**
++++**[!UICONTROL ビルドを再生]**
 
 このアクションモジュールは、ジョブを開始する手動アクションをトリガーします。
 
@@ -989,7 +989,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Post comment to commit]**
++++**[!UICONTROL コミットにコメントを投稿]**
 
 このアクションモジュールは、コミットにコメントを追加します。
 
@@ -997,7 +997,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Remove variable]**
++++**[!UICONTROL 変数を削除]**
 
 このアクションモジュールは、プロジェクトの変数を削除します。
 
@@ -1005,7 +1005,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Retry a build]**
++++**[!UICONTROL ビルドを再試行]**
 
 このアクションモジュールは、コミットで単一のビルドを再試行します。
 
@@ -1015,7 +1015,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>新しい接続を作成する方法については、この記事の <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a> を参照してください。</td> 
+   <td>新しい接続を作成するには、この記事の<a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a>を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID]</td> 
@@ -1030,7 +1030,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Retry Failed Jobs in a Pipeline]**
++++**[!UICONTROL パイプラインの失敗したジョブを再試行]**
 
 このアクションモジュールは、パイプラインの失敗したビルドを再試行します。
 
@@ -1038,7 +1038,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Get a Variable]**
++++**[!UICONTROL 変数を取得]**
 
 このモジュールは、プロジェクトの特定の変数の詳細を取得します。
 
@@ -1046,7 +1046,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Update a release]**
++++**[!UICONTROL リリースを更新]**
 
 このアクションモジュールは、リリースを更新します。
 
@@ -1054,7 +1054,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Update merge request]**
++++**[!UICONTROL 結合リクエストを更新]**
 
 このアクションモジュールは、既存の結合リクエストを更新します。ターゲットのブランチやタイトルを変更したり、MR を閉じたりすることもできます。
 
@@ -1062,7 +1062,7 @@ Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンス�
 
 +++
 
-+++**[!UICONTROL Update a Variable]**
++++**[!UICONTROL 変数を更新]**
 
 このアクションモジュールは、プロジェクトの変数を更新します。
 

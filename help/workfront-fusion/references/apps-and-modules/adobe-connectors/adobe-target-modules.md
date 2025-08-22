@@ -1,19 +1,19 @@
 ---
 title: Adobe Target モジュール
-description: ' [!DNL Adobe Workfront Fusion] シナリオ内で、 [!DNL Adobe Target], as well as connect it to multiple third-party applications and services. [!DNL Adobe Target]  モジュールを使用するワークフローを自動化すると、レコードの作成、読み取り、更新および削除、特定のタイプのすべてのレコードのリスト作成、指定した条件に基づくレコードの検索または  [!DNL Adobe Target]  API へのカスタム API 呼び出しの実行を行うことができます。'
+description: Adobe Workfront Fusion のシナリオでは、モジュールを使用するワークフローを自動化できます  [!DNL Adobe Target], as well as connect it to multiple third-party applications and services. [!DNL Adobe Target]  モジュールでは、レコードの作成、読み取り、更新、削除、特定のタイプのすべてのレコードの一覧表示、指定した条件に基づいたレコードの検索、 [!DNL Adobe Target] API へのカスタム API 呼び出しの実行を行うことができます。
 author: Becky
 feature: Workfront Fusion
 exl-id: f3c1ed7b-b69b-478a-8240-1a2ab89e11e5
-source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2259'
-ht-degree: 82%
+source-wordcount: '2302'
+ht-degree: 75%
 
 ---
 
 # [!DNL Adobe Target] モジュール
 
-[!DNL Adobe Workfront Fusion] シナリオ内で、[!DNL Adobe Target] を使用し、複数のサードパーティのアプリケーションやサービスに接続するワークフローを自動化できます。[!DNL Adobe Target] モジュールを使用すると、レコードの作成、読み取り、更新または削除、特定のタイプのすべてのレコードのリスト作成、指定した条件に基づくレコードの検索または [!DNL Adobe Target] API へのカスタム API 呼び出しの実行を行うことができます。
+Adobe Workfront Fusion のシナリオでは、[!DNL Adobe Target] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。 [!DNL Adobe Target] モジュールを使用すると、レコードの作成、読み取り、更新または削除、特定のタイプのすべてのレコードのリスト作成、指定した条件に基づくレコードの検索または [!DNL Adobe Target] API へのカスタム API 呼び出しの実行を行うことができます。
 
 
 シナリオの作成手順については、[ シナリオを作成：記事インデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
@@ -29,31 +29,31 @@ ht-degree: 82%
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
+      <td role="rowheader">Adobe Workfront プラン*</td>
       <td>
         <p>[!UICONTROL Pro] 以降</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
+      <td role="rowheader">Adobe Workfront プラン*</td>
       <td>
         <p>[!UICONTROL Plan]、[!UICONTROL Work]</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td>
+      <td role="rowheader">Adobe Workfront Fusion ライセンス**</td>
       <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在のライセンス要件：Workfront Fusion のライセンス要件はありません。</p>
    <p>または</p>
-   <p>従来のライセンス要件：[!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>従来のライセンス要件：[!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
    </td>
     </tr>
     <tr>
       <td role="rowheader">製品</td>
       <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランをご利用の場合、この記事で説明されている機能を使用するには、組織は [!DNL Adobe Workfront] に加えて [!DNL Adobe Workfront Fusion] も購入する必要があります。[!DNL Workfront Fusion] は、[!DNL Workfront] [!UICONTROL Ultimate] プランに含まれています。</p>
+   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] Adobe Workfront プランがある場合、この記事に記載されている機能を使用するには、Adobe Workfront Fusion とAdobe Workfrontを購入する必要があります。 Workfront Fusion は、[!UICONTROL Ultimate] Workfront プランに含まれています。</p>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>従来の製品要件：この記事に記載されている機能を使用するには、Adobe Workfront Fusion とAdobe Workfrontを購入する必要があります。</p>
    </td>
     </tr>
     </tr>
@@ -61,9 +61,9 @@ ht-degree: 82%
 </table>
 
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、Workfront 管理者にお問い合わせください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 ## 前提条件
 
@@ -186,7 +186,7 @@ Adobe Target コネクタでは、以下を使用します。
 
 ## [!DNL Adobe Target] モジュールとそのフィールド
 
-[!DNL Adobe Target] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Adobe Target] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL Adobe Target] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Adobe Target]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -228,7 +228,7 @@ Adobe Target コネクタでは、以下を使用します。
       <p>作成するレコードのタイプを選択します。</p>
       <ul>
         <li>
-        <b> プロパティ </b><p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Properties/operation/createProperty"> プロパティの作成 </a> を参照してください。</p>
+        <b>プロパティ</b><p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Properties/operation/createProperty"> プロパティの作成 </a> を参照してください。</p>
         </li>
         <li>
         <b> オファーの推奨事項 </b><p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Offers/operation/createOffer"> 新しい recs オファーの作成 </a> を参照してください。</p>
@@ -238,30 +238,30 @@ Adobe Target コネクタでは、以下を使用します。
           <p><a href="#offer-fields" class="MCXref xref" >オファーフィールド</a>に進みます。</p>
         </li>
         <li>
-          <b>[!UICONTROL オファーコンテンツ &#x200B;]</b>
+          <b>[!UICONTROL オファーコンテンツ ]</b>
           <p><a href="#offer-fields" class="MCXref xref" >オファーフィールド</a>に進みます。</p>
         </li>
         <li>
-        <b> 環境 </b><p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Environments/operation/createEnvironment"> 環境の作成 </a> を参照してください。</p>
+        <b>環境</b><p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Environments/operation/createEnvironment"> 環境の作成 </a> を参照してください。</p>
         </li>
         <li>
-          <b>[!UICONTROL オーディエンス &#x200B;]</b>
+          <b>[!UICONTROL オーディエンス ]</b>
           <p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Audiences/operation/createAudience_1_1"> オーディエンスの作成 </a> を参照してください。</p>
         </li>
         <li>
-          <b>[!UICONTROL AB アクティビティ &#x200B;]</b>
+          <b>[!UICONTROL AB アクティビティ ]</b>
           <p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Activities/operation/createActivity_4_1">AB アクティビティを作成 </a> を参照してください。</p>
         </li>
         <li>
-          <b>[!UICONTROL XT アクティビティ &#x200B;]</b>
+          <b>[!UICONTROL XT アクティビティ ]</b>
           <p><a href="#xt-activity-fields" class="MCXref xref" >XT アクティビティフィールド</a>に進みます。</p>
         </li>
         <li>
-          <b>[!UICONTROL AP アクティビティ &#x200B;]</b>
+          <b>[!UICONTROL AP アクティビティ ]</b>
           <p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Activities/operation/createActivity_2">AP アクティビティの作成 </a> を参照してください。</p>
         </li>
         <li>
-          <b>[!UICONTROL 応答トークン &#x200B;]</b>
+          <b>[!UICONTROL 応答トークン ]</b>
           <p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Response-tokens/operation/createResponseToken"> 応答トークンの作成 </a> を参照してください。</p>
         </li>
       </ul>
@@ -785,7 +785,7 @@ Adobe Target コネクタでは、以下を使用します。
       <td>
         <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p>
         <p>例： <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] 認証ヘッダーおよび x-api-key ヘッダーを自動的に追加します。</p>
+        <p>Workfront Fusion は、認証ヘッダーと x-api-key ヘッダーを自動的に追加します。</p>
       </td>
     </tr>
     <tr>
@@ -868,7 +868,7 @@ Adobe Target コネクタでは、以下を使用します。
        </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL フィールド名 &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL フィールド名 ]</td>
       <td>更新するフィールドを選択します。 フィールドが下に表示されます。
           <p>フィールドについて詳しくは、<a href="https://developer.adobe.com/target/administer/admin-api/">Adobe Target API ドキュメント </a> を参照してください。</p>
       </td>

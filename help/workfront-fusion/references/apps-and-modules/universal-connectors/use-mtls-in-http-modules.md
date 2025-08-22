@@ -4,14 +4,14 @@ description: Adobe Workfront Fusion HTTP モジュールで相互 TLS を使用�
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: 89017451c8e0b821616adda861222127e100a08d
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 75%
+source-wordcount: '718'
+ht-degree: 64%
 
 ---
 
-# [!DNL Adobe Workfront Fusion] の HTTP モジュールでの相互 TLS の使用
+# Adobe Workfront Fusion の HTTP モジュールでの相互 TLS の使用
 
 ## 相互 TLS の概要
 
@@ -68,15 +68,15 @@ ht-degree: 75%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
-## [!DNL Workfront Fusion] 公開証明書の提供
+## Workfront Fusion 公開証明書の提供
 
-HTTP リクエストを使用して web サービスに接続する場合、通常、web サービスには [!DNL Workfront Fusion] 検証用の公開証明書が必要です。これにより、web サービスは、証明書が web サービスの許可リストに載っていることを確認する方法として、HTTP リクエストで提示された証明書とファイル上の証明書を比較できるようになります。
+HTTP リクエストを使用して web サービスに接続する場合、その web サービスでは通常、検証用にWorkfront Fusion 公開証明書が必要です。 これにより、web サービスは、証明書が web サービスの許可リストに載っていることを確認する方法として、HTTP リクエストで提示された証明書とファイル上の証明書を比較できるようになります。
 
-[!DNL Adobe Workfront Fusion] 公開証明書を web サービスにアップロードする手順について詳しくは、web サービスのドキュメントを参照してください。
+Adobe Workfront Fusion 公開証明書を web サービスにアップロードする手順については、web サービスのドキュメントを参照してください。
 
 >[!NOTE]
 >
@@ -88,7 +88,7 @@ HTTP リクエストを使用して web サービスに接続する場合、通�
 
 >[!IMPORTANT]
 >
->* これらの公 [!DNL Workfront Fusion] 証明書の有効期限は **2026 年 4 月 4 日** （米国および EU）または **2025 年 11 月 25 日** （Azure）です。 有効期限が切れたら、新しい証明書を web サービスにアップロードする必要があります。次の操作をお勧めします。
+>* これらのWorkfront Fusion 公開証明書は、**2026 年 4 月 4 日** （米国および EU）または **2025 年 11 月 25 日** （Azure）に有効期限が切れます。 有効期限が切れたら、新しい証明書を web サービスにアップロードする必要があります。次の操作をお勧めします。
 >
 >   * 有効期限をメモしておき、自分で証明書を web サービスにアップロードするようにリマインダーを設定します。
 >   * 新しい証明書を簡単に見つけるには、このページをブックマークします。
@@ -97,9 +97,9 @@ HTTP リクエストを使用して web サービスに接続する場合、通�
 
 | データセンター | ダウンロードリンク | 日付が有効 |
 |---|---|---|
-| US Datacenter | [Download [!DNL Workfront Fusion] US Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | 2025 年 3 月 3 日～2026 年 4 月 4 日 |
-| EU Datacenter | [ ダウンロード  [!DNL Workfront Fusion] EU 証明書 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | 2025 年 3 月 3 日～2026 年 4 月 4 日 |
-| Azure クラスター | [Download [!DNL Workfront Fusion] Azure Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | 2024 年 10 月 24 日（PT）～2025 年 11 月 25 日（PT） |
+| US Datacenter | [Workfront Fusion US 証明書 2025 をダウンロード ](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | 2025 年 3 月 3 日～2026 年 4 月 4 日 |
+| EU Datacenter | [Workfront Fusion EU 証明書 2025 をダウンロード ](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | 2025 年 3 月 3 日～2026 年 4 月 4 日 |
+| Azure クラスター | [Workfront Fusion Azure 証明書 2025 をダウンロード ](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | 2024 年 10 月 24 日（PT）～2025 年 11 月 25 日（PT） |
 
 <!--
 
@@ -108,7 +108,7 @@ HTTP リクエストを使用して web サービスに接続する場合、通�
 >[!IMPORTANT]
 >
 >* We recommend installing the certificates for 2025, available above.
->* These [!DNL Workfront Fusion] public certificates expire on **May 7, 2025**. After yours expires you will need to upload a new certificate to the web service. We recommend that you:
+>* These Workfront Fusion public certificates expire on **May 7, 2025**. After yours expires you will need to upload a new certificate to the web service. We recommend that you:
 >
 >   * Make note of the expiration date and set a reminder for yourself to upload the certificate to your web service.
 >   * Bookmark this page to easily find the new certificates.
@@ -117,14 +117,14 @@ HTTP リクエストを使用して web サービスに接続する場合、通�
 
 | Datacenter | Download link | Dates valid |
 |---|---|---|
-| US Datacenter | [Download [!DNL Workfront Fusion] Certificate 2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-us-mtls-certificate.pem) | April 5, 2024 to May 7, 2025 |
-| EU Datacenter | [Download [!DNL Workfront Fusion] EU Certificate 2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-eu-mtls-certificate.pem) | April 5, 2024 to May 7, 2025 |
+| US Datacenter | [Download Workfront Fusion Certificate 2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-us-mtls-certificate.pem) | April 5, 2024 to May 7, 2025 |
+| EU Datacenter | [Download Workfront Fusion EU Certificate 2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-eu-mtls-certificate.pem) | April 5, 2024 to May 7, 2025 |
 
 -->
 
-## [!DNL Workfront Fusion] HTTP モジュールでの相互 TLS の有効化 
+## Workfront Fusion HTTP モジュールでの相互 TLS の有効化
 
-すべての [!DNL Workfront Fusion] [!UICONTROL HTTP] リクエストモジュールで相互 TLS を有効にするオプションがあります。
+すべてのWorkfront Fusion [!UICONTROL HTTP] リクエストモジュールには、相互 TLS を有効にするオプションがあります。
 
 [!UICONTROL HTTP] リクエストモジュール内で相互 TLS を有効にするには：
 

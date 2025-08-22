@@ -6,10 +6,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 9b74af0d-e7ff-4bf5-974e-0651d0d51f71
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 79%
+source-wordcount: '618'
+ht-degree: 82%
 
 ---
 
@@ -28,17 +28,17 @@ ht-degree: 79%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
    <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規： [!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：[!DNL Workfront Fusion] ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -46,16 +46,16 @@ ht-degree: 79%
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：組織は [!DNL Adobe Workfront Fusion] を購入する必要があります。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：Adobe Workfront Fusion は、組織で購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">アクセスレベル設定*</td> 
    <td> 
-     <p>組織の [!DNL Workfront Fusion] 管理者である必要があります。</p>
-     <p>チームの [!DNL Workfront Fusion] 管理者である必要があります。</p>
+     <p>組織の Workfront Fusion 管理者である必要があります。</p>
+     <p>チームのWorkfront Fusion 管理者である必要があります。</p>
    </td> 
   </tr> 
    </td> 
@@ -65,7 +65,7 @@ ht-degree: 79%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] のライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion]  のライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -73,11 +73,11 @@ ht-degree: 79%
 
 1. 左側のパネルで「**シナリオ**」タブをクリックします。
 1. スケジュールするシナリオを選択します。
-1. シナリオの詳細ページの右上隅で、**[!UICONTROL Options]**/**[!UICONTROL Scheduling]** をクリックします
+1. シナリオの詳細ページの右上隅で、**[!UICONTROL オプション]**／**[!UICONTROL スケジュール]**&#x200B;をクリックします。
 
    または
 
-   シナリオのトリガーモジュールの「**[!UICONTROL Scheduling]**」アイコン（時計）をクリックします。
+   シナリオのトリガーモジュール上の&#x200B;**[!UICONTROL スケジュール]**&#x200B;アイコン（時計）をクリックします。
 
 1. 次のフィールドに情報を入力します。
 
@@ -99,7 +99,7 @@ ht-degree: 79%
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Advanced scheduling]</td> 
-      <td>シナリオを実行する特定の期間を定義できます。時間間隔、平日、月を指定できます。各間隔に対して、「<strong>[!UICONTROL Add]</strong>」をクリックし、「[!UICONTROL Run scenario]」フィールドの説明に従ってフィールドに入力します。</td> 
+      <td>シナリオを実行する特定の期間を定義できます。時間間隔、平日、月を指定できます。時間間隔ごとに、「<strong>[!UICONTROL Add]</strong>」をクリックして、「[!UICONTROL Run scenario]」フィールドの説明に従って、フィールドに入力します。</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Start]</td> 
@@ -112,4 +112,4 @@ ht-degree: 79%
     </tbody> 
    </table>
 
-1. 「**[!UICONTROL OK]**」をクリックして、スケジュール設定を保存し、シナリオに戻ります。
+1. 「**[!UICONTROL OK]**」をクリックしてスケジュール設定を保存し、シナリオに戻ります。

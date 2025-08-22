@@ -4,18 +4,18 @@ description: ' [!DNL Adobe Workfront Fusion Google Drive]  モジュールを使
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 788f4e1b-d774-45ad-a8be-b16922c1d5dc
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2041'
-ht-degree: 75%
+source-wordcount: '2096'
+ht-degree: 58%
 
 ---
 
 # [!DNL Google Drive] モジュール
 
-[!DNL Adobe Workfront Fusion] [!DNL Google Drive] モジュールを使用すると、[!DNL Google Drive] 内のファイル、フォルダー、または共有ドライブを監視、検索、作成、更新、削除、管理できます。
+Adobe Workfront Fusion [!DNL Google Drive] モジュールを使用すると、[!DNL Google Drive] 内のファイル、フォルダー、共有ドライブを監視、検索、作成、更新、削除、管理できます。
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、[!DNL Google Drive] アカウントを複数のサードパーティのアプリケーションとサービスに接続できます。
+Adobe Workfront Fusion シナリオでは、[!DNL Google Drive] アカウントを複数のサードパーティのアプリケーションやサービスに接続できます。
 
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -60,7 +60,7 @@ ht-degree: 75%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -89,17 +89,17 @@ Google ドライブコネクタは以下を使用します。
 
 
 
-## [!DNL Google Drive] を [!DNL Workfront Fusion] に接続
+## Workfront Fusion への [!DNL Google Drive] の接続
 
-[!DNL @gmail.com] または [!DNL @googlemail.com] ユーザーを使用する場合は、[!DNL Google Cloud Platform] で OAuth クライアントを作成して、[!UICONTROL &#x200B; クライアント ID] と [!UICONTROL &#x200B; クライアントシークレット &#x200B;] を取得する必要があります。
+[!DNL @gmail.com] または [!DNL @googlemail.com] ユーザーを使用する場合は、[!DNL Google Cloud Platform] で OAuth クライアントを作成して、[!UICONTROL  クライアント ID] と [!UICONTROL  クライアントシークレット ] を取得する必要があります。
 
-OAuth クライアントを作成（および[!UICONTROL クライアント ID] と[!UICONTROL クライアントシークレット]を取得）する手順について詳しくは、[カスタム OAuth クライアントを使用した  [!DNL Adobe Workfront Fusion]  と  [!DNL Google Services]  の接続](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)を参照してください。
+OAuth クライアントを作成（および [!UICONTROL  クライアント ID] と [!UICONTROL  クライアントシークレット ] を取得）する手順については、[ カスタム OAuth クライアントを使用した  [!DNL Google Services]  へのAdobe Workfront Fusion の接続 ](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md) を参照してください。
 
 [!DNL Google Drive] アカウントを [!UICONTROL Workfront Fusion] に接続する方法について詳しくは、[[!UICONTROL Adobe Workfront Fusion] への接続の作成 - 基本手順](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)を参照してください。
 
 ## [!DNL Google Drive] モジュールとそのフィールド
 
-[!DNL Google Drive] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Google Drive] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL Google Drive] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Google Drive]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -112,12 +112,12 @@ OAuth クライアントを作成（および[!UICONTROL クライアント ID] 
 
 ### トリガー
 
-* [[!UICONTROL &#x200B; すべてのファイルを監視 &#x200B;]](#watch-all-files)
-* [[!UICONTROL &#x200B; コメントを見る &#x200B;]](#watch-comments)
-* [[!UICONTROL &#x200B; フォルダー内のファイルを監視 &#x200B;]](#watch-files-in-folder)
+* [[!UICONTROL  すべてのファイルを監視 ]](#watch-all-files)
+* [[!UICONTROL  コメントを見る ]](#watch-comments)
+* [[!UICONTROL  フォルダー内のファイルを監視 ]](#watch-files-in-folder)
 * [[!UICONTROL 共有ファイルを監視]](#watch-shared-files)
 
-#### [!UICONTROL &#x200B; すべてのファイルを監視 &#x200B;]
+#### [!UICONTROL  すべてのファイルを監視 ]
 
 このトリガーモジュールは、[!DNL Google Drive] ージ内のファイルが追加または変更されたときにシナリオを開始します。
 
@@ -127,7 +127,7 @@ OAuth クライアントを作成（および[!UICONTROL クライアント ID] 
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Drive] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion] への [!DNL Google Drive] の接続</a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Drive] アカウントをWorkfront Fusion に接続する手順については、<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Google Drive] の接続 ] を参照してください </a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL What files to watch]</td> 
@@ -162,7 +162,7 @@ OAuth クライアントを作成（および[!UICONTROL クライアント ID] 
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of downloaded files]</td> 
-   <td>1 回のサイクル中で [!DNL Workfront Fusion] がダウンロードする結果の最大数（シナリオ実行あたりの繰り返し数）を設定します。</td> 
+   <td>Workfront Fusion が 1 つのサイクルでダウンロードする結果の最大数（シナリオ実行ごとの繰り返し数）を設定します。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -177,7 +177,7 @@ OAuth クライアントを作成（および[!UICONTROL クライアント ID] 
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Drive] アカウントを [!DNL Workfront Fusion] に接続する方法について詳しくは、<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!DNL Google Drive] を [!UICONTROL Workfront Fusion] に接続する</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Drive] アカウントをWorkfront Fusion に接続する手順については、<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Google Drive] の接続 ] を参照してください </a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File]</td> 
@@ -189,12 +189,12 @@ OAuth クライアントを作成（および[!UICONTROL クライアント ID] 
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of returned comments]</td> 
-   <td>1 回のサイクル中で [!DNL Workfront Fusion] が返すコメントの最大数（シナリオ実行ごとの繰り返し数）を設定します。</td> 
+   <td>Workfront Fusion が 1 つのサイクルで返すコメントの最大数（シナリオ実行ごとの繰り返し数）を設定します。</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; フォルダー内のファイルを監視 &#x200B;]
+#### [!UICONTROL  フォルダー内のファイルを監視 ]
 
 このトリガーモジュールは、指定したフォルダー内でファイルが追加または変更されたときにシナリオを開始します。
 
@@ -204,7 +204,7 @@ OAuth クライアントを作成（および[!UICONTROL クライアント ID] 
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection] </td>
-   <td> <p>[!DNL Google Drive] アカウントを [!DNL Workfront Fusion] に接続する方法について詳しくは、<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!DNL Google Drive] を [!UICONTROL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Drive] アカウントをWorkfront Fusion に接続する手順については、<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Google Drive] の接続 ] を参照してください </a></p> </td> 
   </tr> 
   <tr>
     <td>[!UICONTROL Select the folder to be watched]</td>
@@ -243,7 +243,7 @@ OAuth クライアントを作成（および[!UICONTROL クライアント ID] 
   </tr> 
   <tr> 
     <td>[!UICONTROL Maximum number of downloaded files]</td>
-    <td>1 回のサイクル中に [!DNL Workfront Fusion] がダウンロードする結果の最大数（シナリオ実行あたりの繰り返し回数）を設定します。</td>
+    <td>Workfront Fusion が 1 つのサイクルでダウンロードする結果の最大数（シナリオ実行ごとの繰り返し数）を設定します。</td>
   </tr> 
  </tbody> 
 </table>
@@ -258,7 +258,7 @@ OAuth クライアントを作成（および[!UICONTROL クライアント ID] 
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Drive] アカウントを [!DNL Workfront Fusion] に接続する方法について詳しくは、<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!DNL Google Drive] を [!UICONTROL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Drive] アカウントをWorkfront Fusion に接続する手順については、<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Google Drive] の接続 ] を参照してください </a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Select the folder to be watched]</td> 
@@ -297,24 +297,24 @@ OAuth クライアントを作成（および[!UICONTROL クライアント ID] 
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of downloaded files]</td> 
-   <td>1 回のサイクル中に [!DNL Workfront Fusion] がダウンロードする結果の最大数（シナリオ実行あたりの繰り返し数）を設定します。</td> 
+   <td>Workfront Fusion が 1 つのサイクルでダウンロードする結果の最大数（シナリオ実行ごとの繰り返し数）を設定します。</td> 
   </tr> 
  </tbody> 
 </table>
 
 ### アクション
 
-* [[!UICONTROL &#x200B; ファイルのコピー &#x200B;]](#copy-a-file)
-* [[!UICONTROL fFolder の作成 &#x200B;]](#create-a-folder)
+* [[!UICONTROL  ファイルのコピー ]](#copy-a-file)
+* [[!UICONTROL fFolder の作成 ]](#create-a-folder)
 * [[!UICONTROL ファイルを削除]](#delete-a-file)
 * [[!UICONTROL ファイルを取得]](#get-a-file)
 * [[!UICONTROL 共有リンクを取得]](#get-a-share-link)
-* [[!UICONTROL &#x200B; ファイルをごみ箱に移動する &#x200B;]](#move-a-filefolder-to-trash)
+* [[!UICONTROL  ファイルをごみ箱に移動する ]](#move-a-filefolder-to-trash)
 * [[!UICONTROL ファイル／フォルダを検索]](#search-for-filesfolders)
 * [[!UICONTROL ファイルを更新]](#update-a-file)
 * [[!UICONTROL ファイルをアップロード]](#upload-a-file)
 
-#### [!UICONTROL &#x200B; ファイルのコピー &#x200B;]
+#### [!UICONTROL  ファイルのコピー ]
 
 このアクションモジュールは、ファイルを新しい場所にコピーします。
 
@@ -324,7 +324,7 @@ OAuth クライアントを作成（および[!UICONTROL クライアント ID] 
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Drive] アカウントを [!DNL Workfront Fusion] に接続する方法について詳しくは、<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!DNL Google Drive] を [!UICONTROL Workfront Fusion] に接続する</a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Drive] アカウントをWorkfront Fusion に接続する手順については、<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Google Drive] の接続 ] を参照してください </a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Destination]</td> 
@@ -359,7 +359,7 @@ OAuth クライアントを作成（および[!UICONTROL クライアント ID] 
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Drive] アカウントを [!DNL Workfront Fusion] に接続する方法について詳しくは、<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!DNL Google Drive] を [!UICONTROL Workfront Fusion] に接続する</a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Drive] アカウントをWorkfront Fusion に接続する手順については、<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Google Drive] の接続 ] を参照してください </a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Destination]</td> 
@@ -394,7 +394,7 @@ OAuth クライアントを作成（および[!UICONTROL クライアント ID] 
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Drive] アカウントを [!DNL Workfront Fusion] に接続する方法について詳しくは、<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!DNL Google Drive] を [!UICONTROL Workfront Fusion] に接続する</a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Drive] アカウントをWorkfront Fusion に接続する手順については、<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Google Drive] の接続 ] を参照してください </a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File ID]</td> 
@@ -413,7 +413,7 @@ OAuth クライアントを作成（および[!UICONTROL クライアント ID] 
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Drive] アカウントを [!DNL Workfront Fusion] に接続する方法について詳しくは、<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!DNL Google Drive] を [!UICONTROL Workfront Fusion] に接続する</a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Drive] アカウントをWorkfront Fusion に接続する手順については、<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Google Drive] の接続 ] を参照してください </a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Convert [!DNL Google Documents] files to format]</td> 
@@ -448,7 +448,7 @@ OAuth クライアントを作成（および[!UICONTROL クライアント ID] 
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Drive] アカウントを [!DNL Workfront Fusion] に接続する方法について詳しくは、<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!DNL Google Drive] を [!UICONTROL Workfront Fusion] に接続する</a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Drive] アカウントをWorkfront Fusion に接続する手順については、<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Google Drive] の接続 ] を参照してください </a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File ID]</td> 
@@ -457,7 +457,7 @@ OAuth クライアントを作成（および[!UICONTROL クライアント ID] 
  </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; ファイルをごみ箱に移動する &#x200B;]
+#### [!UICONTROL  ファイルをごみ箱に移動する ]
 
 このアクションモジュールは、ファイルまたはフォルダーをごみ箱に移動します。
 
@@ -467,7 +467,7 @@ OAuth クライアントを作成（および[!UICONTROL クライアント ID] 
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Drive] アカウントを [!DNL Workfront Fusion] に接続する方法について詳しくは、<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!DNL Google Drive] を [!UICONTROL Workfront Fusion] に接続する</a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Drive] アカウントをWorkfront Fusion に接続する手順については、<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Google Drive] の接続 ] を参照してください </a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File ID]</td> 
@@ -486,7 +486,7 @@ OAuth クライアントを作成（および[!UICONTROL クライアント ID] 
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Drive] アカウントを [!DNL Workfront Fusion] に接続する方法について詳しくは、<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!DNL Google Drive] を [!UICONTROL Workfront Fusion] に接続する</a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Drive] アカウントをWorkfront Fusion に接続する手順については、<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Google Drive] の接続 ] を参照してください </a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Destination]</td> 
@@ -526,7 +526,7 @@ OAuth クライアントを作成（および[!UICONTROL クライアント ID] 
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of returned results]</td> 
-   <td>[!DNL Workfront Fusion] の 1 回の実行サイクルで返されるファイルまたはフォルダーの最大数を設定します。</td> 
+   <td>Workfront Fusion が 1 つの実行サイクルで返すファイルまたはフォルダーの最大数を設定します。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 
@@ -545,7 +545,7 @@ OAuth クライアントを作成（および[!UICONTROL クライアント ID] 
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Drive] アカウントを [!DNL Workfront Fusion] に接続する方法について詳しくは、<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!DNL Google Drive] を [!UICONTROL Workfront Fusion] に接続する</a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Drive] アカウントをWorkfront Fusion に接続する手順については、<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Google Drive] の接続 ] を参照してください </a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Destination]</td> 
@@ -576,7 +576,7 @@ OAuth クライアントを作成（および[!UICONTROL クライアント ID] 
    <td>コンテンツを置き換える場合は、前のモジュールからソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL ファイルの変換 &#x200B;]</td> 
+   <td>[!UICONTROL ファイルの変換 ]</td> 
    <td>ファイルを対応するGoogle ファイル形式に変換する場合は、このオプションを有効にします。</td> 
   </tr> 
  </tbody> 
@@ -592,7 +592,7 @@ OAuth クライアントを作成（および[!UICONTROL クライアント ID] 
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Drive] アカウントを [!DNL Workfront Fusion] に接続する方法について詳しくは、<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">[!DNL Google Drive] を [!UICONTROL Workfront Fusion] に接続する</a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Drive] アカウントをWorkfront Fusion に接続する手順については、<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Google Drive] の接続 ] を参照してください </a></p> </td> 
   </tr> 
   <tr> 
    <td>[!DNL Destination]</td> 

@@ -5,10 +5,10 @@ description: この記事では、シナリオの実行方法とシナリオ内�
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '769'
+ht-degree: 25%
 
 ---
 
@@ -28,11 +28,11 @@ ht-degree: 0%
 
 バンドルがすべてのモジュールを通じて正しく処理した場合、シナリオの詳細ページでシナリオは成功とマークされます。
 
-### 例：[!UICONTROL [!DNL Workfront Fusion] for Work Automation]
+### 例：[!UICONTROL  作業自動化のWorkfront Fusion]
 
 >[!BEGINSHADEBOX]
 
-**例：** このシナリオでは、[!DNL Workfront] で受信リクエストを監視し、それらを [!DNL Workfront] プロジェクトに変換すると、データは次のように流れます。
+**例：** Workfrontで受信リクエストを監視し、それらをWorkfront プロジェクトに変換するシナリオでは、データは次のように流れます。
 
 最初のモジュールで実行される、シナリオの最初のステップは、リクエストを監視することです。見つかった各リクエストは 1 つのバンドルと見なされます。 モジュールが実行されてもバンドルが見つからない場合、シナリオは最初のモジュールの後で終了します。
 
@@ -42,11 +42,11 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-### 例：[!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration]
+### 例：[!UICONTROL  作業自動化および統合用のWorkfront Fusion]
 
 >[!BEGINSHADEBOX]
 
-**例：**&#x200B;[!DNL Adobe Workfront] からドキュメントをダウンロードして [!DNL Dropbox] のフォルダーに送信するシナリオでは、データは次のように流れます。
+**例：** Adobe Workfrontからドキュメントをダウンロードして [!DNL Dropbox] のフォルダーに送信する場合、データは次のように流れます。
 
 シナリオの最初の手順は、最初のモジュールが実行し、Workfrontでドキュメントを監視することです。 見つかった各ドキュメントは 1 つのバンドルと見なされます。 モジュールが実行されてもバンドルが見つからない場合、シナリオは最初のモジュールの後で終了します。
 

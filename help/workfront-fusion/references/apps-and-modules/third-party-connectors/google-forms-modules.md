@@ -4,18 +4,18 @@ description: ' [!DNL Adobe Workfront Fusion Google Forms]  モジュールを使
 author: Becky
 feature: Workfront Fusion
 exl-id: dc017957-c0f8-4206-916f-21ccda346fb9
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1383'
-ht-degree: 80%
+source-wordcount: '1415'
+ht-degree: 74%
 
 ---
 
 # [!DNL Google Forms] モジュール
 
-[!DNL Adobe Workfront Fusion] [!DNL Google Forms] モジュールを使用すると、[!DNL Google Forms] で応答を監視、選択、追加、更新または削除できます。
+Adobe Workfront Fusion [!DNL Google Forms] モジュールを使用すると、[!DNL Google Forms] ージ上の応答を監視、選択、追加、更新、削除できます。
 
-[!DNL Google Docs] を [!DNL Adobe Workfront Fusion] で使用するには、[!DNL Google] アカウントが必要です。[!DNL Google] アカウントをまだお持ちでない場合は、[!DNL Google] アカウントのヘルプページで作成できます。
+Adobe Workfront Fusion で [!DNL Google Docs] を使用するには、[!DNL Google] アカウントが必要です。 [!DNL Google] アカウントをまだお持ちでない場合は、[!DNL Google] アカウントのヘルプページで作成できます。
 
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -60,7 +60,7 @@ ht-degree: 80%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -96,7 +96,7 @@ Google Forms コネクタでは、以下を使用します。
 
 ## [!DNL Google Forms] モジュールとそのフィールド
 
-[!DNL Google Forms] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Google Forms] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL Google Forms] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Google Forms]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -118,7 +118,7 @@ Google Forms コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Google] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Spreadsheet]</td> 
@@ -147,7 +147,7 @@ Google Forms コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p> [!DNL Workfront Fusion] が 1 サイクルの間に連携する応答の最大数を設定します。</p> </td> 
+   <td> <p> Workfront Fusion が 1 つのサイクルで処理する応答の最大数を設定します。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -170,7 +170,7 @@ Google Forms コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Google] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Spreadsheet]</td> 
@@ -213,7 +213,7 @@ Google Forms コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Google] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Spreadsheet]</td> 
@@ -242,7 +242,7 @@ Google Forms コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Google] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Spreadsheet]</td> 
@@ -285,7 +285,7 @@ Google Forms コネクタでは、以下を使用します。
  <col data-mc-conditions=""> 
  <tbody> 
     <td>接続</td>
-   <td> <p>[!DNL Google] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
     <td>[!UICONTROL Spreadsheet]</td>
@@ -326,7 +326,7 @@ Google Forms コネクタでは、以下を使用します。
   </tr> 
   <tr>
     <td role="rowheader">[!UICONTROL Maximum number of returned responses]</td>
-   <td> <p> [!DNL Workfront Fusion] が 1 サイクルの間に返す応答の最大数を設定します。</p> </td> 
+   <td> <p> Workfront Fusion が 1 つのサイクルで返す応答の最大数を設定します。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -341,7 +341,7 @@ Google Forms コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Google] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr>
     <td>[!UICONTROL Spreadsheet]</td>
@@ -357,7 +357,7 @@ Google Forms コネクタでは、以下を使用します。
   </tr> 
   <tr>
     <td>[!UICONTROL Maximum number of returned rows]</td>
-   <td> <p> [!DNL Workfront Fusion] が 1 サイクルの間に返す応答の最大数を設定します。</p> </td> 
+   <td> <p> Workfront Fusion が 1 つのサイクルで返す応答の最大数を設定します。</p> </td> 
   </tr> 
  </tbody> 
 </table>

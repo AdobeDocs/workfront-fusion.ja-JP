@@ -4,16 +4,16 @@ description: ' [!DNL Adobe Workfront Fusion SFTP]  モジュールを使用す�
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-source-git-commit: 358101ee7e4168913976b86fa712ed9aeb979093
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2143'
-ht-degree: 80%
+source-wordcount: '2216'
+ht-degree: 64%
 
 ---
 
 # SFTP モジュール
 
-[!DNL Adobe Workfront Fusion] SFTP モジュールを使用すると、モジュールを使用すると、選択したフォルダーやサブフォルダー内のファイルの変更を監視したり、新しいファイルを目的のフォルダーにアップロードしたり、フォルダー内の既存のファイルを変更または削除したり、ファイルの権限を変更したりすることができます。
+Adobe Workfront Fusion SFTP モジュールを使用すると、選択したフォルダーまたはサブフォルダー内のファイルの変更内容をモニターしたり、新しいファイルを目的のフォルダーにアップロードしたり、既にフォルダーに存在する既存のファイルを変更または削除したり、ファイルのアクセス権を変更したりできます。
 
 ## アクセス要件
 
@@ -54,17 +54,17 @@ ht-degree: 80%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
 ## 前提条件
 
-[!DNL Workfront Fusion] で SFTP を使用するには、SFTP アカウント（[!DNL GoDaddy] web ホスティングなど）が必要です。
+Workfront Fusion で SFTP を使用するには、SFTP アカウント（web ホスティングなど）が必要 [!DNL GoDaddy] す。
 
-## SFTP を [!DNL Workfront Fusion] に接続 {#connect-sftp-to-workfront-fusion}
+## Workfront Fusion への SFTP の接続 {#connect-sftp-to-workfront-fusion}
 
-SFTP アカウントを [!DNL Workfront Fusion] に接続するには、ターゲットホストと SFTP 資格情報（ユーザー名とパスワード、ユーザー名とキー）を指定する接続を作成する必要があります。
+SFTP アカウントをWorkfront Fusion に接続するには、ターゲットホストと SFTP 資格情報（ユーザー名とパスワード、ユーザー名とキー）を指定する接続を作成する必要があります。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -95,15 +95,15 @@ SFTP アカウントを [!DNL Workfront Fusion] に接続するには、ター�
    <td> <p>SFTP サーバーへの接続に使用する認証メソッドを選択します。</p> 
     <ul> 
      <li><strong>[!UICONTROL User name and password]</strong>：資格情報を入力します。</li> 
-     <li> <p><strong>[!UICONTROL User name and key]</strong>：ユーザー名と秘密鍵／証明書を入力します。</p> <p>秘密鍵をアップロードしてクライアント側の認証を使用するか、自己署名証明書を使用して TLS を使用する場合には、自分の証明書（P12 または PFX ファイル）をアップロードします。クライアント側の証明書認証を使用している場合は、ここに CA 証明書を入力できます。</p> <p>[!DNL Workfront Fusion] ここで指定したデータ（ファイル、パスワード）を保持または保存しません。ファイルとパスワードは、秘密鍵や証明書を抽出する場合にのみ使用します。</p> </li> 
+     <li> <p><strong>[!UICONTROL User name and key]</strong>：ユーザー名と秘密鍵／証明書を入力します。</p> <p>秘密鍵をアップロードしてクライアント側の認証を使用するか、自己署名証明書を使用して TLS を使用する場合には、自分の証明書（P12 または PFX ファイル）をアップロードします。クライアント側の証明書認証を使用している場合は、ここに CA 証明書を入力できます。</p> <p>Workfront Fusion は、ここで指定したデータ（ファイル、パスワード）を保持または保存しません。 ファイルとパスワードは、秘密鍵や証明書を抽出する場合にのみ使用します。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL キー交換アルゴリズム &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL キー交換アルゴリズム ] </td> 
    <td> <p>キー交換用の一連のアルゴリズムを入力できます。 モジュールは、追加された順序に基づいてアルゴリズムの優先順位を設定します。 追加するアルゴリズムごとに「<b> 項目を追加 </b>」をクリックし、アルゴリズムを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 暗号 &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL 暗号 ] </td> 
    <td> <p>キー交換用の暗号のセットを入力できます。 モジュールは、追加された順序に基づいて暗号の優先順位を設定します。 追加する暗号ごとに [<b> 項目の追加 </b>] をクリックし、暗号を選択します。</p> </td> 
   </tr> 
  </tbody> 
@@ -155,7 +155,7 @@ SFTP コネクタは、接続作成時に次の機能をサポートしていま
 
 ## [!UICONTROL SFTP] モジュールとそのフィールド
 
-[!UICONTROL SFTP] モジュールを設定すると、[!DNL Workfront Fusion] には以下のフィールドが表示されます。これらと共に、アプリやサービスのアクセスレベルなどの要因に応じて、追加の [!UICONTROL SFTP] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL SFTP] モジュールを設定する場合、Workfront Fusion は以下に示すフィールドを表示します。 これらと共に、アプリやサービスのアクセスレベルなどの要因に応じて、追加の [!UICONTROL SFTP] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -176,7 +176,7 @@ SFTP コネクタは、接続作成時に次の機能をサポートしていま
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事にある <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への SFTP の接続を参照してください。</p> </td> 
+   <td> <p>SFTP アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Workfront Fusion への SFTP の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder] </td> 
@@ -203,7 +203,7 @@ SFTP コネクタは、接続作成時に次の機能をサポートしていま
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>SFTP アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事にある <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への SFTP の接続を参照してください。</p> </td> 
+   <td> <p>SFTP アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Workfront Fusion への SFTP の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder] </td> 
@@ -235,7 +235,7 @@ SFTP コネクタは、接続作成時に次の機能をサポートしていま
 
 >[!NOTE]
 >
->フォルダーが既に存在する場合はエラーが返されます。フローを中断せずに続行するには、エラーハンドラールートをモジュールに接続してエラーを検出し、[!UICONTROL 再開]ディレクティブを適用します。エラーハンドラールートのアタッチについて詳しくは、[ [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md) でのエラー処理を参照してください。エラーハンドラールートについて詳しくは、[ [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/errors/directives-for-error-handling.md) でのエラー処理用のディレクティブを参照してください。
+>フォルダーが既に存在する場合はエラーが返されます。フローを中断せずに続行するには、エラーハンドラールートをモジュールに接続してエラーを検出し、[!UICONTROL 再開]ディレクティブを適用します。エラーハンドラールートの添付について詳しくは、[Adobe Workfront Fusion でのエラー処理 ](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md) を参照してください。 エラーハンドラールートについては、[Adobe Workfront Fusion でのエラー処理のディレクティブ ](/help/workfront-fusion/references/errors/directives-for-error-handling.md) を参照してください。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -243,7 +243,7 @@ SFTP コネクタは、接続作成時に次の機能をサポートしていま
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事にある <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への SFTP の接続を参照してください。</p> </td> 
+   <td> <p>SFTP アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Workfront Fusion への SFTP の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder] </td> 
@@ -268,7 +268,7 @@ SFTP コネクタは、接続作成時に次の機能をサポートしていま
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への SFTP の接続を参照してください</p> </td> 
+   <td> <p>SFTP アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Workfront Fusion への SFTP の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File Path]</td> 
@@ -285,7 +285,7 @@ SFTP コネクタは、接続作成時に次の機能をサポートしていま
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP アカウントの [!DNL Workfront Fusion] への接続について詳しくは、この記事内の <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">SFTP の [!DNL Workfront Fusion]</a> への接続を参照してください。</p> </td> 
+   <td> <p>SFTP アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Workfront Fusion への SFTP の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!DNL Folder Path]</td> 
@@ -304,7 +304,7 @@ SFTP コネクタは、接続作成時に次の機能をサポートしていま
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP アカウントの [!DNL Workfront Fusion] への接続手順については、この記事の<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への SFTP の接続を参照してください。</p> </td> 
+   <td> <p>SFTP アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Workfront Fusion への SFTP の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Buffer Size [B]]</td> 
@@ -317,7 +317,7 @@ SFTP コネクタは、接続作成時に次の機能をサポートしていま
  </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; ファイルを取得 &#x200B;]
+#### [!UICONTROL  ファイルを取得 ]
 
 このモジュールは、指定されたフォルダーからファイルを返します。
 
@@ -327,7 +327,7 @@ SFTP コネクタは、接続作成時に次の機能をサポートしていま
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP アカウントの [!DNL Workfront Fusion] への接続手順については、この記事の<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への SFTP の接続を参照してください。</p> </td> 
+   <td> <p>SFTP アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Workfront Fusion への SFTP の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Buffer Size [B]]</td> 
@@ -368,7 +368,7 @@ SFTP コネクタは、接続作成時に次の機能をサポートしていま
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事にある <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への SFTP の接続を参照してください。</p> </td> 
+   <td> <p>SFTP アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Workfront Fusion への SFTP の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Show] </td> 
@@ -409,7 +409,7 @@ SFTP コネクタは、接続作成時に次の機能をサポートしていま
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への SFTP の接続を参照してください</p> </td> 
+   <td> <p>SFTP アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Workfront Fusion への SFTP の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File Path]</td> 
@@ -432,7 +432,7 @@ SFTP コネクタは、接続作成時に次の機能をサポートしていま
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への SFTP の接続を参照してください</p> </td> 
+   <td> <p>SFTP アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Workfront Fusion への SFTP の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File Path]</td> 
@@ -455,7 +455,7 @@ SFTP コネクタは、接続作成時に次の機能をサポートしていま
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への SFTP の接続を参照してください</p> </td> 
+   <td> <p>SFTP アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Workfront Fusion への SFTP の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File Path]</td> 
@@ -478,7 +478,7 @@ SFTP コネクタは、接続作成時に次の機能をサポートしていま
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>SFTP アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事にある <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への SFTP の接続を参照してください。</p> </td> 
+   <td> <p>SFTP アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Workfront Fusion への SFTP の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder] </td> 
@@ -493,7 +493,7 @@ SFTP コネクタは、接続作成時に次の機能をサポートしていま
    <td> <p>ファイルまたはフォルダーに必要な権限を設定します。chmod パラメーターを使用します。例えば、<code>777</code> や <code>-rwxrwxrwx</code> です。</p> <p>これらの権限は、パターンに一致する必要があります <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>chmod について詳しくは、<a href="https://ss64.com/bash/chmod.html?lang=ja">chmod のドキュメント </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL バッファーサイズ （B） &#x200B;]</p> </td> 
+   <td> <p>[!UICONTROL バッファーサイズ （B） ]</p> </td> 
    <td> <p>ファイルをアップロードする際に、各チャンクのサイズ（バイト単位）を設定します。 これは、サイズの大きいファイルや、サーバーのメモリ制限により小さなアップロードが必要な場合に便利です。 この値が設定されていない場合、ファイルは 1 回の操作で書き込まれます。</p> </td> 
   </tr> 
  </tbody> 

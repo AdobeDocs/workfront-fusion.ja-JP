@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion Tools]  セクションには、シ�
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2286'
-ht-degree: 86%
+source-wordcount: '2292'
+ht-degree: 85%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 86%
 
 [!DNL Adobe Workfront Fusion Tools] セクションには、シナリオを強化できる便利なモジュールがいくつか含まれています。
 
-[!UICONTROL &#x200B; ツール &#x200B;] モジュールは、アプリのリストから、または画面の下部にある [!UICONTROL &#x200B; ツール &#x200B;] アイコン ![ ツールアイコン ](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) から使用できます。
+[!UICONTROL  ツール ] モジュールは、アプリのリストから、または画面の下部にある [!UICONTROL  ツール ] アイコン ![ ツールアイコン ](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) から使用できます。
 
 ## アクセス要件
 
@@ -54,7 +54,7 @@ ht-degree: 86%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについては、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -254,7 +254,7 @@ ht-degree: 86%
 >
 >最初のシナリオでは、必要な情報がすべて、現在のタイムスタンプと共にデータストアに保存されます。2 つ目のシナリオでは、意図した遅延よりも古いタイムスタンプを持つレコードをデータストアで定期的に確認し、そのレコードを取得し、データの処理を完了したら、データストアからそのレコードを削除します。
 >
-><!--For more information on data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]]().-->
+><!--For more information on data stores, see [Data Stores in Adobe Workfront Fusion]().-->
 >
 >特定のデータストアモジュールについて詳しくは、[[!UICONTROL データストア]モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md)を参照してください。
 
@@ -313,11 +313,11 @@ ht-degree: 86%
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Column separator]</p> </td> 
-   <td> <p>結果のバンドルでフィールド値の列を区切る区切り文字の種類を選択または入力します。[!UICONTROL Other] を選択した場合は、値の区切りに使用する文字を区切り文字フィールドに入力します。</p> </td> 
+   <td> <p>結果のバンドルでフィールド値の列を区切る区切り記号の種類を選択または入力します。[!UICONTROL Other] を選択した場合は、値の区切りに使用する文字を区切り文字フィールドに入力します。</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Row separator]</p> </td> 
-   <td> <p>結果のバンドルでフィールド値の行を区切る区切り文字の種類を選択または入力します。[!UICONTROL Other] を選択した場合は、値の区切りに使用する文字を区切り文字フィールドに入力します。</p> </td> 
+   <td> <p>結果のバンドルでフィールド値の行を区切る区切り記号の種類を選択または入力します。[!UICONTROL Other] を選択した場合は、値の区切りに使用する文字を区切り文字フィールドに入力します。</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Group by]</p> </td> 
@@ -344,7 +344,7 @@ ht-degree: 86%
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Row separator]</p> </td> 
-   <td> <p>結果のバンドルでフィールド値の行を区切る区切り文字の種類を選択または入力します。[!UICONTROL Other] を選択した場合は、値の区切りに使用する文字を区切り文字フィールドに入力します。</p> </td> 
+   <td> <p>結果のバンドルでフィールド値の行を区切る区切り記号の種類を選択または入力します。[!UICONTROL Other] を選択した場合は、値の区切りに使用する文字を区切り文字フィールドに入力します。</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Group by]</p> </td> 

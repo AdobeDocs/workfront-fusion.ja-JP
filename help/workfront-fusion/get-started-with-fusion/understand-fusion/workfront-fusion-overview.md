@@ -1,17 +1,17 @@
 ---
 title: Adobe Workfront Fusion の概要
-description: ' [!DNL Adobe Workfront Fusion]  の役割は、同じタスクを何度も繰り返すのではなく、新しいタスクに集中できるように、プロセスを自動化することです。これは、アプリ内やサービス内、およびそれらの間でアクションをリンクし、データを自動的に転送および変換するシナリオを作成することで機能します。作成するシナリオは、アプリまたはサービス内のデータを監視し、そのデータを処理して必要な結果を提供します。'
+description: Adobe Workfront Fusion の役割は、プロセスを自動化して、同じ作業を何度も繰り返すのではなく、新しい作業に集中できるようにすることです。 これは、アプリ内やサービス内、およびそれらの間でアクションをリンクし、データを自動的に転送および変換するシナリオを作成することで機能します。作成するシナリオは、アプリまたはサービス内のデータを監視し、そのデータを処理して必要な結果を提供します。
 author: Becky
 feature: Workfront Fusion
 exl-id: 49df566f-59e9-469c-9123-27d1e15069e4
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 32%
+source-wordcount: '369'
+ht-degree: 26%
 
 ---
 
-# [!DNL Adobe Workfront Fusion] の概要
+# Adobe Workfront Fusion の概要
 
 Adobe Workfront Fusion の役割は、プロセスを自動化して、ユーザーが通常のタスクに多くの時間を費やす必要をなくすことです。 これは、アプリ内やサービス内、およびそれらの間でアクションをリンクし、データを自動的に転送および変換するシナリオを作成することで機能します。作成するシナリオは、アプリまたはサービス内のデータを監視し、そのデータを処理して必要な結果を提供します。
 
@@ -19,7 +19,7 @@ Workfront Fusion のシナリオは、特定のワークフローを表します
 
 シナリオは、非常に具体的な状況やユースケースに対応するように構築できます。 フィルターを使用すると、データフィールドやプロパティに基づいてアクションを変更したり、ファイルやデータを反復処理したり、データをデータストアに保存して別のシナリオ実行で使用したり、シナリオを他の多くの方法で設定したりできます。
 
-Workfront以外のアプリケーションをシナリオに追加することもできます。 Fusion には、Adobe別、Google別、Microsoft別などの外部アプリケーション用の専用コネクタが多数含まれています。 アプリケーション用の専用コネクタがない場合、Fusion には、パブリック API を使用して任意のサービスに接続する方法が含まれます。
+Workfront以外のアプリケーションをシナリオに追加することもできます。 Fusion には、Adobe、Google、Microsoftなどの外部アプリケーション用の専用コネクタが多数含まれています。 アプリケーション用の専用コネクタがない場合、Fusion には、パブリック API を使用して任意のサービスに接続する方法が含まれます。
 
 Workfront Fusion には、シナリオの作成テンプレート、実行履歴、デバッグなどのシナリオをサポートする機能もあります。
 
@@ -31,7 +31,7 @@ Workfront Fusion には、シナリオの作成テンプレート、実行履歴
 
 Workfront Fusion の使用を開始する際には、次のリソースが役に立つ場合があります。
 
-* Workfront Fusion トレーニングリソースについては、[Workfront Fusion トレーニングの概要 ](https://experienceleague.adobe.com/ja/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy) を参照してください。
+* Workfront Fusion トレーニングリソースについては、[Workfront Fusion トレーニングの概要 ](https://experienceleague.adobe.com/en/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy) を参照してください。
 
 
 * シナリオについて詳しくは、[ シナリオの概要 ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md) を参照してください。

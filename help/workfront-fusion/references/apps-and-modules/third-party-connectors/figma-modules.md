@@ -1,19 +1,19 @@
 ---
 title: Figma モジュール
-description: ' [!DNL Adobe Workfront Fusion]  Figma では、コメント、ファイル、ファイルバージョン、またはプロジェクトの一覧を取得できます。また、コメントを投稿したり、Figma API を呼び出したりすることもできます。'
+description: Adobe Workfront Fusion Figma モジュールを使用すると、コメント、ファイル、ファイルバージョン、プロジェクトのリストを取得できます。 また、コメントを投稿したり、Figma API を呼び出したりすることもできます。
 author: Becky
 feature: Workfront Fusion
 exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2560'
-ht-degree: 78%
+source-wordcount: '2594'
+ht-degree: 76%
 
 ---
 
 # [!DNL Figma] モジュール
 
-[!DNL Adobe Workfront Fusion] [!DNL Figma] モジュールを使用して、コメント、ファイル、ファイルバージョン、またはプロジェクトの一覧を取得できます。また、コメントを投稿したり、[!DNL Figma] API を呼び出したりすることもできます。
+Adobe Workfront Fusion [!DNL Figma] モジュールを使用すると、コメント、ファイル、ファイルバージョン、プロジェクトのリストを取得できます。 また、コメントを投稿したり、[!DNL Figma] API を呼び出したりすることもできます。
 
 シナリオの作成手順については、[ シナリオを作成：記事インデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -58,7 +58,7 @@ ht-degree: 78%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -117,7 +117,7 @@ Figma モジュールの接続を作成するには：
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>[!UICONTROL 形式 &#x200B;] [!UICONTROL クライアント ID] を入力します。</td>
+        <td>[!UICONTROL 形式 ] [!UICONTROL クライアント ID] を入力します。</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
@@ -140,7 +140,7 @@ Figma モジュールの接続を作成するには：
 
 ## [!DNL Figma] モジュールとそのフィールド
 
-[!DNL Figma] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Figma] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL Figma] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Figma]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -174,7 +174,7 @@ Figma モジュールの接続を作成するには：
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
+      <td> <p>[!DNL Figma] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
       </td>
     </tr>
     <tr>
@@ -198,7 +198,7 @@ Figma モジュールの接続を作成するには：
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
+      <td> <p>[!DNL Figma] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL File ID]</td>
@@ -232,7 +232,7 @@ Figma モジュールの接続を作成するには：
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
+      <td> <p>[!DNL Figma] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
     </tr>
     <tr>
       <td  role="rowheader">[!UICONTROL File ID]</td>
@@ -277,7 +277,7 @@ Figma モジュールの接続を作成するには：
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
+      <td> <p>[!DNL Figma] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Object type]</td>
@@ -500,7 +500,7 @@ Figma モジュールの接続を作成するには：
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
+      <td> <p>[!DNL Figma] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
     <tr>
       <td role="rowheader">[!UICONTROL File ID]</td>
       <td>
@@ -532,7 +532,7 @@ Figma モジュールの接続を作成するには：
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
+      <td> <p>[!DNL Figma] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL File ID]</td>
@@ -562,14 +562,14 @@ Figma モジュールの接続を作成するには：
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
+      <td> <p>[!DNL Figma] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Team ID]</td>
       <td>ファイルを取得するプロジェクトのプロジェクト ID を入力またはマッピングします。チーム ID は、Figma のチームのページの URL で確認できます。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 返されるプロジェクトの最大数 &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL 返されるプロジェクトの最大数 ]</td>
       <td>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</td>
     </tr>
   </tbody>
@@ -588,7 +588,7 @@ Figma モジュールの接続を作成するには：
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
+      <td> <p>[!DNL Figma] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
     </tr>
     <tr>
       <td role="rowheader">オブジェクト &gt; タイプ</td>
@@ -643,7 +643,7 @@ Figma モジュールの接続を作成するには：
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>[!DNL Figma] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
+      <td> <p>[!DNL Figma] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Figma への接続の作成 </a> を参照してください。</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL URL]</td>
@@ -661,7 +661,7 @@ Figma モジュールの接続を作成するには：
       <td>
         <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p>
         <p>例： <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] によって、認証ヘッダーが追加されます。</p>
+        <p>Workfront Fusion は認証ヘッダーを追加します。</p>
       </td>
     </tr>
     <tr>

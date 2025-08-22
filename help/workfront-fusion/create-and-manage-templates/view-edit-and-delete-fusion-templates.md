@@ -7,16 +7,16 @@ description: Adobe Workfront Fusion を使用するには、Adobe Workfront ラ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 97e3402c-d1d0-44f6-9752-11b0f5abee22
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 36%
+source-wordcount: '902'
+ht-degree: 44%
 
 ---
 
 # テンプレートの表示、編集、削除
 
-テンプレート機能 [!DNL Workfront Fusion] 使用すると、Workfront Fusion のシナリオの出発点として既存のテンプレートを作成および使用できます。 テンプレートは、組織のニーズや特定のユースケースに合わせて設定および変更できる、一般的なユースケースを表します。
+Workfront Fusion のテンプレート機能を使用すると、Workfront Fusion のシナリオの出発点として既存のテンプレートを作成および使用できます。 テンプレートは、組織のニーズや特定のユースケースに合わせて設定および変更できる、一般的なユースケースを表します。
 
 現在使用可能な Fusion テンプレートのリストについては、[ 現在使用可能なAdobe Workfront Fusion テンプレート ](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md) を参照してください。
 
@@ -31,17 +31,17 @@ ht-degree: 36%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
    <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規： [!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：[!DNL Workfront Fusion] ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -49,9 +49,9 @@ ht-degree: 36%
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：組織は [!DNL Adobe Workfront Fusion] を購入する必要があります。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
   </tr>
  </tbody> 
@@ -59,7 +59,7 @@ ht-degree: 36%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -115,24 +115,24 @@ ht-degree: 36%
 
 ## テンプレートを編集
 
-「[!UICONTROL Team templates]」タブで使用できる任意のテンプレートを編集できます。
+「[!UICONTROL チームテンプレート]」タブで任意のテンプレートを編集できます。
 
-1. サイドナビゲーションメニューの **[!UICONTROL Templates]** アイコン ![ テンプレートアイコン ](assets/templates-icon.png) をクリックします。
-1. 「**[!UICONTROL Team templates]**」タブをクリックします。
-1. 「**[!UICONTROL Private]**」タブをクリックします。
+1. サイドナビゲーションメニューの **[!UICONTROL テンプレート]** アイコン ![ テンプレートアイコン ](assets/templates-icon.png) をクリックします。
+1. 「**[!UICONTROL チームテンプレート]**」タブをクリックします。
+1. 「**[!UICONTROL プライベート]**」タブをクリックします。
 1. 編集するテンプレートをクリックします。
-1. 右上隅の「**[!UICONTROL Edit]**」をクリックします
+1. 右上隅にある「**[!UICONTROL 編集]**」をクリックします。
 
    または
 
    テンプレートダイアグラムをクリックします。
 
 1. テンプレートに変更を加えます。テンプレートの作成時に使用できたすべてのオプションにアクセスできます。これらのオプションを確認するには、[ 新しいテンプレートの作成 ](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md) を参照してください。
-1. **[!UICONTROL Save]** アイコン ![ 保存アイコン ](assets/save-icon.png) をクリックします。
+1. **[!UICONTROL 保存]** アイコン ![ 保存アイコン ](assets/save-icon.png) をクリックします。
 
 >[!NOTE]
 >
->「[!UICONTROL Team templates]」タブには、公開済みのテンプレートだけでなく、管理者が既に公開しているテンプレートのコピーも含まれます。 これにより、すでに全員に表示されているテンプレートを編集できます。これらのテンプレートのいずれかを変更しても、変更によって公開テンプレートがすぐに上書きされることはありません。「[!UICONTROL Public templates]」タブのテンプレートは変更されず、公開されたままですが、[!UICONTROL Team templates] ージからの変更を含んだ新しいバージョンでは、公開プロセスが開始されます。 変更されたバージョンが公開および承認されると、元の公開テンプレートが上書きされます。
+>「[!UICONTROL チームテンプレート]」タブには、公開されたテンプレートだけでなく、管理者が既に公開したテンプレートのコピーも含まれます。これにより、すでに全員に表示されているテンプレートを編集できます。これらのテンプレートのいずれかを変更しても、変更によって公開テンプレートがすぐに上書きされることはありません。「[!UICONTROL  公開テンプレート ]」タブのテンプレートは変更されず、公開されたままですが、[!UICONTROL  チームテンプレート ] からの変更点を含む新しいバージョンでは、公開プロセスが開始されます。 変更されたバージョンが公開および承認されると、元の公開テンプレートが上書きされます。
 
 ## テンプレートを削除
 
@@ -140,12 +140,12 @@ ht-degree: 36%
 
 削除したテンプレートは復元できませんのでご注意ください。 チームテンプレートはチームのすべてのメンバーが使用できるので、テンプレートを削除する前にチームに問い合わせて、テンプレートが不要であることを確認することをお勧めします。
 
-1. サイドナビゲーションメニューの **[!UICONTROL Templates]** アイコン ![ テンプレートアイコン ](assets/templates-icon.png) をクリックします。
-1. 「**[!UICONTROL Team templates]**」タブをクリックします。
-1. テンプレート名の横にある「**[!UICONTROL Delete]**」をクリックします
+1. サイドナビゲーションメニューの **[!UICONTROL テンプレート]** アイコン ![ テンプレートアイコン ](assets/templates-icon.png) をクリックします。
+1. 「**[!UICONTROL チームテンプレート]**」タブをクリックします。
+1. テンプレート名の横にある「**[!UICONTROL 削除]**」をクリックします。
 
    または
 
-   テンプレート名をクリックして、テンプレートに移動します。右上隅の「**[!UICONTROL Options]**」をクリックし、「**[!UICONTROL Delete]**」を選択します。
+   テンプレート名をクリックして、テンプレートに移動します。右上隅にある「**[!UICONTROL オプション]**」をクリックして、「**[!UICONTROL 削除]**」を選択します。
 
-1. 「**[!UICONTROL Really?]**」をクリックして、削除を確定します。
+1. **[!UICONTROL を本当にクリックしますか？]** をクリックして削除を確定します。

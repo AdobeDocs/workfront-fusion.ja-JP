@@ -1,20 +1,20 @@
 ---
 title: Widen モジュール
-description: ' [!DNL Adobe Workfront Fusion]  シナリオでは、[!UICONTROL Widen] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりすることができます。'
+description: Adobe Workfront Fusion のシナリオでは、[!UICONTROL Widen] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 author: Becky
 draft: Probably
 feature: Workfront Fusion
 exl-id: 11376e58-a44b-4766-85dc-e2421b0112de
-source-git-commit: b5387e4ba84d67d6ea2472282c212e396ba93d4f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1601'
-ht-degree: 82%
+source-wordcount: '1657'
+ht-degree: 69%
 
 ---
 
 # [!DNL Widen] モジュール
 
-[!DNL Adobe Workfront Fusion] シナリオでは、[!UICONTROL Widen] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりすることができます。
+Adobe Workfront Fusion のシナリオでは、[!UICONTROL Widen] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -59,7 +59,7 @@ ht-degree: 82%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -86,7 +86,7 @@ Widen コネクタでは、次の機能を使用します。
  </tbody> 
  </table>
 
-## [!DNL Widen] を [!DNL Workfront Fusion] に接続  {#connect-widen-to-workfront-fusion}
+## [!DNL Widen] を Workfront Fusion に接続  {#connect-widen-to-workfront-fusion}
 
 [!DNL Widen] アカウントへの接続を、[!DNL Widen] モジュール内から直接作成できます。
 
@@ -98,7 +98,7 @@ Widen コネクタでは、次の機能を使用します。
 
 ## [!DNL Widen] モジュールとそのフィールド
 
-[!DNL Widen] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Widen] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL Widen] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Widen]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -120,7 +120,7 @@ Widen コネクタでは、次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] へ接続</a>を参照してください。</p> </td> 
+  <td> <p>[!DNL Widen] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Workfront Fusion [!DNL Widen] への </a> の接続」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Event type]</td> 
@@ -161,7 +161,7 @@ Widen コネクタでは、次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事内の <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+  <td> <p>[!DNL Widen] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Workfront Fusion [!DNL Widen] への </a> の接続」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Collections ID]</td> 
@@ -192,7 +192,7 @@ Widen コネクタでは、次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Widen] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Workfront Fusion [!DNL Widen] への </a> の接続」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL API Version]</td> 
@@ -234,7 +234,7 @@ Widen コネクタでは、次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+  <td> <p>[!DNL Widen] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Workfront Fusion [!DNL Widen] への </a> の接続」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset ID]</td> 
@@ -253,7 +253,7 @@ Widen コネクタでは、次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+  <td> <p>[!DNL Widen] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Workfront Fusion [!DNL Widen] への </a> の接続」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset ID]</td> 
@@ -280,7 +280,7 @@ Widen コネクタでは、次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事内の <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+  <td> <p>[!DNL Widen] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Workfront Fusion [!DNL Widen] への </a> の接続」を参照してください。</p> </td> 
   </tr> 
   <tr> 
   <tr> 
@@ -310,7 +310,7 @@ Widen コネクタでは、次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+  <td> <p>[!DNL Widen] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Workfront Fusion [!DNL Widen] への </a> の接続」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset ID]</td> 
@@ -341,7 +341,7 @@ Widen コネクタでは、次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+  <td> <p>[!DNL Widen] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Workfront Fusion [!DNL Widen] への </a> の接続」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Upload Profile]</td> 
@@ -385,7 +385,7 @@ Widen コネクタでは、次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+  <td> <p>[!DNL Widen] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Workfront Fusion [!DNL Widen] への </a> の接続」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Collection ID]</td> 
@@ -424,7 +424,7 @@ Widen コネクタでは、次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Widen] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">[!DNL Widen] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+  <td> <p>[!DNL Widen] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Workfront Fusion [!DNL Widen] への </a> の接続」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search query]</td> 

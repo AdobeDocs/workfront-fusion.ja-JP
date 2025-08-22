@@ -1,19 +1,19 @@
 ---
 title: Microsoft Dynamics 365 モジュール
-description: ' [!DNL Adobe Workfront Fusion] シナリオでは、Microsoft Dynamics 365 を使用するワークフローを自動化したり、このモジュールを複数のサードパーティアプリケーションおよびサービスに接続したりできます。'
+description: Adobe Workfront Fusion のシナリオでは、Microsoft Dynamics 365 を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 author: Becky
 feature: Workfront Fusion
 exl-id: 16ae173b-10ce-481d-8f6c-1df0e65f7c0e
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1810'
-ht-degree: 75%
+source-wordcount: '1860'
+ht-degree: 64%
 
 ---
 
 # [!DNL Microsoft Dynamics 365 modules]
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、[!DNL Microsoft Dynamics 365] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
+Adobe Workfront Fusion のシナリオでは、[!DNL Microsoft Dynamics 365] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ ht-degree: 75%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -121,22 +121,22 @@ ht-degree: 75%
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Resource]</td>
-          <td><code>>https://</code> なしで [!DNL Dynamics 365] アカウントのアドレスを入力します。</p>
+          <td>[!DNL Dynamics 365] なしで <code>>https://</code> アカウントのアドレスを入力します。</p>
         </tr>
       </tbody>
     </table>
-1. 「**[!UICONTROL 続行]**」をクリックして接続を作成し、モジュールに戻ります。
+1. 「**[!UICONTROL 続行]**」をクリックし、接続を作成して、モジュールに戻ります。
 
 >[!NOTE]
 >
->[!DNL Microsoft Azure] ポータルでの [!DNL Workfront Fusion] の登録時に、次のリダイレクト URI を使用します。
+>Workfront Fusion を [!DNL Microsoft Azure] ポータルに登録する際には、次のリダイレクト URI を使用します。
 >
 >* `https://app.workfrontfusion.com/oauth/cb/workfront-microsoft-dynamics2`
 
 
 ## [!DNL Microsoft Dynamics 365] モジュールとそのフィールド
 
-[!DNL Microsoft Dynamics 365] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Microsoft Dynamics 365] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL Microsoft Dynamics 365] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Microsoft Dynamics 365]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -167,7 +167,7 @@ ht-degree: 75%
     <ol> 
      <li value="1"> <p>「Web フック」フィールドの右にある「<strong>[!UICONTROL Add]</strong>」をクリックします。</p> </li> 
      <li value="2"> <p>「<strong>[!UICONTROL Webhook name]</strong>」フィールドに、web フックのわかりやすい名前を入力します。</p> </li> 
-     <li value="3"> <p>「<strong>[!UICONTROL Connection]</strong>」フィールドで、使用する接続を選択します。</p> <p>[!DNL Microsoft Dynamics 365] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事で <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への [!DNL Microsoft Dynamics 365] の接続を参照してください。 </p> </li> 
+     <li value="3"> <p>「<strong>[!UICONTROL Connection]</strong>」フィールドで、使用する接続を選択します。</p> <p>[!DNL Microsoft Dynamics 365] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Microsoft Dynamics 365] の接続 </a> を参照してください。 </p> </li> 
      <li value="4"> <p>「<strong>[!UICONTROL Save]</strong>」をクリックして web フックを保存し、モジュールに戻ります。</p> </li> 
     </ol> </td> 
   </tr> 
@@ -190,7 +190,7 @@ ht-degree: 75%
  <tbody> “
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Microsoft Dynamics 365] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事で <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への [!DNL Microsoft Dynamics 365] の接続を参照してください。 </p> </td> 
+  <td> <p>[!DNL Microsoft Dynamics 365] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Microsoft Dynamics 365] の接続 </a> を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Include]</td> 
@@ -236,14 +236,14 @@ ht-degree: 75%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Microsoft Dynamics 365] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事で <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への [!DNL Microsoft Dynamics 365] の接続を参照してください。 </p> </td> 
+   <td> <p>[!DNL Microsoft Dynamics 365] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Microsoft Dynamics 365] の接続 </a> を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Entity Type]</td> 
    <td>このモジュールで作成するエンティティのタイプを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL でマッピングするフィールドを選択 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL でマッピングするフィールドを選択 ]</td> 
    <td>レコードの作成時に値を含めるフィールドを選択します。 使用可能なフィールドは、エンティティタイプによって異なります。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -269,7 +269,7 @@ ht-degree: 75%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Microsoft Dynamics 365] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事で <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への [!DNL Microsoft Dynamics 365] の接続を参照してください。 </p> </td> 
+  <td> <p>[!DNL Microsoft Dynamics 365] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Microsoft Dynamics 365] の接続 </a> を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Entity Type]</td> 
@@ -298,7 +298,7 @@ ht-degree: 75%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Microsoft Dynamics 365] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事内の <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Microsoft Dynamics 365]を [!DNL Workfront Fusion]</a> に接続を参照してください。 </p> </td> 
+  <td> <p>[!DNL Microsoft Dynamics 365] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Microsoft Dynamics 365] の接続 </a> を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -310,7 +310,7 @@ ht-degree: 75%
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p> <p>例： <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] によって、認証ヘッダーが追加されます。</p> </td> 
+   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p> <p>例： <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion は認証ヘッダーを追加します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 
@@ -342,7 +342,7 @@ ht-degree: 75%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Microsoft Dynamics 365] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事で <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への [!DNL Microsoft Dynamics 365] の接続を参照してください。 </p> </td> 
+  <td> <p>[!DNL Microsoft Dynamics 365] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Microsoft Dynamics 365] の接続 </a> を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Entity Type]</td> 
@@ -375,14 +375,14 @@ ht-degree: 75%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Microsoft Dynamics 365] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事で <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への [!DNL Microsoft Dynamics 365] の接続を参照してください。 </p> </td> 
+  <td> <p>[!DNL Microsoft Dynamics 365] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Microsoft Dynamics 365] の接続 </a> を参照してください。 </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL Entity Type]</td> 
    <td>モジュールで更新するエンティティのタイプを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL でマッピングするフィールドを選択 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL でマッピングするフィールドを選択 ]</td> 
    <td>レコードの作成時に値を含めるフィールドを選択します。 使用可能なフィールドは、エンティティタイプによって異なります。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -410,7 +410,7 @@ ht-degree: 75%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>[!DNL Microsoft Dynamics 365] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事で <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">[!DNL Workfront Fusion]</a> への [!DNL Microsoft Dynamics 365] の接続を参照してください。 </p> </td> 
+  <td> <p>[!DNL Microsoft Dynamics 365] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Microsoft Dynamics 365] の接続 </a> を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Entity Type]</td> 

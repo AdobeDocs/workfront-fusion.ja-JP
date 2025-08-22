@@ -1,25 +1,25 @@
 ---
 title: モジュールのアーカイブ
-description: ' [!DNL Adobe Workfront Fusion]  シナリオの場合、zip 形式のファイルなどのアーカイブを複数のサードパーティのアプリケーションやサービスに接続できます。例えば、次のシナリオを設定できます。'
+description: Adobe Workfront Fusion シナリオでは、圧縮ファイルなどのアーカイブを、複数のサードパーティ製アプリケーションやサービスに接続できます。 例えば、次のシナリオを設定できます。
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b5ff3d5-601c-4119-ad70-3612ad5ba1ab
-source-git-commit: 640aae1f4b7563545d7f9aa3f801671aa3d45fca
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 84%
+source-wordcount: '560'
+ht-degree: 73%
 
 ---
 
 # [!UICONTROL アーカイブ]モジュール
 
-[!DNL Adobe Workfront Fusion] シナリオの場合、zip 形式のファイルなどのアーカイブをシナリオで使用して、自動化または統合で使用できます。
+Adobe Workfront Fusion シナリオでは、圧縮ファイルなどのアーカイブをシナリオで使用して、自動化や統合で使用できます。
 
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。 モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## [!UICONTROL アーカイブ]モジュールとそのフィールド
 
-[!UICONTROL アーカイブ]モジュールの設定時に、[!DNL Workfront Fusion] には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!UICONTROL アーカイブ]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL  アーカイブ ] モジュールを設定すると、Workfront Fusion は以下に示すフィールドを表示します。 これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!UICONTROL アーカイブ]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -101,7 +101,7 @@ ht-degree: 84%
 
 >[!BEGINSHADEBOX]
 
-**例：**&#x200B;[!DNL Gmail]／[!UICONTROL メールを監視]モジュールを使用して受信メールを見ます。メールを受け取ると、添付ファイルは個々のバンドルに反復され、[!DNL ZIP] ファイルにアーカイブされて、定義された Dropbox フォルダーに保存されます。
+**例：**[!DNL Gmail]／[!UICONTROL メールを監視]モジュールを使用して受信メールを見ます。メールを受け取ると、添付ファイルは個々のバンドルに反復され、[!DNL ZIP] ファイルにアーカイブされて、定義された Dropbox フォルダーに保存されます。
 
 ![Gmail の例 ](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
 

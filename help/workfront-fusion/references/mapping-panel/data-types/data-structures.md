@@ -4,16 +4,16 @@ description: データ構造は、Adobe Workfront Fusion に転送されるデ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 93abf8a5-a3a1-448e-834b-1cc81b88036b
-source-git-commit: 2a81e013845f8a0e2720292984c451501e6011a0
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '242'
 ht-degree: 59%
 
 ---
 
 # データ構造
 
-データ構造は、[!DNL Adobe Workfront Fusion] で処理されるデータの形式を詳細に説明するドキュメントまたはパターンです。 このドキュメントに基づいて、シナリオエディターはどのモジュールがどの種類のデータを返すか、または受け取るかを判断できます。データ構造ドキュメントは、JSON、XML、CSV などのデータ形式をシリアル化したり、解析したりするために一般的によく使用されます。
+データ構造とは、Adobe Workfront Fusion で処理されるデータの形式を詳細に記述するドキュメントまたはパターンです。 このドキュメントに基づいて、シナリオエディターはどのモジュールがどの種類のデータを返すか、または受け取るかを判断できます。データ構造ドキュメントは、JSON、XML、CSV などのデータ形式をシリアル化したり、解析したりするために一般的によく使用されます。
 
 データ構造を作成するには、「[!UICONTROL データ構造の概要]」セクションまたはデータ構造の仕様が必要なモジュールの設定にある「[!UICONTROL データ構造を新規作成]」ボタンをクリックします。
 

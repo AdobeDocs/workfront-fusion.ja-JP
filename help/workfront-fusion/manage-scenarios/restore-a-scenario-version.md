@@ -4,10 +4,10 @@ description: シナリオの以前のバージョンのブループリントを�
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 2270b386bbf62cfc3b82bd4f9c293b36d3b7a35a
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 27%
+source-wordcount: '326'
+ht-degree: 21%
 
 ---
 
@@ -26,17 +26,17 @@ ht-degree: 27%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
    <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規：[!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：[!DNL Workfront Fusion] ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -44,16 +44,16 @@ ht-degree: 27%
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：[!DNL Adobe Workfront Fusion] を購入してください。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">アクセスレベル設定*</td> 
    <td> 
-     <p>組織の [!DNL Workfront Fusion] 管理者である必要があります。</p>
-     <p>チームの [!DNL Workfront Fusion] 管理者である必要があります。</p>
+     <p>組織の Workfront Fusion 管理者である必要があります。</p>
+     <p>チームのWorkfront Fusion 管理者である必要があります。</p>
    </td> 
   </tr> 
    </td> 
@@ -63,7 +63,7 @@ ht-degree: 27%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -72,7 +72,7 @@ ht-degree: 27%
 ## シナリオのバージョン履歴の表示と管理
 
 1. 左側のパネルで **[!UICONTROL シナリオ]**![ シナリオアイコン ](assets/scenarios-icon.png) をクリックし、シナリオをクリックして開きます。
-1. 画面下部の [!UICONTROL &#x200B; その他 &#x200B;] アイコン ![ その他のアイコン ](assets/more-icon.png) をクリックしてから、**[!UICONTROL 以前のバージョン]** をクリックします。
+1. 画面下部の [!UICONTROL  その他 ] アイコン ![ その他のアイコン ](assets/more-icon.png) をクリックしてから、**[!UICONTROL 以前のバージョン]** をクリックします。
 
    以前のバージョンのリストが表示されます。
 1. （オプション）バージョンの名前を変更するには、そのバージョンの行で「詳細」メニュー ![ 「詳細」メニュー ](assets/more-icon-vertical.png) をクリックし、「**編集**」を選択して、フィールドに名前を入力します。 **保存** をクリックして、新しい名前を保存します。

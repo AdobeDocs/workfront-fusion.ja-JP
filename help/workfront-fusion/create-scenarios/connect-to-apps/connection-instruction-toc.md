@@ -1,19 +1,19 @@
 ---
 title: 接続の作成
-description: 接続は、接続先のアプリまたは web サービスの API で設定された要件に従う必要があります。このため、接続を設定する手順は、アプリや web サービスによって異なります。この記事は、 [!DNL Adobe Workfront Fusion] を選択したアプリや web サービスに接続するための手順を確認するのに役立ちます。
+description: 接続は、接続先のアプリまたは web サービスの API で設定された要件に従う必要があります。このため、接続を設定する手順は、アプリや web サービスによって異なります。この記事は、Adobe Workfront Fusion を選択したアプリや web サービスに接続する手順を特定し見つけるのに役立ちます。
 author: Becky
 feature: Workfront Fusion
 exl-id: 281403a6-6f88-4976-8a10-1d0848ef9b35
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 54%
+source-wordcount: '536'
+ht-degree: 40%
 
 ---
 
 # 接続の作成
 
-接続は、接続先のアプリまたは web サービスの API で設定された要件に従う必要があります。このため、接続を設定する手順は、アプリや web サービスによって異なります。この記事は、[!DNL Adobe Workfront Fusion]を選択したアプリや web サービスに接続するための手順を確認するのに役立ちます。
+接続は、接続先のアプリまたは web サービスの API で設定された要件に従う必要があります。このため、接続を設定する手順は、アプリや web サービスによって異なります。この記事は、Adobe Workfront Fusion を選択したアプリや web サービスに接続する手順を特定し見つけるのに役立ちます。
 
 ## アクセス要件
 
@@ -60,7 +60,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ## 設定が不要なアプリまたは web サービスに接続
 
-ほとんどの場合、このモジュールを使用して、追加の情報をほとんど含まない接続を作成することができます。[!DNL Workfront Fusion] は認証を自動的に処理します。
+ほとんどの場合、このモジュールを使用して、追加の情報をほとんど含まない接続を作成することができます。Workfront Fusion で認証が自動的に処理されます。
 
 特別な考慮事項のない接続の作成手順については、[ 接続の作成 – 基本手順 ](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md) を参照してください。
 
@@ -74,7 +74,7 @@ Adobeのアプリやサービスに接続するには、組織 ID やテクニ�
 
 ## [!DNL Microsoft] アプリまたは web サービスに接続
 
-[!DNL Workfront Fusion] のほとんどの [!DNL Microsoft] アプリでは、追加情報なしで接続を作成することができます。
+Workfront Fusion のほとんどの [!DNL Microsoft] アプリでは、追加情報がなくても接続を作成できます。
 
 次の状況では、接続を作成するために追加の手順が必要です。
 
@@ -88,7 +88,7 @@ Adobeのアプリやサービスに接続するには、組織 ID やテクニ�
 
 ## [!DNL Google] アプリまたは web サービスに接続
 
-[!DNL Google] アプリに接続するプロセスは、使用している [!DNL Google] アカウントの種類によって異なる場合があります。さらに、[!DNL Workfront Fusion] に接続する場合、[!DNL Google] のセキュリティ対策により追加の設定が必要になる場合があります。
+[!DNL Google] アプリに接続するプロセスは、使用している [!DNL Google] アカウントの種類によって異なる場合があります。さらに、Workfront Fusion に接続する際に、[!DNL Google] のセキュリティ対策のために追加の設定が必要になる場合があります。
 
 詳しくは、以下を参照してください。
 
@@ -97,6 +97,6 @@ Adobeのアプリやサービスに接続するには、組織 ID やテクニ�
 
 ## 追加の設定が必要なその他のアプリ
 
-一部のアプリやサービスは、[!DNL Workfront Fusion] 接続の基本設定に従っていません。 これらのアプリに接続する手順は、当該のアプリの記事で確認できます。
+一部のアプリやサービスは、Workfront Fusion Connections の基本設定に従いません。 これらのアプリに接続する手順は、当該のアプリの記事で確認できます。
 
 詳しい手順については、[ コネクタの記事 ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#connectors-for-third-party-applications) を参照してください。

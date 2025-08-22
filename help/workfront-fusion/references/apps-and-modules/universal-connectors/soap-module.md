@@ -4,10 +4,10 @@ description: SOAP モジュールを使用して、Adobe Workfront Fusion で SO
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 55%
+source-wordcount: '681'
+ht-degree: 51%
 
 ---
 
@@ -64,13 +64,13 @@ SOAP コネクタには、「SOAPを実行」アクションという 1 つの�
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
 ## SOAP モジュールとそのフィールド
 
-SOAP モジュールを設定すると、以下に示 [!DNL Workfront Fusion] フィールドが表示されます。  モジュール内の太字のタイトルは、必須フィールドを示します。
+Workfront Fusion でSOAP モジュールを設定する場合、以下に示すフィールドが表示されます。  モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -91,15 +91,15 @@ SOAP モジュールを設定すると、以下に示 [!DNL Workfront Fusion] �
    <td> モジュールで使用する WSDL を選択します。 WSDL を作成するには、フィールドの横にある <b> 追加 </b> をクリックし、フィールドに入力します。 </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL HTTP ヘッダー &#x200B;]</td> 
+   <td>[!UICONTROL HTTP ヘッダー ]</td> 
    <td> 追加する HTTP ヘッダーごとに「<b> 項目を追加 </b>」をクリックし、ヘッダーの名前と値を入力します。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL SOAP ヘッダー &#x200B;]</td> 
+   <td>[!UICONTROL SOAP ヘッダー ]</td> 
    <td> 追加するSOAP ヘッダーごとに「<b> 項目を追加 </b>」をクリックし、ヘッダーの名前、値、名前空間および XMLNS を入力します。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 強制SOAP ヘッダー &#x200B;]</td> 
+   <td>[!UICONTROL 強制SOAP ヘッダー ]</td> 
    <td> SOAP 1.2 のヘッダーを設定する場合は、このオプションを有効にします。 </td> 
   </tr> 
   </tbody> 
@@ -137,7 +137,7 @@ SOAP モジュールを設定すると、以下に示 [!DNL Workfront Fusion] �
 </complexType>
 ```
 
-この例には、[!UICONTROL Workfront Fusion] でまだサポートされていない `soapenc:Array`、`soapenc:arrayType` および `wsdl:arrayType` の参照が含まれています。
+この例には、`soapenc:Array`Workfront Fusion`soapenc:arrayType` でまだサポートされていない `wsdl:arrayType`、[!UICONTROL  および ] の参照が含まれています。
 
 >[!ENDSHADEBOX]
 
@@ -145,7 +145,7 @@ SOAP モジュールを設定すると、以下に示 [!DNL Workfront Fusion] �
 
 [!UICONTROL SOAP] モジュールが WSDL ファイルの処理を拒否するか、モジュールの設定で様々なエラーが発生する場合は、代わりに、汎用の **[!UICONTROL HTTP]／[!UICONTROL リクエストの実行]**&#x200B;モジュールを使用してみてください。
 
-1. [!DNL Workfront Fusion] で新しいシナリオを作成します。
+1. Workfront Fusion で、新しいシナリオを作成します。
 1. シナリオに **[!UICONTROL HTTP]／[!UICONTROL リクエストの実行]**&#x200B;モジュールを挿入します。
 1. モジュールの設定を開き、次のフィールドに入力します。
 
@@ -185,7 +185,7 @@ SOAP モジュールを設定すると、以下に示 [!DNL Workfront Fusion] �
    <!--![Service](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
 
 1. 見つかったら、`location` 属性から URL をコピーします。
-1. [!DNL Workfront Fusion] で、URL を HTTP モジュールの「URL」フィールドに貼り付けます。
+1. Workfront Fusion で、URL を HTTP モジュールの URL フィールドに貼り付けます。
 1. 新しい Web ブラウザーウィンドウまたはタブで、「[オンライン [!UICONTROL SOAP] クライアント](https://wsdlbrowser.com/)」を開きます。
 1. WSDL URL を「WSDL URL」フィールドに貼り付けます。
 1. 「**[!UICONTROL 参照]**」をクリックします。

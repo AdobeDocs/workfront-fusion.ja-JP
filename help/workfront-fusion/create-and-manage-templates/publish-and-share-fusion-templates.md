@@ -1,17 +1,17 @@
 ---
-title: Publishと共有テンプレート
+title: テンプレートの公開と共有
 description: テンプレートを作成すると、すべてのチームメンバーがテンプレートを使用できるようになります。テンプレートをチーム外のユーザーと共有する場合は、まずテンプレートを公開する必要があります。
 author: Becky
 feature: Workfront Fusion
 exl-id: 99a1227d-bff9-479f-b8b9-efcf7cea3708
-source-git-commit: 7acc27ab2ce80b964b7f9fbb302816aa75964ab5
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 33%
+source-wordcount: '506'
+ht-degree: 51%
 
 ---
 
-# Publishと共有テンプレート
+# テンプレートの公開と共有
 
 テンプレートを作成すると、すべてのチームメンバーがテンプレートを使用できるようになります。テンプレートをチーム外のユーザーと共有する場合は、まずテンプレートを公開する必要があります。
 
@@ -28,17 +28,17 @@ ht-degree: 33%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
    <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規： [!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：[!DNL Workfront Fusion] ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -46,9 +46,9 @@ ht-degree: 33%
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：組織は [!DNL Adobe Workfront Fusion] を購入する必要があります。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
   </tr>
  </tbody> 
@@ -56,7 +56,7 @@ ht-degree: 33%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -64,36 +64,36 @@ ht-degree: 33%
 
 テンプレートは、公開または共有する前に作成する必要があります。
 
-## テンプレートのPublish
+## テンプレートの公開
 
-1. 左側のナビゲーションパネルで、「**[!UICONTROL Templates]**」をクリックします。
-1. 「**[!UICONTROL Team templates]**」タブをクリックします。
-1. 公開するテンプレートの行で **0&rbrace;Publish&rbrace; をクリックします。**
+1. 左側のナビゲーションパネルで、**[!UICONTROL テンプレート]**&#x200B;をクリックします。
+1. 「**[!UICONTROL チームテンプレート]**」タブをクリックします。
+1. 公開するテンプレートの行で「**公開**」をクリックします。
 
    または
 
 
-   公開するテンプレートの名前をクリックし、画面の右上隅にある「**[!UICONTROL Publish]**」ボタンをクリックします。
+   公開するテンプレートの名前をクリックし、画面の右上隅にある **[!UICONTROL 公開]** ボタンをクリックします。
 
-## [!DNL Workfront Fusion] テンプレートを共有
+## Workfront Fusion テンプレートの共有
 
 テンプレートを公開した後には、それを共有できます。
 
-1. 左側のナビゲーションパネルで、「**[!UICONTROL Templates]**」をクリックします。
-1. 「**[!UICONTROL Team templates]**」タブをクリックします。
+1. 左側のナビゲーションパネルで、**[!UICONTROL テンプレート]**&#x200B;をクリックします。
+1. 「**[!UICONTROL チームテンプレート]**」タブをクリックします。
 1. 共有するテンプレートの名前をクリックして、テンプレートを開きます。
 1. **公開済み** タブをクリックして、そのバージョンのテンプレートを開きます。
-1. （条件付き）共有可能なリンクが必要な場合は、[**[!UICONTROL Share public link]**] をクリックします。
+1. （条件付き）共有可能なリンクが必要な場合は、「**[!UICONTROL 公開リンクを共有]**」をクリックします。
 
    >[!NOTE]
    >
-   >このリンクを共有できますが、テンプレート自体は「[!UICONTROL Team templates]」タブに残り、公開されません。
+   >このリンクを共有できますが、テンプレート自体は [!UICONTROL  チームテンプレート ] タブに残り、公開されません。
 
-1. （条件付き）テンプレートを公開する場合は、「**[!UICONTROL Request Approval]**」をクリックして管理者に送信し、承認を得ます。
+1. （条件付き）テンプレートを公開したい場合は、「**[!UICONTROL 承認をリクエスト]**」をクリックして、承認を得るために管理者にテンプレートを送信します。
 
    >[!NOTE]
    >
-   >* テンプレートが承認されると、公開されます。 組織やチームに関係なく、すべての [!DNL Workfront Fusion] ユーザーの「[!UICONTROL Public templates]」タブに [!UICONTROL Public templates] が表示されます。
+   >* テンプレートが承認されると、公開されます。 [!UICONTROL  公開テンプレート ] は、組織やチームに関係なく、すべてのWorkfront Fusion ユーザー用の「[!UICONTROL  公開テンプレート ]」タブに表示されます。
    >* メールでレビューするテンプレートの受信に関する通知は、管理者には送信されません。承認が急を要する場合は、管理者に直接お問い合わせください。
 
 
@@ -103,9 +103,9 @@ Fusion は、様々なバージョン（プライベート、公開済み、承�
 
 以下のステータスを使用できます。
 
-* **[!UICONTROL Private]**：このテンプレートは、テンプレート作成者とそのチームに対してのみ表示されます。
-* **[!UICONTROL Published]**：このテンプレートは、テンプレート作成者とそのチームに対してのみ表示されます。 承認用に公開済みのテンプレートを送信したり、共有可能なリンクをコピーしたりすることができます。
-* **[!UICONTROL Approved]**：このテンプレートは、すべてのWorkfront Fusion ユーザーに対して「[!UICONTROL Public templates]」タブに表示されます。 画面の右上隅にある「[!UICONTROL Options]」をクリックして、共有可能なリンクをコピーできます。
+* **[!UICONTROL 非公開]**：このテンプレートは、テンプレート作成者とそのチームに対してのみ表示されます。
+* **[!UICONTROL 公開済み]**：このテンプレートは、テンプレート作成者とそのチームに対してのみ表示されます。承認用に公開済みのテンプレートを送信したり、共有可能なリンクをコピーしたりすることができます。
+* **[!UICONTROL 承認済み]**：このテンプレートは、すべての Workfront Fusion ユーザーの「[!UICONTROL 公開テンプレート]」タブに表示されます。「[!UICONTROL オプション]」をクリックして、共有可能なリンクをコピーすることができます。
 
 <!--You can also check the status from the [!UICONTROL Team templates] tab. If a template is published, it will have an icon to the right of the template name.
 

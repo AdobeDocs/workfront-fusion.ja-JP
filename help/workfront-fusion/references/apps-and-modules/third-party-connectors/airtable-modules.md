@@ -4,17 +4,17 @@ description: Adobe Workfront Fusion を使用するには、Adobe Workfront ラ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 3b445b50-5812-4ded-9788-f467991e0b52
-source-git-commit: 7404dafc0b368a8f1785be7b6a65fe45c0f12172
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1858'
-ht-degree: 97%
+source-wordcount: '1890'
+ht-degree: 93%
 
 ---
 
 # Airtable モジュール
 
 
-[!DNL Adobe Workfront Fusion] 対応の [!DNL Airtable] コネクタを使用すると、[!DNL Airtable] アカウント内のイベントに基づいてシナリオを開始したり、レコードを作成、アップロード、更新したり、レコードを検索したり、Airtable API に対するカスタム API 呼び出しを実行したりできます。
+Adobe Workfront Fusion の [!DNL Airtable] コネクタを使用すると、[!DNL Airtable] アカウント内のイベントに基づくシナリオの開始、レコードの作成、アップロード、更新、レコードの検索、Airtable API へのカスタム API 呼び出しを行うことができます。
 
 ## アクセス要件
 
@@ -25,27 +25,27 @@ ht-degree: 97%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront プラン*</td>
+  <td> <p>[!UICONTROL Pro] 以降</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン*</td>
+   <td> <p>[!UICONTROL Plan]、[!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
-   <td> <p>[!UICONTROL [!DNL Workfront Fusion] 作業の自動化と統合のために &#x200B;] </p> </td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
+   <td> <p>[!UICONTROL Workfront Fusion for Work Automation and Integration] </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
-   <td>この記事で説明されている機能を使用するには、組織で [!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront] を購入する必要があります。</td> 
+   <td>この記事で説明する機能を使用するには、Adobe Workfront Fusion と Adobe Workfront を購入する必要があります。</td> 
   </tr> 
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、Workfront 管理者にお問い合わせください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 ## 前提条件
 
@@ -452,7 +452,7 @@ web フック URL は、Workfront Fusion で生成してから、Airtable のフ
 1. Airtable アカウントにログインします。
 1. ベースと、フォームに使用するテーブルを開き、フォームビューを作成します。
 1. 必要に応じてフォームを設定し、フォームを下にスクロールして、「フォーム送信後に URL にリダイレクト」オプションを有効にします。
-1. 表示されるダイアログボックスに、手順 2 で生成した web フック URL を入力し、web フック URL の直後に ？record_id={record_id} を追加してレコード ID をモジュールの出力に含め、「保存」をクリックします。結果の URL は、例えば、次のようになります。
+1. 手順 2 で生成した Webhook URL を表示されたダイアログボックスに入力し、?record_id={record_id} を Webhook URL の直後に追加して、モジュールの出力にレコード ID を含め、「保存」をクリックします。 結果の URL は、例えば、次のようになります。
 1. Workfront Fusion のシナリオに戻り、応答を監視モジュールのみを実行して、Airtable からフィールドを読み込み、それらのフィールドを他のモジュールにマッピングできるようにします。
 1. 「フォーム送信後に URL にリダイレクト」オプションが有効になっていて、web フック URL が追加（上記の手順 6）されているAirtable でフォームを送信します。
 
@@ -490,7 +490,7 @@ web フック URL は、Workfront Fusion で生成してから、Airtable のフ
   </tr> 
   <tr> 
    <td role="rowheader">ヘッダー</td> 
-   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p> <p>例： <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] によって、認証ヘッダーが追加されます。</p> </td> 
+   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p> <p>例： <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion は認証ヘッダーを追加します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">クエリ文字列</td> 

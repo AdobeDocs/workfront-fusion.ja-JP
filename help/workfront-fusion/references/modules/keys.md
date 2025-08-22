@@ -1,13 +1,13 @@
 ---
 title: キー
-description: ' [!DNL Adobe Workfront Fusion]  のキーチェーンは、公開鍵と秘密鍵の管理に役立ちます。キーは例えば、PGP メッセージの暗号化または復号化のために、Encryptor アプリによって使用されます。'
+description: Adobe Workfront Fusion のキーチェーンは、公開鍵と秘密鍵の管理に役立ちます。 キーは例えば、PGP メッセージの暗号化または復号化のために、Encryptor アプリによって使用されます。
 author: Becky
 feature: Workfront Fusion
 exl-id: b92e54ed-fa03-4af7-be7b-436907b2bff9
-source-git-commit: 3b9a6be135a485f369dbc642b1582545e53e4cae
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 49%
+source-wordcount: '176'
+ht-degree: 39%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 49%
 
 公開鍵と秘密鍵は、データの暗号化と復号化に使用されます。公開鍵は配布でき、公開鍵を持つすべてのユーザーがデータを暗号化できますが、復号化できるのは秘密鍵のみです。同様に、同様に、秘密鍵を持つユーザーは、公開鍵を持つ誰もが復号化できるデータを暗号化できます。キーエリアでは、チームが所有するキーを表示および管理できます。
 
-## [!DNL Workfront Fusion] でのキーの使用
+## Workfront Fusion でのキーの使用
 
 接続と同様に、キーが個々のモジュールに追加され、他のモジュールで使用できるようになります。
 

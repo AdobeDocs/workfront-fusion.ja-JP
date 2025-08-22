@@ -4,10 +4,10 @@ description: シナリオのイベントや実行に関する情報を表示し�
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: cc7c05614390e20d4051635c605e12dfa65493a1
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 61%
+source-wordcount: '924'
+ht-degree: 57%
 
 ---
 
@@ -34,17 +34,17 @@ ht-degree: 61%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
    <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規：[!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：[!DNL Workfront Fusion] ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -52,16 +52,16 @@ ht-degree: 61%
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：[!DNL Adobe Workfront Fusion] を購入してください。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">アクセスレベル設定*</td> 
    <td> 
-     <p>組織の [!DNL Workfront Fusion] 管理者である必要があります。</p>
-     <p>チームの [!DNL Workfront Fusion] 管理者である必要があります。</p>
+     <p>組織の Workfront Fusion 管理者である必要があります。</p>
+     <p>チームのWorkfront Fusion 管理者である必要があります。</p>
    </td> 
   </tr> 
    </td> 
@@ -71,7 +71,7 @@ ht-degree: 61%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -135,7 +135,7 @@ ht-degree: 61%
 実行履歴をフィルターして、指定した値を持つ実行のみを表示できます。
 
 1. この記事の[「[!UICONTROL 履歴]」タブでシナリオの実行履歴を表示](#view-scenario-history-on-the-history-tab)で説明されているように、シナリオの全ページ履歴を開きます。
-1. フィルタリングの基準にする列のヘッダーにある [!UICONTROL &#x200B; フィルター &#x200B;] アイコン ![ シナリオフィルターアイコン ](assets/fusion-scenario-filter-icon.png) をクリックします。
+1. フィルタリングの基準にする列のヘッダーにある [!UICONTROL  フィルター ] アイコン ![ シナリオフィルターアイコン ](assets/fusion-scenario-filter-icon.png) をクリックします。
 1. 「[!UICONTROL フィルター]」ダイアログで、フィルタリングしたい値を入力します。
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
@@ -177,7 +177,7 @@ You can sort the scenario execution history.
    >
    >* 過去 30 日間のみ実行できます。
    >
-   >* [!DNL Workfront Fusion] は、30 日間、ebhook ペイロードを保存します。作成後 30 日を超える web フックペイロードにアクセスすると、「[!UICONTROL ストレージからファイルを読み取れませんでした。]」というエラーが発生します。
+   >* Workfront Fusion は、Webhook ペイロードを 30 日間保存します。 作成後 30 日を超える web フックペイロードにアクセスすると、「[!UICONTROL ストレージからファイルを読み取れませんでした。]」というエラーが発生します。
 
 
 1. （オプション）検索をステータスで制限するには、**[!UICONTROL ステータス別]**&#x200B;ドロップダウンで目的のステータスを選択します。
@@ -197,4 +197,4 @@ You can sort the scenario execution history.
 
 1. （オプション）シナリオ実行 ID をコピーするには、**[!UICONTROL 実行 ID をコピー]**&#x200B;アイコンをクリックします。 目的の実行の行に <img src="assets/copy-fusion-execution-id-icon.png"> ります。
 
-1. （オプション）[!UICONTROL &#x200B; フルテキスト検索]の結果をクリックして、その情報を含むシナリオモジュール出力バンドルを調べます。
+1. （オプション）[!UICONTROL  フルテキスト検索]の結果をクリックして、その情報を含むシナリオモジュール出力バンドルを調べます。

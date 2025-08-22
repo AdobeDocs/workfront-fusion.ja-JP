@@ -1,19 +1,19 @@
 ---
 title: Google カレンダーモジュール
-description: ' [!DNL Adobe Workfront Fusion] シナリオでは、Google Calendar を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりすることができます。'
+description: Adobe Workfront Fusion のシナリオでは、Google カレンダーを使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e514204-cd8e-4f30-bbbb-b8fbe48fc670
-source-git-commit: 160e503adeca5404e18fd0cba9f475fee8510a48
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2315'
-ht-degree: 59%
+source-wordcount: '2723'
+ht-degree: 67%
 
 ---
 
 # [!DNL Google Calendar] モジュール
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、[!UICONTROL Google Calendar] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
+Adobe Workfront Fusion のシナリオでは、[!UICONTROL Google カレンダー ] を使用するワークフローを自動化できるほか、複数のサードパーティのアプリケーションやサービスに接続することもできます。
 
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -28,35 +28,35 @@ ht-degree: 59%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront プラン*</td>
+  <td> <p>[!UICONTROL Pro] 以降</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン*</td>
+   <td> <p>[!UICONTROL Plan]、[!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在のライセンス要件：Workfront Fusion のライセンス要件はありません。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のライセンス要件：[!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] Adobe Workfront プランがある場合、この記事に記載されている機能を使用するには、Adobe Workfront Fusion とAdobe Workfrontを購入する必要があります。 Workfront Fusion は、[!UICONTROL Ultimate] Workfront プランに含まれています。</p>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>従来の製品要件：この記事に記載されている機能を使用するには、Adobe Workfront Fusion とAdobe Workfrontを購入する必要があります。</p>
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、Workfront 管理者にお問い合わせください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 ## 前提条件
 
@@ -87,7 +87,7 @@ Google カレンダーコネクタは以下を使用します。
 
 ## [!DNL Google Calendar] モジュールとそのフィールド
 
-[!DNL Google Calendar] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Google Calendar] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL Google Calendar] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Google Calendar]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -115,7 +115,7 @@ Google カレンダーコネクタは以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Calendar] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion] への接続の作成 - 基本手順</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Calendar] アカウントを Workfront Fusion に接続する手順について詳しくは、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion への接続の作成 - 基本手順</a>を参照してください</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Calendar] </td> 
@@ -134,8 +134,8 @@ Google カレンダーコネクタは以下を使用します。
    <td> <p>結果を返すテキストを入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of events]</td> 
-   <td> <p> 1 回のサイクル中に [!DNL Workfront Fusion] が処理する結果の最大数（シナリオ実行あたりの繰り返し数）を設定します。値が大きすぎると、指定されたサードパーティサービス側で接続が中断される可能性があります（タイムアウト）。[!DNL Workfront Fusion] はこれに影響しません。より小さい値を設定し、最大サイクル数としてより大きい値を定義するか、シナリオをより頻繁に実行することをお勧めします。</p> </td> 
+   <td>[!UICONTROL イベントの最大数 ]</td> 
+   <td> <p> Workfront Fusion が 1 つのサイクルで動作するイベントの最大数（シナリオ実行ごとの繰り返し数）を設定します。 値が大きすぎると、指定されたサードパーティサービス側で接続が中断される可能性があります（タイムアウト）。Workfront Fusion はこの問題に影響を与えません。 より小さい値を設定し、最大サイクル数としてより大きい値を定義するか、シナリオをより頻繁に実行することをお勧めします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -150,11 +150,11 @@ Google カレンダーコネクタは以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Mailhook] </td> 
-   <td> <p>このモジュールに使用するメールフックを選択します。 新しいメールフックを作成するには、「<b> 追加 </b>」をクリックして、メールフックに使用する接続を入力します。</p><p>[!DNL Google Calendar] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion] への接続の作成 - 基本手順</a>を参照してください。</p> </td> 
+   <td> <p>このモジュールに使用するメールフックを選択します。 新しいメールフックを作成するには、「<b> 追加 </b>」をクリックして、メールフックに使用する接続を入力します。</p><p>[!DNL Google Calendar] アカウントを Workfront Fusion に接続する手順について詳しくは、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion への接続の作成 - 基本手順</a>を参照してください</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of events]</td> 
-   <td> <p> 1 回のサイクル中に [!DNL Workfront Fusion] が処理する結果の最大数（シナリオ実行あたりの繰り返し数）を設定します。値が大きすぎると、指定されたサードパーティサービス側で接続が中断される可能性があります（タイムアウト）。[!DNL Workfront Fusion] はこれに影響しません。より小さい値を設定し、最大サイクル数としてより大きい値を定義するか、シナリオをより頻繁に実行することをお勧めします。</p> </td> 
+   <td>[!UICONTROL イベントの最大数 ]</td> 
+   <td> <p> Workfront Fusion が 1 つのサイクルで動作するイベントの最大数（シナリオ実行ごとの繰り返し数）を設定します。 値が大きすぎると、指定されたサードパーティサービス側で接続が中断される可能性があります（タイムアウト）。Workfront Fusion はこの問題に影響を与えません。 より小さい値を設定し、最大サイクル数としてより大きい値を定義するか、シナリオをより頻繁に実行することをお勧めします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -177,7 +177,7 @@ Google カレンダーコネクタは以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Calendar] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion] への接続の作成 - 基本手順</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Calendar] アカウントを Workfront Fusion に接続する手順について詳しくは、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion への接続の作成 - 基本手順</a>を参照してください</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Color] </td> 
@@ -190,7 +190,7 @@ Google カレンダーコネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Create an event]
+#### [!UICONTROL イベントを作成]
 
 このアクションモジュールは、イベントを作成します。
 
@@ -218,7 +218,7 @@ Google カレンダーコネクタは以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Event name]</td> 
-   <td> <p> イベントの名前を入力またはマッピングします。 </p> <p>注意：「[!UICONTROL Create an event]」フィールドで「[!UICONTROL Quick add]」を選択した場合は、イベントの日時を含めて、その日時のイベント [!DNL Workfront Fusion] 作成できます。 例：<code>Appointment at Capitol Hill on June 3rd 10am-10:25am</code>。[!UICONTROL Quick add] を選択してもイベント名に日時を含めない場合、イベントは現在の時刻から作成され、1 時間続きます。</p> </td> 
+   <td> <p> イベントの名前を入力またはマッピングします。 </p> <p>注意：[!UICONTROL Create an event] フィールドで [!UICONTROL Quick add] を選択した場合、イベントの日時を含めることができ、Workfront Fusion はその日時のイベントを作成します。 例：<code>Appointment at Capitol Hill on June 3rd 10am-10:25am</code>。[!UICONTROL Quick add] を選択し、イベント名に日時を含めない場合、イベントは現在の時刻から作成され、1 時間存続します。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL All day event]</td> 
@@ -242,7 +242,7 @@ Google カレンダーコネクタは以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Use the default reminder settings for this event]</td> 
-   <td>デフォルトのリマインダー設定を使用するには、このオプションを有効にします。[!UICONTROL Reminder] フィールドでカスタムリマインダーを設定した場合、この値は「いいえ」に設定されます。</td> 
+   <td>デフォルトのリマインダー設定を使用するには、このオプションを有効にします。「[!UICONTROL Reminder]」フィールドにカスタムリマインダーを設定した場合、この値は「No」に設定されます。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Reminder] </td> 
@@ -275,12 +275,12 @@ Google カレンダーコネクタは以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Recurrence]</td> 
-   <td>このイベントに適用する繰り返しルールを追加します。各ルールには、繰り返しイベントの [!UICONTROL RRULE]、[!UICONTROL EXRULE]、[!UICONTROL RDATE]、[!UICONTROL EXDATE] 行のリストが必要です。 このフィールドでは、[!UICONTROL DTSTART] 行と [!UICONTROL DTEND] 行は使用できません。イベントの開始時刻と終了時刻は、「開始」フィールドと「終了」フィールドで指定します。 このフィールドは、単一のイベントまたは繰り返しイベントのインスタンスでは省略されます。詳しくは、<a href="https://tools.ietf.org/html/rfc5545#section-3.8.5">RFC5545</a> を参照してください。</td> 
+   <td>このイベントに適用する繰り返しルールを追加します。各ルールには、繰り返しイベント用の [!UICONTROL RRULE]、[!UICONTROL EXRULE]、[!UICONTROL RDATE] および [!UICONTROL EXDATE] の各行のリストが必要です。[!UICONTROL DTSTART] 行と [!UICONTROL DTEND] 行は、このフィールドでは使用できません。イベントの開始時刻と終了時刻は、それぞれ「開始」フィールドと「終了」フィールドで指定します。このフィールドは、単一のイベントまたは繰り返しイベントのインスタンスでは省略されます。詳しくは、<a href="https://tools.ietf.org/html/rfc5545#section-3.8.5">RFC5545</a> を参照してください。</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete an event]
+#### [!UICONTROL イベントの削除]
 
 このアクションモジュールでは、イベントを削除します。
 
@@ -296,7 +296,7 @@ Google カレンダーコネクタは以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Calendar] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion] への接続の作成 - 基本手順</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Calendar] アカウントを Workfront Fusion に接続する手順について詳しくは、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion への接続の作成 - 基本手順</a>を参照してください</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Calendar]</td> 
@@ -309,7 +309,7 @@ Google カレンダーコネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Get events]
+#### [!UICONTROL  イベントの取得 ]
 
 このモジュールは、指定した条件に基づいて、選択したカレンダー内のイベントに関する情報を取得します。
 
@@ -351,18 +351,18 @@ Google カレンダーコネクタは以下を使用します。
    <td>[!UICONTROL Order by]</td> 
    <td> <p>結果で返されるイベントの順序を選択します。</p> 
     <ul> 
-     <li><strong>[!UICONTROL Start Time]</strong>：開始日時（昇順）で並べ替えます。 これは、単一のイベントに対するクエリ時にのみ使用できます。</li> 
-     <li><strong>[!UICONTROL Updated Time]</strong>：最終変更時間で並べ替えます（昇順）。</li> 
+     <li><strong>[!UICONTROL Start Time]</strong>：開始日時（昇順）で並べ替えます。これは、単一のイベントに対するクエリ時にのみ使用できます。</li> 
+     <li><strong>[!UICONTROL Updated Time]</strong>：最終変更時間（昇順）で並べ替えます。</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Mazimum number of returned events]</td> 
-   <td> <p>[!DNL Workfront Fusion] が 1 回の実行サイクルで返すイベントの数の上限を設定します。</p> </td> 
+   <td>[!UICONTROL 返されるイベントの最大数 ]</td> 
+   <td> <p>Workfront Fusion が 1 つの実行サイクルで返すイベントの最大数を設定します。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update an event]
+#### [!UICONTROL イベントの更新]
 
 このアクションモジュールでは、既存のイベントを変更できます。
 
@@ -378,7 +378,7 @@ Google カレンダーコネクタは以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Calendar] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe [!DNL Workfront Fusion] への接続の作成 - 基本手順</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Calendar] アカウントを Workfront Fusion に接続する手順について詳しくは、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion への接続の作成 - 基本手順</a>を参照してください</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Calendar] </td> 
@@ -389,7 +389,7 @@ Google カレンダーコネクタは以下を使用します。
    <td> <p>前に作成した更新対象の [!DNL Google Calendar] イベントの ID を入力します。</p> </td> 
   </tr>   <tr> 
    <td>[!UICONTROL Event name]</td> 
-   <td> <p> イベントの名前を入力またはマッピングします。 </p> <p>注意：「[!UICONTROL Create an event]」フィールドで「[!UICONTROL Quick add]」を選択した場合は、イベントの日時を含めて、その日時のイベント [!DNL Workfront Fusion] 作成できます。 例：<code>Appointment at Capitol Hill on June 3rd 10am-10:25am</code>。[!UICONTROL Quick add] を選択してもイベント名に日時を含めない場合、イベントは現在の時刻から作成され、1 時間続きます。</p> </td> 
+   <td> <p> イベントの名前を入力またはマッピングします。 </p> <p>注意：[!UICONTROL Create an event] フィールドで [!UICONTROL Quick add] を選択した場合、イベントの日時を含めることができ、Workfront Fusion はその日時のイベントを作成します。 例：<code>Appointment at Capitol Hill on June 3rd 10am-10:25am</code>。[!UICONTROL Quick add] を選択し、イベント名に日時を含めない場合、イベントは現在の時刻から作成され、1 時間存続します。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL All day event]</td> 
@@ -413,7 +413,7 @@ Google カレンダーコネクタは以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Use the default reminder settings for this event]</td> 
-   <td>デフォルトのリマインダー設定を使用するには、このオプションを有効にします。[!UICONTROL Reminder] フィールドでカスタムリマインダーを設定した場合、この値は「いいえ」に設定されます。</td> 
+   <td>デフォルトのリマインダー設定を使用するには、このオプションを有効にします。「[!UICONTROL Reminder]」フィールドにカスタムリマインダーを設定した場合、この値は「No」に設定されます。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Reminder] </td> 
@@ -446,7 +446,7 @@ Google カレンダーコネクタは以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Recurrence]</td> 
-   <td>このイベントに適用する繰り返しルールを追加します。各ルールには、繰り返しイベントの [!UICONTROL RRULE]、[!UICONTROL EXRULE]、[!UICONTROL RDATE]、[!UICONTROL EXDATE] 行のリストが必要です。 このフィールドでは、[!UICONTROL DTSTART] 行と [!UICONTROL DTEND] 行は使用できません。イベントの開始時刻と終了時刻は、「開始」フィールドと「終了」フィールドで指定します。 このフィールドは、単一のイベントまたは繰り返しイベントのインスタンスでは省略されます。詳しくは、<a href="https://tools.ietf.org/html/rfc5545#section-3.8.5">RFC5545</a> を参照してください。</td> 
+   <td>このイベントに適用する繰り返しルールを追加します。各ルールには、繰り返しイベント用の [!UICONTROL RRULE]、[!UICONTROL EXRULE]、[!UICONTROL RDATE] および [!UICONTROL EXDATE] の各行のリストが必要です。[!UICONTROL DTSTART] 行と [!UICONTROL DTEND] 行は、このフィールドでは使用できません。イベントの開始時刻と終了時刻は、それぞれ「開始」フィールドと「終了」フィールドで指定します。このフィールドは、単一のイベントまたは繰り返しイベントのインスタンスでは省略されます。詳しくは、<a href="https://tools.ietf.org/html/rfc5545#section-3.8.5">RFC5545</a> を参照してください。</td> 
   </tr>
 
 </tbody> 
@@ -490,44 +490,44 @@ Google カレンダーコネクタは以下を使用します。
 
 ## イベント前のシナリオのトリガー
 
-標準の [!DNL Google Calendar] メールリマインダーと [!UICONTROL Webhooks] >[!UICONTROL Custom mailhook] モジュールを使用して、イベントの指定時間前にシナリオをトリガーできます。
+標準の [!DNL Google Calendar] メールリマインダーと [!UICONTROL Webhook]／[!UICONTROL カスタムメールフック]モジュールを利用して、イベントの指定時間前にシナリオをトリガーできます。
 
-1. [!UICONTROL Google Calendar]/[!UICONTROL Update an event] モジュールを使用して、イベントにリマインダー用のメールを追加します。
+1. [!UICONTROL Google Calendar]／[!UICONTROL イベントを更新]モジュールを使用して、イベントにメールリマインダーを追加します。
 
    ![ イベント前のトリガーシナリオ ](/help/workfront-fusion/references/apps-and-modules/assets/trigger-scen-before-event-350x209.png)
 
-1. [!UICONTROL Webhooks]/[!UICONTROL Custom mailhook] モジュールから始まる新しいシナリオを作成します。
+1. [!UICONTROL Webhooks]／[!UICONTROL カスタムメールフック]モジュールから新しいシナリオを作成します。
 
    1. メールフックのメールアドレスをコピーします。
    1. シナリオを保存し、実行します。
 
 1. [!DNL Gmail] で、[!DNL Google Calendar] メールリマインダーをメールフックのメールアドレスにリダイレクトします。
 
-   1. **[!UICONTROL [!DNL Gmail] settings]** を開けなさい。
-   1. 「**[!UICONTROL Forwarding and POP/IMAP]**」タブを開きます。
-   1. 「**[!UICONTROL Add a forwarding address].**」をクリックします。
-   1. コピーしたメールフックのメールアドレスを貼り付け、&#x200B;**[!UICONTROL Next]** をクリックし、ポップアップウィンドウで **[!UICONTROL Proceed]** キーを押して確認し、「**[!UICONTROL OK]**」をクリックします。
+   1. **[!UICONTROL [!DNL Gmail]設定]**&#x200B;を開きます。
+   1. 「**[!UICONTROL 転送と POP/IMAP]**」タブを開きます。
+   1. 「**[!UICONTROL 転送先アドレスを追加]」をクリックします。**
+   1. コピーしたメールフックのメールアドレスをペーストして、「**[!UICONTROL 次へ]**」をクリックします。ポップアップウィンドウで「**[!UICONTROL 続行]**」を押して確定し、「**[!UICONTROL OK]**」をクリックします。
 
-   1. [!DNL Workfront Fusion] で、新しいシナリオに切り替えると、確認メールを受信して実行が完了します。
+   1. Workfront Fusion で、新しいシナリオに切り替え、確認メールを受信して実行を完了します。
    1. モジュールの上のバブルをクリックして、モジュールの出力を調べます。
    1. `Text` 項目を展開して、確認コードをコピーします。
 
       ![ 確認コード ](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
 
-   1. Gmail で、編集ボックスに確認コードを貼り付けて、次の&#x200B;**[!UICONTROL Verify]** をクリックします。
+   1. Gmail で、編集ボックスに確認コードをペーストして、「**[!UICONTROL 検証]**」をクリックします。
 
       ![ コードを貼り付け ](/help/workfront-fusion/references/apps-and-modules/assets/paste-code-350x46.png)
 
-   1. 「**[!UICONTROL Filters and Blocked Addresses]**」タブを開きます。
-   1. **[!UICONTROL Create a new filter]** をクリックします。
-   1. `     calendar-notification@google.com` からのすべてのメールのフィルターを設定し、&#x200B;**[!UICONTROL Create a filter]** をクリックします。
-   1. 「**[!UICONTROL Forward it to]**」を選択し、リストから mailhook のメールアドレスを選択します。
-   1. 「**[!UICONTROL Create filter]**」をクリックして、フィルターを作成します。
+   1. 「**[!UICONTROL フィルターとブロック済みアドレス]**」タブを開きます。
+   1. 「**[!UICONTROL 新規フィルターを作成]**」をクリックします。
+   1. `     calendar-notification@google.com` から送信されるすべてのメールに対してフィルターを設定して、「**[!UICONTROL フィルターを作成]**」をクリックします。
+   1. 「**[!UICONTROL 転送先]**」を選択して、メールフックのメールアドレスをリストから選択します。
+   1. 「**[!UICONTROL フィルターを作成]**」をクリックして、フィルターを作成します。
 
-1. （オプション） [!DNL Workfront Fusion] では、[!UICONTROL Text parser]/[!UICONTROL Match pattern] モジュールを [!UICONTROL Webhooks]/[!UICONTROL Custom mailhook] モジュールの後に追加して、メールのHTML コードを解析し、必要な情報を取得します。
+1. （オプション）Workfront Fusion で、[!UICONTROL Webhook]/[!UICONTROL Custom mailhook] モジュールの後に [!UICONTROL Text parser]/[!UICONTROL Match pattern] モジュールを追加して、メールのHTML コードを解析し、必要な情報を取得します。
 
    例えば、モジュールを次のように設定して、イベントの ID を取得できます。
 
    *パターン*：`<meta itemprop="eventId/googleCalendar" content="(?<evenitID>.*?)"/>`
 
-   *テキスト*:[!UICONTROL Webhooks] >[!UICONTROL Custom mailhook] モジュールから出力された `HTML content` 項目。
+   *テキスト*：[!UICONTROL Webhook]／[!UICONTROL カスタムメールフック]モジュールから出力された `HTML content` 項目。

@@ -4,10 +4,10 @@ description: 作成するモジュールごとに設定を指定する必要が�
 author: Becky
 feature: Workfront Fusion
 exl-id: ae82d1fe-31e1-424a-9c1a-42dc1a20b749
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 34%
+source-wordcount: '324'
+ht-degree: 36%
 
 ---
 
@@ -32,17 +32,17 @@ ht-degree: 34%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
    <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規： [!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：[!DNL Workfront Fusion] ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -50,9 +50,9 @@ ht-degree: 34%
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：組織は [!DNL Adobe Workfront Fusion] を購入する必要があります。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
   </tr>
  </tbody> 
@@ -60,13 +60,13 @@ ht-degree: 34%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion]  ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
 ## モジュール設定を指定
 
-1. 左側のパネルで「**[!UICONTROL Scenarios]**」タブをクリックします。
+1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. フィルターを追加するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
 1. シナリオに新しいモジュールを追加。
@@ -75,7 +75,7 @@ ht-degree: 34%
 
    設定するモジュールをクリックします。
 
-1. モジュールで必要な場合は、[ 接続の概要 ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md) の説明に従って、指定したサービスの登録済みユーザーアカウントへの **[!UICONTROL Connection]** を作成します。
+1. モジュールで必要な場合は、**[!UICONTROL 接続の概要]** に記載されているように、指定したサービスに登録済みのユーザーアカウントに [ 接続 ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md) を作成します。
 1. 各フィールドに、適切なテキストを入力します。
 
    または
@@ -84,10 +84,10 @@ ht-degree: 34%
 
    マッピングについて詳しくは、[ マッピングの概要 ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md) を参照してください。
 
-   [!DNL Workfront Fusion] が認識できる様々なアイテム データ型（日付、数値、テキストなど）の詳細については、[ アイテム データ型 ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md) を参照してください。
+   Workfront Fusion で認識できる様々な項目データタイプ（日付、数値、テキストなど）について詳しくは、[ 項目データタイプ ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md) を参照してください。
 
    >[!NOTE]
    >
    >太字のパラメーターは必須です。
 
-1. （条件付き）モジュールに表示および使用する詳細オプションがある場合は、「**[!UICONTROL Show advanced settings]**」を選択します。
+1. （条件付き）モジュールに、表示および使用する詳細オプションがある場合、「**[!UICONTROL 詳細設定を表示]**」を選択します。

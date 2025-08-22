@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion のシナリオでは、Salesforce を使用
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: 87b15e32338b798983adbf0016709752ee862567
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2952'
-ht-degree: 80%
+source-wordcount: '2984'
+ht-degree: 78%
 
 ---
 
@@ -68,7 +68,7 @@ Salesforce コネクタの紹介ビデオについては、以下を参照して
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -150,7 +150,7 @@ Salesforce コネクタでは、以下を使用します。
         <td>Salesforce クライアントの秘密鍵を入力します。 </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL サンドボックス &#x200B;]</td>
+        <td role="rowheader">[!UICONTROL サンドボックス ]</td>
         <td>これがサンドボックス環境の場合は、このオプションを有効にします。</td>
       </tr>
       <tr>
@@ -185,7 +185,7 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Salesforce] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type] </td> 
@@ -214,7 +214,7 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Salesforce] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Type] </td> 
@@ -261,7 +261,7 @@ Salesforce コネクタでは、以下を使用します。
 
 1. Specify name, description, Endpoint URL, and fields you want to include in the new outbound message, then click **[!UICONTROL Save]**.
 
-   The **[!UICONTROL Endpoint URL]** field contains the URL provided on the [!DNL Salesforce] [!UICONTROL Outbound Message] in [!DNL Workfront Fusion].
+   The **[!UICONTROL Endpoint URL]** field contains the URL provided on the [!DNL Salesforce] [!UICONTROL Outbound Message] in Workfront Fusion.
 
 1. Configure a scenario beginning with the [!UICONTROL Outbound Message] event. 
 
@@ -278,7 +278,7 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Webhook]</td> 
-   <td> <p>送信メッセージの監視に使用する web フックを選択します。Web フックを追加するには、「<strong>[!UICONTROL Add]</strong>」をクリックして、web フックの名前と接続を入力します。</p> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!UICONTROL Adobe Workfront Fusion] への接続の作成 - 基本的な手順</a>を参照してください。</p> </td> 
+   <td> <p>送信メッセージの監視に使用する web フックを選択します。Web フックを追加するには、「<strong>[!UICONTROL Add]</strong>」をクリックして、web フックの名前と接続を入力します。</p> <p>[!DNL Salesforce] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion への接続の作成 ] – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type] </td> 
@@ -317,7 +317,7 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Salesforce] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Record Type] </p> </td> 
@@ -351,7 +351,7 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Salesforce] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
@@ -417,7 +417,7 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Salesforce] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type] </td> 
@@ -446,7 +446,7 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr>
     <td>[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Salesforce] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr>
     <td>[!UICONTROL Type of Download]</td>
@@ -480,7 +480,7 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr>
     <td>[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Salesforce] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr>
     <td>[!UICONTROL Record Type]</td>
@@ -514,7 +514,7 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Salesforce] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL ID]</td> 
@@ -546,7 +546,7 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Salesforce] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Type of Upload]</td> 
@@ -577,14 +577,14 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL &#x200B; Adobe Workfront Fusion] への接続の作成 - 基本手順</a>を参照してください。</td> 
+   <td>[!DNL Salesforce] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override=""> への接続の作成 [!DNL  Adobe Workfront Fusion] – 基本的な手順 </a> を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
    <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ドキュメント リンク &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL ドキュメント リンク ]</td> 
    <td>コンテンツドキュメントリンクを適用するかどうかを選択します。</td> 
   </tr> 
   <tr> 
@@ -617,7 +617,7 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL &#x200B; Adobe Workfront Fusion] への接続の作成 - 基本手順</a>を参照してください。</td> 
+   <td>[!DNL Salesforce] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override=""> への接続の作成 [!DNL  Adobe Workfront Fusion] – 基本的な手順 </a> を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Type]</td> 
@@ -654,7 +654,7 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Salesforce] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Salesforce] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection-to-salesforce">Salesforceへの接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Search Type]</td> 

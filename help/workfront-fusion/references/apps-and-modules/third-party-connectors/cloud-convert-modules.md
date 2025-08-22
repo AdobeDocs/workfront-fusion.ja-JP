@@ -4,10 +4,10 @@ description: CloudConvert モジュール
 author: Becky
 feature: Workfront Fusion
 exl-id: 52c4d18a-8bee-44d6-9a2c-cc9e157e1dde
-source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '3037'
-ht-degree: 97%
+source-wordcount: '3146'
+ht-degree: 83%
 
 ---
 
@@ -20,27 +20,27 @@ Adobe Workfront Fusion のシナリオでは、CloudConvert を使用するワ�
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
+   <td role="rowheader">Adobe Workfront プラン*</td>
   <td> <p>[!UICONTROL Pro] 以降</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
+   <td role="rowheader">Adobe Workfront プラン*</td>
    <td> <p>[!UICONTROL Plan]、[!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在のライセンス要件：Workfront Fusion のライセンス要件はありません。</p>
    <p>または</p>
-   <p>従来のライセンス要件：[!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>従来のライセンス要件：[!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランをご利用の場合、この記事で説明されている機能を使用するには、組織は [!DNL Adobe Workfront] に加えて [!DNL Adobe Workfront Fusion] も購入する必要があります。[!DNL Workfront Fusion] は、[!DNL Workfront] [!UICONTROL Ultimate] プランに含まれています。</p>
+   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] Adobe Workfront プランがある場合、この記事に記載されている機能を使用するには、Adobe Workfront Fusion とAdobe Workfrontを購入する必要があります。 Workfront Fusion は、[!UICONTROL Ultimate] Workfront プランに含まれています。</p>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>従来の製品要件：この記事に記載されている機能を使用するには、Adobe Workfront Fusion とAdobe Workfrontを購入する必要があります。</p>
    </td> 
   </tr> 
  </tbody> 
@@ -69,24 +69,24 @@ CloudConvert コネクタは以下を使用します。
  </tbody> 
  </table>
 
-## [!DNL CloudConvert] を [!DNL Workfront Fusion] に接続 {#connect-cloudconvert-to-workfront-fusion}
+## [!DNL CloudConvert] を Workfront Fusion に接続 {#connect-cloudconvert-to-workfront-fusion}
 
-[!DNL CloudConvert] アカウントを [!DNL Workfront Fusion] に接続するには、[!DNL CloudConvert] アカウントから API キーを取得する必要があります。
+[!DNL CloudConvert] アカウントをWorkfront Fusion に接続するには、[!DNL CloudConvert] アカウントから API キーを取得する必要があります。
 
 1. [!DNL CloudConvert] のアカウントにログインし、[!UICONTROL ダッシュボード]を開きます。
 1. **[!UICONTROL 認証]／「[!UICONTROL API キー]**」セクションを開きます。
 1. 「**[!UICONTROL API キーを新規作成]**」をクリックします。
 1. API キーの名前を入力し、使用するスコープを有効にして、さらに「**[!UICONTROL 作成]**」をクリックします。
 1. 提供されたトークンをコピーし、安全な場所に保存します。
-1. [!DNL Workfront Fusion] で、シナリオの作成を開始し、[!DNL CloudConvert] モジュールの&#x200B;**[!UICONTROL 接続を作成]**&#x200B;ダイアログを開きます。
+1. Workfront Fusion で、シナリオの作成を開始し、[!DNL CloudConvert] モジュールの **[!UICONTROL 接続を作成]** ダイアログを開きます。
 
-   手順については [ [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) でシナリオを作成を参照してください。
+   手順については、[Adobe Workfront Fusion でのシナリオの作成 ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) を参照してください。
 
 1. 手順 5 で保存したトークンを入力し、続いて「**[!UICONTROL 続行]**」をクリックして接続を確立します。
 
 ## [!DNL CloudConvert] モジュールとそのフィールド {#cloudconvert-modules-and-their-fields}
 
-[!DNL CloudConvert] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL CloudConvert] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL CloudConvert] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL CloudConvert]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -119,7 +119,7 @@ Web サイトの URL と、情報の保存場所などのその他の情報を�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL CloudConvert] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事内の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert]を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL CloudConvert] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL CloudConvert] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -158,11 +158,11 @@ Web サイトの URL と、情報の保存場所などのその他の情報を�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL CloudConvert] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL CloudConvert] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL CloudConvert] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Input file]</td> 
-   <td>ファイルのアップロードに [!DNL Workfront Fusion] を使用するか、ファイルのアップロード元の URL を指定するかを選択します。</td> 
+   <td>Workfront Fusion を使用してファイルをアップロードするか、ファイルをアップロードする URL を指定するかを選択します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Upload a file]</td> 
@@ -213,7 +213,7 @@ ZIP、RAR、7Z、TAR、TAR.GZ または TAR.BZ2 アーカイブに 1 つまた�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL CloudConvert] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL CloudConvert] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL CloudConvert] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Input Files]</p> </td> 
@@ -256,7 +256,7 @@ ZIP、RAR、7Z、TAR、TAR.GZ または TAR.BZ2 アーカイブに 1 つまた�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL CloudConvert] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL CloudConvert] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL CloudConvert] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Input Files]</p> </td> 
@@ -305,7 +305,7 @@ ZIP、RAR、7Z、TAR、TAR.GZ または TAR.BZ2 アーカイブに 1 つまた�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL CloudConvert] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の「<a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert] を [!DNL Workfront Fusion]</a> に接続」を参照してください。</p> </td> 
+   <td> <p>[!DNL CloudConvert] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL CloudConvert] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Input File]</td> 
@@ -398,11 +398,11 @@ ZIP、RAR、7Z、TAR、TAR.GZ または TAR.BZ2 アーカイブに 1 つまた�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL CloudConvert] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL CloudConvert] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL CloudConvert] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Input Files]</td> 
-   <td> <p>[!DNL Workfront Fusion] を使用してファイルをアップロードするか、ファイルのアップロード元の URL を指定するかを選択します。</p> </td> 
+   <td> <p>Workfront Fusion を使用してファイルをアップロードするか、ファイルのアップロード元の URL を指定するかを選択します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Upload a File]</td> 
@@ -452,7 +452,7 @@ ZIP、RAR、7Z、TAR、TAR.GZ または TAR.BZ2 アーカイブに 1 つまた�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL CloudConvert] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL CloudConvert] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL CloudConvert] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Job ID]</td> 
@@ -471,7 +471,7 @@ ZIP、RAR、7Z、TAR、TAR.GZ または TAR.BZ2 アーカイブに 1 つまた�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL CloudConvert] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL CloudConvert] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL CloudConvert] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Job ID]</td> 
@@ -490,7 +490,7 @@ ZIP、RAR、7Z、TAR、TAR.GZ または TAR.BZ2 アーカイブに 1 つまた�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL CloudConvert] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL CloudConvert] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL CloudConvert] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Status] </td> 
@@ -523,7 +523,7 @@ ZIP、RAR、7Z、TAR、TAR.GZ または TAR.BZ2 アーカイブに 1 つまた�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL CloudConvert] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL CloudConvert] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL CloudConvert] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output Format] </td> 
@@ -538,7 +538,7 @@ ZIP、RAR、7Z、TAR、TAR.GZ または TAR.BZ2 アーカイブに 1 つまた�
 
 >[!NOTE]
 >
->* 配列アグリゲーターを使用する場合（変換するファイルが異なる形式で多数ある場合）、タスクを追加ダイアログにある&#x200B;**[!UICONTROL 入力形式がわかりません]**&#x200B;のオプションを使用します。それ以外の場合は、エラーが返されます。
+>* 配列アグリゲーターを使用する場合（変換するファイルが異なる形式で多数ある場合）、タスクを追加]ダイアログにある&#x200B;**[!UICONTROL 入力形式がわかりません]**&#x200B;のオプションを[!UICONTROL 使用します。それ以外の場合は、エラーが返されます。
 >* 業務内のタスクをリンクしています（名前／入力、名前／入力、…）：
 >
 >  ![ ジョブ間での名前のリンク ](/help/workfront-fusion/references/apps-and-modules/assets/linking-name-across-jobs-350x808.png)>
@@ -562,7 +562,7 @@ ZIP、RAR、7Z、TAR、TAR.GZ または TAR.BZ2 アーカイブに 1 つまた�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL CloudConvert] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL CloudConvert] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL CloudConvert] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Task ID]</td> 
@@ -585,7 +585,7 @@ ZIP、RAR、7Z、TAR、TAR.GZ または TAR.BZ2 アーカイブに 1 つまた�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL CloudConvert] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL CloudConvert] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL CloudConvert] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Task ID]</td> 
@@ -604,7 +604,7 @@ ZIP、RAR、7Z、TAR、TAR.GZ または TAR.BZ2 アーカイブに 1 つまた�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL CloudConvert] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL CloudConvert] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL CloudConvert] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Task ID]</td> 
@@ -623,7 +623,7 @@ ZIP、RAR、7Z、TAR、TAR.GZ または TAR.BZ2 アーカイブに 1 つまた�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL CloudConvert] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL CloudConvert] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL CloudConvert] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Task ID]</td> 
@@ -642,7 +642,7 @@ ZIP、RAR、7Z、TAR、TAR.GZ または TAR.BZ2 アーカイブに 1 つまた�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL CloudConvert] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL CloudConvert] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL CloudConvert] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Status] </td> 
@@ -673,7 +673,7 @@ ZIP、RAR、7Z、TAR、TAR.GZ または TAR.BZ2 アーカイブに 1 つまた�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL CloudConvert] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL CloudConvert] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL CloudConvert] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Task ID]</td> 
@@ -697,12 +697,12 @@ ZIP、RAR、7Z、TAR、TAR.GZ または TAR.BZ2 アーカイブに 1 つまた�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL CloudConvert] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事にある <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">[!DNL CloudConvert] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL CloudConvert] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL CloudConvert] の接続 </a> を参照してください。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL API 呼び出しを実行]
+#### [!UICONTROL API 呼び出しの実行]
 
 カスタム API 呼び出しを実行できます。
 

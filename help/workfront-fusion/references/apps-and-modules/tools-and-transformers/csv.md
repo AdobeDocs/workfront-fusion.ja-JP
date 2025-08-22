@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion CSV モジュールを使用すると、CSV 
 author: Becky
 feature: Workfront Fusion
 exl-id: bc6d5ddc-93c3-437b-8537-5bece1351c1d
-source-git-commit: 5971b2210eaac8f8a75fd7a4aac5a9f7954d27ef
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '834'
-ht-degree: 36%
+source-wordcount: '957'
+ht-degree: 48%
 
 ---
 
 # CSV
 
-[!DNL Adobe Workfront Fusion] [!UICONTROL CSV] モジュールを使用すると、CSV ファイルを作成し、受信したテキスト値またはファイルから CSV テキストを解析できます。
+Adobe Workfront Fusion [!UICONTROL CSV] モジュールを使用すると、CSV ファイルを作成し、受信したテキスト値やファイルから CSV テキストを解析できます。
 
 これはトランスなので、これらのモジュールには接続は必要ありません。
 
@@ -54,13 +54,13 @@ ht-degree: 36%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
-## [!UICONTROL Create CSV]
+## [!UICONTROL CSV を作成]
 
-[!UICONTROL Create CSV] アグリゲータを使用すると、受信したテキスト値から csv テキストを作成できます。
+[!UICONTROL CSV を作成]アグリゲータを使用すると、受け取ったテキスト値から CSV テキストを作成できます。
 
 アグリゲータの詳細については、[ アグリゲータモジュール ](/help/workfront-fusion/references/modules/aggregator-module.md) を参照してください。
 
@@ -87,9 +87,9 @@ ht-degree: 36%
     </tr>
 </table>
 
-## [!UICONTROL Create CSV (advanced)]
+## [!UICONTROL CSV を作成（詳細）]
 
-[!UICONTROL Create CSV (advanced)] アグリゲータを使用すると、受信したテキスト値から CSV テキストを作成できます。 結果の CSV ファイルで CSV 列を定義するデータ構造を使用しています。定義が完了すると、列は CSV モジュール設定のフィールドとして表示され、シナリオの後のモジュールにマッピングできます。
+[!UICONTROL CSV を作成（詳細）]アグリゲータを使用すると、受け取ったテキスト値から CSV テキストを作成できます。結果の CSV ファイルで CSV 列を定義するデータ構造を使用しています。定義が完了すると、列は CSV モジュール設定のフィールドとして表示され、シナリオの後のモジュールにマッピングできます。
 
 アグリゲータの詳細については、[ アグリゲータモジュール ](/help/workfront-fusion/references/modules/aggregator-module.md) を参照してください。
 
@@ -123,12 +123,12 @@ ht-degree: 36%
 
 >[!BEGINSHADEBOX]
 
-**例**:
+**例**：
 
-この例では、「Full Name」と「Email」という 2 つの列を持つ CSV ファイルにGoogleの連絡先を書き出す方法を示しています。 [!UICONTROL Google Contacts]/[!UICONTROL Get contacts from a group] モジュールからの出力バンドルの構造は次のとおりです。 メールアドレスは、<code>[!UICONTROL Emails[]] 内に保存されます</code> item はコレクションの配列で、各コレクションには 2 つの項目が含まれています。<code>Label</code> と <code> メール</code>.
+この例では、「Full Name」と「Email」という 2 つの列を持つ CSV ファイルにGoogleの連絡先を書き出す方法を示しています。 [!UICONTROL Googleの連絡先 ] / [!UICONTROL  グループから連絡先を取得 ] モジュールの出力バンドルは、次の構造になっています。 メールアドレスは、<code>[!UICONTROL  メール []] 内に保存されます</code> item はコレクションの配列で、各コレクションには 2 つの項目が含まれています。<code>Label</code> と <code> メール</code>.
 ![ 変換 ](/help/workfront-fusion/references/apps-and-modules/assets/transforming-350x546.png)
 
-シンプルな [!DNL Create CSV] モジュールは、バンドルの最上位レベルの項目に対応するチェックボックスのリストを提供します。 <code>Full name</code> と <code> メール</code> items を指定すると、[!UICONTROL Create CSV] モジュールは次のような出力を生成しますが、これは希望とは異なる場合があります。
+シンプルな [!DNL Create CSV] モジュールは、バンドルの最上位レベルの項目に対応するチェックボックスのリストを提供します。 <code>Full name</code> と <code> メール</code> [!UICONTROL CSV を作成 ] モジュールでは、要求とは異なる次のような出力が生成されます。
 
 ```
 "emails","fullName"
@@ -143,15 +143,15 @@ ht-degree: 36%
 詳細については、「[ アイテム データ タイプ ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)」を参照してください。
 
 
-<code>E メールのコンテンツをエクスポートするには </code><code>Emails[] の最初のコレクションの項目</code> 代わりに、[!UICONTROL Create CSV (advanced)] モジュールを使用する必要があります。 このモジュールを使用すると、CSV ファイルの個々の列を定義し、ネストされた列を含め、それらの列に項目をマッピングできます。
+<code>E メールのコンテンツをエクスポートするには </code><code>Emails[] の最初のコレクションの項目</code> 代わりに、配列 [!UICONTROL CSV を作成（詳細） ] モジュールを使用する必要があります。 このモジュールを使用すると、CSV ファイルの個々の列を定義し、ネストされた列を含め、それらの列に項目をマッピングできます。
 
-1. モジュール [!UICONTROL Create CSV (advanced)] をシナリオに挿入します。
-1. [!UICONTROL Data structure] フィールドの横にある「<strong>[!UICONTROL Add]</strong>」ボタンをクリックして、新しいデータ構造を作成します。
-1. データ構造の名前を入力し、「<strong>[!UICONTROL Add item]</strong>」をクリックして個々の列を追加します。 「Full Name」と「Email」の 2 つの列を書き出すには、結果のデータ構造は次のようになります。
+1. モジュール [!UICONTROL CSV を作成（詳細） ] をシナリオに挿入します。
+1. 「<strong>[!UICONTROL  データ構造 ]</strong>」フィールドの横にある「[!UICONTROL  追加 ]」ボタンをクリックして、新しいデータ構造を作成します。
+1. データ構造の名前を入力し、「<strong>[!UICONTROL  項目を追加 ]</strong>」をクリックして個々の列を追加します。 「Full Name」と「Email」の 2 つの列を書き出すには、結果のデータ構造は次のようになります。
 
    ![Google連絡先の出力 ](/help/workfront-fusion/references/apps-and-modules/assets/google-contacts-350x524.png)
 
-1. データ構造を定義すると、個々の列に対応するフィールドが [!UICONTROL Create CSV (advanced)] モジュールの設定に表示され、項目をマッピングできます。 <code>[!UICONTROL Emails[]] から最初の項目を取得</code> 配列とその項目のマッピング <code> メール </code>フィールド/列の「電子メール」に対して、次の操作を行います。
+1. データ構造を定義すると、個々の列に対応するフィールドが [!UICONTROL CSV を作成（詳細） ] モジュールの設定に表示され、項目をマッピングできます。 <code>[!UICONTROL  メール []] の最初の項目を取得</code> 配列とその項目のマッピング <code> メール </code>フィールド/列の「電子メール」に対して、次の操作を行います。
 
    ![CSV 詳細モジュールの作成 ](/help/workfront-fusion/references/apps-and-modules/assets/create-csv-advanced-350x308.png)
 
@@ -167,9 +167,9 @@ ht-degree: 36%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL Parse CSV]
+## [!UICONTROL CSV の解析]
 
-[!UICONTROL Parse CSV] トランスフォーマーを使用すると、受信したテキスト値やファイルから CSV テキストを解析できます。
+[!UICONTROL CSV を解析]変換サービスを使用すると、受け取ったテキスト値またはファイルから CSV テキストを解析できます。
 
 <table style="table-layout:auto">
  <col> 
@@ -189,7 +189,7 @@ ht-degree: 36%
     <ul> 
      <li>[!UICONTROL Comma]</li> 
      <li>[!UICONTROL Tab]</li> 
-     <li> <p>[!UICONTROL Other]</p> <p>「[!UICONTROL Other]」を選択した場合は、CSV ファイルで値の区切りに使用する区切り文字を入力します。 正確に 1 文字を入力する必要があります。<br></p> </li> 
+     <li> <p>[!UICONTROL Other]</p> <p>[!UICONTROL Other] を選択した場合は、値を区切るために CSV ファイルで使用する区切り文字を入力します。正確に 1 文字を入力する必要があります。<br></p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -198,7 +198,7 @@ ht-degree: 36%
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL CSV]</td> 
-   <td>解析する CSV ファイルを入力またはマッピングします。<p>メモ： <p>データがバイナリ形式（通常はファイルから）の場合、「toString （）」関数を使用してバイナリデータを [!UICONTROL String] に変換する必要があります。</p><p><img src="/help/workfront-fusion/references/apps-and-modules/assets/parse-csv-350x123.png"></p></p></td> 
+   <td>解析する CSV ファイルを入力またはマッピングします。<p>メモ： <p>データが（通常はファイルから）バイナリ形式で取得される場合は、「toString()」関数を使用してバイナリデータを [!UICONTROL String] に変換する必要があります。</p><p><img src="/help/workfront-fusion/references/apps-and-modules/assets/parse-csv-350x123.png"></p></p></td> 
   </tr> 
  </tbody> 
 </table>

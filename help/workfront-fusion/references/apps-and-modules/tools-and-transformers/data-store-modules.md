@@ -1,23 +1,23 @@
 ---
 title: データストアモジュール
-description: データベースやシンプルなテーブルと同様に、 [!DNL Adobe Workfront Fusion]  データストアではシナリオのデータを保存して、個々のシナリオやシナリオ実行の間でデータを転送することができます。データストアを使用すると、同期中に様々なシステムから新しいデータを保存できます。
+description: Adobe Workfront Fusion データストアは、データベースや単純なテーブルと似ており、シナリオからデータを保存できるので、個々のシナリオやシナリオの実行の間でデータを転送できます。 データストアを使用すると、同期中に様々なシステムから新しいデータを保存できます。
 author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1135'
-ht-degree: 87%
+source-wordcount: '1154'
+ht-degree: 76%
 
 ---
 
 # [!UICONTROL データストア]モジュール
 
-データベースやシンプルなテーブルと同様に、[!DNL Adobe Workfront Fusion] データストアではシナリオのデータを保存して、個々のシナリオやシナリオ実行の間でデータを転送することができます。データストアを使用すると、同期中に様々なシステムから新しいデータを保存できます。
+Adobe Workfront Fusion データストアは、データベースや単純なテーブルと似ており、シナリオからデータを保存できるので、個々のシナリオやシナリオの実行の間でデータを転送できます。 データストアを使用すると、同期中に様々なシステムから新しいデータを保存できます。
 
-データストアモジュールを使用すると、[!DNL Adobe Workfront Fusion] データストアでレコードの追加、置換、更新、取得、削除、検索、カウントを行えるようになります。
+データストアモジュールを使用すると、Adobe Workfront Fusion データストア内のレコードを追加、置換、更新、取得、削除、検索、カウントできます。
 
-<!--For information on creating, editing, and troubleshooting data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/)-->
+<!--For information on creating, editing, and troubleshooting data stores, see [Data Stores in Adobe Workfront Fusion](/help/workfront-fusion/references/mapping-panel/data-types/)-->
 
 Workfront Fusion のデータストアの紹介ビデオについては、以下を参照してください。
 
@@ -60,7 +60,7 @@ Workfront Fusion のデータストアの紹介ビデオについては、以下
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -70,9 +70,9 @@ Workfront Fusion のデータストアの紹介ビデオについては、以下
 
 データストアの作成について詳しくは、[ データストアの作成と管理 ](/help/workfront-fusion/create-scenarios/map-data/data-stores.md) を参照してください。
 
-## [!UICONTROL &#x200B; データストア &#x200B;] モジュールとそのフィールド
+## [!UICONTROL  データストア ] モジュールとそのフィールド
 
-データストアモジュールを設定する際、[!DNL Workfront Fusion] には以下のフィールドが表示されます。これらのほか、アプリやサービスでのアクセスレベルなどの要因に応じて、追加のデータストアフィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+Workfront Fusion でデータストアモジュールを設定する場合、以下に示すフィールドが表示されます。 これらのほか、アプリやサービスでのアクセスレベルなどの要因に応じて、追加のデータストアフィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 データストアを使用するために接続を作成する必要はありません。
 
@@ -100,7 +100,7 @@ Workfront Fusion のデータストアの紹介ビデオについては、以下
 
 >[!NOTE]
 >
->既にデータストアに存在するレコードを同じ名前で追加しようとしたときに、「[!UICONTROL &#x200B; 既存のレコードを上書き &#x200B;]」オプションが無効になっている場合、モジュールはエラーをスローします。
+>既にデータストアに存在するレコードを同じ名前で追加しようとしたときに、「[!UICONTROL  既存のレコードを上書き ]」オプションが無効になっている場合、モジュールはエラーをスローします。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
@@ -256,7 +256,7 @@ Workfront Fusion のデータストアの紹介ビデオについては、以下
   </tr> 
   <tr> 
    <td>[!UICONTROL Limit]</td> 
-   <td> <p> 1 回の実行サイクル中に、[!DNL Workfront Fusion] が返す検索結果の最大数を設定します。</p> </td> 
+   <td> <p> Workfront Fusion が 1 つの実行サイクルで返す検索結果の最大数を設定します。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 

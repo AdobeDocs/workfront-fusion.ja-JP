@@ -1,19 +1,19 @@
 ---
 title: SharePoint モジュール
-description: 1 つのシナリオで  [!DNL Adobe Workfront Fusion] 、Microsoft SharePoint Onlineを使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
+description: Adobe Workfront Fusion のシナリオでは、Microsoft SharePoint Onlineを使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: 5af0b7ab4646502418f188854fdec43bcacc7549
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '3979'
-ht-degree: 51%
+source-wordcount: '4124'
+ht-degree: 49%
 
 ---
 
 # Microsoft SharePoint Online モジュール
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、Microsoft SharePoint Onlineを使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
+Adobe Workfront Fusion のシナリオでは、Microsoft SharePoint Onlineを使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -58,7 +58,7 @@ ht-degree: 51%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -89,17 +89,17 @@ SharePoint コネクタでは、以下を使用します。
  </tbody> 
  </table>
 
-## Microsoft SharePoint Onlineの [!DNL Workfront Fusion] への接続 {#connect-microsoft-sharepoint-online-to-workfront-fusion}
+## Microsoft SharePoint OnlineのWorkfront Fusion への接続 {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
-* [Microsoft SharePoint Onlineと  [!DNL Workfront Fusion]  アカウントを使用した  [!DNL Microsoft]  の接続](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
-* [詳細設定を使用して  [!DNL Workfront Fusion] Microsoft SharePoint Onlineのへの接続](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
-* [証明書認証を使用して  [!DNL Workfront Fusion] Microsoft SharePoint Onlineをに接続する](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
+* [アカウントを使用してMicrosoft SharePoint OnlineをWorkfront Fusion [!DNL Microsoft]  接続](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
+* [詳細設定を使用したMicrosoft SharePoint OnlineのWorkfront Fusion への接続](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
+* [証明書認証を使用した、Microsoft SharePoint OnlineのWorkfront Fusion への接続](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 
-### [!DNL Workfront Fusion] アカウントを使用したMicrosoft SharePoint Onlineの [!DNL Microsoft] への接続
+### [!DNL Microsoft] アカウントを使用してMicrosoft SharePoint OnlineをWorkfront Fusion に接続する
 
-[!DNL Microsoft] アカウントを使用して、Microsoft SharePoint Onlineへの接続を作成できます。 [!DNL Sharepoint] アカウントを [!DNL Workfront Fusion] に接続する手順については、[ [!DNL Adobe Workfront Fusion]  への接続の作成 - 基本手順](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)を参照してください。
+[!DNL Microsoft] アカウントを使用して、Microsoft SharePoint Onlineへの接続を作成できます。 [!DNL Sharepoint] アカウントを Workfront Fusion に接続する手順について詳しくは、[Adobe Workfront Fusion への接続の作成 - 基本手順](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)を参照してください
 
-### 詳細設定を使用したMicrosoft SharePoint Onlineの [!DNL Workfront Fusion] への接続
+### 詳細設定を使用したMicrosoft SharePoint OnlineのWorkfront Fusion への接続
 
 接続に資格情報を含めるには、「詳細設定を表示」オプションを有効にします。 このタイプの接続の場合は、クライアント ID、クライアント秘密鍵およびテナント ID が必要になります。
 
@@ -136,7 +136,7 @@ SharePoint コネクタでは、以下を使用します。
 
 1. 「**続行**」をクリックして接続を保存し、モジュールに戻ります。
 
-### 証明書認証を使用したMicrosoft SharePoint Onlineの [!DNL Workfront Fusion] への接続
+### 証明書認証を使用した、Microsoft SharePoint OnlineのWorkfront Fusion への接続
 
 証明書認証を使用してSharePointに接続できます。
 
@@ -167,7 +167,7 @@ SharePoint コネクタでは、以下を使用します。
       <td>接続先のSharePoint アプリケーションのクライアント ID を入力します。 </td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL 拇印 &#x200B;]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL 拇印 ]</p> </td> 
       <td>接続先のSharePoint アプリケーションの拇印を入力します。</td> 
      </tr> 
       <tr>
@@ -203,7 +203,7 @@ SharePoint コネクタでは、以下を使用します。
 
 ## Microsoft SharePoint モジュールとそのフィールド
 
-Microsoft SharePoint Online モジュールを設定すると、以下に示 [!DNL Workfront Fusion] フィールドが表示されます。 これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加のMicrosoft SharePoint Online フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
+Workfront Fusion でMicrosoft SharePoint Online モジュールを設定する場合、以下に示すフィールドが表示されます。 これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加のMicrosoft SharePoint Online フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -235,7 +235,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
@@ -261,7 +261,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
@@ -288,7 +288,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
@@ -311,13 +311,13 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL サイト、ドライブ、およびファイルを入力                IDs]</td> 
    <td> <p>取得するファイルの場所を特定する方法を選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>取得するフォルダーの <strong>[!UICONTROL サイト ID]</strong>、<strong>[!UICONTROL リスト ID]</strong>、および <strong>[!UICONTROL フォルダーパス &#x200B;]</strong> を入力するか、マップします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>取得するフォルダーの <strong>[!UICONTROL サイト ID]</strong>、<strong>[!UICONTROL リスト ID]</strong>、および <strong>[!UICONTROL フォルダーパス ]</strong> を入力するか、マップします。</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>フォルダーの場所を選択します。 </p> </li> 
     </ul> </td> 
   </tr> 
@@ -334,7 +334,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL サイト、ドライブ、およびファイルを入力                IDs]</td> 
@@ -361,7 +361,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
@@ -372,7 +372,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
     </ul> </td> 
   </tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td>1 回のシナリオ実行サイクルで [!DNL Workfront Fusion] が返す項目の最大数を入力します。</td> 
+   <td>Workfront Fusion が 1 つのシナリオの実行サイクルで返す最大項目数を入力します。</td> 
   <tr>
   </tr>
 </tbody> 
@@ -380,18 +380,18 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
 
 ### 項目
 
-* [[!UICONTROL &#x200B; 項目をコピー &#x200B;]](#copy-an-item)
+* [[!UICONTROL  項目をコピー ]](#copy-an-item)
 * [[!UICONTROL 項目の作成]](#create-an-item)
 * [[!UICONTROL 項目の削除]](#delete-an-item)
 * [[!UICONTROL 項目の取得]](#get-an-item)
 * [詳細を取得](#get-details)
 * [[!UICONTROL 項目のリスト]](#list-items)
 * [[!UICONTROL 項目を移動]](#move-an-item)
-* [[!UICONTROL &#x200B; 項目を更新 &#x200B;]](#update-an-item)
+* [[!UICONTROL  項目を更新 ]](#update-an-item)
 * [[!UICONTROL 項目の監視]（予定）](#watch-items-scheduled)
 
 
-#### [!UICONTROL &#x200B; 項目をコピー &#x200B;]
+#### [!UICONTROL  項目をコピー ]
 
 このアクションモジュールは、SharePoint リスト内の既存の項目をコピーします。
 
@@ -401,7 +401,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">サイト ID、ドライブ ID およびフォルダー ID の入力</td> 
@@ -432,7 +432,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Create an Item]</td> 
@@ -459,7 +459,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Update an Item]</td> 
@@ -482,7 +482,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Get an Item]</td> 
@@ -505,7 +505,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Web URL</td> 
@@ -524,7 +524,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL List Items]</td> 
@@ -551,7 +551,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">サイト ID、ドライブ ID およびフォルダー ID の入力</td> 
@@ -582,7 +582,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Update an Item]</td> 
@@ -609,7 +609,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Watch Lists]</td> 
@@ -647,7 +647,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter a Site ID]</td> 
@@ -667,7 +667,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Add Columns]</td> 
-   <td>新しいリストに設定する列ごとに、[<b> 項目の追加 </b>] をクリックし、フィールドに <strong>[!UICONTROL 名 &#x200B;]</strong> を入力して、新しい列に設定する値の <strong>[!UICONTROL 型 &#x200B;]</strong> を選択します。</td> 
+   <td>新しいリストに設定する列ごとに、[<b> 項目の追加 </b>] をクリックし、フィールドに <strong>[!UICONTROL 名 ]</strong> を入力して、新しい列に設定する値の <strong>[!UICONTROL 型 ]</strong> を選択します。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -682,7 +682,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Get a List]</td> 
@@ -705,7 +705,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL List Lists]</td> 
@@ -732,14 +732,14 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Watch Lists]</td> 
    <td>作成時刻（新しい項目）または変更時刻（更新された項目）のどちらでリストを監視するかを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL サイト ID の入力 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL サイト ID の入力 ]</td> 
    <td> <p>リストで監視するサイトの識別方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>リストを監視する場所に <strong>[!UICONTROL サイト ID]</strong> 入力するかマップします。</p> </li> 
@@ -774,7 +774,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Get a Page]</td> 
@@ -797,10 +797,10 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL リスト ページ &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL リスト ページ ]</td> 
    <td> <p>リストするページの識別方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>一覧表示するページを含むサイトの <strong>[!UICONTROL サイト ID]</strong> を入力するか、マップします。</p> </li> 
@@ -824,10 +824,10 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ページを公開 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL ページを公開 ]</td> 
    <td> <p>公開するページの識別方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p><strong>[!UICONTROL Site ID]</strong> および <strong>[!UICONTROL Page ID]</strong> を入力またはマッピングします。</p> </li> 
@@ -847,10 +847,10 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL サイト ID の入力 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL サイト ID の入力 ]</td> 
    <td> <p>リストするページの識別方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>監視するページを含むサイトの <strong>[!UICONTROL サイト ID]</strong> を入力するか、マップします。</p> </li> 
@@ -879,7 +879,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Get a Site]</td> 
@@ -902,7 +902,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Keyword of Display Name]</td> 
@@ -931,7 +931,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
@@ -958,7 +958,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Microsoft SharePoint Online アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint Onlineの [!DNL Workfront Fusion]</a> への接続」を参照してください。</p> </td> 
+   <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
@@ -970,7 +970,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。例えば、<code>{"Content-type":"application/json"}</code>。認証ヘッダーは [!DNL Workfront Fusion] によって追加されます。</p> </td> 
+   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。例えば、<code>{"Content-type":"application/json"}</code>。Workfront Fusion は認証ヘッダーを追加します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 
@@ -1001,7 +1001,7 @@ Microsoft SharePoint Online モジュールを設定すると、以下に示 [!D
   <tr> 
   <!--
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your Microsoft SharePoint Online account to [!DNL Workfront Fusion], see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your Microsoft SharePoint Online account to Workfront Fusion, see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   -->
   <tr> 

@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion 画像モジュールを使用すると、�
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: a7696c9d-002d-4bb4-ae10-1f69dc5e66fe
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 79%
+source-wordcount: '752'
+ht-degree: 74%
 
 ---
 
 # 画像モジュール
 
-[!DNL Adobe Workfront Fusion] [!UICONTROL 画像]モジュールを使用すると、特定の画像に関する情報（サイズ、タイプなど）を取得し、画像を別のファイル形式に変換し、画像のサイズを直接変更できます。
+Adobe Workfront Fusion [!UICONTROL  画像 ] モジュールを使用すると、特定の画像（サイズや種類など）に関する情報を取得したり、画像を別のファイル形式に変換したり、画像のサイズを直接変更したりできます。
 
 ## アクセス要件
 
@@ -52,7 +52,7 @@ ht-degree: 79%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -143,7 +143,7 @@ ht-degree: 79%
    <td>サイズ変更した画像の希望の高さをピクセル単位で入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 変更率 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 変更率 ]</td> 
    <td>画像の変更率をパーセントで指定した場合は、画像の変更率を入力またはマップします。</td> 
   </tr> 
  </tbody> 

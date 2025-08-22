@@ -1,24 +1,24 @@
 ---
 title: 接続の作成 – 基本的な手順
-description: 多数の [!DNL Adobe Workfront Fusion] コネクタでは、接続を作成するときにカスタム設定は必要ありません。この記事では、デフォルトの接続作成プロセスについて説明します。
+description: Adobe Workfront Fusion コネクタの多くは、接続作成時にカスタム設定を必要としません。 この記事では、デフォルトの接続作成プロセスについて説明します。
 author: Becky
 feature: Workfront Fusion
 exl-id: e47ab4d9-6612-4d9a-a024-da508a8bbfb2
-source-git-commit: 6aec65919e79a9e9d950a11de53bfbb1051ca20b
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 26%
+source-wordcount: '546'
+ht-degree: 17%
 
 ---
 
 # 接続の作成 – 基本的な手順
 
-[!DNL Adobe Workfront Fusion] コネクタの多くは、接続を作成するときにカスタム設定を必要としません。 この記事では、デフォルトの接続作成プロセスについて説明します。
+Adobe Workfront Fusion コネクタの多くは、接続作成時にカスタム設定を必要としません。 この記事では、デフォルトの接続作成プロセスについて説明します。
 
 >[!NOTE]
 >
 >
->Adobe Workfront Fusion で、シナリオで使用する web サービスのアプリが提供されない場合は、以下の記事で説明されているように、HTTP モジュールと Webhook モジュール [!DNL Workfront Fusion] 使用して web サービスに接続できます。
+>Adobe Workfront Fusion で、シナリオで使用する web サービスのアプリが提供されない場合は、次の記事で説明されているように、Workfront Fusion HTTP および Webhook モジュールを使用して web サービスに接続できます。
 >
 >* [API トークン認証を使用する web サービスにAdobe Workfront Fusion を接続する ](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-wf-web-service-uses-api-token-auth.md)
 >* [ コネクタを使用しない web サービスの Webhook の設定 ](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)
@@ -70,9 +70,9 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 特定のアプリケーションへの接続を作成するには、そのアプリケーションのモジュールに参加している必要があります。 例えば、Workfrontへの接続を作成するには、Workfront モジュールに参加している必要があります。
 
-[!DNL Workfront Fusion] モジュール内で接続を作成するには、以下を実行します。
+Workfront Fusion モジュール内に接続を作成するには：
 
-1. 特定のアプリケーションの任意のモジュールで、「**[!UICONTROL 接続]**」ボックスの横にある [!UICONTROL &#x200B; 追加 &#x200B;] をクリックして、**[!UICONTROL 接続を作成]** パネルを開きます。
+1. 特定のアプリケーションの任意のモジュールで、「**[!UICONTROL 接続]**」ボックスの横にある [!UICONTROL  追加 ] をクリックして、**[!UICONTROL 接続を作成]** パネルを開きます。
 1. （オプション）デフォルトの&#x200B;**[!UICONTROL 接続名]**&#x200B;を変更
 1. 「環境」フィールドで、実稼動環境か非実稼動環境かを選択します。
 1. 「タイプ」フィールドで、サービスか個人アカウントかを選択します。
@@ -82,7 +82,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 1. 「**[!UICONTROL 続行]**」をクリックします。
 1. 表示されるログインウィンドウで、アプリにログインするための資格情報を入力します（まだ入力していない場合）。
-1. （条件付き）「**[!UICONTROL 許可]**」ボタンが表示された場合、コネクタが実行できるアクションを調べてから、ボタンをクリックしてアプリを [!DNL Workfront Fusion] に接続します。
+1. （条件付き） **[!UICONTROL 許可]** ボタンが表示された場合は、コネクタが実行できるアクションを確認し、ボタンをクリックしてアプリをWorkfront Fusion に接続します。
 
    >[!NOTE]
    >

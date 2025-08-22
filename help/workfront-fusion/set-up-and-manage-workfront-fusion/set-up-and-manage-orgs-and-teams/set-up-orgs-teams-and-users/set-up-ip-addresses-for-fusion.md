@@ -4,10 +4,10 @@ description: Fusion は、web 通信に特定の IP アドレスとドメイン�
 author: Becky
 feature: Workfront Fusion
 exl-id: 406dd45c-0863-4270-a80e-c1c115e0b367
-source-git-commit: 59d739093c88238af7a7e97499fd0c7d7cf6053a
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 49%
+source-wordcount: '550'
+ht-degree: 45%
 
 ---
 
@@ -17,8 +17,8 @@ Adobe Workfront Fusion は組織のネットワークと通信するので、そ
 
 これは、基本的に、ファイアウォールを介したデータの送受信が「許可」されているサイトの「リスト」である許可リストを通じて実現されます。サイトは、次の 2 つの方法のいずれかで識別できます。
 
-* **IP アドレス**：52.31.132.175 などの一連の数値
-* **ドメイン**:URL の一部（`www.thisdomain.com` の `thisdomain` など）
+* **IP アドレス**:52.31.132.175 などの一連の数値
+* **ドメイン**:URL の一部（`thisdomain` の `www.thisdomain.com` など）
 
 Fusion は、web 通信に特定の IP アドレスとドメインを使用します。 組織で Workfront を使用するには、これらを組織の許可リストに追加する必要があります。
 
@@ -82,7 +82,7 @@ URL を使用して Fusion にアクセスすると、URL を調べてデータ�
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] EU Datacenter</td> 
+   <td role="rowheader">Adobe Workfront EU Datacenter</td> 
    <td> 
     <ul> 
      <li>52.30.133.50</li> 
@@ -91,7 +91,7 @@ URL を使用して Fusion にアクセスすると、URL を調べてデータ�
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!DNL Adobe Workfront] US Datacenter</p> </td> 
+   <td role="rowheader"> <p>Adobe Workfront US Datacenter</p> </td> 
    <td> 
     <ul> 
      <li>54.244.142.219</li> 
@@ -103,7 +103,7 @@ URL を使用して Fusion にアクセスすると、URL を調べてデータ�
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] Microsoft Azure クラスター上</td> 
+   <td role="rowheader">Microsoft Azure クラスター上のAdobe Workfront Fusion</td> 
    <td> 
     <ul> 
      <li>20.36.133.48/28</li> 
@@ -121,15 +121,15 @@ URL を使用して Fusion にアクセスすると、URL を調べてデータ�
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] EU Datacenter</td> 
+   <td role="rowheader">Adobe Workfront EU Datacenter</td> 
    <td> <p> hook.app-eu.workfrontfusion.com </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!DNL Adobe Workfront] US Datacenter</p> </td> 
+   <td role="rowheader"> <p>Adobe Workfront US Datacenter</p> </td> 
    <td> <p>hook.app.workfrontfusion.com </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!DNL Adobe Workfront Fusion] Microsoft Azure クラスター上</p> </td> 
+   <td role="rowheader"> <p>Microsoft Azure クラスター上のAdobe Workfront Fusion</p> </td> 
    <td> <p>hook.app-az.workfrontfusion.com </p> </td> 
   </tr> 
  </tbody> 

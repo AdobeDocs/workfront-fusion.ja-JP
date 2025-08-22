@@ -4,20 +4,20 @@ description: この記事には、 [!DNL Adobe]  Workfront Fusion の役割の�
 author: Becky
 feature: Workfront Fusion
 exl-id: 92f3bb09-0b66-45cd-84ef-88b2aa246be1
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 94%
+source-wordcount: '396'
+ht-degree: 88%
 
 ---
 
 # 組織とチームの役割
 
-この記事では、[!DNL Workfront Fusion] で様々なチームおよび組織の役割が利用できるアクセスと機能について説明します。
+この記事では、Workfront Fusion の様々なチームや組織の役割が使用できるアクセスと機能について説明します。
 
 >[!NOTE]
 >
->[!DNL Workfront Fusion] では、組織の役割とチームの役割は区別されています。組織とチームの役割について詳しくは、[ 組織とチームの概要 ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) を参照してください。
+>組織のロールは、Workfront Fusion のチームロールとは別のものです。 組織とチームの役割について詳しくは、[ 組織とチームの概要 ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) を参照してください。
 
 ## 組織の役割
 

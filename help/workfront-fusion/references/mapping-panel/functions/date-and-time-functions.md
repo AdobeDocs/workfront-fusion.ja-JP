@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion マッピングパネルでは、以下の�
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 9249223c6fbe0360b11d41988fe8b9c35e45dbb8
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1876'
-ht-degree: 92%
+source-wordcount: '1879'
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 92%
 
 現在の時刻を YYYY-MM-DD-hh:mm:ss 形式で取得します。
 
-### timestamp
+### タイムスタンプ
 
 現在の時刻を UNIX タイムスタンプとして取得します。
 
@@ -341,15 +341,15 @@ ht-degree: 92%
 
 * `formatDate(1. Date created; YYYY-MM-DD hh:mm A)`
 
-  戻り値：2018-10-01 09:32 AM
+  2018-10-01 09:32 AM を返します。
 
 * `formatDate(1. Date created;DD.MM.YYYY HH:mm;UTC)`
 
-  戻り値：01.10.2018 07:32
+  01.10.2018 07:32 を返します。
 
 * `formatDate(now;DD.MM.YYYY HH:mm)`
 
-  戻り値：19.03.2019 15:30
+  19.03.2019 15:30 を返します
 
 >[!ENDSHADEBOX]
 
@@ -459,7 +459,7 @@ Date1 から Date2 が減算されます。
 
 #### 月の n 番目の曜日の計算方法
 
-[!DNL Exceljet] の web ページから [!DNL Workfront Fusion] 向けに調整されたこの節では、月の n 番目の曜日を取得する方法を説明します。
+この節では、月の n 番目の曜日の取得方法を説明する [!DNL Exceljet] web ページのWorkfront Fusion に適応しました。
 
 月の n 番目の曜日（例：最初の火曜日、3 番目の金曜日など）に対応する日付を計算する必要がある場合、次の数式を使用できます。
 

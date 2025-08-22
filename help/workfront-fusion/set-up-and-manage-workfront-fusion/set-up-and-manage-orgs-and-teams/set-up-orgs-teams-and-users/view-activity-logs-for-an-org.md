@@ -4,10 +4,10 @@ description: シナリオの作成やアクティブ化など、組織のアク�
 author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
-source-git-commit: edeed099b26dae635889fd35de61d66a1ea1ffc1
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 9%
+source-wordcount: '536'
+ht-degree: 8%
 
 ---
 
@@ -26,17 +26,17 @@ ht-degree: 9%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
+   <td role="rowheader">Adobe Workfront プラン</td>
    <td> <p>新規：Ultimate</p> <p>または</p> <p>現在：使用できません</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規： [!UICONTROL Standard]</p><p>または</p><p>現在：使用できません</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：使用できません</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：[!DNL Workfront Fusion] ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -48,7 +48,7 @@ ht-degree: 9%
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>この機能は、[!DNL Workfront Fusion] を含むUltimate Workfront プランを使用している組織でのみ使用できます。 追加の製品購入は必要ありません。</p>
+   <p>この機能は、Workfront Fusion を含むUltimate Workfront プランを使用している組織でのみ使用できます。 追加の製品購入は必要ありません。</p>
    </td> 
   </tr>
  </tbody> 
@@ -56,7 +56,7 @@ ht-degree: 9%
 
 この表の情報について詳しくは、[Workfront ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -66,7 +66,7 @@ ht-degree: 9%
 
 1. 左側のナビゲーションパネルで、**組織概要**![ 組織概要アイコン ](assets/org-overview-icon.png) をクリックします。
 1. アクティビティログを表示する組織に現在所属していない場合は、画面の右上隅にある組織名をクリックし、ドロップダウンから組織を選択します。
-1. 画面上部付近の「**[!UICONTROL Activity Logs]**」タブをクリックします。
+1. 画面上部付近の **[!UICONTROL アクティビティログ]** タブをクリックします。
 
    アクティビティログページが開きます。
 1. （オプション）指定した条件で結果を制限するには、アクティビティログをフィルタリングします。
@@ -82,7 +82,7 @@ ht-degree: 9%
 
 1. 左側のナビゲーションパネルで、**組織概要**![ 組織概要アイコン ](assets/org-overview-icon.png) をクリックします。
 1. アクティビティログを表示する組織に現在所属していない場合は、画面の右上隅にある組織名をクリックし、ドロップダウンから組織を選択します。
-1. 画面上部付近の「**[!UICONTROL Activity Logs]**」タブをクリックします。
+1. 画面上部付近の **[!UICONTROL アクティビティログ]** タブをクリックします。
 
    アクティビティログページが開きます。
 1. **フィルター**![ フィルターアイコン ](assets/filter-activity-log.png) をクリックします。
@@ -100,7 +100,7 @@ ht-degree: 9%
 
 1. 左側のナビゲーションパネルで、**組織概要**![ 組織概要アイコン ](assets/org-overview-icon.png) をクリックします。
 1. アクティビティログを表示する組織に現在所属していない場合は、画面の右上隅にある組織名をクリックし、ドロップダウンから組織を選択します。
-1. 画面上部付近の「**[!UICONTROL Activity Logs]**」タブをクリックします。
+1. 画面上部付近の **[!UICONTROL アクティビティログ]** タブをクリックします。
 
    アクティビティログページが開きます。
 1. カレンダーから日付範囲を選択し、（オプション）時間を入力します。

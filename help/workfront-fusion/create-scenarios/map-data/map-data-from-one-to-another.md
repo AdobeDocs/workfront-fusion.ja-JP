@@ -4,10 +4,10 @@ description: マッピングとは、項目に構造化されたモジュール�
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e3f7729-f48e-451e-a90b-d680c9e3bcbc
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 32%
+source-wordcount: '797'
+ht-degree: 38%
 
 ---
 
@@ -30,17 +30,17 @@ ht-degree: 32%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
    <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規： [!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：[!DNL Workfront Fusion] ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -48,9 +48,9 @@ ht-degree: 32%
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：組織は [!DNL Adobe Workfront Fusion] を購入する必要があります。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
   </tr>
  </tbody> 
@@ -58,7 +58,7 @@ ht-degree: 32%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -68,7 +68,7 @@ ht-degree: 32%
 
 出力項目をモジュールの入力フィールドに割り当てるには：
 
-1. 左側のパネルで「**[!UICONTROL Scenarios]**」タブをクリックします。
+1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. データをマッピングするシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
 1. 前のモジュールまたはモジュールの出力を処理するモジュールをクリックします。
@@ -100,7 +100,7 @@ ht-degree: 32%
 
 #### インスタントトリガー
 
-1. モジュールを右クリックし、表示されるメニューで **[!UICONTROL Run this module only]** をクリックします。
+1. モジュールを右クリックし、表示されるメニューで「**[!UICONTROL このモジュールのみを実行]**」をクリックします。
 
    これはインスタントトリガーなので、イベントを監視し始めます。
 
@@ -114,8 +114,8 @@ ht-degree: 32%
 
 #### ポーリングトリガー
 
-1. モジュールを右クリックし、表示されるメニューで **[!UICONTROL Run this module only]** をクリックします。
-1. 出力がない場合は、「**[!UICONTROL Choose where to start]**」をクリックして設定を調整します。
+1. モジュールを右クリックし、表示されるメニューで「**[!UICONTROL このモジュールのみを実行]**」をクリックします。
+1. 出力がない場合は、「**[!UICONTROL 開始場所を選択]**」をクリックして設定を調整します。
 1. （条件付き）処理するイベントがない場合は、モジュールが監視するイベントを作成し、手順 2 を繰り返します。
 
    例えば、モジュールがタスクの割り当てを監視しているWorkfront / レコードを監視モジュールの場合、（Fusion 接続で使用していないユーザーとして）Workfrontにログインしてタスクを割り当ててから、モジュールを再度実行します。
@@ -133,7 +133,7 @@ ht-degree: 32%
 
 単一のモジュールを実行するには：
 
-1. モジュールを右クリックし、表示されるメニューで **[!UICONTROL Run this module only]** をクリックします。
+1. モジュールを右クリックし、表示されるメニューで「**[!UICONTROL このモジュールのみを実行]**」をクリックします。
 1. 入力項目のサンプル値を指定し、「**[!UICONTROL OK]**」をクリックします。
 1. モジュールの実行が終了したら、モジュールの上のバブルをクリックして、その出力全体を確認します。
 

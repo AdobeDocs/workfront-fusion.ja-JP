@@ -4,10 +4,10 @@ description: シナリオを作成または編集する際、シナリオ内で�
 author: Becky
 feature: Workfront Fusion
 exl-id: b3aed366-c399-44fa-8967-54ecb8647d96
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 67%
+source-wordcount: '649'
+ht-degree: 64%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 67%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -63,15 +63,15 @@ ht-degree: 67%
 
 <table>
     <tr>
-        <td>[!UICONTROL 初期値 &#x200B;]</td>
+        <td>[!UICONTROL 初期値 ]</td>
         <td>モジュールの最初のイテレーションに含める値を入力またはマッピングします。 デフォルト値は 1 です。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL 繰り返し &#x200B;]</td>
+        <td>[!UICONTROL 繰り返し ]</td>
         <td>モジュールが繰り返す回数を入力またはマッピングします。この数は、0 以上 10,000 以下である必要があります。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL ステップ &#x200B;]</td>
+        <td>[!UICONTROL ステップ ]</td>
         <td>これは、モジュールが値を増加させる数値です。 デフォルト値は 1 です。</td>
     </tr>
 </table>
@@ -80,8 +80,8 @@ ht-degree: 67%
 
 例えば、[!UICONTROL リピーター]モジュールを使用して「こんにちは 1」、「こんにちは 2」などの件名のメールを 5 通送信するには、**[!UICONTROL メール]／[!UICONTROL 自分にメール]**&#x200B;モジュールを[!UICONTROL リピーター]モジュールに接続します。
 
-1. 画面下部の [!UICONTROL &#x200B; フロー制御 &#x200B;] アイコン ![ フロー制御アイコン ](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) をクリックし、表示されるメニューで **[!UICONTROL リピータ]** をクリックします。
-1. [!UICONTROL &#x200B; リピーター &#x200B;] モジュールをクリックし、表示されたボックスで **[!UICONTROL 自動接続]** をクリックします。
+1. 画面下部の [!UICONTROL  フロー制御 ] アイコン ![ フロー制御アイコン ](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) をクリックし、表示されるメニューで **[!UICONTROL リピータ]** をクリックします。
+1. [!UICONTROL  リピーター ] モジュールをクリックし、表示されたボックスで **[!UICONTROL 自動接続]** をクリックします。
 
    リピーターのモジュールが開きます。
 
@@ -120,7 +120,7 @@ ht-degree: 67%
 
 ## [!UICONTROL ルーター]
 
-[!UICONTROL ルーター]モジュールを使用すると、フローを複数のルートに分岐し、データを各ルートで別々に処理できます。[!UICONTROL ルーター]モジュールはバンドルを受け取ると、ルートが[!UICONTROL ルーター]モジュールに接続された順序で、接続されている各ルートにバンドルを転送します。詳しくは、[ [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md) のルーターモジュールを参照してください。
+[!UICONTROL ルーター]モジュールを使用すると、フローを複数のルートに分岐し、データを各ルートで別々に処理できます。[!UICONTROL ルーター]モジュールはバンドルを受け取ると、ルートが[!UICONTROL ルーター]モジュールに接続された順序で、接続されている各ルートにバンドルを転送します。詳しくは、[Adobe Workfront Fusion のルーターモジュール ](/help/workfront-fusion/create-scenarios/add-modules/router-module.md) を参照してください。
 
 ## ディレクティブ
 

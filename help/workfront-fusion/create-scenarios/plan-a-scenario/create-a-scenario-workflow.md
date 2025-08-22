@@ -4,10 +4,10 @@ description: この一般的なワークフローに従って、シナリオを�
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: 394f80a2d7c124bbd00e1a5b51ad3dc6e73a996b
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 20%
+source-wordcount: '808'
+ht-degree: 22%
 
 ---
 
@@ -34,18 +34,18 @@ ht-degree: 20%
 
 ## シナリオの作成と命名
 
-1. [!DNL Workfront Fusion] アカウントにログインします。
-1. 左側 **[!UICONTROL Scenarios]** パネルで ![ シナリオアイコン ](assets/scenarios-icon.png) をクリックします。
+1. Workfront Fusion アカウントにログインします。
+1. 左側のパネルで **[!UICONTROL シナリオ]**![ シナリオアイコン ](assets/scenarios-icon.png) をクリックします。
 
    >[!NOTE]
    >
    >左側のナビゲーションパネルまたはアイコンが表示されない場合は、メニュー ![メニュー](assets/main-menu-icon-left-nav.png) アイコンをクリックします。
 
-1. （オプション） [!UICONTROL **フォルダー**] パネルで、「**[!UICONTROL Add folder]**」アイコン ![ フォルダーアイコンを追加 ](assets/add-folder-icon.png) をクリックし、最初のフォルダーの「練習シナリオ」のような名前を入力します。
+1. （オプション） [!UICONTROL **フォルダー**] パネルで **[!UICONTROL フォルダーを追加]** アイコン ![ フォルダーアイコンを追加 ](assets/add-folder-icon.png) をクリックし、最初のフォルダーに「練習シナリオ」のような名前を入力します。
 
-1. （オプション）フォルダーを開き、ページの右上隅にある「**[!UICONTROL Create a new scenario]**」をクリックします。
+1. （オプション）フォルダーを開き、ページの右上隅にある **[!UICONTROL 新しいシナリオの作成]** をクリックします。
 
-1. 左上隅の **[!UICONTROL New scenario]** プレースホルダー名を選択し、「練習シナリオ 1」などの名前を入力します。
+1. 左上隅にある「**[!UICONTROL 新規シナリオ]**」プレースホルダー名を選択し、「練習用シナリオ 1」などの名前を入力します。
 
    ![ シナリオに名前を付ける ](assets/name-the-scenario.png)
 
@@ -101,13 +101,13 @@ Google、Microsoft、または専用コネクタのないアプリケーショ�
 
 シナリオをテストすると、シナリオが意図したとおりに動作しているかどうかを判断できます。 その後、結果に基づいてシナリオを修正し、再テストできます。
 
-1. シナリオエディターの左下にある「**[!UICONTROL Run once]**」をクリックします。
+1. シナリオエディターの左下隅にある「**[!UICONTROL 1 回実行]**」をクリックします。
 1. シナリオの実行が完了したら、各モジュールの上にある実行インスペクターのバブルをクリックして、情報の入力とそのモジュールの出力を確認します。
 
    * シナリオ実行情報の読み取りに関する一般的な情報については、[ シナリオ実行フロー ](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md) を参照してください。
-   * 処理されたバンドルについて詳しくは、[ [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md) でのシナリオの実行、サイクル、フェーズを参照してください。
+   * 処理されたバンドルについて詳しくは、[Adobe Workfront Fusion でのシナリオの実行、サイクル、フェーズ ](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md) を参照してください。
 
-1. [!DNL Workfront Fusion] では、左下隅付近 **[!UICONTROL Save]** ある ![ 保存アイコン ](assets/save-icon.png) をクリックして、シナリオの進捗を保存します。
+1. Workfront Fusion で、左下隅付近の **[!UICONTROL 保存]**![ 保存アイコン ](assets/save-icon.png) をクリックして、シナリオの進捗を保存します。
 
    >[!IMPORTANT]
    >
@@ -148,12 +148,12 @@ Google、Microsoft、または専用コネクタのないアプリケーショ�
    <td>Cmd + Shift + Enter </span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Open the DevTool]</td> 
+   <td role="rowheader">[!UICONTROL DevTool を開く ]</td> 
    <td>F12</td> 
    <td>Ctrl + Fn + F12</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select multiple modules]</td> 
+   <td role="rowheader">[!UICONTROL 複数のモジュールを選択 ]</td> 
    <td>Shift + ドラッグ</td> 
    <td>Shift キーを押しながらドラッグ </span> </td> 
   </tr> 
@@ -163,7 +163,7 @@ Google、Microsoft、または専用コネクタのないアプリケーショ�
    <td>Cmd+C</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Paste]</td> 
+   <td role="rowheader">[!UICONTROL 貼り付け ]</td> 
    <td>Ctrl+V</td> 
    <td>Cmd+V</span> </td> 
   </tr> 

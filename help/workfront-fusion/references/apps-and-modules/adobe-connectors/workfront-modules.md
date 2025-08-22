@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion Adobe Workfront コネクタを使用する�
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 9dfab6838057a5852a2725dbfd398144ea2097dd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '8061'
-ht-degree: 55%
+source-wordcount: '8067'
+ht-degree: 56%
 
 ---
 
@@ -56,7 +56,7 @@ Adobe Workfront Fusion Adobe Workfront コネクタを使用すると、Workfron
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 
 >[!NOTE]
@@ -194,7 +194,7 @@ Workfront Fusion でWorkfront モジュールを設定する場合、以下に�
       <td>[!UICONTROL Record Origin]</td> 
       <td>
        <p>シナリオで [!UICONTROL New Records Only]、[!UICONTROL Updated Records Only]、[!UICONTROL New and Updated Records]、または [!DNL Deleted Records Only] を監視するかどうかを選択します。</p>
-       <p><b> メモ </b>: [!UICONTROL 新規および更新されたレコード &#x200B;] を選択する場合、Webhook の作成により（同じ Webhook アドレスに対して） 2 つのイベント購読が作成されます。</p>
+       <p><b> メモ </b>: [!UICONTROL 新規および更新されたレコード ] を選択する場合、Webhook の作成により（同じ Webhook アドレスに対して） 2 つのイベント購読が作成されます。</p>
        </td> 
      </tr> 
     </tbody> 
@@ -206,7 +206,7 @@ Workfront Fusion でWorkfront モジュールを設定する場合、以下に�
 
 Web フックを作成した後、イベントの送信先エンドポイントのアドレスを表示できます。
 
-詳しくは、Workfront ドキュメントの Event Subscription API の記事の [ イベントペイロードの例 ](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) を参照してください。
+詳しくは、Workfront ドキュメントの Event Subscription API の記事の [ イベントペイロードの例 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) を参照してください。
 
 このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
@@ -280,7 +280,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
    <td> <p>このモジュールの出力バンドルに含めるフィールドを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 参照 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 参照 ]</td> 
    <td> <p>このモジュールの出力バンドルに含める参照フィールドを選択します。</p> </td> 
   </tr> 
   <tr> 
@@ -363,11 +363,11 @@ Web フックを作成した後、イベントの送信先エンドポイント�
    <td> <p>オブジェクトの変換時に必要なオプションを有効にします。変換先または変換元のオブジェクトに応じて、オプションを使用できます。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL ネイティブ フィールドのコピー &#x200B;]</td> 
+   <td>[!UICONTROL ネイティブ フィールドのコピー ]</td> 
    <td> <p>このオプションを有効にすると、元のオブジェクトから新しいオブジェクトにネイティブフィールドがコピーされます。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL カスタム フォームのコピー &#x200B;]</td> 
+   <td>[!UICONTROL カスタム フォームのコピー ]</td> 
    <td> <p>このオプションを有効にすると、元のオブジェクトから新しいオブジェクトにネイティブフィールドがコピーされます。</p> </td> 
   </tr> 
  </tbody> 
@@ -375,7 +375,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 
 +++
 
-+++ **[!UICONTROL レコードを作成]**
++++ **[!UICONTROL レコードを作成]** 
 
 このアクションモジュールは、Workfrontのプロジェクト、タスク、イシューなどのオブジェクトを作成し、新しいオブジェクトにカスタムフォームを追加できます。 モジュールを使用すると、モジュールで使用可能なオブジェクトのフィールドを選択できます。
 
@@ -399,7 +399,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
-   <td> <p>モジュールで作成するWorkfront レコードのタイプを選択します。</p> <p>例えば、プロジェクトを作成する場合は、ドロップダウンリストから「[!UICONTROL プロジェクト &#x200B;]」を選択します。</p> </td> 
+   <td> <p>モジュールで作成するWorkfront レコードのタイプを選択します。</p> <p>例えば、プロジェクトを作成する場合は、ドロップダウンリストから「[!UICONTROL プロジェクト ]」を選択します。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Select fields to map]</td> 
@@ -428,18 +428,18 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 >
 >* **個々のユーザーの解決**
 >
->      「ユーザー」リストで個々のユーザーを解決できます。
+>      ユーザーリストで個々のユーザーを解決できます。
 >
 >      1. ユーザーリストで 1 人または複数のユーザーを選択します。
->      1. リストヘッダーの「。..」メニューをクリックします。
+>      1. リストヘッダーの 3 点メニューをクリックします。
 >      1. 「**承認**」を選択します。
->      1. 数分後、ページを更新します。
+>      1. 数分後にページを更新します。
 >
 >* **大規模なバッチで追加されたユーザーの解決**
 >
->   大きなバッチで追加されたユーザーを解決するには、ユーザーのバッチをAdobe Admin Consoleに直接追加します。
+>   大きなバッチで追加されたユーザーを解決するには、ユーザーのバッチを Adobe Admin Console に直接追加します。
 >
->   手順については、[ 複数のユーザーの管理」を参照してください | Adobe ドキュメント ](https://helpx.adobe.com/jp/enterprise/using/bulk-upload-users.html)CSV の一括アップロード。
+>   手順については、アドビドキュメントの[複数ユーザーの管理 | CSV の一括アップロード](https://helpx.adobe.com/jp/enterprise/using/bulk-upload-users.html)を参照してください。
 
 +++
 
@@ -448,7 +448,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 >[!IMPORTANT]
 >
 >このモジュールは、レコードを作成モジュールに置き換えられました。 新しいシナリオでは、そのモジュールを使用することをお勧めします。
->このモジュールを使用する既存のシナリオは、引き続き期待どおりに機能します。 このモジュールは、2025 年 5 月にモジュールセレクターから削除されます。
+>>このモジュールを使用する既存のシナリオは、引き続き期待どおりに機能します。 このモジュールは、2025 年 5 月にモジュールセレクターから削除されます。
 
 このアクションモジュールは、Workfront でプロジェクト、タスク、イシューなどのオブジェクトを作成します。モジュールを使用すると、モジュールで使用可能なオブジェクトのフィールドを選択できます。
 
@@ -458,7 +458,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 
 入力フィールドの最小数を指定してください。例えば、イシューを作成する場合は、「プロジェクト ID」フィールドに有効な親プロジェクト ID を指定して、Workfront でイシューの配置先を示す必要があります。マッピングパネルを使用してシナリオ内の別のモジュールからこの情報をマッピングするか、名前を入力してリストから選択し、手動で入力することもできます。
 
-このモジュールでは、オブジェクトを作成する際にカスタムフォームを添付しません。 オブジェクトの作成時にカスタムフォームを添付するには、[!UICONTROL &#x200B; レコードの作成（カスタムフォームの添付） &#x200B;] モジュールを使用します。
+このモジュールでは、オブジェクトを作成する際にカスタムフォームを添付しません。 オブジェクトの作成時にカスタムフォームを添付するには、[!UICONTROL  レコードの作成（カスタムフォームの添付） ] モジュールを使用します。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
@@ -474,7 +474,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
-   <td> <p>モジュールで作成するWorkfront レコードのタイプを選択します。</p> <p>例えば、プロジェクトを作成する場合は、ドロップダウンリストから「[!UICONTROL プロジェクト &#x200B;]」を選択します。</p> </td> 
+   <td> <p>モジュールで作成するWorkfront レコードのタイプを選択します。</p> <p>例えば、プロジェクトを作成する場合は、ドロップダウンリストから「[!UICONTROL プロジェクト ]」を選択します。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Select fields to map]</td> 
@@ -574,7 +574,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
    <td>このオプションを有効にすると、Workfront UI から削除の確認がリクエストされる場合でも、レコードが確実に削除されます。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 非同期削除 &#x200B;]</td> 
+   <td>[!UICONTROL 非同期削除 ]</td> 
    <td>モジュールを非同期で削除できるようにするには、このオプションを有効にします。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -665,7 +665,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
       </ul> <p>その他のすべてのレコードタイプに対して、<b>[!UICONTROL Other objects and endpoints]</b> を選択し、アルファベット順に並べ替えられたページでレコードタイプを探します。</p> </li> 
      <li value="2"> <p>適切なレコードタイプのページで、アクションを検索（Ctrl + F キーまたは Command + F キー）します。</p> </li> 
      <li value="3"> <p>選択したアクションで使用可能なフィールドの説明を表示します。</p> </li> 
-    </ol> <p>メモ：  <p>Workfront [!UICONTROL その他アクション &#x200B;] モジュールを使用してプルーフを作成する場合、ベストプラクティスは、詳細なオプションを使用せずにプルーフを作成し、[!DNL Workfront Proof] SOAP API を使用してプルーフを更新することです。</p><p>Workfront API （このモジュールが使用）を使用したプルーフの作成について詳しくは、<a href="https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Adobe Workfront API でプルーフを作成する際の詳細プルーフオプションの追加 </a> を参照してください</p> </p> </td> 
+    </ol> <p>メモ：  <p>Workfront [!UICONTROL その他アクション ] モジュールを使用してプルーフを作成する場合、ベストプラクティスは、詳細なオプションを使用せずにプルーフを作成し、[!DNL Workfront Proof] SOAP API を使用してプルーフを更新することです。</p><p>Workfront API （このモジュールが使用）を使用したプルーフの作成について詳しくは、<a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Adobe Workfront API でプルーフを作成する際の詳細プルーフオプションの追加 </a> を参照してください</p> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
@@ -859,7 +859,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 <td> <p>このモジュールの出力バンドルに含める情報を選択します。</p> </td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL 出力のカスタム フォーム &#x200B;]</td>
+    <td>[!UICONTROL 出力のカスタム フォーム ]</td>
      <td> <p>このモジュールの出力バンドルに含めるカスタムフォームを選択し、出力に含めるカスタムフォームから特定のフィールドを選択します。</p> </td> 
   </tr> 
   <tr> 
@@ -886,7 +886,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 >[!IMPORTANT]
 >
 >このモジュールは、レコードを読み取りモジュールに置き換えられました。 新しいシナリオでは、そのモジュールを使用することをお勧めします。
->このモジュールを使用する既存のシナリオは、引き続き期待どおりに機能します。 このモジュールは、2025 年 5 月にモジュールセレクターから削除されます。
+>>このモジュールを使用する既存のシナリオは、引き続き期待どおりに機能します。 このモジュールは、2025 年 5 月にモジュールセレクターから削除されます。
 
 このアクションモジュールは、1 つのレコードからデータを取得します。
 
@@ -939,9 +939,9 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 
 Workfrontは最近、イベント購読サービスの新しいバージョンをリリースしました。 新しいバージョンはWorkfront API に対する変更ではなく、イベント購読機能に対する変更です。 このアクションモジュールは、このシナリオで使用されるイベントペイロードのバージョンを更新します。
 
-新しいイベント購読のバージョンについて詳しくは、Workfront ドキュメントの [ イベント購読のバージョン管理 ](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) を参照してください
+新しいイベント購読のバージョンについて詳しくは、Workfront ドキュメントの [ イベント購読のバージョン管理 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) を参照してください
 
-ウェビナーの録画など、イベント購読のアップグレード中にWorkfront Fusion シナリオを保持する方法については、[ イベント購読 V2 のアップグレード中に Fusion シナリオを保持する ](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ja) を参照してください。
+ウェビナーの録画など、イベント購読のアップグレード中にWorkfront Fusion シナリオを保持する方法については、[ イベント購読 V2 のアップグレード中に Fusion シナリオを保持する ](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182) を参照してください。
 
 <table style="table-layout:auto">
  <col> 
@@ -1015,7 +1015,7 @@ Workfrontは最近、イベント購読サービスの新しいバージョン�
 >[!IMPORTANT]
 >
 >このモジュールは、レコードを更新モジュールに置き換えられました。 新しいシナリオでは、そのモジュールを使用することをお勧めします。
->このモジュールを使用する既存のシナリオは、引き続き期待どおりに機能します。 このモジュールは、2025 年 5 月にモジュールセレクターから削除されます。
+>>このモジュールを使用する既存のシナリオは、引き続き期待どおりに機能します。 このモジュールは、2025 年 5 月にモジュールセレクターから削除されます。
 
 このアクションモジュールは、プロジェクト、タスク、イシューなどのオブジェクトを更新します。モジュールを使用すると、モジュールで使用可能なオブジェクトのフィールドを選択できます。
 
@@ -1208,7 +1208,7 @@ Workfrontは最近、イベント購読サービスの新しいバージョン�
    <td> <p>モジュールで検索するWorkfront レコードのタイプを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL カスタム フォーム リスト &#x200B;]</td> 
+   <td>[!UICONTROL カスタム フォーム リスト ]</td> 
    <td> <p>1 つ以上のカスタムフォームを選択します。 これらのカスタムフォームのフィールドは、検索クエリで使用できるようになります。</p> </td> 
   </tr> 
   <tr> 
@@ -1249,7 +1249,7 @@ Workfrontは最近、イベント購読サービスの新しいバージョン�
 >[!IMPORTANT]
 >
 >このモジュールは、レコードを検索モジュールに置き換えられました。 新しいシナリオでは、そのモジュールを使用することをお勧めします。
->このモジュールを使用する既存のシナリオは、引き続き期待どおりに機能します。 このモジュールは、2025 年 5 月にモジュールセレクターから削除されます。
+>>このモジュールを使用する既存のシナリオは、引き続き期待どおりに機能します。 このモジュールは、2025 年 5 月にモジュールセレクターから削除されます。
 
 この検索モジュールは、指定した検索クエリに一致するWorkfront内のオブジェクト内のレコードを検索します。
 
@@ -1631,7 +1631,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 >[!NOTE]
 >
->Workfront オブジェクトタイプは設定に含まれていないので、「[!UICONTROL &#x200B; ドキュメントをダウンロード &#x200B;]」モジュールはこのテーブルに含まれていません。
+>Workfront オブジェクトタイプは設定に含まれていないので、「[!UICONTROL  ドキュメントをダウンロード ]」モジュールはこのテーブルに含まれていません。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -2259,13 +2259,13 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >* Workfrontは最近、イベント購読サービスの新しいバージョンをリリースしました。 新しいバージョンはWorkfront API に対する変更ではなく、イベント購読機能に対する変更です。 このアクションモジュールは、このシナリオで使用されるイベントペイロードのバージョンを更新します。
 >
->   新しいイベント購読のバージョンについて詳しくは、Workfront ドキュメントの [ イベント購読のバージョン管理 ](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) を参照してください
+>   新しいイベント購読のバージョンについて詳しくは、Workfront ドキュメントの [ イベント購読のバージョン管理 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) を参照してください
 >
->   ウェビナーの録画など、イベント購読のアップグレード中にWorkfront Fusion シナリオを保持する方法については、[ イベント購読 V2 アップグレード中の Fusion シナリオの保持（https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ja） ] を参照してください。
+>   ウェビナーの録画など、イベント購読のアップグレード中にWorkfront Fusion シナリオを保持する方法については、[ イベント購読 V2 アップグレード中の Fusion シナリオの保持（https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182） ] を参照してください。
 
 Workfront [!UICONTROL Watch Events] モジュールは、Workfront API でイベント購読を作成する Webhook に基づくシナリオをトリガーします。 イベント登録は、web フックに送信されるイベントを決定する一連のデータです。例えば、イシューを監視する[!UICONTROL イベントの監視]モジュールを設定した場合、イベント登録はイシューに関連するイベントのみを送信します。
 
-Fusion ユーザーは、イベント登録フィルターを使用して、ユースケースに適したイベント登録を作成できます。例えば、Workfront API でイベント購読を設定して、特定のプロジェクトの問題のみを Webhook に送信し、「[!UICONTROL &#x200B; イベントをウォッチ &#x200B;]」モジュールでそのプロジェクトの問題のみをトリガーできるようにします。 より範囲の狭いトリガーを作成できるので、無関係なトリガーの数が減り、シナリオの設計を改善できます。
+Fusion ユーザーは、イベント登録フィルターを使用して、ユースケースに適したイベント登録を作成できます。例えば、Workfront API でイベント購読を設定して、特定のプロジェクトの問題のみを Webhook に送信し、「[!UICONTROL  イベントをウォッチ ]」モジュールでそのプロジェクトの問題のみをトリガーできるようにします。 より範囲の狭いトリガーを作成できるので、無関係なトリガーの数が減り、シナリオの設計を改善できます。
 
 これは、Workfront Fusion シナリオでフィルターを設定する場合とは異なります。 イベント登録フィルターを使用しない場合、web フックは、選択されたオブジェクトタイプに関連するすべてのイベントを受信します。これらのイベントのほとんどはシナリオとは無関係と思われるので、シナリオを続行する前に除外する必要があります。
 
@@ -2311,7 +2311,7 @@ Workfront／イベントの監視フィルターで使用できる演算子は�
 >
 >1 日に 100 件のイシューが作成され、そのうち 2 件のみが Ana に割り当てられている場合、シナリオは 100 回実行されます。98 回の実行はフィルターで停止しますが、トリガーモジュールは引き続きデータを消費し、すべての実行で操作が実行されます。
 
-Workfront イベント購読について詳しくは、[FAQ - イベント購読 ](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq) を参照してください。
+Workfront イベント購読について詳しくは、[FAQ - イベント購読 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq) を参照してください。
 
 Webhook について詳しくは、「Adobe Workfront Fusion の [ インスタントトリガー（Webhook）」を参照してください ](/help/workfront-fusion/references/modules/webhooks-reference.md)
 

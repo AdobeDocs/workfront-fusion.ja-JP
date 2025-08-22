@@ -6,10 +6,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: dafecd8b-96e5-46da-9ab6-15f0bc9b52a4
-source-git-commit: 23e9f383b25c7b3789c413e557b94418e48a636b
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 17%
+source-wordcount: '524'
+ht-degree: 41%
 
 ---
 
@@ -32,17 +32,17 @@ Adobe Workfront Fusion テンプレートは、様々なワークフローを自
   <col>
   <tbody>
     <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
+      <td role="rowheader">Adobe Workfront プラン</td>
       <td><p>任意</p></td>
     </tr>
     <tr data-mc-conditions="">
-      <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td>
-      <td><p>新規： [!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p></td>
+      <td role="rowheader">Adobe Workfront プラン</td>
+      <td><p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p></td>
     </tr>
     <tr>
-      <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td>
+      <td role="rowheader">Adobe Workfront Fusion ライセンス**</td>
       <td>
-        <p>現在：[!DNL Workfront Fusion] ライセンスは必要ありません。</p>
+        <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
         <p>または</p>
         <p>レガシー：任意</p>
       </td>
@@ -52,11 +52,11 @@ Adobe Workfront Fusion テンプレートは、様々なワークフローを自
       <td>
         <p>新規：</p>
         <ul>
-          <li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：組織は [!DNL Adobe Workfront Fusion] を購入する必要があります。</li>
-          <li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li>
+          <li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：Adobe Workfront Fusion は、組織で購入する必要があります。</li>
+          <li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li>
         </ul>
         <p>または</p>
-        <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
+        <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
       </td>
     </tr>
   </tbody>
@@ -65,20 +65,20 @@ Adobe Workfront Fusion テンプレートは、様々なワークフローを自
 <!--
 For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/access-level-requirements-in-documentation.md). 
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->
 
 +++
 
-## [!DNL Workfront Fusion] テンプレートを承認または却下する
+## Workfront Fusion テンプレートの承認または却下
 
-テンプレートを承認すると、「[!UICONTROL Public templates]」タブに表示されるようになり、すべてのユーザーが使用できるようになります。
+テンプレートを承認すると、「[!UICONTROL  公開テンプレート ]」タブに表示され、すべてのユーザーが使用できるようになります。
 
-テンプレートを承認しない場合は、「[!UICONTROL Public templates]」タブから削除され、そのテンプレートを作成したチームでのみ使用できるようになります。
+テンプレートを却下すると、「[!UICONTROL 公開テンプレート]」タブからテンプレートが削除され、作成したチームのみが使用できます。
 
-1. 左側のナビゲーションパネルで「**[!UICONTROL Administration]**」をクリックして、[!UICONTROL Administration] 領域を開きます。
-1. 左側のナビゲーションパネルで「**[!UICONTROL Templates]**」をクリックします。
-1. テンプレートを承認する場合は、テンプレートの右側の **[!UICONTROL Approve]** をクリックします。
-1. テンプレートの承認を取り消す場合は、テンプレートの右側にある「**[!UICONTROL Disapprove]**」をクリックします。
+1. 左側のナビゲーションパネルで「**[!UICONTROL 管理]**」をクリックして、[!UICONTROL 管理]エリアを開きます。
+1. 左側のナビゲーションパネルで「**[!UICONTROL テンプレート]**」をクリックします。
+1. テンプレートを承認する場合は、テンプレートの右側にある「**[!UICONTROL 承認]**」をクリックします。
+1. テンプレートを却下する場合は、テンプレートの右側にある「**[!UICONTROL 却下]**」をクリックします。
 
 >[!NOTE]
 >
@@ -91,17 +91,17 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 以下のステータスを使用できます。
 
-* **[!UICONTROL Private]**：このテンプレートは、テンプレート作成者とそのチームに対してのみ表示されます。
-* **[!UICONTROL Published]**：このテンプレートは、テンプレート作成者とそのチームに対してのみ表示されます。 公開したら、必要に応じて承認用にテンプレートを送信できます。 共有可能なリンクをコピーすることもできます。
-* **[!UICONTROL Approved]**：このテンプレートは、すべてのWorkfront Fusion ユーザーに対して「[!UICONTROL Public templates]」タブに表示されます。 画面の右上隅にある「[!UICONTROL Options]」をクリックして、共有可能なリンクをコピーすることもできます。
+* **[!UICONTROL 非公開]**：このテンプレートは、テンプレート作成者とそのチームに対してのみ表示されます。
+* **[!UICONTROL 公開済み]**：このテンプレートは、テンプレート作成者とそのチームに対してのみ表示されます。公開したら、必要に応じて承認用にテンプレートを送信できます。 共有可能なリンクをコピーすることもできます。
+* **[!UICONTROL 承認済み]**：このテンプレートは、すべての Workfront Fusion ユーザーの「[!UICONTROL 公開テンプレート]」タブに表示されます。画面の右上隅にある [!UICONTROL  オプション ] をクリックして、共有可能なリンクをコピーすることもできます。
 
-また、「ステータス」タブからステータ [!UICONTROL Team templates] を確認することもできます。 テンプレートが公開されると、テンプレート名の右側にアイコンが表示されます。
+「[!UICONTROL チームテンプレート]」タブから、ステータスを確認することができます。テンプレートが公開されると、テンプレート名の右側にアイコンが表示されます。
 
 * **目のアイコン**：テンプレートが公開され、チームに対してのみ表示され、承認リクエストが送信されませんでした。
 * **黄色のチェックマークアイコン**：テンプレートは公開され、チームに対してのみ表示され、「公開テンプレート」タブに追加される承認が保留中です。
-* **緑のチェックマークアイコン**：テンプレートは、「公開テンプレート」タブに表示され、すべてのWorkfront Fusion ユーザーに表示されます。 また、「[!UICONTROL Team templates]」タブにも表示されます。 テンプレート作成者またはチームメンバーは、引き続き編集できます。
+* **緑のチェックマークアイコン**：テンプレートは、「公開テンプレート」タブに表示され、すべてのWorkfront Fusion ユーザーに表示されます。 「[!UICONTROL  チームテンプレート ]」タブにも表示されます。 テンプレート作成者またはチームメンバーは、引き続き編集できます。
 
-アイコンのないテンプレートのステータスは [!UICONTROL Private] です。 これらは公開されておらず、チームにのみ表示されます。
+アイコンのないテンプレートは[!UICONTROL プライベート]ステータスになります。これらは公開されておらず、チームにのみ表示されます。
 
 
 <!--

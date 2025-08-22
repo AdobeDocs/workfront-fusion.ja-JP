@@ -3,20 +3,20 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: get-started-with-workfront-fusion-2-0
 title: 基本的なシナリオの作成
-description: Adobe Workfront Fusion を使用してシンプルな自動処理シナリオを作成する方法について説明します。 自動処理シナリオは、データの操作や変換を含む Workfront プロセスを自動化します。この例では、Workfront内のタスクを検索し、 [!DNL Workfront]  れをプロジェクトに変換するシナリオの作成手順を説明します。
+description: Adobe Workfront Fusion を使用してシンプルな自動処理シナリオを作成する方法について説明します。 自動処理シナリオは、データの操作や変換を含む Workfront プロセスを自動化します。この例では、WorkfrontでWorkfront タスクを検索し、によってタスクがプロジェクトに変換されるシナリオの作成手順を説明します。
 author: Becky
 feature: Workfront Fusion
 exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 25%
+source-wordcount: '1416'
+ht-degree: 24%
 
 ---
 
 # 基本的なシナリオの作成
 
-[!DNL Adobe Workfront Fusion] の役割は、同じタスクを何度も繰り返すのではなく、新しいタスクに集中できるようにプロセスを自動化することです。これは、アプリ内やサービス内、およびそれらの間でアクションをリンクし、データを自動的に転送および変換するシナリオを作成することで機能します。作成するシナリオは、アプリまたはサービス内のデータを監視し、そのデータを処理して必要な結果を提供します。
+Adobe Workfront Fusion の役割は、プロセスを自動化して、同じ作業を何度も繰り返すのではなく、新しい作業に集中できるようにすることです。 これは、アプリ内やサービス内、およびそれらの間でアクションをリンクし、データを自動的に転送および変換するシナリオを作成することで機能します。作成するシナリオは、アプリまたはサービス内のデータを監視し、そのデータを処理して必要な結果を提供します。
 
 この例では、Workfrontでリクエストを検索し、によってリクエストがプロジェクトに変換されるシナリオの作成プロセスを説明します。
 
@@ -31,17 +31,17 @@ ht-degree: 25%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
    <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規： [!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：[!DNL Workfront Fusion] ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -49,9 +49,9 @@ ht-degree: 25%
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：組織は [!DNL Adobe Workfront Fusion] を購入する必要があります。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
   </tr>
  </tbody> 
@@ -59,7 +59,7 @@ ht-degree: 25%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについては、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -75,7 +75,7 @@ ht-degree: 25%
 
    シナリオエディターが表示され、中央に空のモジュールが含まれます。
 
-1. 左上隅の **[!UICONTROL New scenario]** プレースホルダー名を選択し、名前を入力します。
+1. 左上隅の **[!UICONTROL 新規シナリオ]** プレースホルダー名を選択し、名前を入力します。
 1. [ 最初のモジュールを追加して設定 ](#add-and-configure-the-first-module) を続行します。
 
 ### 最初のモジュールを追加して設定
@@ -84,45 +84,45 @@ ht-degree: 25%
 
    アプリのリストがモジュールの右側に表示されます。
 
-1. 「**[!DNL Adobe Workfront]**」を選択します。 表示されない場合は、リストの下部にある検索バーをクリックして「Workfront」と入力し、リストに表示されたら選択します。
+1. 「**Adobe Workfront**」を選択します。 表示されない場合は、リストの下部にある検索バーをクリックして「Workfront」と入力し、リストに表示されたら選択します。
 
-   リストが変わり、使用可能なすべて [!DNL Workfront] モジュールが表示されます。
+   リストが変わり、使用可能なすべてのWorkfront モジュールが表示されます。
 
-1. **[!UICONTROL Search]** モジュールをクリックします。
+1. **[!UICONTROL 検索]** モジュールをクリックします。
 
    モジュール設定ウィンドウが開きます。
 
-1. [!UICONTROL Connection] ボックスで、Workfront接続を選択します。
+1. 「[!UICONTROL  接続 ]」ボックスで、Workfront接続を選択します。
 
    Workfrontに接続されていない場合は、[ 接続の作成 ](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md) を参照してください
-1. 「[!UICONTROL Record Type]」ボックスで「**[!UICONTROL Issue]**」を選択します。 これにより、モジュールはリクエストを含む問題のみを検索するように設定されます。
+1. 「[!UICONTROL  レコードタイプ ]」ボックスで、「**[!UICONTROL イシュー]**」を選択します。 これにより、モジュールはリクエストを含む問題のみを検索するように設定されます。
 
-   「**[!UICONTROL Issue]**」という単語を入力し始めると、リストに [!UICONTROL Issue] が表示されます。
+   「**[!UICONTROL イシュー]**」という単語を入力し始めると、リストに [!UICONTROL  イシュー ] が表示されます。
 
-1. 「**[!UICONTROL Result Set]**」ボックスで「**[!UICONTROL First Matching Record]**」を選択します。
+1. 「**[!UICONTROL 結果セット]**」ボックスで、「**[!UICONTROL 最初に一致したレコード]**」を選択します。
 
    これにより、条件を満たす最初のレコードのみを返すようにモジュールが設定されます。
-1. **[!UICONTROL Search criteria]** 領域で、特定のタスクを返す条件を設定します。
+1. **[!UICONTROL 検索条件]** 領域で、特定のタスクを返す条件を設定します。
 
-   1. [!UICONTROL Search Criteria] の下にある最初のボックスで、検索に含めるフィールドを選択します。 この例では、「**[!UICONTROL Name]**」を選択します。
+   1. [!UICONTROL  検索条件 ] の最初のボックスで、検索に含めるフィールドを選択します。 この例では、「**[!UICONTROL 名前]**」を選択します。
 
-      「**[!UICONTROL Name]**」という単語を入力し始めると、リストに [!UICONTROL name] が表示されます。
+      「**[!UICONTROL name]**」という単語を入力し始めると、リストに [!UICONTROL name] が表示されます。
    1. オペレーターの場合は、「存在する **の横にあるドロップダウン矢印をクリックし** 「含む [!UICONTROL **大文字と小文字を区別しない）**] に変更します。
 
       これにより、名前全体を入力しない場合または名前に大文字と小文字を区別せずに入力した場合でも、モジュールは名前に選択した単語を含むプロジェクトを検索できます（すべて大文字など）。
-   1. [!UICONTROL Search Criteria] の下の最後のフィールドに、検索するタスクの名前に含まれていることがわかっている単語または語句を入力します。
+   1. [!UICONTROL  検索条件 ] の下の最後のフィールドに、検索するタスクの名前に含まれていることがわかっている単語または語句を入力します。
 
-1. **[!UICONTROL Outputs]** リストで、モジュールの出力に使用するフィールドを選択します。 この例では、「**[!UICONTROL ID]**」フィールドと「**[!UICONTROL Name]**」フィールドを選択します。
+1. **[!UICONTROL 出力]**&#x200B;リストで、モジュールを出力するフィールドを選択します。この例では、「**[!UICONTROL ID]**」フィールドおよび「**[!UICONTROL 名前]**」フィールドを選択します。
 
    >[!TIP]
    >
    >**Cmd+F**（[!DNL Mac] OS）または **Ctrl+F**（[!DNL Windows] OS）を使用して、すばやくフィールドを検索できます。
 
-1. 「**[!UICONTROL OK]**」をクリックして、モジュール設定を保存します。
+1. **[!UICONTROL OK]** をクリックして、モジュール設定を保存します。
 
-1. モジュールを右クリックして [**[!UICONTROL Rename]**] をクリックし、モジュールで実行する内容を説明する名前（「要求の検索」など）を入力して [**[!UICONTROL OK]**] をクリックします。
+1. モジュールを右クリックして **[!UICONTROL 名前を変更]** をクリックし、モジュールで実行する内容を示す名前（「リクエストを検索」など）を入力して **[!UICONTROL OK]** をクリックします。
 
-   名前はモジュールのすぐ下に表示されます。その下に [!DNL Workfront Fusion] には、モジュールで実行されるアクションのタイプに関する簡単な説明が含まれます。
+   名前はモジュールのすぐ下に表示されます。次に、Workfront Fusion でモジュールが実行するアクションの種類について簡単に説明します。
 
    ![ 名前を変更したモジュール ](assets/module-renamed-wf.png)
 
@@ -130,17 +130,17 @@ ht-degree: 25%
 
 ## 2 つ目のモジュールを追加して設定
 
-1. モジュールの右側にある円の上にマウスポインターを置き、「**[!UICONTROL Add another module]**」をクリックします。
-1. アプリケーションのリストから「[!DNL Adobe Workfront]」を選択し、モジュール **[!UICONTROL Convert object]** を選択します。
-1. [!UICONTROL Connection] フィールドで、前のモジュールで使用したのと同じWorkfront接続を選択します。
-1. モジュールはイシューを変換するので、「**[!UICONTROL Record type]**」フィールドで「**[!UICONTROL issue]**」を選択します。
-1. 「**[!UICONTROL Convert to]**」フィールドで「**プロジェクト**」を選択します。
+1. モジュールの右側にある部分的な円にポインタを合わせ、「**[!UICONTROL 別のモジュールを追加]**」をクリックします。
+1. アプリケーションのリストから「Adobe Workfront」を選択し、モジュール **[!UICONTROL オブジェクトを変換]** を選択します。
+1. 「[!UICONTROL  接続 ]」フィールドで、前のモジュールで使用したのと同じWorkfront接続を選択します。
+1. モジュールによってイシューが変換されるので、「**[!UICONTROL レコードタイプ]**」フィールドで「**[!UICONTROL イシュー]**」を選択します。
+1. **[!UICONTROL 変換先]** フィールドで、「**プロジェクト**」を選択します。
 1. 「タスク ID」フィールドの横にある「マップ」切替スイッチをクリックして有効にします。
 
    切替スイッチが有効になると青に変わります。 これにより、前のモジュールからタスク ID をマッピングできます。
 
    ![ マップ切り替え ](assets/map-toggle.png)
-1. **[!UICONTROL Task ID]** フィールドをクリックします。
+1. 「**[!UICONTROL タスク ID]**」フィールドをクリックします。
 
    パネルが開き、プロジェクトに変換するタスクの ID として使用するものを選択できます。 マッピングを有効にしたため、パネルには以前のモジュールからの出力が含まれます。 以前のモジュールの出力として ID を選択したので、パネルで使用できるようになりました。
 
@@ -152,9 +152,9 @@ ht-degree: 25%
    ![ マップ ID](assets/map-id.png)
 
 1. 「**テンプレート ID**」フィールドをクリックし、このプロジェクトに使用するWorkfront テンプレートの名前の入力を開始し、リストに表示されたら選択します。
-1. 「**[!UICONTROL OK]**」をクリックして、モジュール設定を保存します。
+1. **[!UICONTROL OK]** をクリックして、モジュール設定を保存します。
 
-1. モジュールを右クリックして [**[!UICONTROL Rename]**] をクリックし、モジュールで実行する内容を説明する名前（[ プロジェクトに変換 ] など）を入力して、[**[!UICONTROL OK]**] をクリックします。
+1. モジュールを右クリックして **[!UICONTROL 名前を変更]** をクリックし、モジュールで実行する内容を示す名前（「プロジェクトに変換」など）を入力して **[!UICONTROL OK]** をクリックします。
 
 1. [ シナリオのテスト ](#test-the-scenario) に進みます。
 
@@ -164,7 +164,7 @@ ht-degree: 25%
 
 このシナリオでは、テストが成功すると、リクエストが見つかり、プロジェクトに変換されます。
 
-1. シナリオエディターの左下にある「**[!UICONTROL Run once]**」をクリックします。
+1. シナリオエディターの左下隅にある「**[!UICONTROL 1 回実行]**」をクリックします。
 1. シナリオの実行が完了したら、最初のモジュールの上にあるバブルをクリックして、モジュールが処理したデータのバンドルに関する情報（モジュールが返した要求から取り込まれたデータを含む）を表示できます。
 
 1. 2 番目のモジュールの上にある実行インスペクターのバブルをクリックして、入力（要求）と出力（変換されたプロジェクト）を確認します。
@@ -174,7 +174,7 @@ ht-degree: 25%
    * 一般情報については、[ シナリオ実行フロー ](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md) を参照してください。
    * 処理されたバンドルについて詳しくは、[ シナリオ実行、サイクル、フェーズ ](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md) を参照してください。
 
-1. [!DNL Workfront Fusion] では、左下隅付近の **[!UICONTROL Save]** をクリックして、シナリオの進捗を保存します。
+1. Workfront Fusion で、左下隅付近の **[!UICONTROL 保存]** をクリックして、シナリオの進捗を保存します。
 
    >[!IMPORTANT]
    >
@@ -184,16 +184,16 @@ ht-degree: 25%
 >
 >各モジュールに関するメモを追加する方法として、任意ではあるものの便利な方法をお勧めします。
 >
->1. モジュールを右クリックし、「**[!UICONTROL Add a note]**」を選択します。
+>1. モジュールを右クリックし、「**[!UICONTROL メモを追加]**」を選択します。
 >1. 表示されるメモに、モジュールの概要を入力します。
 >
 >    1 つのモジュールに複数のノートを追加できます。
 >
->1. **[!UICONTROL Notes]** 領域を閉じます。
+>1. **[!UICONTROL メモ]**&#x200B;エリアを閉じます。
 >
->     シナリオにメモを追加すると、シナリオエディターの下部にあるメモ **[!UICONTROL Notes]** イコン ![ ドット付きのメモアイコン ](assets/notes-icon-w-dot.png) オレンジ色の点が表示されます。
+>     シナリオにメモを追加すると、シナリオエディターの下部にある **[!UICONTROL メモ]** アイコン ![ メモとドットの付いたメモアイコン ](assets/notes-icon-w-dot.png) にオレンジ色のドットが表示されます。
 >
->1. **[!UICONTROL Notes]** アイコン ![ ドット付きメモアイコン ](assets/notes-icon-w-dot.png) をクリックして、メモを表示します。
+>1. **[!UICONTROL メモ]** アイコン ![ メモ アイコン（ドット付き ](assets/notes-icon-w-dot.png) をクリックして、メモを表示します。
 >
 
 ## シナリオをアクティベート

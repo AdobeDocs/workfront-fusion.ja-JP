@@ -4,10 +4,10 @@ description: Adobe Authenticator モジュールを使用すると、1 つの接
 author: Becky
 feature: Workfront Fusion
 exl-id: af4da661-eeee-4033-a2bb-a2196e446a3d
-source-git-commit: 983ce043afbcc44ee8af2dfcd46738f170a2b257
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 30%
+source-wordcount: '1201'
+ht-degree: 29%
 
 ---
 
@@ -58,7 +58,7 @@ HTTP モジュールより有利な点は、専用のアプリのように接続
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -251,7 +251,7 @@ Adobe Authenticator接続は、Adobe Developer Console上の 1 つのプロジ�
       </td>
       </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 出力タイプ &#x200B;]  </td>
+      <td role="rowheader">[!UICONTROL 出力タイプ ]  </td>
       <td>
         <p>モジュールが出力するデータのタイプを選択します。 タイプを選択しない場合、モジュールは自動的にタイプを選択します。</p>
       </td>

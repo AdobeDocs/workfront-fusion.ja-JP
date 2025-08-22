@@ -1,19 +1,19 @@
 ---
 title: Bynder モジュール
-description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Bynder] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。'
+description: Adobe Workfront Fusion のシナリオでは、 [!DNL Bynder] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりすることができます。
 author: Becky
 feature: Workfront Fusion
 exl-id: 0a45f8a7-12cc-41cc-9135-92f4779afac0
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1779'
-ht-degree: 84%
+source-wordcount: '1847'
+ht-degree: 70%
 
 ---
 
 # [!DNL Bynder] モジュール
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、[!DNL Bynder] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
+Adobe Workfront Fusion のシナリオでは、[!DNL Bynder] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -58,7 +58,7 @@ ht-degree: 84%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -91,12 +91,12 @@ Bynder コネクタでは、以下を使用します。
 >
 >Bynder は、認証コード/更新トークン付与タイプを使用します。 これは、Fusion Builder コネクタが使用する唯一の付与タイプです。
 
-* [ [!DNL Workfront Fusion] から  [!DNL Bynder]  への接続の作成](#create-a-connection-to-bynder-from-workfront-fusion)
+* [Workfront Fusion からへ  [!DNL Bynder]  接続の作成](#create-a-connection-to-bynder-from-workfront-fusion)
 * [ [!DNL Bynder]  での[!UICONTROL クライアント ID] と [!UICONTROL クライアントシークレット]の生成（オプション）](#generate-a-client-id-and-client-secret-in-bynder-optional)
 
-### [!DNL Workfront Fusion] から [!DNL Bynder] への接続の作成
+### Workfront Fusion から [!DNL Bynder] への接続の作成
 
-[!DNL Workfront Fusion] から [!DNL Bynder] アカウントへの接続を、[!DNL Bynder] モジュール内から直接作成できます。
+Workfront Fusion から [!DNL Bynder] アカウントへの接続を、[!DNL Bynder] モジュール内から直接作成できます。
 
 1. 任意の [!DNL Bynder] モジュールで、「[!UICONTROL 接続]」フィールドの横にある「**[!UICONTROL 追加]**」をクリックします。
 1. 接続する [!DNL Bynder] ドメインを選択します。
@@ -124,7 +124,7 @@ Bynder コネクタでは、以下を使用します。
 
 ## [!DNL Bynder] モジュールとそのフィールド
 
-[!DNL Bynder] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Bynder] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL Bynder] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Bynder]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -156,7 +156,7 @@ Bynder コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Bynder] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Bynder] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Workfront Fusion [!DNL Bynder] への </a> の接続」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Tag ID]</td> 
@@ -179,7 +179,7 @@ Bynder コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Bynder] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Bynder] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Workfront Fusion [!DNL Bynder] への </a> の接続」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Collection ID]</td> 
@@ -206,7 +206,7 @@ Bynder コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Bynder] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Bynder] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Workfront Fusion [!DNL Bynder] への </a> の接続」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
@@ -244,7 +244,7 @@ Bynder コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Bynder] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Bynder] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Workfront Fusion [!DNL Bynder] への </a> の接続」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset ID]</td> 
@@ -267,7 +267,7 @@ Bynder コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Bynder] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Bynder] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Workfront Fusion [!DNL Bynder] への </a> の接続」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset ID]</td> 
@@ -290,7 +290,7 @@ Bynder コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Bynder] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Bynder] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Workfront Fusion [!DNL Bynder] への </a> の接続」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Tag ID]</td> 
@@ -313,7 +313,7 @@ Bynder コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Bynder] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Bynder] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Workfront Fusion [!DNL Bynder] への </a> の接続」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Collection ID]</td> 
@@ -336,7 +336,7 @@ Bynder コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Bynder] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Bynder] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Workfront Fusion [!DNL Bynder] への </a> の接続」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset ID]</td> 
@@ -363,7 +363,7 @@ Bynder コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Bynder] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Bynder] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Workfront Fusion [!DNL Bynder] への </a> の接続」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Save as]</td> 
@@ -378,7 +378,7 @@ Bynder コネクタでは、以下を使用します。
    <td>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 非同期ファイルのアップロード &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 非同期ファイルのアップロード ]</td> 
    <td>大きなファイルをアップロードする場合は、このオプションを有効にします。 これにより、大きなファイルがシナリオの実行をブロックするのを防ぎます。</td> 
   </tr> 
  </tbody> 
@@ -387,7 +387,7 @@ Bynder コネクタでは、以下を使用します。
 ### 検索
 
 * [[!UICONTROL レコードをリスト]](#list-record)
-* [[!UICONTROL Assetsを検索 &#x200B;]](#search-assets)
+* [[!UICONTROL Assetsを検索 ]](#search-assets)
 
 #### [!UICONTROL レコードをリスト]
 
@@ -399,7 +399,7 @@ Bynder コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Bynder] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder] を [!DNL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Bynder] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Workfront Fusion [!DNL Bynder] への </a> の接続」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -421,7 +421,7 @@ Bynder コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Assetsを検索 &#x200B;]
+#### [!UICONTROL Assetsを検索 ]
 
 この検索モジュールは、指定した条件に基づいてアセットを検索します。
 
@@ -431,7 +431,7 @@ Bynder コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Bynder] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder] を [!DNL Workfront Fusion] へ接続</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Bynder] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Workfront Fusion [!DNL Bynder] への </a> の接続」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search criteria]</td> 
@@ -477,7 +477,7 @@ Bynder コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Bynder] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">[!DNL Bynder] を [!DNL Workfront Fusion] へ接続</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Bynder] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Workfront Fusion [!DNL Bynder] への </a> の接続」を参照してください。</p> </td> 
   </tr> 
   <tr> 
     <td role="rowheader">イベントタイプ</td>

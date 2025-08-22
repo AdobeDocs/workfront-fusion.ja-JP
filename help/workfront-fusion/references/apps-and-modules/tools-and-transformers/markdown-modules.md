@@ -1,19 +1,19 @@
 ---
 title: Markdown モジュール
-description: ' [!DNL Adobe Workfront Fusion]  シナリオでは、Markdown モジュールを使用して、Markdown をHTMLに、HTMLを Markdown に変換できます。'
+description: Adobe Workfront Fusion シナリオでは、Markdown モジュールを使用して Markdown をHTMLに、HTMLを Markdown に変換できます。
 author: Becky
 feature: Workfront Fusion
 exl-id: f1134bbf-c244-4f52-8744-f97453b2ce8a
-source-git-commit: 7edfe4a7b19597ea6e56bb2ca3969d742dbaf999
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 65%
+source-wordcount: '285'
+ht-degree: 48%
 
 ---
 
 # [!UICONTROL Markdown] モジュール
 
-[!DNL Adobe Workfront Fusion] シナリオでは、[!UICONTROL Markdown] モジュールを使用して、Markdown を HTMLに、HTMLを Markdown に変換できます。
+Adobe Workfront Fusion シナリオでは、[!UICONTROL Markdown] モジュールを使用して Markdown をHTMLに、HTMLを Markdown に変換できます。
 
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -56,7 +56,7 @@ ht-degree: 65%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 

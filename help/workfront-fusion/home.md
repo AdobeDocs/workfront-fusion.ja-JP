@@ -2,21 +2,21 @@
 title: Adobe Workfront Fusion
 description: このたびは、Adobe Workfront Fusion 製品および技術ドキュメントのホームページをご利用いただき、誠にありがとうございます。 Adobe Workfront Fusion を組織内で実装し、効果的に使用する方法については、次のリンク、ヘルプ記事、その他のリソースを参照してください。
 exl-id: c005fc89-4b58-4c4e-ba45-0155cd2c8f03
-source-git-commit: 6e62836006dcca1acc2cc314c44dbb114cda0e08
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 2%
+source-wordcount: '306'
+ht-degree: 3%
 
 ---
 
-# [!DNL Workfront] Fusion ドキュメント
+# Workfront Fusion ドキュメント
 
 このたびは、Adobe Workfront Fusion 製品および技術ドキュメントのホームページをご利用いただき、誠にありがとうございます。 Adobe Workfront Fusion を組織内で実装し、効果的に使用する方法については、次のリンク、ヘルプ記事、その他のリソースを参照してください。
 
 ## 最新情報
 
 * [リリースアクティビティ](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
-* [ 既知の問題 ](https://experienceleague.adobe.com/ja/docs/workfront-known-issues/issues/fusion/workfrontfusion)
+* [既知の問題](https://experienceleague.adobe.com/en/docs/workfront-known-issues/issues/fusion/workfrontfusion)
 
 ## ドキュメントを参照
 
@@ -43,7 +43,7 @@ ht-degree: 2%
   </tr>
 </table>
 
-## Experience League内のコンテンツを見つけるためのヒント
+## Experience Leagueでコンテンツを見つけるためのヒント
 
 いくつかの戦略的アプローチを使用すると、ドキュメントの検索をより効率的に行うことができます。 必要な情報を効果的に見つけるために役立つヒントを以下に示します。
 
@@ -54,9 +54,9 @@ ht-degree: 2%
 
 ### ラーニングとトレーニングのセクションを検索
 
-* **インストラクター主導のライブトレーニングセッション** Adobeでは、Fusion 用の 3 日間のライブトレーニングセッションを提供しています。 詳細と使用可能なセッションについては、[Adobe Workfront Fusion での接続とワークフローの管理 ](https://learning.adobe.com/courses/adobe_workfront/cours000000000098121.html) を参照してください。
-* **トレーニング資料**: [ 概要と技術戦略 ](https://experienceleague.adobe.com/ja/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy)Workfront Fusion トレーニングページに移動して、Fusion の最適な使用方法をより深く理解できるように設計された一連のレッスンと演習を開始します。
+* **インストラクター主導のライブトレーニングセッション** Adobeでは、Fusion 向けの 3 日間のライブトレーニングセッションを提供しています。 詳細と使用可能なセッションについては、[Adobe Workfront Fusion での接続とワークフローの管理 ](https://learning.adobe.com/courses/adobe_workfront/cours000000000098121.html) を参照してください。
+* **トレーニング資料**: [ 概要と技術戦略 ](https://experienceleague.adobe.com/en/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy)Workfront Fusion トレーニングページに移動して、Fusion の最適な使用方法をより深く理解できるように設計された一連のレッスンと演習を開始します。
 
 ### コミュニティフォーラムで回答を検索
 
-* **質問する**：ドキュメントが質問に答えない場合は、[Workfront Fusion コミュニティフォーラム ](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2?profile.language=ja) に投稿してみてください。
+* **質問する**：ドキュメントが質問に答えない場合は、[Workfront Fusion コミュニティフォーラム ](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2) に投稿してみてください。

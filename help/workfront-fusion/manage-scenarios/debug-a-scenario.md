@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion 開発ツールを使用すると、シナ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1324'
-ht-degree: 74%
+source-wordcount: '1483'
+ht-degree: 71%
 
 ---
 
 # シナリオのデバッグ
 
-[!DNL Adobe Workfront Fusion] 開発ツールは、シナリオの理解とトラブルシューティングに役立ちます。 開発ツールを使用すると、シナリオのすべての手動実行を確認し、実行されたすべての操作を確認し、実行されたすべての API 呼び出しの詳細を確認できます。 エラーが発生したモジュール、操作または単一の応答を確認し、その知識を使用してシナリオを改良できます。
+Adobe Workfront Fusion 開発ツールは、シナリオの理解とトラブルシューティングに役立ちます。 開発ツールを使用すると、シナリオのすべての手動実行を確認し、実行されたすべての操作を確認し、実行されたすべての API 呼び出しの詳細を確認できます。 エラーが発生したモジュール、操作または単一の応答を確認し、その知識を使用してシナリオを改良できます。
 
 >[!NOTE]
 >
@@ -35,17 +35,17 @@ Fusion 開発ツールの概要ビデオとチュートリアルについては�
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
    <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規： [!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：[!DNL Workfront Fusion] ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -53,16 +53,16 @@ Fusion 開発ツールの概要ビデオとチュートリアルについては�
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：組織は [!DNL Adobe Workfront Fusion] を購入する必要があります。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">アクセスレベル設定*</td> 
    <td> 
-     <p>組織の [!DNL Workfront Fusion] 管理者である必要があります。</p>
-     <p>チームの [!DNL Workfront Fusion] 管理者である必要があります。</p>
+     <p>組織の Workfront Fusion 管理者である必要があります。</p>
+     <p>チームのWorkfront Fusion 管理者である必要があります。</p>
    </td> 
   </tr> 
    </td> 
@@ -72,7 +72,7 @@ Fusion 開発ツールの概要ビデオとチュートリアルについては�
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -91,7 +91,7 @@ Adobe統合シェルで Fusion を使用している場合、または新しい 
 1. ページの何もないエリア（モジュール上以外）を右クリックします。
 1. 「**開発者ツールを開く**」を選択します。
 
-## [!DNL Workfront Fusion] 開発ツールの使用
+## Workfront Fusion Devtool の使用
 
 Workfront Fusion 開発ツールは、3 つの主なセクションに分かれています。これらは、開発ツールウィンドウの左パネルにあります。
 
@@ -103,7 +103,7 @@ Workfront Fusion 開発ツールは、3 つの主なセクションに分かれ�
 
 ライブストリームは、シナリオで「1 回実行」をクリックすると、バックグラウンドで発生していることを表示します。
 
-1. **[!UICONTROL Live Stream]** アイコン ![ ライブストリームアイコン ](assets/live-stream-icon.png) をクリックして、「ライブストリーム」セクションを開きます。
+1. **[!UICONTROL ライブストリーム]** アイコン ![ ライブストリームアイコン ](assets/live-stream-icon.png) をクリックして、「ライブストリーム」セクションを開きます。
 1. 次のいずれかの操作を行います。
 
    <table style="table-layout:auto"> 
@@ -124,15 +124,15 @@ Workfront Fusion 開発ツールは、3 つの主なセクションに分かれ�
         <li> <p>リクエスト本文</p> </li> 
         <li> <p>応答ヘッダー</p> </li> 
         <li> <p>応答本文</p> </li> 
-       </ul> <p>この情報を表示するには、[!DNL Workfront Fusion] 開発ツールの右パネルにある適切なタブをクリックします。</p> </td> 
+       </ul> <p>この情報を確認するには、Workfront Fusion 開発ツールの右側のパネルで適切なタブをクリックします。</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>コンテンツでイベントを検索</p> </td> 
-      <td> <p>[!DNL Workfront Fusion] 開発ツールの左パネルにある検索フィールドに検索語を入力すると、その検索語を含むリクエストのみが表示されます。</p> </td> 
+      <td> <p>検索語句を含むリクエストのみを表示するには、Workfront Fusion Devtool の左側のパネルにある「検索」フィールドに検索語句を入力します。</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>リクエストのリストをクリア </p> </td> 
-      <td> <p>開発ツールの左パネルの右上隅にあるごみ箱アイコンをクリックして、[!DNL Workfront Fusion] 開発ツールで記録されたリクエストのリストをクリアします。 </p> </td> 
+      <td> <p>開発ツールの左パネルの右上隅にあるごみ箱アイコンをクリックして、Workfront Fusion 開発ツールによって記録されたリクエストのリストをクリアします。 </p> </td> 
      </tr> 
      <!--<tr> 
       <td role="rowheader"> <p>Enable Console Logging</p> </td> 
@@ -142,8 +142,8 @@ Workfront Fusion 開発ツールは、3 つの主なセクションに分かれ�
       <td role="rowheader"> <p>Raw JSON 形式または cURL でリクエストを取得</p> </td> 
       <td> 
        <ul> 
-        <li> <p><strong>Raw JSON</strong> </p> <p>開発ツールの右側のパネルの右上隅にある「<strong>[!UICONTROL Copy RAW]</strong>」をクリックします。</p> </li> 
-        <li> <p><strong>cURL</strong> </p> <p>開発ツールの右側のパネルの右上隅にある「<strong>[!UICONTROL Copy cURL]</strong>」をクリックします。</p> </li> 
+        <li> <p><strong>Raw JSON</strong> </p> <p>開発ツールの右パネルの右上隅にある <strong>[!UICONTROL Copy RAW]</strong> をクリックします。</p> </li> 
+        <li> <p><strong>cURL</strong> </p> <p>開発ツールの右パネルの右上隅にある <strong>[!UICONTROL Copy cURL]</strong> をクリックします。</p> </li> 
        </ul> </td> 
      </tr> 
     </tbody> 
@@ -153,19 +153,19 @@ Workfront Fusion 開発ツールは、3 つの主なセクションに分かれ�
 
 シナリオデバッガーは、より複雑なシナリオで役に立ちます。シナリオ実行の履歴が表示され、名前または ID でモジュールを検索できます。
 
-1. **[!UICONTROL Scenario Debugger]** アイコン ![ デバッガーアイコン ](assets/scenario-debugger-icon.png) をクリックして、シナリオデバッガーを開きます。
+1. **[!UICONTROL シナリオデバッガー]** アイコン ![ デバッガーアイコン ](assets/scenario-debugger-icon.png) をクリックして、シナリオデバッガーを開きます。
 1. （オプション）検索フィールドに検索語句（名前またはモジュール ID）を入力します。
 1. モジュール名をクリックします。
 1. 操作をクリックすると、リクエストの詳細が表示されます。
 
 ### ツール
 
-[!DNL Workfront Fusion] 開発ツールには、シナリオを設定しやすくするツールが備わっています。
+Workfront Fusion 開発ツールには、シナリオの設定を容易にするツールが備わっています。
 
-1. **[!UICONTROL Tools]** アイコン ![ コンソールツールアイコン ](assets/console-tools-icon.png) をクリックして、ツールを開きます。
+1. **[!UICONTROL ツール]** アイコン ![ コンソールツールアイコン ](assets/console-tools-icon.png) をクリックして、ツールを開きます。
 1. 使用するツールを選択します。
 1. 下記のフィールドを設定します。
-1. **[!UICONTROL Run]** をクリックします。
+1. 「**[!UICONTROL 実行]**」をクリックします。
 
 ツールとそのフィールド：
 
@@ -180,7 +180,7 @@ Workfront Fusion 開発ツールは、3 つの主なセクションに分かれ�
 * [Base 64](#base-64)
 * [ソースを再マッピング](#remap-source)
 
-#### [!UICONTROL Focus a Module]
+#### [!UICONTROL モジュールのフォーカス]
 
 ID で指定したモジュールの設定が開きます。
 
@@ -191,7 +191,7 @@ ID で指定したモジュールの設定が開きます。
     </tr>
 </table>
 
-#### [!UICONTROL Find Modules by Mapping]
+#### [!UICONTROL マッピングによるモジュールの検索]
 
 指定した語句に対応するモジュールの値を検索できます。出力には、検索した語句を含んだモジュールの ID が含まれています。
 
@@ -210,7 +210,7 @@ ID で指定したモジュールの設定が開きます。
  </tbody> 
 </table>
 
-#### [!UICONTROL Get App Metadata]
+#### [!UICONTROL アプリのメタデータの取得]
 
 アプリのモジュール名または ID でアプリのメタデータを取得します。これは、例えば、シナリオで使用されるアプリのバージョンを知る必要がある場合に便利です。
 
@@ -221,7 +221,7 @@ ID で指定したモジュールの設定が開きます。
     </tr>
 </table>
 
-#### [!UICONTROL Copy Mapping]
+#### [!UICONTROL マッピングのコピー]
 
 ソースモジュールからターゲットモジュールに値をコピーします。
 
@@ -244,7 +244,7 @@ ID で指定したモジュールの設定が開きます。
  </tbody> 
 </table>
 
-#### [!UICONTROL Copy Filter]
+#### [!UICONTROL フィルターのコピー]
 
 ソースモジュールからターゲットモジュールにフィルター設定をコピーします。
 
@@ -272,7 +272,7 @@ ID で指定したモジュールの設定が開きます。
 </table>
 
 
-#### [!UICONTROL Copy Module Name]
+#### [!UICONTROL モジュール名をコピー]
 
 選択したモジュールの名前をクリップボードにコピーします。
 
@@ -287,7 +287,7 @@ ID で指定したモジュールの設定が開きます。
  </tbody> 
 </table>
 
-#### [!UICONTROL Swap Connection]
+#### [!UICONTROL 接続の交換]
 
 同じアプリのシナリオ内のすべてのモジュールに、ソースモジュールの接続を複製します。
 
@@ -298,7 +298,7 @@ ID で指定したモジュールの設定が開きます。
     </tr>
 </table>
 
-#### [!UICONTROL Swap Variable]
+#### [!UICONTROL 変数の交換]
 
 指定された変数をシナリオ内で検索し、新しい変数に置き換えます。
 
@@ -308,11 +308,11 @@ ID で指定したモジュールの設定が開きます。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Variable to Find]</td> 
-   <td> <p> シナリオ内の変数モジュールから、置き換える変数ピルを見つけて、この（[!UICONTROL Variable to Find]）フィールドにコピーします。 フィールドには二重波括弧で囲まれて表示されます。例：<code>&#123;&#123;5.value&#125;&#125;</code>。</p> </td> 
+   <td> <p> シナリオ内の変数モジュールから置き換える変数ピルを見つけて、この（[!UICONTROL Variable to Find]）フィールドにコピーします。 フィールドには二重波括弧で囲まれて表示されます。例：<code>&#123;&#123;5.value&#125;&#125;</code>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Replace With]</p> </td> 
-   <td> <p>シナリオの変数モジュールで、変数を置き換える変数ピルを見つけて、この（[!UICONTROL Variable to Find]）フィールドにコピーします。 フィールドには二重波括弧で囲まれて表示されます。例：<code>&#123;&#123;5.value&#125;&#125;</code>。</p> </td> 
+   <td> <p>シナリオ内の変数モジュールで、変数を置き換える変数ピルを見つけ、この（[!UICONTROL Variable to Find]） フィールドにコピーします。 フィールドには二重波括弧で囲まれて表示されます。例：<code>&#123;&#123;5.value&#125;&#125;</code>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Module]</p> </td> 
@@ -331,16 +331,16 @@ ID で指定したモジュールの設定が開きます。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Operation] </td> 
-   <td> <p>[!UICONTROL Raw Data] フィールドのデータを Base64 にエンコードするか、Base64 を Raw データにデコードするかを選択します。</p> </td> 
+   <td> <p>[!UICONTROL Raw Data] フィールドのデータを Base64 にエンコードするか、Base64 を生データにデコードするかを選択します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Raw Data]</p> </td> 
-   <td> <p> Base64 にエンコードするデータを入力するか、Raw データにデコードする場合は、上記の [!UICONTROL Operation] フィールドで選択したオプションに応じて Base64 を入力します。</p> </td> 
+   <td> <p> 上記の [!UICONTROL Operation] フィールドで選択したオプションに応じて、Base64 にエンコードするデータ、または生データにデコードする Base64 を入力します。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Remap Source]
+#### [!UICONTROL ソースを再マッピング]
 
 マッピングソースをあるモジュールから別のモジュールへ変更できるようになります。
 

@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion 暗号化モジュールを使用すると�
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b119efe-6762-445e-bbc7-c59437fd5060
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 28%
+source-wordcount: '876'
+ht-degree: 26%
 
 ---
 
 # 暗号化
 
-[!DNL Adobe Workfront Fusion] [!UICONTROL 暗号化]モジュールを使用すると、任意のテキストデータを暗号化できます。現在、AES256 と PGP（[!UICONTROL OpenPGP]）を介したメッセージの暗号化をサポートしています。
+Adobe Workfront Fusion[!UICONTROL Encryptor] モジュールを使用すると、任意のテキストデータを暗号化できます。 現在、AES256 と PGP（[!UICONTROL OpenPGP]）を介したメッセージの暗号化をサポートしています。
 
 これらのモジュールでは、暗号化プロセスに関する知識がある程度必要です。
 
@@ -54,7 +54,7 @@ ht-degree: 28%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについては、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 

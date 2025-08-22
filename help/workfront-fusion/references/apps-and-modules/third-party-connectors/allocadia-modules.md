@@ -1,19 +1,19 @@
 ---
 title: Allocadia モジュール
-description: ' [!DNL Adobe Workfront Fusion]  シナリオでは、Allocadia を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりすることができます。'
+description: Adobe Workfront Fusion のシナリオでは、Allocadia を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 author: Becky
 feature: Workfront Fusion
 exl-id: 9a6fccd6-6eee-42dc-a678-c1f34280d139
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1304'
-ht-degree: 88%
+source-wordcount: '1490'
+ht-degree: 77%
 
 ---
 
 # [!DNL Allocadia] モジュール
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、[!DNL Allocadia] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
+Adobe Workfront Fusion のシナリオでは、[!DNL Allocadia] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -28,35 +28,35 @@ ht-degree: 88%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront プラン*</td>
+  <td> <p>[!UICONTROL Pro] 以降</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン*</td>
+   <td> <p>[!UICONTROL Plan]、[!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在のライセンス要件：Workfront Fusion のライセンス要件はありません。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のライセンス要件：[!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] Adobe Workfront プランがある場合、この記事に記載されている機能を使用するには、Adobe Workfront Fusion とAdobe Workfrontを購入する必要があります。 Workfront Fusion は、[!UICONTROL Ultimate] Workfront プランに含まれています。</p>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>従来の製品要件：この記事に記載されている機能を使用するには、Adobe Workfront Fusion とAdobe Workfrontを購入する必要があります。</p>
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、Workfront 管理者にお問い合わせください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 ## 前提条件
 
@@ -81,18 +81,18 @@ Allocadia コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-## [!DNL Allocadia] を [!DNL Workfront Fusion] に接続
+## [!DNL Allocadia] を Workfront Fusion に接続
 
 [!DNL Allocadia] アカウントへの接続を、[!DNL Allocadia] モジュール内から直接作成できます。
 
-1. 任意の [!DNL Allocadia] モジュールで、[!UICONTROL Connection] フィールドの横にある「**[!UICONTROL Add]**」をクリックします。
+1. 任意の [!DNL Allocadia] モジュールで、「[!UICONTROL 接続]」フィールドの横にある「**[!UICONTROL 追加]**」をクリックします。
 1. 北米のサーバーを使用するか、ヨーロッパのサーバーを使用するかを選択します。
 1. ユーザー名とパスワードを入力します。
-1. 「**[!UICONTROL Continue]**」をクリックして接続を作成し、モジュールに戻ります。
+1. 「**[!UICONTROL 続行]**」をクリックし、接続を作成して、モジュールに戻ります。
 
 ## [!DNL Allocadia] モジュールとそのフィールド
 
-[!DNL Allocadia] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Allocadia] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL Allocadia] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Allocadia]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -104,7 +104,7 @@ Allocadia コネクタでは、以下を使用します。
 
 ### トリガー
 
-#### [!UICONTROL Watch Record]
+#### [!UICONTROL レコードを監視]
 
 このトリガーモジュールは、特定のタイプのオブジェクトが追加、更新、またはその両方が行われた場合にシナリオを実行します。このモジュールは、レコードに関連付けられたすべての標準フィールドと、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
@@ -115,11 +115,11 @@ Allocadia コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    td role="rowheader"&gt; <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Allocadia アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事のWorkfront Fusion</a> への <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect Allocadia] を参照してください。</p> </td> 
+   <td> <p>Allocadia アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">[!UICONTROL Allocadia] のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">フィルター</td> 
-   <td> <p>シナリオで新規レコードのみ、新規レコードのみ、新規レコードまたは新規レコードと更新レコードのどちらを [!UICONTROL Updated Records Only] 視するかを選択します。</p> </td> 
+   <td> <p>シナリオで新規レコードのみを監視するか、[!UICONTROL Updated Records Only] を監視するか、新規およびアップデートされたレコードを監視するかを選択します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">エンティティタイプ</td> 
@@ -144,9 +144,9 @@ Allocadia コネクタでは、以下を使用します。
 * [記録を削除](#delete-record)
 * [記録を更新](#update-record)
 
-#### [!UICONTROL Custom API Call]
+#### [!UICONTROL カスタム API 呼び出し]
 
-このアクションモジュールでは、[!DNL Allocadia] API への認証済みのカスタム呼び出しを実行できます。これにより、他の [!DNL Allocadia] モジュールでは不可能なデータフロー自動処理を実現できます。
+このアクションモジュールは、[!DNL Allocadia] API に対して認証済みのカスタム呼び出しを実行します。これにより、他の [!DNL Allocadia] モジュールでは不可能なデータフロー自動処理を実現できます。
 
 アクションは、指定したエンティティタイプ（Allocadia オブジェクトタイプ）に基づいて実行されます。
 
@@ -158,7 +158,7 @@ Allocadia コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Allocadia] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">[!DNL Allocadia] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Allocadia] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Allocadia] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -170,7 +170,7 @@ Allocadia コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p> <p>例： <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] によって、認証ヘッダーが追加されます。</p> </td> 
+   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p> <p>例： <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion は認証ヘッダーを追加します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 
@@ -178,7 +178,7 @@ Allocadia コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件文を JSON で使用する場合は、条件文を引用符で囲みます。</p> 
+   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件ステートメントを JSON で使用する場合は、条件ステートメントの外側に引用符を挿入します。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -186,7 +186,7 @@ Allocadia コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Read Record]
+#### [!UICONTROL レコードを読み取り]
 
 このアクションモジュールは、[!DNL Allocadia] の単一レコードからデータを読み取ります。
 
@@ -202,7 +202,7 @@ Allocadia コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    td role="rowheader"&gt; <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Allocadia] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">[!DNL Allocadia] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Allocadia] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Allocadia] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Entity Type]</td> 
@@ -210,7 +210,7 @@ Allocadia コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td> <p>モジュールの出力に含めるフィールドを選択します。使用可能なフィールドは、選択した [!UICONTROL Entity Type] によって異なります。</p> </td> 
+   <td> <p>モジュールの出力に含めるフィールドを選択します。使用できるフィールドは、選択した [!UICONTROL Entity Type] によって異なります。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
@@ -219,7 +219,7 @@ Allocadia コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Create Record]
+#### [!UICONTROL レコードを作成]
 
 このアクションモジュールは、レコードを作成します。
 
@@ -233,7 +233,7 @@ Allocadia コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    td role="rowheader"&gt; <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Allocadia] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">[!DNL Allocadia] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Allocadia] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Allocadia] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Entity Type]</td> 
@@ -254,7 +254,7 @@ Allocadia コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete Record]
+#### [!UICONTROL レコードの削除]
 
 このアクションモジュールは、特定のレコードを削除します。
 
@@ -270,7 +270,7 @@ Allocadia コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    td role="rowheader"&gt; <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Allocadia] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">[!DNL Allocadia] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Allocadia] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Allocadia] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Entity Type]</td> 
@@ -284,7 +284,7 @@ Allocadia コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL Update Record]
+#### [!UICONTROL レコードの更新]
 
 このアクションモジュールは、行項目、ユーザー、列選択などのレコードを更新します。
 
@@ -300,7 +300,7 @@ Allocadia コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!UICONTROL Allocadia] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">[!DNL Allocadia] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!UICONTROL Allocadia] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Allocadia] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Entity Type]</td> 
@@ -315,7 +315,7 @@ Allocadia コネクタでは、以下を使用します。
 
 ### 検索
 
-#### [!UICONTROL Search Record]
+#### [!UICONTROL レコードの検索]
 
 この検索モジュールは、指定された検索クエリに一致するレコードを [!DNL Allocadia] のオブジェクト内で検索します。
 
@@ -331,7 +331,7 @@ Allocadia コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    td role="rowheader"&gt; <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>[!DNL Allocadia] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">[!DNL Allocadia] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Allocadia] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Allocadia] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Entity Type]</td> 

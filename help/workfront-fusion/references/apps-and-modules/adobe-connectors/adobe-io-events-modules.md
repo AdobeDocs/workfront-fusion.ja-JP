@@ -4,9 +4,9 @@ description: Adobe I/O Events モジュールを使用すると、Adobe アプ�
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: ef55cc62a0e0de70662440bc38d3eabbfe5e3c13
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1085'
 ht-degree: 35%
 
 ---
@@ -54,7 +54,7 @@ Adobe I/O Events モジュールを使用すると、専用のAdobe Workfront Fu
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -155,7 +155,7 @@ Adobe I/O Events モジュールの接続を作成するには：
 
 ## Adobe I/O Events モジュールとそのフィールド
 
-[!DNL Adobe I/O Events] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Adobe I/O Events] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL Adobe I/O Events] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Adobe I/O Events]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -192,7 +192,7 @@ Webhook を作成するには：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Webhook の説明 &#x200B;]
+           [!UICONTROL Webhook の説明 ]
          </td>
          <td>
            この Webhook の説明を入力します。
@@ -200,7 +200,7 @@ Webhook を作成するには：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL イベント プロバイダー &#x200B;]
+           [!UICONTROL イベント プロバイダー ]
          </td>
          <td>
            イベントを作成する製品またはアカウントを選択します。
@@ -238,7 +238,7 @@ Webhook を作成するには：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL イベント プロバイダー &#x200B;]
+           [!UICONTROL イベント プロバイダー ]
          </td>
          <td>
            ID を取得するプロバイダーを選択します。
@@ -339,7 +339,7 @@ Webhook を作成するには：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL 後に発生するイベントを返す &#x200B;]
+           [!UICONTROL 後に発生するイベントを返す ]
          </td>
          <td>日付を入力またはマッピングします。 モジュールは、この日付以降に発生したイベントを返します。
          </td>
@@ -353,7 +353,7 @@ Webhook を作成するには：
        </tr>-->
        <tr>
          <td role="rowheader">
-           [!UICONTROL 最新 &#x200B;]
+           [!UICONTROL 最新 ]
          </td>
          <td>
          最新のイベントを返すには、このオプションを有効にします。

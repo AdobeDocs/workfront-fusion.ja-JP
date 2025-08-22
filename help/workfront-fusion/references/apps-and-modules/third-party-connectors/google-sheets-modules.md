@@ -1,21 +1,21 @@
 ---
 title: Google スプレッドシートモジュール
-description: ' [!DNL Google Sheets]  を  [!DNL Adobe Workfront Fusion],you need the [!UICONTROL Workfront Fusion Google Sheets]  拡張子とともに使用するため（オプション：インスタントトリガーには必須）。'
+description: Adobe Workfront Fusion で  [!DNL Google Sheets]  を使用するには、[!UICONTROL Workfront Fusion Google Sheets] 拡張機能が必要です（オプションですが、インスタントトリガーには必須）。
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 80965570-2937-4ac8-97c0-54f7a813ec50
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '3957'
-ht-degree: 70%
+source-wordcount: '4040'
+ht-degree: 65%
 
 ---
 
 # [!DNL Google Sheets] モジュール
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、[!DNL Google Sheets] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
+Adobe Workfront Fusion のシナリオでは、[!DNL Google Sheets] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
-[!DNL Google Sheets] アカウントを [!DNL Workfront Fusion] に接続する方法については、[ [!DNL Adobe Workfront Fusion]  への接続の作成 - 基本手順](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)を参照してください。
+[!DNL Google Sheets] アカウントを Workfront Fusion に接続する手順について詳しくは、[Adobe Workfront Fusion への接続の作成 - 基本手順](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)を参照してください
 
 ## アクセス要件
 
@@ -56,7 +56,7 @@ ht-degree: 70%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -89,7 +89,7 @@ Google シートコネクタでは、以下を使用します。
 
 ## Google Sheets モジュールとそのフィールド
 
-[!DNL Google Forms] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Google Sheets] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL Google Forms] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Google Sheets]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -113,7 +113,7 @@ Google シートコネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Sheets] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Spreadsheet] </td> 
@@ -149,7 +149,7 @@ Google シートコネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>[!DNL Workfront Fusion] が 1 回の実行サイクルで処理する結果の最大数を設定します。</p> </td> 
+   <td> <p>Workfront Fusion が 1 つの実行サイクルで動作する結果の最大数を設定します。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -172,7 +172,7 @@ Google シートコネクタでは、以下を使用します。
 
 このモジュールは、シートに行を追加します。
 
-[!DNL Google Sheets]モジュールを設定すると、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Google Sheets] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL Google Sheets] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Google Sheets]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -184,11 +184,11 @@ Google シートコネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Sheets] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Mode]</td> 
-   <td> <p>スプレッドシートとシートを手動で選択するか、マッピングを行うかを選択します。</p> <p>メモ：手動マッピングは、新しいスプレッドシートが [!DNL Workfront Fusion] シナリオで作成され、新しく作成されたスプレッドシートにデータをシナリオ内で直接追加する場合などに役立ちます。</p> </td> 
+   <td> <p>スプレッドシートとシートを手動で選択するか、マッピングを行うかを選択します。</p> <p>注意：手動マッピングは、例えば、Workfront Fusion のシナリオで新しいスプレッドシートを作成し、新しく作成したスプレッドシートにデータをシナリオで直接追加する場合に便利です。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -243,7 +243,7 @@ Google シートコネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Sheets] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -270,7 +270,7 @@ Google シートコネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Sheets] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -297,7 +297,7 @@ Google シートコネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Sheets] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -322,7 +322,7 @@ Google シートコネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Sheets] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Title] </td> 
@@ -366,7 +366,7 @@ Google シートコネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Sheets] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -393,7 +393,7 @@ Google シートコネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Sheets] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -416,7 +416,7 @@ Google シートコネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Sheets] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -451,7 +451,7 @@ Google シートコネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Google Sheets アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>Google Sheets アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Workfront Fusion への接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
@@ -463,7 +463,7 @@ Google シートコネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。例えば、<code>{"Content-type":"application/json"}</code>。認証ヘッダーは [!DNL Workfront Fusion] によって追加されます。</p> </td> 
+   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。例えば、<code>{"Content-type":"application/json"}</code>。Workfront Fusion は認証ヘッダーを追加します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 
@@ -487,7 +487,7 @@ Google シートコネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Sheets] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -526,7 +526,7 @@ Google シートコネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Sheets] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Mode]</td> 
@@ -582,7 +582,7 @@ Google シートコネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Sheets] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -602,7 +602,7 @@ Google シートコネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Row with headers]</td> 
-   <td>テーブルヘッダーの範囲を入力します。例：<code>A1:F1</code>このフィールドを空のままにすると、[!DNL Workfront Fusion] は指定した範囲の最初の行をヘッダーとして扱います。</td> 
+   <td>テーブルヘッダーの範囲を入力します。例：<code>A1:F1</code>このフィールドを空のままにすると、Workfront Fusion は、指定された範囲の最初の行をヘッダーとして扱います。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Value render option]</td> 
@@ -625,7 +625,7 @@ Google シートコネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Sheets] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -644,7 +644,7 @@ Google シートコネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Google Sheets アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>Google Sheets アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Workfront Fusion への接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -684,7 +684,7 @@ Google シートコネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of returned rows]</td> 
-   <td>[!DNL Workfront Fusion] が 1 回の実行サイクルで返す行の最大数を設定します。</td> 
+   <td>Workfront Fusion が 1 つの実行サイクルで返す最大行数を設定します。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -699,7 +699,7 @@ Google シートコネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Sheets] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本的な手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Sheets] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
@@ -731,7 +731,7 @@ Google シートコネクタでは、以下を使用します。
 
 ### [!DNL Google Sheet] からの空のセルの取得
 
-空のセルを取得するには、[!UICONTROL &#x200B; 行を検索（詳細） &#x200B;] モジュールを使用できます。 この式を使用して、空の列を取得します。
+空のセルを取得するには、[!UICONTROL  行を検索（詳細） ] モジュールを使用できます。 この式を使用して、空の列を取得します。
 
 ```
 select * where E is null
@@ -741,13 +741,13 @@ select * where E is null
 
 ### シートへのシナリオを実行するためのボタンの追加
 
-1. [!DNL Workfront Fusion] では、シナリオに **[!UICONTROL Webhook]**/**[!UICONTROL カスタム Webhook]** モジュールを挿入し、設定します。 手順については、[Webhook](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md) を参照してください。
+1. Workfront Fusion で、シナリオに **[!UICONTROL Webhook]**/**[!UICONTROL Custom Webhook]** モジュールを挿入して設定します。 手順については、[Webhook](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md) を参照してください。
 
 1. Web フックの URL をコピーします。
 1. シナリオを実行します。
 1. Google Sheet のメインメニューバーから&#x200B;**[!UICONTROL 挿入]**／**[!UICONTROL 図面]**... を選択します。
 
-1. [!UICONTROL &#x200B; 図面 &#x200B;] ウィンドウで、ウィンドウの上部付近にある **[!UICONTROL テキスト ボックス]** アイコン ![ テキスト ボックス ](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) をクリックします。
+1. [!UICONTROL  図面 ] ウィンドウで、ウィンドウの上部付近にある **[!UICONTROL テキスト ボックス]** アイコン ![ テキスト ボックス ](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) をクリックします。
 1. ボタンをデザインし、右上隅にある「**[!UICONTROL 保存して閉じる]**」ボタンをクリックします。
 1. ボタンはワークシートに配置されます。 ボタンの右上隅にある 3 つの縦並びのドットをクリックします。
 1. メニューから「**[!UICONTROL スクリプトを割り当て].**」を選択します。
@@ -769,7 +769,7 @@ select * where E is null
 
 1. [!DNL Google Sheets] に戻って、新しいボタンをクリックします。
 1. スクリプトに必要な認証を付与します。
-1. [!DNL Workfront Fusion] で、シナリオが正常に実行されたことを確認します。
+1. Workfront Fusion で、シナリオが正常に実行されたことを確認します。
 
 ## スプレッドシートでの日付の保存
 
@@ -787,7 +787,7 @@ select * where E is null
 
 1. 適切なロケールを確認または設定したら、メインメニューから **[!UICONTROL 形式]** > **[!UICONTROL 数値]** を選択して、対応する日時の形式を決定します。 形式は、日付と時刻メニュー項目の横に表示されます。
 
-1. [!UICONTROL formatDate （） &#x200B;] 関数に渡すべき正しい形式を作成するには、[ 日付と時刻のフォーマット用トークン ](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md) のリストを参照してください。
+1. [!UICONTROL formatDate （） ] 関数に渡すべき正しい形式を作成するには、[ 日付と時刻のフォーマット用トークン ](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md) のリストを参照してください。
 
 >[!BEGINSHADEBOX]
 
@@ -810,4 +810,4 @@ Google Sheets の組み込み関数を使用するには、この関数を利用
 1. [!DNL Google Sheets] で、数値を含む列またはセルをハイライト表示します。
 1. **[!UICONTROL 形式]**／**[!UICONTROL 数字]**／**[!UICONTROL プレインテキスト]**&#x200B;をクリックします。
 
-[!DNL Workfront Fusion] での別の回避策は、数値の前にアポストロフィ（&#39;）を入力することです（例：&#39;1-2019 または &#39;1/47）。[!DNL Workfront Fusion] からデータが送信された後、セルにはアポストロフィが表示されません。
+Workfront Fusion のもう 1 つの回避策は、数字の前にアポストロフィ（&#39;）を入力することです（例：「1-2019」や「1/47」）。 Workfront Fusion からデータを送信した後、セルにアポストロフィが表示されない。

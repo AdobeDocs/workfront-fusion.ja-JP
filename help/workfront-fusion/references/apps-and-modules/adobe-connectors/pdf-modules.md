@@ -5,16 +5,16 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e6fbbc20-4315-4668-9e11-af7cfa82ae66
-source-git-commit: 896597fa4a0689c19eb56d98f447c6a719d90ca2
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '4128'
-ht-degree: 90%
+source-wordcount: '4145'
+ht-degree: 87%
 
 ---
 
 # [!DNL Adobe PDF Services]
 
-[!DNL Adobe Workfront Fusion] [!DNL Adobe PDF Services] を使用すると、PDF ファイルからデータを抽出したり、指定したデータから新しい PDF ファイルを生成したりできます。さらに、様々なファイルタイプを PDF に変換したり、PDF を他のファイルタイプに変換したりできます。PDF サービスでは、PDF ファイルの組み合わせ、圧縮、メタデータの読み取りを行うことや、ファイルのパスワード保護を制御することもできます。
+Adobe Workfront Fusion [!DNL Adobe PDF Services] を使用すると、PDF ファイルからデータを抽出したり、指定したデータから新しいPDF ファイルを生成したりできます。 さらに、様々なファイルタイプを PDF に変換したり、PDF を他のファイルタイプに変換したりできます。PDF サービスでは、PDF ファイルの組み合わせ、圧縮、メタデータの読み取りを行うことや、ファイルのパスワード保護を制御することもできます。
 
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -24,7 +24,7 @@ PDF サービスに使用される API については、[Adobe Document Generat
 
 ## [!DNL Adobe PDF Services] を使用する際のセキュリティに関する考慮事項
 
-[!DNL Adobe PDF Services] はファイルの読み取り、変換、変更はできますが、[!DNL Adobe] も [!DNL Workfront Fusion] もファイルやデータを保存しません。つまり、次のようになります。
+[!DNL Adobe PDF Services] はファイルの読み取り、変換、変更を行うことができますが、[!DNL Adobe] もWorkfront Fusion もファイルやデータを保存しません。 つまり、次のようになります。
 
 * ユーザーは、ファイルのセキュリティを含め、ファイルの制御を維持する
 * PDF サービスを使用するのに[!UICONTROL アドビ]ストレージやクラウドストレージアカウントは必要ありません。
@@ -68,7 +68,7 @@ PDF サービスに使用される API については、[Adobe Document Generat
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -176,7 +176,7 @@ Adobe PDF サービスコネクタは、以下を使用します。
 
 ## [!DNL Adobe PDF Services] モジュールとそのフィールド
 
-[!DNL PDF Services] を設定すると、[!DNL Workfront Fusion] には以下のフィールドが表示されます。これらと共に、アプリやサービスのアクセスレベルなどの要因に応じて、追加のフィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+Workfront Fusion で [!DNL PDF Services] を設定する場合は、以下に示すフィールドが表示されます。 これらと共に、アプリやサービスのアクセスレベルなどの要因に応じて、追加のフィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -502,7 +502,7 @@ ZIP 形式で出力する場合、PDFは 1 ページにつき 1 つの画像に�
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 出力タイプ &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 出力タイプ ]</td> 
    <td> <p>ファイルをファイルのリストとして出力するか、ZIP ファイルとして出力するかを選択します。</td> 
   </tr> 
   <tr> 
@@ -577,7 +577,7 @@ ZIP 形式で出力する場合、PDFは 1 ページにつき 1 つの画像に�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source File]</td> 
-   <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> <p>このソースファイルは、モジュールが新しいPDFを生成するために使用する [!DNL Microsoft Word] テンプレートです。</p> <p>[!DNL Workfront Fusion] で使用する [!DNL Microsoft Word] テンプレート用に [!DNL Workfront] にプロジェクトを作成することをお勧めします。その後、[!DNL Workfront]／[!UICONTROL Download document] モジュールを使用して、適切なテンプレートをシナリオに取り込みます。</p> </td> 
+   <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> <p>このソースファイルは、モジュールが新しいPDFを生成するために使用する [!DNL Microsoft Word] テンプレートです。</p> <p>Workfront Fusion で使用する [!DNL Microsoft Word] テンプレート用に、Workfrontでプロジェクトを作成することをお勧めします。 その後、Workfront/[!UICONTROL ドキュメントをダウンロード ] モジュールを使用して、適切なテンプレートをシナリオに取り込むことができます。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output Format]</td> 
@@ -790,7 +790,7 @@ JSON で[!UICONTROL ドキュメントの生成]モジュールを使用する�
    <td> <p>文書の見出しを移動するには、このオプションを有効にします。</p> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL レポートの生成 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL レポートの生成 ]</td> 
    <td> <p>PDF のアクセシビリティの問題とその場所を記載したレポートを生成し、これらの問題の修正方法に関する提案を出すには、このオプションを有効にします。</p> </td> 
   </tr> 
  </tbody> 
@@ -823,7 +823,7 @@ JSON で[!UICONTROL ドキュメントの生成]モジュールを使用する�
  </tbody> 
 </table>
 
-### [!UICONTROL PDF ファイルの保護 &#x200B;]
+### [!UICONTROL PDF ファイルの保護 ]
 
 このツールは、ユーザーまたは所有者のパスワードを使用して PDF ドキュメントを保護します。また、PDF ドキュメントにおける印刷、編集、コピーなど、特定の機能に対する制限も設定します。暗号化するコンテンツのタイプと暗号化アルゴリズムを選択します。
 
@@ -845,8 +845,8 @@ JSON で[!UICONTROL ドキュメントの生成]モジュールを使用する�
    <td role="rowheader">[!UICONTROL Password Protection Type]</td> 
    <td> <p>パスワードを使用して入力 PDF ドキュメントを暗号化するには、このオプションを有効にします。このオプションを有効にする場合、次のいずれかまたは両方の値を指定して入力する必要があります。 </p> 
     <ul> 
-     <li> <p>[!UICONTROL ユーザーパスワード &#x200B;]</p> </li> 
-     <li> <p>[!UICONTROL 所有者パスワード &#x200B;] </p> </li> 
+     <li> <p>[!UICONTROL ユーザーパスワード ]</p> </li> 
+     <li> <p>[!UICONTROL 所有者パスワード ] </p> </li> 
     </ul> <p>各パスワードは最大 128 文字までです。</p> </td> 
   </tr> 
   <tr> 
@@ -868,7 +868,7 @@ JSON で[!UICONTROL ドキュメントの生成]モジュールを使用する�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Permissions]</td> 
-   <td> <p>印刷、編集、コンテンツのコピーを許可する権限を選択します。</p> <p>権限設定は、[!UICONTROL パスワード保護の種類 &#x200B;] フィールドに [!UICONTROL 所有者パスワード &#x200B;] が設定されている場合にのみ使用されます。</p> </td> 
+   <td> <p>印刷、編集、コンテンツのコピーを許可する権限を選択します。</p> <p>権限設定は、[!UICONTROL パスワード保護の種類 ] フィールドに [!UICONTROL 所有者パスワード ] が設定されている場合にのみ使用されます。</p> </td> 
   </tr> 
  </tbody> 
 </table>

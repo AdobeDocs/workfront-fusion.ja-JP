@@ -4,10 +4,10 @@ description: この記事は、Workfront Fusion でシナリオの作成を開�
 author: Becky
 feature: Workfront Fusion
 exl-id: 6a1d672d-0bd7-4a3a-b96d-6d8b4c97522d
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 34%
+source-wordcount: '552'
+ht-degree: 33%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 34%
 
 モジュールについて詳しくは、[ モジュールの概要 ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md) を参照してください。
 
-## [!DNL Workfront Fusion] ではファイルを操作できますか？
+## Workfront Fusion はファイルで動作しますか？
 
 ### 回答
 
@@ -47,7 +47,7 @@ Fusion でのファイルの操作について詳しくは、「[ モジュー�
 
 シナリオは、指定したスケジュールに従って、1 時間ごと、5 分ごとなど、一定の間隔で実行できます。 インスタントトリガー（Web フック）と呼ばれる特別なトリガーがあり、特定のサービスからデータを受け取った直後にシナリオを開始できます。Fusion は、次にスケジュールされた実行を待たずに、受信したデータを直ちに処理します。
 
-ポーリングされたモジュールとインスタント トリガーの違いについて詳しくは、「モジュールの概要」の [&#128279;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules)0&rbrace;トリガー モジュール」を参照してください。
+ポーリングされたモジュールとインスタント トリガーの違いについて詳しくは、「モジュールの概要」の [0}トリガー モジュール」を参照してください。](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules)
 
 ## 操作とは何ですか？
 
@@ -69,7 +69,7 @@ Fusion でのファイルの操作について詳しくは、「[ モジュー�
 
 ### 回答
 
-接続とは、[!DNL Workfront Fusion] アカウントと、使用するサードパーティのサービスとの間のリンクです。接続は、シナリオの編集時に作成できます。
+接続とは、Workfront Fusion アカウントと、使用するサードパーティのサービスとのリンクです。 接続は、シナリオの編集時に作成できます。
 
 詳しくは、[ 接続の概要 ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md) を参照してください。
 
@@ -77,12 +77,12 @@ Fusion でのファイルの操作について詳しくは、「[ モジュー�
 
 ### 回答
 
-[!UICONTROL Aggregator] は、データを 1 つのコレクションに結合します。 例えば、ファイルを zip アーカイブに圧縮して、メールの添付ファイルとして送信するなどです。
+[!UICONTROL アグリゲータ]は、データを 1 つのコレクションに結合するものです。例えば、ファイルを zip アーカイブに圧縮して、メールの添付ファイルとして送信するなどです。
 
 詳しくは、[[!UICONTROL Aggregator] モジュール ](/help/workfront-fusion/references/modules/aggregator-module.md) を参照してください。
 
-## [!DNL Workfront Fusion] で複数の添付ファイルを含むメールを処理するとどうなりますか？
+## Workfront Fusion で複数の添付ファイルを含むメールを処理するとどうなりますか？
 
 ### 回答
 
-[!UICONTROL Email] モジュール [!UICONTROL Retrieve attachments] を使用する場合、各添付ファイルは、シナリオの残りのモジュールを介して個別に送信されます。 複数のファイルを一度に受け取る他のアプリでも、同様のモジュールを使用できます。
+[!UICONTROL メール]モジュールの[!UICONTROL 添付ファイルの取得]を使用すると、各添付ファイルは、シナリオ内の残りのモジュールを通じて個別に送信されます。複数のファイルを一度に受け取る他のアプリでも、同様のモジュールを使用できます。

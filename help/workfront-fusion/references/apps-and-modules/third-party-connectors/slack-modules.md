@@ -1,19 +1,19 @@
 ---
 title: Slack モジュール
-description: ' [!DNL Adobe Workfront Fusion]  シナリオでは、Slack を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりすることができます。'
+description: Adobe Workfront Fusion のシナリオでは、Slackを使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 author: Becky
 feature: Workfront Fusion
 exl-id: c9c68a4c-f592-42d1-b15f-a525b9aa3944
-source-git-commit: eb0518ba0d1a0c758cb547e362c722f4be3674c7
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1954'
-ht-degree: 66%
+source-wordcount: '2031'
+ht-degree: 59%
 
 ---
 
 # [!DNL Slack] モジュール
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、[!DNL Slack] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
+Adobe Workfront Fusion のシナリオでは、[!DNL Slack] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -58,7 +58,7 @@ ht-degree: 66%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -87,7 +87,7 @@ Slack コネクタでは、以下を使用します。
 
 ## [!DNL Slack] モジュールとそのフィールド
 
-[!DNL Slack] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Slack] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL Slack] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Slack]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -117,7 +117,7 @@ Slack コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Slack] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Slack] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Enter a channel ID or name]</p> </td> 
@@ -132,7 +132,7 @@ Slack コネクタでは、以下を使用します。
    <td> <p>作成するメッセージのテキストコンテンツを入力します。</p> <p>メモ：テキストの書式設定について詳しくは、[!DNL Slack] ドキュメント内の<a href="https://api.slack.com/reference/surfaces/formatting">アプリケーションサーフェスのテキストの書式</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ユーザーとしての]</td> 
+   <td role="rowheader">[！ユーザーとしての UICONTROL]</td> 
    <td>このオプションを有効にすると、このモジュールの接続で使用される資格情報を所有するユーザーとしてメッセージを投稿できます。</td> 
   </tr> 
   <tr> 
@@ -152,7 +152,7 @@ Slack コネクタでは、以下を使用します。
    <td>メッセージに添付する項目ごとに、「<b> 項目を追加 </b>」をクリックして項目の詳細を入力します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アイコン絵文字 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL アイコン絵文字 ]</td> 
    <td><code>:icon-name:</code> の形式で、このメッセージのアイコンとして使用する絵文字を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
@@ -197,7 +197,7 @@ Slack コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Slack] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Slack] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Channel ID]</p> </td> 
@@ -208,7 +208,7 @@ Slack コネクタでは、以下を使用します。
    <td> <p> 削除するメッセージのタイムスタンプを入力またはマッピングします。</p> <p>メモ：タイムスタンプは、プライベートチャネルメッセージを監視モジュールなどの別のモジュールを使用して取得できます。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ユーザーとしての]</td> 
+   <td role="rowheader">[！ユーザーとしての UICONTROL]</td> 
    <td> <p> 接続で使用された資格情報を持つユーザーとしてメッセージを削除する場合は、このオプションを有効にします。</p> </td> 
   </tr> 
  </tbody> 
@@ -224,7 +224,7 @@ Slack コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Slack] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Slack] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Channel ID]</p> </td> 
@@ -237,7 +237,7 @@ Slack コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; 公開チャネルメッセージの取得 &#x200B;]**
+#### [!UICONTROL  公開チャネルメッセージの取得 ]**
 
 このアクションモジュールは、指定された公開チャネルから、指定された ID を持つメッセージを返します。
 
@@ -247,7 +247,7 @@ Slack コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Slack] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Slack] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Channel ID]</p> </td> 
@@ -270,7 +270,7 @@ Slack コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Slack] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Slack] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
 <!--  <tr> 
    <td role="rowheader"> <p>[!UICONTROL Enter a channel ID or name]</p> </td> 
@@ -293,7 +293,7 @@ Slack コネクタでは、以下を使用します。
    <td> <p>更新するメッセージの新しいテキストコンテンツを入力します。</p> <p>詳しくは、[!DNL Slack] ドキュメントの<a href="https://api.slack.com/docs/formatting">アプリケーションサーフェスのテキストの書式</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ユーザーとしての]</td> 
+   <td role="rowheader">[！ユーザーとしての UICONTROL]</td> 
    <td>このオプションを有効にすると、このモジュールの接続で使用される資格情報を所有するユーザーとしてメッセージが更新されます。</td> 
   </tr> 
   <tr> 
@@ -321,7 +321,7 @@ Slack コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Slack] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Slack] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Channel] </td> 
@@ -329,7 +329,7 @@ Slack コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>[!DNL Workfront Fusion] が 1 回の実行サイクルで返すメッセージの最大数を設定します。</p> </td> 
+   <td> <p>Workfront Fusion が 1 つの実行サイクルで返すメッセージの最大数を設定します。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -344,7 +344,7 @@ Slack コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Slack] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Slack] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Channel] </td> 
@@ -352,7 +352,7 @@ Slack コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>[!DNL Workfront Fusion] が 1 回の実行サイクルで返すメッセージの最大数を設定します。</p> </td> 
+   <td> <p>Workfront Fusion が 1 つの実行サイクルで返すメッセージの最大数を設定します。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -375,7 +375,7 @@ Slack コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Slack] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Slack] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Channel ID]</p> </td> 
@@ -393,7 +393,7 @@ Slack コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Slack] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Slack] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Exclude archived]</p> </td> 
@@ -405,7 +405,7 @@ Slack コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>[!DNL Workfront Fusion] が 1 回の実行サイクルで返すチャネルの最大数を設定します。</p> </td> 
+   <td> <p>Workfront Fusion が 1 つの実行サイクルで返す最大チャネル数を設定します。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -421,19 +421,19 @@ Slack コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Slack] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Slack] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
 <tr> 
    <td role="rowheader"> <p>[!UICONTROL Enter a channel ID or name]</p> </td> 
    <td> <p>必要なメッセージを選択する方法を選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>「<strong>[!UICONTROL チャネル ID または名前 &#x200B;]</strong>」フィールドに、ユーザーのリストを表示するチャネル ID またはチャネルのマッピングを入力します。</p> <p>メモ：チャネル ID は、[!UICONTROL List Channels] モジュールを使用して取得できます。</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>「<strong>[!UICONTROL チャネル ID または名前 ]</strong>」フィールドに、ユーザーのリストを表示するチャネル ID またはチャネルのマッピングを入力します。</p> <p>メモ：チャネル ID は、[!UICONTROL List Channels] モジュールを使用して取得できます。</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>チャネルのタイプを選択し、チャネルを選択します。</p> </li> 
     </ul> </td> 
   </tr>
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>[!DNL Workfront Fusion]が 1 回の実行サイクルで返すメンバーの最大数を設定します。</p> </td> 
+   <td> <p>Workfront Fusion が 1 つの実行サイクルで返すメンバーの最大数を設定します。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -451,7 +451,7 @@ Slack コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Slack] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Slack] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -481,7 +481,7 @@ Slack コネクタでは、以下を使用します。
    <td>API 呼び出しに使用するベース URL を選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アクセストークンを送信 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL アクセストークンを送信 ]</td> 
    <td>アクセストークンをヘッダーとして送信するか、クエリパラメーターとして送信するかを選択します。</td> 
   </tr> 
  </tbody> 

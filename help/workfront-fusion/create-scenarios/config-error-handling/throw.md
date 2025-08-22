@@ -8,10 +8,10 @@ description: 場合によっては、Adobe Workfront Fusion でシナリオの�
 author: Becky
 feature: Workfront Fusion
 exl-id: 4bf2a6c7-16b2-4545-9adf-be3947a7017d
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 28%
+source-wordcount: '386'
+ht-degree: 25%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 28%
 
 不完全な実行について詳しくは、[Adobe Workfront Fusion での不完全な実行の表示と解決](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)を参照してください。
 
-エラー処理ディレクティブについて詳しくは、[エラー処理ディレクティブ [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/errors/directives-for-error-handling.md)を参照してください。
+エラー処理ディレクティブについて詳しくは、[Adobe Workfront Fusion のエラー処理用のディレクティブ ](/help/workfront-fusion/references/errors/directives-for-error-handling.md) を参照してください。
 
 ## アクセス要件
 
@@ -72,7 +72,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ## `throw` の回避策
 
-条件付きでエラーをスローするには、操作中に意図的に失敗するようにモジュールを設定します。 オプションでエラーをスローするように設定された [!UICONTROL JSON]/[!UICONTROL JSON を解析 &#x200B;] モジュールを使用する可能性があります（この場合は `BundleValidationError`）。
+条件付きでエラーをスローするには、操作中に意図的に失敗するようにモジュールを設定します。 オプションでエラーをスローするように設定された [!UICONTROL JSON]/[!UICONTROL JSON を解析 ] モジュールを使用する可能性があります（この場合は `BundleValidationError`）。
 
 ![JSON エラー ](assets/json-parse-json.png)
 

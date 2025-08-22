@@ -1,19 +1,19 @@
 ---
 title: メールモジュール
-description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、メールアカウントを複数のサードパーティアプリケーションやサービスに接続できます。これにより、IMAP 経由でメールをダウンロードしたり、SMTP 経由でメールを送信したり、新しい下書きを作成したり、フォルダー間でメールを移動およびコピーしたり、メールを既読または未読としてマークしたり、メールを削除したりすることができます。'
+description: Adobe Workfront Fusion では、複数のサードパーティのアプリケーションやサービスにメールアカウントを接続できます。これにより、IMAP 経由でのメールのダウンロード、SMTP 経由でのメールの送信、新しいドラフトの作成、あるフォルダーから別のフォルダーへのメールの移動とコピー、メールの既読または未読のマーク、メールの削除を行うことができます。
 author: Becky
 feature: Workfront Fusion
 exl-id: 28a04bad-d3ef-4f3a-be93-8b04761a75e4
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2460'
-ht-degree: 70%
+source-wordcount: '2485'
+ht-degree: 61%
 
 ---
 
 # メールモジュール
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、メールアカウントを複数のサードパーティアプリケーションやサービスに接続できます。これにより、IMAP 経由でメールをダウンロードしたり、SMTP 経由でメールを送信したり、新しい下書きを作成したり、フォルダー間でメールを移動およびコピーしたり、メールを既読または未読としてマークしたり、メールを削除したりすることができます。
+Adobe Workfront Fusion では、複数のサードパーティのアプリケーションやサービスにメールアカウントを接続できます。これにより、IMAP 経由でのメールのダウンロード、SMTP 経由でのメールの送信、新しいドラフトの作成、あるフォルダーから別のフォルダーへのメールの移動とコピー、メールの既読または未読のマーク、メールの削除を行うことができます。
 
 ## アクセス要件
 
@@ -54,7 +54,7 @@ ht-degree: 70%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] のライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion]  のライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -100,7 +100,7 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
 
 ## [!UICONTROL メール]モジュールとそのフィールド
 
-[!UICONTROL メール]モジュールを設定すると、[!DNL Workfront Fusion] には次のフィールドが表示されます。これらと共に、アプリやサービスのアクセスレベルなどの要因に応じて、追加のフィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL  メール ] モジュールを設定すると、Workfront Fusion は以下に示すフィールドを表示します。 これらと共に、アプリやサービスのアクセスレベルなどの要因に応じて、追加のフィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 シナリオの別のモジュールで一部のメールフィールドを使用した場合、それらのメールフィールドには既にデータが含まれている場合があります。詳しくは、メールのヘルプドキュメントを参照してください。
 
@@ -161,7 +161,7 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of results]</td> 
-   <td> <p> 1 つのシナリオの実行サイクルで返され [!DNL Workfront Fusion] メールの最大数を入力またはマッピングします。</p> </td> 
+   <td> <p> 1 つのシナリオの実行サイクルでWorkfront Fusion が返す最大メール数を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -251,7 +251,7 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
   </tr> 
   <!--<tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL From] </td> 
-   <td> <p>Enter or map the email address (and name, if needed) that appears in the [!UICONTROL From] field in the email. </p> <p>Important: Use the correct syntax: <code>name@email.com</code> or <code>"Name" name@email.com</code>.</p> <p>Note:  Normally, [!DNL Workfront Fusion] uses the email address that you entered when creating the connection as the sender address. If you enter any other email address, an error may occur when sending a message because your account may not have permission to send emails from a different address than your own. E.g. <code>test@mail.com</code> or "<code>John Bush" test@email.com</code>.</p> </td> 
+   <td> <p>Enter or map the email address (and name, if needed) that appears in the [!UICONTROL From] field in the email. </p> <p>Important: Use the correct syntax: <code>name@email.com</code> or <code>"Name" name@email.com</code>.</p> <p>Note:  Normally, Workfront Fusion uses the email address that you entered when creating the connection as the sender address. If you enter any other email address, an error may occur when sending a message because your account may not have permission to send emails from a different address than your own. E.g. <code>test@mail.com</code> or "<code>John Bush" test@email.com</code>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader"> <p>[!UICONTROL Sender]</p> </td> 
@@ -307,11 +307,11 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>削除するメールのメール UID を入力します。</p> <p>メールのUIDは、メール / メールを監視モジュールまたは [!UICONTROL メールを検索 &#x200B;] モジュールを使用して取得できます。</p> </td> 
+   <td> <p>削除するメールのメール UID を入力します。</p> <p>メールのUIDは、メール / メールを監視モジュールまたは [!UICONTROL メールを検索 ] モジュールを使用して取得できます。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Expunge]</td> 
-   <td> <p>現在開いているメールボックスで [!UICONTROL Deleted] のフラグが設定されているすべてのメッセージを完全に削除するには、このオプションを有効にします。</p> <p>メモ：[!DNL Gmail] では、この動作は [!UICONTROL 設定 &#x200B;] &gt;[!UICONTROL IMAP アクセスでの POP/IMAP 転送 &#x200B;] セクションの設定によって駆動されます。</p> </td> 
+   <td> <p>現在開いているメールボックスで [!UICONTROL Deleted] のフラグが設定されているすべてのメッセージを完全に削除するには、このオプションを有効にします。</p> <p>メモ：[!DNL Gmail] では、この動作は [!UICONTROL 設定 ] &gt;[!UICONTROL IMAP アクセスでの POP/IMAP 転送 ] セクションの設定によって駆動されます。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -350,7 +350,7 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
    <td> <p>メールを取得する送信者のメールアドレスを入力またはマッピングします。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL 受信者の電子メール &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 受信者の電子メール ]</td> 
    <td> <p> メールを取得する受信者のメールアドレスを入力またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
@@ -371,11 +371,11 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Email ID (UID)]</td> 
-   <td> <p> 詳細を取得するメールのメール ID（UID）を入力します。</p> <p>メールの UID は、[!DNL Workfront Fusion] の[!UICONTROL &#x200B; Watch Email] モジュールまたは [!UICONTROL Search Email] モジュールを使用して取得できます。</p> </td> 
+   <td> <p> 詳細を取得するメールのメール ID（UID）を入力します。</p> <p>Workfront Fusion の [!UICONTROL Watch Email] モジュールまたは [!UICONTROL Search Email] モジュールを使用して、メールのUIDを取得できます。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of results]</td> 
-   <td> <p> 1 回のシナリオ実行サイクルで [!DNL Workfront Fusion] が返す必要のある最大メール数。</p> </td> 
+   <td> <p> Workfront Fusion が 1 つのシナリオ実行サイクルで返す最大メール数。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 
@@ -386,7 +386,7 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
 
 #### [!UICONTROL メールを既読としてマーク]
 
-このアクションモジュールは、[!UICONTROL &#x200B; 読み取り &#x200B;] フラグを設定して、選択されたフォルダー内のメールまたはドラフトを読み取りとしてマークします。
+このアクションモジュールは、[!UICONTROL  読み取り ] フラグを設定して、選択されたフォルダー内のメールまたはドラフトを読み取りとしてマークします。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -402,7 +402,7 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>既読としてマークするメールの UID を入力します。</p> <p>メールのUIDは、メール / メールを監視モジュールまたは [!UICONTROL メールを検索 &#x200B;] モジュールを使用して取得できます。</p> </td> 
+   <td> <p>既読としてマークするメールの UID を入力します。</p> <p>メールのUIDは、メール / メールを監視モジュールまたは [!UICONTROL メールを検索 ] モジュールを使用して取得できます。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -425,7 +425,7 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>未読としてマークするメールの UID を入力します。</p> <p>メールのUIDは、メール / メールを監視モジュールまたは [!UICONTROL メールを検索 &#x200B;] モジュールを使用して取得できます。</p> </td> 
+   <td> <p>未読としてマークするメールの UID を入力します。</p> <p>メールのUIDは、メール / メールを監視モジュールまたは [!UICONTROL メールを検索 ] モジュールを使用して取得できます。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -452,7 +452,7 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>宛先フォルダーに移動するメールの UID を入力します。</p> <p>メールのUIDは、メール / メールを監視モジュールまたは [!UICONTROL メールを検索 &#x200B;] モジュールを使用して取得できます。</p> </td> 
+   <td> <p>宛先フォルダーに移動するメールの UID を入力します。</p> <p>メールのUIDは、メール / メールを監視モジュールまたは [!UICONTROL メールを検索 ] モジュールを使用して取得できます。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -467,11 +467,11 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>メールアカウントを [!DNL Workfront Fusion] に接続する方法について詳しくは、この記事の<a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion] へのメールの接続</a>を参照してください。</p> </td> 
+   <td> <p>メールアカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref"> メールを [!UICONTROL Workfront Fusion] に接続する </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Save Message after Sending]</td> 
-   <td>メールメッセージが送信されると、メールボックスに保存されます。[!DNL Workfront Fusion] を使用して送信されたメールを <i>[!UICONTROL Sent mail]</i> フォルダーまたはメールボックス内の別のフォルダーに保存する場合は、このオプションを有効にします。一部のメールサービス（[!DNL Gmail] など）では、送信したメッセージが自動的に保存されます。</td> 
+   <td>メールメッセージが送信されると、メールボックスに保存されます。Workfront Fusion を使用して送信されたメールを <i>[!UICONTROL 送信済みメール ]</i> フォルダーまたはメールボックス内の別のフォルダーに保存する場合は、このオプションを有効にします。 一部のメールサービス（[!DNL Gmail] など）では、送信したメッセージが自動的に保存されます。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL To] </td> 
@@ -545,7 +545,7 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
   </tr> 
 <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL From] </td> 
-   <td> <p>メールの「[!UICONTROL From]」フィールドに表示されるメールアドレス（および必要に応じて名前）を入力またはマッピングします。 </p> <p>重要：正しい構文を使用してください（<code>name@email.com</code> または <code>"Name" name@email.com</code>）。</p> <p>メモ：通常は、[!DNL Workfront Fusion] は、接続を作成する際に入力したメールアドレスを送信者のアドレスとして使用します。他のメールアドレスを入力すると、メッセージの送信時にエラーが発生する場合があります。これは、お使いのアカウントに、自身のアドレスとは異なるアドレスからメールを送信する権限がない可能性があるためです。（例：<code>test@mail.com</code> または "<code>John Bush" test@email.com</code>）。</p> </td> 
+   <td> <p>メールの「[!UICONTROL From]」フィールドに表示されるメールアドレス（および必要に応じて名前）を入力またはマッピングします。 </p> <p>重要：正しい構文を使用してください（<code>name@email.com</code> または <code>"Name" name@email.com</code>）。</p> <p>注意：通常、Workfront Fusion では接続時に入力したメールアドレスを送信者のアドレスとして使用します。 他のメールアドレスを入力すると、メッセージの送信時にエラーが発生する場合があります。これは、お使いのアカウントに、自身のアドレスとは異なるアドレスからメールを送信する権限がない可能性があるためです。（例：<code>test@mail.com</code> または "<code>John Bush" test@email.com</code>）。</p> </td> 
   </tr> 
  </tbody> 
 </table>

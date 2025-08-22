@@ -1,19 +1,19 @@
 ---
 title: Draft.js モジュール
-description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、Draft.js モジュールを使用して Draft.js をHTMLに変換し、HTMLを Draft.js に変換できます。'
+description: Adobe Workfront Fusion シナリオでは、Draft.js モジュールを使用して Draft.js をHTMLに変換したり、HTMLを Draft.js に変換したりできます。
 author: Becky
 feature: Workfront Fusion
 exl-id: 0116e379-cef8-4036-875b-46ca79a9e94d
-source-git-commit: d8c40e310931e5901a5c5a2be2357b5021452bc2
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 17%
+source-wordcount: '256'
+ht-degree: 14%
 
 ---
 
 # [!UICONTROL Draft.js] モジュール
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、[!UICONTROL Draft.js] モジュールを使用して Draft.js をHTMLに変換し、HTMLを Draft.js に変換できます。 これをWorkfront モジュールと組み合わせて使用すると、Workfront フィールドにリッチテキストを追加したり、フィールドからリッチテキストを読み取ったりできます。
+Adobe Workfront Fusion シナリオでは、[!UICONTROL Draft.js] モジュールを使用して Draft.js をHTMLに変換したり、HTMLを Draft.js に変換したりできます。 これをWorkfront モジュールと組み合わせて使用すると、Workfront フィールドにリッチテキストを追加したり、フィールドからリッチテキストを読み取ったりできます。
 
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -56,11 +56,11 @@ ht-degree: 17%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
-## [!UICONTROL Draft.js からHTMLへ &#x200B;]
+## [!UICONTROL Draft.js からHTMLへ ]
 
 このモジュールは Draft.js をHTMLに変換します。
 
@@ -77,7 +77,7 @@ ht-degree: 17%
  </tbody> 
 </table>
 
-## [!UICONTROL HTMLから Draft.js へ &#x200B;]
+## [!UICONTROL HTMLから Draft.js へ ]
 
 このモジュールはHTML コードを Draft.js に変換します。
 

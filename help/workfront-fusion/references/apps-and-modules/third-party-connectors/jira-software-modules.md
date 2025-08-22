@@ -1,13 +1,13 @@
 ---
 title: Jira ソフトウェアモジュール
-description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Jira] Software を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。'
+description: Adobe Workfront Fusion のシナリオでは、 [!DNL Jira] Software を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 8181cf8c2b2c4e6523cb16df0f91120e775e654b
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2238'
-ht-degree: 79%
+source-wordcount: '2324'
+ht-degree: 64%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 79%
 >
 >これらの手順は、従来の Jira Cloud および Jira Server コネクタに適用されます。 Jira というラベルのみを持つ、新しいバージョンの Jira コネクタについては、[Jira モジュール ](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、[!DNL Jira Software] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
+Adobe Workfront Fusion のシナリオでは、[!DNL Jira Software] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
 これらの手順は、Jira Cloud と Jira Server の両方のモジュールに適用されます。
 
@@ -64,7 +64,7 @@ ht-degree: 79%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -103,18 +103,18 @@ Jira コネクタでは、以下を使用します。
  </tbody> 
  </table>
 
-## [!DNL Jira Software] を [!DNL Workfront Fusion] に接続
+## [!DNL Jira Software] を Workfront Fusion に接続
 
 接続方法は、[!DNL Jira Cloud] を使用しているか、[!DNL Jira Server] を使用しているかによって決まります。
 
 * [ [!DNL Jira Cloud]  を Workfront Fusion に接続](#connect-jira-cloud-to-workfront-fusion)
-* [ [!DNL Jira Server]  を  [!DNL Workfront Fusion] に接続](#connect-jira-server-to-workfront-fusion)
+* [ [!DNL Jira Server]  を Workfront Fusion に接続](#connect-jira-server-to-workfront-fusion)
 
-### [!DNL Jira Cloud] を [!DNL Workfront Fusion] に接続
+### [!DNL Jira Cloud] を Workfront Fusion に接続
 
-[!DNL Jira Cloud] を [!DNL Workfront Fusion] に接続
+[!DNL Jira Cloud] を Workfront Fusion に接続
 
-[!DNL Jira Software] を [!DNL Workfront Fusion] に接続するには、API トークンを作成し、それをサービス URL とユーザー名とともに [!DNL Workfront Fusion] の「[!UICONTROL 接続の作成]」フィールドに挿入する必要があります。
+[!DNL Jira Software] をWorkfront Fusion に接続するには、API トークンを作成し、それをサービス URL とユーザー名と共にWorkfront Fusion の [!UICONTROL  接続を作成 ] フィールドに挿入する必要があります。
 
 #### [!DNL Jira] での API トークンの作成
 
@@ -127,11 +127,11 @@ Jira コネクタでは、以下を使用します。
    >
    >このダイアログを閉じた後は、トークンを再度表示することはできません。
 1. 生成されたトークンを安全な場所に保存します。
-1. [ [!DNL Workfront Fusion]](#configure-the-jira-api-token-in-workfront-fusion) で [!DNL Jira] API トークンを設定するに進みます。
+1. [Workfront Fusion で  [!DNL Jira] API トークンを設定 ](#configure-the-jira-api-token-in-workfront-fusion) を続けます。
 
-#### [!DNL Jira][!DNL Workfront Fusion] の API トークンを設定
+#### Workfront Fusion での [!DNL Jira] API トークンの設定
 
-1. [!DNL Workfront Fusion] で任意の [!DNL Jira Cloud] モジュールで、「[!UICONTROL 接続]」フィールドの横にある「**[!UICONTROL 追加]**」をクリックします。
+1. Workfront Fusion の任意の [!DNL Jira Cloud] モジュールで、「**[!UICONTROL connection]**」フィールドの横にある「[!UICONTROL  追加 ] をクリックします。
 1. 次の情報を指定します。
 
    * **環境**
@@ -142,13 +142,13 @@ Jira コネクタでは、以下を使用します。
 
 1. 「[!UICONTROL 続行]」をクリックして接続を作成し、モジュールに戻ります。
 
-### [!DNL Jira Server] を [!DNL Workfront Fusion] に接続
+### [!DNL Jira Server] を Workfront Fusion に接続
 
-[!DNL Workfront Fusion] と [!DNL Jira Server] の間の接続を承認するには、コンシューマキー、プライベートキー、サービス URL が必要です。この情報については、[!DNL Jira] 管理者への問い合わせが必要になる場合があります。
+Workfront Fusion と [!DNL Jira Server] の間の接続を認証するには、コンシューマーキー、秘密鍵、サービス URL が必要です。 この情報については、[!DNL Jira] 管理者への問い合わせが必要になる場合があります。
 
 * [ [!DNL Jira]  接続の公開キーと秘密鍵の生成](#generate-public-and-private-keys-for-your-jira-connection)
 * [ [!DNL Jira] でクライアントアプリをコンシューマーとして設定する](#configure-the-client-app-as-a-consumer-in-jira)
-* [ [!DNL Jira]  [!DNL Workfront Fusion] のサーバーまたは Jira データセンターへの接続の作成](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
+* [Workfront Fusion で  [!DNL Jira] Server または Jira データセンターへの接続を作成](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
 
 #### [!DNL Jira] 接続の公開鍵と秘密鍵の生成
 
@@ -238,15 +238,15 @@ Jira コネクタでは、以下を使用します。
    </table>
 
 1. 「**[!UICONTROL 続行]**」をクリックします。
-1. [!DNL Workfront Fusion][&#128279;](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion) で  [!DNL Jira Server]  または  [!DNL Jira Data Center]  への接続を作成
+1. 続けて [Workfront Fusion への接続  [!DNL Jira Server]  接続の作  [!DNL Jira Data Center] ](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion) を行います。
 
-#### [!DNL Workfront Fusion] で [!DNL Jira Server] または [!DNL Jira Data Center] への接続を作成
+#### Workfront Fusion で [!DNL Jira Server] または [!DNL Jira Data Center] への接続を作成する
 
 >[!NOTE]
 >
 >[!DNL Jira Server] アプリで [!DNL Jira Server] または [!DNL Jira Data Center] に接続します。
 
-1. [!DNL Workfront Fusion] で任意の [!DNL Jira Server] モジュールで、「[!UICONTROL 接続]」フィールドの横にある「**[!UICONTROL 追加]**」をクリックします。
+1. Workfront Fusion の任意の [!DNL Jira Server] モジュールで、「**[!UICONTROL connection]**」フィールドの横にある「[!UICONTROL  追加 ] をクリックします。
 1. [!UICONTROL 接続の作成]パネルで、次のフィールドに入力します。
 
    <table style="table-layout:auto"> 
@@ -284,7 +284,7 @@ Jira コネクタでは、以下を使用します。
 
 ## [!DNL Jira Software] モジュールとそのフィールド
 
-[!DNL Jira Software] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Jira Software] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL Jira Software] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Jira Software]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -310,7 +310,7 @@ Jira コネクタでは、以下を使用します。
     <ol> 
      <li value="1"><strong>[!UICONTROL Add]</strong> をクリックします。</li> 
      <li value="2">Web フックの名前を入力します。</li> 
-     <li value="3"> <p>Web フックに使用する接続を選択します。 </p> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </li> 
+     <li value="3"> <p>Web フックに使用する接続を選択します。 </p> <p>[!DNL Jira Software] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への [!DNL Jira Software] の接続 </a> を参照してください。</p> </li> 
      <li value="4"> <p>ソフトウェアで監視するレコードの種類を選択します。</p> 
       <ul> 
        <li>[!UICONTROL Comment] </li> 
@@ -345,7 +345,7 @@ Jira コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] と [!DNL Workfront Fusion]</a> の接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Jira Software] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への [!DNL Jira Software] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Sprint ID]</td> 
@@ -353,7 +353,7 @@ Jira コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Issue ID or Keys]</td> 
-   <td>エクスペリエンスを表示するイシューまたはキーごとに、<b>[!UICONTROL アイテムの追加 &#x200B;]</b> をクリックして、イシュー ID またはキーを入力します。 1 つのモジュールに最大 50 個まで入力できます。</td> 
+   <td>エクスペリエンスを表示するイシューまたはキーごとに、<b>[!UICONTROL アイテムの追加 ]</b> をクリックして、イシュー ID またはキーを入力します。 1 つのモジュールに最大 50 個まで入力できます。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -372,7 +372,7 @@ Jira コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Jira Software] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への [!DNL Jira Software] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -401,7 +401,7 @@ Jira コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事内の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software]を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Jira Software] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への [!DNL Jira Software] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -413,7 +413,7 @@ Jira コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p> <p>例： <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] によって、認証ヘッダーが追加されます。</p> </td> 
+   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p> <p>例： <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion は認証ヘッダーを追加します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 
@@ -443,7 +443,7 @@ Jira コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Jira Software] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への [!DNL Jira Software] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -475,7 +475,7 @@ Jira コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事内の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Jira Software] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への [!DNL Jira Software] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
@@ -500,7 +500,7 @@ Jira コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Jira Software] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への [!DNL Jira Software] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -540,7 +540,7 @@ Jira コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Jira Software] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への [!DNL Jira Software] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -579,7 +579,7 @@ Jira コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Jira Software] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への [!DNL Jira Software] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -618,7 +618,7 @@ Jira コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Jira Software] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">[!DNL Jira Software] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Jira Software] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への [!DNL Jira Software] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 

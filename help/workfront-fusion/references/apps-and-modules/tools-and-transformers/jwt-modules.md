@@ -1,19 +1,19 @@
 ---
 title: JWT モジュール
-description: ' [!DNL Adobe Workfront Fusion] [!UICONTROL JWT] アプリには、指定されたアルゴリズムに基づいて JWT トークンを作成するモジュールが用意されています。'
+description: Adobe Workfront Fusion [!UICONTROL JWT] アプリには、提供されたアルゴリズムに基づいて JWT トークンを作成するモジュールが用意されています。
 author: Becky
 feature: Workfront Fusion
 exl-id: 380f60db-b2ec-411a-86ee-0d5699f19b41
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 7%
+source-wordcount: '537'
+ht-degree: 5%
 
 ---
 
 # [!UICONTROL JWT] モジュール
 
-[!DNL Adobe Workfront Fusion] [!UICONTROL JWT] アプリには、指定されたアルゴリズムに基づいて JWT トークンを作成するモジュールが用意されています。
+Adobe Workfront Fusion [!UICONTROL JWT] アプリには、提供されたアルゴリズムに基づいて JWT トークンを作成するモジュールが用意されています。
 
 ## アクセス要件
 
@@ -52,7 +52,7 @@ ht-degree: 7%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -82,7 +82,7 @@ JWT コネクタでは、以下を使用します。
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アルゴリズム &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL アルゴリズム ]</td> 
    <td> <p>JWT の生成に使用するアルゴリズムを選択します。</p> <ul>
    <li><b>HS256</b>: SHA-256 ハッシュ アルゴリズムを使用する HMAC</li>
    <li><b>HS384</b>: SHA-384 ハッシュ アルゴリズムを使用する HMAC</li>
@@ -99,7 +99,7 @@ JWT コネクタでは、以下を使用します。
    </ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ペイロード &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL ペイロード ] </td> 
    <td> <p>追加するペイロード項目ごとに、「<b> 項目を追加 </b>」をクリックし、項目のキーと値を入力します。</p> </td> 
   </tr> 
   <tr> 

@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion では、モジュール、モジュール�
 author: Becky
 feature: Workfront Fusion
 exl-id: 5cece7d4-b2c7-4276-8a6f-f65bad799c7a
-source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 63%
+source-wordcount: '934'
+ht-degree: 60%
 
 ---
 
@@ -26,17 +26,17 @@ Adobe Workfront Fusion では、モジュール、モジュールのグループ
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
    <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規：[!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：[!DNL Workfront Fusion] ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -44,9 +44,9 @@ Adobe Workfront Fusion では、モジュール、モジュールのグループ
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：[!DNL Adobe Workfront Fusion] を購入してください。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
   </tr>
  </tbody> 
@@ -54,7 +54,7 @@ Adobe Workfront Fusion では、モジュール、モジュールのグループ
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -148,7 +148,7 @@ Adobe Workfront Fusion では、モジュール、モジュールのグループ
 
 ## テンプレートを使用したシナリオのコピーおよび再利用
 
-[!DNL Workfront Fusion] シナリオの開始点としてテンプレートを作成できます。テンプレートからシナリオを作成する場合、テンプレートを変更せずにシナリオを変更できます。テンプレートには、フィールドの値は保存されません。
+Workfront Fusion のシナリオの出発点として、テンプレートを作成できます。 テンプレートからシナリオを作成する場合、テンプレートを変更せずにシナリオを変更できます。テンプレートには、フィールドの値は保存されません。
 
 テンプレートを使用してシナリオを作成する方法について詳しくは、[ テンプレートを使用したシナリオの作成 ](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md) を参照してください。
 

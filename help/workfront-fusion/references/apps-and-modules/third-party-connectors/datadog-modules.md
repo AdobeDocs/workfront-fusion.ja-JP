@@ -1,19 +1,19 @@
 ---
 title: Datadog モジュール
-description: ' [!DNL Adobe Workfront Fusion]  シナリオでは、Datadog を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりすることができます。'
+description: Adobe Workfront Fusion シナリオでは、Datadog を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 author: Becky
 feature: Workfront Fusion
 exl-id: c8c5f2e3-5af1-4957-bb6f-6c19c35102c5
-source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 75%
+source-wordcount: '948'
+ht-degree: 63%
 
 ---
 
 # [!DNL Datadog] モジュール
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、[!DNL Datadog] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
+Adobe Workfront Fusion のシナリオでは、[!DNL Datadog] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -58,7 +58,7 @@ ht-degree: 75%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -81,11 +81,11 @@ Datadog コネクタは以下を使用します。
  </tbody> 
  </table>
 
-## [!DNL Datadog] を [!DNL Workfront Fusion] に接続する {#connect-datadog-to-workfront-fusion}
+## [!DNL Datadog] を Workfront Fusion に接続 {#connect-datadog-to-workfront-fusion}
 
 ### API キーとアプリケーションキーを取得する {#retrieve-your-api-key-and-application-key}
 
-[!DNL Datadog] アカウントを [!DNL Workfront Fusion] に接続するには、[!DNL Datadog] アカウントから API キーとアプリケーションキーを取得する必要があります。
+[!DNL Datadog] アカウントをWorkfront Fusion に接続するには、[!DNL Datadog] アカウントから API キーとアプリケーションキーを取得する必要があります。
 
 1. [!DNL Datadog] アカウントにログインします。
 1. 左側のナビゲーションパネルで、「**[!UICONTROL 統合]**」をクリックして、「**[!UICONTROL API]**」をクリックします。
@@ -96,7 +96,7 @@ Datadog コネクタは以下を使用します。
 1. 紫色のバーにポインタを合わせると、アプリケーションキーが表示されます。
 1. アプリケーションキーを安全な場所にコピーします。
 
-### [!DNL Workfront Fusion] で [!DNL Datadog] への接続を作成する
+### Workfront Fusion での [!DNL Datadog] への接続の作成
 
 [!DNL Datadog] アカウントへの接続を、[!UICONTROL Datadog] モジュール内から直接作成できます。
 
@@ -124,7 +124,7 @@ Datadog コネクタは以下を使用します。
       <td> <p>接続先のドメイン（米国または EU）を選択します。</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL API キーの場所 &#x200B;] </td> 
+      <td role="rowheader">[!UICONTROL API キーの場所 ] </td> 
       <td> <p>API キーをヘッダーに含めるか、クエリ文字列に含めるかを選択します。</p> </td> 
      </tr> 
      <tr> 
@@ -138,7 +138,7 @@ Datadog コネクタは以下を使用します。
 
 ## [!DNL Datadog] モジュールとそのフィールド
 
-[!DNL Datadog] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Datadog] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL Datadog] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Datadog]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -159,10 +159,10 @@ Datadog コネクタは以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Datadog] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">[!DNL Datadog] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Datadog] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Datadog] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL で専用ドメインを使用 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL で専用ドメインを使用 ]</td> 
    <td>多くの受信トラフィックを想定している Datadog API エンドポイントの一部は、専用ドメインで動作しています。 API 呼び出しに専用ドメインを使用するには、このボックスをオンにします。</td> 
   </tr> 
   <tr> 
@@ -217,7 +217,7 @@ URL：`/v1/dashboard`
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Datadog] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">[!DNL Datadog] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL Datadog] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Datadog] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Type]</td> 
@@ -229,7 +229,7 @@ URL：`/v1/dashboard`
    </ul>
    </td> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 間隔 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 間隔 ]</td> 
    <td> 指標のタイプがレートまたは数の場合は、対応する間隔を定義します。</td> 
   </tr> 
   <tr> 

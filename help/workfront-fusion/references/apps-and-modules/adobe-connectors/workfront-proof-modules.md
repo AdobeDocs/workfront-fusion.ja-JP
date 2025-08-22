@@ -1,21 +1,21 @@
 ---
 title: Workfront Proof モジュール
-description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Workfront Proof] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。'
+description: Adobe Workfront Fusion のシナリオでは、 [!DNL Workfront Proof] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりすることができます。
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '3050'
-ht-degree: 84%
+source-wordcount: '3131'
+ht-degree: 80%
 
 ---
 
 # [!DNL Workfront Proof] モジュール
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、[!DNL Workfront Proof] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
+Adobe Workfront Fusion のシナリオでは、[!DNL Workfront Proof] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
-これは、特定のイベントに基づいてプルーフを更新したり、プルーフの受信者を検索したりする場合など、[!DNL Workfront] または [!DNL Workfront Proof] 内でのプルーフが現在サポートされていないタスクを実行する必要がある場合に役立ちます。
+これは、Workfront内または [!DNL Workfront Proof] 内のプルーフで現在サポートされていないタスクを実行する必要がある場合に便利です。例えば、特定のイベントに基づいてプルーフを更新したり、プルーフの受信者を検索したりする場合です。
 
 [!DNL Workfront Proof] コネクタは、組織で使用可能なアクティブなアプリの数に対してカウントされません。すべてのシナリオは、[!DNL Workfront Proof] アプリのみを使用する場合でも、組織の合計シナリオ数にカウントされます。
 
@@ -62,7 +62,7 @@ ht-degree: 84%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -85,11 +85,11 @@ Workfront Proof コネクタでは、以下を使用します。
  </tbody> 
  </table>
 
-## [!DNL Workfront Proof] を [!DNL Workfront Fusion] に接続
+## [!DNL Workfront Proof] を Workfront Fusion に接続
 
-[!DNL Workfront Proof] アカウントへの接続を、[!DNL Workfront Fusion] モジュール内から直接作成できます。
+Workfront Fusion モジュール内から [!DNL Workfront Proof] アカウントへの直接接続を作成できます。
 
-1. 任意の [!DNL Workfront Fusion] モジュールで、「[!UICONTROL 接続]」フィールドの横にある「[!UICONTROL **追加**]」をクリックします。
+1. 任意のWorkfront Fusion モジュールで、「[!UICONTROL **接続**] フィールドの横にある「[!UICONTROL  追加 ] をクリックします
 
 2. 次のフィールドに入力します。
 
@@ -139,7 +139,7 @@ Workfront Proof コネクタでは、以下を使用します。
 
 ## [!DNL Workfront Proof] モジュールとそのフィールド
 
-[!DNL Workfront Proof] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Workfront Proof] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL Workfront Proof] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Workfront Proof]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -175,7 +175,7 @@ Workfront Proof コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Workfront Proof] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -194,7 +194,7 @@ Workfront Proof コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Workfront Proof] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Activity type]</td> 
@@ -225,7 +225,7 @@ Workfront Proof コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Workfront Proof] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">レコードタイプ</td> 
@@ -270,7 +270,7 @@ Workfront Proof コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Workfront Proof] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof Type]</td> 
@@ -419,7 +419,7 @@ Workfront Proof コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Workfront Proof] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Method]</td> 
@@ -459,11 +459,11 @@ Workfront Proof コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Workfront Proof] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>[!UICONTROL プルーフの詳細 &#x200B;] ページにあるプルーフの一意の ID を入力します。  </td> 
+   <td> <p>[!UICONTROL プルーフの詳細 ] ページにあるプルーフの一意の ID を入力します。  </td> 
   </tr> 
  </tbody> 
 </table>
@@ -486,7 +486,7 @@ Workfront Proof コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Workfront Proof] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
@@ -521,7 +521,7 @@ Workfront Proof コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Workfront Proof] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
@@ -557,11 +557,11 @@ Workfront Proof コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Workfront Proof] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>[!UICONTROL プルーフの詳細 &#x200B;] ページにあるプルーフの一意の ID を入力します。 </td> 
+   <td> <p>[!UICONTROL プルーフの詳細 ] ページにあるプルーフの一意の ID を入力します。 </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Deadline]</td> 
@@ -589,7 +589,7 @@ Workfront Proof コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Enable Subscriptions]</td> 
-   <td>参加者以外に対して、プルーフへの登録を許可するかどうかを選択します。<br> このオプションを選択すると、[!UICONTROL のデフォルトの役割 &#x200B;] フィールドでオプションを選択することもできます。</td> 
+   <td>参加者以外に対して、プルーフへの登録を許可するかどうかを選択します。<br> このオプションを選択すると、[!UICONTROL のデフォルトの役割 ] フィールドでオプションを選択することもできます。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Enable Subscriptions Validation]</td> 
@@ -644,7 +644,7 @@ Workfront Proof コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Workfront Proof] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Source file]</td> 
@@ -668,7 +668,7 @@ Workfront Proof コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 - 基本手順</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Workfront Proof] アカウントを Workfront Fusion に接続する手順について詳しくは、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion への接続の作成 - 基本手順</a>を参照してください</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Outputs]</td> 
@@ -697,10 +697,10 @@ Workfront Proof コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>[!DNL Workfront Proof] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Workfront Proof] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 検索 &#x200B;]</td> 
+   <td>[!UICONTROL 検索 ]</td> 
    <td> <p>モジュールで検索するレコードのタイプを選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Proof]</strong> </p> <p>検索するプルーフのプルーフ名を入力します。</p> </li> 

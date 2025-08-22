@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion のシナリオでは、Microsoft Word テ�
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 79%
+source-wordcount: '1353'
+ht-degree: 75%
 
 ---
 
 # [!DNL Microsoft Word Template]モジュール
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、[!DNL Microsoft Word Templates] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
+Adobe Workfront Fusion のシナリオでは、[!DNL Microsoft Word Templates] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -58,19 +58,19 @@ ht-degree: 79%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
 ## 前提条件
 
-[!DNL Miscrosoft Word Templates]を [!DNL Adobe Workfront Fusion] で使用するには、[!DNL Office 365] アカウントが必要です。`www.office.com` で作成できます。
+Adobe Workfront Fusion で [!DNL Miscrosoft Word Templates] を使用するには、[!DNL Office 365] アカウントが必要です。 `www.office.com` で作成できます。
 
 
 
-## [!DNL Office] サービスを [!DNL Workfront Fusion] に接続
+## Workfront Fusion への [!DNL Office] サービスの接続
 
-[!DNL Office] アカウントを [!UICONTROL Workfront Fusion] に接続する方法については、[[!UICONTROL Adobe Workfront Fusion] への接続の作成 - 基本手順](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)を参照してください。
+[!DNL Office] アカウントを [!UICONTROL Workfront Fusion] に接続する方法について詳しくは、[[!UICONTROL Adobe Workfront Fusion] への接続の作成 - 基本手順](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)を参照してください。
 
 >[!NOTE]
 >
@@ -100,7 +100,7 @@ ht-degree: 79%
 
 ### 単純な値タグ {#simple-value-tag}
 
-単純な値タグは、対応する値に置き換えられるだけです。タグの名前は、「[!UICONTROL &#x200B; キー &#x200B;]」フィールドの値に対応しています。このフィールドは二重の中括弧で囲まれています（例：`{{name}}`）。
+単純な値タグは、対応する値に置き換えられるだけです。タグの名前は、「[!UICONTROL  キー ]」フィールドの値に対応しています。このフィールドは二重の中括弧で囲まれています（例：`{{name}}`）。
 
 **例**：「こんにちは、ピーターさん。」と書かれたドキュメントを作成するには、[!DNL Microsoft Word Template]モジュールを使用して、次のテンプレートを作成します。
 

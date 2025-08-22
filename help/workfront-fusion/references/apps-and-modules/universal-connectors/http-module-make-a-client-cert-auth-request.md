@@ -1,23 +1,23 @@
 ---
 title: HTTP／クライアント証明書認証リクエストを作成モジュール
-description: この  [!DNL Adobe Workfront Fusion] モジュールを使用すると、HTTP クライアント証明書認証を使用して HTTP リクエストを設定し、サーバーに送信できます。受信した HTTP 応答は、出力バンドルに含まれます。
+description: このAdobe Workfront Fusion モジュールを使用すると、HTTP クライアント証明書認証を含む HTTP リクエストを設定して、サーバーに送信できます。 受信した HTTP 応答は、出力バンドルに含まれます。
 author: Becky
 feature: Workfront Fusion
 exl-id: cc33530c-3010-4955-8819-5eb8373a0e10
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 77%
+source-wordcount: '1063'
+ht-degree: 70%
 
 ---
 
-# HTTP > [!UICONTROL &#x200B; クライアント証明書認証リクエストを作成 &#x200B;] モジュール
+# HTTP > [!UICONTROL  クライアント証明書認証リクエストを作成 ] モジュール
 
 >[!NOTE]
 >
->Adobe Workfront Fusion には、Adobe Workfront ライセンスに加えて [!DNL Adobe Workfront Fusion] ライセンスが必要です。
+>Adobe Workfront Fusion を使用するには、Adobe Workfront ライセンスに加えて、Adobe Workfront Fusion ライセンスが必要です。
 
-この [!DNL Adobe Workfront Fusion] モジュールを使用すると、HTTP クライアント証明書認証を使用して HTTP リクエストを設定し、サーバーに送信できます。受信した HTTP 応答は、出力バンドルに含まれます。
+このAdobe Workfront Fusion モジュールを使用すると、HTTP クライアント証明書認証を含む HTTP リクエストを設定して、サーバーに送信できます。 受信した HTTP 応答は、出力バンドルに含まれます。
 
 >[!NOTE]
 >
@@ -64,15 +64,15 @@ ht-degree: 77%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
-## [!UICONTROL HTTP] > [!UICONTROL &#x200B; クライアント証明書認証リクエストを行う &#x200B;] モジュール設定
+## [!UICONTROL HTTP] > [!UICONTROL  クライアント証明書認証リクエストを行う ] モジュール設定
 
-[!UICONTROL HTTP]/[!UICONTROL &#x200B; クライアント証明書認証リクエストを行う &#x200B;] モジュールを設定すると、以下に示 [!DNL Adobe Workfront Fusion] フィールドが表示されます。 モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL HTTP]/[!UICONTROL Make a Client Certificate Authorization request] モジュールを設定すると、Adobe Workfront Fusion は以下に示すフィールドを表示します。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) でモジュールから別のモジュールに情報をマッピングを参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[Adobe Workfront Fusion でのモジュール間の情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
 ![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -103,7 +103,7 @@ ht-degree: 77%
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Evaluate all states as errors (except for 2xx and 3xx )] </td> 
-   <td> <p>エラー処理を設定するには、このオプションを使用します。</p> <p>詳しくは、<a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">[!DNL Adobe Workfront Fusion]</a> でのエラー処理を参照してください。</p> </td> 
+   <td> <p>エラー処理を設定するには、このオプションを使用します。</p> <p>詳しくは、<a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Adobe Workfront Fusion でのエラー処理</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL] </td> 
@@ -168,7 +168,7 @@ ht-degree: 77%
               <p>ファイルのパスワードを入力します。</p>
             </li>
             <li value="5">
-              <p><b>[!UICONTROL 保存 &#x200B;]</b> をクリックしてファイルを抽出し、モジュール設定に戻ります。</p>
+              <p><b>[!UICONTROL 保存 ]</b> をクリックしてファイルを抽出し、モジュール設定に戻ります。</p>
             </li>
           </ol>
 </p> </td> 
@@ -187,7 +187,7 @@ ht-degree: 77%
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Disable serialization of multiple same query string keys as arrays]</p> </td> 
-   <td> <p>デフォルトでは、[!DNL Workfront Fusion] は、配列と同じ URL クエリ文字列パラメーターキーに対する複数の値を処理します。例えば、<code>www.test.com?foo=bar&amp;foo=baz</code> が <code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code> に変換されます。このオプションをアクティブ化すると、この機能は無効になります。 </p> </td> 
+   <td> <p>デフォルトでは、Workfront Fusion は配列と同じ URL クエリ文字列パラメーターキーに対して複数の値を処理します。 例えば、<code>www.test.com?foo=bar&amp;foo=baz</code> が <code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code> に変換されます。このオプションをアクティブ化すると、この機能は無効になります。 </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Request compressed content]</td> 

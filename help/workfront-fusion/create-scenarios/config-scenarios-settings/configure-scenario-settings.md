@@ -5,10 +5,10 @@ description: シナリオ設定パネルで、シナリオに固有の設定を�
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 273a07a28563a0eb3a3446937964e8dcef8a68d3
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 51%
+source-wordcount: '1326'
+ht-degree: 44%
 
 ---
 
@@ -27,17 +27,17 @@ ht-degree: 51%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
    <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規：[!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：[!DNL Workfront Fusion] ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -45,16 +45,16 @@ ht-degree: 51%
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：[!DNL Adobe Workfront Fusion] を購入する必要があります。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：Adobe Workfront Fusion は、組織で購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">アクセスレベル設定*</td> 
    <td> 
-     <p>組織の [!DNL Workfront Fusion] 管理者である必要があります。</p>
-     <p>チームの [!DNL Workfront Fusion] 管理者である必要があります。</p>
+     <p>組織の Workfront Fusion 管理者である必要があります。</p>
+     <p>チームのWorkfront Fusion 管理者である必要があります。</p>
    </td> 
   </tr> 
    </td> 
@@ -64,7 +64,7 @@ ht-degree: 51%
 
 この表の情報について詳しくは、[Workfront ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -119,15 +119,15 @@ ht-degree: 51%
 
 ### [!UICONTROL 不完全な実行の保存を許可]
 
-このオプションでは、シナリオの実行中にエラーが発生した場合の [!DNL Adobe Workfront Fusion] での処理方法を指定します。このオプションを有効にすると、シナリオは一時停止し、不完全な実行フォルダーに移動します。 これにより、問題を修正し、シナリオが停止した場所から続行できます。このオプションを無効にした場合、シナリオの実行が停止し、ロールバックフェーズが開始します。
+このオプションは、シナリオの実行中にエラーが発生した場合にAdobe Workfront Fusion がどのように進行するかを指定します。 このオプションを有効にすると、シナリオは一時停止し、不完全な実行フォルダーに移動します。 これにより、問題を修正し、シナリオが停止した場所から続行できます。このオプションを無効にした場合、シナリオの実行が停止し、ロールバックフェーズが開始します。
 
 不完全な実行について詳しくは、[ 不完全な実行の表示と解決 ](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md) を参照してください。
 
 ### データ損失を有効にする
 
-このオプションは、空き容量の不足な [!DNL Workfront Fusion] め、不完全な実行のキューにバンドルを保存できない場合に、データの損失を有効にすることに関係しています。 このオプションを有効にすると、シナリオの実行全体で中断が発生しないように、データが失われます。これは、最も優先度が高いものが継続して実行され、入力時の誤りのあるデータがそれほど重要でないシナリオで役立ちます。
+このオプションは、Workfront Fusion が（空き容量が不足しているなどの理由で）不完全な実行のキューにバンドルを保存できない場合に、データの損失を有効にすることに関係しています。 このオプションを有効にすると、シナリオの実行全体で中断が発生しないように、データが失われます。これは、最も優先度が高いものが継続して実行され、入力時の誤りのあるデータがそれほど重要でないシナリオで役立ちます。
 
-その他、シナリオを実行する際に、モジュールで許容される最大サイズを超えるファイルが見つかることがあります。この場合、[!DNL Workfront Fusion] は「[!UICONTROL データ損失を有効にする]」オプションの設定に従って処理し、警告メッセージを表示します。
+その他、シナリオを実行する際に、モジュールで許容される最大サイズを超えるファイルが見つかることがあります。この場合、Workfront Fusion は「[!UICONTROL  データの損失を有効にする ]」オプションの設定に従って続行し、警告メッセージが表示されます。
 
 不完全な実行について詳しくは、[ 不完全な実行の表示と解決 ](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md) を参照してください。
 
@@ -160,7 +160,7 @@ ht-degree: 51%
 
 >[!BEGINSHADEBOX]
 
-**例：**&#x200B;[!DNL Workfront]／[!UICONTROL レコードを監視]で、発生した新しいイシューを監視し、[!DNL Workfront]／[!UICONTROL オブジェクトを変換]で、新しいリクエストをプロジェクトに変換し、適切なテンプレートを割り当てます。
+**例：** Workfront/[!UICONTROL  レコードをウォッチ ] が発生する新しいイシューを監視し、Workfront/[!UICONTROL  オブジェクトを変換 ] が新しいリクエストをプロジェクトに変換して、適切なテンプレートを割り当てます。
 
 ![ シナリオ設定 ](assets/scenario-settings-ex-1-350x157.png)
 
@@ -171,7 +171,7 @@ ht-degree: 51%
 ![ 最大サイクル数 ](assets/max-number-cycles-1-350x201.png)
 
 Workfront/ レコードを監視モジュールの最大サイクル数は `10` に設定されています。
-[!DNL Workfront] に 100 件のリクエストが送信され、「最大サイクル数」フィールドが 10 に設定されている場合、1 つのシナリオの実行後、90 個のファイルが未処理のままになります。 次の 10 個のファイルは、スケジュールされた次のシナリオの実行で処理されます。
+100 件のリクエストがWorkfrontに送信され、「最大サイクル数」フィールドが 10 に設定されている場合、90 個のファイルが 1 つのシナリオの実行後に未処理のままになります。 次の 10 個のファイルは、スケジュールされた次のシナリオの実行で処理されます。
 
 #### サイクルの最大数を 10 に設定
 

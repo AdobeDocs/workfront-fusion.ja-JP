@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion AWS]  S3 モジュールを使用す
 author: Becky
 feature: Workfront Fusion
 exl-id: 6b2d9dd5-0b33-4297-aea0-aba26072b26a
-source-git-commit: d98d49cdca997caa2d1601d0163ae3f50e21ed66
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1417'
-ht-degree: 76%
+source-wordcount: '1462'
+ht-degree: 66%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 76%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -81,9 +81,9 @@ AWS S3 コネクタでは、以下を使用します。
  </tbody> 
  </table>
 
-## [!DNL AWS] を [!DNL Workfront Fusion] に接続 {#connect-aws-to-workfront-fusion}
+## [!DNL AWS] を Workfront Fusion に接続 {#connect-aws-to-workfront-fusion}
 
-[!DNL AWS S3] を [!DNL Workfront Fusion] に接続するには、[!DNL AWS] アカウントを [!DNL Workfront Fusion] に接続する必要があります。これを行うには、まず [!DNL AWS] [!UICONTROL IAM] で API ユーザーを作成します。
+[!DNL AWS S3] をWorkfront Fusion に接続するには、[!DNL AWS] アカウントをWorkfront Fusion に接続する必要があります。 これを行うには、まず [!DNL AWS] [!UICONTROL IAM] で API ユーザーを作成します。
 
 1. [!DNL AWS] [!UICONTROL IAM] アカウントにログインします。
 1. **[!UICONTROL ID とアクセスの管理]**／**[!UICONTROL アクセス管理]**／**[!UICONTROL ユーザー]**&#x200B;に移動します。
@@ -95,14 +95,14 @@ AWS S3 コネクタでは、以下を使用します。
 1. 他のダイアログ画面を進み、「**[!UICONTROL ユーザーを作成]**」をクリックします。
 1. 提供された&#x200B;**[!UICONTROL アクセスキー ID]** および&#x200B;**[!UICONTROL 秘密アクセスキー]**&#x200B;をコピーします。
 
-1. [!DNL Workfront Fusion] に移動して、[!DNL AWS S3] モジュールの&#x200B;**[!UICONTROL 接続を作成]**&#x200B;ダイアログを開きます。
+1. Workfront Fusion に移動し、[!DNL AWS S3] モジュールの **[!UICONTROL 接続を作成]** ダイアログを開きます。
 1. 手順7の「[!UICONTROL アクセスキー ID]」および「[!UICONTROL 秘密アクセスキー]」をそれぞれのフィールドに入力し、「**[!UICONTROL 続行]**」をクリックして接続を確立します。
 
 接続が確立されました。モジュールの設定に進むことができます。
 
 ## [!DNL AWS S3] モジュールとそのフィールド
 
-[!DNL AWS S3] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL AWS S3] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL AWS S3] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL AWS S3]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -128,7 +128,7 @@ AWS S3 コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL AWS] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事内の<a href="#connect-aws-to-workfront-fusion" class="MCXref xref">[!DNL AWS] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL AWS] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL AWS] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Name] </td> 
@@ -151,11 +151,11 @@ AWS S3 コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL AWS] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-aws-to-workfront-fusion" class="MCXref xref">[!DNL AWS] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL AWS] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL AWS] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Region] </td> 
-   <td> <p>地域のエンドポイントを選択します。詳しくは、[!DNL AWS] ドキュメントの <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints"> 地域エンドポイント </a> を参照してください。</p> </td> 
+   <td> <p>地域のエンドポイントを選択します。詳しくは、<a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints"> ドキュメントの </a> 地域エンドポイント [!DNL AWS] を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Bucket] </td> 
@@ -180,11 +180,11 @@ AWS S3 コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL AWS] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-aws-to-workfront-fusion" class="MCXref xref">[!DNL AWS] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL AWS] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL AWS] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Region] </td> 
-   <td> <p>地域のエンドポイントを選択します。詳しくは、[!DNL AWS] ドキュメントの <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints"> 地域エンドポイント </a> を参照してください。</p> </td> 
+   <td> <p>地域のエンドポイントを選択します。詳しくは、<a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints"> ドキュメントの </a> 地域エンドポイント [!DNL AWS] を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL URL]</td> 
@@ -192,11 +192,11 @@ AWS S3 コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Method]</td> 
-   <td> <p>API 呼び出しを設定する必要がある [!UICONTROL HTTP] リクエストメソッドを選択します。詳細情報は、[!DNL Adobe Workfront Fusion]</a> の <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">[!UICONTROL HTTP] リクエストメソッドを参照してください。</p> </td> 
+   <td> <p>API 呼び出しを設定する必要がある [!UICONTROL HTTP] リクエストメソッドを選択します。詳しくは、Adobe Workfront Fusion の <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">[!UICONTROL HTTP] リクエストメソッド </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Headers]</td> 
-   <td> <p>リクエストヘッダーを追加します。追加するヘッダーごとに、「<b> 項目を追加 </b>」をクリックしてヘッダーを入力します。 次の共通のリクエストヘッダーを使用できます。リクエストヘッダーについて詳細は、<a href="https://docs.aws.amazon.com/AmazonS3/latest/API/RESTCommonRequestHeaders.html">[!DNL AWS S3]API ドキュメント</a>を参照してください。</p> <p>[!DNL Workfront Fusion] 認証ヘッダーを自動的に追加します。</p> 
+   <td> <p>リクエストヘッダーを追加します。追加するヘッダーごとに、「<b> 項目を追加 </b>」をクリックしてヘッダーを入力します。 次の共通のリクエストヘッダーを使用できます。リクエストヘッダーについて詳細は、<a href="https://docs.aws.amazon.com/AmazonS3/latest/API/RESTCommonRequestHeaders.html">[!DNL AWS S3]API ドキュメント</a>を参照してください。</p> <p>Workfront Fusion は、認証ヘッダーを自動的に追加します。</p> 
     <table style="table-layout:auto">
      <col> 
      <col> 
@@ -274,11 +274,11 @@ AWS S3 コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL AWS] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-aws-to-workfront-fusion" class="MCXref xref">[!DNL AWS] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL AWS] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL AWS] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Region] </td> 
-   <td> <p>地域のエンドポイントを選択します。詳しくは、[!DNL AWS] ドキュメントの <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints"> 地域エンドポイント </a> を参照してください。</p> </td> 
+   <td> <p>地域のエンドポイントを選択します。詳しくは、<a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints"> ドキュメントの </a> 地域エンドポイント [!DNL AWS] を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Folder] </p> </td> 
@@ -310,18 +310,18 @@ AWS S3 コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL AWS] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-aws-to-workfront-fusion" class="MCXref xref">[!DNL AWS] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL AWS] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL AWS] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Region] </td> 
-   <td> <p>地域のエンドポイントを選択します。詳しくは、[!DNL AWS] ドキュメントの <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints"> 地域エンドポイント </a> を参照してください。</p> </td> 
+   <td> <p>地域のエンドポイントを選択します。詳しくは、<a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints"> ドキュメントの </a> 地域エンドポイント [!DNL AWS] を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Bucket] </td> 
    <td> <p>ファイルを検索する [!DNL Amazon S3] バケットを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL プレフィックス &#x200B;]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL プレフィックス ]</p> </td> 
    <td> <p> ファイルを検索するフォルダーへのパス（例：）を入力します <code>workfrontfusion/work.</code></p> </td> 
   </tr> 
  </tbody> 
@@ -337,11 +337,11 @@ AWS S3 コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL AWS] アカウントを [!DNL Workfront Fusion] に接続する方法については、この記事の<a href="#connect-aws-to-workfront-fusion" class="MCXref xref">[!DNL AWS] を [!DNL Workfront Fusion]</a> に接続を参照してください。</p> </td> 
+   <td> <p>[!DNL AWS] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL AWS] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Region] </td> 
-   <td> <p>地域のエンドポイントを選択します。詳しくは、[!DNL AWS] ドキュメントの <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints"> 地域エンドポイント </a> を参照してください。</p> </td> 
+   <td> <p>地域のエンドポイントを選択します。詳しくは、<a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints"> ドキュメントの </a> 地域エンドポイント [!DNL AWS] を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Bucket] </td> 

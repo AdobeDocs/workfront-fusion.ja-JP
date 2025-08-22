@@ -4,16 +4,16 @@ description: 接続エリアで、チームの接続を表示および管理で�
 author: Becky
 feature: Workfront Fusion
 exl-id: 7bedf002-061b-40fc-a0f8-c12d2930bcf9
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 49%
+source-wordcount: '227'
+ht-degree: 48%
 
 ---
 
 # シナリオ要素の削除
 
-[!DNL Adobe Workfront Fusion] アカウントの次の領域で、シナリオ要素を保存および削除できます。
+Adobe Workfront Fusion アカウントの次の領域で、シナリオ要素を格納および削除できます。
 
 * [!UICONTROL シナリオ]
 * [!UICONTROL 接続]

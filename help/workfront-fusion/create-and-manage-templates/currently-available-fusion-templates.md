@@ -4,10 +4,10 @@ description: 現在、Adobe Workfront Fusion では、次のパブリックテ�
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: d504b5ebd649953395f804d7349f3c5a281eef68
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1512'
-ht-degree: 73%
+source-wordcount: '1526'
+ht-degree: 69%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 73%
 
 これらのテンプレートは、Workfront のプロセスとワークフローを自動化します。
 
-### [!BADGE &#x200B; 新規 &#x200B;]{type=Informative} Workfront - タスクが早期に完了すると、プロジェクトタイムラインを自動調整します
+### [!BADGE  新規 ]{type=Informative} Workfront - タスクが早期に完了すると、プロジェクトタイムラインを自動調整します
 
 <!--New June 10, 2025-->
 
@@ -33,13 +33,13 @@ ht-degree: 73%
 
 この Fusion テンプレートは、そのプロセスを自動化します。 タスクが早期に完了すると、すべての依存タスク（後続タスク）が自動的に再スケジュールされ、より早く開始されるようになり、チームの迅速な移行と機敏性の維持に役立ちます。
 
-### [!BADGE &#x200B; 新規 &#x200B;]{type=Informative} HTTP/CSV/WF - ドメインおよび層別にイベントサブリストを作成して、CSV に書き出します。
+### [!BADGE  新規 ]{type=Informative} HTTP/CSV/WF - ドメインおよび層別にイベントサブリストを作成して、CSV に書き出します。
 
 イベント購読情報をダウンロードし、CSV ファイルを作成して、そのファイルをWorkfrontにアップロードします。
 
 <!--New August 8, 2025-->
 
-### [!BADGE &#x200B; 新規 &#x200B;]{type=Informative} Workfront ボード – 指定した列からアーカイブされたカードを削除（オンデマンド）
+### [!BADGE  新規 ]{type=Informative} Workfront ボード – 指定した列からアーカイブされたカードを削除（オンデマンド）
 
 <!--New March 12, 2025-->
 
@@ -117,7 +117,7 @@ ht-degree: 73%
 
 これらのテンプレートは、Workfront と Workfront Proof を組み合わせたワークフローを自動化します。
 
-### [!BADGE &#x200B; 新規 Workfront/Workfront Proofの &#x200B;]{type=Informative} プルーフユーザーの役割を読み取り専用に変更し、プロジェクトを閉じるときにプルーフをロックする
+### [!BADGE  新規 Workfront/Workfront Proofの ]{type=Informative} プルーフユーザーの役割を読み取り専用に変更し、プロジェクトを閉じるときにプルーフをロックする
 
 <!--New March 12, 2025-->
 
@@ -184,7 +184,7 @@ ht-degree: 73%
 
 このテンプレートは Workfront と Anaplan の統合をサポートしており、Workfront と Anaplan の両方で特定の設定が必要です。このテンプレートと必要な設定について詳しくは、個々のテンプレートに関する記事を参照してください。
 
-Workfrontと Anaplan の統合について詳しくは、Workfront ドキュメントの [Anaplan のAdobe Workfront](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) を参照してください。
+Workfrontと Anaplan の統合について詳しくは、Workfront ドキュメントの [Anaplan のAdobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) を参照してください。
 
 >[!NOTE]
 >
@@ -192,19 +192,19 @@ Workfrontと Anaplan の統合について詳しくは、Workfront ドキュメ�
 
 ### 支出の最適化ワークフロー
 
-* [ [!DNL Adobe Workfront]  プロジェクトの更新を  [!DNL Anaplan]  リスト項目に送信](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
-* [ [!DNL Adobe Workfront]  費用を  [!DNL Anaplan]  リスト項目に送信](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
-* [ [!DNL Adobe Workfront]  の実際の時間数の更新を  [!DNL Anaplan]  リスト項目に送信](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
+* [ リスト項目へのAdobe Workfront プロジェクトの更新  [!DNL Anaplan]  送信 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
+* [ リスト項目へのAdobe Workfront費用  [!DNL Anaplan]  送信 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
+* [ リスト項目に対するAdobe Workfrontの実際の時間数の更新  [!DNL Anaplan]  送信 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
 
 ### 予算リクエストをリンクするためのワークフロー
 
-* [ [!DNL Adobe Workfront]  予算リクエストから  [!DNL Anaplan]  リスト項目を作成](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
-* [ [!DNL Anaplan]  予算配分を  [!DNL Adobe Workfront]  プロジェクトに適用](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
+* [Adobe Workfront予算リクエ  [!DNL Anaplan]  トからのリスト項目の作成 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
+* [Adobe Workfront プロジェク  [!DNL Anaplan]  への予算配分の適用 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
 
 ### キャンペーンリクエストをリンクするワークフロー
 
-* [ [!DNL Adobe Workfront]  キャンペーンリクエストから  [!DNL Anaplan]  リスト項目を作成](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
-* [ [!DNL Anaplan]  予算配分を  [!DNL Adobe Workfront]  キャンペーンリクエストまたはキャンペーンプロジェクトに適用する](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+* [Adobe Workfront キャンペ  [!DNL Anaplan]  ンリクエストからのリスト項目の作成 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
+* [Adobe Workfront キャンペ  [!DNL Anaplan]  ンリクエストまたはキャンペーンプロジェクトへの予算配分の適用 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
 
 
 <!--[!BADGE New!]{type=Informative} -->

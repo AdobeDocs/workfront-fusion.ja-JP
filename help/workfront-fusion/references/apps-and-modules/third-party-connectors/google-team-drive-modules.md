@@ -4,20 +4,20 @@ description: ' [!DNL Adobe Workfront Fusion Google Team Drive] モジュール�
 author: Becky
 feature: Workfront Fusion
 exl-id: 95dd9d23-1df9-40da-8fd0-646cc697bfc8
-source-git-commit: cca7aa6e15df0fd313e9d4ca391994a8ef4c974a
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1059'
-ht-degree: 74%
+source-wordcount: '1397'
+ht-degree: 67%
 
 ---
 
 # [!DNL Google Team Drive] モジュール
 
-[!DNL Adobe Workfront Fusion] [!DNL Google Team Drive] モジュールを使用すると、ファイルを監視、アップロード、更新、コピー、削除または取得したり、[!DNL Google Shared Drive] にフォルダーを作成したりできます。
+Adobe Workfront Fusion [!DNL Google Team Drive] モジュールを使用すると、ファイルのモニター、アップロード、更新、コピー、削除または取得や、フ [!DNL Google Shared Drive] ルダー内のフォルダーの作成を行うことができます。
 
-[!DNL Google Team Drive] と [!DNL Adobe Workfront Fusion] を併用する場合、[!DNL Google Workspace] アカウントが必要です。アカウントをお持ちでない場合は、[[!DNL Google Workspace] 新規登録サイト](https://workspace.google.com/business/signup/welcome)で [!DNL Google Workspace] アカウントを作成できます。
+Adobe Workfront Fusion で [!DNL Google Team Drive] を使用するには、[!DNL Google Workspace] アカウントが必要です。 アカウントをお持ちでない場合は、[[!DNL Google Workspace] 新規登録サイト](https://workspace.google.com/business/signup/welcome)で [!DNL Google Workspace] アカウントを作成できます。
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、[!DNL Google Team Drive] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
+Adobe Workfront Fusion のシナリオでは、[!DNL Google Team Drive] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -32,35 +32,35 @@ ht-degree: 74%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] プラン*</td>
-  <td> <p>[!UICONTROL Pro] またはそれ以降</p> </td>
+   <td role="rowheader">Adobe Workfront プラン*</td>
+  <td> <p>[!UICONTROL Pro] 以降</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン*</td>
+   <td> <p>[!UICONTROL Plan]、[!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在のライセンス要件：[!DNL Workfront Fusion] ライセンス要件なし。</p>
+   <p>現在のライセンス要件：Workfront Fusion のライセンス要件はありません。</p>
    <p>または</p>
-   <p>レガシーライセンス要件：作業の自動化と統合の [!UICONTROL [!DNL Workfront Fusion]] </p>
+   <p>従来のライセンス要件：[!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Adobe Workfront] プランがある場合、組織は [!DNL Adobe Workfront Fusion] を購入するだけでなく、この記事で説明されている機能を使用する [!DNL Adobe Workfront] 要があります。 [!DNL Workfront Fusion] は [!UICONTROL Ultimate] [!DNL Workfront] プランに含まれています。</p>
+   <p>現在の製品要件：[!UICONTROL Select] または [!UICONTROL Prime] Adobe Workfront プランがある場合、この記事に記載されている機能を使用するには、Adobe Workfront Fusion とAdobe Workfrontを購入する必要があります。 Workfront Fusion は、[!UICONTROL Ultimate] Workfront プランに含まれています。</p>
    <p>または</p>
-   <p>従来の製品要件：この記事で説明している機能を使用するには、[!DNL Adobe Workfront Fusion] と [!DNL Adobe Workfront]を組織で購入する必要があります。</p>
+   <p>従来の製品要件：この記事に記載されている機能を使用するには、Adobe Workfront Fusion とAdobe Workfrontを購入する必要があります。</p>
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、[!DNL Workfront] 管理者にお問い合わせください。
+ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、Workfront 管理者にお問い合わせください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 ## 前提条件
 
@@ -68,9 +68,9 @@ ht-degree: 74%
 
 ## [!DNL Google Team Drive] モジュールとそのフィールド
 
-[!DNL Google Team Drive] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Google Team Drive] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL Google Team Drive] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Google Team Drive]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-（このドキュメント記事では&#x200B;**なく**、[!DNL Workfront Fusion] シナリオで）**太字**&#x200B;で表示されているモジュールダイアログフィールドは必須です。
+**太字** （Workfront Fusion シナリオでは、**このドキュメントの記事では** ない）で表示されるモジュールダイアログフィールドは必須です。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -78,7 +78,7 @@ ht-degree: 74%
 
 ### トリガー
 
-#### [!UICONTROL Watch Files]
+#### [!UICONTROL ファイルの監視]
 
 指定されたフォルダーに新しいファイルが追加または変更されると、ファイルの詳細が返されます。
 
@@ -88,7 +88,7 @@ ht-degree: 74%
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Team Drive] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Team Drive] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Team Drive]</td> 
@@ -103,20 +103,20 @@ ht-degree: 74%
    <td> <p> 監視するファイルのタイプを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Documents] ファイルをフォーマット &#x200B;] </td> 
+   <td>[!UICONTROL Convert [!DNL Google Documents] files to format] </td> 
    <td> <p>監視する [!DNL Google Documents] ファイルの変換先の形式を選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Sheets] ファイルをフォーマット &#x200B;] </td> 
+   <td>[!UICONTROL Convert [!DNL Google Sheets] files to format] </td> 
    <td> <p>監視する [!DNL Google Sheets] ファイルの変換先の形式を選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Slides] ファイルをフォーマット &#x200B;] </td> 
+   <td>[!UICONTROL Convert [!DNL Google Slides] files to format] </td> 
    <td> <p>監視する [!DNL Google Slides] ファイルの変換先の形式を選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Drawings] ファイルをフォーマット &#x200B;] </td> 
-   <td> <p>監視する [!DNL Google Drawings] ファイルの変換先の形式を選択します。</p> </td> 
+   <td>[!UICONTROL Convert [!DNL Google Drawings] files to format] </td> 
+   <td> <p>監視する [!DNL Google Drawings] ファイルの変換形式を選択します。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Watch]</td> 
@@ -124,23 +124,23 @@ ht-degree: 74%
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of downloaded files]</td> 
-   <td> <p> [!DNL Workfront Fusion] が 1 回の実行サイクルで返すファイルの最大数を設定します。</p> </td> 
+   <td> <p> Workfront Fusion が 1 つの実行サイクルで返すファイルの最大数を設定します。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### アクション
 
-* [[!UICONTROL Upload a File]](#upload-a-file)
-* [[!UICONTROL Update a File]](#update-a-file)
-* [[!UICONTROL Copy a File]](#copy-a-file)
-* [[!UICONTROL Delete a File]](#delete-a-file)
-* [[!UICONTROL Move a File to Trash]](#move-a-file-to-trash)
-* [[!UICONTROL Get a File]](#get-a-file)
-* [[!UICONTROL Get a File List]](#get-a-file-list)
-* [[!UICONTROL Create a Folder]](#create-a-folder)
+* [[!UICONTROL ファイルをアップロード]](#upload-a-file)
+* [[!UICONTROL ファイルを更新]](#update-a-file)
+* [[!UICONTROL ファイルをコピー]](#copy-a-file)
+* [[!UICONTROL ファイルの削除]](#delete-a-file)
+* [[!UICONTROL ファイルをごみ箱に移動]](#move-a-file-to-trash)
+* [[!UICONTROL ファイルの取得]](#get-a-file)
+* [[!UICONTROL ファイルリストの取得]](#get-a-file-list)
+* [[!UICONTROL フォルダーの作成]](#create-a-folder)
 
-#### [!UICONTROL Upload a File]
+#### [!UICONTROL ファイルのアップロード]
 
 指定した共有ドライブにファイルをアップロードします。
 
@@ -150,7 +150,7 @@ ht-degree: 74%
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Team Drive] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Team Drive] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Team Drive] </td> 
@@ -162,7 +162,7 @@ ht-degree: 74%
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Source File]</p> </td> 
-   <td> <p>共有ドライブにアップロードするファイルを指定します。</p> <p>前のモジュール（例：[!UICONTROL HTTP]/[!UICONTROL Get a File] または [!UICONTROL Dropbox]/[!UICONTROL Get a file)] からアップロードするファイルをマッピングするか、ファイル名とファイルデータを手動で入力します。</p> </td> 
+   <td> <p>共有ドライブにアップロードするファイルを指定します。</p> <p>前のモジュールからアップロードするファイルをマッピングします（例：）[!UICONTROL HTTP] &gt; [!UICONTROL ファイルを取得 ] または [!UICONTROL Dropbox] &gt; [!UICONTROL ファイルを取得） ] を選択するか、ファイル名とファイルデータを手動で入力します。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Title]</td> 
@@ -175,7 +175,7 @@ ht-degree: 74%
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a File]
+#### [!UICONTROL ファイルを更新]
 
 ファイル名やファイルの内容を変更できます。
 
@@ -185,7 +185,7 @@ ht-degree: 74%
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Team Drive] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Team Drive] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Team Drive]</td> 
@@ -214,7 +214,7 @@ ht-degree: 74%
  </tbody> 
 </table>
 
-#### [!UICONTROL Copy a File]
+#### [!UICONTROL ファイルをコピー]
 
 指定したファイルを選択したフォルダーにコピーします。
 
@@ -224,7 +224,7 @@ ht-degree: 74%
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Team Drive] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Team Drive] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Team Drive]</td> 
@@ -245,7 +245,7 @@ ht-degree: 74%
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a File]
+#### [!UICONTROL ファイルを削除]
 
 指定したファイルを削除します。
 
@@ -255,7 +255,7 @@ ht-degree: 74%
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Team Drive] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Team Drive] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File ID]</td> 
@@ -264,7 +264,7 @@ ht-degree: 74%
  </tbody> 
 </table>
 
-#### [!UICONTROL Move a File to Trash]
+#### [!UICONTROL ファイルをゴミ箱に移動]
 
 指定したファイルをごみ箱に移動します。
 
@@ -274,7 +274,7 @@ ht-degree: 74%
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Team Drive] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Team Drive] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File ID]</td> 
@@ -283,7 +283,7 @@ ht-degree: 74%
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a File]
+#### [!UICONTROL ファイルの取得]
 
 指定されたファイルに関する詳細を取得します。
 
@@ -293,22 +293,22 @@ ht-degree: 74%
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Team Drive] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Team Drive] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Documents] ファイルをフォーマット &#x200B;] </td> 
+   <td>[!UICONTROL Convert [!DNL Google Documents] files to format] </td> 
    <td> <p>[!DNL Google Documents] ファイルを変換する形式を選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Sheets] ファイルをフォーマット &#x200B;] </td> 
+   <td>[!UICONTROL Convert [!DNL Google Sheets] files to format] </td> 
    <td> <p>[!DNL Google Sheets] ファイルを変換する形式を選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Slides] ファイルをフォーマット &#x200B;] </td> 
+   <td>[!UICONTROL Convert [!DNL Google Slides] files to format] </td> 
    <td> <p>[!DNL Google Slides] ファイルを変換する形式を選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Drawings] ファイルをフォーマット &#x200B;] </td> 
+   <td>[!UICONTROL Convert [!DNL Google Drawings] files to format] </td> 
    <td> <p>[!DNL Google Drawings] ファイルを変換する形式を選択します。</p> </td> 
   </tr> 
   <tr> 
@@ -318,7 +318,7 @@ ht-degree: 74%
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a File List]
+#### [!UICONTROL ファイルリストを取得]
 
 検索語に基づいてファイルやフォルダーの詳細を取得します。
 
@@ -328,7 +328,7 @@ ht-degree: 74%
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Team Drive] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Team Drive] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Team Drive]</td> 
@@ -346,7 +346,7 @@ ht-degree: 74%
    <td> <p>[!UICONTROL Query]</p> </td> 
    <td> 
     <ul> 
-     <li style="font-weight: bold;"> <p>[!UICONTROL Search within file names]</p> <p style="font-weight: normal;">[!UICONTROL Search for exact term Search] オプションが選択されている場合はファイル名（ファイル拡張子を含む）を入力し、[!UICONTROL Search for names containing the searched term] オプションが選択されている場合は名前の一部を入力します。</p> </li> 
+     <li style="font-weight: bold;"> <p>[!UICONTROL Search within file names]</p> <p style="font-weight: normal;">「[!UICONTROL Search for exact term Search]」オプションが選択されている場合はファイル拡張子を含むファイル名を入力し、「[!UICONTROL Search for names containing the searched term]」オプションが選択されている場合は名前の一部を入力します。</p> </li> 
      <li> <p style="font-weight: bold;">[!UICONTROL Fulltext search]</p> <p>検索語を入力して、ファイル名、説明、内容を検索します。</p> </li> 
      <li> <p style="font-weight: bold;">[!UICONTROL Custom search query]</p> <p>[!DNL Google] 検索クエリの語句を入力します。詳しくは、[!DNL Google] の<a href="https://developers.google.com/drive/api/v2/ref-search-terms">検索クエリのドキュメント</a>を参照してください。例： <code>fullText contains '"Hello world"'</code></p> </li> 
     </ul> </td> 
@@ -357,12 +357,12 @@ ht-degree: 74%
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of returned results]</td> 
-   <td> <p> [!DNL Workfront Fusion] の 1 回の実行サイクルで返されるファイルまたはフォルダーの最大数を設定します。</p> </td> 
+   <td> <p> Workfront Fusion が 1 つの実行サイクルで返すファイルまたはフォルダーの最大数を設定します。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a Folder]
+#### [!UICONTROL フォルダーを作成]
 
 新しいフォルダーを作成します。
 
@@ -372,7 +372,7 @@ ht-degree: 74%
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google Team Drive] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google Team Drive] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Team Drive]</td> 

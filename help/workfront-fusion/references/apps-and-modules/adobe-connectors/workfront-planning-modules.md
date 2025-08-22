@@ -1,13 +1,13 @@
 ---
 title: Adobe Workfront Planning モジュール
-description: ' [!DNL Adobe Workfront Planning] modules を使用すると、 [!DNL Adobe Workfront Fusion] 2&rbrace;Workfront Planning アカウント内のイベントに基づくシナリオの開始、契約書およびその他のレコードの作成、読み取り、更新、設定した条件を使用したレコードの検索、およびドキュメントのアップロードを行うことができます。 [!DNL Adobe] '
+description: ' [!DNL Adobe Workfront Planning] modules を使用すると、 [!DNL Adobe] Workfront Planning アカウント内のイベントに基づくAdobe Workfront Fusion シナリオの開始、契約書やその他のレコードの作成、読み取りまたは更新、設定した条件を使用したレコードの検索、ドキュメントのアップロードを行うことができます。'
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 51bb87572f16f6194f6c37bbe52ea7f27050c303
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1591'
-ht-degree: 59%
+source-wordcount: '1607'
+ht-degree: 56%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 59%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -87,7 +87,7 @@ Adobe Workfront Planning コネクタでは、以下を使用します。
 
 ## [!DNL Adobe Workfront Planning] への接続の作成 {#create-a-connection-to-adobe-workfront-planning}
 
-[!DNL Workfront Planning] アカウントへの接続を、[!DNL Workfront Fusion] モジュール内から直接作成できます。
+Workfront Fusion モジュール内から [!DNL Workfront Planning] アカウントへの直接接続を作成できます。
 
 1. 任意の [!DNL Adobe Workfront Planning] モジュールで、「接続」ボックスの横にある「**[!UICONTROL 追加]**」をクリックします。
 
@@ -184,7 +184,7 @@ Workfront Fusion でWorkfront モジュールを設定する場合、以下に�
     </tr>
      <tr data-mc-conditions=""> 
       <td> <p>[!UICONTROL Events filters]</p> </td> 
-      <td> <p>選択した条件を満たすレコードのみを監視するフィルターを設定できます。</p> <p>各フィルターに対して、フィルターを評価するフィールド、演算子、およびフィルターに許可する値を入力します。AND ルールを追加すると、複数のフィルターを使用できます。</p> <p>メモ：既存の [!DNL Workfront] web フックのフィルターは編集できません。[!DNL Workfront] イベントのサブスクリプションに別のフィルターを設定するには、現在の web フックを削除し、新しい web フックを作成します。</p> <p>イベントフィルターについて詳しくは、Workfront モジュール記事の <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">[!DNL Workfront] &gt; [!UICONTROL Watch Events] モジュールのイベント購読フィルター </a> を参照してください。</p> </td> 
+      <td> <p>選択した条件を満たすレコードのみを監視するフィルターを設定できます。</p> <p>各フィルターに対して、フィルターを評価するフィールド、演算子、およびフィルターに許可する値を入力します。AND ルールを追加すると、複数のフィルターを使用できます。</p> <p>メモ：既存のWorkfront Webhook ではフィルターを編集できません。 Workfront イベント購読用に異なるフィルターを設定するには、現在の Webhook を削除して、新しい Webhook を作成します。</p> <p>イベントフィルターについて詳しくは、Workfront モジュール記事の <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Workfrontのイベント購読フィルター &gt; [!UICONTROL Watch Events] モジュール </a> を参照してください。</p> </td> 
      </tr> 
     <tr>
       <td role="rowheader">[!UICONTROL Objects to watch]</td>
@@ -260,7 +260,7 @@ Workfront Fusion でWorkfront モジュールを設定する場合、以下に�
       <td>
         <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p>
         <p>例： <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] 認証ヘッダーを自動的に追加します。</p>
+        <p>Workfront Fusion は、認証ヘッダーを自動的に追加します。</p>
       </td>
     </tr>
     <tr>
@@ -313,7 +313,7 @@ Workfront Fusion でWorkfront モジュールを設定する場合、以下に�
       </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL フィルターの 条件 &#x200B;]</p>
+        <p>[！フィルターの UICONTROL 条件 ]</p>
       </td>
       <td>フィルターの条件の選択：<ul><li><b>AND</b><p>モジュールは、選択したフィールド値の <b> すべて </b> を満たすレコードを返します。</p></li><li><b>または</b><p>モジュールは、選択したフィールド値の <b> いずれか </b> を満たすレコードを返します。</p></li></ul></td> 
       </tr>

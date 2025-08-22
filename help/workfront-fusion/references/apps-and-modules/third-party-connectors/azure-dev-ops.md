@@ -1,19 +1,19 @@
 ---
 title: Azure DevOps モジュール
-description: ' [!DNL Adobe Workfront Fusion]  のシナリオでは、 [!DNL Azure DevOps] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。'
+description: Adobe Workfront Fusion のシナリオでは、 [!DNL Azure DevOps] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりすることができます。
 author: Becky
 feature: Workfront Fusion
 exl-id: c0919a9a-ce99-485c-9627-45353741f6d8
-source-git-commit: 58bda8289db60ce915613337880297e5c8ec7097
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1821'
-ht-degree: 81%
+source-wordcount: '1857'
+ht-degree: 71%
 
 ---
 
 # [!DNL Azure DevOps] モジュール
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、[!DNL Azure DevOps] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
+Adobe Workfront Fusion のシナリオでは、[!DNL Azure DevOps] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -58,7 +58,7 @@ ht-degree: 81%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -85,15 +85,15 @@ Azure DevOps コネクタでは、次を使用します。
  </tbody> 
 </table>
 
-## [!DNL Workfront Fusion] を [!DNL Azure DevOps] に接続 {#connect-azure-devops-to-workfront-fusion}
+## [!DNL Azure DevOps] を Workfront Fusion に接続 {#connect-azure-devops-to-workfront-fusion}
 
 1. [!DNL Azure DevOps] モジュールをシナリオに追加します。
 1. 「[!UICONTROL 接続]」フィールドの横にある「**[!UICONTROL 追加]**」をクリックします。
-1. [!UICONTROL &#x200B; 接続タイプ &#x200B;] フィールドで、使用する接続のタイプを選択します。
+1. [!UICONTROL  接続タイプ ] フィールドで、使用する接続のタイプを選択します。
 
    >[!NOTE]
    >
-   >[!UICONTROL [!DNL Azure DevOps] （EntraApp）を使用すると &#x200B;] 接続のすべてのスコープをリクエストできます。
+   >[!UICONTROL [!DNL Azure DevOps] （EntraApp）を使用すると ] 接続のすべてのスコープをリクエストできます。
 
 1. 次のフィールドに入力します。
 
@@ -115,7 +115,7 @@ Azure DevOps コネクタでは、次を使用します。
             <td>接続先の DevOps アプリケーションのクライアント秘密鍵を入力します。</td>
       </tr>
       <tr>
-            <td>[!UICONTROL すべてのスコープを要求 &#x200B;]</td>
+            <td>[!UICONTROL すべてのスコープを要求 ]</td>
             <td>[!DNL Azure DevOps] （EntraApp）接続タイプを使用している場合、このオプションを有効にして接続用のすべてのスコープをリクエストします。</td>
       </tr>
    </table>
@@ -125,7 +125,7 @@ Azure DevOps コネクタでは、次を使用します。
 
 ## [!UICONTROL Azure DevOps] モジュールとそのフィールド
 
-[!DNL Azure DevOps] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Azure DevOps] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL Azure DevOps] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Azure DevOps]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -178,7 +178,7 @@ Azure DevOps コネクタでは、次を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Azure DevOps] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion] への [!DNL Azure DevOps] の接続</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Azure DevOps] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">UICONTROL Workfront Fusion への [!DNL Azure DevOps] の接続 ]</a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record type]</td> 
@@ -186,11 +186,11 @@ Azure DevOps コネクタでは、次を使用します。
     <ul> 
      <li> <p><strong>[!UICONTROL Project]</strong> </p> <p>次のフィールドに入力します。</p> 
       <ul> 
-       <li> <p><strong>[!UICONTROL 名 &#x200B;]</strong>：新しいプロジェクトの名前を入力またはマッピングします。</p> </li> 
-       <li> <p><strong>[!UICONTROL 説明 &#x200B;]</strong>：新しいプロジェクトの説明を入力またはマッピングします。 </p> </li> 
+       <li> <p><strong>[!UICONTROL 名 ]</strong>：新しいプロジェクトの名前を入力またはマッピングします。</p> </li> 
+       <li> <p><strong>[!UICONTROL 説明 ]</strong>：新しいプロジェクトの説明を入力またはマッピングします。 </p> </li> 
        <li> <p><strong>[!UICONTROL Visibility]</strong>：プロジェクトを公開または非公開にするかを選択します。ユーザーが非公開プロジェクトとやり取りするには、組織にサインインし、プロジェクトへのアクセス権を付与されている必要があります。公開プロジェクトは、組織にサインインしていないユーザーに表示されます。</p> </li> 
        <li> <p><strong>[!UICONTROL Version control]</strong>：プロジェクトでバージョン管理に[!DNL Git]または[!UICONTROL Team Foundation Version Control (TFCV)]を使用するかどうかを選択します。</p> </li> 
-       <li> <p><strong>[!UICONTROL Work item process]</strong>：プロジェクトに使用する作業プロセスを選択します。[!UICONTROL Basic]、[!UICONTROL Scrum]、[!UICONTROL Capability Maturity Model Integration (CMMI)]、[!UICONTROL Agile]を選択できます。</p> <p>[!DNL Azure DevOps] のプロセスについて詳しくは、[!DNL Azure DevOps] ドキュメントの <a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=basic-process"> デフォルトのプロセスとプロセステンプレート </a> を参照してください。</p> </li> 
+       <li> <p><strong>[!UICONTROL Work item process]</strong>：プロジェクトに使用する作業プロセスを選択します。[!UICONTROL Basic]、[!UICONTROL Scrum]、[!UICONTROL Capability Maturity Model Integration (CMMI)]、[!UICONTROL Agile]を選択できます。</p> <p>[!DNL Azure DevOps] のプロセスについて詳しくは、<a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=basic-process"> ドキュメントの </a> デフォルトのプロセスとプロセステンプレート [!DNL Azure DevOps] を参照してください。</p> </li> 
       </ul> </li> 
      <li> <p><strong>[!UICONTROL Work item]</strong> </p> <p>次のフィールドに入力します。</p> 
       <ul> 
@@ -215,7 +215,7 @@ Azure DevOps コネクタでは、次を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Azure DevOps] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion] への [!DNL Azure DevOps] の接続</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Azure DevOps] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">UICONTROL Workfront Fusion への [!DNL Azure DevOps] の接続 ]</a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Base URL]</td> 
@@ -227,7 +227,7 @@ Azure DevOps コネクタでは、次を使用します。
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL API Version]</td> 
-   <td>この API 呼び出しの接続先となる [!DNL Azure DevOps] API のバージョンを選択またはマッピングします。バージョンが選択されていない場合、[!DNL Workfront Fusion] は [!DNL Azure DevOps] API バージョン 5.1 に接続します。</td> 
+   <td>この API 呼び出しの接続先となる [!DNL Azure DevOps] API のバージョンを選択またはマッピングします。バージョンを選択していない場合、Workfront Fusion は [!DNL Azure DevOps] API バージョン 5.1 に接続します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
@@ -263,7 +263,7 @@ Azure DevOps コネクタでは、次を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Azure DevOps] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">[!DNL Azure DevOps] を [!UICONTROL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Azure DevOps] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">UICONTROL Workfront Fusion への [!DNL Azure DevOps] の接続 ]</a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Attachment URL]</td> 
@@ -282,7 +282,7 @@ Azure DevOps コネクタでは、次を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Azure DevOps] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">[!DNL Azure DevOps] を [!UICONTROL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Azure DevOps] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">UICONTROL Workfront Fusion への [!DNL Azure DevOps] の接続 ]</a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Work item ID]</td> 
@@ -319,13 +319,13 @@ Azure DevOps コネクタでは、次を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Azure DevOps] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">[!UICONTROL Workfront Fusion] への [!DNL Azure DevOps] の接続</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Azure DevOps] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">UICONTROL Workfront Fusion への [!DNL Azure DevOps] の接続 ]</a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record type]</td> 
    <td> <p>プロジェクトを読み取るか作業アイテムを読み取るかを選択</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL プロジェクト &#x200B;]</strong>：読み取るプロジェクトを選択します。</p> </li> 
+     <li> <p><strong>[!UICONTROL プロジェクト ]</strong>：読み取るプロジェクトを選択します。</p> </li> 
      <li> <p><strong>[!UICONTROL Work item]</strong>：読み取る作業アイテムを含むプロジェクトを選択し、作業アイテムのタイプを選択します。</p> </li> 
     </ul> </td> 
   </tr> 
@@ -352,7 +352,7 @@ Azure DevOps コネクタでは、次を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Azure DevOps] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">[!DNL Azure DevOps] を [!UICONTROL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Azure DevOps] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">UICONTROL Workfront Fusion への [!DNL Azure DevOps] の接続 ]</a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project]</td> 
@@ -385,7 +385,7 @@ Azure DevOps コネクタでは、次を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Azure DevOps] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">[!DNL Azure DevOps] を [!UICONTROL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Azure DevOps] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">UICONTROL Workfront Fusion への [!DNL Azure DevOps] の接続 ]</a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project] </td> 
@@ -422,7 +422,7 @@ Azure DevOps コネクタでは、次を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Azure DevOps] アカウントを [!DNL Workfront Fusion] に接続する手順については、この記事の<a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">[!DNL Azure DevOps] を [!UICONTROL Workfront Fusion] に接続</a>を参照してください。</p> </td> 
+   <td> <p>[!DNL Azure DevOps] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">UICONTROL Workfront Fusion への [!DNL Azure DevOps] の接続 ]</a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project]</td> 
@@ -438,7 +438,7 @@ Azure DevOps コネクタでは、次を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td>1 回の実行サイクル中に、[!DNL Workfront Fusion] が返す作業アイテムの最大数を入力またはマッピングします。</td> 
+   <td>Workfront Fusion が 1 つの実行サイクルで返す作業項目の最大数を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
 </table>

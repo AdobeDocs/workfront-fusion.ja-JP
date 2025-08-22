@@ -4,14 +4,14 @@ description: この記事では、 [!DNL Adobe Workfront Fusion scenario]  テ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 479b1ee5-5bde-465e-a269-61a49640699e
-source-git-commit: 7acc27ab2ce80b964b7f9fbb302816aa75964ab5
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 58%
+source-wordcount: '275'
+ht-degree: 49%
 
 ---
 
-# [!DNL Adobe Workfront Fusion] テンプレートに関する FAQ
+# Adobe Workfront Fusion テンプレートに関する FAQ
 
 この記事では、Adobe Workfront Fusion シナリオテンプレートに関するよくある質問について説明します。
 
@@ -26,17 +26,17 @@ ht-degree: 58%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
    <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規： [!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：[!DNL Workfront Fusion] ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -44,9 +44,9 @@ ht-degree: 58%
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：組織は [!DNL Adobe Workfront Fusion] を購入する必要があります。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
   </tr>
  </tbody> 
@@ -54,7 +54,7 @@ ht-degree: 58%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -64,13 +64,13 @@ ht-degree: 58%
 
 保存したテンプレートは、チームメンバーと自動的に共有されます。チームのメンバーではないユーザーと共有する場合は、公開する必要があります。 公開した、リンクと共有したり、管理者にテンプレートを公開するよう依頼したりできます。
 
-詳しくは、[Publishと共有  [!DNL Adobe Workfront Fusion templates]](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md) を参照してください。
+詳しくは、[ 公開と共有  [!DNL Adobe Workfront Fusion templates]](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md) を参照してください。
 
 ## 公開テンプレートを編集または削除するにはどうすればよいですか？
 
 **回答**：
 
-[ [!DNL Adobe Workfront Fusion]  テンプレートでの表示、編集、削除](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)を参照してください。
+[Adobe Workfront Fusion テンプレートの表示、編集、削除 ](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md) を参照してください。
 
 ## 最初に作成した公開テンプレートが見つかりません。どうすればよいでしょうか？
 

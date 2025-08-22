@@ -4,20 +4,20 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: apps-and-their-modules
 title: Adobe ストレージモジュール
-description: シナリオでは、Adobe Admin Console [!DNL Adobe Workfront Fusion]  プロジェクトを作成および管理できます。
+description: Adobe Workfront Fusion シナリオでは、Adobe Admin Consoleでプロジェクトを作成および管理できます。
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ee905f-4713-44a4-bffb-c64cdb3665c2
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1400'
 ht-degree: 19%
 
 ---
 
 # Adobe ストレージモジュール
 
-[!DNL Adobe Workfront Fusion] のシナリオでは、Adobe Admin Consoleでプロジェクトを作成および管理できます。
+Adobe Workfront Fusion シナリオでは、Adobe Admin Consoleでプロジェクトを作成および管理できます。
 
 シナリオの作成手順については、[ シナリオを作成：記事インデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -62,7 +62,7 @@ ht-degree: 19%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -127,11 +127,11 @@ Adobe Admin Consoleページで、上部のナビゲーションバーの「製�
         </td>
         </tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>[!UICONTROL Adobe] [!UICONTROL クライアント ID] を入力します。 これは、[!DNL Adobe Developer Console] のプロジェクトの [!UICONTROL 資格情報の詳細 &#x200B;] セクションにあります。</td>
+        <td>[!UICONTROL Adobe] [!UICONTROL クライアント ID] を入力します。 これは、[!DNL Adobe Developer Console] のプロジェクトの [!UICONTROL 資格情報の詳細 ] セクションにあります。</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、[!DNL Adobe Developer Console] のプロジェクトの [!UICONTROL 資格情報の詳細 &#x200B;] セクションにあります。</td>
+        <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、[!DNL Adobe Developer Console] のプロジェクトの [!UICONTROL 資格情報の詳細 ] セクションにあります。</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL IMS 組織 ID]</td>
@@ -182,7 +182,7 @@ Adobe User Management モジュールを設定する場合、Workfront Fusion �
 
 #### ESM ストアの削除
 
-このアクション モジュールは、既存の ESM ストアと、それに関連するすべてのデータを完全に削除します。 この操作は元に戻すことができません。
+このアクション モジュールは、既存の ESM ストアと、それに関連するすべてのデータを完全に削除します。 このアクションは取り消せません。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -343,7 +343,7 @@ Adobe User Management モジュールを設定する場合、Workfront Fusion �
       <td>
         <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p>
         <p>例： <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] 認証ヘッダーおよび x-api-key ヘッダーを自動的に追加します。</p>
+        <p>Workfront Fusion は、認証ヘッダーと x-api-key ヘッダーを自動的に追加します。</p>
       </td>
     </tr>
     <tr>

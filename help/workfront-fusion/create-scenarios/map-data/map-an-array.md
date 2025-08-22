@@ -4,10 +4,10 @@ description: 配列または個々の配列要素をAdobe Workfront Fusion の�
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 22%
+source-wordcount: '920'
+ht-degree: 26%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 22%
 
 **例：**
 
-* **複合配列**:[!UICONTROL Watch emails] モジュールは、すべてのメールの添付ファイルの配列を返します。 すべての添付ファイルは、名前、コンテンツ、サイズなどを含むコレクションを表します。
+* **複雑な配列**:[!UICONTROL Watch Emails] モジュールは、すべてのメールの添付ファイルの配列を返します。 すべての添付ファイルは、名前、コンテンツ、サイズなどを含むコレクションを表します。
 
 >[!ENDSHADEBOX]
 
@@ -37,17 +37,17 @@ ht-degree: 22%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
    <td> <p>任意</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規： [!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td role="rowheader">Adobe Workfront プラン</td> 
+   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
    <td>
-   <p>現在：[!DNL Workfront Fusion] ライセンスは必要ありません。</p>
+   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
    <p>または</p>
    <p>レガシー：任意 </p>
    </td> 
@@ -55,9 +55,9 @@ ht-degree: 22%
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：組織は [!DNL Adobe Workfront Fusion] を購入する必要があります。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
    <p>または</p>
-   <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
+   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
    </td> 
   </tr>
  </tbody> 
@@ -65,24 +65,24 @@ ht-degree: 22%
 
 このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-[!DNL Adobe Workfront Fusion] ライセンスについて詳しくは、[[!DNL Adobe Workfront Fusion] ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
 ## 配列全体のマッピング
 
-1. 左側のパネルで「**[!UICONTROL Scenarios]**」タブをクリックします。
+1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. 配列をマッピングするシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
 1. 配列をマッピングするモジュールで、配列をマッピングするフィールドをクリックします。 配列のマッピング先のフィールドです。
 
 1. 表示されるボックスで、項目をマッピングします。
 
-   パネルを使用すると、他のタイプの項目と同じ方法でフィールドをマッピングできます。各項目を個別に入力せずに、別の配列をターゲットフィールドにマッピングする場合は、「[!UICONTROL Map]」ボタンを使用します。 この場合、両方の配列（ソース配列とターゲット配列）の構造が同じであることを確認します。
+   パネルを使用すると、他のタイプの項目と同じ方法でフィールドをマッピングできます。各項目に個別に入力しないで、別の配列をターゲットフィールドにマッピングする場合は、「[!UICONTROL マップ]」ボタンを使用します。この場合、両方の配列（ソース配列とターゲット配列）の構造が同じであることを確認します。
 
    1 つの配列には、任意の数の項目を追加できます。
 
-イテレータを使用して、配列を個々のバンドルに分割できます。詳しくは、 [!DNL Adobe Workfront Fusion][&#128279;](/help/workfront-fusion/references/modules/iterator-module.md) の [!UICONTROL Iterator] モジュールを参照してください。
+イテレータを使用して、配列を個々のバンドルに分割できます。詳しくは、Adobe Workfront Fusion の [[!UICONTROL Iterator] モジュール ](/help/workfront-fusion/references/modules/iterator-module.md) を参照してください。
 
 ## 新しい配列への項目のマッピング
 
@@ -151,7 +151,7 @@ Workfront Fusion の一部のフィールドでは、要素を配列にマッピ
 * `map`
 
    1. `map()` の最初のパラメーター関数は配列の項目全体です。
-   1. 2 つ目のパラメーターは、値の項目の未加工の名前です。生の名前を取得するには、[!UICONTROL mapping] のパネルの項目の上にマウスポインターを置きます。
+   1. 2 つ目のパラメーターは、値の項目の未加工の名前です。未加工の名前を取得するには、[!UICONTROL マッピング]パネルの項目にポインタを合わせます。
 
       ![ 生の名前を取得 ](assets/obtain-raw-name-350x124.png)
 
@@ -185,6 +185,6 @@ Workfront Fusion の一部のフィールドでは、要素を配列にマッピ
 
 ## 配列要素を一連のバンドルに変換します
 
-配列は、[!UICONTROL Iterator] モジュールを使用して一連のバンドルに変換できます。 詳しくは、[[!UICONTROL Iterator] モジュール ](/help/workfront-fusion/references/modules/iterator-module.md) を参照してください。
+配列は[!UICONTROL イテレータ]モジュールを使用して、一連のバンドルに変換することができます。詳しくは、[[!UICONTROL Iterator] モジュール ](/help/workfront-fusion/references/modules/iterator-module.md) を参照してください。
 
 ![ 一連のバンドル ](assets/series-of-bundles.png)
