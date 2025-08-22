@@ -87,7 +87,7 @@ Web フックを作成すると、一意の URL が表示されます。これ�
 
 Workfront Fusion は、受信ペイロードのデータ構造を認識するために、表示されたアドレスに送信するサンプルデータを解析します。 サンプルデータを指定するには、そのサービスまたはアプリを変更して、サービスまたはアプリが web フックを呼び出すようにします。例えば、ファイルを削除できます。
 
-または、[!UICONTROL HTTP]/[!UICONTROL  リクエストを行う ] モジュールを介してサンプルデータを送信できます。
+または、[!UICONTROL HTTP]/[!UICONTROL &#x200B; リクエストを行う &#x200B;] モジュールを介してサンプルデータを送信できます。
 
 1. **[!UICONTROL HTTP]**／**[!UICONTROL リクエストを実行]**&#x200B;モジュールを使用して、新しいシナリオを作成します。
 
@@ -148,7 +148,7 @@ Web フックがデータを受け取り、そのデータを期待するアク�
 
 ## サポートされる受信データ形式
 
-Workfront Fusion は、[!UICONTROL  クエリ文字列 ]、[!UICONTROL  フォームデータ ]、[!UICONTROL JSON] の 3 つの受信データ形式をサポートしています。
+Workfront Fusion は、[!UICONTROL &#x200B; クエリ文字列 &#x200B;]、[!UICONTROL &#x200B; フォームデータ &#x200B;]、[!UICONTROL JSON] の 3 つの受信データ形式をサポートしています。
 
 Workfront Fusion は、選択したデータ構造に対して、すべての受信データを検証します。 次に、シナリオの設定に応じて、データは処理用のキューに格納されるか、すぐに処理されます。
 
@@ -289,27 +289,27 @@ Web フックの応答をカスタマイズする場合は、web フックの応
 >[!UICONTROL Web フック応答]モジュールを次のように設定します。
 >
 ><table style="table-layout:auto"> 
-&gt; <col> 
-&gt; <col> 
-&gt; <tbody> 
-&gt;  <tr> 
-&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
-&gt;   <td> <p>2xx 成功 HTTP ステータスコード（例：200）</p> </td> 
-&gt;  </tr> 
-&gt;  <tr> 
-&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
-&gt;   <td> <p>HTML コード</p> </td> 
-&gt;  </tr> 
-&gt;  <tr> 
-&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
-&gt;   <td> 
-&gt;    <ul> 
-&gt;     <li><strong>キー</strong>：Content-type</li> 
-&gt;     <li><strong>値</strong>：text/html</li> 
-&gt;    </ul> </td> 
-&gt;  </tr> 
-&gt; </tbody> 
-&gt;</table>
+>&gt; <col> 
+>&gt; <col> 
+>&gt; <tbody> 
+>&gt;  <tr> 
+>&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+>&gt;   <td> <p>2xx 成功 HTTP ステータスコード（例：200）</p> </td> 
+>&gt;  </tr> 
+>&gt;  <tr> 
+>&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
+>&gt;   <td> <p>HTML コード</p> </td> 
+>&gt;  </tr> 
+>&gt;  <tr> 
+>&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
+>&gt;   <td> 
+>&gt;    <ul> 
+>&gt;     <li><strong>キー</strong>：Content-type</li> 
+>&gt;     <li><strong>値</strong>：text/html</li> 
+>&gt;    </ul> </td> 
+>&gt;  </tr> 
+>&gt; </tbody> 
+>&gt;</table>
 >
 >![ カスタムヘッダー ](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
@@ -321,26 +321,26 @@ Web フックの応答をカスタマイズする場合は、web フックの応
 
 >[!INFO]
 >
->**例：**[!UICONTROL web フック応答]モジュールを次のように設定します。
+>**例：**&#x200B;[!UICONTROL web フック応答]モジュールを次のように設定します。
 >
 ><table style="table-layout:auto"> 
-&gt; <col> 
-&gt; <col> 
-&gt; <tbody> 
-&gt;  <tr> 
-&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
-&gt;   <td> <p>3xx リダイレクト HTTP ステータスコード（例：303）</p> </td> 
-&gt;  </tr> 
-&gt;  <tr> 
-&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
-&gt;   <td> 
-&gt;    <ul> 
-&gt;     <li><strong>[!UICONTROL Key]</strong>：場所</li> 
-&gt;     <li><strong>[!UICONTROL Value]</strong>：リダイレクト先の URL。</li> 
-&gt;    </ul> </td> 
-&gt;  </tr> 
-&gt; </tbody> 
-&gt;</table>
+>&gt; <col> 
+>&gt; <col> 
+>&gt; <tbody> 
+>&gt;  <tr> 
+>&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+>&gt;   <td> <p>3xx リダイレクト HTTP ステータスコード（例：303）</p> </td> 
+>&gt;  </tr> 
+>&gt;  <tr> 
+>&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
+>&gt;   <td> 
+>&gt;    <ul> 
+>&gt;     <li><strong>[!UICONTROL Key]</strong>：場所</li> 
+>&gt;     <li><strong>[!UICONTROL Value]</strong>：リダイレクト先の URL。</li> 
+>&gt;    </ul> </td> 
+>&gt;  </tr> 
+>&gt; </tbody> 
+>&gt;</table>
 >
 >![Webhook 応答 ](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 

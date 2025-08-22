@@ -69,10 +69,10 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 >[!IMPORTANT]
 >
 >* Dropbox コネクタを使用するには、まずDropboxでアプリケーションを作成する必要があります。
->  >   詳細については、『Dropbox開発者ガイド』の「アプリケーションの作成」を検索してください。
+>  &#x200B;>   詳細については、『Dropbox開発者ガイド』の「アプリケーションの作成」を検索してください。
 >* アプリケーションを作成する際には、次のリダイレクト URI を使用します：`https://app.workfrontfusion.com/oauth/cb/dropbox`
 >* Dropbox は、ユーザーが 50 人を超えるアプリケーションを承認する必要があります。
->  >   詳しくは、Dropbox 開発者ガイドの「Production approval」を検索してください。
+>  &#x200B;>   詳しくは、Dropbox 開発者ガイドの「Production approval」を検索してください。
 
 ## Dropbox API の情報
 
@@ -137,7 +137,7 @@ Dropbox コネクタでは、以下を使用します。
         <td>個人用 Dropbox アカウントとビジネス用アカウント（Dropbox Business）のどちらに接続するかを選択します。</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL 除外 dropbox-api-path-root ヘッダー ]</td>
+        <td role="rowheader">[!UICONTROL 除外 dropbox-api-path-root ヘッダー &#x200B;]</td>
         <td>アプリのフォルダーアクセス権を持つDropbox アプリの dropbox-api-path-root ヘッダーを除外するには、このオプションを有効にします</td>
         </tr>
       </tbody>
@@ -462,7 +462,7 @@ Dropbox コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Requested Visibility]</p> </td> 
-   <td> <p>リンクがパブリック、チーム用、またはパスワード制限されているかどうかを選択します。</p> <p><b>メモ：</b></p><p> [!UICONTROL チームのみ ] は、Dropbox Business アカウントでのみ使用できます。 [!UICONTROL Access with password] は、[!DNL Dropbox Pro] またはDropbox Business アカウントでのみ使用できます。</p> </td> 
+   <td> <p>リンクがパブリック、チーム用、またはパスワード制限されているかどうかを選択します。</p> <p><b>メモ：</b></p><p> [!UICONTROL チームのみ &#x200B;] は、Dropbox Business アカウントでのみ使用できます。 [!UICONTROL Access with password] は、[!DNL Dropbox Pro] またはDropbox Business アカウントでのみ使用できます。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Link's Expiration Date]</td> 
@@ -470,7 +470,7 @@ Dropbox コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Link's Access Level]</p> </td> 
-   <td> <p>リンクの受信者に対する権限を設定します。</p> <ul><li><strong>[!UICONTROL ビューア ]</strong> <p>リンクを使用するユーザーは、コンテンツを表示してコメントできます。</p> </li><li><strong>[!UICONTROL エディター ]</strong><p> リンクを使用するユーザーは、コンテンツを編集、表示およびコメントできます。 このアクセスレベルは、クラウドベースのドキュメントでのみ使用できます。</p> </li><li><strong>[!UICONTROL Max]</strong> <p>リンクを使用するユーザーは、リンクを設定できる最大のアクセスレベルを受け取ります。</p></li><ul> </td> 
+   <td> <p>リンクの受信者に対する権限を設定します。</p> <ul><li><strong>[!UICONTROL ビューア &#x200B;]</strong> <p>リンクを使用するユーザーは、コンテンツを表示してコメントできます。</p> </li><li><strong>[!UICONTROL エディター &#x200B;]</strong><p> リンクを使用するユーザーは、コンテンツを編集、表示およびコメントできます。 このアクセスレベルは、クラウドベースのドキュメントでのみ使用できます。</p> </li><li><strong>[!UICONTROL Max]</strong> <p>リンクを使用するユーザーは、リンクを設定できる最大のアクセスレベルを受け取ります。</p></li><ul> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -499,7 +499,7 @@ Dropbox コネクタでは、以下を使用します。
    <td> <p> ファイルパスをマッピングするか入力するか、手動でファイルを選択するかを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL ファイルまたはフォルダーのパス ] / [!UICONTROL ファイルまたはフォルダー ]</p> </td> 
+   <td> <p>[!UICONTROL ファイルまたはフォルダーのパス &#x200B;] / [!UICONTROL ファイルまたはフォルダー &#x200B;]</p> </td> 
    <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>ターゲットパスを入力するか、ファイルまたはフォルダーにマッピングします。</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>メニューからファイルまたはフォルダーを選択します。</p> </td> 
   </tr> 
  </tbody> 
@@ -524,11 +524,11 @@ Dropbox コネクタでは、以下を使用します。
    <td> <p>[!DNL Dropbox] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a> への接続の作成」を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL ファイル/フォルダーの選択方法 ] </td> 
+   <td>[!UICONTROL ファイル/フォルダーの選択方法 &#x200B;] </td> 
    <td> <p>ファイルまたはフォルダーのパスをマップするか入力するか、または手動で選択するかを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL ファイル / フォルダーパス ] /</p> </td> 
+   <td> <p>[!UICONTROL ファイル / フォルダーパス &#x200B;] /</p> </td> 
    <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>ターゲットパスを入力するか、ファイルまたはフォルダーにマッピングします。</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>ファイルまたはフォルダーを移動するかどうかを選択し、次にファイルまたはフォルダーを移動します。</p> </td> 
   </tr> 
   <tr> 

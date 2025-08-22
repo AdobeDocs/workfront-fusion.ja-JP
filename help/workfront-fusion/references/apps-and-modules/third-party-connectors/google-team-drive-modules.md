@@ -162,7 +162,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Source File]</p> </td> 
-   <td> <p>共有ドライブにアップロードするファイルを指定します。</p> <p>前のモジュールからアップロードするファイルをマッピングします（例：）[!UICONTROL HTTP] &gt; [!UICONTROL ファイルを取得 ] または [!UICONTROL Dropbox] &gt; [!UICONTROL ファイルを取得） ] を選択するか、ファイル名とファイルデータを手動で入力します。</p> </td> 
+   <td> <p>共有ドライブにアップロードするファイルを指定します。</p> <p>前のモジュールからアップロードするファイルをマッピングします（例：）[!UICONTROL HTTP] &gt; [!UICONTROL ファイルを取得 &#x200B;] または [!UICONTROL Dropbox] &gt; [!UICONTROL ファイルを取得） &#x200B;] を選択するか、ファイル名とファイルデータを手動で入力します。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Title]</td> 

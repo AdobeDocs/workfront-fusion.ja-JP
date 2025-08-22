@@ -60,7 +60,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 +++
 
-## [!UICONTROL Draft.js からHTMLへ ]
+## [!UICONTROL Draft.js からHTMLへ &#x200B;]
 
 このモジュールは Draft.js をHTMLに変換します。
 
@@ -77,7 +77,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
  </tbody> 
 </table>
 
-## [!UICONTROL HTMLから Draft.js へ ]
+## [!UICONTROL HTMLから Draft.js へ &#x200B;]
 
 このモジュールはHTML コードを Draft.js に変換します。
 

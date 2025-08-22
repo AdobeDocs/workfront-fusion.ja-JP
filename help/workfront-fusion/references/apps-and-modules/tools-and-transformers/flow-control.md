@@ -63,15 +63,15 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 <table>
     <tr>
-        <td>[!UICONTROL 初期値 ]</td>
+        <td>[!UICONTROL 初期値 &#x200B;]</td>
         <td>モジュールの最初のイテレーションに含める値を入力またはマッピングします。 デフォルト値は 1 です。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL 繰り返し ]</td>
+        <td>[!UICONTROL 繰り返し &#x200B;]</td>
         <td>モジュールが繰り返す回数を入力またはマッピングします。この数は、0 以上 10,000 以下である必要があります。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL ステップ ]</td>
+        <td>[!UICONTROL ステップ &#x200B;]</td>
         <td>これは、モジュールが値を増加させる数値です。 デフォルト値は 1 です。</td>
     </tr>
 </table>
@@ -80,8 +80,8 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 例えば、[!UICONTROL リピーター]モジュールを使用して「こんにちは 1」、「こんにちは 2」などの件名のメールを 5 通送信するには、**[!UICONTROL メール]／[!UICONTROL 自分にメール]**&#x200B;モジュールを[!UICONTROL リピーター]モジュールに接続します。
 
-1. 画面下部の [!UICONTROL  フロー制御 ] アイコン ![ フロー制御アイコン ](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) をクリックし、表示されるメニューで **[!UICONTROL リピータ]** をクリックします。
-1. [!UICONTROL  リピーター ] モジュールをクリックし、表示されたボックスで **[!UICONTROL 自動接続]** をクリックします。
+1. 画面下部の [!UICONTROL &#x200B; フロー制御 &#x200B;] アイコン ![ フロー制御アイコン ](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) をクリックし、表示されるメニューで **[!UICONTROL リピータ]** をクリックします。
+1. [!UICONTROL &#x200B; リピーター &#x200B;] モジュールをクリックし、表示されたボックスで **[!UICONTROL 自動接続]** をクリックします。
 
    リピーターのモジュールが開きます。
 

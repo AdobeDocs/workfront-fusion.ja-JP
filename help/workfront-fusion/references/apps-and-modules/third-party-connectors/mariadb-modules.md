@@ -99,7 +99,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
       <td>デフォルトのポートは 3306 です。非標準のポートを使用している場合は、この番号をポートに設定します。 </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL データベース ]</td> 
+      <td role="rowheader">[!UICONTROL データベース &#x200B;]</td> 
       <td>操作するデータベースの名前を入力します。</td> 
      </tr> 
      <tr> 

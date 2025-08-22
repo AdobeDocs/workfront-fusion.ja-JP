@@ -731,7 +731,7 @@ Google シートコネクタでは、以下を使用します。
 
 ### [!DNL Google Sheet] からの空のセルの取得
 
-空のセルを取得するには、[!UICONTROL  行を検索（詳細） ] モジュールを使用できます。 この式を使用して、空の列を取得します。
+空のセルを取得するには、[!UICONTROL &#x200B; 行を検索（詳細） &#x200B;] モジュールを使用できます。 この式を使用して、空の列を取得します。
 
 ```
 select * where E is null
@@ -747,7 +747,7 @@ select * where E is null
 1. シナリオを実行します。
 1. Google Sheet のメインメニューバーから&#x200B;**[!UICONTROL 挿入]**／**[!UICONTROL 図面]**... を選択します。
 
-1. [!UICONTROL  図面 ] ウィンドウで、ウィンドウの上部付近にある **[!UICONTROL テキスト ボックス]** アイコン ![ テキスト ボックス ](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) をクリックします。
+1. [!UICONTROL &#x200B; 図面 &#x200B;] ウィンドウで、ウィンドウの上部付近にある **[!UICONTROL テキスト ボックス]** アイコン ![ テキスト ボックス ](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) をクリックします。
 1. ボタンをデザインし、右上隅にある「**[!UICONTROL 保存して閉じる]**」ボタンをクリックします。
 1. ボタンはワークシートに配置されます。 ボタンの右上隅にある 3 つの縦並びのドットをクリックします。
 1. メニューから「**[!UICONTROL スクリプトを割り当て].**」を選択します。
@@ -787,7 +787,7 @@ select * where E is null
 
 1. 適切なロケールを確認または設定したら、メインメニューから **[!UICONTROL 形式]** > **[!UICONTROL 数値]** を選択して、対応する日時の形式を決定します。 形式は、日付と時刻メニュー項目の横に表示されます。
 
-1. [!UICONTROL formatDate （） ] 関数に渡すべき正しい形式を作成するには、[ 日付と時刻のフォーマット用トークン ](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md) のリストを参照してください。
+1. [!UICONTROL formatDate （） &#x200B;] 関数に渡すべき正しい形式を作成するには、[ 日付と時刻のフォーマット用トークン ](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md) のリストを参照してください。
 
 >[!BEGINSHADEBOX]
 

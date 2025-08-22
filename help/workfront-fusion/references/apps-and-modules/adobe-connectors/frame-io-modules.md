@@ -114,7 +114,7 @@ Frame.io コネクタでは、以下を使用します。
 
 ### API トークンを使用した [!DNL Frame.io] への接続
 
-API トークンを使用して [!DNL Frame.io] アカウントをWorkfront Fusion に接続するには、[!DNL Frame.io] アカウントで API トークンを作成し、Workfront Fusion [!DNL Frame.io][!UICONTROL  接続を作成 ] ダイアログに挿入する必要があります。
+API トークンを使用して [!DNL Frame.io] アカウントをWorkfront Fusion に接続するには、[!DNL Frame.io] アカウントで API トークンを作成し、Workfront Fusion [!DNL Frame.io][!UICONTROL &#x200B; 接続を作成 &#x200B;] ダイアログに挿入する必要があります。
 
 1. [!DNL Frame.io] アカウントにログインします。
 1. [!DNL Frame.io] Developer の「**[!UICONTROL トークン]**」ページに移動します。
@@ -240,7 +240,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
    <td> <p>ファイルを作成する場合、アセットの簡単な説明を入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ラベル ] </td> 
+   <td role="rowheader">[!UICONTROL ラベル &#x200B;] </td> 
    <td> <p>ファイルを作成する場合は、ファイルが進行中か、レビューが必要か、承認済みかを選択します。</p> </td> 
   </tr> 
  </tbody> 

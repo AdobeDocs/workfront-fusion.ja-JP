@@ -15,7 +15,7 @@ ht-degree: 85%
 
 [!DNL Adobe Workfront Fusion Tools] セクションには、シナリオを強化できる便利なモジュールがいくつか含まれています。
 
-[!UICONTROL  ツール ] モジュールは、アプリのリストから、または画面の下部にある [!UICONTROL  ツール ] アイコン ![ ツールアイコン ](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) から使用できます。
+[!UICONTROL &#x200B; ツール &#x200B;] モジュールは、アプリのリストから、または画面の下部にある [!UICONTROL &#x200B; ツール &#x200B;] アイコン ![ ツールアイコン ](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) から使用できます。
 
 ## アクセス要件
 

@@ -213,7 +213,7 @@ Google スライド コネクタでは、次を使用します。
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 新しいドライブの場所 ]</td> 
+   <td role="rowheader">[!UICONTROL 新しいドライブの場所 &#x200B;]</td> 
    <td> <p>新しいプレゼンテーションを保存または追加する [!DNL Google Drive] を選択してください：</p> 
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
@@ -222,15 +222,15 @@ Google スライド コネクタでは、次を使用します。
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL 新しいドキュメントの場所 ]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 新しいドキュメントの場所 &#x200B;]</p> </td> 
    <td> <p>プレゼンテーションを保存または追加するフォルダを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 共有 ] </td> 
+   <td role="rowheader">[!UICONTROL 共有 &#x200B;] </td> 
    <td> <p>プレゼンテーションを共有する場合に選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 他者の電子メール アドレスと共有 ]</td> 
+   <td role="rowheader">[!UICONTROL 他者の電子メール アドレスと共有 &#x200B;]</td> 
    <td> <p> プレゼンテーションを共有する電子メール アドレスを入力します。 このフィールドに電子メールを入力せずに [ 共有 ] オプションを有効にすると、プレゼンテーションはすべてのユーザーと共有できます。</p> </td> 
   </tr> 
  </tbody> 
@@ -249,7 +249,7 @@ Google スライド コネクタでは、次を使用します。
    <td> <p>[!DNL Google Slides] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL プレゼンテーションとページ ID を入力 ]</td> 
+   <td role="rowheader">[!UICONTROL プレゼンテーションとページ ID を入力 &#x200B;]</td> 
    <td> <p> プレゼンテーションとページ ID を手動で入力するか、リストから選択するかを選択します。</p> </td> 
   </tr> 
   <tr> 
@@ -340,7 +340,7 @@ Google スライド コネクタでは、次を使用します。
    <td> <p>[!DNL Google Slides] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL プレゼンテーション ID を入力 ]</td> 
+   <td role="rowheader">[!UICONTROL プレゼンテーション ID を入力 &#x200B;]</td> 
    <td> <p> プレゼンテーション ID を手動で入力するか、リストから選択するかを選択します。</p> </td> 
   </tr> 
   <tr> 
@@ -397,7 +397,7 @@ Google スライド コネクタでは、次を使用します。
    <td> <p> 画像のアップロード先のプレゼンテーションのプレゼンテーション ID を選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL メソッドの選択 ]</td> 
+   <td role="rowheader">[!UICONTROL メソッドの選択 &#x200B;]</td> 
    <td> <p> 画像の置き換え方法を選択します。</p>
    <ul>
    <li><p><b>テキストタグを置換して画像をアップロード</b></p><p>「値」フィールドで、アップロードする各画像に対して <b> 項目を追加 </b> をクリックし、画像のタグと新しい画像の URL を入力します。</p></li>

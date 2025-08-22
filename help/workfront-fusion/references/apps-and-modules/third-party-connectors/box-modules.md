@@ -102,11 +102,11 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ### トリガー
 
-* [[!UICONTROL  新規ファイル イベント ]](#new-file-event)
+* [[!UICONTROL &#x200B; 新規ファイル イベント &#x200B;]](#new-file-event)
 * [新規フォルダーイベント](#new-folder-event)
 * [[!UICONTROL ファイルの監視]](#watch-files)
 
-#### [!UICONTROL  新規ファイル イベント ]
+#### [!UICONTROL &#x200B; 新規ファイル イベント &#x200B;]
 
 選択したアクションがファイルに対して実行されると、このインスタント トリガー モジュールはシナリオを開始します。
 
@@ -294,15 +294,15 @@ You specify the file. You can also provide a new filename for the file.
    <td> <p>新しいフォルダーの名前を入力またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 親フォルダー ]</td> 
+   <td role="rowheader">[!UICONTROL 親フォルダー &#x200B;]</td> 
    <td> <p>新しいフォルダーを作成するフォルダーを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL フォルダーアップロード E メール アクセス ]</td> 
+   <td role="rowheader">[!UICONTROL フォルダーアップロード E メール アクセス &#x200B;]</td> 
    <td> <p>このパラメーターを設定すると、ユーザーはこのフォルダー用に自動的に作成されたメールアドレスにファイルをメールで送信できます。 「共同作業者」オプションでは、共同作業者に対して登録済みのメールのみが許可されます。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 同期状態 ]</td> 
+   <td role="rowheader">[!UICONTROL 同期状態 &#x200B;]</td> 
    <td> <p>フォルダーをユーザーのデバイスに同期するかどうかを指定します。 これは Box Sync （廃止）で使用され、Box Drive では使用されません。</p> </td> 
   </tr> 
  </tbody> 
@@ -445,7 +445,7 @@ You specify the file. You can also provide a new filename for the file.
    <td> <p>関連度または変更日のどちらで並べ替えるかを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ごみ箱コンテンツ ]</td> 
+   <td role="rowheader">[!UICONTROL ごみ箱コンテンツ &#x200B;]</td> 
    <td> <p>ハッシュ化されたコンテンツとハッシュ化されていないコンテンツのどちらを検索するかを選択します。</p> </td> 
   </tr> 
   <tr> 
@@ -453,11 +453,11 @@ You specify the file. You can also provide a new filename for the file.
    <td> <p>特定のフォルダーを検索するには、検索する各フォルダーに対して「<b> 項目を追加 </b>」をクリックし、フォルダーの ID を入力します。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL の作成元 ]</td> 
+   <td role="rowheader">[!UICONTROL の作成元 &#x200B;]</td> 
    <td> <p>特定の日付範囲で作成されたアセットを検索するには、その範囲内の最も古い日付を入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL の作成先 ]</td> 
+   <td role="rowheader">[!UICONTROL の作成先 &#x200B;]</td> 
    <td> <p>特定の日付範囲で作成されたアセットを検索するには、その日付範囲の最新の日付を入力します。</p> </td> 
   </tr> 
   <tr> 
@@ -465,7 +465,7 @@ You specify the file. You can also provide a new filename for the file.
    <td> <p>特定の日付範囲で更新されたアセットを検索するには、範囲内の最も古い日付を入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL の更新先 ]</td> 
+   <td role="rowheader">[!UICONTROL の更新先 &#x200B;]</td> 
    <td> <p>特定の日付範囲で更新されたアセットを検索するには、その範囲の最新の日付を入力します。</p> </td> 
   </tr> 
   <tr> 
@@ -473,15 +473,15 @@ You specify the file. You can also provide a new filename for the file.
    <td> <p>モジュールの応答で返す属性ごとに、「<b> 項目を追加 </b>」をクリックしてフィールドを入力します。</p><p>これは、通常は標準応答で返されないフィールドをリクエストするために使用できます。 このパラメーターを指定すると、明示的に指定しない限り、応答で標準フィールドが返されないことに注意してください。 </p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ファイル拡張子 ]</td> 
+   <td role="rowheader">[!UICONTROL ファイル拡張子 &#x200B;]</td> 
    <td> <p>検索を特定のファイル拡張子に制限するには、ファイル拡張子のコンマ区切りリストを入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL サイズの基点 ]</td> 
+   <td role="rowheader">[!UICONTROL サイズの基点 &#x200B;]</td> 
    <td> <p>特定のサイズ範囲のアセットを検索するには、範囲の小さい方の端をバイト単位で入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL のサイズを指定 ]</td> 
+   <td role="rowheader">[!UICONTROL のサイズを指定 &#x200B;]</td> 
    <td> <p>特定のサイズ範囲のアセットを検索するには、範囲の大きい方の端をバイト単位で入力します。</p> </td> 
   </tr> 
   <tr> 

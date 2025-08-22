@@ -243,7 +243,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
    <td>このモジュールで作成するエンティティのタイプを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL でマッピングするフィールドを選択 ]</td> 
+   <td role="rowheader">[!UICONTROL でマッピングするフィールドを選択 &#x200B;]</td> 
    <td>レコードの作成時に値を含めるフィールドを選択します。 使用可能なフィールドは、エンティティタイプによって異なります。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -382,7 +382,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
    <td>モジュールで更新するエンティティのタイプを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL でマッピングするフィールドを選択 ]</td> 
+   <td role="rowheader">[!UICONTROL でマッピングするフィールドを選択 &#x200B;]</td> 
    <td>レコードの作成時に値を含めるフィールドを選択します。 使用可能なフィールドは、エンティティタイプによって異なります。</td> 
   </tr> 
   <tr data-mc-conditions=""> 

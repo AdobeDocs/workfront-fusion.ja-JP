@@ -59,7 +59,7 @@ Microsoft Dynamics 365 Finance and Operations モジュールの接続を作成�
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Dynamics Finance and Operations [!UICONTROL クライアント シークレット ] を入力します。 </td>
+        <td>Dynamics Finance and Operations [!UICONTROL クライアント シークレット &#x200B;] を入力します。 </td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL テナント ID]</td>
@@ -101,7 +101,7 @@ Microsoft Dynamics 365 Finance and Operations モジュールの接続を作成�
     <td> <p>Microsoft Dynamics 365 Finance and Operations をWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection" class="MCXref xref"> 接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL エンティティ ]</td>
+    <td>[!UICONTROL エンティティ &#x200B;]</td>
      <td>作成する Dynamics Finance and Operations エンティティの種類を入力またはマップします。</td> 
   </tr> 
   <tr> 
@@ -126,11 +126,11 @@ Microsoft Dynamics 365 Finance and Operations モジュールの接続を作成�
     <td> <p>Microsoft Dynamics 365 Finance and Operations をWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection" class="MCXref xref"> 接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL エンティティ ]</td>
+    <td>[!UICONTROL エンティティ &#x200B;]</td>
      <td>削除する Dynamics Finance and Operations エンティティの種類を入力またはマップします。</td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROLプライマリキーフィールド ]</td>
+    <td>[!UICONTROL プライマリキーフィールド &#x200B;]</td>
      <td> プライマリキーフィールドは、項目を識別します。 指定する主キーフィールドごとに、「<b> 項目を追加 </b>」をクリックし、その項目を識別する一意のキーと値を入力またはマッピングします。 </td> 
   </tr> 
  </tbody> 
@@ -161,7 +161,7 @@ Microsoft Dynamics 365 Finance and Operations モジュールの接続を作成�
    <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。これにより、リクエストのコンテンツタイプが決まります。</p> <p>例：<code> {"Content-type":"application/json"}</code></p> <p>メモ：エラーが発生し、接触チャネルを特定するのが難しい場合は、Workfrontのドキュメントに基づいてヘッダーを変更することを検討してください。 カスタム API 呼び出しで 422 HTTP リクエストエラーが返される場合は、<code>"Content-Type":"text/plain"</code> ヘッダーを使用してみてください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL クエリ文字列 ]</td> 
+   <td role="rowheader">[!UICONTROL クエリ文字列 &#x200B;]</td> 
    <td> <p>API 呼び出しのクエリを標準 JSON オブジェクトの形式で追加します。</p> <p>例： <code>{"name":"something-urgent"}</code></p> <p>ヒント：情報は、クエリパラメーターではなく、JSON 本文を使用して送信することをお勧めします。</p> </td> 
   </tr> 
   <tr> 
@@ -189,11 +189,11 @@ Microsoft Dynamics 365 Finance and Operations モジュールの接続を作成�
     <td> <p>Microsoft Dynamics 365 Finance and Operations をWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection" class="MCXref xref"> 接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL エンティティ ]</td>
+    <td>[!UICONTROL エンティティ &#x200B;]</td>
      <td>読み取る Dynamics Finance and Operations エンティティの種類を入力またはマップします。</td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROLプライマリキーフィールド ]</td>
+    <td>[!UICONTROL プライマリキーフィールド &#x200B;]</td>
      <td> プライマリキーフィールドは、項目を識別します。 指定する主キーフィールドごとに、「<b> 項目を追加 </b>」をクリックし、その項目を識別する一意のキーと値を入力またはマッピングします。 </td> 
   </tr> 
  </tbody> 
@@ -210,11 +210,11 @@ Microsoft Dynamics 365 Finance and Operations モジュールの接続を作成�
     <td> <p>Microsoft Dynamics 365 Finance and Operations をWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection" class="MCXref xref"> 接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL エンティティ ]</td>
+    <td>[!UICONTROL エンティティ &#x200B;]</td>
      <td>更新する Dynamics Finance and Operations エンティティの種類を入力またはマップします。</td> 
   </tr>  
   <tr> 
-    <td>[!UICONTROLプライマリキーフィールド ]</td>
+    <td>[!UICONTROL プライマリキーフィールド &#x200B;]</td>
      <td> プライマリキーフィールドは、項目を識別します。 指定する主キーフィールドごとに、「<b> 項目を追加 </b>」をクリックし、その項目を識別する一意のキーと値を入力またはマッピングします。 </td> 
   </tr> 
   <tr> 
@@ -237,7 +237,7 @@ Microsoft Dynamics 365 Finance and Operations モジュールの接続を作成�
    <td> <p>Workfront アプリケーションをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">WorkfrontをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL エンティティ ]</td> 
+   <td>[!UICONTROL エンティティ &#x200B;]</td> 
    <td>検索する Dynamics Finance and Operations エンティティの種類を入力またはマップします。</td> 
   </tr> 
   <tr> 

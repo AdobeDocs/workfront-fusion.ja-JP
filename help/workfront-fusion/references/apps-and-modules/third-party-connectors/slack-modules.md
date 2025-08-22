@@ -132,7 +132,7 @@ Slack コネクタでは、以下を使用します。
    <td> <p>作成するメッセージのテキストコンテンツを入力します。</p> <p>メモ：テキストの書式設定について詳しくは、[!DNL Slack] ドキュメント内の<a href="https://api.slack.com/reference/surfaces/formatting">アプリケーションサーフェスのテキストの書式</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！ユーザーとしての UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL ユーザーとしての]</td> 
    <td>このオプションを有効にすると、このモジュールの接続で使用される資格情報を所有するユーザーとしてメッセージを投稿できます。</td> 
   </tr> 
   <tr> 
@@ -152,7 +152,7 @@ Slack コネクタでは、以下を使用します。
    <td>メッセージに添付する項目ごとに、「<b> 項目を追加 </b>」をクリックして項目の詳細を入力します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アイコン絵文字 ]</td> 
+   <td role="rowheader">[!UICONTROL アイコン絵文字 &#x200B;]</td> 
    <td><code>:icon-name:</code> の形式で、このメッセージのアイコンとして使用する絵文字を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
@@ -208,7 +208,7 @@ Slack コネクタでは、以下を使用します。
    <td> <p> 削除するメッセージのタイムスタンプを入力またはマッピングします。</p> <p>メモ：タイムスタンプは、プライベートチャネルメッセージを監視モジュールなどの別のモジュールを使用して取得できます。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！ユーザーとしての UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL ユーザーとしての]</td> 
    <td> <p> 接続で使用された資格情報を持つユーザーとしてメッセージを削除する場合は、このオプションを有効にします。</p> </td> 
   </tr> 
  </tbody> 
@@ -237,7 +237,7 @@ Slack コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL  公開チャネルメッセージの取得 ]**
+#### [!UICONTROL &#x200B; 公開チャネルメッセージの取得 &#x200B;]**
 
 このアクションモジュールは、指定された公開チャネルから、指定された ID を持つメッセージを返します。
 
@@ -293,7 +293,7 @@ Slack コネクタでは、以下を使用します。
    <td> <p>更新するメッセージの新しいテキストコンテンツを入力します。</p> <p>詳しくは、[!DNL Slack] ドキュメントの<a href="https://api.slack.com/docs/formatting">アプリケーションサーフェスのテキストの書式</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！ユーザーとしての UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL ユーザーとしての]</td> 
    <td>このオプションを有効にすると、このモジュールの接続で使用される資格情報を所有するユーザーとしてメッセージが更新されます。</td> 
   </tr> 
   <tr> 
@@ -427,7 +427,7 @@ Slack コネクタでは、以下を使用します。
    <td role="rowheader"> <p>[!UICONTROL Enter a channel ID or name]</p> </td> 
    <td> <p>必要なメッセージを選択する方法を選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>「<strong>[!UICONTROL チャネル ID または名前 ]</strong>」フィールドに、ユーザーのリストを表示するチャネル ID またはチャネルのマッピングを入力します。</p> <p>メモ：チャネル ID は、[!UICONTROL List Channels] モジュールを使用して取得できます。</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>「<strong>[!UICONTROL チャネル ID または名前 &#x200B;]</strong>」フィールドに、ユーザーのリストを表示するチャネル ID またはチャネルのマッピングを入力します。</p> <p>メモ：チャネル ID は、[!UICONTROL List Channels] モジュールを使用して取得できます。</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>チャネルのタイプを選択し、チャネルを選択します。</p> </li> 
     </ul> </td> 
   </tr>
@@ -481,7 +481,7 @@ Slack コネクタでは、以下を使用します。
    <td>API 呼び出しに使用するベース URL を選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アクセストークンを送信 ]</td> 
+   <td role="rowheader">[!UICONTROL アクセストークンを送信 &#x200B;]</td> 
    <td>アクセストークンをヘッダーとして送信するか、クエリパラメーターとして送信するかを選択します。</td> 
   </tr> 
  </tbody> 

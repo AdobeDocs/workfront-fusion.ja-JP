@@ -150,7 +150,7 @@ Salesforce コネクタでは、以下を使用します。
         <td>Salesforce クライアントの秘密鍵を入力します。 </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL サンドボックス ]</td>
+        <td role="rowheader">[!UICONTROL サンドボックス &#x200B;]</td>
         <td>これがサンドボックス環境の場合は、このオプションを有効にします。</td>
       </tr>
       <tr>
@@ -189,7 +189,7 @@ Salesforce コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type] </td> 
-   <td> <p>モジュールで監視するフィールドが含まれているレコードのタイプを選択します。[!DNL Salesforce] 設定で [!UICONTROL Field History] がオンになっているレコードタイプを選択する必要があります。詳しくは、[!DNL Salesforce] ドキュメントで<a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&amp;type=5">フィールド履歴のトラッキング</a>を参照してください。 </p> </td> 
+   <td> <p>モジュールで監視するフィールドが含まれているレコードのタイプを選択します。[!DNL Salesforce] 設定で [!UICONTROL Field History] がオンになっているレコードタイプを選択する必要があります。詳しくは、[!DNL Salesforce] ドキュメントで<a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&type=5">フィールド履歴のトラッキング</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Field]</td> 
@@ -278,7 +278,7 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Webhook]</td> 
-   <td> <p>送信メッセージの監視に使用する web フックを選択します。Web フックを追加するには、「<strong>[!UICONTROL Add]</strong>」をクリックして、web フックの名前と接続を入力します。</p> <p>[!DNL Salesforce] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion への接続の作成 ] – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>送信メッセージの監視に使用する web フックを選択します。Web フックを追加するには、「<strong>[!UICONTROL Add]</strong>」をクリックして、web フックの名前と接続を入力します。</p> <p>[!DNL Salesforce] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion への接続の作成 &rbrack; – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type] </td> 
@@ -577,14 +577,14 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Salesforce] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override=""> への接続の作成 [!DNL  Adobe Workfront Fusion] – 基本的な手順 </a> を参照してください。</td> 
+   <td>[!DNL Salesforce] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override=""> への接続の作成 [!DNL &#x200B; Adobe Workfront Fusion] – 基本的な手順 </a> を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
    <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ドキュメント リンク ]</td> 
+   <td role="rowheader">[!UICONTROL ドキュメント リンク &#x200B;]</td> 
    <td>コンテンツドキュメントリンクを適用するかどうかを選択します。</td> 
   </tr> 
   <tr> 
@@ -617,7 +617,7 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Salesforce] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override=""> への接続の作成 [!DNL  Adobe Workfront Fusion] – 基本的な手順 </a> を参照してください。</td> 
+   <td>[!DNL Salesforce] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override=""> への接続の作成 [!DNL &#x200B; Adobe Workfront Fusion] – 基本的な手順 </a> を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Type]</td> 

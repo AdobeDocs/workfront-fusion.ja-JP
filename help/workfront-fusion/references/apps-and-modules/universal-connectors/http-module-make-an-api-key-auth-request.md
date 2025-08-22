@@ -11,7 +11,7 @@ ht-degree: 70%
 
 ---
 
-# HTTP > [!UICONTROL API キー認証リクエストの作成 ]
+# HTTP > [!UICONTROL API キー認証リクエストの作成 &#x200B;]
 
 このAdobe Workfront Fusion アクションモジュールは、API キー認証認証を必要とする指定された URL に HTTPS リクエストを送信し、レスポンスを処理します。
 
@@ -64,9 +64,9 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 +++
 
-## [!UICONTROL HTTP] > [!UICONTROL API キー認証リクエストを行う ] モジュール設定
+## [!UICONTROL HTTP] > [!UICONTROL API キー認証リクエストを行う &#x200B;] モジュール設定
 
-[!UICONTROL HTTP]/[!UICONTROL API キー認証リクエストを行う ] モジュールを設定すると、Adobe Workfront Fusion は以下に示すフィールドを表示します。 モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL HTTP]/[!UICONTROL API キー認証リクエストを行う &#x200B;] モジュールを設定すると、Adobe Workfront Fusion は以下に示すフィールドを表示します。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[Adobe Workfront Fusion でのモジュール間の情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
@@ -120,7 +120,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] は、ファイルとデータの送信に使用される HTTP マルチパートリクエストです。通常、ファイルをサーバーにアップロードする際に使用されます。</p> <p>リクエストで送信するフィールドを追加します。各フィールドには、キーと値のペアが含まれている必要があります。</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>リクエスト本文内で送信するキーと値を入力します。</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>キーを入力し、リクエスト本文で送信するソースファイルを指定します。</p> <p>前のモジュールからアップロードするファイルをマッピングするか（例：[!UICONTROL HTTP] &gt; [!UICONTROL ファイルを取得 ] または [!UICONTROL Google Drive] &gt; [!UICONTROL ファイルをダウンロード ]）、ファイル名とファイルデータを手動で入力します。</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>キーを入力し、リクエスト本文で送信するソースファイルを指定します。</p> <p>前のモジュールからアップロードするファイルをマッピングするか（例：[!UICONTROL HTTP] &gt; [!UICONTROL ファイルを取得 &#x200B;] または [!UICONTROL Google Drive] &gt; [!UICONTROL ファイルをダウンロード &#x200B;]）、ファイル名とファイルデータを手動で入力します。</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
@@ -153,7 +153,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
               <p>ファイルのパスワードを入力します。</p>
             </li>
             <li value="5">
-              <p><b>[!UICONTROL 保存 ]</b> をクリックしてファイルを抽出し、モジュール設定に戻ります。</p>
+              <p><b>[!UICONTROL 保存 &#x200B;]</b> をクリックしてファイルを抽出し、モジュール設定に戻ります。</p>
             </li>
           </ol>
 </p> </td> 

@@ -153,7 +153,7 @@ ServiceNow コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>ServiceNow アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL ServiceNow] の接続 ]</a> を参照してください。</p> </td> 
+   <td> <p>ServiceNow アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL ServiceNow] の接続 &rbrack;</a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Table type]</td> 
@@ -205,7 +205,7 @@ ServiceNow コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>ServiceNow アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL ServiceNow] の接続 ]</a> を参照してください。</p> </td> 
+   <td> <p>ServiceNow アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL ServiceNow] の接続 &rbrack;</a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Table type]</td> 
@@ -230,7 +230,7 @@ ServiceNow コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>ServiceNow アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL ServiceNow] の接続 ]</a> を参照してください。</p> </td> 
+   <td> <p>ServiceNow アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL ServiceNow] の接続 &rbrack;</a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Relative URL]</td> 
@@ -268,7 +268,7 @@ ServiceNow コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>ServiceNow アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL ServiceNow] の接続 ]</a> を参照してください。</p> </td> 
+   <td> <p>ServiceNow アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL ServiceNow] の接続 &rbrack;</a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL User System ID]</td> 
@@ -289,7 +289,7 @@ ServiceNow コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>ServiceNow アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL ServiceNow] の接続 ]</a> を参照してください。</p> </td> 
+   <td> <p>ServiceNow アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL ServiceNow] の接続 &rbrack;</a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
@@ -312,7 +312,7 @@ ServiceNow コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>ServiceNow アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL ServiceNow] の接続 ]</a> を参照してください。</p> </td> 
+   <td> <p>ServiceNow アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL ServiceNow] の接続 &rbrack;</a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Attachment System ID]</td> 
@@ -335,7 +335,7 @@ ServiceNow コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>ServiceNow アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL ServiceNow] の接続 ]</a> を参照してください。</p> </td> 
+   <td> <p>ServiceNow アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL ServiceNow] の接続 &rbrack;</a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record System ID]</td> 
@@ -372,7 +372,7 @@ ServiceNow コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>ServiceNow アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL ServiceNow] の接続 ]</a> を参照してください。</p> </td> 
+   <td> <p>ServiceNow アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL ServiceNow] の接続 &rbrack;</a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record System ID]</td> 
@@ -399,7 +399,7 @@ ServiceNow コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>ServiceNow アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL ServiceNow] の接続 ]</a> を参照してください。</p> </td> 
+   <td> <p>ServiceNow アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL ServiceNow] の接続 &rbrack;</a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Table name]</td> 
@@ -430,7 +430,7 @@ ServiceNow コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>ServiceNow アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL ServiceNow] の接続 ]</a> を参照してください。</p> </td> 
+   <td> <p>ServiceNow アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL ServiceNow] の接続 &rbrack;</a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Table type]</td> 

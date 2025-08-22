@@ -127,7 +127,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 このオプションは、Workfront Fusion が（空き容量が不足しているなどの理由で）不完全な実行のキューにバンドルを保存できない場合に、データの損失を有効にすることに関係しています。 このオプションを有効にすると、シナリオの実行全体で中断が発生しないように、データが失われます。これは、最も優先度が高いものが継続して実行され、入力時の誤りのあるデータがそれほど重要でないシナリオで役立ちます。
 
-その他、シナリオを実行する際に、モジュールで許容される最大サイズを超えるファイルが見つかることがあります。この場合、Workfront Fusion は「[!UICONTROL  データの損失を有効にする ]」オプションの設定に従って続行し、警告メッセージが表示されます。
+その他、シナリオを実行する際に、モジュールで許容される最大サイズを超えるファイルが見つかることがあります。この場合、Workfront Fusion は「[!UICONTROL &#x200B; データの損失を有効にする &#x200B;]」オプションの設定に従って続行し、警告メッセージが表示されます。
 
 不完全な実行について詳しくは、[ 不完全な実行の表示と解決 ](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md) を参照してください。
 
@@ -160,7 +160,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 >[!BEGINSHADEBOX]
 
-**例：** Workfront/[!UICONTROL  レコードをウォッチ ] が発生する新しいイシューを監視し、Workfront/[!UICONTROL  オブジェクトを変換 ] が新しいリクエストをプロジェクトに変換して、適切なテンプレートを割り当てます。
+**例：** Workfront/[!UICONTROL &#x200B; レコードをウォッチ &#x200B;] が発生する新しいイシューを監視し、Workfront/[!UICONTROL &#x200B; オブジェクトを変換 &#x200B;] が新しいリクエストをプロジェクトに変換して、適切なテンプレートを割り当てます。
 
 ![ シナリオ設定 ](assets/scenario-settings-ex-1-350x157.png)
 

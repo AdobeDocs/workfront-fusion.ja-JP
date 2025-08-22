@@ -92,11 +92,11 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
       <td>このタブには、シナリオが視覚的に表示されます。図は、シナリオエディターで表示されるものと同じです。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL レポート ] タブ </td> 
+      <td role="rowheader">[!UICONTROL レポート &#x200B;] タブ </td> 
       <td> <p>このタブを開いて、過去 30 日間にこのシナリオで実行された操作数のグラフを表示します。</p>  </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 履歴 ] タブ </td> 
+      <td role="rowheader">[!UICONTROL 履歴 &#x200B;] タブ </td> 
       <td> <p>このタブを開いて、シナリオの編集内容を含むシナリオの履歴を表示します。 </p> <p>「[!UICONTROL History]」タブには、各実行のシナリオ実行履歴も提供されます。これには次の情報が含まれます。</p> 
        <ul> 
         <li>各実行のステータス（成功またはエラー）</li> 
@@ -140,7 +140,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
       <td>このエリアには、現在実行中の実行に関連する情報が表示されます。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL 履歴 ] パネル</p> <p> </p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL 履歴 &#x200B;] パネル</p> <p> </p> </td> 
       <td> <p>このエリアには、シナリオの最後の実行に関連する情報が表示されます。実行ごとに、次の情報が表示されます。</p> 
        <ul> 
         <li>実行日</li> 
@@ -151,7 +151,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
        </ul> </td> 
      </tr> 
          <tr> 
-      <td role="rowheader"> <p>[!UICONTROL イベント ] パネル</p>  </td> 
+      <td role="rowheader"> <p>[!UICONTROL イベント &#x200B;] パネル</p>  </td> 
       <td>この領域には、シナリオに関連するイベントに関する情報が表示されます。  </td> 
      </tr> 
      <tr> 

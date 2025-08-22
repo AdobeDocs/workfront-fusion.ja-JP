@@ -13,7 +13,7 @@ ht-degree: 67%
 
 # [!DNL Google Calendar] モジュール
 
-Adobe Workfront Fusion のシナリオでは、[!UICONTROL Google カレンダー ] を使用するワークフローを自動化できるほか、複数のサードパーティのアプリケーションやサービスに接続することもできます。
+Adobe Workfront Fusion のシナリオでは、[!UICONTROL Google カレンダー &#x200B;] を使用するワークフローを自動化できるほか、複数のサードパーティのアプリケーションやサービスに接続することもできます。
 
 シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
@@ -134,7 +134,7 @@ Google カレンダーコネクタは以下を使用します。
    <td> <p>結果を返すテキストを入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL イベントの最大数 ]</td> 
+   <td>[!UICONTROL イベントの最大数 &#x200B;]</td> 
    <td> <p> Workfront Fusion が 1 つのサイクルで動作するイベントの最大数（シナリオ実行ごとの繰り返し数）を設定します。 値が大きすぎると、指定されたサードパーティサービス側で接続が中断される可能性があります（タイムアウト）。Workfront Fusion はこの問題に影響を与えません。 より小さい値を設定し、最大サイクル数としてより大きい値を定義するか、シナリオをより頻繁に実行することをお勧めします。</p> </td> 
   </tr> 
  </tbody> 
@@ -153,7 +153,7 @@ Google カレンダーコネクタは以下を使用します。
    <td> <p>このモジュールに使用するメールフックを選択します。 新しいメールフックを作成するには、「<b> 追加 </b>」をクリックして、メールフックに使用する接続を入力します。</p><p>[!DNL Google Calendar] アカウントを Workfront Fusion に接続する手順について詳しくは、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion への接続の作成 - 基本手順</a>を参照してください</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL イベントの最大数 ]</td> 
+   <td>[!UICONTROL イベントの最大数 &#x200B;]</td> 
    <td> <p> Workfront Fusion が 1 つのサイクルで動作するイベントの最大数（シナリオ実行ごとの繰り返し数）を設定します。 値が大きすぎると、指定されたサードパーティサービス側で接続が中断される可能性があります（タイムアウト）。Workfront Fusion はこの問題に影響を与えません。 より小さい値を設定し、最大サイクル数としてより大きい値を定義するか、シナリオをより頻繁に実行することをお勧めします。</p> </td> 
   </tr> 
  </tbody> 
@@ -309,7 +309,7 @@ Google カレンダーコネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL  イベントの取得 ]
+#### [!UICONTROL &#x200B; イベントの取得 &#x200B;]
 
 このモジュールは、指定した条件に基づいて、選択したカレンダー内のイベントに関する情報を取得します。
 
@@ -356,7 +356,7 @@ Google カレンダーコネクタは以下を使用します。
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 返されるイベントの最大数 ]</td> 
+   <td>[!UICONTROL 返されるイベントの最大数 &#x200B;]</td> 
    <td> <p>Workfront Fusion が 1 つの実行サイクルで返すイベントの最大数を設定します。</p> </td> 
   </tr> 
  </tbody> 

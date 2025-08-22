@@ -21,7 +21,7 @@ ht-degree: 28%
 >
 >コネクタのモジュールのリストをチェックして、インスタントトリガーがあるかどうかを確認したり、[Fusion アプリケーションとそのモジュールのリファレンス ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md) にあるコネクタのドキュメントを確認したりできます。
 >
->Adobe Workfrontのインスタントトリガーのドキュメントについては、Workfront モジュールの記事の [0}トリガー} を参照してください。](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#triggers)
+>Adobe Workfrontのインスタントトリガーのドキュメントについては、Workfront モジュールの記事の [0&rbrace;トリガー&rbrace; を参照してください。](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#triggers)
 
 コネクタに Webhook が含まれていない場合は、次のいずれかを実行できます。
 
@@ -60,9 +60,9 @@ Workfront Fusion がサービスから新しいイベントを受け取るとす
 >
 
 
-[!UICONTROL 即時]以外のスケジュール設定を使用する場合、シナリオは指定した間隔で実行されます。この間隔のキューには複数の Webhook が収集される可能性があるので、「[!UICONTROL  最大サイクル数 ]」オプションをデフォルトの 1 より大きい値に設定して、1 回のシナリオ実行でより多くの Webhook を処理することをお勧めします。
+[!UICONTROL 即時]以外のスケジュール設定を使用する場合、シナリオは指定した間隔で実行されます。この間隔のキューには複数の Webhook が収集される可能性があるので、「[!UICONTROL &#x200B; 最大サイクル数 &#x200B;]」オプションをデフォルトの 1 より大きい値に設定して、1 回のシナリオ実行でより多くの Webhook を処理することをお勧めします。
 
-1. シナリオの下部にある [!UICONTROL  シナリオ設定 ] アイコン ![ シナリオ設定アイコン ](assets/scenario-settings-icon.png) をクリックします。
+1. シナリオの下部にある [!UICONTROL &#x200B; シナリオ設定 &#x200B;] アイコン ![ シナリオ設定アイコン ](assets/scenario-settings-icon.png) をクリックします。
 1. 表示される **[!UICONTROL シナリオ設定]** パネルで、「**[!UICONTROL 最大サイクル数]**」フィールドに数値を入力して、シナリオを実行するたびに実行するキューのイベント数を指定します。
 
 キューに残っているイベントは、次回シナリオを実行するときに、「最大サイクル数」フィールドで設定された数まで処理されます。
@@ -87,14 +87,14 @@ Workfront Fusion は、Webhook ペイロードを 30 日間保存します。 We
 
 インスタントトリガーでシナリオにエラーが発生した場合は、次のようになります。
 
-* シナリオが実行されるように設定されている場合は、直ちに停止します [!UICONTROL  直ちに ]。
+* シナリオが実行されるように設定されている場合は、直ちに停止します [!UICONTROL &#x200B; 直ちに &#x200B;]。
 * シナリオがスケジュールどおりに実行されるように設定されている場合に、3 回失敗（3 回のエラー）すると停止します。
 
 シナリオの実行中にエラーが発生した場合、そのイベントはインスタントトリガーのロールバックフェーズでキューに戻されます。 このような場合は、シナリオを修正して再実行できます。
 
 詳細については、「シナリオの実行、サイクル、およびフェーズ」の記事の [ ロールバック ](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback) を参照してください。
 
-シナリオに Web フックの応答モジュールがある場合、エラーは Web フックの応答に送信されます。Webhook 応答モジュールは常に最後に実行されます（シナリオ設定の [!UICONTROL  自動コミット ] オプションが有効になっていない場合）。
+シナリオに Web フックの応答モジュールがある場合、エラーは Web フックの応答に送信されます。Webhook 応答モジュールは常に最後に実行されます（シナリオ設定の [!UICONTROL &#x200B; 自動コミット &#x200B;] オプションが有効になっていない場合）。
 
 詳しくは、Webhook の記事の [Webhook への応答 ](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md#responding-to-webhooks) を参照してください。
 

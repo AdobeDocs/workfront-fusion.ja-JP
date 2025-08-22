@@ -313,7 +313,7 @@ Workfront Fusion でWorkfront モジュールを設定する場合、以下に�
       </tr>
      <tr>
       <td role="rowheader">
-        <p>[！フィルターの UICONTROL 条件 ]</p>
+        <p>[!UICONTROL フィルターの 条件 &#x200B;]</p>
       </td>
       <td>フィルターの条件の選択：<ul><li><b>AND</b><p>モジュールは、選択したフィールド値の <b> すべて </b> を満たすレコードを返します。</p></li><li><b>または</b><p>モジュールは、選択したフィールド値の <b> いずれか </b> を満たすレコードを返します。</p></li></ul></td> 
       </tr>

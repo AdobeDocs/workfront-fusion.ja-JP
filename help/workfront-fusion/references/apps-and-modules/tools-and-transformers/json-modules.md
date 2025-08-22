@@ -69,7 +69,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 1. [!UICONTROL JSON を解析]モジュールをシナリオに追加します。
 1. 「**[!UICONTROL JSON 文字列]**」フィールドで、データ構造を作成する JSON を入力します。
-1. 他のモジュールを [!UICONTROL JSON を解析]モジュールにはまだ結びつけません。Workfront Fusion は JSON データの構造をまだ把握していないので、「JSON を解析 [!UICONTROL  モジュールのデータを、シナリオ内の他のモジュールにマッピングすることはでき ] せん。
+1. 他のモジュールを [!UICONTROL JSON を解析]モジュールにはまだ結びつけません。Workfront Fusion は JSON データの構造をまだ把握していないので、「JSON を解析 [!UICONTROL &#x200B; モジュールのデータを、シナリオ内の他のモジュールにマッピングすることはでき &#x200B;] せん。
 1. シナリオを手動で実行します。これにより、[!UICONTROL JSON を解析]モジュールが、指定した JSON から JSON 構造を識別できるようになります。
 1. 次のモジュールを接続できるようになりました。JSON を解析モジュールの項目をマッピングに使用できるようになりました。
 

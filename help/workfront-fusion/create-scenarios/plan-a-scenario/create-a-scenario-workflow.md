@@ -148,12 +148,12 @@ Google、Microsoft、または専用コネクタのないアプリケーショ�
    <td>Cmd + Shift + Enter </span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL DevTool を開く ]</td> 
+   <td role="rowheader">[!UICONTROL DevTool を開く &#x200B;]</td> 
    <td>F12</td> 
    <td>Ctrl + Fn + F12</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 複数のモジュールを選択 ]</td> 
+   <td role="rowheader">[!UICONTROL 複数のモジュールを選択 &#x200B;]</td> 
    <td>Shift + ドラッグ</td> 
    <td>Shift キーを押しながらドラッグ </span> </td> 
   </tr> 
@@ -163,7 +163,7 @@ Google、Microsoft、または専用コネクタのないアプリケーショ�
    <td>Cmd+C</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 貼り付け ]</td> 
+   <td role="rowheader">[!UICONTROL 貼り付け &#x200B;]</td> 
    <td>Ctrl+V</td> 
    <td>Cmd+V</span> </td> 
   </tr> 

@@ -19,7 +19,7 @@ Adobe Workfront Fusion シナリオでは、圧縮ファイルなどのアーカ
 
 ## [!UICONTROL アーカイブ]モジュールとそのフィールド
 
-[!UICONTROL  アーカイブ ] モジュールを設定すると、Workfront Fusion は以下に示すフィールドを表示します。 これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!UICONTROL アーカイブ]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL &#x200B; アーカイブ &#x200B;] モジュールを設定すると、Workfront Fusion は以下に示すフィールドを表示します。 これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!UICONTROL アーカイブ]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
@@ -101,7 +101,7 @@ Adobe Workfront Fusion シナリオでは、圧縮ファイルなどのアーカ
 
 >[!BEGINSHADEBOX]
 
-**例：**[!DNL Gmail]／[!UICONTROL メールを監視]モジュールを使用して受信メールを見ます。メールを受け取ると、添付ファイルは個々のバンドルに反復され、[!DNL ZIP] ファイルにアーカイブされて、定義された Dropbox フォルダーに保存されます。
+**例：**&#x200B;[!DNL Gmail]／[!UICONTROL メールを監視]モジュールを使用して受信メールを見ます。メールを受け取ると、添付ファイルは個々のバンドルに反復され、[!DNL ZIP] ファイルにアーカイブされて、定義された Dropbox フォルダーに保存されます。
 
 ![Gmail の例 ](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
 

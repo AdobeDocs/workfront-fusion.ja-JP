@@ -35,7 +35,7 @@ Adobe Workfront Fusion は、次の 5 種類のモジュールを区別します
 
 **例：**
 
-* **Workfront > [!UICONTROL  ファイルのアップロード]** は、ファイルをWorkfrontに送信し、その識別情報を返します。
+* **Workfront > [!UICONTROL &#x200B; ファイルのアップロード]** は、ファイルをWorkfrontに送信し、その識別情報を返します。
 * **[!UICONTROL 画像]／[!UICONTROL サイズ変更]**&#x200B;で、画像を受け取り、指定した寸法にサイズ変更し、サイズ変更した画像を次のアクションに渡します。
 
 >[!ENDSHADEBOX]
@@ -80,7 +80,7 @@ Adobe Workfront Fusion は、次の 5 種類のモジュールを区別します
 
 **例：**
 
-**Workfront> [!UICONTROL  関連レコードの読み取り]** は、特定の親オブジェクト内で、指定した検索クエリに一致するレコードを読み取ります。
+**Workfront> [!UICONTROL &#x200B; 関連レコードの読み取り]** は、特定の親オブジェクト内で、指定した検索クエリに一致するレコードを読み取ります。
 
 >[!ENDSHADEBOX]
 
@@ -110,7 +110,7 @@ Workfront Fusion では、ポーリングトリガーとインスタントトリ
 
 **例：**
 
-* **Workfront > [!UICONTROL  レコードを監視]** は、シナリオが最後に実行された後に新しく追加されたレコードを返します。
+* **Workfront > [!UICONTROL &#x200B; レコードを監視]** は、シナリオが最後に実行された後に新しく追加されたレコードを返します。
 
 * **[!DNL Google Sheets]> [!UICONTROL Watch Rows]** は、シナリオが最後に実行された後に追加された新しい行を返します。
 
@@ -147,9 +147,9 @@ Workfront Fusion では、ポーリングトリガーとインスタントトリ
 
 **例：**
 
-* **[!UICONTROL アーカイブ ]/[!UICONTROL  アーカイブを作成]** 複数のファイルを zip アーカイブに圧縮します。
+* **[!UICONTROL アーカイブ &#x200B;]/[!UICONTROL &#x200B; アーカイブを作成]** 複数のファイルを zip アーカイブに圧縮します。
 * **[!UICONTROL CSV] > [!UICONTROL CSV に集計]** CSV ファイルの複数の文字列を 1 つの行に結合します。
-* **[!UICONTROL ツール ] > [!UICONTROL  テキストアグリゲータ]** は、複数の文字列を 1 つの文字列に結合します。
+* **[!UICONTROL ツール &#x200B;] > [!UICONTROL &#x200B; テキストアグリゲータ]** は、複数の文字列を 1 つの文字列に結合します。
 
 >[!ENDSHADEBOX]
 
@@ -169,7 +169,7 @@ Workfront Fusion では、ポーリングトリガーとインスタントトリ
 
 **例：**
 
-**[!UICONTROL メール ]/[!UICONTROL  添付ファイルを取得]** 添付ファイルの配列を個別のバンドルに分割します。
+**[!UICONTROL メール &#x200B;]/[!UICONTROL &#x200B; 添付ファイルを取得]** 添付ファイルの配列を個別のバンドルに分割します。
 
 >[!ENDSHADEBOX]
 

@@ -127,11 +127,11 @@ Adobe Admin Consoleページで、上部のナビゲーションバーの「製�
         </td>
         </tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>[!UICONTROL Adobe] [!UICONTROL クライアント ID] を入力します。 これは、[!DNL Adobe Developer Console] のプロジェクトの [!UICONTROL 資格情報の詳細 ] セクションにあります。</td>
+        <td>[!UICONTROL Adobe] [!UICONTROL クライアント ID] を入力します。 これは、[!DNL Adobe Developer Console] のプロジェクトの [!UICONTROL 資格情報の詳細 &#x200B;] セクションにあります。</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、[!DNL Adobe Developer Console] のプロジェクトの [!UICONTROL 資格情報の詳細 ] セクションにあります。</td>
+        <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、[!DNL Adobe Developer Console] のプロジェクトの [!UICONTROL 資格情報の詳細 &#x200B;] セクションにあります。</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL IMS 組織 ID]</td>

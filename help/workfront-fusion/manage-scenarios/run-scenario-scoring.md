@@ -99,4 +99,4 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
   詳しくは、[Fusion パフォーマンスガードレール ](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md#scenarios) を参照してください。
 * Workfront インスタントトリガーモジュールを使用する場合は、フィルタリングする必要があります。
 
-  手順については、[Workfront/[!UICONTROL  イベントをウォッチ ] モジュールのイベント購読フィルター ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules) を参照してください。
+  手順については、[Workfront/[!UICONTROL &#x200B; イベントをウォッチ &#x200B;] モジュールのイベント購読フィルター ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules) を参照してください。

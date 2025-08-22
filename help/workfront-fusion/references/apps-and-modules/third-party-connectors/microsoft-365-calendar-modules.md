@@ -204,7 +204,7 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL カテゴリ ]</td> 
+   <td role="rowheader">[!UICONTROL カテゴリ &#x200B;]</td> 
    <td>イベントをカレンダーに表示するカテゴリごとに、「<b> 項目を追加 </b>」をクリックして、カテゴリを入力またはマッピングします。</td> 
   </tr> 
  </tbody> 

@@ -140,7 +140,7 @@ Workfrontで [!DNL Admin Console] を使用する前に、コンソールに招�
 
    ![Admin Console 内の Fusion インスタンス](assets/fusion-instances-admin-console.png)
 
-1. 表示されるリストで、「**[!UICONTROL 製品プロファイル]**」タブを選択した状態で、Workfront Fusion の [!UICONTROL  製品プロファイル ] リンクの名前をクリックします。
+1. 表示されるリストで、「**[!UICONTROL 製品プロファイル]**」タブを選択した状態で、Workfront Fusion の [!UICONTROL &#x200B; 製品プロファイル &#x200B;] リンクの名前をクリックします。
 
    >[!IMPORTANT]
    >
@@ -165,7 +165,7 @@ Workfrontで [!DNL Admin Console] を使用する前に、コンソールに招�
 
 ユーザーに管理者の役割を割り当てる場合は、[!DNL Adobe Admin Console] で実行する必要があります。
 
-1. ユーザーを追加したWorkfront Fusion [!UICONTROL  製品プロファイル ] ページで、「**[!UICONTROL 管理者]**」タブを選択します。
+1. ユーザーを追加したWorkfront Fusion [!UICONTROL &#x200B; 製品プロファイル &#x200B;] ページで、「**[!UICONTROL 管理者]**」タブを選択します。
 
 1. 「**[!UICONTROL 管理者を追加]**」をクリックします。
 

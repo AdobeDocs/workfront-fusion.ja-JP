@@ -70,7 +70,7 @@ Workfront Fusion では、次のエラー処理ディレクティブを使用で
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>ロールバック</p> <p> <img src="assets/rollback.png"> </p> </td> 
-   <td> <ul><li><p>シナリオの実行は直ちに停止します。</li><li>ロールバックフェーズは、すべてのモジュールで開始され、すべてのモジュールを初期状態に戻します。 </li><li>後続のモジュールは処理されません。</p></li><li> <p>ほとんどの場合、シナリオは、「シナリオ設定」で指定した連続エラー数の後で非アクティブ化されます。 詳しくは、<a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">連続エラー回数</a>を参照してください。</p> </li><li><p>シナリオの実行ステータスは「エラー」とマークされます。</p></li></ul> <p><b> メモ </b>：これは、モジュールにエラーハンドラールートが添付されておらず、[!UICONTROL シナリオ設定 <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref"> で [ 不完全な実行の保存を許可 </a> 不完全な実行の保存を許可 ] 設定がオフの場合のデフォルトの動作です。</p> </td> 
+   <td> <ul><li><p>シナリオの実行は直ちに停止します。</li><li>ロールバックフェーズは、すべてのモジュールで開始され、すべてのモジュールを初期状態に戻します。 </li><li>後続のモジュールは処理されません。</p></li><li> <p>ほとんどの場合、シナリオは、「シナリオ設定」で指定した連続エラー数の後で非アクティブ化されます。 詳しくは、<a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">連続エラー回数</a>を参照してください。</p> </li><li><p>シナリオの実行ステータスは「エラー」とマークされます。</p></li></ul> <p><b> メモ </b>：これは、モジュールにエラーハンドラールートが添付されておらず、シナリオ設定 <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref"> で [ 不完全な実行の保存を許可 </a> 不完全な実行の保存を許可 ] 設定がオフの場合のデフォルトの動作です。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>コミット</p> <p> <img src="assets/commit.png"> </p> </td> 

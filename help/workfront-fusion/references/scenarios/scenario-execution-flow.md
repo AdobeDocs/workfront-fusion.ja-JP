@@ -28,7 +28,7 @@ ht-degree: 25%
 
 バンドルがすべてのモジュールを通じて正しく処理した場合、シナリオの詳細ページでシナリオは成功とマークされます。
 
-### 例：[!UICONTROL  作業自動化のWorkfront Fusion]
+### 例：[!UICONTROL &#x200B; 作業自動化のWorkfront Fusion]
 
 >[!BEGINSHADEBOX]
 
@@ -42,7 +42,7 @@ ht-degree: 25%
 
 >[!ENDSHADEBOX]
 
-### 例：[!UICONTROL  作業自動化および統合用のWorkfront Fusion]
+### 例：[!UICONTROL &#x200B; 作業自動化および統合用のWorkfront Fusion]
 
 >[!BEGINSHADEBOX]
 

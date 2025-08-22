@@ -196,7 +196,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 XML ファイルを URL からダウンロードしてコンテンツを解析するには：
 
 1. 新しいシナリオを開始します。
-1. [!UICONTROL HTTP]/[!UICONTROL  ファイルを取得 ] モジュールを追加します
+1. [!UICONTROL HTTP]/[!UICONTROL &#x200B; ファイルを取得 &#x200B;] モジュールを追加します
 1. モジュールの設定を開き、次のように設定します。
 
    **URL**：XML ファイルの URL（例：`https://siftrss.com/f/rqLy05ayMBJ`）

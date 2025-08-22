@@ -210,7 +210,7 @@ Marketo コネクタでは、以下を使用します。
 ### アクション
 
 * [[!UICONTROL リードをリストに追加]](#add-leads-to-a-list)
-* [[!UICONTROL  プログラムのクローン ]](#clone-a-program)
+* [[!UICONTROL &#x200B; プログラムのクローン &#x200B;]](#clone-a-program)
 * [[!UICONTROL レコードを作成]](#create-a-record)
 * [[!UICONTROL カスタム API 呼び出し]](#custom-api-call)
 * [[!UICONTROL ファイルをダウンロード]](#download-a-file)
@@ -243,7 +243,7 @@ Marketo コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL  プログラムのクローン ]
+#### [!UICONTROL &#x200B; プログラムのクローン &#x200B;]
 
 このアクションモジュールは、既存のプログラムの ID を使用してプログラムのコピーを作成します。
 
@@ -611,8 +611,8 @@ Marketo コネクタでは、以下を使用します。
    <td> <p>検索に使用するフィールドを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 値/値 ]</td> 
-   <td>検索するフィールドの値を入力します。 フィールドで複数の値を検索できる場合は、検索する値ごとに <b>[!UICONTROL 項目の追加 ]</b> をクリックして値を入力します。</td> 
+   <td role="rowheader">[!UICONTROL 値/値 &#x200B;]</td> 
+   <td>検索するフィールドの値を入力します。 フィールドで複数の値を検索できる場合は、検索する値ごとに <b>[!UICONTROL 項目の追加 &#x200B;]</b> をクリックして値を入力します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output]</td> 

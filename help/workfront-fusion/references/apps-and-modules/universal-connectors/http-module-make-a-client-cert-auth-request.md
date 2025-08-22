@@ -11,7 +11,7 @@ ht-degree: 70%
 
 ---
 
-# HTTP > [!UICONTROL  クライアント証明書認証リクエストを作成 ] モジュール
+# HTTP > [!UICONTROL &#x200B; クライアント証明書認証リクエストを作成 &#x200B;] モジュール
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 +++
 
-## [!UICONTROL HTTP] > [!UICONTROL  クライアント証明書認証リクエストを行う ] モジュール設定
+## [!UICONTROL HTTP] > [!UICONTROL &#x200B; クライアント証明書認証リクエストを行う &#x200B;] モジュール設定
 
 [!UICONTROL HTTP]/[!UICONTROL Make a Client Certificate Authorization request] モジュールを設定すると、Adobe Workfront Fusion は以下に示すフィールドを表示します。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
@@ -168,7 +168,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
               <p>ファイルのパスワードを入力します。</p>
             </li>
             <li value="5">
-              <p><b>[!UICONTROL 保存 ]</b> をクリックしてファイルを抽出し、モジュール設定に戻ります。</p>
+              <p><b>[!UICONTROL 保存 &#x200B;]</b> をクリックしてファイルを抽出し、モジュール設定に戻ります。</p>
             </li>
           </ol>
 </p> </td> 

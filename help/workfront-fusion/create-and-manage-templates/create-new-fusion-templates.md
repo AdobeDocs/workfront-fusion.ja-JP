@@ -133,7 +133,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 1. （オプション）「**[!UICONTROL 1 回実行]**」をクリックして、テンプレートをテストします。
 1. **[!UICONTROL 保存]** アイコン ![ 保存アイコン ](assets/save-icon.png) をクリックします。
 
-## [!UICONTROL  ウィザード]機能の設定 {#set-up-wizard-functionality}
+## [!UICONTROL &#x200B; ウィザード]機能の設定 {#set-up-wizard-functionality}
 
 [!DNL Workfront Fusion template] [!UICONTROL ウィザード]では、今後テンプレートを使用するユーザーに対して、モジュールで使用される特定のフィールドに関する手順や情報を提供します。
 

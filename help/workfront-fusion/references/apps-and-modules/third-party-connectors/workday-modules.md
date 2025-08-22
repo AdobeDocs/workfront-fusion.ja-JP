@@ -92,7 +92,7 @@ Workday コネクタでは、以下を使用します。
 
 ## [!DNL Workday] を Workfront Fusion に接続
 
-1. 任意のWorkfront Fusion モジュールで、「[!UICONTROL  接続 ] フィールドの横にある「[!UICONTROL  追加 ] をクリックします
+1. 任意のWorkfront Fusion モジュールで、「[!UICONTROL &#x200B; 接続 &#x200B;] フィールドの横にある「[!UICONTROL &#x200B; 追加 &#x200B;] をクリックします
 
 2. 次のフィールドに入力します。
 

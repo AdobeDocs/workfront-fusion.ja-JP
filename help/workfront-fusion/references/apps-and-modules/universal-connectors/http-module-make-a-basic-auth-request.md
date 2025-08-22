@@ -11,7 +11,7 @@ ht-degree: 69%
 
 ---
 
-# [!UICONTROL HTTP] > [!UICONTROL  基本認証リクエストを行う ] モジュール
+# [!UICONTROL HTTP] > [!UICONTROL &#x200B; 基本認証リクエストを行う &#x200B;] モジュール
 
 このAdobe Workfront Fusion モジュールを使用すると、HTTP の基本認証を持つ HTTP リクエストを設定し、サーバーに送信できます。 受信した HTTP 応答は、出力バンドルに含まれます。
 
@@ -64,7 +64,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 +++
 
-## [!UICONTROL HTTP] > [!UICONTROL  基本認証リクエストを行う ] モジュール設定
+## [!UICONTROL HTTP] > [!UICONTROL &#x200B; 基本認証リクエストを行う &#x200B;] モジュール設定
 
 [!UICONTROL HTTP]/[!UICONTROL Make a Basic Authorization request] モジュールを設定すると、Adobe Workfront Fusion は以下に示すフィールドを表示します。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
@@ -147,7 +147,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
               <p>ファイルのパスワードを入力します。</p>
             </li>
             <li value="5">
-              <p><b>[!UICONTROL 保存 ]</b> をクリックしてファイルを抽出し、モジュール設定に戻ります。</p>
+              <p><b>[!UICONTROL 保存 &#x200B;]</b> をクリックしてファイルを抽出し、モジュール設定に戻ります。</p>
             </li>
           </ol>
 </p> </td> 

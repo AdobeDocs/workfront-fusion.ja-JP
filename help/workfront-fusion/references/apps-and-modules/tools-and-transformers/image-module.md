@@ -13,7 +13,7 @@ ht-degree: 74%
 
 # 画像モジュール
 
-Adobe Workfront Fusion [!UICONTROL  画像 ] モジュールを使用すると、特定の画像（サイズや種類など）に関する情報を取得したり、画像を別のファイル形式に変換したり、画像のサイズを直接変更したりできます。
+Adobe Workfront Fusion [!UICONTROL &#x200B; 画像 &#x200B;] モジュールを使用すると、特定の画像（サイズや種類など）に関する情報を取得したり、画像を別のファイル形式に変換したり、画像のサイズを直接変更したりできます。
 
 ## アクセス要件
 
@@ -143,7 +143,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
    <td>サイズ変更した画像の希望の高さをピクセル単位で入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 変更率 ]</td> 
+   <td role="rowheader">[!UICONTROL 変更率 &#x200B;]</td> 
    <td>画像の変更率をパーセントで指定した場合は、画像の変更率を入力またはマップします。</td> 
   </tr> 
  </tbody> 
