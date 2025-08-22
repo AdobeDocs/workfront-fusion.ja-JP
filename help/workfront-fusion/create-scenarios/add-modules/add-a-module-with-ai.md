@@ -75,7 +75,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 * 組織がWorkfront AI アシスタント Beta プログラムに参加している。
 * Adobeには、署名済みのAdobe生成 AI 契約が必要です。
 
-  契約の署名について詳しくは、Workfront ドキュメントの AI アシスタントの概要の記事の [Adobe Gen AI 契約に署名する ](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) を参照してください。
+  契約の署名について詳しくは、Workfront ドキュメントの AI アシスタントの概要の記事の [Adobe Gen AI 契約に署名する ](https://experienceleague.adobe.com/ja/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) を参照してください。
 
 ## 現在サポートされている AI モジュールアプリケーション
 

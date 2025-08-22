@@ -16,7 +16,7 @@ ht-degree: 3%
 ## 最新情報
 
 * [リリースアクティビティ](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
-* [既知の問題](https://experienceleague.adobe.com/en/docs/workfront-known-issues/issues/fusion/workfrontfusion)
+* [既知の問題](https://experienceleague.adobe.com/ja/docs/workfront-known-issues/issues/fusion/workfrontfusion)
 
 ## ドキュメントを参照
 
@@ -55,8 +55,8 @@ ht-degree: 3%
 ### ラーニングとトレーニングのセクションを検索
 
 * **インストラクター主導のライブトレーニングセッション** Adobeでは、Fusion 向けの 3 日間のライブトレーニングセッションを提供しています。 詳細と使用可能なセッションについては、[Adobe Workfront Fusion での接続とワークフローの管理 ](https://learning.adobe.com/courses/adobe_workfront/cours000000000098121.html) を参照してください。
-* **トレーニング資料**: [ 概要と技術戦略 ](https://experienceleague.adobe.com/en/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy)Workfront Fusion トレーニングページに移動して、Fusion の最適な使用方法をより深く理解できるように設計された一連のレッスンと演習を開始します。
+* **トレーニング資料**: [ 概要と技術戦略 ](https://experienceleague.adobe.com/ja/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy)Workfront Fusion トレーニングページに移動して、Fusion の最適な使用方法をより深く理解できるように設計された一連のレッスンと演習を開始します。
 
 ### コミュニティフォーラムで回答を検索
 
-* **質問する**：ドキュメントが質問に答えない場合は、[Workfront Fusion コミュニティフォーラム ](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2) に投稿してみてください。
+* **質問する**：ドキュメントが質問に答えない場合は、[Workfront Fusion コミュニティフォーラム ](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2?profile.language=ja) に投稿してみてください。

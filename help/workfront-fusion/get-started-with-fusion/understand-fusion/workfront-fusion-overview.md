@@ -31,7 +31,7 @@ Workfront Fusion には、シナリオの作成テンプレート、実行履歴
 
 Workfront Fusion の使用を開始する際には、次のリソースが役に立つ場合があります。
 
-* Workfront Fusion トレーニングリソースについては、[Workfront Fusion トレーニングの概要 ](https://experienceleague.adobe.com/en/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy) を参照してください。
+* Workfront Fusion トレーニングリソースについては、[Workfront Fusion トレーニングの概要 ](https://experienceleague.adobe.com/ja/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy) を参照してください。
 
 
 * シナリオについて詳しくは、[ シナリオの概要 ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md) を参照してください。
