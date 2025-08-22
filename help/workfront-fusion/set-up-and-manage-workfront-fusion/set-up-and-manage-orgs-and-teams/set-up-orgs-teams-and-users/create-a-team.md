@@ -4,10 +4,10 @@ description: チームは組織内の小さなグループで、シナリオ、�
 author: Becky
 feature: Workfront Fusion
 exl-id: 511b5a9c-0b7f-4003-ad86-4bbe630674e0
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: ecfba475bdf25cb5d9200246f7d86bfe20700f1c
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 37%
+source-wordcount: '351'
+ht-degree: 31%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 37%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] ライセンス</td> 
-   <td> <p>新規： [!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
+   <td> <p>新規：[!UICONTROL Standard]</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] ライセンス**</td> 
@@ -50,7 +50,7 @@ ht-degree: 37%
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：組織は [!DNL Adobe Workfront Fusion] を購入する必要があります。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
+   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] [!DNL Workfront] プラン：[!DNL Adobe Workfront Fusion] を購入してください。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] プラン：[!DNL Workfront Fusion] が含まれています。</li></ul>
    <p>または</p>
    <p>現在：[!DNL Adobe Workfront Fusion] を購入する必要があります。</p>
    </td> 
@@ -81,8 +81,18 @@ ht-degree: 37%
 
 チームの作成方法
 
-1. 左側のナビゲーションパネルで、「**[!UICONTROL Org overview]**」をクリックします
-1. 「**[!UICONTROL Teams]**」タブを選択します。
-1. **[!UICONTROL Add a new team]** をクリックします。
+1. 左側のナビゲーションパネルで、「**[!UICONTROL 組織の概要]**」をクリックします
+1. 「**[!UICONTROL チーム]**」タブを選択します。
+1. **[!UICONTROL 新規チームを追加]** をクリックします。
    ![チームの作成](assets/create-new-team-button.png)
 1. 新しいチームの名前を入力し、「**追加**」をクリックします。
+
+## チームの編集
+
+チームの名前を編集できます。
+
+1. 左側のナビゲーションパネルで、「**[!UICONTROL 組織の概要]**」をクリックします
+1. 「**[!UICONTROL チーム]**」タブを選択します。
+1. 名前を編集するチームを見つけ、そのチームの行の **編集** をクリックします。
+1. チームの新しい名前を入力し、「**保存**」をクリックします。
+

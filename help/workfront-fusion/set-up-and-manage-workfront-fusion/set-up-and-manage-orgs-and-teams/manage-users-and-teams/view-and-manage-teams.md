@@ -1,23 +1,30 @@
 ---
-title: ユーザーの詳細を表示または編集
-description: 組織内の  [!DNL Adobe Workfront Fusion]  ユーザーの管理
+title: チームの表示と管理
+description: 組織のチームのリストを表示して、チーム名を編集できます。
 author: Becky
 feature: Workfront Fusion
-exl-id: 0eeed98c-0c87-4e34-9efe-027f3f03af1b
 source-git-commit: ef41c85010b53bbc80c5b44ba8a622027c9e4911
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 49%
+source-wordcount: '301'
+ht-degree: 26%
 
 ---
 
-# ユーザーの詳細を表示または編集
+# チームの表示と管理
 
-管理者 [!DNL Adobe Workfront Fusion]、[!DNL Workfront Fusion] 内でユーザーの詳細を管理できます。
+チームとは、特定のリソースへのアクセスを共有するユーザーのグループです。これらのリソースには以下が含まれます。
 
->[!NOTE]
->
->現在、組織がWorkfrontへの移行プロセスを行っている場合、Adobe Admin Consoleでユーザーを管理（ユーザーの追加または削除）することはできません。 移行が完了したら、Adobe Admin Consoleでこれらの操作を実行できます。
+* シナリオ
+* 接続
+* Web フック
+* キー
+* データストア
+* データ構造
+* メール通知設定
+
+組織のチームのリストを表示して、チームの名前を編集できます。
+
+ユーザーをチームに追加するには、[ チームにユーザーを追加 ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md) を参照してください。
 
 ## アクセス要件
 
@@ -71,11 +78,17 @@ ht-degree: 49%
 
 +++
 
-## ユーザーの詳細を表示または編集
+## チーム エリアからチームを表示および管理
 
-[!DNL Adobe Workfront Fusion] 管理者は、ユーザーの詳細を表示および更新できます。
+1. 左側のナビゲーションで、画面の左上隅にある **組織の概要** をクリックします。
+1. 「**チーム**」タブを選択します。
 
-1. [!DNL Workfront Fusion] 管理者としてログインし、左側のナビゲーションで **[!UICONTROL すべてのユーザー]** を選択します。
-1. 表示したいユーザーの行で&#x200B;**[!UICONTROL 詳細]**&#x200B;をクリックします。
-1. （オプション）ユーザーの詳細を更新するには、画面の右上隅にある&#x200B;**[!UICONTROL オプション]**&#x200B;をクリックし、「**[!UICONTROL 詳細を変更]**」を選択します。
-1. 詳細を編集し、「**保存**」をクリックします。
+   チーム リストが開きます。
+
+1. （任意）チームリストを任意の列で並べ替えるには、その列の **並べ替え** アイコン ![ 並べ替えアイコン ](assets/sort-icon.png) をクリックします。
+1. （オプション）列を表示または非表示にするには、リストの右上隅付近にある **列** アイコン ![ 列アイコン ](assets/columns-icon.png) をクリックし、列を有効または無効にします。
+1. （オプション）リストをフィルタリングするには、検索バーへの入力を開始します。 検索語句を含んだチームのみを含めるようにリストフィルターを設定できます。
+1. （任意）チームの名前を変更するには、そのチームの行で **編集** をクリックしてから、新しいチーム名を入力し、**保存** をクリックします。
+
+
+
