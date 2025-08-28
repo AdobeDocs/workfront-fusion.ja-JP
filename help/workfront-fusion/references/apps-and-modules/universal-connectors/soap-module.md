@@ -91,15 +91,15 @@ Workfront Fusion でSOAP モジュールを設定する場合、以下に示す�
    <td> モジュールで使用する WSDL を選択します。 WSDL を作成するには、フィールドの横にある <b> 追加 </b> をクリックし、フィールドに入力します。 </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL HTTP ヘッダー ]</td> 
+   <td>[!UICONTROL HTTP ヘッダー &#x200B;]</td> 
    <td> 追加する HTTP ヘッダーごとに「<b> 項目を追加 </b>」をクリックし、ヘッダーの名前と値を入力します。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL SOAP ヘッダー ]</td> 
+   <td>[!UICONTROL SOAP ヘッダー &#x200B;]</td> 
    <td> 追加するSOAP ヘッダーごとに「<b> 項目を追加 </b>」をクリックし、ヘッダーの名前、値、名前空間および XMLNS を入力します。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 強制SOAP ヘッダー ]</td> 
+   <td>[!UICONTROL 強制SOAP ヘッダー &#x200B;]</td> 
    <td> SOAP 1.2 のヘッダーを設定する場合は、このオプションを有効にします。 </td> 
   </tr> 
   </tbody> 
@@ -137,7 +137,7 @@ Workfront Fusion でSOAP モジュールを設定する場合、以下に示す�
 </complexType>
 ```
 
-この例には、`soapenc:Array`Workfront Fusion`soapenc:arrayType` でまだサポートされていない `wsdl:arrayType`、[!UICONTROL  および ] の参照が含まれています。
+この例には、`soapenc:Array`Workfront Fusion`soapenc:arrayType` でまだサポートされていない `wsdl:arrayType`、[!UICONTROL &#x200B; および &#x200B;] の参照が含まれています。
 
 >[!ENDSHADEBOX]
 
