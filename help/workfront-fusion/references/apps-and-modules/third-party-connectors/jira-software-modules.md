@@ -114,7 +114,7 @@ Jira コネクタでは、以下を使用します。
 
 [!DNL Jira Cloud] を Workfront Fusion に接続
 
-[!DNL Jira Software] をWorkfront Fusion に接続するには、API トークンを作成し、それをサービス URL とユーザー名と共にWorkfront Fusion の [!UICONTROL  接続を作成 ] フィールドに挿入する必要があります。
+[!DNL Jira Software] をWorkfront Fusion に接続するには、API トークンを作成し、それをサービス URL とユーザー名と共にWorkfront Fusion の [!UICONTROL &#x200B; 接続を作成 &#x200B;] フィールドに挿入する必要があります。
 
 #### [!DNL Jira] での API トークンの作成
 
@@ -131,7 +131,7 @@ Jira コネクタでは、以下を使用します。
 
 #### Workfront Fusion での [!DNL Jira] API トークンの設定
 
-1. Workfront Fusion の任意の [!DNL Jira Cloud] モジュールで、「**[!UICONTROL connection]**」フィールドの横にある「[!UICONTROL  追加 ] をクリックします。
+1. Workfront Fusion の任意の [!DNL Jira Cloud] モジュールで、「**[!UICONTROL connection]**」フィールドの横にある「[!UICONTROL &#x200B; 追加 &#x200B;] をクリックします。
 1. 次の情報を指定します。
 
    * **環境**
@@ -246,7 +246,7 @@ Workfront Fusion と [!DNL Jira Server] の間の接続を認証するには、�
 >
 >[!DNL Jira Server] アプリで [!DNL Jira Server] または [!DNL Jira Data Center] に接続します。
 
-1. Workfront Fusion の任意の [!DNL Jira Server] モジュールで、「**[!UICONTROL connection]**」フィールドの横にある「[!UICONTROL  追加 ] をクリックします。
+1. Workfront Fusion の任意の [!DNL Jira Server] モジュールで、「**[!UICONTROL connection]**」フィールドの横にある「[!UICONTROL &#x200B; 追加 &#x200B;] をクリックします。
 1. [!UICONTROL 接続の作成]パネルで、次のフィールドに入力します。
 
    <table style="table-layout:auto"> 
@@ -353,7 +353,7 @@ Workfront Fusion と [!DNL Jira Server] の間の接続を認証するには、�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Issue ID or Keys]</td> 
-   <td>エクスペリエンスを表示するイシューまたはキーごとに、<b>[!UICONTROL アイテムの追加 ]</b> をクリックして、イシュー ID またはキーを入力します。 1 つのモジュールに最大 50 個まで入力できます。</td> 
+   <td>エクスペリエンスを表示するイシューまたはキーごとに、<b>[!UICONTROL アイテムの追加 &#x200B;]</b> をクリックして、イシュー ID またはキーを入力します。 1 つのモジュールに最大 50 個まで入力できます。</td> 
   </tr> 
  </tbody> 
 </table>
