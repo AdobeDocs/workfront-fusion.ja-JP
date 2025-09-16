@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion のシナリオでは、 [!DNL Jira] Softwar
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 1e2a9fcfdfb15f1b254e7b4b32fc618b49de56e5
 workflow-type: tm+mt
-source-wordcount: '2324'
-ht-degree: 64%
+source-wordcount: '2460'
+ht-degree: 61%
 
 ---
 
@@ -114,7 +114,7 @@ Jira コネクタでは、以下を使用します。
 
 [!DNL Jira Cloud] を Workfront Fusion に接続
 
-[!DNL Jira Software] をWorkfront Fusion に接続するには、API トークンを作成し、それをサービス URL とユーザー名と共にWorkfront Fusion の [!UICONTROL &#x200B; 接続を作成 &#x200B;] フィールドに挿入する必要があります。
+[!DNL Jira Software] をWorkfront Fusion に接続するには、API トークンを作成し、それをサービス URL とユーザー名と共にWorkfront Fusion の [!UICONTROL  接続を作成 ] フィールドに挿入する必要があります。
 
 #### [!DNL Jira] での API トークンの作成
 
@@ -131,7 +131,7 @@ Jira コネクタでは、以下を使用します。
 
 #### Workfront Fusion での [!DNL Jira] API トークンの設定
 
-1. Workfront Fusion の任意の [!DNL Jira Cloud] モジュールで、「**[!UICONTROL connection]**」フィールドの横にある「[!UICONTROL &#x200B; 追加 &#x200B;] をクリックします。
+1. Workfront Fusion の任意の [!DNL Jira Cloud] モジュールで、「**[!UICONTROL connection]**」フィールドの横にある「[!UICONTROL  追加 ] をクリックします。
 1. 次の情報を指定します。
 
    * **環境**
@@ -246,7 +246,7 @@ Workfront Fusion と [!DNL Jira Server] の間の接続を認証するには、�
 >
 >[!DNL Jira Server] アプリで [!DNL Jira Server] または [!DNL Jira Data Center] に接続します。
 
-1. Workfront Fusion の任意の [!DNL Jira Server] モジュールで、「**[!UICONTROL connection]**」フィールドの横にある「[!UICONTROL &#x200B; 追加 &#x200B;] をクリックします。
+1. Workfront Fusion の任意の [!DNL Jira Server] モジュールで、「**[!UICONTROL connection]**」フィールドの横にある「[!UICONTROL  追加 ] をクリックします。
 1. [!UICONTROL 接続の作成]パネルで、次のフィールドに入力します。
 
    <table style="table-layout:auto"> 
@@ -353,7 +353,7 @@ Workfront Fusion と [!DNL Jira Server] の間の接続を認証するには、�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Issue ID or Keys]</td> 
-   <td>エクスペリエンスを表示するイシューまたはキーごとに、<b>[!UICONTROL アイテムの追加 &#x200B;]</b> をクリックして、イシュー ID またはキーを入力します。 1 つのモジュールに最大 50 個まで入力できます。</td> 
+   <td>エクスペリエンスを表示するイシューまたはキーごとに、<b>[!UICONTROL アイテムの追加 ]</b> をクリックして、イシュー ID またはキーを入力します。 1 つのモジュールに最大 50 個まで入力できます。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -564,6 +564,24 @@ Workfront Fusion と [!DNL Jira Server] の間の接続を認証するには、�
 
 * [[!UICONTROL レコードをリスト表示]](#list-records)
 * [[!UICONTROL レコードを検索]](#search-for-records)
+
+>[!IMPORTANT]
+>
+>従来の Jira コネクタで使用されていた検索モジュールでは、次のエラーが発生する場合があります。
+>
+>`[410] The requested API has been removed. Please migrate to the /rest/api/3/search/jql API. A full migration guideline is available at https://developer.atlassian.com/changelog/#CHANGE-2046`
+>
+>これは、Jira 側での非推奨（廃止予定）が原因です。
+>
+>このエラーが発生した場合は、従来の Jira コネクタの検索モジュールを新しいコネクタの検索モジュールに置き換えることができます。 新しいコネクタを使用すると、使用する API バージョンを選択できます。 接続を作成する場合は、必ず V3 を選択します。
+>
+> ![ 新しい Jira コネクタの API バージョンオプション ](/help/workfront-fusion/references/apps-and-modules/assets/jira-version-option.png)
+>
+>注意：
+>
+>* 影響を受けるのは「検索」モジュールのみです。 現時点では、Fusion コネクタで使用される他の Jira API エンドポイントは、この非推奨（廃止予定）の影響を受けません。
+>
+>* 地理的なロールアウトによって不整合が発生する場合があります。 Atlassian はこの変更を地域的に展開しています。つまり、一部の Jira クラウドインスタンスでは、引き続き一時的に古いエンドポイントをサポートしている可能性があります。 これにより、環境間で動作に一貫性がなくなる可能性があります。
 
 #### [!UICONTROL レコードをリスト表示]
 
