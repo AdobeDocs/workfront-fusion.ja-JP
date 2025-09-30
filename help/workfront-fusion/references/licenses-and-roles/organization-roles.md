@@ -4,10 +4,10 @@ description: この記事には、 [!DNL Adobe]  Workfront Fusion の役割の�
 author: Becky
 feature: Workfront Fusion
 exl-id: 92f3bb09-0b66-45cd-84ef-88b2aa246be1
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4cd97fe2924150b9e7be140a25215f135b2788da
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 88%
+source-wordcount: '416'
+ht-degree: 84%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 88%
   <tr> 
    <td> <p>組織のユーザーの管理</p> </td> 
    <td>✓ </td> 
-   <td>✓</td> 
+   <td>✓<p>組織がAdobe IMS中の場合、Adobe Admin Consoleでユーザーを管理できます。 他の組織にユーザーを招待することのみ可能です。</td> 
    <td> </td> 
    <td> </td> 
   </tr> 

@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion の組織とチームの機能を使用す�
 author: Becky
 feature: Workfront Fusion
 exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4cd97fe2924150b9e7be140a25215f135b2788da
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 58%
+source-wordcount: '549'
+ht-degree: 56%
 
 ---
 
@@ -32,7 +32,7 @@ Workfront Fusion ユーザーは組織に属しています。
 ユーザーには、組織内で次のいずれかの役割があります。
 
 * **[!UICONTROL 所有者]**：所有者は、組織で使用可能なすべての権限を持っています。
-* **[!UICONTROL 管理者]**：管理者は、組織のチームとユーザーを作成および管理したり、テンプレートを承認したりできます。
+* **[!UICONTROL 管理者]**：管理者は、組織がAdobe Admin Console Adobe Identity Management System （IMS）で有効になっている場合は IMS のユーザーを管理でき、IMS 以外の組織の場合は新規ユーザーを招待できます。 また、テンプレートを承認することもできます。
 * **[!UICONTROL メンバー]**：メンバーはWorkfront Fusion を使用できますが、組織的な変更を行うことはできません。
 * **[!UICONTROL 会計士]**：会計士は、組織ダッシュボードでライセンス情報を表示できますが、アクションを実行できません。
 * **[!UICONTROL アプリ開発者]**：この役割の機能は現在使用できません。近い将来に使用可能になる予定です。現時点では、この役割にユーザーを割り当てることはお勧めしません。
