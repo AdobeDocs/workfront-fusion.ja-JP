@@ -21,7 +21,7 @@ Fusion ではメタデータを使用して接続の重要な属性を識別し�
 
 Fusion ユーザーは、「接続」領域で接続を表示および編集できます。 「接続」領域にアクセスするには、左側のナビゲーションで「接続」をクリックします。
 
-![ 左側のナビゲーションの「接続」領域 ](assets/connections-in-left-nav.png)
+![&#x200B; 左側のナビゲーションの「接続」領域 &#x200B;](assets/connections-in-left-nav.png)
 
 <!--![Connection metadata in Connections area](assets/connections-area-metadata.png)-->
 
@@ -41,4 +41,4 @@ Fusion 接続は、サービスアカウントと個人アカウントの両方�
 
 ## リソース
 
-* 接続メタデータの管理手順については、[ 接続の管理 ](/help/workfront-fusion/create-scenarios/connect-to-apps/manage-connections.md) を参照してください。
+* 接続メタデータの管理手順については、[&#x200B; 接続の管理 &#x200B;](/help/workfront-fusion/create-scenarios/connect-to-apps/manage-connections.md) を参照してください。
