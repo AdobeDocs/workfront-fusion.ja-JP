@@ -4,10 +4,10 @@ description: Fusion ではメタデータを使用して接続の重要な属性
 author: Becky
 feature: Workfront Fusion
 exl-id: b41fbe8c-30fa-49d0-8a24-3535642b97ae
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: d13312031955a697e10ddfcdc2e64dfe198b3dac
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 62%
+source-wordcount: '282'
+ht-degree: 54%
 
 ---
 
@@ -19,9 +19,11 @@ Fusion ではメタデータを使用して接続の重要な属性を識別し�
 
 ![接続メタデータ](assets/connection-metadata-setup.png)
 
-Fusion ユーザーは、「接続」エリアから接続を表示および編集できます。
+Fusion ユーザーは、「接続」領域で接続を表示および編集できます。 「接続」領域にアクセスするには、左側のナビゲーションで「接続」をクリックします。
 
-![「接続」エリアの接続メタデータ](assets/connections-area-metadata.png)
+![ 左側のナビゲーションの「接続」領域 ](assets/connections-in-left-nav.png)
+
+<!--![Connection metadata in Connections area](assets/connections-area-metadata.png)-->
 
 ## 環境タイプ
 
