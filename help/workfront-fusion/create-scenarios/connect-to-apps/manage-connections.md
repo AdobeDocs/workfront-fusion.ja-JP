@@ -7,9 +7,9 @@ description: ほとんどのアプリでは、特定のシナリオの設定に�
 author: Becky
 feature: Workfront Fusion
 exl-id: 26d7caad-8e12-4f04-ac7c-f71686c90ee6
-source-git-commit: d13312031955a697e10ddfcdc2e64dfe198b3dac
+source-git-commit: bc1b025af534addf032519142148f6285f481784
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '562'
 ht-degree: 7%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 7%
 
 これらの接続は、「接続」領域で管理できます。
 
-接続について詳しくは、[&#x200B; 接続の概要 &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md) を参照してください。
+接続について詳しくは、[ 接続の概要 ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md) を参照してください。
 
 ## アクセス要件
 
@@ -59,9 +59,9 @@ ht-degree: 7%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -75,15 +75,15 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 >
 >新しいチームを選択するには、左側のナビゲーションでチーム名をクリックし、新しいチームを選択します。
 
-1. 「接続」領域を開くには、左側のナビゲーションで **接続** ![&#x200B; 接続アイコン &#x200B;](assets/connections-icon.png) をクリックします。
+1. 「接続」領域を開くには、左側のナビゲーションで **接続** ![ 接続アイコン ](assets/connections-icon.png) をクリックします。
 1. 管理する接続を探し、その接続に対して次の手順を 1 つ以上実行します。
 1. （任意）「環境」と「**タイプ**」のドロップダウンをクリックしてオプションを選択することで、環境 **接続タイプ** を割り当てます。
-1. （オプション）Workfront Fusion に接続に対して付与された権限を表示するには、その接続の表示アイコン ![&#x200B; 接続権限を表示 &#x200B;](assets/view-connection-permissions.png) をクリックします。
+1. （オプション）Workfront Fusion に接続に対して付与された権限を表示するには、その接続の表示アイコン ![ 接続権限を表示 ](assets/view-connection-permissions.png) をクリックします。
 1. （オプション）接続の名前を変更するには、接続名をハイライト表示し、新しい名前を入力します。
 1. （オプション）接続を再認証するには、接続の横にあるチェックボックスをオンにし、画面の下部にある **再認証** をクリックします。
 1. （オプション）接続を削除するには、接続の横にあるチェックボックスをオンにし、画面の下部にある **削除** をクリックしてから、**本当に** をクリックします。
 1. （オプション）サービスへの接続が正常に確立されたことを確認するには、接続の横にあるチェックボックスをオンにし、画面下部の **確認** をクリックします。
-1. この接続を使用するアクティブなシナリオを表示するには、接続の横にあるチェックボックスをオンにし、「**アクティブなシナリオを取得**」をクリックします。 アクティブなシナリオ リストのシナリオをクリックすると、そのシナリオに移動できます。
+1. （オプション）この接続を使用するアクティブなシナリオを表示するには、接続の横にあるチェックボックスをオンにし、「**アクティブなシナリオを取得**」をクリックします。 アクティブなシナリオ リストのシナリオをクリックすると、そのシナリオに移動できます。
 
 ## 接続を更新する
 
@@ -91,10 +91,10 @@ Workfront Fusion は通常、特定のサービスに対するアクセス権を
 
 接続を更新するには：
 
-1. 「接続」領域を開くには、左側のナビゲーションで **接続** ![&#x200B; 接続アイコン &#x200B;](assets/connections-icon.png) をクリックします。
+1. 「接続」領域を開くには、左側のナビゲーションで **接続** ![ 接続アイコン ](assets/connections-icon.png) をクリックします。
 1. 更新する接続を見つけます。
 1. その接続の行で、接続の横にあるチェックボックスをオンにし、画面の下部にある **再認証** をクリックします。
 
 ## リソース
 
-* 環境やタイプなどの接続メタデータについて詳しくは、[&#x200B; 接続メタデータ &#x200B;](/help/workfront-fusion/references/connections/connection-metadata.md) を参照してください。
+* 環境やタイプなどの接続メタデータについて詳しくは、[ 接続メタデータ ](/help/workfront-fusion/references/connections/connection-metadata.md) を参照してください。
