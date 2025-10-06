@@ -4,9 +4,9 @@ description: SOAP モジュールを使用して、Adobe Workfront Fusion で SO
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: 95d52f8227c8a40c0db165eea9d2877e60446de9
+source-git-commit: 29f9595d063e89e9cd393fecba07194d2e9008aa
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '639'
 ht-degree: 43%
 
 ---
@@ -91,15 +91,15 @@ Workfront Fusion でSOAP モジュールを設定する場合、以下に示す�
    <td> モジュールで使用する WSDL を選択します。 WSDL を作成するには、フィールドの横にある <b> 追加 </b> をクリックし、フィールドに入力します。 </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL HTTP ヘッダー &#x200B;]</td> 
+   <td>[!UICONTROL HTTP ヘッダー ]</td> 
    <td> 追加する HTTP ヘッダーごとに「<b> 項目を追加 </b>」をクリックし、ヘッダーの名前と値を入力します。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL SOAP ヘッダー &#x200B;]</td> 
+   <td>[!UICONTROL SOAP ヘッダー ]</td> 
    <td> 追加するSOAP ヘッダーごとに「<b> 項目を追加 </b>」をクリックし、ヘッダーの名前、値、名前空間および XMLNS を入力します。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 強制SOAP ヘッダー &#x200B;]</td> 
+   <td>[!UICONTROL 強制SOAP ヘッダー ]</td> 
    <td> SOAP 1.2 のヘッダーを設定する場合は、このオプションを有効にします。 </td> 
   </tr> 
   </tbody> 
@@ -137,7 +137,7 @@ Workfront Fusion でSOAP モジュールを設定する場合、以下に示す�
 </complexType>
 ```
 
-この例には、`soapenc:Array`Workfront Fusion`soapenc:arrayType` でまだサポートされていない `wsdl:arrayType`、[!UICONTROL &#x200B; および &#x200B;] の参照が含まれています。
+この例には、`soapenc:Array`Workfront Fusion`soapenc:arrayType` でまだサポートされていない `wsdl:arrayType`、[!UICONTROL  および ] の参照が含まれています。
 
 >[!ENDSHADEBOX]
 
@@ -185,7 +185,7 @@ Workfront Fusion でSOAP モジュールを設定する場合、以下に示す�
    <!--![Service](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
 
 1. 見つかったら、`location` 属性から URL をコピーします。
-1. Workfront Fusion で、URL を HTTP モジュールの URL フィールドに貼り付けます。
+1. Workfront Fusion で、URL を HTTP モジュールの **コンテンツをリクエスト** フィールドに貼り付けます。
 1. 疑問符を実際の値に置き換えて、選択したパラメーターの値を指定します。
 
    >[!NOTE]
