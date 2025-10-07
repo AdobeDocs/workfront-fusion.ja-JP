@@ -4,7 +4,7 @@ description: Adobe Workfront Fusion のAdobe Experience Manager Assets コネク
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
-source-git-commit: d62a8bd4675c034581f6cf5f3a1e61c177de5ebc
+source-git-commit: 190c35629f1fc1e07eef4110f3f4f771af1065fb
 workflow-type: tm+mt
 source-wordcount: '3727'
 ht-degree: 22%
@@ -67,10 +67,10 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 * これらのモジュールを使用するには、Adobe Experience Manager Assets アカウントが必要です。
 * Adobe Developer コンソールでサーバー間フローを設定する必要があります。
 
-  Adobe Developer コンソールでサーバー間フローを設定する手順については、[ サーバーサイド API のアクセストークンの生成 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=ja#the-server-to-server-flow) を参照してください。
+  Adobe Developer コンソールでサーバー間フローを設定する手順については、[ サーバーサイド API のアクセストークンの生成 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow) を参照してください。
 * Adobe Experience Manager テクニカルアカウントには、書き込み権限が必要です。
 
-  Adobe Experience Manager テクニカルアカウントに書き込み権限を追加する手順については、Adobe Experience Manager ドキュメントの [ サービス資格情報 ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) を参照してください。
+  Adobe Experience Manager テクニカルアカウントに書き込み権限を追加する手順については、Adobe Experience Manager ドキュメントの [ サービス資格情報 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) を参照してください。
 
 ## Adobe Experience Manager Assets API の情報
 
@@ -118,11 +118,11 @@ Adobe Experience Manager Assets モジュールの接続を作成するには：
 >
 >* これらのフィールドの情報は、Adobe Developer Consoleでのサーバー間フローの設定の一環として生成されます。 これらの値は、設定の一環として生成されるサービス資格情報 JSON ファイルに含まれています。
 >
->   Adobe Developer Consoleでサーバー間フローを設定する手順については、[ サーバーサイド API のアクセストークンの生成 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=ja#the-server-to-server-flow) を参照してください。
+>   Adobe Developer Consoleでサーバー間フローを設定する手順については、[ サーバーサイド API のアクセストークンの生成 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow) を参照してください。
 >
 >* Adobe Experience Manager テクニカルアカウントには、書き込み権限が必要です。
 >
->   Adobe Experience Manager テクニカルアカウントに書き込み権限を追加する手順については、Adobe Experience Manager ドキュメントの [ サービス資格情報 ](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) を参照してください。
+>   Adobe Experience Manager テクニカルアカウントに書き込み権限を追加する手順については、Adobe Experience Manager ドキュメントの [ サービス資格情報 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) を参照してください。
 
 
 <table style="table-layout:auto"> 
@@ -164,8 +164,8 @@ Adobe Experience Manager Assets モジュールの接続を作成するには：
                   <td class="">詳細を手動で入力する場合は、組織の ID を入力します。 これは、クライアント資格情報 JSON ファイルの「組織」フィールドです。</td>
               </tr>
               <tr>
-                  <td role="rowheader">メタ範囲</td>
-                  <td>サーバ間セットアップで生成されたメタ・スコープを入力します。</td>
+                  <td role="rowheader">Meta範囲</td>
+                  <td>サーバー間セットアップで生成されたMeta スコープを入力します。</td>
               </tr>
               <tr>
                   <td role="rowheader">秘密鍵</td>
@@ -773,7 +773,7 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
   </tr> 
   <tr> 
    <td role="rowheader">有効期限</td> 
-   <td> <p>アセットのエクスペリエンス実施日を入力またはマッピングします。</p><p>サポートされる日付と時刻の形式の一覧については、「<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref"> 型強制 </a>」を参照してください。</p> </td> 
+   <td> <p>アセットの有効期限を入力またはマッピングします。</p><p>サポートされる日付と時刻の形式の一覧については、「<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref"> 型強制 </a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">カスタムメタデータ</td> 
@@ -929,7 +929,7 @@ Adobe Experience Manager Assetsに新しいフォルダーを作成します。
    <ul>
    <li><b>新しいフォルダーの場所</b><p>新しいフォルダーを作成する場所のパスを選択します。</p></li>
        <li> <b>名前</b> <p>フォルダーの名前を入力します。この名前はファイルパスに含まれるので、スペースや他の文字を含めることはできません。 </p> </li> 
-       <li> <b> タイトル </b> <p>名前の代わりに表示できるフォルダーのタイトルを入力します。</p> </li> 
+       <li> <b>タイトル</b> <p>名前の代わりに表示できるフォルダーのタイトルを入力します。</p> </li> 
    </ul> </td> 
   </tr> 
  </tbody> 

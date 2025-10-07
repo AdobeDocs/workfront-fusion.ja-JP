@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
-source-git-commit: 45b595cb8e3bf74e552e68714460a919e7e1ded6
+source-git-commit: 3832299db48566c07d2031d75237846bc3568631
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1879'
 ht-degree: 63%
 
 ---
@@ -304,11 +304,11 @@ ht-degree: 63%
    * アプリとそのモジュール {#apps-and-their-modules}
       * [アプリとそのモジュール](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)
       * ユニバーサルコネクタ {#universal-connectors}
-         * [HTTP > [!UICONTROL &#x200B; リクエストを作成 &#x200B;] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
-         * [[!UICONTROL HTTP] > [!UICONTROL &#x200B; 基本認証リクエストを行う &#x200B;] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
+         * [HTTP > [!UICONTROL  リクエストを作成 ] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+         * [[!UICONTROL HTTP] > [!UICONTROL  基本認証リクエストを行う ] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
          * [[!UICONTROL HTTP]／[!UICONTROL OAuth 2.0 リクエストを実行]モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
-         * [[!UICONTROL HTTP] > [!UICONTROL &#x200B; クライアント証明書認証リクエストを作成 &#x200B;] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
-         * [[!UICONTROL HTTP] > [!UICONTROL API キー認証リクエストの作成 &#x200B;]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
+         * [[!UICONTROL HTTP] > [!UICONTROL  クライアント証明書認証リクエストを作成 ] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
+         * [[!UICONTROL HTTP] > [!UICONTROL API キー認証リクエストの作成 ]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
          * [[!UICONTROL HTTP]／その他のモジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-modules.md)
          * [SOAP モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/soap-module.md)
          * [FTP モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)
@@ -391,6 +391,7 @@ ht-degree: 63%
          * [Split.io モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
          * [Trello モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
          * [Widen モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/widen-modules.md)
+         * [Veeva Vault モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/veeva-vault-modules.md)
          * [Workday モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/workday-modules.md)
       * 工具・変圧器 {#tools-and-transformers}
          * [モジュールのアーカイブ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/archive-modules.md)

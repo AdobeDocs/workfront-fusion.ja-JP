@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: f5d60e10dd500b97b0be8c54be1add495dc452fa
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '471'
 ht-degree: 45%
 
 ---
@@ -23,11 +23,11 @@ ht-degree: 45%
 
 これらのコネクタを使用すると、パブリック API を持つすべてのアプリまたは web サービスに接続できます。
 
-* [http > [!UICONTROL &#x200B; リクエストを作成 &#x200B;] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL &#x200B; 基本認証リクエストを行う &#x200B;] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
+* [http > [!UICONTROL  リクエストを作成 ] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL  基本認証リクエストを行う ] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
 * [[!UICONTROL HTTP]／[!UICONTROL OAuth 2.0 リクエストを実行]モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL &#x200B; クライアント証明書認証リクエストを作成 &#x200B;] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL API キー認証リクエストの作成 &#x200B;]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL  クライアント証明書認証リクエストを作成 ] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL API キー認証リクエストの作成 ]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
 * [[!UICONTROL HTTP]／その他のモジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-modules.md)
 * [SOAP モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/soap-module.md)
 * [FTP モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)
@@ -116,6 +116,7 @@ Fusion には、多くのサードパーティアプリケーション用のコ�
 * [Slack モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
 * [Split.io モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
 * [Trello モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
+* [Veeva Vault モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/veeva-vault-modules.md)
 * [Widen モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/widen-modules.md)
 * [Workday モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/workday-modules.md)
 
