@@ -17,7 +17,7 @@ Workfront Fusion が接続するアプリケーションは新しいバージョ
 
 シナリオでモジュールに緑色の「アップグレードモジュール」アイコンが表示された場合、Workfront Fusion はそのモジュールの新しいバージョンをリリースしました。
 
-![ 更新アイコン ](assets/update-indicator-workfront.png)
+![&#x200B; 更新アイコン &#x200B;](assets/update-indicator-workfront.png)
 
 新しいシナリオを作成しなくても、モジュールを更新できます。
 
@@ -67,19 +67,19 @@ Workfront Fusion が接続するアプリケーションは新しいバージョ
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
 ## Workfront モジュールの新しいバージョンへのアップグレード
 
-1. 新しいバージョンにアップグレードするモジュールの **アップグレードモジュール** アイコン ![ アップグレードアイコン ](assets/upgrade-icon.png) をクリックします。
-   ![ 更新アイコン ](assets/update-indicator-workfront.png)
+1. 新しいバージョンにアップグレードするモジュールの **アップグレードモジュール** アイコン ![&#x200B; アップグレードアイコン &#x200B;](assets/upgrade-icon.png) をクリックします。
+   ![&#x200B; 更新アイコン &#x200B;](assets/update-indicator-workfront.png)
 1. 以下のうちのいずれかを選択します。
 
-   * このモジュールを交換する新しいモジュールを選択する（モジュールをアップグレードする代わりに）には、**新規を選択** をクリックし、[Workfront以外のモジュールを新しいバージョンにアップグレード ](#upgrade-a-non-workfront-module-to-a-new-version) の説明に従って作業を進めます。
+   * このモジュールを交換する新しいモジュールを選択する（モジュールをアップグレードする代わりに）には、**新規を選択** をクリックし、[Workfront以外のモジュールを新しいバージョンにアップグレード &#x200B;](#upgrade-a-non-workfront-module-to-a-new-version) の説明に従って作業を進めます。
    * モジュールの構成を維持したまま、このモジュールのみをアップグレードするには、[**アップグレード**] をクリックします。
    * シナリオに含まれるすべてのWorkfront モジュールをアップグレードするには、「**すべてアップグレード**」をクリックします。
 
@@ -91,8 +91,8 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ## Workfront以外のモジュールを新しいバージョンにアップグレードする
 
-1. 新しいバージョンにアップグレードするモジュールの **アップグレードモジュール** アイコン ![ アップグレードアイコン ](assets/upgrade-icon.png) をクリックします。
-   ![ 更新アイコン ](assets/update-indicator.png)
+1. 新しいバージョンにアップグレードするモジュールの **アップグレードモジュール** アイコン ![&#x200B; アップグレードアイコン &#x200B;](assets/upgrade-icon.png) をクリックします。
+   ![&#x200B; 更新アイコン &#x200B;](assets/update-indicator.png)
 1. **新規を選択** をクリックします。
 1. 前のモジュールと置き換えるモジュールを選択します。
 1. 既存のモジュールと同じ設定でモジュールを設定します。
