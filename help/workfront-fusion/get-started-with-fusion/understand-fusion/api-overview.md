@@ -24,11 +24,11 @@ API が Fusion ではなく所有者によって定義されるという事実�
 
 * **Fusion を使用して、パブリック API を持つ任意のアプリやサービスに接続できます**。Fusion がそのアプリやサービスに専用のコネクタを提供しているかどうかにかかわらず接続できます。 Fusion のユニバーサルコネクタを使用して、これらのアプリやサービスをシナリオに取り込むことができます。
 
-  ユニバーサルコネクタの一覧については、「[ ユニバーサルコネクタ ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)」を参照してください。
+  ユニバーサルコネクタの一覧については、「[&#x200B; ユニバーサルコネクタ &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)」を参照してください。
 
 * **所有者がアプリケーションの API に加えた変更は、Fusion の機能に影響を与える可能性があります。** 変更が非常に重大な場合、Fusion はモジュールや接続タイプを更新する必要がある場合や、極端な場合にはアプリケーション用の新しいコネクタを作成する場合があります。
 
-  「変更の反映」と呼ばれるこれらの極端な状況について詳しくは、この記事の [ 変更の反映 ](#breaking-changes) を参照してください。
+  「変更の反映」と呼ばれるこれらの極端な状況について詳しくは、この記事の [&#x200B; 変更の反映 &#x200B;](#breaking-changes) を参照してください。
 
 
 ## 重大な変更
@@ -43,4 +43,4 @@ Fusion シナリオは特定のデータで設定されているので、シナ�
 
 多くの場合、モジュールを再設定しなくても、新しいバージョンのモジュールにアップグレードできます。
 
-モジュールのアップグレードの詳細と手順については、「[ 新しいバージョンへのモジュールのアップグレード ](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md)」を参照してください。
+モジュールのアップグレードの詳細と手順については、「[&#x200B; 新しいバージョンへのモジュールのアップグレード &#x200B;](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md)」を参照してください。
