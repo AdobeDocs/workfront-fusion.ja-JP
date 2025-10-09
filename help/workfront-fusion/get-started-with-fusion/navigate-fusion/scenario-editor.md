@@ -4,9 +4,9 @@ description: シナリオエディターを使用すると、視覚的なイン�
 author: Becky
 feature: Workfront Fusion
 exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: ce2a41a9708bb0e611ab4056aac733d58d27d7a9
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '589'
 ht-degree: 28%
 
 ---
@@ -100,7 +100,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 | シナリオ設定 | シナリオ設定パネルには、シナリオの詳細設定が含まれています。 使用可能な設定について詳しくは、[ シナリオ設定の設定 ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md) を参照してください。 |
 | メモ | シナリオに関するメモを作成します。 他のユーザーは、シナリオ内でこれらのメモを表示できます。 |
 | 自動整列 | シナリオ内のモジュールを自動整列します。 |
-| 説明フロー | シナリオでのデータのフローを示すアニメーションを表示します。 |
+| 説明フロー | 移動するドットがシナリオ内でのデータのフローを示すアニメーションを表示します。 |
 | 開発ツール | 開発ツールを使用すると、シナリオのすべての手動実行を確認し、実行されたすべての操作を確認し、実行されたすべての API 呼び出しの詳細を確認できます。 エラーの原因となったモジュール、操作、または単一の応答を確認し、その知識を使用してシナリオを絞り込むことができます。 詳しくは、[ シナリオのデバッグ ](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md) を参照してください。 |
 | その他 | その他メニューで、ブループリントを読み込みまたは書き出し、シナリオを以前のバージョンに復元することができます。 |
 

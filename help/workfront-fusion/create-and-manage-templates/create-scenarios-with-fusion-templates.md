@@ -4,7 +4,7 @@ description: Adobe Workfront Fusion テンプレート機能を使用すると�
 author: Becky
 feature: Workfront Fusion
 exl-id: 560c20b7-155c-40db-9018-5a51b40d6fb0
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: ce2a41a9708bb0e611ab4056aac733d58d27d7a9
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 53%
@@ -76,6 +76,6 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 1. テンプレートに必要なすべての設定を設定すると、テンプレートの準備が整ったことを知らせる通知が届き、標準シナリオオプションが画面の下部に表示されます。これで、シナリオの作成に移れます。
 
-   シナリオの作成について詳しくは、[ シナリオ作成用ワークフロー ](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md) を参照してください。
+   シナリオの作成について詳しくは、[ シナリオ作成のワークフロー ](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md) を参照してください。
 
 1. **[!UICONTROL 保存]** アイコン ![ 保存アイコン ](assets/save-icon.png) をクリックして、シナリオを保存します。 シナリオは、Workfront Fusion のシナリオ領域に保存されます。
