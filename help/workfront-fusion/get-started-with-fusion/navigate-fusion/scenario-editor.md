@@ -15,7 +15,7 @@ ht-degree: 28%
 
 シナリオエディターを使用すると、視覚的なインターフェイスでシナリオを作成および編集できます。
 
-![ シナリオエディター ](assets/scenario-editor.jpg)
+![&#x200B; シナリオエディター &#x200B;](assets/scenario-editor.jpg)
 
 ## アクセス要件
 
@@ -63,16 +63,16 @@ ht-degree: 28%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
 ## シナリオエディターを開き、モジュールを追加します。
 
-1. 左側のパネルで **[!UICONTROL シナリオ]**![ シナリオアイコン ](assets/scenarios-icon.png) をクリックします。
-1. 疑問符アイコン ![ 質問アイコン ](assets/question-mark-full-size.png) をクリックし、開始するアプリまたはサービスを見つけてクリックします。 モジュールの設定について詳しくは、「[ モジュールの設定 ](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)」を参照してください。
+1. 左側のパネルで **[!UICONTROL シナリオ]**![&#x200B; シナリオアイコン &#x200B;](assets/scenarios-icon.png) をクリックします。
+1. 疑問符アイコン ![&#x200B; 質問アイコン &#x200B;](assets/question-mark-full-size.png) をクリックし、開始するアプリまたはサービスを見つけてクリックします。 モジュールの設定について詳しくは、「[&#x200B; モジュールの設定 &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)」を参照してください。
 
 ## 使用可能なシナリオエディターのアクション
 
@@ -80,31 +80,31 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 | アクション | 詳細 |
 |----------|----------|
-| シナリオのテスト実行を行う | シナリオをアクティベートする前に、シナリオが期待どおりに実行されることを確認します。 アクティブ化すると、シナリオはスケジュールに従って実行されます。すべてが期待どおりに実行されない場合は、[ エラー処理の追加 ](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md) を参照して、エラーの処理方法を確認してください。 |
+| シナリオのテスト実行を行う | シナリオをアクティベートする前に、シナリオが期待どおりに実行されることを確認します。 アクティブ化すると、シナリオはスケジュールに従って実行されます。すべてが期待どおりに実行されない場合は、[&#x200B; エラー処理の追加 &#x200B;](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md) を参照して、エラーの処理方法を確認してください。 |
 
-![ 「シナリオを実行」ボタン ](assets/run-your-scenario.png)
+![&#x200B; 「シナリオを実行」ボタン &#x200B;](assets/run-your-scenario.png)
 
 ### スケジュール設定
 
 | アクション | 詳細 |
 |----------|----------|
-| シナリオのスケジュール設定 | デフォルトでは、シナリオは 15 分ごとに実行されます。アクティブ化されたシナリオを実行するタイミングと頻度を定義することで、これを変更できます。Fusion シナリオは、5 分ごとに実行するようにスケジュールできます。 詳しくは、[ シナリオのスケジュール設定 ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md) を参照してください。 |
+| シナリオのスケジュール設定 | デフォルトでは、シナリオは 15 分ごとに実行されます。アクティブ化されたシナリオを実行するタイミングと頻度を定義することで、これを変更できます。Fusion シナリオは、5 分ごとに実行するようにスケジュールできます。 詳しくは、[&#x200B; シナリオのスケジュール設定 &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md) を参照してください。 |
 
-![ スケジュールパネル ](assets/scheduling-scenario-editor.png)
+![&#x200B; スケジュールパネル &#x200B;](assets/scheduling-scenario-editor.png)
 
 ### コントロール
 
 | アクション | 詳細 |
 |----------|----------|
 | 保存します。 | シナリオを保存した後、将来アクセスする必要がある場合、「...」メニューから新しいバージョンを使用できます。以前に保存したシナリオのバージョンは 60 日間のみ使用できます。 |
-| シナリオ設定 | シナリオ設定パネルには、シナリオの詳細設定が含まれています。 使用可能な設定について詳しくは、[ シナリオ設定の設定 ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md) を参照してください。 |
+| シナリオ設定 | シナリオ設定パネルには、シナリオの詳細設定が含まれています。 使用可能な設定について詳しくは、[&#x200B; シナリオ設定の設定 &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md) を参照してください。 |
 | メモ | シナリオに関するメモを作成します。 他のユーザーは、シナリオ内でこれらのメモを表示できます。 |
 | 自動整列 | シナリオ内のモジュールを自動整列します。 |
 | 説明フロー | 移動するドットがシナリオ内でのデータのフローを示すアニメーションを表示します。 |
-| 開発ツール | 開発ツールを使用すると、シナリオのすべての手動実行を確認し、実行されたすべての操作を確認し、実行されたすべての API 呼び出しの詳細を確認できます。 エラーの原因となったモジュール、操作、または単一の応答を確認し、その知識を使用してシナリオを絞り込むことができます。 詳しくは、[ シナリオのデバッグ ](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md) を参照してください。 |
+| 開発ツール | 開発ツールを使用すると、シナリオのすべての手動実行を確認し、実行されたすべての操作を確認し、実行されたすべての API 呼び出しの詳細を確認できます。 エラーの原因となったモジュール、操作、または単一の応答を確認し、その知識を使用してシナリオを絞り込むことができます。 詳しくは、[&#x200B; シナリオのデバッグ &#x200B;](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md) を参照してください。 |
 | その他 | その他メニューで、ブループリントを読み込みまたは書き出し、シナリオを以前のバージョンに復元することができます。 |
 
-![ コントロールパネル ](assets/controls-editor-scenario.png)
+![&#x200B; コントロールパネル &#x200B;](assets/controls-editor-scenario.png)
 
 ### ツール
 
@@ -114,10 +114,10 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 | ツール | 「ツール」セクションには、シナリオを強化できる便利なモジュールがいくつか含まれています。 詳しくは、「必要なリンク [ を参照してください ]。 |
 | テキストパーサー | テキストパーサーツールを使用して、他のシナリオモジュールで使用するテキストを解析します。 テキストパーサーは接続を必要としません。 詳しくは、「必要なリンク [ を参照してください ]。 |
 
-![ ツールパネル ](assets/tools-scenario-editor.png)
+![&#x200B; ツールパネル &#x200B;](assets/tools-scenario-editor.png)
 
 ### お気に入り
 
 「お気に入り」アイコンを使用して、頻繁に使用するモジュールを追加できます。
 
-![ お気に入りパネル ](assets/favorites-scenario-editor.png)
+![&#x200B; お気に入りパネル &#x200B;](assets/favorites-scenario-editor.png)

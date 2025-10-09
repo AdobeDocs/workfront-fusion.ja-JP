@@ -52,9 +52,9 @@ Workfront Fusion のシナリオの出発点として、Adobe Workfront Fusion �
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -64,7 +64,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ## テンプレートからシナリオを作成
 
-1. 左側のナビゲーションパネルで **[!UICONTROL テンプレート]** アイコン ![ テンプレートアイコン ](assets/templates-icon.png) をクリックします。
+1. 左側のナビゲーションパネルで **[!UICONTROL テンプレート]** アイコン ![&#x200B; テンプレートアイコン &#x200B;](assets/templates-icon.png) をクリックします。
 1. 使用するテンプレートを含むタブ（公開テンプレートまたはチームテンプレート）をクリックします。
 1. 使用するテンプレートをクリックして、シナリオの作成を開始します。右上隅の検索ボックスを使用して、名前またはテンプレートに含まれるアプリの名前でテンプレートを見つけることができます。
 1. （条件付き）複数の組織またはチームのメンバーである場合は、シナリオを作成する組織またはチームを選択し、「**[!UICONTROL 続行]**」をクリックします。
@@ -76,6 +76,6 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 1. テンプレートに必要なすべての設定を設定すると、テンプレートの準備が整ったことを知らせる通知が届き、標準シナリオオプションが画面の下部に表示されます。これで、シナリオの作成に移れます。
 
-   シナリオの作成について詳しくは、[ シナリオ作成のワークフロー ](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md) を参照してください。
+   シナリオの作成について詳しくは、[&#x200B; シナリオ作成のワークフロー &#x200B;](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md) を参照してください。
 
-1. **[!UICONTROL 保存]** アイコン ![ 保存アイコン ](assets/save-icon.png) をクリックして、シナリオを保存します。 シナリオは、Workfront Fusion のシナリオ領域に保存されます。
+1. **[!UICONTROL 保存]** アイコン ![&#x200B; 保存アイコン &#x200B;](assets/save-icon.png) をクリックして、シナリオを保存します。 シナリオは、Workfront Fusion のシナリオ領域に保存されます。
