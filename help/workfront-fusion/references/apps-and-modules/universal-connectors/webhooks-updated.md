@@ -56,9 +56,9 @@ Web フックは、イベントによってトリガーされる HTTP 呼び出�
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -120,7 +120,7 @@ Workfront Fusion は、受信ペイロードのデータ構造を認識するた
     </tbody> 
    </table>
 
-   ![ 新しいシナリオの設定 ](/help/workfront-fusion/references/apps-and-modules/assets/new-scenario-set-up-like-this-350x446.png)
+   ![&#x200B; 新しいシナリオの設定 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/new-scenario-set-up-like-this-350x446.png)
 
 1. 別のブラウザーのタブまたはウィンドウで、[!UICONTROL Webhooks] モジュールを使用してシナリオを開きます。
 1. Webhooks モジュールで、「**[!UICONTROL データ構造を再決定]**」をクリックします。
@@ -132,7 +132,7 @@ Workfront Fusion は、受信ペイロードのデータ構造を認識するた
 
    「[!UICONTROL 正常に決定されました]」というメッセージは、モジュールがデータ構造を正常に決定したことを意味します。
 
-   ![ 正常に決定されました ](/help/workfront-fusion/references/apps-and-modules/assets/successfully-determined-350x175.png)
+   ![&#x200B; 正常に決定されました &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/successfully-determined-350x175.png)
 
 1. 「**[!UICONTROL OK]**」をクリックして、データ構造を保存します。
 
@@ -241,9 +241,9 @@ Web フックのヘッダーにアクセスするには、web フックの設定
 >
 >以下の例は、`Headers[]` 配列から `authorization` ヘッダーの値を抽出する式を示しています。この式は、抽出された値と指定されたテキストを比較し、一致する場合に web フックのみを渡すフィルターで使用されます。
 >
->![ フィルターの設定 ](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-350x169.png)
+>![&#x200B; フィルターの設定 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-350x169.png)
 >
->指定されたキーを使用して配列の要素を取得する方法については、「配列をマッピングする」の [ 指定されたキーを使用して配列の要素をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md#map-an-arrays-element-with-a-given-key) を参照してください。
+>指定されたキーを使用して配列の要素を取得する方法については、「配列をマッピングする」の [&#x200B; 指定されたキーを使用して配列の要素をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md#map-an-arrays-element-with-a-given-key) を参照してください。
 
 ## Web フックへの応答
 
@@ -311,11 +311,11 @@ Web フックの応答をカスタマイズする場合は、web フックの応
 >&gt; </tbody> 
 >&gt;</table>
 >
->![ カスタムヘッダー ](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
+>![&#x200B; カスタムヘッダー &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
 >これにより、web ブラウザーに表示される HTML 応答が生成されます。
 >
->![HEML 反応 ](/help/workfront-fusion/references/apps-and-modules/assets/html-response-350x70.png)
+>![HEML 反応 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/html-response-350x70.png)
 
 ### リダイレクトの例
 
@@ -342,7 +342,7 @@ Web フックの応答をカスタマイズする場合は、web フックの応
 >&gt; </tbody> 
 >&gt;</table>
 >
->![Webhook 応答 ](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
+>![Webhook 応答 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 
 ## Webhook の無効化
 
@@ -360,6 +360,6 @@ Web フックの応答をカスタマイズする場合は、web フックの応
 
 [!UICONTROL Web フック]／[!UICONTROL カスタム web フック]モジュールに続くモジュールの設定でマッピングパネルに一部の項目が欠落している場合は、**[!UICONTROL Web フック]／[!UICONTROL カスタム web フック]**&#x200B;モジュールを選択して設定を開き、「**[!UICONTROL データ構造を再決定]**」をクリックします。
 
-![ データ構造の再定義 ](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
+![&#x200B; データ構造の再定義 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
 
 次に、この記事の [web フックのデータ構造の設定](#configure-the-webhook-s-data-structure)の節で説明されている手順に従います。

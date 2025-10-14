@@ -15,9 +15,9 @@ ht-degree: 70%
 
 Adobe Workfront Fusion のシナリオでは、[!DNL Bynder] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
-シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## アクセス要件
 
@@ -56,9 +56,9 @@ Adobe Workfront Fusion のシナリオでは、[!DNL Bynder] を使用するワ�
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -92,7 +92,7 @@ Bynder コネクタでは、以下を使用します。
 >Bynder は、認証コード/更新トークン付与タイプを使用します。 これは、Fusion Builder コネクタが使用する唯一の付与タイプです。
 
 * [Workfront Fusion からへ  [!DNL Bynder]  接続の作成](#create-a-connection-to-bynder-from-workfront-fusion)
-* [ [!DNL Bynder]  での[!UICONTROL クライアント ID] と [!UICONTROL クライアントシークレット]の生成（オプション）](#generate-a-client-id-and-client-secret-in-bynder-optional)
+* [&#x200B; [!DNL Bynder]  での[!UICONTROL クライアント ID] と [!UICONTROL クライアントシークレット]の生成（オプション）](#generate-a-client-id-and-client-secret-in-bynder-optional)
 
 ### Workfront Fusion から [!DNL Bynder] への接続の作成
 
@@ -102,7 +102,7 @@ Workfront Fusion から [!DNL Bynder] アカウントへの接続を、[!DNL Byn
 1. 接続する [!DNL Bynder] ドメインを選択します。
 1. （オプション）「**[!UICONTROL 詳細設定]**」を選択し、「[!UICONTROL クライアント ID]」および「[!UICONTROL クライアントシークレット]」を入力します。
 
-   クライアント ID とクライアントシークレットの生成手順については、[ [!DNL Bynder]  でのクライアント ID とクライアントシークレットの生成（オプション）](#generate-a-client-id-and-client-secret-in-bynder-optional) を参照してください。
+   クライアント ID とクライアントシークレットの生成手順については、[&#x200B; [!DNL Bynder]  でのクライアント ID とクライアントシークレットの生成（オプション）](#generate-a-client-id-and-client-secret-in-bynder-optional) を参照してください。
 
 1. [!UICONTROL ログイン]ウィンドウで、ユーザー名（メールアドレス）とパスワードを入力します。
 1. 「**[!UICONTROL 続行]**」をクリックし、接続を作成して、モジュールに戻ります。
@@ -126,9 +126,9 @@ Workfront Fusion から [!DNL Bynder] アカウントへの接続を、[!DNL Byn
 
 [!DNL Bynder] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Bynder]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [アクション](#actions)
 * [検索](#searches)
@@ -141,7 +141,7 @@ Workfront Fusion から [!DNL Bynder] アカウントへの接続を、[!DNL Byn
 * [[!UICONTROL カスタム API 呼び出し]](#custom-api-call)
 * [[!UICONTROL アセットのダウンロード]](#download-asset)
 * [[!UICONTROL アセットメタデータの読み取り]](#read-asset-metadata)
-* [アセットからの[!UICONTROL タグの削除] ](#remove-a-tag-from-assets)
+* [アセットからの[!UICONTROL タグの削除] &#x200B;](#remove-a-tag-from-assets)
 * [[!UICONTROL コレクションからアセットを削除]](#remove-assets-from-collection)
 * [[!UICONTROL アセットのメタデータの更新]](#update-asset-metadata)
 * [[!UICONTROL アセットのアップロード]](#upload-asset)

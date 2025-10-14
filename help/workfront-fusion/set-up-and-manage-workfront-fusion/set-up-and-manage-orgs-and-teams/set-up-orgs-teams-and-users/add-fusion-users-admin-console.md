@@ -62,7 +62,7 @@ ht-degree: 42%
 
 &#42;保有するプラン、ライセンスタイプ、アクセス権を確認するには、Workfront 管理者に問い合わせてください。
 
-&#42;&#42;Adobe Workfront Fusion ライセンスについては、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+&#42;&#42;Adobe Workfront Fusion ライセンスについては、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 
 
@@ -112,9 +112,9 @@ ht-degree: 42%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -154,7 +154,7 @@ Workfrontで [!DNL Admin Console] を使用する前に、コンソールに招�
 
    ユーザーはWorkfront Fusion で作成されます。
 
-1. （オプション）引き続き [Workfront Fusion でのユーザーのアクセスレベルを変更 ](#change-a-users-access-level-in-workfront-fusion) します。
+1. （オプション）引き続き [Workfront Fusion でのユーザーのアクセスレベルを変更 &#x200B;](#change-a-users-access-level-in-workfront-fusion) します。
 
 ## Workfront Fusion でのユーザーのアクセスレベルを変更
 
@@ -179,10 +179,10 @@ Workfrontで [!DNL Admin Console] を使用する前に、コンソールに招�
 
 メンバー、経理担当、アプリ開発者のロールは、Workfront Fusion 内で処理されます。
 
-手順については、[ ユーザーの役割の表示または編集 ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md) を参照してください。
+手順については、[&#x200B; ユーザーの役割の表示または編集 &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md) を参照してください。
 
 ## [!DNL Adobe Admin Console] 内の既存のユーザーをWorkfront Fusion に割り当てる
 
 Fusion で既存のユーザーをチームに追加できます。 これは Fusion 内で処理されます。
 
-手順については、[ チームにユーザーを追加する ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md) を参照してください。
+手順については、[&#x200B; チームにユーザーを追加する &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md) を参照してください。

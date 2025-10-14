@@ -15,9 +15,9 @@ ht-degree: 49%
 
 Adobe Workfront Fusion のシナリオでは、Microsoft SharePoint Onlineを使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
-シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## アクセス要件
 
@@ -56,9 +56,9 @@ Adobe Workfront Fusion のシナリオでは、Microsoft SharePoint Onlineを使
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -144,7 +144,7 @@ SharePoint コネクタでは、以下を使用します。
 >
 >証明書認証を使用するには、まずMicrosoft Entra でアプリを作成し、そこに証明書をアップロードする必要があります。
 >
->手順については、Microsoft ドキュメントの [Microsoft Entra 証明書ベースの認証の認証機関を設定する方法 ](https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-configure-certificate-authorities) を参照してください。
+>手順については、Microsoft ドキュメントの [Microsoft Entra 証明書ベースの認証の認証機関を設定する方法 &#x200B;](https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-configure-certificate-authorities) を参照してください。
 
 1. 任意のSharePoint モジュールで、「接続」フィールドの近くにある **[!UICONTROL 追加]** をクリックして、**[!UICONTROL 接続を作成]** ボックスを開きます。
 1. 「**[!UICONTROL 詳細設定を表示]**」をクリックします。
@@ -205,9 +205,9 @@ SharePoint コネクタでは、以下を使用します。
 
 Workfront Fusion でMicrosoft SharePoint Online モジュールを設定する場合、以下に示すフィールドが表示されます。 これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加のMicrosoft SharePoint Online フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [ドライブ項目](#drive-item)
 * [項目](#item)

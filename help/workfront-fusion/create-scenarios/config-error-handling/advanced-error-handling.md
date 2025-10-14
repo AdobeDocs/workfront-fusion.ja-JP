@@ -52,9 +52,9 @@ ht-degree: 12%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -69,7 +69,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 フィルターを使用して、エラーハンドラールートで処理されるエラーを制御できます。これにより、特定のタイプのエラーのみを処理できます。エラーがフィルターを通過しない場合は、指定されたモジュールに対してエラーハンドラールートが定義されていないものとして扱われます。
 
-これらのフィルターは、Fusion の他のフィルターと同様に設定されます。 手順については、[ シナリオへのフィルターの追加 ](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md) を参照してください。
+これらのフィルターは、Fusion の他のフィルターと同様に設定されます。 手順については、[&#x200B; シナリオへのフィルターの追加 &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md) を参照してください。
 
 ### ルーターを追加し、その後にフィルターを追加して、エラーハンドラーを削除します
 
@@ -77,9 +77,9 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 例えば、エラーが DataError の場合に実行する 1 つのルートを設定するには、マッピングされたエラータイプが DataError の場合にデータを通過させるフィルターを設定できます。
 
-![DataError フィルター ](assets/filter-dataerror.png)
+![DataError フィルター &#x200B;](assets/filter-dataerror.png)
 
-Fusion が様々なデータタイプを評価して処理する方法について詳しくは、[ エラータイプ ](/help/workfront-fusion/references/errors/error-processing.md) を参照してください。
+Fusion が様々なデータタイプを評価して処理する方法について詳しくは、[&#x200B; エラータイプ &#x200B;](/help/workfront-fusion/references/errors/error-processing.md) を参照してください。
 
 ### 例：フィルターを使用したエラー処理
 
@@ -89,11 +89,11 @@ Fusion が様々なデータタイプを評価して処理する方法につい�
 
 Dropbox/フォルダーモジュールを作成を使用したときに、同じ名前のフォルダーが既に存在する場合は、モジュールが DataError をスローします。
 
-![Dropboxのエラー ](assets/dropbox.png)
+![Dropboxのエラー &#x200B;](assets/dropbox.png)
 
 完全なシナリオは次のように機能します。
 
-![Dropbox シナリオ ](assets/dropbox-scenario.png)
+![Dropbox シナリオ &#x200B;](assets/dropbox-scenario.png)
 
 1. ツール/変数を設定モジュールにフォルダー名が含まれています。
 1. 「HTTP/ファイルを取得」モジュールは、フォルダーにアップロードする必要があるファイルを取得します
@@ -111,7 +111,7 @@ DataError ルートの詳細を以下に示します。
 
 ファイルのアップロードなど、後続のモジュールで既存のフォルダーを使用するには、モジュールにエラーハンドラールートを追加し、次に示す再開ディレクティブモジュールにマッピングするフォルダーパスを取得する必要があります。
 
-![ エラーハンドラールートの追加 ](assets/add-error-handler-route.png)
+![&#x200B; エラーハンドラールートの追加 &#x200B;](assets/add-error-handler-route.png)
 
 最初のルートのフィルターは、同じ名前のフォルダーが既に存在する場合に表示される特定のエラー（DataError）のみを処理するように設定されています。
 
@@ -123,7 +123,7 @@ Dropbox/フォルダーモジュール内のすべてのファイルをリスト
 
 次に、再開ディレクティブは、失敗したモジュールの出力としてフォルダーパスを提供します。 フォルダー ID は、「ファイルをアップロード」モジュールでは必要ないので、空白のままです。
 
-![ フロー制御 ](assets/flow-control.png)
+![&#x200B; フロー制御 &#x200B;](assets/flow-control.png)
 
 >[!ENDSHADEBOX]
 
@@ -137,7 +137,7 @@ Dropbox/フォルダーモジュール内のすべてのファイルをリスト
 
 フィルターを含むネストされたエラーハンドラールート：
 
-![ ネストされたエラー処理ルート ](assets/nested-error-handling-route.png)
+![&#x200B; ネストされたエラー処理ルート &#x200B;](assets/nested-error-handling-route.png)
 
 このシナリオでは、2 つ目のエラーハンドラールートが 1 つ目のエラーハンドラールートの下にネストされています。
 

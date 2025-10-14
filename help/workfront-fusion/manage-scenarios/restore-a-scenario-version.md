@@ -61,9 +61,9 @@ ht-degree: 21%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -71,14 +71,14 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ## シナリオのバージョン履歴の表示と管理
 
-1. 左側のパネルで **[!UICONTROL シナリオ]**![ シナリオアイコン ](assets/scenarios-icon.png) をクリックし、シナリオをクリックして開きます。
-1. 画面下部の [!UICONTROL &#x200B; その他 &#x200B;] アイコン ![ その他のアイコン ](assets/more-icon.png) をクリックしてから、**[!UICONTROL 以前のバージョン]** をクリックします。
+1. 左側のパネルで **[!UICONTROL シナリオ]**![&#x200B; シナリオアイコン &#x200B;](assets/scenarios-icon.png) をクリックし、シナリオをクリックして開きます。
+1. 画面下部の [!UICONTROL &#x200B; その他 &#x200B;] アイコン ![&#x200B; その他のアイコン &#x200B;](assets/more-icon.png) をクリックしてから、**[!UICONTROL 以前のバージョン]** をクリックします。
 
    以前のバージョンのリストが表示されます。
-1. （オプション）バージョンの名前を変更するには、そのバージョンの行で「詳細」メニュー ![ 「詳細」メニュー ](assets/more-icon-vertical.png) をクリックし、「**編集**」を選択して、フィールドに名前を入力します。 **保存** をクリックして、新しい名前を保存します。
+1. （オプション）バージョンの名前を変更するには、そのバージョンの行で「詳細」メニュー ![&#x200B; 「詳細」メニュー &#x200B;](assets/more-icon-vertical.png) をクリックし、「**編集**」を選択して、フィールドに名前を入力します。 **保存** をクリックして、新しい名前を保存します。
 
    このバージョンに対して行われた変更を説明する名前を付けることをお勧めします。
-1. （任意）以前のバージョンのブループリントをダウンロードするには、そのバージョンの行の詳細メニュー ![ 詳細メニュー ](assets/more-icon-vertical.png) をクリックし、「**ダウンロード**」を選択します。
+1. （任意）以前のバージョンのブループリントをダウンロードするには、そのバージョンの行の詳細メニュー ![&#x200B; 詳細メニュー &#x200B;](assets/more-icon-vertical.png) をクリックし、「**ダウンロード**」を選択します。
 1. （オプション）バージョンを復元するには、そのバージョンの行にある **復元** をクリックします
 
 

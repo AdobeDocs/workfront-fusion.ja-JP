@@ -52,9 +52,9 @@ ht-degree: 66%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -104,9 +104,9 @@ AWS S3 コネクタでは、以下を使用します。
 
 [!DNL AWS S3] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL AWS S3]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [アクション](#actions)
 * [検索](#searches)
@@ -172,7 +172,7 @@ AWS S3 コネクタでは、以下を使用します。
 
 このアクションモジュールは、AWS S3 API に対してカスタム呼び出しを行います。
 
-[!DNL Amazon S3] API について詳しくは、「[[!DNL Amazon S3] [!UICONTROL REST] API の概要 ](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html)」を参照してください。
+[!DNL Amazon S3] API について詳しくは、「[[!DNL Amazon S3] [!UICONTROL REST] API の概要 &#x200B;](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html)」を参照してください。
 
 <table style="table-layout:auto">
  <col> 

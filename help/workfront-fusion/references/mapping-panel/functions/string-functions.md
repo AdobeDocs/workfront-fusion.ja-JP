@@ -121,11 +121,11 @@ ht-degree: 98%
 
 **例：**
 
-![ 変数値 ](assets/variable-value-350x63.png)
+![&#x200B; 変数値 &#x200B;](assets/variable-value-350x63.png)
 
 戻り値：電話番号 `+420777111222`
 
-![ 変数のリターン ](assets/variable-value---2-350x55.png)
+![&#x200B; 変数のリターン &#x200B;](assets/variable-value---2-350x55.png)
 
 戻り値：電話番号：`+420777111222`
 

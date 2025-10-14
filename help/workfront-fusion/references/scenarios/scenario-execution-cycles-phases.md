@@ -28,7 +28,7 @@ ht-degree: 22%
    * コミットまたはロールバック
 * 最終化
 
-小規模では、各モジュールもこれらのフェーズに従います。 モジュールフェーズに関する情報は、処理されたバンドルの情報で、シナリオの実行後に各モジュールの右上に表示される番号付きバブル内にあります。 処理されたバンドルの情報を見つける方法について詳しくは、「シナリオ実行フロー」の記事の [ 処理されたバンドルの情報 ](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md#information-about-processed-bundles) を参照してください。
+小規模では、各モジュールもこれらのフェーズに従います。 モジュールフェーズに関する情報は、処理されたバンドルの情報で、シナリオの実行後に各モジュールの右上に表示される番号付きバブル内にあります。 処理されたバンドルの情報を見つける方法について詳しくは、「シナリオ実行フロー」の記事の [&#x200B; 処理されたバンドルの情報 &#x200B;](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md#information-about-processed-bundles) を参照してください。
 
 大規模なシナリオフェーズに関する情報は、実行の詳細で確認できます。
 
@@ -67,7 +67,7 @@ ht-degree: 22%
 >
 >ロールバック（トランザクション）をサポートするすべてのWorkfront Fusion モジュールは、ACID タグでマークされます。
 >
->![ 酸性モジュール ](assets/acid-modules.png)
+>![&#x200B; 酸性モジュール &#x200B;](assets/acid-modules.png)
 >
 >このタグでマークされていないモジュールは、他のモジュールでエラーが発生した場合でも、初期状態に戻すことはできません。非 ACID モジュールの典型的な例は、[!UICONTROL メール]／[!UICONTROL メールの送信]アクションです。メールの送信後は、送信を取り消すことはできません。
 
@@ -77,4 +77,4 @@ ht-degree: 22%
 
 ## リソース
 
-詳しくは、[ シナリオ設定の指定 ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md) を参照してください。
+詳しくは、[&#x200B; シナリオ設定の指定 &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md) を参照してください。

@@ -54,9 +54,9 @@ Adobe Workfront Fusion では現在、`retry` のエラー処理ディレクテ�
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -64,7 +64,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 Workfront Fusion は現在、`retry` のエラー処理ディレクティブを提供していません。 次のいずれかの回避策を使用して、再試行機能を模倣します。
 
-手順については、[ エラー処理のディレクティブ ](/help/workfront-fusion/references/errors/directives-for-error-handling.md) を参照してください。
+手順については、[&#x200B; エラー処理のディレクティブ &#x200B;](/help/workfront-fusion/references/errors/directives-for-error-handling.md) を参照してください。
 
 * [一時停止ディレクティブの使用](#use-the-break-directive)
 * [リピーターの使用モジュール](#use-the-repeater-module)
@@ -73,9 +73,9 @@ Workfront Fusion は現在、`retry` のエラー処理ディレクティブを�
 
 一時停止ディレクティブが実行されると、シナリオの実行状態が不完全な実行のキューに保存されます。 この場合、不完全な実行を手動で解決できます。
 
-手順については、[Break ディレクティブで処理されるエラーの解決 ](/help/workfront-fusion/create-scenarios/config-error-handling/resolve-error-from-break-directive.md) を参照してください
+手順については、[Break ディレクティブで処理されるエラーの解決 &#x200B;](/help/workfront-fusion/create-scenarios/config-error-handling/resolve-error-from-break-directive.md) を参照してください
 
-不完全な実行の解決手順については、[ 不完全な実行の表示と解決 ](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md) を参照してください。
+不完全な実行の解決手順については、[&#x200B; 不完全な実行の表示と解決 &#x200B;](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md) を参照してください。
 
 #### 欠点
 
@@ -84,7 +84,7 @@ Workfront Fusion は現在、`retry` のエラー処理ディレクティブを�
 
   不完全な実行フォルダーに保存された実行が正常に解決されるまでシナリオが再び実行されないようにするには、「シナリオ設定 [!UICONTROL &#x200B; の「[!UICONTROL &#x200B; 順次処理 &#x200B;]」オプションを有効に &#x200B;] ます。
 
-不完全な実行について詳しくは、[ 不完全な実行の表示と解決 ](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md) を参照してください。
+不完全な実行について詳しくは、[&#x200B; 不完全な実行の表示と解決 &#x200B;](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md) を参照してください。
 
 ### リピーターの使用モジュール
 
@@ -95,16 +95,16 @@ Workfront Fusion は現在、`retry` のエラー処理ディレクティブを�
 1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. 回避策を追加するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
-1. **フロー制御** アイコン ![ フロー制御 ](assets/flow-control-icon.png) をクリックし、「**リピータ**」を選択します。
+1. **フロー制御** アイコン ![&#x200B; フロー制御 &#x200B;](assets/flow-control-icon.png) をクリックし、「**リピータ**」を選択します。
 1. リピーターモジュールで、「**[!UICONTROL 繰り返し]**」フィールドを、シナリオを再試行する最大回数に設定します。
 1. 失敗する可能性があるモジュールを **[!UICONTROL リピーター]** モジュールの後に取り付けます。
 1. 失敗する可能性があるモジュールにエラーハンドラールートを添付します。
 
-   手順については、「[ エラー処理の追加 ](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md) を参照してください。
+   手順については、「[&#x200B; エラー処理の追加 &#x200B;](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md) を参照してください。
 1. **[!UICONTROL ツール &#x200B;]/[!UICONTROL &#x200B; スリープ]** モジュールをエラーハンドラールートに追加し、その「**[!UICONTROL 遅延]**」フィールドを再試行間の秒数に設定します。
 
 1. **[!UICONTROL 無視]** ディレクティブは **[!UICONTROL ツール &#x200B;]/[!UICONTROL &#x200B; スリープ]** モジュールの後に追加します。
-1. [ デフォルトルートの設定 ](#configure-the-default-route) を続行します。
+1. [&#x200B; デフォルトルートの設定 &#x200B;](#configure-the-default-route) を続行します。
 
 #### デフォルトルートの設定
 
@@ -124,13 +124,13 @@ Workfront Fusion は現在、`retry` のエラー処理ディレクティブを�
 
 このサンプルシナリオでは、[!UICONTROL HTTP]/[!UICONTROL &#x200B; リクエストを行う &#x200B;] モジュールは、失敗する可能性のあるモジュールを表しています。
 
-![HTTP リクエストの作成 ](assets/http-make-request.png)
+![HTTP リクエストの作成 &#x200B;](assets/http-make-request.png)
 
 >[!ENDSHADEBOX]
 
 失敗する可能性があるモジュールの結果が複雑すぎて単純な変数に格納できない場合は、データストアを使用して結果を格納および取得できます。 データストアにはレコードが 1 つだけ含まれます。レコードのキーは、例えば `Result` などです。
 
-データストアについて詳しくは、[ データストア ](/help/workfront-fusion/create-scenarios/map-data/data-stores.md) を参照してください。
+データストアについて詳しくは、[&#x200B; データストア &#x200B;](/help/workfront-fusion/create-scenarios/map-data/data-stores.md) を参照してください。
 
 #### 欠点
 
@@ -139,5 +139,5 @@ Workfront Fusion は現在、`retry` のエラー処理ディレクティブを�
 
 ## リソース
 
-* リピータモジュールとブレイクディレクティブについて詳しくは、[ フロー制御 ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/flow-control.md) を参照してください。
-* Get 変数モジュールについて詳しくは、「[ ツール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)」を参照してください。
+* リピータモジュールとブレイクディレクティブについて詳しくは、[&#x200B; フロー制御 &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/flow-control.md) を参照してください。
+* Get 変数モジュールについて詳しくは、「[&#x200B; ツール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)」を参照してください。

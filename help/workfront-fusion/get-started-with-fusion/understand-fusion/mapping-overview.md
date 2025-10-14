@@ -32,21 +32,21 @@ ht-degree: 13%
 
 単一項目
 
-![ 単一項目をマッピング ](assets/map-single.png)
+![&#x200B; 単一項目をマッピング &#x200B;](assets/map-single.png)
 
 テキストを含む複数の項目
 
-![ 複数の項目をマッピング ](assets/map-multiple-with-text.png)
+![&#x200B; 複数の項目をマッピング &#x200B;](assets/map-multiple-with-text.png)
 
 複数の項目とテキストを持つ関数
 
-![ テキストを使用して数式をマッピング ](assets/map-formula-with-text.png)
+![&#x200B; テキストを使用して数式をマッピング &#x200B;](assets/map-formula-with-text.png)
 
 
 >[!ENDSHADEBOX]
 
 
-マッピングの手順については、[ データをマッピング：記事インデックス ](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md) の記事を参照してください。
+マッピングの手順については、[&#x200B; データをマッピング：記事インデックス &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md) の記事を参照してください。
 
 >[!NOTE]
 >
@@ -56,16 +56,16 @@ ht-degree: 13%
 
 データをマッピングできるフィールドをクリックすると、マッピングパネルが開きます。
 
-最初のタブ ![ 他のモジュールからマッピング ](assets/toolbar-icon-functions-you-map-from-other-modules.png) には、他のモジュールからマッピングできる項目が表示されます。
+最初のタブ ![&#x200B; 他のモジュールからマッピング &#x200B;](assets/toolbar-icon-functions-you-map-from-other-modules.png) には、他のモジュールからマッピングできる項目が表示されます。
 
 その他のタブには、数式の作成に使用できる関数、演算子、およびキーワードが含まれます。 これらは、処理するデータのタイプに基づいて異なるタブに並べ替えられます。
 
-![ マッピングパネル ](assets/mapping-panel-blank.png)
+![&#x200B; マッピングパネル &#x200B;](assets/mapping-panel-blank.png)
 
 
-関数タブについて詳しくは、[ 関数の概要 ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md) を参照してください。
+関数タブについて詳しくは、[&#x200B; 関数の概要 &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md) を参照してください。
 
-関数を使用した項目のマッピングについて詳しくは、[ 関数を使用した項目のマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md) を参照してください。
+関数を使用した項目のマッピングについて詳しくは、[&#x200B; 関数を使用した項目のマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md) を参照してください。
 
 ## コレクション
 
@@ -73,15 +73,15 @@ ht-degree: 13%
 
 コレクションタイプのバンドルは、モジュール出力のバンドルラベルの横にの `(Collection)` 表示されます。
 
-![ コレクション ](assets/collection.png)
+![&#x200B; コレクション &#x200B;](assets/collection.png)
 
 ほとんどの場合、コレクション全体を表す項目をマッピングする代わりに、コレクションの要素をマッピングします。
 
 マッピングパネルでコレクションの要素を見つけるには、コレクションの横にある矢印をクリックします。
 
-![ コレクションドロップダウン ](assets/collection-dropdown.png)
+![&#x200B; コレクションドロップダウン &#x200B;](assets/collection-dropdown.png)
 
-コレクションの詳細については、「[ アイテム データ タイプ ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)」を参照してください。
+コレクションの詳細については、「[&#x200B; アイテム データ タイプ &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)」を参照してください。
 
 コレクションのマッピング手順については、「あるモジュールから別のモジュールへの情報のマッピング [&#128279;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md#map-an-item) の  項目のマッピング」を参照してください。
 
@@ -93,6 +93,6 @@ ht-degree: 13%
 
 マッピングパネルでは、配列は正方形のブレスレットで表示されます。 配列タイプの項目は、項目のラベルの最後にある角括弧で識別できます。マッピングパネルで特定の配列要素を見つけるには、配列の横にある矢印をクリックします。
 
-![ 配列 ](assets/array.png)
+![&#x200B; 配列 &#x200B;](assets/array.png)
 
-配列および配列要素のマッピングについて詳しくは、[ 配列および配列要素のマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md) を参照してください。
+配列および配列要素のマッピングについて詳しくは、[&#x200B; 配列および配列要素のマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md) を参照してください。

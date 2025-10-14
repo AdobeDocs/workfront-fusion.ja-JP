@@ -61,9 +61,9 @@ ht-degree: 16%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -74,6 +74,6 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
    ユーザーリストが開きます。
 
-1. （オプション）ユーザーリストを任意の列で並べ替えるには、その列の **並べ替え** アイコン ![ 並べ替えアイコン ](assets/sort-icon.png) をクリックします。
-1. （オプション）列を表示または非表示にするには、リストの右上隅付近にある **列** アイコン ![ 列アイコン ](assets/columns-icon.png) をクリックし、列を有効または無効にします。
+1. （オプション）ユーザーリストを任意の列で並べ替えるには、その列の **並べ替え** アイコン ![&#x200B; 並べ替えアイコン &#x200B;](assets/sort-icon.png) をクリックします。
+1. （オプション）列を表示または非表示にするには、リストの右上隅付近にある **列** アイコン ![&#x200B; 列アイコン &#x200B;](assets/columns-icon.png) をクリックし、列を有効または無効にします。
 1. （オプション）リストをフィルタリングするには、検索バーへの入力を開始します。 検索語句を含んだチームのみを含めるようにリストフィルターを設定できます。

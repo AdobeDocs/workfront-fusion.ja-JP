@@ -51,11 +51,11 @@ Adobe Workfront Fusion は、次の 5 種類のモジュールを区別します
 
 * **フィールドの内容を消去する**。この操作は、フィールドの内容が（`erase` と混同しないように） `empty` キーワードに評価されたときに発生します。
 
-  ![Erase キーワード ](assets/erase-content-of-field.png)
+  ![Erase キーワード &#x200B;](assets/erase-content-of-field.png)
 
 * **フィールドの内容を変更しない**。この操作は、フィールドが空白のままになっているか、フィールドの内容が空白と評価される（JSON の null で表される）場合に実行されます。
 
-  ![ 空のバンドル ](assets/leave-content-field-unchanged.png)
+  ![&#x200B; 空のバンドル &#x200B;](assets/leave-content-field-unchanged.png)
 
 * **フィールドの内容を置き換える**。この操作は、上記の 2 つ以外のすべての場合に実行されます。
 
@@ -64,7 +64,7 @@ Adobe Workfront Fusion は、次の 5 種類のモジュールを区別します
 >* `erase` キーワードがマッピングパネルに表示されない場合、モジュールが更新モジュールでないか、アプリの最新の仕様に更新されていません。
 >* `Empty` はフィールドの内容を変更しません。 フィールドを消去する必要がある場合は、次の数式を使用できます。
 >
->   ![ 空の場合 ](assets/formula-ifempty-name-erase.png)
+>   ![&#x200B; 空の場合 &#x200B;](assets/formula-ifempty-name-erase.png)
 >
 >* コンテンツが空と評価された場合にフィールドを変更しないままにしておくことは、現在サポートされていません。
 
@@ -100,11 +100,11 @@ Workfront Fusion では、ポーリングトリガーとインスタントトリ
 
 ポーリングトリガーは、前のシナリオの実行以降に変更がない場合でも、指定されたサービスを定期的にポーリングします。 ポーリングトリガーを含むシナリオを、一定の間隔で実行するようにスケジュールすることをお勧めします。トリガーの設定に一致する変更がある場合、トリガーは変更に関する情報を含むバンドルを返します。 設定に一致する変更がない場合、トリガーはバンドルを出力しません。
 
-シナリオのスケジュールを設定する手順については、[ シナリオのスケジュール設定 ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md) を参照してください。
+シナリオのスケジュールを設定する手順については、[&#x200B; シナリオのスケジュール設定 &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md) を参照してください。
 
 ポーリングトリガーを使用すると、トリガーを保存した後やトリガーを変更した後に自動的に表示されるパネルを介して出力される最初のバンドルを選択できます。 この選択は、モジュールの最初の実行にのみ影響します。 モジュールが 1 回実行された後の後続の実行では、最後の実行後に行われた変更のみが監視されます。
 
-詳しくは、[トリガーモジュールの開始位置の選択 ](/help/workfront-fusion/create-scenarios/add-modules/choose-where-trigger-module-starts.md) を参照してください。
+詳しくは、[トリガーモジュールの開始位置の選択 &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/choose-where-trigger-module-starts.md) を参照してください。
 
 >[!BEGINSHADEBOX]
 
@@ -120,9 +120,9 @@ Workfront Fusion では、ポーリングトリガーとインスタントトリ
 
 インスタントトリガーを使用すると、サービスは変更内容を発生後すぐにWorkfront Fusion に通知できます。 インスタントトリガーを含むシナリオをすぐに実行するようにスケジュールすることをお勧めします。
 
-手順については、[ シナリオのスケジュール設定 ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md) を参照してください。
+手順については、[&#x200B; シナリオのスケジュール設定 &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md) を参照してください。
 
-受信データがインスタントトリガーでどのように処理されるかについて詳しくは、[ インスタントトリガー（Webhook） ](/help/workfront-fusion/references/modules/webhooks-reference.md) を参照してください。
+受信データがインスタントトリガーでどのように処理されるかについて詳しくは、[&#x200B; インスタントトリガー（Webhook） &#x200B;](/help/workfront-fusion/references/modules/webhooks-reference.md) を参照してください。
 
 >[!BEGINSHADEBOX]
 
@@ -153,7 +153,7 @@ Workfront Fusion では、ポーリングトリガーとインスタントトリ
 
 >[!ENDSHADEBOX]
 
-詳しくは、[ アグリゲータモジュール ](/help/workfront-fusion/references/modules/aggregator-module.md) を参照してください。
+詳しくは、[&#x200B; アグリゲータモジュール &#x200B;](/help/workfront-fusion/references/modules/aggregator-module.md) を参照してください。
 
 ## イテレータ
 
@@ -173,4 +173,4 @@ Workfront Fusion では、ポーリングトリガーとインスタントトリ
 
 >[!ENDSHADEBOX]
 
-詳しくは、[Iterator モジュール ](/help/workfront-fusion/references/modules/iterator-module.md) および [ 配列のマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md) を参照してください。
+詳しくは、[Iterator モジュール &#x200B;](/help/workfront-fusion/references/modules/iterator-module.md) および [&#x200B; 配列のマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md) を参照してください。

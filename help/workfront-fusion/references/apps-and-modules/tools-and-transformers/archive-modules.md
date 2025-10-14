@@ -15,15 +15,15 @@ ht-degree: 73%
 
 Adobe Workfront Fusion シナリオでは、圧縮ファイルなどのアーカイブをシナリオで使用して、自動化や統合で使用できます。
 
-シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。 モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。 モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## [!UICONTROL アーカイブ]モジュールとそのフィールド
 
 [!UICONTROL &#x200B; アーカイブ &#x200B;] モジュールを設定すると、Workfront Fusion は以下に示すフィールドを表示します。 これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!UICONTROL アーカイブ]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [アクション](#actions)
 * [アグリゲーター](#aggregators)
@@ -52,7 +52,7 @@ Adobe Workfront Fusion シナリオでは、圧縮ファイルなどのアーカ
 
 **例：**&#x200B;定義された [!DNL Dropbox] フォルダー（アーカイブなど）から ZIP ファイルを取得し、[!UICONTROL アーカイブ]モジュールを使用して抽出し、[!UICONTROL メール]または [!DNL Gmail] モジュールを使用して、抽出したファイルを目的のメールアドレスに添付ファイルとして送信します。
 
-![Dropboxの例 ](/help/workfront-fusion/references/apps-and-modules/assets/example-dropbox-350x134.png)
+![Dropboxの例 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/example-dropbox-350x134.png)
 
 >[!ENDSHADEBOX]
 
@@ -103,7 +103,7 @@ Adobe Workfront Fusion シナリオでは、圧縮ファイルなどのアーカ
 
 **例：**&#x200B;[!DNL Gmail]／[!UICONTROL メールを監視]モジュールを使用して受信メールを見ます。メールを受け取ると、添付ファイルは個々のバンドルに反復され、[!DNL ZIP] ファイルにアーカイブされて、定義された Dropbox フォルダーに保存されます。
 
-![Gmail の例 ](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
+![Gmail の例 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
 
 >[!ENDSHADEBOX]
 

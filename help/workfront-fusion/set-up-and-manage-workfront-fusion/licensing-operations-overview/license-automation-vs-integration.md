@@ -21,7 +21,7 @@ Workfront Fusion には、新しいオペレーションベースのモデルと
 
 お客様の組織がWorkfront Ultimate プランを持っている場合、お客様の Fusion インスタンスはお客様のプランに含まれ、1 か月あたりの Fusion 操作の数に制限はありません。 Workfront Primeまたは Select プランをお持ちの場合、Fusion は購入でき、価格は 1 か月に実施した作業回数に基づきます。
 
-新しいライセンスモデルで 1 つの操作としてカウントされるものについて詳しくは、[ 操作 ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md) を参照してください。
+新しいライセンスモデルで 1 つの操作としてカウントされるものについて詳しくは、[&#x200B; 操作 &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md) を参照してください。
 
 ## コネクタベースのライセンスモデル（従来）
 
@@ -74,7 +74,7 @@ Workfront Fusion for Work Automation ライセンスを使用すると、次に�
 1. オブジェクトの割り当て先を含む、フィールドが関連付けられているオブジェクトに関する情報を取得
 1. オブジェクトが割り当てられているユーザーに対して、フィールドの変更に関する通知を送信
 
-![ 自動処理の例 ](assets/fusion-template-example.png)
+![&#x200B; 自動処理の例 &#x200B;](assets/fusion-template-example.png)
 
 ### Workfront Fusion for Work Automation and Integration
 
@@ -94,7 +94,7 @@ Workfront Fusion for Work Automation and Integration ライセンスの利点は
 
 #### Workfront Fusion で作業自動化および統合用に使用可能なコネクタとモジュール
 
-使用可能な専用コネクタのリストについては、[Fusion アプリケーションとそのモジュールのリファレンス：記事インデックス ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md) を参照してください。
+使用可能な専用コネクタのリストについては、[Fusion アプリケーションとそのモジュールのリファレンス：記事インデックス &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md) を参照してください。
 
 >[!IMPORTANT]
 >
@@ -109,4 +109,4 @@ Workfront Fusion for Work Automation and Integration ライセンスの利点は
 1. ユーザーが存在しない場合、Workfrontにユーザーを作成します
 1. Workfront ユーザー ID をスプレッドシートにアップロードします。
 
-![ 自動化シナリオの例 ](assets/fusion-integration-example.png)
+![&#x200B; 自動化シナリオの例 &#x200B;](assets/fusion-integration-example.png)

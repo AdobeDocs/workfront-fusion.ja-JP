@@ -15,7 +15,7 @@ ht-degree: 42%
 
 シナリオは、アクティブ状態または非アクティブ状態で使用できます。
 
-* [ シナリオのスケジュール設定 ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md) で説明されているように、アクティブなシナリオは、定義されたスケジュールに従って定期的に実行されます。
+* [&#x200B; シナリオのスケジュール設定 &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md) で説明されているように、アクティブなシナリオは、定義されたスケジュールに従って定期的に実行されます。
 
   これは、シナリオの機能を自動化する場合に役立ちます。
 
@@ -73,9 +73,9 @@ ht-degree: 42%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -83,17 +83,17 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 シナリオをアクティブ化する前に、シナリオを作成する必要があります。
 
-シナリオの作成手順については、[ シナリオ作成のワークフロー ](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md) を参照してください。
+シナリオの作成手順については、[&#x200B; シナリオ作成のワークフロー &#x200B;](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md) を参照してください。
 
 ## シナリオをアクティブ化または非アクティブ化するには、次の手順に従います。
 
-1. 左側のパネルで **[!UICONTROL シナリオ]**![ シナリオアイコン ](assets/scenarios-icon.png) をクリックし、シナリオをクリックして開きます。
+1. 左側のパネルで **[!UICONTROL シナリオ]**![&#x200B; シナリオアイコン &#x200B;](assets/scenarios-icon.png) をクリックし、シナリオをクリックして開きます。
 1. シナリオの詳細ページの右上隅にある「オン/オフ」切り替えスイッチをクリックします。
 
-   ![ 詳細アクティベーションの切り替え ](assets/active-toggle-details-page.png)
+   ![&#x200B; 詳細アクティベーションの切り替え &#x200B;](assets/active-toggle-details-page.png)
 
    または
 
    図をクリックしてシナリオエディターに移動し、ウィンドウの左下隅にある **[!UICONTROL オン/オフ]** トグルをクリックします。
 
-   ![ オンオフスイッチ ](assets/on-off-switch.jpg)
+   ![&#x200B; オンオフスイッチ &#x200B;](assets/on-off-switch.jpg)

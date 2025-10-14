@@ -55,7 +55,7 @@ ht-degree: 24%
 
 ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、Workfront 管理者にお問い合わせください。
 
-Adobe Workfront Fusion ライセンスについては、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについては、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -63,13 +63,13 @@ Adobe Workfront Fusion ライセンスについては、[Adobe Workfront Fusion 
 
 一般的な Iterator モジュールには、[!UICONTROL &#x200B; 配列 &#x200B;] フィールドという単一のフィールドがあります。 このフィールドには、別々のバンドルに変換または分割される配列が含まれています。
 
-![ イテレータの設定 ](assets/set-up-iterator.jpg)
+![&#x200B; イテレータの設定 &#x200B;](assets/set-up-iterator.jpg)
 
 その他のコネクタには、そのイテレータに固有のイテレータモジュールを含めることができます。 これらにはSource モジュールフィールドが含まれ、反復したい配列を出力するモジュールを選択できます。
 
-![ 特殊なイテレータ ](assets/specialized-iterators.jpg)
+![&#x200B; 特殊なイテレータ &#x200B;](assets/specialized-iterators.jpg)
 
-詳しくは、[ モジュールの設定 ](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md) を参照してください。
+詳しくは、[&#x200B; モジュールの設定 &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md) を参照してください。
 
 >[!BEGINSHADEBOX]
 
@@ -79,7 +79,7 @@ Adobe Workfront Fusion ライセンスについては、[Adobe Workfront Fusion 
 
   メールには、添付ファイルの配列を含めることができます。最初のモジュールの後の [!UICONTROL Iterator] モジュールを使用すると、シナリオで各添付ファイルを個別に処理できます。 [!UICONTROL イテレータ]モジュールは、添付ファイルの配列を 1 つのバンドルに分割します。1 つの添付ファイルを含む各バンドルは、選択した [!DNL Dropbox] フォルダーに一度に 1 つずつ保存されます。Iterator モジュールの [!UICONTROL &#x200B; 配列 &#x200B;] フィールドには、`Attachments` 配列を含める必要があります。
 
-  ![Attachments 配列 ](assets/attachments-array.jpg)
+  ![Attachments 配列 &#x200B;](assets/attachments-array.jpg)
 
 >[!ENDSHADEBOX]
 
@@ -90,7 +90,7 @@ Adobe Workfront Fusion ライセンスについては、[Adobe Workfront Fusion 
 
 [!UICONTROL Iterator] モジュールに配列の項目の構造に関する情報がない場合、[!UICONTROL Iterator] モジュールに続くモジュールのマッピングパネルには、[!UICONTROL Iterator] モジュールの下に 2 つの項目（`Total number of bundles` と `Bundle order position`）のみが表示されます。
 
-![ マッピングパネルが表示されない ](assets/mapping-panel-doesnt-display.png)
+![&#x200B; マッピングパネルが表示されない &#x200B;](assets/mapping-panel-doesnt-display.png)
 
 これは、各モジュールが、出力する項目に関する情報を提供する責任を負い、これらの項目が後続のモジュールのマッピングパネルで適切に表示されるようにするためです。 ただし、モジュールによっては、この情報を提供できないことがあります。 例えば、データ構造が見つからない [!UICONTROL JSON]/[!UICONTROL JSON を解析 &#x200B;] や [!UICONTROL Webhook]/[!UICONTROL &#x200B; カスタム Webhook] モジュールでは、情報が提供されません。
 
@@ -104,7 +104,7 @@ Adobe Workfront Fusion ライセンスについては、[Adobe Workfront Fusion 
 
 この JSON モジュールに接続された [!UICONTROL Iterator] モジュールは、モジュールの出力を [!UICONTROL Iterator] モジュールのセットアップパネルの配列フィールドにマップできません。
 
-![ イテレータモジュールを接続する ](assets/connect-iterator-module.png)
+![&#x200B; イテレータモジュールを接続する &#x200B;](assets/connect-iterator-module.png)
 
 これを解決するには：
 
@@ -120,8 +120,8 @@ Adobe Workfront Fusion ライセンスについては、[Adobe Workfront Fusion 
 
 [!UICONTROL JSON]/[!UICONTROL JSON を解析 &#x200B;] が実行されると、イテレータモジュールを含む後続のすべてのモジュールに出力に関する情報を提供できます。 イテレータの設定のマッピングパネルには、次の項目が表示されます。
 
-![ マッピングパネルに項目が表示される ](assets/mapping-panel-displays-items.png)
+![&#x200B; マッピングパネルに項目が表示される &#x200B;](assets/mapping-panel-displays-items.png)
 
 さらに、[!UICONTROL Iterator] モジュールの後に接続されたモジュールのマッピングパネルには、配列に含まれる項目が表示されます。
 
-![ 配列に含まれる項目 ](assets/items-contained-in-array.png)
+![&#x200B; 配列に含まれる項目 &#x200B;](assets/items-contained-in-array.png)

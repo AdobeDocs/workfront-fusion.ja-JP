@@ -54,9 +54,9 @@ Adobe Workfront Fusion のシナリオでは、[!DNL Google Sheets] を使用す
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -91,9 +91,9 @@ Google シートコネクタでは、以下を使用します。
 
 [!DNL Google Forms] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Google Sheets]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 ### トリガー
 
@@ -174,9 +174,9 @@ Google シートコネクタでは、以下を使用します。
 
 [!DNL Google Sheets] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Google Sheets]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 <table style="table-layout:auto"> 
  <col> 
@@ -747,7 +747,7 @@ select * where E is null
 1. シナリオを実行します。
 1. Google Sheet のメインメニューバーから&#x200B;**[!UICONTROL 挿入]**／**[!UICONTROL 図面]**... を選択します。
 
-1. [!UICONTROL &#x200B; 図面 &#x200B;] ウィンドウで、ウィンドウの上部付近にある **[!UICONTROL テキスト ボックス]** アイコン ![ テキスト ボックス ](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) をクリックします。
+1. [!UICONTROL &#x200B; 図面 &#x200B;] ウィンドウで、ウィンドウの上部付近にある **[!UICONTROL テキスト ボックス]** アイコン ![&#x200B; テキスト ボックス &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) をクリックします。
 1. ボタンをデザインし、右上隅にある「**[!UICONTROL 保存して閉じる]**」ボタンをクリックします。
 1. ボタンはワークシートに配置されます。 ボタンの右上隅にある 3 つの縦並びのドットをクリックします。
 1. メニューから「**[!UICONTROL スクリプトを割り当て].**」を選択します。
@@ -779,7 +779,7 @@ select * where E is null
 
 日付を理解 [!DNL Google Sheets] やすくするには、`formatDate` 関数を使用して書式設定します。 2 番目の引数として関数に渡される正しい形式は、スプレッドシートのロケール設定によって異なります。
 
-この関数の詳細については、「日付と時刻の関数」の「[[!UICONTROL formatDate] （date; format; [timezone]）」を参照し ](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md#formatdate-date-format-timezone) ください。
+この関数の詳細については、「日付と時刻の関数」の「[[!UICONTROL formatDate] （date; format; [timezone]）」を参照し &#x200B;](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md#formatdate-date-format-timezone) ください。
 
 正しい形式を判断するには、次の手順を実行します。
 
@@ -787,7 +787,7 @@ select * where E is null
 
 1. 適切なロケールを確認または設定したら、メインメニューから **[!UICONTROL 形式]** > **[!UICONTROL 数値]** を選択して、対応する日時の形式を決定します。 形式は、日付と時刻メニュー項目の横に表示されます。
 
-1. [!UICONTROL formatDate （） &#x200B;] 関数に渡すべき正しい形式を作成するには、[ 日付と時刻のフォーマット用トークン ](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md) のリストを参照してください。
+1. [!UICONTROL formatDate （） &#x200B;] 関数に渡すべき正しい形式を作成するには、[&#x200B; 日付と時刻のフォーマット用トークン &#x200B;](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md) のリストを参照してください。
 
 >[!BEGINSHADEBOX]
 
@@ -795,13 +795,13 @@ select * where E is null
 
 `MM/DD/YYYY HH:mm:ss` 形式の場合（米国ロケール用）:
 
-![ ロケールの時間式 ](/help/workfront-fusion/references/apps-and-modules/assets/locale-time-350x83.png)
+![&#x200B; ロケールの時間式 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/locale-time-350x83.png)
 
 >[!ENDSHADEBOX]
 
 ## [!DNL Google Sheets] 関数の活用
 
-Google Sheets の組み込み関数を使用するには、この関数を利用します。 詳細については、「関数を使用して項目をマップする」の「[ 使用  [!DNL Google Sheets]  関数 ](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md#use-google-sheets-functions)」を参照してください。
+Google Sheets の組み込み関数を使用するには、この関数を利用します。 詳細については、「関数を使用して項目をマップする」の「[&#x200B; 使用  [!DNL Google Sheets]  関数 &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md#use-google-sheets-functions)」を参照してください。
 
 ## [!DNL Google Sheets] が数値を日付に変更できないようにする
 

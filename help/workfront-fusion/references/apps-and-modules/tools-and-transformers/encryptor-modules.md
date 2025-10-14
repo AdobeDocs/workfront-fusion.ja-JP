@@ -52,9 +52,9 @@ Adobe Workfront Fusion[!UICONTROL Encryptor] モジュールを使用すると�
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -62,9 +62,9 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 PGP で暗号化および復号する場合、キーチェーンを使用し、秘密鍵または公開鍵（またはその両方）を作成する必要があります。
 
-公開鍵と秘密鍵について詳しくは、[Adobe Workfront Fusion 用語集 ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md) を参照してください。
+公開鍵と秘密鍵について詳しくは、[Adobe Workfront Fusion 用語集 &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md) を参照してください。
 
-キーの詳細については、[ キー ](/help/workfront-fusion/references/modules/keys.md) を参照してください。
+キーの詳細については、[&#x200B; キー &#x200B;](/help/workfront-fusion/references/modules/keys.md) を参照してください。
 
 ## [!UICONTROL 暗号化]モジュールとそのフィールド
 

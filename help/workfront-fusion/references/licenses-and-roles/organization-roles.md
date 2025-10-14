@@ -17,7 +17,7 @@ ht-degree: 84%
 
 >[!NOTE]
 >
->組織のロールは、Workfront Fusion のチームロールとは別のものです。 組織とチームの役割について詳しくは、[ 組織とチームの概要 ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) を参照してください。
+>組織のロールは、Workfront Fusion のチームロールとは別のものです。 組織とチームの役割について詳しくは、[&#x200B; 組織とチームの概要 &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) を参照してください。
 
 ## 組織の役割
 

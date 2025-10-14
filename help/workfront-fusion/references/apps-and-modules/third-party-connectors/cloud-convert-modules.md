@@ -80,7 +80,7 @@ CloudConvert コネクタは以下を使用します。
 1. 提供されたトークンをコピーし、安全な場所に保存します。
 1. Workfront Fusion で、シナリオの作成を開始し、[!DNL CloudConvert] モジュールの **[!UICONTROL 接続を作成]** ダイアログを開きます。
 
-   手順については、[Adobe Workfront Fusion でのシナリオの作成 ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) を参照してください。
+   手順については、[Adobe Workfront Fusion でのシナリオの作成 &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) を参照してください。
 
 1. 手順 5 で保存したトークンを入力し、続いて「**[!UICONTROL 続行]**」をクリックして接続を確立します。
 
@@ -88,9 +88,9 @@ CloudConvert コネクタは以下を使用します。
 
 [!DNL CloudConvert] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL CloudConvert]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [一般的なタスク](#common-tasks)
 * [業務](#jobs)
@@ -541,7 +541,7 @@ ZIP、RAR、7Z、TAR、TAR.GZ または TAR.BZ2 アーカイブに 1 つまた�
 >* 配列アグリゲーターを使用する場合（変換するファイルが異なる形式で多数ある場合）、タスクを追加ダイアログにある&#x200B;**[!UICONTROL 入力形式がわかりません]**&#x200B;のオプションを使用します。それ以外の場合は、エラーが返されます。
 >* 業務内のタスクをリンクしています（名前／入力、名前／入力、…）：
 >
->  ![ ジョブ間での名前のリンク ](/help/workfront-fusion/references/apps-and-modules/assets/linking-name-across-jobs-350x808.png)>
+>  ![&#x200B; ジョブ間での名前のリンク &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/linking-name-across-jobs-350x808.png)>
 
 ### タスク
 
@@ -745,13 +745,13 @@ URL：`/v2/tasks`
 
 メソッド：`GET`
 
-![API 入力例 ](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-input.png)
+![API 入力例 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-input.png)
 
 一致した検索結果は、[!UICONTROL バンドル]／[!UICONTROL 本文]／[!UICONTROL データ]下のモジュールの出力に表示されます。
 
 この例では、次の 6 つのタスクが返されました。
 
-![API 出力例 ](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-output.png)
+![API 出力例 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-output.png)
 
 ## トラブルシューティング {#troubleshooting}
 
@@ -817,6 +817,6 @@ URL：`/v2/tasks`
 >1. モジュールの設定を開きます。
 >1. 以下のようにモジュールを設定します。
 >
->   ![CloudConvert の例 ](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-mp4-example.png)
+>   ![CloudConvert の例 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-mp4-example.png)
 >
 >1. 必ず、「コンバージョンとエンジン固有のオプション」フィールドのすべての設定を含めてください。手順 5 の各設定で、手順 13 の対応するパラメーターとそれに対応する値を探します。

@@ -63,7 +63,7 @@ ht-degree: 14%
 
 この表の情報について詳しくは、[Workfront ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -77,14 +77,14 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 >
 >新しいチームを選択するには、ページ上部付近のチーム名の横にあるドロップダウン矢印をクリックします。 リストから新しいチームを選択します。
 
-1. 「接続」領域を開くには、左側のナビゲーションで「接続 ![ 接続アイコン ](assets/connections-icon.png)」をクリックします。
+1. 「接続」領域を開くには、左側のナビゲーションで「接続 ![&#x200B; 接続アイコン &#x200B;](assets/connections-icon.png)」をクリックします。
 1. （オプション）環境またはタイプを指定するには、環境とタイプのドロップダウンをクリックし、オプションを選択します。
 
    >[!NOTE]
    >
    >環境とタイプは、接続を識別する際の独自の便宜のためにのみ使用します。 接続の機能には影響しません。
 
-1. （オプション）接続に対してWorkfront Fusion に付与された権限を表示するには、その接続の表示アイコン ![ 接続権限を表示 ](assets/view-connection-permissions.png) をクリックします。
+1. （オプション）接続に対してWorkfront Fusion に付与された権限を表示するには、その接続の表示アイコン ![&#x200B; 接続権限を表示 &#x200B;](assets/view-connection-permissions.png) をクリックします。
 1. （オプション）接続の名前を変更または編集するには、名前をクリックして変更を加えます。
 1. （オプション）接続を再認証するには、その接続の行にある **再認証** をクリックします。
 1. （オプション）サービスへの接続が正常に動作していることを確認するには、その接続の行にある **確認** をクリックします。
@@ -96,5 +96,5 @@ Workfront Fusion は通常、特定のサービスに対するアクセス権を
 
 接続を更新するには：
 
-1. 「接続」領域を開くには、左側のナビゲーションで「接続 ![ 接続アイコン ](assets/connections-icon.png)」をクリックします。
+1. 「接続」領域を開くには、左側のナビゲーションで「接続 ![&#x200B; 接続アイコン &#x200B;](assets/connections-icon.png)」をクリックします。
 1. （オプション）接続を再認証するには、その接続の行にある **再認証** をクリックします。

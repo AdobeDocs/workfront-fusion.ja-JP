@@ -71,9 +71,9 @@ OAuth 2.0 認証について詳しくは、[OAuth 2.0 承認フレームワー�
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -225,13 +225,13 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
    </table>
 
 1. 「**[!UICONTROL 続行]**」をクリックして接続を保存し、モジュールに戻ります。
-1. [OAuth 2.0 リクエストを行うモジュールの設定 ](#configure-the-make-an-oauth-20-request-module) を続行します。
+1. [OAuth 2.0 リクエストを行うモジュールの設定 &#x200B;](#configure-the-make-an-oauth-20-request-module) を続行します。
 
 ### [!DNL Google]HTTP[!UICONTROL /]OAuth 2.0 リクエストモジュールで [!UICONTROL &#x200B; への接続を作成する手順 &#x200B;]
 
 次の例は、[!UICONTROL HTTP]／[!UICONTROL OAuth 2.0 実行]リクエストモジュールを使用して [!DNL Google] に接続する方法を示しています。
 
-1. 記事 [ カスタム OAuth クライアントを使用したへのAdobe Workfront Fusion の接続  [!DNL Google Services]  の説明に従って、プロジェクトの作成、OAuth 設定の指定、資格情報の生成が完了している ](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md) とを確認してください。
+1. 記事 [&#x200B; カスタム OAuth クライアントを使用したへのAdobe Workfront Fusion の接続  [!DNL Google Services]  の説明に従って、プロジェクトの作成、OAuth 設定の指定、資格情報の生成が完了している &#x200B;](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md) とを確認してください。
 1. [!UICONTROL HTTP]/[!UICONTROL OAuth 2.0 リクエストを作成 &#x200B;] モジュールを開きます。
 1. 任意のモジュールで、「接続」ボックスの横にある **[!UICONTROL 追加]** をクリックします。
 1. 次の値を入力します。
@@ -288,7 +288,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
    </table>
 
 1. 「**[!UICONTROL 続行]**」をクリックして接続設定を保存します。
-1. [OAuth 2.0 リクエストを行うモジュールの設定 ](#configure-the-make-an-oauth-20-request-module) を続行します。
+1. [OAuth 2.0 リクエストを行うモジュールの設定 &#x200B;](#configure-the-make-an-oauth-20-request-module) を続行します。
 
 ## 「OAuth 2.0 リクエストを行う」モジュールの設定
 
@@ -298,7 +298,7 @@ OAuth 2.0 接続を確立したら、必要に応じてモジュールの設定�
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[Adobe Workfront Fusion でのモジュール間の情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 <table style="table-layout:auto">  
  <col> 

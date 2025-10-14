@@ -63,7 +63,7 @@ ht-degree: 88%
 
 >[!ENDSHADEBOX]
 
-詳しくは、「[ 配列または配列要素のマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)」を参照してください。
+詳しくは、「[&#x200B; 配列または配列要素のマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)」を参照してください。
 
 ## シャッフル
 

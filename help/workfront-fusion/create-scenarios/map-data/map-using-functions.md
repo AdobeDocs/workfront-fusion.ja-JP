@@ -64,9 +64,9 @@ ht-degree: 31%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -80,7 +80,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 1. 関数を挿入するフィールドをクリックします。
 1. マッピングパネルで、挿入する関数を含むタブを選択します。
 
-   マッピングパネルタブについて詳しくは、[ 関数の概要 ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md) を参照してください。
+   マッピングパネルタブについて詳しくは、[&#x200B; 関数の概要 &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md) を参照してください。
    1. 関数名をクリックします。
 
       または
@@ -90,7 +90,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
    関数パラメーターの説明については、マッピングパネルの関数にポインタを合わせてください。
 
-   関数とそのパラメーターについて詳しくは、「[ 関数リファレンス：記事インデックス ](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)」の記事を参照してください。
+   関数とそのパラメーターについて詳しくは、「[&#x200B; 関数リファレンス：記事インデックス &#x200B;](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)」の記事を参照してください。
 
 1. モジュールの設定を続行するか、[**OK**] をクリックします。
 
@@ -105,7 +105,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 この例では、サブ文字列関数は、プロジェクト名を 50 文字に制限します。
 
-![ ミーティングの長さ制限の例 ](assets/example-meet-length-restriction-350x184.png)
+![&#x200B; ミーティングの長さ制限の例 &#x200B;](assets/example-meet-length-restriction-350x184.png)
 
 >[!ENDSHADEBOX]
 
@@ -119,7 +119,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 この例では、substring 関数を使用すると、トリミングされたプロジェクト名を 50 文字に制限しています。
 
-![ トリム名 ](assets/trimmed-name-under-50.png)
+![&#x200B; トリム名 &#x200B;](assets/trimmed-name-under-50.png)
 
 >[!ENDSHADEBOX]
 
@@ -150,9 +150,9 @@ Workfront Fusion に使用したい関数が含まれていないが、[!DNL Goo
 
       通常どおり、先行モジュールの出力を使用できます。
 
-      ![Google Sheets 関数の使用 ](assets/exploit-google-sheet-functions-350x218.png)
+      ![Google Sheets 関数の使用 &#x200B;](assets/exploit-google-sheet-functions-350x218.png)
 
 1. **[!UICONTROL Google Sheets]／[!UICONTROL セルを取得]**&#x200B;モジュールを挿入して、計算結果を取得します。
 1. 手順 4 で使用した同じセル ID を使用して、モジュールを設定します。
 
-   ![Google Sheets 関数の使用 ](assets/exploit-google-sheet-functions-2-350x187.png)
+   ![Google Sheets 関数の使用 &#x200B;](assets/exploit-google-sheet-functions-2-350x187.png)

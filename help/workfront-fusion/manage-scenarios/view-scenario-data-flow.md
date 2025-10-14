@@ -21,11 +21,11 @@ ht-degree: 13%
 
 モジュールが実行されると、出力インジケーターが表示されます。
 
-![ 出力インジケーター ](assets/data-flow-output.png)
+![&#x200B; 出力インジケーター &#x200B;](assets/data-flow-output.png)
 
 モジュールが複数のバンドルを処理する場合、処理されたバンドルごとにリングが表示され、出力インジケータは出力されたバンドルごとにカウントされます。
 
-シナリオデータフローについて詳しくは、[ シナリオ実行フロー ](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md) を参照してください。
+シナリオデータフローについて詳しくは、[&#x200B; シナリオ実行フロー &#x200B;](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md) を参照してください。
 
 ## アクセス要件
 
@@ -73,9 +73,9 @@ ht-degree: 13%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -86,4 +86,4 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 1. シナリオが実行されていない場合は、アクティブにするか、「**1 回実行**」をクリックしてシナリオの実行を開始します。
 1. 実行履歴パネルの「現在実行中」セクションで、表示する実行を選択します。
 
-![ 現在実行中 ](assets/currently-running.png)
+![&#x200B; 現在実行中 &#x200B;](assets/currently-running.png)

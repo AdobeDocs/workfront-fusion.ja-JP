@@ -15,7 +15,7 @@ ht-degree: 4%
 
 シナリオは、アプリ内でデータを変換する方法や、アプリと web サービスの間でデータを転送する方法を示す一連のモジュールで構成されます。 モジュールを作成するには、モジュールを追加および設定します。
 
-この記事では、シナリオにモジュールを追加する基本的なプロセスについて説明します。 シナリオの追加方法について詳しくは、[ モジュールの追加：記事インデックス ](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md) の他の記事を参照してください。
+この記事では、シナリオにモジュールを追加する基本的なプロセスについて説明します。 シナリオの追加方法について詳しくは、[&#x200B; モジュールの追加：記事インデックス &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md) の他の記事を参照してください。
 
 ## アクセス要件
 
@@ -54,9 +54,9 @@ ht-degree: 4%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -64,19 +64,19 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 シナリオの最初のモジュールは、通常、トリガーモジュールです。
 
-トリガーモジュールについて詳しくは、「モジュールの概要」の [トリガーモジュール ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules) を参照してください。
+トリガーモジュールについて詳しくは、「モジュールの概要」の [トリガーモジュール &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules) を参照してください。
 
 1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. 画面の右上隅にある「**新しいシナリオを作成**」をクリックして、シナリオの作成を開始します。
 
    シナリオエディターが開き、プレースホルダー（疑問符）モジュールと使用可能なコネクタのリストが表示されます。
 
-   ![ プレースホルダーモジュール ](assets/placeholder-module.png)
+   ![&#x200B; プレースホルダーモジュール &#x200B;](assets/placeholder-module.png)
 
 1. このシナリオを開始するコネクタまたは Webhook を選択します。 リストの検索バーにコネクタの名前を入力して、リストをフィルタリングできます。
 1. モジュールを設定します。
 
-   特定のモジュールの設定手順については、「[Fusion アプリケーションとそのモジュールのリファレンス：記事インデックス ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)」にリストされている選択したアプリケーションの記事を参照してください。
+   特定のモジュールの設定手順については、「[Fusion アプリケーションとそのモジュールのリファレンス：記事インデックス &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)」にリストされている選択したアプリケーションの記事を参照してください。
 
 >[!NOTE]
 >
@@ -93,7 +93,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 1. （オプション）別のコネクタを選択するには、リストの **別のモジュールを追加** をクリックしてから、コネクタを選択します。 リストの検索バーにコネクタの名前を入力して、リストをフィルタリングできます。
 1. モジュールを設定します。
 
-   特定のモジュールの設定手順については、「[Fusion アプリケーションとそのモジュールのリファレンス：記事インデックス ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)」にリストされている選択したアプリケーションの記事を参照してください。
+   特定のモジュールの設定手順については、「[Fusion アプリケーションとそのモジュールのリファレンス：記事インデックス &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)」にリストされている選択したアプリケーションの記事を参照してください。
 
 ## シナリオ内の既存のモジュール間にモジュールを挿入します
 
@@ -107,7 +107,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 1. （オプション）別のコネクタを選択するには、リストの **別のモジュールを追加** をクリックしてから、コネクタを選択します。 リストの検索バーにコネクタの名前を入力して、リストをフィルタリングできます。
 1. モジュールを設定します。
 
-   特定のモジュールの設定手順については、「[Fusion アプリケーションとそのモジュールのリファレンス：記事インデックス ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)」にリストされている選択したアプリケーションの記事を参照してください。
+   特定のモジュールの設定手順については、「[Fusion アプリケーションとそのモジュールのリファレンス：記事インデックス &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)」にリストされている選択したアプリケーションの記事を参照してください。
 
 >[!NOTE]
 >

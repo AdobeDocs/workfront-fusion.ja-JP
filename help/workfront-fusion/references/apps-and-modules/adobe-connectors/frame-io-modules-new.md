@@ -17,7 +17,7 @@ ht-degree: 24%
 >
 >この記事では、Frame.io コネクタの新しいバージョンについて説明します。 このコネクタは、Frame.io バージョン 4 への接続に使用します。
 >
->Frame.io コネクタのレガシーバージョンの手順については、[Frame.io レガシーコネクタ ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md) を参照してください。
+>Frame.io コネクタのレガシーバージョンの手順については、[Frame.io レガシーコネクタ &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md) を参照してください。
 
 Adobe Workfront Fusion [!DNL Frame.io] モジュールを使用すると、[!DNL Frame.io] アカウント内のアセットやコメントをモニター、作成、更新、取得、削除できます。
 
@@ -28,7 +28,7 @@ Workfrontには、接続先の Frame.io のバージョンに基づく 2 つの 
 | Frame.io | V4 |
 | Frame.io （レガシー） | V3 |
 
-Frame.io コネクタのレガシーバージョンの手順については、[Frame.io レガシーコネクタ ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md) を参照してください。
+Frame.io コネクタのレガシーバージョンの手順については、[Frame.io レガシーコネクタ &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md) を参照してください。
 
 
 Frame.io コネクタの紹介ビデオについては、以下を参照してください。
@@ -72,9 +72,9 @@ Frame.io コネクタの紹介ビデオについては、以下を参照して�
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -143,7 +143,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 
    または
 
-   Adobe Developer Consoleで新規プロジェクトを作成します。 手順については、[ 空のプロジェクトの作成 ](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty) を参照してください。
+   Adobe Developer Consoleで新規プロジェクトを作成します。 手順については、[&#x200B; 空のプロジェクトの作成 &#x200B;](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty) を参照してください。
 
 1. プロジェクトの概要ページまたは新しいプロジェクトの基本を学ぶページで、「**API を追加**」をクリックします。
 1. 開いたページで、**Frame.io API** を見つけてクリックします。
@@ -237,7 +237,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 
    または
 
-   Adobe Developer Consoleで新規プロジェクトを作成します。 手順については、[ 空のプロジェクトの作成 ](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty) を参照してください。
+   Adobe Developer Consoleで新規プロジェクトを作成します。 手順については、[&#x200B; 空のプロジェクトの作成 &#x200B;](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty) を参照してください。
 
 1. プロジェクトの概要ページまたは新しいプロジェクトの基本を学ぶページで、「**API を追加**」をクリックします。
 1. 開いたページで、**Frame.io API** を見つけてクリックします。
@@ -298,9 +298,9 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 
 [!DNL Frame.io] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Frame.io]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [アセット](#assets)
 * [コメント](#comments)

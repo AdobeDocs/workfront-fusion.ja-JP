@@ -15,9 +15,9 @@ ht-degree: 17%
 
 Adobe Workfront Fusion のシナリオでは、[!DNL Adobe Lightroom] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
-シナリオの作成手順については、[ シナリオを作成：記事インデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成手順については、[&#x200B; シナリオを作成：記事インデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## アクセス要件
 
@@ -56,9 +56,9 @@ Adobe Workfront Fusion のシナリオでは、[!DNL Adobe Lightroom] を使用�
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -67,7 +67,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 [!DNL Adobe Lightroom] コネクタを使用する前に、次の前提条件が満たされていることを確認する必要があります。
 
 * アクティブな [!DNL Adobe Lightroom] アカウントが必要です。
-* Adobe Admin Consoleに OAuth Web アプリが設定されている必要があります。 詳しくは、この記事の [Adobe Admin Consoleでの OAuth アプリケーションの設定 ](#configure-an-oauth-application-in-the-adobe-admin-console) を参照してください。
+* Adobe Admin Consoleに OAuth Web アプリが設定されている必要があります。 詳しくは、この記事の [Adobe Admin Consoleでの OAuth アプリケーションの設定 &#x200B;](#configure-an-oauth-application-in-the-adobe-admin-console) を参照してください。
 
 ## Adobe Lightroom API の情報
 
@@ -98,7 +98,7 @@ Adobe Lightroomに接続するには、まずAdobe Admin Consoleで OAuth アプ
 
 1. Adobe Admin Consoleでの OAuth Web アプリの設定の開始。
 
-   手順については、Adobe開発者向けドキュメントの [ ユーザー認証実装ガイド ](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation) を参照してください。
+   手順については、Adobe開発者向けドキュメントの [&#x200B; ユーザー認証実装ガイド &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation) を参照してください。
 1. OAuth Web アプリを設定する際に、次の値を入力します。
 
    <table style="table-layout:auto"> 
@@ -176,9 +176,9 @@ Adobe Lightroomに接続するには、まずAdobe Admin Consoleで OAuth アプ
 
 [!DNL Adobe Lightroom] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Adobe Lightroom]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [その他](#other)
 * [アセット](#assets)

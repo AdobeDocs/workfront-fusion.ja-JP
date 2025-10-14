@@ -66,9 +66,9 @@ Adobe Workfront Fusion [!UICONTROL HTTP] アプリは、Hypertext Transfer Proto
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -152,7 +152,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ヘッダー:
 
-![JWT ヘッダー ](/help/workfront-fusion/references/apps-and-modules/assets/jwt-header-350x19.png)
+![JWT ヘッダー &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/jwt-header-350x19.png)
 
 コピーおよび貼り付けのコード：
 
@@ -162,7 +162,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ペイロード：
 
-![JWT ペイロード ](/help/workfront-fusion/references/apps-and-modules/assets/jwt-payload-350x17.png)
+![JWT ペイロード &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/jwt-payload-350x17.png)
 
 コピーおよび貼り付けのコード：
 
@@ -172,7 +172,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 トークン：
 
-![JWT トークン ](/help/workfront-fusion/references/apps-and-modules/assets/jwt-token-350x15.png)
+![JWT トークン &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/jwt-token-350x15.png)
 
 コピーおよび貼り付けのコード：
 

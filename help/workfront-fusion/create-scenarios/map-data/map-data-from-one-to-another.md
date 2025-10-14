@@ -56,9 +56,9 @@ ht-degree: 38%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -81,11 +81,11 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
    検索結果には検索語が含まれ、大文字と小文字は区別されません。
 1. コレクションの要素である値を選択するには、コレクションの横にある矢印をクリックし、表示されたら要素を選択します。
 
-   ![ コレクション要素 ](assets/collection-dropdown.png)
+   ![&#x200B; コレクション要素 &#x200B;](assets/collection-dropdown.png)
 
 1. マッピングパネルから項目をクリックして、フィールドに挿入します。
 
-詳しくは、[ モジュールの設定 ](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md) を参照してください。
+詳しくは、[&#x200B; モジュールの設定 &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md) を参照してください。
 
 
 ## トラブルシューティング

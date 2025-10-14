@@ -16,9 +16,9 @@ ht-degree: 87%
 
 Adobe Workfront Fusion [!DNL Adobe PDF Services] を使用すると、PDF ファイルからデータを抽出したり、指定したデータから新しいPDF ファイルを生成したりできます。 さらに、様々なファイルタイプを PDF に変換したり、PDF を他のファイルタイプに変換したりできます。PDF サービスでは、PDF ファイルの組み合わせ、圧縮、メタデータの読み取りを行うことや、ファイルのパスワード保護を制御することもできます。
 
-シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 PDF サービスに使用される API については、[Adobe Document Generation API](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html) を参照してください。
 
@@ -66,9 +66,9 @@ PDF サービスに使用される API については、[Adobe Document Generat
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -76,7 +76,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 OAuth サーバー間接続を作成するには、Adobe デベロッパーコンソールでAdobe PDF サービス API を追加する必要があります。 API を追加する場合は、OAuth サーバー間オプションを選択します。
 
-手順については、[OAuth ユーザー認証資格情報を使用してプロジェクトに API を追加する ](https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication) Adobe開発者向けドキュメントのを参照してください。
+手順については、[OAuth ユーザー認証資格情報を使用してプロジェクトに API を追加する &#x200B;](https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication) Adobe開発者向けドキュメントのを参照してください。
 
 ## Adobe PDF サービス API に関する情報
 
@@ -178,9 +178,9 @@ Adobe PDF サービスコネクタは、以下を使用します。
 
 Workfront Fusion で [!DNL PDF Services] を設定する場合は、以下に示すフィールドが表示されます。 これらと共に、アプリやサービスのアクセスレベルなどの要因に応じて、追加のフィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [[!UICONTROL PDF ファイルの結合]](#combine-pdf-files)
 * [[!UICONTROL PDF ファイルの圧縮]](#compress-pdf-files)
@@ -550,7 +550,7 @@ ZIP 形式で出力する場合、PDFは 1 ページにつき 1 つの画像に�
 
 [!UICONTROL [!DNL Adobe PDF Services]ドキュメントの生成]機能について詳しくは、[!DNL Adobe Document Services] ドキュメントの[ドキュメント生成の概要](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html)を参照してください。
 
-* [ [!DNL Microsoft Word]  テンプレートで[!UICONTROL ドキュメントの生成]モジュールの使用](#use-the-generate-document-module-with-a-microsoft-word-template)
+* [&#x200B; [!DNL Microsoft Word]  テンプレートで[!UICONTROL ドキュメントの生成]モジュールの使用](#use-the-generate-document-module-with-a-microsoft-word-template)
 * [JSON で[!UICONTROL ドキュメントの生成]モジュールの使用](#use-the-generate-document-module-with-json)
 
 #### [!DNL Microsoft Word] テンプレートで[!UICONTROL ドキュメントの生成]モジュールの使用
@@ -558,7 +558,7 @@ ZIP 形式で出力する場合、PDFは 1 ページにつき 1 つの画像に�
 
 >[!NOTE]
 >
->Microsoft Word テンプレートについては、[Microsoft Word テンプレートモジュール ](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md) を参照してください。
+>Microsoft Word テンプレートについては、[Microsoft Word テンプレートモジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md) を参照してください。
 >
 >PDF Services Generate Document Module でMicrosoft Word テンプレートを使用する場合、Microsoft Word テンプレートモジュールを使用する必要はありません。
 

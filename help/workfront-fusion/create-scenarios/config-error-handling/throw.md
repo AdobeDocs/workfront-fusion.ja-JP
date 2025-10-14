@@ -25,7 +25,7 @@ ht-degree: 25%
 
 不完全な実行について詳しくは、[Adobe Workfront Fusion での不完全な実行の表示と解決](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)を参照してください。
 
-エラー処理ディレクティブについて詳しくは、[Adobe Workfront Fusion のエラー処理用のディレクティブ ](/help/workfront-fusion/references/errors/directives-for-error-handling.md) を参照してください。
+エラー処理ディレクティブについて詳しくは、[Adobe Workfront Fusion のエラー処理用のディレクティブ &#x200B;](/help/workfront-fusion/references/errors/directives-for-error-handling.md) を参照してください。
 
 ## アクセス要件
 
@@ -64,9 +64,9 @@ ht-degree: 25%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -74,7 +74,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 条件付きでエラーをスローするには、操作中に意図的に失敗するようにモジュールを設定します。 オプションでエラーをスローするように設定された [!UICONTROL JSON]/[!UICONTROL JSON を解析 &#x200B;] モジュールを使用する可能性があります（この場合は `BundleValidationError`）。
 
-![JSON エラー ](assets/json-parse-json.png)
+![JSON エラー &#x200B;](assets/json-parse-json.png)
 
 その後、エラー処理ディレクティブの 1 つをエラー処理ルートに添付できます。
 
@@ -85,4 +85,4 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 [!DNL Rollback] ディレクティブの使用例を以下に示します。
 
-![ ロールバックディレクティブ ](assets/rollback-directive.png)
+![&#x200B; ロールバックディレクティブ &#x200B;](assets/rollback-directive.png)

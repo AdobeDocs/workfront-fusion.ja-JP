@@ -24,11 +24,11 @@ ht-degree: 9%
 
 | 関数のタイプ | 詳しくは、以下を参照してください。 |
 |---|---|
-| **他のモジュールからのマッピング**<br>![ 他のモジュールからのマッピング ](assets/toolbar-icon-functions-you-map-from-other-modules.png) | [ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) |
-| **一般関数**<br>![ 一般関数 ](assets/toolbar-icon-general-function.png) | [ 一般的な関数 ](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) |
-| **数学関数**<br>![ 数学関数 ](assets/toolbar-icon-math-functions.png) | [ 数学関数 ](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md) |
-| **テキスト関数とバイナリ関数**<br>![ 文字列関数 ](assets/toolbar-icon-text&binary-functions.png) | [ 文字列関数 ](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md) |
-| **日時** <br> ![ 日付および時間関数 ](assets/toolbar-icon-date&time-functions.png) | <ul><li>[ 日付および時間関数 ](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)</li><li>[ 日時フォーマット用のトークン ](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)</li><li> [ 日付と時刻の解析用トークン ](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)</li></ul> |
-| **配列を操作するための関数**<br> ![ 配列関数 ](assets/toolbar-icon-functions-for-arrays.png) | [ 配列関数 ](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md) |
+| **他のモジュールからのマッピング**<br>![&#x200B; 他のモジュールからのマッピング &#x200B;](assets/toolbar-icon-functions-you-map-from-other-modules.png) | [&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) |
+| **一般関数**<br>![&#x200B; 一般関数 &#x200B;](assets/toolbar-icon-general-function.png) | [&#x200B; 一般的な関数 &#x200B;](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) |
+| **数学関数**<br>![&#x200B; 数学関数 &#x200B;](assets/toolbar-icon-math-functions.png) | [&#x200B; 数学関数 &#x200B;](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md) |
+| **テキスト関数とバイナリ関数**<br>![&#x200B; 文字列関数 &#x200B;](assets/toolbar-icon-text&binary-functions.png) | [&#x200B; 文字列関数 &#x200B;](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md) |
+| **日時** <br> ![&#x200B; 日付および時間関数 &#x200B;](assets/toolbar-icon-date&time-functions.png) | <ul><li>[&#x200B; 日付および時間関数 &#x200B;](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)</li><li>[&#x200B; 日時フォーマット用のトークン &#x200B;](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)</li><li> [&#x200B; 日付と時刻の解析用トークン &#x200B;](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)</li></ul> |
+| **配列を操作するための関数**<br> ![&#x200B; 配列関数 &#x200B;](assets/toolbar-icon-functions-for-arrays.png) | [&#x200B; 配列関数 &#x200B;](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md) |
 
-![ 関数ツールバー ](assets/functions-toolbar-350x189.png)
+![&#x200B; 関数ツールバー &#x200B;](assets/functions-toolbar-350x189.png)

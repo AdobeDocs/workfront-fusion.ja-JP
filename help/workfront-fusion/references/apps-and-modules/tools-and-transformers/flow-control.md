@@ -50,9 +50,9 @@ ht-degree: 64%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -80,7 +80,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 例えば、[!UICONTROL リピーター]モジュールを使用して「こんにちは 1」、「こんにちは 2」などの件名のメールを 5 通送信するには、**[!UICONTROL メール]／[!UICONTROL 自分にメール]**&#x200B;モジュールを[!UICONTROL リピーター]モジュールに接続します。
 
-1. 画面下部の [!UICONTROL &#x200B; フロー制御 &#x200B;] アイコン ![ フロー制御アイコン ](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) をクリックし、表示されるメニューで **[!UICONTROL リピータ]** をクリックします。
+1. 画面下部の [!UICONTROL &#x200B; フロー制御 &#x200B;] アイコン ![&#x200B; フロー制御アイコン &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) をクリックし、表示されるメニューで **[!UICONTROL リピータ]** をクリックします。
 1. [!UICONTROL &#x200B; リピーター &#x200B;] モジュールをクリックし、表示されたボックスで **[!UICONTROL 自動接続]** をクリックします。
 
    リピーターのモジュールが開きます。
@@ -89,7 +89,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
    この例では、5 と入力します。
 
-   ![ リピーター ](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
+   ![&#x200B; リピーター &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
 
    アイテムの値は、繰り返されるごとに、**[!UICONTROL ステップ]**&#x200B;フィールドで指定したこの数ずつ増加します。この値は、**[!UICONTROL 詳細設定を表示]**&#x200B;を選択すると表示できます。この数値は、デフォルトでは 1 です。
 
@@ -100,7 +100,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
    ここでのメールの例では、[!UICONTROL 件名]ボックスに「こんにちは」と入力し、リピーターモジュールから `i` をマッピングします。
 
-   ![ リピーター ](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
+   ![&#x200B; リピーター &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
 
 
 
@@ -112,19 +112,19 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ## [!UICONTROL イテレーター]
 
-[!UICONTROL イテレーター]は、配列を一連のバンドルに変換する特別なタイプのモジュールです。配列の各項目は、[!UICONTROL イテレーター]モジュールの出力では個別のバンドルになります。詳しくは、[ イテレータモジュール ](/help/workfront-fusion/references/modules/iterator-module.md) を参照してください。
+[!UICONTROL イテレーター]は、配列を一連のバンドルに変換する特別なタイプのモジュールです。配列の各項目は、[!UICONTROL イテレーター]モジュールの出力では個別のバンドルになります。詳しくは、[&#x200B; イテレータモジュール &#x200B;](/help/workfront-fusion/references/modules/iterator-module.md) を参照してください。
 
 ## 配列アグリゲーター
 
-配列アグリゲーターは、複数のバンドルを 1 つのバンドルに結合できる特別なタイプのモジュールです。詳しくは、[ アグリゲータモジュール ](/help/workfront-fusion/references/modules/aggregator-module.md) を参照してください。
+配列アグリゲーターは、複数のバンドルを 1 つのバンドルに結合できる特別なタイプのモジュールです。詳しくは、[&#x200B; アグリゲータモジュール &#x200B;](/help/workfront-fusion/references/modules/aggregator-module.md) を参照してください。
 
 ## [!UICONTROL ルーター]
 
-[!UICONTROL ルーター]モジュールを使用すると、フローを複数のルートに分岐し、データを各ルートで別々に処理できます。[!UICONTROL ルーター]モジュールはバンドルを受け取ると、ルートが[!UICONTROL ルーター]モジュールに接続された順序で、接続されている各ルートにバンドルを転送します。詳しくは、[Adobe Workfront Fusion のルーターモジュール ](/help/workfront-fusion/create-scenarios/add-modules/router-module.md) を参照してください。
+[!UICONTROL ルーター]モジュールを使用すると、フローを複数のルートに分岐し、データを各ルートで別々に処理できます。[!UICONTROL ルーター]モジュールはバンドルを受け取ると、ルートが[!UICONTROL ルーター]モジュールに接続された順序で、接続されている各ルートにバンドルを転送します。詳しくは、[Adobe Workfront Fusion のルーターモジュール &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/router-module.md) を参照してください。
 
 ## ディレクティブ
 
 エラー処理ディレクティブを使用すると、シナリオがエラーにどのように反応するかを制御できます。
 
-エラー処理ディレクティブについて詳しくは、「[ エラー処理用のディレクティブ ](/help/workfront-fusion/references/errors/directives-for-error-handling.md)」を参照してください。
+エラー処理ディレクティブについて詳しくは、「[&#x200B; エラー処理用のディレクティブ &#x200B;](/help/workfront-fusion/references/errors/directives-for-error-handling.md)」を参照してください。
 

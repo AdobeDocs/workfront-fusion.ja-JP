@@ -55,7 +55,7 @@ ht-degree: 15%
 
 ご利用のプラン、ライセンスタイプまたはアクセス権を確認するには、Workfront 管理者にお問い合わせください。
 
-Adobe Workfront Fusion ライセンスについては、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについては、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -68,7 +68,7 @@ Adobe Workfront Fusion ライセンスについては、[Adobe Workfront Fusion 
 
 次の画像は、[!UICONTROL アグリゲーター]モジュールの通常の設定を表示します。
 
-![ 配列アグリゲータ ](assets/array-aggregator.png)
+![&#x200B; 配列アグリゲータ &#x200B;](assets/array-aggregator.png)
 
 <table style="table-layout:auto">
  <col> 
@@ -113,7 +113,7 @@ Adobe Workfront Fusion ライセンスについては、[Adobe Workfront Fusion 
 
 このサンプルシナリオでは、すべてのメール添付ファイルを zip で圧縮し、その ZIP ファイルを [!DNL Dropbox] にアップロードする方法を示します。
 
-![Dropbox アーカイブの例 ](assets/dropbox-archive.png)
+![Dropbox アーカイブの例 &#x200B;](assets/dropbox-archive.png)
 
 以下のシナリオでは、次の方法を示します。
 

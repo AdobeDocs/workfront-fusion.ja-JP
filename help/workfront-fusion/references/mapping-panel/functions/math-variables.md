@@ -23,7 +23,7 @@ ht-degree: 76%
 
 次の式を使用して、[`min`、`max`]（`min` および `max`の両方を含む）の範囲内に整数の擬似乱数を生成します。
 
-![ ランダム ](assets/math-variable-random-350x61.png)
+![&#x200B; ランダム &#x200B;](assets/math-variable-random-350x61.png)
 
 ```
 floor(random * (1.max - 1.min + 1)) + 1.min

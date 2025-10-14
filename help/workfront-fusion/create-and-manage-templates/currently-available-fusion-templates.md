@@ -17,7 +17,7 @@ ht-degree: 69%
 
 チームまたは組織が他のチーム作成テンプレートを使用できる場合があります。
 
-使用可能なテンプレートを表示するには、Fusion のサイドナビゲーションメニューにある **テンプレート** アイコン ![ テンプレートアイコン ](assets/templates-icon.png) をクリックします。
+使用可能なテンプレートを表示するには、Fusion のサイドナビゲーションメニューにある **テンプレート** アイコン ![&#x200B; テンプレートアイコン &#x200B;](assets/templates-icon.png) をクリックします。
 
 ## Workfront テンプレート
 
@@ -192,19 +192,19 @@ Workfrontと Anaplan の統合について詳しくは、Workfront ドキュメ�
 
 ### 支出の最適化ワークフロー
 
-* [ リスト項目へのAdobe Workfront プロジェクトの更新  [!DNL Anaplan]  送信 ](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
-* [ リスト項目へのAdobe Workfront費用  [!DNL Anaplan]  送信 ](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
-* [ リスト項目に対するAdobe Workfrontの実際の時間数の更新  [!DNL Anaplan]  送信 ](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
+* [&#x200B; リスト項目へのAdobe Workfront プロジェクトの更新  [!DNL Anaplan]  送信 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
+* [&#x200B; リスト項目へのAdobe Workfront費用  [!DNL Anaplan]  送信 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
+* [&#x200B; リスト項目に対するAdobe Workfrontの実際の時間数の更新  [!DNL Anaplan]  送信 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
 
 ### 予算リクエストをリンクするためのワークフロー
 
-* [Adobe Workfront予算リクエ  [!DNL Anaplan]  トからのリスト項目の作成 ](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
-* [Adobe Workfront プロジェク  [!DNL Anaplan]  への予算配分の適用 ](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
+* [Adobe Workfront予算リクエ  [!DNL Anaplan]  トからのリスト項目の作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
+* [Adobe Workfront プロジェク  [!DNL Anaplan]  への予算配分の適用 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
 
 ### キャンペーンリクエストをリンクするワークフロー
 
-* [Adobe Workfront キャンペ  [!DNL Anaplan]  ンリクエストからのリスト項目の作成 ](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
-* [Adobe Workfront キャンペ  [!DNL Anaplan]  ンリクエストまたはキャンペーンプロジェクトへの予算配分の適用 ](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+* [Adobe Workfront キャンペ  [!DNL Anaplan]  ンリクエストからのリスト項目の作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
+* [Adobe Workfront キャンペ  [!DNL Anaplan]  ンリクエストまたはキャンペーンプロジェクトへの予算配分の適用 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
 
 
 <!--[!BADGE New!]{type=Informative} -->

@@ -31,11 +31,11 @@ Workfront Fusion には、シナリオの作成テンプレート、実行履歴
 
 Workfront Fusion の使用を開始する際には、次のリソースが役に立つ場合があります。
 
-* Workfront Fusion トレーニングリソースについては、[Workfront Fusion トレーニングの概要 ](https://experienceleague.adobe.com/ja/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy) を参照してください。
+* Workfront Fusion トレーニングリソースについては、[Workfront Fusion トレーニングの概要 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy) を参照してください。
 
 
-* シナリオについて詳しくは、[ シナリオの概要 ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md) を参照してください。
+* シナリオについて詳しくは、[&#x200B; シナリオの概要 &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md) を参照してください。
 
-* Fusion のその他の領域の概要については、[Fusion について：記事一覧 ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md) の記事を参照してください。
+* Fusion のその他の領域の概要については、[Fusion について：記事一覧 &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md) の記事を参照してください。
 
-* 練習シナリオの作成を開始するには、[ 練習シナリオの作成：記事索引 ](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md) を参照してください。
+* 練習シナリオの作成を開始するには、[&#x200B; 練習シナリオの作成：記事索引 &#x200B;](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md) を参照してください。

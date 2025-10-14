@@ -19,9 +19,9 @@ Salesforce コネクタの紹介ビデオについては、以下を参照して
 
 * [Salesforce](https://video.tv.adobe.com/v/3427027/){target=_blank}
 
-シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 >[!NOTE]
 >
@@ -66,9 +66,9 @@ Salesforce コネクタの紹介ビデオについては、以下を参照して
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -241,8 +241,8 @@ Salesforce コネクタでは、以下を使用します。
 
 このモジュールには、追加の設定が必要です。 アウトバウンドメッセージ用に設定されたフローが必要です。
 
-* Salesforceのフローについては、Salesforce ドキュメントの [ フローを使用したタスクの自動化 ](https://help.salesforce.com/s/articleView?id=platform.flow.htm) を参照してください。
-* Salesforceでのアウトバウンドメッセージの設定について詳しくは、Salesforce ドキュメントの [ レコードトリガーフローからのアウトバウンドメッセージの送信 ](https://help.salesforce.com/s/articleView?id=release-notes.rn_automate_flow_builder_outbound_message.htm) を参照してください
+* Salesforceのフローについては、Salesforce ドキュメントの [&#x200B; フローを使用したタスクの自動化 &#x200B;](https://help.salesforce.com/s/articleView?id=platform.flow.htm) を参照してください。
+* Salesforceでのアウトバウンドメッセージの設定について詳しくは、Salesforce ドキュメントの [&#x200B; レコードトリガーフローからのアウトバウンドメッセージの送信 &#x200B;](https://help.salesforce.com/s/articleView?id=release-notes.rn_automate_flow_builder_outbound_message.htm) を参照してください
 
 <!--
 
@@ -397,7 +397,7 @@ Salesforce コネクタでは、以下を使用します。
 
 この例では、6 人のユーザーが返されました。
 
-![ 検索に一致 ](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
+![&#x200B; 検索に一致 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
 
 >[!ENDSHADEBOX]
 

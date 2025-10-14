@@ -56,9 +56,9 @@ Adobe Workfront Fusion [!UICONTROL HTTP]/[!UICONTROL &#x200B; リクエストを
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -181,7 +181,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 **例：**&#x200B;この例では、JSON ペイロードを使用して [!UICONTROL POST] リクエストを送信するようにモジュールを設定する方法を示します。
 
-![ リクエストの例の作成 ](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
+![&#x200B; リクエストの例の作成 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
 
 [!UICONTROL &#x200B; リクエストコンテンツ &#x200B;] フィールドに直接 JSON 部分を式と項目と混在させることは、無効な JSON になる可能性があるので、お勧めしません。
 

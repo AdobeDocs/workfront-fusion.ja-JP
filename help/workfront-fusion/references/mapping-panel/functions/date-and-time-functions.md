@@ -289,7 +289,7 @@ ht-degree: 90%
 
 これは、例えば同じシナリオで 1 つのアプリまたは web サービスの日付形式を、接続されているアプリまたは web サービスの日付形式に変更する必要がある場合に便利です。
 
-詳細については、「[ アイテム データの種類 ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)」の「日付とテキスト」を参照してください。
+詳細については、「[&#x200B; アイテム データの種類 &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)」の「日付とテキスト」を参照してください。
 
 #### パラメーター
 
@@ -323,7 +323,7 @@ ht-degree: 90%
  </tbody> 
 </table>
 
-異なるタイプを指定した場合、型強制が適用されます。詳細については、「[ 型強制 ](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md)」を参照してください。
+異なるタイプを指定した場合、型強制が適用されます。詳細については、「[&#x200B; 型強制 &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md)」を参照してください。
 
 #### 戻り値とタイプ
 
@@ -333,7 +333,7 @@ ht-degree: 90%
 
 **例：**&#x200B;シナリオと web タイムゾーンは、これらの例ではどちらも `Europe/Prague` に設定されています。
 
-![ 日時関数の例 ](assets/date&time-functions-examples-350x61.png)
+![&#x200B; 日時関数の例 &#x200B;](assets/date&time-functions-examples-350x61.png)
 
 * `formatDate(1. Date created;MM/DD/YYYY)`
 
@@ -355,11 +355,11 @@ ht-degree: 90%
 
 ### [!UICONTROL parseDate（テキスト、フォーマット、[タイムゾーン]）]
 
-日付を表すテキスト値（`12-10-2019 20:30` または `Aug 18, 2019 10:00 AM`）の場合、この関数を使用して、日付値（バイナリマシンが読み取り可能な表現）に変換（解析）する必要があります。詳細については、「[ アイテム データの種類 ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)」の「日付とテキスト」を参照してください。
+日付を表すテキスト値（`12-10-2019 20:30` または `Aug 18, 2019 10:00 AM`）の場合、この関数を使用して、日付値（バイナリマシンが読み取り可能な表現）に変換（解析）する必要があります。詳細については、「[&#x200B; アイテム データの種類 &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)」の「日付とテキスト」を参照してください。
 
 #### パラメーター
 
-2 番目の列は、期待されるタイプを示します。異なるタイプを指定した場合、型強制が適用されます。詳細については、「[ 型強制 ](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md)」を参照してください。
+2 番目の列は、期待されるタイプを示します。異なるタイプを指定した場合、型強制が適用されます。詳細については、「[&#x200B; 型強制 &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md)」を参照してください。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -391,7 +391,7 @@ ht-degree: 90%
  </tbody> 
 </table>
 
-異なるタイプを指定した場合、型強制が適用されます。詳細については、「[ 型強制 ](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md)」を参照してください。
+異なるタイプを指定した場合、型強制が適用されます。詳細については、「[&#x200B; 型強制 &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md)」を参照してください。
 
 #### 戻り値とタイプ
 
@@ -463,7 +463,7 @@ Date1 から Date2 が減算されます。
 
 月の n 番目の曜日（例：最初の火曜日、3 番目の金曜日など）に対応する日付を計算する必要がある場合、次の数式を使用できます。
 
-![n 日目を計算 ](assets/date&time-functions-calc-nth-day-350x31.png)
+![n 日目を計算 &#x200B;](assets/date&time-functions-calc-nth-day-350x31.png)
 
 ```
 {{addDays(setDate(1.date; 1); 1.n * 7 - formatDate(addDays(setDate(1.date; 1); "-" + 1.dow); "E"))}}
@@ -510,7 +510,7 @@ Date1 から Date2 が減算されます。
 * `1.dow` = `3`
 * `1.date` = `now`
 
-![N 日目の変数値 ](assets/nth-day-variable-value-350x33.png)
+![N 日目の変数値 &#x200B;](assets/nth-day-variable-value-350x33.png)
 
 #### 説明：
 
@@ -521,7 +521,7 @@ Date1 から Date2 が減算されます。
 
 例えば、次の式を使用できます。
 
-![ 日付間の日数の計算 ](assets/calculate-days-between-dates-350x68.png)
+![&#x200B; 日付間の日数の計算 &#x200B;](assets/calculate-days-between-dates-350x68.png)
 
 ```
 {{round((2.value - 1.value) / 1000 / 60 / 60 / 24)}}
@@ -541,7 +541,7 @@ Date1 から Date2 が減算されます。
 
 次の数式は、前月の最終日の計算方法の 1 つを示しています。
 
-![ 先月の最終日 ](assets/last-day-prev-month.png)
+![&#x200B; 先月の最終日 &#x200B;](assets/last-day-prev-month.png)
 
 ```
 {{addDays(setDate(now; 1); -1)}}
@@ -553,7 +553,7 @@ Date1 から Date2 が減算されます。
 
 この数式は、前月の直近ミリ秒を計算する方法の 1 つを示します。
 
-![ 先月の最後のミリ秒 ](assets/last-millisecond-prev-month-350x45.png)
+![&#x200B; 先月の最後のミリ秒 &#x200B;](assets/last-millisecond-prev-month-350x45.png)
 
 ```
 {{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD"; "UTC") - 1; "x")}}
@@ -561,7 +561,7 @@ Date1 から Date2 が減算されます。
 
 タイムゾーン設定を使用するのに結果が必要な場合は、UTC 引数を省略します。
 
-![UTC を省略 ](assets/omit-utc-argument-350x45.png)
+![UTC を省略 &#x200B;](assets/omit-utc-argument-350x45.png)
 
 `{{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD") - 1; "x")}}`
 

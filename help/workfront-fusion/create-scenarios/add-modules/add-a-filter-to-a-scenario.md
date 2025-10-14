@@ -59,9 +59,9 @@ ht-degree: 32%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -74,7 +74,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. フィルターを追加するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
-1. フィルターを追加するモジュールの間にあるレンチアイコン ![ レンチアイコン ](assets/wrench-icon.png) をクリックし、「**フィルターを設定** を選択します。
+1. フィルターを追加するモジュールの間にあるレンチアイコン ![&#x200B; レンチアイコン &#x200B;](assets/wrench-icon.png) をクリックし、「**フィルターを設定** を選択します。
 1. 表示されたボックスに、フィルターの **[!UICONTROL ラベル]** を入力します。
 1. フィルター **[!UICONTROL 条件]** を定義します。
 
@@ -83,11 +83,11 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
    >[!TIP]
    >
    >マッピングパネルからフィルターフィールドに値を入力できます
-   >マッピングについて詳しくは、「[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)」を参照してください。
+   >マッピングについて詳しくは、「[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)」を参照してください。
 
    例えば、フィルターで XML で終わるAdobe Workfront内のファイルを渡す場合は、最初のボックスにと **[!UICONTROL ファイル名]** を入力します。2 番目のボックスに「.**[!UICONTROL xml]**」と入力します。それらの間のドロップダウンメニューで、「**[!UICONTROL 次で終わる（大文字と小文字を区別しない）]**」を選択します。このフィルターは、最初のモジュール（Workfront）からの受信バンドルに適用されます。XML ファイルを含むバンドルのみが次のモジュールに渡されます。
 
-   ![ フィルターの設定 ](assets/set-up-filter-box.png)
+   ![&#x200B; フィルターの設定 &#x200B;](assets/set-up-filter-box.png)
 
 1. **[!DNL OK]** をクリックします。
 
@@ -99,18 +99,18 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 >
 >フィルターのどちらかの側のモジュールをコピーすると、フィルターもコピーされます。
 >
->モジュールのコピーについて詳しくは、[Adobe Workfront Fusion でのモジュールまたはシナリオのコピー ](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md) を参照してください。
+>モジュールのコピーについて詳しくは、[Adobe Workfront Fusion でのモジュールまたはシナリオのコピー &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md) を参照してください。
 
 モジュールをコピーせずにフィルターをコピーするには、Fusion 開発ツールを使用できます
 
 1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. フィルターを追加するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
-1. 画面の下部にある開発ツールアイコン ![ 開発ツールアイコン ](assets/debugger-icon.png) をクリックして、Fusion 開発ツールを開きます。
+1. 画面の下部にある開発ツールアイコン ![&#x200B; 開発ツールアイコン &#x200B;](assets/debugger-icon.png) をクリックして、Fusion 開発ツールを開きます。
 
-   開発ツールアイコンが表示されない場合、開発ツールを開く手順については [ シナリオのデバッグ ](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md) を参照してください。
+   開発ツールアイコンが表示されない場合、開発ツールを開く手順については [&#x200B; シナリオのデバッグ &#x200B;](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md) を参照してください。
 
-1. 左側のバーにある **[!UICONTROL ツール]** アイコン ![ 開発ツールツール ](assets/devtools-tools-icon.png) をクリックします。
+1. 左側のバーにある **[!UICONTROL ツール]** アイコン ![&#x200B; 開発ツールツール &#x200B;](assets/devtools-tools-icon.png) をクリックします。
 
 1. 「**[!UICONTROL フィルターをコピー]**」をクリックし、右側のパネルの&#x200B;**[!UICONTROL フィルターをコピー]**&#x200B;ツールを次のように設定します。
 

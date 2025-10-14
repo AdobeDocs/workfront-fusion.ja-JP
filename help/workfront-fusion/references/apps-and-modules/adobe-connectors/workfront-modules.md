@@ -15,7 +15,7 @@ ht-degree: 56%
 
 Adobe Workfront Fusion Adobe Workfront コネクタを使用すると、Workfront 内でのプロセスを自動化できます。また、Workfrontを他のアプリケーションやサービスに接続することもできます。
 
-シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。 モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。 モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## アクセス要件
 
@@ -54,9 +54,9 @@ Adobe Workfront Fusion Adobe Workfront コネクタを使用すると、Workfron
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 
 >[!NOTE]
@@ -130,10 +130,10 @@ Workfront アカウントへの接続は、Workfront Fusion モジュール内�
 
 Workfront Fusion でWorkfront モジュールを設定する場合、以下に示すフィールドが表示されます。 これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加のWorkfront フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 >[!NOTE]
 >
@@ -206,9 +206,9 @@ Workfront Fusion でWorkfront モジュールを設定する場合、以下に�
 
 Web フックを作成した後、イベントの送信先エンドポイントのアドレスを表示できます。
 
-詳しくは、Workfront ドキュメントの Event Subscription API の記事の [ イベントペイロードの例 ](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) を参照してください。
+詳しくは、Workfront ドキュメントの Event Subscription API の記事の [&#x200B; イベントペイロードの例 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) を参照してください。
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
 +++
 
@@ -245,7 +245,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
 +++
 
@@ -298,7 +298,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
 +++
 
@@ -412,7 +412,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
 >[!NOTE]
 >
@@ -483,7 +483,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
 >[!NOTE]
 >
@@ -547,7 +547,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
 +++
 
@@ -588,7 +588,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
 >[!NOTE]
 >
@@ -625,7 +625,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
 +++
 
@@ -674,7 +674,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
 #### その他のアクションオプション
 
@@ -877,7 +877,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
 +++
 
@@ -931,7 +931,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
 +++
 
@@ -939,9 +939,9 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 
 Workfrontは最近、イベント購読サービスの新しいバージョンをリリースしました。 新しいバージョンはWorkfront API に対する変更ではなく、イベント購読機能に対する変更です。 このアクションモジュールは、このシナリオで使用されるイベントペイロードのバージョンを更新します。
 
-新しいイベント購読のバージョンについて詳しくは、Workfront ドキュメントの [ イベント購読のバージョン管理 ](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) を参照してください
+新しいイベント購読のバージョンについて詳しくは、Workfront ドキュメントの [&#x200B; イベント購読のバージョン管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) を参照してください
 
-ウェビナーの録画など、イベント購読のアップグレード中にWorkfront Fusion シナリオを保持する方法については、[ イベント購読 V2 のアップグレード中に Fusion シナリオを保持する ](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ja) を参照してください。
+ウェビナーの録画など、イベント購読のアップグレード中にWorkfront Fusion シナリオを保持する方法については、[&#x200B; イベント購読 V2 のアップグレード中に Fusion シナリオを保持する &#x200B;](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ja) を参照してください。
 
 <table style="table-layout:auto">
  <col> 
@@ -1001,7 +1001,7 @@ Workfrontは最近、イベント購読サービスの新しいバージョン�
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
 >[!NOTE]
 >
@@ -1050,7 +1050,7 @@ Workfrontは最近、イベント購読サービスの新しいバージョン�
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
 >[!NOTE]
 >
@@ -1098,7 +1098,7 @@ Workfrontは最近、イベント購読サービスの新しいバージョン�
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
 +++
 
@@ -1139,7 +1139,7 @@ Workfrontは最近、イベント購読サービスの新しいバージョン�
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
 +++
 
@@ -2259,7 +2259,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >* Workfrontは最近、イベント購読サービスの新しいバージョンをリリースしました。 新しいバージョンはWorkfront API に対する変更ではなく、イベント購読機能に対する変更です。 このアクションモジュールは、このシナリオで使用されるイベントペイロードのバージョンを更新します。
 >
->   新しいイベント購読のバージョンについて詳しくは、Workfront ドキュメントの [ イベント購読のバージョン管理 ](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) を参照してください
+>   新しいイベント購読のバージョンについて詳しくは、Workfront ドキュメントの [&#x200B; イベント購読のバージョン管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) を参照してください
 >
 >   ウェビナーの録画など、イベント購読のアップグレード中にWorkfront Fusion シナリオを保持する方法については、[ イベント購読 V2 アップグレード中の Fusion シナリオの保持（https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ja） ] を参照してください。
 
@@ -2299,7 +2299,7 @@ Workfront／イベントの監視フィルターで使用できる演算子は�
 >
 >イベントフィルターを使用すると、イシューが Ana に割り当てられている場合のシナリオをイシューの作成時にトリガーする web フックを設定できます。Ana の ユーザー IDは、b378489d8f7cd3cee0539260720a84b7 です。
 >
->![ イベントフィルター ](/help/workfront-fusion/references/apps-and-modules/assets/event-filter-watch-events-350x277.png)
+>![&#x200B; イベントフィルター &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/event-filter-watch-events-350x277.png)
 >
 >1 日に 100 件のイシューが作成され、そのうち 2 件のみが Ana に割り当てられている場合、シナリオは 2 回実行されます。
 >
@@ -2307,12 +2307,12 @@ Workfront／イベントの監視フィルターで使用できる演算子は�
 >
 >Ana に割り当てられたイシューのみを処理するようにイベントをフィルタリングするには、[!UICONTROL イベントを監視]モジュールの後にフィルターを作成できます。
 >
->![ イベントフィルターなし ](/help/workfront-fusion/references/apps-and-modules/assets/watch-events-non-event-filter-350x206.png)
+>![&#x200B; イベントフィルターなし &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/watch-events-non-event-filter-350x206.png)
 >
 >1 日に 100 件のイシューが作成され、そのうち 2 件のみが Ana に割り当てられている場合、シナリオは 100 回実行されます。98 回の実行はフィルターで停止しますが、トリガーモジュールは引き続きデータを消費し、すべての実行で操作が実行されます。
 
-Workfront イベント購読について詳しくは、[FAQ - イベント購読 ](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq) を参照してください。
+Workfront イベント購読について詳しくは、[FAQ - イベント購読 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq) を参照してください。
 
-Webhook について詳しくは、「Adobe Workfront Fusion の [ インスタントトリガー（Webhook）」を参照してください ](/help/workfront-fusion/references/modules/webhooks-reference.md)
+Webhook について詳しくは、「Adobe Workfront Fusion の [&#x200B; インスタントトリガー（Webhook）」を参照してください &#x200B;](/help/workfront-fusion/references/modules/webhooks-reference.md)
 
-シナリオのフィルターについて詳しくは、[ シナリオへのフィルターの追加 ](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md) を参照してください。
+シナリオのフィルターについて詳しくは、[&#x200B; シナリオへのフィルターの追加 &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md) を参照してください。

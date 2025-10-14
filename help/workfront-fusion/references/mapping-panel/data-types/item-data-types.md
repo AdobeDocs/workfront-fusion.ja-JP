@@ -15,7 +15,7 @@ ht-degree: 70%
 
 バンドルには、以下に示す項目のタイプを含めることができます。
 
-Workfront Fusion で相互に変換できる項目のタイプについて詳しくは、[ 型強制 ](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md) を参照してください。
+Workfront Fusion で相互に変換できる項目のタイプについて詳しくは、[&#x200B; 型強制 &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md) を参照してください。
 
 <table style="table-layout:auto">
  <col> 

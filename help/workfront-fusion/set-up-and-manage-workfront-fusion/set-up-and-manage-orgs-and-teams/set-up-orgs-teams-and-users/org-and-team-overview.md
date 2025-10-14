@@ -19,7 +19,7 @@ Adobe Workfront Fusion の組織とチームの機能を使用すると、企業
 
 チームは組織内の小さなグループで、シナリオ、接続、テンプレートなどの Fusion リソースを共有します。
 
-チームの作成手順については、[ チームの作成 ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/create-a-team.md) を参照してください。
+チームの作成手順については、[&#x200B; チームの作成 &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/create-a-team.md) を参照してください。
 
 ## 組織
 

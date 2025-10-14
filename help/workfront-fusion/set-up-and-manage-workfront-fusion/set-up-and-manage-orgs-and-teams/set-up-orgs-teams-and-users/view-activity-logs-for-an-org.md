@@ -56,7 +56,7 @@ ht-degree: 8%
 
 この表の情報について詳しくは、[Workfront ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -64,28 +64,28 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ## アクティビティログの表示
 
-1. 左側のナビゲーションパネルで、**組織概要**![ 組織概要アイコン ](assets/org-overview-icon.png) をクリックします。
+1. 左側のナビゲーションパネルで、**組織概要**![&#x200B; 組織概要アイコン &#x200B;](assets/org-overview-icon.png) をクリックします。
 1. アクティビティログを表示する組織に現在所属していない場合は、画面の右上隅にある組織名をクリックし、ドロップダウンから組織を選択します。
 1. 画面上部付近の **[!UICONTROL アクティビティログ]** タブをクリックします。
 
    アクティビティログページが開きます。
 1. （オプション）指定した条件で結果を制限するには、アクティビティログをフィルタリングします。
 
-   手順については、この記事の [ アクティビティログのフィルタリング ](#filter-the-activity-logs) を参照してください。
+   手順については、この記事の [&#x200B; アクティビティログのフィルタリング &#x200B;](#filter-the-activity-logs) を参照してください。
 1. （オプション）適用したフィルターをクリアするには、画面の右上付近にあるフィルターを見つけて、フィルターのボックスの **X** をクリックします。
 1. （任意）ログをエクスポートします。
 
-   手順については、この記事の [ アクティビティログのエクスポート ](#export-the-activity-logs) を参照してください。
+   手順については、この記事の [&#x200B; アクティビティログのエクスポート &#x200B;](#export-the-activity-logs) を参照してください。
 
 
 ## アクティビティログのフィルタリング
 
-1. 左側のナビゲーションパネルで、**組織概要**![ 組織概要アイコン ](assets/org-overview-icon.png) をクリックします。
+1. 左側のナビゲーションパネルで、**組織概要**![&#x200B; 組織概要アイコン &#x200B;](assets/org-overview-icon.png) をクリックします。
 1. アクティビティログを表示する組織に現在所属していない場合は、画面の右上隅にある組織名をクリックし、ドロップダウンから組織を選択します。
 1. 画面上部付近の **[!UICONTROL アクティビティログ]** タブをクリックします。
 
    アクティビティログページが開きます。
-1. **フィルター**![ フィルターアイコン ](assets/filter-activity-log.png) をクリックします。
+1. **フィルター**![&#x200B; フィルターアイコン &#x200B;](assets/filter-activity-log.png) をクリックします。
 1. フィールドをクリックして、次のフィルターを 1 つ以上設定します。
 
    * **開始日と終了日**：カレンダーから日付を選択し、（オプション）時間を入力します。
@@ -98,7 +98,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ## アクティビティログのエクスポート
 
-1. 左側のナビゲーションパネルで、**組織概要**![ 組織概要アイコン ](assets/org-overview-icon.png) をクリックします。
+1. 左側のナビゲーションパネルで、**組織概要**![&#x200B; 組織概要アイコン &#x200B;](assets/org-overview-icon.png) をクリックします。
 1. アクティビティログを表示する組織に現在所属していない場合は、画面の右上隅にある組織名をクリックし、ドロップダウンから組織を選択します。
 1. 画面上部付近の **[!UICONTROL アクティビティログ]** タブをクリックします。
 

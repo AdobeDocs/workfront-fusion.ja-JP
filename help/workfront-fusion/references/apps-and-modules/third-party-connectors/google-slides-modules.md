@@ -56,9 +56,9 @@ Workfront Fusion で [!DNL Google Slides] を使用するには、[!DNL Google] 
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -93,9 +93,9 @@ Google スライド コネクタでは、次を使用します。
 
 [!DNL Google Slides] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Google Slides]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [プレゼンテーション](#presentation)
 * [その他](#other)
@@ -526,16 +526,16 @@ Google スライド コネクタでは、次を使用します。
 
 **例：** API 呼び出しを使用して、入力したプレゼンテーション ID のプレゼンテーションの詳細を取得できます。プレゼンテーション ID は、[!DNL Google Slides] 内でプレゼンテーションを開いた時に URL の中で確認できます。
 
-![API 呼び出しの例 ](/help/workfront-fusion/references/apps-and-modules/assets/api-call-350x13.png)
+![API 呼び出しの例 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/api-call-350x13.png)
 
 次の API 呼び出しは、プレゼンテーションの詳細を返します。
 
-![ プレゼンテーションの詳細 ](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
+![&#x200B; プレゼンテーションの詳細 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
 
 一致した検索結果は、モジュールの「出力」にある[!UICONTROL バンドル]／[!UICONTROL 本文]／[!UICONTROL presentationId] で確認できます。
 
 この例では、要求されたプレゼンテーションの詳細が返されました。
 
-![ プレゼンテーションの詳細 ](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
+![&#x200B; プレゼンテーションの詳細 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
 
 >[!ENDSHADEBOX]

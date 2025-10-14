@@ -52,9 +52,9 @@ ht-degree: 40%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -62,7 +62,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ほとんどの場合、このモジュールを使用して、追加の情報をほとんど含まない接続を作成することができます。Workfront Fusion で認証が自動的に処理されます。
 
-特別な考慮事項のない接続の作成手順については、[ 接続の作成 – 基本手順 ](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md) を参照してください。
+特別な考慮事項のない接続の作成手順については、[&#x200B; 接続の作成 – 基本手順 &#x200B;](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md) を参照してください。
 
 ## Adobe アプリまたはサービスへの接続
 
@@ -70,7 +70,7 @@ Adobeのアプリやサービスに接続するには、組織 ID やテクニ�
 
 また、Adobe Authenticator モジュールを使用して、1 回の接続で任意のAdobe API に接続することもできます。 これにより、専用の Fusion コネクタがまだないAdobe製品に、より簡単に接続できます。
 
-詳しい手順については、[ コネクタの記事 ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#connectors-for-adobe-products) を参照してください。
+詳しい手順については、[&#x200B; コネクタの記事 &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#connectors-for-adobe-products) を参照してください。
 
 ## [!DNL Microsoft] アプリまたは web サービスに接続
 
@@ -80,11 +80,11 @@ Workfront Fusion のほとんどの [!DNL Microsoft] アプリでは、追加情
 
 * Microsoft Dynamics 365 モジュールを使用します。
 
-  手順については、[Microsoft Dynamics 365 モジュール ](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-dynamics-365-modules.md) を参照してください。
+  手順については、[Microsoft Dynamics 365 モジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-dynamics-365-modules.md) を参照してください。
 
 * HTTP モジュールを使用したMicrosoft Graph API への接続
 
-  手順については、[MS Graph REST API の呼び出し ](/help/workfront-fusion/create-scenarios/connect-to-apps/call-the-ms-graph-rest-api.md) を参照してください。
+  手順については、[MS Graph REST API の呼び出し &#x200B;](/help/workfront-fusion/create-scenarios/connect-to-apps/call-the-ms-graph-rest-api.md) を参照してください。
 
 ## [!DNL Google] アプリまたは web サービスに接続
 
@@ -99,4 +99,4 @@ Workfront Fusion のほとんどの [!DNL Microsoft] アプリでは、追加情
 
 一部のアプリやサービスは、Workfront Fusion Connections の基本設定に従いません。 これらのアプリに接続する手順は、当該のアプリの記事で確認できます。
 
-詳しい手順については、[ コネクタの記事 ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#connectors-for-third-party-applications) を参照してください。
+詳しい手順については、[&#x200B; コネクタの記事 &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#connectors-for-third-party-applications) を参照してください。

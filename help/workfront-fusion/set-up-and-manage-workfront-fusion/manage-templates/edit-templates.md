@@ -73,13 +73,13 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 1. 左側のナビゲーションパネルで **[!UICONTROL すべてのテンプレート]** をクリックします。
 1. 編集するテンプレートの右側にある「**[!UICONTROL 詳細]**」をクリックします。
 1. （任意）右上隅の **オプション** をクリックして「名前を変更 **を選択して、テンプレートの名前を変更** ます。
-1. （オプション）テンプレートの言語を変更するには、**[!UICONTROL 新しいテンプレートを作成]** ![ シナリオ設定アイコン ](assets/fusion-scenario-settings-icon.png) をクリックし、「言語」ドロップダウンから言語を選択します。
+1. （オプション）テンプレートの言語を変更するには、**[!UICONTROL 新しいテンプレートを作成]** ![&#x200B; シナリオ設定アイコン &#x200B;](assets/fusion-scenario-settings-icon.png) をクリックし、「言語」ドロップダウンから言語を選択します。
 
    >[!IMPORTANT]
    >
    >言語の選択は、システム設定で使用できる言語に対応し、パブリックテンプレートの名前と説明にのみ関係します。テンプレートを保存した後は、テンプレート言語を変更することはできません。
 
-1. （任意）テンプレートの説明を編集するには、**[!UICONTROL テンプレートを設定]** ![ シナリオ設定アイコン ](assets/fusion-scenario-settings-icon.png) をクリックして、説明を入力します。
+1. （任意）テンプレートの説明を編集するには、**[!UICONTROL テンプレートを設定]** ![&#x200B; シナリオ設定アイコン &#x200B;](assets/fusion-scenario-settings-icon.png) をクリックして、説明を入力します。
 1. 標準シナリオを作成する場合と同じ方法で、アプリ、モジュール、ツールを追加または編集します。
 
    モジュールにコンテキストヘルプを追加するには、この記事の[設定[!UICONTROL ウィザード]機能](#set-up-wizard-functionality)を参照してください。
@@ -91,7 +91,7 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
    >接続、資格情報またはプライバシーの影響を受けるその他の情報を追加する必要があるモジュールがテンプレートに含まれている場合、この情報はテンプレートユーザーと共有されません。
 
 1. （任意）「**[!UICONTROL 1 回実行]**」をクリックしてテンプレートをテストします。
-1. **[!UICONTROL 保存]** アイコン ![ 保存アイコン ](assets/save-icon.png) をクリックします。
+1. **[!UICONTROL 保存]** アイコン ![&#x200B; 保存アイコン &#x200B;](assets/save-icon.png) をクリックします。
 
 
 ## [!UICONTROL &#x200B; ウィザード]機能の設定
@@ -105,7 +105,7 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 1. 情報を入力する各フィールドに対して、手順 2～4 を繰り返します。
 1. 「**[!UICONTROL OK]**」をクリックして、変更を保存してモジュールを閉じます。
 
-公開プロセスは、標準ユーザーの場合と同じです。 詳しくは、[ テンプレートの公開と共有 ](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md) の節を参照してください。
+公開プロセスは、標準ユーザーの場合と同じです。 詳しくは、[&#x200B; テンプレートの公開と共有 &#x200B;](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md) の節を参照してください。
 
 ## テンプレートのステータス
 

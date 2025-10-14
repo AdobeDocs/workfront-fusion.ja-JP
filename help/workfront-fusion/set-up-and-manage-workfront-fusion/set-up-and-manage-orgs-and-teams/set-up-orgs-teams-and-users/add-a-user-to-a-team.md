@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ユーザーは、チームを作成するとチームに割り当てられます。 既存のユーザーをチームに追加する必要がある場合は、チームのユーザーページで追加できます。
 
-Fusion にユーザーを追加するには、[Adobe Admin Consoleを使用したAdobe Workfront Fusion へのユーザーの追加 ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-fusion-users-admin-console.md) を参照してください。
+Fusion にユーザーを追加するには、[Adobe Admin Consoleを使用したAdobe Workfront Fusion へのユーザーの追加 &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-fusion-users-admin-console.md) を参照してください。
 
 チームへのユーザーの追加は、そのチームのページから処理されます。
 

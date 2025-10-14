@@ -70,9 +70,9 @@ ht-degree: 55%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -92,4 +92,4 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 1. 画面の右上隅にある「**[!UICONTROL オプション]**」をクリックします。
 1. 「**[!UICONTROL 実行のロックを解除]**」を選択します。
 1. 「**[!UICONTROL ロックを解除]**」をクリックします。
-   ![ シナリオのロックを解除 ](assets/unlock-scenario.png)
+   ![&#x200B; シナリオのロックを解除 &#x200B;](assets/unlock-scenario.png)

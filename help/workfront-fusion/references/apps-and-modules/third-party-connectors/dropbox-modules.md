@@ -15,9 +15,9 @@ ht-degree: 70%
 
 Adobe Workfront Fusion のシナリオでは、[!UICONTROL Dropbox] または [!DNL Dropbox Business] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。これにより、[!UICONTROL Dropbox] のファイルやフォルダーのモニタリング、検索、取得、リスト化、作成、編集などのアクティビティを自動化できます。
 
-シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## アクセス要件
 
@@ -56,9 +56,9 @@ Adobe Workfront Fusion のシナリオでは、[!UICONTROL Dropbox] または [!
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -149,13 +149,13 @@ Dropbox コネクタでは、以下を使用します。
 
 [!DNL Dropbox] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Dropbox]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [トリガーモジュール](#trigger-modules)
-* [ [!DNL Dropbox] ファイルおよびフォルダーを取得するためのモジュール](#modules-for-getting-dropbox-files-and-folders)
-* [ [!DNL Dropbox] ファイルおよびフォルダーを作成および編集するためのモジュール](#modules-for-creating-and-editing-dropbox-files-and-folders)
+* [&#x200B; [!DNL Dropbox] ファイルおよびフォルダーを取得するためのモジュール](#modules-for-getting-dropbox-files-and-folders)
+* [&#x200B; [!DNL Dropbox] ファイルおよびフォルダーを作成および編集するためのモジュール](#modules-for-creating-and-editing-dropbox-files-and-folders)
 * [その他のモジュール](#other-modules)
 
 ### トリガーモジュール
@@ -751,15 +751,15 @@ URL を自動的に変更するには、次のように `replace()` 関数を 2 
 
 * www を dl に置き換えます。
 
-  ![www を dl に置き換えます ](/help/workfront-fusion/references/apps-and-modules/assets/www-to-dl-350x32.png)
+  ![www を dl に置き換えます &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/www-to-dl-350x32.png)
 
 * さらに、?dl=0 を削除します。
 
-  ![DL を削除 ](/help/workfront-fusion/references/apps-and-modules/assets/remove-dl0-350x33.png)
+  ![DL を削除 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/remove-dl0-350x33.png)
 
 これを 1 回で実行するには、これらの関数を次のように組み合わせます。
 
-![ 両方を置換 ](/help/workfront-fusion/references/apps-and-modules/assets/replace-both-350x47.png)
+![&#x200B; 両方を置換 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/replace-both-350x47.png)
 
 次のコードをコピーして、フィールドにペーストすることもできます。`1.url` を URL に置き換えます。
 

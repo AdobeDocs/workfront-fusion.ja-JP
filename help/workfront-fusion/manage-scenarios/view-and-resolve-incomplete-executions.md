@@ -19,7 +19,7 @@ ht-degree: 59%
 >
 >デフォルトでは、未完了の実行の保存は無効になっています。有効にするには、シナリオの詳細設定で「[!UICONTROL 未完了の実行の保存を許可]」オプションを有効にします。
 >
->シナリオ設定について詳しくは、[ シナリオ設定の指定 ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md) を参照してください。
+>シナリオ設定について詳しくは、[&#x200B; シナリオ設定の指定 &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md) を参照してください。
 
 ## アクセス要件
 
@@ -67,9 +67,9 @@ ht-degree: 59%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -83,7 +83,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 -->
 
-詳しくは、[ 不完全な実行につながるエラー ](#errors-resulting-into-incomplete-executions) を参照してください。
+詳しくは、[&#x200B; 不完全な実行につながるエラー &#x200B;](#errors-resulting-into-incomplete-executions) を参照してください。
 
 >[!NOTE]
 >
@@ -93,7 +93,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 >
 >未解決の不完全な実行はすべて、チームが合計 500 MB に制限されます。
 >
->詳しくは、「シナリオの設定」の [ データ損失の有効化 ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable-data-loss) を参照してください。
+>詳しくは、「シナリオの設定」の [&#x200B; データ損失の有効化 &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable-data-loss) を参照してください。
 
 
 ## 「不完全な実行」タブからの不完全な実行の解決
@@ -106,7 +106,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 1. モジュールのログを開くと、モジュールのすべての操作が表示されます。
 1. 失敗した操作を見つけ、「**[!UICONTROL 解決]**」をクリックします。
 
-   ![ 解決ボタン ](assets/resolve-btn-350x188.png)
+   ![&#x200B; 解決ボタン &#x200B;](assets/resolve-btn-350x188.png)
 
 
 
@@ -120,7 +120,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 1. モジュールのログを開くと、モジュールのすべての操作が表示されます。
 1. 失敗した操作を見つけ、「**[!UICONTROL 解決]**」をクリックします。
 
-   ![ 解決ボタン ](assets/resolve-btn-350x188.png)
+   ![&#x200B; 解決ボタン &#x200B;](assets/resolve-btn-350x188.png)
 
 ## 未完了の実行に関連するオプション
 
@@ -130,7 +130,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 * 順次処理
 * データ損失を有効にする
 
-これらのオプションについて詳しくは、[ シナリオ設定の指定 ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md) を参照してください。
+これらのオプションについて詳しくは、[&#x200B; シナリオ設定の指定 &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md) を参照してください。
 
 ## 未完了の実行になるエラー
 

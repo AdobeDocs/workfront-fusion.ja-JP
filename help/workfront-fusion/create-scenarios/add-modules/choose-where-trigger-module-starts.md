@@ -17,7 +17,7 @@ ht-degree: 46%
 
 また、すべてのバンドルを取得するか、特定の日付以降のバンドルのみを取得するかを指定することもできます。
 
-トリガーモジュールの詳細については、「モジュールの概要」の [トリガーモジュール ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules) を参照してください。
+トリガーモジュールの詳細については、「モジュールの概要」の [トリガーモジュール &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules) を参照してください。
 
 ## アクセス要件
 
@@ -56,9 +56,9 @@ ht-degree: 46%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -73,7 +73,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
    トリガーモジュールのアイコンを右クリックし、「**開始する場所を選択**」を選択します。
 
-   ![ 開始場所を選択 ](assets/choose-where-to-start.png)
+   ![&#x200B; 開始場所を選択 &#x200B;](assets/choose-where-to-start.png)
 
 1. 表示される&#x200B;**[!UICONTROL 開始場所を選択]**&#x200B;ボックスでオプションを選択します。
 
