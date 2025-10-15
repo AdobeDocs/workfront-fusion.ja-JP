@@ -34,7 +34,7 @@ Adobe Workfront Fusion ドキュメントのハウツー記事には、その手
    <td role="rowheader">Adobe Workfront パッケージ 
    <td> Adobe Workfront パッケージとは、組織が購入した一連の機能を指します。 Fusion のほとんどの機能はすべてのプランで使用できますが、一部の例外はUltimate Workfront パッケージを使用する組織でのみ使用できます。 
    <ul><li>組織が使用しているAdobe Workfront パッケージ（新しいパッケージモデルか現在のパッケージモデルかなど）を確認するには、Workfront管理者に問い合わせてください。</li>
-   <li>Workfront管理者が組織のWorkfront パッケージを見つける方法については、Workfront ドキュメントの <a href="https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan"> 組織のクラスターとWorkfrontのプランの表示 </a> を参照してください。</li><li>新しいWorkfront パッケージについて詳しくは、<a href="https://business.adobe.com/products/workfront/pricing.html">Adobe Workfrontの価格とパッケージ </a> を参照してください。</li></ul> </td> 
+   <li>Workfront管理者が組織のWorkfront パッケージを見つける方法については、Workfront ドキュメントの <a href="https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan"> 組織のクラスターとWorkfrontのプランの表示 </a> を参照してください。</li><li>新しいWorkfront パッケージについて詳しくは、<a href="https://business.adobe.com/jp/products/workfront/pricing.html">Adobe Workfrontの価格とパッケージ </a> を参照してください。</li></ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
