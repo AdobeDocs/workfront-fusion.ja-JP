@@ -123,7 +123,7 @@ Adobe Workfront Fusion ライセンスについては、[Adobe Workfront Fusion 
 
 * 3 番目のモジュールはアグリゲータです。 [!UICONTROL Email] >[!UICONTROL Iterate attachments] モジュールによって出力されたバンドルを集計します。 [!UICONTROL &#x200B; アーカイブ &#x200B;] >[!UICONTROL &#x200B; アーカイブアグリゲータを作成 &#x200B;] は、ZIP ファイルを含んだ単一のバンドルを受信して出力するすべてのバンドルを蓄積します。
 
-* 最後のモジュールは、結果の ZIP ファイルを [!DNL Dropbox] にアップロードします。  [!DNL Dropbox]/[!UICONTROL &#x200B; ファイルをアップロード &#x200B;][!UICONTROL &#x200B; アーカイブ &#x200B;]/[!UICONTROL &#x200B; アーカイブを作成 &#x200B;] モジュールから ZIP ファイルを取得して、[!DNL Dropbox] にアップロードします。
+* 最後のモジュールは、結果の ZIP ファイルを [!DNL Dropbox] にアップロードします。  [!DNL Dropbox]/[!UICONTROL &#x200B; ファイルをアップロード &#x200B;]&#x200B;[!UICONTROL &#x200B; アーカイブ &#x200B;]/[!UICONTROL &#x200B; アーカイブを作成 &#x200B;] モジュールから ZIP ファイルを取得して、[!DNL Dropbox] にアップロードします。
 
 
 

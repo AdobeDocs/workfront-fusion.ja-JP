@@ -114,7 +114,7 @@ Frame.io コネクタでは、以下を使用します。
 
 ### API トークンを使用した [!DNL Frame.io] への接続
 
-API トークンを使用して [!DNL Frame.io] アカウントをWorkfront Fusion に接続するには、[!DNL Frame.io] アカウントで API トークンを作成し、Workfront Fusion [!DNL Frame.io][!UICONTROL &#x200B; 接続を作成 &#x200B;] ダイアログに挿入する必要があります。
+API トークンを使用して [!DNL Frame.io] アカウントをWorkfront Fusion に接続するには、[!DNL Frame.io] アカウントで API トークンを作成し、Workfront Fusion [!DNL Frame.io]&#x200B;[!UICONTROL &#x200B; 接続を作成 &#x200B;] ダイアログに挿入する必要があります。
 
 1. [!DNL Frame.io] アカウントにログインします。
 1. [!DNL Frame.io] Developer の「**[!UICONTROL トークン]**」ページに移動します。
