@@ -4,9 +4,9 @@ description: 作業の自動化には高速な処理が必要なので、Adobe W
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 80cb3736d96d4b7c3226d78149842a80077e3551
+source-git-commit: 3a05e5df36bf9b1aacd0611fdad0240c8c52368d
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1092'
 ht-degree: 35%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 35%
 * 大きなファイルをサポートするモジュールを使用してファイルをダウンロードし、大きなファイルをサポートしないモジュールに渡した場合、そのモジュールはファイルを正常に処理できません。 大きなファイルは、ワークフロー全体でサポートされているモジュールでのみ処理する必要があります。
 * 大きなファイルをサポートしないモジュールは、最大 **200 MB** のサイズのファイルを処理できます。
 
-詳しくは、[&#x200B; 大きなファイルの操作 &#x200B;](/help/workfront-fusion/references/scenarios/fusion-large-files.md) を参照してください。
+詳しくは、[ 大きなファイルの操作 ](/help/workfront-fusion/references/scenarios/fusion-large-files.md) を参照してください。
 
 ## サーバーのメモリ使用量
 
@@ -67,6 +67,7 @@ ht-degree: 35%
    * Web フックが、非アクティブなシナリオ（非アクティブになってから 30 日を超えたシナリオ）でのみ使用される。
 
 * 非アクティブ化された web フックは、いかなるシナリオにも接続されておらず、非アクティブ状態となって 30 日が経過した場合、自動的に削除され、登録解除されます。
+* Webhook 応答のタイムアウトは 5 分です。
 
 ## 実行履歴
 
