@@ -283,7 +283,7 @@ Workfront Fusion でWorkfront モジュールを設定する場合、以下に�
 
 Web フックを作成した後、イベントの送信先エンドポイントのアドレスを表示できます。
 
-詳しくは、Workfront ドキュメントの Event Subscription API の記事の [&#x200B; イベントペイロードの例 &#x200B;](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) を参照してください。
+詳しくは、Workfront ドキュメントの Event Subscription API の記事の [&#x200B; イベントペイロードの例 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) を参照してください。
 
 このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
@@ -769,7 +769,7 @@ See a list of the Workfront object types for which you can use this module in [W
       </ul> <p>その他のすべてのレコードタイプに対して、<b>[!UICONTROL Other objects and endpoints]</b> を選択し、アルファベット順に並べ替えられたページでレコードタイプを探します。</p> </li> 
      <li value="2"> <p>適切なレコードタイプのページで、アクションを検索（Ctrl + F キーまたは Command + F キー）します。</p> </li> 
      <li value="3"> <p>選択したアクションで使用可能なフィールドの説明を表示します。</p> </li> 
-    </ol> <p>メモ：  <p>Workfront [!UICONTROL その他アクション &#x200B;] モジュールを使用してプルーフを作成する場合、ベストプラクティスは、詳細なオプションを使用せずにプルーフを作成し、[!DNL Workfront Proof] SOAP API を使用してプルーフを更新することです。</p><p>Workfront API （このモジュールが使用）を使用したプルーフの作成について詳しくは、<a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Adobe Workfront API でプルーフを作成する際の詳細プルーフオプションの追加 </a> を参照してください</p> </p> </td> 
+    </ol> <p>メモ：  <p>Workfront [!UICONTROL その他アクション &#x200B;] モジュールを使用してプルーフを作成する場合、ベストプラクティスは、詳細なオプションを使用せずにプルーフを作成し、[!DNL Workfront Proof] SOAP API を使用してプルーフを更新することです。</p><p>Workfront API （このモジュールが使用）を使用したプルーフの作成について詳しくは、<a href="https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Adobe Workfront API でプルーフを作成する際の詳細プルーフオプションの追加 </a> を参照してください</p> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
@@ -1047,9 +1047,9 @@ See a list of the Workfront object types for which you can use this module in [W
 
 Workfrontは最近、イベント購読サービスの新しいバージョンをリリースしました。 新しいバージョンはWorkfront API に対する変更ではなく、イベント購読機能に対する変更です。 このアクションモジュールは、このシナリオで使用されるイベントペイロードのバージョンを更新します。
 
-新しいイベント購読のバージョンについて詳しくは、Workfront ドキュメントの [&#x200B; イベント購読のバージョン管理 &#x200B;](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) を参照してください
+新しいイベント購読のバージョンについて詳しくは、Workfront ドキュメントの [&#x200B; イベント購読のバージョン管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) を参照してください
 
-ウェビナーの録画など、イベント購読のアップグレード中にWorkfront Fusion シナリオを保持する方法については、[&#x200B; イベント購読 V2 のアップグレード中に Fusion シナリオを保持する &#x200B;](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182) を参照してください。
+ウェビナーの録画など、イベント購読のアップグレード中にWorkfront Fusion シナリオを保持する方法については、[&#x200B; イベント購読 V2 のアップグレード中に Fusion シナリオを保持する &#x200B;](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ja) を参照してください。
 
 <table style="table-layout:auto">
  <col> 
@@ -2375,9 +2375,9 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >* Workfrontは最近、イベント購読サービスの新しいバージョンをリリースしました。 新しいバージョンはWorkfront API に対する変更ではなく、イベント購読機能に対する変更です。 このアクションモジュールは、このシナリオで使用されるイベントペイロードのバージョンを更新します。
 >
->   新しいイベント購読のバージョンについて詳しくは、Workfront ドキュメントの [&#x200B; イベント購読のバージョン管理 &#x200B;](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) を参照してください
+>   新しいイベント購読のバージョンについて詳しくは、Workfront ドキュメントの [&#x200B; イベント購読のバージョン管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) を参照してください
 >
->   ウェビナーの録画など、イベント購読のアップグレード中にWorkfront Fusion シナリオを保持する方法については、[ イベント購読 V2 アップグレード中の Fusion シナリオの保持（https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182） ] を参照してください。
+>   ウェビナーの録画など、イベント購読のアップグレード中にWorkfront Fusion シナリオを保持する方法については、[ イベント購読 V2 アップグレード中の Fusion シナリオの保持（https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ja） ] を参照してください。
 
 Workfront [!UICONTROL Watch Events] モジュールは、Workfront API でイベント購読を作成する Webhook に基づくシナリオをトリガーします。 イベント登録は、web フックに送信されるイベントを決定する一連のデータです。例えば、イシューを監視する[!UICONTROL イベントの監視]モジュールを設定した場合、イベント登録はイシューに関連するイベントのみを送信します。
 
@@ -2427,7 +2427,7 @@ Workfront／イベントの監視フィルターで使用できる演算子は�
 >
 >1 日に 100 件のイシューが作成され、そのうち 2 件のみが Ana に割り当てられている場合、シナリオは 100 回実行されます。98 回の実行はフィルターで停止しますが、トリガーモジュールは引き続きデータを消費し、すべての実行で操作が実行されます。
 
-Workfront イベント購読について詳しくは、[FAQ - イベント購読 &#x200B;](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq) を参照してください。
+Workfront イベント購読について詳しくは、[FAQ - イベント購読 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq) を参照してください。
 
 Webhook について詳しくは、「Adobe Workfront Fusion の [&#x200B; インスタントトリガー（Webhook）」を参照してください &#x200B;](/help/workfront-fusion/references/modules/webhooks-reference.md)
 
