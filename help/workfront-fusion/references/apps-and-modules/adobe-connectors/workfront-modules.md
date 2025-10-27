@@ -4,18 +4,33 @@ description: Adobe Workfront Fusion Adobe Workfront コネクタを使用する�
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: d2c873ffec406ae343fbcc72246688dec0bd1eab
 workflow-type: tm+mt
-source-wordcount: '8067'
-ht-degree: 56%
+source-wordcount: '7373'
+ht-degree: 54%
 
 ---
 
 # Adobe Workfront モジュール
 
+>[!IMPORTANT]
+>
+>この記事では、2025 年 10 月 22 日（PT）にリリースされた新しいバージョンのWorkfront コネクタの手順について説明します。 この新しいコネクタは、Workfront API に対して行われた変更を反映します。
+>
+>新しいコネクタには「Workfront」というラベルが付き、以前に使用できたコネクタには「Workfront（従来）」というラベルが付きます。
+>
+>以下をお勧めします。
+>
+>* シナリオの作成または更新時に新しいコネクタを使用します。
+>* 既存のモジュールを新しいコネクタにアップグレードしています。
+>
+>既存のモジュールのアップグレード手順については、「新しいバージョンへのモジュールのアップグレード [ の ](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md)Workfront モジュールの新しいバージョンへのアップグレード」を参照してください。
+>
+>新しいコネクタが必要になる理由については、[Fusion の API の概要 ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/api-overview.md) を参照してください。
+
 Adobe Workfront Fusion Adobe Workfront コネクタを使用すると、Workfront 内でのプロセスを自動化できます。また、Workfrontを他のアプリケーションやサービスに接続することもできます。
 
-シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。 モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。 モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## アクセス要件
 
@@ -54,9 +69,9 @@ Adobe Workfront Fusion Adobe Workfront コネクタを使用すると、Workfron
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 
 >[!NOTE]
@@ -71,6 +86,11 @@ Workfront コネクタは、OAuth 2.0 を使用してWorkfrontに接続します
 
 Workfront アカウントへの接続は、Workfront Fusion モジュール内から直接作成できます。
 
+* [クライアント ID とクライアント秘密鍵を使用したWorkfrontへの接続](#connect-to-workfront-using-client-id-and-client-secret)
+* [サーバー間接続を使用したWorkfrontへの接続](#connect-to-workfront-using-a-server-to-server-connection)
+
+### クライアント ID とクライアント秘密鍵を使用したWorkfrontへの接続
+
 1. 任意の Adobe Workfront モジュールで、「接続」フィールドの横にある「**追加**」をクリックします。
 1. 次のフィールドに入力します。
 
@@ -81,21 +101,15 @@ Workfront アカウントへの接続は、Workfront Fusion モジュール内�
     </col>
     <tbody>
       <tr>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td>
+          <p>「<b>Adobe Workfront auth connection</b>」を選択します。</p>
+        </td>
+      </tr>
+      <tr>
         <td role="rowheader">[!UICONTROL Connection name]</td>
         <td>
           <p>新しい接続の名前を入力します。</p>
-        </td>
-      </tr>
-      <tr>
-        <td role="rowheader">[!UICONTROL Environment]</td>
-        <td>
-          <p>本番環境と非本番環境のどちらに接続するかを選択します。</p>
-        </td>
-      </tr>
-      <tr>
-        <td role="rowheader">[!UICONTROL Connection type]</td>
-        <td>
-          <p>サービスアカウントと個人アカウントのどちらに接続するかを選択します。</p>
         </td>
       </tr>
       <tr>
@@ -126,14 +140,77 @@ Workfront アカウントへの接続は、Workfront Fusion モジュール内�
 >* Workfront API への OAuth 2.0 接続は、API キーに依存しなくなりました。
 >* Workfront サンドボックス環境への接続を作成するには、その環境で OAuth2 アプリケーションを作成し、接続でそのアプリケーションによって生成されたクライアント ID とクライアントシークレットを使用する必要があります。
 
+### サーバー間接続を使用したWorkfrontへの接続
+
+1. 任意の Adobe Workfront モジュールで、「接続」フィールドの横にある「**追加**」をクリックします。
+1. 次のフィールドに入力します。
+
+   <table style="table-layout:auto"> 
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td>
+          <p>「<b>Adobe Workfront サーバー間接続 </b>」を選択します。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>新しい接続の名前を入力します。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL インスタンス名 ]</td>
+        <td>
+          <p>インスタンスの名前（ドメインとも呼ばれます）を入力します。</p><p>例：URL が <code>https://example.my.workfront.com</code> の場合は、<code>example</code> と入力します。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL インスタンス レーン ]</td>
+        <td>
+          <p>この接続の接続先となる環境タイプを入力します。</p><p>例：URL が <code>https://example.my.workfront.com</code> の場合は、<code>my</code> と入力します。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>Workfront クライアント ID を入力します。 これは、Workfront の設定エリアの OAuth2 アプリケーションエリアにあります。接続している特定のアプリケーションを開いて、クライアント ID を確認します。</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>Workfront クライアントの秘密鍵を入力します。 これは、Workfront の設定エリアの OAuth2 アプリケーションエリアにあります。Workfrontで OAuth2 アプリケーションのクライアント秘密鍵がない場合は、別の秘密鍵を生成できます。 手順については、Workfrontのドキュメントを参照してください。</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Scopes]</td>
+        <td>この接続に適用可能なスコープを入力します。</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Host prefix]</td>
+        <td>ほとんどの場合、この値は <code>origin</code> にしてください。
+      </tr>
+    </tbody>
+    </table>
+
+1. 「**[!UICONTROL 続行]**」をクリックして接続を保存し、モジュールに戻ります。
+
+   Workfrontにログインしていない場合は、ログイン画面が表示されます。 ログイン後、接続を許可できます。
+
+>[!NOTE]
+>
+>* Workfront API への OAuth 2.0 接続は、API キーに依存しなくなりました。
+>* Workfront サンドボックス環境への接続を作成するには、その環境で OAuth2 アプリケーションを作成し、接続でそのアプリケーションによって生成されたクライアント ID とクライアントシークレットを使用する必要があります。
+
 ## Workfront モジュールとそのフィールド
 
 Workfront Fusion でWorkfront モジュールを設定する場合、以下に示すフィールドが表示されます。 これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加のWorkfront フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 >[!NOTE]
 >
@@ -194,7 +271,7 @@ Workfront Fusion でWorkfront モジュールを設定する場合、以下に�
       <td>[!UICONTROL Record Origin]</td> 
       <td>
        <p>シナリオで [!UICONTROL New Records Only]、[!UICONTROL Updated Records Only]、[!UICONTROL New and Updated Records]、または [!DNL Deleted Records Only] を監視するかどうかを選択します。</p>
-       <p><b> メモ </b>: [!UICONTROL 新規および更新されたレコード &#x200B;] を選択する場合、Webhook の作成により（同じ Webhook アドレスに対して） 2 つのイベント購読が作成されます。</p>
+       <p><b> メモ </b>: [!UICONTROL 新規および更新されたレコード ] を選択する場合、Webhook の作成により（同じ Webhook アドレスに対して） 2 つのイベント購読が作成されます。</p>
        </td> 
      </tr> 
     </tbody> 
@@ -206,9 +283,9 @@ Workfront Fusion でWorkfront モジュールを設定する場合、以下に�
 
 Web フックを作成した後、イベントの送信先エンドポイントのアドレスを表示できます。
 
-詳しくは、Workfront ドキュメントの Event Subscription API の記事の [&#x200B; イベントペイロードの例 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) を参照してください。
+詳しくは、Workfront ドキュメントの Event Subscription API の記事の [ イベントペイロードの例 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) を参照してください。
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
 +++
 
@@ -245,7 +322,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
 +++
 
@@ -280,7 +357,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
    <td> <p>このモジュールの出力バンドルに含めるフィールドを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 参照 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 参照 ]</td> 
    <td> <p>このモジュールの出力バンドルに含める参照フィールドを選択します。</p> </td> 
   </tr> 
   <tr> 
@@ -298,7 +375,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
 +++
 
@@ -363,11 +440,11 @@ Web フックを作成した後、イベントの送信先エンドポイント�
    <td> <p>オブジェクトの変換時に必要なオプションを有効にします。変換先または変換元のオブジェクトに応じて、オプションを使用できます。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL ネイティブ フィールドのコピー &#x200B;]</td> 
+   <td>[!UICONTROL ネイティブ フィールドのコピー ]</td> 
    <td> <p>このオプションを有効にすると、元のオブジェクトから新しいオブジェクトにネイティブフィールドがコピーされます。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL カスタム フォームのコピー &#x200B;]</td> 
+   <td>[!UICONTROL カスタム フォームのコピー ]</td> 
    <td> <p>このオプションを有効にすると、元のオブジェクトから新しいオブジェクトにネイティブフィールドがコピーされます。</p> </td> 
   </tr> 
  </tbody> 
@@ -399,7 +476,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
-   <td> <p>モジュールで作成するWorkfront レコードのタイプを選択します。</p> <p>例えば、プロジェクトを作成する場合は、ドロップダウンリストから「[!UICONTROL プロジェクト &#x200B;]」を選択します。</p> </td> 
+   <td> <p>モジュールで作成するWorkfront レコードのタイプを選択します。</p> <p>例えば、プロジェクトを作成する場合は、ドロップダウンリストから「[!UICONTROL プロジェクト ]」を選択します。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Select fields to map]</td> 
@@ -407,12 +484,12 @@ Web フックを作成した後、イベントの送信先エンドポイント�
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Attach Custom Form]</td> 
-   <td>新しいオブジェクトに追加するカスタムフォームを選択し、これらのフィールドの値を入力またはマッピングします。</td> 
+   <td>新しいオブジェクトに追加するカスタムフォームを選択し、値を入力するフィールドを選択してから、それらのフィールドの値を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
 >[!NOTE]
 >
@@ -443,24 +520,26 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 
 +++
 
-+++ **[!UICONTROL レコードを作成（レガシー）]**
+<!--
+
++++ **[!UICONTROL Create Record (Legacy)]**
 
 >[!IMPORTANT]
 >
->このモジュールは、レコードを作成モジュールに置き換えられました。 新しいシナリオでは、そのモジュールを使用することをお勧めします。
->&#x200B;>このモジュールを使用する既存のシナリオは、引き続き期待どおりに機能します。 このモジュールは、2025 年 5 月にモジュールセレクターから削除されます。
+>This module has been replaced with the Create a record module. We recommend using that module in new scenarios.
+>Existing scenarios that use this module will continue to function as expected. This module will be removed from the module selector in May 2025.
 
-このアクションモジュールは、Workfront でプロジェクト、タスク、イシューなどのオブジェクトを作成します。モジュールを使用すると、モジュールで使用可能なオブジェクトのフィールドを選択できます。
+This action module creates an object, such as a project, task, or issue in Workfront. The module allows you to select which of the object's fields are available in the module.
 
-レコードの ID を指定します。
+You specify the ID of the record.
 
-このモジュールは、レコードの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
+The module returns the ID of the  record and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
 
-入力フィールドの最小数を指定してください。例えば、イシューを作成する場合は、「プロジェクト ID」フィールドに有効な親プロジェクト ID を指定して、Workfront でイシューの配置先を示す必要があります。マッピングパネルを使用してシナリオ内の別のモジュールからこの情報をマッピングするか、名前を入力してリストから選択し、手動で入力することもできます。
+Make sure you provide the minimum number of input fields. For example, if you want to create an issue, you need to provide a valid parent project ID in the Project ID field to indicate where the issue should live in Workfront. You can use the mapping panel to map this information from another module in your scenario, or you can enter it manually by typing in the name and then selecting it from the list.
 
-このモジュールでは、オブジェクトを作成する際にカスタムフォームを添付しません。 オブジェクトの作成時にカスタムフォームを添付するには、[!UICONTROL &#x200B; レコードの作成（カスタムフォームの添付） &#x200B;] モジュールを使用します。
+This module does not attach custom forms when creating the object. To attach custom forms while creating an object, use the [!UICONTROL Create a record (attaching custom forms)] module.
 
-このモジュールを設定する際には、次のフィールドが表示されます。
+When you are configuring this module, the following fields display.
 
 <table style="table-layout:auto">
  <col> 
@@ -470,27 +549,29 @@ Web フックを作成した後、イベントの送信先エンドポイント�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Workfront アプリケーションをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">WorkfrontをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
-   <td> <p>モジュールで作成するWorkfront レコードのタイプを選択します。</p> <p>例えば、プロジェクトを作成する場合は、ドロップダウンリストから「[!UICONTROL プロジェクト &#x200B;]」を選択します。</p> </td> 
+   <td> <p>Select the type of Workfront record that you want the module to create.</p> <p>For example, if you want to create a Project, select [!UICONTROL Project] from the dropdown list.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Select fields to map]</td> 
-   <td>データ入力に使用するフィールドを選択します。これにより、不要なフィールドをスクロールしなくても、これらのフィールドを使用できます。</td> 
+   <td>Select the fields that you want available for data input. This allows you to use these fields without having to scroll through the ones you don't need.</td> 
   </tr> 
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
 >[!NOTE]
 >
->* オブジェクトの ID を入力する際に、オブジェクトの名前を入力し、リストから選択できます。そうすると、モジュールが適切な ID をフィールドに入力します。
->* カスタムフィールドまたは[!UICONTROL メモ]オブジェクト（コメントまたは返信）にテキストを入力する際、「[!UICONTROL メモテキスト]」フィールドで HTML タグを使用して、太字や斜体などのリッチテキストを作成できます。
+>* When entering the ID of an object, you can begin typing the name of the object, then select it from the list. The module then enters the appropriate ID into the field.
+>* When entering the text for a custom field or a [!UICONTROL Note] object (Comment or reply), you can use HTML tags in the [!UICONTROL Note Text] field to create rich text, such as bold or italic text.
 
 +++
+
+-->
 
 +++ **[!UICONTROL カスタム API 呼び出し]**
 
@@ -547,7 +628,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
 +++
 
@@ -574,7 +655,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
    <td>このオプションを有効にすると、Workfront UI から削除の確認がリクエストされる場合でも、レコードが確実に削除されます。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 非同期削除 &#x200B;]</td> 
+   <td>[!UICONTROL 非同期削除 ]</td> 
    <td>モジュールを非同期で削除できるようにするには、このオプションを有効にします。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -588,7 +669,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
 >[!NOTE]
 >
@@ -625,9 +706,32 @@ Web フックを作成した後、イベントの送信先エンドポイント�
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
 +++
+
+### **事前署名済みファイルの URL の取得**
+
+このアクションモジュールは、他の API で後で使用できる事前署名済みファイル URL を取得します。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>Workfront アプリケーションをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">WorkfrontをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Document ID]</td> 
+   <td> <p>事前署名済み URL を取得するドキュメントの一意のWorkfront ID をマッピングするか、手動で入力します。</p> <p>ID を取得するには、ブラウザーでWorkfront オブジェクトを開き、URL の末尾にある「ID=」の後のテキストをコピーします。 例：https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL URL の有効期限までの時間 ]</td> 
+   <td> <p>この URL の有効期限が切れるまでの時間（分）を入力またはマップします。 デフォルトは 1 分です。</p><p>この値を変更するには、Workfront Fusion チームがこのパラメーターを有効にする必要があります。 有効になっていない場合、入力した数値に関係なく、値は 1 分間維持されます。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 +++ **[!UICONTROL その他のアクション]**
 
@@ -665,7 +769,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
       </ul> <p>その他のすべてのレコードタイプに対して、<b>[!UICONTROL Other objects and endpoints]</b> を選択し、アルファベット順に並べ替えられたページでレコードタイプを探します。</p> </li> 
      <li value="2"> <p>適切なレコードタイプのページで、アクションを検索（Ctrl + F キーまたは Command + F キー）します。</p> </li> 
      <li value="3"> <p>選択したアクションで使用可能なフィールドの説明を表示します。</p> </li> 
-    </ol> <p>メモ：  <p>Workfront [!UICONTROL その他アクション &#x200B;] モジュールを使用してプルーフを作成する場合、ベストプラクティスは、詳細なオプションを使用せずにプルーフを作成し、[!DNL Workfront Proof] SOAP API を使用してプルーフを更新することです。</p><p>Workfront API （このモジュールが使用）を使用したプルーフの作成について詳しくは、<a href="https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Adobe Workfront API でプルーフを作成する際の詳細プルーフオプションの追加 </a> を参照してください</p> </p> </td> 
+    </ol> <p>メモ：  <p>Workfront [!UICONTROL その他アクション ] モジュールを使用してプルーフを作成する場合、ベストプラクティスは、詳細なオプションを使用せずにプルーフを作成し、[!DNL Workfront Proof] SOAP API を使用してプルーフを更新することです。</p><p>Workfront API （このモジュールが使用）を使用したプルーフの作成について詳しくは、<a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Adobe Workfront API でプルーフを作成する際の詳細プルーフオプションの追加 </a> を参照してください</p> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
@@ -674,7 +778,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
 #### その他のアクションオプション
 
@@ -859,7 +963,7 @@ Web フックを作成した後、イベントの送信先エンドポイント�
 <td> <p>このモジュールの出力バンドルに含める情報を選択します。</p> </td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL 出力のカスタム フォーム &#x200B;]</td>
+    <td>[!UICONTROL 出力のカスタム フォーム ]</td>
      <td> <p>このモジュールの出力バンドルに含めるカスタムフォームを選択し、出力に含めるカスタムフォームから特定のフィールドを選択します。</p> </td> 
   </tr> 
   <tr> 
@@ -877,26 +981,28 @@ Web フックを作成した後、イベントの送信先エンドポイント�
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
 +++
 
-+++ **[!UICONTROL レコードの読み取り（レガシー）]**
+<!--
+
++++ **[!UICONTROL Read a Record (Legacy)]**
 
 >[!IMPORTANT]
 >
->このモジュールは、レコードを読み取りモジュールに置き換えられました。 新しいシナリオでは、そのモジュールを使用することをお勧めします。
->&#x200B;>このモジュールを使用する既存のシナリオは、引き続き期待どおりに機能します。 このモジュールは、2025 年 5 月にモジュールセレクターから削除されます。
+>This module has been replaced with the Read a record module. We recommend using that module in new scenarios.
+>Existing scenarios that use this module will continue to function as expected. This module will be removed from the module selector in May 2025.
 
-このアクションモジュールは、1 つのレコードからデータを取得します。
+This action module retrieves data from a single record.
 
-レコードの ID を指定します。また、モジュールで読み取る関連レコードを指定することもできます。
+You specify the ID of the record. You can also specify which related records you want the module to read.
 
-例えば、モジュールが読み取っているレコードがプロジェクトの場合、プロジェクトのタスクを読み込むように指定できます。
+For example, if the record that the module is reading is a project, you can specify that you want the project's tasks read.
 
-モジュールは、指定した出力フィールドからデータの配列を返します。
+The module returns an array of data from the output fields you specified.
 
-このモジュールを設定する際には、次のフィールドが表示されます。
+When you are configuring this module, the following fields display.
 
 <table style="table-layout:auto">
  <col> 
@@ -904,44 +1010,46 @@ Web フックを作成した後、イベントの送信先エンドポイント�
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
-    <td> <p>Workfront アプリケーションをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">WorkfrontをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+    <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Record Type]</td>
-
-<td>モジュールで読み取るWorkfront オブジェクトタイプを選択します。</td> 
+  
+   <td>Choose the Workfront object type that you want the module to read.</td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Outputs]</td>
-
-<td> <p>このモジュールの出力バンドルに含める情報を選択します。</p> </td> 
+  
+   <td> <p>Select the information you want included in the output bundle for this module.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL References]</td>
-   <td>出力に含める参照フィールドを選択します。</td> 
+   <td>Select any reference fields that you want to include in the output.</td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Collections]</td>
-   <td>出力に含める参照フィールドを選択します。</td> 
+   <td>Select any reference fields that you want to include in the output.</td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL ID]</td>
-   <td> <p>モジュールで読み取るレコードの一意のWorkfront ID を入力します。</p> <p>ID を取得するには、ブラウザーでWorkfront オブジェクトを開き、URL の末尾にある「ID=」の後のテキストをコピーします。 例：https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td> <p>Enter the unique Workfront ID of the record that you want the module to read.</p> <p>To get the ID, open the Workfront object in your browser and copy the text at the end of the URL after "ID=." For example: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
 +++
+
+-->
 
 +++ **イベントペイロードのバージョンを更新**
 
 Workfrontは最近、イベント購読サービスの新しいバージョンをリリースしました。 新しいバージョンはWorkfront API に対する変更ではなく、イベント購読機能に対する変更です。 このアクションモジュールは、このシナリオで使用されるイベントペイロードのバージョンを更新します。
 
-新しいイベント購読のバージョンについて詳しくは、Workfront ドキュメントの [&#x200B; イベント購読のバージョン管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) を参照してください
+新しいイベント購読のバージョンについて詳しくは、Workfront ドキュメントの [ イベント購読のバージョン管理 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) を参照してください
 
-ウェビナーの録画など、イベント購読のアップグレード中にWorkfront Fusion シナリオを保持する方法については、[&#x200B; イベント購読 V2 のアップグレード中に Fusion シナリオを保持する &#x200B;](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ja) を参照してください。
+ウェビナーの録画など、イベント購読のアップグレード中にWorkfront Fusion シナリオを保持する方法については、[ イベント購読 V2 のアップグレード中に Fusion シナリオを保持する ](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182) を参照してください。
 
 <table style="table-layout:auto">
  <col> 
@@ -1001,7 +1109,7 @@ Workfrontは最近、イベント購読サービスの新しいバージョン�
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
 >[!NOTE]
 >
@@ -1010,20 +1118,22 @@ Workfrontは最近、イベント購読サービスの新しいバージョン�
 
 +++
 
-+++ **[!UICONTROL レコードを更新（レガシー）]**
+<!--
+
++++ **[!UICONTROL Update Record (Legacy)]**
 
 >[!IMPORTANT]
 >
->このモジュールは、レコードを更新モジュールに置き換えられました。 新しいシナリオでは、そのモジュールを使用することをお勧めします。
->&#x200B;>このモジュールを使用する既存のシナリオは、引き続き期待どおりに機能します。 このモジュールは、2025 年 5 月にモジュールセレクターから削除されます。
+>This module has been replaced with the Update a record module. We recommend using that module in new scenarios.
+>Existing scenarios that use this module will continue to function as expected. This module will be removed from the module selector in May 2025.
 
-このアクションモジュールは、プロジェクト、タスク、イシューなどのオブジェクトを更新します。モジュールを使用すると、モジュールで使用可能なオブジェクトのフィールドを選択できます。
+This action module updates an object, such as a project, task, or issue. The module allows you to select which of the object's fields are available in the module.
 
-レコードの ID を指定します。
+You specify the ID of the record.
 
-このモジュールは、オブジェクトの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
+The module returns the ID of the  object and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
 
-このモジュールを設定する際には、次のフィールドが表示されます。
+When you are configuring this module, the following fields display.
 
 <table style="table-layout:auto">
  <col> 
@@ -1033,31 +1143,33 @@ Workfrontは最近、イベント購読サービスの新しいバージョン�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Workfront アプリケーションをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">WorkfrontをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
-   <td> <p>モジュールで更新するレコードの一意のWorkfront ID を入力します。</p> <p>ID を取得するには、ブラウザーでWorkfront オブジェクトを開き、URL の末尾にある「ID=」の後のテキストをコピーします。 例：https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td> <p>Enter the unique Workfront ID of the record that you want the module to update.</p> <p>To get the ID, open the Workfront object in your browser and copy the text at the end of the URL after "ID=." For example: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
   <tr> 
    <td>[!DNL Record Type]</td> 
-   <td> <p>モジュールで更新するWorkfront レコードのタイプを選択します。</p> </td> 
+   <td> <p>Select the type of Workfront record that you want the module to update.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!DNL Select fields to map]</td> 
-   <td>データ入力に使用するフィールドを選択します。これにより、不要なフィールドをスクロールしなくても、これらのフィールドを使用できます。 その後、これらのフィールドにデータを入力またはマッピングできます。</td> 
+   <td>Select the fields that you want available for data input. This allows you to use these fields without having to scroll through the ones you don't need. You can then enter or map data into these fields.</td> 
   </tr> 
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
 >[!NOTE]
 >
->* オブジェクトの ID を入力する際に、オブジェクトの名前を入力し、リストから選択できます。そうすると、モジュールが適切な ID をフィールドに入力します。
->* カスタムフィールドまたは[!UICONTROL メモ]オブジェクト（コメントまたは返信）にテキストを入力する際、「[!UICONTROL メモテキスト]」フィールドで HTML タグを使用して、太字や斜体などのリッチテキストを作成できます。
+>* When entering the ID of an object, you can begin typing the name of the object, then select it from the list. The module then enters the appropriate ID into the field.
+>* When entering the text for a custom field or a [!UICONTROL Note] object (Comment or reply), you can use HTML tags in the [!UICONTROL Note Text] field to create rich text, such as bold or italic text.
 
 +++
+
+-->
 
 +++ **[!UICONTROL ドキュメントをアップロード]**
 
@@ -1098,19 +1210,21 @@ Workfrontは最近、イベント購読サービスの新しいバージョン�
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[ 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ ](#workfront-object-types-available-for-each-workfront-module) を参照してください。
 
 +++
 
-+++ **[!UICONTROL ドキュメントのアップロード（レガシー）]**
+<!--
 
-このアクションモジュールは、プロジェクト、タスク、イシューなどのWorkfront オブジェクトにドキュメントをアップロードします。 ドキュメント全体を一度にアップロードします。
++++ **[!UICONTROL Upload Document (Legacy)]**
 
-ドキュメントの場所、アップロードするファイル、およびオプションで新しいファイル名を指定します。
+This action module uploads a document to a Workfront object, such as a project, task, or issue. It uploads the entire document at once. 
 
-このモジュールは、ドキュメントの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドと値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
+You specify the location for the document, the file you want to upload, and an optional new name for the file.
 
-このモジュールを設定する際には、次のフィールドが表示されます。
+The module returns the ID of the document and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
+
+When you are configuring this module, the following fields display.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1118,30 +1232,32 @@ Workfrontは最近、イベント購読サービスの新しいバージョン�
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Workfront アプリケーションをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">WorkfrontをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Related Record ID]</td> 
-   <td>ドキュメントをアップロードするレコードの一意のWorkfront ID を入力します。</td> 
+   <td>Enter the unique Workfront ID of the record to which you want to upload the document.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Related Record Type]</td> 
-   <td>モジュールがドキュメントをアップロードするWorkfront レコードのタイプを選択します。</td> 
+   <td>Select the type of Workfront record where you want the module to upload the document.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder ID]</td> 
-   <td>関連レコードのタイプに応じて、フォルダー ID の入力またはマッピングが必要になる場合があります。</td> 
+   <td>Depending on the type of related record, you may need to enter or map a folder ID.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Source file]</td> 
-   <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </td> 
+   <td> <p>Select a source file from a previous module, or map the source file's name and data.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-このモジュールを使用できるWorkfront オブジェクトタイプのリストについては、[&#x200B; 各Workfront モジュールで使用できるWorkfront オブジェクトタイプ &#x200B;](#workfront-object-types-available-for-each-workfront-module) を参照してください。
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
+
 
 +++
+-->
 
 ### 検索
 
@@ -1208,7 +1324,7 @@ Workfrontは最近、イベント購読サービスの新しいバージョン�
    <td> <p>モジュールで検索するWorkfront レコードのタイプを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL カスタム フォーム リスト &#x200B;]</td> 
+   <td>[!UICONTROL カスタム フォーム リスト ]</td> 
    <td> <p>1 つ以上のカスタムフォームを選択します。 これらのカスタムフォームのフィールドは、検索クエリで使用できるようになります。</p> </td> 
   </tr> 
   <tr> 
@@ -1249,7 +1365,7 @@ Workfrontは最近、イベント購読サービスの新しいバージョン�
 >[!IMPORTANT]
 >
 >このモジュールは、レコードを検索モジュールに置き換えられました。 新しいシナリオでは、そのモジュールを使用することをお勧めします。
->&#x200B;>このモジュールを使用する既存のシナリオは、引き続き期待どおりに機能します。 このモジュールは、2025 年 5 月にモジュールセレクターから削除されます。
+>>このモジュールを使用する既存のシナリオは、引き続き期待どおりに機能します。 このモジュールは、2025 年 5 月にモジュールセレクターから削除されます。
 
 この検索モジュールは、指定した検索クエリに一致するWorkfront内のオブジェクト内のレコードを検索します。
 
@@ -1631,7 +1747,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 >[!NOTE]
 >
->Workfront オブジェクトタイプは設定に含まれていないので、「[!UICONTROL &#x200B; ドキュメントをダウンロード &#x200B;]」モジュールはこのテーブルに含まれていません。
+>Workfront オブジェクトタイプは設定に含まれていないので、「[!UICONTROL  ドキュメントをダウンロード ]」モジュールはこのテーブルに含まれていません。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -2259,13 +2375,13 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >* Workfrontは最近、イベント購読サービスの新しいバージョンをリリースしました。 新しいバージョンはWorkfront API に対する変更ではなく、イベント購読機能に対する変更です。 このアクションモジュールは、このシナリオで使用されるイベントペイロードのバージョンを更新します。
 >
->   新しいイベント購読のバージョンについて詳しくは、Workfront ドキュメントの [&#x200B; イベント購読のバージョン管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) を参照してください
+>   新しいイベント購読のバージョンについて詳しくは、Workfront ドキュメントの [ イベント購読のバージョン管理 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) を参照してください
 >
->   ウェビナーの録画など、イベント購読のアップグレード中にWorkfront Fusion シナリオを保持する方法については、[ イベント購読 V2 アップグレード中の Fusion シナリオの保持（https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ja） ] を参照してください。
+>   ウェビナーの録画など、イベント購読のアップグレード中にWorkfront Fusion シナリオを保持する方法については、[ イベント購読 V2 アップグレード中の Fusion シナリオの保持（https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182） ] を参照してください。
 
 Workfront [!UICONTROL Watch Events] モジュールは、Workfront API でイベント購読を作成する Webhook に基づくシナリオをトリガーします。 イベント登録は、web フックに送信されるイベントを決定する一連のデータです。例えば、イシューを監視する[!UICONTROL イベントの監視]モジュールを設定した場合、イベント登録はイシューに関連するイベントのみを送信します。
 
-Fusion ユーザーは、イベント登録フィルターを使用して、ユースケースに適したイベント登録を作成できます。例えば、Workfront API でイベント購読を設定して、特定のプロジェクトの問題のみを Webhook に送信し、「[!UICONTROL &#x200B; イベントをウォッチ &#x200B;]」モジュールでそのプロジェクトの問題のみをトリガーできるようにします。 より範囲の狭いトリガーを作成できるので、無関係なトリガーの数が減り、シナリオの設計を改善できます。
+Fusion ユーザーは、イベント登録フィルターを使用して、ユースケースに適したイベント登録を作成できます。例えば、Workfront API でイベント購読を設定して、特定のプロジェクトの問題のみを Webhook に送信し、「[!UICONTROL  イベントをウォッチ ]」モジュールでそのプロジェクトの問題のみをトリガーできるようにします。 より範囲の狭いトリガーを作成できるので、無関係なトリガーの数が減り、シナリオの設計を改善できます。
 
 これは、Workfront Fusion シナリオでフィルターを設定する場合とは異なります。 イベント登録フィルターを使用しない場合、web フックは、選択されたオブジェクトタイプに関連するすべてのイベントを受信します。これらのイベントのほとんどはシナリオとは無関係と思われるので、シナリオを続行する前に除外する必要があります。
 
@@ -2299,7 +2415,7 @@ Workfront／イベントの監視フィルターで使用できる演算子は�
 >
 >イベントフィルターを使用すると、イシューが Ana に割り当てられている場合のシナリオをイシューの作成時にトリガーする web フックを設定できます。Ana の ユーザー IDは、b378489d8f7cd3cee0539260720a84b7 です。
 >
->![&#x200B; イベントフィルター &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/event-filter-watch-events-350x277.png)
+>![ イベントフィルター ](/help/workfront-fusion/references/apps-and-modules/assets/event-filter-watch-events-350x277.png)
 >
 >1 日に 100 件のイシューが作成され、そのうち 2 件のみが Ana に割り当てられている場合、シナリオは 2 回実行されます。
 >
@@ -2307,12 +2423,12 @@ Workfront／イベントの監視フィルターで使用できる演算子は�
 >
 >Ana に割り当てられたイシューのみを処理するようにイベントをフィルタリングするには、[!UICONTROL イベントを監視]モジュールの後にフィルターを作成できます。
 >
->![&#x200B; イベントフィルターなし &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/watch-events-non-event-filter-350x206.png)
+>![ イベントフィルターなし ](/help/workfront-fusion/references/apps-and-modules/assets/watch-events-non-event-filter-350x206.png)
 >
 >1 日に 100 件のイシューが作成され、そのうち 2 件のみが Ana に割り当てられている場合、シナリオは 100 回実行されます。98 回の実行はフィルターで停止しますが、トリガーモジュールは引き続きデータを消費し、すべての実行で操作が実行されます。
 
-Workfront イベント購読について詳しくは、[FAQ - イベント購読 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq) を参照してください。
+Workfront イベント購読について詳しくは、[FAQ - イベント購読 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq) を参照してください。
 
-Webhook について詳しくは、「Adobe Workfront Fusion の [&#x200B; インスタントトリガー（Webhook）」を参照してください &#x200B;](/help/workfront-fusion/references/modules/webhooks-reference.md)
+Webhook について詳しくは、「Adobe Workfront Fusion の [ インスタントトリガー（Webhook）」を参照してください ](/help/workfront-fusion/references/modules/webhooks-reference.md)
 
-シナリオのフィルターについて詳しくは、[&#x200B; シナリオへのフィルターの追加 &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md) を参照してください。
+シナリオのフィルターについて詳しくは、[ シナリオへのフィルターの追加 ](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md) を参照してください。
