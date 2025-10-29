@@ -3,10 +3,10 @@ title: Veeva Vault モジュール
 description: Adobe Workfront Fusion のシナリオでは、Veeva Vault を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 4f5a4cf8691e5bb47eec6f6b2842369c5c6fbad8
+source-git-commit: 37cb18a2e13a494c4174514539c0c7e43cdee011
 workflow-type: tm+mt
-source-wordcount: '1516'
-ht-degree: 16%
+source-wordcount: '1661'
+ht-degree: 17%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 16%
 
 Adobe Workfront Fusion のシナリオでは、Veeva Vault を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
-シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## アクセス要件
 
@@ -50,9 +50,9 @@ Adobe Workfront Fusion のシナリオでは、Veeva Vault を使用するワー
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -60,13 +60,63 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 Veeva Vault モジュールを使用するには、Veeva Vault アカウントが必要です。
 
+## Veeva Vault のWorkfront Fusion への接続
+
+Veeva Vault モジュール内から直接 Veeva Vault アカウントへの接続を作成できます。
+
+1. 任意の Veeva Vault モジュールで、「接続」フィールドの横にある **追加** をクリックします。
+1. 次のフィールドに入力します。
+
+   <table style="table-layout:auto"> 
+     <col> 
+     <col> 
+     <tbody> 
+      <tr> 
+       <td role="rowheader">接続名</td> 
+       <td> <p>接続に名前を入力します。</p> </td> 
+      </tr> 
+      <tr>
+        <td role="rowheader">環境</td>
+        <td>
+          <p>本番環境と非本番環境のどちらに接続するかを選択します。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">タイプ</td>
+        <td>
+          <p>サービスアカウントと個人アカウントのどちらに接続するかを選択します。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">ユーザー名</td>
+        <td>
+          <p>Veeva Vault アカウントのユーザー名を入力します。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">パスワード</td>
+        <td>
+          <p>Veeva Vault アカウントのパスワードを入力します。</p>
+        </td>
+      </tr>
+      <tr> 
+       <td role="rowheader">Vault の DNS</td> 
+       <td>Veeva Vault DNS （ドメイン名）を入力します。</p><p>Veeva Vault DNS を見つけるには、Veeva Vault へのアクセスに使用する URL を調べます。</p>例えば、URL <code>https://my-dns.veevavault.com</code> では、DNS は <code>my-dns</code> です。 URL 全体を入力する必要はありません。</td> 
+      </tr> 
+     </tbody> 
+    </table>
+
+1. 「**[!UICONTROL 続行]**」をクリックし、接続を作成して、モジュールに戻ります。
+
+
+
 ## Veeva Vault モジュールとそのフィールド
 
 Workfront Fusion で Veeva Vault モジュールを設定する場合、以下に示すフィールドが表示されます。 これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の Veeva Vault フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 ### ドキュメント
 
