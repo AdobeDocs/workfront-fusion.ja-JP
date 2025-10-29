@@ -4,10 +4,10 @@ description: 次の配列関数は、Adobe Workfront Fusion マッピングパ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 16c3915c-add1-4aab-a0e1-75fc590c42a6
-source-git-commit: d141738a7e013ed817cb657b883fc5e1061e2165
+source-git-commit: 9b61a3b18df1f755cc7ccc28889564e4bcb6cda0
 workflow-type: tm+mt
-source-wordcount: '608'
-ht-degree: 88%
+source-wordcount: '606'
+ht-degree: 86%
 
 ---
 
@@ -57,15 +57,15 @@ ht-degree: 88%
 
   メールを含むプリミティブ配列を返します
 
-* `map(Emails[];email;label;work;home)`
+* `map(Emails[];email;label;work)`
 
-  職場または自宅に等しいラベルを持つメールのプリミティブ配列を返します。
+  work と等しいラベルを持つメールを含むプリミティブ配列を返します
 
 >[!ENDSHADEBOX]
 
-詳しくは、「[&#x200B; 配列または配列要素のマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)」を参照してください。
+詳しくは、「[ 配列または配列要素のマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)」を参照してください。
 
-## シャッフル
+## shuffle
 
 ## [!UICONTROL sort (array; [order]; [key])]
 
