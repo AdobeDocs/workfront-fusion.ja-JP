@@ -4,10 +4,10 @@ description: 失敗の理由がすぐに解決される可能性がある場合�
 author: Becky
 feature: Workfront Fusion
 exl-id: d568942c-2cd5-430c-bdbf-e1496da25b50
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 50%
+source-wordcount: '512'
+ht-degree: 49%
 
 ---
 
@@ -15,7 +15,36 @@ ht-degree: 50%
 
 エラーが一時停止ディレクティブで処理されると、レコードが不完全な実行フォルダーに作成されます。 このレコードには、シナリオの実行の状態と共に、前のモジュールのデータが格納されます。レコードは、エラーが発生したモジュールを参照し、モジュールが入力として受信したデータに関する情報を含みます。 エラーの原因となるデータのバンドルごとに、別々のレコードが作成されます。
 
-詳しくは、[&#x200B; 不完全な実行の表示と解決 &#x200B;](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md) を参照してください。
+詳しくは、[ 不完全な実行の表示と解決 ](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md) を参照してください。
+
+## アクセス要件
+
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">製品</td> 
+   <td>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+
++++
 
 ## Break ディレクティブによって発生したエラーを解決する
 
@@ -23,17 +52,17 @@ ht-degree: 50%
 
 シナリオを再実行することで、未完了の実行を自動的に処理するようにシナリオを設定することもできます。未完了の実行を処理するようにモジュールを設定するには、次の手順に従います。
 
-1. 左側のパネルで「**[!UICONTROL Scenarios]**」タブをクリックします。
+1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. 回避策を追加するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
-1. **フロー制御** アイコン ![&#x200B; フロー制御 &#x200B;](assets/flow-control-icon.png) をクリックし、「**中断**」を選択します。
+1. **フロー制御** アイコン ![ フロー制御 ](assets/flow-control-icon.png) をクリックし、「**中断**」を選択します。
 1. Break モジュール内で、[!UICONTROL **自動的に実行を完了する**]&#x200B;オプションを有効にします。
 1. **試行回数**&#x200B;フィールドに、モジュールが実行を再試行する最大回数を入力またはマッピングします
 
    この数は 1 ～ 100 の範囲で指定する必要があります。
 1. **試行間隔**&#x200B;フィールドに、各再試行の間隔の分数を入力またはマッピングします。
 
-このオプションを有効にすると、エラーが発生した場合、不完全な実行が（[!UICONTROL Interval between attempts] フィールドに指定された時間の後で）取得され、元の入力データで実行されます。 この処理は、エラーなしでモジュールの実行が完了するか、指定された試行回数に達するまで繰り返されます。
+このオプションを有効にすると、エラーが発生した場合、]試行間隔[!UICONTROL フィールドで指定された時間後に未完了の実行が回収され、元の入力データで実行されます。この処理は、エラーなしでモジュールの実行が完了するか、指定された試行回数に達するまで繰り返されます。
 
 >[!NOTE]
 >
@@ -48,4 +77,4 @@ ht-degree: 50%
 
 ## リソース
 
-詳しくは、「シナリオの設定」の [&#x200B; 不完全な実行の保存を許可する &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions) を参照してください。
+詳しくは、「シナリオの設定」の [ 不完全な実行の保存を許可する ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions) を参照してください。

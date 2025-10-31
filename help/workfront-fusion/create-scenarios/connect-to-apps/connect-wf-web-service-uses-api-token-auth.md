@@ -4,10 +4,10 @@ description: 一部のサービスでは、Adobe Workfront Fusion などの統�
 author: Becky
 feature: Workfront Fusion
 exl-id: 4a8ac816-52de-41e8-96d7-1c8cde2ebe32
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 42%
+source-wordcount: '983'
+ht-degree: 39%
 
 ---
 
@@ -23,42 +23,37 @@ ht-degree: 42%
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
 
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront パッケージ 
-   <td> <p>任意</p> </td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：ワーク以上</p> </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンス要件なし</p>
-   <p>または</p>
-   <p>レガシー：任意 </p>
+   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>コネクタベース（従来）: Workfront ファミリー以外のアプリケーションに接続するには、作業の自動化と統合のためのWorkfront Fusion が必要です </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>Prime Workfront プランを選択する：組織がAdobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront プラン：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -69,7 +64,7 @@ API トークンを介してサービスに接続する手順は、ほとんど�
 1. Web サービスの web サイト上にアプリケーションを作成します。詳しくは、この記事の[新しいアプリケーションを作成して API トークンを取得](#create-a-new-application-and-obtain-the-api-token)を参照してください。
 1. API キーまたは API トークンを取得します。
 1. シナリオにWorkfront Fusion の HTTP / リクエストを行うモジュールを追加します。
-1. この記事の [HTTP モジュールの設定 &#x200B;](#set-up-the-http-module) の節で説明されているように、web サービスの API ドキュメントに従ってモジュールを設定し、シナリオを実行します。
+1. この記事の [HTTP モジュールの設定 ](#set-up-the-http-module) の節で説明されているように、web サービスの API ドキュメントに従ってモジュールを設定し、シナリオを実行します。
 
 >[!NOTE]
 >
@@ -185,7 +180,7 @@ JSON モジュールについて詳しくは、[JSON モジュール](/help/work
 
 1. JSON を作成する元となる値を入力またはマッピングします。
 
-   ![JSON 値 &#x200B;](/help/workfront-fusion/create-scenarios/connect-to-apps/assets/json-values-350x288.png)
+   ![JSON 値 ](/help/workfront-fusion/create-scenarios/connect-to-apps/assets/json-values-350x288.png)
 
 1. JSON/JSON を作成モジュールを HTTP/ リクエストを行うモジュールに接続します。
 1. JSON を作成モジュールの JSON 文字列を「HTTP / リクエストを行う」モジュールの「リクエストコンテンツ」フィールドにマッピングします。

@@ -7,10 +7,10 @@ description: Adobe Workfront Fusion を使用するには、Adobe Workfront ラ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 97e3402c-d1d0-44f6-9752-11b0f5abee22
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 3a977d805c10fda7209b0634c6e32e818a980691
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 44%
+source-wordcount: '879'
+ht-degree: 42%
 
 ---
 
@@ -18,13 +18,11 @@ ht-degree: 44%
 
 Workfront Fusion のテンプレート機能を使用すると、Workfront Fusion のシナリオの出発点として既存のテンプレートを作成および使用できます。 テンプレートは、組織のニーズや特定のユースケースに合わせて設定および変更できる、一般的なユースケースを表します。
 
-現在使用可能な Fusion テンプレートのリストについては、[&#x200B; 現在使用可能なAdobe Workfront Fusion テンプレート &#x200B;](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md) を参照してください。
+現在使用可能な Fusion テンプレートのリストについては、[ 現在使用可能なAdobe Workfront Fusion テンプレート ](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md) を参照してください。
 
 ## アクセス要件
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
-
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
 <table style="table-layout:auto">
  <col> 
@@ -32,34 +30,22 @@ Workfront Fusion のテンプレート機能を使用すると、Workfront Fusio
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意</p> </td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
-   <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
-   <p>または</p>
-   <p>レガシー：任意 </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
-
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -67,7 +53,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 テンプレート エリアでは、使用可能なテンプレート、テンプレートに含まれるアプリケーションおよびその構造を表示できます。 また、特定のアプリや名前を検索し、ユースケースをフィルタリングすることもできます。
 
-1. 左側のナビゲーションで **テンプレート**![&#x200B; テンプレートアイコン &#x200B;](assets/templates-icon.png) をクリックします。
+1. 左側のナビゲーションで **テンプレート**![ テンプレートアイコン ](assets/templates-icon.png) をクリックします。
 1. 公開されているテンプレートを表示するには、「公開テンプレート」タブをクリックします。
 
    または
@@ -104,7 +90,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
    チームテンプレートからシナリオの作成を開始するには、ダイアグラムをクリックしてから、モジュールをクリックして設定を開始します。
 
-テンプレートからシナリオを作成する手順については、[&#x200B; テンプレートを使用したシナリオの作成 &#x200B;](/help/workfront-fusion/create-and-manage-templates/create-scenarios-with-fusion-templates.md) を参照してください。
+テンプレートからシナリオを作成する手順については、[ テンプレートを使用したシナリオの作成 ](/help/workfront-fusion/create-and-manage-templates/create-scenarios-with-fusion-templates.md) を参照してください。
 
 
 
@@ -117,7 +103,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 「[!UICONTROL チームテンプレート]」タブで任意のテンプレートを編集できます。
 
-1. サイドナビゲーションメニューの **[!UICONTROL テンプレート]** アイコン ![&#x200B; テンプレートアイコン &#x200B;](assets/templates-icon.png) をクリックします。
+1. サイドナビゲーションメニューの **[!UICONTROL テンプレート]** アイコン ![ テンプレートアイコン ](assets/templates-icon.png) をクリックします。
 1. 「**[!UICONTROL チームテンプレート]**」タブをクリックします。
 1. 「**[!UICONTROL プライベート]**」タブをクリックします。
 1. 編集するテンプレートをクリックします。
@@ -127,12 +113,12 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
    テンプレートダイアグラムをクリックします。
 
-1. テンプレートに変更を加えます。テンプレートの作成時に使用できたすべてのオプションにアクセスできます。これらのオプションを確認するには、[&#x200B; 新しいテンプレートの作成 &#x200B;](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md) を参照してください。
-1. **[!UICONTROL 保存]** アイコン ![&#x200B; 保存アイコン &#x200B;](assets/save-icon.png) をクリックします。
+1. テンプレートに変更を加えます。テンプレートの作成時に使用できたすべてのオプションにアクセスできます。これらのオプションを確認するには、[ 新しいテンプレートの作成 ](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md) を参照してください。
+1. **[!UICONTROL 保存]** アイコン ![ 保存アイコン ](assets/save-icon.png) をクリックします。
 
 >[!NOTE]
 >
->「[!UICONTROL チームテンプレート]」タブには、公開されたテンプレートだけでなく、管理者が既に公開したテンプレートのコピーも含まれます。これにより、すでに全員に表示されているテンプレートを編集できます。これらのテンプレートのいずれかを変更しても、変更によって公開テンプレートがすぐに上書きされることはありません。「[!UICONTROL &#x200B; 公開テンプレート &#x200B;]」タブのテンプレートは変更されず、公開されたままですが、[!UICONTROL &#x200B; チームテンプレート &#x200B;] からの変更点を含む新しいバージョンでは、公開プロセスが開始されます。 変更されたバージョンが公開および承認されると、元の公開テンプレートが上書きされます。
+>「[!UICONTROL チームテンプレート]」タブには、公開されたテンプレートだけでなく、管理者が既に公開したテンプレートのコピーも含まれます。これにより、すでに全員に表示されているテンプレートを編集できます。これらのテンプレートのいずれかを変更しても、変更によって公開テンプレートがすぐに上書きされることはありません。「[!UICONTROL  公開テンプレート ]」タブのテンプレートは変更されず、公開されたままですが、[!UICONTROL  チームテンプレート ] からの変更点を含む新しいバージョンでは、公開プロセスが開始されます。 変更されたバージョンが公開および承認されると、元の公開テンプレートが上書きされます。
 
 ## テンプレートを削除
 
@@ -140,7 +126,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 削除したテンプレートは復元できませんのでご注意ください。 チームテンプレートはチームのすべてのメンバーが使用できるので、テンプレートを削除する前にチームに問い合わせて、テンプレートが不要であることを確認することをお勧めします。
 
-1. サイドナビゲーションメニューの **[!UICONTROL テンプレート]** アイコン ![&#x200B; テンプレートアイコン &#x200B;](assets/templates-icon.png) をクリックします。
+1. サイドナビゲーションメニューの **[!UICONTROL テンプレート]** アイコン ![ テンプレートアイコン ](assets/templates-icon.png) をクリックします。
 1. 「**[!UICONTROL チームテンプレート]**」タブをクリックします。
 1. テンプレート名の横にある「**[!UICONTROL 削除]**」をクリックします。
 

@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion のシナリオの詳細
 author: Becky
 feature: Workfront Fusion
 exl-id: a6d07ed9-aa55-4993-9f78-7e691aa61049
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 42be02d6a59a5d7b8faccdcfe40e8b967153c6eb
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 56%
+source-wordcount: '574'
+ht-degree: 55%
 
 ---
 
@@ -17,13 +17,11 @@ ht-degree: 56%
 
 また、シナリオエディターにアクセスして、シナリオを編集することもできます。
 
-シナリオエディターについて詳しくは、[&#x200B; シナリオエディター &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md) を参照してください
+シナリオエディターについて詳しくは、[ シナリオエディター ](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md) を参照してください
 
 ## アクセス要件
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
-
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
 <table style="table-layout:auto">
  <col> 
@@ -31,43 +29,22 @@ ht-degree: 56%
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意</p> </td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
-   <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
-   <p>または</p>
-   <p>レガシー：任意 </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">アクセスレベル設定*</td> 
-   <td> 
-     <p>組織の Workfront Fusion 管理者である必要があります。</p>
-     <p>チームのWorkfront Fusion 管理者である必要があります。</p>
-   </td> 
-  </tr> 
-   </td> 
-  </tr> 
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
-
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -77,11 +54,11 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
    または
 
-   シナリオエディターでシナリオに取り組んでいる場合は、ウィンドウの左上隅にある左矢印 ![&#x200B; 編集を終了 &#x200B;](assets/exit-editing-arrow.png) をクリックします。
+   シナリオエディターでシナリオに取り組んでいる場合は、ウィンドウの左上隅にある左矢印 ![ 編集を終了 ](assets/exit-editing-arrow.png) をクリックします。
 
 1. 表示されるページで、以下の表に示す要素を確認できます。
 
-   ![&#x200B; シナリオの詳細 &#x200B;](assets/scenario-detail-350x207.png)
+   ![ シナリオの詳細 ](assets/scenario-detail-350x207.png)
 
    <table style="table-layout:auto"> 
     <col> 
@@ -92,11 +69,11 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
       <td>このタブには、シナリオが視覚的に表示されます。図は、シナリオエディターで表示されるものと同じです。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL レポート &#x200B;] タブ </td> 
+      <td role="rowheader">[!UICONTROL レポート ] タブ </td> 
       <td> <p>このタブを開いて、過去 30 日間にこのシナリオで実行された操作数のグラフを表示します。</p>  </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 履歴 &#x200B;] タブ </td> 
+      <td role="rowheader">[!UICONTROL 履歴 ] タブ </td> 
       <td> <p>このタブを開いて、シナリオの編集内容を含むシナリオの履歴を表示します。 </p> <p>「[!UICONTROL History]」タブには、各実行のシナリオ実行履歴も提供されます。これには次の情報が含まれます。</p> 
        <ul> 
         <li>各実行のステータス（成功またはエラー）</li> 
@@ -140,7 +117,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
       <td>このエリアには、現在実行中の実行に関連する情報が表示されます。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL 履歴 &#x200B;] パネル</p> <p> </p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL 履歴 ] パネル</p> <p> </p> </td> 
       <td> <p>このエリアには、シナリオの最後の実行に関連する情報が表示されます。実行ごとに、次の情報が表示されます。</p> 
        <ul> 
         <li>実行日</li> 
@@ -151,7 +128,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
        </ul> </td> 
      </tr> 
          <tr> 
-      <td role="rowheader"> <p>[!UICONTROL イベント &#x200B;] パネル</p>  </td> 
+      <td role="rowheader"> <p>[!UICONTROL イベント ] パネル</p>  </td> 
       <td>この領域には、シナリオに関連するイベントに関する情報が表示されます。  </td> 
      </tr> 
      <tr> 

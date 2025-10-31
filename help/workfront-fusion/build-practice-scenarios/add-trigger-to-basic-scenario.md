@@ -7,10 +7,10 @@ description: トリガーモジュールを追加して、シナリオが定期�
 author: Becky
 feature: Workfront Fusion
 exl-id: cd8ac958-b7a6-4536-89d8-c79a2f8940a6
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 3a977d805c10fda7209b0634c6e32e818a980691
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 9%
+source-wordcount: '597'
+ht-degree: 6%
 
 ---
 
@@ -22,13 +22,11 @@ ht-degree: 9%
 
 この例では、15 分ごとに実行されるトリガーモジュールを追加し、特定のキューにリクエストが送信された場合にシナリオを開始します。 次に、シナリオはこれらのリクエストをプロジェクトに変換します。
 
-この例では、[&#x200B; 基本シナリオの作成 &#x200B;](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) で作成したシナリオを変更します。
+この例では、[ 基本シナリオの作成 ](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) で作成したシナリオを変更します。
 
 ## アクセス要件
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
-
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
 <table style="table-layout:auto">
  <col> 
@@ -36,40 +34,28 @@ ht-degree: 9%
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意</p> </td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
-   <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
-   <p>または</p>
-   <p>レガシー：任意 </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
-
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
 ## 前提条件
 
-この手順を実行する前に、[&#x200B; 基本シナリオの作成 &#x200B;](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) で説明されているシナリオを作成する必要があります。
+この手順を実行する前に、[ 基本シナリオの作成 ](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) で説明されているシナリオを作成する必要があります。
 
 ## トリガーモジュールの追加と設定
 
@@ -80,7 +66,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
    モジュールが削除され、空白のプレースホルダーが残ります。
 
-1. 空のモジュールをクリックし、アプリのリストから **0&rbrace;Adobe Workfront&rbrace; を選択します。**
+1. 空のモジュールをクリックし、アプリのリストから **0}Adobe Workfront} を選択します。**
 1. **レコードをウォッチ** を選択します。
 1. モジュールで、シナリオ内の残りのモジュールと同じ接続が使用されていることを確認します。
 1. レコードタイプ フィールドで、「**イシュー**」を選択します。
@@ -127,4 +113,4 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ## リソース
 
-* トリガーモジュールについて詳しくは、「モジュールの概要」の [トリガーモジュール &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules) を参照してください。
+* トリガーモジュールについて詳しくは、「モジュールの概要」の [トリガーモジュール ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules) を参照してください。

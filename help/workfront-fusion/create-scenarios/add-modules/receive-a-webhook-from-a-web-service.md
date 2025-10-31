@@ -4,10 +4,10 @@ description: 現在Workfront Fusion に専用のコネクタがなく、Webhook 
 author: Becky
 feature: Workfront Fusion
 exl-id: 51ef13fb-2978-4927-8d5f-7d83995f11e0
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 17%
+source-wordcount: '354'
+ht-degree: 12%
 
 ---
 
@@ -19,42 +19,28 @@ ht-degree: 17%
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
 
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront パッケージ 
-   <td> <p>任意</p> </td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：ワーク以上</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
-   <td>
-   <p>現在：Workfront Fusion ライセンス要件なし</p>
-   <p>または</p>
-   <p>レガシー：任意 </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>Prime Workfront プランを選択する：組織がAdobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront プラン：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
-
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -70,7 +56,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
    手順については、[Webhook](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md) を参照してください。
 
-1. **保存**&#x200B;をクリックします。
+1. 「**保存**」をクリックします。
 
 1. **アドレスをクリップボードにコピー**、次に「**OK**」をクリックします。
 

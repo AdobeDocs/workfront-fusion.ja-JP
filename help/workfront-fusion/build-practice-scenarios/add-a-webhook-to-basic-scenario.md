@@ -7,9 +7,9 @@ description: Webhook は、インスタントトリガーとも呼ばれ、特�
 author: Becky
 feature: Workfront Fusion
 exl-id: 28ecca1f-a9c3-4b3d-95f5-73cb9a5dc4b9
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 3a977d805c10fda7209b0634c6e32e818a980691
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '510'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ Webhook は、インスタントトリガーとも呼ばれ、特定のスケジ
 
 この例では、特定のリクエストキューにリクエストが送信されたらすぐにシナリオを開始する Webhook を追加します。 次に、シナリオはこれらのリクエストをプロジェクトに変換します。
 
-この例では、[&#x200B; 基本シナリオの作成 &#x200B;](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) で作成したシナリオを変更します。
+この例では、[ 基本シナリオの作成 ](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) で作成したシナリオを変更します。
 
 ## アクセス要件
 
@@ -32,32 +32,28 @@ Webhook は、インスタントトリガーとも呼ばれ、特定のスケジ
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>Workfront Automation and Integration を含むすべてのパッケージ</p> </td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
-   <td>
-   <p>Workfront Fusion のライセンス要件はありません。</p>
-   </td> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>Workfront Fusion で接続する任意のアプリケーションやサービスのアカウントが必要です。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
-
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
 ## 前提条件
 
-この手順を実行する前に、[&#x200B; 基本シナリオの作成 &#x200B;](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) で説明されているシナリオを作成する必要があります。
+この手順を実行する前に、[ 基本シナリオの作成 ](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) で説明されているシナリオを作成する必要があります。
 
 ## Webhook の追加と設定
 
@@ -69,7 +65,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
    モジュールが削除され、空白のプレースホルダーが残ります。
 
-1. 空のモジュールをクリックし、アプリのリストから **0&rbrace;Adobe Workfront&rbrace; を選択します。**
+1. 空のモジュールをクリックし、アプリのリストから **0}Adobe Workfront} を選択します。**
 1. **イベントをウォッチ** を選択します。
 1. Webhook フィールドの横にある「**追加**」をクリックします。
 1. 「レコードタイプ」フィールドで「**イシュー**」を選択すると、イシューの変更がトリガーされるようになります。

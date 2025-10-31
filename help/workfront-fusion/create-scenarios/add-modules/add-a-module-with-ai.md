@@ -4,10 +4,10 @@ description: AI を使用すると、シナリオのセグメントで行う必�
 author: Becky
 feature: Workfront Fusion
 exl-id: d231e33a-6033-4e3c-b1d4-7034797c45a5
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 6%
+source-wordcount: '612'
+ht-degree: 3%
 
 ---
 
@@ -29,53 +29,37 @@ AI から生成されるものと同様に、生成されたモジュールを�
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
 
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意</p> </td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
-   <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
-   <p>または</p>
-   <p>レガシー：任意 </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
-
-+++
-
-## 前提条件
++++##前提条件
 
 この機能を使用するには、組織が次の前提条件を満たしている必要があります。
 
 * 組織がWorkfront AI アシスタント Beta プログラムに参加している。
 * Adobeには、署名済みのAdobe生成 AI 契約が必要です。
 
-  契約の署名について詳しくは、Workfront ドキュメントの AI アシスタントの概要の記事の [Adobe Gen AI 契約に署名する &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) を参照してください。
+  契約の署名について詳しくは、Workfront ドキュメントの AI アシスタントの概要の記事の [Adobe Gen AI 契約に署名する ](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) を参照してください。
 
 ## 現在サポートされている AI モジュールアプリケーション
 
@@ -104,10 +88,10 @@ Fusion AI は、現在、次のアプリケーションに接続するモジュ�
 1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. モジュールを追加するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
-1. 画面の右上隅付近にある **AI アシスタント** アイコン ![AI アシスタント アイコン &#x200B;](assets/ai-assistant-icon.png) をクリックします。
+1. 画面の右上隅付近にある **AI アシスタント** アイコン ![AI アシスタント アイコン ](assets/ai-assistant-icon.png) をクリックします。
 1. AI アシスタント パネルにテキスト プロンプトを入力します。
 
-   プロンプトのヒントについては、この記事の [&#x200B; シナリオセグメントのプロンプトの作成に関するヒント &#x200B;](#tips-for-creating-prompts-for-scenario-segments) を参照してください。
+   プロンプトのヒントについては、この記事の [ シナリオセグメントのプロンプトの作成に関するヒント ](#tips-for-creating-prompts-for-scenario-segments) を参照してください。
 
    AI アシスタントは、モジュールまたはモジュールのセットを生成します。
 1. （条件付き）必要に応じて、アプリケーションの API トークンをモジュールに追加します。

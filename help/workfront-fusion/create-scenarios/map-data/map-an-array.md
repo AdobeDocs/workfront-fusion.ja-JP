@@ -4,10 +4,10 @@ description: 配列または個々の配列要素をAdobe Workfront Fusion の�
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 26%
+source-wordcount: '897'
+ht-degree: 24%
 
 ---
 
@@ -30,42 +30,28 @@ ht-degree: 26%
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
 
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意</p> </td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
-   <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
-   <p>または</p>
-   <p>レガシー：任意 </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
-
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -82,7 +68,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
    1 つの配列には、任意の数の項目を追加できます。
 
-イテレータを使用して、配列を個々のバンドルに分割できます。詳しくは、Adobe Workfront Fusion の [[!UICONTROL Iterator] モジュール &#x200B;](/help/workfront-fusion/references/modules/iterator-module.md) を参照してください。
+イテレータを使用して、配列を個々のバンドルに分割できます。詳しくは、Adobe Workfront Fusion の [[!UICONTROL Iterator] モジュール ](/help/workfront-fusion/references/modules/iterator-module.md) を参照してください。
 
 ## 新しい配列への項目のマッピング
 
@@ -90,7 +76,7 @@ Workfront Fusion の一部のフィールドでは、要素を配列にマッピ
 
 「項目を追加」と表示されるモジュールフィールドは、すべて配列を作成します。
 
-![&#x200B; 項目を追加 &#x200B;](assets/add-item.png)
+![ 項目を追加 ](assets/add-item.png)
 
 配列に要素を追加するには、次の手順に従います。
 
@@ -106,7 +92,7 @@ Workfront Fusion の一部のフィールドでは、要素を配列にマッピ
 
 配列要素は、配列名の後に角括弧で囲まれた数字として表示されます。 このインデックス番号を使用して、配列の個々の要素をフィールドにマッピングできます。
 
-![&#x200B; 最初の要素をマッピング &#x200B;](assets/map-array-1st-element.png)
+![ 最初の要素をマッピング ](assets/map-array-1st-element.png)
 
 >[!NOTE]
 >
@@ -126,7 +112,7 @@ Workfront Fusion の一部のフィールドでは、要素を配列にマッピ
 
 1. 配列の別の要素をマッピングするには、[1 をクリックし ] マッピングする配列要素のインデックス番号を入力します。
 
-   ![&#x200B; 別の要素へのアクセス &#x200B;](assets/access-another-element.png)
+   ![ 別の要素へのアクセス ](assets/access-another-element.png)
 
 ### 指定されたキーで配列の要素をマッピングする
 
@@ -138,13 +124,13 @@ Workfront Fusion の一部のフィールドでは、要素を配列にマッピ
 
 次の例は、[!DNL Jira] アプリの出力を示しています。
 
-![Jira モジュールの出力 &#x200B;](assets/output-of-jira-app-350x100.png)
+![Jira モジュールの出力 ](assets/output-of-jira-app-350x100.png)
 
 この例では、ID が 10108 の特定の添付ファイルについて、添付ファイルの配列からファイル名を取得します。
 
 この例では、次の出力が生成されます。
 
-![Jira モジュールの出力 &#x200B;](assets/output-from-jira-350x261.png)
+![Jira モジュールの出力 ](assets/output-from-jira-350x261.png)
 
 この式は次のように説明できます。
 
@@ -153,7 +139,7 @@ Workfront Fusion の一部のフィールドでは、要素を配列にマッピ
    1. `map()` の最初のパラメーター関数は配列の項目全体です。
    1. 2 つ目のパラメーターは、値の項目の未加工の名前です。未加工の名前を取得するには、[!UICONTROL マッピング]パネルの項目にポインタを合わせます。
 
-      ![&#x200B; 生の名前を取得 &#x200B;](assets/obtain-raw-name-350x124.png)
+      ![ 生の名前を取得 ](assets/obtain-raw-name-350x124.png)
 
       >[!NOTE]
       >
@@ -161,7 +147,7 @@ Workfront Fusion の一部のフィールドでは、要素を配列にマッピ
 
    1. 3 番目のパラメーターは、キー項目の生の名前です。
 
-      ![3 番目のパラメーター &#x200B;](assets/3rd-parameter-350x166.png)
+      ![3 番目のパラメーター ](assets/3rd-parameter-350x166.png)
 
    1. 4 番目のパラメーターは指定されたキー値です。
 
@@ -175,16 +161,16 @@ Workfront Fusion の一部のフィールドでは、要素を配列にマッピ
 
 この例では、次の出力が生成されます。
 
-![Jira モジュールからの出力 &#x200B;](assets/output-from-jira-350x261.png)
+![Jira モジュールからの出力 ](assets/output-from-jira-350x261.png)
 
 >[!ENDSHADEBOX]
 
-`map()` 関数の詳細については、[&#x200B; 配列関数 &#x200B;](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md) を参照してください。
+`map()` 関数の詳細については、[ 配列関数 ](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md) を参照してください。
 
-`get()` 関数の詳細については、[&#x200B; 一般関数 &#x200B;](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) を参照してください。
+`get()` 関数の詳細については、[ 一般関数 ](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) を参照してください。
 
 ## 配列要素を一連のバンドルに変換します
 
-配列は[!UICONTROL イテレータ]モジュールを使用して、一連のバンドルに変換することができます。詳しくは、[[!UICONTROL Iterator] モジュール &#x200B;](/help/workfront-fusion/references/modules/iterator-module.md) を参照してください。
+配列は[!UICONTROL イテレータ]モジュールを使用して、一連のバンドルに変換することができます。詳しくは、[[!UICONTROL Iterator] モジュール ](/help/workfront-fusion/references/modules/iterator-module.md) を参照してください。
 
-![&#x200B; 一連のバンドル &#x200B;](assets/series-of-bundles.png)
+![ 一連のバンドル ](assets/series-of-bundles.png)

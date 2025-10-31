@@ -4,10 +4,10 @@ description: 実行中のシナリオを見て、データのフローを確認�
 author: Becky
 feature: Workfront Fusion
 exl-id: 24eeb1d3-b5a7-4486-8d0b-0a43eb154e8e
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 42be02d6a59a5d7b8faccdcfe40e8b967153c6eb
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 13%
+source-wordcount: '283'
+ht-degree: 3%
 
 ---
 
@@ -21,17 +21,15 @@ ht-degree: 13%
 
 モジュールが実行されると、出力インジケーターが表示されます。
 
-![&#x200B; 出力インジケーター &#x200B;](assets/data-flow-output.png)
+![ 出力インジケーター ](assets/data-flow-output.png)
 
 モジュールが複数のバンドルを処理する場合、処理されたバンドルごとにリングが表示され、出力インジケータは出力されたバンドルごとにカウントされます。
 
-シナリオデータフローについて詳しくは、[&#x200B; シナリオ実行フロー &#x200B;](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md) を参照してください。
+シナリオデータフローについて詳しくは、[ シナリオ実行フロー ](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md) を参照してください。
 
 ## アクセス要件
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
-
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
 <table style="table-layout:auto">
  <col> 
@@ -39,43 +37,22 @@ ht-degree: 13%
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意</p> </td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
-   <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
-   <p>または</p>
-   <p>レガシー：任意 </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">アクセスレベル設定*</td> 
-   <td> 
-     <p>組織の Workfront Fusion 管理者である必要があります。</p>
-     <p>チームのWorkfront Fusion 管理者である必要があります。</p>
-   </td> 
-  </tr> 
-   </td> 
-  </tr> 
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
-
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -86,4 +63,4 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 1. シナリオが実行されていない場合は、アクティブにするか、「**1 回実行**」をクリックしてシナリオの実行を開始します。
 1. 実行履歴パネルの「現在実行中」セクションで、表示する実行を選択します。
 
-![&#x200B; 現在実行中 &#x200B;](assets/currently-running.png)
+![ 現在実行中 ](assets/currently-running.png)

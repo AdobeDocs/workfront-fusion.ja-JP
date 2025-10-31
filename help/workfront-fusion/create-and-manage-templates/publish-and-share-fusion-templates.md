@@ -4,10 +4,10 @@ description: テンプレートを作成すると、すべてのチームメン�
 author: Becky
 feature: Workfront Fusion
 exl-id: 99a1227d-bff9-479f-b8b9-efcf7cea3708
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 3a977d805c10fda7209b0634c6e32e818a980691
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 51%
+source-wordcount: '483'
+ht-degree: 49%
 
 ---
 
@@ -15,13 +15,11 @@ ht-degree: 51%
 
 テンプレートを作成すると、すべてのチームメンバーがテンプレートを使用できるようになります。テンプレートをチーム外のユーザーと共有する場合は、まずテンプレートを公開する必要があります。
 
-テンプレートの作成について詳しくは、[&#x200B; 新しいテンプレートの作成 &#x200B;](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md) を参照してください。
+テンプレートの作成について詳しくは、[ 新しいテンプレートの作成 ](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md) を参照してください。
 
 ## アクセス要件
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
-
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
 <table style="table-layout:auto">
  <col> 
@@ -29,34 +27,22 @@ ht-degree: 51%
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意</p> </td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
-   <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
-   <p>または</p>
-   <p>レガシー：任意 </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
-
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -87,13 +73,13 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
    >[!NOTE]
    >
-   >このリンクを共有できますが、テンプレート自体は [!UICONTROL &#x200B; チームテンプレート &#x200B;] タブに残り、公開されません。
+   >このリンクを共有できますが、テンプレート自体は [!UICONTROL  チームテンプレート ] タブに残り、公開されません。
 
 1. （条件付き）テンプレートを公開したい場合は、「**[!UICONTROL 承認をリクエスト]**」をクリックして、承認を得るために管理者にテンプレートを送信します。
 
    >[!NOTE]
    >
-   >* テンプレートが承認されると、公開されます。 [!UICONTROL &#x200B; 公開テンプレート &#x200B;] は、組織やチームに関係なく、すべてのWorkfront Fusion ユーザー用の「[!UICONTROL &#x200B; 公開テンプレート &#x200B;]」タブに表示されます。
+   >* テンプレートが承認されると、公開されます。 [!UICONTROL  公開テンプレート ] は、組織やチームに関係なく、すべてのWorkfront Fusion ユーザー用の「[!UICONTROL  公開テンプレート ]」タブに表示されます。
    >* メールでレビューするテンプレートの受信に関する通知は、管理者には送信されません。承認が急を要する場合は、管理者に直接お問い合わせください。
 
 

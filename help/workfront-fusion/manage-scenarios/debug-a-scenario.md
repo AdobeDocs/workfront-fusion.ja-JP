@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion 開発ツールを使用すると、シナ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-source-git-commit: 71bd96915f21922d637433010acea9321ed476d5
+source-git-commit: 93d06cb917680f9cabc1bad6be0f9cd843449d07
 workflow-type: tm+mt
-source-wordcount: '1514'
-ht-degree: 70%
+source-wordcount: '1468'
+ht-degree: 69%
 
 ---
 
@@ -28,51 +28,28 @@ Fusion 開発ツールの概要ビデオとチュートリアルについては�
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
 
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意</p> </td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
-   <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
-   <p>または</p>
-   <p>レガシー：任意 </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">アクセスレベル設定*</td> 
-   <td> 
-     <p>組織の Workfront Fusion 管理者である必要があります。</p>
-     <p>チームのWorkfront Fusion 管理者である必要があります。</p>
-   </td> 
-  </tr> 
-   </td> 
-  </tr> 
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
-
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -80,13 +57,13 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 Adobe統合シェルで Fusion を使用している場合、または新しい Fusion エクスペリエンスに更新した場合は、シナリオエディターから開発ツールにアクセスできます。
 
-1. 画面下部の **ヘルパーツール**![&#x200B; ヘルパーツール &#x200B;](assets/debugger-icon.png) アイコンをクリックします。
+1. 画面下部の **ヘルパーツール**![ ヘルパーツール ](assets/debugger-icon.png) アイコンをクリックします。
 
 または：
 
 1. デバッグするシナリオのシナリオエディターに移動します。
 
-   シナリオエディターを見つけるには、[&#x200B; シナリオエディター &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md) を参照してください。
+   シナリオエディターを見つけるには、[ シナリオエディター ](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md) を参照してください。
 
 1. ページの何もないエリア（モジュール上以外）を右クリックします。
 1. 「**開発者ツールを開く**」を選択します。
@@ -103,7 +80,7 @@ Workfront Fusion 開発ツールは、3 つの主なセクションに分かれ�
 
 ライブストリームは、シナリオで「1 回実行」をクリックすると、バックグラウンドで発生していることを表示します。
 
-1. **[!UICONTROL ライブストリーム]** アイコン ![&#x200B; ライブストリームアイコン &#x200B;](assets/live-stream-icon.png) をクリックして、「ライブストリーム」セクションを開きます。
+1. **[!UICONTROL ライブストリーム]** アイコン ![ ライブストリームアイコン ](assets/live-stream-icon.png) をクリックして、「ライブストリーム」セクションを開きます。
 1. 次のいずれかの操作を行います。
 
    <table style="table-layout:auto"> 
@@ -155,11 +132,11 @@ Workfront Fusion 開発ツールは、3 つの主なセクションに分かれ�
 >
 >エラーが発生したシナリオからデバッガーにすばやく移動するには、モジュール出力のエラーメッセージで **詳細を取得** をクリックします。
 >
->![&#x200B; モジュール出力で詳細を取得 &#x200B;](assets/go-to-debugger.png)
+>![ モジュール出力で詳細を取得 ](assets/go-to-debugger.png)
 
 シナリオデバッガーは、より複雑なシナリオで役に立ちます。シナリオ実行の履歴が表示され、名前または ID でモジュールを検索できます。
 
-1. **[!UICONTROL シナリオデバッガー]** アイコン ![&#x200B; デバッガーアイコン &#x200B;](assets/scenario-debugger-icon.png) をクリックして、シナリオデバッガーを開きます。
+1. **[!UICONTROL シナリオデバッガー]** アイコン ![ デバッガーアイコン ](assets/scenario-debugger-icon.png) をクリックして、シナリオデバッガーを開きます。
 1. （オプション）検索フィールドに検索語句（名前またはモジュール ID）を入力します。
 1. モジュール名をクリックします。
 1. 操作をクリックすると、リクエストの詳細が表示されます。
@@ -168,7 +145,7 @@ Workfront Fusion 開発ツールは、3 つの主なセクションに分かれ�
 
 Workfront Fusion 開発ツールには、シナリオの設定を容易にするツールが備わっています。
 
-1. **[!UICONTROL ツール]** アイコン ![&#x200B; コンソールツールアイコン &#x200B;](assets/console-tools-icon.png) をクリックして、ツールを開きます。
+1. **[!UICONTROL ツール]** アイコン ![ コンソールツールアイコン ](assets/console-tools-icon.png) をクリックして、ツールを開きます。
 1. 使用するツールを選択します。
 1. 下記のフィールドを設定します。
 1. 「**[!UICONTROL 実行]**」をクリックします。

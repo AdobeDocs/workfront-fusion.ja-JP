@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion を使用して、カスタム OAuth クラ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 2f0bc289-4ecf-4a31-9d7b-641bbca6fc95
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
 workflow-type: tm+mt
-source-wordcount: '964'
-ht-degree: 26%
+source-wordcount: '976'
+ht-degree: 24%
 
 ---
 
@@ -19,42 +19,37 @@ Adobe Workfront Fusion を使用して、カスタム OAuth クライアント�
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
 
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront パッケージ 
-   <td> <p>任意</p> </td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：ワーク以上</p> </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンス要件なし</p>
-   <p>または</p>
-   <p>レガシー：任意 </p>
+   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>コネクタベース（従来）：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>Prime Workfront プランを選択する：組織がAdobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront プラン：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -74,7 +69,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 >* 内部使用（カスタム OAuth クライアントの使用を希望するGoogle Workspace ユーザー）
 
 * [Google Cloud Platform でのプロジェクトの作成](#create-a-project-on-google-cloud-platform)
-* [OAuth 同意設定の指定 &#x200B;](#configure-oauth-consent-settings)
+* [OAuth 同意設定の指定 ](#configure-oauth-consent-settings)
 * [OAuth 認証情報の作成](#create-oauth-credentials)
 * [Workfront Fusion でGoogleに接続する](#connect-to-google-in-workfront-fusion)
 
@@ -84,7 +79,7 @@ Google Cloud Platform でプロジェクトを作成するには：
 
 1. Google Cloud Platform でプロジェクトの作成を開始します。
 
-   手順については、Google ドキュメントの [Google Cloud プロジェクトの作成 &#x200B;](https://developers.google.com/workspace/guides/create-project) を参照してください。
+   手順については、Google ドキュメントの [Google Cloud プロジェクトの作成 ](https://developers.google.com/workspace/guides/create-project) を参照してください。
 1. API を有効にする場合は、Google Drive API と、使用するすべてのGoogle アプリの API （Google Sheets API など）を有効にする必要があります。
 1. プロジェクトの作成を完了します。
 1. この記事にある [OAuth の同意設定を指定](#configure-oauth-consent-settings)の節に進みます。
@@ -93,7 +88,7 @@ Google Cloud Platform でプロジェクトを作成するには：
 
 1. プロジェクトの OAuth 設定の開始
 
-   手順については、Google ドキュメントの [OAuth 同意画面の設定と範囲の選択 &#x200B;](https://developers.google.com/workspace/guides/configure-oauth-consent) を参照してください。
+   手順については、Google ドキュメントの [OAuth 同意画面の設定と範囲の選択 ](https://developers.google.com/workspace/guides/configure-oauth-consent) を参照してください。
 1. **外部**&#x200B;を選択し、続いて「**作成**」をクリックします。
 
    >[!NOTE]
@@ -160,7 +155,7 @@ Google Cloud Platform でプロジェクトを作成するには：
 
 1. OAuth クライアント ID 資格情報の作成を開始します。
 
-   手順については、Google ドキュメントの [&#x200B; アクセス資格情報の作成 &#x200B;](https://developers.google.com/workspace/guides/create-credentials) を参照してください。
+   手順については、Google ドキュメントの [ アクセス資格情報の作成 ](https://developers.google.com/workspace/guides/create-credentials) を参照してください。
 
    >[!NOTE]
    >
@@ -194,7 +189,7 @@ Google Cloud Platform でプロジェクトを作成するには：
    クライアント ID とクライアント秘密鍵が表示されます。
 
 1. クライアント ID とクライアント秘密鍵を安全な場所にコピーします。 これらを使用して、Workfront Fusion に接続します。
-1. [Workfront Fusion でGoogleに接続 &#x200B;](#connect-to-google-in-workfront-fusion) を続けます。
+1. [Workfront Fusion でGoogleに接続 ](#connect-to-google-in-workfront-fusion) を続けます。
 
 ### Workfront Fusion でGoogleに接続する
 
@@ -208,7 +203,7 @@ Googleへの接続を作成するプロセスは、Google サービスのモジ�
 1. Workfront Fusion で、接続を作成する必要があるGoogle モジュールを見つけます。
 1. 「**接続を作成**」をクリックしてから、「**詳細設定を表示**」をクリックします。
 1. 必要に応じて、「接続名」、「環境」、「タイプ」の各フィールドに入力します。
-1. 取得したクライアント ID とクライアントシークレットを [OAuth 認証情報を作成 &#x200B;](#create-oauth-credentials) の各フィールドに入力し、「**続行**」をクリックします。
+1. 取得したクライアント ID とクライアントシークレットを [OAuth 認証情報を作成 ](#create-oauth-credentials) の各フィールドに入力し、「**続行**」をクリックします。
 
 1. Google アカウントでログインします。
 
@@ -223,8 +218,8 @@ Googleへの接続を作成するプロセスは、Google サービスのモジ�
 
 #### HTTP / OAuth2.0 リクエストを行うモジュールで、Googleに接続します。 {#connect-to-google-in-the-http--make-an-oauth20-request-module}
 
-HTTP/ OAuth2.0 リクエストモジュールでGoogleに接続する手順については、HTTP/ OAuth 2.0 リクエストモジュールを作成するでの [Googleへの接続の作成手順 &#x200B;](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module) を参照してください。
+HTTP/ OAuth2.0 リクエストモジュールでGoogleに接続する手順については、HTTP/ OAuth 2.0 リクエストモジュールを作成するでの [Googleへの接続の作成手順 ](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module) を参照してください。
 
 ## 次のエラーメッセージが表示されます：[403 アクセスが設定されていません ]
 
-`403 Access Not Configured` エラーメッセージが表示された場合は、Google Cloud Platform で対応する API を有効にする必要があります。 この API を有効にするには、この記事の [Google Cloud Platform でプロジェクトを作成する &#x200B;](#create-a-project-on-google-cloud-platform) の節の手順に従ってください。
+`403 Access Not Configured` エラーメッセージが表示された場合は、Google Cloud Platform で対応する API を有効にする必要があります。 この API を有効にするには、この記事の [Google Cloud Platform でプロジェクトを作成する ](#create-a-project-on-google-cloud-platform) の節の手順に従ってください。

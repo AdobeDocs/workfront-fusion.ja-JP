@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion のテンプレート機能を使用する�
 author: Becky
 feature: Workfront Fusion
 exl-id: 9bc5f195-c406-45e9-9a1e-5c8a2a0e0ded
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 28%
+source-wordcount: '414'
+ht-degree: 25%
 
 ---
 
@@ -19,42 +19,28 @@ Adobe Workfront Fusion テンプレートを使用すると、Workfront Fusion �
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
 
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront パッケージ 
-   <td> <p>任意</p> </td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：ワーク以上</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
-   <td>
-   <p>現在：Workfront Fusion ライセンス要件なし</p>
-   <p>または</p>
-   <p>レガシー：任意 </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>Prime Workfront プランを選択する：組織がAdobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront プラン：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
-
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -66,7 +52,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ## テンプレートからシナリオを作成
 
-1. 左側のナビゲーションパネルにある「**テンプレート**」タブ ![&#x200B; テンプレートアイコン &#x200B;](assets/templates-icon.png) をクリックします。
+1. 左側のナビゲーションパネルにある「**テンプレート**」タブ ![ テンプレートアイコン ](assets/templates-icon.png) をクリックします。
 1. 使用するテンプレート（**パブリックテンプレート**&#x200B;または&#x200B;**チームテンプレート**）が含まれているタブをクリックします。
 1. 画面の左上隅付近にある検索バーを使用して、特定のテンプレートを検索します。 テンプレート名または含まれるアプリケーションで検索できます。
 1. シナリオの作成に使用するテンプレートをクリックします。
@@ -84,6 +70,6 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 1. テンプレートに必要なすべての設定を設定すると、テンプレートの準備が整ったことを知らせる通知が届き、標準シナリオオプションが画面の下部に表示されます。これで、シナリオの作成に移れます。
 
-1. 画面の下部にある **保存** アイコン ![&#x200B; 保存アイコン &#x200B;](assets/save-icon.png) をクリックして、シナリオを保存します。
+1. 画面の下部にある **保存** アイコン ![ 保存アイコン ](assets/save-icon.png) をクリックして、シナリオを保存します。
 
    このシナリオは、Workfront Fusion の「シナリオ」領域に保存されます。

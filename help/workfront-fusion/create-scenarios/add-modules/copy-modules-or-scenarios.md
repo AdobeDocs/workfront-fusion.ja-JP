@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion では、モジュール、モジュール�
 author: Becky
 feature: Workfront Fusion
 exl-id: 5cece7d4-b2c7-4276-8a6f-f65bad799c7a
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 60%
+source-wordcount: '911'
+ht-degree: 59%
 
 ---
 
@@ -19,42 +19,28 @@ Adobe Workfront Fusion では、モジュール、モジュールのグループ
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
 
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意</p> </td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
-   <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
-   <p>または</p>
-   <p>レガシー：任意 </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
-
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -103,7 +89,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
       または
 
-      シナリオエディターでシナリオに取り組んでいる場合は、ウィンドウの左上隅にある左矢印 ![&#x200B; 編集を終了 &#x200B;](assets/exit-editing-arrow.png) をクリックします。
+      シナリオエディターでシナリオに取り組んでいる場合は、ウィンドウの左上隅にある左矢印 ![ 編集を終了 ](assets/exit-editing-arrow.png) をクリックします。
 
 1. ページの右上隅にある「**[!UICONTROL オプション]**」を右クリックします。
 1. 「**[!UICONTROL クローン]**」を選択します。
@@ -129,7 +115,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 >[!NOTE]
 >
->以前のバージョンのシナリオのブループリントを書き出すには、[&#x200B; シナリオバージョンの表示と管理 &#x200B;](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md) を参照してください。
+>以前のバージョンのシナリオのブループリントを書き出すには、[ シナリオバージョンの表示と管理 ](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md) を参照してください。
 
 ### ブループリントの読み込み
 
@@ -150,8 +136,8 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 Workfront Fusion のシナリオの出発点として、テンプレートを作成できます。 テンプレートからシナリオを作成する場合、テンプレートを変更せずにシナリオを変更できます。テンプレートには、フィールドの値は保存されません。
 
-テンプレートを使用してシナリオを作成する方法について詳しくは、[&#x200B; テンプレートを使用したシナリオの作成 &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md) を参照してください。
+テンプレートを使用してシナリオを作成する方法について詳しくは、[ テンプレートを使用したシナリオの作成 ](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md) を参照してください。
 
 ## トラブルシューティング
 
-[&#x200B; モジュールまたはモジュールのグループをコピー &#x200B;](#copy-a-module-or-a-group-of-modules) の説明に従ってモジュールをコピーおよび貼り付けようとしており、貼り付け時に何も表示されない場合は、ブラウザーのサイト設定をチェックして、クリップボードからの貼り付けが許可されていることを確認します。
+[ モジュールまたはモジュールのグループをコピー ](#copy-a-module-or-a-group-of-modules) の説明に従ってモジュールをコピーおよび貼り付けようとしており、貼り付け時に何も表示されない場合は、ブラウザーのサイト設定をチェックして、クリップボードからの貼り付けが許可されていることを確認します。

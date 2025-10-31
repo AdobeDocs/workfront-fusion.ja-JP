@@ -8,10 +8,10 @@ description: ユーザーを Adobe Admin Console に追加して Adobe Workfront
 author: Becky
 feature: Workfront Fusion
 exl-id: 7cb1c1a7-3c7a-459a-818f-d9cefcb9988b
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 42%
+source-wordcount: '605'
+ht-degree: 40%
 
 ---
 
@@ -21,56 +21,9 @@ ht-degree: 42%
 
 ユーザーの追加方法など、[!DNL Adobe Admin Console] でのWorkfront Fusion について説明しているビデオについては、[[!DNL Fusion]  オンAdobe IMS](https://video.tv.adobe.com/v/3412464/){target=_blank} を参照してください。
 
-
-
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront プラン*</td> 
-   <td> <p>[!UICONTROL Pro] 以降</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン*</td> 
-   <td> <p>[!UICONTROL Plan]、[!UICONTROL Work]</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
-   <td>
-   <p>現在のライセンス要件：Workfront Fusion のライセンス要件はありません。</p>
-   <p>または</p>
-   <p>従来のライセンス要件：[!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
-   </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">製品</td> 
-   <td>
-   <p>現在の必要な商品：Adobe Workfrontのプランで [!UICONTROL Select] または [!UICONTROL Prime] をお持ちの場合、この記事に記載されている機能を使用するには、Adobe Workfront Fusion とAdobe Workfrontを購入する必要があります。 Workfront Fusion は、[!UICONTROL Ultimate] Workfront プランに含まれています。</p>
-   <p>または</p>
-   <p>従来の製品要件：この記事に記載されている機能を使用するには、Adobe Workfront Fusion とAdobe Workfrontを購入する必要があります。</p>
-   </td> 
-  </tr>
-   <tr> 
-   <td role="rowheader">[!DNL Adobe] 管理者権限</td> 
-   <td>組織の [!DNL Adobe] 製品の [!UICONTROL Product Configuration Administrator] 管理者である必要があります。</td> 
-  </tr>
-  </tbody> 
-</table>
-
-&#42;保有するプラン、ライセンスタイプ、アクセス権を確認するには、Workfront 管理者に問い合わせてください。
-
-&#42;&#42;Adobe Workfront Fusion ライセンスについては、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
-
-
-
 ## アクセス要件
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
-
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
 <table style="table-layout:auto">
  <col> 
@@ -78,45 +31,37 @@ ht-degree: 42%
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意</p> </td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
-   <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
-   <p>または</p>
-   <p>レガシー：任意 </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
-   <td role="rowheader">アクセスレベル設定*</td> 
+   <td role="rowheader">アクセスレベル設定</td> 
    <td> 
      <p>組織の Workfront Fusion 管理者である必要があります。</p>
      <p>チームのWorkfront Fusion 管理者である必要があります。</p>
    </td> 
   </tr> 
-   </td> 
-  </tr> 
+  </tr>
+   <tr> 
+   <td role="rowheader">アクセスレベル設定</td> 
+   <td>組織のAdobe製品の製品設定管理者である必要があります。</td> 
+  </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
-
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
+
 
 
 ## 前提条件
@@ -140,7 +85,7 @@ Workfrontで [!DNL Admin Console] を使用する前に、コンソールに招�
 
    ![Admin Console 内の Fusion インスタンス](assets/fusion-instances-admin-console.png)
 
-1. 表示されるリストで、「**[!UICONTROL 製品プロファイル]**」タブを選択した状態で、Workfront Fusion の [!UICONTROL &#x200B; 製品プロファイル &#x200B;] リンクの名前をクリックします。
+1. 表示されるリストで、「**[!UICONTROL 製品プロファイル]**」タブを選択した状態で、Workfront Fusion の [!UICONTROL  製品プロファイル ] リンクの名前をクリックします。
 
    >[!IMPORTANT]
    >
@@ -154,7 +99,7 @@ Workfrontで [!DNL Admin Console] を使用する前に、コンソールに招�
 
    ユーザーはWorkfront Fusion で作成されます。
 
-1. （オプション）引き続き [Workfront Fusion でのユーザーのアクセスレベルを変更 &#x200B;](#change-a-users-access-level-in-workfront-fusion) します。
+1. （オプション）引き続き [Workfront Fusion でのユーザーのアクセスレベルを変更 ](#change-a-users-access-level-in-workfront-fusion) します。
 
 ## Workfront Fusion でのユーザーのアクセスレベルを変更
 
@@ -165,13 +110,13 @@ Workfrontで [!DNL Admin Console] を使用する前に、コンソールに招�
 
 ユーザーに管理者の役割を割り当てる場合は、[!DNL Adobe Admin Console] で実行する必要があります。
 
-1. ユーザーを追加したWorkfront Fusion [!UICONTROL &#x200B; 製品プロファイル &#x200B;] ページで、「**[!UICONTROL 管理者]**」タブを選択します。
+1. ユーザーを追加したWorkfront Fusion [!UICONTROL  製品プロファイル ] ページで、「**[!UICONTROL 管理者]**」タブを選択します。
 
 1. 「**[!UICONTROL 管理者を追加]**」をクリックします。
 
 1. **[!UICONTROL 製品プロファイル管理者を追加]** ボックスで、管理者になるユーザーのメールアドレスまたは名前を入力し、表示されるリストでユーザーを選択します。
 
-1. **[!UICONTROL 保存]**&#x200B;をクリックします。
+1. 「**[!UICONTROL 保存]**」をクリックします。
 
    ユーザーは、Workfront Fusion の管理者になりました。
 
@@ -179,10 +124,10 @@ Workfrontで [!DNL Admin Console] を使用する前に、コンソールに招�
 
 メンバー、経理担当、アプリ開発者のロールは、Workfront Fusion 内で処理されます。
 
-手順については、[&#x200B; ユーザーの役割の表示または編集 &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md) を参照してください。
+手順については、[ ユーザーの役割の表示または編集 ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md) を参照してください。
 
 ## [!DNL Adobe Admin Console] 内の既存のユーザーをWorkfront Fusion に割り当てる
 
 Fusion で既存のユーザーをチームに追加できます。 これは Fusion 内で処理されます。
 
-手順については、[&#x200B; チームにユーザーを追加する &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md) を参照してください。
+手順については、[ チームにユーザーを追加する ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md) を参照してください。

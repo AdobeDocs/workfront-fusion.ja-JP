@@ -4,10 +4,10 @@ description: ルーターモジュールを使用すると、フローを複数�
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 11%
+source-wordcount: '853'
+ht-degree: 9%
 
 ---
 
@@ -22,42 +22,28 @@ ht-degree: 11%
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
 
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意</p> </td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
-   <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
-   <p>または</p>
-   <p>レガシー：任意 </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
-
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -71,27 +57,27 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 1. シナリオエディターで、ルーターを追加するモジュールの右側のハンドルをクリックします。
 1. 表示されるモジュールのリストで、**[!UICONTROL フロー制御]**/**ルーター** を選択します。
 
-   ![&#x200B; ルートの接続 &#x200B;](assets/connect-the-router-350x108.png)
+   ![ ルートの接続 ](assets/connect-the-router-350x108.png)
 
    または
 
    2 つのモジュールの間にルーターモジュールを挿入するには、2 つのモジュールを接続するルートの下にあるレンチアイコンをクリックし、メニューから **[!UICONTROL ルーターを追加]** を選択します。
 
-   ![&#x200B; ルーターの挿入 &#x200B;](assets/insert-router-350x191.png)
+   ![ ルーターの挿入 ](assets/insert-router-350x191.png)
 1. 任意のモジュールを追加するのと同様に、ルーターの右側のハンドルをクリックしてモジュールを追加することで、ルーターへの最初のルートを追加します。
 1. 別のルートを追加するには、ルーターモジュールをクリックします。 ルートが表示されます。 必要に応じて、このルートにモジュールを追加します。
 
    必要な数だけルートを追加できます。
 
-1. ルートの順序を確認するには、自動位置合わせアイコン ![&#x200B; 自動位置合わせアイコン &#x200B;](assets/auto-align.png) をクリックします。
+1. ルートの順序を確認するには、自動位置合わせアイコン ![ 自動位置合わせアイコン ](assets/auto-align.png) をクリックします。
 
    ルートは、実行する順序に並べられます。 最上位ルートが最初に実行されます。
 
 1. （オプション）ルートの順序を変更するには、ルーターモジュールを右クリックして **ルートを注文** を選択します。ルートを実行する順序でドラッグ&amp;ドロップします。 ルートは、ルータに続く最初のモジュール（ルートの最初のモジュール）によってマークされます。
 
-   ![&#x200B; 注文ルート &#x200B;](assets/order-routes.png)
+   ![ 注文ルート ](assets/order-routes.png)
 
-1. [&#x200B; ルートへのフィルターの追加 &#x200B;](#add-a-filter-to-a-route) を続行します。
+1. [ ルートへのフィルターの追加 ](#add-a-filter-to-a-route) を続行します。
 
 ## ルートへのフィルターの追加
 
@@ -102,16 +88,16 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. フィルターを追加するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
-1. フィルターを設定するパス上のレンチアイコン ![&#x200B; レンチ &#x200B;](assets/wrench-icon.png) をクリックします。 これは、ルータ モジュールとルートの最初のモジュールの間のパスです。
+1. フィルターを設定するパス上のレンチアイコン ![ レンチ ](assets/wrench-icon.png) をクリックします。 これは、ルータ モジュールとルートの最初のモジュールの間のパスです。
 1. **フィルターを設定** を選択します。
 1. 表示されるパネルのラベルフィールドに、ラベルを追加します。 このラベルは、シナリオに表示されます。
 1. フィルター条件を設定します。
 
-   詳しくは、[&#x200B; シナリオへのフィルターの追加 &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md) を参照してください。
+   詳しくは、[ シナリオへのフィルターの追加 ](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md) を参照してください。
 
 1. **[!UICONTROL OK]** をクリックして、フィルター設定を保存します。
 
-1. [&#x200B; フォールバックルートの設定 &#x200B;](#configure-a-fallback-route) を続行します。
+1. [ フォールバックルートの設定 ](#configure-a-fallback-route) を続行します。
 
 ## フォールバックルートの設定
 
@@ -122,18 +108,18 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. フォールバックルートを追加するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
-1. フィルターを設定するパス上のレンチアイコン ![&#x200B; レンチ &#x200B;](assets/wrench-icon.png) をクリックします。 これは、ルータ モジュールとルートの最初のモジュールの間のパスです。
+1. フィルターを設定するパス上のレンチアイコン ![ レンチ ](assets/wrench-icon.png) をクリックします。 これは、ルータ モジュールとルートの最初のモジュールの間のパスです。
 1. **フィルターを設定** を選択します。
 1. 表示されるパネルのラベルフィールドに、ラベルを追加します。 このラベルは、シナリオに表示されます。
 1. 「フォールバックルート」チェックボックスを有効にします。
 
-   ![&#x200B; フォールバックルート &#x200B;](assets/fallback-route-350x260.png)
+   ![ フォールバックルート ](assets/fallback-route-350x260.png)
 
 1. **[!UICONTROL OK]** をクリックして、フィルター設定を保存します。
 
 フォールバック ルートは、ルータ モジュールで別の矢印でマークされます。
 
-![&#x200B; 矢印サインインルーター &#x200B;](assets/arrow-sign-in-router-module-350x361.png)
+![ 矢印サインインルーター ](assets/arrow-sign-in-router-module-350x361.png)
 
 ## 例：`if/else` のユースケース
 
@@ -143,10 +129,10 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 この例では、最初のルートはフィルターを使用して設定されています。 これは、`if` コンポーネントを表します。
 
-![route でのフィルターの設定 &#x200B;](assets/set-up-a-filter-2-350x242.png)
+![route でのフィルターの設定 ](assets/set-up-a-filter-2-350x242.png)
 
 2 番目のルートは、フォールバック ルートとして設定されます。 これは、`else` コンポーネントを表します。
 
-![&#x200B; フォールバックオプションを有効にする &#x200B;](assets/enable-fallback-route-option-350x238.png)
+![ フォールバックオプションを有効にする ](assets/enable-fallback-route-option-350x238.png)
 
 >[!ENDSHADEBOX]

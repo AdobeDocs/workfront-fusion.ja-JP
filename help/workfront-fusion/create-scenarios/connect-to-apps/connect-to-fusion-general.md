@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion コネクタの多くは、接続作成時�
 author: Becky
 feature: Workfront Fusion
 exl-id: e47ab4d9-6612-4d9a-a024-da508a8bbfb2
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 17%
+source-wordcount: '571'
+ht-degree: 14%
 
 ---
 
@@ -20,49 +20,44 @@ Adobe Workfront Fusion コネクタの多くは、接続作成時にカスタム
 >
 >Adobe Workfront Fusion で、シナリオで使用する web サービスのアプリが提供されない場合は、次の記事で説明されているように、Workfront Fusion HTTP および Webhook モジュールを使用して web サービスに接続できます。
 >
->* [API トークン認証を使用する web サービスにAdobe Workfront Fusion を接続する &#x200B;](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-wf-web-service-uses-api-token-auth.md)
->* [&#x200B; コネクタを使用しない web サービスの Webhook の設定 &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)
+>* [API トークン認証を使用する web サービスにAdobe Workfront Fusion を接続する ](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-wf-web-service-uses-api-token-auth.md)
+>* [ コネクタを使用しない web サービスの Webhook の設定 ](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)
 
 ## アクセス要件
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
-
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront パッケージ 
-   <td> <p>任意</p> </td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：ワーク以上</p> </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンス要件なし</p>
-   <p>または</p>
-   <p>レガシー：任意 </p>
+   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>コネクタベース（従来）: Workfront ファミリー以外のアプリケーションに接続するには、作業の自動化と統合のためのWorkfront Fusion が必要です </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>Prime Workfront プランを選択する：組織がAdobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront プラン：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -72,7 +67,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 Workfront Fusion モジュール内に接続を作成するには：
 
-1. 特定のアプリケーションの任意のモジュールで、「**[!UICONTROL 接続]**」ボックスの横にある [!UICONTROL &#x200B; 追加 &#x200B;] をクリックして、**[!UICONTROL 接続を作成]** パネルを開きます。
+1. 特定のアプリケーションの任意のモジュールで、「**[!UICONTROL 接続]**」ボックスの横にある [!UICONTROL  追加 ] をクリックして、**[!UICONTROL 接続を作成]** パネルを開きます。
 1. （オプション）デフォルトの&#x200B;**[!UICONTROL 接続名]**&#x200B;を変更
 1. 「環境」フィールドで、実稼動環境か非実稼動環境かを選択します。
 1. 「タイプ」フィールドで、サービスか個人アカウントかを選択します。

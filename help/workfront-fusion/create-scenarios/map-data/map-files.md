@@ -4,10 +4,10 @@ description: 一部のモジュールには、ファイルを処理する機能�
 author: Becky
 feature: Workfront Fusion
 exl-id: 25c632f4-169e-4d3c-989a-f57b398bd3f0
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 29%
+source-wordcount: '412'
+ht-degree: 25%
 
 ---
 
@@ -19,51 +19,28 @@ ht-degree: 29%
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
 
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意</p> </td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：[!UICONTROL Work] 以上</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
-   <td>
-   <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
-   <p>または</p>
-   <p>レガシー：任意 </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusion を購入する必要があります。</li><li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">アクセスレベル設定*</td> 
-   <td> 
-     <p>組織の Workfront Fusion 管理者である必要があります。</p>
-     <p>チームのWorkfront Fusion 管理者である必要があります。</p>
-   </td> 
-  </tr> 
-   </td> 
-  </tr> 
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
-
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -82,7 +59,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 >
 >URL からファイルを処理する必要がある場合、`HTTP > Get a File` モジュールを使用して URL からファイルをダウンロードし、そのファイルを `HTTP > Get a File` モジュールからシナリオ内の目的のモジュールのフィールドにマッピングすることをお勧めします。
 >
->![&#x200B; マップファイル &#x200B;](assets/map-source-file.png)
+>![ マップファイル ](assets/map-source-file.png)
 
 ファイルをマッピングするには：
 
@@ -92,10 +69,10 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 1. マッピング先のターゲットであるターゲットモジュールで、**Source ファイル** 領域を見つけます。
 1. 以前のモジュールで出力されたファイルをマッピングするには、ファイルを出力するモジュールを選択します。
 
-   ![Workfront ダウンロード ドキュメント &#x200B;](assets/wf-download-document.png)
+   ![Workfront ダウンロード ドキュメント ](assets/wf-download-document.png)
 
 1. 名前とデータを手動でマップするには、「マップ」を選択してから、ファイルの名前とデータを入力またはマップします。
 
-   ![&#x200B; マップオプションを使用 &#x200B;](assets/use-the-map-option.png)
+   ![ マップオプションを使用 ](assets/use-the-map-option.png)
 
 1. モジュールの設定を続行するか、[**OK**] をクリックします。

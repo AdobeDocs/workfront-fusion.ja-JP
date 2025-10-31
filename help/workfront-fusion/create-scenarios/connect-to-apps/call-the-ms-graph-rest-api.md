@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion HTTP を介した MS Graph REST API の呼�
 author: Becky
 feature: Workfront Fusion
 exl-id: f411c807-955d-44fe-98b1-3ebba3fe0861
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 20%
+source-wordcount: '691'
+ht-degree: 17%
 
 ---
 
@@ -19,42 +19,37 @@ ht-degree: 20%
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
 
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront パッケージ 
-   <td> <p>任意</p> </td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：ワーク以上</p> </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンス要件なし</p>
-   <p>または</p>
-   <p>レガシー：任意 </p>
+   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>コネクタベース（従来）：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>Prime Workfront プランを選択する：組織がAdobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront プラン：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -62,7 +57,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 Adobe Workfront Graph REST API への接続を作成するには、まずMicrosoft Fusion を登録する必要があります。
 
-1. Microsoft ドキュメントの [Microsoft ID プラットフォームへのアプリケーションの登録 &#x200B;](https://docs.microsoft.com/en-us/graph/auth-register-app-v2) の説明に従って、新しいアプリケーションの登録を開始します。
+1. Microsoft ドキュメントの [Microsoft ID プラットフォームへのアプリケーションの登録 ](https://docs.microsoft.com/en-us/graph/auth-register-app-v2) の説明に従って、新しいアプリケーションの登録を開始します。
 
    登録の一環として、Microsoftでは次の情報が必要です。
 
@@ -85,7 +80,7 @@ Adobe Workfront Graph REST API への接続を作成するには、まずMicroso
 
 1. クライアントシークレットを生成します。 このシークレットをメモしておいてください。
 
-   手順については、Microsoft ドキュメントの [Microsoft ID プラットフォームへのアプリケーションの登録 &#x200B;](https://docs.microsoft.com/en-us/graph/auth-register-app-v2) を参照してください。
+   手順については、Microsoft ドキュメントの [Microsoft ID プラットフォームへのアプリケーションの登録 ](https://docs.microsoft.com/en-us/graph/auth-register-app-v2) を参照してください。
 
    >[!IMPORTANT]
    >
@@ -93,7 +88,7 @@ Adobe Workfront Graph REST API への接続を作成するには、まずMicroso
 
 1. アプリケーションの権限を設定します。
 
-   これらのフィールドの検索と設定について詳しくは、Microsoft ドキュメントの [&#x200B; ユーザーなしでアクセスする &#x200B;](https://docs.microsoft.com/en-us/graph/auth-v2-service) の「Microsoft グラフの権限の設定」の節を参照してください。
+   これらのフィールドの検索と設定について詳しくは、Microsoft ドキュメントの [ ユーザーなしでアクセスする ](https://docs.microsoft.com/en-us/graph/auth-v2-service) の「Microsoft グラフの権限の設定」の節を参照してください。
 
    <table style="table-layout:auto">
     <col> 
@@ -115,11 +110,11 @@ Adobe Workfront Graph REST API への接続を作成するには、まずMicroso
     </tbody> 
    </table>
 
-1. 続けて [Workfront Fusion での MS Graph API 接続の設定 &#x200B;](#configure-your-ms-graph-api-connection-in-workfront-fusion) を行います。
+1. 続けて [Workfront Fusion での MS Graph API 接続の設定 ](#configure-your-ms-graph-api-connection-in-workfront-fusion) を行います。
 
 ## Workfront Fusion での MS Graph API 接続の設定
 
-[Workfront Application Registration Portal でのWorkfront Fusion の登録 &#x200B;](#register-workfront-fusion-in-the-microsoft-application-registration-portal) の説明に従ってMicrosoft Fusion を登録したら、HTTP / Make an Oauth 2.0 request モジュールで接続を設定できます。
+[Workfront Application Registration Portal でのWorkfront Fusion の登録 ](#register-workfront-fusion-in-the-microsoft-application-registration-portal) の説明に従ってMicrosoft Fusion を登録したら、HTTP / Make an Oauth 2.0 request モジュールで接続を設定できます。
 
 1. HTTP を追加し、シナリオに OAuth 2.0 呼び出しを行うモジュールを作成します。
 1. 接続フィールドの横にある「**追加**」をクリックします。
