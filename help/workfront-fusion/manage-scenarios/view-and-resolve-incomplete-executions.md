@@ -19,13 +19,13 @@ ht-degree: 65%
 >
 >デフォルトでは、未完了の実行の保存は無効になっています。有効にするには、シナリオの詳細設定で「[!UICONTROL 未完了の実行の保存を許可]」オプションを有効にします。
 >
->シナリオ設定について詳しくは、[ シナリオ設定の指定 ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md) を参照してください。
+>シナリオ設定について詳しくは、[&#x200B; シナリオ設定の指定 &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md) を参照してください。
 
 ## 記事全体を対象としたハイライト表示されたプレビュー {#highlighted-preview-article-level}
 
 <span class="preview">このページの情報は、まだ一般に提供されていない機能を指します。サンドボックスプレビュー環境でのみ使用できます。</span>##不完全な実行の表示
 
-モジュールの処理中にエラーが発生した場合、新しい未完了の実行が「未完了の実行」フォルダーに追加されます。未完了の実行にはそれぞれ、シナリオのブループリントと、失敗したモジュールにマッピングできるすべてのバンドルが含まれます。不完全な実行のリストを開くには、シナリオの詳細ページの「[!UICONTROL  不完全な実行 ]」タブをクリックします。
+モジュールの処理中にエラーが発生した場合、新しい未完了の実行が「未完了の実行」フォルダーに追加されます。未完了の実行にはそれぞれ、シナリオのブループリントと、失敗したモジュールにマッピングできるすべてのバンドルが含まれます。不完全な実行のリストを開くには、シナリオの詳細ページの「[!UICONTROL &#x200B; 不完全な実行 &#x200B;]」タブをクリックします。
 
 <!--
 
@@ -33,7 +33,7 @@ ht-degree: 65%
 
 -->
 
-詳しくは、[ 不完全な実行につながるエラー ](#errors-resulting-into-incomplete-executions) を参照してください。
+詳しくは、[&#x200B; 不完全な実行につながるエラー &#x200B;](#errors-resulting-into-incomplete-executions) を参照してください。
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ ht-degree: 65%
 >
 >未解決の不完全な実行はすべて、チームが合計 500 MB に制限されます。
 >
->詳しくは、「シナリオの設定」の [ データ損失の有効化 ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable-data-loss) を参照してください。
+>詳しくは、「シナリオの設定」の [&#x200B; データ損失の有効化 &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable-data-loss) を参照してください。
 
 
 ## 「不完全な実行」タブからの不完全な実行の解決
@@ -56,7 +56,7 @@ ht-degree: 65%
 1. モジュールのログを開くと、モジュールのすべての操作が表示されます。
 1. 失敗した操作を見つけ、「**[!UICONTROL 解決]**」をクリックします。
 
-   ![ 解決ボタン ](assets/resolve-btn-350x188.png)
+   ![&#x200B; 解決ボタン &#x200B;](assets/resolve-btn-350x188.png)
 
 
 
@@ -70,7 +70,7 @@ ht-degree: 65%
 1. モジュールのログを開くと、モジュールのすべての操作が表示されます。
 1. 失敗した操作を見つけ、「**[!UICONTROL 解決]**」をクリックします。
 
-   ![ 解決ボタン ](assets/resolve-btn-350x188.png)
+   ![&#x200B; 解決ボタン &#x200B;](assets/resolve-btn-350x188.png)
 
 ## 未完了の実行に関連するオプション
 
@@ -80,7 +80,7 @@ ht-degree: 65%
 * 順次処理
 * データ損失を有効にする
 
-これらのオプションについて詳しくは、[ シナリオ設定の指定 ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md) を参照してください。
+これらのオプションについて詳しくは、[&#x200B; シナリオ設定の指定 &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md) を参照してください。
 
 ## 未完了の実行になるエラー
 

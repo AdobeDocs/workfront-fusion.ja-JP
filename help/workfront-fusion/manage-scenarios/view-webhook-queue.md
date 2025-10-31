@@ -17,7 +17,7 @@ ht-degree: 20%
 
 シナリオ設定パネルの「データは機密です」オプションの設定方法に関係なく、受信 Webhook データは常にキューに保存されます。 シナリオで処理されたデータは、キューから完全に削除されます。
 
-Webhook について詳しくは、[ インスタントトリガー（Webhook） ](/help/workfront-fusion/references/modules/webhooks-reference.md) を参照してください。
+Webhook について詳しくは、[&#x200B; インスタントトリガー（Webhook） &#x200B;](/help/workfront-fusion/references/modules/webhooks-reference.md) を参照してください。
 
 ## アクセス要件
 
@@ -44,7 +44,7 @@ Webhook について詳しくは、[ インスタントトリガー（Webhook）
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -54,7 +54,7 @@ Webhook について詳しくは、[ インスタントトリガー（Webhook）
 
 シナリオに現在キューがある場合、そのシナリオにバナーが表示されます。
 
-![ キューバナー ](assets/queue-banner.png)
+![&#x200B; キューバナー &#x200B;](assets/queue-banner.png)
 
 Webhook のキューを表示するには：
 
@@ -62,6 +62,6 @@ Webhook のキューを表示するには：
 1. キューを表示する Webhook を見つけます。
 1. 「受信したイベント」ボタンでイベントの数を見つけます。
 
-   ![Webhook キュー ](assets/webhook-queue.png)
+   ![Webhook キュー &#x200B;](assets/webhook-queue.png)
 
 1. ボタンをクリックすると、キュー内のイベントに関する詳細が表示されます。

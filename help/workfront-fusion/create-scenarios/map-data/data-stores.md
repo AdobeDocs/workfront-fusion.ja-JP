@@ -56,7 +56,7 @@ Workfront Fusion のデータストアの紹介ビデオについては、以下
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -94,7 +94,7 @@ Ultimate パッケージ上の Fusion インスタンスは、次を受け取り
 
 >[!NOTE]
 >
->組織で使用可能なデータストアの数には制限があります。作成するデータストアの数が上限を超えると、Workfrontで [!UICONTROL  ストアの最大数に達しました ] エラーが返されます。
+>組織で使用可能なデータストアの数には制限があります。作成するデータストアの数が上限を超えると、Workfrontで [!UICONTROL &#x200B; ストアの最大数に達しました &#x200B;] エラーが返されます。
 >
 >詳しくは、この記事の[「ストアの最大数に達しました」エラー](#maximum-stores-reached-error)を参照してください。
 
@@ -174,7 +174,7 @@ Ultimate パッケージ上の Fusion インスタンスは、次を受け取り
 
 ## 既存のデータストアの編集
 
-Workfront Fusion の [!UICONTROL  データストア ] 領域で、既存のデータストアのプロパティとコンテンツを編集できます。
+Workfront Fusion の [!UICONTROL &#x200B; データストア &#x200B;] 領域で、既存のデータストアのプロパティとコンテンツを編集できます。
 
 * [データストアのプロパティの編集](#edit-the-properties-of-a-data-store)
 * [データストアの内容の編集](#edit-the-contents-of-a-data-store)
@@ -183,8 +183,8 @@ Workfront Fusion の [!UICONTROL  データストア ] 領域で、既存のデ�
 
 データストアのプロパティには、データストアで使用されているデータ構造と、データストアのサイズが含まれます。
 
-1. 左側のナビゲーションパネルで **[!UICONTROL データストア]**![ データストアアイコン ](assets/data-store-icon.png) をクリックして、[!UICONTROL  データストア ] 領域を開きます。
-1. 編集するデータストアの横にある「**[!UICONTROL 編集]**![ データストアを編集 ](assets/data-store-edit.png) をクリックします。
+1. 左側のナビゲーションパネルで **[!UICONTROL データストア]**![&#x200B; データストアアイコン &#x200B;](assets/data-store-icon.png) をクリックして、[!UICONTROL &#x200B; データストア &#x200B;] 領域を開きます。
+1. 編集するデータストアの横にある「**[!UICONTROL 編集]**![&#x200B; データストアを編集 &#x200B;](assets/data-store-edit.png) をクリックします。
 1. （オプション）このデータストアで使用するデータ構造を別の既存のデータ構造に変更する場合は、**[!UICONTROL データ構造]**&#x200B;ドロップダウンから選択します。
 
    または
@@ -196,7 +196,7 @@ Workfront Fusion の [!UICONTROL  データストア ] 領域で、既存のデ�
 
 ### データストアの内容の編集
 
-1. 左側のナビゲーションパネルで **[!UICONTROL データストア]** アイコン ![ データストアアイコン ](assets/data-store-icon.png) をクリックして、[!UICONTROL  データストア ] 領域を開きます。
+1. 左側のナビゲーションパネルで **[!UICONTROL データストア]** アイコン ![&#x200B; データストアアイコン &#x200B;](assets/data-store-icon.png) をクリックして、[!UICONTROL &#x200B; データストア &#x200B;] 領域を開きます。
 1. 編集するデータストアの横にある「**[!UICONTROL 参照]**」をクリックします。
 1. （オプション）列を目的の場所にドラッグして並べ替えます。
 1. （オプション）1 つのセルを[!UICONTROL 編集]する場合は、そのセルの&#x200B;**[!UICONTROL 編集]**&#x200B;アイコンをクリックしてから、目的の値を入力します。
@@ -217,7 +217,7 @@ Workfront Fusion の [!UICONTROL  データストア ] 領域で、既存のデ�
 
 1. 項目がデータストアに挿入されたシナリオのすべての実行ログを調べます。
 
-   実行ログの確認について詳しくは、[ シナリオの実行履歴の表示 ](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md) を参照してください。
+   実行ログの確認について詳しくは、[&#x200B; シナリオの実行履歴の表示 &#x200B;](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md) を参照してください。
 
 1. データをコピーします。
 1. データをデータストアに再度挿入します。
@@ -240,7 +240,7 @@ Workfront Fusion の [!UICONTROL  データストア ] 領域で、既存のデ�
 
 ### 「[!UICONTROL ストアの最大数に達しました]」エラー
 
-組織が使用可能なすべてのデータストアを使用したので、[!UICONTROL  最大ストア数に達しました ] エラーが発生します。
+組織が使用可能なすべてのデータストアを使用したので、[!UICONTROL &#x200B; 最大ストア数に達しました &#x200B;] エラーが発生します。
 
 #### 回避策
 

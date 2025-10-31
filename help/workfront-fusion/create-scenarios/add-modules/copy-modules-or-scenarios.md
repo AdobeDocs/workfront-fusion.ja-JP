@@ -40,7 +40,7 @@ Adobe Workfront Fusion では、モジュール、モジュールのグループ
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -89,7 +89,7 @@ Adobe Workfront Fusion では、モジュール、モジュールのグループ
 
       または
 
-      シナリオエディターでシナリオに取り組んでいる場合は、ウィンドウの左上隅にある左矢印 ![ 編集を終了 ](assets/exit-editing-arrow.png) をクリックします。
+      シナリオエディターでシナリオに取り組んでいる場合は、ウィンドウの左上隅にある左矢印 ![&#x200B; 編集を終了 &#x200B;](assets/exit-editing-arrow.png) をクリックします。
 
 1. ページの右上隅にある「**[!UICONTROL オプション]**」を右クリックします。
 1. 「**[!UICONTROL クローン]**」を選択します。
@@ -115,7 +115,7 @@ Adobe Workfront Fusion では、モジュール、モジュールのグループ
 
 >[!NOTE]
 >
->以前のバージョンのシナリオのブループリントを書き出すには、[ シナリオバージョンの表示と管理 ](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md) を参照してください。
+>以前のバージョンのシナリオのブループリントを書き出すには、[&#x200B; シナリオバージョンの表示と管理 &#x200B;](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md) を参照してください。
 
 ### ブループリントの読み込み
 
@@ -136,8 +136,8 @@ Adobe Workfront Fusion では、モジュール、モジュールのグループ
 
 Workfront Fusion のシナリオの出発点として、テンプレートを作成できます。 テンプレートからシナリオを作成する場合、テンプレートを変更せずにシナリオを変更できます。テンプレートには、フィールドの値は保存されません。
 
-テンプレートを使用してシナリオを作成する方法について詳しくは、[ テンプレートを使用したシナリオの作成 ](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md) を参照してください。
+テンプレートを使用してシナリオを作成する方法について詳しくは、[&#x200B; テンプレートを使用したシナリオの作成 &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md) を参照してください。
 
 ## トラブルシューティング
 
-[ モジュールまたはモジュールのグループをコピー ](#copy-a-module-or-a-group-of-modules) の説明に従ってモジュールをコピーおよび貼り付けようとしており、貼り付け時に何も表示されない場合は、ブラウザーのサイト設定をチェックして、クリップボードからの貼り付けが許可されていることを確認します。
+[&#x200B; モジュールまたはモジュールのグループをコピー &#x200B;](#copy-a-module-or-a-group-of-modules) の説明に従ってモジュールをコピーおよび貼り付けようとしており、貼り付け時に何も表示されない場合は、ブラウザーのサイト設定をチェックして、クリップボードからの貼り付けが許可されていることを確認します。

@@ -20,8 +20,8 @@ Adobe Workfront Fusion コネクタの多くは、接続作成時にカスタム
 >
 >Adobe Workfront Fusion で、シナリオで使用する web サービスのアプリが提供されない場合は、次の記事で説明されているように、Workfront Fusion HTTP および Webhook モジュールを使用して web サービスに接続できます。
 >
->* [API トークン認証を使用する web サービスにAdobe Workfront Fusion を接続する ](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-wf-web-service-uses-api-token-auth.md)
->* [ コネクタを使用しない web サービスの Webhook の設定 ](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)
+>* [API トークン認証を使用する web サービスにAdobe Workfront Fusion を接続する &#x200B;](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-wf-web-service-uses-api-token-auth.md)
+>* [&#x200B; コネクタを使用しない web サービスの Webhook の設定 &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)
 
 ## アクセス要件
 
@@ -55,9 +55,9 @@ Adobe Workfront Fusion コネクタの多くは、接続作成時にカスタム
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -67,7 +67,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 Workfront Fusion モジュール内に接続を作成するには：
 
-1. 特定のアプリケーションの任意のモジュールで、「**[!UICONTROL 接続]**」ボックスの横にある [!UICONTROL  追加 ] をクリックして、**[!UICONTROL 接続を作成]** パネルを開きます。
+1. 特定のアプリケーションの任意のモジュールで、「**[!UICONTROL 接続]**」ボックスの横にある [!UICONTROL &#x200B; 追加 &#x200B;] をクリックして、**[!UICONTROL 接続を作成]** パネルを開きます。
 1. （オプション）デフォルトの&#x200B;**[!UICONTROL 接続名]**&#x200B;を変更
 1. 「環境」フィールドで、実稼動環境か非実稼動環境かを選択します。
 1. 「タイプ」フィールドで、サービスか個人アカウントかを選択します。

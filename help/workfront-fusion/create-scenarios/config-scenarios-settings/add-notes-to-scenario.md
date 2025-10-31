@@ -41,22 +41,22 @@ ht-degree: 9%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
 ## メモを追加
 
 1. Workfront モジュールを右クリックして、「**[!UICONTROL メモを追加]**」をクリックします。
-1. 表示されるメモで、編集アイコン ![ 編集アイコン ](assets/edit-note.png) をクリックします。
+1. 表示されるメモで、編集アイコン ![&#x200B; 編集アイコン &#x200B;](assets/edit-note.png) をクリックします。
 1. メモのテキストを入力します。
 1. 「**完了**」をクリックして、メモを保存します。
 1. メモをシナリオエディターの目的の場所にドラッグします。
 
-   シナリオにメモを追加すると、シナリオエディターの下部にある **[!UICONTROL メモ]** アイコン ![ メモとドットの付いたアイコン ](assets/notes-icon-w-dot.png) に青いドットが表示されます。
+   シナリオにメモを追加すると、シナリオエディターの下部にある **[!UICONTROL メモ]** アイコン ![&#x200B; メモとドットの付いたアイコン &#x200B;](assets/notes-icon-w-dot.png) に青いドットが表示されます。
 
-1. すべてのメモを表示または非表示にするには、**[!UICONTROL メモ]** アイコン ![ メモとドットのアイコン ](assets/notes-icon-w-dot.png) をクリックします。
+1. すべてのメモを表示または非表示にするには、**[!UICONTROL メモ]** アイコン ![&#x200B; メモとドットのアイコン &#x200B;](assets/notes-icon-w-dot.png) をクリックします。
 
    メモを開くと、メモアイコンの周囲に円が表示されます。
 
-   ![ メモ アイコンに円が付いています ](assets/notes-icon-with-circle.png)
+   ![&#x200B; メモ アイコンに円が付いています &#x200B;](assets/notes-icon-with-circle.png)

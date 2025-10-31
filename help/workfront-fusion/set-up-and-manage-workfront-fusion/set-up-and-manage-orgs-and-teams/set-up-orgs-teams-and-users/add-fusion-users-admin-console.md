@@ -58,7 +58,7 @@ ht-degree: 40%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -85,7 +85,7 @@ Workfrontで [!DNL Admin Console] を使用する前に、コンソールに招�
 
    ![Admin Console 内の Fusion インスタンス](assets/fusion-instances-admin-console.png)
 
-1. 表示されるリストで、「**[!UICONTROL 製品プロファイル]**」タブを選択した状態で、Workfront Fusion の [!UICONTROL  製品プロファイル ] リンクの名前をクリックします。
+1. 表示されるリストで、「**[!UICONTROL 製品プロファイル]**」タブを選択した状態で、Workfront Fusion の [!UICONTROL &#x200B; 製品プロファイル &#x200B;] リンクの名前をクリックします。
 
    >[!IMPORTANT]
    >
@@ -99,7 +99,7 @@ Workfrontで [!DNL Admin Console] を使用する前に、コンソールに招�
 
    ユーザーはWorkfront Fusion で作成されます。
 
-1. （オプション）引き続き [Workfront Fusion でのユーザーのアクセスレベルを変更 ](#change-a-users-access-level-in-workfront-fusion) します。
+1. （オプション）引き続き [Workfront Fusion でのユーザーのアクセスレベルを変更 &#x200B;](#change-a-users-access-level-in-workfront-fusion) します。
 
 ## Workfront Fusion でのユーザーのアクセスレベルを変更
 
@@ -110,7 +110,7 @@ Workfrontで [!DNL Admin Console] を使用する前に、コンソールに招�
 
 ユーザーに管理者の役割を割り当てる場合は、[!DNL Adobe Admin Console] で実行する必要があります。
 
-1. ユーザーを追加したWorkfront Fusion [!UICONTROL  製品プロファイル ] ページで、「**[!UICONTROL 管理者]**」タブを選択します。
+1. ユーザーを追加したWorkfront Fusion [!UICONTROL &#x200B; 製品プロファイル &#x200B;] ページで、「**[!UICONTROL 管理者]**」タブを選択します。
 
 1. 「**[!UICONTROL 管理者を追加]**」をクリックします。
 
@@ -124,10 +124,10 @@ Workfrontで [!DNL Admin Console] を使用する前に、コンソールに招�
 
 メンバー、経理担当、アプリ開発者のロールは、Workfront Fusion 内で処理されます。
 
-手順については、[ ユーザーの役割の表示または編集 ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md) を参照してください。
+手順については、[&#x200B; ユーザーの役割の表示または編集 &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md) を参照してください。
 
 ## [!DNL Adobe Admin Console] 内の既存のユーザーをWorkfront Fusion に割り当てる
 
 Fusion で既存のユーザーをチームに追加できます。 これは Fusion 内で処理されます。
 
-手順については、[ チームにユーザーを追加する ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md) を参照してください。
+手順については、[&#x200B; チームにユーザーを追加する &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md) を参照してください。

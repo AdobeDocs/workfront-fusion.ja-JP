@@ -40,7 +40,7 @@ ht-degree: 25%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -59,7 +59,7 @@ ht-degree: 25%
 >
 >URL からファイルを処理する必要がある場合、`HTTP > Get a File` モジュールを使用して URL からファイルをダウンロードし、そのファイルを `HTTP > Get a File` モジュールからシナリオ内の目的のモジュールのフィールドにマッピングすることをお勧めします。
 >
->![ マップファイル ](assets/map-source-file.png)
+>![&#x200B; マップファイル &#x200B;](assets/map-source-file.png)
 
 ファイルをマッピングするには：
 
@@ -69,10 +69,10 @@ ht-degree: 25%
 1. マッピング先のターゲットであるターゲットモジュールで、**Source ファイル** 領域を見つけます。
 1. 以前のモジュールで出力されたファイルをマッピングするには、ファイルを出力するモジュールを選択します。
 
-   ![Workfront ダウンロード ドキュメント ](assets/wf-download-document.png)
+   ![Workfront ダウンロード ドキュメント &#x200B;](assets/wf-download-document.png)
 
 1. 名前とデータを手動でマップするには、「マップ」を選択してから、ファイルの名前とデータを入力またはマップします。
 
-   ![ マップオプションを使用 ](assets/use-the-map-option.png)
+   ![&#x200B; マップオプションを使用 &#x200B;](assets/use-the-map-option.png)
 
 1. モジュールの設定を続行するか、[**OK**] をクリックします。

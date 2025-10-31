@@ -15,7 +15,7 @@ ht-degree: 49%
 
 テンプレートを作成すると、すべてのチームメンバーがテンプレートを使用できるようになります。テンプレートをチーム外のユーザーと共有する場合は、まずテンプレートを公開する必要があります。
 
-テンプレートの作成について詳しくは、[ 新しいテンプレートの作成 ](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md) を参照してください。
+テンプレートの作成について詳しくは、[&#x200B; 新しいテンプレートの作成 &#x200B;](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md) を参照してください。
 
 ## アクセス要件
 
@@ -42,7 +42,7 @@ ht-degree: 49%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -73,13 +73,13 @@ ht-degree: 49%
 
    >[!NOTE]
    >
-   >このリンクを共有できますが、テンプレート自体は [!UICONTROL  チームテンプレート ] タブに残り、公開されません。
+   >このリンクを共有できますが、テンプレート自体は [!UICONTROL &#x200B; チームテンプレート &#x200B;] タブに残り、公開されません。
 
 1. （条件付き）テンプレートを公開したい場合は、「**[!UICONTROL 承認をリクエスト]**」をクリックして、承認を得るために管理者にテンプレートを送信します。
 
    >[!NOTE]
    >
-   >* テンプレートが承認されると、公開されます。 [!UICONTROL  公開テンプレート ] は、組織やチームに関係なく、すべてのWorkfront Fusion ユーザー用の「[!UICONTROL  公開テンプレート ]」タブに表示されます。
+   >* テンプレートが承認されると、公開されます。 [!UICONTROL &#x200B; 公開テンプレート &#x200B;] は、組織やチームに関係なく、すべてのWorkfront Fusion ユーザー用の「[!UICONTROL &#x200B; 公開テンプレート &#x200B;]」タブに表示されます。
    >* メールでレビューするテンプレートの受信に関する通知は、管理者には送信されません。承認が急を要する場合は、管理者に直接お問い合わせください。
 
 

@@ -17,7 +17,7 @@ ht-degree: 41%
 
 また、すべてのバンドルを取得するか、特定の日付以降のバンドルのみを取得するかを指定することもできます。
 
-トリガーモジュールの詳細については、「モジュールの概要」の [トリガーモジュール ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules) を参照してください。
+トリガーモジュールの詳細については、「モジュールの概要」の [トリガーモジュール &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules) を参照してください。
 
 ## アクセス要件
 
@@ -44,7 +44,7 @@ ht-degree: 41%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++## トリガー モジュールの開始位置を選択する
 
@@ -57,7 +57,7 @@ ht-degree: 41%
 
    トリガーモジュールのアイコンを右クリックし、「**開始する場所を選択**」を選択します。
 
-   ![ 開始場所を選択 ](assets/choose-where-to-start.png)
+   ![&#x200B; 開始場所を選択 &#x200B;](assets/choose-where-to-start.png)
 
 1. 表示される&#x200B;**[!UICONTROL 開始場所を選択]**&#x200B;ボックスでオプションを選択します。
 
@@ -72,7 +72,7 @@ ht-degree: 41%
     <td>このオプションを選択した後に追加または更新されたすべてのバンドルを取得します（設定による）</td>
     </tr>
      <tr>
-    <td>[！特定の日付以降の UICONTROL]</td>
+    <td>[!UICONTROL 特定の日付以降の]</td>
     <td>指定した日時以降に（設定に応じて）追加または更新されたすべてのバンドルを取得します</td>
       </tr>
       <tr>
@@ -80,7 +80,7 @@ ht-degree: 41%
     <td>使用可能なすべてのバンドルを取得します</td>
      </tr>
       <tr>
-    <td>[!UICONTROL 手動で選択 ]</td>
+    <td>[!UICONTROL 手動で選択 &#x200B;]</td>
     <td>バンドルの取得を開始する最初のバンドルを選択できます</td>
      </tr>
      </tbody>

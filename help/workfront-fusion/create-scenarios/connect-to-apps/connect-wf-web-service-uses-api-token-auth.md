@@ -51,9 +51,9 @@ ht-degree: 39%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -64,7 +64,7 @@ API トークンを介してサービスに接続する手順は、ほとんど�
 1. Web サービスの web サイト上にアプリケーションを作成します。詳しくは、この記事の[新しいアプリケーションを作成して API トークンを取得](#create-a-new-application-and-obtain-the-api-token)を参照してください。
 1. API キーまたは API トークンを取得します。
 1. シナリオにWorkfront Fusion の HTTP / リクエストを行うモジュールを追加します。
-1. この記事の [HTTP モジュールの設定 ](#set-up-the-http-module) の節で説明されているように、web サービスの API ドキュメントに従ってモジュールを設定し、シナリオを実行します。
+1. この記事の [HTTP モジュールの設定 &#x200B;](#set-up-the-http-module) の節で説明されているように、web サービスの API ドキュメントに従ってモジュールを設定し、シナリオを実行します。
 
 >[!NOTE]
 >
@@ -180,7 +180,7 @@ JSON モジュールについて詳しくは、[JSON モジュール](/help/work
 
 1. JSON を作成する元となる値を入力またはマッピングします。
 
-   ![JSON 値 ](/help/workfront-fusion/create-scenarios/connect-to-apps/assets/json-values-350x288.png)
+   ![JSON 値 &#x200B;](/help/workfront-fusion/create-scenarios/connect-to-apps/assets/json-values-350x288.png)
 
 1. JSON/JSON を作成モジュールを HTTP/ リクエストを行うモジュールに接続します。
 1. JSON を作成モジュールの JSON 文字列を「HTTP / リクエストを行う」モジュールの「リクエストコンテンツ」フィールドにマッピングします。

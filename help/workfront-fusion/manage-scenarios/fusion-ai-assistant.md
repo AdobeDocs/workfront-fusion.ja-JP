@@ -40,7 +40,7 @@ AI アシスタントは、Workfrontのドキュメントから情報を見つ�
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -48,13 +48,13 @@ AI アシスタントは、Workfrontのドキュメントから情報を見つ�
 
 Adobeには、Adobe生成 AI 契約がファイルに署名済みである必要があります。
 
-契約の署名について詳しくは、Workfront ドキュメントの AI アシスタントの概要の記事の [Adobe Gen AI 契約に署名する ](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) を参照してください。
+契約の署名について詳しくは、Workfront ドキュメントの AI アシスタントの概要の記事の [Adobe Gen AI 契約に署名する &#x200B;](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) を参照してください。
 
 ## AI アシスタントから情報を取得
 
 AI アシスタントを使用してWorkfront Fusion ドキュメントから情報や手順を取得するには：
 
-1. 画面の右上隅付近にある **AI アシスタント** アイコン ![AI アシスタント アイコン ](assets/ai-assistant-icon.png) をクリックします。
+1. 画面の右上隅付近にある **AI アシスタント** アイコン ![AI アシスタント アイコン &#x200B;](assets/ai-assistant-icon.png) をクリックします。
 1. AI アシスタントパネルで、パネルの下部付近のテキスト領域にプロンプトを入力します。
 
    プロンプトの大きさや複雑さによっては、AI アシスタントが情報を見つけるまでに数分かかることがあります。 簡単なプロンプトをお勧めします。

@@ -15,7 +15,7 @@ ht-degree: 49%
 
 エラーが一時停止ディレクティブで処理されると、レコードが不完全な実行フォルダーに作成されます。 このレコードには、シナリオの実行の状態と共に、前のモジュールのデータが格納されます。レコードは、エラーが発生したモジュールを参照し、モジュールが入力として受信したデータに関する情報を含みます。 エラーの原因となるデータのバンドルごとに、別々のレコードが作成されます。
 
-詳しくは、[ 不完全な実行の表示と解決 ](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md) を参照してください。
+詳しくは、[&#x200B; 不完全な実行の表示と解決 &#x200B;](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md) を参照してください。
 
 ## アクセス要件
 
@@ -42,7 +42,7 @@ ht-degree: 49%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -55,14 +55,14 @@ ht-degree: 49%
 1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. 回避策を追加するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
-1. **フロー制御** アイコン ![ フロー制御 ](assets/flow-control-icon.png) をクリックし、「**中断**」を選択します。
+1. **フロー制御** アイコン ![&#x200B; フロー制御 &#x200B;](assets/flow-control-icon.png) をクリックし、「**中断**」を選択します。
 1. Break モジュール内で、[!UICONTROL **自動的に実行を完了する**]&#x200B;オプションを有効にします。
 1. **試行回数**&#x200B;フィールドに、モジュールが実行を再試行する最大回数を入力またはマッピングします
 
    この数は 1 ～ 100 の範囲で指定する必要があります。
 1. **試行間隔**&#x200B;フィールドに、各再試行の間隔の分数を入力またはマッピングします。
 
-このオプションを有効にすると、エラーが発生した場合、]試行間隔[!UICONTROL フィールドで指定された時間後に未完了の実行が回収され、元の入力データで実行されます。この処理は、エラーなしでモジュールの実行が完了するか、指定された試行回数に達するまで繰り返されます。
+このオプションを有効にすると、エラーが発生した場合、試行間隔フィールドで指定された時間後に未完了の実行が回収され、元の入力データで実行されます。この処理は、エラーなしでモジュールの実行が完了するか、指定された試行回数に達するまで繰り返されます。
 
 >[!NOTE]
 >
@@ -77,4 +77,4 @@ ht-degree: 49%
 
 ## リソース
 
-詳しくは、「シナリオの設定」の [ 不完全な実行の保存を許可する ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions) を参照してください。
+詳しくは、「シナリオの設定」の [&#x200B; 不完全な実行の保存を許可する &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions) を参照してください。

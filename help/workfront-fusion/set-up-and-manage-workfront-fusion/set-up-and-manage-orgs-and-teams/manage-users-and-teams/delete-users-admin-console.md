@@ -48,7 +48,7 @@ ht-degree: 48%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -56,7 +56,7 @@ ht-degree: 48%
 
 他のAdobe製品の権限はそのままにして、Workfront Fusion からユーザーを削除できます。
 
-手順については、「Admin Consoleでの製品の管理 [ の「製品からユーザーおよびユーザーグループを削除する」を参照してくだ ](https://helpx.adobe.com/jp/enterprise/using/manage-products.html) い。
+手順については、「Admin Consoleでの製品の管理 [&#x200B; の「製品からユーザーおよびユーザーグループを削除する」を参照してくだ &#x200B;](https://helpx.adobe.com/jp/enterprise/using/manage-products.html) い。
 
 ## [!DNL Adobe Admin Console] ージ内のすべての製品のユーザーをディアクティベート
 

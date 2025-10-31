@@ -48,7 +48,7 @@ ht-degree: 57%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -63,10 +63,10 @@ ht-degree: 57%
 
    または
 
-   シナリオエディターでシナリオに取り組んでいる場合は、ウィンドウの左上隅にある左矢印 ![ 編集を終了 ](assets/exit-editing-arrow.png) をクリックします。
+   シナリオエディターでシナリオに取り組んでいる場合は、ウィンドウの左上隅にある左矢印 ![&#x200B; 編集を終了 &#x200B;](assets/exit-editing-arrow.png) をクリックします。
 
 1. シナリオ名の近くにある **履歴** をクリックします。
-   ![ 「履歴」タブ ](assets/history-tab.png)
+   ![&#x200B; 「履歴」タブ &#x200B;](assets/history-tab.png)
 
    シナリオの実行ごとに、次の詳細が表示されます。
 
@@ -83,7 +83,7 @@ ht-degree: 57%
 
 1. 特定のシナリオ実行の詳細を表示するには、右端の **詳細** をクリックします。 [!UICONTROL 詳細]リンクは、実行に詳細が含まれる場合にのみ表示されます。
 
-   シナリオ実行の詳細の表示について詳しくは、[ 特定のシナリオ実行の表示 ](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md) を参照してください。
+   シナリオ実行の詳細の表示について詳しくは、[&#x200B; 特定のシナリオ実行の表示 &#x200B;](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md) を参照してください。
 1. イベントを表示するには、「イベントを表示 **をオンに切り替え** す。
 
 
@@ -94,12 +94,12 @@ ht-degree: 57%
 
    または
 
-   シナリオエディターでシナリオに取り組んでいる場合は、ウィンドウの左上隅にある左矢印 ![ 編集を終了 ](assets/exit-editing-arrow.png) をクリックします。
+   シナリオエディターでシナリオに取り組んでいる場合は、ウィンドウの左上隅にある左矢印 ![&#x200B; 編集を終了 &#x200B;](assets/exit-editing-arrow.png) をクリックします。
 
 1. 右側のパネルの **[!UICONTROL 履歴]** タブをクリックします。
 1. （任意）選択したシナリオ実行の詳細を確認するには、右側のパネルで「実行」をクリックします。
 
-   バンドルの処理について詳しくは、[ シナリオ実行フロー ](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md) を参照してください
+   バンドルの処理について詳しくは、[&#x200B; シナリオ実行フロー &#x200B;](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md) を参照してください
 
    >[!NOTE]
    >
@@ -112,7 +112,7 @@ ht-degree: 57%
 実行履歴をフィルターして、指定した値を持つ実行のみを表示できます。
 
 1. この記事の[「[!UICONTROL 履歴]」タブでシナリオの実行履歴を表示](#view-scenario-history-on-the-history-tab)で説明されているように、シナリオの全ページ履歴を開きます。
-1. フィルタリングの基準にする列のヘッダーにある [!UICONTROL  フィルター ] アイコン ![ シナリオフィルターアイコン ](assets/fusion-scenario-filter-icon.png) をクリックします。
+1. フィルタリングの基準にする列のヘッダーにある [!UICONTROL &#x200B; フィルター &#x200B;] アイコン ![&#x200B; シナリオフィルターアイコン &#x200B;](assets/fusion-scenario-filter-icon.png) をクリックします。
 1. 「[!UICONTROL フィルター]」ダイアログで、フィルタリングしたい値を入力します。
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
@@ -174,4 +174,4 @@ You can sort the scenario execution history.
 
 1. （オプション）シナリオ実行 ID をコピーするには、**[!UICONTROL 実行 ID をコピー]**&#x200B;アイコンをクリックします。 目的の実行の行に <img src="assets/copy-fusion-execution-id-icon.png"> ります。
 
-1. （オプション）[!UICONTROL  フルテキスト検索]の結果をクリックして、その情報を含むシナリオモジュール出力バンドルを調べます。
+1. （オプション）[!UICONTROL &#x200B; フルテキスト検索]の結果をクリックして、その情報を含むシナリオモジュール出力バンドルを調べます。

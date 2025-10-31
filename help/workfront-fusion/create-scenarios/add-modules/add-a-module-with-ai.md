@@ -50,7 +50,7 @@ AI から生成されるものと同様に、生成されたモジュールを�
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++##前提条件
 
@@ -59,7 +59,7 @@ AI から生成されるものと同様に、生成されたモジュールを�
 * 組織がWorkfront AI アシスタント Beta プログラムに参加している。
 * Adobeには、署名済みのAdobe生成 AI 契約が必要です。
 
-  契約の署名について詳しくは、Workfront ドキュメントの AI アシスタントの概要の記事の [Adobe Gen AI 契約に署名する ](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) を参照してください。
+  契約の署名について詳しくは、Workfront ドキュメントの AI アシスタントの概要の記事の [Adobe Gen AI 契約に署名する &#x200B;](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) を参照してください。
 
 ## 現在サポートされている AI モジュールアプリケーション
 
@@ -88,10 +88,10 @@ Fusion AI は、現在、次のアプリケーションに接続するモジュ�
 1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. モジュールを追加するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
-1. 画面の右上隅付近にある **AI アシスタント** アイコン ![AI アシスタント アイコン ](assets/ai-assistant-icon.png) をクリックします。
+1. 画面の右上隅付近にある **AI アシスタント** アイコン ![AI アシスタント アイコン &#x200B;](assets/ai-assistant-icon.png) をクリックします。
 1. AI アシスタント パネルにテキスト プロンプトを入力します。
 
-   プロンプトのヒントについては、この記事の [ シナリオセグメントのプロンプトの作成に関するヒント ](#tips-for-creating-prompts-for-scenario-segments) を参照してください。
+   プロンプトのヒントについては、この記事の [&#x200B; シナリオセグメントのプロンプトの作成に関するヒント &#x200B;](#tips-for-creating-prompts-for-scenario-segments) を参照してください。
 
    AI アシスタントは、モジュールまたはモジュールのセットを生成します。
 1. （条件付き）必要に応じて、アプリケーションの API トークンをモジュールに追加します。

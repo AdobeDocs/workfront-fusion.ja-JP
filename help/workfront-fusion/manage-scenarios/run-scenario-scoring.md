@@ -44,7 +44,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -53,14 +53,14 @@ ht-degree: 2%
 1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. シナリオ・スコアリング・エキスパートを実行するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
-1. 画面の下部付近にあるシナリオスコアリングエキスパートアイコン ![ シナリオスコアリングエキスパート ](assets/scoring-expert-icon.png) をクリックします。
+1. 画面の下部付近にあるシナリオスコアリングエキスパートアイコン ![&#x200B; シナリオスコアリングエキスパート &#x200B;](assets/scoring-expert-icon.png) をクリックします。
 
    シナリオスコアリングエキスパートパネルが開きます。
 1. **評価** をクリックします。
 
 シナリオスコアリングエキスパートは、10 点中のスコアを返し、どのチェックに合格または失敗したかを示します。 チェックが失敗した場合、シナリオのスコアリング・エキスパートは、シナリオがこれらのチェックを確実に満たす方法の推奨事項を提供します。
 
-![ シナリオスコア ](assets/scenario-score.png)
+![&#x200B; シナリオスコア &#x200B;](assets/scenario-score.png)
 
 ## シナリオスコアリングチェック
 
@@ -70,10 +70,10 @@ ht-degree: 2%
 * すべてのモジュールにラベルを付ける必要があります。
 * シナリオは、設定されたスケジュールで実行する必要があります。
 
-  手順については、[ シナリオのスケジュール設定 ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md) を参照してください。
+  手順については、[&#x200B; シナリオのスケジュール設定 &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md) を参照してください。
 * シナリオのブループリントのサイズは 5 MB 未満にする必要があります。
 
-  詳しくは、[Fusion パフォーマンスガードレール ](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md#scenarios) を参照してください。
+  詳しくは、[Fusion パフォーマンスガードレール &#x200B;](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md#scenarios) を参照してください。
 * Workfront インスタントトリガーモジュールを使用する場合は、フィルタリングする必要があります。
 
-  手順については、[Workfront/[!UICONTROL  イベントをウォッチ ] モジュールのイベント購読フィルター ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules) を参照してください。
+  手順については、[Workfront/[!UICONTROL &#x200B; イベントをウォッチ &#x200B;] モジュールのイベント購読フィルター &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules) を参照してください。

@@ -22,7 +22,7 @@ ht-degree: 6%
 
 この例では、15 分ごとに実行されるトリガーモジュールを追加し、特定のキューにリクエストが送信された場合にシナリオを開始します。 次に、シナリオはこれらのリクエストをプロジェクトに変換します。
 
-この例では、[ 基本シナリオの作成 ](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) で作成したシナリオを変更します。
+この例では、[&#x200B; 基本シナリオの作成 &#x200B;](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) で作成したシナリオを変更します。
 
 ## アクセス要件
 
@@ -49,13 +49,13 @@ ht-degree: 6%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
 ## 前提条件
 
-この手順を実行する前に、[ 基本シナリオの作成 ](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) で説明されているシナリオを作成する必要があります。
+この手順を実行する前に、[&#x200B; 基本シナリオの作成 &#x200B;](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) で説明されているシナリオを作成する必要があります。
 
 ## トリガーモジュールの追加と設定
 
@@ -66,7 +66,7 @@ ht-degree: 6%
 
    モジュールが削除され、空白のプレースホルダーが残ります。
 
-1. 空のモジュールをクリックし、アプリのリストから **0}Adobe Workfront} を選択します。**
+1. 空のモジュールをクリックし、アプリのリストから **0&rbrace;Adobe Workfront&rbrace; を選択します。**
 1. **レコードをウォッチ** を選択します。
 1. モジュールで、シナリオ内の残りのモジュールと同じ接続が使用されていることを確認します。
 1. レコードタイプ フィールドで、「**イシュー**」を選択します。
@@ -113,4 +113,4 @@ ht-degree: 6%
 
 ## リソース
 
-* トリガーモジュールについて詳しくは、「モジュールの概要」の [トリガーモジュール ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules) を参照してください。
+* トリガーモジュールについて詳しくは、「モジュールの概要」の [トリガーモジュール &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules) を参照してください。

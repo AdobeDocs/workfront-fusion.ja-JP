@@ -46,7 +46,7 @@ ht-degree: 30%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++## モジュールの設定
 
@@ -59,16 +59,16 @@ ht-degree: 30%
 
    設定するモジュールをクリックします。
 
-1. モジュールで必要な場合は、**[!UICONTROL 接続の概要]** に記載されているように、指定したサービスに登録済みのユーザーアカウントに [ 接続 ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md) を作成します。
+1. モジュールで必要な場合は、**[!UICONTROL 接続の概要]** に記載されているように、指定したサービスに登録済みのユーザーアカウントに [&#x200B; 接続 &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md) を作成します。
 1. 各フィールドに、適切なテキストを入力します。
 
    または
 
    前のモジュールからの出力をフィールドにマッピングします。
 
-   マッピングについて詳しくは、[ マッピングの概要 ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md) を参照してください。
+   マッピングについて詳しくは、[&#x200B; マッピングの概要 &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md) を参照してください。
 
-   Workfront Fusion で認識できる様々な項目データタイプ（日付、数値、テキストなど）について詳しくは、[ 項目データタイプ ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md) を参照してください。
+   Workfront Fusion で認識できる様々な項目データタイプ（日付、数値、テキストなど）について詳しくは、[&#x200B; 項目データタイプ &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md) を参照してください。
 
    >[!NOTE]
    >
