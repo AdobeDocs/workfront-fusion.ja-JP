@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion Google Slides モジュールを使用する
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 6f5f97b9-b06a-4336-b349-ee9e2606d4bf
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '2031'
-ht-degree: 53%
+source-wordcount: '2037'
+ht-degree: 52%
 
 ---
 
@@ -23,42 +23,37 @@ Workfront Fusion で [!DNL Google Slides] を使用するには、[!DNL Google] 
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
 
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意</p> </td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンス要件なし</p>
-   <p>または</p>
-   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
+   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>コネクタベース（従来）：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -93,9 +88,9 @@ Google スライド コネクタでは、次を使用します。
 
 [!DNL Google Slides] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Google Slides]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [プレゼンテーション](#presentation)
 * [その他](#other)
@@ -213,7 +208,7 @@ Google スライド コネクタでは、次を使用します。
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 新しいドライブの場所 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 新しいドライブの場所 ]</td> 
    <td> <p>新しいプレゼンテーションを保存または追加する [!DNL Google Drive] を選択してください：</p> 
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
@@ -222,15 +217,15 @@ Google スライド コネクタでは、次を使用します。
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL 新しいドキュメントの場所 &#x200B;]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 新しいドキュメントの場所 ]</p> </td> 
    <td> <p>プレゼンテーションを保存または追加するフォルダを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 共有 &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL 共有 ] </td> 
    <td> <p>プレゼンテーションを共有する場合に選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 他者の電子メール アドレスと共有 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 他者の電子メール アドレスと共有 ]</td> 
    <td> <p> プレゼンテーションを共有する電子メール アドレスを入力します。 このフィールドに電子メールを入力せずに [ 共有 ] オプションを有効にすると、プレゼンテーションはすべてのユーザーと共有できます。</p> </td> 
   </tr> 
  </tbody> 
@@ -249,7 +244,7 @@ Google スライド コネクタでは、次を使用します。
    <td> <p>[!DNL Google Slides] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL プレゼンテーションとページ ID を入力 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL プレゼンテーションとページ ID を入力 ]</td> 
    <td> <p> プレゼンテーションとページ ID を手動で入力するか、リストから選択するかを選択します。</p> </td> 
   </tr> 
   <tr> 
@@ -340,7 +335,7 @@ Google スライド コネクタでは、次を使用します。
    <td> <p>[!DNL Google Slides] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL プレゼンテーション ID を入力 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL プレゼンテーション ID を入力 ]</td> 
    <td> <p> プレゼンテーション ID を手動で入力するか、リストから選択するかを選択します。</p> </td> 
   </tr> 
   <tr> 
@@ -397,7 +392,7 @@ Google スライド コネクタでは、次を使用します。
    <td> <p> 画像のアップロード先のプレゼンテーションのプレゼンテーション ID を選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL メソッドの選択 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL メソッドの選択 ]</td> 
    <td> <p> 画像の置き換え方法を選択します。</p>
    <ul>
    <li><p><b>テキストタグを置換して画像をアップロード</b></p><p>「値」フィールドで、アップロードする各画像に対して <b> 項目を追加 </b> をクリックし、画像のタグと新しい画像の URL を入力します。</p></li>
@@ -526,16 +521,16 @@ Google スライド コネクタでは、次を使用します。
 
 **例：** API 呼び出しを使用して、入力したプレゼンテーション ID のプレゼンテーションの詳細を取得できます。プレゼンテーション ID は、[!DNL Google Slides] 内でプレゼンテーションを開いた時に URL の中で確認できます。
 
-![API 呼び出しの例 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/api-call-350x13.png)
+![API 呼び出しの例 ](/help/workfront-fusion/references/apps-and-modules/assets/api-call-350x13.png)
 
 次の API 呼び出しは、プレゼンテーションの詳細を返します。
 
-![&#x200B; プレゼンテーションの詳細 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
+![ プレゼンテーションの詳細 ](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
 
 一致した検索結果は、モジュールの「出力」にある[!UICONTROL バンドル]／[!UICONTROL 本文]／[!UICONTROL presentationId] で確認できます。
 
 この例では、要求されたプレゼンテーションの詳細が返されました。
 
-![&#x200B; プレゼンテーションの詳細 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
+![ プレゼンテーションの詳細 ](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
 
 >[!ENDSHADEBOX]

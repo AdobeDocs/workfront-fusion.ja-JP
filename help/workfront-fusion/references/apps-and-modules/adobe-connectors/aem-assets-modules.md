@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion のAdobe Experience Manager Assets コネク
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
-source-git-commit: 190c35629f1fc1e07eef4110f3f4f771af1065fb
+source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
 workflow-type: tm+mt
-source-wordcount: '3727'
+source-wordcount: '3734'
 ht-degree: 22%
 
 ---
@@ -23,42 +23,37 @@ Adobe Experience Manager Assets コネクタの概要ビデオについては、
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
 
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意</p> </td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンス要件なし</p>
-   <p>または</p>
-   <p>従来のバージョン：自動化と統合のためのWorkfront Fusion </p>
+   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>コネクタベース（従来）：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -67,10 +62,10 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 * これらのモジュールを使用するには、Adobe Experience Manager Assets アカウントが必要です。
 * Adobe Developer コンソールでサーバー間フローを設定する必要があります。
 
-  Adobe Developer コンソールでサーバー間フローを設定する手順については、[&#x200B; サーバーサイド API のアクセストークンの生成 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=ja#the-server-to-server-flow) を参照してください。
+  Adobe Developer コンソールでサーバー間フローを設定する手順については、[ サーバーサイド API のアクセストークンの生成 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow) を参照してください。
 * Adobe Experience Manager テクニカルアカウントには、書き込み権限が必要です。
 
-  Adobe Experience Manager テクニカルアカウントに書き込み権限を追加する手順については、Adobe Experience Manager ドキュメントの [&#x200B; サービス資格情報 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) を参照してください。
+  Adobe Experience Manager テクニカルアカウントに書き込み権限を追加する手順については、Adobe Experience Manager ドキュメントの [ サービス資格情報 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) を参照してください。
 
 ## Adobe Experience Manager Assets API の情報
 
@@ -105,9 +100,9 @@ Adobe Experience Manager Assets モジュールの接続を作成するには：
 
 3. 作成する接続のタイプのフィールドに入力します。
 
-   AEM Assets as a Cloud Serviceについては、[AEM Assets as a Cloud Serviceの接続の設定 &#x200B;](#configure-the-connection-for-aem-assets-as-a-cloud-service) を参照してください。
+   AEM Assets as a Cloud Serviceについては、[AEM Assets as a Cloud Serviceの接続の設定 ](#configure-the-connection-for-aem-assets-as-a-cloud-service) を参照してください。
 
-   AEM Assets Basic （Adobe Managed Services）については、[AEM Assets Basic の接続の設定 &#x200B;](#configure-the-connection-for-aemassets-basic-adobe-managed-services) を参照してください。
+   AEM Assets Basic （Adobe Managed Services）については、[AEM Assets Basic の接続の設定 ](#configure-the-connection-for-aemassets-basic-adobe-managed-services) を参照してください。
 
 4. 「**続行**」をクリックして接続を保存し、モジュールに戻ります。
 
@@ -118,11 +113,11 @@ Adobe Experience Manager Assets モジュールの接続を作成するには：
 >
 >* これらのフィールドの情報は、Adobe Developer Consoleでのサーバー間フローの設定の一環として生成されます。 これらの値は、設定の一環として生成されるサービス資格情報 JSON ファイルに含まれています。
 >
->   Adobe Developer Consoleでサーバー間フローを設定する手順については、[&#x200B; サーバーサイド API のアクセストークンの生成 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=ja#the-server-to-server-flow) を参照してください。
+>   Adobe Developer Consoleでサーバー間フローを設定する手順については、[ サーバーサイド API のアクセストークンの生成 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow) を参照してください。
 >
 >* Adobe Experience Manager テクニカルアカウントには、書き込み権限が必要です。
 >
->   Adobe Experience Manager テクニカルアカウントに書き込み権限を追加する手順については、Adobe Experience Manager ドキュメントの [&#x200B; サービス資格情報 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) を参照してください。
+>   Adobe Experience Manager テクニカルアカウントに書き込み権限を追加する手順については、Adobe Experience Manager ドキュメントの [ サービス資格情報 ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) を参照してください。
 
 
 <table style="table-layout:auto"> 
@@ -211,9 +206,9 @@ Adobe Experience Manager Assets モジュールの接続を作成するには：
 
 Workfront Fusion でAdobe Experience Manager Assets モジュールを設定する場合、以下に示すフィールドが表示されます。 これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加のAdobe Experience Manager Assets フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [ファイル操作](#files-operations)
 * [その他](#other)

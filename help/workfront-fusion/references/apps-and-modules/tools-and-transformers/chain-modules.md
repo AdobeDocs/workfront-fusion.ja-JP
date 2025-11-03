@@ -6,10 +6,10 @@ feature: Workfront Fusion
 hide: true
 hidefromtoc: true
 exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 4%
+source-wordcount: '619'
+ht-degree: 2%
 
 ---
 
@@ -19,14 +19,12 @@ ht-degree: 4%
 
 <!--This article will be about the specific module configuration-->
 
-連鎖シナリオの計画手順は、[&#x200B; 複数のシナリオを連鎖させる &#x200B;](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md) を参照してください。
+連鎖シナリオの計画手順は、[ 複数のシナリオを連鎖させる ](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md) を参照してください。
 
 
 ## アクセス要件
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
-
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
 <table style="table-layout:auto">
  <col> 
@@ -34,34 +32,26 @@ ht-degree: 4%
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意</p> </td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
-   <td>
-   <p>Workfront Fusion ライセンス要件なし</p>
-   </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
-
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
+
+
 
 ## チェーンモジュールとそのフィールド
 
@@ -79,7 +69,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
    シナリオの入力データとして使用する新しいデータ構造を作成するには、「データ構造」フィールドの横にある「**追加** をクリックして、データ構造を作成します。
 
-   データ構造の作成手順については、[&#x200B; データ構造 &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md) を参照してください。
+   データ構造の作成手順については、[ データ構造 ](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md) を参照してください。
 
 1. **OK** をクリックして、モジュールを保存します。
 
@@ -127,6 +117,6 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
    データの新しいデータ構造を作成するには、「データ構造」フィールドの横にある **追加** をクリックして、データ構造を作成します。
 
-   データ構造の作成手順については、[&#x200B; データ構造 &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md) を参照してください。
+   データ構造の作成手順については、[ データ構造 ](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md) を参照してください。
 
 1. **OK** をクリックして、モジュールを保存します。

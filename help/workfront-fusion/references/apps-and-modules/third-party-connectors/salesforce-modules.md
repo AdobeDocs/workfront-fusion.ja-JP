@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion のシナリオでは、Salesforce を使用
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '2984'
-ht-degree: 78%
+source-wordcount: '2990'
+ht-degree: 77%
 
 ---
 
@@ -19,9 +19,9 @@ Salesforce コネクタの紹介ビデオについては、以下を参照して
 
 * [Salesforce](https://video.tv.adobe.com/v/3427027/){target=_blank}
 
-シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 >[!NOTE]
 >
@@ -33,42 +33,37 @@ Salesforce コネクタの紹介ビデオについては、以下を参照して
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
 
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意</p> </td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンス要件なし</p>
-   <p>または</p>
-   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
+   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>コネクタベース（従来）：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -150,7 +145,7 @@ Salesforce コネクタでは、以下を使用します。
         <td>Salesforce クライアントの秘密鍵を入力します。 </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL サンドボックス &#x200B;]</td>
+        <td role="rowheader">[!UICONTROL サンドボックス ]</td>
         <td>これがサンドボックス環境の場合は、このオプションを有効にします。</td>
       </tr>
       <tr>
@@ -189,7 +184,7 @@ Salesforce コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type] </td> 
-   <td> <p>モジュールで監視するフィールドが含まれているレコードのタイプを選択します。[!DNL Salesforce] 設定で [!UICONTROL Field History] がオンになっているレコードタイプを選択する必要があります。詳しくは、[!DNL Salesforce] ドキュメントで<a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&type=5">フィールド履歴のトラッキング</a>を参照してください。 </p> </td> 
+   <td> <p>モジュールで監視するフィールドが含まれているレコードのタイプを選択します。[!DNL Salesforce] 設定で [!UICONTROL Field History] がオンになっているレコードタイプを選択する必要があります。詳しくは、[!DNL Salesforce] ドキュメントで<a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&amp;type=5">フィールド履歴のトラッキング</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Field]</td> 
@@ -241,8 +236,8 @@ Salesforce コネクタでは、以下を使用します。
 
 このモジュールには、追加の設定が必要です。 アウトバウンドメッセージ用に設定されたフローが必要です。
 
-* Salesforceのフローについては、Salesforce ドキュメントの [&#x200B; フローを使用したタスクの自動化 &#x200B;](https://help.salesforce.com/s/articleView?id=platform.flow.htm) を参照してください。
-* Salesforceでのアウトバウンドメッセージの設定について詳しくは、Salesforce ドキュメントの [&#x200B; レコードトリガーフローからのアウトバウンドメッセージの送信 &#x200B;](https://help.salesforce.com/s/articleView?id=release-notes.rn_automate_flow_builder_outbound_message.htm) を参照してください
+* Salesforceのフローについては、Salesforce ドキュメントの [ フローを使用したタスクの自動化 ](https://help.salesforce.com/s/articleView?id=platform.flow.htm) を参照してください。
+* Salesforceでのアウトバウンドメッセージの設定について詳しくは、Salesforce ドキュメントの [ レコードトリガーフローからのアウトバウンドメッセージの送信 ](https://help.salesforce.com/s/articleView?id=release-notes.rn_automate_flow_builder_outbound_message.htm) を参照してください
 
 <!--
 
@@ -278,7 +273,7 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Webhook]</td> 
-   <td> <p>送信メッセージの監視に使用する web フックを選択します。Web フックを追加するには、「<strong>[!UICONTROL Add]</strong>」をクリックして、web フックの名前と接続を入力します。</p> <p>[!DNL Salesforce] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion への接続の作成 &rbrack; – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>送信メッセージの監視に使用する web フックを選択します。Web フックを追加するには、「<strong>[!UICONTROL Add]</strong>」をクリックして、web フックの名前と接続を入力します。</p> <p>[!DNL Salesforce] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion への接続の作成 ] – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type] </td> 
@@ -397,7 +392,7 @@ Salesforce コネクタでは、以下を使用します。
 
 この例では、6 人のユーザーが返されました。
 
-![&#x200B; 検索に一致 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
+![ 検索に一致 ](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
 
 >[!ENDSHADEBOX]
 
@@ -577,14 +572,14 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Salesforce] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override=""> への接続の作成 [!DNL &#x200B; Adobe Workfront Fusion] – 基本的な手順 </a> を参照してください。</td> 
+   <td>[!DNL Salesforce] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override=""> への接続の作成 [!DNL  Adobe Workfront Fusion] – 基本的な手順 </a> を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
    <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ドキュメント リンク &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL ドキュメント リンク ]</td> 
    <td>コンテンツドキュメントリンクを適用するかどうかを選択します。</td> 
   </tr> 
   <tr> 
@@ -617,7 +612,7 @@ Salesforce コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Salesforce] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override=""> への接続の作成 [!DNL &#x200B; Adobe Workfront Fusion] – 基本的な手順 </a> を参照してください。</td> 
+   <td>[!DNL Salesforce] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override=""> への接続の作成 [!DNL  Adobe Workfront Fusion] – 基本的な手順 </a> を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Type]</td> 

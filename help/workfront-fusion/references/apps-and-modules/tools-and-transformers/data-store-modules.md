@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion データストアは、データベース�
 author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1139'
 ht-degree: 76%
 
 ---
@@ -27,58 +27,48 @@ Workfront Fusion のデータストアの紹介ビデオについては、以下
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
 
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意</p> </td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
-   <td>
-   <p>Workfront Fusion ライセンス要件なし</p>
-   </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
-
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
+
+
 
 ## 前提条件
 
 [!UICONTROL データストア]を使用するには、まずデータストアを作成する必要があります。
 
-データストアの作成について詳しくは、[&#x200B; データストアの作成と管理 &#x200B;](/help/workfront-fusion/create-scenarios/map-data/data-stores.md) を参照してください。
+データストアの作成について詳しくは、[ データストアの作成と管理 ](/help/workfront-fusion/create-scenarios/map-data/data-stores.md) を参照してください。
 
-## [!UICONTROL &#x200B; データストア &#x200B;] モジュールとそのフィールド
+## [!UICONTROL  データストア ] モジュールとそのフィールド
 
 Workfront Fusion でデータストアモジュールを設定する場合、以下に示すフィールドが表示されます。 これらのほか、アプリやサービスでのアクセスレベルなどの要因に応じて、追加のデータストアフィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 データストアを使用するために接続を作成する必要はありません。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 
 * [レコードの追加 / 置換](#addreplace-a-record)
@@ -100,7 +90,7 @@ Workfront Fusion でデータストアモジュールを設定する場合、以
 
 >[!NOTE]
 >
->既にデータストアに存在するレコードを同じ名前で追加しようとしたときに、「[!UICONTROL &#x200B; 既存のレコードを上書き &#x200B;]」オプションが無効になっている場合、モジュールはエラーをスローします。
+>既にデータストアに存在するレコードを同じ名前で追加しようとしたときに、「[!UICONTROL  既存のレコードを上書き ]」オプションが無効になっている場合、モジュールはエラーをスローします。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 

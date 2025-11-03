@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion のシナリオでは、 [!DNL Jira] Softwar
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 1e2a9fcfdfb15f1b254e7b4b32fc618b49de56e5
+source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
 workflow-type: tm+mt
-source-wordcount: '2460'
-ht-degree: 61%
+source-wordcount: '2466'
+ht-degree: 65%
 
 ---
 
@@ -15,21 +15,19 @@ ht-degree: 61%
 
 >[!NOTE]
 >
->これらの手順は、従来の Jira Cloud および Jira Server コネクタに適用されます。 Jira というラベルのみを持つ、新しいバージョンの Jira コネクタについては、[Jira モジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md) を参照してください。
+>これらの手順は、従来の Jira Cloud および Jira Server コネクタに適用されます。 Jira というラベルのみを持つ、新しいバージョンの Jira コネクタについては、[Jira モジュール ](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md) を参照してください。
 
 Adobe Workfront Fusion のシナリオでは、[!DNL Jira Software] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
 これらの手順は、Jira Cloud と Jira Server の両方のモジュールに適用されます。
 
-シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## アクセス要件
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
-
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
 <table style="table-layout:auto">
  <col> 
@@ -37,34 +35,31 @@ Adobe Workfront Fusion のシナリオでは、[!DNL Jira Software] を使用す
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意</p> </td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンス要件なし</p>
-   <p>または</p>
-   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
+   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>コネクタベース（従来）：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -107,14 +102,14 @@ Jira コネクタでは、以下を使用します。
 
 接続方法は、[!DNL Jira Cloud] を使用しているか、[!DNL Jira Server] を使用しているかによって決まります。
 
-* [&#x200B; [!DNL Jira Cloud]  を Workfront Fusion に接続](#connect-jira-cloud-to-workfront-fusion)
-* [&#x200B; [!DNL Jira Server]  を Workfront Fusion に接続](#connect-jira-server-to-workfront-fusion)
+* [ [!DNL Jira Cloud]  を Workfront Fusion に接続](#connect-jira-cloud-to-workfront-fusion)
+* [ [!DNL Jira Server]  を Workfront Fusion に接続](#connect-jira-server-to-workfront-fusion)
 
 ### [!DNL Jira Cloud] を Workfront Fusion に接続
 
 [!DNL Jira Cloud] を Workfront Fusion に接続
 
-[!DNL Jira Software] をWorkfront Fusion に接続するには、API トークンを作成し、それをサービス URL とユーザー名と共にWorkfront Fusion の [!UICONTROL &#x200B; 接続を作成 &#x200B;] フィールドに挿入する必要があります。
+[!DNL Jira Software] をWorkfront Fusion に接続するには、API トークンを作成し、それをサービス URL とユーザー名と共にWorkfront Fusion の [!UICONTROL  接続を作成 ] フィールドに挿入する必要があります。
 
 #### [!DNL Jira] での API トークンの作成
 
@@ -127,18 +122,18 @@ Jira コネクタでは、以下を使用します。
    >
    >このダイアログを閉じた後は、トークンを再度表示することはできません。
 1. 生成されたトークンを安全な場所に保存します。
-1. [Workfront Fusion で  [!DNL Jira] API トークンを設定 &#x200B;](#configure-the-jira-api-token-in-workfront-fusion) を続けます。
+1. [Workfront Fusion で  [!DNL Jira] API トークンを設定 ](#configure-the-jira-api-token-in-workfront-fusion) を続けます。
 
 #### Workfront Fusion での [!DNL Jira] API トークンの設定
 
-1. Workfront Fusion の任意の [!DNL Jira Cloud] モジュールで、「**[!UICONTROL connection]**」フィールドの横にある「[!UICONTROL &#x200B; 追加 &#x200B;] をクリックします。
+1. Workfront Fusion の任意の [!DNL Jira Cloud] モジュールで、「**[!UICONTROL connection]**」フィールドの横にある「[!UICONTROL  追加 ] をクリックします。
 1. 次の情報を指定します。
 
    * **環境**
    * **タイプ**
    * **[!UICONTROL サービス URL]:** これは、Jira アカウントへのアクセスに使用するベース URL です。 例：`yourorganization.atlassian.net`
    * **[!UICONTROL ユーザー名]**
-   * **[!UICONTROL API トークン]：** これは、この記事の [&#x200B; [!DNL Jira]](#create-an-api-token-in-jira) での API トークンの作成の節で作成した API トークンです。
+   * **[!UICONTROL API トークン]：** これは、この記事の [ [!DNL Jira]](#create-an-api-token-in-jira) での API トークンの作成の節で作成した API トークンです。
 
 1. 「[!UICONTROL 続行]」をクリックして接続を作成し、モジュールに戻ります。
 
@@ -146,8 +141,8 @@ Jira コネクタでは、以下を使用します。
 
 Workfront Fusion と [!DNL Jira Server] の間の接続を認証するには、コンシューマーキー、秘密鍵、サービス URL が必要です。 この情報については、[!DNL Jira] 管理者への問い合わせが必要になる場合があります。
 
-* [&#x200B; [!DNL Jira]  接続の公開キーと秘密鍵の生成](#generate-public-and-private-keys-for-your-jira-connection)
-* [&#x200B; [!DNL Jira] でクライアントアプリをコンシューマーとして設定する](#configure-the-client-app-as-a-consumer-in-jira)
+* [ [!DNL Jira]  接続の公開キーと秘密鍵の生成](#generate-public-and-private-keys-for-your-jira-connection)
+* [ [!DNL Jira] でクライアントアプリをコンシューマーとして設定する](#configure-the-client-app-as-a-consumer-in-jira)
 * [Workfront Fusion で  [!DNL Jira] Server または Jira データセンターへの接続を作成](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
 
 #### [!DNL Jira] 接続の公開鍵と秘密鍵の生成
@@ -185,12 +180,12 @@ Workfront Fusion と [!DNL Jira Server] の間の接続を認証するには、�
      >1. ターミナル出力を `jira_publickey.pem` という名前のファイルに貼り付けます。
 
 
-1. [&#x200B; [!DNL Jira]](#configure-the-client-app-as-a-consumer-in-jira) でクライアントアプリをコンシューマーとして設定するに進んでください
+1. [ [!DNL Jira]](#configure-the-client-app-as-a-consumer-in-jira) でクライアントアプリをコンシューマーとして設定するに進んでください
 
 #### [!DNL Jira] でクライアントアプリをコンシューマーとして設定する
 
 1. [!DNL Jira] インスタンスにログインします。
-1. 左側のナビゲーションパネルで、**[!UICONTROL [!DNL Jira]設定]**![Jira 設定アイコン &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/jira-settings-icon.png)/**[!UICONTROL アプリケーション]**/**[!UICONTROL アプリケーションリンク]** をクリックします。
+1. 左側のナビゲーションパネルで、**[!UICONTROL [!DNL Jira]設定]**![Jira 設定アイコン ](/help/workfront-fusion/references/apps-and-modules/assets/jira-settings-icon.png)/**[!UICONTROL アプリケーション]**/**[!UICONTROL アプリケーションリンク]** をクリックします。
 1. 「**[!UICONTROL リンクするアプリケーションの URL を入力]**」フィールドに、次のように入力します。
 
    ```
@@ -238,7 +233,7 @@ Workfront Fusion と [!DNL Jira Server] の間の接続を認証するには、�
    </table>
 
 1. 「**[!UICONTROL 続行]**」をクリックします。
-1. 続けて [Workfront Fusion への接続  [!DNL Jira Server]  接続の作  [!DNL Jira Data Center] &#x200B;](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion) を行います。
+1. 続けて [Workfront Fusion への接続  [!DNL Jira Server]  接続の作  [!DNL Jira Data Center] ](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion) を行います。
 
 #### Workfront Fusion で [!DNL Jira Server] または [!DNL Jira Data Center] への接続を作成する
 
@@ -246,7 +241,7 @@ Workfront Fusion と [!DNL Jira Server] の間の接続を認証するには、�
 >
 >[!DNL Jira Server] アプリで [!DNL Jira Server] または [!DNL Jira Data Center] に接続します。
 
-1. Workfront Fusion の任意の [!DNL Jira Server] モジュールで、「**[!UICONTROL connection]**」フィールドの横にある「[!UICONTROL &#x200B; 追加 &#x200B;] をクリックします。
+1. Workfront Fusion の任意の [!DNL Jira Server] モジュールで、「**[!UICONTROL connection]**」フィールドの横にある「[!UICONTROL  追加 ] をクリックします。
 1. [!UICONTROL 接続の作成]パネルで、次のフィールドに入力します。
 
    <table style="table-layout:auto"> 
@@ -286,9 +281,9 @@ Workfront Fusion と [!DNL Jira Server] の間の接続を認証するには、�
 
 [!DNL Jira Software] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Jira Software]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [トリガー](#triggers)
 * [アクション](#actions)
@@ -353,7 +348,7 @@ Workfront Fusion と [!DNL Jira Server] の間の接続を認証するには、�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Issue ID or Keys]</td> 
-   <td>エクスペリエンスを表示するイシューまたはキーごとに、<b>[!UICONTROL アイテムの追加 &#x200B;]</b> をクリックして、イシュー ID またはキーを入力します。 1 つのモジュールに最大 50 個まで入力できます。</td> 
+   <td>エクスペリエンスを表示するイシューまたはキーごとに、<b>[!UICONTROL アイテムの追加 ]</b> をクリックして、イシュー ID またはキーを入力します。 1 つのモジュールに最大 50 個まで入力できます。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -567,21 +562,21 @@ Workfront Fusion と [!DNL Jira Server] の間の接続を認証するには、�
 
 >[!IMPORTANT]
 >
->従来の Jira コネクタで使用されていた検索モジュールでは、次のエラーが発生する場合があります。
+>従来の Jira コネクターで使用されていた検索モジュールでは、次のエラーが発生する場合があります。
 >
 >`[410] The requested API has been removed. Please migrate to the /rest/api/3/search/jql API. A full migration guideline is available at https://developer.atlassian.com/changelog/#CHANGE-2046`
 >
->これは、Jira 側での非推奨（廃止予定）が原因です。
+>これは、Jira 側の廃止によるものです。
 >
->このエラーが発生した場合は、従来の Jira コネクタの検索モジュールを新しいコネクタの検索モジュールに置き換えることができます。 新しいコネクタを使用すると、使用する API バージョンを選択できます。 接続を作成する場合は、必ず V3 を選択します。
+>このエラーが発生した場合は、従来の Jira コネクターの検索モジュールを新しいコネクターの検索モジュールに置き換えることができます。新しいコネクターでは、使用する API バージョンを選択できます。接続を作成する場合は、必ず V3 を選択します。
 >
-> ![&#x200B; 新しい Jira コネクタの API バージョンオプション &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/jira-version-option.png)
+> ![ 新しい Jira コネクタの API バージョンオプション ](/help/workfront-fusion/references/apps-and-modules/assets/jira-version-option.png)
 >
->注意：
+>メモ：
 >
->* 影響を受けるのは「検索」モジュールのみです。 現時点では、Fusion コネクタで使用される他の Jira API エンドポイントは、この非推奨（廃止予定）の影響を受けません。
+>* 影響を受けるのは検索モジュールのみです。現時点では、Fusion コネクターで使用される他の Jira API エンドポイントは、この廃止の影響を受けません。
 >
->* 地理的なロールアウトによって不整合が発生する場合があります。 Atlassian はこの変更を地域的に展開しています。つまり、一部の Jira クラウドインスタンスでは、引き続き一時的に古いエンドポイントをサポートしている可能性があります。 これにより、環境間で動作に一貫性がなくなる可能性があります。
+>* 地理的なロールアウトによって不整合が発生する場合があります。Atlassian はこの変更を地域的に展開しています。つまり、一部の Jira クラウドインスタンスでは、引き続き一時的に古いエンドポイントをサポートしている可能性があります。これにより、環境間で動作に一貫性がなくなる可能性があります。
 
 #### [!UICONTROL レコードをリスト表示]
 

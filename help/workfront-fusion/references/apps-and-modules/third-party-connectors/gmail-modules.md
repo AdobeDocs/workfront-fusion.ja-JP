@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion シナリオでは、Gmail を使用する�
 author: Becky
 feature: Workfront Fusion
 exl-id: 62269eca-c3cf-42fe-a866-fb66d2363b8d
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '1852'
-ht-degree: 78%
+source-wordcount: '1858'
+ht-degree: 77%
 
 ---
 
@@ -15,13 +15,11 @@ ht-degree: 78%
 
 Adobe Workfront Fusion のシナリオでは、[!DNL Gmail] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
-シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。 モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。 モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## アクセス要件
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
-
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
 <table style="table-layout:auto">
  <col> 
@@ -29,34 +27,31 @@ Adobe Workfront Fusion のシナリオでは、[!DNL Gmail] を使用するワ�
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意</p> </td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンス要件なし</p>
-   <p>または</p>
-   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
+   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>コネクタベース（従来）：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -66,16 +61,16 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ## [!DNL Gmail] を Workfront Fusion に接続 {#connect-gmail-to-workfront-fusion}
 
-* [&#x200B; [!DNL Gmail]  [!DNL Google Workspace] 使用してWorkfront Fusion に接続する](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
-* [&#x200B; [!DNL Gmail] or [!DNL gmail.com] .com を使用してWorkfront Fusion [!DNL googlemail] 接続する](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
+* [ [!DNL Gmail]  [!DNL Google Workspace] 使用してWorkfront Fusion に接続する](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
+* [ [!DNL Gmail] or [!DNL gmail.com] .com を使用してWorkfront Fusion [!DNL googlemail] 接続する](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
 
-### [!DNL Gmail] を使用して [!DNL &#x200B; Google Workspace] をWorkfront Fusion に接続します。
+### [!DNL Gmail] を使用して [!DNL  Google Workspace] をWorkfront Fusion に接続します。
 
-[!DNL Google Workspace] アカウントを [!UICONTROL Workfront Fusion] に接続する手順については、[&#x200B; 接続の作成 – 基本手順 &#x200B;](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md) を参照してください。
+[!DNL Google Workspace] アカウントを [!UICONTROL Workfront Fusion] に接続する手順については、[ 接続の作成 – 基本手順 ](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md) を参照してください。
 
 ### [!DNL Gmail] または [!DNL gmail.com].com を使用して [!DNL googlemail] をWorkfront Fusion に接続する
 
-[!DNL @gmail.com] または [!DNL @googlemail.com] ユーザーは、[!UICONTROL クライアント ID] および[!UICONTROL クライアントの秘密鍵]を取得するために、[&#x200B; [!DNL Google Cloud Platform]](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project) 上で OAuth クライアントを作成する必要があります。
+[!DNL @gmail.com] または [!DNL @googlemail.com] ユーザーは、[!UICONTROL クライアント ID] および[!UICONTROL クライアントの秘密鍵]を取得するために、[ [!DNL Google Cloud Platform]](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project) 上で OAuth クライアントを作成する必要があります。
 
 OAuth クライアントを作成し、[!UICONTROL クライアント ID] および[!UICONTROL クライアントの秘密鍵]を取得する方法に関する段階的な手順については、[カスタム OAuth クライアントを使用して Adobe Workfront Fusion を Google Services に接続](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)を参照してください。
 
@@ -83,9 +78,9 @@ OAuth クライアントを作成し、[!UICONTROL クライアント ID] およ
 
 [!DNL Gmail] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Gmail]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [トリガー](#triggers)
 * [アクション](#actions)
@@ -107,7 +102,7 @@ OAuth クライアントを作成し、[!UICONTROL クライアント ID] およ
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Gmail] アカウントをWorkfront Fusion に接続する方法については、この記事の <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">UICONTROL Workfront Fusion への [!DNL Gmail] の接続 &rbrack;</a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Gmail] アカウントをWorkfront Fusion に接続する方法については、この記事の <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">UICONTROL Workfront Fusion への [!DNL Gmail] の接続 ]</a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder] </td> 
@@ -178,7 +173,7 @@ OAuth クライアントを作成し、[!UICONTROL クライアント ID] およ
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Gmail] アカウントをWorkfront Fusion に接続する方法については、この記事の <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">UICONTROL Workfront Fusion への [!DNL Gmail] の接続 &rbrack;</a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Gmail] アカウントをWorkfront Fusion に接続する方法については、この記事の <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">UICONTROL Workfront Fusion への [!DNL Gmail] の接続 ]</a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder] </td> 
@@ -211,7 +206,7 @@ OAuth クライアントを作成し、[!UICONTROL クライアント ID] およ
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Gmail] アカウントをWorkfront Fusion に接続する方法については、この記事の <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">UICONTROL Workfront Fusion への [!DNL Gmail] の接続 &rbrack;</a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Gmail] アカウントをWorkfront Fusion に接続する方法については、この記事の <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">UICONTROL Workfront Fusion への [!DNL Gmail] の接続 ]</a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder] </td> 
@@ -258,7 +253,7 @@ OAuth クライアントを作成し、[!UICONTROL クライアント ID] およ
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Gmail] アカウントをWorkfront Fusion に接続する方法については、この記事の <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">UICONTROL Workfront Fusion への [!DNL Gmail] の接続 &rbrack;</a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Gmail] アカウントをWorkfront Fusion に接続する方法については、この記事の <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">UICONTROL Workfront Fusion への [!DNL Gmail] の接続 ]</a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL [!DNL Gmail] Message ID]</p> </td> 
@@ -289,7 +284,7 @@ OAuth クライアントを作成し、[!UICONTROL クライアント ID] およ
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Gmail] アカウントをWorkfront Fusion に接続する方法については、この記事の <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">UICONTROL Workfront Fusion への [!DNL Gmail] の接続 &rbrack;</a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Gmail] アカウントをWorkfront Fusion に接続する方法については、この記事の <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">UICONTROL Workfront Fusion への [!DNL Gmail] の接続 ]</a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder] </td> 
@@ -316,7 +311,7 @@ OAuth クライアントを作成し、[!UICONTROL クライアント ID] およ
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Gmail] アカウントをWorkfront Fusion に接続する方法については、この記事の <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">UICONTROL Workfront Fusion への [!DNL Gmail] の接続 &rbrack;</a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Gmail] アカウントをWorkfront Fusion に接続する方法については、この記事の <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">UICONTROL Workfront Fusion への [!DNL Gmail] の接続 ]</a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder] </td> 
@@ -343,7 +338,7 @@ OAuth クライアントを作成し、[!UICONTROL クライアント ID] およ
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Gmail] アカウントをWorkfront Fusion に接続する方法については、この記事の <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">UICONTROL Workfront Fusion への [!DNL Gmail] の接続 &rbrack;</a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Gmail] アカウントをWorkfront Fusion に接続する方法については、この記事の <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">UICONTROL Workfront Fusion への [!DNL Gmail] の接続 ]</a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL [!DNL Gmail] Message ID]</td> 
@@ -378,7 +373,7 @@ OAuth クライアントを作成し、[!UICONTROL クライアント ID] およ
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Gmail] アカウントをWorkfront Fusion に接続する方法については、この記事の <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">UICONTROL Workfront Fusion への [!DNL Gmail] の接続 &rbrack;</a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Gmail] アカウントをWorkfront Fusion に接続する方法については、この記事の <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">UICONTROL Workfront Fusion への [!DNL Gmail] の接続 ]</a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder] </td> 
@@ -450,7 +445,7 @@ OAuth クライアントを作成し、[!UICONTROL クライアント ID] およ
 
 #### [!UICONTROL 添付ファイルを反復]
 
-メールの添付ファイルを反復処理できます。各添付ファイルは、モジュールの出力内の個別のバンドルです。詳しくは、[&#x200B; イテレータモジュール &#x200B;](/help/workfront-fusion/references/modules/iterator-module.md) を参照してください。
+メールの添付ファイルを反復処理できます。各添付ファイルは、モジュールの出力内の個別のバンドルです。詳しくは、[ イテレータモジュール ](/help/workfront-fusion/references/modules/iterator-module.md) を参照してください。
 
 <table style="table-layout:auto"> 
  <col> 

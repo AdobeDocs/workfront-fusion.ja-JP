@@ -4,10 +4,10 @@ description: Adobe Authenticator モジュールを使用すると、1 つの接
 author: Becky
 feature: Workfront Fusion
 exl-id: af4da661-eeee-4033-a2bb-a2196e446a3d
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
 workflow-type: tm+mt
-source-wordcount: '1201'
-ht-degree: 29%
+source-wordcount: '1207'
+ht-degree: 28%
 
 ---
 
@@ -23,42 +23,37 @@ HTTP モジュールより有利な点は、専用のアプリのように接続
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
 
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意</p> </td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンス要件なし</p>
-   <p>または</p>
-   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
+   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>コネクタベース（従来）：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -73,7 +68,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
      または
    * API を既存のプロジェクトに追加します。
 
-  Adobeでの API のプロジェクトへの作成または追加については、Adobe Developer Console ドキュメントの [&#x200B; プロジェクトの作成 &#x200B;](https://developer.adobe.com/dep/guides/dev-console/create-project/) を参照してください。
+  Adobeでの API のプロジェクトへの作成または追加については、Adobe Developer Console ドキュメントの [ プロジェクトの作成 ](https://developer.adobe.com/dep/guides/dev-console/create-project/) を参照してください。
 
 ## Adobe Authenticator API の情報
 
@@ -100,7 +95,7 @@ Adobe Authenticator接続は、Adobe Developer Console上の 1 つのプロジ�
 >
 >Adobe Authenticator コネクタでは、OAuth サーバー間接続を使用するか、サービスアカウント（JWT）接続を使用するかを選択できます。 Adobeでは、JWT 資格情報を廃止しました。この資格情報は 2025 年 1 月 1 日（PT）以降、機能しなくなります。 **したがって、OAuth 接続を作成することを強くお勧めします。**
 >
->これらの接続の詳細については、Adobe ドキュメントの [&#x200B; サーバーからサーバーへの認証 &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) を参照してください
+>これらの接続の詳細については、Adobe ドキュメントの [ サーバーからサーバーへの認証 ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) を参照してください
 
 接続を作成するには：
 
@@ -251,7 +246,7 @@ Adobe Authenticator接続は、Adobe Developer Console上の 1 つのプロジ�
       </td>
       </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 出力タイプ &#x200B;]  </td>
+      <td role="rowheader">[!UICONTROL 出力タイプ ]  </td>
       <td>
         <p>モジュールが出力するデータのタイプを選択します。 タイプを選択しない場合、モジュールは自動的にタイプを選択します。</p>
       </td>

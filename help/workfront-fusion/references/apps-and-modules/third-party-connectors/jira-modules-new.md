@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion シナリオでは、Jira ソフトウェア
 author: Becky
 feature: Workfront Fusion
 exl-id: b74a3618-c4a1-4965-a88d-1643bfab12db
-source-git-commit: 1e2a9fcfdfb15f1b254e7b4b32fc618b49de56e5
+source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
 workflow-type: tm+mt
-source-wordcount: '1744'
-ht-degree: 30%
+source-wordcount: '1750'
+ht-degree: 36%
 
 ---
 
@@ -15,21 +15,19 @@ ht-degree: 30%
 
 >[!NOTE]
 >
->これらの手順は、新しいバージョンの Jira コネクタに適用されます。このバージョンには、Jira というラベルのみが付いています。 従来の Jira Cloud および Jira Server コネクタについては、[Jira ソフトウェアモジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md) を参照してください。
+>これらの手順は、新しいバージョンの Jira コネクタに適用されます。このバージョンには、Jira というラベルのみが付いています。 従来の Jira Cloud および Jira Server コネクタについては、[Jira ソフトウェアモジュール ](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md) を参照してください。
 
 Adobe Workfront Fusion シナリオでは、Jira を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
 Jira コネクタは、Jira Cloud と Jira Data Server の両方で使用できます。
 
-シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## アクセス要件
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
-
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
 
 <table style="table-layout:auto">
  <col> 
@@ -37,34 +35,31 @@ Jira コネクタは、Jira Cloud と Jira Data Server の両方で使用でき�
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意</p> </td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンス要件なし</p>
-   <p>または</p>
-   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
+   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>コネクタベース（従来）：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -176,9 +171,9 @@ Workfront Fusion で接続を作成するには：
 
 Jira モジュールを設定する場合、Workfront Fusion では以下に示すフィールドが表示されます。 これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の Jira フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [トリガー](#triggers)
 * [アクション](#actions)
@@ -453,21 +448,21 @@ Jira モジュールを設定する場合、Workfront Fusion では以下に示�
 
 >[!IMPORTANT]
 >
->従来の Jira コネクタで使用されていた検索モジュールでは、次のエラーが発生する場合があります。
+>従来の Jira コネクターで使用されていた検索モジュールでは、次のエラーが発生する場合があります。
 >
 >`[410] The requested API has been removed. Please migrate to the /rest/api/3/search/jql API. A full migration guideline is available at https://developer.atlassian.com/changelog/#CHANGE-2046`
 >
->これは、Jira 側での非推奨（廃止予定）が原因です。
+>これは、Jira 側の廃止によるものです。
 >
->このエラーが発生した場合は、従来の Jira コネクタの検索モジュールを新しいコネクタの検索モジュールに置き換えることができます。 新しいコネクタを使用すると、使用する API バージョンを選択できます。 接続を作成する場合は、必ず V3 を選択します。
+>このエラーが発生した場合は、従来の Jira コネクターの検索モジュールを新しいコネクターの検索モジュールに置き換えることができます。新しいコネクターでは、使用する API バージョンを選択できます。接続を作成する場合は、必ず V3 を選択します。
 >
-> ![&#x200B; 新しい Jira コネクタの API バージョンオプション &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/jira-version-option.png)
+> ![ 新しい Jira コネクタの API バージョンオプション ](/help/workfront-fusion/references/apps-and-modules/assets/jira-version-option.png)
 >
->注意：
+>メモ：
 >
->* 影響を受けるのは「検索」モジュールのみです。 現時点では、Fusion コネクタで使用される他の Jira API エンドポイントは、この非推奨（廃止予定）の影響を受けません。
+>* 影響を受けるのは検索モジュールのみです。現時点では、Fusion コネクターで使用される他の Jira API エンドポイントは、この廃止の影響を受けません。
 >
->* 地理的なロールアウトによって不整合が発生する場合があります。 Atlassian はこの変更を地域的に展開しています。つまり、一部の Jira クラウドインスタンスでは、引き続き一時的に古いエンドポイントをサポートしている可能性があります。 これにより、環境間で動作に一貫性がなくなる可能性があります。
+>* 地理的なロールアウトによって不整合が発生する場合があります。Atlassian はこの変更を地域的に展開しています。つまり、一部の Jira クラウドインスタンスでは、引き続き一時的に古いエンドポイントをサポートしている可能性があります。これにより、環境間で動作に一貫性がなくなる可能性があります。
 
 #### レコードの検索
 

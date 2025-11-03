@@ -4,10 +4,10 @@ description: XML アプリを使用すると、XML／Parse XML モジュール�
 author: Becky
 feature: Workfront Fusion
 exl-id: ab323361-cd04-4dcc-ab02-0fb468334fdb
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
 workflow-type: tm+mt
-source-wordcount: '1448'
-ht-degree: 86%
+source-wordcount: '1433'
+ht-degree: 85%
 
 ---
 
@@ -19,42 +19,32 @@ ht-degree: 86%
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
 
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意</p> </td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
-   <td>
-   <p>Workfront Fusion ライセンス要件なし</p>
-   </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
-
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
+
+
 
 ## XML を作成
 
@@ -109,9 +99,9 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 1. 「**[!UICONTROL ジェネレーター]**」ボタンをクリックし、XML サンプルを「[!UICONTROL サンプルデータ]」フィールドに貼り付けます。
 
-   ![&#x200B; サンプルデータフィールド &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
+   ![ サンプルデータフィールド ](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
 
-1. **[!UICONTROL 保存]**&#x200B;をクリックします。
+1. 「**[!UICONTROL 保存]**」をクリックします。
 
    これで、データ構造の「仕様」フィールドに、生成された構造が含まれます。
 1. データ構造の名前をより具体的な名前に変更し、「**[!UICONTROL 保存]**」をクリックします。
@@ -196,12 +186,12 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 XML ファイルを URL からダウンロードしてコンテンツを解析するには：
 
 1. 新しいシナリオを開始します。
-1. [!UICONTROL HTTP]/[!UICONTROL &#x200B; ファイルを取得 &#x200B;] モジュールを追加します
+1. [!UICONTROL HTTP]/[!UICONTROL  ファイルを取得 ] モジュールを追加します
 1. モジュールの設定を開き、次のように設定します。
 
    **URL**：XML ファイルの URL（例：`https://siftrss.com/f/rqLy05ayMBJ`）
 
-   ![XML ファイルの URL の例 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/url-of-xml-file-350x184.png)
+   ![XML ファイルの URL の例 ](/help/workfront-fusion/references/apps-and-modules/assets/url-of-xml-file-350x184.png)
 
 1. **[!UICONTROL OK]** をクリックして、モジュールの設定を保存して閉じます。
 1. [!UICONTROL XML]／[!UICONTROL XML を解析]モジュールを追加して、[!UICONTROL HTTP]／[!UICONTROL ファイルを取得]モジュールの後に接続し、次のように設定します。
@@ -251,7 +241,7 @@ XML ファイルを URL からダウンロードしてコンテンツを解析�
 
 は次のバンドルに変換されます。
 
-![XML はバンドルに変換されました &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/xml-converted-to-bundle.png)
+![XML はバンドルに変換されました ](/help/workfront-fusion/references/apps-and-modules/assets/xml-converted-to-bundle.png)
 
 >[!ENDSHADEBOX]
 

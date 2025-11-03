@@ -4,10 +4,10 @@ description: OAuth 2.0 認証が必要なサーバーにAdobe Workfront Fusion H
 author: Becky
 feature: Workfront Fusion
 exl-id: a302a1d4-fddf-4a71-adda-6b87ff7dba4b
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 54c368d335b30f55cab19595a5b4740dde6013a7
 workflow-type: tm+mt
-source-wordcount: '2314'
-ht-degree: 69%
+source-wordcount: '2320'
+ht-degree: 68%
 
 ---
 
@@ -38,49 +38,44 @@ OAuth 2.0 認証について詳しくは、[OAuth 2.0 承認フレームワー�
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
 
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意</p> </td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
+   <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>現在：Workfront Fusion ライセンス要件なし</p>
-   <p>または</p>
-   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
+   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>コネクタベース（従来）：作業の自動化と統合のためのWorkfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
 ## [!DNL OAuth] リクエストの接続の作成
 
 * [HTTPで接続を作成するための一般的な手順／OAuth 2.0 リクエスト作成モジュール](#general-instructions-for-creating-a-connection-in-the-http--make-an-oauth-20-request-module)
-* [OAuth 2.0 リクエストモジュール http / [!UICONTROL &#x200B; 作成 &#x200B;] でGoogleへの接続を作成する手順](#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module)
+* [OAuth 2.0 リクエストモジュール http / [!UICONTROL  作成 ] でGoogleへの接続を作成する手順](#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module)
 * [HTTP 経由で Microsoft Graph API への接続を作成するための手順／OAuth 2.0 リクエスト作成モジュール](#instructions-for-connecting-to-microsoft-graph-api-via-the-http--make-an-oauth-20-request-module)
 
 ### [!UICONTROL HTTP] で接続を作成するための一般的な手順／[!UICONTROL OAuth 2.0 リクエスト作成]モジュール
@@ -225,14 +220,14 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
    </table>
 
 1. 「**[!UICONTROL 続行]**」をクリックして接続を保存し、モジュールに戻ります。
-1. [OAuth 2.0 リクエストを行うモジュールの設定 &#x200B;](#configure-the-make-an-oauth-20-request-module) を続行します。
+1. [OAuth 2.0 リクエストを行うモジュールの設定 ](#configure-the-make-an-oauth-20-request-module) を続行します。
 
-### [!DNL Google]HTTP[!UICONTROL /]OAuth 2.0 リクエストモジュールで [!UICONTROL &#x200B; への接続を作成する手順 &#x200B;]
+### [!DNL Google]HTTP[!UICONTROL /]OAuth 2.0 リクエストモジュールで [!UICONTROL  への接続を作成する手順 ]
 
 次の例は、[!UICONTROL HTTP]／[!UICONTROL OAuth 2.0 実行]リクエストモジュールを使用して [!DNL Google] に接続する方法を示しています。
 
-1. 記事 [&#x200B; カスタム OAuth クライアントを使用したへのAdobe Workfront Fusion の接続  [!DNL Google Services]  の説明に従って、プロジェクトの作成、OAuth 設定の指定、資格情報の生成が完了している &#x200B;](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md) とを確認してください。
-1. [!UICONTROL HTTP]/[!UICONTROL OAuth 2.0 リクエストを作成 &#x200B;] モジュールを開きます。
+1. 記事 [ カスタム OAuth クライアントを使用したへのAdobe Workfront Fusion の接続  [!DNL Google Services]  の説明に従って、プロジェクトの作成、OAuth 設定の指定、資格情報の生成が完了している ](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md) とを確認してください。
+1. [!UICONTROL HTTP]/[!UICONTROL OAuth 2.0 リクエストを作成 ] モジュールを開きます。
 1. 任意のモジュールで、「接続」ボックスの横にある **[!UICONTROL 追加]** をクリックします。
 1. 次の値を入力します。
 
@@ -288,17 +283,17 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
    </table>
 
 1. 「**[!UICONTROL 続行]**」をクリックして接続設定を保存します。
-1. [OAuth 2.0 リクエストを行うモジュールの設定 &#x200B;](#configure-the-make-an-oauth-20-request-module) を続行します。
+1. [OAuth 2.0 リクエストを行うモジュールの設定 ](#configure-the-make-an-oauth-20-request-module) を続行します。
 
 ## 「OAuth 2.0 リクエストを行う」モジュールの設定
 
 OAuth 2.0 接続を確立したら、必要に応じてモジュールの設定を続行します。 すべての認証トークンは、このリクエストと、同じ接続を使用する他のリクエストに自動的に含まれます。
 
-[!UICONTROL HTTP]/[!UICONTROL OAuth 2.0 リクエストを行う &#x200B;] モジュールを設定すると、Workfront Fusion は以下に示すフィールドを表示します。 モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL HTTP]/[!UICONTROL OAuth 2.0 リクエストを行う ] モジュールを設定すると、Workfront Fusion は以下に示すフィールドを表示します。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[Adobe Workfront Fusion でのモジュール間の情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 <table style="table-layout:auto">  
  <col> 
@@ -342,7 +337,7 @@ OAuth 2.0 接続を確立したら、必要に応じてモジュールの設定�
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] は、ファイルとデータの送信に使用される HTTP マルチパートリクエストです。通常、ファイルをサーバーにアップロードする際に使用されます。</p> <p>リクエストで送信するフィールドを追加します。各フィールドには、キーと値のペアが含まれている必要があります。</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>リクエスト本文内で送信するキーと値を入力します。</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>キーを入力し、リクエスト本文で送信するソースファイルを指定します。</p> <p>前のモジュールからアップロードするファイルをマッピングするか（[!UICONTROL HTTP] &gt; [!UICONTROL ファイルを取得 &#x200B;] など）、ファイル名とファイルデータを手動で入力します。</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>キーを入力し、リクエスト本文で送信するソースファイルを指定します。</p> <p>前のモジュールからアップロードするファイルをマッピングするか（[!UICONTROL HTTP] &gt; [!UICONTROL ファイルを取得 ] など）、ファイル名とファイルデータを手動で入力します。</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 

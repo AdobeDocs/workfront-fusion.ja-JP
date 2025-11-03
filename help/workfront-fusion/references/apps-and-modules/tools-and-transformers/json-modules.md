@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion JSON アプリは、Adobe Workfront Fusion �
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1229'
 ht-degree: 82%
 
 ---
@@ -19,44 +19,32 @@ Adobe Workfront Fusion [!UICONTROL JSON] アプリには、Adobe Workfront Fusio
 
 +++ 展開すると、この記事の機能のアクセス要件が表示されます。
 
-この記事で説明している機能を使用するには、次のアクセス権が必要です。
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意</p> </td> 
+   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront プラン</td> 
-   <td> <p>新規：標準</p><p>または</p><p>現在：仕事以上</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion ライセンス**</td> 
-   <td>
-   <p>現在：Workfront Fusion ライセンス要件なし</p>
-   <p>または</p>
-   <p>従来のバージョン：作業の自動化と統合のためのWorkfront Fusion </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>新規：</p> <ul><li>Prime Workfront パッケージを選択する：Adobe Workfront Fusion を購入する必要があります。</li><li>Ultimate Workfront パッケージ：Workfront Fusion が含まれています。</li></ul>
-   <p>または</p>
-   <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
-
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
+
+
 
 ## JSON 解析時の考慮事項
 
@@ -69,7 +57,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 1. [!UICONTROL JSON を解析]モジュールをシナリオに追加します。
 1. 「**[!UICONTROL JSON 文字列]**」フィールドで、データ構造を作成する JSON を入力します。
-1. 他のモジュールを [!UICONTROL JSON を解析]モジュールにはまだ結びつけません。Workfront Fusion は JSON データの構造をまだ把握していないので、「JSON を解析 [!UICONTROL &#x200B; モジュールのデータを、シナリオ内の他のモジュールにマッピングすることはでき &#x200B;] せん。
+1. 他のモジュールを [!UICONTROL JSON を解析]モジュールにはまだ結びつけません。Workfront Fusion は JSON データの構造をまだ把握していないので、「JSON を解析 [!UICONTROL  モジュールのデータを、シナリオ内の他のモジュールにマッピングすることはでき ] せん。
 1. シナリオを手動で実行します。これにより、[!UICONTROL JSON を解析]モジュールが、指定した JSON から JSON 構造を識別できるようになります。
 1. 次のモジュールを接続できるようになりました。JSON を解析モジュールの項目をマッピングに使用できるようになりました。
 
@@ -91,7 +79,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 ```
 
 
-![JSON コレクション &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
+![JSON コレクション ](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
 
 >[!ENDSHADEBOX]
 
@@ -115,7 +103,7 @@ JSON 文字列フィールドに配列 `[ ... ]` が含まれている場合、�
 ]
 ```
 
-![JSON 配列 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/json-array.png)
+![JSON 配列 ](/help/workfront-fusion/references/apps-and-modules/assets/json-array.png)
 
 >[!ENDSHADEBOX]
 
@@ -123,9 +111,9 @@ JSON 文字列フィールドに配列 `[ ... ]` が含まれている場合、�
 
 [!DNL JSON] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらに加えて、アプリやサービスでのアクセスレベルなどの要因に応じて、追加の JSON フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [JSON を XML に変換](#convert-json-to-xml)
 * [JSON を解析](#parse-json)
@@ -303,6 +291,6 @@ JSON コンテンツが [!UICONTROL JSON を解析]モジュールに適切に�
 
 **例：**
 
-![JSON の引用符 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
+![JSON の引用符 ](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
 
 >[!ENDSHADEBOX]
