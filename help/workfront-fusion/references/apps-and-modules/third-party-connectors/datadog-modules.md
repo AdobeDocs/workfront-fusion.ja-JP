@@ -15,9 +15,9 @@ ht-degree: 61%
 
 Adobe Workfront Fusion のシナリオでは、[!DNL Datadog] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
-シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## アクセス要件
 
@@ -51,9 +51,9 @@ Adobe Workfront Fusion のシナリオでは、[!DNL Datadog] を使用するワ
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -119,7 +119,7 @@ Datadog コネクタは以下を使用します。
       <td> <p>接続先のドメイン（米国または EU）を選択します。</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL API キーの場所 ] </td> 
+      <td role="rowheader">[!UICONTROL API キーの場所 &#x200B;] </td> 
       <td> <p>API キーをヘッダーに含めるか、クエリ文字列に含めるかを選択します。</p> </td> 
      </tr> 
      <tr> 
@@ -135,9 +135,9 @@ Datadog コネクタは以下を使用します。
 
 [!DNL Datadog] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Datadog]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 ### アクション
 
@@ -157,7 +157,7 @@ Datadog コネクタは以下を使用します。
    <td> <p>[!DNL Datadog] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Datadog] の接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL で専用ドメインを使用 ]</td> 
+   <td role="rowheader">[!UICONTROL で専用ドメインを使用 &#x200B;]</td> 
    <td>多くの受信トラフィックを想定している Datadog API エンドポイントの一部は、専用ドメインで動作しています。 API 呼び出しに専用ドメインを使用するには、このボックスをオンにします。</td> 
   </tr> 
   <tr> 
@@ -192,13 +192,13 @@ URL：`/v1/dashboard`
 
 メソッド：`GET`
 
-![Datadog API 呼び出しの例 ](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-example.png)
+![Datadog API 呼び出しの例 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-example.png)
 
 結果は、バンドル／本文／ダッシュボードにあるモジュールの出力に表示されます。
 
 この例では、3 つのダッシュボードが返されました。
 
-![Datadog API 応答 ](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-response-example.png)
+![Datadog API 応答 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-response-example.png)
 
 #### [!UICONTROL 時系列のポイントを投稿]
 
@@ -224,7 +224,7 @@ URL：`/v1/dashboard`
    </ul>
    </td> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 間隔 ]</td> 
+   <td role="rowheader">[!UICONTROL 間隔 &#x200B;]</td> 
    <td> 指標のタイプがレートまたは数の場合は、対応する間隔を定義します。</td> 
   </tr> 
   <tr> 

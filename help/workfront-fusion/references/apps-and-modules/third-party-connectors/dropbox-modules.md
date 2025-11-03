@@ -15,9 +15,9 @@ ht-degree: 69%
 
 Adobe Workfront Fusion のシナリオでは、[!UICONTROL Dropbox] または [!DNL Dropbox Business] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。これにより、[!UICONTROL Dropbox] のファイルやフォルダーのモニタリング、検索、取得、リスト化、作成、編集などのアクティビティを自動化できます。
 
-シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## アクセス要件
 
@@ -51,9 +51,9 @@ Adobe Workfront Fusion のシナリオでは、[!UICONTROL Dropbox] または [!
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -64,10 +64,10 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 >[!IMPORTANT]
 >
 >* Dropbox コネクタを使用するには、まずDropboxでアプリケーションを作成する必要があります。
->  >   詳細については、『Dropbox開発者ガイド』の「アプリケーションの作成」を検索してください。
+>  &#x200B;>   詳細については、『Dropbox開発者ガイド』の「アプリケーションの作成」を検索してください。
 >* アプリケーションを作成する際には、次のリダイレクト URI を使用します：`https://app.workfrontfusion.com/oauth/cb/dropbox`
 >* Dropbox は、ユーザーが 50 人を超えるアプリケーションを承認する必要があります。
->  >   詳しくは、Dropbox 開発者ガイドの「Production approval」を検索してください。
+>  &#x200B;>   詳しくは、Dropbox 開発者ガイドの「Production approval」を検索してください。
 
 ## Dropbox API の情報
 
@@ -132,7 +132,7 @@ Dropbox コネクタでは、以下を使用します。
         <td>個人用 Dropbox アカウントとビジネス用アカウント（Dropbox Business）のどちらに接続するかを選択します。</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL 除外 dropbox-api-path-root ヘッダー ]</td>
+        <td role="rowheader">[!UICONTROL 除外 dropbox-api-path-root ヘッダー &#x200B;]</td>
         <td>アプリのフォルダーアクセス権を持つDropbox アプリの dropbox-api-path-root ヘッダーを除外するには、このオプションを有効にします</td>
         </tr>
       </tbody>
@@ -144,13 +144,13 @@ Dropbox コネクタでは、以下を使用します。
 
 [!DNL Dropbox] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Dropbox]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [トリガーモジュール](#trigger-modules)
-* [ [!DNL Dropbox] ファイルおよびフォルダーを取得するためのモジュール](#modules-for-getting-dropbox-files-and-folders)
-* [ [!DNL Dropbox] ファイルおよびフォルダーを作成および編集するためのモジュール](#modules-for-creating-and-editing-dropbox-files-and-folders)
+* [&#x200B; [!DNL Dropbox] ファイルおよびフォルダーを取得するためのモジュール](#modules-for-getting-dropbox-files-and-folders)
+* [&#x200B; [!DNL Dropbox] ファイルおよびフォルダーを作成および編集するためのモジュール](#modules-for-creating-and-editing-dropbox-files-and-folders)
 * [その他のモジュール](#other-modules)
 
 ### トリガーモジュール
@@ -457,7 +457,7 @@ Dropbox コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Requested Visibility]</p> </td> 
-   <td> <p>リンクがパブリック、チーム用、またはパスワード制限されているかどうかを選択します。</p> <p><b>メモ：</b></p><p> [!UICONTROL チームのみ ] は、Dropbox Business アカウントでのみ使用できます。 [!UICONTROL Access with password] は、[!DNL Dropbox Pro] またはDropbox Business アカウントでのみ使用できます。</p> </td> 
+   <td> <p>リンクがパブリック、チーム用、またはパスワード制限されているかどうかを選択します。</p> <p><b>メモ：</b></p><p> [!UICONTROL チームのみ &#x200B;] は、Dropbox Business アカウントでのみ使用できます。 [!UICONTROL Access with password] は、[!DNL Dropbox Pro] またはDropbox Business アカウントでのみ使用できます。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Link's Expiration Date]</td> 
@@ -465,7 +465,7 @@ Dropbox コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Link's Access Level]</p> </td> 
-   <td> <p>リンクの受信者に対する権限を設定します。</p> <ul><li><strong>[!UICONTROL ビューア ]</strong> <p>リンクを使用するユーザーは、コンテンツを表示してコメントできます。</p> </li><li><strong>[!UICONTROL エディター ]</strong><p> リンクを使用するユーザーは、コンテンツを編集、表示およびコメントできます。 このアクセスレベルは、クラウドベースのドキュメントでのみ使用できます。</p> </li><li><strong>[!UICONTROL Max]</strong> <p>リンクを使用するユーザーは、リンクを設定できる最大のアクセスレベルを受け取ります。</p></li><ul> </td> 
+   <td> <p>リンクの受信者に対する権限を設定します。</p> <ul><li><strong>[!UICONTROL ビューア &#x200B;]</strong> <p>リンクを使用するユーザーは、コンテンツを表示してコメントできます。</p> </li><li><strong>[!UICONTROL エディター &#x200B;]</strong><p> リンクを使用するユーザーは、コンテンツを編集、表示およびコメントできます。 このアクセスレベルは、クラウドベースのドキュメントでのみ使用できます。</p> </li><li><strong>[!UICONTROL Max]</strong> <p>リンクを使用するユーザーは、リンクを設定できる最大のアクセスレベルを受け取ります。</p></li><ul> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -494,7 +494,7 @@ Dropbox コネクタでは、以下を使用します。
    <td> <p> ファイルパスをマッピングするか入力するか、手動でファイルを選択するかを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL ファイルまたはフォルダーのパス ] / [!UICONTROL ファイルまたはフォルダー ]</p> </td> 
+   <td> <p>[!UICONTROL ファイルまたはフォルダーのパス &#x200B;] / [!UICONTROL ファイルまたはフォルダー &#x200B;]</p> </td> 
    <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>ターゲットパスを入力するか、ファイルまたはフォルダーにマッピングします。</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>メニューからファイルまたはフォルダーを選択します。</p> </td> 
   </tr> 
  </tbody> 
@@ -519,11 +519,11 @@ Dropbox コネクタでは、以下を使用します。
    <td> <p>[!DNL Dropbox] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection-to-dropbox" class="MCXref xref">[!DNL Dropbox]</a> への接続の作成」を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL ファイル/フォルダーの選択方法 ] </td> 
+   <td>[!UICONTROL ファイル/フォルダーの選択方法 &#x200B;] </td> 
    <td> <p>ファイルまたはフォルダーのパスをマップするか入力するか、または手動で選択するかを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL ファイル / フォルダーパス ] /</p> </td> 
+   <td> <p>[!UICONTROL ファイル / フォルダーパス &#x200B;] /</p> </td> 
    <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>ターゲットパスを入力するか、ファイルまたはフォルダーにマッピングします。</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>ファイルまたはフォルダーを移動するかどうかを選択し、次にファイルまたはフォルダーを移動します。</p> </td> 
   </tr> 
   <tr> 
@@ -746,15 +746,15 @@ URL を自動的に変更するには、次のように `replace()` 関数を 2 
 
 * www を dl に置き換えます。
 
-  ![www を dl に置き換えます ](/help/workfront-fusion/references/apps-and-modules/assets/www-to-dl-350x32.png)
+  ![www を dl に置き換えます &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/www-to-dl-350x32.png)
 
 * さらに、?dl=0 を削除します。
 
-  ![DL を削除 ](/help/workfront-fusion/references/apps-and-modules/assets/remove-dl0-350x33.png)
+  ![DL を削除 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/remove-dl0-350x33.png)
 
 これを 1 回で実行するには、これらの関数を次のように組み合わせます。
 
-![ 両方を置換 ](/help/workfront-fusion/references/apps-and-modules/assets/replace-both-350x47.png)
+![&#x200B; 両方を置換 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/replace-both-350x47.png)
 
 次のコードをコピーして、フィールドにペーストすることもできます。`1.url` を URL に置き換えます。
 

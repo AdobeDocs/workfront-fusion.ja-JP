@@ -15,9 +15,9 @@ ht-degree: 69%
 
 Adobe Workfront Fusion のシナリオでは、[!UICONTROL Trello] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
-シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## アクセス要件
 
@@ -51,9 +51,9 @@ Adobe Workfront Fusion のシナリオでは、[!UICONTROL Trello] を使用す�
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -86,15 +86,15 @@ Trello コネクタでは、以下を使用します。
 
 ## [!UICONTROL Trello] をWorkfront Fusion に接続する
 
-[!UICONTROL Trello] アカウントをAdobe Workfront Fusion に接続する手順については、[Workfront Fusion への接続の作成 – 基本的な手順 ](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md) を参照してください。
+[!UICONTROL Trello] アカウントをAdobe Workfront Fusion に接続する手順については、[Workfront Fusion への接続の作成 – 基本的な手順 &#x200B;](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md) を参照してください。
 
 ## [!UICONTROL Trello] モジュールとそのフィールド
 
 [!UICONTROL Trello] モジュールを設定する場合、Workfront Fusion は以下に示すフィールドを表示します。 これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!UICONTROL Trello]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [ボード](#boards)
 * [リスト](#lists)
@@ -243,14 +243,14 @@ Trello コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Background ID]</td> 
-   <td> <p> [!UICONTROL 背景 ] フィールドでカスタム背景を使用することを選択した場合は、使用する背景の ID を入力またはマッピングします。</p> </td> 
+   <td> <p> [!UICONTROL 背景 &#x200B;] フィールドでカスタム背景を使用することを選択した場合は、使用する背景の ID を入力またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Card aging]</p> </td> 
    <td> <p>カードの期間経過を表す 2 つのモードから選択します。 </p> 
     <ul> 
-     <li><strong>[!UICONTROL 海賊モード ]</strong>：年老いた海賊の地図のように、カードが裂け、黄色くなり、ひび割れます。</li> 
-     <li><strong>[!UICONTROL 標準モード ]</strong>: カードは、古くなるにつれて徐々に透明になります。 </li> 
+     <li><strong>[!UICONTROL 海賊モード &#x200B;]</strong>：年老いた海賊の地図のように、カードが裂け、黄色くなり、ひび割れます。</li> 
+     <li><strong>[!UICONTROL 標準モード &#x200B;]</strong>: カードは、古くなるにつれて徐々に透明になります。 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -265,95 +265,95 @@ Trello コネクタでは、以下を使用します。
 >[!SUCCESS]
 >
 ><table style="table-layout:auto">
-<col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Adobe Workfront Fusion への [!UICONTROL Trello] アカウントの接続方法については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Board ID]</p> </td> 
-   <td> <p>モジュールで作成するボードの一意の [!UICONTROL Trello] ID を入力またはマッピングします。Watch Boards モジュールなどの別のモジュールを使用してボード ID を取得できます。</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/watch-boards.png"> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL New name]</td> 
-   <td> <p> ボードの新しい名前を入力またはマッピングします。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL New description]</td> 
-   <td> <p> 新しいボードの説明を入力またはマッピングします。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Organization ID]</p> </td> 
-   <td> <p>モジュールを編集するボードの一意の [!UICONTROL Trello] ID を入力またはマップします。  </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Subscribe] </td> 
-   <td> <p>このモジュールで使用される接続を所有するユーザーがボードを購読するかどうかを指定するオプションを選択します。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Permission level]</p> </td> 
-   <td> <p>ボードには、権限レベルごとに異なる投票ルールおよびコメントルールがあります。例えば、ボードが [!UICONTROL Private] で、投票ルールとコメントルールを [!UICONTROL All] として設定した場合、エラーが発生します。 </p> <p>投票とコメントは、権限レベルごとに次のグループに制限されます。</p> 
-    <ul> 
-     <li><strong>[!UICONTROL Private]</strong>: 
-      メンバー、メンバー、監視者</li> 
-     <li><strong>[!UICONTROL For Organization]</strong>: 
-      メンバー、メンバーおよびオブザーバー、組織メンバー</li> 
-     <li><strong>[!UICONTROL Public]</strong>: 
-      メンバー、メンバーおよびオブザーバー、組織メンバー、すべて</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Voting]</p> </td> 
-   <td> <p>このボードで投票できるユーザーを、オプションを選択して指定します。権限レベルでの投票の制限については、「[!UICONTROL Permission level]」フィールドを参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Comments]</p> </td> 
-   <td> <p>このボードのカードにコメントできるユーザーを、オプションを選択して指定します。権限レベルでのコメントの制限については、「[!UICONTROL Permission level]」フィールドを参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Invitations] </td> 
-   <td> <p>このボードにユーザーを招待できる担当者を選択します。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Self-join]</td> 
-   <td> <p> チームメンバーが自分でボードに参加できるか、招待される必要があるかを選択します。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Card covers]</td> 
-   <td> <p> このボードにカードの表紙を表示するかどうかを選択します。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Background] </td> 
-   <td> <p>背景のカラーまたはカスタム背景を選択します。</p> <p>メモ：カスタム背景は、[!UICONTROL Trello Gold and Business Class] のサブスクライバーのみが使用できます。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Background ID]</td> 
-   <td> <p> [!UICONTROL 背景 ] フィールドでカスタム背景を使用することを選択した場合は、使用する背景の ID を入力またはマッピングします。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Card aging]</p> </td> 
-   <td> <p>カードの期間経過を表す 2 つのモードから選択します。 </p> 
-    <ul> 
-     <li><strong>[!UICONTROL 海賊モード ]</strong>：年老いた海賊の地図のように、カードが裂け、黄色くなり、ひび割れます。</li> 
-     <li><strong>[!UICONTROL 標準モード ]</strong>: カードは、古くなるにつれて徐々に透明になります。 </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Calendar feed enabled]</td> 
-   <td> <p> カレンダーフィードを有効にするかどうかを選択します。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL &lt;Color&gt; label name]</td> 
-   <td> <p> 目的のカラーラベルに名前を割り当てます。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Archive] </td> 
-   <td> <p>ボードをアーカイブする（閉じる）かどうかを示すオプションを選択します。 </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+><col> 
+> <col> 
+> <tbody> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Connection] </td> 
+>   <td> <p>Adobe Workfront Fusion への [!UICONTROL Trello] アカウントの接続方法については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader"> <p>[!UICONTROL Board ID]</p> </td> 
+>   <td> <p>モジュールで作成するボードの一意の [!UICONTROL Trello] ID を入力またはマッピングします。Watch Boards モジュールなどの別のモジュールを使用してボード ID を取得できます。</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/watch-boards.png"> </p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL New name]</td> 
+>   <td> <p> ボードの新しい名前を入力またはマッピングします。</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL New description]</td> 
+>   <td> <p> 新しいボードの説明を入力またはマッピングします。</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader"> <p>[!UICONTROL Organization ID]</p> </td> 
+>   <td> <p>モジュールを編集するボードの一意の [!UICONTROL Trello] ID を入力またはマップします。  </p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Subscribe] </td> 
+>   <td> <p>このモジュールで使用される接続を所有するユーザーがボードを購読するかどうかを指定するオプションを選択します。</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader"> <p>[!UICONTROL Permission level]</p> </td> 
+>   <td> <p>ボードには、権限レベルごとに異なる投票ルールおよびコメントルールがあります。例えば、ボードが [!UICONTROL Private] で、投票ルールとコメントルールを [!UICONTROL All] として設定した場合、エラーが発生します。 </p> <p>投票とコメントは、権限レベルごとに次のグループに制限されます。</p> 
+>    <ul> 
+>     <li><strong>[!UICONTROL Private]</strong>: 
+>      メンバー、メンバー、監視者</li> 
+>     <li><strong>[!UICONTROL For Organization]</strong>: 
+>      メンバー、メンバーおよびオブザーバー、組織メンバー</li> 
+>     <li><strong>[!UICONTROL Public]</strong>: 
+>      メンバー、メンバーおよびオブザーバー、組織メンバー、すべて</li> 
+>    </ul> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader"> <p>[!UICONTROL Voting]</p> </td> 
+>   <td> <p>このボードで投票できるユーザーを、オプションを選択して指定します。権限レベルでの投票の制限については、「[!UICONTROL Permission level]」フィールドを参照してください。</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader"> <p>[!UICONTROL Comments]</p> </td> 
+>   <td> <p>このボードのカードにコメントできるユーザーを、オプションを選択して指定します。権限レベルでのコメントの制限については、「[!UICONTROL Permission level]」フィールドを参照してください。</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Invitations] </td> 
+>   <td> <p>このボードにユーザーを招待できる担当者を選択します。</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Self-join]</td> 
+>   <td> <p> チームメンバーが自分でボードに参加できるか、招待される必要があるかを選択します。</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Card covers]</td> 
+>   <td> <p> このボードにカードの表紙を表示するかどうかを選択します。</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Background] </td> 
+>   <td> <p>背景のカラーまたはカスタム背景を選択します。</p> <p>メモ：カスタム背景は、[!UICONTROL Trello Gold and Business Class] のサブスクライバーのみが使用できます。</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Background ID]</td> 
+>   <td> <p> [!UICONTROL 背景 &#x200B;] フィールドでカスタム背景を使用することを選択した場合は、使用する背景の ID を入力またはマッピングします。</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader"> <p>[!UICONTROL Card aging]</p> </td> 
+>   <td> <p>カードの期間経過を表す 2 つのモードから選択します。 </p> 
+>    <ul> 
+>     <li><strong>[!UICONTROL 海賊モード &#x200B;]</strong>：年老いた海賊の地図のように、カードが裂け、黄色くなり、ひび割れます。</li> 
+>     <li><strong>[!UICONTROL 標準モード &#x200B;]</strong>: カードは、古くなるにつれて徐々に透明になります。 </li> 
+>    </ul> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Calendar feed enabled]</td> 
+>   <td> <p> カレンダーフィードを有効にするかどうかを選択します。</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL &lt;Color&gt; label name]</td> 
+>   <td> <p> 目的のカラーラベルに名前を割り当てます。</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Archive] </td> 
+>   <td> <p>ボードをアーカイブする（閉じる）かどうかを示すオプションを選択します。 </p> </td> 
+>  </tr> 
+> </tbody> 
+></table>
 
 
 +++
@@ -1207,14 +1207,14 @@ Trello コネクタでは、以下を使用します。
 
 ## [!UICONTROL Trello] オブジェクト ID
 
-* [ [!DNL Trello] でカードの ID やショートリンクを見つける方法](#how-to-find-the-id-or-the-shortlink-of-a-card-in-trello)
-* [ [!DNL Trello] で他のオブジェクトの ID を見つける方法](#how-to-find-ids-of-other-objects-in-trello)
+* [&#x200B; [!DNL Trello] でカードの ID やショートリンクを見つける方法](#how-to-find-the-id-or-the-shortlink-of-a-card-in-trello)
+* [&#x200B; [!DNL Trello] で他のオブジェクトの ID を見つける方法](#how-to-find-ids-of-other-objects-in-trello)
 
 ### [!DNL Trello] でカードの ID やショートリンクを見つける方法
 
 カードを編集したり新しいコメントを作成したりする場合は、カードの ID やショートリンクを知っておく必要があります。[!UICONTROL 新しいカード]トリガーの出力から、この情報を入手できます。カードのショートリンクは、カードを開き、「[!UICONTROL 共有]」ボタンをクリックすることによっても取得できます。ショートリンクは、[!UICONTROL このカードへのリンク]ボックスで、`https://trello.com/c/` の後の URL 末尾にあります。
 
-![ 共有と詳細 ](/help/workfront-fusion/references/apps-and-modules/assets/share-and-more-350x575.png)
+![&#x200B; 共有と詳細 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/share-and-more-350x575.png)
 
 ### [!DNL Trello] で他のオブジェクトの ID を見つける方法
 

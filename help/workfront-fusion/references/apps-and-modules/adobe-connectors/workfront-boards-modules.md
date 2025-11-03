@@ -48,7 +48,7 @@ Adobe Workfront ボード モジュールを使用すると、レコードの読
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++##前提条件
 
@@ -125,9 +125,9 @@ Workfront ボード接続を作成するには：
 
 Workfront Fusion でWorkfront ボードモジュールを設定する場合、以下に示すフィールドが表示されます。 これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加のWorkfront ボードフィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [カード](#cards)
 * [ボード](#boards)
@@ -162,7 +162,7 @@ Workfront Fusion でWorkfront ボードモジュールを設定する場合、�
    <td>チェックリスト項目を追加するカードの ID を入力またはマッピングします<p>Workfrontでカードを表示すると、URL にカード ID が表示されます。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL チェックリスト項目 ]</td> 
+   <td>[!UICONTROL チェックリスト項目 &#x200B;]</td> 
    <td>追加するチェックリスト項目ごとに、「項目を追加」をクリックし、チェックリスト項目の名前を入力して、項目が完了したかどうかを選択します。</p></td> 
   </tr> 
  </tbody> 
@@ -247,7 +247,7 @@ Workfrontのボード上に新しいカードを作成します。
    <td>カードの移動先の列の ID を入力またはマッピングします。<p>列 ID は、ボードを読み取りモジュールから返される情報で見つけることができます。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL からインデックスへ ]</td> 
+   <td>[!UICONTROL からインデックスへ &#x200B;]</td> 
    <td>新しい列にカードを配置する位置を入力またはマップします。<p>インデックス 0 の列の一番上の位置。</p></td> 
   </tr> 
  </tbody> 
@@ -339,7 +339,7 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
       <td> <p>既存のWorkfront接続を使用してWorkfront Boards に接続することも、特定のWorkfront Boards 接続を使用することもできます。 </p><p>Workfront アプリをWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront ボードへの接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL ボード名 ]</td> 
+   <td>[!UICONTROL ボード名 &#x200B;]</td> 
    <td>新しいボードの名前を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
@@ -395,7 +395,7 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
    <td>更新する列の ID を入力またはマッピングします。<p>列 ID は、ボードを読み取りモジュールから返される情報で見つけることができます。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 列名 ]</td> 
+   <td>[!UICONTROL 列名 &#x200B;]</td> 
    <td>列の新しい名前を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -418,7 +418,7 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
    <td>取得する列を含むボードの ID を入力またはマッピングします。<p>Workfrontでボードを表示する際に、URL にボード ID が含まれています。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 列名 ]</td> 
+   <td>[!UICONTROL 列名 &#x200B;]</td> 
    <td>取得する列の名前を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -441,11 +441,11 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
    <td>取得する列を含むボードの ID を入力またはマッピングします。<p>Workfrontでボードを表示する際に、URL にボード ID が含まれています。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 列名 ]</td> 
+   <td>[!UICONTROL 列名 &#x200B;]</td> 
    <td>取得する列の名前を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL の WIP 制限 ]</td> 
+   <td>[!UICONTROL の WIP 制限 &#x200B;]</td> 
    <td>列の新しい WIP 制限を入力またはマップします。</td> 
   </tr> 
  </tbody> 
@@ -500,11 +500,11 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
    <td>タグを作成するボードの ID を入力またはマッピングします。<p>Workfrontでボードを表示する際に、URL にボード ID が含まれています。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL タグ名 ]</td> 
+   <td>[!UICONTROL タグ名 &#x200B;]</td> 
    <td>新しいタグの名前を入力またはマッピングします。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL タグの色 ]</td> 
+   <td>[!UICONTROL タグの色 &#x200B;]</td> 
    <td>このタグのカラーを選択します。</td> 
   </tr> 
  </tbody> 
@@ -623,11 +623,11 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
    <td> <p>API 呼び出しのクエリを標準 JSON オブジェクトの形式で追加します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 操作名 ]</td> 
+   <td role="rowheader">[!UICONTROL 操作名 &#x200B;]</td> 
    <td> <p>この操作の名前を入力します。 これにより、呼び出しのトレースとデバッグが容易になります。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 変数のデータ ソース ]</td> 
+   <td role="rowheader">[!UICONTROL 変数のデータ ソース &#x200B;]</td> 
    <td> <p>変数をフォームから取得するか、コレクションから取得するかを選択します。</p> </td> 
   </tr> 
   <tr> 

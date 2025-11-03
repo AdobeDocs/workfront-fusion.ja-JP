@@ -15,9 +15,9 @@ ht-degree: 70%
 
 Adobe Workfront Fusion のシナリオでは、[!DNL Microsoft 365 Excel] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
-シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## アクセス要件
 
@@ -51,9 +51,9 @@ Adobe Workfront Fusion のシナリオでは、[!DNL Microsoft 365 Excel] を使
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -100,9 +100,9 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
 
 [!DNL Microsoft 365 Excel] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Microsoft 365 Excel]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [ワークブック](#workbook)
 * [ワークシート](#worksheet)
@@ -132,7 +132,7 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
    <td> <p>モジュールでダウンロードするワークブックを識別する方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL By entering an ID manually]</strong> </p> <p>「[!UICONTROL Workbook ID]」フィールドに、モジュールでダウンロードする特定のワークブックの ID を入力またはマッピングします。</p> </li> 
-     <li> <p><strong>[!UICONTROL By selecting from the path]</strong> </p> <p>[!UICONTROL ワークブック ] フィールドで、モジュールでダウンロードするワークブックを選択します。このワークブックのパスは、ルートフォルダーにない場合に含めます。</p> </li> 
+     <li> <p><strong>[!UICONTROL By selecting from the path]</strong> </p> <p>[!UICONTROL ワークブック &#x200B;] フィールドで、モジュールでダウンロードするワークブックを選択します。このワークブックのパスは、ルートフォルダーにない場合に含めます。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -500,7 +500,7 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
    <td> <p>[!DNL Office 365] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL テーブルを削除する ]</td> 
+   <td role="rowheader">[!UICONTROL テーブルを削除する &#x200B;]</td> 
    <td> <p>削除するテーブルを識別する方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>削除する表を含むワークブックの ID を入力またはマップしてから、表を含むワークシートの ID を入力またはマップします。</p> <p>[!UICONTROL Table Name] フィールドに、削除するテーブルの名前を入力またはマッピングします。</p> </li> 
@@ -642,7 +642,7 @@ Microsoft Office 365 Excel コネクタでは、次の機能を使用します�
 >
 >このテーブルは、ワークブックに埋め込まれたテーブル要素を参照します。テーブル全体（ワークブックやシート）ではありません。
 
-![ 埋め込みテーブル ](/help/workfront-fusion/references/apps-and-modules/assets/embedded-table-350x420.png)
+![&#x200B; 埋め込みテーブル &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/embedded-table-350x420.png)
 
 <table style="table-layout:auto"> 
  <col> 

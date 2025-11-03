@@ -40,7 +40,7 @@ Adobe Workfront Fusion [!UICONTROL JSON] アプリには、Adobe Workfront Fusio
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -57,7 +57,7 @@ Adobe Workfront Fusion [!UICONTROL JSON] アプリには、Adobe Workfront Fusio
 
 1. [!UICONTROL JSON を解析]モジュールをシナリオに追加します。
 1. 「**[!UICONTROL JSON 文字列]**」フィールドで、データ構造を作成する JSON を入力します。
-1. 他のモジュールを [!UICONTROL JSON を解析]モジュールにはまだ結びつけません。Workfront Fusion は JSON データの構造をまだ把握していないので、「JSON を解析 [!UICONTROL  モジュールのデータを、シナリオ内の他のモジュールにマッピングすることはでき ] せん。
+1. 他のモジュールを [!UICONTROL JSON を解析]モジュールにはまだ結びつけません。Workfront Fusion は JSON データの構造をまだ把握していないので、「JSON を解析 [!UICONTROL &#x200B; モジュールのデータを、シナリオ内の他のモジュールにマッピングすることはでき &#x200B;] せん。
 1. シナリオを手動で実行します。これにより、[!UICONTROL JSON を解析]モジュールが、指定した JSON から JSON 構造を識別できるようになります。
 1. 次のモジュールを接続できるようになりました。JSON を解析モジュールの項目をマッピングに使用できるようになりました。
 
@@ -79,7 +79,7 @@ Adobe Workfront Fusion [!UICONTROL JSON] アプリには、Adobe Workfront Fusio
 ```
 
 
-![JSON コレクション ](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
+![JSON コレクション &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
 
 >[!ENDSHADEBOX]
 
@@ -103,7 +103,7 @@ JSON 文字列フィールドに配列 `[ ... ]` が含まれている場合、�
 ]
 ```
 
-![JSON 配列 ](/help/workfront-fusion/references/apps-and-modules/assets/json-array.png)
+![JSON 配列 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/json-array.png)
 
 >[!ENDSHADEBOX]
 
@@ -111,9 +111,9 @@ JSON 文字列フィールドに配列 `[ ... ]` が含まれている場合、�
 
 [!DNL JSON] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらに加えて、アプリやサービスでのアクセスレベルなどの要因に応じて、追加の JSON フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [JSON を XML に変換](#convert-json-to-xml)
 * [JSON を解析](#parse-json)
@@ -291,6 +291,6 @@ JSON コンテンツが [!UICONTROL JSON を解析]モジュールに適切に�
 
 **例：**
 
-![JSON の引用符 ](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
+![JSON の引用符 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
 
 >[!ENDSHADEBOX]

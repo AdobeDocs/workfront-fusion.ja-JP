@@ -40,7 +40,7 @@ Adobe Workfront Fusion [!UICONTROL JWT] アプリには、提供されたアル�
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -72,7 +72,7 @@ JWT コネクタでは、以下を使用します。
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アルゴリズム ]</td> 
+   <td role="rowheader">[!UICONTROL アルゴリズム &#x200B;]</td> 
    <td> <p>JWT の生成に使用するアルゴリズムを選択します。</p> <ul>
    <li><b>HS256</b>: SHA-256 ハッシュ アルゴリズムを使用する HMAC</li>
    <li><b>HS384</b>: SHA-384 ハッシュ アルゴリズムを使用する HMAC</li>
@@ -89,7 +89,7 @@ JWT コネクタでは、以下を使用します。
    </ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ペイロード ] </td> 
+   <td role="rowheader">[!UICONTROL ペイロード &#x200B;] </td> 
    <td> <p>追加するペイロード項目ごとに、「<b> 項目を追加 </b>」をクリックし、項目のキーと値を入力します。</p> </td> 
   </tr> 
   <tr> 

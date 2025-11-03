@@ -19,9 +19,9 @@ ht-degree: 18%
 
 Adobe Workfront Fusion シナリオでは、Adobe Admin Consoleでプロジェクトを作成および管理できます。
 
-シナリオの作成手順については、[ シナリオを作成：記事インデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成手順については、[&#x200B; シナリオを作成：記事インデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## アクセス要件
 
@@ -55,9 +55,9 @@ Adobe Workfront Fusion シナリオでは、Adobe Admin Consoleでプロジェ�
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -76,7 +76,7 @@ Adobe Developer Consoleで API をプロジェクトに追加する必要があ�
 1. 資格情報の名前を追加します。
 1. 「**次へ**」をクリックし、「**設定済み API を保存**」をクリックします。
 1. 提供された資格情報をメモします。この資格情報は、Workfront Fusion で接続を設定する際に使用します。
-1. [ テクニカルアカウントをAdobe Admin Consoleの管理者に設定 ](#make-your-technical-account-an-admin-in-the-adobe-admin-console) に進みます。
+1. [&#x200B; テクニカルアカウントをAdobe Admin Consoleの管理者に設定 &#x200B;](#make-your-technical-account-an-admin-in-the-adobe-admin-console) に進みます。
 
 ### テクニカルアカウントをAdobe Admin Consoleの管理者にします
 
@@ -95,7 +95,7 @@ Adobe Admin Consoleページで、上部のナビゲーションバーの「製�
 
    テクニカルアカウントは管理者になります。
 
-1. [Workfront Fusion での接続の作成 ](#create-the-connection-in-workfront-fusion) を続行します。
+1. [Workfront Fusion での接続の作成 &#x200B;](#create-the-connection-in-workfront-fusion) を続行します。
 
 ### Workfront Fusion での接続の作成
 
@@ -122,11 +122,11 @@ Adobe Admin Consoleページで、上部のナビゲーションバーの「製�
         </td>
         </tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>[!UICONTROL Adobe] [!UICONTROL クライアント ID] を入力します。 これは、[!DNL Adobe Developer Console] のプロジェクトの [!UICONTROL 資格情報の詳細 ] セクションにあります。</td>
+        <td>[!UICONTROL Adobe] [!UICONTROL クライアント ID] を入力します。 これは、[!DNL Adobe Developer Console] のプロジェクトの [!UICONTROL 資格情報の詳細 &#x200B;] セクションにあります。</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、[!DNL Adobe Developer Console] のプロジェクトの [!UICONTROL 資格情報の詳細 ] セクションにあります。</td>
+        <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、[!DNL Adobe Developer Console] のプロジェクトの [!UICONTROL 資格情報の詳細 &#x200B;] セクションにあります。</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL IMS 組織 ID]</td>
@@ -141,9 +141,9 @@ Adobe Admin Consoleページで、上部のナビゲーションバーの「製�
 
 Adobe User Management モジュールを設定する場合、Workfront Fusion は以下に示すフィールドを表示します。 これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加のAdobe User Management フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [ESM ストア](#esm-stores)
 * [招待状](#invitations)

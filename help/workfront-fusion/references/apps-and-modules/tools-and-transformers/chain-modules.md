@@ -19,7 +19,7 @@ ht-degree: 2%
 
 <!--This article will be about the specific module configuration-->
 
-連鎖シナリオの計画手順は、[ 複数のシナリオを連鎖させる ](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md) を参照してください。
+連鎖シナリオの計画手順は、[&#x200B; 複数のシナリオを連鎖させる &#x200B;](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md) を参照してください。
 
 
 ## アクセス要件
@@ -47,7 +47,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -69,7 +69,7 @@ ht-degree: 2%
 
    シナリオの入力データとして使用する新しいデータ構造を作成するには、「データ構造」フィールドの横にある「**追加** をクリックして、データ構造を作成します。
 
-   データ構造の作成手順については、[ データ構造 ](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md) を参照してください。
+   データ構造の作成手順については、[&#x200B; データ構造 &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md) を参照してください。
 
 1. **OK** をクリックして、モジュールを保存します。
 
@@ -117,6 +117,6 @@ ht-degree: 2%
 
    データの新しいデータ構造を作成するには、「データ構造」フィールドの横にある **追加** をクリックして、データ構造を作成します。
 
-   データ構造の作成手順については、[ データ構造 ](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md) を参照してください。
+   データ構造の作成手順については、[&#x200B; データ構造 &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md) を参照してください。
 
 1. **OK** をクリックして、モジュールを保存します。

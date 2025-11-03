@@ -47,9 +47,9 @@ Adobe Workfront Fusion SFTP モジュールを使用すると、選択したフ�
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -94,11 +94,11 @@ SFTP アカウントをWorkfront Fusion に接続するには、ターゲット�
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL キー交換アルゴリズム ] </td> 
+   <td role="rowheader">[!UICONTROL キー交換アルゴリズム &#x200B;] </td> 
    <td> <p>キー交換用の一連のアルゴリズムを入力できます。 モジュールは、追加された順序に基づいてアルゴリズムの優先順位を設定します。 追加するアルゴリズムごとに「<b> 項目を追加 </b>」をクリックし、アルゴリズムを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 暗号 ] </td> 
+   <td role="rowheader">[!UICONTROL 暗号 &#x200B;] </td> 
    <td> <p>キー交換用の暗号のセットを入力できます。 モジュールは、追加された順序に基づいて暗号の優先順位を設定します。 追加する暗号ごとに [<b> 項目の追加 </b>] をクリックし、暗号を選択します。</p> </td> 
   </tr> 
  </tbody> 
@@ -152,9 +152,9 @@ SFTP コネクタは、接続作成時に次の機能をサポートしていま
 
 [!UICONTROL SFTP] モジュールを設定する場合、Workfront Fusion は以下に示すフィールドを表示します。 これらと共に、アプリやサービスのアクセスレベルなどの要因に応じて、追加の [!UICONTROL SFTP] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 ### トリガー
 
@@ -230,7 +230,7 @@ SFTP コネクタは、接続作成時に次の機能をサポートしていま
 
 >[!NOTE]
 >
->フォルダーが既に存在する場合はエラーが返されます。フローを中断せずに続行するには、エラーハンドラールートをモジュールに接続してエラーを検出し、[!UICONTROL 再開]ディレクティブを適用します。エラーハンドラールートの添付について詳しくは、[Adobe Workfront Fusion でのエラー処理 ](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md) を参照してください。 エラーハンドラールートについては、[Adobe Workfront Fusion でのエラー処理のディレクティブ ](/help/workfront-fusion/references/errors/directives-for-error-handling.md) を参照してください。
+>フォルダーが既に存在する場合はエラーが返されます。フローを中断せずに続行するには、エラーハンドラールートをモジュールに接続してエラーを検出し、[!UICONTROL 再開]ディレクティブを適用します。エラーハンドラールートの添付について詳しくは、[Adobe Workfront Fusion でのエラー処理 &#x200B;](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md) を参照してください。 エラーハンドラールートについては、[Adobe Workfront Fusion でのエラー処理のディレクティブ &#x200B;](/help/workfront-fusion/references/errors/directives-for-error-handling.md) を参照してください。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -312,7 +312,7 @@ SFTP コネクタは、接続作成時に次の機能をサポートしていま
  </tbody> 
 </table>
 
-#### [!UICONTROL  ファイルを取得 ]
+#### [!UICONTROL &#x200B; ファイルを取得 &#x200B;]
 
 このモジュールは、指定されたフォルダーからファイルを返します。
 
@@ -488,7 +488,7 @@ SFTP コネクタは、接続作成時に次の機能をサポートしていま
    <td> <p>ファイルまたはフォルダーに必要な権限を設定します。chmod パラメーターを使用します。例えば、<code>777</code> や <code>-rwxrwxrwx</code> です。</p> <p>これらの権限は、パターンに一致する必要があります <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>chmod について詳しくは、<a href="https://ss64.com/bash/chmod.html?lang=ja">chmod のドキュメント </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL バッファーサイズ （B） ]</p> </td> 
+   <td> <p>[!UICONTROL バッファーサイズ （B） &#x200B;]</p> </td> 
    <td> <p>ファイルをアップロードする際に、各チャンクのサイズ（バイト単位）を設定します。 これは、サイズの大きいファイルや、サーバーのメモリ制限により小さなアップロードが必要な場合に便利です。 この値が設定されていない場合、ファイルは 1 回の操作で書き込まれます。</p> </td> 
   </tr> 
  </tbody> 

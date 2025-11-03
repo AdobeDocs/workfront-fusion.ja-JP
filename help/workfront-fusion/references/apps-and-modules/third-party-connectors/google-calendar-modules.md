@@ -13,11 +13,11 @@ ht-degree: 66%
 
 # [!DNL Google Calendar] モジュール
 
-Adobe Workfront Fusion のシナリオでは、[!UICONTROL Google カレンダー ] を使用するワークフローを自動化できるほか、複数のサードパーティのアプリケーションやサービスに接続することもできます。
+Adobe Workfront Fusion のシナリオでは、[!UICONTROL Google カレンダー &#x200B;] を使用するワークフローを自動化できるほか、複数のサードパーティのアプリケーションやサービスに接続することもできます。
 
-シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## アクセス要件
 
@@ -51,9 +51,9 @@ Adobe Workfront Fusion のシナリオでは、[!UICONTROL Google カレンダ�
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -88,9 +88,9 @@ Google カレンダーコネクタは以下を使用します。
 
 [!DNL Google Calendar] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Google Calendar]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 
 * [トリガー](#triggers)
@@ -133,7 +133,7 @@ Google カレンダーコネクタは以下を使用します。
    <td> <p>結果を返すテキストを入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL イベントの最大数 ]</td> 
+   <td>[!UICONTROL イベントの最大数 &#x200B;]</td> 
    <td> <p> Workfront Fusion が 1 つのサイクルで動作するイベントの最大数（シナリオ実行ごとの繰り返し数）を設定します。 値が大きすぎると、指定されたサードパーティサービス側で接続が中断される可能性があります（タイムアウト）。Workfront Fusion はこの問題に影響を与えません。 より小さい値を設定し、最大サイクル数としてより大きい値を定義するか、シナリオをより頻繁に実行することをお勧めします。</p> </td> 
   </tr> 
  </tbody> 
@@ -152,7 +152,7 @@ Google カレンダーコネクタは以下を使用します。
    <td> <p>このモジュールに使用するメールフックを選択します。 新しいメールフックを作成するには、「<b> 追加 </b>」をクリックして、メールフックに使用する接続を入力します。</p><p>[!DNL Google Calendar] アカウントを Workfront Fusion に接続する手順について詳しくは、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion への接続の作成 - 基本手順</a>を参照してください</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL イベントの最大数 ]</td> 
+   <td>[!UICONTROL イベントの最大数 &#x200B;]</td> 
    <td> <p> Workfront Fusion が 1 つのサイクルで動作するイベントの最大数（シナリオ実行ごとの繰り返し数）を設定します。 値が大きすぎると、指定されたサードパーティサービス側で接続が中断される可能性があります（タイムアウト）。Workfront Fusion はこの問題に影響を与えません。 より小さい値を設定し、最大サイクル数としてより大きい値を定義するか、シナリオをより頻繁に実行することをお勧めします。</p> </td> 
   </tr> 
  </tbody> 
@@ -308,7 +308,7 @@ Google カレンダーコネクタは以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL  イベントの取得 ]
+#### [!UICONTROL &#x200B; イベントの取得 &#x200B;]
 
 このモジュールは、指定した条件に基づいて、選択したカレンダー内のイベントに関する情報を取得します。
 
@@ -355,7 +355,7 @@ Google カレンダーコネクタは以下を使用します。
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 返されるイベントの最大数 ]</td> 
+   <td>[!UICONTROL 返されるイベントの最大数 &#x200B;]</td> 
    <td> <p>Workfront Fusion が 1 つの実行サイクルで返すイベントの最大数を設定します。</p> </td> 
   </tr> 
  </tbody> 
@@ -493,7 +493,7 @@ Google カレンダーコネクタは以下を使用します。
 
 1. [!UICONTROL Google Calendar]／[!UICONTROL イベントを更新]モジュールを使用して、イベントにメールリマインダーを追加します。
 
-   ![ イベント前のトリガーシナリオ ](/help/workfront-fusion/references/apps-and-modules/assets/trigger-scen-before-event-350x209.png)
+   ![&#x200B; イベント前のトリガーシナリオ &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/trigger-scen-before-event-350x209.png)
 
 1. [!UICONTROL Webhooks]／[!UICONTROL カスタムメールフック]モジュールから新しいシナリオを作成します。
 
@@ -511,11 +511,11 @@ Google カレンダーコネクタは以下を使用します。
    1. モジュールの上のバブルをクリックして、モジュールの出力を調べます。
    1. `Text` 項目を展開して、確認コードをコピーします。
 
-      ![ 確認コード ](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
+      ![&#x200B; 確認コード &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
 
    1. Gmail で、編集ボックスに確認コードをペーストして、「**[!UICONTROL 検証]**」をクリックします。
 
-      ![ コードを貼り付け ](/help/workfront-fusion/references/apps-and-modules/assets/paste-code-350x46.png)
+      ![&#x200B; コードを貼り付け &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/paste-code-350x46.png)
 
    1. 「**[!UICONTROL フィルターとブロック済みアドレス]**」タブを開きます。
    1. 「**[!UICONTROL 新規フィルターを作成]**」をクリックします。

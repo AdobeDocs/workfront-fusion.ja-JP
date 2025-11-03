@@ -47,9 +47,9 @@ Adobe Workfront Fusion では、複数のサードパーティのアプリケー
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -80,7 +80,7 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
 1. リストから&#x200B;**[!UICONTROL メールプロバイダー]**&#x200B;を選択します。メールプロバイダーがリストにない場合は、「その他」を選択します。
 1. メールアカウントの **[!UICONTROL ユーザー名]** と **[!UICONTROL パスワード]** を入力します。
 1. （条件付き）プロバイダーがリストにない場合は、「**[!UICONTROL SMTP サーバー]**」および「**[!UICONTROL ポート]**」を入力し、**[!UICONTROL セキュア接続（TLS）を使用]**&#x200B;するかどうかを指定します。この情報を見つけるには、メールボックスの「[!UICONTROL ヘルプ]」セクションを確認してください。この情報が不明な場合は、メールサービスプロバイダーにお問い合わせください。
-1. 自己署名証明書を使用するには、「**未認証の証明書を拒否**」オプションを有効にし、自己署名証明書をアップロードします。 手順については、[ 自己署名証明書のアップロード ](#upload-a-self-signed-certificate) を参照してください
+1. 自己署名証明書を使用するには、「**未認証の証明書を拒否**」オプションを有効にし、自己署名証明書をアップロードします。 手順については、[&#x200B; 自己署名証明書のアップロード &#x200B;](#upload-a-self-signed-certificate) を参照してください
 1. 「**[!UICONTROL 続行]**」をクリックし、接続を作成して、モジュールに戻ります。
 
 #### 自己署名証明書のアップロード
@@ -95,13 +95,13 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
 
 ## [!UICONTROL メール]モジュールとそのフィールド
 
-[!UICONTROL  メール ] モジュールを設定すると、Workfront Fusion は以下に示すフィールドを表示します。 これらと共に、アプリやサービスのアクセスレベルなどの要因に応じて、追加のフィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL &#x200B; メール &#x200B;] モジュールを設定すると、Workfront Fusion は以下に示すフィールドを表示します。 これらと共に、アプリやサービスのアクセスレベルなどの要因に応じて、追加のフィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 シナリオの別のモジュールで一部のメールフィールドを使用した場合、それらのメールフィールドには既にデータが含まれている場合があります。詳しくは、メールのヘルプドキュメントを参照してください。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 >[!NOTE]
 >
@@ -302,11 +302,11 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>削除するメールのメール UID を入力します。</p> <p>メールのUIDは、メール / メールを監視モジュールまたは [!UICONTROL メールを検索 ] モジュールを使用して取得できます。</p> </td> 
+   <td> <p>削除するメールのメール UID を入力します。</p> <p>メールのUIDは、メール / メールを監視モジュールまたは [!UICONTROL メールを検索 &#x200B;] モジュールを使用して取得できます。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Expunge]</td> 
-   <td> <p>現在開いているメールボックスで [!UICONTROL Deleted] のフラグが設定されているすべてのメッセージを完全に削除するには、このオプションを有効にします。</p> <p>メモ：[!DNL Gmail] では、この動作は [!UICONTROL 設定 ] &gt;[!UICONTROL IMAP アクセスでの POP/IMAP 転送 ] セクションの設定によって駆動されます。</p> </td> 
+   <td> <p>現在開いているメールボックスで [!UICONTROL Deleted] のフラグが設定されているすべてのメッセージを完全に削除するには、このオプションを有効にします。</p> <p>メモ：[!DNL Gmail] では、この動作は [!UICONTROL 設定 &#x200B;] &gt;[!UICONTROL IMAP アクセスでの POP/IMAP 転送 &#x200B;] セクションの設定によって駆動されます。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -345,7 +345,7 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
    <td> <p>メールを取得する送信者のメールアドレスを入力またはマッピングします。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL 受信者の電子メール ]</td> 
+   <td role="rowheader">[!UICONTROL 受信者の電子メール &#x200B;]</td> 
    <td> <p> メールを取得する受信者のメールアドレスを入力またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
@@ -381,7 +381,7 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
 
 #### [!UICONTROL メールを既読としてマーク]
 
-このアクションモジュールは、[!UICONTROL  読み取り ] フラグを設定して、選択されたフォルダー内のメールまたはドラフトを読み取りとしてマークします。
+このアクションモジュールは、[!UICONTROL &#x200B; 読み取り &#x200B;] フラグを設定して、選択されたフォルダー内のメールまたはドラフトを読み取りとしてマークします。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -397,7 +397,7 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>既読としてマークするメールの UID を入力します。</p> <p>メールのUIDは、メール / メールを監視モジュールまたは [!UICONTROL メールを検索 ] モジュールを使用して取得できます。</p> </td> 
+   <td> <p>既読としてマークするメールの UID を入力します。</p> <p>メールのUIDは、メール / メールを監視モジュールまたは [!UICONTROL メールを検索 &#x200B;] モジュールを使用して取得できます。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -420,7 +420,7 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>未読としてマークするメールの UID を入力します。</p> <p>メールのUIDは、メール / メールを監視モジュールまたは [!UICONTROL メールを検索 ] モジュールを使用して取得できます。</p> </td> 
+   <td> <p>未読としてマークするメールの UID を入力します。</p> <p>メールのUIDは、メール / メールを監視モジュールまたは [!UICONTROL メールを検索 &#x200B;] モジュールを使用して取得できます。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -447,7 +447,7 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Email ID (UID)]</p> </td> 
-   <td> <p>宛先フォルダーに移動するメールの UID を入力します。</p> <p>メールのUIDは、メール / メールを監視モジュールまたは [!UICONTROL メールを検索 ] モジュールを使用して取得できます。</p> </td> 
+   <td> <p>宛先フォルダーに移動するメールの UID を入力します。</p> <p>メールのUIDは、メール / メールを監視モジュールまたは [!UICONTROL メールを検索 &#x200B;] モジュールを使用して取得できます。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -466,7 +466,7 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Save Message after Sending]</td> 
-   <td>メールメッセージが送信されると、メールボックスに保存されます。Workfront Fusion を使用して送信されたメールを <i>[!UICONTROL 送信済みメール ]</i> フォルダーまたはメールボックス内の別のフォルダーに保存する場合は、このオプションを有効にします。 一部のメールサービス（[!DNL Gmail] など）では、送信したメッセージが自動的に保存されます。</td> 
+   <td>メールメッセージが送信されると、メールボックスに保存されます。Workfront Fusion を使用して送信されたメールを <i>[!UICONTROL 送信済みメール &#x200B;]</i> フォルダーまたはメールボックス内の別のフォルダーに保存する場合は、このオプションを有効にします。 一部のメールサービス（[!DNL Gmail] など）では、送信したメッセージが自動的に保存されます。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL To] </td> 
@@ -564,4 +564,4 @@ IMAP 接続を使用すると、メールボックスにリモートからアク
  </tbody> 
 </table>
 
-イテレータについて詳しくは、[ イテレータモジュール ](/help/workfront-fusion/references/modules/iterator-module.md) を参照してください。
+イテレータについて詳しくは、[&#x200B; イテレータモジュール &#x200B;](/help/workfront-fusion/references/modules/iterator-module.md) を参照してください。

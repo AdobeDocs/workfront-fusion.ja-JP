@@ -15,9 +15,9 @@ ht-degree: 48%
 
 Adobe Workfront Fusion のシナリオでは、Microsoft SharePoint Onlineを使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
-シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## アクセス要件
 
@@ -51,9 +51,9 @@ Adobe Workfront Fusion のシナリオでは、Microsoft SharePoint Onlineを使
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -139,7 +139,7 @@ SharePoint コネクタでは、以下を使用します。
 >
 >証明書認証を使用するには、まずMicrosoft Entra でアプリを作成し、そこに証明書をアップロードする必要があります。
 >
->手順については、Microsoft ドキュメントの [Microsoft Entra 証明書ベースの認証の認証機関を設定する方法 ](https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-configure-certificate-authorities) を参照してください。
+>手順については、Microsoft ドキュメントの [Microsoft Entra 証明書ベースの認証の認証機関を設定する方法 &#x200B;](https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-configure-certificate-authorities) を参照してください。
 
 1. 任意のSharePoint モジュールで、「接続」フィールドの近くにある **[!UICONTROL 追加]** をクリックして、**[!UICONTROL 接続を作成]** ボックスを開きます。
 1. 「**[!UICONTROL 詳細設定を表示]**」をクリックします。
@@ -162,7 +162,7 @@ SharePoint コネクタでは、以下を使用します。
       <td>接続先のSharePoint アプリケーションのクライアント ID を入力します。 </td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL 拇印 ]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL 拇印 &#x200B;]</p> </td> 
       <td>接続先のSharePoint アプリケーションの拇印を入力します。</td> 
      </tr> 
       <tr>
@@ -200,9 +200,9 @@ SharePoint コネクタでは、以下を使用します。
 
 Workfront Fusion でMicrosoft SharePoint Online モジュールを設定する場合、以下に示すフィールドが表示されます。 これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加のMicrosoft SharePoint Online フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [ドライブ項目](#drive-item)
 * [項目](#item)
@@ -312,7 +312,7 @@ Workfront Fusion でMicrosoft SharePoint Online モジュールを設定する�
    <td role="rowheader">[!UICONTROL サイト、ドライブ、およびファイルを入力                IDs]</td> 
    <td> <p>取得するファイルの場所を特定する方法を選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>取得するフォルダーの <strong>[!UICONTROL サイト ID]</strong>、<strong>[!UICONTROL リスト ID]</strong>、および <strong>[!UICONTROL フォルダーパス ]</strong> を入力するか、マップします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>取得するフォルダーの <strong>[!UICONTROL サイト ID]</strong>、<strong>[!UICONTROL リスト ID]</strong>、および <strong>[!UICONTROL フォルダーパス &#x200B;]</strong> を入力するか、マップします。</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>フォルダーの場所を選択します。 </p> </li> 
     </ul> </td> 
   </tr> 
@@ -375,18 +375,18 @@ Workfront Fusion でMicrosoft SharePoint Online モジュールを設定する�
 
 ### 項目
 
-* [[!UICONTROL  項目をコピー ]](#copy-an-item)
+* [[!UICONTROL &#x200B; 項目をコピー &#x200B;]](#copy-an-item)
 * [[!UICONTROL 項目の作成]](#create-an-item)
 * [[!UICONTROL 項目の削除]](#delete-an-item)
 * [[!UICONTROL 項目の取得]](#get-an-item)
 * [詳細を取得](#get-details)
 * [[!UICONTROL 項目のリスト]](#list-items)
 * [[!UICONTROL 項目を移動]](#move-an-item)
-* [[!UICONTROL  項目を更新 ]](#update-an-item)
+* [[!UICONTROL &#x200B; 項目を更新 &#x200B;]](#update-an-item)
 * [[!UICONTROL 項目の監視]（予定）](#watch-items-scheduled)
 
 
-#### [!UICONTROL  項目をコピー ]
+#### [!UICONTROL &#x200B; 項目をコピー &#x200B;]
 
 このアクションモジュールは、SharePoint リスト内の既存の項目をコピーします。
 
@@ -662,7 +662,7 @@ Workfront Fusion でMicrosoft SharePoint Online モジュールを設定する�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Add Columns]</td> 
-   <td>新しいリストに設定する列ごとに、[<b> 項目の追加 </b>] をクリックし、フィールドに <strong>[!UICONTROL 名 ]</strong> を入力して、新しい列に設定する値の <strong>[!UICONTROL 型 ]</strong> を選択します。</td> 
+   <td>新しいリストに設定する列ごとに、[<b> 項目の追加 </b>] をクリックし、フィールドに <strong>[!UICONTROL 名 &#x200B;]</strong> を入力して、新しい列に設定する値の <strong>[!UICONTROL 型 &#x200B;]</strong> を選択します。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -734,7 +734,7 @@ Workfront Fusion でMicrosoft SharePoint Online モジュールを設定する�
    <td>作成時刻（新しい項目）または変更時刻（更新された項目）のどちらでリストを監視するかを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL サイト ID の入力 ]</td> 
+   <td role="rowheader">[!UICONTROL サイト ID の入力 &#x200B;]</td> 
    <td> <p>リストで監視するサイトの識別方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>リストを監視する場所に <strong>[!UICONTROL サイト ID]</strong> 入力するかマップします。</p> </li> 
@@ -795,7 +795,7 @@ Workfront Fusion でMicrosoft SharePoint Online モジュールを設定する�
    <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL リスト ページ ]</td> 
+   <td role="rowheader">[!UICONTROL リスト ページ &#x200B;]</td> 
    <td> <p>リストするページの識別方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>一覧表示するページを含むサイトの <strong>[!UICONTROL サイト ID]</strong> を入力するか、マップします。</p> </li> 
@@ -822,7 +822,7 @@ Workfront Fusion でMicrosoft SharePoint Online モジュールを設定する�
    <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ページを公開 ]</td> 
+   <td role="rowheader">[!UICONTROL ページを公開 &#x200B;]</td> 
    <td> <p>公開するページの識別方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p><strong>[!UICONTROL Site ID]</strong> および <strong>[!UICONTROL Page ID]</strong> を入力またはマッピングします。</p> </li> 
@@ -845,7 +845,7 @@ Workfront Fusion でMicrosoft SharePoint Online モジュールを設定する�
    <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineのWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL サイト ID の入力 ]</td> 
+   <td role="rowheader">[!UICONTROL サイト ID の入力 &#x200B;]</td> 
    <td> <p>リストするページの識別方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>監視するページを含むサイトの <strong>[!UICONTROL サイト ID]</strong> を入力するか、マップします。</p> </li> 

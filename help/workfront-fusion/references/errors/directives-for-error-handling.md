@@ -41,7 +41,7 @@ ht-degree: 27%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++## エラー処理のディレクティブ
 
@@ -53,7 +53,7 @@ Workfront Fusion では、次のエラー処理ディレクティブを使用で
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>ロールバック</p> <p> <img src="assets/rollback.png"> </p> </td> 
-   <td> <ul><li><p>シナリオの実行は直ちに停止します。</li><li>ロールバックフェーズは、すべてのモジュールで開始され、すべてのモジュールを初期状態に戻します。 </li><li>後続のモジュールは処理されません。</p></li><li> <p>ほとんどの場合、シナリオは、「シナリオ設定」で指定した連続エラー数の後で非アクティブ化されます。 詳しくは、<a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">連続エラー回数</a>を参照してください。</p> </li><li><p>シナリオの実行ステータスは「エラー」とマークされます。</p></li></ul> <p><b> メモ </b>：これは、モジュールにエラーハンドラールートが添付されておらず、[!UICONTROL シナリオ設定 <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref"> で [ 不完全な実行の保存を許可 </a> 不完全な実行の保存を許可 ] 設定がオフの場合のデフォルトの動作です。</p> </td> 
+   <td> <ul><li><p>シナリオの実行は直ちに停止します。</li><li>ロールバックフェーズは、すべてのモジュールで開始され、すべてのモジュールを初期状態に戻します。 </li><li>後続のモジュールは処理されません。</p></li><li> <p>ほとんどの場合、シナリオは、「シナリオ設定」で指定した連続エラー数の後で非アクティブ化されます。 詳しくは、<a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">連続エラー回数</a>を参照してください。</p> </li><li><p>シナリオの実行ステータスは「エラー」とマークされます。</p></li></ul> <p><b> メモ </b>：これは、モジュールにエラーハンドラールートが添付されておらず、シナリオ設定 <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref"> で [ 不完全な実行の保存を許可 </a> 不完全な実行の保存を許可 ] 設定がオフの場合のデフォルトの動作です。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>コミット</p> <p> <img src="assets/commit.png"> </p> </td> 
@@ -83,9 +83,9 @@ Workfront Fusion では、次のエラー処理ディレクティブを使用で
 >* エラー処理命令は、エラー処理ルートの外部では使用できません。
 >* Workfront Fusion では現在、条件付きでエラーを簡単に発生させるスローモジュールは提供していませんが、回避策を採用してその機能を模倣することができます。
 >
->  詳しくは、「[ エラー回避策 `throw` 設定 ](/help/workfront-fusion/create-scenarios/config-error-handling/throw.md) を参照してください。
+>  詳しくは、「[&#x200B; エラー回避策 `throw` 設定 &#x200B;](/help/workfront-fusion/create-scenarios/config-error-handling/throw.md) を参照してください。
 
 ## リソース
 
-* ロールバックとロールバック フェーズについては、「シナリオの実行、サイクル、およびフェーズ」の記事の [ ロールバック ](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback) を参照してください。
-* コミットフェーズについては、「シナリオの実行、サイクル、フェーズ」の記事の [ コミット ](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#commit) を参照してください。
+* ロールバックとロールバック フェーズについては、「シナリオの実行、サイクル、およびフェーズ」の記事の [&#x200B; ロールバック &#x200B;](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback) を参照してください。
+* コミットフェーズについては、「シナリオの実行、サイクル、フェーズ」の記事の [&#x200B; コミット &#x200B;](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#commit) を参照してください。

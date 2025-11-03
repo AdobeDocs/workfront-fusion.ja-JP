@@ -51,9 +51,9 @@ HTTP モジュールより有利な点は、専用のアプリのように接続
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -68,7 +68,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
      または
    * API を既存のプロジェクトに追加します。
 
-  Adobeでの API のプロジェクトへの作成または追加については、Adobe Developer Console ドキュメントの [ プロジェクトの作成 ](https://developer.adobe.com/dep/guides/dev-console/create-project/) を参照してください。
+  Adobeでの API のプロジェクトへの作成または追加については、Adobe Developer Console ドキュメントの [&#x200B; プロジェクトの作成 &#x200B;](https://developer.adobe.com/dep/guides/dev-console/create-project/) を参照してください。
 
 ## Adobe Authenticator API の情報
 
@@ -95,7 +95,7 @@ Adobe Authenticator接続は、Adobe Developer Console上の 1 つのプロジ�
 >
 >Adobe Authenticator コネクタでは、OAuth サーバー間接続を使用するか、サービスアカウント（JWT）接続を使用するかを選択できます。 Adobeでは、JWT 資格情報を廃止しました。この資格情報は 2025 年 1 月 1 日（PT）以降、機能しなくなります。 **したがって、OAuth 接続を作成することを強くお勧めします。**
 >
->これらの接続の詳細については、Adobe ドキュメントの [ サーバーからサーバーへの認証 ](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) を参照してください
+>これらの接続の詳細については、Adobe ドキュメントの [&#x200B; サーバーからサーバーへの認証 &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) を参照してください
 
 接続を作成するには：
 
@@ -246,7 +246,7 @@ Adobe Authenticator接続は、Adobe Developer Console上の 1 つのプロジ�
       </td>
       </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 出力タイプ ]  </td>
+      <td role="rowheader">[!UICONTROL 出力タイプ &#x200B;]  </td>
       <td>
         <p>モジュールが出力するデータのタイプを選択します。 タイプを選択しない場合、モジュールは自動的にタイプを選択します。</p>
       </td>

@@ -15,7 +15,7 @@ ht-degree: 85%
 
 [!DNL Adobe Workfront Fusion Tools] セクションには、シナリオを強化できる便利なモジュールがいくつか含まれています。
 
-[!UICONTROL  ツール ] モジュールは、アプリのリストから、または画面の下部にある [!UICONTROL  ツール ] アイコン ![ ツールアイコン ](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) から使用できます。
+[!UICONTROL &#x200B; ツール &#x200B;] モジュールは、アプリのリストから、または画面の下部にある [!UICONTROL &#x200B; ツール &#x200B;] アイコン ![&#x200B; ツールアイコン &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) から使用できます。
 
 ## アクセス要件
 
@@ -42,7 +42,7 @@ ht-degree: 85%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -87,7 +87,7 @@ ht-degree: 85%
 
 このモジュールは、[!UICONTROL 変数を設定]または[!UICONTROL 複数の変数を設定]モジュールによって以前に作成された値を取得します。
 
-このモジュールは、[!UICONTROL 複数の変数を取得]モジュールが配置されている場所とは異なるルートに変数が設定されている場合でも、シナリオ内の任意の場所に設定された変数を読み取ることができます。唯一の要件は、[!UICONTROL ツール]／[!UICONTROL 変数の設定]または[!UICONTROL ツール]／[!UICONTROL 複数の変数の設定]モジュールが、[!UICONTROL ツール]／[!UICONTROL 複数変数の取得]モジュールの前に実行されることです。モジュールの実行順序の詳細については、「[ ルーターモジュールの追加とルートの設定 ](/help/workfront-fusion/create-scenarios/add-modules/router-module.md) を参照してください。
+このモジュールは、[!UICONTROL 複数の変数を取得]モジュールが配置されている場所とは異なるルートに変数が設定されている場合でも、シナリオ内の任意の場所に設定された変数を読み取ることができます。唯一の要件は、[!UICONTROL ツール]／[!UICONTROL 変数の設定]または[!UICONTROL ツール]／[!UICONTROL 複数の変数の設定]モジュールが、[!UICONTROL ツール]／[!UICONTROL 複数変数の取得]モジュールの前に実行されることです。モジュールの実行順序の詳細については、「[&#x200B; ルーターモジュールの追加とルートの設定 &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/router-module.md) を参照してください。
 
 <table style="table-layout:auto">
     <tr>
@@ -110,7 +110,7 @@ ht-degree: 85%
 
 このモジュールは、[!UICONTROL 変数の設定]または[!UICONTROL 複数の変数の設定]モジュールによって以前に作成された値を取得します。
 
-このモジュールは、[!UICONTROL 変数の取得]モジュールが配置されている場所とは異なるルートに変数が設定されている場合でも、シナリオ内の任意の場所に設定された変数を読み取ることができます。唯一の要件は、[!UICONTROL ツール]／[!UICONTROL 変数の設定]または[!UICONTROL ツール]／[!UICONTROL 複数の変数の設定]モジュールが、[!UICONTROL ツール]／[!UICONTROL 変数の取得]モジュールの前に実行されることです。モジュールの実行順序の詳細については、「[ ルーターモジュールの追加とルートの設定 ](/help/workfront-fusion/create-scenarios/add-modules/router-module.md) を参照してください。
+このモジュールは、[!UICONTROL 変数の取得]モジュールが配置されている場所とは異なるルートに変数が設定されている場合でも、シナリオ内の任意の場所に設定された変数を読み取ることができます。唯一の要件は、[!UICONTROL ツール]／[!UICONTROL 変数の設定]または[!UICONTROL ツール]／[!UICONTROL 複数の変数の設定]モジュールが、[!UICONTROL ツール]／[!UICONTROL 変数の取得]モジュールの前に実行されることです。モジュールの実行順序の詳細については、「[&#x200B; ルーターモジュールの追加とルートの設定 &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/router-module.md) を参照してください。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -151,14 +151,14 @@ ht-degree: 85%
 
 次のシナリオでは、奇数番号のシナリオを実行するたびに最初の受信者にメールを送信し、偶数番号のシナリオを実行するたびに 2 番目の受信者にメールを送信します。
 
-![ メールの例 ](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
+![&#x200B; メールの例 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
 
 このシナリオを作成するには：
 
 1. モジュールの「**[!UICONTROL 値をリセット]**」フィールドを「なし」に設定します。
 1. 奇数値のルートを設定します。`1` の値に等しいモジュロ演算関数を使用して、このルートのフィルターを設定します。
 
-   ![ 奇数 ](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
+   ![&#x200B; 奇数 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
 
 **メモ**：「[!UICONTROL 次と等しい]」演算子を、デフォルトの「[!UICONTROL テキスト]」演算子から「[!UICONTROL 数値]」演算子に必ず変更します。
 

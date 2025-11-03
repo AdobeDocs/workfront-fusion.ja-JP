@@ -48,7 +48,7 @@ Workfront Fusion のデータストアの紹介ビデオについては、以下
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -58,17 +58,17 @@ Workfront Fusion のデータストアの紹介ビデオについては、以下
 
 [!UICONTROL データストア]を使用するには、まずデータストアを作成する必要があります。
 
-データストアの作成について詳しくは、[ データストアの作成と管理 ](/help/workfront-fusion/create-scenarios/map-data/data-stores.md) を参照してください。
+データストアの作成について詳しくは、[&#x200B; データストアの作成と管理 &#x200B;](/help/workfront-fusion/create-scenarios/map-data/data-stores.md) を参照してください。
 
-## [!UICONTROL  データストア ] モジュールとそのフィールド
+## [!UICONTROL &#x200B; データストア &#x200B;] モジュールとそのフィールド
 
 Workfront Fusion でデータストアモジュールを設定する場合、以下に示すフィールドが表示されます。 これらのほか、アプリやサービスでのアクセスレベルなどの要因に応じて、追加のデータストアフィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
 データストアを使用するために接続を作成する必要はありません。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 
 * [レコードの追加 / 置換](#addreplace-a-record)
@@ -90,7 +90,7 @@ Workfront Fusion でデータストアモジュールを設定する場合、以
 
 >[!NOTE]
 >
->既にデータストアに存在するレコードを同じ名前で追加しようとしたときに、「[!UICONTROL  既存のレコードを上書き ]」オプションが無効になっている場合、モジュールはエラーをスローします。
+>既にデータストアに存在するレコードを同じ名前で追加しようとしたときに、「[!UICONTROL &#x200B; 既存のレコードを上書き &#x200B;]」オプションが無効になっている場合、モジュールはエラーをスローします。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 

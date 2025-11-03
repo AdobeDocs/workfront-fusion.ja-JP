@@ -19,9 +19,9 @@ Adobe Workfront Fusion のシナリオでは、[!DNL Workfront Proof] を使用�
 
 [!DNL Workfront Proof] コネクタは、組織で使用可能なアクティブなアプリの数に対してカウントされません。すべてのシナリオは、[!DNL Workfront Proof] アプリのみを使用する場合でも、組織の合計シナリオ数にカウントされます。
 
-シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## アクセス要件
 
@@ -48,7 +48,7 @@ Adobe Workfront Fusion のシナリオでは、[!DNL Workfront Proof] を使用�
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++## Workfront Proofに関する情報
 
@@ -73,7 +73,7 @@ Workfront Proof コネクタでは、以下を使用します。
 
 Workfront Fusion モジュール内から [!DNL Workfront Proof] アカウントへの直接接続を作成できます。
 
-1. 任意のWorkfront Fusion モジュールで、「[!UICONTROL **接続**] フィールドの横にある「[!UICONTROL  追加 ] をクリックします
+1. 任意のWorkfront Fusion モジュールで、「[!UICONTROL **接続**] フィールドの横にある「[!UICONTROL &#x200B; 追加 &#x200B;] をクリックします
 
 2. 次のフィールドに入力します。
 
@@ -125,9 +125,9 @@ Workfront Fusion モジュール内から [!DNL Workfront Proof] アカウント
 
 [!DNL Workfront Proof] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Workfront Proof]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [トリガー](#triggers)
 * [アクション](#actions)
@@ -423,7 +423,7 @@ Workfront Fusion モジュール内から [!DNL Workfront Proof] アカウント
 >
 >**例：**
 >
->![Proof API モジュールの例 ](/help/workfront-fusion/references/apps-and-modules/assets/wfp-api-module-example-350x586.png)
+>![Proof API モジュールの例 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/wfp-api-module-example-350x586.png)
 
 #### [!UICONTROL プルーフのダウンロード]
 
@@ -447,7 +447,7 @@ Workfront Fusion モジュール内から [!DNL Workfront Proof] アカウント
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>[!UICONTROL プルーフの詳細 ] ページにあるプルーフの一意の ID を入力します。  </td> 
+   <td> <p>[!UICONTROL プルーフの詳細 &#x200B;] ページにあるプルーフの一意の ID を入力します。  </td> 
   </tr> 
  </tbody> 
 </table>
@@ -545,7 +545,7 @@ Workfront Fusion モジュール内から [!DNL Workfront Proof] アカウント
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>[!UICONTROL プルーフの詳細 ] ページにあるプルーフの一意の ID を入力します。 </td> 
+   <td> <p>[!UICONTROL プルーフの詳細 &#x200B;] ページにあるプルーフの一意の ID を入力します。 </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Deadline]</td> 
@@ -573,7 +573,7 @@ Workfront Fusion モジュール内から [!DNL Workfront Proof] アカウント
   </tr> 
   <tr> 
    <td>[!UICONTROL Enable Subscriptions]</td> 
-   <td>参加者以外に対して、プルーフへの登録を許可するかどうかを選択します。<br> このオプションを選択すると、[!UICONTROL のデフォルトの役割 ] フィールドでオプションを選択することもできます。</td> 
+   <td>参加者以外に対して、プルーフへの登録を許可するかどうかを選択します。<br> このオプションを選択すると、[!UICONTROL のデフォルトの役割 &#x200B;] フィールドでオプションを選択することもできます。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Enable Subscriptions Validation]</td> 
@@ -684,7 +684,7 @@ Workfront Fusion モジュール内から [!DNL Workfront Proof] アカウント
    <td> <p>[!DNL Workfront Proof] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 検索 ]</td> 
+   <td>[!UICONTROL 検索 &#x200B;]</td> 
    <td> <p>モジュールで検索するレコードのタイプを選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Proof]</strong> </p> <p>検索するプルーフのプルーフ名を入力します。</p> </li> 

@@ -40,7 +40,7 @@ ht-degree: 85%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
@@ -99,7 +99,7 @@ ht-degree: 85%
 
 1. 「**[!UICONTROL ジェネレーター]**」ボタンをクリックし、XML サンプルを「[!UICONTROL サンプルデータ]」フィールドに貼り付けます。
 
-   ![ サンプルデータフィールド ](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
+   ![&#x200B; サンプルデータフィールド &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
 
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
@@ -186,12 +186,12 @@ ht-degree: 85%
 XML ファイルを URL からダウンロードしてコンテンツを解析するには：
 
 1. 新しいシナリオを開始します。
-1. [!UICONTROL HTTP]/[!UICONTROL  ファイルを取得 ] モジュールを追加します
+1. [!UICONTROL HTTP]/[!UICONTROL &#x200B; ファイルを取得 &#x200B;] モジュールを追加します
 1. モジュールの設定を開き、次のように設定します。
 
    **URL**：XML ファイルの URL（例：`https://siftrss.com/f/rqLy05ayMBJ`）
 
-   ![XML ファイルの URL の例 ](/help/workfront-fusion/references/apps-and-modules/assets/url-of-xml-file-350x184.png)
+   ![XML ファイルの URL の例 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/url-of-xml-file-350x184.png)
 
 1. **[!UICONTROL OK]** をクリックして、モジュールの設定を保存して閉じます。
 1. [!UICONTROL XML]／[!UICONTROL XML を解析]モジュールを追加して、[!UICONTROL HTTP]／[!UICONTROL ファイルを取得]モジュールの後に接続し、次のように設定します。
@@ -241,7 +241,7 @@ XML ファイルを URL からダウンロードしてコンテンツを解析�
 
 は次のバンドルに変換されます。
 
-![XML はバンドルに変換されました ](/help/workfront-fusion/references/apps-and-modules/assets/xml-converted-to-bundle.png)
+![XML はバンドルに変換されました &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/xml-converted-to-bundle.png)
 
 >[!ENDSHADEBOX]
 

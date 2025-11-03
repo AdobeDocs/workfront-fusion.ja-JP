@@ -57,9 +57,9 @@ SOAP コネクタには、「SOAPを実行」アクションという 1 つの�
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -67,9 +67,9 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 Workfront Fusion でSOAP モジュールを設定する場合、以下に示すフィールドが表示されます。  モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 ### SOAP アクションの実行
 
@@ -86,15 +86,15 @@ Workfront Fusion でSOAP モジュールを設定する場合、以下に示す�
    <td> モジュールで使用する WSDL を選択します。 WSDL を作成するには、フィールドの横にある <b> 追加 </b> をクリックし、フィールドに入力します。 </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL HTTP ヘッダー ]</td> 
+   <td>[!UICONTROL HTTP ヘッダー &#x200B;]</td> 
    <td> 追加する HTTP ヘッダーごとに「<b> 項目を追加 </b>」をクリックし、ヘッダーの名前と値を入力します。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL SOAP ヘッダー ]</td> 
+   <td>[!UICONTROL SOAP ヘッダー &#x200B;]</td> 
    <td> 追加するSOAP ヘッダーごとに「<b> 項目を追加 </b>」をクリックし、ヘッダーの名前、値、名前空間および XMLNS を入力します。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 強制SOAP ヘッダー ]</td> 
+   <td>[!UICONTROL 強制SOAP ヘッダー &#x200B;]</td> 
    <td> SOAP 1.2 のヘッダーを設定する場合は、このオプションを有効にします。 </td> 
   </tr> 
   </tbody> 
@@ -132,7 +132,7 @@ Workfront Fusion でSOAP モジュールを設定する場合、以下に示す�
 </complexType>
 ```
 
-この例には、`soapenc:Array`Workfront Fusion`soapenc:arrayType` でまだサポートされていない `wsdl:arrayType`、[!UICONTROL  および ] の参照が含まれています。
+この例には、`soapenc:Array`Workfront Fusion`soapenc:arrayType` でまだサポートされていない `wsdl:arrayType`、[!UICONTROL &#x200B; および &#x200B;] の参照が含まれています。
 
 >[!ENDSHADEBOX]
 

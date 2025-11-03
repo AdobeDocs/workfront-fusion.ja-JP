@@ -15,9 +15,9 @@ ht-degree: 9%
 
 Adobe Workfront Fusion シナリオでは、[!UICONTROL Draft.js] モジュールを使用して Draft.js をHTMLに変換したり、HTMLを Draft.js に変換したりできます。 これをWorkfront モジュールと組み合わせて使用すると、Workfront フィールドにリッチテキストを追加したり、フィールドからリッチテキストを読み取ったりできます。
 
-シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## アクセス要件
 
@@ -44,13 +44,13 @@ Adobe Workfront Fusion シナリオでは、[!UICONTROL Draft.js] モジュー�
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
 +++
 
 
 
-## [!UICONTROL Draft.js からHTMLへ ]
+## [!UICONTROL Draft.js からHTMLへ &#x200B;]
 
 このモジュールは Draft.js をHTMLに変換します。
 
@@ -67,7 +67,7 @@ Adobe Workfront Fusion シナリオでは、[!UICONTROL Draft.js] モジュー�
  </tbody> 
 </table>
 
-## [!UICONTROL HTMLから Draft.js へ ]
+## [!UICONTROL HTMLから Draft.js へ &#x200B;]
 
 このモジュールはHTML コードを Draft.js に変換します。
 

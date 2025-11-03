@@ -15,15 +15,15 @@ ht-degree: 36%
 
 >[!NOTE]
 >
->これらの手順は、新しいバージョンの Jira コネクタに適用されます。このバージョンには、Jira というラベルのみが付いています。 従来の Jira Cloud および Jira Server コネクタについては、[Jira ソフトウェアモジュール ](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md) を参照してください。
+>これらの手順は、新しいバージョンの Jira コネクタに適用されます。このバージョンには、Jira というラベルのみが付いています。 従来の Jira Cloud および Jira Server コネクタについては、[Jira ソフトウェアモジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md) を参照してください。
 
 Adobe Workfront Fusion シナリオでは、Jira を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
 Jira コネクタは、Jira Cloud と Jira Data Server の両方で使用できます。
 
-シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## アクセス要件
 
@@ -57,9 +57,9 @@ Jira コネクタは、Jira Cloud と Jira Data Server の両方で使用でき�
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -171,9 +171,9 @@ Workfront Fusion で接続を作成するには：
 
 Jira モジュールを設定する場合、Workfront Fusion では以下に示すフィールドが表示されます。 これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の Jira フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [トリガー](#triggers)
 * [アクション](#actions)
@@ -456,7 +456,7 @@ Jira モジュールを設定する場合、Workfront Fusion では以下に示�
 >
 >このエラーが発生した場合は、従来の Jira コネクターの検索モジュールを新しいコネクターの検索モジュールに置き換えることができます。新しいコネクターでは、使用する API バージョンを選択できます。接続を作成する場合は、必ず V3 を選択します。
 >
-> ![ 新しい Jira コネクタの API バージョンオプション ](/help/workfront-fusion/references/apps-and-modules/assets/jira-version-option.png)
+> ![&#x200B; 新しい Jira コネクタの API バージョンオプション &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/jira-version-option.png)
 >
 >メモ：
 >
