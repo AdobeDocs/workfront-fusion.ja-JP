@@ -1,12 +1,12 @@
 ---
-title: Frame.io （Beta）モジュール
+title: Frame.io モジュール
 description: ' [!DNL Adobe Workfront Fusion Frame].io modules enable you to monitor, create, update, retrieve, or delete assets and comments in your [!DNL Frame.io]  アカウント'
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: b23255cb9585c58f025a0b2c99b824ecbf2c6879
 workflow-type: tm+mt
-source-wordcount: '3559'
+source-wordcount: '3555'
 ht-degree: 24%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 24%
 >
 >この記事では、Frame.io コネクタの新しいバージョンについて説明します。 このコネクタは、Frame.io バージョン 4 への接続に使用します。
 >
->Frame.io コネクタのレガシーバージョンの手順については、[Frame.io レガシーコネクタ &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md) を参照してください。
+>Frame.io コネクタのレガシーバージョンの手順については、[Frame.io レガシーコネクタ ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md) を参照してください。
 
 Adobe Workfront Fusion [!DNL Frame.io] モジュールを使用すると、[!DNL Frame.io] アカウント内のアセットやコメントをモニター、作成、更新、取得、削除できます。
 
@@ -28,7 +28,7 @@ Workfrontには、接続先の Frame.io のバージョンに基づく 2 つの 
 | Frame.io | V4 |
 | Frame.io （レガシー） | V3 |
 
-Frame.io コネクタのレガシーバージョンの手順については、[Frame.io レガシーコネクタ &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md) を参照してください。
+Frame.io コネクタのレガシーバージョンの手順については、[Frame.io レガシーコネクタ ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md) を参照してください。
 
 
 Frame.io コネクタの紹介ビデオについては、以下を参照してください。
@@ -67,9 +67,9 @@ Frame.io コネクタの紹介ビデオについては、以下を参照して�
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -112,7 +112,7 @@ Frame.io コネクタでは、以下を使用します。
 
 この方法では、Frame.io にログインしている場合に自動的に接続が作成されます。または、Frame.io のログインページに接続され、ログインできるようになります。
 
-1. 任意の Frame.io Beta モジュールで、「接続」ボックスの横にある「**[!UICONTROL 追加]**」をクリックします。
+1. 任意の Frame.io モジュールで、「接続」ボックスの横にある **[!UICONTROL 追加]** をクリックします。
 1. 接続に名前を入力します。
 1. 「**続行**」をクリックします。
 1. Frame.io アカウントにログインするように求められたら、ログインします。
@@ -138,7 +138,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 
    または
 
-   Adobe Developer Consoleで新規プロジェクトを作成します。 手順については、[&#x200B; 空のプロジェクトの作成 &#x200B;](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty) を参照してください。
+   Adobe Developer Consoleで新規プロジェクトを作成します。 手順については、[ 空のプロジェクトの作成 ](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty) を参照してください。
 
 1. プロジェクトの概要ページまたは新しいプロジェクトの基本を学ぶページで、「**API を追加**」をクリックします。
 1. 開いたページで、**Frame.io API** を見つけてクリックします。
@@ -157,7 +157,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
           </td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL リダイレクト URI パターン &#x200B;]</td>
+          <td role="rowheader">[!UICONTROL リダイレクト URI パターン ]</td>
           <td>
             <p><code>https://oauth\.app\.workfrontfusion\.com/oauth/cb/frame-io2</code></p>
           </td>
@@ -177,7 +177,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 
 #### ユーザー認証接続の設定
 
-1. 任意の Frame.io Beta モジュールで、「接続」ボックスの横にある「**[!UICONTROL 追加]**」をクリックします。
+1. 任意の Frame.io モジュールで、「接続」ボックスの横にある **[!UICONTROL 追加]** をクリックします。
 1. 「接続を作成」ボックスで、「**詳細設定を表示**」をクリックします。
 
 1. 次のフィールドに入力します。
@@ -232,7 +232,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 
    または
 
-   Adobe Developer Consoleで新規プロジェクトを作成します。 手順については、[&#x200B; 空のプロジェクトの作成 &#x200B;](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty) を参照してください。
+   Adobe Developer Consoleで新規プロジェクトを作成します。 手順については、[ 空のプロジェクトの作成 ](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty) を参照してください。
 
 1. プロジェクトの概要ページまたは新しいプロジェクトの基本を学ぶページで、「**API を追加**」をクリックします。
 1. 開いたページで、**Frame.io API** を見つけてクリックします。
@@ -252,7 +252,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 
 #### サーバー間接続の設定
 
-1. 任意の Frame.io Beta モジュールで、「接続」ボックスの横にある「**[!UICONTROL 追加]**」をクリックします。
+1. 任意の Frame.io モジュールで、「接続」ボックスの横にある **[!UICONTROL 追加]** をクリックします。
 
 1. 次のフィールドに入力します。
 
@@ -293,9 +293,9 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 
 [!DNL Frame.io] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Frame.io]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [アセット](#assets)
 * [コメント](#comments)
@@ -307,14 +307,14 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 
 ### アセット
 
-* [[!UICONTROL &#x200B; アセットの作成 &#x200B;]](#create-an-asset)
-* [[!UICONTROL &#x200B; アセットの削除 &#x200B;]](#delete-an-asset)
-* [[!UICONTROL &#x200B; アセットの取得 &#x200B;]](#get-an-asset)
-* [[!UICONTROL &#x200B; アセットのリスト &#x200B;]](#list-assets)
+* [[!UICONTROL  アセットの作成 ]](#create-an-asset)
+* [[!UICONTROL  アセットの削除 ]](#delete-an-asset)
+* [[!UICONTROL  アセットの取得 ]](#get-an-asset)
+* [[!UICONTROL  アセットのリスト ]](#list-assets)
 * [ウォッチのアセットが削除されました](#watch-asset-deleted)
 * [新しいアセットをウォッチ](#watch-new-asset)
 
-#### [!UICONTROL &#x200B; アセットを作成 &#x200B;] <!--different for v4-->
+#### [!UICONTROL  アセットを作成 ] <!--different for v4-->
 
 このアクションモジュールでは、新しいアセットを作成できます。
 
@@ -355,13 +355,13 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>ファイルを作成する場合、アップロードするファイルの URL を入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL メディアの種類 &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL メディアの種類 ] </td> 
    <td> <p>このアセットのメディアタイプを選択します。</p> </td> 
   </tr> 
   </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; アセットの削除 &#x200B;]
+#### [!UICONTROL  アセットの削除 ]
 
 このアクションモジュールは、指定したアセットを削除します。
 
@@ -384,7 +384,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; アセットの取得 &#x200B;]
+#### [!UICONTROL  アセットの取得 ]
 
 このアクションモジュールは、アセットの詳細を取得します。
 
@@ -407,7 +407,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; アセットのリスト &#x200B;]
+#### [!UICONTROL  アセットのリスト ]
 
 この検索モジュールは、指定されたプロジェクトのフォルダー内のすべてのアセットを取得します。
 
@@ -426,7 +426,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>アカウントを選択するか、リストするアセットを含むアカウントの ID をマッピングします。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 返されるアセットの最大数 &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL 返されるアセットの最大数 ] </td> 
    <td> <p>各シナリオの実行サイクル中に、モジュールが返すアセットの最大数を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
@@ -533,7 +533,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>コメントのリンク先となるビデオのフレーム番号を入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ページ &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL ページ ] </td> 
    <td> <p>アセットがPDFの場合は、コメントを添付するページを入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
@@ -562,7 +562,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; コメントを取得 &#x200B;]
+#### [!UICONTROL  コメントを取得 ]
 
 このアクションモジュールは、指定されたコメントの詳細を取得します。
 
@@ -620,7 +620,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; コメントの更新 &#x200B;]
+#### [!UICONTROL  コメントの更新 ]
 
 このアクションモジュールは、既存のコメントを編集します。
 
@@ -649,7 +649,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>コメントのリンク先となるビデオのフレーム番号を入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ページ &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL ページ ] </td> 
    <td> <p>アセットがPDFの場合は、コメントが添付されているページを入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
@@ -832,7 +832,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>プロジェクトを取得するアセットを含むワークスペースを選択またはマッピングします。</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL 返されるプロジェクトの最大数 &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL 返されるプロジェクトの最大数 ] </td> 
    <td> <p>プロジェクトの最大数を入力またはマッピング
    各シナリオ実行サイクル中にモジュールを返す必要があります。</p> </td> 
   </tr> 
@@ -964,7 +964,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>ワークスペースを取得するアセットを含むアカウントを選択またはマッピングします。</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL 返されるワークスペースの最大数 &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL 返されるワークスペースの最大数 ] </td> 
    <td> <p>ワークスペースの最大数を入力またはマッピング
    各シナリオ実行サイクル中にモジュールを返す必要があります。</p> </td> 
   </tr> 
@@ -1002,7 +1002,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p> <p>例： <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion は、認証ヘッダーを自動的に追加します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL クエリ文字列 &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL クエリ文字列 ] </td> 
    <td> <p>リクエストクエリ文字列を入力します。クエリ文字列に含める各パラメーターに対して、<b>[!UICONTROL Add item]</b> をクリックして、フィールドの名前と必要な値を入力します。</p> </td> 
   </tr> 
   <tr> 

@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion Frame].io modules enable you to moni
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: b23255cb9585c58f025a0b2c99b824ecbf2c6879
 workflow-type: tm+mt
-source-wordcount: '2666'
+source-wordcount: '2663'
 ht-degree: 63%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 63%
 >
 >この記事では、Frame.io コネクタのレガシーバージョンについて説明します。 このコネクタは、Frame.io バージョン 3 への接続に使用されます。
 >
->Frame.io コネクタの新しい（ベータ版）バージョンについて詳しくは、[Frame.io Beta コネクタ &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md) を参照してください。
+>Frame.io コネクタの新しい（ベータ版）バージョンについて詳しくは、[Frame.io コネクタ ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md) を参照してください。
 
 Adobe Workfront Fusion [!DNL Frame.io] モジュールを使用すると、[!DNL Frame.io] アカウント内のアセットやコメントをモニター、作成、更新、取得、削除できます。
 
@@ -25,10 +25,10 @@ Workfrontには、接続先の Frame.io のバージョンに基づく 2 つの 
 
 | コネクタ | Frame.io バージョン |
 |---|---|
-| Frame.io （Beta） | V4 |
+| Frame.io | V4 |
 | Frame.io （レガシー） | V3 |
 
-新しいバージョンの Frame.io コネクタについては、[Frame.io Beta コネクタ &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md) を参照してください。
+新しいバージョンの Frame.io コネクタについては、[Frame.io コネクタ ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md) を参照してください。
 
 Frame.io コネクタの紹介ビデオについては、以下を参照してください。
 
@@ -66,9 +66,9 @@ Frame.io コネクタの紹介ビデオについては、以下を参照して�
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -109,7 +109,7 @@ Frame.io コネクタでは、以下を使用します。
 
 ### API トークンを使用した [!DNL Frame.io] への接続
 
-API トークンを使用して [!DNL Frame.io] アカウントをWorkfront Fusion に接続するには、[!DNL Frame.io] アカウントで API トークンを作成し、Workfront Fusion [!DNL Frame.io]&#x200B;[!UICONTROL &#x200B; 接続を作成 &#x200B;] ダイアログに挿入する必要があります。
+API トークンを使用して [!DNL Frame.io] アカウントをWorkfront Fusion に接続するには、[!DNL Frame.io] アカウントで API トークンを作成し、Workfront Fusion [!DNL Frame.io][!UICONTROL  接続を作成 ] ダイアログに挿入する必要があります。
 
 1. [!DNL Frame.io] アカウントにログインします。
 1. [!DNL Frame.io] Developer の「**[!UICONTROL トークン]**」ページに移動します。
@@ -164,9 +164,9 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
 
 [!DNL Frame.io] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Frame.io]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [アセット](#assets)
 * [コメント](#comments)
@@ -235,7 +235,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
    <td> <p>ファイルを作成する場合、アセットの簡単な説明を入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ラベル &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL ラベル ] </td> 
    <td> <p>ファイルを作成する場合は、ファイルが進行中か、レビューが必要か、承認済みかを選択します。</p> </td> 
   </tr> 
  </tbody> 
