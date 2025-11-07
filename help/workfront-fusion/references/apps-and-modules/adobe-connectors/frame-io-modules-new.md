@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion Frame].io modules enable you to moni
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: b23255cb9585c58f025a0b2c99b824ecbf2c6879
+source-git-commit: 52dbf75ebb65a1de1a7a86619af4c7633e0cbe03
 workflow-type: tm+mt
-source-wordcount: '3555'
-ht-degree: 24%
+source-wordcount: '4399'
+ht-degree: 22%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 24%
 >
 >この記事では、Frame.io コネクタの新しいバージョンについて説明します。 このコネクタは、Frame.io バージョン 4 への接続に使用します。
 >
->Frame.io コネクタのレガシーバージョンの手順については、[Frame.io レガシーコネクタ &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md) を参照してください。
+>Frame.io コネクタのレガシーバージョンの手順については、[Frame.io レガシーコネクタ ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md) を参照してください。
 
 Adobe Workfront Fusion [!DNL Frame.io] モジュールを使用すると、[!DNL Frame.io] アカウント内のアセットやコメントをモニター、作成、更新、取得、削除できます。
 
@@ -28,7 +28,7 @@ Workfrontには、接続先の Frame.io のバージョンに基づく 2 つの 
 | Frame.io | V4 |
 | Frame.io （レガシー） | V3 |
 
-Frame.io コネクタのレガシーバージョンの手順については、[Frame.io レガシーコネクタ &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md) を参照してください。
+Frame.io コネクタのレガシーバージョンの手順については、[Frame.io レガシーコネクタ ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md) を参照してください。
 
 
 Frame.io コネクタの紹介ビデオについては、以下を参照してください。
@@ -67,9 +67,9 @@ Frame.io コネクタの紹介ビデオについては、以下を参照して�
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -138,7 +138,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 
    または
 
-   Adobe Developer Consoleで新規プロジェクトを作成します。 手順については、[&#x200B; 空のプロジェクトの作成 &#x200B;](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty) を参照してください。
+   Adobe Developer Consoleで新規プロジェクトを作成します。 手順については、[ 空のプロジェクトの作成 ](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty) を参照してください。
 
 1. プロジェクトの概要ページまたは新しいプロジェクトの基本を学ぶページで、「**API を追加**」をクリックします。
 1. 開いたページで、**Frame.io API** を見つけてクリックします。
@@ -157,7 +157,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
           </td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL リダイレクト URI パターン &#x200B;]</td>
+          <td role="rowheader">[!UICONTROL リダイレクト URI パターン ]</td>
           <td>
             <p><code>https://oauth\.app\.workfrontfusion\.com/oauth/cb/frame-io2</code></p>
           </td>
@@ -232,7 +232,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 
    または
 
-   Adobe Developer Consoleで新規プロジェクトを作成します。 手順については、[&#x200B; 空のプロジェクトの作成 &#x200B;](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty) を参照してください。
+   Adobe Developer Consoleで新規プロジェクトを作成します。 手順については、[ 空のプロジェクトの作成 ](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty) を参照してください。
 
 1. プロジェクトの概要ページまたは新しいプロジェクトの基本を学ぶページで、「**API を追加**」をクリックします。
 1. 開いたページで、**Frame.io API** を見つけてクリックします。
@@ -293,9 +293,9 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 
 [!DNL Frame.io] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Frame.io]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [アセット](#assets)
 * [コメント](#comments)
@@ -303,18 +303,74 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 * [プロジェクト](#projects)
 * [株式](#shares)
 * [ワークスペース](#workspaces)
+* [メタデータ](#metadata)
 * [その他](#other)
 
 ### アセット
 
-* [[!UICONTROL &#x200B; アセットの作成 &#x200B;]](#create-an-asset)
-* [[!UICONTROL &#x200B; アセットの削除 &#x200B;]](#delete-an-asset)
-* [[!UICONTROL &#x200B; アセットの取得 &#x200B;]](#get-an-asset)
-* [[!UICONTROL &#x200B; アセットのリスト &#x200B;]](#list-assets)
+* [[!UICONTROL  アセットの作成 ]](#create-an-asset)
+* [[!UICONTROL  アセットの削除 ]](#delete-an-asset)
+* [[!UICONTROL  アセットの取得 ]](#get-an-asset)
+* [[!UICONTROL  アセットのリスト ]](#list-assets)
 * [ウォッチのアセットが削除されました](#watch-asset-deleted)
 * [新しいアセットをウォッチ](#watch-new-asset)
 
-#### [!UICONTROL &#x200B; アセットを作成 &#x200B;] <!--different for v4-->
+#### [!UICONTROL  アセットを作成 ] <!--different for v4-->
+
+このアクションモジュールは、新しいアセットを作成します。 ローカルファイルをアップロードするか、アセットを作成するリモートファイルの URL を指定できます。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td> <p>アカウントを選択するか、アセットを作成するプロジェクトを含むアカウントの ID をマッピングします。</p> </td> 
+  </tr> 
+ <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>ワークスペースを選択するか、アセットを作成するプロジェクトを含むワークスペースの ID をマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Project ID] </td> 
+   <td> <p>アセットを作成するプロジェクトを選択するか、プロジェクトの ID をマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Path] </td> 
+   <td> <p>アセットを作成するパスを選択します。</p> </td> 
+  </tr> 
+<!--  <tr> 
+   <td role="rowheader">[!UICONTROL File Name] </td> 
+   <td> <p>Enter the name of the file that you want to use for this asset.</p> </td> 
+  </tr> -->
+    <tr> 
+    <td role="rowheader">アップロードタイプ </td> 
+    <td> <p>アセットをローカルファイルから作成するか、リモートライフから作成するかを選択します。</p> </td> 
+   </tr>
+    <tr> 
+    <td role="rowheader">ファイルサイズ </td> 
+    <td> <p>ローカルファイルをアップロードする場合は、ファイルサイズをバイト単位で入力またはマッピングします。</p> </td> 
+   </tr>
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source URL] </td> 
+   <td> <p>リモートファイルからアセットを作成する場合は、アップロードするファイルの URL を入力します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Source file]</td> 
+   <td> <p>前のモジュールからソースファイルを選択するか、ソースファイルの名前をマッピングします。</p> </td> 
+  </tr> 
+<!--  <tr> 
+   <td role="rowheader">[!UICONTROL Media type] </td> 
+   <td> <p>Select the media type for this asset.</p> </td> 
+  </tr> -->
+  </tbody> 
+</table>
+
+#### [!UICONTROL  アセットの作成（レガシー） ] <!--different for v4-->
 
 このアクションモジュールでは、新しいアセットを作成できます。
 
@@ -355,13 +411,13 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>ファイルを作成する場合、アップロードするファイルの URL を入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL メディアの種類 &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL メディアの種類 ] </td> 
    <td> <p>このアセットのメディアタイプを選択します。</p> </td> 
   </tr> 
   </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; アセットの削除 &#x200B;]
+#### [!UICONTROL  アセットの削除 ]
 
 このアクションモジュールは、指定したアセットを削除します。
 
@@ -384,7 +440,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; アセットの取得 &#x200B;]
+#### [!UICONTROL  アセットの取得 ]
 
 このアクションモジュールは、アセットの詳細を取得します。
 
@@ -407,7 +463,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; アセットのリスト &#x200B;]
+#### [!UICONTROL  アセットのリスト ]
 
 この検索モジュールは、指定されたプロジェクトのフォルダー内のすべてのアセットを取得します。
 
@@ -426,7 +482,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>アカウントを選択するか、リストするアセットを含むアカウントの ID をマッピングします。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 返されるアセットの最大数 &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL 返されるアセットの最大数 ] </td> 
    <td> <p>各シナリオの実行サイクル中に、モジュールが返すアセットの最大数を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
@@ -533,7 +589,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>コメントのリンク先となるビデオのフレーム番号を入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ページ &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL ページ ] </td> 
    <td> <p>アセットがPDFの場合は、コメントを添付するページを入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
@@ -562,7 +618,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; コメントを取得 &#x200B;]
+#### [!UICONTROL  コメントを取得 ]
 
 このアクションモジュールは、指定されたコメントの詳細を取得します。
 
@@ -620,7 +676,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; コメントの更新 &#x200B;]
+#### [!UICONTROL  コメントの更新 ]
 
 このアクションモジュールは、既存のコメントを編集します。
 
@@ -649,7 +705,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>コメントのリンク先となるビデオのフレーム番号を入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ページ &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL ページ ] </td> 
    <td> <p>アセットがPDFの場合は、コメントが添付されているページを入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
@@ -832,7 +888,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>プロジェクトを取得するアセットを含むワークスペースを選択またはマッピングします。</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL 返されるプロジェクトの最大数 &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL 返されるプロジェクトの最大数 ] </td> 
    <td> <p>プロジェクトの最大数を入力またはマッピング
    各シナリオ実行サイクル中にモジュールを返す必要があります。</p> </td> 
   </tr> 
@@ -964,9 +1020,186 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>ワークスペースを取得するアセットを含むアカウントを選択またはマッピングします。</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL 返されるワークスペースの最大数 &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL 返されるワークスペースの最大数 ] </td> 
    <td> <p>ワークスペースの最大数を入力またはマッピング
    各シナリオ実行サイクル中にモジュールを返す必要があります。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### メタデータ
+
+* [アカウントレベルフィールドの作成](#create-an-account-level-field)
+* [アカウントレベルフィールドの削除](#delete-an-account-level-field)
+* [メタデータを取得](#get-metadata)
+* [アカウントレベルフィールドのリスト](#list-account-level-fields)
+* [アカウントレベルのフィールド定義の更新](#update-an-account-level-field-definition)
+* [複数のファイルにわたるメタデータの更新](#update-metadata-across-multiple-files)
+
+#### アカウントレベルフィールドの作成
+
+このアクションモジュールは、新しいアカウントレベルのメタデータフィールドを作成および設定します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td> <p>メタデータを作成するアカウントを選択またはマッピングします。</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">フィールドタイプ </td> 
+   <td> <p>作成するメタデータフィールドのタイプを選択し、そのフィールドのオプションを設定します。</p> </td> 
+  </tr> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">名前 </td> 
+   <td> <p>新しいフィールドの名前を入力またはマッピングします。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### アカウントレベルフィールドの削除
+
+このアクションモジュールは、単一アカウントレベルのメタデータフィールドを削除します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td> <p>削除するメタデータフィールドを含むアカウントを選択またはマッピングします。</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">フィールド定義 ID </td> 
+   <td> <p>削除するフィールドの ID を入力またはマッピングします。 アカウントレベルのフィールドをリストモジュールで、フィールド ID を検索できます。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### メタデータを取得
+
+このアクションモジュールは、Frame.io 内のファイルのメタデータを取得します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td> <p>メタデータを取得するファイルを含むアカウントを選択またはマッピングします。</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">ファイル ID </td> 
+   <td> <p>メタデータを取得するファイルの ID を入力またはマッピングします。</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">ヌルを表示 </td> 
+   <td> <p>このオプションを有効にすると、値が null のフィールドが出力に含まれます。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### アカウントレベルフィールドのリスト
+
+このモジュールは、指定されたアカウントに関するアカウントレベルのメタデータフィールドのリストを取得します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td> <p>フィールドを一覧表示するアカウントを選択またはマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Maximum number of returned agreements]</td> 
+   <td> <p>各シナリオの実行サイクル中に、モジュールが返すフィールドの最大数を入力またはマッピングします。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### アカウントレベルのフィールド定義の更新
+
+このモジュールは、単一の既存のメタデータフィールドの定義を更新します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td> <p>メタデータを作成するアカウントを選択またはマッピングします。</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">フィールド定義 ID </td> 
+   <td> <p>更新するフィールドの ID を入力またはマッピングします。 アカウントレベルのフィールドをリストモジュールで、フィールド ID を検索できます。</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">フィールドタイプ </td> 
+   <td> <p>フィールドのフィールドタイプを変更する場合は、作成するメタデータフィールドのタイプを選択し、そのフィールドのオプションを設定します。</p> </td> 
+  </tr> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">名前 </td> 
+   <td> <p>フィールドの新しい名前を入力またはマッピングします。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 複数のファイルにわたるメタデータの更新
+
+このモジュールは、1 つ以上のファイルのメタデータフィールドを、指定した値で更新します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td> <p>メタデータを更新するファイルを含むアカウントを選択またはマッピングします。</p> </td> 
+  </tr> 
+ <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>ワークスペースを選択するか、アセットを作成するプロジェクトを含むワークスペースの ID をマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Project ID] </td> 
+   <td> <p>アセットを作成するプロジェクトを選択するか、プロジェクトの ID をマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ファイル ID] </td> 
+   <td> <p>メタデータを更新するファイルごとに、「<b> 項目を追加 </b>」をクリックし、ファイルの ID を入力またはマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Values] </td> 
+   <td> <p>メタデータを更新するフィールドごとに、「<b> 項目を追加 </b>」をクリックし、フィールド定義の ID と、そのフィールドに入力する値を入力またはマッピングします。 「ファイル ID」フィールドで指定されたすべてのファイルは、このフィールド値で更新されます。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1002,7 +1235,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p> <p>例： <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion は、認証ヘッダーを自動的に追加します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL クエリ文字列 &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL クエリ文字列 ] </td> 
    <td> <p>リクエストクエリ文字列を入力します。クエリ文字列に含める各パラメーターに対して、<b>[!UICONTROL Add item]</b> をクリックして、フィールドの名前と必要な値を入力します。</p> </td> 
   </tr> 
   <tr> 
