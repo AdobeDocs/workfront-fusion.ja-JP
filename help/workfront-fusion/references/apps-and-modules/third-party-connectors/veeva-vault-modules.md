@@ -3,10 +3,10 @@ title: Veeva Vault モジュール
 description: Adobe Workfront Fusion のシナリオでは、Veeva Vault を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 37cb18a2e13a494c4174514539c0c7e43cdee011
+source-git-commit: 4ba05a5f400ba1bdfb97586500baf741b555cd20
 workflow-type: tm+mt
-source-wordcount: '1661'
-ht-degree: 17%
+source-wordcount: '2325'
+ht-degree: 14%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 17%
 
 Adobe Workfront Fusion のシナリオでは、Veeva Vault を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
-シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## アクセス要件
 
@@ -50,9 +50,9 @@ Adobe Workfront Fusion のシナリオでは、Veeva Vault を使用するワー
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+このテーブルの情報について詳しくは、[ ドキュメントのアクセス要件 ](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
 
 +++
 
@@ -114,22 +114,27 @@ Veeva Vault モジュール内から直接 Veeva Vault アカウントへの接�
 
 Workfront Fusion で Veeva Vault モジュールを設定する場合、以下に示すフィールドが表示されます。 これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の Veeva Vault フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[ モジュール間で情報をマッピングする ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![ マップ切り替え ](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+
+* [ドキュメント](#document)
+* [オブジェクト](#object)
+* [その他](#other)
 
 ### ドキュメント
 
 * [1 つのドキュメントの作成](#create-a-single-document)
 * [複数のドキュメントの作成](#create-multiple-documents)
 * [1 つのドキュメントの削除](#delete-a-single-document)
+* [ファイルのダウンロード](#download-file)
 * [ドキュメントのエクスポート](#export-documents)
 * [1 つのドキュメントの取得](#get-a-single-document)
 * [ユーザーアクションの開始](#initiate-user-action)
 * [ドキュメントのリスト](#list-documents)
 * [ドキュメントのエクスポート結果の取得](#retrieve-document-export-results)
-* [複数のドキュメントの更新](#update-multiple-documents)
 * [1 つのドキュメントの更新](#update-a-single-document)
+* [複数のドキュメントの更新](#update-multiple-documents)
 
 #### 1 つのドキュメントの作成
 
@@ -196,6 +201,41 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
   <tr> 
    <td role="rowheader"><p>ドキュメント ID/バインダー ID/テンプレート名</p> </td> 
    <td> <p>削除するフィールドを選択します。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### ファイルをダウンロード
+
+このモジュールは、Veeva Vault からドキュメント、ドキュメントバージョンまたはテンプレートをダウンロードします。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">接続 </td> 
+   <td> <p>Veeva Vault アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>タイプ</p> </td> 
+   <td> <p>ドキュメントとテンプレートのどちらをダウンロードするかを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ダウンロードタイプ</p> </td> 
+   <td> <p>ドキュメントまたはドキュメントバージョンのどちらをダウンロードするかを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>ドキュメント ID/テンプレート名</p> </td> 
+   <td> <p>ドキュメントの ID またはダウンロードするテンプレートの名前を入力またはマッピングします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>ドキュメントのチェックアウト</p> </td> 
+   <td> <p>ドキュメントをダウンロードする場合、このオプションを有効にすると、ドキュメントをダウンロードする前にチェックアウトされます。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>バージョン</p> </td> 
+   <td> <p>ドキュメントのバージョンをダウンロードする場合は、ダウンロードするバージョンを選択します。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -387,9 +427,106 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
 
 ### オブジェクト
 
+* [単一オブジェクトレコードの作成](#create-a-single-object-record)
+* [単一のオブジェクトレコードの削除](#delete-a-single-object-record)
+* [単一のオブジェクトの取得](#get-a-single-object)
+* [オブジェクトレコードをリスト](#list-objects-records)
+* [単一オブジェクトレコードの更新](#update-a-single-object-record)
 
+#### 単一オブジェクトレコードの作成
 
-#### オブジェクトリスト
+このモジュールは、単一のオブジェクトレコードを作成、コピー、またはディープコピーします。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">接続 </td> 
+   <td> <p>Veeva Vault アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>タイプ</p> </td> 
+   <td> <p>レコードを作成またはコピーするか、またはレコードをディープコピーするかを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">移行モード</td> 
+   <td>レコードを作成またはコピーする場合は、このオプションを有効にして、最小限の検証を使用して非初期状態のオブジェクトレコードを作成または更新し、非アクティブなレコードを作成し、<code>createdby_v</code> などの標準フィールドとシステム管理フィールドを設定します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">トリガーなし</td> 
+   <td>true に設定され、マイグレーションモードが有効な場合、モジュールは、すべてのシステム、標準、カスタム SDKのトリガー、およびアクショントリガーをバイパスします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">オブジェクト名</td> 
+   <td><code>product__v</code>、<code>country__v</code>、<code>custom_object__c</code> など、オブジェクト名__v フィールドの値を入力またはマッピングします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">レコード ID</td> 
+   <td>レコードをディープコピーする場合は、コピーするレコードを選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">レコードフィールド</td> 
+   <td>レコードをディープコピーする場合は、値を設定するフィールドを選択してから、それらの値を設定します。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 単一のオブジェクトレコードの削除
+
+このモジュールは、単一のオブジェクト レコードを削除またはカスケード削除します。 カスケード レコードを削除すると、レコードとそのすべての子オブジェクトが削除されます。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">接続 </td> 
+   <td> <p>Veeva Vault アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>タイプ</p> </td> 
+   <td> <p>レコードを削除するか、レコードをカスケード削除するかを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">オブジェクト名</td> 
+   <td>削除するオブジェクトを選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">レコード ID</td> 
+   <td>削除するレコードの ID を選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">外部 ID</td> 
+   <td>レコード ID の代わりに、このユーザー定義のドキュメント外部 ID を使用できます。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 単一のオブジェクトの取得
+
+このモジュールは、Vault 内の特定のオブジェクト レコードに設定されたメタデータを取得します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">接続 </td> 
+   <td> <p>Veeva Vault アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">オブジェクト名</td> 
+   <td>メタデータを取得するオブジェクトを選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">レコード ID</td> 
+   <td>メタデータを取得するレコードの ID を選択します。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### オブジェクトレコードをリスト
 
 このモジュールは、認証された Vault 内のすべての Vault オブジェクトを取得します。
 
@@ -408,6 +545,55 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
   <tr> 
    <td role="rowheader">返される結果の最大数</td> 
    <td>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+<!--#### Update a single object record-->
+
+このモジュールは、既存のオブジェクトレコードのフィールドを更新します。
+
+このモジュールは、単一のオブジェクトレコードを作成、コピー、またはディープコピーします。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">接続 </td> 
+   <td> <p>Veeva Vault アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>タイプ</p> </td> 
+   <td> <p>レコードを作成またはコピーするか、またはレコードをディープコピーするかを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">移行モード</td> 
+   <td>このオプションを有効にすると、最小限の検証を使用して非初期状態のオブジェクトレコードを作成または更新したり、非アクティブなレコードを作成したり、<code>createdby_v</code> などの標準フィールドおよびシステム管理フィールドを設定したりできます。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">トリガーなし</td> 
+   <td>移行モードが有効な場合、このオプションを有効にすると、システム、標準、カスタムのSDKトリガーおよびアクショントリガーがすべて回避されます。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">オブジェクト名</td> 
+   <td><code>product__v</code>、<code>country__v</code>、<code>custom_object__c</code> など、オブジェクト名__v フィールドの値を入力またはマッピングします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">レコード ID</td> 
+   <td>更新するレコードの ID を選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">状態</td> 
+   <td><code>X-VaultAPI-MigrationMode</code> が true に設定されている場合は、レコードのライフサイクル状態を指定します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">状態ラベル</td> 
+   <td><code>X-VaultAPI-MigrationMode</code> が true に設定されている場合は、レコードのライフサイクル状態タイプを指定します。 <code>base:object_lifecycle:</code> 形式を使用し、その後にオブジェクトの状態タイプを使用します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">レコードフィールド</td> 
+   <td>レコードをディープコピーする場合は、値を設定するフィールドを選択してから、それらの値を設定します。</td> 
   </tr> 
  </tbody> 
 </table>
