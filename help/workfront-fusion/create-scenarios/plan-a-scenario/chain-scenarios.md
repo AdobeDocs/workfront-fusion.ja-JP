@@ -3,17 +3,19 @@ title: 複数のシナリオを連結する
 description: 複数のシナリオを連結して、1 つのシナリオで別のシナリオをトリガー設定し、2 番目のシナリオで出力されたデータを 1 番目のシナリオに戻すことができます。
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
-source-git-commit: b41f7795273d35dc4e0c019c568f8939926b875a
+exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
+source-git-commit: 7f73007e219714c38dd0cf29d2a1e3a4c8f6f3cc
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1247'
 ht-degree: 0%
 
 ---
 
-
 # 複数のシナリオを連結する
+
+>[!NOTE]
+>
+>この機能は、現在Betaにあります。
 
 複数のシナリオを連結して、1 つのシナリオで別のシナリオをトリガー設定し、2 番目のシナリオで出力されたデータを 1 番目のシナリオに戻すことができます。 これにより、複数のシナリオでシナリオセクションを複製する必要がなくなり、よりモジュール型のシナリオを作成できます。
 
@@ -21,9 +23,9 @@ ht-degree: 0%
 
 親シナリオが子シナリオがデータを返すのを待っている場合、その時間は親シナリオのタイムアウトにカウントされません。 例えば、親シナリオが 5 つの子シナリオを呼び出すと、各子シナリオの実行に 10 分かかり、合計で 50 分かかります。 親シナリオ自体のモジュールの実行に 15 分かかります。 合計 65 分（40 分のタイムアウト制限を超える）が経過しても、親シナリオはタイムアウトしません。
 
-タイムアウトを含む、Fusion のパフォーマンスガードレールについて詳しくは、「[Fusion パフォーマンスガードレール &#x200B;](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md)」を参照してください。
+タイムアウトを含む、Fusion のパフォーマンスガードレールについて詳しくは、「[Fusion パフォーマンスガードレール ](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md)」を参照してください。
 
-チェーンモジュールの設定手順については、[&#x200B; チェーンモジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md) を参照してください。
+チェーンモジュールの設定手順については、[ チェーンモジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md) を参照してください。
 
 ## 親シナリオと子シナリオ
 
@@ -36,9 +38,9 @@ ht-degree: 0%
 
 Workfront Fusion は、データ構造を使用して、親シナリオから子シナリオに情報を転送します。 データ構造は、子シナリオで設定します。 子シナリオを親シナリオから選択すると、子シナリオの入力として使用されるデータ構造のフィールドが親シナリオに表示されます。 これらのフィールドに値をマッピングできます。マッピングは、トリガーされたときに子シナリオに渡されます。
 
-親および子シナリオで設定するモジュールについて詳しくは、[&#x200B; チェーンモジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md) を参照してください。
+親および子シナリオで設定するモジュールについて詳しくは、[ チェーンモジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md) を参照してください。
 
-データ構造について詳しくは、[&#x200B; データ構造 &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md) を参照してください。
+データ構造について詳しくは、[ データ構造 ](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md) を参照してください。
 
 ## データフロー
 
@@ -70,7 +72,7 @@ Workfront Fusion は、データ構造を使用して、親シナリオから子
 
 子シナリオを呼び出しモジュールの「**子シナリオに移動**」ボタンを使用して、子シナリオにすばやく移動し、実行履歴を表示することをお勧めします。 子シナリオは別のブラウザーウィンドウで開き、親シナリオと子シナリオを同時に表示できます。
 
-![&#x200B; 「子シナリオに移動」ボタン &#x200B;](assets/go-to-the-child-button.png)
+![ 「子シナリオに移動」ボタン ](assets/go-to-the-child-button.png)
 
 ## エラーと不完全な実行
 
