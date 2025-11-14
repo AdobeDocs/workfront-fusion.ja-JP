@@ -370,7 +370,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
   </tbody> 
 </table>
 
-#### [!UICONTROL  アセットの作成（レガシー） ] <!--different for v4-->
+#### [!UICONTROL &#x200B; アセットの作成（レガシー） &#x200B;] <!--different for v4-->
 
 このアクションモジュールでは、新しいアセットを作成できます。
 
@@ -888,7 +888,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>プロジェクトを取得するアセットを含むワークスペースを選択またはマッピングします。</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">[ UICONTROL Maximum number of returned projects] </td> 
+   <td role="rowheader">[!UICONTROL Maximum number of returned projects] </td> 
    <td> <p>各シナリオの実行サイクル中にモジュールが返すプロジェクトの最大数を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
@@ -1019,7 +1019,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>ワークスペースを取得するアセットを含むアカウントを選択またはマッピングします。</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">[ UICONTROL Maximum number of returned workspaces] </td> 
+   <td role="rowheader">[!UICONTROL Maximum number of returned workspaces] </td> 
    <td> <p>各シナリオの実行サイクル中にモジュールが返すワークスペースの最大数を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
