@@ -5,10 +5,10 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: b5892f64c73c41524029621591e64c942c146432
+source-git-commit: bb1cd0c54ae2c81c601d463cdc281d6ae7b8c434
 workflow-type: tm+mt
-source-wordcount: '4699'
-ht-degree: 34%
+source-wordcount: '4560'
+ht-degree: 37%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 34%
 >
 >この記事では、2025 年 11 月 14 日（PT）にリリースされた新しいSlack コネクタで使用できるモジュールについて説明します。
 >
->従来のSlack コネクタについては、[[!DNL Slack] modules （Legacy） &#x200B;](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md) を参照してください。
+>従来のSlack コネクタについては、[[!DNL Slack] modules （Legacy） ](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md) を参照してください。
 
 [!DNL Adobe Workfront Fusion] のシナリオでは、[!DNL Slack] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
 
-シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## アクセス要件
 
@@ -36,31 +36,31 @@ ht-degree: 34%
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>Standard</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
    <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
-   <p>コネクタベース（従来）：作業の自動化と統合のためのWorkfront Fusion </p>
+   <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
 
 +++
 
@@ -91,9 +91,9 @@ Slack コネクタでは、以下を使用します。
 
 [!DNL Slack] モジュールを設定する際、[!DNL Workfront Fusion] に以下のフィールドが表示されます。これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の [!DNL Slack] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[モジュール間の情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![マップ切り替え](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [メッセージ](#messages)
 * [ファイル](#files)
@@ -139,7 +139,7 @@ Slack コネクタでは、以下を使用します。
    <td>ブロックは、メッセージをカスタマイズおよび整理するために使用できる再利用可能なコンポーネントです。ブロックについて詳しくは、[!DNL Slack] ドキュメント内の <a href="https://api.slack.com/block-kit">Block Kit</a> を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL スレッド メッセージ ID （タイムスタンプ） &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL スレッド メッセージ ID （タイムスタンプ） ]</td> 
    <td>新しいメッセージが返信の場合は、返信するメッセージのタイムスタンプを入力します。 既に返信になっているメッセージのタイムスタンプを入力しないでください。</td> 
   </tr> 
   <tr> 
@@ -192,7 +192,7 @@ Slack コネクタでは、以下を使用します。
    <td> <p>チャネル ID を入力またはマッピングします。</p> <p>メモ：チャネル ID は、[!UICONTROL List Channels] モジュールを使用して取得できます。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL メッセージ ID （タイムスタンプ） &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL メッセージ ID （タイムスタンプ） ]</td> 
    <td> <p> 削除するメッセージのタイムスタンプを入力またはマッピングします。</p> <p>メモ：タイムスタンプは、Watch Private Channel モジュールなどの別のモジュールを使用して取得できます。</p> </td> 
   </tr> 
  </tbody> 
@@ -267,7 +267,7 @@ Slack コネクタでは、以下を使用します。
    <td>返信を取得するメッセージを含んだチャネルのタイプを選択し、チャネルを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 親メッセージ ID （タイム スタンプ） &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 親メッセージ ID （タイム スタンプ） ]</td> 
    <td> <p> 返信を取得するメッセージのメッセージタイムスタンプを入力またはマッピングします。</p> <p>メモ：タイムスタンプは、[!UICONTROL Watch Public Channel] モジュールなどの別のモジュールを使用して取得できます。</p> </td> 
   </tr> 
   <tr> 
@@ -455,43 +455,6 @@ Slack コネクタでは、以下を使用します。
 
 ### ファイル
 
-+++ **[!UICONTROL テキストファイルの作成]**
-
-このアクションモジュールは、テキストファイルを作成します。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Slack] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL チャンネル &#x200B;]</td> 
-   <td> <p>ファイルのアップロード先のチャネルごとに「<b>[!UICONTROL 項目の追加 &#x200B;]</b>」をクリックし、チャネルのタイプとチャネルを選択します。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Title]</td> 
-   <td>アップロードするファイルのタイトルを入力</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL スレッド ID （タイムスタンプ） &#x200B;]</td> 
-   <td> <p>ファイルを返信としてアップロードする場合、返信するメッセージのタイムスタンプを入力またはマップします。</p> <p>メモ：タイムスタンプは、[!UICONTROL Watch Private Channel] モジュールなどの別のモジュールを使用して取得できます。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL 最初のコメント &#x200B;]</td> 
-   <td> <p>ファイルを紹介するメッセージのテキストを入力またはマップします。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-+++
-
 +++ **[!UICONTROL ファイルを削除]**
 
 このアクションモジュールは、指定されたファイルを削除します。
@@ -555,15 +518,15 @@ Slack コネクタでは、以下を使用します。
    <td> <p>ファイルをリストするチャネルを表すチャネルのタイプを選択し、チャネルを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL の作成者 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL の作成者 ]</td> 
    <td> <p>ユーザーを選択すると、指定したユーザーによって作成されたファイルのみが返されます。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 開始日 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 開始日 ]</td> 
    <td>ファイルの返却元となる最も早い日付を入力します。 サポートされる日付と時刻の形式の一覧については、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">型強制：[!DNL Adobe Workfront Fusion]</a> を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 日付から &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 日付から ]</td> 
    <td>ファイルを返す日付の最後の日付を入力します。 サポートされる日付と時刻の形式の一覧については、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">型強制：[!DNL Adobe Workfront Fusion]</a> を参照してください。</td> 
   </tr> 
   <tr> 
@@ -613,8 +576,8 @@ This action module downloads a file from a URL. It must follow the [!UICONTROL S
    <td> <p>[!DNL Slack] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL チャンネル &#x200B;]</td> 
-   <td> <p>ファイルのアップロード先のチャネルごとに「<b>[!UICONTROL 項目の追加 &#x200B;]</b>」をクリックし、チャネルのタイプとチャネルを選択します。</p> </td> 
+   <td role="rowheader">[!UICONTROL チャンネル ]</td> 
+   <td> <p>ファイルのアップロード先のチャネルごとに「<b>[!UICONTROL 項目の追加 ]</b>」をクリックし、チャネルのタイプとチャネルを選択します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
@@ -625,11 +588,11 @@ This action module downloads a file from a URL. It must follow the [!UICONTROL S
    <td>アップロードするファイルのタイトルを入力</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL スレッド ID （タイムスタンプ） &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL スレッド ID （タイムスタンプ） ]</td> 
    <td> <p>ファイルを返信としてアップロードする場合、返信するメッセージのタイムスタンプを入力またはマップします。</p> <p>メモ：タイムスタンプは、[!UICONTROL Watch Private Channel] モジュールなどの別のモジュールを使用して取得できます。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 初期コメント &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 初期コメント ]</td> 
    <td> <p>ファイルを紹介するメッセージのテキストを入力またはマップします。</p> </td> 
   </tr> 
  </tbody> 
@@ -658,7 +621,7 @@ This action module downloads a file from a URL. It must follow the [!UICONTROL S
    <td> <p>ファイルを監視するチャネルのタイプを選択してから、チャネルを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL の作成者 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL の作成者 ]</td> 
    <td> <p>ユーザーを選択すると、指定したユーザーによって作成されたファイルのみが返されます。</p> </td> 
   </tr> 
   <tr> 
@@ -710,7 +673,7 @@ This action module downloads a file from a URL. It must follow the [!UICONTROL S
    <td> <p>新しいチャネルの名前を入力またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL はプライベートです &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL はプライベートです ]</td> 
    <td>新しいチャネルをプライベートに設定するには、このオプションを有効にします。</td> 
   </tr> 
  </tbody> 
@@ -860,7 +823,7 @@ This action module downloads a file from a URL. It must follow the [!UICONTROL S
    <td>目的を変更するチャネルまたはユーザーを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL の目的 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL の目的 ]</td> 
    <td>チャネルの新しい目的を入力またはマッピングします。 このフィールドは、書式設定やリンクをサポートしていません。</td> 
   </tr> 
  </tbody> 
@@ -889,7 +852,7 @@ This action module downloads a file from a URL. It must follow the [!UICONTROL S
    <td>トピックを変更するチャネルまたはユーザーを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL トピック &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL トピック ]</td> 
    <td>チャネルの新しいトピックを入力またはマッピングします。 このフィールドは、書式設定やリンクをサポートしていません。</td> 
   </tr> 
  </tbody> 
@@ -941,11 +904,11 @@ This action module downloads a file from a URL. It must follow the [!UICONTROL S
    <td>反応を追加するチャネルまたはユーザーを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL メッセージ ID （タイムスタンプ） &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL メッセージ ID （タイムスタンプ） ]</td> 
    <td> <p> 反応を追加するメッセージのタイムスタンプを入力またはマッピングします。</p> <p>メモ：タイムスタンプは、[!UICONTROL Watch Private Channel] モジュールなどの別のモジュールを使用して取得できます。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 反応（絵文字）名 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 反応（絵文字）名 ]</td> 
    <td>反応に使用する絵文字の名前を入力またはマッピングします。 例：<code>thumbsup</code>。 </td> 
   </tr> 
  </tbody> 
@@ -1003,7 +966,7 @@ This action module downloads a file from a URL. It must follow the [!UICONTROL S
    <td> <p> 反応を削除するメッセージのタイムスタンプを入力またはマッピングします。</p> <p>メモ：タイムスタンプは、[!UICONTROL Watch Private Channel] モジュールなどの別のモジュールを使用して取得できます。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 反応（絵文字）名 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 反応（絵文字）名 ]</td> 
    <td>メッセージから削除する絵文字の名前を入力またはマッピングします。 例：<code>thumbsup</code>。 </td> 
   </tr> 
  </tbody> 
@@ -1134,7 +1097,7 @@ This action module downloads a file from a URL. It must follow the [!UICONTROL S
    <td>項目をピン留めするチャネルのタイプを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL パブリック &#x200B;] / [!UICONTROL プライベート &#x200B;] / [!UICONTROL マルチ IM チャネル &#x200B;] / [!UICONTROL ユーザー &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL パブリック ] / [!UICONTROL プライベート ] / [!UICONTROL マルチ IM チャネル ] / [!UICONTROL ユーザー ]</td> 
    <td>項目をピン留めするチャネルまたはユーザーを選択します。</td> 
   </tr> 
   <tr> 
@@ -1163,7 +1126,7 @@ This action module downloads a file from a URL. It must follow the [!UICONTROL S
    <td>項目のピン留めを解除するチャネルのタイプを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL パブリック &#x200B;] / [!UICONTROL プライベート &#x200B;] / [!UICONTROL マルチ IM チャネル &#x200B;] / [!UICONTROL ユーザー &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL パブリック ] / [!UICONTROL プライベート ] / [!UICONTROL マルチ IM チャネル ] / [!UICONTROL ユーザー ]</td> 
    <td>項目のピン留めを解除するチャネルまたはユーザーを選択します。</td> 
   </tr> 
   <tr> 
@@ -1215,7 +1178,7 @@ This action module downloads a file from a URL. It must follow the [!UICONTROL S
    <td>ユーザーを招待するチャネルのタイプを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL パブリック &#x200B;] / [!UICONTROL プライベート チャネル &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL パブリック ] / [!UICONTROL プライベート チャネル ]</td> 
    <td>ユーザーを招待するチャネルを選択します。</td> 
   </tr> 
   <tr> 
@@ -1244,7 +1207,7 @@ This action module downloads a file from a URL. It must follow the [!UICONTROL S
    <td>ユーザーを削除するチャネルのタイプを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL パブリック &#x200B;] / [!UICONTROL プライベート チャネル &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL パブリック ] / [!UICONTROL プライベート チャネル ]</td> 
    <td>ユーザーを削除するチャネルを選択します。</td> 
   </tr> 
   <tr> 
@@ -1384,7 +1347,7 @@ This action module retrieves details about a specific reminder.
    <td>リマインダーのコンテンツを入力またはマッピング</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 時間 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 時間 ]</td> 
    <td> <p>このリマインダーが行われる日時を入力またはマップします。 次のいずれかを入力します。 </p> 
     <ul> 
      <li> <p>Unix タイムスタンプ（最大で 5 年後）</p> </li> 
@@ -1488,7 +1451,7 @@ This action module deletes a specific reminder.
    <td> <p>[!DNL Slack] アカウントを [!DNL Workfront Fusion] に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">[!DNL Adobe Workfront Fusion] への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL ステータス テキスト &#x200B;]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL ステータス テキスト ]</p> </td> 
    <td> <p>ステータステキストを入力またはマッピングします。 次の点に注意してください。</p> 
     <ul> 
      <li> <p>最大 100 文字まで入力できます。</p> </li> 
@@ -1497,11 +1460,11 @@ This action module deletes a specific reminder.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ステータス絵文字 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL ステータス絵文字 ]</td> 
    <td> <p>ステータスを表すために使用する絵文字を入力またはマッピングします。 <code>:emojiname:</code> の形式を使用します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 状態の有効期限 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 状態の有効期限 ]</td> 
    <td>ステータスを期限切れにする日時を入力またはマッピングします。 サポートされる日付と時刻の形式の一覧については、「<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override=""> 型強制 </a>」を参照してください。</td> 
   </tr> 
  </tbody> 
@@ -1529,7 +1492,7 @@ This action module deletes a specific reminder.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   td&gt; <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエストメソッド </a> を参照してください。</p> </td> 
+   td&gt; <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエスト方法</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
