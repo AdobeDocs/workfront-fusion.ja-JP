@@ -7,7 +7,7 @@ exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
 source-git-commit: 52dbf75ebb65a1de1a7a86619af4c7633e0cbe03
 workflow-type: tm+mt
 source-wordcount: '4399'
-ht-degree: 22%
+ht-degree: 87%
 
 ---
 
@@ -15,20 +15,20 @@ ht-degree: 22%
 
 >[!IMPORTANT]
 >
->この記事では、Frame.io コネクタの新しいバージョンについて説明します。 このコネクタは、Frame.io バージョン 4 への接続に使用します。
+>この記事では、Frame.io コネクターの新しいバージョンについて説明します。このコネクターは、Frame.io バージョン 4 への接続に使用します。
 >
->Frame.io コネクタのレガシーバージョンの手順については、[Frame.io レガシーコネクタ &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md) を参照してください。
+>Frame.io コネクターのレガシーバージョンの手順について詳しくは、[Frame.io レガシーコネクター](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)を参照してください。
 
-Adobe Workfront Fusion [!DNL Frame.io] モジュールを使用すると、[!DNL Frame.io] アカウント内のアセットやコメントをモニター、作成、更新、取得、削除できます。
+Adobe Workfront Fusion [!DNL Frame.io] モジュールでは、[!DNL Frame.io] アカウント内のアセットとコメントを監視、作成、更新、取得、削除できます。
 
-Workfrontには、接続先の Frame.io のバージョンに基づく 2 つの Frame.io コネクタが用意されています。
+Workfront には、接続先の Frame.io のバージョンに基づく 2 つの Frame.io コネクターが用意されています。
 
-| コネクタ | Frame.io バージョン |
+| コネクター | Frame.io バージョン |
 |---|---|
 | Frame.io | V4 |
-| Frame.io （レガシー） | V3 |
+| Frame.io（レガシー） | V3 |
 
-Frame.io コネクタのレガシーバージョンの手順については、[Frame.io レガシーコネクタ &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md) を参照してください。
+Frame.io コネクターのレガシーバージョンの手順について詳しくは、[Frame.io レガシーコネクター](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)を参照してください。
 
 
 Frame.io コネクタの紹介ビデオについては、以下を参照してください。
@@ -45,31 +45,31 @@ Frame.io コネクタの紹介ビデオについては、以下を参照して�
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>Standard</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
    <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
-   <p>コネクタベース（従来）：作業の自動化と統合のためのWorkfront Fusion </p>
+   <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
 
 +++
 
@@ -79,7 +79,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ## Frame.io API 情報
 
-Frame.io コネクタでは、以下を使用します。
+Frame.io コネクターは、次を使用します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -100,19 +100,19 @@ Frame.io コネクタでは、以下を使用します。
  </tbody> 
  </table>
 
-## [!DNL Frame.io] から [!UICONTROL Adobe Workfront Fusion] への接続
+## [!DNL Frame.io] の [!UICONTROL Adobe Workfront Fusion] への接続
 
 ユーザー資格情報を使用して自動的に接続したり、ユーザー資格情報の接続を手動で作成したり、サーバー間接続を作成したりできます。
 
-* [ユーザーの資格情報を使用して自動的に接続](#connect-automatically-with-user-credentials#)
+* [ユーザー資格情報を使用して自動的に接続](#connect-automatically-with-user-credentials#)
 * [ユーザー資格情報接続の手動作成](#create-a-user-credentials-connection-manually)
 * [サーバー間接続の作成](#create-a-server-to-server-connection)
 
-### ユーザーの資格情報を使用して自動的に接続
+### ユーザー資格情報を使用して自動的に接続
 
 この方法では、Frame.io にログインしている場合に自動的に接続が作成されます。または、Frame.io のログインページに接続され、ログインできるようになります。
 
-1. 任意の Frame.io モジュールで、「接続」ボックスの横にある **[!UICONTROL 追加]** をクリックします。
+1. 任意の Frame.io モジュールで、「接続」ボックスの横にある「**[!UICONTROL 追加]**」をクリックします。
 1. 接続に名前を入力します。
 1. 「**続行**」をクリックします。
 1. Frame.io アカウントにログインするように求められたら、ログインします。
@@ -122,42 +122,42 @@ Frame.io コネクタでは、以下を使用します。
 
 ### ユーザー資格情報接続の手動作成
 
-ユーザー資格情報接続を作成するには、Frame.io にログインするか、クライアント ID またはクライアント シークレットを指定します。
+ユーザー資格情報接続を作成するには、Frame.io にログインするか、クライアント ID またはクライアントシークレットを指定します。
 
-サーバー間接続を作成するには、まずAdobe Developer Consoleでアプリケーションを設定する必要があります。
+サーバー間接続を作成するには、まず Adobe Developer Console にアプリケーションを設定する必要があります。
 
-* [Adobe Developer Consoleでのユーザー資格情報の作成](#create-user-credentials-in-the-adobe-developer-console)
+* [Adobe Developer Console でのユーザー資格情報の作成](#create-user-credentials-in-the-adobe-developer-console)
 * [ユーザー認証接続の設定](#configure-a-user-authentication-connection)
 
-#### Adobe Developer Consoleでのユーザー資格情報の作成
+#### Adobe Developer Console でのユーザー資格情報の作成
 
 Adobe Developer Console プロジェクトのサーバー間資格情報がまだない場合は、作成できます。
 
 1. [Adobe Developer Console](https://developer.adobe.com/) を開きます。
-1. この連携に使用する既存のプロジェクトをAdobe Developer Consoleで選択
+1. この接続に使用する既存のプロジェクトを Adobe Developer Console で選択
 
    または
 
-   Adobe Developer Consoleで新規プロジェクトを作成します。 手順については、[&#x200B; 空のプロジェクトの作成 &#x200B;](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty) を参照してください。
+   Adobe Developer Console で新規プロジェクトを作成します。手順について詳しくは、[空のプロジェクトの作成](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty)を参照してください。
 
 1. プロジェクトの概要ページまたは新しいプロジェクトの基本を学ぶページで、「**API を追加**」をクリックします。
 1. 開いたページで、**Frame.io API** を見つけてクリックします。
-1. 認証タイプを選択ページで「**ユーザー認証**」を選択し、「**次へ**」をクリックします。
-1. ユーザー認証資格情報を追加ページで、「**OAuth Web アプリ**」を選択し、「**次へ**」をクリックします。
-1. OAuth Web アプリ資格情報を設定ページで、以下を入力します。   <table style="table-layout:auto">
+1. 認証タイプの選択ページで「**ユーザー認証**」を選択し、「**次へ**」をクリックします。
+1. ユーザー認証資格情報の追加ページで、「**OAuth Web アプリ**」を選択し、「**次へ**」をクリックします。
+1. OAuth Web アプリ資格情報の設定ページで、次を入力します。   <table style="table-layout:auto">
    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
       </col>
       <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
       </col>
       <tbody>
         <tr>
-          <td role="rowheader">[!UICONTROL の既定のリダイレクト URI]</td>
+          <td role="rowheader">[!UICONTROL Default redirect URI]</td>
           <td>
             <p><code>https://oauth.app.workfrontfusion.com/oauth/cb/frame-io2</code></p>
           </td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL リダイレクト URI パターン &#x200B;]</td>
+          <td role="rowheader">[!UICONTROL Redirect URI pattern]</td>
           <td>
             <p><code>https://oauth\.app\.workfrontfusion\.com/oauth/cb/frame-io2</code></p>
           </td>
@@ -165,19 +165,19 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
        </tbody>
     </table>
 1. 「**次へ**」をクリックします。
-1. **設定済み API を保存** をクリックします。
+1. 「**設定済み API の保存**」をクリックします。
 1. 製品ページで、作成した資格情報のカードをクリックします。
 
-   ここでは、クライアント ID とクライアント秘密鍵を確認できます。
+   ここでは、クライアント ID とクライアントシークレットを確認できます。
 
 >[!NOTE]
 >
-> Adobe Workfront Fusion で接続の設定を開始する際は、このウィンドウを開いたままにすることをお勧めします。 クライアント ID をコピーし、このページからクライアント秘密鍵を取得およびコピーして、接続フィールドに貼り付けることができます。
+> Adobe Workfront Fusion で接続の設定を開始する際は、このウィンドウを開いたままにすることをお勧めします。クライアント ID をコピーし、このページからクライアントシークレットを取得およびコピーして、接続フィールドに貼り付けることができます。
 
 
 #### ユーザー認証接続の設定
 
-1. 任意の Frame.io モジュールで、「接続」ボックスの横にある **[!UICONTROL 追加]** をクリックします。
+1. 任意の Frame.io モジュールで、「接続」ボックスの横にある「**[!UICONTROL 追加]**」をクリックします。
 1. 「接続を作成」ボックスで、「**詳細設定を表示**」をクリックします。
 
 1. 次のフィールドに入力します。
@@ -191,7 +191,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
         <tr>
           <td role="rowheader">[!UICONTROL Connection type]</td>
           <td>
-            <p><b>IMS ユーザー認証 </b> を選択します。</p>
+            <p>「<b>IMS ユーザー認証</b>」を選択します。</p>
           </td>
         </tr>
         <tr>
@@ -202,11 +202,11 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]</td>
-          <td>[!DNL Adobe] [!UICONTROL Client ID] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。<p>資格情報の作成方法については、この記事の <a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">Adobe Developer Consoleでのユーザー資格情報の作成 </a> を参照してください。</p></td>
+          <td>[!DNL Adobe] [!UICONTROL Client ID] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。<p>資格情報の作成手順について詳しくは、この記事の <a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">Adobe Developer Console でのユーザー資格情報の作成</a>を参照してください。</p></td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret]</td>
-          <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。<p>資格情報の作成方法については、この記事の <a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">Adobe Developer Consoleでのユーザー資格情報の作成 </a> を参照してください。</p>
+          <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。<p>資格情報の作成手順について詳しくは、この記事の <a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">Adobe Developer Console でのユーザー資格情報の作成</a>を参照してください。</p>
         </tr>
        </tbody>
     </table>
@@ -218,41 +218,41 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 
 ### サーバー間接続の作成
 
-サーバー間接続を作成するには、まずAdobe Developer Consoleでアプリケーションを設定する必要があります。
+サーバー間接続を作成するには、まず Adobe Developer Console にアプリケーションを設定する必要があります。
 
-* [Adobe Developer Consoleでのサーバー間資格情報の作成](#create-server-to-server-credentials-in-the-adobe-developer-console)
+* [Adobe Developer Console でのサーバー間資格情報の作成](#create-server-to-server-credentials-in-the-adobe-developer-console)
 * [サーバー間接続の設定](#configure-a-server-to-server-connection)
 
-#### Adobe Developer Consoleでのサーバー間資格情報の作成
+#### Adobe Developer Console でのサーバー間資格情報の作成
 
 Adobe Developer Console プロジェクトのサーバー間資格情報がまだない場合は、作成できます。
 
 1. [Adobe Developer Console](https://developer.adobe.com/) を開きます。
-1. この連携に使用する既存のプロジェクトをAdobe Developer Consoleで選択
+1. この接続に使用する既存のプロジェクトを Adobe Developer Console で選択
 
    または
 
-   Adobe Developer Consoleで新規プロジェクトを作成します。 手順については、[&#x200B; 空のプロジェクトの作成 &#x200B;](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty) を参照してください。
+   Adobe Developer Console で新規プロジェクトを作成します。手順について詳しくは、[空のプロジェクトの作成](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty)を参照してください。
 
 1. プロジェクトの概要ページまたは新しいプロジェクトの基本を学ぶページで、「**API を追加**」をクリックします。
 1. 開いたページで、**Frame.io API** を見つけてクリックします。
 1. 認証タイプを選択ページで「**サーバー間認証**」を選択し、「**次へ**」をクリックします。
-1. 資格情報の名前を入力します。 これにより、後でAdobe Admin Consoleの「API 資格情報」領域で資格情報を識別できます。
+1. 資格情報の名前を入力します。これにより、後で Adobe Admin Console の API 資格情報領域で資格情報を識別できます。
 1. 「**次へ**」をクリックします。
-1. 製品プロファイルを選択ページで、接続先の Frame.io アカウントを含む製品プロファイルを選択します。
-1. **設定済み API を保存** をクリックします。
+1. 製品プロファイルの選択ページで、接続先の Frame.io アカウントを含む製品プロファイルを選択します。
+1. 「**設定済み API を保存**」をクリックします。
 1. 製品ページで、作成した資格情報のカードをクリックします。
 
-   ここでは、クライアント ID とクライアント秘密鍵を確認できます。
+   ここでは、クライアント ID とクライアントシークレットを確認できます。
 
 >[!NOTE]
 >
-> Adobe Workfront Fusion で接続の設定を開始する際は、このウィンドウを開いたままにすることをお勧めします。 クライアント ID をコピーし、このページからクライアント秘密鍵を取得およびコピーして、接続フィールドに貼り付けることができます。
+> Adobe Workfront Fusion で接続の設定を開始する際は、このウィンドウを開いたままにすることをお勧めします。クライアント ID をコピーし、このページからクライアントシークレットを取得およびコピーして、接続フィールドに貼り付けることができます。
 
 
 #### サーバー間接続の設定
 
-1. 任意の Frame.io モジュールで、「接続」ボックスの横にある **[!UICONTROL 追加]** をクリックします。
+1. 任意の Frame.io モジュールで、「接続」ボックスの横にある「**[!UICONTROL 追加]**」をクリックします。
 
 1. 次のフィールドに入力します。
 
@@ -265,7 +265,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
         <tr>
           <td role="rowheader">[!UICONTROL Connection type]</td>
           <td>
-            <p><b>IMS サーバーからサーバーへ </b> を選択します。</p>
+            <p>「<b>IMS サーバーからサーバーへ</b>」を選択します。</p>
           </td>
         </tr>
         <tr>
@@ -276,11 +276,11 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]</td>
-          <td>[!DNL Adobe] [!UICONTROL Client ID] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。<p>資格情報の作成方法については、この記事の <a href="#create-server-to-server-credentials-in-the-adobe-developer-console" class="MCXref xref">Adobe Developer Consoleでのサーバー間資格情報の作成 </a> を参照してください。</p></td>
+          <td>[!DNL Adobe] [!UICONTROL Client ID] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。<p>資格情報の作成手順について詳しくは、この記事の <a href="#create-server-to-server-credentials-in-the-adobe-developer-console" class="MCXref xref">Adobe Developer Console でのサーバー間資格情報の作成</a>を参照してください。</p></td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret]</td>
-          <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。<p>資格情報の作成方法については、この記事の <a href="#create-server-to-server-credentials-in-the-adobe-developer-console" class="MCXref xref">Adobe Developer Consoleでのサーバー間資格情報の作成 </a> を参照してください。</p>
+          <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。<p>資格情報の作成手順について詳しくは、この記事の <a href="#create-server-to-server-credentials-in-the-adobe-developer-console" class="MCXref xref">Adobe Developer Console でのサーバー間資格情報の作成</a>を参照してください。</p>
         </tr>
        </tbody>
     </table>
@@ -293,29 +293,29 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 
 [!DNL Frame.io] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Frame.io]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[モジュール間の情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![マップ切り替え](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [アセット](#assets)
 * [コメント](#comments)
 * [フォルダー](#folders)
 * [プロジェクト](#projects)
-* [株式](#shares)
+* [共有](#shares)
 * [ワークスペース](#workspaces)
 * [メタデータ](#metadata)
 * [その他](#other)
 
 ### アセット
 
-* [[!UICONTROL &#x200B; アセットの作成 &#x200B;]](#create-an-asset)
-* [[!UICONTROL &#x200B; アセットの削除 &#x200B;]](#delete-an-asset)
-* [[!UICONTROL &#x200B; アセットの取得 &#x200B;]](#get-an-asset)
-* [[!UICONTROL &#x200B; アセットのリスト &#x200B;]](#list-assets)
-* [ウォッチのアセットが削除されました](#watch-asset-deleted)
-* [新しいアセットをウォッチ](#watch-new-asset)
+* [[!UICONTROL アセットの作成]](#create-an-asset)
+* [[!UICONTROL アセットの削除]](#delete-an-asset)
+* [[!UICONTROL アセットの取得]](#get-an-asset)
+* [[!UICONTROL アセットのリスト]](#list-assets)
+* [削除されたアセットの監視](#watch-asset-deleted)
+* [新規アセットの監視](#watch-new-asset)
 
-#### [!UICONTROL &#x200B; アセットを作成 &#x200B;] <!--different for v4-->
+#### [!UICONTROL アセットの作成] <!--different for v4-->
 
 このアクションモジュールは、新しいアセットを作成します。 ローカルファイルをアップロードするか、アセットを作成するリモートファイルの URL を指定できます。
 
@@ -325,10 +325,10 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>アカウントを選択するか、アセットを作成するプロジェクトを含むアカウントの ID をマッピングします。</p> </td> 
   </tr> 
  <tr> 
@@ -370,7 +370,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
   </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; アセットの作成（レガシー） &#x200B;] <!--different for v4-->
+#### [!UICONTROL  アセットの作成（レガシー） ] <!--different for v4-->
 
 このアクションモジュールでは、新しいアセットを作成できます。
 
@@ -380,10 +380,10 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>アカウントを選択するか、アセットを作成するプロジェクトを含むアカウントの ID をマッピングします。</p> </td> 
   </tr> 
  <tr> 
@@ -411,13 +411,13 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>ファイルを作成する場合、アップロードするファイルの URL を入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL メディアの種類 &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL Media type] </td> 
    <td> <p>このアセットのメディアタイプを選択します。</p> </td> 
   </tr> 
   </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; アセットの削除 &#x200B;]
+#### [!UICONTROL アセットの削除]
 
 このアクションモジュールは、指定したアセットを削除します。
 
@@ -427,10 +427,10 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>アカウントを選択するか、削除するアセットを含むアカウントの ID をマッピングします。</p> </td> 
   </tr> 
   <tr> 
@@ -440,7 +440,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; アセットの取得 &#x200B;]
+#### [!UICONTROL アセットの取得]
 
 このアクションモジュールは、アセットの詳細を取得します。
 
@@ -450,10 +450,10 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>アカウントを選択するか、取得するアセットを含むアカウントの ID をマッピングします。</p> </td> 
   </tr> 
   <tr> 
@@ -463,7 +463,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; アセットのリスト &#x200B;]
+#### [!UICONTROL アセットのリスト]
 
 この検索モジュールは、指定されたプロジェクトのフォルダー内のすべてのアセットを取得します。
 
@@ -475,24 +475,24 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>アカウントを選択するか、リストするアセットを含むアカウントの ID をマッピングします。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 返されるアセットの最大数 &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL Maximum number of returned assets] </td> 
    <td> <p>各シナリオの実行サイクル中に、モジュールが返すアセットの最大数を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### ウォッチのアセットが削除されました
+#### 削除されたアセットの監視
 
 このトリガーモジュールは、アセットが削除されたときにシナリオを開始します。
 
-このモジュールに使用する Webhook を選択するか、Webhook フィールドの横にある「追加」をクリックして、次の情報を入力します。
+このモジュールに使用する Webhook を選択するか、「Webhook」フィールドの横にある「追加」をクリックして、次の情報を入力します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -506,20 +506,20 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>アカウントを選択するか、削除されたアセットを監視するアカウントの ID をマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### 新しいアセットをウォッチ
+#### 新規アセットの監視
 
 このトリガーモジュールは、新しいアセットが作成される際にシナリオを開始します。
 
-このモジュールに使用する Webhook を選択するか、Webhook フィールドの横にある「追加」をクリックして、次の情報を入力します。
+このモジュールに使用する Webhook を選択するか、「Webhook」フィールドの横にある「追加」をクリックして、次の情報を入力します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -533,10 +533,10 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>アカウントを選択するか、新しいアセットを監視するアカウントの ID をマッピングします。</p> </td> 
   </tr> 
  </tbody> 
@@ -549,8 +549,8 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 * [[!UICONTROL コメントを取得]](#get-a-comment)
 * [[!UICONTROL コメントをリスト]](#list-comments)
 * [[!UICONTROL コメントをアップデート]](#update-a-comment)
-* [コメントを見る更新されました](#watch-comment-updated)
-* [新しいコメントを見る](#watch-new-comment)
+* [更新されたコメントの監視](#watch-comment-updated)
+* [新規コメントの監視](#watch-new-comment)
 
 #### [!UICONTROL コメントの作成]
 
@@ -562,10 +562,10 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>アカウントを選択するか、コメントを追加するアセットを含むアカウントの ID をマッピングします。</p> </td> 
   </tr> 
   <tr> 
@@ -589,13 +589,13 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>コメントのリンク先となるビデオのフレーム番号を入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ページ &#x200B;] </td> 
-   <td> <p>アセットがPDFの場合は、コメントを添付するページを入力またはマッピングします。</p> </td> 
+   <td role="rowheader">[!UICONTROL Page] </td> 
+   <td> <p>アセットが PDF の場合は、コメントを添付するページを入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL コメントを削除]
+#### [!UICONTROL コメントの削除]
 
 このアクションモジュールは、既存のコメントを削除します。
 
@@ -605,10 +605,10 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>アカウントを選択するか、削除するコメントを含むアカウントの ID をマッピングします。</p> </td> 
   </tr> 
   <tr> 
@@ -618,7 +618,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; コメントを取得 &#x200B;]
+#### [!UICONTROL コメントの取得]
 
 このアクションモジュールは、指定されたコメントの詳細を取得します。
 
@@ -628,10 +628,10 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>アカウントを選択するか、詳細を取得するコメントを含むアカウントの ID をマッピングします。</p> </td> 
   </tr> 
   <tr> 
@@ -641,7 +641,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  </tbody> 
 </table>
 
-#### [!UICONTROL コメントの一覧表示]
+#### [!UICONTROL コメントのリスト]
 
 この検索モジュールは、指定されたアセットのすべてのコメントを取得します。
 
@@ -651,11 +651,11 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
-   <td> <p>コメントを取得するアセットを含んだアカウントを選択またはマッピングします。</p> </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>コメントを取得するアセットを含むアカウントを選択またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID] </td> 
@@ -663,11 +663,11 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID] </td> 
-   <td> <p>コメントを取得するアセットを含んだプロジェクトを選択します。</p> </td> 
+   <td> <p>コメントを取得するアセットを含むプロジェクトを選択します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Path] </td> 
-   <td> <p>コメントをリストするアセットを含むパスを選択します。</p> </td> 
+   <td> <p>コメントのリストするアセットにつながるパスを選択します。</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned comments] </td> 
@@ -676,7 +676,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; コメントの更新 &#x200B;]
+#### [!UICONTROL コメントの更新]
 
 このアクションモジュールは、既存のコメントを編集します。
 
@@ -686,11 +686,11 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
-   <td> <p>コメントを更新するアセットを含んだプロジェクトを含んだアカウントを選択またはマッピングします。</p> </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>コメントを更新するアセットを含むプロジェクトを所有するアカウントを選択またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Comment ID] </td> 
@@ -705,17 +705,17 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>コメントのリンク先となるビデオのフレーム番号を入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ページ &#x200B;] </td> 
-   <td> <p>アセットがPDFの場合は、コメントが添付されているページを入力またはマッピングします。</p> </td> 
+   <td role="rowheader">[!UICONTROL Page] </td> 
+   <td> <p>アセットが PDF の場合は、コメントを添付するページを入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### コメントを見る更新されました
+#### 更新されたコメントの監視
 
-このトリガーモジュールは、コメントが更新されると、シナリオを開始します。
+このトリガーモジュールは、コメントが更新されたときにシナリオを開始します。
 
-このモジュールに使用する Webhook を選択するか、Webhook フィールドの横にある「追加」をクリックして、次の情報を入力します。
+このモジュールに使用する Webhook を選択するか、「Webhook」フィールドの横にある「追加」をクリックして、次の情報を入力します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -729,20 +729,20 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>アカウントを選択するか、更新されたコメントを監視するアカウントの ID をマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### 新しいコメントを見る
+#### 新規コメントの監視
 
-このトリガーモジュールは、コメントが作成されるとシナリオを開始します。
+このトリガーモジュールは、コメントが作成されたときにシナリオを開始します。
 
-このモジュールに使用する Webhook を選択するか、Webhook フィールドの横にある「追加」をクリックして、次の情報を入力します。
+このモジュールに使用する Webhook を選択するか、「Webhook」フィールドの横にある「追加」をクリックして、次の情報を入力します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -756,10 +756,10 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>アカウントを選択するか、新しいコメントを監視するアカウントの ID をマッピングします。</p> </td> 
   </tr> 
  </tbody> 
@@ -767,7 +767,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 
 ### フォルダー
 
-#### フォルダーを作成
+#### フォルダーの作成
 
 このアクションモジュールは、Frame.io に新しいフォルダーを作成します。
 
@@ -777,10 +777,10 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>フォルダーを作成するアカウントを選択またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
@@ -789,7 +789,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID] </td> 
-   <td> <p>フォルダーを作成するを選択します。</p> </td> 
+   <td> <p>フォルダーを作成する場所を選択します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Path] </td> 
@@ -804,11 +804,11 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 
 ### プロジェクト
 
-* [プロジェクトを作成](#create-a-project)
+* [プロジェクトの作成](#create-a-project)
 * [Frame.io プロジェクトへのユーザーの招待](#invite-users-to-frameio-project)
 * [プロジェクトのリスト](#list-projects)
 
-#### プロジェクトを作成
+#### プロジェクトの作成
 
 このアクションモジュールは、Frame.io に新しいプロジェクトを作成します。
 
@@ -818,10 +818,10 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>プロジェクトを作成するアカウントを選択またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
@@ -845,15 +845,15 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>ユーザーを招待するプロジェクトを含むアカウントを選択またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID] </td> 
-   <td> <p>ユーザーを招待するプロジェクトを含んだワークスペースを選択またはマッピングします。</p> </td> 
+   <td> <p>ユーザーを招待するプロジェクトを含むワークスペースを選択またはマッピングします。</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">プロジェクト ID </td> 
@@ -877,25 +877,24 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
-   <td> <p>プロジェクトを取得するアセットを含んだアカウントを選択またはマッピングします。</p> </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>プロジェクトを取得するアセットを含むアカウントを選択またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID] </td> 
    <td> <p>プロジェクトを取得するアセットを含むワークスペースを選択またはマッピングします。</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL 返されるプロジェクトの最大数 &#x200B;] </td> 
-   <td> <p>プロジェクトの最大数を入力またはマッピング
-   各シナリオ実行サイクル中にモジュールを返す必要があります。</p> </td> 
+   <td role="rowheader">[ UICONTROL Maximum number of returned projects] </td> 
+   <td> <p>各シナリオの実行サイクル中にモジュールが返すプロジェクトの最大数を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### 株式
+### 共有
 
 * [共有リンクへのアセットの追加](#add-an-asset-to-a-share-link)
 * [共有リンクの作成](#create-a-share-link)
@@ -910,14 +909,14 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>アセットを追加する共有リンクを含むアカウントを選択またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 共有リンク ID] </td> 
+   <td role="rowheader">[!UICONTROL Share link ID] </td> 
    <td> <p>アセットを追加する共有リンクを選択またはマッピングします。</p> </td> 
   </tr> 
    <tr> 
@@ -937,10 +936,10 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>共有リンクを作成するアカウントを選択またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
@@ -957,7 +956,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
   </tr> 
    <tr> 
    <td role="rowheader">アセット </td> 
-   <td> <p>共有リンクに追加するアセットごとに、「<b> 項目を追加 </b> をクリックしてアセット ID を入力します。</p> </td> 
+   <td> <p>共有リンクに追加するアセットごとに、「<b>項目を追加</b>」をクリックして、アセットの ID を入力します。</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">説明 </td> 
@@ -965,11 +964,11 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
   </tr> 
    <tr> 
    <td role="rowheader">名前 </td> 
-   <td> <p>共有リンクの有効期限を入力またはマッピングします。</p> </td> 
+   <td> <p>共有リンクの有効期限日を入力またはマッピングします。</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">名前 </td> 
-   <td> <p>新しい共有リンクの名前を入力またはマップします。</p> </td> 
+   <td> <p>新しい共有リンクの名前を入力またはマッピングします。</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">名前 </td> 
@@ -990,10 +989,10 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>ワークスペースを作成するアカウントを選択またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
@@ -1013,16 +1012,15 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>ワークスペースを取得するアセットを含むアカウントを選択またはマッピングします。</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL 返されるワークスペースの最大数 &#x200B;] </td> 
-   <td> <p>ワークスペースの最大数を入力またはマッピング
-   各シナリオ実行サイクル中にモジュールを返す必要があります。</p> </td> 
+   <td role="rowheader">[ UICONTROL Maximum number of returned workspaces] </td> 
+   <td> <p>各シナリオの実行サイクル中にモジュールが返すワークスペースの最大数を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1046,10 +1044,10 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>メタデータを作成するアカウントを選択またはマッピングします。</p> </td> 
   </tr> 
    <tr> 
@@ -1074,10 +1072,10 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>削除するメタデータフィールドを含むアカウントを選択またはマッピングします。</p> </td> 
   </tr> 
    <tr> 
@@ -1097,10 +1095,10 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>メタデータを取得するファイルを含むアカウントを選択またはマッピングします。</p> </td> 
   </tr> 
    <tr> 
@@ -1124,10 +1122,10 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>フィールドを一覧表示するアカウントを選択またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
@@ -1147,10 +1145,10 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>メタデータを作成するアカウントを選択またはマッピングします。</p> </td> 
   </tr> 
    <tr> 
@@ -1179,10 +1177,10 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>メタデータを更新するファイルを含むアカウントを選択またはマッピングします。</p> </td> 
   </tr> 
  <tr> 
@@ -1207,7 +1205,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 ### その他
 
 * [カスタム API 呼び出しの実行](#make-a-custom-api-call)
-* [ウォッチのメタデータ値が更新されました](#watch-metadata-value-updated)
+* [更新されたメタデータ値の監視](#watch-metadata-value-updated)
 
 
 #### [!UICONTROL カスタム API 呼び出しの実行]
@@ -1220,7 +1218,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
@@ -1228,14 +1226,14 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP リクエストメソッド </a> を参照してください。</p> </td> 
+   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP リクエスト方法</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p> <p>例： <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion は、認証ヘッダーを自動的に追加します。</p> </td> 
+   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p> <p>例： <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion は認証ヘッダーを自動的に追加します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL クエリ文字列 &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL Query string] </td> 
    <td> <p>リクエストクエリ文字列を入力します。クエリ文字列に含める各パラメーターに対して、<b>[!UICONTROL Add item]</b> をクリックして、フィールドの名前と必要な値を入力します。</p> </td> 
   </tr> 
   <tr> 
@@ -1248,11 +1246,11 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  </tbody> 
 </table>
 
-#### ウォッチのメタデータ値が更新されました
+#### 更新されたメタデータ値の監視
 
-このトリガーモジュールは、コメントが更新されると、シナリオを開始します。
+このトリガーモジュールは、コメントが更新されたときにシナリオを開始します。
 
-このモジュールに使用する Webhook を選択するか、Webhook フィールドの横にある「追加」をクリックして、次の情報を入力します。
+このモジュールに使用する Webhook を選択するか、「Webhook」フィールドの横にある「追加」をクリックして、次の情報を入力します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1266,10 +1264,10 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>[!DNL Frame.io] への接続を作成する方法については、この記事の <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion への [!DNL Frame.io] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Frame.io] への接続を作成する手順について詳しくは、この記事の<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref"> [!DNL Frame.io] の Adobe Workfront Fusion への接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アカウント ID] </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
    <td> <p>アカウントを選択するか、更新されたメタデータ値を監視するアカウントの ID をマッピングします。</p> </td> 
   </tr> 
  </tbody> 
