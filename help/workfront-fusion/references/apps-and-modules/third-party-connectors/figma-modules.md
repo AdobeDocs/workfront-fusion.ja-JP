@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion Figma モジュールを使用すると、�
 author: Becky
 feature: Workfront Fusion
 exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 545bc38a619c44dd39bb746d751775f63e7aa16d
 workflow-type: tm+mt
-source-wordcount: '2600'
-ht-degree: 75%
+source-wordcount: '2638'
+ht-degree: 79%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 75%
 
 Adobe Workfront Fusion [!DNL Figma] モジュールを使用すると、コメント、ファイル、ファイルバージョン、プロジェクトのリストを取得できます。 また、コメントを投稿したり、[!DNL Figma] API を呼び出したりすることもできます。
 
-シナリオの作成手順については、[&#x200B; シナリオを作成：記事インデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成手順については、[ シナリオを作成：記事インデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## アクセス要件
 
@@ -29,31 +29,31 @@ Adobe Workfront Fusion [!DNL Figma] モジュールを使用すると、コメ�
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>Standard</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
    <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
-   <p>コネクタベース（従来）：作業の自動化と統合のためのWorkfront Fusion </p>
+   <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
 
 +++
 
@@ -86,6 +86,11 @@ Figma コネクタでは、以下を使用します。
 
 ## Figma への接続の作成
 
+>[!IMPORTANT]
+>
+>* Figma は、2025 年 1 月に認証要件を変更しました。 この `Figma` 接続タイプは新しい要件を満たしています。 `Figma (Legacy)` 接続タイプは非推奨（廃止予定）となり、近い将来に削除される予定です。
+>* リダイレクト URL を使用する場合は、`https://oauth.app.workfrontfusion.com/oauth/cb/figma3` を使用します。
+
 Figma モジュールの接続を作成するには：
 
 1. 任意の Figma モジュールで、「接続」ボックスの横にある **[!UICONTROL 追加]** をクリックします。
@@ -101,7 +106,7 @@ Figma モジュールの接続を作成するには：
         <tr>
         <td role="rowheader">[!UICONTROL Connection type]</td>
         <td>
-          <p> 新しい接続の場合は、従来のタグを付けずに <code>Figma</code> を選択します。 </p><p>Figma は、2025 年 1 月に認証要件を変更しました。 この <code>Figma</code> 接続タイプは新しい要件を満たしています。 <code>Figma (Legacy)</code> 接続タイプは今後削除されます。</p>
+          <p> レガシ タグのない <code>Figma</code> を選択します。 </p><p>Figma は、2025 年 1 月に認証要件を変更しました。 この <code>Figma</code> 接続タイプは新しい要件を満たしています。 <code>Figma (Legacy)</code> 接続タイプは非推奨（廃止予定）となり、今後削除される予定です。</p>
         </td>
         </tr>
         <tr>
@@ -112,7 +117,7 @@ Figma モジュールの接続を作成するには：
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>[!UICONTROL 形式 &#x200B;] [!UICONTROL クライアント ID] を入力します。</td>
+        <td>[!UICONTROL Figma] [!UICONTROL クライアント ID] を入力します。</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
@@ -137,9 +142,9 @@ Figma モジュールの接続を作成するには：
 
 [!DNL Figma] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Figma]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[モジュール間の情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![マップ切り替え](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [コメント](#comments)
 
@@ -564,7 +569,7 @@ Figma モジュールの接続を作成するには：
       <td>ファイルを取得するプロジェクトのプロジェクト ID を入力またはマッピングします。チーム ID は、Figma のチームのページの URL で確認できます。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 返されるプロジェクトの最大数 &#x200B;]</td>
+      <td role="rowheader">[ UICONTROL Maximum number of returned projects]</td>
       <td>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</td>
     </tr>
   </tbody>
@@ -649,7 +654,7 @@ Figma モジュールの接続を作成するには：
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Method]</td>
-      <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエストメソッド </a> を参照してください。</p> </td>
+      <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエスト方法</a>を参照してください。</p> </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Headers]</td>
