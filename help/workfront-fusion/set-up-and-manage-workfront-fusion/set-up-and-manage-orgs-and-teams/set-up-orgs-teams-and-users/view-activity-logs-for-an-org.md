@@ -4,16 +4,18 @@ description: シナリオの作成やアクティブ化など、組織のアク�
 author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
-source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
+source-git-commit: 2ffb7676067720a5b9daa51b560389396f4a665f
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 4%
+source-wordcount: '500'
+ht-degree: 10%
 
 ---
 
 # 組織のアクティビティログの表示
 
 シナリオの作成やユーザーの招待など、組織のアクティビティのログを表示できます。
+
+アクティビティログには、3 か月のデータが表示されます。 3 か月を超えるデータは書き出すことができます。
 
 ## アクセス要件
 
@@ -25,11 +27,11 @@ ht-degree: 4%
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>Adobe Workfront ワークフローUltimateとAdobe Workfront Automation and Integration Ultimate</p><p>WorkfrontUltimate</p></td> 
+   <td> <p>Adobe Workfront ワークフローUltimateとAdobe Workfront Automation and Integration Ultimate</p><p>Workfront Ultimate</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p></td> 
+   <td> <p>Standard</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">アクセスレベル設定</td> 
@@ -41,34 +43,34 @@ ht-degree: 4%
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
 +++
 
 ## アクティビティログの表示
 
-1. 左側のナビゲーションパネルで、**組織概要**![&#x200B; 組織概要アイコン &#x200B;](assets/org-overview-icon.png) をクリックします。
+1. 左側のナビゲーションパネルで、**組織概要**![ 組織概要アイコン ](assets/org-overview-icon.png) をクリックします。
 1. アクティビティログを表示する組織に現在所属していない場合は、画面の右上隅にある組織名をクリックし、ドロップダウンから組織を選択します。
 1. 画面上部付近の **[!UICONTROL アクティビティログ]** タブをクリックします。
 
    アクティビティログページが開きます。
 1. （オプション）指定した条件で結果を制限するには、アクティビティログをフィルタリングします。
 
-   手順については、この記事の [&#x200B; アクティビティログのフィルタリング &#x200B;](#filter-the-activity-logs) を参照してください。
+   手順については、この記事の [ アクティビティログのフィルタリング ](#filter-the-activity-logs) を参照してください。
 1. （オプション）適用したフィルターをクリアするには、画面の右上付近にあるフィルターを見つけて、フィルターのボックスの **X** をクリックします。
 1. （任意）ログをエクスポートします。
 
-   手順については、この記事の [&#x200B; アクティビティログのエクスポート &#x200B;](#export-the-activity-logs) を参照してください。
+   手順については、この記事の [ アクティビティログのエクスポート ](#export-the-activity-logs) を参照してください。
 
 
 ## アクティビティログのフィルタリング
 
-1. 左側のナビゲーションパネルで、**組織概要**![&#x200B; 組織概要アイコン &#x200B;](assets/org-overview-icon.png) をクリックします。
+1. 左側のナビゲーションパネルで、**組織概要**![ 組織概要アイコン ](assets/org-overview-icon.png) をクリックします。
 1. アクティビティログを表示する組織に現在所属していない場合は、画面の右上隅にある組織名をクリックし、ドロップダウンから組織を選択します。
 1. 画面上部付近の **[!UICONTROL アクティビティログ]** タブをクリックします。
 
    アクティビティログページが開きます。
-1. **フィルター**![&#x200B; フィルターアイコン &#x200B;](assets/filter-activity-log.png) をクリックします。
+1. **フィルター**![ フィルターアイコン ](assets/filter-activity-log.png) をクリックします。
 1. フィールドをクリックして、次のフィルターを 1 つ以上設定します。
 
    * **開始日と終了日**：カレンダーから日付を選択し、（オプション）時間を入力します。
@@ -81,7 +83,7 @@ ht-degree: 4%
 
 ## アクティビティログのエクスポート
 
-1. 左側のナビゲーションパネルで、**組織概要**![&#x200B; 組織概要アイコン &#x200B;](assets/org-overview-icon.png) をクリックします。
+1. 左側のナビゲーションパネルで、**組織概要**![ 組織概要アイコン ](assets/org-overview-icon.png) をクリックします。
 1. アクティビティログを表示する組織に現在所属していない場合は、画面の右上隅にある組織名をクリックし、ドロップダウンから組織を選択します。
 1. 画面上部付近の **[!UICONTROL アクティビティログ]** タブをクリックします。
 
