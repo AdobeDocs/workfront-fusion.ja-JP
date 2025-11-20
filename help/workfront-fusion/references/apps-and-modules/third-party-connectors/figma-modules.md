@@ -15,9 +15,9 @@ ht-degree: 79%
 
 Adobe Workfront Fusion [!DNL Figma] モジュールを使用すると、コメント、ファイル、ファイルバージョン、プロジェクトのリストを取得できます。 また、コメントを投稿したり、[!DNL Figma] API を呼び出したりすることもできます。
 
-シナリオの作成手順については、[ シナリオを作成：記事インデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成手順については、[&#x200B; シナリオを作成：記事インデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## アクセス要件
 
@@ -569,7 +569,7 @@ Figma モジュールの接続を作成するには：
       <td>ファイルを取得するプロジェクトのプロジェクト ID を入力またはマッピングします。チーム ID は、Figma のチームのページの URL で確認できます。</td>
     </tr>
     <tr>
-      <td role="rowheader">[ UICONTROL Maximum number of returned projects]</td>
+      <td role="rowheader">[!UICONTROL Maximum number of returned projects]</td>
       <td>各シナリオの実行サイクル中に、モジュールが返すレコードの最大数を入力またはマッピングします。</td>
     </tr>
   </tbody>
