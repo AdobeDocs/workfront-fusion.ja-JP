@@ -4,21 +4,21 @@ description: Adobe Workfront Fusion のシナリオでは、モジュールを�
 author: Becky
 feature: Workfront Fusion
 exl-id: f3c1ed7b-b69b-478a-8240-1a2ab89e11e5
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: f23a089565c2cfb7d2d1321a7bf67ae14e336af3
 workflow-type: tm+mt
 source-wordcount: '2275'
-ht-degree: 75%
+ht-degree: 79%
 
 ---
 
 # [!DNL Adobe Target] モジュール
 
-Adobe Workfront Fusion のシナリオでは、[!DNL Adobe Target] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。 [!DNL Adobe Target] モジュールを使用すると、レコードの作成、読み取り、更新または削除、特定のタイプのすべてのレコードのリスト作成、指定した条件に基づくレコードの検索または [!DNL Adobe Target] API へのカスタム API 呼び出しの実行を行うことができます。
+Adobe Workfront Fusion のシナリオでは、[!DNL Adobe Target] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。 [!DNL Adobe Target] モジュールを使用すると、レコードの作成、読み取り、更新、削除、特定タイプのすべてのレコードのリスト、指定した条件に基づくレコードの検索、[!DNL Adobe Target] API に対するカスタム API 呼び出しの実行を行うことができます。
 
 
-シナリオの作成手順については、[&#x200B; シナリオを作成：記事インデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成手順については、[ シナリオを作成：記事インデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## アクセス要件
 
@@ -30,31 +30,31 @@ Adobe Workfront Fusion のシナリオでは、[!DNL Adobe Target] を使用す�
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>Standard</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
    <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
-   <p>コネクタベース（従来）：作業の自動化と統合のためのWorkfront Fusion </p>
+   <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
 
 +++
 
@@ -181,9 +181,9 @@ Adobe Target コネクタでは、以下を使用します。
 
 [!DNL Adobe Target] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Adobe Target]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[モジュール間の情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![マップ切り替え](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [アクション](#actions)
 
@@ -231,30 +231,30 @@ Adobe Target コネクタでは、以下を使用します。
           <p><a href="#offer-fields" class="MCXref xref" >オファーフィールド</a>に進みます。</p>
         </li>
         <li>
-          <b>[!UICONTROL オファーコンテンツ &#x200B;]</b>
+          <b>[!UICONTROL オファーコンテンツ ]</b>
           <p><a href="#offer-fields" class="MCXref xref" >オファーフィールド</a>に進みます。</p>
         </li>
         <li>
         <b>環境</b><p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Environments/operation/createEnvironment"> 環境の作成 </a> を参照してください。</p>
         </li>
         <li>
-          <b>[!UICONTROL オーディエンス &#x200B;]</b>
+          <b>[!UICONTROL オーディエンス ]</b>
           <p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Audiences/operation/createAudience_1_1"> オーディエンスの作成 </a> を参照してください。</p>
         </li>
         <li>
-          <b>[!UICONTROL AB アクティビティ &#x200B;]</b>
+          <b>[!UICONTROL AB アクティビティ ]</b>
           <p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Activities/operation/createActivity_4_1">AB アクティビティを作成 </a> を参照してください。</p>
         </li>
         <li>
-          <b>[!UICONTROL XT アクティビティ &#x200B;]</b>
+          <b>[!UICONTROL XT アクティビティ ]</b>
           <p><a href="#xt-activity-fields" class="MCXref xref" >XT アクティビティフィールド</a>に進みます。</p>
         </li>
         <li>
-          <b>[!UICONTROL AP アクティビティ &#x200B;]</b>
+          <b>[!UICONTROL AP アクティビティ ]</b>
           <p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Activities/operation/createActivity_2">AP アクティビティの作成 </a> を参照してください。</p>
         </li>
         <li>
-          <b>[!UICONTROL 応答トークン &#x200B;]</b>
+          <b>[!UICONTROL 応答トークン ]</b>
           <p>フィールドについて詳しくは、Adobe Target API ドキュメントの <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Response-tokens/operation/createResponseToken"> 応答トークンの作成 </a> を参照してください。</p>
         </li>
       </ul>
@@ -771,7 +771,7 @@ Adobe Target コネクタでは、以下を使用します。
       <td role="rowheader">
         <p>[!UICONTROL Method]</p>
       </td>
-   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエストメソッド </a> を参照してください。</p> </td> 
+   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエスト方法</a>を参照してください。</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Headers]</td>
@@ -861,7 +861,7 @@ Adobe Target コネクタでは、以下を使用します。
        </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL フィールド名 &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL フィールド名 ]</td>
       <td>更新するフィールドを選択します。 フィールドが下に表示されます。
           <p>フィールドについて詳しくは、<a href="https://developer.adobe.com/target/administer/admin-api/">Adobe Target API ドキュメント </a> を参照してください。</p>
       </td>
