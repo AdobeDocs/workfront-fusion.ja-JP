@@ -15,9 +15,9 @@ ht-degree: 77%
 
 Adobe Workfront Fusion のシナリオでは、[!DNL Anaplan] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
-シナリオの作成方法については、[ シナリオの作成：記事のインデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
 
-モジュールについて詳しくは、「[ モジュール：記事インデックス ](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
 
 ## アクセス要件
 
@@ -119,7 +119,7 @@ Anaplan コネクタでは、以下を使用します。
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL メール ]</td>
+        <td role="rowheader">[!UICONTROL メール &#x200B;]</td>
         <td>
           <p>この Anaplan アカウントのメールアドレスを入力してください</p>
         </td>
@@ -510,7 +510,7 @@ Anaplan コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL  アクション用にファイルをアップロード ]
+#### [!UICONTROL &#x200B; アクション用にファイルをアップロード &#x200B;]
 
 このアクションモジュールは、Anaplan の既存のファイルを Anaplan 内の追加の場所にアップロードします。
 <table style="table-layout:auto">
@@ -560,7 +560,7 @@ Anaplan コネクタでは、以下を使用します。
        <li> <p><b>[!UICONTROL Line items]</b> </p> <p>取得する [!DNL line] 項目を含むモデルの ID を、選択またはマッピングします。</p> </li> 
        <li> <p><b>[!UICONTROL Model lists]</b> </p> <p>取得するモデルリストを含むワークスペース ID とモデル ID を、選択またはマッピングします。</p> </li> 
        <li> <p><b>[!UICONTROL Model calendar]</b> </p> <p>取得するモデルカレンダーが含まれるワークスペースの ID を、選択またはマッピングします。</p> </li> 
-       <li> <p><b>[!UICONTROL モデルのバージョン ]</b> </p> </li> 
+       <li> <p><b>[!UICONTROL モデルのバージョン &#x200B;]</b> </p> </li> 
        <li> <p>取得するモデルバージョンを含むモデルの ID を選択またはマッピングします。</p> </li> 
        <li> <p><b>[!UICONTROL Users]</b> </p> </li> 
        <li> <p><b>[!UICONTROL Views]</b> </p> <p>モジュールまたはモデルのどちらで表示するかを選択し、取得する表示を含むモジュールまたはモデルの ID を、選択またはマッピングします。</p> </li> 
