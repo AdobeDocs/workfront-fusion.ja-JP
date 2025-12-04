@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion マッピングパネルでは、次の一�
 author: Becky
 feature: Workfront Fusion
 exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
-source-git-commit: 295004ab7536b85124bc366d6832c08365338d08
+source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 49%
+source-wordcount: '318'
+ht-degree: 47%
 
 ---
 
@@ -15,10 +15,12 @@ ht-degree: 49%
 
 ## 変数
 
-実行に関する詳細を識別するために使用できる一般的な変数が 2 つあります。
+これらの一般変数を使用して、実行に関する詳細を識別できます。
 
 * `executionID`：このシナリオ実行の ID
 * `triggerTimestamp`：この実行がトリガーされた時間
+* `scenarioID`：現在開いているシナリオの ID
+* `operationsConsumed`：シナリオのその時点で使用された操作の数。
 
 ## [!UICONTROL GET（オブジェクトまたは配列パス）]
 
@@ -43,7 +45,7 @@ ht-degree: 49%
 
 `if` ステートメントを組み合わせるには、`and` 演算子と `or` 演算子を使用します。
 
-![and 演算子 &#x200B;](assets/and-in-if-statement.png)
+![and 演算子 ](assets/and-in-if-statement.png)
 
 >[!BEGINSHADEBOX]
 
