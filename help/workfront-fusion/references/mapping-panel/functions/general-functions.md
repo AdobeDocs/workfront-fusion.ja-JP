@@ -45,7 +45,7 @@ ht-degree: 47%
 
 `if` ステートメントを組み合わせるには、`and` 演算子と `or` 演算子を使用します。
 
-![and 演算子 ](assets/and-in-if-statement.png)
+![and 演算子 &#x200B;](assets/and-in-if-statement.png)
 
 >[!BEGINSHADEBOX]
 
