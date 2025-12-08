@@ -1,21 +1,21 @@
 ---
 title: Adobe Experience Manager Assets モジュール
-description: Adobe Workfront Fusion のAdobe Experience Manager Assets コネクタを使用すると、アセットの作成、アップロード、更新、フォルダーやアセットのコピーや移動を行うことができます。
+description: Adobe Workfront Fusion の Adobe Experience Manager Assets コネクターを使用すると、アセットの作成、アップロード、更新、およびフォルダーやアセットのコピーや移動を行うことができます。
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
 source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3734'
-ht-degree: 22%
+ht-degree: 100%
 
 ---
 
 # Adobe Experience Manager Assets モジュール
 
-Adobe Workfront Fusion のAdobe Experience Manager Assets コネクタを使用すると、アセットの作成、アップロード、更新、フォルダーやアセットのコピーや移動を行うことができます。
+Adobe Workfront Fusion の Adobe Experience Manager Assets コネクターを使用すると、アセットの作成、アップロード、更新、およびフォルダーやアセットのコピーや移動を行うことができます。
 
-Adobe Experience Manager Assets コネクタの概要ビデオについては、以下を参照してください。
+Adobe Experience Manager Assets コネクターのビデオ紹介について詳しくは、以下を参照してください。
 
 * [Adobe Experience Manager Assets](https://video.tv.adobe.com/v/3427034/){target=_blank}
 
@@ -29,47 +29,47 @@ Adobe Experience Manager Assets コネクタの概要ビデオについては、
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
    <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
-   <p>コネクタベース（従来）：作業の自動化と統合のためのWorkfront Fusion </p>
+   <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
 
 +++
 
 ## 前提条件
 
 * これらのモジュールを使用するには、Adobe Experience Manager Assets アカウントが必要です。
-* Adobe Developer コンソールでサーバー間フローを設定する必要があります。
+* サーバー間のフローを Adobe Developer Console に設定する必要があります。
 
-  Adobe Developer コンソールでサーバー間フローを設定する手順については、[&#x200B; サーバーサイド API のアクセストークンの生成 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=ja#the-server-to-server-flow) を参照してください。
+  サーバー間のフローを Adobe Developer Console に設定する手順について詳しくは、[サーバー側 API のアクセストークンの生成](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow)参照してください。
 * Adobe Experience Manager テクニカルアカウントには、書き込み権限が必要です。
 
-  Adobe Experience Manager テクニカルアカウントに書き込み権限を追加する手順については、Adobe Experience Manager ドキュメントの [&#x200B; サービス資格情報 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) を参照してください。
+  Adobe Experience Manager テクニカルアカウントに書き込み権限を追加する手順について詳しくは、Adobe Experience Manager ドキュメントの[サービス資格情報](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)を参照してください。
 
-## Adobe Experience Manager Assets API の情報
+## Adobe Experience Manager Assets API 情報
 
-Adobe Experience Manager Assets コネクタでは、以下を使用します。
+Adobe Experience Manager Assets コネクターでは、次を使用します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -82,42 +82,42 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
  </tbody> 
  </table>
 
-## Adobe Experience Manager AssetsのWorkfront Fusion への接続 {#connect-adobe-experience-manager-assets-to-workfront-fusion}
+## Adobe Experience Manager Assets の Workfront Fusion への接続 {#connect-adobe-experience-manager-assets-to-workfront-fusion}
 
 Adobe Experience Manager Assets モジュールの接続を作成するには：
 
-1. 「接続」ボックスの横にある「追加」をクリックします。
+1. 接続ボックスの横にある「追加」をクリックします。
 
 2. 作成する接続のタイプを選択します。
 
-   * **AEM Assetsas a Cloud Service**
+   * **AEM Assets as a Cloud Service**
 
-     この設定には、Adobe Admin Consoleからの情報が必要です。
+     この設定には、Adobe Admin Console からの情報が必要です。
 
-   * **AEM Assets Basic （Adobe Managed Services）**
+   * **AEM Assets Basic（Adobe Managed Services）**
 
      この設定には、ユーザー名とパスワードが必要です。
 
 3. 作成する接続のタイプのフィールドに入力します。
 
-   AEM Assets as a Cloud Serviceについては、[AEM Assets as a Cloud Serviceの接続の設定 &#x200B;](#configure-the-connection-for-aem-assets-as-a-cloud-service) を参照してください。
+   AEM Assets as a Cloud Service について詳しくは、[AEM Assets as a Cloud Service の接続の設定](#configure-the-connection-for-aem-assets-as-a-cloud-service)を参照してください。
 
-   AEM Assets Basic （Adobe Managed Services）については、[AEM Assets Basic の接続の設定 &#x200B;](#configure-the-connection-for-aemassets-basic-adobe-managed-services) を参照してください。
+   AEM Assets Basic（Adobe Managed Services）について詳しくは、[AEM Assets Basic の接続の設定](#configure-the-connection-for-aemassets-basic-adobe-managed-services)を参照してください。
 
 4. 「**続行**」をクリックして接続を保存し、モジュールに戻ります。
 
 
-### AEM Assets as a Cloud Serviceの接続の設定
+### AEM Assets as a Cloud Service の接続の設定
 
 >[!NOTE]
 >
->* これらのフィールドの情報は、Adobe Developer Consoleでのサーバー間フローの設定の一環として生成されます。 これらの値は、設定の一環として生成されるサービス資格情報 JSON ファイルに含まれています。
+>* これらのフィールドの情報は、Adobe Developer Console でサーバー間のフローを設定の一環として生成されます。これらの値は、設定の一環として生成されるサービス資格情報 JSON ファイルに含まれています。
 >
->   Adobe Developer Consoleでサーバー間フローを設定する手順については、[&#x200B; サーバーサイド API のアクセストークンの生成 &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=ja#the-server-to-server-flow) を参照してください。
+>   サーバー間のフローを Adobe Developer Console に設定する手順について詳しくは、[サーバー側 API のアクセストークンの生成](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow)参照してください。
 >
 >* Adobe Experience Manager テクニカルアカウントには、書き込み権限が必要です。
 >
->   Adobe Experience Manager テクニカルアカウントに書き込み権限を追加する手順については、Adobe Experience Manager ドキュメントの [&#x200B; サービス資格情報 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) を参照してください。
+>   Adobe Experience Manager テクニカルアカウントに書き込み権限を追加する手順について詳しくは、Adobe Experience Manager ドキュメントの[サービス資格情報](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)を参照してください。
 
 
 <table style="table-layout:auto"> 
@@ -131,8 +131,8 @@ Adobe Experience Manager Assets モジュールの接続を作成するには：
                   </td>
               </tr>
               <tr>
-                  <td role="rowheader">末尾にスラッシュを付けないインスタンス URL</td>
-                  <td>Adobe Experience Manager インスタンスの URL を入力します。 URL の末尾にスラッシュ <code>/</code> を含めないでください。</td>
+                  <td role="rowheader">末尾のスラッシュのないインスタンス URL</td>
+                  <td>Adobe Experience Manager インスタンスの URL を入力します。URL の末尾にスラッシュ <code>/</code> を含めないでください。</td>
               </tr>
               <tr>
                   <td role="rowheader">アカウントの詳細入力オプション</td>
@@ -144,37 +144,37 @@ Adobe Experience Manager Assets モジュールの接続を作成するには：
               </tr>
               <tr>
                   <td role="rowheader">クライアント ID</td>
-                  <td>詳細を手動で入力する場合は、サーバー間セットアップで生成されたクライアント ID を入力します。</td>
+                  <td>詳細を手動で入力する場合は、サーバー間の設定で生成されたクライアント ID を入力します。</td>
               </tr>
               <tr>
                   <td role="rowheader">クライアントシークレット</td>
-                  <td>詳細を手動で入力する場合は、サーバー間セットアップで生成されたクライアント秘密鍵を入力します。</td>
+                  <td>詳細を手動で入力する場合は、サーバー間の設定で生成されたクライアントシークレットを入力します。</td>
               </tr>
               <tr>
                   <td role="rowheader">テクニカルアカウント ID</td>
-                  <td>詳細を手動で入力する場合は、テクニカルアカウントの ID を入力します。 これは、クライアント資格情報 JSON ファイルの「id」フィールドです。</td>
+                  <td>詳細を手動で入力する場合は、テクニカルアカウントの ID を入力します。これは、クライアント資格情報 JSON ファイルの「id」フィールドです。</td>
               </tr>
               <tr>
                   <td role="rowheader">組織 ID</td>
-                  <td class="">詳細を手動で入力する場合は、組織の ID を入力します。 これは、クライアント資格情報 JSON ファイルの「組織」フィールドです。</td>
+                  <td class="">詳細を手動で入力する場合は、組織の ID を入力します。これは、クライアント資格情報 JSON ファイルの「org」フィールドです。</td>
               </tr>
               <tr>
-                  <td role="rowheader">Meta範囲</td>
-                  <td>サーバー間セットアップで生成されたMeta スコープを入力します。</td>
+                  <td role="rowheader">メタスコープ</td>
+                  <td>サーバー間の設定で生成したメタスコープを入力します。</td>
               </tr>
               <tr>
                   <td role="rowheader">秘密鍵</td>
-                  <td>サーバー間セットアップで生成された秘密鍵を入力します。 秘密鍵を抽出するには、「抽出」をクリックしてから、抽出するファイルとファイルのパスワードを入力します。</td>
+                  <td>サーバー間の設定で生成された秘密鍵を入力します。秘密鍵を抽出するには、「抽出」をクリックし、抽出するファイルとそのファイルのパスワードを入力します。</td>
               </tr>
               <tr>
                   <td role="rowheader">認証 URL</td>
-                  <td>このアカウントの認証 URL を入力してください。</td>
+                  <td>このアカウントの認証 URL を入力します。</td>
               </tr>
           </tbody>
       </table>
 
 
-### AEM Assets Basic （Adobe Managed Services）の接続の設定
+### AEM Assets Basic（Adobe Managed Services）の接続の設定
 
 <table style="table-layout:auto"> 
         <col/>
@@ -187,16 +187,16 @@ Adobe Experience Manager Assets モジュールの接続を作成するには：
                 </td>
             </tr>
             <tr>
-                <td role="rowheader">末尾にスラッシュを付けないインスタンス URL</td>
-                <td>Adobe Experience Manager インスタンスの URL を入力します。 URL の末尾にスラッシュ <code>/</code> を含めないでください。</td>
+                <td role="rowheader">末尾のスラッシュのないインスタンス URL</td>
+                <td>Adobe Experience Manager インスタンスの URL を入力します。URL の末尾にスラッシュ <code>/</code> を含めないでください。</td>
             </tr>
             <tr>
                 <td role="rowheader">ユーザー名</td>
-                <td>この接続で使用するAEM Assets アカウントのユーザー名を入力します。</td>
+                <td>この接続で使用する AEM Assets アカウントのユーザー名を入力します。</td>
             </tr>
             <tr>
                 <td role="rowheader">パスワード</td>
-                <td>この接続で使用するAEM Assets アカウントのパスワードを入力します。</td>
+                <td>この接続で使用する AEM Assets アカウントのパスワードを入力します。</td>
             </tr>
         </tbody>
     </table>
@@ -204,20 +204,20 @@ Adobe Experience Manager Assets モジュールの接続を作成するには：
 
 ## Adobe Experience Manager Assets モジュールとそのフィールド
 
-Workfront Fusion でAdobe Experience Manager Assets モジュールを設定する場合、以下に示すフィールドが表示されます。 これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加のAdobe Experience Manager Assets フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
+Adobe Experience Manager Asset モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらと共に、アプリやサービスでのアクセスレベルなどの要因に応じて、追加の Adobe Experience Manager Assets フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[モジュール間の情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![マップ切り替え](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [ファイル操作](#files-operations)
 * [その他](#other)
 * [Assets（オーサー API）](#assets-author-api)
-* [イベント （Author API）](#events-author-api)
-* [メタデータ （Author API）](#metadata-author-api)
-* [インポート （Author API）](#import-author-api)
-* [関係（Author API）](#relations-author-api)
-* [フォルダー（Folders API）](#folders-folders-api)
+* [イベント（オーサー API）](#events-author-api)
+* [メタデータ（オーサー API）](#metadata-author-api)
+* [読み込み（オーサー API）](#import-author-api)
+* [関係（オーサー API）](#relations-author-api)
+* [フォルダー（フォルダー API）](#folders-folders-api)
 
 ### ファイル操作
 
@@ -236,7 +236,7 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">ファイル名</td> 
@@ -248,11 +248,11 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
   </tr> 
   <tr> 
    <td role="rowheader">MIME タイプ</td> 
-   <td>完成したファイルの MIME タイプを入力またはマップします。</td> 
+   <td>完了したファイルの MIME タイプを入力またはマッピングします。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">完全な URI</td> 
-   <td>ファイルの完全な URI を入力またはマップします。</td> 
+   <td>ファイルの完全な URI を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -260,7 +260,7 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
 
 #### 事前署名済みストレージの取得
 
-このアクションモジュールは、直接の資格情報を必要とせずに、AEMからファイルを安全にアップロードまたはダウンロードするための一時的な事前署名済み URL を作成します。
+このアクションモジュールは、直接の資格情報を必要とせずに、AEM からファイルを安全にアップロードまたはダウンロードする一時的な事前署名済み URL を作成します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -268,15 +268,15 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">参照タイプ</td> 
+   <td role="rowheader">検索タイプ</td> 
    <td> <p>アセットをパスで検索するか、ID で検索するかを選択します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">アセット</td> 
-   <td>アセットへのパスを選択します。</td> 
+   <td>アセットにパスを選択します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">UDID</td> 
@@ -295,7 +295,7 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">宛先</td> 
@@ -303,10 +303,10 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
   </tr> 
   <tr> 
    <td role="rowheader">ファイル名</td> 
-   <td> <p>アップロードしたファイルの名前を入力またはマッピング</p> </td> 
+   <td> <p>アップロードしたファイルの名前を入力またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">最大ファイル サイズ</td> 
+   <td role="rowheader">最大ファイルサイズ</td> 
    <td>アップロードしたファイルのサイズをバイト単位で入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -323,14 +323,14 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">宛先</td> 
    <td> <p>アセットをアップロードするフォルダーを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Source ファイル</td> 
+   <td role="rowheader">ソースファイル</td> 
    <td>ソースファイルの名前とデータを入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -340,9 +340,9 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
 
 
 * [フォルダーまたはアセットのコピー](#copy-a-folder-or-asset)
-* [レコードを作成](#create-a-record)
+* [レコードの作成](#create-a-record)
 * [フォルダー、アセットまたはレンディションの削除](#delete-a-folder-asset-or-rendition)
-* [フォルダーリストの取得](#get-a-folder-listing)
+* [フォルダー一覧の取得](#get-a-folder-listing)
 * [カスタム API 呼び出しの実行](#make-a-custom-api-call)
 * [フォルダーまたはアセットの移動](#move-a-folder-or-asset)
 * [レコードの更新](#update-a-record)
@@ -351,7 +351,7 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
 
 #### フォルダーまたはアセットのコピー
 
-このアクションモジュールは、フォルダーまたはアセットをAdobe Experience Manager Assets アカウントの別の場所にコピーします。
+このアクションモジュールでは、Adobe Experience Manager Assets アカウント内の別の場所にフォルダーまたはアセットをコピーします。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -359,38 +359,38 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">レコードタイプ</td> 
    <td> <p>フォルダーとアセットのどちらをコピーするかを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">フォルダー/アセット</td> 
+   <td role="rowheader">フォルダー／アセット</td> 
    <td>コピーするフォルダーまたはアセットを選択するか、マッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">宛先のパス</td> 
+   <td role="rowheader">宛先パス</td> 
    <td>新しいフォルダーまたはアセットの場所へのパスを選択するか、マッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">コピーしたフォルダー/アセットの名前</td> 
-   <td>新しいフォルダーまたはアセットの名前を入力します。Adobe Experience Manager Assetsに表示されるフォルダー名は、元の名前と同じです。 ここで入力した名前は、新しいフォルダーまたはアセットの URL に表示されます。</td> 
+   <td role="rowheader">コピーしたフォルダー／アセットの名前</td> 
+   <td>新しいフォルダーまたはアセットの名前を入力します。Adobe Experience Manager Assets に表示されるフォルダー名は元の名前と同じです。ここで入力した名前は、新しいフォルダーまたはアセットの URL に表示されます。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">子をコピー</td> 
-   <td>フォルダーをコピーする場合、フォルダー内のサブフォルダーまたはアセットをコピーするには、このオプションを有効にします。</td> 
+   <td role="rowheader">子のコピー</td> 
+   <td>フォルダーをコピーする場合、このオプションを有効にしてフォルダー内のサブフォルダーまたはアセットをコピーします。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">上書き</td> 
-   <td>コピー先のフォルダーまたはアセットと同じ名前を持つ出力先のフォルダーまたはアセットを上書きするには、このオプションを有効にします。</td> 
+   <td>コピーするフォルダーまたはアセットと同じ名前を持つ宛先フォルダーまたはアセットを上書きするには、このオプションを有効にします。</td> 
   </tr> 
  </tbody> 
 </table>
 
 
 
-#### レコードを作成
+#### レコードの作成
 
 このアクションモジュールでは、フォルダーまたはアセットのコメントを作成します。
 
@@ -400,7 +400,7 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">オブジェクトタイプ</td> 
@@ -431,7 +431,7 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">レコードタイプ</td> 
@@ -445,7 +445,7 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
  </tbody> 
 </table>
 
-#### フォルダーリストの取得
+#### フォルダー一覧の取得
 
 このアクションモジュールは、既存のフォルダーとその子エンティティ（フォルダーまたはアセット）の表現を取得します。
 
@@ -455,7 +455,7 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">フォルダー</td> 
@@ -466,7 +466,7 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
 
 #### カスタム API 呼び出しの実行
 
-このアクションモジュールは、Adobe Experience Manager Assets API に対してカスタム API 呼び出しを行います。
+このアクションモジュールは、Adobe Experience Manager Assets API に対してカスタム API 呼び出しを実行します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -474,23 +474,23 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>URL</p> </td> 
-   <td> <p>Adobe Experience Managerのベース URL を基準とした相対パスを入力します。</p> </td> 
+   <td> <p>Adobe Experience Manager ベース URL に対する相対パスを入力します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>メソッド</p> </td> 
-   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP リクエストメソッド </a> を参照してください。</p> </td> 
+   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP リクエスト方法</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">ヘッダー</td> 
-   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p> <p>例： <code>{"Content-type":"application/json"}</code></p> <p> Workfront Fusion は、認証ヘッダーを自動的に追加します。</p> </td> 
+   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p> <p>例： <code>{"Content-type":"application/json"}</code></p> <p> Workfront Fusion は認証ヘッダーを自動的に追加します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">クエリ文字列</td> 
-   <td> <p>リクエストクエリ文字列を入力します。各キーと値のペアについて、「<b> 項目を追加 </b>」をクリックし、キーと値を入力します。</p> </td> 
+   <td> <p>リクエストクエリ文字列を入力します。キーと値のペアごとに、「<b>項目を追加</b>」をクリックしてキーと値を入力します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">本文</td> 
@@ -512,27 +512,27 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">レコードタイプ</td> 
    <td> <p>フォルダーを移動するかアセットを移動するかを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">フォルダー/アセット</td> 
+   <td role="rowheader">フォルダー／アセット</td> 
    <td>移動するフォルダーまたはアセットを選択またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">宛先のパス</td> 
+   <td role="rowheader">宛先パス</td> 
    <td>フォルダーまたはアセットの移動先を選択またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">移動したフォルダー/アセットの名前</td> 
-   <td>移動後のフォルダーまたはアセットの新しい名前を入力します。Adobe Experience Manager Assetsに表示されるフォルダー名は、元の名前と同じです。 ここで入力した名前は、移動後のフォルダーまたはアセットの URL に表示されます。</td> 
+   <td role="rowheader">移動したフォルダー／アセットの名前</td> 
+   <td>移動後のフォルダーまたはアセットの新しい名前を入力します。Adobe Experience Manager Assets に表示されるフォルダー名は元の名前と同じです。ここで入力した名前は、移動後のフォルダーまたはアセットの URL に表示されます。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">上書き</td> 
-   <td>宛先の場所にある、移動するフォルダーまたはアセットと同じ名前のフォルダーまたはアセットを上書きする場合は、このオプションを有効にします。</td> 
+   <td>移動先のフォルダーまたはアセットと同じ名前を持つ宛先フォルダーまたはアセットを上書きするには、このオプションを有効にします。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -547,7 +547,7 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">レコードタイプ</td> 
@@ -570,12 +570,12 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
 
 ### Assets（オーサー API）
 
-* [アセットを削除](#delete-asset)
+* [アセットの削除](#delete-asset)
 * [ジョブステータスの取得](#get-job-status)
 
-#### アセットを削除
+#### アセットの削除
 
-このアクションモジュールは、ID によって 1 つのアセットを削除します。
+このアクションモジュールは、そのモジュールの ID で 1 つのアセットを削除します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -583,14 +583,14 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">アセット ID</td> 
    <td> <p>削除するアセットの ID を入力またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">力</td> 
+   <td role="rowheader">強制</td> 
    <td>このオプションを有効にすると、アセットが参照されている場合でも、アセットが強制的に削除されます。</td> 
   </tr> 
  </tbody> 
@@ -606,7 +606,7 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">ジョブ ID</td> 
@@ -615,17 +615,17 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
  </tbody> 
 </table>
 
-### イベント （Author API）
+### イベント（オーサー API）
 
-#### イベントを監視する
+#### イベントの監視
 
-このトリガーモジュールは、AEM Assetsでイベントが発生するとシナリオを開始します。
+このトリガーモジュールは、イベントが AEM Assets で発生したときにシナリオを開始します。
 
-モジュールには、Webhook という 1 つのフィールドが含まれています。 これらのイベントに使用する既存の Webhook を選択するか、新しく作成します。
+モジュールには、Webhook という 1 つのフィールドが含まれています。これらのイベントに使用する既存の Webhook を選択するか、新しい Webhook を作成します。
 
 新しい Webhook を作成するには：
 
-1. Webhook フィールドの横にある「**追加**」をクリックします。
+1. 「Webhook」フィールドの横にある「**追加**」をクリックします。
 1. 次のフィールドに入力します。
 
    <table>
@@ -634,11 +634,11 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
      <tbody>
        <tr>
          <td role="rowheader">Webhook 名</td>
-        <td>この Webhook の名前を入力します。</td>
+        <td>Webhook の名前を入力します。</td>
        </tr>
        <tr>
          <td role="rowheader">接続</td>
-        <td>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</td>
+        <td>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</td>
        </tr>
      </tbody>
    </table>
@@ -646,14 +646,14 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
 1. 「保存」をクリックして Webhook を保存し、モジュールに戻ります。
 
 
-### メタデータ （Author API）
+### メタデータ（オーサー API）
 
 * [アセットメタデータの取得](#get-asset-metadata)
 * [アセットメタデータの更新](#update-asset-metadata)
 
 #### アセットメタデータの取得
 
-このアクションモジュールは、指定されたアセットに関するメタデータを取得します。
+このアクションモジュールは、指定されたアセットのメタデータを取得します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -661,7 +661,7 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">アセット ID</td> 
@@ -680,29 +680,29 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">アセット ID</td> 
    <td> <p>メタデータを更新するアセットの ID を入力またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">アップデート</td> 
-   <td> <p>更新するメタデータ項目ごとに、「<b> 項目を追加 </b>」をクリックし、操作を選択します。 「項目を追加」ボックスのその他のフィールドは、選択した操作によって異なります。</p> </td> 
+   <td role="rowheader">更新</td> 
+   <td> <p>更新するメタデータ項目ごとに、「<b>項目を追加</b>」をクリックして操作を選択します。「項目を追加」ボックスのその他のフィールドは、選択した操作によって異なります。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 
-### インポート （Author API）
+### 読み込み（オーサー API）
 
-* [インポートジョブの結果を取得](#get-import-job-results)
-* [インポートジョブステータスの取得](#get-import-job-status)
+* [読み込みジョブの結果の取得](#get-import-job-results)
+* [読み込みジョブステータスの取得](#get-import-job-status)
 * [URL からのアセットのアップロード](#upload-an-asset-from-a-url)
 
-#### インポートジョブの結果を取得
+#### 読み込みジョブの結果の取得
 
-このアクションモジュールは、指定されたインポートジョブの結果を取得します。
+このアクションモジュールは、指定された読み込みジョブの結果を取得します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -710,18 +710,18 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">インポートジョブ ID</td> 
+   <td role="rowheader">読み込みジョブ ID</td> 
    <td> <p>結果を取得するジョブの ID を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### インポートジョブステータスの取得
+#### 読み込みジョブステータスの取得
 
-このアクションモジュールは、指定されたインポートジョブのステータスを取得します。
+このアクションモジュールは、指定された読み込みジョブのステータスを取得します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -729,10 +729,10 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">インポートジョブ ID</td> 
+   <td role="rowheader">読み込みジョブ ID</td> 
    <td> <p>ステータスを取得するジョブの ID を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
@@ -748,7 +748,7 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">タイトル</td> 
@@ -760,27 +760,27 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
   </tr> 
   <tr> 
    <td role="rowheader">件名</td> 
-   <td> <p>アセットの件名を入力またはマッピングします。</p> </td> 
+   <td> <p>アセットのサブジェクトを入力またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">作成者</td> 
    <td> <p>アセットの作成者を入力またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">有効期限</td> 
-   <td> <p>アセットの有効期限を入力またはマッピングします。</p><p>サポートされる日付と時刻の形式の一覧については、「<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref"> 型強制 </a>」を参照してください。</p> </td> 
+   <td role="rowheader">有効期限日</td> 
+   <td> <p>アセットの有効期限日を入力またはマッピングします。</p><p>サポートされる日付と時刻の形式の一覧について詳しくは、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">型強制</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">カスタムメタデータ</td> 
-   <td> <p>アセットに追加するカスタムメタデータの項目ごとに、「<b> 項目を追加 </b>」をクリックし、メタデータの名前と値を入力します。</p> </td> 
+   <td> <p>アセットに追加するカスタムメタデータの各項目ごとに、「<b>項目を追加</b>」をクリックしてメタデータの名前と値を入力します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">フォルダーパスまたは ID</td> 
-   <td> <p>宛先フォルダーをパスと ID のどちらで指定するかを選択し、パスを選択するか、ID を入力します。</p> </td> 
+   <td> <p>宛先フォルダーをパスと ID のどちらで指定するかを選択してから、パスを選択するか、ID を入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">インポートするファイル</td> 
-   <td> <p>インポートするファイルごとに、[<b> アイテムの追加 &lt;/&gt;] をクリックし、ファイルの詳細を入力します。<code>Title</code> </p> </td> 
+   <td role="rowheader">読み込むファイル</td> 
+   <td> <p>読み込むファイルごとに、「<b>項目の追加 &lt;/&gt;」をクリックし、ファイルの詳細を入力します。<code>Title</code> </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"></td> 
@@ -789,10 +789,10 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
  </tbody> 
 </table>
 
-### 関係（Author API）
+### 関係（オーサー API）
 
 * [アセット関係の作成](#create-asset-relations)
-* [アセット関係を削除](#create-asset-relations)
+* [アセット関係の削除](#create-asset-relations)
 * [アセット関係タイプの取得](#get-asset-relation-types)
 * [アセット関係の取得](#get-asset-relations)
 
@@ -806,7 +806,7 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">アセット ID</td> 
@@ -814,12 +814,12 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
   </tr> 
   <tr> 
    <td role="rowheader">関連アセット</td> 
-   <td> <p>選択したアセットに関連付けるアセットごとに、「<b> 項目を追加 </b> をクリックして、アセットの ID と関係タイプを入力またはマッピングします。</p> </td> 
+   <td> <p>選択したアセットに関連付けるアセットごとに、「<b>項目を追加</b>」をクリックして、アセットの ID と関係タイプを入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### アセット関係を削除
+#### アセット関係の削除
 
 このアクションモジュールは、アセットのアセット関係を削除します。
 
@@ -829,7 +829,7 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">アセット ID</td> 
@@ -837,15 +837,15 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
   </tr> 
   <tr> 
    <td role="rowheader">関連アセット</td> 
-   <td> <p>削除するリレーションのタイプを入力またはマップします。</p> </td> 
+   <td> <p>削除する関係のタイプを入力またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">削除する関連アセットの特定の ID を指定</td> 
-   <td> <p>1 つの特定の関係を削除する場合は、このチェックボックスをオンにします。 このボックスがチェックされていない場合、選択したタイプのすべてのリレーションが削除されます。</p> </td> 
+   <td role="rowheader">削除する関連アセットの特定の ID を指定します。</td> 
+   <td> <p>1 つの特定の関係を削除する場合は、このチェックボックスをオンにします。このボックスがチェックされていない場合、選択したタイプのすべての関係が削除されます。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">関連アセット ID</td> 
-   <td> <p>特定のリレーションを削除する場合は、削除するリレーションの ID を入力またはマップします。</p> </td> 
+   <td> <p>特定の関係を削除する場合は、削除する関係の ID を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -853,7 +853,7 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
 
 #### アセット関係タイプの取得
 
-このモジュールは、指定されたアセットに存在するアセット関係タイプのリストを表示します。
+このモジュールは、指定されたアセットに存在するアセット関係タイプをリストします。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -861,7 +861,7 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">アセット ID</td> 
@@ -880,7 +880,7 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">アセット ID</td> 
@@ -888,14 +888,14 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
   </tr> 
   <tr> 
    <td role="rowheader">関係タイプ</td> 
-   <td> <p>リレーションをリストするリレーションの種類をカンマで区切ったリストを入力またはマップします。</p> </td> 
+   <td> <p>関係をリストする関係タイプのカンマで区切ったリストを入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 
 
-### フォルダー（Folders API）
+### フォルダー（フォルダー API）
 
 * [フォルダーの作成](#create-folders)
 * [ID によるフォルダーの削除](#delete-a-folder-by-id)
@@ -906,7 +906,7 @@ Workfront Fusion でAdobe Experience Manager Assets モジュールを設定す�
 
 #### フォルダーの作成
 
-Adobe Experience Manager Assetsに新しいフォルダーを作成します。
+このアクションモジュールは、Adobe Experience Manager Assets に新規フォルダーを作成します。
 
 
 
@@ -916,13 +916,13 @@ Adobe Experience Manager Assetsに新しいフォルダーを作成します。
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">作成するフォルダー</td> 
-   <td> <p>作成するフォルダーごとに、「<b> 項目を追加 </b>」をクリックし、次の情報を入力します。</p>
+   <td> <p>作成するフォルダーごとに、「<b>項目を追加</b>」をクリックして次の情報を入力します。</p>
    <ul>
-   <li><b>新しいフォルダーの場所</b><p>新しいフォルダーを作成する場所のパスを選択します。</p></li>
+   <li><b>新規フォルダーの場所</b><p>新規フォルダーを作成する場所へのパスを選択します。</p></li>
        <li> <b>名前</b> <p>フォルダーの名前を入力します。この名前はファイルパスに含まれるので、スペースや他の文字を含めることはできません。 </p> </li> 
        <li> <b>タイトル</b> <p>名前の代わりに表示できるフォルダーのタイトルを入力します。</p> </li> 
    </ul> </td> 
@@ -932,7 +932,7 @@ Adobe Experience Manager Assetsに新しいフォルダーを作成します。
 
 #### ID によるフォルダーの削除
 
-指定された ID を持つAdobe Experience Manager Assets フォルダーが削除されます。
+このアクションモジュールでは、指定された ID を持つ Adobe Experience Manager Assets フォルダーが削除されます。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -940,7 +940,7 @@ Adobe Experience Manager Assetsに新しいフォルダーを作成します。
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">フォルダー ID</td> 
@@ -951,7 +951,7 @@ Adobe Experience Manager Assetsに新しいフォルダーを作成します。
    <td> フォルダーとそのすべてのサブフォルダーを削除するには、このオプションを有効にします。</td>
   </tr> 
  <tr> 
-   <td role="rowheader">力</td> 
+   <td role="rowheader">強制</td> 
    <td> このオプションを有効にすると、フォルダーが参照されている場合でも、フォルダーが強制的に削除されます。</td>
   </tr> 
  </tbody> 
@@ -959,7 +959,7 @@ Adobe Experience Manager Assetsに新しいフォルダーを作成します。
 
 #### パスによるフォルダーの削除
 
-指定されたパスにあるAdobe Experience Manager Assets フォルダーを削除します。
+このアクションモジュールでは、指定されたパスにある Adobe Experience Manager Assets フォルダーが削除されます。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -967,18 +967,18 @@ Adobe Experience Manager Assetsに新しいフォルダーを作成します。
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">フォルダーパス</td> 
-   <td>削除するフォルダーごとに「<b> 項目を追加 </b>」をクリックし、フォルダーのパスを選択します。</td>
+   <td>削除するフォルダーごとに、「<b>項目を追加</b>」をクリックしてフォルダーのパスを選択します。</td>
   </tr> 
  <tr> 
    <td role="rowheader">サブフォルダーの削除</td> 
    <td> フォルダーとそのすべてのサブフォルダーを削除するには、このオプションを有効にします。</td>
   </tr> 
  <tr> 
-   <td role="rowheader">力</td> 
+   <td role="rowheader">強制</td> 
    <td> このオプションを有効にすると、アセットが参照されている場合でも、アセットが強制的に削除されます。</td>
   </tr> 
  </tbody> 
@@ -986,7 +986,7 @@ Adobe Experience Manager Assetsに新しいフォルダーを作成します。
 
 #### フォルダーのジョブ結果の取得
 
-このモジュールは、Adobe Experience Manager Assets folder API によって作成された非同期ジョブの結果を取得します。
+このモジュールは、Adobe Experience Manager Assets フォルダー API によって作成された非同期ジョブの結果を取得します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -994,7 +994,7 @@ Adobe Experience Manager Assetsに新しいフォルダーを作成します。
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">ジョブ ID</td> 
@@ -1005,7 +1005,7 @@ Adobe Experience Manager Assetsに新しいフォルダーを作成します。
 
 #### フォルダーのジョブステータスの取得
 
-このモジュールは、Adobe Experience Manager Assets folder API によって作成された非同期ジョブのステータスを取得します。
+このモジュールは、Adobe Experience Manager Assets フォルダー API によって作成された非同期ジョブのステータスを取得します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1013,7 +1013,7 @@ Adobe Experience Manager Assetsに新しいフォルダーを作成します。
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">ジョブ ID</td> 
@@ -1025,7 +1025,7 @@ Adobe Experience Manager Assetsに新しいフォルダーを作成します。
 
 #### フォルダーのリスト
 
-このモジュールは、指定したフォルダーのサブフォルダーを一覧表示します。
+このモジュールでは、指定されたフォルダーのサブフォルダーをリストします。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1033,11 +1033,11 @@ Adobe Experience Manager Assetsに新しいフォルダーを作成します。
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Adobe Experience Manager Assets アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager AssetsをWorkfront Fusion に接続 </a> を参照してください。</p> </td> 
+   <td> <p>Adobe Experience Manager Assets アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Adobe Experience Manager Assets を Workfront Fusion に接続</a>を参照してください。</p> </td> 
    </tr> 
    <tr> 
    <td role="rowheader">フォルダーパスまたは ID</td> 
-   <td> <p>宛先フォルダーをパスと ID のどちらで指定するかを選択し、パスを選択するか、ID を入力します。</p> </td> 
+   <td> <p>宛先フォルダーをパスと ID のどちらで指定するかを選択してから、パスを選択するか、ID を入力します。</p> </td> 
   </tr> 
  </tbody> 
 </table>

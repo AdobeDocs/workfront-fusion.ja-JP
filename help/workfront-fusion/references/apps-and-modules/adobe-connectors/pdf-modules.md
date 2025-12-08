@@ -6,25 +6,25 @@ draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e6fbbc20-4315-4668-9e11-af7cfa82ae66
 source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4151'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # [!DNL Adobe PDF Services]
 
-Adobe Workfront Fusion [!DNL Adobe PDF Services] を使用すると、PDF ファイルからデータを抽出したり、指定したデータから新しいPDF ファイルを生成したりできます。 さらに、様々なファイルタイプを PDF に変換したり、PDF を他のファイルタイプに変換したりできます。PDF サービスでは、PDF ファイルの組み合わせ、圧縮、メタデータの読み取りを行うことや、ファイルのパスワード保護を制御することもできます。
+Adobe Workfront Fusion [!DNL Adobe PDF Services] を使用すると、PDF ファイルからデータを抽出したり、指定したデータから新しい PDF ファイルを生成したりできます。さらに、様々なファイルタイプを PDF に変換したり、PDF を他のファイルタイプに変換したりできます。PDF サービスでは、PDF ファイルの組み合わせ、圧縮、メタデータの読み取りを行うことや、ファイルのパスワード保護を制御することもできます。
 
-シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成手順について詳しくは、[シナリオの作成：記事のインデックス](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
 
-モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、[モジュール：記事インデックス](/help/workfront-fusion/references/modules/modules-toc.md)の記事を参照してください。
 
 PDF サービスに使用される API については、[Adobe Document Generation API](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html) を参照してください。
 
 ## [!DNL Adobe PDF Services] を使用する際のセキュリティに関する考慮事項
 
-[!DNL Adobe PDF Services] はファイルの読み取り、変換、変更を行うことができますが、[!DNL Adobe] もWorkfront Fusion もファイルやデータを保存しません。 つまり、次のようになります。
+[!DNL Adobe PDF Services] はファイルの読み取り、変換、変更はできますが、[!DNL Adobe] も Workfront Fusion もファイルやデータを保存しません。つまり、次のようになります。
 
 * ユーザーは、ファイルのセキュリティを含め、ファイルの制御を維持する
 * PDF サービスを使用するのに[!UICONTROL アドビ]ストレージやクラウドストレージアカウントは必要ありません。
@@ -39,43 +39,43 @@ PDF サービスに使用される API については、[Adobe Document Generat
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
    <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
-   <p>コネクタベース（従来）：作業の自動化と統合のためのWorkfront Fusion </p>
+   <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
 
 +++
 
 ## 前提条件
 
-OAuth サーバー間接続を作成するには、Adobe デベロッパーコンソールでAdobe PDF サービス API を追加する必要があります。 API を追加する場合は、OAuth サーバー間オプションを選択します。
+OAuth サーバー間接続を作成するには、Adobe Developers Console に Adobe PDF サービス API を追加する必要があります。API を追加する場合は、OAuth サーバー間オプションを選択します。
 
-手順については、[OAuth ユーザー認証資格情報を使用してプロジェクトに API を追加する &#x200B;](https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication) Adobe開発者向けドキュメントのを参照してください。
+手順について詳しくは、アドビの開発者向けドキュメントで [OAuth ユーザー認証資格証明を使用したプロジェクトへの API の追加](https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication)を参照してください。
 
-## Adobe PDF サービス API に関する情報
+## Adobe PDF サービス API 情報
 
-Adobe PDF サービスコネクタは、以下を使用します。
+Adobe PDF サービスコネクターは、次を使用します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -171,11 +171,11 @@ Adobe PDF サービスコネクタは、以下を使用します。
 
 ## [!DNL Adobe PDF Services] モジュールとそのフィールド
 
-Workfront Fusion で [!DNL PDF Services] を設定する場合は、以下に示すフィールドが表示されます。 これらと共に、アプリやサービスのアクセスレベルなどの要因に応じて、追加のフィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL PDF Services] を設定すると、Workfront Fusion には以下のフィールドが表示されます。これらと共に、アプリやサービスのアクセスレベルなどの要因に応じて、追加のフィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![マップ切り替え](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [[!UICONTROL PDF ファイルの結合]](#combine-pdf-files)
 * [[!UICONTROL PDF ファイルの圧縮]](#compress-pdf-files)
@@ -468,9 +468,9 @@ Workfront Fusion で [!DNL PDF Services] を設定する場合は、以下に示
 
 ### [!UICONTROL PDF を画像に変換]
 
-このツールは、PDFを PNG 形式またはJPEG形式の画像に変換し、リストとして出力するか、ZIP に組み合わせます。
+このツールは、PDF を PNG または JPEG 形式の画像に変換し、リストとして出力するか ZIP に結合します。
 
-ZIP 形式で出力する場合、PDFは 1 ページにつき 1 つの画像に変換され、各画像はページ番号で終わります。 その後、画像ファイルは ZIP ファイルに結合されます。
+ZIP として出力されると、PDF は 1 ページにつき 1 つの画像に変換され、各画像の末尾がページ番号が付けられます。その後、画像ファイルは ZIP ファイルに結合されます。
 
 例えば、8 ページの「TestFile」という名前のファイルでは、「TestFile_1」から「TestFile_8」までの 8 つの画像が生成されます。このモジュールの出力は、8 つの画像を含む ZIP ファイルです。
 
@@ -497,7 +497,7 @@ ZIP 形式で出力する場合、PDFは 1 ページにつき 1 つの画像に�
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 出力タイプ &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL Output type]</td> 
    <td> <p>ファイルをファイルのリストとして出力するか、ZIP ファイルとして出力するかを選択します。</td> 
   </tr> 
   <tr> 
@@ -545,7 +545,7 @@ ZIP 形式で出力する場合、PDFは 1 ページにつき 1 つの画像に�
 
 [!UICONTROL [!DNL Adobe PDF Services]ドキュメントの生成]機能について詳しくは、[!DNL Adobe Document Services] ドキュメントの[ドキュメント生成の概要](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html)を参照してください。
 
-* [&#x200B; [!DNL Microsoft Word]  テンプレートで[!UICONTROL ドキュメントの生成]モジュールの使用](#use-the-generate-document-module-with-a-microsoft-word-template)
+* [ [!DNL Microsoft Word]  テンプレートで[!UICONTROL ドキュメントの生成]モジュールの使用](#use-the-generate-document-module-with-a-microsoft-word-template)
 * [JSON で[!UICONTROL ドキュメントの生成]モジュールの使用](#use-the-generate-document-module-with-json)
 
 #### [!DNL Microsoft Word] テンプレートで[!UICONTROL ドキュメントの生成]モジュールの使用
@@ -553,9 +553,9 @@ ZIP 形式で出力する場合、PDFは 1 ページにつき 1 つの画像に�
 
 >[!NOTE]
 >
->Microsoft Word テンプレートについては、[Microsoft Word テンプレートモジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md) を参照してください。
+>Microsoft Word テンプレートのディスカッションについて詳しくは、[Microsoft Word テンプレートモジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md)を参照してください。
 >
->PDF Services Generate Document Module でMicrosoft Word テンプレートを使用する場合、Microsoft Word テンプレートモジュールを使用する必要はありません。
+>PDF Services Generate ドキュメントモジュールで Microsoft Word テンプレートを使用する場合、Microsoft Word テンプレートモジュールを使用する必要はありません。
 
 
 [!UICONTROL Microsoft Word] テンプレートで[!UICONTROL ドキュメントの生成]モジュールを使用するには、まずテンプレートを作成する必要があります。手順については、[!DNL Microsoft Office] ドキュメントで「テンプレートの作成」を検索してください。
@@ -572,7 +572,7 @@ ZIP 形式で出力する場合、PDFは 1 ページにつき 1 つの画像に�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source File]</td> 
-   <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> <p>このソースファイルは、モジュールが新しいPDFを生成するために使用する [!DNL Microsoft Word] テンプレートです。</p> <p>Workfront Fusion で使用する [!DNL Microsoft Word] テンプレート用に、Workfrontでプロジェクトを作成することをお勧めします。 その後、Workfront/[!UICONTROL ドキュメントをダウンロード &#x200B;] モジュールを使用して、適切なテンプレートをシナリオに取り込むことができます。</p> </td> 
+   <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> <p>このソースファイルは、モジュールが新しい PDF の生成に使用する [!DNL Microsoft Word] テンプレートです。</p> <p>Workfront Fusion で使用する [!DNL Microsoft Word] テンプレート用に Workfront にプロジェクトを作成することをお勧めします。その後、Workfront／[!UICONTROL Download document] モジュールを使用して、適切なテンプレートをシナリオに取り込みます。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output Format]</td> 
@@ -648,7 +648,7 @@ JSON で[!UICONTROL ドキュメントの生成]モジュールを使用する�
 
 ## カスタム API 呼び出しの実行
 
-これは、PDF サービス API へのカスタム HTTP リクエストをモジュール化します。
+このアクションモジュールは、PDF サービス API へのカスタム HTTP リクエストです。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -664,7 +664,7 @@ JSON で[!UICONTROL ドキュメントの生成]モジュールを使用する�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエストメソッド </a> を参照してください。</p> </td> 
+   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエスト方法</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -676,7 +676,7 @@ JSON で[!UICONTROL ドキュメントの生成]モジュールを使用する�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Fields]</td> 
-   <td> <p>API 呼び出しに追加する各フィールドについて、「<b> 項目を追加 </b> をクリックし、フィールドのキーとオプション値を入力します。</p> <p>メモ：  <p><code>if</code> などの条件文を JSON で使用する場合は、条件文を引用符で囲みます。</p> 
+   <td> <p>API 呼び出しに追加するフィールドごとに、「<b>項目を追加</b>」をクリックして、フィールドのキーとオプション値を入力します。</p> <p>メモ：  <p><code>if</code> などの条件文を JSON で使用する場合は、条件文を引用符で囲みます。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -705,7 +705,7 @@ JSON で[!UICONTROL ドキュメントの生成]モジュールを使用する�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Language]</td> 
-   <td>このドキュメントの言語を選択します。<p>言語オプションについては、この記事の <a href="#convert-document-to-pdf-file" class="MCXref xref" > ドキュメントをPDF ファイルに変換 </a> を参照してください。 </td> 
+   <td>このドキュメントの言語を選択します。<p>言語オプションについて詳しくは、この記事の<a href="#convert-document-to-pdf-file" class="MCXref xref" >ドキュメントを PDF ファイルに変換</a>を参照してください。 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL OCR type]</td> 
@@ -785,7 +785,7 @@ JSON で[!UICONTROL ドキュメントの生成]モジュールを使用する�
    <td> <p>文書の見出しを移動するには、このオプションを有効にします。</p> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL レポートの生成 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL Generate Report]</td> 
    <td> <p>PDF のアクセシビリティの問題とその場所を記載したレポートを生成し、これらの問題の修正方法に関する提案を出すには、このオプションを有効にします。</p> </td> 
   </tr> 
  </tbody> 
@@ -818,7 +818,7 @@ JSON で[!UICONTROL ドキュメントの生成]モジュールを使用する�
  </tbody> 
 </table>
 
-### [!UICONTROL PDF ファイルの保護 &#x200B;]
+### [!UICONTROL PDF ファイルの保護]
 
 このツールは、ユーザーまたは所有者のパスワードを使用して PDF ドキュメントを保護します。また、PDF ドキュメントにおける印刷、編集、コピーなど、特定の機能に対する制限も設定します。暗号化するコンテンツのタイプと暗号化アルゴリズムを選択します。
 
@@ -840,8 +840,8 @@ JSON で[!UICONTROL ドキュメントの生成]モジュールを使用する�
    <td role="rowheader">[!UICONTROL Password Protection Type]</td> 
    <td> <p>パスワードを使用して入力 PDF ドキュメントを暗号化するには、このオプションを有効にします。このオプションを有効にする場合、次のいずれかまたは両方の値を指定して入力する必要があります。 </p> 
     <ul> 
-     <li> <p>[!UICONTROL ユーザーパスワード &#x200B;]</p> </li> 
-     <li> <p>[!UICONTROL 所有者パスワード &#x200B;] </p> </li> 
+     <li> <p>[!UICONTROL User Password]</p> </li> 
+     <li> <p>[!UICONTROL Owner Password] </p> </li> 
     </ul> <p>各パスワードは最大 128 文字までです。</p> </td> 
   </tr> 
   <tr> 
@@ -863,7 +863,7 @@ JSON で[!UICONTROL ドキュメントの生成]モジュールを使用する�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Permissions]</td> 
-   <td> <p>印刷、編集、コンテンツのコピーを許可する権限を選択します。</p> <p>権限設定は、[!UICONTROL パスワード保護の種類 &#x200B;] フィールドに [!UICONTROL 所有者パスワード &#x200B;] が設定されている場合にのみ使用されます。</p> </td> 
+   <td> <p>印刷、編集、コンテンツのコピーを許可する権限を選択します。</p> <p>権限設定は、「[!UICONTROL Password Protection Type]」フィールドで [!UICONTROL Owner Password] が設定されている場合にのみ使用されます。</p> </td> 
   </tr> 
  </tbody> 
 </table>

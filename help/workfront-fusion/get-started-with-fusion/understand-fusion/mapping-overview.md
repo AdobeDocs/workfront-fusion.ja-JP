@@ -5,21 +5,21 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 9208ce20-0757-427a-9669-ce4274d05522
 source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
-workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 13%
+workflow-type: ht
+source-wordcount: '435'
+ht-degree: 100%
 
 ---
 
 # マッピングの概要
 
-マッピングとは、モジュールの出力を別のモジュールの入力フィールドに割り当てるプロセスです。
+マッピングとは、あるモジュールの出力を別のモジュールの入力フィールドに割り当てるプロセスです。
 
 モジュールの操作により、その出力として 0 個、1 個または複数のバンドルが生成されます。バンドルは、1 つ以上の項目で構成されます。
 
 これらの項目は、後のモジュールのフィールドにマッピングできます。
 
-シナリオで前のモジュールから出力された値を挿入できるフィールドをクリックすると、マッピングパネルが表示されます。 ここでは、マッピングする項目を選択できます。 マッピングには、次のうち 1 つ以上を含めることができます。
+シナリオで前のモジュールから出力された値を挿入するフィールドをクリックすると、マッピングパネルが表示されます。ここでは、マッピングする項目を選択できます。マッピングには、次のうち 1 つ以上を含めることができます。
 
 * 単一の項目
 * 複数の項目
@@ -30,69 +30,69 @@ ht-degree: 13%
 
 **例**:
 
-単一項目
+単一の項目
 
-![&#x200B; 単一項目をマッピング &#x200B;](assets/map-single.png)
+![単一の項目のマッピング](assets/map-single.png)
 
 テキストを含む複数の項目
 
-![&#x200B; 複数の項目をマッピング &#x200B;](assets/map-multiple-with-text.png)
+![複数の項目のマッピング](assets/map-multiple-with-text.png)
 
-複数の項目とテキストを持つ関数
+複数の項目とテキストを含む関数
 
-![&#x200B; テキストを使用して数式をマッピング &#x200B;](assets/map-formula-with-text.png)
+![テキストを含む数式のマッピング](assets/map-formula-with-text.png)
 
 
 >[!ENDSHADEBOX]
 
 
-マッピングの手順については、[&#x200B; データをマッピング：記事インデックス &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md) の記事を参照してください。
+マッピングの手順について詳しくは、[データのマッピング：記事インデックス](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)の記事を参照してください。
 
 >[!NOTE]
 >
->[!UICONTROL Iterator] と [!UICONTROL Aggregator] の間でラップされたモジュールからの出力は、[!UICONTROL Aggregator] モジュールを超えてアクセスできません。
+>[!UICONTROL イテレータ]および[!UICONTROL アグリゲータ]間でラップされたモジュールの出力は、[!UICONTROL アグリゲータ]モジュールから先にはアクセスできません。
 
 ## マッピングパネル
 
 データをマッピングできるフィールドをクリックすると、マッピングパネルが開きます。
 
-最初のタブ ![&#x200B; 他のモジュールからマッピング &#x200B;](assets/toolbar-icon-functions-you-map-from-other-modules.png) には、他のモジュールからマッピングできる項目が表示されます。
+最初のタブの![他のモジュールからのマッピング](assets/toolbar-icon-functions-you-map-from-other-modules.png)は、他のモジュールからマッピングできる項目を表示します。
 
-その他のタブには、数式の作成に使用できる関数、演算子、およびキーワードが含まれます。 これらは、処理するデータのタイプに基づいて異なるタブに並べ替えられます。
+その他のタブには、数式の作成に使用できる関数、演算子およびキーワードが含まれます。これらは、処理するデータのタイプに基づいて異なるタブに並べ替えられます。
 
-![&#x200B; マッピングパネル &#x200B;](assets/mapping-panel-blank.png)
+![マッピングパネル](assets/mapping-panel-blank.png)
 
 
-関数タブについて詳しくは、[&#x200B; 関数の概要 &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md) を参照してください。
+関数タブについて詳しくは、[関数の概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)を参照してください。
 
-関数を使用した項目のマッピングについて詳しくは、[&#x200B; 関数を使用した項目のマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md) を参照してください。
+関数を使った項目のマッピングについて詳しくは、[関数を使用した項目のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)を参照してください。
 
 ## コレクション
 
-項目には、様々なタイプの複数の値を含めることができます。 コレクションタイプの項目です。
+項目には、様々なタイプの複数の値を含めることができます。これらはコレクションタイプの項目です。
 
-コレクションタイプのバンドルは、モジュール出力のバンドルラベルの横にの `(Collection)` 表示されます。
+コレクションタイプのバンドルは、モジュール出力のバンドルラベルの横に `(Collection)` を表示します。
 
-![&#x200B; コレクション &#x200B;](assets/collection.png)
+![コレクション](assets/collection.png)
 
-ほとんどの場合、コレクション全体を表す項目をマッピングする代わりに、コレクションの要素をマッピングします。
+ほとんどの場合、コレクション全体を表す項目ではなく、コレクションの要素をマッピングします。
 
 マッピングパネルでコレクションの要素を見つけるには、コレクションの横にある矢印をクリックします。
 
-![&#x200B; コレクションドロップダウン &#x200B;](assets/collection-dropdown.png)
+![コレクションドロップダウン](assets/collection-dropdown.png)
 
-コレクションの詳細については、「[&#x200B; アイテム データ タイプ &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)」を参照してください。
+配列について詳しくは、[項目データタイプ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)を参照してください。
 
-コレクションのマッピング手順については、「あるモジュールから別のモジュールへの情報のマッピング [&#128279;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md#map-an-item) の  項目のマッピング」を参照してください。
+コレクションのマッピング手順について詳しくは、モジュール間での情報のマッピングの記事の[項目のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md#map-an-item)を参照してください。
 
 ## 配列
 
-項目には、同じタイプの複数の値を含めることができます。 これらは配列型の項目です。
+項目には、同じタイプの複数の値を含めることができます。これらは配列タイプの項目です。
 
-モジュール出力のバンドルラベルの横に、配列タイプのバンドルが `(Array)` と表示されます。
+配列タイプのバンドルは、モジュール出力のバンドルラベルの横に `(Array)` を表示します。
 
-マッピングパネルでは、配列は正方形のブレスレットで表示されます。 配列タイプの項目は、項目のラベルの最後にある角括弧で識別できます。マッピングパネルで特定の配列要素を見つけるには、配列の横にある矢印をクリックします。
+マッピングパネルでは、配列は角括弧で表示されます。配列タイプの項目は、項目のラベルの最後にある角括弧で識別できます。マッピングパネルで特定の配列要素を見つけるには、配列の横にある矢印をクリックします。
 
-![&#x200B; 配列 &#x200B;](assets/array.png)
+![配列](assets/array.png)
 
-配列および配列要素のマッピングについて詳しくは、[&#x200B; 配列および配列要素のマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md) を参照してください。
+配列および配列要素のマッピングについて詳しくは、[配列および配列要素のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)を参照してください。
