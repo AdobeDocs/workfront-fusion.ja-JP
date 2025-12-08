@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Planning] modules を使用すると、 [!D
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: 30ddefa8519e6f2052308482137d0fa018676902
 workflow-type: tm+mt
-source-wordcount: '1582'
-ht-degree: 56%
+source-wordcount: '1583'
+ht-degree: 66%
 
 ---
 
@@ -25,24 +25,26 @@ ht-degree: 56%
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
-   </td> 
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   </td>
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
-+++##前提条件
++++
+
+s##前提条件
 
 Workfront Planning にアクセスするには、次のものが必要です。
 
@@ -120,12 +122,12 @@ Workfront Fusion モジュール内から [!DNL Workfront Planning] アカウン
 
 ## [!DNL Adobe Workfront Planning] モジュールとそのフィールド
 
-Workfront Fusion でWorkfront モジュールを設定する場合、以下に示すフィールドが表示されます。 これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加のWorkfront フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
+Workfront モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらと共に、アプリやサービスのアクセスレベルなどの要因に応じて、追加の Workfront フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![マップ切り替え](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [トリガー](#triggers)
 * [アクション](#actions)
@@ -168,7 +170,7 @@ Workfront Fusion でWorkfront モジュールを設定する場合、以下に�
     </tr>
      <tr data-mc-conditions=""> 
       <td> <p>[!UICONTROL Events filters]</p> </td> 
-      <td> <p>選択した条件を満たすレコードのみを監視するフィルターを設定できます。</p> <p>各フィルターに対して、フィルターを評価するフィールド、演算子、およびフィルターに許可する値を入力します。AND ルールを追加すると、複数のフィルターを使用できます。</p> <p>メモ：既存のWorkfront Webhook ではフィルターを編集できません。 Workfront イベント購読用に異なるフィルターを設定するには、現在の Webhook を削除して、新しい Webhook を作成します。</p> <p>イベントフィルターについて詳しくは、Workfront モジュール記事の <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Workfrontのイベント購読フィルター &gt; [!UICONTROL Watch Events] モジュール </a> を参照してください。</p> </td> 
+      <td> <p>選択した条件を満たすレコードのみを監視するフィルターを設定できます。</p> <p>各フィルターに対して、フィルターを評価するフィールド、演算子、およびフィルターに許可する値を入力します。AND ルールを追加すると、複数のフィルターを使用できます。</p> <p>メモ：既存のWorkfront Webhook ではフィルターを編集できません。 Workfront イベントのサブスクリプションに別のフィルターを設定するには、現在の Webhook を削除し、新しい Webhook を作成します。</p> <p>イベントフィルターについて詳しくは、Workfront モジュール記事の <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Workfrontのイベント購読フィルター &gt; [!UICONTROL Watch Events] モジュール </a> を参照してください。</p> </td> 
      </tr> 
     <tr>
       <td role="rowheader">[!UICONTROL Objects to watch]</td>
@@ -237,14 +239,14 @@ Workfront Fusion でWorkfront モジュールを設定する場合、以下に�
       <td role="rowheader">
         <p>[!UICONTROL Method]</p>
       </td>
-   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエストメソッド </a> を参照してください。</p> </td> 
+   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエスト方法</a>を参照してください。</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Headers]</td>
       <td>
         <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p>
         <p>例： <code>{"Content-type":"application/json"}</code></p>
-        <p>Workfront Fusion は、認証ヘッダーを自動的に追加します。</p>
+        <p>Workfront Fusion は認証ヘッダーを自動的に追加します。</p>
       </td>
     </tr>
     <tr>
@@ -297,7 +299,7 @@ Workfront Fusion でWorkfront モジュールを設定する場合、以下に�
       </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL フィルターの 条件 &#x200B;]</p>
+        <p>[！フィルターの UICONTROL 条件 ]</p>
       </td>
       <td>フィルターの条件の選択：<ul><li><b>AND</b><p>モジュールは、選択したフィールド値の <b> すべて </b> を満たすレコードを返します。</p></li><li><b>または</b><p>モジュールは、選択したフィールド値の <b> いずれか </b> を満たすレコードを返します。</p></li></ul></td> 
       </tr>
@@ -314,7 +316,7 @@ Workfront Fusion でWorkfront モジュールを設定する場合、以下に�
 ### 未分類
 
 
-#### レコードを作成
+#### レコードの作成
 
 この操作を実行すると、Workfront Planning に 1 つのレコードが作成されます。
 
@@ -471,5 +473,5 @@ Workfront Planning 内の 1 つのレコードを更新します。
 )
 ```
 
-JSONata モジュールの使用について詳しくは、[JSONata モジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md) を参照してください。
+JSONata モジュールの使用について詳しくは、[JSONata モジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md) を参照してください。
 

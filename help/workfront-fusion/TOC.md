@@ -2,10 +2,10 @@
 user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
-source-git-commit: ec4fec0fc66fd89afad4cfe85a0fb41fc1786925
+source-git-commit: 04fe3b413638119d06686b420deaeb4f7d37d81c
 workflow-type: tm+mt
-source-wordcount: '1953'
-ht-degree: 64%
+source-wordcount: '1963'
+ht-degree: 99%
 
 ---
 
@@ -15,8 +15,9 @@ ht-degree: 64%
 * [Adobe Workfront Fusion ドキュメント](home.md)
 * Fusion リリースアクティビティ {#fusion-release-activity}
    * [Adobe Workfront Fusion リリースアクティビティ](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
-   * Fusion リリース - 2025 年 {#fusion-releases-2025}
+   * 2025年の Fusion リリース {#fusion-releases-2025}
       * [Workfront Fusion リリースアクティビティ：2025年11月17日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
+      * [Workfront Fusion リリースアクティビティ：2025年12月8日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-8.md)
       * [Workfront Fusion リリースアクティビティ：2025年12月1日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
       * [Workfront Fusion リリースアクティビティ：2025年11月10日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
       * [Workfront Fusion リリースアクティビティ：2025年11月3日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
@@ -48,7 +49,7 @@ ht-degree: 64%
       * [Workfront Fusion リリースアクティビティ：2025年1月20日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-20.md)
       * [Workfront Fusion リリースアクティビティ：2025年1月13日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-13.md)
       * [Workfront Fusion リリースアクティビティ：2025年1月6日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-6.md)
-   * Fusion リリース - 2024 年 {#fusion-releases-2024}
+   * 2024年の Fusion リリース {#fusion-releases-2024}
       * [Workfront Fusion リリースアクティビティ：2024年12月16日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-12-16.md)
       * [Workfront Fusion リリースアクティビティ：2024年12月2日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-12-2.md)
       * [Workfront Fusion リリースアクティビティ：2024年11月25日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-11-25.md)
@@ -73,7 +74,7 @@ ht-degree: 64%
       * [Workfront Fusion リリースアクティビティ：2024年2月26日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-2-26.md)
       * [Workfront Fusion リリースアクティビティ：2024年2月5日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-2-5.md)
       * [Workfront Fusion リリースアクティビティ：2024年1月1日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-1-4.md)
-   * Fusion リリース - 2023 年 {#fusion-releases-2023}
+   * 2023年の Fusion リリース {#fusion-releases-2023}
       * [Workfront Fusion リリースアクティビティ：2023年11月27日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-11-30.md)
       * [Workfront Fusion リリースアクティビティ：2023年11月13日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-11-14.md)
       * [Workfront Fusion リリースアクティビティ：2023年10月30日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-10-26.md)
@@ -88,7 +89,7 @@ ht-degree: 64%
       * [Workfront Fusion リリースアクティビティ：2023年4月17日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-4-20.md)
       * [Workfront Fusion リリースアクティビティ：2023年3月20日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-3-21.md)
       * [Workfront Fusion リリースアクティビティ：2023年3月6日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-3-6.md)
-   * Fusion リリース - 2022 年 {#fusion-releases-2022}
+   * 2022年の Fusion リリース {#fusion-releases-2022}
       * [Workfront Fusion リリースアクティビティ：2022年12月12日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-dec-12-22.md)
       * [Workfront Fusion リリースアクティビティ：2022年11月14日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-nov-14-22.md)
       * [Workfront Fusion リリースアクティビティ：2022年11月7日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-nov-9-22.md)
@@ -108,7 +109,7 @@ ht-degree: 64%
       * [Workfront Fusion リリースアクティビティ：2022年2月21日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-feb-21-22.md)
       * [Workfront Fusion リリースアクティビティ：2022年2月14日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-feb-14-22.md)
       * [Workfront Fusion リリースアクティビティ：2022年1月3日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jan-3-22.md)
-   * Fusion リリース - 2021 年 {#fusion-releases-2021}
+   * 2021年の Fusion リリース {#fusion-releases-2021}
       * [Workfront Fusion リリースアクティビティ：2021年11月29日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-nov-29-21.md)
       * [Workfront Fusion リリースアクティビティ：2021年11月15日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-nov-15-21.md)
       * [Workfront Fusion リリースアクティビティ：2021年11月8日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-nov-8-21.md)
@@ -133,7 +134,7 @@ ht-degree: 64%
       * [Workfront Fusion リリースアクティビティ：2021年1月18日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jan-18.md)
       * [Workfront Fusion リリースアクティビティ：2021年1月11日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jan-11.md)
       * [Workfront Fusion リリースアクティビティ：2021年1月4日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jan-4.md)
-   * Fusion リリース - 2020 年 {#fusion-releases-2020}
+   * 2020年の Fusion リリース {#fusion-releases-2020}
       * [Workfront Fusion リリースアクティビティ：2020年12月7日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-dec-7.md)
       * [Workfront Fusion リリースアクティビティ：2020年11月30日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-nov-30.md)
       * [Workfront Fusion リリースアクティビティ：2020年11月16日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-nov-16.md)
@@ -146,24 +147,24 @@ ht-degree: 64%
    * Workfront Fusion について {#understand-workfront-fusion}
       * [Workfront Fusion について](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)
       * [Adobe Workfront Fusion の概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/workfront-fusion-overview.md)
-      * [Adobe Workfront Fusion の用語](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md)
+      * [Adobe Workfront Fusion 用語集](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md)
       * [シナリオの概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md)
       * [接続の概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md)
       * [モジュールの概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md)
       * [マッピングの概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md)
       * [関数の概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
       * [Fusion の API の概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/api-overview.md)
-   * Workfront Fusion に移動する {#navigate-workfront-fusion}
+   * Workfront Fusion でのナビゲート {#navigate-workfront-fusion}
       * [Workfront Fusion に移動：記事インデックス](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-fusion-toc.md)
-      * [Adobe Workfront Fusion に移動する](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md)
+      * [Adobe Workfront Fusion でのナビゲート](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md)
       * [シナリオエディターの概要](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)
-      * [シナリオの詳細の概要](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md)
-      * [組織またはチームを切り替える](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/switch-orgs-or-teams.md)
+      * [シナリオ詳細の詳細](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md)
+      * [組織またはチーム間で切り替え](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/switch-orgs-or-teams.md)
       * [プロファイル設定を変更](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/change-profile-settings.md)
 * Workfront Fusion の設定と管理 {#set-up-and-manage-fusion}
    * [Workfront Fusion の設定と管理](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-workfront-fusion-toc.md)
-   * ライセンスと運用の概要 {#licensing-and-operations-overviews}
-      * [ライセンスと運用の概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
+   * ライセンスと操作の概要 {#licensing-and-operations-overviews}
+      * [ライセンスと操作の概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
       * [Adobe Workfront Fusion ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
       * [操作](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
    * 組織とチームの設定と管理 {#set-up-and-manage-orgs-and-teams}
@@ -171,10 +172,10 @@ ht-degree: 64%
       * 組織とチームの設定 {#set-up-orgs-teams-and-users}
          * [組織、チーム、ユーザーの設定：記事インデックス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-orgs-and-teams.md)
          * [組織とチームの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md)
-         * [許可リストに加える組織の Fusion の IP アドレスの設定](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)
+         * [組織の許可リストの Fusion 用の IP アドレスの設定](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)
          * [チームの作成](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/create-a-team.md)
-         * [Adobe Admin Console を使用してAdobe Workfront Fusion にユーザーを追加する](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-fusion-users-admin-console.md)
-         * [チームにユーザーを追加する](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md)
+         * [Adobe Admin Console を使用した Adobe Workfront Fusion へのユーザーの追加](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-fusion-users-admin-console.md)
+         * [チームにユーザーを追加](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md)
          * [チーム通知オプションの設定](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)
          * [組織のアクティビティログの表示](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-activity-logs-for-an-org.md)
          * [組織のパフォーマンスダッシュボードの表示](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-performance-dashboard.md)
@@ -184,34 +185,34 @@ ht-degree: 64%
          * [ユーザーの詳細を表示または編集](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-details.md)
          * [ユーザーの役割を表示または編集](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md)
          * [チームの表示と管理](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-teams.md)
-         * [Adobe Admin Consoleでのユーザーの削除](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/delete-users-admin-console.md)
+         * [Adobe Admin Console でのユーザーの削除](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/delete-users-admin-console.md)
    * テンプレートの管理 {#manage-templates-admin}
       * [テンプレートの管理](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/manage-templates-toc.md)
-      * [テンプレートを承認または却下](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/approve-templates.md)
+      * [テンプレートの承認または不承認](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/approve-templates.md)
       * [テンプレートを編集](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/edit-templates.md)
 * シナリオの作成 {#create-scenarios}
    * [シナリオの作成](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
    * シナリオの計画 {#plan-a-scenario}
       * [シナリオの計画：記事インデックス](/help/workfront-fusion/create-scenarios/plan-a-scenario/plan-a-scenario-toc.md)
-      * [複数のシナリオを連結する](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)
-      * [シナリオプランニングに関するよくある質問](/help/workfront-fusion/create-scenarios/plan-a-scenario/faq.md)
+      * [複数のシナリオの連結](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)
+      * [シナリオ計画に関するよくある質問](/help/workfront-fusion/create-scenarios/plan-a-scenario/faq.md)
       * [ビデオの概要](/help/workfront-fusion/create-scenarios/plan-a-scenario/fusion-basics-videos.md)
       * [シナリオ作成のワークフロー](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md)
-   * モジュールを追加 {#add-modules}
-      * [モジュールを追加](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)
+   * モジュールの追加 {#add-modules}
+      * [モジュールの追加](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)
       * [シナリオへのモジュールの追加](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-basic.md)
       * [モジュールの設定](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
       * [AI を使用したシナリオセグメントの生成](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)
       * [モジュールまたはシナリオのコピー](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
       * [Adobe Workfront Fusion テンプレートを使用したシナリオの作成](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)
       * [cURL を使用した HTTP モジュールの追加](/help/workfront-fusion/create-scenarios/add-modules/use-curl-create-http.md)
-      * [コネクタを使用しない web サービスの Webhook の設定](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)
+      * [コネクターを使用しない web サービスの Webhook の設定](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)
       * [ルーターモジュールの追加とルートの設定](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)
       * [シナリオへのフィルターの追加](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md)
       * [トリガーモジュールの開始場所を選択](/help/workfront-fusion/create-scenarios/add-modules/choose-where-trigger-module-starts.md)
-   * データをマッピング {#map-data}
-      * [データをマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
-      * [モジュール間で情報をマッピングする](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)
+   * データのマッピング {#map-data}
+      * [データのマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
+      * [モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)
       * [関数を使用した項目のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
       * [配列と配列要素のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)
       * [モジュール間でのファイルのマッピング](/help/workfront-fusion/create-scenarios/map-data/map-files.md)
@@ -219,33 +220,33 @@ ht-degree: 64%
    * アプリケーションへの接続 {#connect-to-applications}
       * [アプリケーションへの接続](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-apps-toc.md)
       * [接続の作成](/help/workfront-fusion/create-scenarios/connect-to-apps/connection-instruction-toc.md)
-      * [接続の作成 – 基本的な手順](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+      * [接続の作成 - 基本的な手順](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
       * [API トークン認証を使用する web サービスに Adobe Workfront Fusion を接続](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-wf-web-service-uses-api-token-auth.md)
       * [更新されたセキュリティ対策を使用して Google Services に Adobe Workfront Fusion を接続](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-google-with-new-security-measures.md)
       * [カスタム OAuth クライアントを使用して Google Services に Adobe Workfront Fusion を接続](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)
-      * [Ms Graph REST API の呼び出し](/help/workfront-fusion/create-scenarios/connect-to-apps/call-the-ms-graph-rest-api.md)
+      * [MS Graph REST API の呼び出し](/help/workfront-fusion/create-scenarios/connect-to-apps/call-the-ms-graph-rest-api.md)
       * [接続の管理](/help/workfront-fusion/create-scenarios/connect-to-apps/manage-connections.md)
    * エラー処理の設定 {#configure-error-handling}
       * [エラー処理の設定](/help/workfront-fusion/create-scenarios/config-error-handling/config-error-handling-toc.md)
       * [エラー処理の追加](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)
       * [エラー処理ルートへのフィルタリングとネストの追加](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md)
-      * [スローエラーの回避策を設定](/help/workfront-fusion/create-scenarios/config-error-handling/throw.md)
-      * [再試行エラー処理の回避策を設定](/help/workfront-fusion/create-scenarios/config-error-handling/retry.md)
-      * [一時停止ディレクティブで処理されたエラーを解決します](/help/workfront-fusion/create-scenarios/config-error-handling/resolve-error-from-break-directive.md)
-   * シナリオ設定を指定 {#configure-scenario-settings}
-      * [シナリオ設定を行う：記事インデックス](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)
+      * [スローエラーの回避策の設定](/help/workfront-fusion/create-scenarios/config-error-handling/throw.md)
+      * [再試行エラー処理の回避策の設定](/help/workfront-fusion/create-scenarios/config-error-handling/retry.md)
+      * [Break ディレクティブによって処理されたエラーの解決](/help/workfront-fusion/create-scenarios/config-error-handling/resolve-error-from-break-directive.md)
+   * シナリオ設定の指定 {#configure-scenario-settings}
+      * [シナリオ設定の指定：記事インデックス](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)
       * [シナリオのスケジュール](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)
-      * [シナリオ設定を指定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)
+      * [シナリオ設定の指定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)
       * [シナリオへのメモの追加](/help/workfront-fusion/create-scenarios/config-scenarios-settings/add-notes-to-scenario.md)
 * シナリオの管理 {#manage-scenarios}
    * [シナリオの管理](/help/workfront-fusion/manage-scenarios/manage-scenarios-toc.md)
    * [接続の管理](/help/workfront-fusion/manage-scenarios/manage-connections.md)
-   * [シナリオのアクティベートとアクティベート解除](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)
+   * [シナリオのアクティブ化または非アクティブ化](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)
    * [シナリオのデバッグ](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)
-   * [シナリオバージョンを復元](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)
-   * [モジュールを新しいバージョンに更新する](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md)
+   * [シナリオバージョンの復元](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)
+   * [モジュールの新しいバージョンへの更新](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md)
    * [ロックされたシナリオの管理](/help/workfront-fusion/manage-scenarios/view-manage-locked-scenario.md)
-   * [不完全な実行の表示と解決](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)
+   * [未完了の実行の表示と解決](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)
    * [シナリオの実行履歴の表示](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)
    * [特定のシナリオの実行の表示](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md)
    * [実行中のシナリオでのデータフローの表示](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
@@ -264,14 +265,14 @@ ht-degree: 64%
    * [テンプレートの作成と管理](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md)
    * [新しいテンプレートの作成](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md)
    * [テンプレートを使用したシナリオの作成](/help/workfront-fusion/create-and-manage-templates/create-scenarios-with-fusion-templates.md)
-   * [テンプレートの表示、編集、削除](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
+   * [テンプレートの表示、編集および削除](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
    * [テンプレートの公開と共有](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
    * [現在利用可能な Adobe Workfront Fusion テンプレート](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)
    * [Adobe Workfront Fusion テンプレートに関する FAQ](/help/workfront-fusion/create-and-manage-templates/fusion-templates-faqs.md)
 * 参照 {#references}
    * [参照](/help/workfront-fusion/references/references-toc.md)
    * ライセンスと役割 {#licenses-and-roles}
-      * [ライセンスと役割に関するリファレンス：記事インデックス](/help/workfront-fusion/references/licenses-and-roles/licenses-and-roles-index.md)
+      * [ライセンスと役割の参照：記事インデックス](/help/workfront-fusion/references/licenses-and-roles/licenses-and-roles-index.md)
       * [ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)
       * [組織とチームの役割](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md)
    * シナリオ {#scenarios}
@@ -279,11 +280,11 @@ ht-degree: 64%
       * [Fusion パフォーマンスガードレール](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md)
       * [シナリオ実行フロー](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)
       * [シナリオの実行、サイクル、フェーズ](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)
-      * [大きなファイルの操作](/help/workfront-fusion/references/scenarios/fusion-large-files.md)
+      * [大きいファイルの操作](/help/workfront-fusion/references/scenarios/fusion-large-files.md)
    * モジュール {#modules}
       * [モジュール](/help/workfront-fusion/references/modules/modules-toc.md)
-      * [Webhook （インスタントトリガー）](/help/workfront-fusion/references/modules/webhooks-reference.md)
-      * [集約モジュール](/help/workfront-fusion/references/modules/aggregator-module.md)
+      * [Webhook（インスタントトリガー）](/help/workfront-fusion/references/modules/webhooks-reference.md)
+      * [アグリゲータモジュール](/help/workfront-fusion/references/modules/aggregator-module.md)
       * [イテレータモジュール](/help/workfront-fusion/references/modules/iterator-module.md)
       * [HTTP リクエストメソッド](/help/workfront-fusion/references/modules/http-request-methods.md)
       * [キー](/help/workfront-fusion/references/modules/keys.md)
@@ -298,8 +299,8 @@ ht-degree: 64%
          * [関数](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)
          * [一般的な関数](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md)
          * [日付および時間関数](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)
-         * [日時フォーマット用のトークン](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)
-         * [日付と時刻の解析用トークン](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)
+         * [日付と時間の書式設定用トークン](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)
+         * [日付と時間の解析用トークン](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)
          * [文字列関数](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md)
          * [数学関数](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md)
          * [数学変数](/help/workfront-fusion/references/mapping-panel/functions/math-variables.md)
@@ -309,23 +310,23 @@ ht-degree: 64%
       * [エラー処理のディレクティブ](/help/workfront-fusion/references/errors/directives-for-error-handling.md)
       * [エラータイプ](/help/workfront-fusion/references/errors/error-processing.md)
    * 接続 {#connections}
-      * [接続リファレンス：記事インデックス](/help/workfront-fusion/references/connections/connection-reference-toc.md)
+      * [接続参照：記事インデックス](/help/workfront-fusion/references/connections/connection-reference-toc.md)
       * [接続メタデータ](/help/workfront-fusion/references/connections/connection-metadata.md)
    * アプリとそのモジュール {#apps-and-their-modules}
       * [アプリとそのモジュール](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)
-      * ユニバーサルコネクタ {#universal-connectors}
-         * [HTTP > [!UICONTROL &#x200B; リクエストを作成 &#x200B;] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
-         * [[!UICONTROL HTTP] > [!UICONTROL &#x200B; 基本認証リクエストを行う &#x200B;] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
+      * ユニバーサルコネクター {#universal-connectors}
+         * [HTTP／[!UICONTROL リクエストを実行]モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+         * [[!UICONTROL HTTP]／[!UICONTROL 基本認証リクエストの作成]モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
          * [[!UICONTROL HTTP]／[!UICONTROL OAuth 2.0 リクエストを実行]モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
-         * [[!UICONTROL HTTP] > [!UICONTROL &#x200B; クライアント証明書認証リクエストを作成 &#x200B;] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
-         * [[!UICONTROL HTTP] > [!UICONTROL API キー認証リクエストの作成 &#x200B;]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
+         * [[!UICONTROL HTTP]／[!UICONTROL クライアント証明書認証リクエストの作成]モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
+         * [[!UICONTROL HTTP]／[!UICONTROL API キー認証リクエストを実行]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
          * [[!UICONTROL HTTP]／その他のモジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-modules.md)
          * [SOAP モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/soap-module.md)
          * [FTP モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)
          * [SFTP モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/sftp.md)
-         * [Web フック](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)
+         * [Webhook](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)
          * [Adobe Workfront Fusion の HTTP モジュールでの相互 TLS の使用](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
-      * Adobe コネクタ {#adobe-connectors}
+      * Adobe コネクター {#adobe-connectors}
          * [Adobe Acrobat Sign モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-sign-modules.md)
          * [Adobe Authenticator モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)
          * [Adobe Campaign モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-campaign-classic-connector.md)
@@ -336,20 +337,21 @@ ht-degree: 64%
          * [Adobe Frame.io Beta（V4）モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)
          * [Adobe Frame.io レガシー（V3）モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
          * [Adobe I/O Events モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
+         * [Adobe InDesign モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/indesign-modules.md)
          * [Adobe Journey Optimizer モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-journey-optimizer-modules.md)
          * [Adobe Lightroom モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-lightroom-modules.md)
          * [Adobe Marketo モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
          * [Adobe PDF サービスモジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
          * [Adobe Photoshop モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-photoshop-modules.md)
          * [Adobe物質モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-substance-modules.md)
-         * [Adobe ストレージモジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-storage-modules.md)
+         * [Adobe Storage モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-storage-modules.md)
          * [Adobe Target モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
          * [Adobe User Management モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
          * [Adobe Workfront モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
          * [Adobe Workfront Planning モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
-         * [Workfront基板モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
+         * [Workfront Boards モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
          * [Workfront Proof モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-proof-modules.md)
-      * サードパーティアプリケーション用のコネクタ {#third-party-app-connectors}
+      * サードパーティアプリケーション用コネクター {#third-party-app-connectors}
          * [Airtable モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/airtable-modules.md)
          * [Allocadia モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/allocadia-modules.md)
          * [Anaplan モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/anaplan-modules.md)
@@ -365,7 +367,7 @@ ht-degree: 64%
          * [Dropbox モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dropbox-modules.md)
          * [メールモジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/email-modules.md)
          * [Figma モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/figma-modules.md)
-         * [Github モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/github.md)
+         * [GitHub モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/github.md)
          * [GitLab モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/gitlab-modules.md)
          * [Gmail モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/gmail-modules.md)
          * [Google カレンダーモジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-calendar-modules.md)
@@ -375,15 +377,15 @@ ht-degree: 64%
          * [Google スプレッドシートモジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-sheets-modules.md)
          * [Google Slides モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-slides-modules.md)
          * [Google チームドライブモジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-team-drive-modules.md)
-         * [Hubspot CRM モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/hubspot-crm-modules.md)
+         * [HubSpot CRM モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/hubspot-crm-modules.md)
          * [Jira モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md)
          * [Jira ソフトウェアモジュール（レガシー）](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md)
          * [MariaDB モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/mariadb-modules.md)
          * [Microsoft 365 カレンダーモジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-calendar-modules.md)
-         * [Microsoft 356 メールモジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-email-modules.md)
+         * [Microsoft 365 メールモジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-email-modules.md)
          * [Microsoft 365 Excel モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-excel-modules.md)
          * [Microsoft Dynamics モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-dynamics-365-modules.md)
-         * [Microsoft Dynamicsの財務および運用モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dynamics-finance-operations-modules.md)
+         * [Microsoft Dynamics Finance and Operations モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dynamics-finance-operations-modules.md)
          * [Microsoft OneDrive モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-modules.md)
          * [Microsoft OneDrive for Business モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-for-business-modules.md)
          * [Microsoft SharePoint Online モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sharepoint-modules.md)
@@ -391,7 +393,7 @@ ht-degree: 64%
          * [Microsoft Teams モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-teams-modules.md)
          * [Microsoft Word テンプレートモジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md)
          * [NetSuite モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/netsuite.md)
-         * [OpenAI （ChatGPT &amp; DALL-E）モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/openai-chatgpt-modules.md)
+         * [OpenAI（ChatGPT &amp; DALL-E）モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/openai-chatgpt-modules.md)
          * [PowerBI モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/powerbi-modules.md)
          * [Qualtrics モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/qualtrics-modules.md)
          * [Quickbase モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/quickbase-modules.md)
@@ -405,8 +407,8 @@ ht-degree: 64%
          * [Widen モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/widen-modules.md)
          * [Veeva Vault モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/veeva-vault-modules.md)
          * [Workday モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/workday-modules.md)
-      * 工具・変圧器 {#tools-and-transformers}
-         * [モジュールのアーカイブ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/archive-modules.md)
+      * ツールとトランスフォーマー {#tools-and-transformers}
+         * [アーカイブモジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/archive-modules.md)
          * [チェーンモジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)
          * [CSV モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/csv.md)
          * [データストアモジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md)
@@ -417,11 +419,11 @@ ht-degree: 64%
          * [JSON モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/json-modules.md)
          * [JSONata モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md)
          * [JWT モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jwt-modules.md)
-         * [語彙モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/lexical-modules.md)
+         * [Lexical モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/lexical-modules.md)
          * [Markdown モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
          * [数学モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
          * [MIME モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
-         * [モデル コンテキスト プロトコル （MCP） モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
+         * [モデルコンテキストプロトコル（MCP）モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
          * [テキストパーサーモジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
          * [ツールモジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
          * [XML モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/xml-modules.md)

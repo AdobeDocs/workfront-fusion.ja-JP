@@ -1,42 +1,42 @@
 ---
 content-type: reference
-title: Fusion アプリケーションとそのモジュールのリファレンス：記事のインデックス
-description: この節では、Adobe Workfront Fusion での特定のモジュールの設定に関する参照資料を示します。
+title: Fusion アプリケーションとそのモジュールの参照：記事インデックス
+description: この節は、Adobe Workfront Fusion での特定のモジュールの設定に関する参照資料を含みます。
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: f23a089565c2cfb7d2d1321a7bf67ae14e336af3
+source-git-commit: b5c41aea9f259e309a769a66eaa627b0e1f136db
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 44%
+source-wordcount: '480'
+ht-degree: 98%
 
 ---
 
-# Fusion アプリケーションとそのモジュールのリファレンス：記事のインデックス
+# Fusion アプリケーションとそのモジュールの参照：記事インデックス
 
 >[!IMPORTANT]
 >
->Adobe Workfront Fusion は、ほとんどの web サービスに接続できます。このリスト上のアプリに限定されるわけではありません。使用するアプリがこのリストにない場合は、ユニバーサルコネクタのいずれかを使用してアプリまたは web サービスに接続します。
+>Adobe Workfront Fusion は、ほぼすべての web サービスに接続できます。このリスト上のアプリに限定されるわけではありません。操作するアプリがこのリストにない場合は、ユニバーサルコネクターの 1 つを使用してアプリまたは web サービスに接続できます。
 
-## ユニバーサルコネクタ
+## ユニバーサルコネクター
 
-これらのコネクタを使用すると、パブリック API を持つすべてのアプリまたは web サービスに接続できます。
+これらのコネクターを使用すると、パブリック API を持つ任意のアプリまたは web サービスに接続できます。
 
-* [http > [!UICONTROL &#x200B; リクエストを作成 &#x200B;] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL &#x200B; 基本認証リクエストを行う &#x200B;] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
+* [HTTP／[!UICONTROL リクエストを実行]モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+* [[!UICONTROL HTTP]／[!UICONTROL 基本認証リクエストの作成]モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
 * [[!UICONTROL HTTP]／[!UICONTROL OAuth 2.0 リクエストを実行]モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL &#x200B; クライアント証明書認証リクエストを作成 &#x200B;] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL API キー認証リクエストの作成 &#x200B;]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
+* [[!UICONTROL HTTP]／[!UICONTROL クライアント証明書認証リクエストの作成]モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
+* [[!UICONTROL HTTP]／[!UICONTROL API キー認証リクエストを実行]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
 * [[!UICONTROL HTTP]／その他のモジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-modules.md)
 * [SOAP モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/soap-module.md)
 * [FTP モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)
 * [SFTP モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/sftp.md)
 * [Adobe Workfront Fusion の HTTP モジュールでの相互 TLS の使用](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
 
-## Adobe製品向けコネクタ
+## アドビ製品用コネクター
 
-Fusion は、Adobeの多くの製品とサービスに対してコネクタを提供します。
+Fusion には、アドビの多くの製品とサービス用コネクターが用意されています。
 
 * [Adobe Acrobat Sign モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-sign-modules.md)
 * [Adobe Authenticator モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)
@@ -48,23 +48,24 @@ Fusion は、Adobeの多くの製品とサービスに対してコネクタを�
 * [Adobe Frame.io Beta（V4）モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
 * [Adobe Frame.io レガシー（V3）モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
 * [Adobe I/O Events モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
+* [Adobe InDesign モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/indesign-modules.md)
 * [Adobe Journey Optimizer モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-journey-optimizer-modules.md)
 * [Adobe Lightroom モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-lightroom-modules.md)
 * [Adobe Marketo モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
 * [Adobe PDF サービスモジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
 * [Adobe Photoshop モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-photoshop-modules.md)
-* [Adobe ストレージモジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-storage-modules.md)
+* [Adobe Storage モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-storage-modules.md)
 * [Adobe物質モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-substance-modules.md)
 * [Adobe Target モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
 * [Adobe User Management モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
 * [Adobe Workfront モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
 * [Adobe Workfront Planning モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
-* [Workfront基板モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
+* [Workfront Boards モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
 * [Workfront Proof モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-proof-modules.md)
 
-## サードパーティアプリケーション用のコネクタ
+## サードパーティアプリケーション用コネクター
 
-Fusion には、多くのサードパーティアプリケーション用のコネクタが用意されています。
+Fusion には、多くのサードパーティアプリケーション用コネクターが用意されています。
 
 * [Airtable モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/airtable-modules.md)
 * [Allocadia モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/allocadia-modules.md)
@@ -81,7 +82,7 @@ Fusion には、多くのサードパーティアプリケーション用のコ�
 * [Dropbox モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dropbox-modules.md)
 * [メールモジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/email-modules.md)
 * [Figma モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/figma-modules.md)
-* [Github モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/github.md)
+* [GitHub モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/github.md)
 * [GitLab モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/gitlab-modules.md)
 * [Gmail モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/gmail-modules.md)
 * [Google カレンダーモジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-calendar-modules.md)
@@ -91,15 +92,15 @@ Fusion には、多くのサードパーティアプリケーション用のコ�
 * [Google スプレッドシートモジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-sheets-modules.md)
 * [Google Slides モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-slides-modules.md)
 * [Google チームドライブモジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-team-drive-modules.md)
-* [Hubspot CRM モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/hubspot-crm-modules.md)
+* [HubSpot CRM モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/hubspot-crm-modules.md)
 * [Jira モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md)
 * [Jira ソフトウェアモジュール（レガシー）](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md)
 * [MariaDB モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/mariadb-modules.md)
 * [Microsoft 365 カレンダーモジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-calendar-modules.md)
-* [Microsoft 356 メールモジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-email-modules.md)
+* [Microsoft 365 メールモジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-email-modules.md)
 * [Microsoft 365 Excel モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-excel-modules.md)
 * [Microsoft Dynamics モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-dynamics-365-modules.md)
-* [Microsoft Dynamicsの財務および運用モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dynamics-finance-operations-modules.md)
+* [Microsoft Dynamics Finance and Operations モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dynamics-finance-operations-modules.md)
 * [Microsoft OneDrive モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-modules.md)
 * [Microsoft OneDrive for Business モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-for-business-modules.md)
 * [Microsoft SharePoint Online モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sharepoint-modules.md)
@@ -107,7 +108,7 @@ Fusion には、多くのサードパーティアプリケーション用のコ�
 * [Microsoft Teams モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-teams-modules.md)
 * [Microsoft Word テンプレートモジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md)
 * [NetSuite モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/netsuite.md)
-* [OpenAI （ChatGPT &amp; DALL-E）モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/openai-chatgpt-modules.md)
+* [OpenAI（ChatGPT &amp; DALL-E）モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/openai-chatgpt-modules.md)
 * [PowerBI モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/powerbi-modules.md)
 * [Qualtrics モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/qualtrics-modules.md)
 * [Quickbase モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/quickbase-modules.md)
@@ -123,11 +124,11 @@ Fusion には、多くのサードパーティアプリケーション用のコ�
 * [Workday モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/workday-modules.md)
 
 
-## 工具・変圧器
+## ツールとトランスフォーマー
 
 これらのモジュールを使用すると、データに対するアクションを実行できますが、Fusion 以外のサービスに接続する必要はありません。
 
-* [モジュールのアーカイブ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/archive-modules.md)
+* [アーカイブモジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/archive-modules.md)
 * [チェーンモジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)
 * [CSV モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/csv.md)
 * [データストアモジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md)
@@ -138,7 +139,7 @@ Fusion には、多くのサードパーティアプリケーション用のコ�
 * [JSON モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/json-modules.md)
 * [JSONata モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md)
 * [JWT モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jwt-modules.md)
-* [語彙モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/lexical-modules.md)
+* [Lexical モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/lexical-modules.md)
 * [Markdown モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
 * [数学モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
 * [MIME モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
