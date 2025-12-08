@@ -59,4 +59,4 @@ Adobe Workfront Fusion の製品および技術ドキュメントのホームペ
 
 ### コミュニティフォーラムで回答を検索
 
-* **質問する**：ドキュメントで質問の答えが見つからない場合は、[Workfront Fusion コミュニティフォーラム](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2)に投稿して、他のユーザーや専門家に支援を求めてください。
+* **質問する**：ドキュメントで質問の答えが見つからない場合は、[Workfront Fusion コミュニティフォーラム](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2?profile.language=ja)に投稿して、他のユーザーや専門家に支援を求めてください。
