@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Campaign]  モジュールを使用すると、アカ
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: aa5b5f1fe805f43b6398e26bf1773d7540ef1634
 workflow-type: tm+mt
-source-wordcount: '1332'
-ht-degree: 80%
+source-wordcount: '1401'
+ht-degree: 82%
 
 ---
 
@@ -25,31 +25,31 @@ ht-degree: 80%
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
    <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
-   <p>コネクタベース（従来）：作業の自動化と統合のためのWorkfront Fusion </p>
+   <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
 
 +++
 
@@ -58,7 +58,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 Fusion IP アドレスを [!DNL Adobe Campaign] に追加する必要があります。
 
 * Campaign の許可リストに IP アドレスを追加する手順については、Adobe Campaign ドキュメントの[許可リストへの IP アドレスの追加](https://experienceleague.adobe.com/ja/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list)を参照してください。
-* 許可リストに追加する IP アドレスのリストについては、組織の [許可リストの Fusion の IP アドレスの設定 &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md) を参照してください。
+* 許可リストに追加する IP アドレスのリストについては、組織の [許可リストの Fusion の IP アドレスの設定 ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md) を参照してください。
 
 ## Adobe Campaign API の情報
 
@@ -131,9 +131,9 @@ Adobe Campaign コネクタでは、以下を使用します。
 
 [!DNL Adobe Campaign] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Adobe Campaign]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![マップ切り替え](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 <!--* [Triggers](#triggers)-->
 * [アクション](#actions)
@@ -201,7 +201,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>作成する [!DNL Adobe Campaign] レコードのタイプを選択します。</td> 
+   <td>作成するレコード [!DNL Adobe Campaign] タイプを選択するか、「**カスタムリソース**」を選択してリソースの詳細を入力します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Fields] </td> 
@@ -228,7 +228,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>削除するリソースのタイプを選択します。</td> 
+   <td>削除するリソースのタイプを選択するか、「**カスタムリソース**」を選択してリソースの詳細を入力します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
@@ -278,7 +278,7 @@ This scheduled trigger module starts a scenario when a record changes.
 
 このアクションモジュールは、[!DNL Adobe Campaign] API で、選択されたアクションをオブジェクトに対して実行します。
 
-特定のアクションとフィールドについては、[[!DNL Adobe Campaign]  API ドキュメント](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=ja)を参照してください。
+特定のアクションとフィールドについては、[[!DNL Adobe Campaign]  API ドキュメント](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html)を参照してください。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -286,7 +286,11 @@ This scheduled trigger module starts a scenario when a record changes.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td>
-   <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >[!DNL Adobe Campaign]</a> への接続の作成を参照してください。</td> 
+   <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >[!DNL Adobe Campaign]</a> への接続を作成を参照してください。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Resource]</td> 
+   <td>アクションを実行するリソースのタイプを選択するか、「**カスタムリソース**」を選択してリソースの詳細を入力します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Action]</td> 
@@ -317,7 +321,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>読み取る [!DNL Adobe Campaign] レコードのタイプを選択します。</td> 
+   <td>読み取るレコード [!DNL Adobe Campaign] タイプを選択するか、「**カスタムリソース**」を選択してリソースの詳細を入力します。</td> 
   </tr> 
     <tr> 
    <td role="rowheader">[!UICONTROL ID] </td> 
@@ -376,7 +380,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>作成する [!DNL Adobe Campaign] レコードのタイプを選択します。</td> 
+   <td>更新するレコード [!DNL Adobe Campaign] タイプを選択するか、「**カスタムリソース**」を選択してリソースの詳細を入力します。</td> 
   </tr> 
     <tr> 
    <td role="rowheader">[!UICONTROL ID] </td> 
@@ -409,7 +413,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>作成する [!DNL Adobe Campaign] レコードのタイプを選択します。</td> 
+   <td>返すレコード [!DNL Adobe Campaign] タイプを選択するか、「**カスタムリソース**」を選択してリソースの詳細を入力します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search criteria]</td> 
