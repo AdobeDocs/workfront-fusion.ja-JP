@@ -58,7 +58,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 Fusion IP アドレスを [!DNL Adobe Campaign] に追加する必要があります。
 
 * Campaign の許可リストに IP アドレスを追加する手順については、Adobe Campaign ドキュメントの[許可リストへの IP アドレスの追加](https://experienceleague.adobe.com/ja/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list)を参照してください。
-* 許可リストに追加する IP アドレスのリストについては、組織の [許可リストの Fusion の IP アドレスの設定 ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md) を参照してください。
+* 許可リストに追加する IP アドレスのリストについては、組織の [許可リストの Fusion の IP アドレスの設定 &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md) を参照してください。
 
 ## Adobe Campaign API の情報
 
