@@ -20,7 +20,7 @@ ht-degree: 19%
 
 この例では、リクエストが特定のリクエストキューに送信された場合にのみリクエストから新しいプロジェクトを作成できるようにするフィルターをシナリオに追加します。
 
-この例では、[ 基本シナリオの作成 ](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) で作成したシナリオを変更します。
+この例では、[&#x200B; 基本シナリオの作成 &#x200B;](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) で作成したシナリオを変更します。
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ ht-degree: 19%
 
 ## 前提条件
 
-この手順を実行する前に、[ 基本シナリオの作成 ](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) で説明されているシナリオを作成する必要があります。
+この手順を実行する前に、[&#x200B; 基本シナリオの作成 &#x200B;](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) で説明されているシナリオを作成する必要があります。
 
 ## フィルターの追加
 
@@ -80,13 +80,13 @@ ht-degree: 19%
 ### フィルターの追加と設定
 
 1. シナリオエディターのシナリオに戻ります。
-1. 1 つ目のモジュールと 2 つ目のモジュールの間にあるレンチアイコン ![ レンチアイコン ](assets/wrench-icon.png) をクリックし、「**フィルターを設定** を選択します。
+1. 1 つ目のモジュールと 2 つ目のモジュールの間にあるレンチアイコン ![&#x200B; レンチアイコン &#x200B;](assets/wrench-icon.png) をクリックし、「**フィルターを設定** を選択します。
 1. 「ラベル」フィールドに、「リクエストキューのフィルター」などのこのフィルターのラベルを入力します。
 1. **条件** 領域の上部フィールドで、最初のモジュールから `projectID` をマッピングします。
 
-   ![ プロジェクト ID をマップ ](assets/map-proj-id.png)
+   ![&#x200B; プロジェクト ID をマップ &#x200B;](assets/map-proj-id.png)
 1. **条件** 演算子は「次と等しい」のままにします。
-1. 「**条件**」領域の下部フィールドに、「[ フィルターを追加する準備 ](#prepare-to-add-the-filter)」のプロジェクト URL からメモしたプロジェクト ID を貼り付けます。
+1. 「**条件**」領域の下部フィールドに、「[&#x200B; フィルターを追加する準備 &#x200B;](#prepare-to-add-the-filter)」のプロジェクト URL からメモしたプロジェクト ID を貼り付けます。
 1. **OK** をクリックして、フィルター設定を保存します。
 
 ### テストしてアクティブ化
@@ -107,4 +107,4 @@ ht-degree: 19%
 
 ## リソース
 
-* フィルターについて詳しくは、[ シナリオへのフィルターの追加 ](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md) を参照してください。
+* フィルターについて詳しくは、[&#x200B; シナリオへのフィルターの追加 &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md) を参照してください。
