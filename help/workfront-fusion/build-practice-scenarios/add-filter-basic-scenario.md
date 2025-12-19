@@ -7,10 +7,10 @@ description: フィルターを使用すると、特定の条件が満たされ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ab27fe-e2dd-4b52-b986-77b4b7ea3b5e
-source-git-commit: 3a977d805c10fda7209b0634c6e32e818a980691
+source-git-commit: 6269db7454a63e80de3d770ab1012162d5080565
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 5%
+source-wordcount: '609'
+ht-degree: 19%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 5%
 
 この例では、リクエストが特定のリクエストキューに送信された場合にのみリクエストから新しいプロジェクトを作成できるようにするフィルターをシナリオに追加します。
 
-この例では、[&#x200B; 基本シナリオの作成 &#x200B;](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) で作成したシナリオを変更します。
+この例では、[ 基本シナリオの作成 ](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) で作成したシナリオを変更します。
 
 >[!NOTE]
 >
@@ -36,28 +36,28 @@ ht-degree: 5%
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
 +++
 
 ## 前提条件
 
-この手順を実行する前に、[&#x200B; 基本シナリオの作成 &#x200B;](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) で説明されているシナリオを作成する必要があります。
+この手順を実行する前に、[ 基本シナリオの作成 ](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) で説明されているシナリオを作成する必要があります。
 
 ## フィルターの追加
 
@@ -80,13 +80,13 @@ ht-degree: 5%
 ### フィルターの追加と設定
 
 1. シナリオエディターのシナリオに戻ります。
-1. 1 つ目のモジュールと 2 つ目のモジュールの間にあるレンチアイコン ![&#x200B; レンチアイコン &#x200B;](assets/wrench-icon.png) をクリックし、「**フィルターを設定** を選択します。
+1. 1 つ目のモジュールと 2 つ目のモジュールの間にあるレンチアイコン ![ レンチアイコン ](assets/wrench-icon.png) をクリックし、「**フィルターを設定** を選択します。
 1. 「ラベル」フィールドに、「リクエストキューのフィルター」などのこのフィルターのラベルを入力します。
 1. **条件** 領域の上部フィールドで、最初のモジュールから `projectID` をマッピングします。
 
-   ![&#x200B; プロジェクト ID をマップ &#x200B;](assets/map-proj-id.png)
+   ![ プロジェクト ID をマップ ](assets/map-proj-id.png)
 1. **条件** 演算子は「次と等しい」のままにします。
-1. 「**条件**」領域の下部フィールドに、「[&#x200B; フィルターを追加する準備 &#x200B;](#prepare-to-add-the-filter)」のプロジェクト URL からメモしたプロジェクト ID を貼り付けます。
+1. 「**条件**」領域の下部フィールドに、「[ フィルターを追加する準備 ](#prepare-to-add-the-filter)」のプロジェクト URL からメモしたプロジェクト ID を貼り付けます。
 1. **OK** をクリックして、フィルター設定を保存します。
 
 ### テストしてアクティブ化
@@ -103,8 +103,8 @@ ht-degree: 5%
 
    >[!IMPORTANT]
    >
-   >シナリオを改良、テストするたびに保存するようにしてください。
+   >シナリオを磨いてテストする際に、頻繁に保存します。 シナリオをトリガーするには、Workfront アカウントに新しいイシューを作成する必要が生じる場合があります。
 
 ## リソース
 
-* フィルターについて詳しくは、[&#x200B; シナリオへのフィルターの追加 &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md) を参照してください。
+* フィルターについて詳しくは、[ シナリオへのフィルターの追加 ](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md) を参照してください。
