@@ -60,13 +60,13 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 保存したテンプレートは、チームメンバーと自動的に共有されます。チームのメンバーではないユーザーと共有する場合は、公開する必要があります。 公開した、リンクと共有したり、管理者にテンプレートを公開するよう依頼したりできます。
 
-詳しくは、[ 公開と共有  [!DNL Adobe Workfront Fusion templates]](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md) を参照してください。
+詳しくは、[&#x200B; 公開と共有  [!DNL Adobe Workfront Fusion templates]](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md) を参照してください。
 
 ## 公開テンプレートを編集または削除するにはどうすればよいですか？
 
 **回答**：
 
-[Adobe Workfront Fusion テンプレートの表示、編集、削除 ](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md) を参照してください。
+[Adobe Workfront Fusion テンプレートの表示、編集、削除 &#x200B;](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md) を参照してください。
 
 ## 最初に作成した公開テンプレートが見つかりません。どうすればよいでしょうか？
 
