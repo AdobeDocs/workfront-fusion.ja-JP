@@ -2,10 +2,10 @@
 user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
-source-git-commit: fc0b3b7ca4ec999c7a121d0564d36abff6f2d620
+source-git-commit: aa3bdd7d14c86085c36e3859f6d53c0cadb28920
 workflow-type: tm+mt
-source-wordcount: '1970'
-ht-degree: 99%
+source-wordcount: '1979'
+ht-degree: 98%
 
 ---
 
@@ -269,6 +269,7 @@ ht-degree: 99%
    * [テンプレートの表示、編集および削除](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
    * [テンプレートの公開と共有](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
    * [現在利用可能な Adobe Workfront Fusion テンプレート](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)
+   * [テンプレートを使用してAdobe Workfront Fusion と Jira を接続](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md)
    * [Adobe Workfront Fusion テンプレートに関する FAQ](/help/workfront-fusion/create-and-manage-templates/fusion-templates-faqs.md)
 * 参照 {#references}
    * [参照](/help/workfront-fusion/references/references-toc.md)
