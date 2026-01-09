@@ -370,7 +370,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
   </tbody> 
 </table>
 
-#### [!UICONTROL  アセットの作成（レガシー） ] <!--different for v4-->
+#### [!UICONTROL &#x200B; アセットの作成（レガシー） &#x200B;] <!--different for v4-->
 
 このアクションモジュールでは、新しいアセットを作成できます。
 
@@ -1279,7 +1279,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
       <td> <p>イベントを監視するワークスペースの ID を入力します。</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL イベント ]</td> 
+      <td role="rowheader">[!UICONTROL イベント &#x200B;]</td> 
       <td> <p>このモジュールをトリガーにするイベントを選択</p> </td> 
      </tr> 
     </tbody> 
