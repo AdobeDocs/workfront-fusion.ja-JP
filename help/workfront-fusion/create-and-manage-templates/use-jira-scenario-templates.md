@@ -8,9 +8,9 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: aa3bdd7d14c86085c36e3859f6d53c0cadb28920
+source-git-commit: c3d1abb898eec6fc84dc1de0fb7799d13d9e3571
 workflow-type: tm+mt
-source-wordcount: '4075'
+source-wordcount: '4171'
 ht-degree: 4%
 
 ---
@@ -58,14 +58,14 @@ Adobe workfront Fusion は、Fusion と Jira の間の共通のワークフロ�
 
 * Adobe Developer Consoleのテクニカルアカウントが必要です。
 
-  詳細と手順については、Adobe ドキュメントの [&#x200B; テクニカルアカウントの設定 &#x200B;](https://developer.adobe.com/cloud-storage/guides/getting-started/technical-account-setup) を参照してください。
+  詳細と手順については、Adobe ドキュメントの [ テクニカルアカウントの設定 ](https://developer.adobe.com/cloud-storage/guides/getting-started/technical-account-setup) を参照してください。
 * Adobe Admin Console製品プロファイル領域のテクニカルアカウントにシステム管理者権限を適用する必要があります。
 
-  詳細と手順については、[Adobe Admin Consoleを使用してWorkfrontでシステム管理者を作成する &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console) を参照してください
+  詳細と手順については、[Adobe Admin Consoleを使用してWorkfrontでシステム管理者を作成する ](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console) を参照してください
 
 ### Jira
 
-Jira に OAuth2 認証を使用している場合（推奨）、[https://developer.atlassian.com/console](https://developer.atlassian.com/console) で OAuth2 アプリケーションを設定する必要があります。 詳細と手順については、Jira モジュール記事の [Jira への OAuth2 接続の作成 &#x200B;](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md#create-an-oauth2-connection-to-jira) を参照してください。
+Jira に OAuth2 認証を使用している場合（推奨）、[https://developer.atlassian.com/console](https://developer.atlassian.com/console) で OAuth2 アプリケーションを設定する必要があります。 詳細と手順については、Jira モジュール記事の [Jira への OAuth2 接続の作成 ](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md#create-an-oauth2-connection-to-jira) を参照してください。
 
 <!--
 
@@ -103,7 +103,7 @@ When configuring this application, you will need the following scopes:
 | メモ | コメント | WF ↔ Jira | 双方向コピー |
 | ドキュメント | 添付ファイル | WF → Jira | イシューの作成に関する添付ファイルとして、および作成後の新規ドキュメントに関するコメント。 |
 
-\*これらのフィールドは、この統合設定の一部として設定されます。 手順については、[Workfront、Jira、Workfront Fusion での前提条件の設定 &#x200B;](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#configure-prerequisites-in-workfront-jira-and-workfront-fusion) を参照してください。
+\*これらのフィールドは、この統合設定の一部として設定されます。 手順については、[Workfront、Jira、Workfront Fusion での前提条件の設定 ](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#configure-prerequisites-in-workfront-jira-and-workfront-fusion) を参照してください。
 
 ## Workfront、Jira およびWorkfront Fusion で前提条件を設定します
 
@@ -156,13 +156,13 @@ Jira 統合テンプレートを使用するには、次の設定を実行する
 
 1. Workfrontで、System Integration ユーザーを作成します。 このユーザーはWorkfront Fusion でのみ使用され、人間のユーザーを表すものではありません。 このユーザーに割り当てられたタスクは、Workfrontと Jira を同期するシナリオをトリガーします。
 
-   手順については、Workfront ドキュメントの [&#x200B; ユーザーの追加 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) を参照してください。
+   手順については、Workfront ドキュメントの [ ユーザーの追加 ](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) を参照してください。
 
 #### Workfrontでのカスタムフォームの作成
 
 1. Workfrontで、カスタムフォームの作成を開始します。
 
-   手順については、Workfront ドキュメントの [&#x200B; カスタムフォームの作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) を参照してください。
+   手順については、Workfront ドキュメントの [ カスタムフォームの作成 ](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) を参照してください。
 1. フォームに「**JIRA フィールド**」という名前を付けます。
 1. カスタムフォームに次のフィールドを含める：
 
@@ -179,7 +179,7 @@ Jira 統合テンプレートを使用するには、次の設定を実行する
 >
 >他のユーザーによるこのフォームの編集を制限することをお勧めします。 これを行うには、カスタムフォームに追加されたユーザーが表示アクセス権のみを持つようにします。
 >
->手順については、Workfront ドキュメントの [&#x200B; カスタムフォームの共有 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) を参照してください。
+>手順については、Workfront ドキュメントの [ カスタムフォームの共有 ](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) を参照してください。
 
 ### Workfront Fusion で接続を設定する
 
@@ -189,8 +189,8 @@ Jira 統合テンプレートを使用するには、次の設定を実行する
 
 必要に応じて、テンプレートの設定の一環として、これらの接続を作成できます。
 
-* Workfrontへの接続を作成する方法については、Workfront モジュールに関する記事の [WorkfrontのWorkfront Fusion への接続 &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#connect-workfront-to-workfront-fusion) を参照してください。
-* Jira への接続を作成する手順については、「Jira ソフトウェアモジュール」の [Jira をWorkfront Fusion に接続する &#x200B;](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md#connect-jira-to-workfront-fusion) を参照してください。
+* Workfrontへの接続を作成する方法については、Workfront モジュールに関する記事の [WorkfrontのWorkfront Fusion への接続 ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#connect-workfront-to-workfront-fusion) を参照してください。
+* Jira への接続を作成する手順については、「Jira ソフトウェアモジュール」の [Jira をWorkfront Fusion に接続する ](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md#connect-jira-to-workfront-fusion) を参照してください。
 
 
 ## シナリオ
@@ -204,11 +204,11 @@ Jira 用のすぐに使用できる 8 つのテンプレートは、一般的な
 * **[Workfrontから Jira へ：Workfrontのタスクまたは問題の割り当てから JIRA の問題を作成](#scenario-1-workfront-to-jira-create-jira-issue-from-workfront-task-or-issue-assignment)**
 * [JIRA からWorkfrontへ：JIRA からWorkfrontへ：Jira からWorkfrontに問題やコメントに関する更新を送信します](#scenario-2-jira-to-workfront-send-updates-on-issues-and-comments-back-to-workfront-from-jira)
 * [Workfrontから Jira へ：Workfront タスクから JIRA への変更](#scenario-3-workfront-to-jira-changes-to-workfront-task-to-jira-issue)
-* Workfrontから Jira へ：Workfrontの問題が JIRA の問題に変更されました
-* Workfrontから Jira へ：Workfrontのタスクまたは問題に関する新しいメモを作成する際に、JIRA でコメントを作成します
-* Workfrontから Jira へ：Workfrontのタスクまたは問題で削除したメモに対して JIRA でコメントを作成します
-* Workfrontから Jira へ：Workfrontのタスクまたは問題に関する新規ドキュメントを作成する際に、JIRA でコメントを作成します
-* Workfrontから Jira へ：Workfrontのタスクまたは問題で削除されたドキュメントに関するコメントを JIRA で作成します
+* [Workfrontから Jira へ：Workfrontの問題が JIRA の問題に変更されました](#scenario-4-workfront-to-jira-changes-to-workfront-issue-to-jira-issue)
+* [Workfrontから Jira へ：Workfrontのタスクまたは問題に関する新しいメモを作成する際に、JIRA でコメントを作成します](#scenario-5-workfront-to-jira-create-comment-in-jira-when-new-note-on-workfront-task-or-issue)
+* [Workfrontから Jira へ：Workfrontのタスクまたは問題で削除したメモに対して JIRA でコメントを作成します](#scenario-6-workfront-to-jira-create-comment-in-jira-on-deleted-note-on-workfront-task-or-issue)
+* [Workfrontから Jira へ：Workfrontのタスクまたは問題に関する新規ドキュメントを作成する際に、JIRA でコメントを作成します](#scenario-7-workfront-to-jira-create-comment-in-jira-when-new-document-on-workfront-task-or-issue)
+* [Workfrontから Jira へ：Workfrontのタスクまたは問題で削除されたドキュメントに関するコメントを JIRA で作成します](#scenario-8-workfront-to-jira-create-comment-in-jira-on-deleted-document-on-workfront-task-or-issue)
 
 ### 一般パラメーター
 
@@ -234,13 +234,13 @@ Workfront タスクが割り当てられている場合、Jira のイシュー�
 
 #### トリガーモジュールの設定
 
-1. 左側のナビゲーションパネルにある「**テンプレート**」タブ ![&#x200B; テンプレートアイコン &#x200B;](assets/templates-icon.png) をクリックします。
+1. 左側のナビゲーションパネルにある「**テンプレート**」タブ ![ テンプレートアイコン ](assets/templates-icon.png) をクリックします。
 1. 画面の左上隅付近にある検索バーを使用して、テンプレートを検索します。 テンプレート名または含まれるアプリケーションで検索できます。
 1. 「**Workfrontから Jira へ：Workfront タスクまたは問題割り当てから JIRA の問題を作成**」テンプレートをクリックします。
 
    テンプレートのビューが開き、情報とデータフローのアニメーションが表示されます。
 1. 最初のモジュールで、Webhook の追加を開始します。
-1. [Workfront Fusion で接続を設定 &#x200B;](#configure-connections-in-workfront-fusion) で作成したWorkfront接続を選択します。
+1. [Workfront Fusion で接続を設定 ](#configure-connections-in-workfront-fusion) で作成したWorkfront接続を選択します。
 1. 「**レコードタイプ**」フィールドで「`Assignment`」を選択します。
 1. 「**状態**」フィールドで「`New state`」を選択します。
 1. **And** オプションを使用して、次の操作でフィルターを設定します。
@@ -254,13 +254,13 @@ Workfront タスクが割り当てられている場合、Jira のイシュー�
 1. 「**この接続によって行われた更新を除外**」オプションを有効にします。
 1. 「**レコード生成元**」フィールドで、「新規レコードのみ」を選択します。
 1. 「**保存**」をクリックして Webhook を保存し、「**OK**」をクリックしてトリガーモジュールを保存します。
-1. 続いて [Workfrontと Jira へのテンプレートモジュールの接続 &#x200B;](#connect-template-modules-to-workfront-and-jira) を参照してください。
+1. 続いて [Workfrontと Jira へのテンプレートモジュールの接続 ](#connect-template-modules-to-workfront-and-jira) を参照してください。
 
 #### Workfrontと Jira へのテンプレートモジュールの接続
 
-1. **each** Workfront モジュールの「接続」フィールドで、[Workfront Fusion で接続を設定 &#x200B;](#configure-connections-in-workfront-fusion) で作成したWorkfront接続を選択し、「**OK**」をクリックしてそのモジュールへの接続を保存します。
-1. **それぞれの** Jira モジュールの「接続」フィールドで、[Workfront Fusion で接続を設定 &#x200B;](#configure-connections-in-workfront-fusion) で作成したWorkfront接続を選択し、「**OK**」をクリックしてそのモジュールへの接続を保存します。
-1. [&#x200B; 一般パラメーターモジュールの更新 &#x200B;](#update-the-general-parameters-module) を続行します。
+1. **each** Workfront モジュールの「接続」フィールドで、[Workfront Fusion で接続を設定 ](#configure-connections-in-workfront-fusion) で作成したWorkfront接続を選択し、「**OK**」をクリックしてそのモジュールへの接続を保存します。
+1. **それぞれの** Jira モジュールの「接続」フィールドで、[Workfront Fusion で接続を設定 ](#configure-connections-in-workfront-fusion) で作成したWorkfront接続を選択し、「**OK**」をクリックしてそのモジュールへの接続を保存します。
+1. [ 一般パラメーターモジュールの更新 ](#update-the-general-parameters-module) を続行します。
 
 #### 一般パラメーターモジュールの更新
 
@@ -272,11 +272,11 @@ Workfront タスクが割り当てられている場合、Jira のイシュー�
    | JiraBaseURL | 接続先の Jira アカウントのベース URL を入力します。 |
    | wfBaseURL | 接続先のWorkfront アカウントのベース URL を入力します。 |
 
-1. 続けて [Jira でのカスタムフィールドのマッピング &#x200B;](#map-custom-fields-in-jira) を行います。
+1. 続けて [Jira でのカスタムフィールドのマッピング ](#map-custom-fields-in-jira) を行います。
 
-#### Jira でのカスタムフィールドのマッピング
+<!--#### Map custom fields in Jira. 
 
-<!--Awaiting feedback-->
+Awaiting feedback-->
 
 +++
 
@@ -291,7 +291,7 @@ Workfront タスクが割り当てられている場合、Jira のイシュー�
 
 +++**展開すると、シナリオ 2:JIRA からWorkfrontへの移行：問題とコメントに関する更新を Jira からWorkfrontに送り返す手順が表示されます**
 
-1. 左側のナビゲーションパネルにある「**テンプレート**」タブ ![&#x200B; テンプレートアイコン &#x200B;](assets/templates-icon.png) をクリックします。
+1. 左側のナビゲーションパネルにある「**テンプレート**」タブ ![ テンプレートアイコン ](assets/templates-icon.png) をクリックします。
 1. 画面の左上隅付近にある検索バーを使用して、テンプレートを検索します。 テンプレート名または含まれるアプリケーションで検索できます。
 1. **パート 2:JIRA をWorkfrontに：イシューとコメントに関する更新を Jira からWorkfrontに送り返す** テンプレートをクリックします。
 
@@ -299,11 +299,11 @@ Workfront タスクが割り当てられている場合、Jira のイシュー�
 1. 最初のモジュールで、Webhook の追加を開始します。
 1. システム統合ユーザーの資格情報を使用する接続を選択するか、システム統合の資格情報を使用して Jira への接続を作成します。
 
-* Jira への接続を作成する手順については、「Jira ソフトウェアモジュール」の [Jira をWorkfront Fusion に接続する &#x200B;](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md#connect-jira-to-workfront-fusion) を参照してください。
+* Jira への接続を作成する手順については、「Jira ソフトウェアモジュール」の [Jira をWorkfront Fusion に接続する ](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md#connect-jira-to-workfront-fusion) を参照してください。
 
 1. Webhook フィルターの設定
 
-1. 続いて [Jira での Webhook の設定 &#x200B;](#configure-a-webhook-in-jira) を参照してください。
+1. 続いて [Jira での Webhook の設定 ](#configure-a-webhook-in-jira) を参照してください。
 
 #### Jira での Webhook の設定
 
@@ -318,12 +318,12 @@ Workfront タスクが割り当てられている場合、Jira のイシュー�
    * **コメント**：作成、削除されました
 
 
-1. 続いて [Workfrontと Jira にテンプレートモジュールを接続する（モジュール 2） &#x200B;](#connect-template-modules-to-workfront-and-jira-module-2)
+1. 続いて [Workfrontと Jira にテンプレートモジュールを接続する（モジュール 2） ](#connect-template-modules-to-workfront-and-jira-module-2)
 
 #### Workfrontと Jira へのテンプレートモジュールの接続（モジュール 2）
 
-1. **each** Workfront モジュールの「接続」フィールドで、[Workfront Fusion で接続を設定 &#x200B;](#configure-connections-in-workfront-fusion) で作成したWorkfront接続を選択し、「**OK**」をクリックしてそのモジュールへの接続を保存します。
-1. **それぞれの** Jira モジュールの「接続」フィールドで、[Workfront Fusion で接続を設定 &#x200B;](#configure-connections-in-workfront-fusion) で作成したWorkfront接続を選択し、「**OK**」をクリックしてそのモジュールへの接続を保存します。
+1. **each** Workfront モジュールの「接続」フィールドで、[Workfront Fusion で接続を設定 ](#configure-connections-in-workfront-fusion) で作成したWorkfront接続を選択し、「**OK**」をクリックしてそのモジュールへの接続を保存します。
+1. **それぞれの** Jira モジュールの「接続」フィールドで、[Workfront Fusion で接続を設定 ](#configure-connections-in-workfront-fusion) で作成したWorkfront接続を選択し、「**OK**」をクリックしてそのモジュールへの接続を保存します。
    <!--#### Map custom fields-->
 
 +++
@@ -332,7 +332,7 @@ Workfront タスクが割り当てられている場合、Jira のイシュー�
 
 +++**展開して、シナリオ 3: WF から JIRA への変更（タスク）を設定する手順を表示**
 
-1. 左側のナビゲーションパネルにある「**テンプレート**」タブ ![&#x200B; テンプレートアイコン &#x200B;](assets/templates-icon.png) をクリックします。
+1. 左側のナビゲーションパネルにある「**テンプレート**」タブ ![ テンプレートアイコン ](assets/templates-icon.png) をクリックします。
 1. 画面の左上隅付近にある検索バーを使用して、テンプレートを検索します。 テンプレート名または含まれるアプリケーションで検索できます。
 1. **パート 3:Workfrontから Jira:Workfront タスクから JIRA への変更** テンプレートをクリックします。
 
@@ -355,7 +355,7 @@ Workfront タスクが割り当てられている場合、Jira のイシュー�
 1. 「**この接続によって行われた更新を除外**」オプションを有効にします。
 1. 「**レコードの起源**」フィールドで、「`Updated record only`」を選択します。
 1. 「**保存**」をクリックして Webhook を保存し、「**OK**」をクリックしてトリガーモジュールを保存します。
-1. 2 番目のモジュールで、次の変数を設定し、「**OK**」をクリックしてモジュールを保存します。
+1. **JIRA 変数を設定** モジュールで次の変数を設定し、「**OK**」をクリックしてモジュールを保存します。
 
    | 変数名 | 変数値 |
    |---|---|
@@ -366,18 +366,15 @@ Workfront タスクが割り当てられている場合、Jira のイシュー�
 1. **each** Workfront モジュールの「接続」フィールドで、System Integration 資格情報を使用するWorkfront接続を選択し、「**OK**」をクリックしてモジュールを保存します。
 1. **各** Jira モジュールの「接続」フィールドで、システム統合資格情報を使用する Jira 接続を選択し、「**OK**」をクリックしてモジュールを保存します。
 
-
 +++
-
-
 
 ### シナリオ 4:Workfrontから Jira へ：Workfront問題から JIRA 問題への変更
 
 このシナリオでは、Workfrontの問題から、以前に接続された JIRA の問題に更新が送信されます。
 
-+++**展開して、「シナリオ 4:WF から JIRA への変更（問題）」を設定する手順を表示**
++++**展開すると、「シナリオ 4:Workfrontから Jira へ：Workfrontの問題から JIRA への変更」の設定手順が表示されます**
 
-1. 左側のナビゲーションパネルにある「**テンプレート**」タブ ![&#x200B; テンプレートアイコン &#x200B;](assets/templates-icon.png) をクリックします。
+1. 左側のナビゲーションパネルにある「**テンプレート**」タブ ![ テンプレートアイコン ](assets/templates-icon.png) をクリックします。
 1. 画面の左上隅付近にある検索バーを使用して、テンプレートを検索します。 テンプレート名または含まれるアプリケーションで検索できます。
 1. **シナリオ 4:WF から Jira への変更（イシュー）** テンプレートをクリックします。
 
@@ -387,20 +384,20 @@ Workfront タスクが割り当てられている場合、Jira のイシュー�
 1. このシナリオを所有する組織およびチームを選択します。
 1. 最初のモジュールで、Webhook の追加を開始します。
 1. 「接続」フィールドで、System Integration 資格情報を使用するWorkfront接続を選択します。
-1. 「**レコードタイプ**」フィールドで「`??`」を選択します。
+1. 「**レコードタイプ**」フィールドで「`Issues`」を選択します。
 1. 「**状態**」フィールドで「`New state`」を選択します。
 1. **And** オプションを使用して、次の操作でフィルターを設定します。
 
    | フィールド | 演算子 | 値 |
    |---|---|---|
-   | （問題に関する更新） |  |  |
    | assignedToID | が次と等しい | System Integration ユーザーのWorkfront ID を入力します |
    | projectID | が次と等しい | Webhook で監視するプロジェクト（複数可）の ID を入力します。 |
-   | WF ID | 存在する |  |
+   | DE: Jira キー | 存在する |  |
 
 1. 「**この接続によって行われた更新を除外**」オプションを有効にします。
+1. 「**レコードの起源**」フィールドで、「`Updated record only`」を選択します。
 1. 「**保存**」をクリックして Webhook を保存し、「**OK**」をクリックしてトリガーモジュールを保存します。
-1. 2 番目のモジュールで、次の変数を設定し、「**OK**」をクリックしてモジュールを保存します。
+1. **JIRA 変数を設定** モジュールで次の変数を設定し、「**OK**」をクリックしてモジュールを保存します。
 
    | 変数名 | 変数値 |
    |---|---|
@@ -411,35 +408,33 @@ Workfront タスクが割り当てられている場合、Jira のイシュー�
 1. **each** Workfront モジュールの「接続」フィールドで、System Integration 資格情報を使用するWorkfront接続を選択し、「**OK**」をクリックしてモジュールを保存します。
 1. **各** Jira モジュールの「接続」フィールドで、システム統合資格情報を使用する Jira 接続を選択し、「**OK**」をクリックしてモジュールを保存します。
 
-
 +++
 
+### シナリオ 5:Workfrontから Jira へ：Workfrontのタスクまたは問題に関する新しいメモを作成する際に、JIRA でコメントを作成します
 
++++**展開して、「シナリオ 5:Workfrontから Jira へ」の設定手順を表示する：Workfrontのタスクまたは問題に関する新しいメモを作成する際に、JIRA でコメントを作成する**
 
-### シナリオ 5:WF から Jira への新しいメモ（タスクと問題）
-
-+++**展開して、「シナリオ 5:WF から Jira への新規ノート（タスクおよび問題）」を構成する手順を表示**
-
-1. 左側のナビゲーションパネルにある「**テンプレート**」タブ ![&#x200B; テンプレートアイコン &#x200B;](assets/templates-icon.png) をクリックします。
+1. 左側のナビゲーションパネルにある「**テンプレート**」タブ ![ テンプレートアイコン ](assets/templates-icon.png) をクリックします。
 1. 画面の左上隅付近にある検索バーを使用して、テンプレートを検索します。 テンプレート名または含まれるアプリケーションで検索できます。
 1. **シナリオ 5:WF-to-Jira 新規ノート（タスクとイシュー）** テンプレートをクリックします。
 
    テンプレートのビューが開き、情報とデータフローのアニメーションが表示されます。
 1. 最初のモジュールで、Webhook の追加を開始します。
 1. 「接続」フィールドで、System Integration 資格情報を使用するWorkfront接続を選択します。
-1. 「**レコードタイプ**」フィールドで「`??`」を選択します。
+1. 「**レコードタイプ**」フィールドで「`Note`」を選択します。
 1. 「**状態**」フィールドで「`New state`」を選択します。
-1. **And** オプションを使用して、次の操作でフィルターを設定します。
+1. 次の操作でフィルターを設定します。
 
    | フィールド | 演算子 | 値 |
    |---|---|---|
-   | （メモの作成と更新） |  |  |
-   | assignedToID | が次と等しい | System Integration ユーザーのWorkfront ID を入力します |
-   | projectID | が次と等しい | Webhook で監視するプロジェクト（複数可）の ID を入力します。 |
+   | projectID<br>AND<br>TaskID | Equals<br><br>Exists | Webhook で監視するプロジェクト（複数可）の ID を入力します。 |
+   | または |  |  |
+   | projectID<br>AND<br>OpTaskID | Equals<br><br>Exists | Webhook で監視するプロジェクト（複数可）の ID を入力します。 |
 
 1. 「**この接続によって行われた更新を除外**」オプションを有効にします。
+1. 「**レコードの起源**」フィールドで、「`New record only`」を選択します。
 1. 「**保存**」をクリックして Webhook を保存し、「**OK**」をクリックしてトリガーモジュールを保存します。
-1. 2 番目のモジュールで、次の変数を設定し、「**OK**」をクリックしてモジュールを保存します。
+1. **変数を設定** モジュールで次の変数を設定し、「**OK**」をクリックしてモジュールを保存します。
 
    | 変数名 | 変数値 |
    |---|---|
@@ -447,40 +442,34 @@ Workfront タスクが割り当てられている場合、Jira のイシュー�
    | JiraBaseURL | 接続先の Jira アカウントのベース URL。 |
    | wfBaseURL | 接続先のWorkfront アカウントのベース URL。 |
 
-1. 「**この接続によって行われた更新を除外**」オプションを有効にします。
-1. 「**保存**」をクリックして Webhook を保存し、「**OK**」をクリックしてトリガーモジュールを保存します。
 1. **each** Workfront モジュールの「接続」フィールドで、System Integration 資格情報を使用するWorkfront接続を選択し、「**OK**」をクリックしてモジュールを保存します。
 1. **各** Jira モジュールの「接続」フィールドで、システム統合資格情報を使用する Jira 接続を選択し、「**OK**」をクリックしてモジュールを保存します。
 
-
 +++
 
+### シナリオ 6:Workfrontから Jira へ：Workfrontのタスクまたは問題で削除されたメモに対して JIRA でコメントを作成する
 
++++**展開すると、「シナリオ 6:Workfrontから Jira へ」の設定手順が表示されます。「Workfront」タスクまたは問題の削除済みメモに対するコメントを JIRA で作成します**
 
-
-### シナリオ 6:WF から Jira へのメモの削除（タスクと問題）
-
-+++**展開してシナリオ 6 の設定手順を表示 :WF-to-Jira メモ（タスクと問題）を削除**
-
-1. 左側のナビゲーションパネルにある「**テンプレート**」タブ ![&#x200B; テンプレートアイコン &#x200B;](assets/templates-icon.png) をクリックします。
+1. 左側のナビゲーションパネルにある「**テンプレート**」タブ ![ テンプレートアイコン ](assets/templates-icon.png) をクリックします。
 1. 画面の左上隅付近にある検索バーを使用して、テンプレートを検索します。 テンプレート名または含まれるアプリケーションで検索できます。
 1. **シナリオ 6:WF から Jira へのメモ（タスクとイシュー）を削除** テンプレートをクリックします。
 
    テンプレートのビューが開き、情報とデータフローのアニメーションが表示されます。
 1. 最初のモジュールで、Webhook の追加を開始します。
 1. 「接続」フィールドで、System Integration 資格情報を使用するWorkfront接続を選択します。
-1. 「**レコードタイプ**」フィールドで「`??`」を選択します。
+1. 「**レコードタイプ**」フィールドで「`Note`」を選択します。
 1. 「**状態**」フィールドで「`New state`」を選択します。
-1. **And** オプションを使用して、次の操作でフィルターを設定します。
+1. 次の操作でフィルターを設定します。
 
    | フィールド | 演算子 | 値 |
    |---|---|---|
-   | （メモで削除） |  |  |
-   | assignedToID | が次と等しい | System Integration ユーザーのWorkfront ID を入力します |
-   | projectID | が次と等しい | Webhook で監視するプロジェクト（複数可）の ID を入力します。 |
-   | WF ID | 存在する |  |
+   | projectID<br>AND<br>TaskID | Equals<br><br>Exists | Webhook で監視するプロジェクト（複数可）の ID を入力します。 |
+   | または |  |  |
+   | projectID<br>AND<br>OpTaskID | Equals<br><br>Exists | Webhook で監視するプロジェクト（複数可）の ID を入力します。 |
 
 1. 「**この接続によって行われた更新を除外**」オプションを有効にします。
+1. 「**レコードの起源**」フィールドで、「`Deleted record only`」を選択します。
 1. 「**保存**」をクリックして Webhook を保存し、「**OK**」をクリックしてトリガーモジュールを保存します。
 1. 2 番目のモジュールで、次の変数を設定し、「**OK**」をクリックしてモジュールを保存します。
 
@@ -493,29 +482,25 @@ Workfront タスクが割り当てられている場合、Jira のイシュー�
 1. **each** Workfront モジュールの「接続」フィールドで、System Integration 資格情報を使用するWorkfront接続を選択し、「**OK**」をクリックしてモジュールを保存します。
 1. **各** Jira モジュールの「接続」フィールドで、システム統合資格情報を使用する Jira 接続を選択し、「**OK**」をクリックしてモジュールを保存します。
 
-
 +++
 
+### シナリオ 7:Workfrontから Jira へ：Workfrontのタスクまたは問題に関する新規ドキュメントを作成する際に、JIRA でコメントを作成します
 
++++**展開すると、「シナリオ 7:Workfrontから Jira へ」:Workfrontのタスクまたは問題に関する新規ドキュメントを作成する際に、JIRA でコメントを作成する** の設定手順が表示されます。
 
-### シナリオ 7:WF から Jira への新しい添付ファイル（タスクと問題）
-
-+++**展開して、「SScenario 7:WF から Jira への新規添付ファイル（タスクと問題）を設定する手順を表示**
-
-1. 左側のナビゲーションパネルにある「**テンプレート**」タブ ![&#x200B; テンプレートアイコン &#x200B;](assets/templates-icon.png) をクリックします。
+1. 左側のナビゲーションパネルにある「**テンプレート**」タブ ![ テンプレートアイコン ](assets/templates-icon.png) をクリックします。
 1. 画面の左上隅付近にある検索バーを使用して、テンプレートを検索します。 テンプレート名または含まれるアプリケーションで検索できます。
 1. **シナリオ 7:WF から Jira への新規添付ファイル（タスクと問題）** テンプレートをクリックします。
 
    テンプレートのビューが開き、情報とデータフローのアニメーションが表示されます。
 1. 最初のモジュールで、Webhook の追加を開始します。
 1. 「接続」フィールドで、System Integration 資格情報を使用するWorkfront接続を選択します。
-1. 「**レコードタイプ**」フィールドで「`??`」を選択します。
+1. 「**レコードタイプ**」フィールドで「`Document`」を選択します。
 1. 「**状態**」フィールドで「`New state`」を選択します。
 1. **And** オプションを使用して、次の操作でフィルターを設定します。
 
    | フィールド | 演算子 | 値 |
    |---|---|---|
-   | （ドキュメントで作成） |  |  |
    | assignedToID | が次と等しい | System Integration ユーザーのWorkfront ID を入力します |
    | projectID | が次と等しい | Webhook で監視するプロジェクト（複数可）の ID を入力します。 |
 
@@ -528,37 +513,35 @@ Workfront タスクが割り当てられている場合、Jira のイシュー�
    | wfBaseURL | 接続先のWorkfront アカウントのベース URL。 |
 
 1. 「**この接続によって行われた更新を除外**」オプションを有効にします。
+1. 「**レコードの起源**」フィールドで、「`New record only`」を選択します。
 1. 「**保存**」をクリックして Webhook を保存し、「**OK**」をクリックしてトリガーモジュールを保存します。
 1. **each** Workfront モジュールの「接続」フィールドで、System Integration 資格情報を使用するWorkfront接続を選択し、「**OK**」をクリックしてモジュールを保存します。
 1. **各** Jira モジュールの「接続」フィールドで、システム統合資格情報を使用する Jira 接続を選択し、「**OK**」をクリックしてモジュールを保存します。
 
-
 +++
 
+### シナリオ 8:Workfrontから Jira へ：Workfrontのタスクまたは問題で削除されたドキュメントに関するコメントを JIRA で作成する
 
++++**展開して、「シナリオ 8:Workfrontから Jira へ」の設定手順を表示する：「Workfront」タスクまたは問題で削除されたドキュメントに対するコメントを JIRA で作成する**
 
-### シナリオ 8:WF から Jira への添付ファイルの削除（タスクと問題）
-
-+++**展開して、シナリオ 8 を設定する手順を表示：WF から Jira への添付ファイルの削除（タスクと問題）**
-
-1. 左側のナビゲーションパネルにある「**テンプレート**」タブ ![&#x200B; テンプレートアイコン &#x200B;](assets/templates-icon.png) をクリックします。
+1. 左側のナビゲーションパネルにある「**テンプレート**」タブ ![ テンプレートアイコン ](assets/templates-icon.png) をクリックします。
 1. 画面の左上隅付近にある検索バーを使用して、テンプレートを検索します。 テンプレート名または含まれるアプリケーションで検索できます。
 1. **シナリオ 8:WF から Jira への添付ファイルの削除（タスクと問題）** テンプレートをクリックします。
 
    テンプレートのビューが開き、情報とデータフローのアニメーションが表示されます。
 1. 最初のモジュールで、Webhook の追加を開始します。
 1. 「接続」フィールドで、System Integration 資格情報を使用するWorkfront接続を選択します。
-1. 「**レコードタイプ**」フィールドで「`??`」を選択します。
+1. 「**レコードタイプ**」フィールドで「`Document`」を選択します。
 1. 「**状態**」フィールドで「`New state`」を選択します。
-1. **And** オプションを使用して、次の操作でフィルターを設定します。
+1. 次の操作でフィルターを設定します。
 
    | フィールド | 演算子 | 値 |
    |---|---|---|
-   | （ドキュメントから削除） |  |  |
-   | assignedToID | が次と等しい | System Integration ユーザーのWorkfront ID を入力します |
-   | projectID | が次と等しい | Webhook で監視するプロジェクト（複数可）の ID を入力します。 |
+   | projectID<br>AND<br>TaskID | Equals<br><br>Exists | Webhook で監視するプロジェクト（複数可）の ID を入力します。 |
+   | または |  |  |
+   | projectID<br>AND<br>OpTaskID | Equals<br><br>Exists | Webhook で監視するプロジェクト（複数可）の ID を入力します。 |
 
-1. 2 つ目のモジュールで、次の変数を設定します。
+1. **変数を設定** モジュールで、次の変数を設定します。
 
    | 変数名 | 変数値 |
    |---|---|
@@ -567,6 +550,7 @@ Workfront タスクが割り当てられている場合、Jira のイシュー�
    | wfBaseURL | 接続先のWorkfront アカウントのベース URL。 |
 
 1. 「**この接続によって行われた更新を除外**」オプションを有効にします。
+1. 「**レコードの起源**」フィールドで、「`Deleted record only`」を選択します。
 1. 「**保存**」をクリックして Webhook を保存し、「**OK**」をクリックしてトリガーモジュールを保存します。
 1. **each** Workfront モジュールの「接続」フィールドで、System Integration 資格情報を使用するWorkfront接続を選択し、「**OK**」をクリックしてモジュールを保存します。
 1. **各** Jira モジュールの「接続」フィールドで、システム統合資格情報を使用する Jira 接続を選択し、「**OK**」をクリックしてモジュールを保存します。
