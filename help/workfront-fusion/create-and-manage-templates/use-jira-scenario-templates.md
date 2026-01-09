@@ -61,7 +61,7 @@ Adobe workfront Fusion は、Fusion と Jira の間の共通のワークフロ�
   詳細と手順については、Adobe ドキュメントの [&#x200B; テクニカルアカウントの設定 &#x200B;](https://developer.adobe.com/cloud-storage/guides/getting-started/technical-account-setup) を参照してください。
 * Adobe Admin Console製品プロファイル領域のテクニカルアカウントにシステム管理者権限を適用する必要があります。
 
-  詳細と手順については、[Adobe Admin Consoleを使用してWorkfrontでシステム管理者を作成する &#x200B;](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console) を参照してください
+  詳細と手順については、[Adobe Admin Consoleを使用してWorkfrontでシステム管理者を作成する &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console) を参照してください
 
 ### Jira
 
@@ -156,13 +156,13 @@ Jira 統合テンプレートを使用するには、次の設定を実行する
 
 1. Workfrontで、System Integration ユーザーを作成します。 このユーザーはWorkfront Fusion でのみ使用され、人間のユーザーを表すものではありません。 このユーザーに割り当てられたタスクは、Workfrontと Jira を同期するシナリオをトリガーします。
 
-   手順については、Workfront ドキュメントの [&#x200B; ユーザーの追加 &#x200B;](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) を参照してください。
+   手順については、Workfront ドキュメントの [&#x200B; ユーザーの追加 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) を参照してください。
 
 #### Workfrontでのカスタムフォームの作成
 
 1. Workfrontで、カスタムフォームの作成を開始します。
 
-   手順については、Workfront ドキュメントの [&#x200B; カスタムフォームの作成 &#x200B;](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) を参照してください。
+   手順については、Workfront ドキュメントの [&#x200B; カスタムフォームの作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) を参照してください。
 1. フォームに「**JIRA フィールド**」という名前を付けます。
 1. カスタムフォームに次のフィールドを含める：
 
@@ -179,7 +179,7 @@ Jira 統合テンプレートを使用するには、次の設定を実行する
 >
 >他のユーザーによるこのフォームの編集を制限することをお勧めします。 これを行うには、カスタムフォームに追加されたユーザーが表示アクセス権のみを持つようにします。
 >
->手順については、Workfront ドキュメントの [&#x200B; カスタムフォームの共有 &#x200B;](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) を参照してください。
+>手順については、Workfront ドキュメントの [&#x200B; カスタムフォームの共有 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) を参照してください。
 
 ### Workfront Fusion で接続を設定する
 
