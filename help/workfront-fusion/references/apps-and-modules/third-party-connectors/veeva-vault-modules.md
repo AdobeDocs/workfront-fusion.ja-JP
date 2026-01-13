@@ -3,10 +3,10 @@ title: Veeva Vault モジュール
 description: Adobe Workfront Fusion のシナリオでは、Veeva Vault を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 881e5ba39d1730b641085cf0d02137d18e443135
+source-git-commit: b57ae36cf9225705c7f4923d7302b1749aa04d94
 workflow-type: tm+mt
-source-wordcount: '2485'
-ht-degree: 18%
+source-wordcount: '2539'
+ht-degree: 20%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 18%
 
 Adobe Workfront Fusion のシナリオでは、Veeva Vault を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
-シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成手順について詳しくは、[シナリオの作成：記事のインデックス](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
 
-モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、[モジュール：記事インデックス](/help/workfront-fusion/references/modules/modules-toc.md)の記事を参照してください。
 
 ## アクセス要件
 
@@ -32,7 +32,7 @@ Adobe Workfront Fusion のシナリオでは、Veeva Vault を使用するワー
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>Standard</p><p>Work またはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
@@ -115,6 +115,26 @@ Veeva Vault モジュール内から直接 Veeva Vault アカウントへの接�
        <td role="rowheader">接続名</td> 
        <td> <p>接続に名前を入力します。</p> </td> 
       </tr> 
+      <tr> 
+       <td role="rowheader">認証サーバープロバイダー</td> 
+       <td> <p>この認証に使用するプロバイダーを選択します。</p> </td> 
+      </tr> 
+      <tr> 
+       <td role="rowheader">ping ホスト</td> 
+       <td> <p>PingFederate を使用している場合は、ping ホストを入力します。</p> </td> 
+      </tr> 
+      <tr>
+        <td role="rowheader">範囲</td>
+        <td>
+          <p>この接続のスコープを入力してください。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">テナント ID</td>
+        <td>
+          <p>認証サーバープロバイダーに Azure AD/Microsoft Entra ID を使用している場合は、この接続のテナント ID を入力します。</p>
+        </td>
+      </tr>
       <tr>
         <td role="rowheader">クライアント ID</td>
         <td>
@@ -128,18 +148,6 @@ Veeva Vault モジュール内から直接 Veeva Vault アカウントへの接�
         </td>
       </tr>
       <tr>
-        <td role="rowheader">範囲</td>
-        <td>
-          <p>この接続のスコープを入力してください。</p>
-        </td>
-      </tr>
-      <tr>
-        <td role="rowheader">テナント ID</td>
-        <td>
-          <p>この接続のテナント ID を入力します。</p>
-        </td>
-      </tr>
-      <tr>
         <td role="rowheader">プロファイル ID</td>
         <td>
           <p>OAuth2 / Open ID 接続プロファイルの ID を入力します。</p>
@@ -149,6 +157,12 @@ Veeva Vault モジュール内から直接 Veeva Vault アカウントへの接�
        <td role="rowheader">Vault の DNS</td> 
        <td>Veeva Vault DNS （ドメイン名）を入力します。</p><p>Veeva Vault DNS を見つけるには、Veeva Vault へのアクセスに使用する URL を調べます。</p>例えば、URL <code>https://my-dns.veevavault.com</code> では、DNS は <code>my-dns</code> です。 URL 全体を入力する必要はありません。</td> 
       </tr> 
+      <tr>
+        <td role="rowheader">セッションの有効期限（分）</td>
+        <td>
+          <p>セッションの有効期限を分単位で入力します。</p>
+        </td>
+      </tr>
      </tbody> 
     </table>
 
@@ -159,7 +173,7 @@ Veeva Vault モジュール内から直接 Veeva Vault アカウントへの接�
 
 Workfront Fusion で Veeva Vault モジュールを設定する場合、以下に示すフィールドが表示されます。 これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加の Veeva Vault フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[モジュール間の情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
 ![マップ切り替え](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -728,11 +742,11 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
   </tr> 
   <tr> 
    <td role="rowheader"> <p>開始日</p> </td> 
-   <td> <p>取得する監査の開始日を入力またはマップします。</p><p>サポートされる日付と時刻の形式の一覧については、「<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref"> 型強制 </a>」を参照してください。</p> </td> 
+   <td> <p>取得する監査の開始日を入力またはマップします。</p><p>サポートされる日付と時刻の形式の一覧について詳しくは、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">型強制</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>終了日</p> </td> 
-   <td> <p>取得する監査の終了日を入力またはマップします。</p><p>サポートされる日付と時刻の形式の一覧については、「<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref"> 型強制 </a>」を参照してください。</p> </td> 
+   <td> <p>取得する監査の終了日を入力またはマップします。</p><p>サポートされる日付と時刻の形式の一覧について詳しくは、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">型強制</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>結果の URL </p> </td> 
