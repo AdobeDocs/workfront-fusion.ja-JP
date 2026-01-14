@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Planning] modules を使用すると、 [!D
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 30ddefa8519e6f2052308482137d0fa018676902
+source-git-commit: 86747ffc38fddde91352558277d40572d13ba2b0
 workflow-type: tm+mt
-source-wordcount: '1583'
-ht-degree: 66%
+source-wordcount: '1993'
+ht-degree: 69%
 
 ---
 
@@ -71,54 +71,129 @@ Adobe Workfront Planning コネクタでは、以下を使用します。
  </tbody> 
  </table>
 
-## [!DNL Adobe Workfront Planning] への接続の作成 {#create-a-connection-to-adobe-workfront-planning}
+## Workfront Planning とWorkfront Fusion の接続
 
-Workfront Fusion モジュール内から [!DNL Workfront Planning] アカウントへの直接接続を作成できます。
+Workfront Planning コネクタは、OAuth 2.0 を使用してWorkfront Planning に接続します。
 
-1. 任意の [!DNL Adobe Workfront Planning] モジュールで、「接続」ボックスの横にある「**[!UICONTROL 追加]**」をクリックします。
+Workfront Planning Fusion モジュール内からWorkfront Planning アカウントへの直接接続を作成できます。
 
+* [クライアント ID とクライアント秘密鍵を使用したWorkfront Planning への接続](#connect-to-workfront-planning-using-client-id-and-client-secret)
+* [サーバー間接続を使用したWorkfront Planning への接続](#connect-to-workfront--planning-using-a-server-to-server-connection)
+
+### クライアント ID とクライアント秘密鍵を使用したWorkfront Planning への接続
+
+1. 任意のAdobe Workfront Planning モジュールで、「接続」フィールドの横にある **追加** をクリックします。
 1. 次のフィールドに入力します。
 
    <table style="table-layout:auto"> 
-      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
-      </col>
-      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
-      </col>
-      <tbody>
-        <tr>
-          <td role="rowheader">[!UICONTROL Connection name]</td>
-          <td>
-            <p>この接続の名前を入力します。</p>
-          </td>
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Environment]</td>
-          <td>実稼動環境と非実稼動環境のどちらに接続するかを選択します。</td>
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Type]</td>
-          <td>サービスアカウントに接続するか、個人アカウントに接続するかを選択します。</td>
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Client ID]<p>（オプション）</p></td>
-          <td>[!DNL Adobe] [!UICONTROL Client ID] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。</td>
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Client Secret]<p>（オプション）</p></td>
-          <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Authentication URL]</td>
-          <td>Workfrontのインスタンスで、この接続の認証に使用する URL を入力します。 <p>デフォルト値は <code>https://oauth.my.workfront.com/integrations/oauth2</code> です。</p>
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Host prefix]</td>
-          <td>ホストのプレフィックスを入力します。<p>デフォルト値は <code>origin-</code> です。</p>
-        </tr>
-      </tbody>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td>
+          <p><b>Adobe Workfront auth connection</b> を選択します。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>新しい接続の名前を入力します。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>Workfront クライアント ID を入力します。これは、Workfront の設定エリアの OAuth2 アプリケーションエリアにあります。接続している特定のアプリケーションを開いて、クライアント ID を確認します。</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>Workfront クライアントシークレットを入力します。これは、Workfront の設定エリアの OAuth2 アプリケーションエリアにあります。Workfront で OAuth2 アプリケーションのクライアントシークレットがない場合は、別のシークレットを生成できます。手順について詳しくは、Workfront ドキュメントを参照してください。</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Authentication URL]</td>
+        <td>これはデフォルト値のままにすることもできますし、Workfront インスタンスの URL に続けて <code>/integrations/oauth2</code> を入力することもできます。 <p>例： <code>https://mydomain.my.workfront.com/integrations/oauth2</code></p></td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Host prefix]</td>
+        <td>ほとんどの場合、この値は <code>origin</code> にしてください。
+      </tr>
+    </tbody>
     </table>
 
 1. 「**[!UICONTROL 続行]**」をクリックして接続を保存し、モジュールに戻ります。
+
+   Workfront Planning にログインしていない場合は、ログイン画面に移動します。 ログイン後、接続を許可できます。
+
+>[!NOTE]
+>
+>* Workfront API への OAuth 2.0 接続は API キーに依存しなくなりました。
+>* Workfront サンドボックス環境への接続を作成するには、その環境で OAuth2 アプリケーションを作成し、接続でそのアプリケーションによって生成されたクライアント ID とクライアントシークレットを使用する必要があります。
+
+### サーバー間接続を使用したWorkfront Planning への接続
+
+1. 任意のAdobe Workfront Planning モジュールで、「接続」フィールドの横にある **追加** をクリックします。
+1. 次のフィールドに入力します。
+
+   <table style="table-layout:auto"> 
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td>
+          <p>「<b>Adobe Workfront サーバー間接続</b>」を選択します。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>新しい接続の名前を入力します。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Instance name]</td>
+        <td>
+          <p>インスタンス（ドメインとも呼ばれます）の名前を入力します。</p><p>例：URL が <code>https://example.my.workfront.com</code> の場合は、<code>example</code> と入力します。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Instance lane]</td>
+        <td>
+          <p>この接続の接続先となる環境タイプを入力します。</p><p>例：URL が <code>https://example.my.workfront.com</code> の場合は、<code>my</code> と入力します。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>Workfront クライアント ID を入力します。これは、Workfront の設定エリアの OAuth2 アプリケーションエリアにあります。接続している特定のアプリケーションを開いて、クライアント ID を確認します。</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>Workfront クライアントシークレットを入力します。これは、Workfront の設定エリアの OAuth2 アプリケーションエリアにあります。Workfront で OAuth2 アプリケーションのクライアントシークレットがない場合は、別のシークレットを生成できます。手順について詳しくは、Workfront ドキュメントを参照してください。</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Scopes]</td>
+        <td>この接続に適用可能なスコープを入力します。</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Host prefix]</td>
+        <td>ほとんどの場合、この値は <code>origin</code> にしてください。
+      </tr>
+    </tbody>
+    </table>
+
+1. 「**[!UICONTROL 続行]**」をクリックして接続を保存し、モジュールに戻ります。
+
+   Workfront Planning にログインしていない場合は、ログイン画面に移動します。 ログイン後、接続を許可できます。
+
+>[!NOTE]
+>
+>* Workfront API への OAuth 2.0 接続は API キーに依存しなくなりました。
+>* Workfront サンドボックス環境への接続を作成するには、その環境で OAuth2 アプリケーションを作成し、接続でそのアプリケーションによって生成されたクライアント ID とクライアントシークレットを使用する必要があります。
+
 
 ## [!DNL Adobe Workfront Planning] モジュールとそのフィールド
 
@@ -299,7 +374,7 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
       </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL フィルターの 条件 &#x200B;]</p>
+        <p>[！フィルターの UICONTROL 条件 ]</p>
       </td>
       <td>フィルターの条件の選択：<ul><li><b>AND</b><p>モジュールは、選択したフィールド値の <b> すべて </b> を満たすレコードを返します。</p></li><li><b>または</b><p>モジュールは、選択したフィールド値の <b> いずれか </b> を満たすレコードを返します。</p></li></ul></td> 
       </tr>
@@ -473,5 +548,5 @@ Workfront Planning 内の 1 つのレコードを更新します。
 )
 ```
 
-JSONata モジュールの使用について詳しくは、[JSONata モジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md) を参照してください。
+JSONata モジュールの使用について詳しくは、[JSONata モジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md) を参照してください。
 
