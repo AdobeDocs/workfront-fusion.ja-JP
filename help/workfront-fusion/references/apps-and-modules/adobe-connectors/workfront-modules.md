@@ -4,7 +4,7 @@ description: Adobe Workfront Fusion Adobe Workfront コネクターを使用す�
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
+source-git-commit: ab12dbf0dbad25a8300eb1201fa3e0fde9148acc
 workflow-type: tm+mt
 source-wordcount: '7366'
 ht-degree: 99%
@@ -61,7 +61,9 @@ Adobe Workfront Fusion Adobe Workfront コネクターを使用すると、Workf
 
 この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
-+++## Workfront の Workfront Fusion への接続 
++++
+
+## WorkfrontのWorkfront Fusion への接続
 
 Workfront コネクターは、OAuth 2.0 を使用して Workfront に継続します。
 
@@ -1032,7 +1034,7 @@ Workfront は最近、イベント登録サービスの新しいバージョン�
 
 新しいイベント登録バージョンについて詳しくは、Workfront ドキュメントの[イベント登録のバージョン管理](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)を参照してください。
 
-ウェビナーの録画など、イベント登録のアップグレード中に Workfront Fusion シナリオを保持する方法について詳しくは、[イベント登録 V2 のアップグレード中の Fusion シナリオの保持](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ja)を参照してください。
+ウェビナーの録画など、イベント登録のアップグレード中に Workfront Fusion シナリオを保持する方法について詳しくは、[イベント登録 V2 のアップグレード中の Fusion シナリオの保持](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)を参照してください。
 
 <table style="table-layout:auto">
  <col> 
@@ -2360,7 +2362,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >   新しいイベント登録バージョンについて詳しくは、Workfront ドキュメントの[イベント登録のバージョン管理](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)を参照してください。
 >
->   ウェビナーの録画など、イベント登録のアップグレード中に Workfront Fusion シナリオを保持する方法について詳しくは、[イベント登録 V2 アップグレード中の Fusion シナリオの保持（https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ja）]を参照してください。
+>   ウェビナーの録画など、イベント登録のアップグレード中に Workfront Fusion シナリオを保持する方法について詳しくは、[イベント登録 V2 アップグレード中の Fusion シナリオの保持（https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182）]を参照してください。
 
 Workfront [!UICONTROL イベントを監視]モジュールは、Workfront API でイベント登録を作成する Webhook に基づいてシナリオをトリガーします。イベント登録は、web フックに送信されるイベントを決定する一連のデータです。例えば、イシューを監視する[!UICONTROL イベントの監視]モジュールを設定した場合、イベント登録はイシューに関連するイベントのみを送信します。
 

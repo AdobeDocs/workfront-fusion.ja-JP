@@ -4,10 +4,10 @@ description: シナリオのイベントや実行に関する情報を表示し�
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 93d06cb917680f9cabc1bad6be0f9cd843449d07
+source-git-commit: ab12dbf0dbad25a8300eb1201fa3e0fde9148acc
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 57%
+source-wordcount: '911'
+ht-degree: 65%
 
 ---
 
@@ -33,22 +33,22 @@ ht-degree: 57%
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
 +++
 
@@ -59,14 +59,18 @@ ht-degree: 57%
 
 「[!UICONTROL 履歴]」タブには、[!UICONTROL シナリオの詳細]ページよりも詳細な情報が表示されます。また、[!UICONTROL 履歴]タブで実行のフィルタリングや並べ替えができます。
 
-1. 左パネルの「**[!UICONTROL シナリオ]**」タブをクリックし、シナリオをクリックします。
+>[!NOTE]
+>
+>実行中にシナリオ履歴を表示すると、データがまだ処理中であることを示す注記が表示され、処理が完了するまでシナリオ履歴の一部のみが表示されます。
+
+1. 左パネルの「**[!UICONTROL シナリオ]**」タブ、シナリオの順にクリックします。
 
    または
 
-   シナリオエディターでシナリオに取り組んでいる場合は、ウィンドウの左上隅にある左矢印 ![&#x200B; 編集を終了 &#x200B;](assets/exit-editing-arrow.png) をクリックします。
+   シナリオエディターでシナリオに取り組んでいる場合は、ウィンドウの左上隅にある左矢印 ![ 編集を終了 ](assets/exit-editing-arrow.png) をクリックします。
 
 1. シナリオ名の近くにある **履歴** をクリックします。
-   ![&#x200B; 「履歴」タブ &#x200B;](assets/history-tab.png)
+   ![ 「履歴」タブ ](assets/history-tab.png)
 
    シナリオの実行ごとに、次の詳細が表示されます。
 
@@ -83,7 +87,7 @@ ht-degree: 57%
 
 1. 特定のシナリオ実行の詳細を表示するには、右端の **詳細** をクリックします。 [!UICONTROL 詳細]リンクは、実行に詳細が含まれる場合にのみ表示されます。
 
-   シナリオ実行の詳細の表示について詳しくは、[&#x200B; 特定のシナリオ実行の表示 &#x200B;](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md) を参照してください。
+   シナリオ実行の詳細の表示について詳しくは、[ 特定のシナリオ実行の表示 ](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md) を参照してください。
 1. イベントを表示するには、「イベントを表示 **をオンに切り替え** す。
 
 
@@ -94,12 +98,12 @@ ht-degree: 57%
 
    または
 
-   シナリオエディターでシナリオに取り組んでいる場合は、ウィンドウの左上隅にある左矢印 ![&#x200B; 編集を終了 &#x200B;](assets/exit-editing-arrow.png) をクリックします。
+   シナリオエディターでシナリオに取り組んでいる場合は、ウィンドウの左上隅にある左矢印 ![ 編集を終了 ](assets/exit-editing-arrow.png) をクリックします。
 
 1. 右側のパネルの **[!UICONTROL 履歴]** タブをクリックします。
 1. （任意）選択したシナリオ実行の詳細を確認するには、右側のパネルで「実行」をクリックします。
 
-   バンドルの処理について詳しくは、[&#x200B; シナリオ実行フロー &#x200B;](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md) を参照してください
+   バンドルの処理について詳しくは、[ シナリオ実行フロー ](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md) を参照してください
 
    >[!NOTE]
    >
@@ -112,7 +116,7 @@ ht-degree: 57%
 実行履歴をフィルターして、指定した値を持つ実行のみを表示できます。
 
 1. この記事の[「[!UICONTROL 履歴]」タブでシナリオの実行履歴を表示](#view-scenario-history-on-the-history-tab)で説明されているように、シナリオの全ページ履歴を開きます。
-1. フィルタリングの基準にする列のヘッダーにある [!UICONTROL &#x200B; フィルター &#x200B;] アイコン ![&#x200B; シナリオフィルターアイコン &#x200B;](assets/fusion-scenario-filter-icon.png) をクリックします。
+1. フィルタリングの基準にする列のヘッダーにある [!UICONTROL  フィルター ] アイコン ![ シナリオフィルターアイコン ](assets/fusion-scenario-filter-icon.png) をクリックします。
 1. 「[!UICONTROL フィルター]」ダイアログで、フィルタリングしたい値を入力します。
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
@@ -154,7 +158,7 @@ You can sort the scenario execution history.
    >
    >* 過去 30 日間のみ実行できます。
    >
-   >* Workfront Fusion は、Webhook ペイロードを 30 日間保存します。 作成後 30 日を超える web フックペイロードにアクセスすると、「[!UICONTROL ストレージからファイルを読み取れませんでした。]」というエラーが発生します。
+   >* Workfront Fusion は、Webhook ペイロードを30 日間保存します。作成後 30 日を超える web フックペイロードにアクセスすると、「[!UICONTROL ストレージからファイルを読み取れませんでした。]」というエラーが発生します。
 
 
 1. （オプション）検索をステータスで制限するには、**[!UICONTROL ステータス別]**&#x200B;ドロップダウンで目的のステータスを選択します。
@@ -174,4 +178,4 @@ You can sort the scenario execution history.
 
 1. （オプション）シナリオ実行 ID をコピーするには、**[!UICONTROL 実行 ID をコピー]**&#x200B;アイコンをクリックします。 目的の実行の行に <img src="assets/copy-fusion-execution-id-icon.png"> ります。
 
-1. （オプション）[!UICONTROL &#x200B; フルテキスト検索]の結果をクリックして、その情報を含むシナリオモジュール出力バンドルを調べます。
+1. （オプション）[!UICONTROL  フルテキスト検索]の結果をクリックして、その情報を含むシナリオモジュール出力バンドルを調べます。
