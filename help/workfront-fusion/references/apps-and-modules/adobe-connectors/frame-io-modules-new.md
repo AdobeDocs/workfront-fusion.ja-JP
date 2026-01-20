@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
 source-git-commit: 3cb613c11500dfc94774783ee0b38e6f1768de20
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4539'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -317,7 +317,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 
 #### [!UICONTROL アセットの作成] <!--different for v4-->
 
-このアクションモジュールは、新しいアセットを作成します。 ローカルファイルをアップロードするか、アセットを作成するリモートファイルの URL を指定できます。
+このアクションモジュールでは、新しいアセットを作成できます。ローカルファイルをアップロードするか、アセットを作成するリモートファイルの URL を指定できます。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -353,15 +353,15 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    </tr>
     <tr> 
     <td role="rowheader">ファイルサイズ </td> 
-    <td> <p>ローカルファイルをアップロードする場合は、ファイルサイズをバイト単位で入力またはマッピングします。</p> </td> 
+    <td> <p>ローカルファイルをアップロードする場合は、ファイルサイズをバイト単位で入力するか、マッピングします。</p> </td> 
    </tr>
   <tr> 
    <td role="rowheader">[!UICONTROL Source URL] </td> 
-   <td> <p>リモートファイルからアセットを作成する場合は、アップロードするファイルの URL を入力します。</p> </td> 
+   <td> <p>リモートファイルからアセットを作成する場合、アップロードするファイルの URL を入力します。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Source file]</td> 
-   <td> <p>前のモジュールからソースファイルを選択するか、ソースファイルの名前をマッピングします。</p> </td> 
+   <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前をマッピングします。</p> </td> 
   </tr> 
 <!--  <tr> 
    <td role="rowheader">[!UICONTROL Media type] </td> 
@@ -370,7 +370,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
   </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; アセットの作成（レガシー） &#x200B;] <!--different for v4-->
+#### [!UICONTROL アセットの作成（レガシー）] <!--different for v4-->
 
 このアクションモジュールでは、新しいアセットを作成できます。
 
@@ -1029,9 +1029,9 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 
 * [アカウントレベルフィールドの作成](#create-an-account-level-field)
 * [アカウントレベルフィールドの削除](#delete-an-account-level-field)
-* [メタデータを取得](#get-metadata)
+* [メタデータの取得](#get-metadata)
 * [アカウントレベルフィールドのリスト](#list-account-level-fields)
-* [アカウントレベルのフィールド定義の更新](#update-an-account-level-field-definition)
+* [アカウントレベルフィールド定義の更新](#update-an-account-level-field-definition)
 * [複数のファイルにわたるメタデータの更新](#update-metadata-across-multiple-files)
 
 #### アカウントレベルフィールドの作成
@@ -1064,7 +1064,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 
 #### アカウントレベルフィールドの削除
 
-このアクションモジュールは、単一アカウントレベルのメタデータフィールドを削除します。
+このアクションモジュールは、単一のアカウントレベルのメタデータフィールドを削除します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1080,12 +1080,12 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
   </tr> 
    <tr> 
    <td role="rowheader">フィールド定義 ID </td> 
-   <td> <p>削除するフィールドの ID を入力またはマッピングします。 アカウントレベルのフィールドをリストモジュールで、フィールド ID を検索できます。</p> </td> 
+   <td> <p>削除するフィールドの ID を入力またはマッピングします。アカウントレベルのフィールドをリストモジュールを使用して、フィールド ID を検索できます。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### メタデータを取得
+#### メタデータの取得
 
 このアクションモジュールは、Frame.io 内のファイルのメタデータを取得します。
 
@@ -1106,7 +1106,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>メタデータを取得するファイルの ID を入力またはマッピングします。</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">ヌルを表示 </td> 
+   <td role="rowheader">null を表示 </td> 
    <td> <p>このオプションを有効にすると、値が null のフィールドが出力に含まれます。</p> </td> 
   </tr> 
  </tbody> 
@@ -1126,7 +1126,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>フィールドを一覧表示するアカウントを選択またはマッピングします。</p> </td> 
+   <td> <p>フィールドをリストするアカウントを選択またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned agreements]</td> 
@@ -1135,7 +1135,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
  </tbody> 
 </table>
 
-#### アカウントレベルのフィールド定義の更新
+#### アカウントレベルフィールド定義の更新
 
 このモジュールは、単一の既存のメタデータフィールドの定義を更新します。
 
@@ -1153,7 +1153,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
   </tr> 
    <tr> 
    <td role="rowheader">フィールド定義 ID </td> 
-   <td> <p>更新するフィールドの ID を入力またはマッピングします。 アカウントレベルのフィールドをリストモジュールで、フィールド ID を検索できます。</p> </td> 
+   <td> <p>更新するフィールドの ID を入力またはマッピングします。アカウントレベルのフィールドをリストモジュールを使用して、フィールド ID を検索できます。</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">フィールドタイプ </td> 
@@ -1181,7 +1181,7 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account ID] </td> 
-   <td> <p>メタデータを更新するファイルを含むアカウントを選択またはマッピングします。</p> </td> 
+   <td> <p>メタデータを更新するファイルを含むアカウントを選択するか、マッピングします。</p> </td> 
   </tr> 
  <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID] </td> 
@@ -1192,12 +1192,12 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
    <td> <p>アセットを作成するプロジェクトを選択するか、プロジェクトの ID をマッピングします。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ファイル ID] </td> 
-   <td> <p>メタデータを更新するファイルごとに、「<b> 項目を追加 </b>」をクリックし、ファイルの ID を入力またはマッピングします。</p> </td> 
+   <td role="rowheader">[!UICONTROL File IDs] </td> 
+   <td> <p>メタデータを更新するファイルごとに、「<b>項目を追加</b>」をクリックして、ファイルの ID を入力するか、マッピングします。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Values] </td> 
-   <td> <p>メタデータを更新するフィールドごとに、「<b> 項目を追加 </b>」をクリックし、フィールド定義の ID と、そのフィールドに入力する値を入力またはマッピングします。 「ファイル ID」フィールドで指定されたすべてのファイルは、このフィールド値で更新されます。</p> </td> 
+   <td> <p>メタデータを更新するフィールドごとに、「<b>項目を追加</b>」をクリックし、フィールド定義の ID およびそのフィールドに入力する値を入力するか、マッピングします。「ファイル ID」フィールドで指定されたすべてのファイルが、このフィールド値で更新されます。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1249,14 +1249,14 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
 
 #### イベントの監視
 
-選択したイベントが Frame.io で発生すると、このインスタントトリガーモジュールがシナリオを開始します。
+このインスタントトリガーモジュールは、選択されたイベントが Frame.io で発生するとシナリオを開始します。
 
-既存の Webhook を使用することも、新しく作成することもできます。
+既存の Webhook を選択するか、新しい Webhook を作成できます。
 
 新しい Webhook を作成するには：
 
 1. 「Webhook」フィールドの横にある「**追加**」をクリックします。
-1. 次の情報を入力します。
+1. 以下の情報を入力します。
 
    <table style="table-layout:auto"> 
     <col> 
@@ -1272,21 +1272,21 @@ Adobe Developer Console プロジェクトのサーバー間資格情報がま�
      </tr> 
      <tr> 
      <td role="rowheader">[!UICONTROL Account ID] </td> 
-      <td> <p>イベントを監視するワークスペースを含むアカウントを選択またはマッピングします。</p> </td> 
+      <td> <p>イベントを監視するワークスペースを含むアカウントを選択するか、マッピングします。</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Workspace ID]</td> 
       <td> <p>イベントを監視するワークスペースの ID を入力します。</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL イベント &#x200B;]</td> 
-      <td> <p>このモジュールをトリガーにするイベントを選択</p> </td> 
+      <td role="rowheader">[!UICONTROL Events]</td> 
+      <td> <p>このモジュールをトリガーするイベントを選択します。</p> </td> 
      </tr> 
     </tbody> 
    </table>
 
 1. 「**保存**」をクリックして Webhook を保存し、モジュールに戻ります。
-1. イベントを監視モジュールで **OK** をクリックして、設定を保存します。
+1. イベントを監視モジュールで「**OK**」をクリックし、設定を保存します。
 
 
 #### 更新されたメタデータ値の監視
