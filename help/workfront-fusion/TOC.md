@@ -5,7 +5,7 @@ user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果�
 source-git-commit: e6c6e33135f5367c626f83405a0b1e5fbb8f028a
 workflow-type: tm+mt
 source-wordcount: '1986'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -270,7 +270,7 @@ ht-degree: 98%
    * [テンプレートの表示、編集および削除](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
    * [テンプレートの公開と共有](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
    * [現在利用可能な Adobe Workfront Fusion テンプレート](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)
-   * [テンプレートを使用してAdobe Workfront Fusion と Jira を接続](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md)
+   * [テンプレートを使用して Adobe Workfront Fusion と Jira を接続](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md)
    * [Adobe Workfront Fusion テンプレートに関する FAQ](/help/workfront-fusion/create-and-manage-templates/fusion-templates-faqs.md)
 * 参照 {#references}
    * [参照](/help/workfront-fusion/references/references-toc.md)
@@ -346,7 +346,7 @@ ht-degree: 98%
          * [Adobe Marketo モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
          * [Adobe PDF サービスモジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
          * [Adobe Photoshop モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-photoshop-modules.md)
-         * [Adobe物質モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-substance-modules.md)
+         * [Adobe Substance モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-substance-modules.md)
          * [Adobe Storage モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-storage-modules.md)
          * [Adobe Target モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
          * [Adobe User Management モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
