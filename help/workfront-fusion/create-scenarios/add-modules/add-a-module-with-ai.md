@@ -4,10 +4,10 @@ description: AI を使用すると、シナリオのセグメントで行う必�
 author: Becky
 feature: Workfront Fusion
 exl-id: d231e33a-6033-4e3c-b1d4-7034797c45a5
-source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
+source-git-commit: 2bec2607d55e4ba2ffd6ddcae6daa51071b204c4
 workflow-type: tm+mt
 source-wordcount: '612'
-ht-degree: 3%
+ht-degree: 19%
 
 ---
 
@@ -35,31 +35,33 @@ AI から生成されるものと同様に、生成されたモジュールを�
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
-+++##前提条件
++++
+
+## 前提条件
 
 この機能を使用するには、組織が次の前提条件を満たしている必要があります。
 
 * 組織がWorkfront AI アシスタント Beta プログラムに参加している。
 * Adobeには、署名済みのAdobe生成 AI 契約が必要です。
 
-  契約の署名について詳しくは、Workfront ドキュメントの AI アシスタントの概要の記事の [Adobe Gen AI 契約に署名する &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) を参照してください。
+  契約への署名の詳細については、ワークフロント ドキュメントの記事「AI アシスタントの概要」の [Adobe Systems Gen AI 契約に署名する](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) を参照してください。
 
 ## 現在サポートされている AI モジュールアプリケーション
 
@@ -68,39 +70,39 @@ Fusion AI は、現在、次のアプリケーションに接続するモジュ�
 * Adobe Firefly
 * Azure OpenAI
 * Microsoft グラフ
-* Adobe Workfrontの計画
+* Adobe Workfront Planning
 * Adobe Analytics
 * Adobe PDF サービス
-* AdobeMarketo
-* Adobe Frame.io
+* Adobe Marketo
+* Adobe Systems Frame.io
 * Dropbox
 * NetSuite
 * Google カレンダー
 * Atlassian Jira
 * GitLab
 * Spotify
-* Bitbucket
+* ビットバケット
 * OpenAI
 * Slack
 
 ## モジュールの生成
 
-1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
+1. 左側のパネルで **[!UICONTROL シナリオ]** タブをクリックします。
 1. モジュールを追加するシナリオを選択します。
-1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
-1. 画面の右上隅付近にある **AI アシスタント** アイコン ![AI アシスタント アイコン &#x200B;](assets/ai-assistant-icon.png) をクリックします。
-1. AI アシスタント パネルにテキスト プロンプトを入力します。
+1. シナリオの任意の場所をクリックして、シナリオ 編集者に入ります。
+1. 画面の右上隅付近にある **AI アシスタント** アイコン ![AI アシスタント アイコン ](assets/ai-assistant-icon.png) をクリックします。
+1. AIアシスタントパネルにテキストプロンプトを入力します。
 
-   プロンプトのヒントについては、この記事の [&#x200B; シナリオセグメントのプロンプトの作成に関するヒント &#x200B;](#tips-for-creating-prompts-for-scenario-segments) を参照してください。
+   プロンプトのヒントについては、この記事の [シナリオ セグメントのプロンプトを作成するためのヒント](#tips-for-creating-prompts-for-scenario-segments) を参照してください。
 
    AI アシスタントは、モジュールまたはモジュールのセットを生成します。
-1. （条件付き）必要に応じて、アプリケーションの API トークンをモジュールに追加します。
-1. モジュールを調べ、適切なアプリケーションとアクションに設定されていることを確認します。
-1. （条件付き）生成されたシナリオセクションがシナリオに添付されていない場合は、適切な場所にドラッグします。
+1. (オプション)必要に応じて、アプリケーションの API トークンをモジュールに追加します。
+1. モジュールをチェックして、適切なアプリケーションとアクション用に構成されていることを確認します。
+1. (オプション)生成されたシナリオセクションがシナリオに添付されていない場合は、所定の位置にドラッグします。
 
-モジュールのテストを実施し、モジュールが意図したとおりに動作していることを確認することをお勧めします。
+モジュールをテストして、意図したとおりに動作していることを確認することをお勧めします。
 
-## シナリオセグメントのプロンプト作成のヒント
+## シナリオセグメントのプロンプトを作成するためのヒント
 
 テキストプロンプトには、少なくとも次の情報を含める必要があります。
 
@@ -117,8 +119,7 @@ Fusion AI は、現在、次のアプリケーションに接続するモジュ�
 
 * `Delete the records 'xyz-123', 'xyz-456', 'xyz-789' from Adobe Workfront Planning`
 これには、アプリケーション `Workfront Planning` とアクション `delete records` が含まれます。 このプロンプトは、削除されるレコードごとに 1 つずつ、3 つのモジュールを作成します。
-* `Change campaign summary of the record 'xyz-123' from Adobe Workfront Planning`
-これには、アプリケーション `Workfront Planning` とアクション `change campaign summary` が含まれます。
+* `Change campaign summary of the record 'xyz-123' from Adobe Workfront Planning`これには、アプリケーション `Workfront Planning` とアクション `change campaign summary`が含まれます。
 * `Get all field details in the record type with ID 'test-record' from Adobe Workfront Planning`
 これには、アプリケーション `Workfront Planning` とアクション `get field details` が含まれます。
 
@@ -133,4 +134,4 @@ Fusion AI は、現在、次のアプリケーションに接続するモジュ�
 テキストプロンプトを作成する場合は、次の点に注意してください。
 
 * 直接的でシンプルな言語を使用します。
-* シナリオセグメントを確認およびテストします。 期待どおりに実行されない場合は、プロンプトを調整して再試行してください。
+* シナリオセグメントを確認およびテストします。 期待どおりに動作しない場合は、プロンプトを調整して再試行してください。
