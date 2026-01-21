@@ -61,7 +61,7 @@ AI から生成されるものと同様に、生成されたモジュールを�
 * 組織がWorkfront AI アシスタント Beta プログラムに参加している。
 * Adobeには、署名済みのAdobe生成 AI 契約が必要です。
 
-  契約への署名の詳細については、ワークフロント ドキュメントの記事「AI アシスタントの概要」の [Adobe Systems Gen AI 契約に署名する](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) を参照してください。
+  契約への署名の詳細については、ワークフロント ドキュメントの記事「AI アシスタントの概要」の [Adobe Systems Gen AI 契約に署名する](https://experienceleague.adobe.com/ja/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) を参照してください。
 
 ## 現在サポートされている AI モジュールアプリケーション
 
