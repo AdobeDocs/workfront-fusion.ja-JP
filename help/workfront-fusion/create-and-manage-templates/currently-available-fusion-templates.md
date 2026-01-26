@@ -4,10 +4,10 @@ description: 現在、Adobe Workfront Fusion では、次のパブリックテ�
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4ede5c7a75725a6540d6a8ff9cd056e6147d5c55
 workflow-type: tm+mt
-source-wordcount: '1526'
-ht-degree: 69%
+source-wordcount: '1660'
+ht-degree: 63%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 69%
 
 チームまたは組織が他のチーム作成テンプレートを使用できる場合があります。
 
-使用可能なテンプレートを表示するには、Fusion のサイドナビゲーションメニューにある **テンプレート** アイコン ![&#x200B; テンプレートアイコン &#x200B;](assets/templates-icon.png) をクリックします。
+使用可能なテンプレートを表示するには、Fusion のサイドナビゲーションメニューにある **テンプレート** アイコン ![ テンプレートアイコン ](assets/templates-icon.png) をクリックします。
 
 ## Workfront テンプレート
 
 これらのテンプレートは、Workfront のプロセスとワークフローを自動化します。
 
-### [!BADGE &#x200B; 新規 &#x200B;]{type=Informative} Workfront - タスクが早期に完了すると、プロジェクトタイムラインを自動調整します
+### Workfront - タスクが早く完了したら、プロジェクトタイムラインを自動調整します
 
 <!--New June 10, 2025-->
 
@@ -33,13 +33,13 @@ ht-degree: 69%
 
 この Fusion テンプレートは、そのプロセスを自動化します。 タスクが早期に完了すると、すべての依存タスク（後続タスク）が自動的に再スケジュールされ、より早く開始されるようになり、チームの迅速な移行と機敏性の維持に役立ちます。
 
-### [!BADGE &#x200B; 新規 &#x200B;]{type=Informative} HTTP/CSV/WF - ドメインおよび層別にイベントサブリストを作成して、CSV に書き出します。
+### [!BADGE  新規 ]{type=Informative} HTTP/CSV/WF - ドメインおよび層別にイベントサブリストを作成して、CSV に書き出します。
 
 イベント購読情報をダウンロードし、CSV ファイルを作成して、そのファイルをWorkfrontにアップロードします。
 
 <!--New August 8, 2025-->
 
-### [!BADGE &#x200B; 新規 &#x200B;]{type=Informative} Workfront ボード – 指定した列からアーカイブされたカードを削除（オンデマンド）
+### Workfront ボード – 指定した列からアーカイブされたカードを削除（オンデマンド）
 
 <!--New March 12, 2025-->
 
@@ -117,7 +117,7 @@ ht-degree: 69%
 
 これらのテンプレートは、Workfront と Workfront Proof を組み合わせたワークフローを自動化します。
 
-### [!BADGE &#x200B; 新規 Workfront/Workfront Proofの &#x200B;]{type=Informative} プルーフユーザーの役割を読み取り専用に変更し、プロジェクトを閉じるときにプルーフをロックする
+### Workfront/Workfront Proof - プルーフユーザーの役割を読み取り専用に変更し、プロジェクトを閉じるときにプルーフをロックする
 
 <!--New March 12, 2025-->
 
@@ -184,7 +184,7 @@ ht-degree: 69%
 
 このテンプレートは Workfront と Anaplan の統合をサポートしており、Workfront と Anaplan の両方で特定の設定が必要です。このテンプレートと必要な設定について詳しくは、個々のテンプレートに関する記事を参照してください。
 
-Workfrontと Anaplan の統合について詳しくは、Workfront ドキュメントの [Anaplan のAdobe Workfront](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) を参照してください。
+Workfrontと Anaplan の統合について詳しくは、Workfront ドキュメントの [Anaplan のAdobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) を参照してください。
 
 >[!NOTE]
 >
@@ -192,19 +192,34 @@ Workfrontと Anaplan の統合について詳しくは、Workfront ドキュメ�
 
 ### 支出の最適化ワークフロー
 
-* [&#x200B; リスト項目へのAdobe Workfront プロジェクトの更新  [!DNL Anaplan]  送信 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
-* [&#x200B; リスト項目へのAdobe Workfront費用  [!DNL Anaplan]  送信 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
-* [&#x200B; リスト項目に対するAdobe Workfrontの実際の時間数の更新  [!DNL Anaplan]  送信 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
+* [ リスト項目へのAdobe Workfront プロジェクトの更新  [!DNL Anaplan]  送信 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
+* [ リスト項目へのAdobe Workfront費用  [!DNL Anaplan]  送信 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
+* [ リスト項目に対するAdobe Workfrontの実際の時間数の更新  [!DNL Anaplan]  送信 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
 
 ### 予算リクエストをリンクするためのワークフロー
 
-* [Adobe Workfront予算リクエ  [!DNL Anaplan]  トからのリスト項目の作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
-* [Adobe Workfront プロジェク  [!DNL Anaplan]  への予算配分の適用 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
+* [Adobe Workfront予算リクエ  [!DNL Anaplan]  トからのリスト項目の作成 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
+* [Adobe Workfront プロジェク  [!DNL Anaplan]  への予算配分の適用 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
 
 ### キャンペーンリクエストをリンクするワークフロー
 
-* [Adobe Workfront キャンペ  [!DNL Anaplan]  ンリクエストからのリスト項目の作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
-* [Adobe Workfront キャンペ  [!DNL Anaplan]  ンリクエストまたはキャンペーンプロジェクトへの予算配分の適用 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+* [Adobe Workfront キャンペ  [!DNL Anaplan]  ンリクエストからのリスト項目の作成 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
+* [Adobe Workfront キャンペ  [!DNL Anaplan]  ンリクエストまたはキャンペーンプロジェクトへの予算配分の適用 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+
+## Workfront - Jira テンプレート
+
+これらのテンプレートは、Workfrontと Jira 間の共通ワークフローを表します。
+
+これらのテンプレートについて詳しくは、[ テンプレートを使用したAdobe Workfront Fusion と Jira の接続 ](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md) を参照してください。
+
+* [Workfrontから Jira へ：Workfrontのタスクまたは問題の割り当てから JIRA の問題を作成 ](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-1-workfront-to-jira-create-jira-issue-from-workfront-task-or-issue-assignment)
+* [JIRA からWorkfrontへ：JIRA からWorkfrontへ：Jira からWorkfrontに問題やコメントに関する更新を送信します](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-2-jira-to-workfront-send-updates-on-issues-and-comments-back-to-workfront-from-jira)
+* [Workfrontから Jira へ：Workfront タスクから JIRA への変更](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-3-workfront-to-jira-changes-to-workfront-task-to-jira-issue)
+* [Workfrontから Jira へ：Workfrontの問題が JIRA の問題に変更されました](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-4-workfront-to-jira-changes-to-workfront-issue-to-jira-issue)
+* [Workfrontから Jira へ：Workfrontのタスクまたは問題に関する新しいメモを作成する際に、JIRA でコメントを作成します](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-5-workfront-to-jira-create-comment-in-jira-when-new-note-on-workfront-task-or-issue)
+* [Workfrontから Jira へ：Workfrontのタスクまたは問題で削除したメモに対して JIRA でコメントを作成します](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-6-workfront-to-jira-create-comment-in-jira-on-deleted-note-on-workfront-task-or-issue)
+* [Workfrontから Jira へ：Workfrontのタスクまたは問題に関する新規ドキュメントを作成する際に、JIRA でコメントを作成します](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-7-workfront-to-jira-create-comment-in-jira-when-new-document-on-workfront-task-or-issue)
+* [Workfrontから Jira へ：Workfrontのタスクまたは問題で削除されたドキュメントに関するコメントを JIRA で作成します](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-8-workfront-to-jira-create-comment-in-jira-on-deleted-document-on-workfront-task-or-issue)
 
 
 <!--[!BADGE New!]{type=Informative} -->
