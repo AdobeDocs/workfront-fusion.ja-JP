@@ -52,10 +52,10 @@ ht-degree: 48%
 1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
 1. ページの左下隅付近にある歯車アイコンをクリックします。
 
-   ![ シナリオ設定 ](assets/scenario-settings-350x221.png)
+   ![&#x200B; シナリオ設定 &#x200B;](assets/scenario-settings-350x221.png)
 
    表示される[!UICONTROL シナリオ設定]パネルで、シナリオの様々な詳細設定ができます。
-1. 必要に応じて、シナリオ設定を有効または無効にします。 以下の [ シナリオ設定オプション ](#scenario-settings-options) を参照してください。
+1. 必要に応じて、シナリオ設定を有効または無効にします。 以下の [&#x200B; シナリオ設定オプション &#x200B;](#scenario-settings-options) を参照してください。
 
 ## シナリオ設定オプション
 
@@ -76,7 +76,7 @@ ht-degree: 48%
 * 「順次処理」オプションが **有効** になっている場合、Workfront Fusion は、すべての不完全な実行が解決されるまで既存のシーケンスの処理を停止します。
 * 「順次処理」オプションが **無効** の場合、シナリオはスケジュールに従って引き続き実行され、不完全な実行は繰り返し再試行されます。
 
-  不完全な実行について詳しくは、[ 不完全な実行の表示と解決 ](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md) を参照してください。
+  不完全な実行について詳しくは、[&#x200B; 不完全な実行の表示と解決 &#x200B;](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md) を参照してください。
 
   >[!NOTE]
   >
@@ -84,7 +84,7 @@ ht-degree: 48%
   >
   >シナリオのユースケースで順番に処理することが必要ない場合は、順番処理のオプションを無効にすることをお勧めします。
 
-  スケジュールの詳細については、[ シナリオのスケジュールの設定 ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md) を参照してください。
+  スケジュールの詳細については、[&#x200B; シナリオのスケジュールの設定 &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md) を参照してください。
 
 ### データは機密情報
 
@@ -98,19 +98,19 @@ ht-degree: 48%
 
 このオプションは、シナリオの実行中にエラーが発生した場合にAdobe Workfront Fusion がどのように進行するかを指定します。 このオプションを有効にすると、シナリオは一時停止し、不完全な実行フォルダーに移動します。 これにより、問題を修正し、シナリオが停止した場所から続行できます。このオプションを無効にした場合、シナリオの実行が停止し、ロールバックフェーズが開始します。
 
-不完全な実行について詳しくは、[ 不完全な実行の表示と解決 ](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md) を参照してください。
+不完全な実行について詳しくは、[&#x200B; 不完全な実行の表示と解決 &#x200B;](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md) を参照してください。
 
 ### データ損失を有効にする
 
 このオプションは、Workfront Fusion が（空き容量が不足しているなどの理由で）不完全な実行のキューにバンドルを保存できない場合に、データの損失を有効にすることに関係しています。 このオプションを有効にすると、シナリオの実行全体で中断が発生しないように、データが失われます。これは、最も優先度が高いものが継続して実行され、入力時の誤りのあるデータがそれほど重要でないシナリオで役立ちます。
 
-その他、シナリオを実行する際に、モジュールで許容される最大サイズを超えるファイルが見つかることがあります。この場合、Workfront Fusion は「[!UICONTROL  データの損失を有効にする ]」オプションの設定に従って続行し、警告メッセージが表示されます。
+その他、シナリオを実行する際に、モジュールで許容される最大サイズを超えるファイルが見つかることがあります。この場合、Workfront Fusion は「[!UICONTROL &#x200B; データの損失を有効にする &#x200B;]」オプションの設定に従って続行し、警告メッセージが表示されます。
 
-不完全な実行について詳しくは、[ 不完全な実行の表示と解決 ](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md) を参照してください。
+不完全な実行について詳しくは、[&#x200B; 不完全な実行の表示と解決 &#x200B;](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md) を参照してください。
 
-最大ファイルサイズについて詳しくは、[Fusion パフォーマンスガードレール ](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md#files) を参照してください。
+最大ファイルサイズについて詳しくは、[Fusion パフォーマンスガードレール &#x200B;](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md#files) を参照してください。
 
-警告について詳しくは、「[ エラータイプ ](/help/workfront-fusion/references/errors/error-processing.md)」を参照してください。
+警告について詳しくは、「[&#x200B; エラータイプ &#x200B;](/help/workfront-fusion/references/errors/error-processing.md)」を参照してください。
 
 ### [!UICONTROL 自動コミット]
 
@@ -127,25 +127,25 @@ ht-degree: 48%
 
 * ポーリングトリガーで始まるシナリオの場合、この設定で、シナリオの実行中に許可されるサイクルの最大数を定義します。
 
-  ポーリングトリガーについて詳しくは、「モジュールの概要」の [トリガーのポーリング ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#polling-triggers) を参照してください。
+  ポーリングトリガーについて詳しくは、「モジュールの概要」の [トリガーのポーリング &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#polling-triggers) を参照してください。
 
 * シナリオがインスタントトリガーで開始する場合、設定は無視され、1 回のシナリオの実行中にすべての保留中のイベントが処理されます（1 サイクルにつき 1 つのイベント）。
 
-  インスタント トリガーの詳細については、「モジュールの概要」の [ インスタント トリガー](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) を参照してください。
+  インスタント トリガーの詳細については、「モジュールの概要」の [&#x200B; インスタント トリガー](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) を参照してください。
 
 * シナリオが（インスタントまたはポーリング）トリガーで始まらない場合は、指定された最大サイクル数が常に実行されます。
 
 >[!BEGINSHADEBOX]
 
-**例：** Workfront/[!UICONTROL  レコードをウォッチ ] が発生する新しいイシューを監視し、Workfront/[!UICONTROL  オブジェクトを変換 ] が新しいリクエストをプロジェクトに変換して、適切なテンプレートを割り当てます。
+**例：** Workfront/[!UICONTROL &#x200B; レコードをウォッチ &#x200B;] が発生する新しいイシューを監視し、Workfront/[!UICONTROL &#x200B; オブジェクトを変換 &#x200B;] が新しいリクエストをプロジェクトに変換して、適切なテンプレートを割り当てます。
 
-![ シナリオ設定 ](assets/scenario-settings-ex-1-350x157.png)
+![&#x200B; シナリオ設定 &#x200B;](assets/scenario-settings-ex-1-350x157.png)
 
 [!UICONTROL より多くのサイクル]設定は、シナリオの実行をスケジュールする場合にのみ適用されます。「[!UICONTROL 1 回実行]」ボタンを使用する場合、サイクル設定を考慮します。
 
 #### サイクルの最大数は 1 に設定されています（デフォルト）
 
-![ 最大サイクル数 ](assets/max-number-cycles-1-350x201.png)
+![&#x200B; 最大サイクル数 &#x200B;](assets/max-number-cycles-1-350x201.png)
 
 Workfront/ レコードを監視モジュールの最大サイクル数は `10` に設定されています。
 100 件のリクエストがWorkfrontに送信され、「最大サイクル数」フィールドが 10 に設定されている場合、90 個のファイルが 1 つのシナリオの実行後に未処理のままになります。 次の 10 個のファイルは、スケジュールされた次のシナリオの実行で処理されます。
@@ -160,9 +160,9 @@ Workfront/ レコードを監視モジュールの最大サイクル数は `10` 
 
 シナリオの詳細には、既に実行されたサイクルが表示されます。
 
-![ シナリオの詳細 ](assets/scenario-detail-350x207.png)
+![&#x200B; シナリオの詳細 &#x200B;](assets/scenario-detail-350x207.png)
 
-このページについて詳しくは、[ シナリオの詳細 ](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md) を参照してください。
+このページについて詳しくは、[&#x200B; シナリオの詳細 &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md) を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -170,7 +170,7 @@ Workfront/ レコードを監視モジュールの最大サイクル数は `10` 
 
 シナリオの実行が無効化される前に連続して実行を試行する最大数（`DataError`、`DuplicateDataError`、`ModuleTimeoutError`、`ConnectionError` を除く）を定義します。
 
-エラーについて詳しくは、「[ エラータイプ ](/help/workfront-fusion/references/errors/error-processing.md)」を参照してください。
+エラーについて詳しくは、「[&#x200B; エラータイプ &#x200B;](/help/workfront-fusion/references/errors/error-processing.md)」を参照してください。
 
 >[!NOTE]
 >
