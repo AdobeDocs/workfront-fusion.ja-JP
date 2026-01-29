@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
-source-git-commit: 3ae274720ea2d7e4ee823a8467b750ad6f4d0c52
+source-git-commit: 95cdc14b313a3f76d6feebabb59f72b4277ae9e4
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '2000'
 ht-degree: 100%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 100%
 * Fusion リリースアクティビティ {#fusion-release-activity}
    * [Adobe Workfront Fusion リリースアクティビティ](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * 2025年の Fusion リリース {#fusion-releases-2025}
+      * [Workfront Fusion リリースアクティビティ：2026年1月26日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-26.md)
       * [Workfront Fusion リリースアクティビティ：2026年1月19日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-19.md)
       * [Workfront Fusion リリースアクティビティ：2026年1月12日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-12.md)
       * [Workfront Fusion リリースアクティビティ：2025年11月17日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
