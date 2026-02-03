@@ -4,10 +4,10 @@ description: 現在、Adobe Workfront Fusion では、次のパブリックテ�
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: 4ede5c7a75725a6540d6a8ff9cd056e6147d5c55
+source-git-commit: 08c0e6d779cea5ebb2b6ebbdb1dfd7fd659b18b0
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 63%
+source-wordcount: '2278'
+ht-degree: 47%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 63%
 
 チームまたは組織が他のチーム作成テンプレートを使用できる場合があります。
 
-使用可能なテンプレートを表示するには、Fusion のサイドナビゲーションメニューにある **テンプレート** アイコン ![&#x200B; テンプレートアイコン &#x200B;](assets/templates-icon.png) をクリックします。
+使用可能なテンプレートを表示するには、Fusion のサイドナビゲーションメニューにある **テンプレート** アイコン ![ テンプレートアイコン ](assets/templates-icon.png) をクリックします。
 
 ## Workfront テンプレート
 
@@ -33,15 +33,11 @@ ht-degree: 63%
 
 この Fusion テンプレートは、そのプロセスを自動化します。 タスクが早期に完了すると、すべての依存タスク（後続タスク）が自動的に再スケジュールされ、より早く開始されるようになり、チームの迅速な移行と機敏性の維持に役立ちます。
 
-### [!BADGE &#x200B; 新規 &#x200B;]{type=Informative} HTTP/CSV/WF - ドメインおよび層別にイベントサブリストを作成して、CSV に書き出します。
+### HTTP/CSV/WF - ドメインと階層別にイベントサブリストを作成して、CSV に書き出します。
 
 イベント購読情報をダウンロードし、CSV ファイルを作成して、そのファイルをWorkfrontにアップロードします。
 
-<!--New August 8, 2025-->
-
 ### Workfront ボード – 指定した列からアーカイブされたカードを削除（オンデマンド）
-
-<!--New March 12, 2025-->
 
 指定したボードの指定した列から、アーカイブしたカードをオンデマンドで削除します。
 
@@ -113,6 +109,52 @@ ht-degree: 63%
 
 月に 1 回、独自のポリシーを使用してプロジェクトテンプレートを確認し、管理が容易なテンプレートでテンプレートの適切なユーザーにポリシー違反に関する通知が送信されます。
 
+### Workfront - カスタムフォームの変更内容をソースのイシュー/リクエストから解決するプロジェクトまたはタスクにコピーする
+
+このテンプレートを使用して、問題/要求から解決するプロジェクトやタスクにカスタム フォームの変更をコピーします。
+
+### Workfront - カスタムフィールドデータのプロジェクト、タスクまたはイシューをバッチ更新
+
+このテンプレートは、Workfrontで準備および提供した CSV を使用して、プロジェクト、タスク、またはイシューのカスタムフィールドデータを更新します。 考慮事項と制限事項については、モジュール 1 と 2 のメモを参照してください。
+
+### Workfront - タスクが 100% 完了した場合にプロジェクトステータスを「計画中」から「現在」に変更する
+
+タスクが 100% 完了した場合に、この自動処理によってプロジェクトのステータスが「計画中」から「現在」に更新されます。 検索から始めて、1 日に 1 回実行することをお勧めします。これにより、ユーザーは必要に応じてステータスが「計画中」のプロジェクトを更新できます。
+
+### Workfront - ポリシー時間に使用されていないプロジェクトテンプレートを検索して通知します
+
+月に 1 回、独自のポリシーを使用してプロジェクトテンプレートを確認し、管理が容易なテンプレートでテンプレートの適切なユーザーにポリシー違反に関する通知が送信されます。
+
+### Workfront – 新しいドキュメントが追加されたとき – ドキュメント所有者に渡された事前署名済み URL を取得します
+
+ユーザーの更新として、新しいドキュメントごとに事前署名済み URL を取得する
+
+### Workfront イベント購読の監視（毎日） – 変数の設定
+
+このシナリオテンプレートは、毎日ウェイクアップして、Workfrontのイベントサブスクリプションのヘルスチェックを実行します 過去 24 時間以内に非アクティブ化されたイベント購読が識別されます。 適格な非アクティブ化されたイベントサブスクリプションが見つかった場合、シナリオでは、シナリオのインストール中に顧客が特定する問題がWorkfront リクエストキューで生成されます。 また、イシューに割り当てるルーティングルールまたはチーム/ユーザーリソースを特定することもできます。 通知を生成するため、内部の新規問題メールを受信者に送信する必要があります。 このアプローチを使用すると、アクティベートを解除するたびに 1 つの作業項目が生成されます。
+
+### Workfront - シーケンシャル番号付けシリーズ
+
+#### Workfront - シーケンシャルナンバリングシリーズ：オブジェクトのカスタムフォームとフィールドを作成
+
+このテンプレートは、Workfront - シーケンシャル番号付けシリーズ テンプレートで使用するカスタムフォームとフィールドを作成します。
+
+#### Workfront – 連続番号付けシリーズ：ポートフォリオ
+
+このテンプレートは、ポートフォリオに順番に番号を付けます。 ここでは、「Workfront – 連続番号シリーズ：オブジェクトを作成」カスタムフォームおよびフィールドテンプレートを使用してカスタムフォームとフィールドを作成したことを前提としていますが、既存のフォームとフィールドを使用できます。
+
+#### Workfront – 連続番号シリーズ：プログラム
+
+このテンプレートは、プログラムに順番に番号を付けます。 ここでは、「Workfront – 連続番号シリーズ：オブジェクトを作成」カスタムフォームおよびフィールドテンプレートを使用してカスタムフォームとフィールドを作成したことを前提としていますが、既存のフォームとフィールドを使用できます。
+
+#### Workfront – 連続番号のシリーズ：プロジェクト
+
+このテンプレートでは、プロジェクトに順番に番号が付けられます。 ここでは、「Workfront – 連続番号シリーズ：オブジェクトを作成」カスタムフォームおよびフィールドテンプレートを使用してカスタムフォームとフィールドを作成したことを前提としていますが、既存のフォームとフィールドを使用できます。
+
+#### Workfront – 連続採番シリーズ：問題
+
+このテンプレートは、問題を順番に番号付けします。 ここでは、「Workfront – 連続番号シリーズ：オブジェクトを作成」カスタムフォームおよびフィールドテンプレートを使用してカスタムフォームとフィールドを作成したことを前提としていますが、既存のフォームとフィールドを使用できます。
+
 ## Workfront - Workfront Proof テンプレート
 
 これらのテンプレートは、Workfront と Workfront Proof を組み合わせたワークフローを自動化します。
@@ -130,6 +172,14 @@ ht-degree: 63%
 ### Workfront Proof／Workfront - プルーフ決定のタスクの更新と完了（承認済みの場合）
 
 個々のプルーフが個々のタスクに関連付けられている場合、このシナリオでは、プルーフの承認決定が行われると、関連するタスクを閉じます。承認された場合は、タスクが完了し、プロジェクトが更新されます。
+
+### Workfront/Workfront Proof – 新しいプルーフ – 承認者に期日内に休暇があるかどうかを通知します
+
+この自動処理では、（指定されたポートフォリオ内の）プルーフが設定された新しいドキュメントバージョンを監視します。 承認者のプロファイルに期限の個人的な休暇がある場合、プルーフの所有者とプロジェクトの所有者に通知が送信されます。
+
+### Workfront/Workfront Proof – 指定されたプルーフ承認者を削除し（可能な場合）、新しい承認者を追加する
+
+この自動処理により、承認者のプルーフが検索され、新しい承認者が追加されます。 可能な場合、元の承認者はプルーフから削除されます。 元の承認者が作成者または所有者の場合は、追加のアクションが発生します。 詳しくは、モジュール 1 のメモを参照してください。
 
 ## HTTP - Workfront テンプレート
 
@@ -184,7 +234,7 @@ ht-degree: 63%
 
 このテンプレートは Workfront と Anaplan の統合をサポートしており、Workfront と Anaplan の両方で特定の設定が必要です。このテンプレートと必要な設定について詳しくは、個々のテンプレートに関する記事を参照してください。
 
-Workfrontと Anaplan の統合について詳しくは、Workfront ドキュメントの [Anaplan のAdobe Workfront](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) を参照してください。
+Workfrontと Anaplan の統合について詳しくは、Workfront ドキュメントの [Anaplan のAdobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) を参照してください。
 
 >[!NOTE]
 >
@@ -192,27 +242,27 @@ Workfrontと Anaplan の統合について詳しくは、Workfront ドキュメ�
 
 ### 支出の最適化ワークフロー
 
-* [&#x200B; リスト項目へのAdobe Workfront プロジェクトの更新  [!DNL Anaplan]  送信 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
-* [&#x200B; リスト項目へのAdobe Workfront費用  [!DNL Anaplan]  送信 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
-* [&#x200B; リスト項目に対するAdobe Workfrontの実際の時間数の更新  [!DNL Anaplan]  送信 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
+* [ リスト項目へのAdobe Workfront プロジェクトの更新  [!DNL Anaplan]  送信 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
+* [ リスト項目へのAdobe Workfront費用  [!DNL Anaplan]  送信 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
+* [ リスト項目に対するAdobe Workfrontの実際の時間数の更新  [!DNL Anaplan]  送信 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
 
 ### 予算リクエストをリンクするためのワークフロー
 
-* [Adobe Workfront予算リクエ  [!DNL Anaplan]  トからのリスト項目の作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
-* [Adobe Workfront プロジェク  [!DNL Anaplan]  への予算配分の適用 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
+* [Adobe Workfront予算リクエ  [!DNL Anaplan]  トからのリスト項目の作成 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
+* [Adobe Workfront プロジェク  [!DNL Anaplan]  への予算配分の適用 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
 
 ### キャンペーンリクエストをリンクするワークフロー
 
-* [Adobe Workfront キャンペ  [!DNL Anaplan]  ンリクエストからのリスト項目の作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
-* [Adobe Workfront キャンペ  [!DNL Anaplan]  ンリクエストまたはキャンペーンプロジェクトへの予算配分の適用 &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+* [Adobe Workfront キャンペ  [!DNL Anaplan]  ンリクエストからのリスト項目の作成 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
+* [Adobe Workfront キャンペ  [!DNL Anaplan]  ンリクエストまたはキャンペーンプロジェクトへの予算配分の適用 ](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
 
 ## Workfront - Jira テンプレート
 
 これらのテンプレートは、Workfrontと Jira 間の共通ワークフローを表します。
 
-これらのテンプレートについて詳しくは、[&#x200B; テンプレートを使用したAdobe Workfront Fusion と Jira の接続 &#x200B;](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md) を参照してください。
+これらのテンプレートについて詳しくは、[ テンプレートを使用したAdobe Workfront Fusion と Jira の接続 ](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md) を参照してください。
 
-* [Workfrontから Jira へ：Workfrontのタスクまたは問題の割り当てから JIRA の問題を作成 &#x200B;](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-1-workfront-to-jira-create-jira-issue-from-workfront-task-or-issue-assignment)
+* [Workfrontから Jira へ：Workfrontのタスクまたは問題の割り当てから JIRA の問題を作成 ](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-1-workfront-to-jira-create-jira-issue-from-workfront-task-or-issue-assignment)
 * [JIRA からWorkfrontへ：JIRA からWorkfrontへ：Jira からWorkfrontに問題やコメントに関する更新を送信します](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-2-jira-to-workfront-send-updates-on-issues-and-comments-back-to-workfront-from-jira)
 * [Workfrontから Jira へ：Workfront タスクから JIRA への変更](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-3-workfront-to-jira-changes-to-workfront-task-to-jira-issue)
 * [Workfrontから Jira へ：Workfrontの問題が JIRA の問題に変更されました](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-4-workfront-to-jira-changes-to-workfront-issue-to-jira-issue)
