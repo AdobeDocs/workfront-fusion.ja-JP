@@ -2,10 +2,10 @@
 user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
-source-git-commit: 95cdc14b313a3f76d6feebabb59f72b4277ae9e4
+source-git-commit: b6822db8c177beade3e70616ef4282bc9ed02c08
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 100%
+source-wordcount: '2013'
+ht-degree: 99%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 100%
 * Fusion リリースアクティビティ {#fusion-release-activity}
    * [Adobe Workfront Fusion リリースアクティビティ](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * 2025年の Fusion リリース {#fusion-releases-2025}
+      * [Workfront Fusion リリースアクティビティ：2026年2月2日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-2.md)
       * [Workfront Fusion リリースアクティビティ：2026年1月26日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-26.md)
       * [Workfront Fusion リリースアクティビティ：2026年1月19日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-19.md)
       * [Workfront Fusion リリースアクティビティ：2026年1月12日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-12.md)
@@ -258,6 +259,7 @@ ht-degree: 100%
    * [Workfront Fusion の AI アシスタント](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
    * [シナリオスコアリングエキスパートの実行](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
    * [シナリオ要素の削除](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
+   * [「シナリオ」領域からシナリオを管理します](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
 * 練習シナリオの作成 {#build-practice-scenarios}
    * [練習シナリオの作成](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
    * [基本的なシナリオの作成](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)

@@ -4,10 +4,10 @@ description: シナリオイベントのフィルタリングや検索など、�
 author: Becky
 feature: Workfront Fusion
 exl-id: 34dd9836-9a1b-4ce2-b24e-ae769888a52a
-source-git-commit: 42be02d6a59a5d7b8faccdcfe40e8b967153c6eb
+source-git-commit: 05c75c0e125a4f3f657049d7e57bbc94cc5e4d67
 workflow-type: tm+mt
 source-wordcount: '421'
-ht-degree: 8%
+ht-degree: 26%
 
 ---
 
@@ -25,22 +25,22 @@ ht-degree: 8%
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
 +++
 
@@ -49,14 +49,14 @@ ht-degree: 8%
 実行は、シナリオのシナリオ履歴から確認できます。
 
 
-1. 左パネルの「**[!UICONTROL シナリオ]**」タブ、シナリオの順にクリックします。
+1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックし、シナリオをクリックします。
 
    または
 
-   シナリオエディターでシナリオに取り組んでいる場合は、ウィンドウの左上隅にある左矢印 ![&#x200B; 編集を終了 &#x200B;](assets/exit-editing-arrow.png) をクリックします。
+   シナリオエディターでシナリオに取り組んでいる場合は、ウィンドウの左上隅にある左矢印 ![ 編集を終了 ](assets/exit-editing-arrow.png) をクリックします。
 
 1. シナリオ名の近くにある **履歴** をクリックします。
-   ![&#x200B; 「履歴」タブ &#x200B;](assets/history-tab.png)
+   ![ 「履歴」タブ ](assets/history-tab.png)
 
 
 1. 表示する実行を見つけて、その実行の行の右端にある **詳細** をクリックします。 [!UICONTROL 詳細]リンクは、実行に詳細が含まれる場合にのみ表示されます。
@@ -69,7 +69,7 @@ ht-degree: 8%
 
 1. モジュールからの出力を表示するには、モジュールの近くにある出力の詳細バブルをクリックします。 バブル内の数は、モジュールが出力するバンドルの数を表します。
 
-   ![&#x200B; モジュール付近の出力バブル &#x200B;](assets/output-bubble.png)
+   ![ モジュール付近の出力バブル ](assets/output-bubble.png)
 
 1. フィルターを通過したバンドルを表示するには、フィルターをクリックします。 フィルターの近くの数字は、フィルターを通過したバンドルの数を表します。
 1. 実行パネル内の特定のモジュールまたはイベントを検索するには、検索語句を **実行イベントを検索** ボックスに入力します。 入力中に結果が表示されます。

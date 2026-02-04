@@ -4,8 +4,8 @@ description: Fusion を開くと、アクションに関する多くのオプシ
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: b54a2ae43efb44ebd002357d7b2269f40523bc9f
-workflow-type: ht
+source-git-commit: 05c75c0e125a4f3f657049d7e57bbc94cc5e4d67
+workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 この記事では、これらの領域を紹介し、各領域の詳細情報へのリンクを提供します。
 
 | 領域 | 説明 | 詳しくは、次を参照してください。 |
-|---|---|---|
+| --- | --- | --- |
 | 組織の概要<br> ![組織アイコン](assets/org-icon.png) | ここでは、Fusion 組織に関する情報を確認できます。この組織のシナリオで実行された操作の数と、アクティブなシナリオのリストを表示できます。また、この組織のチーム、ユーザー、環境のリストを表示することもできます。<br>現在選択されている組織は、このアイコンの上に表示されます。 | [組織とチーム](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
 | チームの概要<br> ![チームアイコン](assets/team-icon.png) | ここでは、このチームのシナリオで実行された操作の数やアクティブなシナリオのリストなど、Fusion チームに関する情報を確認できます。また、このチームのユーザーを表示および管理することもできます。チームを表示する際に、このページの上部にあるドロップダウンから別のチームを選択できます。<br>現在選択されているチームは、このアイコンの上に表示されます。<br>チームの概要またはこの記事にリストされているチームセクションを表示するには、チームを作成する必要がある場合があります。 | [組織とチーム](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
 | シナリオ<br> ![シナリオアイコン](assets/scenarios-icon.png) | Fusion のシナリオは、自動ワークフローを表します。例えば、あるシナリオでは、受信する Workfront リクエストを監視してプロジェクトに変換し、別のシナリオでは、画像を生成してドキュメントプロバイダーにアップロードし、Workfront に承認タスクを追加するといった処理を行います。Fusion での作業のほとんどは、シナリオの設定と管理です。シナリオ領域では、チームのシナリオのリストを表示および整理したり、表示または変更する個々のシナリオを選択したり、新しいシナリオの作成を開始したりできます。 | [シナリオの概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md) |

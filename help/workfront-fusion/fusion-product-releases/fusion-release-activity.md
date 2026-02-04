@@ -9,9 +9,9 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: c37aea95-7cc3-4939-a4d7-9a6a75557b85
-source-git-commit: 95cdc14b313a3f76d6feebabb59f72b4277ae9e4
+source-git-commit: b6822db8c177beade3e70616ef4282bc9ed02c08
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1116'
 ht-degree: 100%
 
 ---
@@ -21,6 +21,13 @@ ht-degree: 100%
 Adobe Workfront Fusion は、アプリと web サービスをシームレスに接続するので、ユーザーは同じタスクを何度も繰り返すのではなく、新しいタスクに集中することができます。
 
 ## 2026年の Fusion リリース
+
+### 2026年2月
+
+* [Workfront Fusion リリースアクティビティ：2026年2月2日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-2.md)
+
+
+### 2026年1月
 
 * [Workfront Fusion リリースアクティビティ：2026年1月26日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-26.md)
 * [Workfront Fusion リリースアクティビティ：2026年1月19日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-19.md)

@@ -5,10 +5,10 @@ author: Becky
 feature: System Setup and Administration
 role: Admin
 exl-id: 823aa376-fbfe-4750-82dc-4f34224c1a48
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 05c75c0e125a4f3f657049d7e57bbc94cc5e4d67
 workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 55%
+ht-degree: 56%
 
 ---
 
@@ -34,7 +34,7 @@ Adobe Workfront Fusion ドキュメントのハウツー記事には、その手
    <td role="rowheader">Adobe Workfront パッケージ 
    <td> Adobe Workfront パッケージとは、組織が購入した一連の機能を指します。 Fusion のほとんどの機能はすべてのプランで使用できますが、一部の例外はUltimate Workfront パッケージを使用する組織でのみ使用できます。 
    <ul><li>組織が使用しているAdobe Workfront パッケージ（新しいパッケージモデルか現在のパッケージモデルかなど）を確認するには、Workfront管理者に問い合わせてください。</li>
-   <li>Workfront管理者が組織のWorkfront パッケージを見つける方法については、Workfront ドキュメントの <a href="https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan"> 組織のクラスターとWorkfrontのプランの表示 </a> を参照してください。</li><li>新しいWorkfront パッケージについて詳しくは、<a href="https://business.adobe.com/jp/products/workfront/pricing.html">Adobe Workfrontの価格とパッケージ </a> を参照してください。</li></ul> </td> 
+   <li>Workfront管理者が組織のWorkfront パッケージを見つける方法については、Workfront ドキュメントの <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan"> 組織のクラスターとWorkfrontのプランの表示 </a> を参照してください。</li><li>新しいWorkfront パッケージについて詳しくは、<a href="https://business.adobe.com/products/workfront/pricing.html">Adobe Workfrontの価格とパッケージ </a> を参照してください。</li></ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
@@ -43,9 +43,9 @@ Adobe Workfront Fusion ドキュメントのハウツー記事には、その手
    <li>割り当てられているライセンスを確認するには、Workfront 管理者にお問い合わせください。</li>
    <li>Adobe Workfront は、新しい価格設定のパッケージモデルに移行しつつあります。ライセンスについては、以下を参照してください。
    <ul>
-   <li>新規：<a href="https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">新しいライセンスの概要</a></li>
-   <li>現在：<a href="https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">ライセンスの概要</a></li></ul></li>
-   <li>正しいアクセスレベルがあるにも関わらずアクセスできない場合は、アクセスレベルにその他の制限が設定されていないか Workfront 管理者にお問い合わせください。Workfront 管理者がアクセスレベルを変更する方法について詳しくは、<a href="https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan" class="MCXref xref">カスタムアクセスレベルの作成または変更</a>を参照してください。
+   <li>新規：<a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">新しいライセンスの概要</a></li>
+   <li>現在：<a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">ライセンスの概要</a></li></ul></li>
+   <li>正しいアクセスレベルがあるにも関わらずアクセスできない場合は、アクセスレベルにその他の制限が設定されていないか Workfront 管理者にお問い合わせください。Workfront 管理者がアクセスレベルを変更する方法について詳しくは、<a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan" class="MCXref xref">カスタムアクセスレベルの作成または変更</a>を参照してください。
    </ul>
       </p> </td> 
   </tr> 
@@ -55,6 +55,7 @@ Adobe Workfront Fusion ドキュメントのハウツー記事には、その手
   <tr> 
    <td role="rowheader">アクセスレベル</td> 
    <td> アクセスレベルとは、Fusion で実行できるアクションの権限のセットです。 例えば、一部のアクションは Fusion 管理者のみが実行できます。 
+   </tr>
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>Adobe Workfront Fusion には、Workfront とは別のライセンスモデルがあります。 
