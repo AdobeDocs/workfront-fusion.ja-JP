@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion HTTP モジュールで相互 TLS を使用�
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: 54c368d335b30f55cab19595a5b4740dde6013a7
+source-git-commit: b48b7ad0954208ae80e99501e9297a3adaede228
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 62%
+source-wordcount: '841'
+ht-degree: 72%
 
 ---
 
@@ -39,31 +39,31 @@ ht-degree: 62%
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
    <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
-   <p>コネクタベース（従来）：作業の自動化と統合のためのWorkfront Fusion </p>
+   <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
 
 +++
 
@@ -83,6 +83,25 @@ Adobe Workfront Fusion 公開証明書を web サービスにアップロード�
 
 >[!IMPORTANT]
 >
+>* これらのWorkfront Fusion 公開証明書は、**2027 年 3 月 2 日** （米国および EU）または **2027 年 3 月 8 日** （Azure）に期限が切れます。 有効期限が切れたら、新しい証明書を web サービスにアップロードする必要があります。次の操作をお勧めします。
+>
+>   * 有効期限をメモしておき、自分で証明書を web サービスにアップロードするようにリマインダーを設定します。
+>   * 新しい証明書を簡単に見つけるには、このページをブックマークします。
+>
+>* これらは非ワイルドカードの mTLS 証明書です。
+
+| データセンター | ダウンロードリンク | 日付が有効 |
+| --- | --- | --- |
+| US Datacenter | [Workfront Fusion US 証明書 2026 をダウンロード ](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | 2026 年 1 月 29 日～2027 年 3 月 2 日 |
+| EU Datacenter | [Workfront Fusion EU 証明書 2026 をダウンロード ](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | 2026 年 1 月 29 日～2027 年 3 月 2 日 |
+| Azure クラスター | [Workfront Fusion Azure 証明書 2026 をダウンロード ](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | 2026 年 2 月 4 日～2027 年 3 月 8 日 |
+
+
+### 証明書（2025 年）
+
+>[!IMPORTANT]
+>
+>* 上記で利用可能な 2026 年の証明書をインストールすることをお勧めします。
 >* これらのWorkfront Fusion 公開証明書は、**2026 年 4 月 4 日** （米国および EU）または **2025 年 11 月 25 日** （Azure）に有効期限が切れます。 有効期限が切れたら、新しい証明書を web サービスにアップロードする必要があります。次の操作をお勧めします。
 >
 >   * 有効期限をメモしておき、自分で証明書を web サービスにアップロードするようにリマインダーを設定します。
@@ -91,10 +110,10 @@ Adobe Workfront Fusion 公開証明書を web サービスにアップロード�
 >* これらは非ワイルドカードの mTLS 証明書です。
 
 | データセンター | ダウンロードリンク | 日付が有効 |
-|---|---|---|
-| US Datacenter | [Workfront Fusion US 証明書 2025 をダウンロード &#x200B;](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | 2025 年 3 月 3 日～2026 年 4 月 4 日 |
-| EU Datacenter | [Workfront Fusion EU 証明書 2025 をダウンロード &#x200B;](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | 2025 年 3 月 3 日～2026 年 4 月 4 日 |
-| Azure クラスター | [Workfront Fusion Azure 証明書 2025 をダウンロード &#x200B;](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | 2024 年 10 月 24 日（PT）～2025 年 11 月 25 日（PT） |
+| --- | --- | --- |
+| US Datacenter | [Workfront Fusion US 証明書 2025 をダウンロード ](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | 2025 年 3 月 3 日～2026 年 4 月 4 日 |
+| EU Datacenter | [Workfront Fusion EU 証明書 2025 をダウンロード ](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | 2025 年 3 月 3 日～2026 年 4 月 4 日 |
+| Azure クラスター | [Workfront Fusion Azure 証明書 2025 をダウンロード ](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | 2024 年 10 月 24 日（PT）～2025 年 11 月 25 日（PT） |
 
 <!--
 
@@ -126,7 +145,7 @@ Adobe Workfront Fusion 公開証明書を web サービスにアップロード�
 1. [!UICONTROL HTTP] リクエストモジュールをシナリオに追加します。
 1. モジュールの設定を開始します。
 
-   [!UICONTROL HTTP] リクエストモジュールの設定方法については、「[&#x200B; ユニバーサルコネクタ &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)」の該当する記事を参照してください。
+   [!UICONTROL HTTP] リクエストモジュールの設定方法については、「[ ユニバーサルコネクタ ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)」の該当する記事を参照してください。
 
 1. モジュールの下部付近にある「**[!UICONTROL 詳細設定を表示]**」を有効にします。
 1. 「**[!UICONTROL 相互 TLS を使用]**」を有効にします。
