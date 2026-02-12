@@ -4,10 +4,10 @@ description: 次の用語集では、Adobe Workfront Fusion の一般的な用�
 author: Becky
 feature: Workfront Fusion
 exl-id: 7f098ec2-8594-4e5d-9ce7-d1738a05f9a6
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
-workflow-type: ht
+source-git-commit: c89536b6d3e6ca5f7e5048b8487a2d86bda3b213
+workflow-type: tm+mt
 source-wordcount: '924'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 100%
   </tr> 
   <tr>
    <td role="rowheader"> <p>接続</p> </td> 
-   <td> <p>接続は、特定のサービスに接続する一連の資格情報を表します。任意のモジュール内で接続を設定してから、その接続を他のモジュールで使用できます。Fusion がこれらの資格情報を使用してモジュールが必要とする情報にアクセスできるように、すべてのモジュールで接続を選択する必要があります。 </p><p>詳しくは、<a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md" class="MCXref xref">接続の概要</a>を参照してください。</p> </td> 
+   <td> <p>接続は、特定のサービスに接続するための一連の資格情報を表します。 任意のモジュール内で接続を設定してから、その接続を他のモジュールで使用できます。Fusion がこれらの資格情報を使用してモジュールが必要とする情報にアクセスできるように、すべてのモジュールで接続を選択する必要があります。 </p><p>詳しくは、<a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md" class="MCXref xref">接続の概要</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">コネクター</td> 
