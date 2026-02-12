@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
-source-git-commit: b6822db8c177beade3e70616ef4282bc9ed02c08
+source-git-commit: 0c91cd108c7350a9e2d790ca71e6d4edbd4a461b
 workflow-type: tm+mt
-source-wordcount: '2013'
+source-wordcount: '2015'
 ht-degree: 99%
 
 ---
@@ -171,7 +171,8 @@ ht-degree: 99%
    * ライセンスと操作の概要 {#licensing-and-operations-overviews}
       * [ライセンスと操作の概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
       * [Adobe Workfront Fusion ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
-      * [操作](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
+      * [運用](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
+        [ ワーカープール ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
    * 組織とチームの設定と管理 {#set-up-and-manage-orgs-and-teams}
       * [組織とチームの設定と管理：記事インデックス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
       * 組織とチームの設定 {#set-up-orgs-teams-and-users}
