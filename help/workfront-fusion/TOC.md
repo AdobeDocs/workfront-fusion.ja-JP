@@ -2,10 +2,10 @@
 user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
-source-git-commit: 0c91cd108c7350a9e2d790ca71e6d4edbd4a461b
+source-git-commit: 84deef6c58e18d526788727611932d7fe10d3210
 workflow-type: tm+mt
-source-wordcount: '2015'
-ht-degree: 99%
+source-wordcount: '2032'
+ht-degree: 98%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 99%
 * Fusion リリースアクティビティ {#fusion-release-activity}
    * [Adobe Workfront Fusion リリースアクティビティ](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * 2025年の Fusion リリース {#fusion-releases-2025}
+      * [Workfront Fusion リリースアクティビティ：2026年2月9日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-9.md)
       * [Workfront Fusion リリースアクティビティ：2026年2月2日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-2.md)
       * [Workfront Fusion リリースアクティビティ：2026年1月26日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-26.md)
       * [Workfront Fusion リリースアクティビティ：2026年1月19日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-19.md)
@@ -172,7 +173,7 @@ ht-degree: 99%
       * [ライセンスと操作の概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
       * [Adobe Workfront Fusion ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
       * [運用](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
-        [&#x200B; ワーカープール &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
+        [ ワーカープール ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
    * 組織とチームの設定と管理 {#set-up-and-manage-orgs-and-teams}
       * [組織とチームの設定と管理：記事インデックス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
       * 組織とチームの設定 {#set-up-orgs-teams-and-users}
@@ -219,7 +220,8 @@ ht-degree: 99%
    * データのマッピング {#map-data}
       * [データのマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
       * [モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)
-      * [関数を使用した項目のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
+      * [組み込み関数を使用した項目のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
+      * [カスタム関数を使用したデータのマッピング](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)
       * [配列と配列要素のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)
       * [モジュール間でのファイルのマッピング](/help/workfront-fusion/create-scenarios/map-data/map-files.md)
       * [データストア](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)
@@ -335,6 +337,7 @@ ht-degree: 99%
          * [Webhook](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)
          * [Adobe Workfront Fusion の HTTP モジュールでの相互 TLS の使用](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
       * Adobe コネクター {#adobe-connectors}
+         * [Adobe App Builder モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md)
          * [Adobe Acrobat Sign モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-sign-modules.md)
          * [Adobe Authenticator モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)
          * [Adobe Campaign モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-campaign-classic-connector.md)
