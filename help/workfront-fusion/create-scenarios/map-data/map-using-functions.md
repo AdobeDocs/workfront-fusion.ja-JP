@@ -1,22 +1,23 @@
 ---
-title: 関数を使用した項目のマッピング
+title: 組み込み関数を使用した項目のマッピング
 description: 項目をマッピングする場合、関数を使用して単純な数式や複雑な数式を作成できます。
 author: Becky
 feature: Workfront Fusion
 exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: 3c726c1df589785719c0f141fbd5bc17194cc218
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 28%
+source-wordcount: '711'
+ht-degree: 45%
 
 ---
 
-# 関数を使用した項目のマッピング
+# 組み込み関数を使用した項目のマッピング
 
-項目をマッピングする場合、関数を使用して単純な式や複雑な式を作成できます。 使用可能な関数は、Excel の関数や、一部のプログラミング言語の関数と似ています。
+Workfront Fusion には、単純な式や複雑な式を作成できる組み込み関数が含まれています。 これらの関数は、配列、文字列、数値、以前のモジュールのデータの関数など、様々なユースケースに対応しています。
 
-* 一般的なロジック、数学、テキスト、日付、配列を評価します。
-* テキストの大文字への変換、テキストのトリミング、日付の別の形式への変換など、項目値の条件付きロジックと変換を実行できます。
+さらに、シナリオでデータの変換や操作に使用できるカスタム関数を作成することもできます。
+
+カスタム関数の詳細と手順については、「[ カスタム関数を使用したデータのマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)」を参照してください。
 
 ## アクセス要件
 
@@ -28,26 +29,33 @@ ht-degree: 28%
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p><ul><li>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li><li>カスタム関数を使用するには、Adobe App Builder ライセンスが必要です。</ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
 +++
 
-## フィールドに関数を挿入
+## 組み込み関数を使用したデータのマッピング
+
+項目をマッピングする場合、関数を使用して単純な数式や複雑な数式を作成できます。使用できる関数は、Excel の関数や一部のプログラミング言語の関数に似ています。
+
+* 一般的なロジック、数学、テキスト、日付および配列を評価します。
+* 条件付きロジックと項目値の変換（テキストの大文字への変換、テキストの切り抜き、日付の別の形式への変換など）を実行できます。
+
+### フィールドに関数を挿入
 
 フィールドに関数を挿入するには、次の手順に従います。
 
@@ -57,7 +65,7 @@ ht-degree: 28%
 1. 関数を挿入するフィールドをクリックします。
 1. マッピングパネルで、挿入する関数を含むタブを選択します。
 
-   マッピングパネルタブについて詳しくは、[&#x200B; 関数の概要 &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md) を参照してください。
+   マッピングパネルタブについて詳しくは、[ 関数の概要 ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md) を参照してください。
    1. 関数名をクリックします。
 
       または
@@ -67,7 +75,7 @@ ht-degree: 28%
 
    関数パラメーターの説明については、マッピングパネルの関数にポインタを合わせてください。
 
-   関数とそのパラメーターについて詳しくは、「[&#x200B; 関数リファレンス：記事インデックス &#x200B;](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)」の記事を参照してください。
+   関数とそのパラメーターについて詳しくは、「[ 関数リファレンス：記事インデックス ](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)」の記事を参照してください。
 
 1. モジュールの設定を続行するか、[**OK**] をクリックします。
 
@@ -82,11 +90,11 @@ ht-degree: 28%
 
 この例では、サブ文字列関数は、プロジェクト名を 50 文字に制限します。
 
-![&#x200B; ミーティングの長さ制限の例 &#x200B;](assets/example-meet-length-restriction-350x184.png)
+![ ミーティングの長さ制限の例 ](assets/example-meet-length-restriction-350x184.png)
 
 >[!ENDSHADEBOX]
 
-## 関数のネスト
+### 関数のネスト
 
 関数を相互にネストすることができます。
 
@@ -96,7 +104,7 @@ ht-degree: 28%
 
 この例では、substring 関数を使用すると、トリミングされたプロジェクト名を 50 文字に制限しています。
 
-![&#x200B; トリム名 &#x200B;](assets/trimmed-name-under-50.png)
+![ トリム名 ](assets/trimmed-name-under-50.png)
 
 >[!ENDSHADEBOX]
 
@@ -112,7 +120,7 @@ ht-degree: 28%
 1. 必要に応じて、関数の設定を続行します。
 1. モジュールの設定を続行するか、[**OK**] をクリックします。
 
-## [!DNL Google Sheets] 関数の使用
+### [!DNL Google Sheets] 関数の使用
 
 Workfront Fusion に使用したい関数が含まれていないが、[!DNL Google Sheets] で特集されている場合は、次の手順に従って使用できます。
 
@@ -127,9 +135,9 @@ Workfront Fusion に使用したい関数が含まれていないが、[!DNL Goo
 
       通常どおり、先行モジュールの出力を使用できます。
 
-      ![Google Sheets 関数の使用 &#x200B;](assets/exploit-google-sheet-functions-350x218.png)
+      ![Google Sheets 関数の使用 ](assets/exploit-google-sheet-functions-350x218.png)
 
 1. **[!UICONTROL Google Sheets]／[!UICONTROL セルを取得]**&#x200B;モジュールを挿入して、計算結果を取得します。
 1. 手順 4 で使用した同じセル ID を使用して、モジュールを設定します。
 
-   ![Google Sheets 関数の使用 &#x200B;](assets/exploit-google-sheet-functions-2-350x187.png)
+   ![Google Sheets 関数の使用 ](assets/exploit-google-sheet-functions-2-350x187.png)

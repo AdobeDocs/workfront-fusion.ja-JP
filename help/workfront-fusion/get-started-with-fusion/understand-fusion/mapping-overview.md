@@ -4,10 +4,10 @@ description: マッピングとは、項目に構造化されたモジュール�
 author: Becky
 feature: Workfront Fusion
 exl-id: 9208ce20-0757-427a-9669-ce4274d05522
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
-workflow-type: ht
-source-wordcount: '435'
-ht-degree: 100%
+source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
+workflow-type: tm+mt
+source-wordcount: '436'
+ht-degree: 96%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 100%
 
 関数タブについて詳しくは、[関数の概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)を参照してください。
 
-関数を使った項目のマッピングについて詳しくは、[関数を使用した項目のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)を参照してください。
+関数を使用した項目のマッピングについて詳しくは、[ 組み込み関数を使用した項目のマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md) を参照してください。
 
 ## コレクション
 

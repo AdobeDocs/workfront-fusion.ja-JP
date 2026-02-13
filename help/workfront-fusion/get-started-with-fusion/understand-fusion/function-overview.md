@@ -4,26 +4,32 @@ description: 項目をマッピングする場合、関数を使用して単純�
 author: Becky
 feature: Workfront Fusion
 exl-id: e07730cb-52be-46db-a365-93cdbed1021c
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
-workflow-type: ht
-source-wordcount: '181'
-ht-degree: 100%
+source-git-commit: 3c726c1df589785719c0f141fbd5bc17194cc218
+workflow-type: tm+mt
+source-wordcount: '298'
+ht-degree: 60%
 
 ---
 
 # 関数の概要
+
+Workfront Fusion には、単純な式や複雑な式を作成できる組み込み関数が含まれています。 これらの関数は、配列、文字列、数値、以前のモジュールのデータの関数など、様々なユースケースに対応しています。
+
+さらに、シナリオでデータの変換や操作に使用できるカスタム関数を作成することもできます。
+
+## 組み込み関数
 
 項目をマッピングする場合、関数を使用して単純な数式や複雑な数式を作成できます。使用できる関数は、Excel の関数や一部のプログラミング言語の関数に似ています。
 
 * 一般的なロジック、数学、テキスト、日付および配列を評価します。
 * 条件付きロジックと項目値の変換（テキストの大文字への変換、テキストの切り抜き、日付の別の形式への変換など）を実行できます。
 
-## 関数タブの概要
+### 関数タブの概要
 
 マッピングパネルには次のタブがあります。各タブには、そのタイプのデータの関数とキーワードが含まれます。
 
 | 関数のタイプ | 詳しくは、次を参照してください。 |
-|---|---|
+| --- | --- |
 | **他のモジュールからのマッピング**<br>![&#x200B;他のモジュールからのマッピング](assets/toolbar-icon-functions-you-map-from-other-modules.png) | [モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) |
 | **一般的な関数**<br>![&#x200B;一般的な関数](assets/toolbar-icon-general-function.png) | [一般的な関数](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) |
 | **数学関数**<br>![&#x200B;数学関数](assets/toolbar-icon-math-functions.png) | [数学関数](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md) |
@@ -32,3 +38,11 @@ ht-degree: 100%
 | **配列操作用関数**<br> ![配列関数](assets/toolbar-icon-functions-for-arrays.png) | [配列関数](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md) |
 
 ![関数ツールバー](assets/functions-toolbar-350x189.png)
+
+## カスタム関数
+
+Fusion の関数領域で、カスタム関数を作成できます。 次に、これらの関数を、Adobe App Builder モジュールの形式でシナリオに追加します。
+
+カスタム関数はAdobe App Builderを通じて機能するので、使用する組織のAdobe App Builder ライセンスが必要です。
+
+カスタム関数の詳細と手順については、カスタム関数を使用した ap データを参照してください。

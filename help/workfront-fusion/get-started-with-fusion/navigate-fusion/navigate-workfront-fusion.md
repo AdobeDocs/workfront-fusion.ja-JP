@@ -4,10 +4,10 @@ description: Fusion を開くと、アクションに関する多くのオプシ
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: 05c75c0e125a4f3f657049d7e57bbc94cc5e4d67
+source-git-commit: 3c726c1df589785719c0f141fbd5bc17194cc218
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 100%
+source-wordcount: '775'
+ht-degree: 94%
 
 ---
 
@@ -28,6 +28,7 @@ ht-degree: 100%
 | キー<br> ![キーアイコン](assets/keys-icon.png) | 公開鍵と秘密鍵は、データの暗号化と復号化に使用されます。公開鍵は配布でき、公開鍵を持つすべてのユーザーがデータを暗号化できますが、復号化できるのは秘密鍵のみです。同様に、同様に、秘密鍵を持つユーザーは、公開鍵を持つ誰もが復号化できるデータを暗号化できます。キー領域では、チームが所有するキーを表示および管理できます。 | [キー](/help/workfront-fusion/references/modules/keys.md) |
 | データストア<br> ![データストアアイコン](assets/data-store-icon.png) | データストアは、シナリオの外部に存在する小さなデータベースです。データストアを使用すると、シナリオ間またはシナリオの別々の実行間でデータを転送できます。データストア領域では、チームが所有するデータストアを表示および管理できます。 | [データストア](/help/workfront-fusion/create-scenarios/map-data/data-stores.md) |
 | データ構造<br> ![データ構造アイコン](assets/data-structure-icon.png) | データ構造は、Fusion に転送されるデータの形式を記述し、JSON、XML、CSV などの形式をシリアル化したり解析したりするのに一般的に使用されます。データ構造では、チームが所有するデータ構造を表示および管理できます。 | [データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md) |
+| 関数 <br> ![ 関数アイコン ](assets/functions-icon.png) | カスタム関数は、データを操作および変換するシナリオに追加できるJavaScript関数です。 <br> カスタム関数を作成して使用するには、Adobe App Builderのライセンスが必要です。 | [ カスタム関数を使用したデータのマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md) |
 
 >[!NOTE]
 >
