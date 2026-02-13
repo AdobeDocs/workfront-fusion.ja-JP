@@ -4,10 +4,10 @@ description: 作業の自動化には高速な処理が必要なので、Adobe W
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 3a05e5df36bf9b1aacd0611fdad0240c8c52368d
-workflow-type: ht
-source-wordcount: '1092'
-ht-degree: 100%
+source-git-commit: 441b192d50e928ce74e54d8bcc0d89f4af348bb5
+workflow-type: tm+mt
+source-wordcount: '1072'
+ht-degree: 96%
 
 ---
 
@@ -76,8 +76,7 @@ ht-degree: 100%
 
 ## 不完全な実行
 
-* 不完全な実行は、シナリオごとの合計サイズ **10 MB** に制限されます。10 MB の制限に達した場合、そのシナリオで今後不完全な実行は保存されません。
-* 不完全な実行は、チームごとの合計サイズ **500 MB** に制限されます。500 MB の制限に達した場合、そのチームで今後不完全な実行は保存されません。
+* 不完全な実行は、シナリオごとに **11 GB** または **100 不完全な実行の合計サイズ** いずれか最初の制限に達した方）に制限されます。 制限に達すると、そのシナリオで不完全な実行は保存されなくなります。
 * Workfront Fusion では、1 分あたり最多で 5 回のエラーが許容されます。
 
 ## 再試行
