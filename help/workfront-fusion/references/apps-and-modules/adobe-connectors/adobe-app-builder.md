@@ -49,7 +49,7 @@ Fusion の関数領域で、カスタム関数を作成できます。 次に、
 
 現在利用可能なAdobe App Builder モジュールは、アクションを実行のみです。このモジュールでは、以前に設定されたカスタム JavaScript関数を使用できます。
 
-カスタム関数の設定手順については、[ カスタム関数を使用したデータのマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md) を参照してください。
+カスタム関数の設定手順については、[&#x200B; カスタム関数を使用したデータのマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md) を参照してください。
 
 ### アクションの実行
 
@@ -68,7 +68,7 @@ Fusion の関数領域で、カスタム関数を作成できます。 次に、
    <td>実行するカスタム関数を選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL パラメーター ] </td> 
+   <td role="rowheader">[!UICONTROL パラメーター &#x200B;] </td> 
    <td>関数のパラメーターの値を入力します。 使用可能なパラメーターは、関数の作成時に設定されたパラメーターに基づいています。<p>パラメーターにデフォルト値がある場合、フィールドには表示されませんが、フィールドに値を入力またはマッピングすることで上書きできます。</p></td> 
   </tr> 
    </tbody> 

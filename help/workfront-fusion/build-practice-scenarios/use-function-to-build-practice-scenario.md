@@ -18,9 +18,9 @@ ht-degree: 19%
 
 Workfront作業項目の更新は、Workfront Fusion の一般的なユースケースです。 この例では、関数を使用して、プロジェクトの名前を大文字に変更します。
 
-Fusion には、データに対して条件付きロジックを変換および実行できる多くのタイプの関数が含まれています。 関数の使用について詳しくは、「[ 関数の概要 ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)」を参照してください。
+Fusion には、データに対して条件付きロジックを変換および実行できる多くのタイプの関数が含まれています。 関数の使用について詳しくは、「[&#x200B; 関数の概要 &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)」を参照してください。
 
-この例では、[ 基本シナリオの作成 ](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) で作成したシナリオを変更します。
+この例では、[&#x200B; 基本シナリオの作成 &#x200B;](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) で作成したシナリオを変更します。
 
 ## アクセス要件
 
@@ -53,7 +53,7 @@ Fusion には、データに対して条件付きロジックを変換および�
 
 ## 前提条件
 
-この手順を実行する前に、[ 基本シナリオの作成 ](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) で説明されているシナリオを作成する必要があります。
+この手順を実行する前に、[&#x200B; 基本シナリオの作成 &#x200B;](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) で説明されているシナリオを作成する必要があります。
 
 ## 関数を使用したプロジェクトの更新
 
@@ -70,7 +70,7 @@ Fusion には、データに対して条件付きロジックを変換および�
 1. マッピングするフィールドを選択エリアで、「名前」を選択します。
 
    名前フィールドが開きます。
-1. [ 名前の更新用に関数をマッピング ](#map-the-function-for-the-name-update) を続行します。
+1. [&#x200B; 名前の更新用に関数をマッピング &#x200B;](#map-the-function-for-the-name-update) を続行します。
 
 ### 名前の更新用に関数をマッピング
 
@@ -79,7 +79,7 @@ Fusion には、データに対して条件付きロジックを変換および�
 1. 「**名前** フィールドをクリックします。
 
    マッピングパネルが開きます。
-1. マッピングパネルで「**テキスト関数とバイナリ関数** アイコンをクリックします。 ![ テキスト関数アイコン ](assets/toolbar-icon-text&binary-functions.png)
+1. マッピングパネルで「**テキスト関数とバイナリ関数** アイコンをクリックします。 ![&#x200B; テキスト関数アイコン &#x200B;](assets/toolbar-icon-text&binary-functions.png)
 1. 関数 **upper** を選択します。
 
    関数は、必要な入力の書式を含め、「名前」フィールドに表示されます。
@@ -87,12 +87,12 @@ Fusion には、データに対して条件付きロジックを変換および�
    この例では、プロジェクトの変換元のイシューの名前が入力されます。
 
 1. カーソルを括弧の間に移動します。これは、入力が行われる場所だからです。
-1. マッピングパネルで「**モジュール出力**」アイコンをクリックします。 ![ モジュール出力アイコン ](assets/toolbar-icon-functions-you-map-from-other-modules.png)
+1. マッピングパネルで「**モジュール出力**」アイコンをクリックします。 ![&#x200B; モジュール出力アイコン &#x200B;](assets/toolbar-icon-functions-you-map-from-other-modules.png)
 1. 最初のモジュールによって出力された名前ブロックを選択します。
 
    名前ブロックが関数に表示されます。
 
-   ![ 関数内の名前ブロック ](assets/map-name.png)
+   ![&#x200B; 関数内の名前ブロック &#x200B;](assets/map-name.png)
 
 1. **OK** をクリックして、モジュール設定を保存します。
 

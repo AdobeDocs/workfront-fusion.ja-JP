@@ -20,7 +20,7 @@ Fusion の関数領域で、カスタム関数を作成できます。 次に、
 
 Workfront Fusion には、単純な式や複雑な式を作成できる組み込み関数も含まれています。 これらの関数は、配列、文字列、数値、以前のモジュールのデータの関数など、様々なユースケースに対応しています。
 
-組み込み関数の詳細と手順については、[ 組み込み関数を使用した項目のマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md) を参照してください。
+組み込み関数の詳細と手順については、[&#x200B; 組み込み関数を使用した項目のマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md) を参照してください。
 
 ## アクセス要件
 
@@ -65,7 +65,7 @@ Workfront Fusion には、単純な式や複雑な式を作成できる組み込
 >
 >初期化が完了すると、初期化が実行されたチームのすべてのユーザーが関数を作成して使用できるようになります。
 
-1. 左側のパネルで「**関数** ![ 関数アイコン ](assets/functions-icon.png)」タブをクリックします。
+1. 左側のパネルで「**関数** ![&#x200B; 関数アイコン &#x200B;](assets/functions-icon.png)」タブをクリックします。
 
    ランタイムをまだ設定していない場合は、「ランタイム環境が設定されていません」というメッセージが表示されます。
 1. **ランタイムの初期化** をクリックします。
@@ -85,7 +85,7 @@ Workfront Fusion には、単純な式や複雑な式を作成できる組み込
 >   * 名前を変更
 >   * デフォルトのパラメーター値の表示
 
-1. 左側のパネルで「**関数** ![ 関数アイコン ](assets/functions-icon.png)」タブをクリックします。
+1. 左側のパネルで「**関数** ![&#x200B; 関数アイコン &#x200B;](assets/functions-icon.png)」タブをクリックします。
 1. **関数を追加** をクリックします。
 1. カスタム関数の名前を入力します。
 
@@ -100,5 +100,5 @@ Workfront Fusion には、単純な式や複雑な式を作成できる組み込
 
 シナリオにカスタム関数を追加するには、Adobe App Builder コネクタを使用します。
 
-手順については、[Adobe App Builder モジュール ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md) を参照してください。
+手順については、[Adobe App Builder モジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md) を参照してください。
 

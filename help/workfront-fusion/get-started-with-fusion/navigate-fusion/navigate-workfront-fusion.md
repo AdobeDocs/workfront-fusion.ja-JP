@@ -28,7 +28,7 @@ ht-degree: 94%
 | キー<br> ![キーアイコン](assets/keys-icon.png) | 公開鍵と秘密鍵は、データの暗号化と復号化に使用されます。公開鍵は配布でき、公開鍵を持つすべてのユーザーがデータを暗号化できますが、復号化できるのは秘密鍵のみです。同様に、同様に、秘密鍵を持つユーザーは、公開鍵を持つ誰もが復号化できるデータを暗号化できます。キー領域では、チームが所有するキーを表示および管理できます。 | [キー](/help/workfront-fusion/references/modules/keys.md) |
 | データストア<br> ![データストアアイコン](assets/data-store-icon.png) | データストアは、シナリオの外部に存在する小さなデータベースです。データストアを使用すると、シナリオ間またはシナリオの別々の実行間でデータを転送できます。データストア領域では、チームが所有するデータストアを表示および管理できます。 | [データストア](/help/workfront-fusion/create-scenarios/map-data/data-stores.md) |
 | データ構造<br> ![データ構造アイコン](assets/data-structure-icon.png) | データ構造は、Fusion に転送されるデータの形式を記述し、JSON、XML、CSV などの形式をシリアル化したり解析したりするのに一般的に使用されます。データ構造では、チームが所有するデータ構造を表示および管理できます。 | [データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md) |
-| 関数 <br> ![ 関数アイコン ](assets/functions-icon.png) | カスタム関数は、データを操作および変換するシナリオに追加できるJavaScript関数です。 <br> カスタム関数を作成して使用するには、Adobe App Builderのライセンスが必要です。 | [ カスタム関数を使用したデータのマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md) |
+| 関数 <br> ![&#x200B; 関数アイコン &#x200B;](assets/functions-icon.png) | カスタム関数は、データを操作および変換するシナリオに追加できるJavaScript関数です。 <br> カスタム関数を作成して使用するには、Adobe App Builderのライセンスが必要です。 | [&#x200B; カスタム関数を使用したデータのマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md) |
 
 >[!NOTE]
 >
