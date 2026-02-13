@@ -4,10 +4,10 @@ description: アグリゲーターモジュールは、複数のデータバン�
 author: Becky
 feature: Workfront Fusion
 exl-id: 93cde0d0-4013-463a-b19c-d58180632739
-source-git-commit: 99621f57da1eb294834a0eacfe527dcf017408e9
+source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
 workflow-type: tm+mt
 source-wordcount: '809'
-ht-degree: 11%
+ht-degree: 21%
 
 ---
 
@@ -25,33 +25,35 @@ ht-degree: 11%
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
-+++## [!UICONTROL &#x200B; アグリゲータ &#x200B;] モジュールの概要
++++
+
+## [!UICONTROL Aggregator] モジュールの概要
 
 [!UICONTROL アグリゲーター]モジュールが実行されると、次の処理が行われます。
 
 * 単一のソースモジュールの操作からすべてのバンドルを蓄積します。
-* 累積されたバンドルごとに 1 つの項目を含む配列を持つ単一のバンドルを出力します。 配列の項目の内容は、特定の [!UICONTROL &#x200B; アグリゲータ &#x200B;] モジュールとその設定に依存します。
+* 累積されたバンドルごとに 1 つの項目を含む配列を持つ単一のバンドルを出力します。 配列の項目の内容は、特定の [!UICONTROL  アグリゲータ ] モジュールとその設定に依存します。
 
 次の画像は、[!UICONTROL アグリゲーター]モジュールの通常の設定を表示します。
 
-![&#x200B; 配列アグリゲータ &#x200B;](assets/array-aggregator.png)
+![ 配列アグリゲータ ](assets/array-aggregator.png)
 
 <table style="table-layout:auto">
  <col> 
@@ -64,8 +66,8 @@ ht-degree: 11%
    <p>検索モジュールについて詳しくは、「モジュールの概要」の <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#search-modules" class="MCXref xref"> 検索モジュール </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Target structure type]</p><p>（[!UICONTROL 配列アグリゲータ &#x200B;] モジュールにのみ適用）</p> </td> 
-   <td> <p> データが集計されるターゲット構造。 デフォルトのオプション [!UICONTROL Custom] を使用すると、[!UICONTROL Array aggregator] の出力バンドルの <code>Array </code>item：に集計する項目を選択できます。</p> <p> <img src="assets/output-bundle-array-item.png"> </p> <p>[!UICONTROL 配列 aggregator] モジュールの後にさらにモジュールを接続し、集計モジュールの設定に戻ると、[!UICONTROL ターゲット &#x200B;] 構造体型ドロップダウンメニューに、次のモジュールと、「コレクションの配列」型のフィールドがすべて含まれます。 <p>この例では、[!DNL Slack] &gt;[!UICONTROL メッセージを作成 &#x200B;] モジュールの [!UICONTROL Attachments] フィールドが、配列アグリゲータ &gt; ターゲット構造タイプ フィールドに表示されます。 </p> <p> <img src="assets/array-aggregator-slack.png"> </p> </td> 
+   <td> <p>[!UICONTROL Target structure type]</p><p>（[!UICONTROL 配列アグリゲータ ] モジュールにのみ適用）</p> </td> 
+   <td> <p> データが集計されるターゲット構造。 デフォルトのオプション [!UICONTROL Custom] を使用すると、[!UICONTROL Array aggregator] の出力バンドルの <code>Array </code>item：に集計する項目を選択できます。</p> <p> <img src="assets/output-bundle-array-item.png"> </p> <p>[!UICONTROL 配列 aggregator] モジュールの後にさらにモジュールを接続し、集計モジュールの設定に戻ると、[!UICONTROL ターゲット ] 構造体型ドロップダウンメニューに、次のモジュールと、「コレクションの配列」型のフィールドがすべて含まれます。 <p>この例では、[!DNL Slack] &gt;[!UICONTROL メッセージを作成 ] モジュールの [!UICONTROL Attachments] フィールドが、配列アグリゲータ &gt; ターゲット構造タイプ フィールドに表示されます。 </p> <p> <img src="assets/array-aggregator-slack.png"> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Aggregated fields]</td> 
@@ -89,24 +91,24 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->ソースモジュールと [!UICONTROL Aggregator] モジュール間のモジュールで生成されたバンドルは、[!UICONTROL Aggregator] モジュールでは出力されません。 これらのバンドルは、「アグリゲータ [!UICONTROL &#x200B; 後のフローのモジュールからアクセスでき &#x200B;] せん。 ソースモジュールと [!UICONTROL Aggregator] モジュールの間でモジュールによって出力されるバンドルからのデータが必要な場合は、指定された項目を [!UICONTROL Aggregator] モジュールの設定（[!UICONTROL Array aggregator] モジュールの設定の [!UICONTROL &#x200B; 集計フィールド &#x200B;] フィールドなど）に必ず含めてください。
+>ソースモジュールと [!UICONTROL Aggregator] モジュール間のモジュールで生成されたバンドルは、[!UICONTROL Aggregator] モジュールでは出力されません。 これらのバンドルは、「アグリゲータ [!UICONTROL  後のフローのモジュールからアクセスでき ] せん。 ソースモジュールと [!UICONTROL Aggregator] モジュールの間でモジュールによって出力されるバンドルからのデータが必要な場合は、指定された項目を [!UICONTROL Aggregator] モジュールの設定（[!UICONTROL Array aggregator] モジュールの設定の [!UICONTROL  集計フィールド ] フィールドなど）に必ず含めてください。
 
 
 ## アグリゲータの動作のシナリオの例
 
 このサンプルシナリオでは、すべてのメール添付ファイルを zip で圧縮し、その ZIP ファイルを [!DNL Dropbox] にアップロードする方法を示します。
 
-![Dropbox アーカイブの例 &#x200B;](assets/dropbox-archive.png)
+![Dropbox アーカイブの例 ](assets/dropbox-archive.png)
 
 以下のシナリオでは、次の方法を示します。
 
-* 最初のモジュールは、受信メールのメールボックスを監視します。 [!UICONTROL &#x200B; メール &#x200B;] >[!UICONTROL &#x200B; メールをウォッチ &#x200B;]トリガーは、項目 `Attachments[]` を含んだバンドルを出力します。これは、メールのすべての添付ファイルを含んだ配列です。
+* 最初のモジュールは、受信メールのメールボックスを監視します。 [!UICONTROL  メール ] >[!UICONTROL  メールをウォッチ ]トリガーは、項目 `Attachments[]` を含んだバンドルを出力します。これは、メールのすべての添付ファイルを含んだ配列です。
 
-* 2 つ目のモデルは、メールの添付ファイルを反復します。[!UICONTROL &#x200B; メール &#x200B;] >[!UICONTROL &#x200B; 添付ファイルを反復 &#x200B;] イテレータは、`Attachments[]` 配列から項目を 1 つずつ取得し、それらを別のバンドルとしてさらに送信します。
+* 2 つ目のモデルは、メールの添付ファイルを反復します。[!UICONTROL  メール ] >[!UICONTROL  添付ファイルを反復 ] イテレータは、`Attachments[]` 配列から項目を 1 つずつ取得し、それらを別のバンドルとしてさらに送信します。
 
-* 3 番目のモジュールはアグリゲータです。 [!UICONTROL Email] >[!UICONTROL Iterate attachments] モジュールによって出力されたバンドルを集計します。 [!UICONTROL &#x200B; アーカイブ &#x200B;] >[!UICONTROL &#x200B; アーカイブアグリゲータを作成 &#x200B;] は、ZIP ファイルを含んだ単一のバンドルを受信して出力するすべてのバンドルを蓄積します。
+* 3 番目のモジュールはアグリゲータです。 [!UICONTROL Email] >[!UICONTROL Iterate attachments] モジュールによって出力されたバンドルを集計します。 [!UICONTROL  アーカイブ ] >[!UICONTROL  アーカイブアグリゲータを作成 ] は、ZIP ファイルを含んだ単一のバンドルを受信して出力するすべてのバンドルを蓄積します。
 
-* 最後のモジュールは、結果の ZIP ファイルを [!DNL Dropbox] にアップロードします。  [!DNL Dropbox]/[!UICONTROL &#x200B; ファイルをアップロード &#x200B;]&#x200B;[!UICONTROL &#x200B; アーカイブ &#x200B;]/[!UICONTROL &#x200B; アーカイブを作成 &#x200B;] モジュールから ZIP ファイルを取得して、[!DNL Dropbox] にアップロードします。
+* 最後のモジュールは、結果の ZIP ファイルを [!DNL Dropbox] にアップロードします。  [!DNL Dropbox]/[!UICONTROL  ファイルをアップロード ][!UICONTROL  アーカイブ ]/[!UICONTROL  アーカイブを作成 ] モジュールから ZIP ファイルを取得して、[!DNL Dropbox] にアップロードします。
 
 
 

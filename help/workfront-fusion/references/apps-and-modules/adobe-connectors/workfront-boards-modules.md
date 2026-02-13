@@ -4,10 +4,10 @@ description: Adobe Workfront Boards コネクタを使用すると、Workfront B
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
 workflow-type: tm+mt
 source-wordcount: '2904'
-ht-degree: 16%
+ht-degree: 20%
 
 ---
 
@@ -33,24 +33,26 @@ Adobe Workfront ボード モジュールを使用すると、レコードの読
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
-+++##前提条件
++++
+
+## 前提条件
 
 ボードに接続するには、Adobe Workfrontでボードを設定しておく必要があります。
 
@@ -125,9 +127,9 @@ Workfront ボード接続を作成するには：
 
 Workfront Fusion でWorkfront ボードモジュールを設定する場合、以下に示すフィールドが表示されます。 これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加のWorkfront ボードフィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![マップ切り替え](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [カード](#cards)
 * [ボード](#boards)
@@ -162,7 +164,7 @@ Workfront Fusion でWorkfront ボードモジュールを設定する場合、�
    <td>チェックリスト項目を追加するカードの ID を入力またはマッピングします<p>Workfrontでカードを表示すると、URL にカード ID が表示されます。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL チェックリスト項目 &#x200B;]</td> 
+   <td>[!UICONTROL チェックリスト項目 ]</td> 
    <td>追加するチェックリスト項目ごとに、「項目を追加」をクリックし、チェックリスト項目の名前を入力して、項目が完了したかどうかを選択します。</p></td> 
   </tr> 
  </tbody> 
@@ -247,7 +249,7 @@ Workfrontのボード上に新しいカードを作成します。
    <td>カードの移動先の列の ID を入力またはマッピングします。<p>列 ID は、ボードを読み取りモジュールから返される情報で見つけることができます。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL からインデックスへ &#x200B;]</td> 
+   <td>[!UICONTROL からインデックスへ ]</td> 
    <td>新しい列にカードを配置する位置を入力またはマップします。<p>インデックス 0 の列の一番上の位置。</p></td> 
   </tr> 
  </tbody> 
@@ -311,7 +313,7 @@ Workfrontのボード上に新しいカードを作成します。
   <tr> 
    <td>[!UICONTROL Due date]</td> 
    <td>このカードの期日を入力またはマッピングします。</p>
-   <p>サポートされる日付と時刻の形式の一覧については、「<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref"> 型強制 </a>」を参照してください。</p>
+   <p>サポートされる日付と時刻の形式の一覧について詳しくは、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">型強制</a>を参照してください。</p>
    </td> 
   </tr> 
   <tr> 
@@ -339,7 +341,7 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
       <td> <p>既存のWorkfront接続を使用してWorkfront Boards に接続することも、特定のWorkfront Boards 接続を使用することもできます。 </p><p>Workfront アプリをWorkfront Fusion に接続する手順については、この記事の <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront ボードへの接続の作成 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL ボード名 &#x200B;]</td> 
+   <td>[!UICONTROL ボード名 ]</td> 
    <td>新しいボードの名前を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
@@ -395,7 +397,7 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
    <td>更新する列の ID を入力またはマッピングします。<p>列 ID は、ボードを読み取りモジュールから返される情報で見つけることができます。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 列名 &#x200B;]</td> 
+   <td>[!UICONTROL 列名 ]</td> 
    <td>列の新しい名前を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -418,7 +420,7 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
    <td>取得する列を含むボードの ID を入力またはマッピングします。<p>Workfrontでボードを表示する際に、URL にボード ID が含まれています。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 列名 &#x200B;]</td> 
+   <td>[!UICONTROL 列名 ]</td> 
    <td>取得する列の名前を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -441,11 +443,11 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
    <td>取得する列を含むボードの ID を入力またはマッピングします。<p>Workfrontでボードを表示する際に、URL にボード ID が含まれています。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 列名 &#x200B;]</td> 
+   <td>[!UICONTROL 列名 ]</td> 
    <td>取得する列の名前を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL の WIP 制限 &#x200B;]</td> 
+   <td>[!UICONTROL の WIP 制限 ]</td> 
    <td>列の新しい WIP 制限を入力またはマップします。</td> 
   </tr> 
  </tbody> 
@@ -500,11 +502,11 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
    <td>タグを作成するボードの ID を入力またはマッピングします。<p>Workfrontでボードを表示する際に、URL にボード ID が含まれています。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL タグ名 &#x200B;]</td> 
+   <td>[!UICONTROL タグ名 ]</td> 
    <td>新しいタグの名前を入力またはマッピングします。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL タグの色 &#x200B;]</td> 
+   <td>[!UICONTROL タグの色 ]</td> 
    <td>このタグのカラーを選択します。</td> 
   </tr> 
  </tbody> 
@@ -581,7 +583,7 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエストメソッド </a> を参照してください。</p><p>ほとんどのボードでは、メソッドは POST です。 </td> 
+   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエスト方法</a>を参照してください。</p><p>ほとんどのボードでは、メソッドは POST です。 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -623,11 +625,11 @@ Workfrontにボードを作成します。 作成するボードのタイプを�
    <td> <p>API 呼び出しのクエリを標準 JSON オブジェクトの形式で追加します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 操作名 &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 操作名 ]</td> 
    <td> <p>この操作の名前を入力します。 これにより、呼び出しのトレースとデバッグが容易になります。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 変数のデータ ソース &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL 変数のデータ ソース ]</td> 
    <td> <p>変数をフォームから取得するか、コレクションから取得するかを選択します。</p> </td> 
   </tr> 
   <tr> 
