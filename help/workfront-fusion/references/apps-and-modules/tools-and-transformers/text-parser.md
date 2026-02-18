@@ -4,16 +4,16 @@ description: テキストパーサーツールを使用して、他のAdobe Work
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+source-git-commit: 5be274105bf13a48e7e76eaa6bd3b62c315f97a9
 workflow-type: tm+mt
 source-wordcount: '1311'
-ht-degree: 79%
+ht-degree: 86%
 
 ---
 
 # [!UICONTROL テキストパーサー]
 
-[!UICONTROL &#x200B; テキストパーサーツール &#x200B;] を使用して、他のAdobe Workfront Fusion シナリオモジュールで使用するテキストを解析できます。 [!UICONTROL テキストパーサー]には接続は必要ありません。
+[!UICONTROL  テキストパーサーツール ] を使用して、他のAdobe Workfront Fusion シナリオモジュールで使用するテキストを解析できます。 [!UICONTROL テキストパーサー]には接続は必要ありません。
 
 ## アクセス要件
 
@@ -25,22 +25,22 @@ ht-degree: 79%
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
 +++
 
@@ -63,11 +63,11 @@ ht-degree: 79%
 
 ## [!UICONTROL テキストパーサー]モジュールとそのフィールド
 
-[!UICONTROL &#x200B; テキストパーサー &#x200B;] モジュールを設定すると、Adobe Workfront Fusion は以下に示すフィールドを表示します。 モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL  テキストパーサー ] モジュールを設定すると、Adobe Workfront Fusion は以下に示すフィールドを表示します。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![マップ切り替え](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 ### 変換サービス
 
@@ -257,21 +257,21 @@ ht-degree: 79%
 
 ただし、テキストパーサーにこの式を実装しても、一致しません。
 
-![&#x200B; 一致なし &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-you-dont-get-a-match-350x365.png)
+![ 一致なし ](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-you-dont-get-a-match-350x365.png)
 
 この理由は、「i」が一致あたりの一致数のみを示すので、この場合は 2 回一致があるので、「i」の後に数値「1」と「2」が続きます。このユースケースの場合、2 番目に一致した値のみをフィルターで照合または渡す必要がある場合は、数値で表される値を指定できます。
 
-![&#x200B; 次に一致 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
+![ 次に一致 ](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
 
 解析する部分に括弧を追加する必要のある一致値を取得するには（例えば、「filename.docx」から「docx」のみを抽出する）、このケースシナリオで使用する正規表現式に従って、括弧を \ に適用する必要があります。(.+)
 
 これにより、DOCX が取り込まれ、グループに配置され、「.」が残ります。それ以外
 
-![&#x200B; 一致を取得 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-get-matches-350x592.png)
+![ 一致を取得 ](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-get-matches-350x592.png)
 
 次の図に示す出力では、キャプチャするグループは任意の文字（行末文字を除く）に一致します。
 
-![&#x200B; 出力 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-output-350x389.png)
+![ 出力 ](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-output-350x389.png)
 
 正規表現も組み込んだもう 1 つの回避策は、replace 関数を使用することです
 

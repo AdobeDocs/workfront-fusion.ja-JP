@@ -6,51 +6,49 @@ feature: Workfront Fusion
 hide: true
 hidefromtoc: true
 exl-id: 748055ad-d305-4513-9a5c-9c970b74a96e
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+source-git-commit: 5dfca593b17a234c80c807470026a7b192cbf7fa
 workflow-type: tm+mt
-source-wordcount: '34'
-ht-degree: 0%
+source-wordcount: '455'
+ht-degree: 23%
 
 ---
 
-# モデル コンテキスト プロトコル （MCP） モジュール
+# モデルコンテキストプロトコル（MCP）モジュール
 
-現時点では、利用可能な MCP モジュールはありません。
+<!--SET UP REDIRECTS-->
 
-<!-- SET UP REDIRECTS
+Model Context Protocol （MCP）は、AI 言語モデルを他のアプリケーションと安全に接続する方法です。 MCP サーバーを設定すると、AI モデルがアプリケーションにアクセスできるようになります。 その後、AI モデルにプロンプトを送信し、アプリケーションから情報を返すことができます。
 
-Model Context Protocol (MCP) is a way to securely connect AI language models with other applications. You configure MCP servers, which allow the AI model to access the application. You can then send a prompt to the AI model, and it can return information from the application.
+例えば、MCP サーバーを設定して、AI モデルを Gmail に接続できます。 「Gmail から最新の 5 通のメールを送ってください」というプロンプトを送信すると、Gmail にアクセスしてメールを返すことができます。
 
-For example, you could configure a MCP server to connect an AI model with Gmail. When you send the prompt "Give me my last 5 emails from Gmail," it can access your Gmail and return the emails.
+モデルコンテキストプロトコル（MCP）モジュールを使用すると、言語モデルと MCP サーバーを使用してユーザープロンプトを処理できます。
 
-The Model Context Protocol (MCP) module allows you to process a user prompt using a language model and MCP servers.
+## アクセス要件
 
-## Access requirements
-
-+++ Expand to view access requirements for the functionality in this article.
++++ 展開すると、この記事の機能のアクセス要件が表示されます。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront package</td> 
-   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
+   <td role="rowheader">Adobe Workfront パッケージ</td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront licenses</td> 
-   <td> <p>Standard</p><p>Work or higher</p> </td> 
+   <td role="rowheader">Adobe Workfront ライセンス</td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Product</td> 
+   <td role="rowheader">製品</td> 
    <td>
-   <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
 +++
 
@@ -58,31 +56,47 @@ For more detail about the information in this table, see [Access requirements in
 
 
 
-## Model Context Protocol module and its fields
+## モデルコンテキストプロトコルモジュールとそのフィールド
 
-When you configure the MCP module, Adobe Workfront Fusion displays the fields listed below. A bolded title in a module indicates a required field.
+MCP モジュールを設定する際に、Adobe Workfront Fusion は以下に示すフィールドを表示します。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
-### Process User Prompt
+### ユーザープロンプトの処理
 
-This action module processes a prompt, using the language model and MCP servers you specify.
+このアクション モジュールは、指定した言語モデルと MCP サーバーを使用して、プロンプトを処理します。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Large language model (LLM) key]</td> 
-   <td> <p>Enter or map API key for the large language model you want to use for this prompt. </p> <p>Currently, only the Anthropic API key is supported.</p></td> 
+   <td>LLM キー</td> 
+   <td> 既存の LLM キーを選択するか、「<b> 追加 </b>」をクリックして新しいキーを作成し、次の情報を入力します。 
+     <ul>
+       <li><b> キー名 </b>：新しいキーの名前を入力します。</li>
+       <li><b>LLM</b>：このキーが関連付けられている大規模言語モデルを選択します。</li>
+       <li><b> キー </b>：選択したモデルの API キーを入力またはマッピングします。</li>
+       <li><b> モデル </b>: キーで使用する LLM モデルを選択します。</li>
+       <li><b> 最大トークン </b>:LLM が応答で生成できる最大トークン数を入力またはマッピングします。<p>1 つのトークンは通常、4 文字、つまり英語の単語の。75 と等しくなります。 「Hello world」は 2 つのトークンと等しく、「Authentication」は 1 つのトークンと 2 つのトークンと等しくなります。</li>
+      </ul>
+    </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL MCP servers]</td> 
-   <td> <p>For each MCP server that you want to make available for this prompt, click <b>Add item</b> and enter the server's name and host. </p> </td> 
+   <td>MCP サーバー</td> 
+   <td> <p>接続する各 MCP サーバに対して、<b> 追加 </b> をクリックし、次の情報を入力します。 </p> 
+     <ul>
+       <li><b> 接続 </b>:Fusion が MCP サーバーへの接続に使用する接続を選択します。</li>
+       <li><b>MCP サーバーホスト </b>:MCP サーバーの URL を入力します。</li>
+       <li><b>MCP サーバー名 </b>：この MCP サーバーの名前を入力またはマッピングします。</li>
+       <li><b> ヘッダー </b>：適用可能なヘッダーを追加します。</li>
+       <li><b>MCP サーバータイプ </b>: サーバータイプを選択します。</li>
+      </ul>
+    </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Enter your prompt]</td> 
-   <td> <p>Enter or map the prompt for the large lanugage model. </p> </td> 
+   <td>プロンプトを入力 </td> 
+   <td> <p>処理するプロンプトを入力またはマップします…</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
--->
+
