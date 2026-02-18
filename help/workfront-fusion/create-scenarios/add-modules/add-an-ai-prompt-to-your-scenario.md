@@ -18,7 +18,7 @@ Model Context Protocol （MCP）と大規模な言語モデル（LLM）を組み
 >
 >この機能は、AI を使用してシナリオにモジュールを追加する機能とは別のものです。
 >
->AI を使用したモジュールの追加について詳しくは、[AI を使用したシナリオセグメントの生成 ](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md) を参照してください。
+>AI を使用したモジュールの追加について詳しくは、[AI を使用したシナリオセグメントの生成 &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md) を参照してください。
 
 ## モデル コンテキスト プロトコルの概要
 
@@ -45,4 +45,4 @@ MCP エージェントモジュールを使用すると、言語モデルと MCP
 
 MCP エージェントモジュールを使用すると、シナリオに AI プロンプトを追加できます。
 
-手順については、「[MCP エージェント・モジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)」を参照してください。
+手順については、「[MCP エージェント・モジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)」を参照してください。

@@ -23,7 +23,7 @@ Model Context Protocol （MCP）は、AI 言語モデルを他のアプリケー
 
 モデルコンテキストプロトコル（MCP）モジュールを使用すると、言語モデルと MCP サーバーを使用してユーザープロンプトを処理できます。
 
-Fusion シナリオでの MCP について詳しくは、[ シナリオに AI プロンプトを追加する ](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md) を参照してください。
+Fusion シナリオでの MCP について詳しくは、[&#x200B; シナリオに AI プロンプトを追加する &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md) を参照してください。
 
 ## アクセス要件
 
