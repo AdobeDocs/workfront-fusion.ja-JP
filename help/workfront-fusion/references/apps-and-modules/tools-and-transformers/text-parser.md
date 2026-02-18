@@ -13,7 +13,7 @@ ht-degree: 86%
 
 # [!UICONTROL テキストパーサー]
 
-[!UICONTROL  テキストパーサーツール ] を使用して、他のAdobe Workfront Fusion シナリオモジュールで使用するテキストを解析できます。 [!UICONTROL テキストパーサー]には接続は必要ありません。
+[!UICONTROL &#x200B; テキストパーサーツール &#x200B;] を使用して、他のAdobe Workfront Fusion シナリオモジュールで使用するテキストを解析できます。 [!UICONTROL テキストパーサー]には接続は必要ありません。
 
 ## アクセス要件
 
@@ -63,7 +63,7 @@ ht-degree: 86%
 
 ## [!UICONTROL テキストパーサー]モジュールとそのフィールド
 
-[!UICONTROL  テキストパーサー ] モジュールを設定すると、Adobe Workfront Fusion は以下に示すフィールドを表示します。 モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL &#x200B; テキストパーサー &#x200B;] モジュールを設定すると、Adobe Workfront Fusion は以下に示すフィールドを表示します。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
@@ -257,21 +257,21 @@ ht-degree: 86%
 
 ただし、テキストパーサーにこの式を実装しても、一致しません。
 
-![ 一致なし ](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-you-dont-get-a-match-350x365.png)
+![&#x200B; 一致なし &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-you-dont-get-a-match-350x365.png)
 
 この理由は、「i」が一致あたりの一致数のみを示すので、この場合は 2 回一致があるので、「i」の後に数値「1」と「2」が続きます。このユースケースの場合、2 番目に一致した値のみをフィルターで照合または渡す必要がある場合は、数値で表される値を指定できます。
 
-![ 次に一致 ](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
+![&#x200B; 次に一致 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
 
 解析する部分に括弧を追加する必要のある一致値を取得するには（例えば、「filename.docx」から「docx」のみを抽出する）、このケースシナリオで使用する正規表現式に従って、括弧を \ に適用する必要があります。(.+)
 
 これにより、DOCX が取り込まれ、グループに配置され、「.」が残ります。それ以外
 
-![ 一致を取得 ](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-get-matches-350x592.png)
+![&#x200B; 一致を取得 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-get-matches-350x592.png)
 
 次の図に示す出力では、キャプチャするグループは任意の文字（行末文字を除く）に一致します。
 
-![ 出力 ](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-output-350x389.png)
+![&#x200B; 出力 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-output-350x389.png)
 
 正規表現も組み込んだもう 1 つの回避策は、replace 関数を使用することです
 
