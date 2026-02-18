@@ -6,14 +6,14 @@ feature: Workfront Fusion
 hide: true
 hidefromtoc: true
 exl-id: 748055ad-d305-4513-9a5c-9c970b74a96e
-source-git-commit: 5dfca593b17a234c80c807470026a7b192cbf7fa
+source-git-commit: 97abe6bf0ff7b10a139268f02f8a1a24f3e31b47
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 23%
+source-wordcount: '488'
+ht-degree: 18%
 
 ---
 
-# モデルコンテキストプロトコル（MCP）モジュール
+# MCP エージェント・モジュール
 
 <!--SET UP REDIRECTS-->
 
@@ -22,6 +22,8 @@ Model Context Protocol （MCP）は、AI 言語モデルを他のアプリケー
 例えば、MCP サーバーを設定して、AI モデルを Gmail に接続できます。 「Gmail から最新の 5 通のメールを送ってください」というプロンプトを送信すると、Gmail にアクセスしてメールを返すことができます。
 
 モデルコンテキストプロトコル（MCP）モジュールを使用すると、言語モデルと MCP サーバーを使用してユーザープロンプトを処理できます。
+
+Fusion シナリオでの MCP について詳しくは、[ シナリオに AI プロンプトを追加する ](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md) を参照してください。
 
 ## アクセス要件
 
@@ -52,17 +54,20 @@ Model Context Protocol （MCP）は、AI 言語モデルを他のアプリケー
 
 +++
 
+## 前提条件
 
-
-
+* 接続先の MCP サーバを設定しておく必要があります。
+* 選択した LLM （Large Language Model）への LLM キーが必要です。
 
 ## モデルコンテキストプロトコルモジュールとそのフィールド
-
-MCP モジュールを設定する際に、Adobe Workfront Fusion は以下に示すフィールドを表示します。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
 ### ユーザープロンプトの処理
 
 このアクション モジュールは、指定した言語モデルと MCP サーバーを使用して、プロンプトを処理します。
+
+>[!NOTE]
+>
+>このモジュールはオブジェクトを返す必要があります。 文字列や数値などの出力は返されません。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -94,7 +99,7 @@ MCP モジュールを設定する際に、Adobe Workfront Fusion は以下に�
   </tr> 
   <tr> 
    <td>プロンプトを入力 </td> 
-   <td> <p>処理するプロンプトを入力またはマップします…</p> </td> 
+   <td> <p>処理するプロンプトを入力またはマップします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
