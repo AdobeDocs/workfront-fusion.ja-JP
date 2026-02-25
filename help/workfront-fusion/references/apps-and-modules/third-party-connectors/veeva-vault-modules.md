@@ -3,10 +3,11 @@ title: Veeva Vault モジュール
 description: Adobe Workfront Fusion のシナリオでは、Veeva Vault を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: b57ae36cf9225705c7f4923d7302b1749aa04d94
+exl-id: 2ef967b6-0a69-4801-8574-5f17c9ce991d
+source-git-commit: 323e7d10795991bbcb6c1439db0af90e4331e687
 workflow-type: tm+mt
-source-wordcount: '2539'
-ht-degree: 20%
+source-wordcount: '3683'
+ht-degree: 15%
 
 ---
 
@@ -117,7 +118,9 @@ Veeva Vault モジュール内から直接 Veeva Vault アカウントへの接�
       </tr> 
       <tr> 
        <td role="rowheader">認証サーバープロバイダー</td> 
-       <td> <p>この認証に使用するプロバイダーを選択します。</p> </td> 
+       <td> <p>この認証に使用するプロバイダーを選択します。</p> 
+       <p><b> メモ：</b> 認証サーバープロバイダーとしてAzureが選択されている場合、Veeva Vault はAzure AD クライアント資格情報を使用します。</p>
+       </td> 
       </tr> 
       <tr> 
        <td role="rowheader">ping ホスト</td> 
@@ -126,13 +129,13 @@ Veeva Vault モジュール内から直接 Veeva Vault アカウントへの接�
       <tr>
         <td role="rowheader">範囲</td>
         <td>
-          <p>この接続のスコープを入力してください。</p>
+          <p>この接続のスコープを入力してください。 範囲は、<code>{Application ID URI}/.default</code> の形式にする必要があります。 アプリケーション ID URI は、権限を公開するリソースまたはアプリに属している必要があります。</p>
         </td>
       </tr>
       <tr>
         <td role="rowheader">テナント ID</td>
         <td>
-          <p>認証サーバープロバイダーに Azure AD/Microsoft Entra ID を使用している場合は、この接続のテナント ID を入力します。</p>
+          <p>認証サーバープロバイダーにAzure AD/Microsoft Entra ID を使用している場合は、この接続のテナント ID を入力します。</p>
         </td>
       </tr>
       <tr>
@@ -150,12 +153,12 @@ Veeva Vault モジュール内から直接 Veeva Vault アカウントへの接�
       <tr>
         <td role="rowheader">プロファイル ID</td>
         <td>
-          <p>OAuth2 / Open ID 接続プロファイルの ID を入力します。</p>
+          <p>OAuth2 / Open ID Connect プロファイルの ID を入力します。</p>
         </td>
       </tr>
       <tr> 
        <td role="rowheader">Vault の DNS</td> 
-       <td>Veeva Vault DNS （ドメイン名）を入力します。</p><p>Veeva Vault DNS を見つけるには、Veeva Vault へのアクセスに使用する URL を調べます。</p>例えば、URL <code>https://my-dns.veevavault.com</code> では、DNS は <code>my-dns</code> です。 URL 全体を入力する必要はありません。</td> 
+       <td>Veeva Vault DNS （ドメイン名）を入力します。</p><p>Veeva Vault DNS を見つけるには、Veeva Vault へのアクセスに使用する URL を調べます。</p>例えば、URL <code>https://my-dns.veevavault.com</code> では、DNS は <code>my-dns.veevavault.com</code> です。 </td> 
       </tr> 
       <tr>
         <td role="rowheader">セッションの有効期限（分）</td>
@@ -184,15 +187,24 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
 ### ドキュメント
 
 * [1 つのドキュメントの作成](#create-a-single-document)
+* [単一ドキュメントの関係の作成](#create-a-single-document-relationship)
+* [複数の注釈を作成](#create-multiple-annotations)
 * [複数のドキュメントの作成](#create-multiple-documents)
+* [複数ドキュメントの関係の作成](#create-multiple-document-relationships)
 * [1 つのドキュメントの削除](#delete-a-single-document)
+* [単一ドキュメントの関係の削除](#delete-a-single-document-relationship)
+* [複数の注釈を削除](#delete-multiple-annotations)
+* [複数ドキュメントの関係の削除](#delete-multiple-document-relationships)
 * [ファイルのダウンロード](#download-file)
 * [ドキュメントのエクスポート](#export-documents)
 * [1 つのドキュメントの取得](#get-a-single-document)
+* [ドキュメントの注釈を取得](#get-document-annotations)
+* [ドキュメントの関係の取得](#get-document-relationships)
 * [ユーザーアクションの開始](#initiate-user-action)
 * [ドキュメントのリスト](#list-documents)
 * [ドキュメントのエクスポート結果の取得](#retrieve-document-export-results)
 * [1 つのドキュメントの更新](#update-a-single-document)
+* [複数の注釈を更新](#update-multiple-annotations)
 * [複数のドキュメントの更新](#update-multiple-documents)
 
 #### 1 つのドキュメントの作成
@@ -205,7 +217,7 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
  <tbody> 
   <tr> 
    <td role="rowheader">接続 </td> 
-   <td> <p>Veeva Vault アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>タイプ</p> </td> 
@@ -218,6 +230,114 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
  </tbody> 
 </table>
 
+#### 単一ドキュメントの関係の作成
+
+このアクションモジュールは、2 つのドキュメント間の関係を作成します
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">接続 </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ドキュメント ID</p> </td> 
+   <td> <p>関係を開始するドキュメントの ID を入力またはマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>バージョン</p> </td> 
+   <td> <p>関係を作成するバージョンの ID を選択またはマッピングします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ターゲットドキュメント ID</p> </td> 
+   <td> <p>関係が指すドキュメントの ID を入力します。</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Target のメジャーバージョン</p> </td> 
+   <td> <p>ターゲットドキュメントのメジャーバージョンを入力します。 これは地点の前の数字です。</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>ターゲットのマイナーバージョン</p> </td> 
+   <td> <p>ターゲットドキュメントのメジャーバージョンを入力します。 これは点の後の数字です。</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>関係タイプ</p> </td> 
+   <td> <p>作成する関係のタイプを入力またはマッピングします。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 複数の注釈を作成
+
+このアクションモジュールを使用すると、最大 500 個の注釈を作成できます。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">接続 </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>注釈</p> </td> 
+   <td> <p>追加する注釈ごとに、「<b> 項目を追加 </b>」をクリックし、この記事の <a href="#annotation-fields" class="MCXref xref"> 注釈フィールド </a> に記載されているデータを入力します。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+##### 注釈フィールド
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">注釈タイプ </td> 
+   <td> <p>作成する注釈のタイプを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>タイプ</p> </td> 
+   <td> <p>この注釈に使用するプレースマークのタイプを入力またはマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ページ番号</p> </td> 
+   <td> <p>この注釈を表示するページ番号を入力またはマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>X 座標</p> </td> 
+   <td> <p>プレースマークの X 座標を入力またはマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Y 座標</p> </td> 
+   <td> <p>プレースマークの Y 座標を入力またはマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>幅</p> </td> 
+   <td> <p>プレースマークの幅を入力またはマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>高さ</p> </td> 
+   <td> <p>プレースマークの高さを入力またはマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>スタイル</p> </td> 
+   <td> <p>プレースマークのスタイルを入力またはマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>リファレンス</p> </td> 
+   <td> <p>参照を使用すると、注釈で外部ソースを参照できます。 注釈に追加する参照ごとに、「<b> 項目を追加 </b> をクリックして、参照のタイプ、ドキュメントバージョン ID および注釈を入力します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>フィールドを選択</p> </td> 
+   <td> <p>値を指定するフィールドを選択してから、各フィールドに値を入力してください。 使用できるフィールドは、注釈のタイプによって異なります。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
 #### 複数のドキュメントの作成
 
 このモジュールは、CSV ファイルを使用して複数のドキュメントまたはテンプレートを作成します。
@@ -228,15 +348,79 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
  <tbody> 
   <tr> 
    <td role="rowheader">接続 </td> 
-   <td> <p>Veeva Vault アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>タイプ</p> </td> 
-   <td> <p>テンプレートとドキュメントのどちらを作成するかを選択</p> </td> 
+   <td> <p>テンプレートとドキュメントのどちらを作成するかを選択します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">  <p>ファイルデータ</p> </td> 
    <td> <p>ドキュメントの作成に使用する CSV ファイルをマッピングします。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 複数ドキュメントの関係の作成
+
+このアクションモジュールは、複数のドキュメントの関係を設定します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">接続 </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>入力タイプ</p> </td> 
+   <td> <p>これらの関係を作成するために指定する入力のタイプを選択します。</p> <ul><li>CSV</li><li>JSON</li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ファイルデータ</p> </td> 
+   <td> <p>CSV ファイルを使用する場合は、CSV ファイルデータを入力またはマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>関係データ</p> </td> 
+   <td> <p>JSON を使用している場合は、追加する関係ごとに「<b> 項目を追加 </b>」をクリックし、この記事の <a href="#relationship-fields" class="MCXref xref"> 関係フィールド </a> に記載されているデータを入力します。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+##### 関係フィールド
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Source ドキュメント ID </td> 
+   <td> <p>関係を開始するドキュメントの ID を入力またはマッピングします。</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Sourceのメジャーバージョン</p> </td> 
+   <td> <p>ソースドキュメントのメジャーバージョンを入力します。 これは地点の前の数字です。</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Sourceのマイナーバージョン</p> </td> 
+   <td> <p>ソースドキュメントのメジャーバージョンを入力します。 これは点の後の数字です。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ターゲットドキュメント ID</p> </td> 
+   <td> <p>関係が指すドキュメントの ID を入力します。</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Target のメジャーバージョン</p> </td> 
+   <td> <p>ターゲットドキュメントのメジャーバージョンを入力します。 これは地点の前の数字です。</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>ターゲットのマイナーバージョン</p> </td> 
+   <td> <p>ターゲットドキュメントのメジャーバージョンを入力します。 これは点の後の数字です。</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>関係タイプ</p> </td> 
+   <td> <p>作成する関係のタイプを入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -251,7 +435,7 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
  <tbody> 
   <tr> 
    <td role="rowheader">接続 </td> 
-   <td> <p>Veeva Vault アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>タイプ</p> </td> 
@@ -259,7 +443,88 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
   </tr> 
   <tr> 
    <td role="rowheader"><p>ドキュメント ID/バインダー ID/テンプレート名</p> </td> 
-   <td> <p>削除するフィールドを選択します。</td> 
+   <td> <p>削除する項目を選択します。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 単一ドキュメントの関係の削除
+
+このアクションモジュールは、ドキュメントから関係を削除します
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">接続 </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ドキュメント ID</p> </td> 
+   <td> <p>削除する関係のソースドキュメント ID を入力またはマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>バージョン</p> </td> 
+   <td> <p>関係を削除するバージョンの ID を選択またはマッピングします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>関係 ID</p> </td> 
+   <td> <p>削除する関係の ID を入力またはマッピングします。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 複数の注釈を削除
+
+このアクションモジュールは注釈を削除します。 Veeva Vault で注釈を削除するには、ユーザーに権限が必要です。 最大 500 個の注釈を削除できます。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">接続 </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>注釈</p> </td> 
+   <td> <p>削除する注釈ごとに、「<b> 項目を追加 </b>」をクリックし、次のフィールドを入力します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ID</p> </td> 
+   <td> <p>削除する注釈の ID を入力またはマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>ドキュメント バージョン ID</p> </td> 
+   <td> <p>削除する注釈を含むドキュメントのバージョン番号を入力またはマップします。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 複数ドキュメントの関係の削除
+
+このアクションモジュールは、複数のドキュメントから関係を削除します
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">接続 </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>入力タイプ</p> </td> 
+   <td> <p>これらの関係を削除するために指定する入力のタイプを選択します。</p> <ul><li>CSV</li><li>JSON</li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ファイルデータ</p> </td> 
+   <td> <p>CSV ファイルを使用する場合は、CSV ファイルデータを入力またはマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>関係データ</p> </td> 
+   <td> <p>JSON を使用している場合は、追加する各関係に対して、「<b> 項目を追加 </b>」をクリックし、関係 ID を入力します。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -274,7 +539,7 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
  <tbody> 
   <tr> 
    <td role="rowheader">接続 </td> 
-   <td> <p>Veeva Vault アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>タイプ</p> </td> 
@@ -309,7 +574,7 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
  <tbody> 
   <tr> 
    <td role="rowheader">接続 </td> 
-   <td> <p>Veeva Vault アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>タイプ</p> </td> 
@@ -344,7 +609,7 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
  <tbody> 
   <tr> 
    <td role="rowheader">接続 </td> 
-   <td> <p>Veeva Vault アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>タイプ</p> </td> 
@@ -353,6 +618,60 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
   <tr> 
    <td role="rowheader"><p>ドキュメント ID/バインダー ID/テンプレート名</p> </td> 
    <td> <p>データを取得するフィールドを選択します。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### ドキュメントの注釈を取得
+
+このモジュールは、特定のドキュメントバージョンから注釈を取得します。 すべての注釈を取得することも、特定の注釈タイプのみを取得するように選択することもできます。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">接続 </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ドキュメント ID</p> </td> 
+   <td> <p>注釈を取得するドキュメントを選択またはマッピングします。 </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>バージョン</p> </td> 
+   <td> <p>注釈を取得するバージョンの ID を選択またはマッピングします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">返される注釈の最大数</td> 
+   <td>各シナリオ実行サイクルでモジュールが返す注釈の最大数を入力またはマッピングします。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### ドキュメントの関係の取得
+
+このモジュールは、ドキュメントのすべての関係を取得します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">接続 </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ドキュメント ID</p> </td> 
+   <td> <p>関係を取得するドキュメントを選択またはマッピングします。 </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>バージョン</p> </td> 
+   <td> <p>関係を取得するバージョンの ID を選択またはマッピングします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">返される関係の最大数</td> 
+   <td>各シナリオ実行サイクルでモジュールが返す関係の最大数を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -367,7 +686,7 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
  <tbody> 
   <tr> 
    <td role="rowheader">接続 </td> 
-   <td> <p>Veeva Vault アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>タイプ</p> </td> 
@@ -398,7 +717,7 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
  <tbody> 
   <tr> 
    <td role="rowheader">接続 </td> 
-   <td> <p>Veeva Vault アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>タイプ</p> </td> 
@@ -421,11 +740,30 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
  <tbody> 
   <tr> 
    <td role="rowheader">接続 </td> 
-   <td> <p>Veeva Vault アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>ジョブ ID</p> </td> 
    <td> <p>結果を返すジョブの ID を入力またはマッピングします。 </p> </td> 
+  </tr> 
+  </tbody> 
+</table>
+
+#### 複数の注釈を更新
+
+このアクションモジュールは、最大 500 個の注釈を更新します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">接続 </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>注釈</p> </td> 
+   <td> <p>更新する注釈ごとに、「<b> 項目を追加 </b>」をクリックし、この記事の <a href="#annotation-fields" class="MCXref xref"> 注釈フィールド </a> に記載されているデータを入力します。</p> </td> 
   </tr> 
   </tbody> 
 </table>
@@ -440,7 +778,7 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
  <tbody> 
   <tr> 
    <td role="rowheader">接続 </td> 
-   <td> <p>Veeva Vault アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>タイプ</p> </td> 
@@ -463,7 +801,7 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
  <tbody> 
   <tr> 
    <td role="rowheader">接続 </td> 
-   <td> <p>Veeva Vault アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>タイプ</p> </td> 
@@ -502,7 +840,7 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
  <tbody> 
   <tr> 
    <td role="rowheader">接続 </td> 
-   <td> <p>Veeva Vault アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>タイプ</p> </td> 
@@ -541,7 +879,7 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
  <tbody> 
   <tr> 
    <td role="rowheader">接続 </td> 
-   <td> <p>Veeva Vault アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>タイプ</p> </td> 
@@ -572,7 +910,7 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
  <tbody> 
   <tr> 
    <td role="rowheader">接続 </td> 
-   <td> <p>Veeva Vault アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">オブジェクト名</td> 
@@ -595,7 +933,7 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
  <tbody> 
   <tr> 
    <td role="rowheader">接続 </td> 
-   <td> <p>Veeva Vault アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>ローカライズされたラベルの取得</p> </td> 
@@ -620,7 +958,7 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
  <tbody> 
   <tr> 
    <td role="rowheader">接続 </td> 
-   <td> <p>Veeva Vault アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>タイプ</p> </td> 
@@ -673,11 +1011,11 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
  <tbody> 
   <tr> 
    <td role="rowheader">接続</td> 
-   <td> <p>Veeva Vault アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
-   <td><code>baseurl/api/v</code> を基準とした相対パスを入力します。  例：<code>/objects/documents</code>。 <code>baseurl/api/v/</code> は既に含まれているため、含めないでください。</td> 
+   <td><code>baseurl/api/v</code> を基準とした相対パスを入力します。  例えば、<code>/objects/documents</code> のようになります。<code>baseurl/api/v/</code> は既に含まれているため、含めないでください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">メソッド</td> 
@@ -711,7 +1049,7 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
  <tbody> 
   <tr> 
    <td role="rowheader">接続 </td> 
-   <td> <p>Veeva Vault アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>タイプ</p> </td> 
@@ -734,7 +1072,7 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
  <tbody> 
   <tr> 
    <td role="rowheader">接続 </td> 
-   <td> <p>Veeva Vault アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva Vault のWorkfront Fusion への接続 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>監査タイプ</p> </td> 
@@ -758,5 +1096,3 @@ Workfront Fusion で Veeva Vault モジュールを設定する場合、以下�
   </tr> 
  </tbody> 
 </table>
-
-
