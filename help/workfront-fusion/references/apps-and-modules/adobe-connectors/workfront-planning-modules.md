@@ -374,7 +374,7 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
       </tr>
      <tr>
       <td role="rowheader">
-        <p>[！フィルターの UICONTROL 条件 ]</p>
+        <p>[!UICONTROL フィルターの 条件 &#x200B;]</p>
       </td>
       <td>フィルターの条件の選択：<ul><li><b>AND</b><p>モジュールは、選択したフィールド値の <b> すべて </b> を満たすレコードを返します。</p></li><li><b>または</b><p>モジュールは、選択したフィールド値の <b> いずれか </b> を満たすレコードを返します。</p></li></ul></td> 
       </tr>
@@ -548,5 +548,5 @@ Workfront Planning 内の 1 つのレコードを更新します。
 )
 ```
 
-JSONata モジュールの使用について詳しくは、[JSONata モジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md) を参照してください。
+JSONata モジュールの使用について詳しくは、[JSONata モジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md) を参照してください。
 
