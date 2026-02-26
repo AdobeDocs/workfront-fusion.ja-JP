@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Planning] modules を使用すると、 [!D
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 86747ffc38fddde91352558277d40572d13ba2b0
+source-git-commit: a58a6c25751eb10365508c06ab1571ce7652d0c8
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '1992'
 ht-degree: 69%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 69%
 
 +++
 
-s##前提条件
+## 前提条件
 
 Workfront Planning にアクセスするには、次のものが必要です。
 
@@ -332,7 +332,7 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件ステートメントを JSON で使用する場合は、条件ステートメントの外側に引用符を挿入します。</p> 
+   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件文を JSON で使用する場合は、条件文を引用符で囲みます。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
@@ -374,7 +374,7 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
       </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL フィルターの 条件 &#x200B;]</p>
+        <p>[！フィルターの UICONTROL 条件 ]</p>
       </td>
       <td>フィルターの条件の選択：<ul><li><b>AND</b><p>モジュールは、選択したフィールド値の <b> すべて </b> を満たすレコードを返します。</p></li><li><b>または</b><p>モジュールは、選択したフィールド値の <b> いずれか </b> を満たすレコードを返します。</p></li></ul></td> 
       </tr>
@@ -548,5 +548,5 @@ Workfront Planning 内の 1 つのレコードを更新します。
 )
 ```
 
-JSONata モジュールの使用について詳しくは、[JSONata モジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md) を参照してください。
+JSONata モジュールの使用について詳しくは、[JSONata モジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md) を参照してください。
 
