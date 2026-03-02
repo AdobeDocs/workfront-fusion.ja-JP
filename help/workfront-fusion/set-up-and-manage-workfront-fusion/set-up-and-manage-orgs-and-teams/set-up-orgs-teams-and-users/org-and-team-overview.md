@@ -19,7 +19,7 @@ Adobe Workfront Fusion の組織とチームの機能を使用すると、企業
 
 チームは組織内の小さなグループで、シナリオ、接続、テンプレートなどの Fusion リソースを共有します。
 
-チームの作成手順については、[ チームの作成 ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/create-a-team.md) を参照してください。
+チームの作成手順については、[&#x200B; チームの作成 &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/create-a-team.md) を参照してください。
 
 ## 組織
 
@@ -33,7 +33,7 @@ Workfront Fusion ユーザーは組織に属しています。
 
 * **ワーカープール：**: ワーカープールは、特定の組織専用のWorkfront Fusion 処理リソースの量です。
 
-  詳細については、[ ワーカープール ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md) を参照してください。
+  詳細については、[&#x200B; ワーカープール &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md) を参照してください。
 
 * **操作**:Adobe Workfront Fusion の操作は、モジュールによって実行されるタスクです。
 
