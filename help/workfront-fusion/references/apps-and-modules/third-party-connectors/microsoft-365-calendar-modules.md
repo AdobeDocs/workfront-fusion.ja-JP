@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion のシナリオでは、Microsoft Office 365
 author: Becky
 feature: Workfront Fusion
 exl-id: fdecf740-e735-4569-b1a2-7c25c751ba42
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 413736673426c1a77dac9f15defa43d4348638b5
 workflow-type: tm+mt
-source-wordcount: '2050'
-ht-degree: 65%
+source-wordcount: '2047'
+ht-degree: 75%
 
 ---
 
 # [!DNL Microsoft Office 365 Calendar]
 
-Adobe Workfront Fusion のシナリオでは、[!DNL Microsoft Office 365 Calendar] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
+Adobe Workfront Fusion のシナリオでは、[!DNL Microsoft Office 365 Calendar] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりすることができます。
 
 ## アクセス要件
 
@@ -25,31 +25,31 @@ Adobe Workfront Fusion のシナリオでは、[!DNL Microsoft Office 365 Calend
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
    <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
-   <p>コネクタベース（従来）：作業の自動化と統合のためのWorkfront Fusion </p>
+   <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
 
 +++
 
@@ -94,9 +94,9 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
 
 [!DNL Microsoft Office 365 Calendar] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Microsoft Office 365 Calendar]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![マップ切り替え](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [イベント](#event)
 * [カレンダー](#calendar)
@@ -109,7 +109,7 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
 * [[!UICONTROL イベントを取得]](#get-an-event)
 * [[!UICONTROL イベントの検索]](#search-events)
 * [[!UICONTROL イベントの更新]](#update-an-event)
-* [[!UICONTROL イベントの監視]](#watch-events)
+* [[!UICONTROL イベントを監視]](#watch-events)
 
 #### [!UICONTROL イベントを作成]
 
@@ -129,11 +129,11 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Start date]</td> 
-   <td> イベントが開始する時点を、日付と時刻の組み合わせで入力します。<code>{date}T{time}</code> 形式を使用します。例：<code>2017-08-29T04:00:00.0000000</code>。サポートされる日付と時刻の形式の一覧については、「<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref"> 型強制 </a>」を参照してください。</td> 
+   <td> イベントが開始する時点を、日付と時刻の組み合わせで入力します。<code>{date}T{time}</code> 形式を使用します。例：<code>2017-08-29T04:00:00.0000000</code>。サポートされる日付と時刻の形式の一覧について詳しくは、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">型強制</a>を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL End date]</td> 
-   <td> イベントが終了する時点を、日付と時間の組み合わせで入力します。<code>{date}T{time}</code> 形式を使用します。例：<code>2017-08-29T04:00:00.0000000</code>。サポートされる日付と時刻の形式の一覧については、「<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref"> 型強制 </a>」を参照してください。</td> 
+   <td> イベントが終了する時点を、日付と時間の組み合わせで入力します。<code>{date}T{time}</code> 形式を使用します。例：<code>2017-08-29T04:00:00.0000000</code>。サポートされる日付と時刻の形式の一覧について詳しくは、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">型強制</a>を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reminder on]</td> 
@@ -199,7 +199,7 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL カテゴリ &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL カテゴリ ]</td> 
    <td>イベントをカレンダーに表示するカテゴリごとに、「<b> 項目を追加 </b>」をクリックして、カテゴリを入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -312,11 +312,11 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Start date]</td> 
-   <td> イベントが開始する時点を、日付と時刻の組み合わせで入力します。<code>{date}T{time}</code> 形式を使用します。例：<code>2017-08-29T04:00:00.0000000</code>。サポートされる日付と時刻の形式の一覧については、「<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref"> 型強制 </a>」を参照してください。</td> 
+   <td> イベントが開始する時点を、日付と時刻の組み合わせで入力します。<code>{date}T{time}</code> 形式を使用します。例：<code>2017-08-29T04:00:00.0000000</code>。サポートされる日付と時刻の形式の一覧について詳しくは、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">型強制</a>を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL End date]</td> 
-   <td> イベントが終了する時点を、日付と時間の組み合わせで入力します。<code>({date}T{time}</code> 形式を使用します。例：<code>2017-08-29T04:00:00.0000000</code>。サポートされる日付と時刻の形式の一覧については、「<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref"> 型強制 </a>」を参照してください。</td> 
+   <td> イベントが終了する時点を、日付と時間の組み合わせで入力します。<code>({date}T{time}</code> 形式を使用します。例：<code>2017-08-29T04:00:00.0000000</code>。サポートされる日付と時刻の形式の一覧について詳しくは、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">型強制</a>を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reminder on]</td> 
@@ -388,7 +388,7 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL イベントの監視]
+#### [!UICONTROL イベントを監視]
 
 このトリガーモジュールは、選択したカレンダーでイベントが作成、アップデート、削除、開始、終了されたときに、イベントの詳細を取得します。
 
@@ -557,7 +557,6 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>[!DNL Office 365] アカウントをAdobe Workfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Workfront Fusion への接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
   </tr> 
   <tr> 
@@ -566,7 +565,7 @@ Microsoft Office 365 カレンダーコネクタは、次を使用します。
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   td&gt; <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエストメソッド </a> を参照してください。</p> </td> 
+   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエスト方法</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
