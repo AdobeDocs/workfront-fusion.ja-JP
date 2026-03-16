@@ -4,10 +4,10 @@ description: 組織内のAdobe Workfront Fusion ユーザーの管理
 author: Becky
 feature: Workfront Fusion
 exl-id: 32c221fa-856b-4921-9fa6-5e60f2aa08cd
-source-git-commit: 88d7a92a4b117d10ab114e32ab5e61f03bc5a846
+source-git-commit: 3f9390d8947ef2666336c1a4cc6eab8d174849d5
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 35%
+source-wordcount: '516'
+ht-degree: 25%
 
 ---
 
@@ -64,23 +64,19 @@ Adobe Workfront Fusion 管理者は、組織のユーザーの役割を表示お
 1. 表示したいユーザーの行で&#x200B;**[!UICONTROL 詳細]**&#x200B;をクリックします。
 1. （オプション）組織内のユーザーの役割を更新するには、組織の行にある「**[!DNL Role]**」列のドロップダウンをクリックして、ユーザーの役割を変更し、新しい役割を選択します。
 
-<!--
+### 組織所有者を追加または変更する際の考慮事項
 
-### Considerations when adding or changing organization Owners
+組織は複数の所有者を持つことができます。
 
-Your organization can have more than one Owner. 
+所有者の役割にユーザーを割り当てる場合、または所有者の役割からユーザーを割り当てる場合は、次の点を考慮してください。
 
-When assigning a user to or from an Owner role, consider the following. 
-
-* Only an Owner can assign the Owner role, or assign another role to a current Owner.
-* Only Admins can be upgraded to Owner.
-* If there is only one Owner, that Owner role cannot be changed or removed.
-* If there is only one Owner, that Owner cannot be deleted if there are other users in the organization.
-* When an Admin is assigned an Owner role, they automatically become Admin in all teams within the org.
-* When an Owner is assigned to another role, that user automatically becomes a Team Member in all teams.
-* When a new team is created, all Owners are automatically assigned as Team Admins.
-
--->
+* 所有者の役割を割り当てたり、現在の所有者に別の役割を割り当てたりできるのは所有者のみです。
+* 管理者のみを所有者にアップグレードできます。
+* 所有者が 1 つしかない場合、その所有者の役割は変更または削除できません。
+* 所有者が 1 人のみの場合、組織内に他のユーザーが存在する場合、その所有者は削除できません。
+* 管理者に所有者の役割が割り当てられると、組織内のすべてのチームの管理者が自動的に設定されます。
+* 所有者が別の役割に割り当てられると、そのユーザーは自動的にすべてのチームのチームメンバーになります。
+* 新しいチームが作成されると、すべての所有者が自動的にチーム管理者として割り当てられます。
 
 ## チームのユーザーの役割の表示または編集
 
