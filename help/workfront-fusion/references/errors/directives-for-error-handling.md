@@ -85,9 +85,9 @@ Workfront Fusion では、次のエラー処理ディレクティブを使用で
 >* エラー処理命令は、エラー処理ルートの外部では使用できません。
 >* Workfront Fusion では現在、条件付きでエラーを簡単に発生させるスローモジュールは提供していませんが、回避策を採用してその機能を模倣することができます。
 >
->  詳しくは、「[ エラー回避策 `throw` 設定 ](/help/workfront-fusion/create-scenarios/config-error-handling/throw.md) を参照してください。
+>  詳しくは、「[&#x200B; エラー回避策 `throw` 設定 &#x200B;](/help/workfront-fusion/create-scenarios/config-error-handling/throw.md) を参照してください。
 
 ## リソース
 
-* ロールバックとロールバック フェーズについては、「シナリオの実行、サイクル、およびフェーズ」の記事の [ ロールバック ](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback) を参照してください。
-* コミットフェーズについては、「シナリオの実行、サイクル、フェーズ」の記事の [ コミット ](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#commit) を参照してください。
+* ロールバックとロールバック フェーズについては、「シナリオの実行、サイクル、およびフェーズ」の記事の [&#x200B; ロールバック &#x200B;](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback) を参照してください。
+* コミットフェーズについては、「シナリオの実行、サイクル、フェーズ」の記事の [&#x200B; コミット &#x200B;](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#commit) を参照してください。
