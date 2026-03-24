@@ -2,10 +2,10 @@
 user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
-source-git-commit: ce4ae2c9e05a4d4885c336e6bc3af785e51e8e22
+source-git-commit: 3808ddc0525b11644060447f0a92ea1911aef7a3
 workflow-type: tm+mt
-source-wordcount: '2077'
-ht-degree: 98%
+source-wordcount: '2084'
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,8 @@ ht-degree: 98%
 * Fusion リリースアクティビティ {#fusion-release-activity}
    * [Adobe Workfront Fusion リリースアクティビティ](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * 2026年の Fusion リリース {#fusion-releases-2026}
-      * [Workfront Fusion リリースアクティビティ：2026 年 3 月 16 日の週 &#x200B;](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-16.md)
+      * [Workfront Fusion リリースアクティビティ：2026年3月23日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-23.md)
+      * [Workfront Fusion リリースアクティビティ：2026年3月16日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-16.md)
       * [Workfront Fusion リリースアクティビティ：2026年3月9日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-9.md)
       * [Workfront Fusion リリースアクティビティ：2026年3月2日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-2.md)
       * [Workfront Fusion リリースアクティビティ：2026年2月23日（PT）の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-23.md)
@@ -179,7 +180,7 @@ ht-degree: 98%
       * [ライセンスと操作の概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
       * [Adobe Workfront Fusion ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
       * [運用](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
-        [&#x200B; ワーカープール &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
+        [ ワーカープール ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
    * 組織とチームの設定と管理 {#set-up-and-manage-orgs-and-teams}
       * [組織とチームの設定と管理：記事インデックス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
       * 組織とチームの設定 {#set-up-orgs-teams-and-users}
@@ -215,7 +216,7 @@ ht-degree: 98%
       * [モジュールの追加](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)
       * [シナリオへのモジュールの追加](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-basic.md)
       * [モジュールの設定](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
-      * [シナリオに AI プロンプトを追加する](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)
+      * [シナリオにAI プロンプトを追加する](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)
       * [AI を使用したシナリオセグメントの生成](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)
       * [モジュールまたはシナリオのコピー](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
       * [Adobe Workfront Fusion テンプレートを使用したシナリオの作成](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)
@@ -227,7 +228,7 @@ ht-degree: 98%
    * データのマッピング {#map-data}
       * [データのマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
       * [モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)
-      * [組み込み関数を使用した項目のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
+      * [組み込み関数を使用したアイテムのマッピング](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
       * [カスタム関数を使用したデータのマッピング](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)
       * [配列と配列要素のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)
       * [モジュール間でのファイルのマッピング](/help/workfront-fusion/create-scenarios/map-data/map-files.md)
@@ -269,7 +270,7 @@ ht-degree: 98%
    * [Workfront Fusion の AI アシスタント](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
    * [シナリオスコアリングエキスパートの実行](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
    * [シナリオ要素の削除](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
-   * [「シナリオ」領域からシナリオを管理します](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
+   * [「シナリオ」エリアからシナリオを管理します](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
 * 練習シナリオの作成 {#build-practice-scenarios}
    * [練習シナリオの作成](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
    * [基本的なシナリオの作成](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)
