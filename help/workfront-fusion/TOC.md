@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
-source-git-commit: 3808ddc0525b11644060447f0a92ea1911aef7a3
+source-git-commit: ac19f04af9ce80912e3dd9d63dc2ca414080c0c1
 workflow-type: tm+mt
-source-wordcount: '2084'
+source-wordcount: '2091'
 ht-degree: 97%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 97%
 * Fusion リリースアクティビティ {#fusion-release-activity}
    * [Adobe Workfront Fusion リリースアクティビティ](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * 2026年の Fusion リリース {#fusion-releases-2026}
+      * [Workfront Fusion リリースアクティビティ：2026年3月30日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-30.md)
       * [Workfront Fusion リリースアクティビティ：2026年3月23日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-23.md)
       * [Workfront Fusion リリースアクティビティ：2026年3月16日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-16.md)
       * [Workfront Fusion リリースアクティビティ：2026年3月9日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-9.md)
@@ -180,7 +181,7 @@ ht-degree: 97%
       * [ライセンスと操作の概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
       * [Adobe Workfront Fusion ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
       * [運用](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
-        [&#x200B; ワーカープール &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
+        [ ワーカープール ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
    * 組織とチームの設定と管理 {#set-up-and-manage-orgs-and-teams}
       * [組織とチームの設定と管理：記事インデックス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
       * 組織とチームの設定 {#set-up-orgs-teams-and-users}
