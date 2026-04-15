@@ -1,15 +1,15 @@
 ---
 content-type: reference
 title: シナリオの管理：記事インデックス
-description: この節では、Adobe Workfront Fusion でのシナリオの管理に関する記事を紹介します。
+description: この節では、Adobe Workfront Fusionでのシナリオの管理に関する記事を示します。
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: b2e48618-cc55-429e-9bed-c62ba60a6249
-source-git-commit: 05c75c0e125a4f3f657049d7e57bbc94cc5e4d67
+source-git-commit: 34f24f26675fbdf0dd84223cbe8e2d1c3b1aa8cf
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 70%
+source-wordcount: '93'
+ht-degree: 67%
 
 ---
 
@@ -26,7 +26,8 @@ ht-degree: 70%
 * [特定のシナリオの実行の表示](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md)
 * [Web フックのキューを表示する](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
 * [実行中のシナリオでのデータフローの表示](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
+* [チェーンされたシナリオ関係の表示](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
 * [Workfront Fusion の AI アシスタント](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
 * [シナリオスコアリングエキスパートの実行](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
 * [シナリオ要素の削除](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
-* [「シナリオ」領域からシナリオを管理します](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
+* [「シナリオ」エリアからシナリオを管理します](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
