@@ -23,9 +23,9 @@ ht-degree: 12%
 
 親シナリオが子シナリオがデータを返すのを待っている場合、その時間は親シナリオのタイムアウトに対してカウントされません。 例えば、親シナリオは5つの子シナリオを呼び出し、それぞれが実行するのに10分かかり、合計50分かかります。 親シナリオ自体のモジュールの実行には15分かかります。 合計65分が経過しても、親シナリオはタイムアウトしません。これは、タイムアウト制限の40分を超えています。
 
-タイムアウトを含むFusionのパフォーマンスガードレールについて詳しくは、[Fusionのパフォーマンスガードレール ](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md)を参照してください。
+タイムアウトを含むFusionのパフォーマンスガードレールについて詳しくは、[Fusionのパフォーマンスガードレール &#x200B;](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md)を参照してください。
 
-チェーンモジュールの設定方法については、[ チェーンモジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)を参照してください。
+チェーンモジュールの設定方法については、[&#x200B; チェーンモジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)を参照してください。
 
 ## 親シナリオと子シナリオ
 
@@ -38,9 +38,9 @@ ht-degree: 12%
 
 Workfront Fusionでは、データ構造を使用して、親シナリオから子シナリオに情報を転送します。 データ構造は、子シナリオで設定されます。 親シナリオから子シナリオを選択すると、子シナリオの入力として使用されるデータ構造のフィールドが親シナリオに表示されます。 これらのフィールドに値をマッピングできます。このフィールドは、トリガーされたときに子シナリオに渡されます。
 
-親シナリオと子シナリオで設定するモジュールについて詳しくは、[ チェーンモジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)を参照してください。
+親シナリオと子シナリオで設定するモジュールについて詳しくは、[&#x200B; チェーンモジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)を参照してください。
 
-データ構造について詳しくは、[ データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
+データ構造について詳しくは、[&#x200B; データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
 
 ## データフロー
 
