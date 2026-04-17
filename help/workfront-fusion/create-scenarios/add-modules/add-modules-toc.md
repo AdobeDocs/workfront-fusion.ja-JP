@@ -1,24 +1,23 @@
 ---
 content-type: reference
-title: モジュールの追加：記事インデックス
-description: この節では、Workfront Fusion でのモジュールの追加に関する記事を紹介します。
+title: モジュールを追加：記事インデックス
+description: この節では、Workfront Fusionでのモジュールの追加に関する記事を示します。
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 45935dab-199b-46b8-a339-abfea8650320
-source-git-commit: bd8e770765ac535fd8c11e6f58620e1e4cadfc3d
+source-git-commit: 3d957c219cdc5fed4fdf9b0649cab724fae21871
 workflow-type: tm+mt
-source-wordcount: '88'
-ht-degree: 70%
+source-wordcount: '82'
+ht-degree: 68%
 
 ---
 
-# モジュールの追加：記事インデックス
+# モジュールを追加：記事インデックス
 
 * [シナリオへのモジュールの追加](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-basic.md)
 * [モジュールの設定](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
-* [AI を使用したシナリオセグメントの生成](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)
-* [シナリオに AI プロンプトを追加する](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)
+* [シナリオにAI プロンプトを追加する](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)
 * [モジュールまたはシナリオのコピー](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
 * [Adobe Workfront Fusion テンプレートを使用したシナリオの作成](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)
 * [cURL を使用した HTTP モジュールの追加](/help/workfront-fusion/create-scenarios/add-modules/use-curl-create-http.md)
