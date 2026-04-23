@@ -17,7 +17,7 @@ ht-degree: 82%
 >
 >この記事では、Frame.io コネクタのレガシーバージョンについて説明します。 このコネクターは、Frame.io バージョン 3 への接続に使用します。
 >
->新しい（ベータ版）バージョンのFrame.io コネクタの手順については、[Frame.io コネクタ ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)を参照してください。
+>新しい（ベータ版）バージョンのFrame.io コネクタの手順については、[Frame.io コネクタ &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)を参照してください。
 
 Adobe Workfront Fusion [!DNL Frame.io] モジュールでは、[!DNL Frame.io] アカウント内のアセットとコメントを監視、作成、更新、取得、削除できます。
 
@@ -28,7 +28,7 @@ Workfront には、接続先の Frame.io のバージョンに基づく 2 つの
 | Frame.io | V4 |
 | Frame.io（レガシー） | V3 |
 
-新しいバージョンのFrame.io コネクタの手順については、[Frame.io コネクタ ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)を参照してください。
+新しいバージョンのFrame.io コネクタの手順については、[Frame.io コネクタ &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)を参照してください。
 
 Frame.io コネクタの紹介ビデオについては、以下を参照してください。
 
@@ -235,7 +235,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
    <td> <p>ファイルを作成する場合は、アセットの簡単な説明を入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ラベル ] </td> 
+   <td role="rowheader">[!UICONTROL ラベル &#x200B;] </td> 
    <td> <p>ファイルを作成する場合は、ファイルが処理中、レビューが必要、または承認されているかどうかを選択します。</p> </td> 
   </tr> 
  </tbody> 

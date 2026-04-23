@@ -837,7 +837,7 @@ HubSpot CRM コネクタでは、次の機能が使用されます。
    <td> <p>[!DNL HubSpot CRM] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusionへの接続の作成 – 基本手順</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROLはアクティブですか？]</td> 
+   <td role="rowheader">[!UICONTROL はアクティブですか？]</td> 
    <td>新しいエンゲージメントが作成時にアクティブになる場合は、このオプションを有効にします。 タイムラインに表示するには、エンゲージメントがアクティブである必要があります。</td> 
   </tr> 
   <tr> 
@@ -994,7 +994,7 @@ HubSpot CRM コネクタでは、次の機能が使用されます。
    <td>会議の説明または詳細のテキストを入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL開始時間]</td> 
+   <td role="rowheader">[!UICONTROL 開始時間]</td> 
   <td>会議の開始時間をUNIX タイムスタンプとして入力またはマッピングします。
   </td> 
    </tr> 
@@ -1118,7 +1118,7 @@ HubSpot CRM コネクタでは、次の機能が使用されます。
    <td>このイベントのタイムスタンプを入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL カスタム データ ]</td> 
+   <td role="rowheader">[!UICONTROL カスタム データ &#x200B;]</td> 
    <td>このイベントに追加するカスタムデータの各項目について、<b>項目を追加</b>をクリックし、項目の名前と値を入力します。</td> 
   </tr> 
  </tbody> 
@@ -1160,7 +1160,7 @@ HubSpot CRM コネクタでは、次の機能が使用されます。
    <td> <p>[!DNL HubSpot CRM] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusionへの接続の作成 – 基本手順</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL イベントタイプ ]</td> 
+   <td role="rowheader">[!UICONTROL イベントタイプ &#x200B;]</td> 
    <td>ソーシャルイベント、コンテンツイベント、またはすべてのイベントを視聴するかどうかを選択します。</td> 
   </tr> 
   <tr> 
@@ -1199,7 +1199,7 @@ HubSpot CRM コネクタでは、次の機能が使用されます。
    <td>このWebhookに使用するアプリケーション IDを入力します。 HubSpot開発者ポータルでIDを見つけることができます。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL サブスクリプション ]</td> 
+   <td role="rowheader">[!UICONTROL サブスクリプション &#x200B;]</td> 
    <td> <p>監視する通知のタイプごとに、<b>項目を追加</b>をクリックし、サブスクリプションのタイプを選択します。</p> </td> 
   </tr> 
   <tr> 
@@ -1423,7 +1423,7 @@ HubSpot CRM コネクタでは、次の機能が使用されます。
    <td>新しいカレンダータスクの説明を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL所有者ID]</td> 
+   <td role="rowheader">[!UICONTROL 所有者ID]</td> 
    <td>このタスクに割り当てられているユーザーの所有者IDを入力またはマッピングします。</td> 
   </tr> 
   <tr> 
@@ -1512,7 +1512,7 @@ HubSpot CRM コネクタでは、次の機能が使用されます。
    <td> <p>[!DNL HubSpot CRM] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusionへの接続の作成 – 基本手順</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL所有者ID]</td> 
+   <td role="rowheader">[!UICONTROL 所有者ID]</td> 
    <td> <p>詳細を返す所有者のIDを入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
@@ -2044,11 +2044,11 @@ ID を指定して既存のチケットを削除します。
    <td>モジュールが 1 回の実行サイクルで返す最大項目数を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL開始タイムスタンプ ]</td> 
+   <td role="rowheader">[!UICONTROL 開始タイムスタンプ &#x200B;]</td> 
    <td>特定の日付以降の結果を返すには、日付を形式で入力します <code>MM/DD/YYYY.</code></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL終了タイムスタンプ ]</td> 
+   <td role="rowheader">[!UICONTROL 終了タイムスタンプ &#x200B;]</td> 
    <td>特定の日付またはそれ以前の日付から結果を返すには、日付を形式で入力します <code>MM/DD/YYYY.</code></td> 
   </tr> 
  </tbody> 

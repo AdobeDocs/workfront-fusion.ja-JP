@@ -488,7 +488,7 @@ Slack コネクタでは、次の機能が使用されます。
    <td>API 呼び出しに使用するベース URL を選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Send アクセス トークン ]</td> 
+   <td role="rowheader">[!UICONTROL Send アクセス トークン &#x200B;]</td> 
    <td>アクセストークンをヘッダーとして送信するか、クエリパラメーターとして送信するかを選択します。</td> 
   </tr> 
  </tbody> 

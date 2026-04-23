@@ -69,8 +69,8 @@ ht-degree: 65%
 
    シナリオエディターでシナリオを操作している場合は、ウィンドウの左上隅付近にある左矢印![編集矢印を終了](assets/exit-editing-arrow.png)をクリックします。
 
-1. シナリオの名前の近くにある&#x200B;**履歴**をクリックします。
-   ![履歴タブ ](assets/history-tab.png)
+1. シナリオの名前の近くにある&#x200B;**履歴**&#x200B;をクリックします。
+   ![履歴タブ &#x200B;](assets/history-tab.png)
 
    シナリオの実行ごとに、次の詳細が表示されます。
 
@@ -103,7 +103,7 @@ ht-degree: 65%
 1. 右側のパネルの「**[!UICONTROL 履歴]**」タブをクリックします。
 1. （オプション）選択したシナリオ実行の詳細については、右側のパネルで「実行」をクリックします。
 
-   バンドルの処理について詳しくは、[ シナリオ実行フロー](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)を参照してください
+   バンドルの処理について詳しくは、[&#x200B; シナリオ実行フロー](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)を参照してください
 
    >[!NOTE]
    >
@@ -116,7 +116,7 @@ ht-degree: 65%
 実行履歴をフィルターして、指定した値を持つ実行のみを表示できます。
 
 1. この記事の[「[!UICONTROL 履歴]」タブでシナリオの実行履歴を表示](#view-scenario-history-on-the-history-tab)で説明されているように、シナリオの全ページ履歴を開きます。
-1. フィルターを適用する列のヘッダーにある[!UICONTROL  フィルター] アイコン ![ シナリオフィルターアイコン ](assets/fusion-scenario-filter-icon.png)をクリックします。
+1. フィルターを適用する列のヘッダーにある[!UICONTROL &#x200B; フィルター] アイコン ![&#x200B; シナリオフィルターアイコン &#x200B;](assets/fusion-scenario-filter-icon.png)をクリックします。
 1. 「[!UICONTROL フィルター]」ダイアログで、フィルタリングしたい値を入力します。
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
@@ -179,4 +179,4 @@ You can sort the scenario execution history.
 
 1. （オプション）シナリオ実行 ID をコピーするには、**[!UICONTROL 実行 ID をコピー]**&#x200B;アイコンをクリックします。 目的の実行の行の<img src="assets/copy-fusion-execution-id-icon.png">。
 
-1. （オプション）[!UICONTROL  フルテキスト検索]の結果をクリックして、その情報を含むシナリオモジュール出力バンドルを調べます。
+1. （オプション）[!UICONTROL &#x200B; フルテキスト検索]の結果をクリックして、その情報を含むシナリオモジュール出力バンドルを調べます。

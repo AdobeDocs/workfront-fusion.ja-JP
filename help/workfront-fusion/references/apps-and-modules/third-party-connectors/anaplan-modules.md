@@ -512,7 +512,7 @@ Anaplan コネクタでは、次の機能が使用されます。
  </tbody> 
 </table>
 
-#### [!UICONTROL  アクション用にファイルをアップロード ]
+#### [!UICONTROL &#x200B; アクション用にファイルをアップロード &#x200B;]
 
 このアクションモジュールは、Anaplan内の既存のファイルをAnaplan内の追加の場所にアップロードします。
 <table style="table-layout:auto">
@@ -562,7 +562,7 @@ Anaplan コネクタでは、次の機能が使用されます。
        <li> <p><b>[!UICONTROL Line items]</b> </p> <p>取得する [!DNL line] 項目を含むモデルの ID を、選択またはマッピングします。</p> </li> 
        <li> <p><b>[!UICONTROL Model lists]</b> </p> <p>取得するモデルリストを含むワークスペース ID とモデル ID を、選択またはマッピングします。</p> </li> 
        <li> <p><b>[!UICONTROL Model calendar]</b> </p> <p>取得するモデルカレンダーが含まれるワークスペースの ID を、選択またはマッピングします。</p> </li> 
-       <li> <p><b>[!UICONTROL モデル バージョン ]</b> </p> </li> 
+       <li> <p><b>[!UICONTROL モデル バージョン &#x200B;]</b> </p> </li> 
        <li> <p>取得するモデルバージョンを含むモデルのIDを選択またはマッピングします。</p> </li> 
        <li> <p><b>[!UICONTROL Users]</b> </p> </li> 
        <li> <p><b>[!UICONTROL Views]</b> </p> <p>モジュールまたはモデルのどちらで表示するかを選択し、取得する表示を含むモジュールまたはモデルの ID を、選択またはマッピングします。</p> </li> 

@@ -149,8 +149,8 @@ Dropbox コネクタでは、次の機能が使用されます。
 ![マップ切り替え](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [トリガーモジュール](#trigger-modules)
-* [ [!DNL Dropbox] ファイルおよびフォルダーを取得するためのモジュール](#modules-for-getting-dropbox-files-and-folders)
-* [ [!DNL Dropbox] ファイルおよびフォルダーを作成および編集するためのモジュール](#modules-for-creating-and-editing-dropbox-files-and-folders)
+* [&#x200B; [!DNL Dropbox] ファイルおよびフォルダーを取得するためのモジュール](#modules-for-getting-dropbox-files-and-folders)
+* [&#x200B; [!DNL Dropbox] ファイルおよびフォルダーを作成および編集するためのモジュール](#modules-for-creating-and-editing-dropbox-files-and-folders)
 * [その他のモジュール](#other-modules)
 
 ### トリガーモジュール
@@ -494,7 +494,7 @@ Dropbox コネクタでは、次の機能が使用されます。
    <td> <p> ファイルパスをマッピングするか入力するか、手動でファイルを選択するかを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL ファイルまたはフォルダーのパス ] / [!UICONTROL ファイルまたはフォルダー]</p> </td> 
+   <td> <p>[!UICONTROL ファイルまたはフォルダーのパス &#x200B;] / [!UICONTROL ファイルまたはフォルダー]</p> </td> 
    <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>ターゲットパスを入力するか、ファイルまたはフォルダーにマッピングします。</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>メニューからファイルまたはフォルダーを選択します。</p> </td> 
   </tr> 
  </tbody> 
@@ -523,7 +523,7 @@ Dropbox コネクタでは、次の機能が使用されます。
    <td> <p>ファイルまたはフォルダーのパスをマップまたは入力するか、ファイルまたはフォルダーを手動で選択するかを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL ファイル / フォルダーパス ] /</p> </td> 
+   <td> <p>[!UICONTROL ファイル / フォルダーパス &#x200B;] /</p> </td> 
    <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>ターゲットパスを入力するか、ファイルまたはフォルダーにマッピングします。</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>ファイルまたはフォルダーのどちらを移動するかを選択し、次にファイルまたはフォルダーを選択します。</p> </td> 
   </tr> 
   <tr> 
