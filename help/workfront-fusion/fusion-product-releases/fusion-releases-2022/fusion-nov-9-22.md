@@ -4,13 +4,12 @@ content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
 title: Workfront Fusion リリースアクティビティ：2022年11月7日（PT）の週
-description: このページでは、2022年11月7日（PT）の週に Adobe Workfront Fusion で行なわれたすべての機能強化について説明します。
+description: このページでは、2022年11月7日（PT）の週に Adobe Workfront Fusion で行われたすべての機能強化について説明します。
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 9d58abd0-1fe7-43c8-a1ea-2fadea738590
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 100%

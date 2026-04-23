@@ -5,22 +5,21 @@ content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
 title: Workfront Fusion リリースアクティビティ：2022年5月9日（PT）の週
-description: このページでは、2022年5月9日の週（PT）に Adobe Workfront Fusion で行われたすべての機能強化について説明します。
+description: このページでは、2022年5月9日（PT）の週に Adobe Workfront Fusion で行われたすべての機能強化について説明します。
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 5727d1bd-6b1d-4c99-90b5-68a555751e8c
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Workfront Fusion リリースアクティビティ：2022年5月9日の週（PT）
 
-このページでは、2022年5月9日の週（PT）に Adobe Workfront Fusion で行われたすべての機能強化について説明します。
+このページでは、2022年5月9日（PT）の週に Adobe Workfront Fusion で行われたすべての機能強化について説明します。
 
 最近のすべての変更内容のリストについては、[Adobe Workfront Fusion リリースアクティビティ](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)を参照してください。
 

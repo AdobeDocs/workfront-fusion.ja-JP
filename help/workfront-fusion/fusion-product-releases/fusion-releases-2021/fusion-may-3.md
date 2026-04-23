@@ -8,9 +8,8 @@ description: このページでは、2021年5月3日（PT）の週に Adobe Work
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 8858fc79-5eda-4938-9bb5-c05be38f02bc
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 100%

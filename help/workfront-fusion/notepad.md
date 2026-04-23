@@ -1,11 +1,12 @@
 ---
-source-git-commit: 4ca7c59407bf8ad7a8092a7ae4d63a7d0b80d417
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
 
 ---
-<!--# References metadata
+<!--
+# References metadata
 
 ---
 title: 'Function References: Article Index'
@@ -15,7 +16,8 @@ feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 ---
 
-This section contains the following articles:-->
+This section contains the following articles:
+-->
 
 <!--Hello! I'm setting up a merge conflict!-->
 

@@ -8,9 +8,8 @@ description: このページでは、2022年6月20日（PT）の週に Adobe Wor
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: eb4b2371-f423-4efc-9e04-ca4be55767d2
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 100%
@@ -39,4 +38,4 @@ Workfront Fusion での最近のバグ修正のリストについては、[Workf
 
 * あるフォルダーから別のフォルダーにレコードを移動
 
-* カスタム API 呼び出しを実行
+* カスタム API 呼び出しの実行

@@ -8,9 +8,8 @@ description: このページでは、2020年12月7日（PT）の週に Adobe Wor
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: ec68630c-e89f-465c-bb67-d9898e5b1c2b
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 100%
@@ -34,6 +33,6 @@ Workfront Fusion での最近のバグ修正のリストについては、[Workf
 * レコードのリスト作成または検索
 * 添付ファイルのダウンロード
 * スプリントへのイシューを追加
-* カスタム API 呼び出しを実行
+* カスタム API 呼び出しの実行
 
 以前は、Jira モジュールは Jira Cloud でのみ使用できました。

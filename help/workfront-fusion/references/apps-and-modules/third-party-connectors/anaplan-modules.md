@@ -1,23 +1,23 @@
 ---
 title: Anaplan モジュール
-description: Adobe Workfront Fusion シナリオでは、Anaplan を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
+description: Adobe Workfront Fusionでは、Anaplanを使用するワークフローを自動化したり、複数のサードパーティ製アプリケーションやサービスに接続したりできます。
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 81c9b141-4e40-430f-99f1-c44b7a833bcd
-source-git-commit: b54a2ae43efb44ebd002357d7b2269f40523bc9f
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '2031'
-ht-degree: 77%
+ht-degree: 79%
 
 ---
 
 # [!DNL Anaplan] モジュール
 
-Adobe Workfront Fusion のシナリオでは、[!DNL Anaplan] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
+Adobe Workfront Fusion のシナリオでは、[!DNL Anaplan] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりすることができます。
 
-シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成手順について詳しくは、[シナリオの作成：記事のインデックス](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
 
-モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、[モジュール：記事インデックス](/help/workfront-fusion/references/modules/modules-toc.md)の記事を参照してください。
 
 ## アクセス要件
 
@@ -33,7 +33,7 @@ Adobe Workfront Fusion のシナリオでは、[!DNL Anaplan] を使用するワ
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>Standard</p><p>Work またはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
@@ -62,11 +62,11 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 [!DNL Anaplan] コネクタを使用する前に、以下の前提条件が満たされていることを確認してください。
 
 * アクティブな [!UICONTROL Anaplan] アカウントが必要です。
-* Workfront Fusion がワークスペース、モデル、その他の [!DNL Anaplan] オブジェクトとやり取りするには、[!UICONTROL Anaplan] アカウントで設定する必要があります。
+* Workfront FusionがWorkspaces、Models、およびその他の[!DNL Anaplan] オブジェクトを[!UICONTROL Anaplan] アカウントで操作するには、事前に設定する必要があります。
 
-## Anaplan API 情報
+## Anaplan API情報
 
-Anaplan コネクタでは、以下を使用します。
+Anaplan コネクタでは、次の機能が使用されます。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -119,21 +119,22 @@ Anaplan コネクタでは、以下を使用します。
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL メール &#x200B;]</td>
+        <td role="rowheader">[!UICONTROL email]</td>
         <td>
-          <p>この Anaplan アカウントのメールアドレスを入力してください</p>
+          <p>このAnaplan アカウントの電子メールアドレスを入力</p>
         </td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Password]</td>
-        <td>この Anaplan アカウントのパスワードを入力します。</td>
+        <td>このAnaplan アカウントのパスワードを入力します。</td>
       </tr>
      </tbody>
     </table>
 
 1. 「**[!UICONTROL 続行]**」をクリックして接続を保存し、モジュールに戻ります。
 
-<!--1. Click **[!UICONTROL Add]** next to the [!UICONTROL Connection] box.
+<!--
+1. Click **[!UICONTROL Add]** next to the [!UICONTROL Connection] box.
 1. Select the connection type.
 
    <table style="table-layout:auto">
@@ -151,13 +152,14 @@ Anaplan コネクタでは、以下を使用します。
     </tbody> 
    </table>
 
-1. Click **[!UICONTROL Continue]** to save the connection and return to the module.-->
+1. Click **[!UICONTROL Continue]** to save the connection and return to the module.
+-->
 
 ## [!DNL Anaplan] モジュールとそのフィールド
 
 [!DNL Anaplan] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Anaplan]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[モジュール間の情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
 ![マップ切り替え](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -181,7 +183,7 @@ Anaplan コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Anaplan] への接続を作成する方法については、この記事の <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Anaplan] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Anaplan]への接続の作成手順については、この記事の「<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion[!DNL Anaplan]への</a>の接続」を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">監視するオブジェクトのタイプ</td> 
@@ -203,7 +205,7 @@ Anaplan コネクタでは、以下を使用します。
 * [[!UICONTROL リスト項目の作成]](#create-a-list-item)
 * [レコードの削除](#delete-a-record)
 * [データの書き出し](#export-data)
-* [データの読み込み](#import-data)
+* [データのインポート](#import-data)
 * [[!UICONTROL カスタム API 呼び出しの実行]](#make-a-custom-api-call)
 * [[!UICONTROL レコードの読み取り]](#read-a-record)
 * [[!UICONTROL アクションの実行]](#run-an-action)
@@ -217,7 +219,7 @@ Anaplan コネクタでは、以下を使用します。
 <table style="table-layout:auto">
     <tr>
         <td>[!UICONTROL Connection]</td>
-        <td>[!DNL Anaplan] への接続を作成する方法については、この記事の <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Anaplan] の接続 </a> を参照してください。</td>
+        <td>[!DNL Anaplan]への接続の作成手順については、この記事の「<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion[!DNL Anaplan]への</a>の接続」を参照してください。</td>
     </tr>
     <tr>
         <td>[!UICONTROL Workspace ID]</td>
@@ -263,7 +265,7 @@ Anaplan コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Anaplan] への接続を作成する方法については、この記事の <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Anaplan] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Anaplan]への接続の作成手順については、この記事の「<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion[!DNL Anaplan]への</a>の接続」を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -289,7 +291,7 @@ Anaplan コネクタでは、以下を使用します。
 
 #### [!UICONTROL データの書き出し]
 
-このアクションモジュールは、書き出し定義を使用して Anaplan からデータを取得します。
+このアクションモジュールは、Export Definitionsを使用してAnaplanからデータを取得します。
 
 <table style="table-layout:auto">
  <col> 
@@ -297,27 +299,27 @@ Anaplan コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Anaplan] への接続を作成する方法については、この記事の <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Anaplan] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Anaplan]への接続の作成手順については、この記事の「<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion[!DNL Anaplan]への</a>の接続」を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
-   <td>書き出すデータを含む Anaplan Workspaceの ID を選択またはマッピングします。</td> 
+   <td>書き出すデータを含むAnaplan WorkspaceのIDを選択またはマッピングします。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Model ID]</td> 
-   <td>書き出すデータを含むモデルの ID を入力またはマッピングします。</td> 
+   <td>書き出すデータを含むモデルのIDを入力するか、マッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">書き出し定義 ID</td> 
-   <td> <p>使用する Anaplan エクスポート定義の ID を入力またはマッピングします。</p> 
+   <td role="rowheader">書き出し定義ID</td> 
+   <td> <p>使用するAnaplan書き出し定義のIDを入力またはマッピングします。</p> 
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### データの読み込み
+#### データのインポート
 
-このアクションモジュールは Anaplan にデータをインポートします。
+このアクションモジュールは、データをAnaplanにインポートします。
 
 <table style="table-layout:auto">
  <col> 
@@ -325,19 +327,19 @@ Anaplan コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Anaplan] への接続を作成する方法については、この記事の <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Anaplan] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Anaplan]への接続の作成手順については、この記事の「<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion[!DNL Anaplan]への</a>の接続」を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
-   <td>データのインポート先となる Anaplan Workspaceの ID を選択またはマッピングします。</td> 
+   <td>データを読み込むAnaplan WorkspaceのIDを選択またはマッピングします。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Model ID]</td> 
-   <td>データをインポートするモデルの ID を入力またはマップします。</td> 
+   <td>データを読み込むモデルのIDを入力またはマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">書き出し定義 ID</td> 
-   <td> <p>使用する Anaplan インポート定義の ID を入力またはマップします。</p> 
+   <td role="rowheader">書き出し定義ID</td> 
+   <td> <p>使用するAnaplan インポート定義のIDを入力またはマッピングします。</p> 
    </td> 
   </tr> 
  </tbody> 
@@ -353,7 +355,7 @@ Anaplan コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Anaplan] への接続を作成する方法については、この記事の <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Anaplan] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Anaplan]への接続の作成手順については、この記事の「<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion[!DNL Anaplan]への</a>の接続」を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
@@ -373,7 +375,7 @@ Anaplan コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などを条件ステートメントを JSON で使用する場合は、条件ステートメントの外側に引用符を置きます。</p> 
+   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件文を JSON で使用する場合は、条件文を引用符で囲みます。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -391,7 +393,7 @@ Anaplan コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Anaplan] への接続を作成する方法については、この記事の <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Anaplan] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Anaplan]への接続の作成手順については、この記事の「<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion[!DNL Anaplan]への</a>の接続」を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record type]</td> 
@@ -402,7 +404,7 @@ Anaplan コネクタでは、以下を使用します。
      <li> <p><b>モデルのバージョン</b> </p> <p>読み取りたいモデルの ID を選択またはマッピングします。</p> </li> 
      <li> <p><b>ユーザー</b> </p> <p>使用されているアカウントの所有者に関するデータを返すか、別のユーザーに関するデータを返すかを選択します。別のユーザーを選択する場合は、ユーザーの名前を選択します。</p> </li> 
      <li> <p><b>ワークスペース</b> </p> <p>読み取りたい Workspace の ID を選択またはマッピングします。</p> </li> 
-     <li> <p><b>表示</b> </p> <p>読み取るビューを含むモデルの ID を選択またはマッピングします。</p> </li> 
+     <li> <p><b>表示</b> </p> <p>読み取るビューを含むモデルのIDを選択またはマッピングします。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -471,7 +473,7 @@ Anaplan コネクタでは、以下を使用します。
       </table>
 
 
-#### [!UICONTROL レコードを更新]
+#### [!UICONTROL レコードの更新]
 
 このアクションモジュールは、[!UICONTROL Anaplan] 内の 1 つのレコードを更新します。
 
@@ -481,7 +483,7 @@ Anaplan コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Anaplan] への接続を作成する方法については、この記事の <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Anaplan] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Anaplan]への接続の作成手順については、この記事の「<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion[!DNL Anaplan]への</a>の接続」を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record type]</td> 
@@ -510,16 +512,16 @@ Anaplan コネクタでは、以下を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; アクション用にファイルをアップロード &#x200B;]
+#### [!UICONTROL  アクション用にファイルをアップロード ]
 
-このアクションモジュールは、Anaplan の既存のファイルを Anaplan 内の追加の場所にアップロードします。
+このアクションモジュールは、Anaplan内の既存のファイルをAnaplan内の追加の場所にアップロードします。
 <table style="table-layout:auto">
 <col>
 <col>
 <tbody>
 <tr>
 <td role="rowheader">[!UICONTROL Connection]</td>
-<td>[!DNL Anaplan] への接続を作成する方法については、この記事の <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Anaplan] の接続 </a> を参照してください。</td>
+<td>[!DNL Anaplan]への接続の作成手順については、この記事の「<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion[!DNL Anaplan]への</a>の接続」を参照してください。</td>
 </tr>
 <tr>
 <td role="rowheader">[!UICONTROL Workspace ID]</td>
@@ -549,7 +551,7 @@ Anaplan コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Anaplan] への接続を作成する方法については、この記事の <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL Anaplan] の接続 </a> を参照してください。</td> 
+   <td>[!DNL Anaplan]への接続の作成手順については、この記事の「<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion[!DNL Anaplan]への</a>の接続」を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record types]</td> 
@@ -560,8 +562,8 @@ Anaplan コネクタでは、以下を使用します。
        <li> <p><b>[!UICONTROL Line items]</b> </p> <p>取得する [!DNL line] 項目を含むモデルの ID を、選択またはマッピングします。</p> </li> 
        <li> <p><b>[!UICONTROL Model lists]</b> </p> <p>取得するモデルリストを含むワークスペース ID とモデル ID を、選択またはマッピングします。</p> </li> 
        <li> <p><b>[!UICONTROL Model calendar]</b> </p> <p>取得するモデルカレンダーが含まれるワークスペースの ID を、選択またはマッピングします。</p> </li> 
-       <li> <p><b>[!UICONTROL モデルのバージョン &#x200B;]</b> </p> </li> 
-       <li> <p>取得するモデルバージョンを含むモデルの ID を選択またはマッピングします。</p> </li> 
+       <li> <p><b>[!UICONTROL モデル バージョン ]</b> </p> </li> 
+       <li> <p>取得するモデルバージョンを含むモデルのIDを選択またはマッピングします。</p> </li> 
        <li> <p><b>[!UICONTROL Users]</b> </p> </li> 
        <li> <p><b>[!UICONTROL Views]</b> </p> <p>モジュールまたはモデルのどちらで表示するかを選択し、取得する表示を含むモジュールまたはモデルの ID を、選択またはマッピングします。</p> </li> 
       </ul> 

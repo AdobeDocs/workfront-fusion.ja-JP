@@ -5,9 +5,8 @@ author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 87ad4b2a-b052-4e5d-a540-6c53eba61c66
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 100%
@@ -16,7 +15,7 @@ ht-degree: 100%
 
 # Workfront Fusion リリースアクティビティ： 2021年11月29日の週
 
-このページでは、2021年11月29日の週に Adobe Workfront Fusion で行われたすべての機能強化について説明します。
+このページでは、2021年11月29日（PT）の週に Adobe Workfront Fusion で行われたすべての機能強化について説明します。
 
 最近のすべての変更内容のリストについては、[Adobe Workfront Fusion リリースアクティビティ](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)を参照してください。
 

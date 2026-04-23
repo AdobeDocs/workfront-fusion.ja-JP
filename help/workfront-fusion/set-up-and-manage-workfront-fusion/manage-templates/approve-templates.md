@@ -1,23 +1,23 @@
 ---
 content-type: reference
-title: テンプレートを承認または却下
-description: この記事では、Fusion テンプレートを承認または却下する方法について説明します。
+title: テンプレートの承認または不承認
+description: この記事では、Fusion テンプレートを承認または承認しない方法について説明します。
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: dafecd8b-96e5-46da-9ab6-15f0bc9b52a4
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '524'
-ht-degree: 41%
+ht-degree: 44%
 
 ---
 
-# 「公開」タブ用のテンプレートを承認または却下
+# 「パブリック」タブのテンプレートを承認または却下
 
-Adobe Workfront Fusion テンプレートは、様々なワークフローを自動化および効率化するために設計された事前定義済みのシナリオです。 これらのテンプレートを使用すると、最初からすべてを構築する必要なく、統合と自動化をすばやく設定できます。
+Adobe Workfront Fusionのテンプレートは、さまざまなワークフローを自動化および合理化するように設計されている、事前定義済みのシナリオです。 テンプレートを活用すれば、ゼロから統合や自動化プロセスを構築する必要がなくなり、すばやく構築できます。
 
-管理者の場合は、「公開テンプレート」タブで、特定のテンプレートを組織全体で共有するかどうかを選択できます。
+管理者の場合は、「公開テンプレート」タブで、特定のテンプレートを組織全体と共有するかどうかを選択できます。
 
 ユーザーは、承認用に作成したテンプレートを送信して、公開テンプレートページで共有できます。<!--do the have to be requested or can an admin just choose to approve?-->
 
@@ -42,7 +42,7 @@ Adobe Workfront Fusion テンプレートは、様々なワークフローを自
     <tr>
       <td role="rowheader">Adobe Workfront Fusion ライセンス**</td>
       <td>
-        <p>現在：Workfront Fusion ライセンスは必要ありません。</p>
+        <p>現在：Workfront Fusionのライセンスは必要ありません。</p>
         <p>または</p>
         <p>レガシー：任意</p>
       </td>
@@ -52,11 +52,11 @@ Adobe Workfront Fusion テンプレートは、様々なワークフローを自
       <td>
         <p>新規：</p>
         <ul>
-          <li>[!UICONTROL Select] または [!UICONTROL Prime] Workfront プラン：Adobe Workfront Fusion は、組織で購入する必要があります。</li>
-          <li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusion が含まれています。</li>
+          <li>[!UICONTROL Select]または[!UICONTROL Prime] Workfront プラン：組織はAdobe Workfront Fusionを購入する必要があります。</li>
+          <li>[!UICONTROL Ultimate] Workfront プラン：Workfront Fusionが含まれています。</li>
         </ul>
         <p>または</p>
-        <p>現在：Adobe Workfront Fusion を購入する必要があります。</p>
+        <p>現在：組織はAdobe Workfront Fusionを購入する必要があります。</p>
       </td>
     </tr>
   </tbody>
@@ -65,13 +65,14 @@ Adobe Workfront Fusion テンプレートは、様々なワークフローを自
 <!--
 For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/access-level-requirements-in-documentation.md). 
 
-For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).
+-->
 
 +++
 
-## Workfront Fusion テンプレートの承認または却下
+## Workfront Fusion テンプレートの承認または不承認
 
-テンプレートを承認すると、「[!UICONTROL &#x200B; 公開テンプレート &#x200B;]」タブに表示され、すべてのユーザーが使用できるようになります。
+テンプレートを承認すると、[!UICONTROL 公開テンプレート ] タブに表示され、すべてのユーザーが利用できるようになります。
 
 テンプレートを却下すると、「[!UICONTROL 公開テンプレート]」タブからテンプレートが削除され、作成したチームのみが使用できます。
 
@@ -87,19 +88,19 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 
 ## テンプレートのステータス
 
-ステータスは、テンプレートページのテンプレート名で確認できます。
+テンプレート名の下のテンプレートページでステータスを確認できます。
 
 以下のステータスを使用できます。
 
 * **[!UICONTROL 非公開]**：このテンプレートは、テンプレート作成者とそのチームに対してのみ表示されます。
-* **[!UICONTROL 公開済み]**：このテンプレートは、テンプレート作成者とそのチームに対してのみ表示されます。公開したら、必要に応じて承認用にテンプレートを送信できます。 共有可能なリンクをコピーすることもできます。
-* **[!UICONTROL 承認済み]**：このテンプレートは、すべての Workfront Fusion ユーザーの「[!UICONTROL 公開テンプレート]」タブに表示されます。画面の右上隅にある [!UICONTROL &#x200B; オプション &#x200B;] をクリックして、共有可能なリンクをコピーすることもできます。
+* **[!UICONTROL 公開済み]**：このテンプレートは、テンプレート作成者とそのチームに対してのみ表示されます。公開したテンプレートは、必要に応じて承認用に送信できます。 共有可能なリンクをコピーすることもできます。
+* **[!UICONTROL 承認済み]**：このテンプレートは、すべての Workfront Fusion ユーザーの「[!UICONTROL 公開テンプレート]」タブに表示されます。画面の右上隅にある[!UICONTROL  オプション ]をクリックして、共有可能なリンクをコピーすることもできます。
 
 「[!UICONTROL チームテンプレート]」タブから、ステータスを確認することができます。テンプレートが公開されると、テンプレート名の右側にアイコンが表示されます。
 
-* **目のアイコン**：テンプレートが公開され、チームに対してのみ表示され、承認リクエストが送信されませんでした。
-* **黄色のチェックマークアイコン**：テンプレートは公開され、チームに対してのみ表示され、「公開テンプレート」タブに追加される承認が保留中です。
-* **緑のチェックマークアイコン**：テンプレートは、「公開テンプレート」タブに表示され、すべてのWorkfront Fusion ユーザーに表示されます。 「[!UICONTROL &#x200B; チームテンプレート &#x200B;]」タブにも表示されます。 テンプレート作成者またはチームメンバーは、引き続き編集できます。
+* **目のアイコン**: テンプレートが公開されました。テンプレートはチームでのみ表示され、承認リクエストは送信されませんでした。
+* **黄色のチェックマークアイコン**: テンプレートが公開され、チームのみが表示され、「公開テンプレート」タブに追加する承認待ちの状態になっています。
+* **緑のチェックマークアイコン**: テンプレートは「公開テンプレート」タブで使用でき、Workfront Fusion ユーザーなら誰でも表示できます。 [!UICONTROL  チームテンプレート ] タブにも表示されます。 テンプレート作成者またはチームメンバーは、引き続きテンプレートを編集できます。
 
 アイコンのないテンプレートは[!UICONTROL プライベート]ステータスになります。これらは公開されておらず、チームにのみ表示されます。
 
