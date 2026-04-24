@@ -1,16 +1,16 @@
 ---
-title: Workfront Fusion リリースアクティビティ：&nbsp;2021年4月12日の週
-description: Workfront Fusion リリースアクティビティ：&nbsp;2021年4月12日の週
+title: Workfront Fusion リリースアクティビティ：2021年4月12日（PT）の週
+description: Workfront Fusion リリースアクティビティ：2021年4月12日（PT）の週
 author: Luke
 draft: Probably
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: '111'
 ht-degree: 100%
 
 ---
 
-# Workfront Fusion リリースアクティビティ：2021年4月12日の週
+# Workfront Fusion リリースアクティビティ：2021年4月12日（PT）の週
 
 このページでは、2021年4月12日（PT）の週に Adobe Workfront Fusion で行われたすべての機能強化について説明します。
 

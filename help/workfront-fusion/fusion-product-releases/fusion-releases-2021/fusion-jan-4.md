@@ -9,14 +9,14 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 4cd34f0e-bc03-4c2a-bedc-6042ffddef1e
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 100%
 
 ---
 
-# Workfront Fusion リリースアクティビティ：2021年1月4日の週
+# Workfront Fusion リリースアクティビティ：2021年1月4日（PT）の週
 
 このページでは、2021年1月4日（PT）の週に Adobe Workfront Fusion で行われたすべての機能強化について説明します。
 

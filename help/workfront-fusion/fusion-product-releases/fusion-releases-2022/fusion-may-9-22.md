@@ -10,14 +10,14 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 5727d1bd-6b1d-4c99-90b5-68a555751e8c
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '191'
+ht-degree: 100%
 
 ---
 
-# Workfront Fusion リリースアクティビティ：2022年5月9日の週（PT）
+# Workfront Fusion リリースアクティビティ：2022年5月9日（PT）の週
 
 このページでは、2022年5月9日（PT）の週に Adobe Workfront Fusion で行われたすべての機能強化について説明します。
 

@@ -1,19 +1,19 @@
 ---
-title: Workfront Fusion のリリースアクティビティ：2021年10月4日（PT）の週
-description: Workfront Fusion のリリースアクティビティ：2021年10月4日（PT）の週
+title: Workfront Fusion リリースアクティビティ：2021年10月4日（PT）の週
+description: Workfront Fusion リリースアクティビティ：2021年10月4日（PT）の週
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 123f49bc-54fd-4f60-8a61-33fce5ec56a6
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '358'
 ht-degree: 100%
 
 ---
 
-# Workfront Fusion のリリースアクティビティ：2021年10月4日（PT）の週
+# Workfront Fusion リリースアクティビティ：2021年10月4日（PT）の週
 
 このページでは、2021年10月4日（PT）の週に Adobe Workfront Fusion で行われたすべての機能強化について説明します。
 
