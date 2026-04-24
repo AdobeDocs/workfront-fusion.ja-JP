@@ -79,7 +79,7 @@ Adobe Workfront Fusion [!UICONTROL JSON] アプリは、Adobe Workfront Fusion�
 ```
 
 
-![JSON コレクション ](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
+![JSON コレクション &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
 
 >[!ENDSHADEBOX]
 

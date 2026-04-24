@@ -767,7 +767,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 このモジュールは、単一のスニペットのすべてのメモのリストを取得します。スニペットメモとは、ユーザーがスニペットに対して投稿できるコメントのことです。
 
-フィールドについて詳しくは、[ ドキュメントの](https://docs.gitlab.com/ee/api/notes.html#list-all-snippet-notes)すべてのスニペットノートを一覧表示[!DNL GitLab]するを参照してください。
+フィールドについて詳しくは、[&#x200B; ドキュメントの](https://docs.gitlab.com/ee/api/notes.html#list-all-snippet-notes)すべてのスニペットノートを一覧表示[!DNL GitLab]するを参照してください。
 
 +++
 

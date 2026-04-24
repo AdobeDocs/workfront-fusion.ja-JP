@@ -289,7 +289,7 @@ YYYY-MM-DD-hh:mm:ss形式で現在の時間を取得します。
 
 これは、例えば同じシナリオで 1 つのアプリまたは web サービスの日付形式を、接続されているアプリまたは web サービスの日付形式に変更する必要がある場合に便利です。
 
-詳細については、記事[項目データタイプ ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)の日付とテキストを参照してください。
+詳細については、記事[項目データタイプ &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)の日付とテキストを参照してください。
 
 #### パラメーター
 
@@ -355,7 +355,7 @@ YYYY-MM-DD-hh:mm:ss形式で現在の時間を取得します。
 
 ### [!UICONTROL parseDate（テキスト、フォーマット、[タイムゾーン]）]
 
-日付を表すテキスト値（`12-10-2019 20:30` または `Aug 18, 2019 10:00 AM`）の場合、この関数を使用して、日付値（バイナリマシンが読み取り可能な表現）に変換（解析）する必要があります。詳細については、記事[項目データタイプ ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)の日付とテキストを参照してください。
+日付を表すテキスト値（`12-10-2019 20:30` または `Aug 18, 2019 10:00 AM`）の場合、この関数を使用して、日付値（バイナリマシンが読み取り可能な表現）に変換（解析）する必要があります。詳細については、記事[項目データタイプ &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)の日付とテキストを参照してください。
 
 #### パラメーター
 

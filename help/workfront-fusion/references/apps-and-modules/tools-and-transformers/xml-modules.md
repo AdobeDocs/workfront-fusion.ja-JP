@@ -99,7 +99,7 @@ ht-degree: 90%
 
 1. 「**[!UICONTROL ジェネレーター]**」ボタンをクリックし、XML サンプルを「[!UICONTROL サンプルデータ]」フィールドに貼り付けます。
 
-   ![ サンプルデータフィールド ](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
+   ![&#x200B; サンプルデータフィールド &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
 
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
@@ -186,7 +186,7 @@ ht-degree: 90%
 URLからXML ファイルをダウンロードし、そのコンテンツを解析するには：
 
 1. 新しいシナリオを開始します。
-1. [!UICONTROL HTTP] > [!UICONTROL  ファイルを取得] モジュールを追加します
+1. [!UICONTROL HTTP] > [!UICONTROL &#x200B; ファイルを取得] モジュールを追加します
 1. モジュールの設定を開き、次のように設定します。
 
    **URL**：XML ファイルの URL（例：`https://siftrss.com/f/rqLy05ayMBJ`）

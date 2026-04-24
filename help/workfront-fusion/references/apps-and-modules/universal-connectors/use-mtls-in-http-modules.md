@@ -77,7 +77,7 @@ For instructions on uploading the Adobe Workfront Fusion public certificate to a
 >
 >証明書に加えて、その他の情報も提供する必要がある場合があります。Web サービスに必要な情報について詳しくは、web サービスの API ドキュメントを参照してください。
 
-次のリンクを使用して、Workfront Fusionの公開証明書をダウンロードできます。 データセンターを見つけるには、組織の「FusionのIP アドレスの設定」の記事の「[ データセンターの特定](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)」を参照してください。
+次のリンクを使用して、Workfront Fusionの公開証明書をダウンロードできます。 データセンターを見つけるには、組織の「FusionのIP アドレスの設定」の記事の「[&#x200B; データセンターの特定](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)」を参照してください。
 
 ### 2026年の証明書
 

@@ -61,16 +61,16 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ## [!DNL Gmail] を Workfront Fusion に接続 {#connect-gmail-to-workfront-fusion}
 
-* [ [!DNL Gmail] を使用してWorkfront Fusionに [!DNL Google Workspace]接続する](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
-* [ [!DNL Gmail] または [!DNL gmail.com] .comを使用して [!DNL googlemail]Workfront Fusionに接続します](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
+* [&#x200B; [!DNL Gmail] を使用してWorkfront Fusionに [!DNL Google Workspace]接続する](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
+* [&#x200B; [!DNL Gmail] または [!DNL gmail.com] .comを使用して [!DNL googlemail]Workfront Fusionに接続します](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
 
-### [!DNL Gmail]を使用して[!DNL  Google Workspace]をWorkfront Fusionに接続する
+### [!DNL Gmail]を使用して[!DNL &#x200B; Google Workspace]をWorkfront Fusionに接続する
 
 [!DNL Google Workspace] アカウントを[!UICONTROL Workfront Fusion]に接続する方法については、[接続の作成 – 基本的な手順](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)を参照してください。
 
 ### [!DNL Gmail]または[!DNL gmail.com].comを使用して[!DNL googlemail]をWorkfront Fusionに接続します
 
-[!DNL @gmail.com] または [!DNL @googlemail.com] ユーザーは、[!UICONTROL クライアント ID] および[!UICONTROL クライアントの秘密鍵]を取得するために、[ [!DNL Google Cloud Platform]](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project) 上で OAuth クライアントを作成する必要があります。
+[!DNL @gmail.com] または [!DNL @googlemail.com] ユーザーは、[!UICONTROL クライアント ID] および[!UICONTROL クライアントの秘密鍵]を取得するために、[&#x200B; [!DNL Google Cloud Platform]](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project) 上で OAuth クライアントを作成する必要があります。
 
 OAuth クライアントを作成し、[!UICONTROL クライアント ID] および[!UICONTROL クライアントの秘密鍵]を取得する方法に関する段階的な手順については、[カスタム OAuth クライアントを使用して Adobe Workfront Fusion を Google Services に接続](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)を参照してください。
 
@@ -445,7 +445,7 @@ OAuth クライアントを作成し、[!UICONTROL クライアント ID] およ
 
 #### [!UICONTROL 添付ファイルを反復]
 
-メールの添付ファイルを反復処理できます。各添付ファイルは、モジュールの出力内の個別のバンドルです。詳しくは、[ イテレーターモジュール ](/help/workfront-fusion/references/modules/iterator-module.md)を参照してください。
+メールの添付ファイルを反復処理できます。各添付ファイルは、モジュールの出力内の個別のバンドルです。詳しくは、[&#x200B; イテレーターモジュール &#x200B;](/help/workfront-fusion/references/modules/iterator-module.md)を参照してください。
 
 <table style="table-layout:auto"> 
  <col> 
