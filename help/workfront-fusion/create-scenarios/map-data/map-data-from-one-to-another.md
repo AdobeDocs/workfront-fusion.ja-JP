@@ -67,11 +67,11 @@ ht-degree: 51%
    検索結果には検索語が含まれ、大文字と小文字は区別されません。
 1. コレクションの要素である値を選択するには、そのコレクションの横にある矢印をクリックし、表示される要素を選択します。
 
-   ![ コレクション要素](assets/collection-dropdown.png)
+   ![&#x200B; コレクション要素](assets/collection-dropdown.png)
 
 1. マッピングパネルから項目をクリックして、フィールドに挿入します。
 
-詳しくは、[ モジュールの設定](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)を参照してください。
+詳しくは、[&#x200B; モジュールの設定](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)を参照してください。
 
 
 ## トラブルシューティング

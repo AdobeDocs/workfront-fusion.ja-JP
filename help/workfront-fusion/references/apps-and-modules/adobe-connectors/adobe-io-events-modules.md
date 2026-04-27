@@ -316,7 +316,7 @@ Webhookを作成するには：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL登録ID]
+           [!UICONTROL 登録ID]
          </td>
          <td>
            イベントを取得する登録を選択します。
@@ -332,7 +332,7 @@ Webhookを作成するには：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL]の後に発生したイベントを返します
+           の後に発生したイベントを返します
          </td>
          <td>日付を入力またはマッピングします。 モジュールは、この日付以降に発生したイベントを返します。
          </td>
