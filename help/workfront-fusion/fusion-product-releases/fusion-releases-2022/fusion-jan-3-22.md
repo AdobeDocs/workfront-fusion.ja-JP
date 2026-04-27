@@ -5,10 +5,11 @@ author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: b532aabe-581b-401d-bf81-c5bd95dd60a0
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '149'
 ht-degree: 100%
 
 ---

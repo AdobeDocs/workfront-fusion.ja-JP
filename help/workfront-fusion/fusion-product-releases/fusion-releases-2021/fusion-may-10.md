@@ -8,10 +8,11 @@ description: このページでは、2021年5月10日（PT）の週に Adobe Wor
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: 82aa7c95-da11-4d5d-8ccf-cddaefff7b36
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '161'
 ht-degree: 100%
 
 ---
@@ -26,4 +27,4 @@ Workfront Fusion での最近のバグ修正のリストについては、[Workf
 
 ## Workfront／カスタム API 呼び出しモジュールで API バージョンを選択
 
-Workfront API へのアクセスを柔軟に行えるよう、Workfront／カスタム API 呼び出しモジュールで使用する Workfront API のバージョンを選択できるようになりました。これにより、組織のニーズにまだ関連している可能性のある、以前に利用可能になった API 機能を使用できます。
+Workfront API へのアクセスを柔軟に行えるよう、Workfront／カスタム API 呼び出しモジュールで使用する Workfront API のバージョンを選択できるようになりました。 これにより、組織のニーズにまだ関連している可能性のある、以前に利用可能になった API 機能を使用できます。

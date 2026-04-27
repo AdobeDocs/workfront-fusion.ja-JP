@@ -8,10 +8,11 @@ description: このページでは、2021年3月8日（PT）の週に Adobe Work
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: c543ac10-840f-497a-a511-9afefc417a3b
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '146'
 ht-degree: 100%
 
 ---
@@ -26,4 +27,4 @@ Workfront Fusion での最近のバグ修正のリストについては、[Workf
 
 ## マッピングパネルでの項目の検索
 
-シナリオでマッピングする項目を簡単に見つけられるように、マッピングパネルを検索する機能を追加しました。これにより、多数のモジュールまたはデータを持つシナリオでのマッピングがはるかに容易になります。
+シナリオでマッピングする項目を簡単に見つけられるように、マッピングパネルを検索する機能を追加しました。 これにより、多数のモジュールまたはデータを持つシナリオでのマッピングがはるかに容易になります。

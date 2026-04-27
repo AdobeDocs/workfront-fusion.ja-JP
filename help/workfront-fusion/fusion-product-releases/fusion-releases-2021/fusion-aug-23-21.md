@@ -5,10 +5,11 @@ author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: c670b466-1203-4530-94ab-b572326369da
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '203'
 ht-degree: 100%
 
 ---
@@ -23,9 +24,9 @@ Workfront Fusion での最近のバグ修正のリストについては、[Workf
 
 ## Workfront モジュールで Typeahead フィールドを使用できるようになりました
 
-モジュールを使いやすくするために、一部のドロップダウンリストを typeahead フィールドに置き換えました。これで、長いリストから項目を選択する代わりに、項目を入力し始めると表示される項目をクリックできます。
+モジュールを使いやすくするために、一部のドロップダウンリストを typeahead フィールドに置き換えました。 これで、長いリストから項目を選択する代わりに、項目を入力し始めると表示される項目をクリックできます。
 
-以前は、ユーザーはドロップダウンリストから項目を選択していました。オブジェクトによっては、リストが長くなり、スクロールして対象の項目を見つけるのに不便な場合があります。
+以前は、ユーザーはドロップダウンリストから項目を選択していました。 オブジェクトによっては、リストが長くなり、スクロールして対象の項目を見つけるのに不便な場合があります。
 
 ## Workfront モジュールで請求記録オブジェクトを利用できるようになりました
 

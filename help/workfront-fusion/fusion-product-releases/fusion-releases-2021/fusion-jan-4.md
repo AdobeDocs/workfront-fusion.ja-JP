@@ -8,10 +8,11 @@ description: このページでは、2021年1月4日（PT）の週に Adobe Work
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: 4cd34f0e-bc03-4c2a-bedc-6042ffddef1e
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '165'
 ht-degree: 100%
 
 ---
@@ -37,4 +38,4 @@ Microsoft 365 メールコネクターの使用方法を拡張するために、
 * 添付ファイルを追加
 * API 呼び出しを実行
 
-また、添付ファイルの反復モジュールを削除しました。リスト添付ファイルモジュールとイテレーターモジュールを組み合わせて、添付ファイルを反復できます。
+また、添付ファイルの反復モジュールを削除しました。 リスト添付ファイルモジュールとイテレーターモジュールを組み合わせて、添付ファイルを反復できます。

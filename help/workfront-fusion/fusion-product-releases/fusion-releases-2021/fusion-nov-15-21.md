@@ -5,10 +5,11 @@ author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: f523c1eb-682a-45af-8945-a1815422fbea
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '184'
 ht-degree: 100%
 
 ---
@@ -23,8 +24,8 @@ Workfront Fusion での最近のバグ修正のリストについては、[Workf
 
 ## Adobe Workfront Fusion の新しいルックアンドフィール
 
-Workfront Fusion のルックアンドフィールをアップデートし、他のアドビ製品のルックアンドフィールにより近くなるように反映しました。このクリーンな外観の変更により、様々なアドビ製品で作業する際に、より一貫性のあるエクスペリエンスを提供します。
+Workfront Fusion のルックアンドフィールをアップデートし、他のアドビ製品のルックアンドフィールにより近くなるように反映しました。 このクリーンな外観の変更により、様々なアドビ製品で作業する際に、より一貫性のあるエクスペリエンスを提供します。
 
 また、このアップグレードによってパフォーマンスが向上し、より迅速なナビゲーションを実現しました。
 
-新しいルックアンドフィールは、Adobe Workfront Fusion の機能に対する影響はありません。すべてのボタン、タブおよびその他のツールは同じ場所にあるので、既存の動作やワークフローを変更する必要はありません。
+新しいルックアンドフィールは、Adobe Workfront Fusion の機能に対する影響はありません。 すべてのボタン、タブおよびその他のツールは同じ場所にあるので、既存の動作やワークフローを変更する必要はありません。

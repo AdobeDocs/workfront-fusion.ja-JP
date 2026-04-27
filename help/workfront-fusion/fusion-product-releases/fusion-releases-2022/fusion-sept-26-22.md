@@ -8,10 +8,11 @@ description: このページでは、2022年9月19日（PT）の週に Adobe Wor
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: 779bac51-1fae-43ba-b2cf-32524e935b8c
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '123'
 ht-degree: 100%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 100%
 
 ## GitLab コネクタとモジュールが利用可能になりました
 
-Adobe Workfront Fusion を使用して GitLab アカウントに接続できるようになりました。GitLab モジュールを使用することで、次のような様々なアクションを実行できます。
+Adobe Workfront Fusion を使用して GitLab アカウントに接続できるようになりました。 GitLab モジュールを使用することで、次のような様々なアクションを実行できます。
 
 * GitLab オブジェクトにコミット、イシュー、結合リクエスト、プロジェクト、パイプライン、リポジトリなどの変更がある場合のシナリオのトリガー
 * コミット、ラベル、パイプライン、リリース、結合リクエスト、メモなどの GitLab オブジェクトを作成する

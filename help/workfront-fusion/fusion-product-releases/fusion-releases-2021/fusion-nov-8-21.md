@@ -5,10 +5,11 @@ author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: 98ee4e13-0862-4781-8d01-4ca8a169422c
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '151'
 ht-degree: 100%
 
 ---
@@ -23,7 +24,7 @@ Workfront Fusion での最近のバグ修正のリストについては、[Workf
 
 ## Workfront Connector で「レコードを変換」モジュールを使用できるようになりました
 
-「その他のアクション」モジュールで使用できる最も一般的なアクションの 1 つに対してモジュールを作成しました。これで、「レコードを変換」モジュールを使用して、次の変換を行うことができます。
+「その他のアクション」モジュールで使用できる最も一般的なアクションの 1 つに対してモジュールを作成しました。 これで、「レコードを変換」モジュールを使用して、次の変換を行うことができます。
 
 * イシューをタスクに変換
 * イシューをプロジェクトに変換

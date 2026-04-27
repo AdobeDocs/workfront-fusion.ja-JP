@@ -8,10 +8,11 @@ description: このページでは、2020年8月17日（PT）の週に Adobe Wor
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: f142193b-d0c2-479f-a23b-f9d263b10433
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '303'
 ht-degree: 95%
 
 ---
@@ -28,8 +29,8 @@ Workfront Fusion での最近のバグ修正のリストについては、[Workf
 
 convertToProject アクションまたは convertToTask アクションを選択する場合、次の新機能は、この共通プロセスの設定と管理を支援します。
 
-* 新しいオブジェクトに入力またはマッピングできる、プロジェクト（またはタスク）の標準フィールドの新しいリストが追加されました。以前は、このモジュールには高度な設定が必要でした。このモジュールを以前に使用したことがある場合でも、詳細設定は「詳細設定」で引き続き使用できます。
-* 新しいパラメーター：カスタムデータをコピーします。有効にすると、元のオブジェクトに値が設定され、新しいオブジェクトに存在するカスタムフィールドは、新しいオブジェクトに自動的にコピーされます。
+* 新しいオブジェクトに入力またはマッピングできる、プロジェクト（またはタスク）の標準フィールドの新しいリストが追加されました。 以前は、このモジュールには高度な設定が必要でした。 このモジュールを以前に使用したことがある場合でも、詳細設定は「詳細設定」で引き続き使用できます。
+* 新しいパラメーター：カスタムデータをコピーします。 有効にすると、元のオブジェクトに値が設定され、新しいオブジェクトに存在するカスタムフィールドは、新しいオブジェクトに自動的にコピーされます。
 
 ## Workfront アップロードドキュメントモジュールの特定のフォルダーにドキュメントをアップロードします。
 
@@ -40,4 +41,4 @@ convertToProject アクションまたは convertToTask アクションを選択
 
 ## Hubspot CRM とモジュールが利用可能になりました
 
-Workfront Fusion を使用して Hubspot CRM アカウントに接続できるようになりました。HubSpot CRM モジュールを使用すると、Hubspot CRM アカウント内の項目を監視し、それらの項目の検索、作成、削除などのアクションを実行できます。
+Workfront Fusion を使用して Hubspot CRM アカウントに接続できるようになりました。 HubSpot CRM モジュールを使用すると、Hubspot CRM アカウント内の項目を監視し、それらの項目の検索、作成、削除などのアクションを実行できます。

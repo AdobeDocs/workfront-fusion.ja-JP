@@ -5,10 +5,11 @@ author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: c1d5645f-9bca-4f04-b2e4-526530d9ecbd
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '173'
 ht-degree: 100%
 
 ---
@@ -23,6 +24,6 @@ Workfront Fusion での最近のバグ修正のリストについては、[Workf
 
 ## Adobe Workfront Fusion for Automation ライセンスを持つユーザーが、Workfront Proof コネクタを利用できるようになりました。
 
-Workfront Proof は、多くの Workfront ワークフローの主要なコンポーネントである Workfront と非常に緊密に統合されているので、Workfront Proof コネクタを、Workfront Fusion for Work Automation ライセンスを持つ組織で利用できるようにしています。これで、ライセンスに関係なく、Fusion シナリオで Workfront Proof を使用できます。
+Workfront Proof は、多くの Workfront ワークフローの主要なコンポーネントである Workfront と非常に緊密に統合されているので、Workfront Proof コネクタを、Workfront Fusion for Work Automation ライセンスを持つ組織で利用できるようにしています。 これで、ライセンスに関係なく、Fusion シナリオで Workfront Proof を使用できます。
 
 以前は、Workfront Proof コネクタは、Workfront Fusion for Work Automation and Integration ライセンスを持つ組織でのみ使用できました。

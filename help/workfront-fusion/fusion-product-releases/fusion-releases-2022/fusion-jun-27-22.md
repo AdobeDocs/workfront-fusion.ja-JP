@@ -8,10 +8,11 @@ description: このページでは、2022年6月27日（PT）の週に Adobe Wor
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: 8d2e2662-139f-42e4-99d0-71abc95fcfcc
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '162'
 ht-degree: 100%
 
 ---
@@ -26,7 +27,7 @@ Workfront Fusion での最近のバグ修正のリストについては、[Workf
 
 ## FTP 接続とモジュールが利用可能
 
-これで、Adobe Workfront Fusion を使用して、FTP 経由でファイルを転送できるようになりました。FTP モジュールを使用すると、次のことができます。
+これで、Adobe Workfront Fusion を使用して、FTP 経由でファイルを転送できるようになりました。 FTP モジュールを使用すると、次のことができます。
 
 * ファイルが FTP サーバー上のフォルダーに挿入された場合にシナリオをトリガー
 

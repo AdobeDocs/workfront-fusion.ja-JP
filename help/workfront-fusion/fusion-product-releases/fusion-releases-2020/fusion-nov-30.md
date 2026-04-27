@@ -9,11 +9,12 @@ description: このページでは、2020年11月30日（PT）の週に Adobe Wo
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: 76cc14b3-ffec-4d49-b471-f3eb9dd89658
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 100%
+source-wordcount: '207'
+ht-degree: 89%
 
 ---
 
@@ -27,13 +28,13 @@ Workfront Fusion での最近のバグ修正のリストについては、[Workf
 
 ## Workfront Fusion 2.0 web フックのレート制限。
 
-Workfront Fusion 2.0 に新しいパフォーマンスガードレールが導入されました。現在、web フックには、1 秒あたりリクエスト 100 個のレート制限があります。この制限に達すると、Workfront Fusion 2.0 は 429（リクエストが多すぎます）ステータスを送信します。
+Workfront Fusion 2.0の新しいパフォーマンスガードレールを導入しました。 現在、webhookには1秒あたり100 リクエストのレート制限があります。 この制限に達すると、Workfront Fusion 2.0 は 429（リクエストが多すぎます）ステータスを送信します。
 
 以前は、web フックのリクエストに制限はありませんでした。
 
 
 ## Workfront Fusion 2.0 で Workfront オブジェクトにカスタムフォームを追加
 
-Workfront Fusion 2.0 でオブジェクトにカスタムフォームを追加できるよう、Workfront／その他のアクションモジュールに AssignCategories アクションを追加しました。
+Workfront Fusion 2.0 でオブジェクトにカスタムフォームを追加できるよう、Workfront／その他のアクションモジュールに AssignCategories アクションを追加しました 。
 
 以前は、Workfront Fusion 2.0 モジュールを使用して Workfront でオブジェクトにカスタムフォームを追加することはできませんでした。

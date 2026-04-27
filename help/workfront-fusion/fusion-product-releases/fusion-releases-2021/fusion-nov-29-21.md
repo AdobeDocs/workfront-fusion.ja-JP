@@ -1,19 +1,20 @@
 ---
-title: Workfront Fusion リリースアクティビティ：2021年11月29日（PT）の週
-description: Workfront Fusion リリースアクティビティ：2021年11月29日（PT）の週
+title: Workfront Fusion リリースアクティビティ： 2021年11月29日の週
+description: Workfront Fusion リリースアクティビティ： 2021年11月29日の週
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: 87ad4b2a-b052-4e5d-a540-6c53eba61c66
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '248'
 ht-degree: 100%
 
 ---
 
-# Workfront Fusion リリースアクティビティ：2021年11月29日（PT）の週
+# Workfront Fusion リリースアクティビティ： 2021年11月29日の週
 
 このページでは、2021年11月29日（PT）の週に Adobe Workfront Fusion で行われたすべての機能強化について説明します。
 
@@ -23,7 +24,7 @@ Workfront Fusion での最近のバグ修正のリストについては、[Workf
 
 ## Adobe PDF Services が Workfront Fusion で利用可能に
 
-Adobe Workfront Fusion を使用して PDF を作成および変更できるようになりました。Workfront Fusion は Adobe 製品スイートの一部なので、これらのモジュールを使用するために個別の Adobe アカウントは必要ありません。
+Adobe Workfront Fusion を使用して PDF を作成および変更できるようになりました。 Workfront Fusion は Adobe 製品スイートの一部なので、これらのモジュールを使用するために個別の Adobe アカウントは必要ありません。
 
 Adobe PDF ツールモジュールを使用すると、次の操作を実行できます。
 

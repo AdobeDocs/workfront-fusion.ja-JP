@@ -8,10 +8,11 @@ description: このページでは、2022年5月16日（PT）の週に Adobe Wor
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: f81fdabc-a51a-4a29-b624-1241eba58b38
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '172'
 ht-degree: 100%
 
 ---
@@ -27,5 +28,5 @@ Workfront Fusion での最近のバグ修正のリストについては、[Workf
 
 ## Workfront Fusion の Anaplan コネクタで「アクションを実行」モジュールを使用できるようになりました。
 
-Workfront Anaplan コネクタを簡単にするために、「アクションを実行」モジュールを作成しました。このモジュールには、データの読み込みモジュールと書き出しモジュールの機能が含まれています。このモジュールを使用すると、Anaplan アクションを削除したり、Anaplan プロセスを実行したりすることもできます。
+Workfront Anaplan コネクタを簡単にするために、「アクションを実行」モジュールを作成しました。 このモジュールには、データの読み込みモジュールと書き出しモジュールの機能が含まれています。 このモジュールを使用すると、Anaplan アクションを削除したり、Anaplan プロセスを実行したりすることもできます。
 以前は、データの読み込みと書き出しは別々のモジュールで制御されており、アクションの削除とプロセスの実行は使用できませんでした。

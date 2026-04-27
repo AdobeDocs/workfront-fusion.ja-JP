@@ -5,10 +5,11 @@ author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: 1ed04f6e-0ab2-46f0-97de-f189be3ae23e
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '151'
 ht-degree: 100%
 
 ---
@@ -23,6 +24,6 @@ Workfront Fusion での最近のバグ修正のリストについては、[Workf
 
 ## Azure DevOps／カスタム API 呼び出しモジュールで API バージョンを選択します
 
-Workfront Fusion の Azure DevOps コネクタで API 呼び出しをより詳細に制御できるように、カスタム API 呼び出しモジュールで Azure DevOps API バージョンを選択する機能が追加されました。Workfront Fusion は、Azure DevOps API バージョン 4.1～7.1 をサポートしています。
+Workfront Fusion の Azure DevOps コネクタで API 呼び出しをより詳細に制御できるように、カスタム API 呼び出しモジュールで Azure DevOps API バージョンを選択する機能が追加されました。 Workfront Fusion は、Azure DevOps API バージョン 4.1～7.1 をサポートしています。
 
 以前は、API バージョンを選択できませんでした。

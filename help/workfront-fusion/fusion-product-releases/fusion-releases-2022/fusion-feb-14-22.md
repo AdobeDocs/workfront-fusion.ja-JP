@@ -5,10 +5,11 @@ author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: f0b07131-6851-458e-ac06-07a4ba391257
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '157'
 ht-degree: 100%
 
 ---
@@ -25,5 +26,5 @@ Workfront Fusion での最近のバグ修正のリストについては、[Workf
 
 Anaplan コネクタの機能を拡張するために、次のアップデートを行いました。
 
-* 専用モジュールを使用して、Anaplan にファイルをアップロードします。これで、Anaplan でファイルを取得し、追加のワークスペースとモデルにアップロードできるようになりました。
-* レコードを取得モジュールを使用して Anaplan ビューを取得します。これで、Anaplan モジュールまたはモデルのすべてのビューをリストできるようになりました。
+* 専用モジュールを使用して、Anaplan にファイルをアップロードします。 これで、Anaplan でファイルを取得し、追加のワークスペースとモデルにアップロードできるようになりました。
+* レコードを取得モジュールを使用して Anaplan ビューを取得します。 これで、Anaplan モジュールまたはモデルのすべてのビューをリストできるようになりました。

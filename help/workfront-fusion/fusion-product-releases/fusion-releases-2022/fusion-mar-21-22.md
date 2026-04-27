@@ -5,10 +5,11 @@ author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: a9ab2bbd-742f-407d-906e-75fc3d6c967e
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '154'
 ht-degree: 100%
 
 ---
@@ -23,6 +24,6 @@ Workfront Fusion での最近のバグ修正のリストについては、[Workf
 
 ## Workfront Fusion Frame.io コネクタで OAuth2 PKCE を使用して接続する
 
-Frame.io モジュールで接続を作成する際に、セキュアで業界標準の認証方法である OAuth2 PKCE を使用して接続を作成するオプションを選択できるようになりました。既存の API トークンの接続タイプも、Frame.io コネクタで引き続き使用できます。
+Frame.io モジュールで接続を作成する際に、セキュアで業界標準の認証方法である OAuth2 PKCE を使用して接続を作成するオプションを選択できるようになりました。 既存の API トークンの接続タイプも、Frame.io コネクタで引き続き使用できます。
 
 以前は、Frame.io コネクタで使用できるのは API トークンの接続メソッドのみでした。

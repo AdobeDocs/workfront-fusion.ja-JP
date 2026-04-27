@@ -5,10 +5,11 @@ author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: 90659af3-622c-4685-ae09-f117ea81db7d
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '235'
 ht-degree: 100%
 
 ---
@@ -28,13 +29,13 @@ Workfront Fusion での最近のバグ修正のリストについては、[Workf
 
 * 新しい日付と時間関数：dateDifference
 
-  シナリオで時間の範囲を簡単に計算できるように、新しい「dateDifference」日付および時間関数を追加しました。この関数は 2 つの日付または時刻と時間単位を受け取り、選択された時間単位で表された日付または時刻の間の時間を返します。
+  シナリオで時間の範囲を簡単に計算できるように、新しい「dateDifference」日付および時間関数を追加しました。 この関数は 2 つの日付または時刻と時間単位を受け取り、選択された時間単位で表された日付または時刻の間の時間を返します。
 
   以前は、日付と時間の差は、ユーザーが入力した数式でのみ計算できました。
 
 * 新しい配列関数：arrayDifference
 
-  この関数は、2 つの配列を受け取り、新しい配列を返します。モジュールが返す新しい配列のタイプを選択できます。
+  この関数は、2 つの配列を受け取り、新しい配列を返します。 モジュールが返す新しい配列のタイプを選択できます。
 
    * 一方の配列の要素のうち、もう一方の配列には含まれていない要素の配列
    * どちらかの配列に含まれるが、両方には含まれない要素の配列。

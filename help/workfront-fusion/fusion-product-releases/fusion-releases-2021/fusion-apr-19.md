@@ -8,10 +8,11 @@ description: このページでは、2021年4月19日（PT）の週に Adobe Wor
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: eb793c35-8709-48ab-8968-c9d553ba5ca0
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '205'
 ht-degree: 100%
 
 ---
@@ -26,7 +27,7 @@ Workfront Fusion での最近のバグ修正のリストについては、[Workf
 
 ## Workfront Fusion Slack コネクタのアップデート
 
-Workfront Fusion の Slack コネクタにさらにモジュールを追加しました。専用モジュールを使用して、以下を実行できるようになりました。
+Workfront Fusion の Slack コネクタにさらにモジュールを追加しました。 専用モジュールを使用して、以下を実行できるようになりました。
 
 * マルチパーティダイレクトメッセージを受け取る場合、チャネルにファイルが追加された場合、またはユーザーがワークスペースに追加された場合の、シナリオのトリガー。
 * メッセージの検索
