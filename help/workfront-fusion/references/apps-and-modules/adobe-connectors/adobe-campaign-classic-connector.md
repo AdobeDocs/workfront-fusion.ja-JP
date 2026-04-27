@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Campaign]  モジュールを使用すると、 [!DNL
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: bbd1ec27e52127c8814188612a1e8d5cfab0cd25
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 82%
+source-wordcount: '1450'
+ht-degree: 83%
 
 ---
 
@@ -79,7 +79,7 @@ Adobe Campaign コネクタでは、次の機能が使用されます。
 
 >[!IMPORTANT]
 >
->サーバー間接続を作成することを強くお勧めします。Adobe Campaign は、サーバー間接続のみを受け入れるように API をアップデートしました。Campaign バージョン 8 以降に接続する場合、サーバー間接続を作成する&#x200B;**必要**&#x200B;があります。
+>サーバー間接続を作成することを強くお勧めします。 Adobe Campaign は、サーバー間接続のみを受け入れるように API をアップデートしました。 Campaign バージョン 8 以降に接続する場合、サーバー間接続を作成する&#x200B;**必要**&#x200B;があります。
 >
 >Campaign の新しい接続要件について詳しくは、Campaign ドキュメント内の [Campaign テクニカルオペレーターの Adobe Developer Console への移行](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html?lang=ja)を参照してください。
 
@@ -117,11 +117,11 @@ Adobe Campaign コネクタでは、次の機能が使用されます。
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]</td>
-          <td>サーバー間接続を作成する場合は、[!DNL Adobe] [!UICONTROL Client ID] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。</td>
+          <td>サーバー間接続を作成する場合は、[!DNL Adobe] [!UICONTROL Client ID] を入力します。 これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret]</td>
-          <td>サーバー間接続を作成する場合は、[!DNL Adobe] [!UICONTROL Client Secret] を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。
+          <td>サーバー間接続を作成する場合は、[!DNL Adobe] [!UICONTROL Client Secret] を入力します。 これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。
         </tr>
      </tbody>
     </table>
@@ -129,9 +129,9 @@ Adobe Campaign コネクタでは、次の機能が使用されます。
 
 ## [!DNL Adobe Campaign] モジュールとそのフィールド
 
-[!DNL Adobe Campaign] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Adobe Campaign]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL Adobe Campaign] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。 これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Adobe Campaign]」フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。 詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
 ![マップ切り替え](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -203,11 +203,11 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>作成する[!DNL Adobe Campaign] レコードのタイプを選択するか、「カスタムリソース&#x200B;**を選択して**&#x200B;リソースの詳細を入力します。</td> 
+   <td>作成する[!DNL Adobe Campaign] レコードのタイプを選択するか、「カスタムリソース**を選択して**リソースの詳細を入力します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Fields] </td> 
-   <td>値を設定するフィールドをレコードの作成時に選択して、それらのフィールドの値を入力します。フィールドは、選択したレコードタイプによって異なります。</td> 
+   <td>値を設定するフィールドをレコードの作成時に選択して、それらのフィールドの値を入力します。 フィールドは、選択したレコードタイプによって異なります。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Custom fields]</td> 
@@ -230,7 +230,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>削除するリソースのタイプを選択するか、「カスタムリソース&#x200B;**を選択して**&#x200B;リソースの詳細を入力します。</td> 
+   <td>削除するリソースのタイプを選択するか、「カスタムリソース**を選択して**リソースの詳細を入力します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
@@ -254,11 +254,13 @@ This scheduled trigger module starts a scenario when a record changes.
     <tr>
       <td role="rowheader">[!UICONTROL Action]</td>
       <td><p>API 呼び出しで実行するアクションを選択します。</p>
-      <p>[!UICONTROL Execute query]</p>
-      <p>[!UICONTROL Write]</p>
-      <p>[!UICONTROL Get entity if more recent]</p>
-      <p>[!UICONTROL Select all]</p>
-      <p>[!UICONTROL Push event]</p>
+      <ul>
+      <li><p>[!UICONTROL Execute query]</p></li>
+      <li><p>[!UICONTROL Write]</p></li>
+      <li><p>[!UICONTROL Get entity if more recent]</p></li>
+      <li><p>[!UICONTROL Select all]</p></li>
+      <li><p>[!UICONTROL Push event]</p></li>
+      </ul>
     </td>
     </tr>
     <tr>
@@ -280,7 +282,7 @@ This scheduled trigger module starts a scenario when a record changes.
 
 このアクションモジュールは、[!DNL Adobe Campaign] API で、選択されたアクションをオブジェクトに対して実行します。
 
-特定のアクションとフィールドについては、[[!DNL Adobe Campaign]  API ドキュメント](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=ja)を参照してください。
+特定のアクションとフィールドについては、[[!DNL Adobe Campaign]  API ドキュメント](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html)を参照してください。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -292,7 +294,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>アクションを実行するリソースのタイプを選択するか、**カスタムリソース**&#x200B;を選択して、リソースの詳細を入力します。</td> 
+   <td>アクションを実行するリソースのタイプを選択するか、**カスタムリソース**を選択して、リソースの詳細を入力します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Action]</td> 
@@ -323,7 +325,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>読み取る[!DNL Adobe Campaign] レコードのタイプを選択するか、「カスタムリソース&#x200B;**を選択して**&#x200B;リソースの詳細を入力します。</td> 
+   <td>読み取る[!DNL Adobe Campaign] レコードのタイプを選択するか、「カスタムリソース**を選択して**リソースの詳細を入力します。</td> 
   </tr> 
     <tr> 
    <td role="rowheader">[!UICONTROL ID] </td> 
@@ -382,7 +384,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>更新する[!DNL Adobe Campaign] レコードのタイプを選択するか、「カスタムリソース&#x200B;**を選択して**&#x200B;リソースの詳細を入力します。</td> 
+   <td>更新する[!DNL Adobe Campaign] レコードのタイプを選択するか、「カスタムリソース**を選択して**リソースの詳細を入力します。</td> 
   </tr> 
     <tr> 
    <td role="rowheader">[!UICONTROL ID] </td> 
@@ -390,7 +392,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
 <tr> 
    <td role="rowheader">[!UICONTROL Fields] </td> 
-   <td>値を更新するフィールドを選択して、それらのフィールドの値を入力します。フィールドは、選択したレコードタイプによって異なります。</td> 
+   <td>値を更新するフィールドを選択して、それらのフィールドの値を入力します。 フィールドは、選択したレコードタイプによって異なります。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Custom fields]</td> 
@@ -415,7 +417,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>返す[!DNL Adobe Campaign] レコードのタイプを選択するか、「カスタムリソース&#x200B;**を選択して**&#x200B;リソースの詳細を入力します。</td> 
+   <td>返す[!DNL Adobe Campaign] レコードのタイプを選択するか、「カスタムリソース**を選択して**リソースの詳細を入力します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search criteria]</td> 
