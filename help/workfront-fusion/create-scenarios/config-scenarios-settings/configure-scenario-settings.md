@@ -52,10 +52,10 @@ ht-degree: 47%
 1. シナリオの任意の場所をクリックして、シナリオエディターに入ります。
 1. ページの左下隅付近にある歯車アイコンをクリックします。
 
-   ![ シナリオ設定](assets/scenario-settings-350x221.png)
+   ![&#x200B; シナリオ設定](assets/scenario-settings-350x221.png)
 
    表示される[!UICONTROL シナリオ設定]パネルで、シナリオの様々な詳細設定ができます。
-1. 必要に応じて、シナリオ設定を有効または無効にします。 以下の[ シナリオ設定オプション ](#scenario-settings-options)を参照してください。
+1. 必要に応じて、シナリオ設定を有効または無効にします。 以下の[&#x200B; シナリオ設定オプション &#x200B;](#scenario-settings-options)を参照してください。
 
 ## シナリオ設定オプション
 
@@ -88,7 +88,7 @@ ht-degree: 47%
   >
   >シナリオのユースケースで順番に処理することが必要ない場合は、順番処理のオプションを無効にすることをお勧めします。
 
-  スケジュール設定について詳しくは、[ シナリオのスケジュール ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)を参照してください。
+  スケジュール設定について詳しくは、[&#x200B; シナリオのスケジュール &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)を参照してください。
 
 ### データは機密情報
 
@@ -108,13 +108,13 @@ ht-degree: 47%
 
 このオプションは、Workfront Fusionが不完全な実行のキューにバンドルを保存できない場合（空き容量が不足しているなど）に、データ損失を有効にする場合に関係します。 このオプションを有効にすると、シナリオの実行全体で中断が発生しないように、データが失われます。 これは、最も優先度が高いものが継続して実行され、入力時の誤りのあるデータがそれほど重要でないシナリオで役立ちます。
 
-その他、シナリオを実行する際に、モジュールで許容される最大サイズを超えるファイルが見つかることがあります。 この場合、Workfront Fusionは、[!UICONTROL  データ損失を有効にする] オプションの設定に従って進行し、警告メッセージが表示されます。
+その他、シナリオを実行する際に、モジュールで許容される最大サイズを超えるファイルが見つかることがあります。 この場合、Workfront Fusionは、[!UICONTROL &#x200B; データ損失を有効にする] オプションの設定に従って進行し、警告メッセージが表示されます。
 
 不完全な実行について詳しくは、[不完全な実行の表示と解決](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)を参照してください。
 
-最大ファイルサイズについて詳しくは、[Fusionのパフォーマンスガードレール ](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md#files)を参照してください。
+最大ファイルサイズについて詳しくは、[Fusionのパフォーマンスガードレール &#x200B;](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md#files)を参照してください。
 
-警告について詳しくは、[ エラーの種類](/help/workfront-fusion/references/errors/error-processing.md)を参照してください。
+警告について詳しくは、[&#x200B; エラーの種類](/help/workfront-fusion/references/errors/error-processing.md)を参照してください。
 
 ### [!UICONTROL 自動コミット]
 
@@ -131,19 +131,19 @@ ht-degree: 47%
 
 * ポーリングトリガーで始まるシナリオの場合、この設定で、シナリオの実行中に許可されるサイクルの最大数を定義します。
 
-  ポーリングトリガーについて詳しくは、「モジュールの概要」の「[ ポーリングトリガー](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#polling-triggers)」を参照してください。
+  ポーリングトリガーについて詳しくは、「モジュールの概要」の「[&#x200B; ポーリングトリガー](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#polling-triggers)」を参照してください。
 
 * シナリオがインスタントトリガーで開始する場合、設定は無視され、1 回のシナリオの実行中にすべての保留中のイベントが処理されます（1 サイクルにつき 1 つのイベント）。
 
-  インスタントトリガーについて詳しくは、「モジュールの概要」の「[ インスタントトリガー](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers)」を参照してください。
+  インスタントトリガーについて詳しくは、「モジュールの概要」の「[&#x200B; インスタントトリガー](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers)」を参照してください。
 
 * シナリオが（インスタントまたはポーリング）トリガーで始まらない場合は、指定された最大サイクル数が常に実行されます。
 
 >[!BEGINSHADEBOX]
 
-**例：** Workfront > [!UICONTROL  レコード ]が新しい問題を監視し、Workfront >[!UICONTROL Convert object]が新しいリクエストをプロジェクトに変換し、適切なテンプレートを割り当てます。
+**例：** Workfront > [!UICONTROL &#x200B; レコード &#x200B;]が新しい問題を監視し、Workfront >[!UICONTROL Convert object]が新しいリクエストをプロジェクトに変換し、適切なテンプレートを割り当てます。
 
-![ シナリオ設定](assets/scenario-settings-ex-1-350x157.png)
+![&#x200B; シナリオ設定](assets/scenario-settings-ex-1-350x157.png)
 
 [!UICONTROL より多くのサイクル]設定は、シナリオの実行をスケジュールする場合にのみ適用されます。 「[!UICONTROL 1 回実行]」ボタンを使用する場合、サイクル設定を考慮します。
 
@@ -164,9 +164,9 @@ Workfront/監視レコードモジュールの最大サイクル数は`10`に設
 
 シナリオの詳細には、既に実行されたサイクルが表示されます。
 
-![ シナリオの詳細](assets/scenario-detail-350x207.png)
+![&#x200B; シナリオの詳細](assets/scenario-detail-350x207.png)
 
-このページについて詳しくは、[ シナリオの詳細](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md)を参照してください。
+このページについて詳しくは、[&#x200B; シナリオの詳細](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md)を参照してください。
 
 >[!ENDSHADEBOX]
 
@@ -174,7 +174,7 @@ Workfront/監視レコードモジュールの最大サイクル数は`10`に設
 
 シナリオの実行が非アクティブ化されるまでの連続した実行試行の最大数を定義します（`DataError`、`DuplicateDataError`、`ModuleTimeoutError`、および`ConnectionError`を除く）。
 
-エラーについて詳しくは、[ エラーの種類](/help/workfront-fusion/references/errors/error-processing.md)を参照してください。
+エラーについて詳しくは、[&#x200B; エラーの種類](/help/workfront-fusion/references/errors/error-processing.md)を参照してください。
 
 >[!NOTE]
 >
