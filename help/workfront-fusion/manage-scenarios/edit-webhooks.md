@@ -46,7 +46,7 @@ Webhookは、次のコネクタに対してのみ編集できます。
 
 ### Webhook リストからのWebhookの編集
 
-1. 左側のナビゲーションで、**Webhook** ![Webhook アイコン ](assets/webhooks-icon.png)を選択します。
+1. 左側のナビゲーションで、**Webhook** ![Webhook アイコン &#x200B;](assets/webhooks-icon.png)を選択します。
 1. 編集するWebhookの横にあるチェックボックスをクリックします。
 1. 画面下部の青いバナーで、**編集**&#x200B;をクリックします。
 1. Webhookに必要な編集を加えます。
