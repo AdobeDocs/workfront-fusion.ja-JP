@@ -3,10 +3,11 @@ title: チェーンされたシナリオ関係の表示
 description: 親シナリオと子シナリオ間の関係のマップを作成できます。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: e7b12ec51474440990cc28996bc70fd97688b082
+exl-id: 0782c6b1-42a5-48de-bfa0-3ced6ed2bf7f
+source-git-commit: aee2b35919e240cce5346df6d94a610c34b26e88
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 22%
+source-wordcount: '485'
+ht-degree: 21%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 22%
 
 連鎖シナリオについて詳しくは、[複数のシナリオを連鎖](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)を参照してください。
 
-連鎖シナリオの設定について詳しくは、[&#x200B; チェーンモジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)を参照してください
+連鎖シナリオの設定について詳しくは、[ チェーンモジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)を参照してください
 
 ## アクセス要件
 
@@ -65,7 +66,7 @@ ht-degree: 22%
 
 1. 「**関係**」タブをクリックします。
 
-   ![関係タブ &#x200B;](assets/relations-tab.png)
+   ![関係タブ ](assets/relations-tab.png)
 
 1. 各チェーン付きシナリオの一般的な詳細については、タグを確認してください。
 
@@ -76,7 +77,7 @@ ht-degree: 22%
    * 子：シナリオは子シナリオです。 シナリオは、親と子の両方にすることができます。
    * 現在：これは、ユーザーが現在表示しているシナリオです。 つまり、ユーザーが関係マップを開いた際のシナリオです。
 
-   関係マップの![&#x200B; シナリオタグ &#x200B;](assets/chained-scenario-maps-tag.png)
+   関係マップの![ シナリオタグ ](assets/chained-scenario-maps-tag.png)
 1. （オプション）シナリオの小さな図を表示するには、シナリオにカーソルを合わせます。
 1. （オプション）マップから別のシナリオに直接移動するには、シナリオをクリックします。
 
@@ -88,5 +89,6 @@ ht-degree: 22%
 
    * マップの一部のみを表示する場合、その部分は簡略化されたマップ上で暗くなります。
    * 簡略化されたマップでは、現在のシナリオが青で示されます。
+1. チェーンの実行履歴を表示するには、ビューの上部にある「履歴」タブをクリックします。
 
-
+   履歴をクリックすると、チェーンされたシナリオ間で渡された特定のデータを表示できます。
