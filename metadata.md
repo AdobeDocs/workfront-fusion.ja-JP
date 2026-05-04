@@ -1,13 +1,12 @@
 ---
 cloud: Experience Cloud
 solution: Workfront
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 feature-set: Workfront
 product: experience cloud
 type: Documentation
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/workfront-fusion.ja-JP
+git-repo: https://github.com/AdobeDocs/workfront-fusion.en
 index: true
 source-git-commit: 74d6389e51fdc00ea34187baa502798eba651a55
 workflow-type: tm+mt
