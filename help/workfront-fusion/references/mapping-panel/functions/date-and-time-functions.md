@@ -97,7 +97,7 @@ YYYY-MM-DD-hh:mm:ss形式で現在の時間を取得します。
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addWeekDays （date; number） ]
+### [!UICONTROL addWeekDays （date; number） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -152,7 +152,7 @@ YYYY-MM-DD-hh:mm:ss形式で現在の時間を取得します。
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL dayOfMonth （date） ]
+### [!UICONTROL dayOfMonth （date） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -172,7 +172,7 @@ YYYY-MM-DD-hh:mm:ss形式で現在の時間を取得します。
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL dayOfWeek （date） ]
+### [!UICONTROL dayOfWeek （date） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -192,7 +192,7 @@ YYYY-MM-DD-hh:mm:ss形式で現在の時間を取得します。
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL daysInMonth （date） ]
+### [!UICONTROL daysInMonth （date） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -212,7 +212,7 @@ YYYY-MM-DD-hh:mm:ss形式で現在の時間を取得します。
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL daysInSplitWeek （date） ]
+### [!UICONTROL daysInSplitWeek （date） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -232,7 +232,7 @@ YYYY-MM-DD-hh:mm:ss形式で現在の時間を取得します。
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL daysInYear （date） ]
+### [!UICONTROL daysInYear （date） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -252,7 +252,7 @@ YYYY-MM-DD-hh:mm:ss形式で現在の時間を取得します。
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL dateMax （date1; date2; ...） ]
+### [!UICONTROL dateMax （date1; date2; ...） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -273,7 +273,7 @@ YYYY-MM-DD-hh:mm:ss形式で現在の時間を取得します。
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL dateMin （date1; date2; ...） ]
+### [!UICONTROL dateMin （date1; date2; ...） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -294,7 +294,7 @@ YYYY-MM-DD-hh:mm:ss形式で現在の時間を取得します。
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL 時間（日付） ]
+### [!UICONTROL 時間（日付） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -314,7 +314,7 @@ YYYY-MM-DD-hh:mm:ss形式で現在の時間を取得します。
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL 分（日付） ]
+### [!UICONTROL 分（日付） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -334,7 +334,7 @@ YYYY-MM-DD-hh:mm:ss形式で現在の時間を取得します。
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL 月（日付） ]
+### [!UICONTROL 月（日付） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -354,7 +354,7 @@ YYYY-MM-DD-hh:mm:ss形式で現在の時間を取得します。
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL 秒（日付） ]
+### [!UICONTROL 秒（日付） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -374,7 +374,7 @@ YYYY-MM-DD-hh:mm:ss形式で現在の時間を取得します。
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL weekDayDiff （date2; date1） ]
+### [!UICONTROL weekDayDiff （date2; date1） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -394,7 +394,7 @@ YYYY-MM-DD-hh:mm:ss形式で現在の時間を取得します。
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL workMinutesDiff （date1; date2） ]
+### [!UICONTROL workMinutesDiff （date1; date2） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -414,7 +414,7 @@ YYYY-MM-DD-hh:mm:ss形式で現在の時間を取得します。
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL 年（日付） ]
+### [!UICONTROL 年（日付） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -589,7 +589,7 @@ YYYY-MM-DD-hh:mm:ss形式で現在の時間を取得します。
 
 これは、例えば同じシナリオで 1 つのアプリまたは web サービスの日付形式を、接続されているアプリまたは web サービスの日付形式に変更する必要がある場合に便利です。
 
-詳細については、記事[項目データタイプ ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)の日付とテキストを参照してください。
+詳細については、記事[項目データタイプ &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)の日付とテキストを参照してください。
 
 #### パラメーター
 
@@ -655,7 +655,7 @@ YYYY-MM-DD-hh:mm:ss形式で現在の時間を取得します。
 
 ### [!UICONTROL parseDate（テキスト、フォーマット、[タイムゾーン]）]
 
-日付を表すテキスト値（`12-10-2019 20:30` または `Aug 18, 2019 10:00 AM`）の場合、この関数を使用して、日付値（バイナリマシンが読み取り可能な表現）に変換（解析）する必要があります。 詳細については、記事[項目データタイプ ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)の日付とテキストを参照してください。
+日付を表すテキスト値（`12-10-2019 20:30` または `Aug 18, 2019 10:00 AM`）の場合、この関数を使用して、日付値（バイナリマシンが読み取り可能な表現）に変換（解析）する必要があります。 詳細については、記事[項目データタイプ &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)の日付とテキストを参照してください。
 
 #### パラメーター
 

@@ -113,7 +113,7 @@ ht-degree: 62%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL abs （number） ]
+### [!UICONTROL abs （number） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -131,7 +131,7 @@ ht-degree: 62%
   3.14を返します
 
 
-### [!UICONTROL div （number1; number2; ...） ]
+### [!UICONTROL div （number1; number2; ...） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -149,7 +149,7 @@ ht-degree: 62%
   返品5
 
 
-### [!UICONTROL ln （number） ]
+### [!UICONTROL ln （number） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -168,7 +168,7 @@ ht-degree: 62%
   戻り値 1
 
 
-### [!UICONTROL log （number1; number2） ]
+### [!UICONTROL log （number1; number2） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -186,7 +186,7 @@ ht-degree: 62%
   戻り値 3
 
 
-### [!UICONTROL number （string） ]
+### [!UICONTROL number （string） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -204,7 +204,7 @@ ht-degree: 62%
   42を返します
 
 
-### [!UICONTROL power （number; power） ]
+### [!UICONTROL power （number; power） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -222,7 +222,7 @@ ht-degree: 62%
   戻り値 2
 
 
-### [!UICONTROL prod （number1; number2; ...） ]
+### [!UICONTROL prod （number1; number2; ...） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -240,7 +240,7 @@ ht-degree: 62%
   25を返します
 
 
-### [!UICONTROL sortAscNum （number1; number2; ...） ]
+### [!UICONTROL sortAscNum （number1; number2; ...） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -258,7 +258,7 @@ ht-degree: 62%
   \[3, 4, 5]を返します
 
 
-### [!UICONTROL sortDescNum （number1; number2; ...） ]
+### [!UICONTROL sortDescNum （number1; number2; ...） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -276,7 +276,7 @@ ht-degree: 62%
   \[5, 4, 3]を返します
 
 
-### [!UICONTROL sqrt （number） ]
+### [!UICONTROL sqrt （number） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -294,7 +294,7 @@ ht-degree: 62%
   戻り値 2
 
 
-### [!UICONTROL sub （number1; number2; ...） ]
+### [!UICONTROL sub （number1; number2; ...） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 

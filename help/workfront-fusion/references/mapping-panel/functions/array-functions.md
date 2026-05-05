@@ -63,7 +63,7 @@ ht-degree: 79%
 
 >[!ENDSHADEBOX]
 
-詳しくは、[配列または配列要素のマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)を参照してください。
+詳しくは、[配列または配列要素のマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)を参照してください。
 
 ## shuffle
 
@@ -235,7 +235,7 @@ yourArray = [3,4,5,6,7]
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL arrayElement （array; index） ]
+### [!UICONTROL arrayElement （array; index） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
