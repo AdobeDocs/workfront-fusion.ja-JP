@@ -17,7 +17,7 @@ ht-degree: 16%
 
 Adobe Workfront Fusionでは、Adobe Firefly Lightroomを使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
 
-シナリオの作成手順が必要な場合は、[ シナリオの作成：記事インデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
+シナリオの作成手順が必要な場合は、[&#x200B; シナリオの作成：記事インデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
 
 モジュールについて詳しくは、[モジュール：記事インデックス](/help/workfront-fusion/references/modules/modules-toc.md)の記事を参照してください。
 
