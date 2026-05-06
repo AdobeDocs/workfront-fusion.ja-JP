@@ -8,9 +8,8 @@ description: このページでは、2020年11月16日（PT）の週に Adobe Wo
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 69e4a458-fd32-4dcd-be43-19a9467cf678
-source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
+source-git-commit: a48a7f5f6577782dbc043e322a3c769781ffd63b
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 89%

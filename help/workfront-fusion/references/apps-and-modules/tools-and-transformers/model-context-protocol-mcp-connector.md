@@ -4,9 +4,8 @@ description: Model Context Protocol （MCP）モジュールを使用すると�
 author: Becky
 feature: Workfront Fusion
 hide: true
-hidefromtoc: true
 exl-id: 748055ad-d305-4513-9a5c-9c970b74a96e
-source-git-commit: 44f4fc5de94898e817172a2a83f922776086549f
+source-git-commit: a48a7f5f6577782dbc043e322a3c769781ffd63b
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 18%

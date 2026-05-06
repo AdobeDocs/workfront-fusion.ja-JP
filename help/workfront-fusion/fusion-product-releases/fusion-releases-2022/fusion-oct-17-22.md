@@ -8,9 +8,8 @@ description: このページでは、2022年10月17日（PT）の週に Adobe Wo
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 74130f09-2b18-4732-b338-c2bf53a3ed3f
-source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
+source-git-commit: a48a7f5f6577782dbc043e322a3c769781ffd63b
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 100%
