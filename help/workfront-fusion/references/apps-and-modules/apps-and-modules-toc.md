@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: 5f2f7cf0a21fd9fb8792c93833668e7fb45547e6
+source-git-commit: e6c0e85d110bef2c09bcbdf0e9a291b607afa6d1
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '502'
 ht-degree: 96%
 
 ---
@@ -47,6 +47,7 @@ Fusion には、アドビの多くの製品とサービス用コネクターが�
 * [Adobe Experience Manager Forms モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
 * [Adobe Fireflyの音声および動画モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-audio-video.md)
 * [Adobe Firefly モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
+* [Adobe Firefly Lightroom モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-lightroom.md)
 * [Adobe Frame.io Beta（V4）モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
 * [Adobe Frame.io レガシー（V3）モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
 * [Adobe I/O Events モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)

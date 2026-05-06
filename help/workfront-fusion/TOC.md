@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
-source-git-commit: 532c5003b1f2e5e333eb59824743f88ed54449ef
+source-git-commit: e6c0e85d110bef2c09bcbdf0e9a291b607afa6d1
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2407'
 ht-degree: 55%
 
 ---
@@ -360,6 +360,7 @@ ht-degree: 55%
          * [Adobe Experience Manager Forms モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
          * [Adobe Fireflyの音声および動画モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-audio-video.md)
          * [Adobe Firefly モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
+         * [Adobe Firefly Lightroom モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-lightroom.md)
          * [Adobe Frame.io Beta（V4）モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)
          * [Adobe Frame.io レガシー（V3）モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
          * [Adobe I/O Events モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
