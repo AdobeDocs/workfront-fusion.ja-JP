@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion のシナリオでは、 [!DNL Adobe Firefly
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: a766080defca64b4ce5d8ecd8b19fdfc3ff26470
+source-git-commit: 4e432e277c84f95b3792cb7c295cba41a5563244
 workflow-type: tm+mt
-source-wordcount: '2519'
-ht-degree: 22%
+source-wordcount: '3886'
+ht-degree: 16%
 
 ---
 
@@ -236,6 +236,63 @@ Adobe Firefly コネクタでは、次の機能が使用されます。
 
 このモジュールは推奨されません。近い将来リリースされる予定です。 代わりに、「画像を塗りつぶす」モジュールを使用してください。
 
+### アダプティブ合成を生成
+
+このアクションモジュールは、被写体の画像をマスクされた場所の背景画像にシームレスに合成します。 シャドウを強く適用する方法、オブジェクトの照明とカラーを背景と調和させる方法、元の背景のディテールをマスクされた領域内に保持するかどうかを制御できます。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>[!DNL Adobe Firefly] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a> への接続の作成を参照してください。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Background &gt; Image &gt; Source]</td> 
+   <td>背景画像の提供方法を選択します。 背景画像は、オブジェクトが合成される目的のシーンです。<ul><li><p><b>画像をアップロード</b></p><p>背景画像をアップロードするか、以前のモジュールから画像ファイルをマッピングします。</p></li><li><p><b>画像URL</b></p><p>背景画像のURLを入力またはマッピングします。</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Background &gt; Fill Area Mask &gt; Source]</td> 
+   <td>塗りつぶし領域マスクの提供方法を選択します。 塗りつぶし領域マスクは、オブジェクトが配置される背景の領域を示します。<ul><li><p><b>画像をアップロード</b></p><p>塗りつぶし領域マスク画像をアップロードするか、以前のモジュールから画像ファイルをマッピングします。</p></li><li><p><b>画像URL</b></p><p>塗りつぶし領域マスク画像のURLを入力またはマッピングします。</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Object &gt; Image &gt; Source]</td> 
+   <td>オブジェクト画像の提供方法を選択します。 オブジェクト画像は、背景に合成するオブジェクトのソース画像です。<ul><li><p><b>画像をアップロード</b></p><p>オブジェクト画像をアップロードするか、以前のモジュールから画像ファイルをマッピングします。</p></li><li><p><b>画像URL</b></p><p>オブジェクト画像のURLを入力またはマッピングします。</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Object &gt; Mask &gt; Source]</td> 
+   <td>オブジェクトマスクの提供方法を選択します。 オブジェクトマスクは、オブジェクトのセグメンテーションマスクです。<ul><li><p><b>画像をアップロード</b></p><p>オブジェクトマスク画像をアップロードするか、以前のモジュールから画像ファイルをマッピングします。</p></li><li><p><b>画像URL</b></p><p>オブジェクトマスク画像のURLを入力またはマッピングします。</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL バリエーション数]</td> 
+   <td>1 ～ 3の数値を入力します。 モジュールは、この数の複合バリエーションを生成します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Seeds]*</td> 
+   <td>「<b>項目を追加</b>」をクリックしてシード値を追加し、整数を入力またはマッピングします。 バリエーションごとに1つのシードを使用します。 シード値の数は、両方が指定されている場合、[!UICONTROL バリエーション数]値と一致する必要があります。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Harmonization]*</td> 
+   <td>0 ～ 1の値を入力して、オブジェクトのカラーと照明を背景に合わせて調整する量を制御します。 <code>0.0</code>は最小調和を適用し、<code>1.0</code>は最大調和を適用します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Shadow Intensity]*</td> 
+   <td>0 ～ 1の数値を入力して、合成された結果のシャドウの適用度を制御します。 値を小さくすると、シャドウが小さくなります。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 背景を保持]*</td> 
+   <td>合成の際に、マスクされた領域内に元の背景のディテールを保持するかどうかを選択します。 <ul><li><b>はい</b><p>マスクされた領域内の元の背景のディテールは、合成中に保持されます。</p></li><li><b>いいえ</b><p>マスクされた領域内の元の背景のディテールは、合成中は保持されません。</p></li><li><b>未定義</b><p>このオプションのデフォルトのビヘイビアーを使用します。</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Output &gt; Media Type]*</td> 
+   <td>生成されたコンポジットを保存するファイル形式を選択します。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+* これらのフィールドは詳細フィールドで、**[!UICONTROL 詳細設定を表示]**&#x200B;を選択しない限り表示されません。
+
 ### 画像を生成
 
 このアクションモジュールは、指定したプロンプトに基づいて画像を生成します。 オプションで参照画像を指定することもできます。生成された画像は、参照画像のスタイルに一致します。
@@ -372,6 +429,108 @@ Adobe Firefly コネクタでは、次の機能が使用されます。
  </tbody> 
 </table>
 
+### Image5で画像を生成
+
+このアクションモジュールは、[!DNL Adobe Firefly] Image5 モデルを使用して画像を生成します。 生成をガイドするテキストプロンプトと、必要に応じて参照画像を指定します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>[!DNL Adobe Firefly] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a> への接続の作成を参照してください。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL プロンプト &#x200B;]</td> 
+   <td>生成する画像の説明を入力またはマッピングします。 プロンプトは1 ～ 1500文字の範囲である必要があります。 プロンプトの詳細を指定すると、画像に表示される内容をより詳細に制御できます。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Aspect Ratio]</td> 
+   <td>生成された画像のシェイプを選択します。 参照画像が指定されている場合は、<b>自動</b>を選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 解像度]</td> 
+   <td>生成された画像の解像度を選択します。 高解像度の場合、生成に時間がかかります。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 参照画像]</td> 
+   <td>オプションで、生成をガイドする参照画像を1つ指定します。 「<b>項目を追加</b>」をクリックし、画像を入力します。 参照画像を使用する場合は、[!UICONTROL Aspect Ratio]を<b>Auto</b>に設定します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Seed]*</td> 
+   <td>「<b>項目を追加</b>」をクリックし、整数を入力またはマッピングして、特定の生成結果を再現します。 ランダムな結果を生成するには、空のままにします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL プロンプトの推論]*</td> 
+   <td>生成時に使用するプロンプト推論戦略を選択します。<ul><li><p><b>品質 – 画像の説明を生成</b></p><p>モジュールの出力に画像の説明を生成します。</p></li><li><p><b>スピード – より速い生成、説明なし</b></p><p>画像は速く生成されますが、画像の説明は空のままになります。</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Locale]*</td> 
+   <td>言語と地域コードを入力またはマッピングして、生成されたコンテンツを特定の国と言語に合わせてカスタマイズします。 <p>ロケールは、ISO 639-1言語コードおよびISO 3166-1地域で指定する必要があります。</p><p>例： <code>en-US</code></p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL バリエーション数]*</td> 
+   <td>リクエストごとに生成する画像の数を入力します。 現在、1つのみがサポートされています。 複数の画像を生成するには、個別のリクエストを送信します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Model]*</td> 
+   <td>画像の生成に使用する[!DNL Firefly] モデルを選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td>1回の実行サイクル中にモジュールが処理する結果の最大数を入力またはマッピングします。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+* これらのフィールドは高度であり、**[!UICONTROL 高度な設定を表示]**&#x200B;を選択しない限り表示されません。
+
+### 正確な合成を生成
+
+このアクションモジュールは、背景の画像のマスクされた領域に被写体を配置し、生成ハーモナイゼーションを適用して、被写体が背景に自然に溶け込むようにします。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>[!DNL Adobe Firefly] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a> への接続の作成を参照してください。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Background &gt; Image &gt; Source]</td> 
+   <td>背景画像の提供方法を選択します。 背景画像は、オブジェクトが合成される目的のシーンです。<ul><li><p><b>画像をアップロード</b></p><p>背景画像をアップロードするか、以前のモジュールから画像ファイルをマッピングします。</p></li><li><p><b>画像URL</b></p><p>背景画像のURLを入力またはマッピングします。</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Background &gt; Fill Area Mask &gt; Source]</td> 
+   <td>塗りつぶし領域マスクの提供方法を選択します。 塗りつぶし領域マスクは、オブジェクトが配置される背景の領域を示します。<ul><li><p><b>画像をアップロード</b></p><p>塗りつぶし領域マスク画像をアップロードするか、以前のモジュールから画像ファイルをマッピングします。</p></li><li><p><b>画像URL</b></p><p>塗りつぶし領域マスク画像のURLを入力またはマッピングします。</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Object &gt; Image &gt; Source]</td> 
+   <td>オブジェクト画像の提供方法を選択します。 オブジェクト画像は、背景に合成するオブジェクトのソース画像です。<ul><li><p><b>画像をアップロード</b></p><p>オブジェクト画像をアップロードするか、以前のモジュールから画像ファイルをマッピングします。</p></li><li><p><b>画像URL</b></p><p>オブジェクト画像のURLを入力またはマッピングします。</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL バリエーション数]</td> 
+   <td>1 ～ 3の数値を入力します。 モジュールは、この数の複合バリエーションを生成します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Seeds]*</td> 
+   <td>「<b>項目を追加</b>」をクリックしてシード値を追加し、整数を入力またはマッピングします。 バリエーションごとに1つのシードを使用します。 シード値の数は、両方が指定されている場合、[!UICONTROL バリエーション数]値と一致する必要があります。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Blend]*</td> 
+   <td>0 ～ 1の値を入力して、オブジェクトの調和された外観と元の外観のブレンドを制御します。 <code>0.0</code>は完全な調和を適用し、<code>1.0</code>は元のオブジェクトの外観を保持します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Output &gt; Media Type]*</td> 
+   <td>生成されたコンポジットを保存するファイル形式を選択します。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+* これらのフィールドは詳細フィールドで、**[!UICONTROL 詳細設定を表示]**&#x200B;を選択しない限り表示されません。
+
 ### 類似した画像を生成
 
 このアクションモジュールは、指定したソース画像と類似した画像を生成します。
@@ -419,6 +578,59 @@ Adobe Firefly コネクタでは、次の機能が使用されます。
  </tbody> 
 </table>
 
+
+### ビデオを生成
+
+このアクションモジュールは、テキストプロンプトからビデオを生成します。 ビデオ生成をガイドする1つ以上の参照画像を指定することもできます。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>[!DNL Adobe Firefly] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >[!DNL Adobe Firefly]</a> への接続の作成を参照してください。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL プロンプト &#x200B;]</td> 
+   <td>生成するビデオの説明を入力またはマッピングします。 プロンプトの詳細を表示すると、ビデオに表示される内容をより詳細に制御できます。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Image &gt; Conditions]</td> 
+   <td>オプションで、ビデオ生成をガイドする1つ以上の参照画像を指定します。 各参照画像の「<b>項目を追加</b>」をクリックします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL サイズ &#x200B;]</td> 
+   <td>「<b>項目を追加</b>」をクリックし、生成されたビデオのサイズを入力またはマッピングします。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Bit Rate Factor]*</td> 
+   <td>生成されたビデオのビットレート係数を指定するには、0 ～ 63の数値を入力します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Video Settings &gt; Camera Motion]*</td> 
+   <td>生成されたビデオで使用するカメラモーションを選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ビデオ設定/プロンプトスタイル &#x200B;]*</td> 
+   <td>生成されたビデオに使用するプロンプトスタイルを選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Video Settings &gt; Shot Angle]*</td> 
+   <td>生成されたビデオで使用するショット角度を選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Video Settings &gt; Shot Size]*</td> 
+   <td>生成されたビデオで使用するショットサイズを選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td>1回の実行サイクル中にモジュールが処理する結果の最大数を入力またはマッピングします。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+* これらのフィールドは詳細フィールドで、**[!UICONTROL 詳細設定を表示]**&#x200B;を選択しない限り表示されません。
 
 ### カスタム API 呼び出しの実行
 
