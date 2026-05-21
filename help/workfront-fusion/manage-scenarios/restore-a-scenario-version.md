@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
 TQID: https://experienceleague.adobe.com/xVihxZH-fwPCIkryQAQEOWgeShtPTMXth4jEl5OLdbo
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 280
@@ -48,8 +49,8 @@ ht-degree: 41%
 
 ## シナリオのバージョン履歴の表示と管理
 
-1. 左側のパネルで「**[!UICONTROL シナリオ]** ![ シナリオアイコン ](assets/scenarios-icon.png)」をクリックし、シナリオをクリックして開きます。
-1. 画面の下部にある[!UICONTROL 詳細] アイコン ![詳細アイコン ](assets/more-icon.png)をクリックし、**[!UICONTROL 以前のバージョン]**&#x200B;をクリックします。
+1. 左側のパネルで「**[!UICONTROL シナリオ]** ![&#x200B; シナリオアイコン &#x200B;](assets/scenarios-icon.png)」をクリックし、シナリオをクリックして開きます。
+1. 画面の下部にある[!UICONTROL 詳細] アイコン ![詳細アイコン &#x200B;](assets/more-icon.png)をクリックし、**[!UICONTROL 以前のバージョン]**&#x200B;をクリックします。
 
    以前のバージョンのリストが表示されます。
 1. （オプション）バージョンの名前を変更するには、そのバージョンの行にある詳細メニュー![詳細メニュー](assets/more-icon-vertical.png)をクリックし、**編集**&#x200B;を選択して、フィールドに名前を入力します。 **保存**&#x200B;をクリックして、新しい名前を保存します。

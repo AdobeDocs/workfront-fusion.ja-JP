@@ -7,7 +7,8 @@ feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: b19fcd56-39e2-4f2d-9e84-37441d61acf7
 TQID: https://experienceleague.adobe.com/09bsDDcbWpUEphaK-CCK5dnjio5BjGdz22txdAuqRwg
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 272

@@ -5,8 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: f3c1ed7b-b69b-478a-8240-1a2ab89e11e5
 TQID: https://experienceleague.adobe.com/WIVzoQxjp0cEeUgQPWN49Vp-cNreFyaBdQM8yPOvqsM
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 2368
@@ -19,7 +22,7 @@ ht-degree: 78%
 Adobe Workfront Fusion のシナリオでは、[!DNL Adobe Target] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりすることができます。 [!DNL Adobe Target] モジュールを使用すると、レコードの作成、読み取り、更新、または削除、特定のタイプのすべてのレコードのリスト、指定した条件に基づくレコードの検索、または[!DNL Adobe Target] APIへのカスタム API呼び出しの実行を行うことができます。
 
 
-シナリオの作成手順が必要な場合は、[ シナリオの作成：記事インデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
+シナリオの作成手順が必要な場合は、[&#x200B; シナリオの作成：記事インデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
 
 モジュールについて詳しくは、[モジュール：記事インデックス](/help/workfront-fusion/references/modules/modules-toc.md)の記事を参照してください。
 
@@ -234,7 +237,7 @@ Adobe Target コネクタでは、次の機能が使用されます。
           <p><a href="#offer-fields" class="MCXref xref" >オファーフィールド</a>に進みます。</p>
         </li>
         <li>
-          <b>[!UICONTROL オファーコンテンツ ]</b>
+          <b>[!UICONTROL オファーコンテンツ &#x200B;]</b>
           <p><a href="#offer-fields" class="MCXref xref" >オファーフィールド</a>に進みます。</p>
         </li>
         <li>
@@ -245,19 +248,19 @@ Adobe Target コネクタでは、次の機能が使用されます。
           <p>フィールドについて詳しくは、Adobe Target API ドキュメントの「<a href="https://developer.adobe.com/target/administer/admin-api/#tag/Audiences/operation/createAudience_1_1"> オーディエンスを作成</a>」を参照してください。</p>
         </li>
         <li>
-          <b>[!UICONTROL AB アクティビティ ]</b>
+          <b>[!UICONTROL AB アクティビティ &#x200B;]</b>
           <p>フィールドについて詳しくは、Adobe Target API ドキュメントの<a href="https://developer.adobe.com/target/administer/admin-api/#tag/Activities/operation/createActivity_4_1">AB アクティビティの作成</a>を参照してください。</p>
         </li>
         <li>
-          <b>[!UICONTROL XT アクティビティ ]</b>
+          <b>[!UICONTROL XT アクティビティ &#x200B;]</b>
           <p><a href="#xt-activity-fields" class="MCXref xref" >XT アクティビティフィールド</a>に進みます。</p>
         </li>
         <li>
-          <b>[!UICONTROL AP アクティビティ ]</b>
+          <b>[!UICONTROL AP アクティビティ &#x200B;]</b>
           <p>フィールドについて詳しくは、Adobe Target API ドキュメントの「<a href="https://developer.adobe.com/target/administer/admin-api/#tag/Activities/operation/createActivity_2">AP アクティビティを作成</a>」を参照してください。</p>
         </li>
         <li>
-          <b>[!UICONTROL応答トークン ]</b>
+          <b>[!UICONTROL 応答トークン &#x200B;]</b>
           <p>フィールドについて詳しくは、Adobe Target API ドキュメントの<a href="https://developer.adobe.com/target/administer/admin-api/#tag/Response-tokens/operation/createResponseToken">応答トークンの作成</a>を参照してください。</p>
         </li>
       </ul>

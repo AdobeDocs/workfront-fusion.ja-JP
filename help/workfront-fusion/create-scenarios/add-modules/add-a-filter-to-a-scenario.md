@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: b507dca0-0e85-4ab7-8310-b6e6bcb7ae12
 TQID: https://experienceleague.adobe.com/YMoeIdlzd7omGJoEFHUPTYl3eKayIp0LfbqkohVEXjs
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 528
@@ -17,7 +18,7 @@ ht-degree: 45%
 
 場合によっては、特定の条件を満たすバンドルのみで作業する必要があります。 フィルターを使用すると、そのようなバンドルを選択できます。
 
-例えば、Workfrontの[!UICONTROL  レコードを監視]トリガーを使用して、特定のユーザーに割り当てられたタスクのみをキャプチャするシナリオを作成できます。
+例えば、Workfrontの[!UICONTROL &#x200B; レコードを監視]トリガーを使用して、特定のユーザーに割り当てられたタスクのみをキャプチャするシナリオを作成できます。
 
 2 つのモジュール間にフィルターを追加すると、前のモジュールから受け取ったバンドルが特定のフィルター条件を満たしているかどうかを確認できます。
 
@@ -62,7 +63,7 @@ ht-degree: 45%
 1. 左側のパネルの「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. フィルターを追加するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに入ります。
-1. フィルターを追加するモジュール間のレンチアイコン ![ レンチアイコン ](assets/wrench-icon.png)をクリックし、**フィルターの設定**&#x200B;を選択します。
+1. フィルターを追加するモジュール間のレンチアイコン ![&#x200B; レンチアイコン &#x200B;](assets/wrench-icon.png)をクリックし、**フィルターの設定**&#x200B;を選択します。
 1. 表示されるボックスに、フィルターの&#x200B;**[!UICONTROL ラベル]**&#x200B;を入力します。
 1. フィルター&#x200B;**[!UICONTROL 条件]**&#x200B;を定義します。
 
@@ -71,11 +72,11 @@ ht-degree: 45%
    >[!TIP]
    >
    >マッピングパネルからフィルターフィールドに値を入力できます
-   >マッピングについて詳しくは、[あるモジュールから別のモジュールへの情報のマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
+   >マッピングについて詳しくは、[あるモジュールから別のモジュールへの情報のマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
    例えば、フィルターでXMLで終わるAdobe Workfrontのファイルを渡す場合は、最初のボックスに&#x200B;**[!UICONTROL ファイル名]**、2番目のボックスに「。**[!UICONTROL xml]**」と入力します。 それらの間のドロップダウンメニューで、「**[!UICONTROL 次で終わる（大文字と小文字を区別しない）]**」を選択します。 このフィルターは、最初のモジュール（Workfront）からの受信バンドルに適用されます。 XML ファイルを含むバンドルのみが次のモジュールに渡されます。
 
-   ![ フィルターの設定](assets/set-up-filter-box.png)
+   ![&#x200B; フィルターの設定](assets/set-up-filter-box.png)
 
 1. **[!DNL OK]** をクリックします。
 

@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 22f24c0e-4eb3-4ef7-b012-374ee5e8a844
 TQID: https://experienceleague.adobe.com/MeGV8WNtXy8HkizGkUutuhw2ctdmf3DFIkRWBRXPzA0
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 310
@@ -56,7 +57,7 @@ Adobeには、署名済みのAdobe Gen AI契約書がファイルに登録され
 
 AI アシスタントを使用してWorkfront Fusionのドキュメントから情報や手順を確認するには、次の手順に従います。
 
-1. 画面の右上隅付近にある&#x200B;**AI アシスタント** アイコン ![AI アシスタント アイコン ](assets/ai-assistant-icon.png)をクリックします。
+1. 画面の右上隅付近にある&#x200B;**AI アシスタント** アイコン ![AI アシスタント アイコン &#x200B;](assets/ai-assistant-icon.png)をクリックします。
 1. AI アシスタントパネルで、パネルの下部のテキスト領域にプロンプトを入力します。
 
    AI アシスタントは、プロンプトの規模や複雑さによっては、情報を見つけるのに少し時間がかかることがあります。 シンプルなプロンプトをお勧めします。

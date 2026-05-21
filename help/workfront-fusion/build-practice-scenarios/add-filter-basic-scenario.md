@@ -8,8 +8,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 78ab27fe-e2dd-4b52-b986-77b4b7ea3b5e
 TQID: https://experienceleague.adobe.com/KEVVlHp7OzsV6SJHNdJaUgI6GGiBX9abWqD6U6fiiB0
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 617
@@ -83,11 +85,11 @@ ht-degree: 21%
 ### フィルターの追加と設定
 
 1. シナリオエディターのシナリオに戻ります。
-1. 最初と2番目のモジュールの間にあるレンチアイコン ![ レンチアイコン ](assets/wrench-icon.png)をクリックし、**フィルターの設定**&#x200B;を選択します。
+1. 最初と2番目のモジュールの間にあるレンチアイコン ![&#x200B; レンチアイコン &#x200B;](assets/wrench-icon.png)をクリックし、**フィルターの設定**&#x200B;を選択します。
 1. 「ラベル」フィールドに、「リクエストキュー用のフィルター」など、このフィルターのラベルを入力します。
 1. **条件**&#x200B;領域の上部フィールドで、最初のモジュールから`projectID`をマッピングします。
 
-   ![ プロジェクト IDのマッピング ](assets/map-proj-id.png)
+   ![&#x200B; プロジェクト IDのマッピング &#x200B;](assets/map-proj-id.png)
 1. **Condition**&#x200B;演算子は次のままにします。
 1. **条件**&#x200B;領域の下部のフィールドに、[のプロジェクト URLからメモしたプロジェクト IDを貼り付けて、フィルター](#prepare-to-add-the-filter)を追加する準備をします。
 1. **OK**&#x200B;をクリックして、フィルター設定を保存します。
@@ -110,4 +112,4 @@ ht-degree: 21%
 
 ## リソース
 
-* フィルターについて詳しくは、[ シナリオへのフィルターの追加](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md)を参照してください。
+* フィルターについて詳しくは、[&#x200B; シナリオへのフィルターの追加](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md)を参照してください。

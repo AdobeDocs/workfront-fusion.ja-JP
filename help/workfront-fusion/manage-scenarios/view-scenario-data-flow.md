@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 24eeb1d3-b5a7-4486-8d0b-0a43eb154e8e
 TQID: https://experienceleague.adobe.com/Ni0X8egfhVILudqNjtxx8iiMmlSrJa-0JPH-XGeqYeM
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 283
@@ -19,7 +20,7 @@ ht-degree: 36%
 
 シナリオが実行されている間、アクティブなモジュールは、モジュールの周囲に成長するリングでマークされます。 リングは、モジュールが実行中であることを示すだけで、進行状況は表示されません。 迅速に動作するモジュールは、リングの小さな部分しか表示されない場合があります。
 
-![ モジュール ](assets/ring-around-module.png)の周囲をリング
+![&#x200B; モジュール &#x200B;](assets/ring-around-module.png)の周囲をリング
 
 モジュールを実行すると、出力インジケーターが表示されます。
 
@@ -27,7 +28,7 @@ ht-degree: 36%
 
 モジュールが複数のバンドルを処理する場合、処理された各バンドルにリングが表示され、出力インジケーターは出力する各バンドルに対してカウントされます。
 
-シナリオデータフローについて詳しくは、[ シナリオ実行フロー](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)を参照してください。
+シナリオデータフローについて詳しくは、[&#x200B; シナリオ実行フロー](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)を参照してください。
 
 ## アクセス要件
 

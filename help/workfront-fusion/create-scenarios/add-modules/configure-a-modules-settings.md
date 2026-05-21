@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: ae82d1fe-31e1-424a-9c1a-42dc1a20b749
 TQID: https://experienceleague.adobe.com/yDENFBx9N8X2hxJOmKJYYj2yqCkasYLgunIJwFf-JY4
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 301
@@ -70,9 +71,9 @@ ht-degree: 59%
 
    以前のモジュールからの出力をフィールドにマッピングします。
 
-   マッピングについて詳しくは、[ マッピングの概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md)を参照してください。
+   マッピングについて詳しくは、[&#x200B; マッピングの概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md)を参照してください。
 
-   Workfront Fusionが認識できる様々な項目データタイプ（日付、番号、テキストなど）について詳しくは、[項目データタイプ ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)を参照してください。
+   Workfront Fusionが認識できる様々な項目データタイプ（日付、番号、テキストなど）について詳しくは、[項目データタイプ &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)を参照してください。
 
    >[!NOTE]
    >

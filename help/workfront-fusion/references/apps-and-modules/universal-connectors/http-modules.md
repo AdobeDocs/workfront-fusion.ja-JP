@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
 TQID: https://experienceleague.adobe.com/OMMUuYStE-zaML4-bBkPQmq9jTprC-GKYx-yt3tiFzQ
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 631
@@ -74,7 +76,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 特定のリクエストモジュールの手順については、次の記事を参照してください。
 
-* [[!UICONTROL HTTP] > [!UICONTROL  リクエストを作成] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL &#x200B; リクエストを作成] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
 * [[!UICONTROL HTTP]／[!UICONTROL 基本認証リクエストの作成]モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
 * [[!UICONTROL HTTP]／[!UICONTROL OAuth 2.0 リクエストを実行]モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
 * [[!UICONTROL HTTP]／[!UICONTROL クライアント証明書認証リクエストの作成]モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
@@ -160,7 +162,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ペイロード：
 
-![JWT ペイロード ](/help/workfront-fusion/references/apps-and-modules/assets/jwt-payload-350x17.png)
+![JWT ペイロード &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/jwt-payload-350x17.png)
 
 コピーおよび貼り付けのコード：
 
@@ -170,7 +172,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 トークン：
 
-![JWT トークン ](/help/workfront-fusion/references/apps-and-modules/assets/jwt-token-350x15.png)
+![JWT トークン &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/jwt-token-350x15.png)
 
 コピーおよび貼り付けのコード：
 

@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 6e2df1a0-c1f9-4833-b1c2-65efb3be9657
 TQID: https://experienceleague.adobe.com/t3FcOEcjniaGfX9Ag25kYrcU6-2LKwaIdnRojHRpI5Q
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 767
@@ -96,7 +97,7 @@ Workfront Fusion for Work Automation and Integration ライセンスの利点は
 
 #### Workfront Fusion for Work Automation and Integrationで利用可能なコネクタとモジュール
 
-使用可能な専用コネクタのリストについては、[Fusion アプリケーションとそのモジュールの参照：記事インデックス ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)を参照してください。
+使用可能な専用コネクタのリストについては、[Fusion アプリケーションとそのモジュールの参照：記事インデックス &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)を参照してください。
 
 >[!IMPORTANT]
 >

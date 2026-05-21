@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
 TQID: https://experienceleague.adobe.com/w3uQqWnDDc3IcnAvd3UN4O3-m98PPJoez-egpWlH-jA
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1099
@@ -319,7 +321,7 @@ Webhookを作成するには：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL登録ID]
+           [!UICONTROL 登録ID]
          </td>
          <td>
            イベントを取得する登録を選択します。
@@ -335,7 +337,7 @@ Webhookを作成するには：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL]の後に発生したイベントを返します
+           の後に発生したイベントを返します
          </td>
          <td>日付を入力またはマッピングします。 モジュールは、この日付以降に発生したイベントを返します。
          </td>

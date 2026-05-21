@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 34dd9836-9a1b-4ce2-b24e-ae769888a52a
 TQID: https://experienceleague.adobe.com/Msh3ArxBUIu6YDZjL7eXpxlEBiYABHN-Q7xUlJ-qU0g
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 422
@@ -57,8 +58,8 @@ ht-degree: 26%
 
    シナリオエディターでシナリオを操作している場合は、ウィンドウの左上隅付近にある左矢印![編集矢印を終了](assets/exit-editing-arrow.png)をクリックします。
 
-1. シナリオの名前の近くにある&#x200B;**履歴**をクリックします。
-   ![履歴タブ ](assets/history-tab.png)
+1. シナリオの名前の近くにある&#x200B;**履歴**&#x200B;をクリックします。
+   ![履歴タブ &#x200B;](assets/history-tab.png)
 
 
 1. 表示する実行を見つけ、その実行の行の右端にある&#x200B;**詳細**&#x200B;をクリックします。 [!UICONTROL 詳細]リンクは、実行に詳細が含まれる場合にのみ表示されます。
@@ -71,7 +72,7 @@ ht-degree: 26%
 
 1. モジュールの出力を表示するには、モジュールの近くにある出力の詳細バブルをクリックします。 バブル内の数値は、モジュールが出力するバンドルの数を表します。
 
-   ![ モジュール付近のバブルを出力](assets/output-bubble.png)
+   ![&#x200B; モジュール付近のバブルを出力](assets/output-bubble.png)
 
 1. フィルターを通過したバンドルを表示するには、フィルターをクリックします。 フィルターの近くにある数値は、フィルターを通過したバンドルの数を表します。
 1. 実行パネルで特定のモジュールまたはイベントを検索するには、**実行イベントを検索** ボックスに検索語を入力します。 入力時に結果が表示されます。

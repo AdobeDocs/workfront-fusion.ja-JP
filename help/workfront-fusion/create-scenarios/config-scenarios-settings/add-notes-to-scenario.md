@@ -6,7 +6,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 754601fa-b572-42c2-96a3-3c36a8ed2c56
 TQID: https://experienceleague.adobe.com/X1ryiQtIfsc4ktqBWl2TRXVDiOJ4TDENWY9bwufsDTk
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 256
@@ -50,15 +51,15 @@ ht-degree: 44%
 ## メモを追加
 
 1. Workfront モジュールを右クリックし、**[!UICONTROL メモを追加]**&#x200B;をクリックします。
-1. 表示されるメモで、編集アイコン ![編集アイコン ](assets/edit-note.png)をクリックします。
+1. 表示されるメモで、編集アイコン ![編集アイコン &#x200B;](assets/edit-note.png)をクリックします。
 1. メモのテキストを入力します。
 1. 「**完了**」をクリックして、メモを保存します。
 1. メモをシナリオエディターの目的の場所にドラッグします。
 
-   シナリオにメモを追加すると、シナリオエディターの下部にある&#x200B;**[!UICONTROL Notes]** アイコン ![Notes アイコンに青いドットが表示され、ドット ](assets/notes-icon-w-dot.png)が表示されます。
+   シナリオにメモを追加すると、シナリオエディターの下部にある&#x200B;**[!UICONTROL Notes]** アイコン ![Notes アイコンに青いドットが表示され、ドット &#x200B;](assets/notes-icon-w-dot.png)が表示されます。
 
-1. すべてのメモを表示または非表示にするには、**[!UICONTROL Notes]** アイコン ![Notes アイコンをクリックし、ドット ](assets/notes-icon-w-dot.png)を付けます。
+1. すべてのメモを表示または非表示にするには、**[!UICONTROL Notes]** アイコン ![Notes アイコンをクリックし、ドット &#x200B;](assets/notes-icon-w-dot.png)を付けます。
 
    ノートを開くと、メモアイコンの周りに円が表示されます。
 
-   ![円を含む注釈アイコン ](assets/notes-icon-with-circle.png)
+   ![円を含む注釈アイコン &#x200B;](assets/notes-icon-with-circle.png)

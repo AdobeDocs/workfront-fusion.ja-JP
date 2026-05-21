@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: dc017957-c0f8-4206-916f-21ccda346fb9
 TQID: https://experienceleague.adobe.com/mH7rS7ZCyRcDWv0F6CFvhZ19FL-sNL0liLT53jeZy54
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1432
@@ -87,7 +89,7 @@ Google Forms コネクタでは、次の機能が使用されます。
 
 1. フォームを開きます。
 1. 「**[!UICONTROL 応答]**」タブに移動します。
-1. **[!UICONTROL スプレッドシートを作成]** アイコン ![ スプレッドシート アイコン ](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png)をクリックします。
+1. **[!UICONTROL スプレッドシートを作成]** アイコン ![&#x200B; スプレッドシート アイコン &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png)をクリックします。
 
 1. 新規スプレッドシートを作成するか、既存スプレッドシートを作成するかを選択します
 1. 「**[!UICONTROL 作成]**」をクリックします。

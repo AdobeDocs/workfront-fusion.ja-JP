@@ -6,8 +6,10 @@ draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 94a823a6-3c70-42a1-b6cf-298591dbca15
 TQID: https://experienceleague.adobe.com/uzyMYKqpIGORM1QDNEkkPUumYtLdgTVD7s04At0fNzM
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 2252
@@ -165,7 +167,7 @@ DocuSign コネクタは次の機能を使用します。
 
 ### アクション
 
-* [[!UICONTROL  カスタムフィールドを追加]](#add-a-custom-field)
+* [[!UICONTROL &#x200B; カスタムフィールドを追加]](#add-a-custom-field)
 * [[!UICONTROL エンベロープへの受信者の追加]](#add-recipient-to-envelope)
 * [[!UICONTROL エンベロープの新規作成]](#create-a-new-envelope)
 * [[!UICONTROL カスタム API 呼び出し]](#custom-api-call)
@@ -175,7 +177,7 @@ DocuSign コネクタは次の機能を使用します。
 * [[!UICONTROL エンベロープの送信]](#send-envelope)
 * [[!UICONTROL エンベロープにファイルをアップロード]](#upload-a-file-to-an-envelope)
 
-#### [!UICONTROL  カスタムフィールドを追加]
+#### [!UICONTROL &#x200B; カスタムフィールドを追加]
 
 このアクションモジュールは、カスタムフィールドをドキュメントに追加します
 
@@ -323,7 +325,7 @@ DocuSign コネクタは次の機能を使用します。
     </tr>
   <tr> 
    <td role="rowheader">
-     [!UICONTROL印刷と署名を許可]
+     [!UICONTROL 印刷と署名を許可]
    </td> 
    <td> <p>このオプションを有効にすると、受信者は文書を印刷して紙に署名できます。</p> </td> 
   </tr> 
@@ -347,7 +349,7 @@ DocuSign コネクタは次の機能を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">
-     [!UICONTROL自動ナビゲーション ]
+     [!UICONTROL 自動ナビゲーション &#x200B;]
    </td> 
    <td> <p>受信者の自動ナビゲーションを設定するには、このオプションを有効にします。</p> </td> 
   </tr> 

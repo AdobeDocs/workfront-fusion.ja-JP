@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
 TQID: https://experienceleague.adobe.com/wNEGIZZjU-UCd6BFuXe6wm7uKS8brMs3L1dGqAIh9-o
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 2290
@@ -17,7 +18,7 @@ ht-degree: 89%
 
 [!DNL Adobe Workfront Fusion Tools] セクションには、シナリオを強化できる便利なモジュールがいくつか含まれています。
 
-[!UICONTROL  ツール ] モジュールは、アプリのリストから、または画面下部の[!UICONTROL  ツール ] アイコン ![ ツールアイコン ](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png)から利用できます。
+[!UICONTROL &#x200B; ツール &#x200B;] モジュールは、アプリのリストから、または画面下部の[!UICONTROL &#x200B; ツール &#x200B;] アイコン ![&#x200B; ツールアイコン &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png)から利用できます。
 
 ## アクセス要件
 
@@ -89,7 +90,7 @@ ht-degree: 89%
 
 このモジュールは、[!UICONTROL 変数を設定]または[!UICONTROL 複数の変数を設定]モジュールによって以前に作成された値を取得します。
 
-このモジュールは、[!UICONTROL 複数の変数を取得]モジュールが配置されている場所とは異なるルートに変数が設定されている場合でも、シナリオ内の任意の場所に設定された変数を読み取ることができます。 唯一の要件は、[!UICONTROL ツール]／[!UICONTROL 変数の設定]または[!UICONTROL ツール]／[!UICONTROL 複数の変数の設定]モジュールが、[!UICONTROL ツール]／[!UICONTROL 複数変数の取得]モジュールの前に実行されることです。 モジュールの実行順序について詳しくは、[ ルーターモジュールの追加とルートの設定](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)を参照してください。
+このモジュールは、[!UICONTROL 複数の変数を取得]モジュールが配置されている場所とは異なるルートに変数が設定されている場合でも、シナリオ内の任意の場所に設定された変数を読み取ることができます。 唯一の要件は、[!UICONTROL ツール]／[!UICONTROL 変数の設定]または[!UICONTROL ツール]／[!UICONTROL 複数の変数の設定]モジュールが、[!UICONTROL ツール]／[!UICONTROL 複数変数の取得]モジュールの前に実行されることです。 モジュールの実行順序について詳しくは、[&#x200B; ルーターモジュールの追加とルートの設定](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)を参照してください。
 
 <table style="table-layout:auto">
     <tr>
@@ -112,7 +113,7 @@ ht-degree: 89%
 
 このモジュールは、[!UICONTROL 変数の設定]または[!UICONTROL 複数の変数の設定]モジュールによって以前に作成された値を取得します。
 
-このモジュールは、[!UICONTROL 変数の取得]モジュールが配置されている場所とは異なるルートに変数が設定されている場合でも、シナリオ内の任意の場所に設定された変数を読み取ることができます。 唯一の要件は、[!UICONTROL ツール]／[!UICONTROL 変数の設定]または[!UICONTROL ツール]／[!UICONTROL 複数の変数の設定]モジュールが、[!UICONTROL ツール]／[!UICONTROL 変数の取得]モジュールの前に実行されることです。 モジュールの実行順序について詳しくは、[ ルーターモジュールの追加とルートの設定](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)を参照してください。
+このモジュールは、[!UICONTROL 変数の取得]モジュールが配置されている場所とは異なるルートに変数が設定されている場合でも、シナリオ内の任意の場所に設定された変数を読み取ることができます。 唯一の要件は、[!UICONTROL ツール]／[!UICONTROL 変数の設定]または[!UICONTROL ツール]／[!UICONTROL 複数の変数の設定]モジュールが、[!UICONTROL ツール]／[!UICONTROL 変数の取得]モジュールの前に実行されることです。 モジュールの実行順序について詳しくは、[&#x200B; ルーターモジュールの追加とルートの設定](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)を参照してください。
 
 <table style="table-layout:auto"> 
  <col> 

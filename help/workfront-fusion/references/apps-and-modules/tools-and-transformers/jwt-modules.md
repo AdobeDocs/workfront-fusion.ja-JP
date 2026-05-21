@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 380f60db-b2ec-411a-86ee-0d5699f19b41
 TQID: https://experienceleague.adobe.com/90zhDiLzi34ES2MPE-hg26mmSHZ-XQIgZJIFeW4vwy4
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 528
@@ -74,7 +75,7 @@ JWT コネクタでは、次の機能を使用します。
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アルゴリズム ]</td> 
+   <td role="rowheader">[!UICONTROL アルゴリズム &#x200B;]</td> 
    <td> <p>JWTを生成するアルゴリズムを選択します。</p> <ul>
    <li><b>HS256</b>: SHA-256 ハッシュアルゴリズムを使用するHMAC</li>
    <li><b>HS384</b>: SHA-384 ハッシュアルゴリズムを使用するHMAC</li>
@@ -91,7 +92,7 @@ JWT コネクタでは、次の機能を使用します。
    </ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ペイロード ] </td> 
+   <td role="rowheader">[!UICONTROL ペイロード &#x200B;] </td> 
    <td> <p>追加するペイロード項目ごとに、<b>項目を追加</b>をクリックし、項目のキーと値を入力します。</p> </td> 
   </tr> 
   <tr> 

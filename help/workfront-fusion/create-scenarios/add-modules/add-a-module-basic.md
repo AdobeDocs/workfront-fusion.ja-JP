@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: f3757468-3e11-4862-a83e-ed447805545b
 TQID: https://experienceleague.adobe.com/R2JCX7aaYzmYHgiLqj1WDlVFHI-s-qanltoOrycQ5JU
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 684
@@ -17,7 +18,7 @@ ht-degree: 18%
 
 シナリオは、アプリ内でのデータの変換方法や、アプリと web サービスの間でのデータの転送方法を示す、一連のモジュールで構成されます。 モジュールを作成するには、モジュールを追加および設定します。
 
-この記事では、シナリオにモジュールを追加する基本的なプロセスについて説明します。 シナリオの追加方法について詳しくは、[ モジュールの追加：記事インデックス ](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)の他の記事を参照してください。
+この記事では、シナリオにモジュールを追加する基本的なプロセスについて説明します。 シナリオの追加方法について詳しくは、[&#x200B; モジュールの追加：記事インデックス &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)の他の記事を参照してください。
 
 ## アクセス要件
 
@@ -52,19 +53,19 @@ ht-degree: 18%
 
 シナリオの最初のモジュールは、通常、トリガーモジュールです。
 
-トリガーモジュールについて詳しくは、「モジュールの概要」の「[トリガーモジュール ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules)」を参照してください。
+トリガーモジュールについて詳しくは、「モジュールの概要」の「[トリガーモジュール &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules)」を参照してください。
 
 1. 左側のパネルの「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. 画面の右上隅にある「**新しいシナリオを作成**」をクリックして、シナリオの作成を開始します。
 
    シナリオエディターが開き、プレースホルダー（疑問符）モジュールと使用可能なコネクタのリストが表示されます。
 
-   ![ プレースホルダーモジュール ](assets/placeholder-module.png)
+   ![&#x200B; プレースホルダーモジュール &#x200B;](assets/placeholder-module.png)
 
 1. このシナリオを開始するコネクタまたはWebhookを選択します。 リストの検索バーにコネクタの名前を入力して、リストをフィルタリングできます。
 1. モジュールを設定します。
 
-   特定のモジュールの設定の手順については、[Fusion アプリケーションとそのモジュールのリファレンスに記載されている、選択したアプリケーションの記事を参照してください。記事インデックス ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)。
+   特定のモジュールの設定の手順については、[Fusion アプリケーションとそのモジュールのリファレンスに記載されている、選択したアプリケーションの記事を参照してください。記事インデックス &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)。
 
 >[!NOTE]
 >
@@ -81,7 +82,7 @@ ht-degree: 18%
 1. （オプション）別のコネクタを選択するには、リストで「**別のモジュールを追加**」をクリックし、コネクタを選択します。 リストの検索バーにコネクタの名前を入力して、リストをフィルタリングできます。
 1. モジュールを設定します。
 
-   特定のモジュールの設定の手順については、[Fusion アプリケーションとそのモジュールのリファレンスに記載されている、選択したアプリケーションの記事を参照してください。記事インデックス ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)。
+   特定のモジュールの設定の手順については、[Fusion アプリケーションとそのモジュールのリファレンスに記載されている、選択したアプリケーションの記事を参照してください。記事インデックス &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)。
 
 ## シナリオ内の既存のモジュール間にモジュールを挿入する
 
@@ -95,7 +96,7 @@ ht-degree: 18%
 1. （オプション）別のコネクタを選択するには、リストで「**別のモジュールを追加**」をクリックし、コネクタを選択します。 リストの検索バーにコネクタの名前を入力して、リストをフィルタリングできます。
 1. モジュールを設定します。
 
-   特定のモジュールの設定の手順については、[Fusion アプリケーションとそのモジュールのリファレンスに記載されている、選択したアプリケーションの記事を参照してください。記事インデックス ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)。
+   特定のモジュールの設定の手順については、[Fusion アプリケーションとそのモジュールのリファレンスに記載されている、選択したアプリケーションの記事を参照してください。記事インデックス &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)。
 
 >[!NOTE]
 >

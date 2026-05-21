@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 7d738a96-5424-4c30-831f-82e1d4c6f9d2
 TQID: https://experienceleague.adobe.com/K-dqwsk18sW-l7LlvWqE2kReKWA9I-yQSJXbAzyjRjU
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1941
@@ -156,7 +158,7 @@ Split.io コネクタは次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する] </a>」を参照してください。</p> </td> 
+   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する&rbrack; </a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -191,7 +193,7 @@ Split.io コネクタは次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する] </a>」を参照してください。</p> </td> 
+   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する&rbrack; </a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -222,7 +224,7 @@ Split.io コネクタは次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する] </a>」を参照してください。</p> </td> 
+   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する&rbrack; </a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -269,7 +271,7 @@ Split.io コネクタは次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する] </a>」を参照してください。</p> </td> 
+   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する&rbrack; </a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -311,7 +313,7 @@ Split.io コネクタは次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する] </a>」を参照してください。</p> </td> 
+   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する&rbrack; </a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -334,7 +336,7 @@ Split.io コネクタは次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する] </a>」を参照してください。</p> </td> 
+   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する&rbrack; </a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -357,7 +359,7 @@ Split.io コネクタは次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する] </a>」を参照してください。</p> </td> 
+   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する&rbrack; </a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -384,7 +386,7 @@ Split.io コネクタは次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する] </a>」を参照してください。</p> </td> 
+   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する&rbrack; </a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -419,7 +421,7 @@ Split.io コネクタは次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する] </a>」を参照してください。</p> </td> 
+   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する&rbrack; </a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -450,7 +452,7 @@ Split.io コネクタは次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する] </a>」を参照してください。</p> </td> 
+   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する&rbrack; </a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -477,7 +479,7 @@ Split.io コネクタは次の機能を使用します。
 * [[!UICONTROL トラフィックタイプを取得]](#get-traffic-types)
 * [[!UICONTROL ワークスペースを取得]](#get-workspaces)
 * [[!UICONTROL 環境でスプリット定義をリスト]](#list-split-definitions-in-an-environment)
-* [[!UICONTROL  リスト分割]](#list-splits)
+* [[!UICONTROL &#x200B; リスト分割]](#list-splits)
 
 #### [!UICONTROL 環境を取得]
 
@@ -489,7 +491,7 @@ Split.io コネクタは次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する] </a>」を参照してください。</p> </td> 
+   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する&rbrack; </a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -508,7 +510,7 @@ Split.io コネクタは次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する] </a>」を参照してください。</p> </td> 
+   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する&rbrack; </a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -527,7 +529,7 @@ Split.io コネクタは次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する] </a>」を参照してください。</p> </td> 
+   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する&rbrack; </a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
@@ -546,7 +548,7 @@ Split.io コネクタは次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する] </a>」を参照してください。</p> </td> 
+   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する&rbrack; </a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 
@@ -563,7 +565,7 @@ Split.io コネクタは次の機能を使用します。
  </tbody> 
 </table>
 
-#### [!UICONTROL  リスト分割]
+#### [!UICONTROL &#x200B; リスト分割]
 
 この検索モジュールは、分割のリストを取得します。
 
@@ -573,7 +575,7 @@ Split.io コネクタは次の機能を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する] </a>」を参照してください。</p> </td> 
+   <td> <p>[!DNL Split.io] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Split.io]を接続する&rbrack; </a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Workspace ID]</td> 

@@ -8,8 +8,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: b5e92bdc-cc1d-4b22-8c5f-42cc279d5590
 TQID: https://experienceleague.adobe.com/1eVGWr4SwutYzNmCKB62CCWbQ6ExdXtpjC5BORh-kxo
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 327
@@ -71,4 +73,4 @@ ht-degree: 77%
 1. 画面の右上隅にある「**[!UICONTROL オプション]**」をクリックします。
 1. 「**[!UICONTROL 実行のロックを解除]**」を選択します。
 1. 「**[!UICONTROL ロックを解除]**」をクリックします。
-   ![ シナリオのロック解除](assets/unlock-scenario.png)
+   ![&#x200B; シナリオのロック解除](assets/unlock-scenario.png)

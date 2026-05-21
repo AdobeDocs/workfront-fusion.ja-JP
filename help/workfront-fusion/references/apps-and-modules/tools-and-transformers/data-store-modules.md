@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
 TQID: https://experienceleague.adobe.com/xxcj73D3UZawazZrK92lAZTYaFTVj92o74zPRsnfFPA
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1139
@@ -61,9 +63,9 @@ Workfront Fusion のデータストアの紹介ビデオについては、以下
 
 [!UICONTROL データストア]を使用するには、まずデータストアを作成する必要があります。
 
-データストアの作成について詳しくは、[ データストアの作成と管理](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)を参照してください。
+データストアの作成について詳しくは、[&#x200B; データストアの作成と管理](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)を参照してください。
 
-## [!UICONTROL  データストア ] モジュールとそのフィールド
+## [!UICONTROL &#x200B; データストア &#x200B;] モジュールとそのフィールド
 
 データストアモジュールを設定すると、Workfront Fusionに次のフィールドが表示されます。 これらのほか、アプリやサービスでのアクセスレベルなどの要因に応じて、追加のデータストアフィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 

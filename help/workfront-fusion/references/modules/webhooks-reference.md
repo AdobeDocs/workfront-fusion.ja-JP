@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
 TQID: https://experienceleague.adobe.com/-z2vSjTR1JJTQl--BHM23CbnlaN9TSS6puFTzqLRAEk
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1272
@@ -21,16 +22,16 @@ ht-degree: 27%
 
 >[!TIP]
 >
->コネクタ内のモジュールのリストを確認して、そのコネクタにインスタントトリガーがあるかどうかを確認できます。また、[Fusion アプリケーションとそのモジュールのリファレンス ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)で、そのコネクタのドキュメントを確認できます。
+>コネクタ内のモジュールのリストを確認して、そのコネクタにインスタントトリガーがあるかどうかを確認できます。また、[Fusion アプリケーションとそのモジュールのリファレンス &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)で、そのコネクタのドキュメントを確認できます。
 >
->Adobe Workfrontのインスタントトリガーに関するドキュメントについては、Workfront トリガーの[ モジュール ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#triggers)を参照してください。
+>Adobe Workfrontのインスタントトリガーに関するドキュメントについては、Workfront トリガーの[&#x200B; モジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#triggers)を参照してください。
 
 コネクタにWebhookが含まれていない場合は、次のいずれかを実行できます。
 
 * Webhook モジュールを使用してカスタム Webhookを作成します。
 詳しくは、[Web フック](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)を参照してください。
 * ポーリングトリガーを使用して、サービスを定期的にポーリングします。
-詳細については、[ シナリオのスケジュール ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)を参照してください
+詳細については、[&#x200B; シナリオのスケジュール &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)を参照してください
 
 Workfront Fusion の web フックの概要ビデオについて詳しくは、次を参照してください。
 
@@ -74,10 +75,10 @@ Webhook領域でWebhookのリストを表示できます。
 
    ここでは、Webhookのリストを確認できます。
 
-   ![Webhook リスト ](assets/list-of-webhooks.png)
+   ![Webhook リスト &#x200B;](assets/list-of-webhooks.png)
 
 1. 特定のWebhookを検索するには、検索ボックスに検索語を入力します。
-1. Webhookをコピーするには、そのWebhookの行のURLの近くにある「![Webhookをコピー」アイコン ](assets/copy-webhook-icon.png)をクリックします。
+1. Webhookをコピーするには、そのWebhookの行のURLの近くにある「![Webhookをコピー」アイコン &#x200B;](assets/copy-webhook-icon.png)をクリックします。
 1. Webhookの優先度を設定するには、「優先度」列のドロップダウンをクリックし、新しい優先度を選択します。
 
    優先度の高いWebhookが最初に処理されます。これは、ワーカープールに多くの自動化がリソースを競合している場合に役立つ可能性があります。
@@ -87,7 +88,7 @@ Webhook領域でWebhookのリストを表示できます。
 1. Webhookの有効期限が切れているかどうかを確認するには、「期限切れ」列を確認します。 期限切れのWebhookは、シナリオにアタッチされていないか、120時間イベントを受信していません。
 1. Webhookが使用されているシナリオを表示するには、そのWebhookの「シナリオ」列の「**シナリオ**」ボタンをクリックします。
 1. このWebhookに使用されている接続を表示するには、そのWebhookの接続列にある&#x200B;**接続** ボタンをクリックします。
-1. 列を非表示にしたり、以前に非表示にした列を表示したりするには、**列** アイコン ![列アイコン ](assets/glist-column.png)をクリックし、列名をオンまたはオフにします。
+1. 列を非表示にしたり、以前に非表示にした列を表示したりするには、**列** アイコン ![列アイコン &#x200B;](assets/glist-column.png)をクリックし、列名をオンまたはオフにします。
 1. Workfront Webhookに関連付けられたイベントサブスクリプションを表示するには、Webhookの横にあるボックスにチェックを入れ、ページ下部の&#x200B;**詳細を表示**&#x200B;を選択します。
 
    >[!NOTE]
@@ -99,13 +100,13 @@ Webhook領域でWebhookのリストを表示できます。
 
 インスタントトリガーを設定すると、実行時に選択するように求められます。
 
-![ スケジュール設定](assets/schedule-setting.png)
+![&#x200B; スケジュール設定](assets/schedule-setting.png)
 
 「`Immediately`」を選択すると、Workfront Fusionがサービスから新しいイベントを受信したときに、すぐにシナリオを実行できます。 これらのイベントは直ちにキューに送信され、データを受信するのと同じ順序で、シナリオで一度に1つずつ処理されます。
 
 シナリオが実行されると、キュー内で待機している保留中のイベントの合計量がカウントされ、シナリオは保留中のイベントがある数だけサイクルを実行し、1 サイクルにつき1つのイベントを処理します。
 
-サイクルについて詳しくは、[ シナリオ実行、サイクル、およびフェーズ ](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)を参照してください。
+サイクルについて詳しくは、[&#x200B; シナリオ実行、サイクル、およびフェーズ &#x200B;](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)を参照してください。
 
 >[!NOTE]
 >
@@ -122,7 +123,7 @@ Webhook領域でWebhookのリストを表示できます。
 
 [!UICONTROL 即時]以外のスケジュール設定を使用する場合、シナリオは指定した間隔で実行されます。 インターバル中に複数のWebhookをキューに収集できるため、[!UICONTROL 最大サイクル数] オプションをデフォルトの1より大きな値に設定して、1回のシナリオ実行でより多くのWebhookを処理することをお勧めします。
 
-1. シナリオの下部にある[!UICONTROL  シナリオ設定] アイコン ![ シナリオ設定アイコン ](assets/scenario-settings-icon.png)をクリックします。
+1. シナリオの下部にある[!UICONTROL &#x200B; シナリオ設定] アイコン ![&#x200B; シナリオ設定アイコン &#x200B;](assets/scenario-settings-icon.png)をクリックします。
 1. 表示される&#x200B;**[!UICONTROL シナリオ設定]** パネルで、**[!UICONTROL 最大サイクル数]** フィールドに数値を入力し、シナリオを実行するたびに実行するキューのイベント数を示します。
 
 キューに残っているイベントは、次回シナリオが実行されるときに、「最大サイクル数」フィールドで設定された数まで処理されます。
@@ -152,9 +153,9 @@ Workfront Fusion は、Webhook ペイロードを30 日間保存します。 作
 
 シナリオの実行中にエラーが発生した場合、イベントはインスタントトリガーのロールバックフェーズ中にキューに戻されます。 そのような状況では、シナリオを修正して再度実行できます。
 
-詳しくは、「シナリオの実行、サイクル、およびフェーズ」の記事の[ ロールバック ](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback)を参照してください。
+詳しくは、「シナリオの実行、サイクル、およびフェーズ」の記事の[&#x200B; ロールバック &#x200B;](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback)を参照してください。
 
-シナリオに Web フックの応答モジュールがある場合、エラーは Web フックの応答に送信されます。 Webhook応答モジュールは常に最後に実行されます（シナリオ設定の[!UICONTROL 自動コミット ] オプションが有効になっていない場合）。
+シナリオに Web フックの応答モジュールがある場合、エラーは Web フックの応答に送信されます。 Webhook応答モジュールは常に最後に実行されます（シナリオ設定の[!UICONTROL 自動コミット &#x200B;] オプションが有効になっていない場合）。
 
 詳しくは、Webhookの記事の「[Webhookへの応答](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md#responding-to-webhooks)」を参照してください。
 
@@ -173,4 +174,4 @@ Workfront Fusion は、Webhook ペイロードを30 日間保存します。 作
 
 ## リソース
 
-サイクルについて詳しくは、[ シナリオ実行、サイクル、およびフェーズ ](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)を参照してください。
+サイクルについて詳しくは、[&#x200B; シナリオ実行、サイクル、およびフェーズ &#x200B;](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)を参照してください。

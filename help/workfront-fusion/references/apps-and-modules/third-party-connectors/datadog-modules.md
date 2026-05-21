@@ -5,9 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: c8c5f2e3-5af1-4957-bb6f-6c19c35102c5
 TQID: https://experienceleague.adobe.com/DM-90ye4UKybFarHch-ubk4vOt4Ofh69EBXTmAO-Hmw
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 959
@@ -161,7 +165,7 @@ Datadog コネクタでは、次の機能を使用します。
    <td> <p>[!DNL Datadog] アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">[!DNL Datadog] を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL専用ドメインを使用]</td> 
+   <td role="rowheader">[!UICONTROL 専用ドメインを使用]</td> 
    <td>多くの着信トラフィックを期待するDatadog API エンドポイントの一部は、専用ドメインで実行されています。 API呼び出しに専用ドメインを使用するには、このチェックボックスをオンにします。</td> 
   </tr> 
   <tr> 

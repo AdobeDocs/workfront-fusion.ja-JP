@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 28a04bad-d3ef-4f3a-be93-8b04761a75e4
 TQID: https://experienceleague.adobe.com/rHcxYxYNQchgOxfpU1Y3jc-sOxHxG3FNAKmbIsp9Dl4
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 2507
@@ -83,7 +85,7 @@ IMAP接続を使用すると、メールボックスにリモート アクセス
 1. リストから&#x200B;**[!UICONTROL メールプロバイダー]**&#x200B;を選択します。 メールプロバイダーがリストにない場合は、「その他」を選択します。
 1. **[!UICONTROL ユーザー名]**&#x200B;と、メールアカウントの&#x200B;**[!UICONTROL パスワード]**&#x200B;を入力します。
 1. （条件付き）プロバイダーがリストにない場合は、「**[!UICONTROL SMTP サーバー]**」および「**[!UICONTROL ポート]**」を入力し、**[!UICONTROL セキュア接続（TLS）を使用]**&#x200B;するかどうかを指定します。 この情報を見つけるには、メールボックスの「[!UICONTROL ヘルプ]」セクションを確認してください。 この情報が不明な場合は、メールサービスプロバイダーにお問い合わせください。
-1. 自己署名証明書を使用するには、**不正な証明書を拒否** オプションを有効にし、自己署名証明書をアップロードします。 手順については、[自己署名証明書のアップロード ](#upload-a-self-signed-certificate)を参照してください
+1. 自己署名証明書を使用するには、**不正な証明書を拒否** オプションを有効にし、自己署名証明書をアップロードします。 手順については、[自己署名証明書のアップロード &#x200B;](#upload-a-self-signed-certificate)を参照してください
 1. 「**[!UICONTROL 続行]**」をクリックし、接続を作成して、モジュールに戻ります。
 
 #### 自己署名証明書のアップロード
@@ -98,7 +100,7 @@ IMAP接続を使用すると、メールボックスにリモート アクセス
 
 ## [!UICONTROL メール]モジュールとそのフィールド
 
-[!UICONTROL 電子メール ] モジュールを設定すると、Workfront Fusionに次のフィールドが表示されます。 これらと共に、アプリやサービスのアクセスレベルなどの要因に応じて、追加のフィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL 電子メール &#x200B;] モジュールを設定すると、Workfront Fusionに次のフィールドが表示されます。 これらと共に、アプリやサービスのアクセスレベルなどの要因に応じて、追加のフィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
 シナリオの別のモジュールで一部のメールフィールドを使用した場合、それらのメールフィールドには既にデータが含まれている場合があります。 詳しくは、メールのヘルプドキュメントを参照してください。
 
@@ -569,4 +571,4 @@ IMAP接続を使用すると、メールボックスにリモート アクセス
  </tbody> 
 </table>
 
-イテレーターについて詳しくは、[ イテレーターモジュール ](/help/workfront-fusion/references/modules/iterator-module.md)を参照してください。
+イテレーターについて詳しくは、[&#x200B; イテレーターモジュール &#x200B;](/help/workfront-fusion/references/modules/iterator-module.md)を参照してください。

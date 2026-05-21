@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d3e49fce-85bc-4ee6-9a94-497a306e0c74
 TQID: https://experienceleague.adobe.com/n1069qGTzCI9vCLsUgEF36uF0Hh9wZufa4xGTGoAeIc
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 9dd50e3b7a65813ce454da393a7beacf49cc943a
 workflow-type: tm+mt
 source-wordcount: 778
@@ -396,7 +397,7 @@ URL 内の特殊文字をテキストにデコードします。
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL concat （separator; string1; string2; ...） ]
+### [!UICONTROL concat （separator; string1; string2; ...） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -415,7 +416,7 @@ URL 内の特殊文字をテキストにデコードします。
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL left （string; length） ]
+### [!UICONTROL left （string; length） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -431,7 +432,7 @@ URL 内の特殊文字をテキストにデコードします。
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL right （string; length） ]
+### [!UICONTROL right （string; length） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -447,7 +448,7 @@ URL 内の特殊文字をテキストにデコードします。
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL removeAccents （string） ]
+### [!UICONTROL removeAccents （string） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -463,7 +464,7 @@ URL 内の特殊文字をテキストにデコードします。
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL replacePattern （string; pattern; replacement） ]
+### [!UICONTROL replacePattern （string; pattern; replacement） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -479,7 +480,7 @@ URL 内の特殊文字をテキストにデコードします。
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL sortAscString （string1; string2; ...） ]
+### [!UICONTROL sortAscString （string1; string2; ...） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -495,7 +496,7 @@ URL 内の特殊文字をテキストにデコードします。
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL sortDescString （string1; string2; ...） ]
+### [!UICONTROL sortDescString （string1; string2; ...） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -513,7 +514,7 @@ URL 内の特殊文字をテキストにデコードします。
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL pascal （string） ]
+### [!UICONTROL pascal （string） &#x200B;]
 
 [!BADGE 新規！]{type=Informative}
 

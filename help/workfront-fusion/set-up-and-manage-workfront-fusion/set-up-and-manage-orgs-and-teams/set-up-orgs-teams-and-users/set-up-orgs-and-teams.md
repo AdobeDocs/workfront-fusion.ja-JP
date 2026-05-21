@@ -7,7 +7,8 @@ feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 56837f45-12f9-44b7-b48f-9a3a4fa966c8
 TQID: https://experienceleague.adobe.com/hIUqXXvCzmn-uAnDxJFDJ-jPY2JgE5smZzryufBbwtA
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 76

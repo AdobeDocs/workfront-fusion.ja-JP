@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 25c632f4-169e-4d3c-989a-f57b398bd3f0
 TQID: https://experienceleague.adobe.com/DVCy-0qCEuwZJqbGQPd3Pu9erVaX1wosPUWEtTFLkq4
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 412
@@ -61,7 +62,7 @@ ht-degree: 46%
 >
 >URL からファイルを処理する必要がある場合、`HTTP > Get a File` モジュールを使用して URL からファイルをダウンロードし、そのファイルを `HTTP > Get a File` モジュールからシナリオ内の目的のモジュールのフィールドにマッピングすることをお勧めします。
 >
->![ マップファイル ](assets/map-source-file.png)
+>![&#x200B; マップファイル &#x200B;](assets/map-source-file.png)
 
 ファイルをマッピングするには：
 
@@ -71,10 +72,10 @@ ht-degree: 46%
 1. マッピング先のターゲットモジュールで、**Source ファイル**&#x200B;領域を見つけます。
 1. 前のモジュールで出力されたファイルをマッピングするには、ファイルを出力するモジュールを選択します。
 
-   ![Workfront ダウンロード ドキュメント ](assets/wf-download-document.png)
+   ![Workfront ダウンロード ドキュメント &#x200B;](assets/wf-download-document.png)
 
 1. 名前とデータを手動でマッピングするには、「マップ」を選択し、ファイル名とデータを入力またはマッピングします。
 
-   ![ マップオプションを使用](assets/use-the-map-option.png)
+   ![&#x200B; マップオプションを使用](assets/use-the-map-option.png)
 
 1. モジュールの設定を続行するか、**OK**&#x200B;をクリックします。

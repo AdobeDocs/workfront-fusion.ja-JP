@@ -5,9 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 2f0bc289-4ecf-4a31-9d7b-641bbca6fc95
 TQID: https://experienceleague.adobe.com/Y-cRr-lDvYKc83iwzPoB2Rs9gKD9LCZQFfiBgefal7I
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1022
@@ -92,7 +96,7 @@ Google Cloud Platformでプロジェクトを作成するには：
 
 1. プロジェクトのOAuthの設定を開始します
 
-   手順については、[OAuth同意画面の設定を参照し、Google ドキュメントのスコープ ](https://developers.google.com/workspace/guides/configure-oauth-consent)を選択してください。
+   手順については、[OAuth同意画面の設定を参照し、Google ドキュメントのスコープ &#x200B;](https://developers.google.com/workspace/guides/configure-oauth-consent)を選択してください。
 1. **外部**&#x200B;を選択し、続いて「**作成**」をクリックします。
 
    >[!NOTE]
@@ -159,7 +163,7 @@ Google Cloud Platformでプロジェクトを作成するには：
 
 1. OAuth クライアント ID資格情報の作成を開始します。
 
-   手順については、Google ドキュメントの「[ アクセス資格情報を作成する](https://developers.google.com/workspace/guides/create-credentials)」を参照してください。
+   手順については、Google ドキュメントの「[&#x200B; アクセス資格情報を作成する](https://developers.google.com/workspace/guides/create-credentials)」を参照してください。
 
    >[!NOTE]
    >

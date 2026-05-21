@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 8c6d6e01-b76c-4f1c-a310-e2b7fd48d1b2
 TQID: https://experienceleague.adobe.com/-Uv4ZTTIlP-XtRZHz7YGl9KpAyH5f2-lU-uPh51xXTI
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 240
@@ -60,6 +61,6 @@ ht-degree: 47%
 
    ユーザーリストが開きます。
 
-1. （オプション）任意の列でユーザーリストを並べ替えるには、その列の&#x200B;**並べ替え** アイコン ![並べ替えアイコン ](assets/sort-icon.png)をクリックします。
-1. （オプション）列を非表示または表示するには、リストの右上隅付近にある&#x200B;**列** アイコン ![列アイコン ](assets/columns-icon.png)をクリックし、列を有効または無効にします。
+1. （オプション）任意の列でユーザーリストを並べ替えるには、その列の&#x200B;**並べ替え** アイコン ![並べ替えアイコン &#x200B;](assets/sort-icon.png)をクリックします。
+1. （オプション）列を非表示または表示するには、リストの右上隅付近にある&#x200B;**列** アイコン ![列アイコン &#x200B;](assets/columns-icon.png)をクリックし、列を有効または無効にします。
 1. （オプション）リストをフィルタリングするには、検索バーに入力を開始します。 リストには、検索語を含むチームのみが含まれます。
