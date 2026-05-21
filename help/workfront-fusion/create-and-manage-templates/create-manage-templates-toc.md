@@ -1,13 +1,16 @@
 ---
 title: テンプレートの作成と管理：記事インデックス
-description: この節では、Workfront Fusion のテンプレートに関連する記事を紹介します。
+description: この節では、Workfront Fusionのテンプレートに関連する記事を紹介します。
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: b25d1af2-c8c1-4cf4-8313-74f20b318599
-source-git-commit: 4ede5c7a75725a6540d6a8ff9cd056e6147d5c55
+TQID: https://experienceleague.adobe.com/BddLEuE7BKd0I3VknHZ5PV395FBZ6lZjywHZqqUnhRI
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '58'
+source-wordcount: 58
 ht-degree: 62%
 
 ---

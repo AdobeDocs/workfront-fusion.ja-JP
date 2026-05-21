@@ -1,19 +1,24 @@
 ---
 title: Adobe Experience Manager Forms モジュール
-description: Adobe Workfront Fusion 用の  [!DNL Adobe Experience Manager Forms] connector を使用すると、アカウント内のイベントに基づいたシナリオの開始、アセットの作成  [!DNL Adobe Experience Manager Forms]  アップロード、更新、フォルダーやアセットのコピーまたは移動をおこなうことができます。
+description: Adobe Workfront Fusion用 [!DNL Adobe Experience Manager Forms]  コネクタを使用すると、 [!DNL Adobe Experience Manager Forms]  アカウント内のイベントに基づいてシナリオを開始し、アセットを作成、アップロード、更新し、フォルダーとアセットをコピーまたは移動できます。
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e0d7a655-1353-4d24-83d4-7da73d859a63
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+TQID: https://experienceleague.adobe.com/LTNDa0pulA4RE5tG59Fui-5bPlKxqHoQHEsKOp485No
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 66%
+source-wordcount: 600
+ht-degree: 87%
 
 ---
 
 # [!DNL Adobe Experience Manager Forms] モジュール
 
-Adobe Workfront Fusion の [!DNL Adobe Experience Manager Forms] コネクタを使用すると、Webhook を作成することで、[!DNL Adobe Experience Manager Forms] アカウントのイベントに基づいたシナリオを開始できます。
+Adobe Workfront Fusionの[!DNL Adobe Experience Manager Forms] コネクタを使用すると、Webhookを作成して、[!DNL Adobe Experience Manager Forms] アカウントのイベントに基づいてシナリオを開始できます。
 
 [!DNL Adobe Experience Manager Forms] 内でフォームを設定して、この web フックにフォームを送信できます。
 
@@ -27,31 +32,31 @@ Adobe Workfront Fusion の [!DNL Adobe Experience Manager Forms] コネクタを
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
    <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
-   <p>コネクタベース（従来）：作業の自動化と統合のためのWorkfront Fusion </p>
+   <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
 
 +++
 
@@ -59,9 +64,9 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 * このモジュールを使用するには、[!DNL Adobe Experience Manager Forms] アカウントが必要です。
 
-## Adobe Experience Manager Assets API の情報
+## Adobe Experience Manager Assets API 情報
 
-Adobe Experience Manager Assets コネクタでは、以下を使用します。
+Adobe Experience Manager Assets コネクターでは、次を使用します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -78,7 +83,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
 
 [!DNL Adobe Experience Manager Forms] モジュールへの接続を作成するには、以下を実行します。
 
-1. 任意のモジュールで、「接続」ボックスの横にある **[!UICONTROL 追加]** をクリックします。
+1. 任意のモジュールで、接続ボックスの横にある&#x200B;**[!UICONTROL 追加]**&#x200B;をクリックします。
 
 1. 次のフィールドに入力します。
 
@@ -120,19 +125,19 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>[!DNL Adobe] クライアント ID を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。
+        <td>[!DNL Adobe] クライアント ID を入力します。 これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>[!DNL Adobe] クライアントの秘密鍵を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。
+        <td>[!DNL Adobe] クライアントの秘密鍵を入力します。 これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Org ID]</td>
-        <td>[!DNL Adobe] 組織 ID を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。
+        <td>[!DNL Adobe] 組織 ID を入力します。 これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Technical account ID]</td>
-        <td>[!DNL Adobe] テクニカルアカウント ID を入力します。これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。
+        <td>[!DNL Adobe] テクニカルアカウント ID を入力します。 これは、[!DNL Adobe Developer Console] の [!UICONTROL Credentials details] セクションで確認できます。
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Meta Scopes]</td>
@@ -177,7 +182,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
 
 >[!IMPORTANT]
 >
->このモジュールを使用するには、Adobe Experience Manager での設定も必要です。この web フックを設定したら、Adobe Experience Manager を開き、web フックに送信するようにフォームを設定する必要があります。
+>このモジュールを使用するには、Adobe Experience Manager での設定も必要です。 この web フックを設定したら、Adobe Experience Manager を開き、web フックに送信するようにフォームを設定する必要があります。
 >
 ><!--For instructions on the required form configuration, see insert url here-->
 
@@ -191,7 +196,7 @@ Adobe Experience Manager Assets コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Adobe Experience Manager] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md#create-a-connection-to-adobe-experience-manager-forms" class="MCXref xref">[!DNL Adobe Experience Manager Forms]</a> への接続の作成」を参照してください</p> </td> 
+   <td> <p>[!DNL Adobe Experience Manager] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md#create-a-connection-to-adobe-experience-manager-forms" class="MCXref xref">接続の[!DNL Adobe Experience Manager Forms]</a>を参照してください</p> </td> 
   </tr>
 
 このモジュールは web フックを作成し、[!DNL Adobe Experience Manager Forms] のフォーム送信ダイアログに入力できる web フックのアドレスを提供します。

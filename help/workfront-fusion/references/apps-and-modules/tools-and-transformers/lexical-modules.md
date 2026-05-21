@@ -1,25 +1,28 @@
 ---
-title: 語彙モジュール
-description: Adobe Workfront Fusion シナリオでは、辞書モジュールを使用して、辞書をHTMLに、HTMLを辞書に変換できます。
+title: Lexical モジュール
+description: Adobe Workfront Fusion シナリオでは、Lexical モジュールを使用してLexicalをHTMLに、HTMLをLexicalに変換できます。
 author: Becky
 feature: Workfront Fusion
 exl-id: a8b8a1f3-d0f4-40bf-b5c1-dd0fb8100ec0
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+TQID: https://experienceleague.adobe.com/pVoGQjfcVsJ7rme-jv2issE--0EUNq-VL3NDMbuh-Ko
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 8%
+source-wordcount: 239
+ht-degree: 54%
 
 ---
 
-# 語彙モジュール
+# Lexical モジュール
 
 <!-- ADD REDIRECTS -->
 
-Adobe Workfront Fusion シナリオでは、辞書モジュールを使用して、辞書をHTMLに、HTMLを辞書に変換できます。  これをWorkfront モジュールと組み合わせて使用すると、Workfront フィールドにリッチテキストを追加したり、フィールドからリッチテキストを読み取ったりできます。
+Adobe Workfront Fusion シナリオでは、Lexical モジュールを使用してLexicalをHTMLに、HTMLをLexicalに変換できます。  これをWorkfront モジュールと組み合わせて使用すると、Workfront フィールドにリッチテキストを追加したり、リッチテキストを読み取ったりできます。
 
-シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成手順について詳しくは、[シナリオの作成：記事のインデックス](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
 
-モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、[モジュール：記事インデックス](/help/workfront-fusion/references/modules/modules-toc.md)の記事を参照してください。
 
 ## アクセス要件
 
@@ -31,30 +34,30 @@ Adobe Workfront Fusion シナリオでは、辞書モジュールを使用して
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
 +++
 
 
 
-## HTMLから語彙へ
+## HTMLからLexical
 
-HTMLのコードを字句に変換します。
+このモジュールは、HTML コードをLexicalに変換します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -62,15 +65,15 @@ HTMLのコードを字句に変換します。
  <tbody> 
   <tr> 
    <td role="rowheader">HTML</td> 
-   <td> <p>字句に変換するHTML コードを入力またはマッピングします。</p> </td> 
+   <td> <p>Lexicalに変換するHTML コードを入力するか、マッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 
-## HTMLに対する語彙
+## HTMLの字幕
 
-このモジュールは Lexical をHTMLに変換します。
+このモジュールは、LexicalをHTMLに変換します。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
@@ -79,8 +82,8 @@ HTMLのコードを字句に変換します。
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">語彙の</td> 
-   <td> <p>HTMLに変換する字句テキストを入力またはマッピングします。</p> </td> 
+   <td role="rowheader">語彙</td> 
+   <td> <p>HTMLに変換するテキストを入力するか、マッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>

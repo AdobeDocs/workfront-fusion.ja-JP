@@ -1,21 +1,26 @@
 ---
 title: データストアモジュール
-description: Adobe Workfront Fusion データストアは、データベースや単純なテーブルと似ており、シナリオからデータを保存できるので、個々のシナリオやシナリオの実行の間でデータを転送できます。 データストアを使用すると、同期中に様々なシステムから新しいデータを保存できます。
+description: データベースや単純なテーブルと同様に、Adobe Workfront Fusion データストアでは、シナリオからのデータを保存できるので、個々のシナリオやシナリオ実行の間でデータを転送できます。 データストアを使用すると、同期中に様々なシステムから新しいデータを保存できます。
 author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+TQID: https://experienceleague.adobe.com/xxcj73D3UZawazZrK92lAZTYaFTVj92o74zPRsnfFPA
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1139'
-ht-degree: 76%
+source-wordcount: 1139
+ht-degree: 84%
 
 ---
 
 # [!UICONTROL データストア]モジュール
 
-Adobe Workfront Fusion データストアは、データベースや単純なテーブルと似ており、シナリオからデータを保存できるので、個々のシナリオやシナリオの実行の間でデータを転送できます。 データストアを使用すると、同期中に様々なシステムから新しいデータを保存できます。
+データベースや単純なテーブルと同様に、Adobe Workfront Fusion データストアでは、シナリオからのデータを保存できるので、個々のシナリオやシナリオ実行の間でデータを転送できます。 データストアを使用すると、同期中に様々なシステムから新しいデータを保存できます。
 
-データストアモジュールを使用すると、Adobe Workfront Fusion データストア内のレコードを追加、置換、更新、取得、削除、検索、カウントできます。
+データストアモジュールを使用すると、Adobe Workfront Fusion データストアのレコードを追加、置換、更新、取得、削除、検索、カウントできます。
 
 <!--For information on creating, editing, and troubleshooting data stores, see [Data Stores in Adobe Workfront Fusion](/help/workfront-fusion/references/mapping-panel/data-types/)-->
 
@@ -33,22 +38,22 @@ Workfront Fusion のデータストアの紹介ビデオについては、以下
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
 +++
 
@@ -58,17 +63,17 @@ Workfront Fusion のデータストアの紹介ビデオについては、以下
 
 [!UICONTROL データストア]を使用するには、まずデータストアを作成する必要があります。
 
-データストアの作成について詳しくは、[&#x200B; データストアの作成と管理 &#x200B;](/help/workfront-fusion/create-scenarios/map-data/data-stores.md) を参照してください。
+データストアの作成について詳しくは、[&#x200B; データストアの作成と管理](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)を参照してください。
 
 ## [!UICONTROL &#x200B; データストア &#x200B;] モジュールとそのフィールド
 
-Workfront Fusion でデータストアモジュールを設定する場合、以下に示すフィールドが表示されます。 これらのほか、アプリやサービスでのアクセスレベルなどの要因に応じて、追加のデータストアフィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+データストアモジュールを設定すると、Workfront Fusionに次のフィールドが表示されます。 これらのほか、アプリやサービスでのアクセスレベルなどの要因に応じて、追加のデータストアフィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
 データストアを使用するために接続を作成する必要はありません。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。 詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![マップ切り替え](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 
 * [レコードの追加 / 置換](#addreplace-a-record)
@@ -86,11 +91,11 @@ Workfront Fusion でデータストアモジュールを設定する場合、以
 
 データストアとレコードのキーを指定します。
 
-このモジュールは、レコードの ID および関連するフィールドと共に、接続を介してアクセスされるカスタムフィールドとその値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
+このモジュールは、レコードの ID および関連するフィールドと共に、接続を介してアクセスされるカスタムフィールドとその値を返します。 この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
 >[!NOTE]
 >
->既にデータストアに存在するレコードを同じ名前で追加しようとしたときに、「[!UICONTROL &#x200B; 既存のレコードを上書き &#x200B;]」オプションが無効になっている場合、モジュールはエラーをスローします。
+>同じ名前のデータストアにすでに存在するレコードを追加しようとすると、モジュールがエラーをスローし、[!UICONTROL 既存のレコードを上書き] オプションが無効になります。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
@@ -104,14 +109,14 @@ Workfront Fusion でデータストアモジュールを設定する場合、以
   </tr> 
   <tr> 
    <td>[!UICONTROL Key] </td> 
-   <td> <p>モジュールで追加または置換するレコードの一意のキーを入力します。このキーは、後でレコードを取得するために使用できます。このフィールドを空白のままにすると、キーが自動的に生成されます。</p> </td> 
+   <td> <p>モジュールで追加または置換するレコードの一意のキーを入力します。 このキーは、後でレコードを取得するために使用できます。 このフィールドを空白のままにすると、キーが自動的に生成されます。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Overwrite an existing record] </td> 
-   <td> <p>レコードを上書きする場合は、このオプションを有効にします。上書きするレコードは、上記の「キー」フィールドで指定する必要があります。</p> </td> 
+   <td> <p>レコードを上書きする場合は、このオプションを有効にします。 上書きするレコードは、上記の「キー」フィールドで指定する必要があります。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Record] </td> 
+   <td>[!UICONTROL レコード] </td> 
    <td> <p>レコードのフィールドに目的の値を入力します。</p> </td> 
   </tr> 
  </tbody> 
@@ -163,7 +168,7 @@ Workfront Fusion でデータストアモジュールを設定する場合、以
 
 データストアとレコードのキーを指定します。
 
-このモジュールは、レコードの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
+このモジュールは、レコードの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。 この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
 <table style="table-layout:auto">
  <col> 
@@ -203,7 +208,7 @@ Workfront Fusion でデータストアモジュールを設定する場合、以
 
 データストアとレコードのキーを指定します。
 
-このモジュールは、レコードの ID および関連するフィールドと共に、接続を介してアクセスされるカスタムフィールドとその値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
+このモジュールは、レコードの ID および関連するフィールドと共に、接続を介してアクセスされるカスタムフィールドとその値を返します。 この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
 <table style="table-layout:auto">
  <col> 
@@ -246,7 +251,7 @@ Workfront Fusion でデータストアモジュールを設定する場合、以
   </tr> 
   <tr> 
    <td>[!UICONTROL Limit]</td> 
-   <td> <p> Workfront Fusion が 1 つの実行サイクルで返す検索結果の最大数を設定します。</p> </td> 
+   <td> <p> 1回の実行サイクルでWorkfront Fusionが返す検索結果の最大数を設定します。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 
@@ -261,7 +266,7 @@ Workfront Fusion でデータストアモジュールを設定する場合、以
 
 データストアとレコードのキーを指定します。
 
-このモジュールは、レコードの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
+このモジュールは、レコードの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。 この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
@@ -282,7 +287,7 @@ Workfront Fusion でデータストアモジュールを設定する場合、以
    <td> <p>このオプションを有効にすると、指定したキーを持つレコードがまだ存在しない場合、新しいレコードが作成されます。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Record]</td> 
+   <td>[!UICONTROL レコード]</td> 
    <td> <p> レコードの更新対象フィールドに、目的の値を入力します。</p> </td> 
   </tr> 
  </tbody> 

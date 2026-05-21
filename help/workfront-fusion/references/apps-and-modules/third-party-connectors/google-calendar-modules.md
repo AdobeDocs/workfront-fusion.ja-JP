@@ -4,9 +4,16 @@ description: Adobe Workfront Fusionでは、Googleカレンダーを使用する
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e514204-cd8e-4f30-bbbb-b8fbe48fc670
-source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
+TQID: https://experienceleague.adobe.com/Odm53LiZwpv6l-WOLmsvwAdCG1WeyN3CAJfI38o4lXc
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2696'
+source-wordcount: 2717
 ht-degree: 71%
 
 ---
@@ -86,9 +93,9 @@ Google カレンダーコネクタでは、次の機能が使用されます。
 
 ## [!DNL Google Calendar] モジュールとそのフィールド
 
-[!DNL Google Calendar] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Google Calendar]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL Google Calendar] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。 これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Google Calendar]」フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。 詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
 ![マップ切り替え](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -104,7 +111,7 @@ Google カレンダーコネクタでは、次の機能が使用されます。
 
 #### イベントの監視
 
-このトリガーモジュールは、指定したカレンダーで新しいイベントが追加、更新、削除、開始、または終了された場合に、シナリオを実行します。このモジュールは、レコードに関連付けられたすべての標準フィールドと、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
+このトリガーモジュールは、指定したカレンダーで新しいイベントが追加、更新、削除、開始、または終了された場合に、シナリオを実行します。 このモジュールは、レコードに関連付けられたすべての標準フィールドと、接続を介してアクセスされるカスタムフィールドおよび値を返します。 この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
@@ -134,7 +141,7 @@ Google カレンダーコネクタでは、次の機能が使用されます。
   </tr> 
   <tr> 
    <td>[!UICONTROL イベントの最大数]</td> 
-   <td> <p> 1回のサイクルでWorkfront Fusionが使用できるイベントの最大数（シナリオ実行ごとに繰り返される回数）を設定します。 値が大きすぎると、指定されたサードパーティサービス側で接続が中断される可能性があります（タイムアウト）。Workfront Fusionはこの点に影響を与えません。 より小さい値を設定し、最大サイクル数としてより大きい値を定義するか、シナリオをより頻繁に実行することをお勧めします。</p> </td> 
+   <td> <p> 1回のサイクルでWorkfront Fusionが使用できるイベントの最大数（シナリオ実行ごとに繰り返される回数）を設定します。 値が大きすぎると、指定されたサードパーティサービス側で接続が中断される可能性があります（タイムアウト）。 Workfront Fusionはこの点に影響を与えません。 より小さい値を設定し、最大サイクル数としてより大きい値を定義するか、シナリオをより頻繁に実行することをお勧めします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -153,7 +160,7 @@ Google カレンダーコネクタでは、次の機能が使用されます。
   </tr> 
   <tr> 
    <td>[!UICONTROL イベントの最大数]</td> 
-   <td> <p> 1回のサイクルでWorkfront Fusionが使用できるイベントの最大数（シナリオ実行ごとに繰り返される回数）を設定します。 値が大きすぎると、指定されたサードパーティサービス側で接続が中断される可能性があります（タイムアウト）。Workfront Fusionはこの点に影響を与えません。 より小さい値を設定し、最大サイクル数としてより大きい値を定義するか、シナリオをより頻繁に実行することをお勧めします。</p> </td> 
+   <td> <p> 1回のサイクルでWorkfront Fusionが使用できるイベントの最大数（シナリオ実行ごとに繰り返される回数）を設定します。 値が大きすぎると、指定されたサードパーティサービス側で接続が中断される可能性があります（タイムアウト）。 Workfront Fusionはこの点に影響を与えません。 より小さい値を設定し、最大サイクル数としてより大きい値を定義するか、シナリオをより頻繁に実行することをお勧めします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -195,7 +202,7 @@ Google カレンダーコネクタでは、次の機能が使用されます。
 
 イベントのカレンダーとパラメーターを指定します。
 
-このモジュールは、イベントの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
+このモジュールは、イベントの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。 この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
@@ -217,7 +224,7 @@ Google カレンダーコネクタでは、次の機能が使用されます。
   </tr> 
   <tr> 
    <td>[!UICONTROL Event name]</td> 
-   <td> <p> イベントの名前を入力またはマッピングします。 </p> <p>注意：[!UICONTROL Create an event] フィールドで[!UICONTROL Quick add]を選択した場合、イベントの日時を含めることができます。また、Workfront Fusionはその日時のイベントを作成します。 例：<code>Appointment at Capitol Hill on June 3rd 10am-10:25am</code>。[!UICONTROL Quick add] を選択し、イベント名に日時を含めない場合、イベントは現在の時刻から作成され、1 時間存続します。</p> </td> 
+   <td> <p> イベントの名前を入力またはマッピングします。 </p> <p>注意：[!UICONTROL Create an event] フィールドで[!UICONTROL Quick add]を選択した場合、イベントの日時を含めることができます。また、Workfront Fusionはその日時のイベントを作成します。 例：<code>Appointment at Capitol Hill on June 3rd 10am-10:25am</code>。 [!UICONTROL Quick add] を選択し、イベント名に日時を含めない場合、イベントは現在の時刻から作成され、1 時間存続します。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL All day event]</td> 
@@ -233,7 +240,7 @@ Google カレンダーコネクタでは、次の機能が使用されます。
   </tr> 
   <tr> 
    <td>[!UICONTROL Description]</td> 
-   <td>イベントの説明を入力またはマッピングします。このフィールドでは HTML がサポートされています。</td> 
+   <td>イベントの説明を入力またはマッピングします。 このフィールドでは HTML がサポートされています。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Location]</td> 
@@ -241,15 +248,15 @@ Google カレンダーコネクタでは、次の機能が使用されます。
   </tr> 
   <tr> 
    <td>[!UICONTROL Use the default reminder settings for this event]</td> 
-   <td>デフォルトのリマインダー設定を使用するには、このオプションを有効にします。「[!UICONTROL Reminder]」フィールドにカスタムリマインダーを設定した場合、この値は「No」に設定されます。</td> 
+   <td>デフォルトのリマインダー設定を使用するには、このオプションを有効にします。 「[!UICONTROL Reminder]」フィールドにカスタムリマインダーを設定した場合、この値は「No」に設定されます。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Reminder] </td> 
-   <td> <p>イベントのリマインダーを追加します。追加する各リマインダーについて、<b>項目を追加</b>をクリックし、リマインドする方法を選択し、リマインドするイベントの前の時間（分単位）を定義します。</p> </td> 
+   <td> <p>イベントのリマインダーを追加します。 追加する各リマインダーについて、<b>項目を追加</b>をクリックし、リマインドする方法を選択し、リマインドするイベントの前の時間（分単位）を定義します。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Attendees]</td> 
-   <td>出席者をイベントに追加します。各参加者について、<b>参加者を追加</b>をクリックし、名前と電子メールアドレスを入力またはマッピングします。</td> 
+   <td>出席者をイベントに追加します。 各参加者について、<b>参加者を追加</b>をクリックし、名前と電子メールアドレスを入力またはマッピングします。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Show me as]</td> 
@@ -274,7 +281,7 @@ Google カレンダーコネクタでは、次の機能が使用されます。
   </tr> 
   <tr> 
    <td>[!UICONTROL Recurrence]</td> 
-   <td>このイベントに適用する繰り返しルールを追加します。各ルールには、繰り返しイベント用の [!UICONTROL RRULE]、[!UICONTROL EXRULE]、[!UICONTROL RDATE] および [!UICONTROL EXDATE] の各行のリストが必要です。[!UICONTROL DTSTART] 行と [!UICONTROL DTEND] 行は、このフィールドでは使用できません。イベントの開始時刻と終了時刻は、それぞれ「開始」フィールドと「終了」フィールドで指定します。このフィールドは、単一のイベントまたは繰り返しイベントのインスタンスでは省略されます。詳しくは、<a href="https://tools.ietf.org/html/rfc5545#section-3.8.5">RFC5545</a> を参照してください。</td> 
+   <td>このイベントに適用する繰り返しルールを追加します。 各ルールには、繰り返しイベント用の [!UICONTROL RRULE]、[!UICONTROL EXRULE]、[!UICONTROL RDATE] および [!UICONTROL EXDATE] の各行のリストが必要です。 [!UICONTROL DTSTART] 行と [!UICONTROL DTEND] 行は、このフィールドでは使用できません。イベントの開始時刻と終了時刻は、それぞれ「開始」フィールドと「終了」フィールドで指定します。 このフィールドは、単一のイベントまたは繰り返しイベントのインスタンスでは省略されます。 詳しくは、<a href="https://tools.ietf.org/html/rfc5545#section-3.8.5">RFC5545</a> を参照してください。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -285,7 +292,7 @@ Google カレンダーコネクタでは、次の機能が使用されます。
 
 カレンダーとイベント ID を指定します。
 
-このモジュールは、イベントの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
+このモジュールは、イベントの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。 この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
@@ -332,7 +339,7 @@ Google カレンダーコネクタでは、次の機能が使用されます。
   </tr> 
   <tr> 
    <td>[!UICONTROL Start date]</td> 
-   <td> <p> イベントが開始する日付を入力またはマッピングします。また、このモジュールは、この日付より前に開始し、入力された開始日にまだ発生しているイベントを取得します。 </p> <p>サポートされる日付と時刻の形式の一覧について詳しくは、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">型強制</a>を参照してください。</p> </td> 
+   <td> <p> イベントが開始する日付を入力またはマッピングします。 また、このモジュールは、この日付より前に開始し、入力された開始日にまだ発生しているイベントを取得します。 </p> <p>サポートされる日付と時刻の形式の一覧について詳しくは、<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">型強制</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL End date]</td> 
@@ -340,7 +347,7 @@ Google カレンダーコネクタでは、次の機能が使用されます。
   </tr> 
   <tr> 
    <td>[!UICONTROL Single events]</td> 
-   <td> <p> このオプションを有効にすると、繰り返しイベントが単一のインスタンスとして処理されます。例えば、週次ミーティングがあり、このオプションが有効な場合、モジュールは各週のミーティングを個別のイベントとして返します。</p> </td> 
+   <td> <p> このオプションを有効にすると、繰り返しイベントが単一のインスタンスとして処理されます。 例えば、週次ミーティングがあり、このオプションが有効な場合、モジュールは各週のミーティングを個別のイベントとして返します。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Query]</td> 
@@ -350,7 +357,7 @@ Google カレンダーコネクタでは、次の機能が使用されます。
    <td>[!UICONTROL Order by]</td> 
    <td> <p>結果で返されるイベントの順序を選択します。</p> 
     <ul> 
-     <li><strong>[!UICONTROL Start Time]</strong>：開始日時（昇順）で並べ替えます。これは、単一のイベントに対するクエリ時にのみ使用できます。</li> 
+     <li><strong>[!UICONTROL Start Time]</strong>：開始日時（昇順）で並べ替えます。 これは、単一のイベントに対するクエリ時にのみ使用できます。</li> 
      <li><strong>[!UICONTROL Updated Time]</strong>：最終変更時間（昇順）で並べ替えます。</li> 
     </ul> </td> 
   </tr> 
@@ -367,7 +374,7 @@ Google カレンダーコネクタでは、次の機能が使用されます。
 
 カレンダーとイベント ID を指定します。
 
-このモジュールは、イベントの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。この情報は、シナリオ内の後続のモジュールにマッピングできます。
+このモジュールは、イベントの ID や関連するフィールドのほか、接続を介してアクセスされるカスタムフィールドおよび値を返します。 この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
 このモジュールを設定する際には、次のフィールドが表示されます。
 
@@ -388,7 +395,7 @@ Google カレンダーコネクタでは、次の機能が使用されます。
    <td> <p>前に作成した更新対象の [!DNL Google Calendar] イベントの ID を入力します。</p> </td> 
   </tr>   <tr> 
    <td>[!UICONTROL Event name]</td> 
-   <td> <p> イベントの名前を入力またはマッピングします。 </p> <p>注意：[!UICONTROL Create an event] フィールドで[!UICONTROL Quick add]を選択した場合、イベントの日時を含めることができます。また、Workfront Fusionはその日時のイベントを作成します。 例：<code>Appointment at Capitol Hill on June 3rd 10am-10:25am</code>。[!UICONTROL Quick add] を選択し、イベント名に日時を含めない場合、イベントは現在の時刻から作成され、1 時間存続します。</p> </td> 
+   <td> <p> イベントの名前を入力またはマッピングします。 </p> <p>注意：[!UICONTROL Create an event] フィールドで[!UICONTROL Quick add]を選択した場合、イベントの日時を含めることができます。また、Workfront Fusionはその日時のイベントを作成します。 例：<code>Appointment at Capitol Hill on June 3rd 10am-10:25am</code>。 [!UICONTROL Quick add] を選択し、イベント名に日時を含めない場合、イベントは現在の時刻から作成され、1 時間存続します。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL All day event]</td> 
@@ -404,7 +411,7 @@ Google カレンダーコネクタでは、次の機能が使用されます。
   </tr> 
   <tr> 
    <td>[!UICONTROL Description]</td> 
-   <td>イベントの説明を入力またはマッピングします。このフィールドでは HTML がサポートされています。</td> 
+   <td>イベントの説明を入力またはマッピングします。 このフィールドでは HTML がサポートされています。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Location]</td> 
@@ -412,15 +419,15 @@ Google カレンダーコネクタでは、次の機能が使用されます。
   </tr> 
   <tr> 
    <td>[!UICONTROL Use the default reminder settings for this event]</td> 
-   <td>デフォルトのリマインダー設定を使用するには、このオプションを有効にします。「[!UICONTROL Reminder]」フィールドにカスタムリマインダーを設定した場合、この値は「No」に設定されます。</td> 
+   <td>デフォルトのリマインダー設定を使用するには、このオプションを有効にします。 「[!UICONTROL Reminder]」フィールドにカスタムリマインダーを設定した場合、この値は「No」に設定されます。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Reminder] </td> 
-   <td> <p>イベントのリマインダーを追加します。追加する各リマインダーについて、<b>項目を追加</b>をクリックし、リマインドする方法を選択し、リマインドするイベントの前の時間（分単位）を定義します。</p> </td> 
+   <td> <p>イベントのリマインダーを追加します。 追加する各リマインダーについて、<b>項目を追加</b>をクリックし、リマインドする方法を選択し、リマインドするイベントの前の時間（分単位）を定義します。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Attendees]</td> 
-   <td>出席者をイベントに追加します。各参加者について、<b>参加者を追加</b>をクリックし、名前と電子メールアドレスを入力またはマッピングします。</td> 
+   <td>出席者をイベントに追加します。 各参加者について、<b>参加者を追加</b>をクリックし、名前と電子メールアドレスを入力またはマッピングします。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Show me as]</td> 
@@ -445,7 +452,7 @@ Google カレンダーコネクタでは、次の機能が使用されます。
   </tr> 
   <tr> 
    <td>[!UICONTROL Recurrence]</td> 
-   <td>このイベントに適用する繰り返しルールを追加します。各ルールには、繰り返しイベント用の [!UICONTROL RRULE]、[!UICONTROL EXRULE]、[!UICONTROL RDATE] および [!UICONTROL EXDATE] の各行のリストが必要です。[!UICONTROL DTSTART] 行と [!UICONTROL DTEND] 行は、このフィールドでは使用できません。イベントの開始時刻と終了時刻は、それぞれ「開始」フィールドと「終了」フィールドで指定します。このフィールドは、単一のイベントまたは繰り返しイベントのインスタンスでは省略されます。詳しくは、<a href="https://tools.ietf.org/html/rfc5545#section-3.8.5">RFC5545</a> を参照してください。</td> 
+   <td>このイベントに適用する繰り返しルールを追加します。 各ルールには、繰り返しイベント用の [!UICONTROL RRULE]、[!UICONTROL EXRULE]、[!UICONTROL RDATE] および [!UICONTROL EXDATE] の各行のリストが必要です。 [!UICONTROL DTSTART] 行と [!UICONTROL DTEND] 行は、このフィールドでは使用できません。イベントの開始時刻と終了時刻は、それぞれ「開始」フィールドと「終了」フィールドで指定します。 このフィールドは、単一のイベントまたは繰り返しイベントのインスタンスでは省略されます。 詳しくは、<a href="https://tools.ietf.org/html/rfc5545#section-3.8.5">RFC5545</a> を参照してください。</td> 
   </tr>
 
 </tbody> 

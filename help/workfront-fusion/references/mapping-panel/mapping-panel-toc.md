@@ -1,15 +1,18 @@
 ---
 content-type: reference
 title: マッピングパネル参照：記事インデックス
-description: この節には、Adobe Workfront Fusion のマッピングパネルに関する参照資料が含まれています。
+description: このセクションには、Adobe Workfront Fusionのマッピングパネルに関連する参考資料が含まれています。
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 20fbbcd6-6c97-4b8c-9d97-7d98b632dc99
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+TQID: https://experienceleague.adobe.com/Uhsc9uKcn3-oEjJ54HOD2nzI2P5hazWyGQZhiwMphf4
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '27'
-ht-degree: 3%
+source-wordcount: 27
+ht-degree: 11%
 
 ---
 

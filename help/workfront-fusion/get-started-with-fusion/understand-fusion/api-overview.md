@@ -1,12 +1,18 @@
 ---
 title: API の概要
-description: アプリケーションプログラミングインターフェイス（API）は、アプリケーションとサービスが相互に通信する手段です。Fusion は API を使用して、接続先のアプリケーションと通信します。各アプリケーションには個別の API があります。
+description: アプリケーションプログラミングインターフェイス（API）は、アプリケーションとサービスが相互に通信する手段です。 Fusion は API を使用して、接続先のアプリケーションと通信します。 各アプリケーションには個別の API があります。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 74308a6a43418296b29739f03683f23357d545bc
+exl-id: 2629ff6e-2b76-44cd-8030-465724cc04bf
+TQID: https://experienceleague.adobe.com/LTJpx90BlcSJp-l1JieuH8Tr2ulGpLujwt50-5IYttY
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 87%
+source-wordcount: 494
+ht-degree: 79%
 
 ---
 
@@ -14,32 +20,32 @@ ht-degree: 87%
 
 <!--Add me to TOCs-->
 
-アプリケーションプログラミングインターフェイス（API）は、アプリケーションとサービスが相互に通信する手段です。Fusion は API を使用して、接続先のアプリケーションと通信します。
+アプリケーションプログラミングインターフェイス（API）は、アプリケーションとサービスが相互に通信する手段です。 Fusion は API を使用して、接続先のアプリケーションと通信します。
 
-API の作成と制御は、アプリケーションの所有者が行います。例えば、Workfront API は Adobe の Workfront チームが所有し、Microsoft Graph API は Microsoft が所有しています。API の所有者は、API を通じて使用できるアクションを定義します。
+API の作成と制御は、アプリケーションの所有者が行います。 例えば、Workfront API は Adobe の Workfront チームが所有し、Microsoft Graph API は Microsoft が所有しています。 API の所有者は、API を通じて使用できるアクションを定義します。
 
 >[!NOTE]
 >
->Workfront Fusion には、Fusion でのアクションの自動化に使用できる独自の API があります。
->これらの API は増分的にリリースされており、現在は実験的とマークされています。 Fusion チームは API の開発と拡張を積極的に進めており、新機能が利用可能になったらアップデートが公開されます。
->Workfront Fusion API に関するドキュメントについては、[Workfront Fusion API](https://developer.adobe.com/workfront-fusion-apis/) を参照してください。
+>Workfront Fusionには、Fusionでアクションを自動化するために使用できる独自のAPIがあります。
+>APIは段階的にリリースされており、現在は実験的としてマークされています。 Adobe Workfront Fusion チームはAPIの開発と拡張を積極的に行っており、新しい機能が利用可能になるとアップデートが公開されます。
+>Workfront Fusion APIに関するドキュメントについては、[Workfront Fusion API](https://developer.adobe.com/workfront-fusion-apis/)を参照してください。
 
 ## 考慮事項
 
 API が Fusion ではなく所有者によって定義されるという事実は、次の重要な考慮事項を伴います。
 
-* **Fusion を使用して、パブリック API を持つ任意のアプリやサービスに接続できます**。Fusion がそのアプリやサービスに専用のコネクターを提供しているかどうかは関係ありません。Fusion のユニバーサルコネクターを使用して、これらのアプリやサービスをシナリオに取り込むことができます。
+* **Fusion を使用して、パブリック API を持つ任意のアプリやサービスに接続できます**。Fusion がそのアプリやサービスに専用のコネクターを提供しているかどうかは関係ありません。 Fusion のユニバーサルコネクターを使用して、これらのアプリやサービスをシナリオに取り込むことができます。
 
   ユニバーサルコネクターのリストについて詳しくは、[ユニバーサルコネクター](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)を参照してください。
 
-* **所有者がアプリケーションの API に加えた変更は、Fusion の機能に影響を与える可能性があります。**&#x200B;変更が非常に重大であれば、Fusion は、モジュールや接続タイプを更新したり、極端なケースではアプリケーション用の新しいコネクターを作成したりする場合があります。
+* **所有者がアプリケーションのAPIに加えた変更は、Fusionの機能に影響を与える可能性があります。** 変更が十分に深刻な場合、Fusionはモジュールや接続タイプを更新する必要があるか、極端な場合にはアプリケーション用の新しいコネクタを作成する可能性があります。
 
   「重大な変更」と呼ばれるこれらの極端な状況について詳しくは、この記事の[重大な変更](#breaking-changes)を参照してください。
 
 
 ## 重大な変更
 
-重大な変更の一般的な原因は廃止によるもので、API 所有者が API の一部またはすべてを利用を停止する際に起こります。これが起こると、Fusion チームは、Fusion の機能を新しいバージョンのアプリケーションの API にすばやく再調整するのにあらゆる努力を払います。通常は、新しいモジュール、接続タイプまたはコネクターの形を取ります。
+重大な変更の一般的な原因は廃止によるもので、API 所有者が API の一部またはすべてを利用を停止する際に起こります。 これが起こると、Fusion チームは、Fusion の機能を新しいバージョンのアプリケーションの API にすばやく再調整するのにあらゆる努力を払います。 通常は、新しいモジュール、接続タイプまたはコネクターの形を取ります。
 
 Fusion シナリオは特定のデータで設定されているので、シナリオを更新する必要がある場合があります。
 

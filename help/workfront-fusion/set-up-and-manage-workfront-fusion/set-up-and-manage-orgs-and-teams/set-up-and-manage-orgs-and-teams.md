@@ -1,15 +1,18 @@
 ---
 content-type: reference
 title: 組織とチームの設定と管理：記事インデックス
-description: この節では、Adobe Workfront Fusion での組織とチームの設定および管理に関する記事を紹介します。
+description: この節では、Adobe Workfront Fusionでの組織とチームの設定と管理に関する記事を紹介します。
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: b592a677-65ba-4790-ab41-6e30f6a76726
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+TQID: https://experienceleague.adobe.com/ZhKRwexES9U6nfJVLDIVc282-52CUlngCTZzyZEGyl4
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '49'
-ht-degree: 0%
+source-wordcount: 49
+ht-degree: 48%
 
 ---
 

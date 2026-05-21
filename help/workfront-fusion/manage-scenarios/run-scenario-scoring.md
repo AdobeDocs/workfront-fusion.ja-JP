@@ -1,13 +1,16 @@
 ---
 title: シナリオスコアリングエキスパートの実行
-description: シナリオスコアリングエキスパートは、ベストプラクティスに従ってシナリオが確実に設定されるようにするのに役立ちます。 シナリオをチェックし、構造と組織に関する推奨事項を提供します。
+description: シナリオスコアリングエキスパートは、ベストプラクティスに従ってシナリオを設定するのに役立ちます。 シナリオをチェックし、その構造と組織に関する推奨事項を提供します。
 author: Becky
 feature: Workfront Fusion
 exl-id: b668e7f6-dac5-4ac9-b3f3-109f70eaa2c4
-source-git-commit: 42be02d6a59a5d7b8faccdcfe40e8b967153c6eb
+TQID: https://experienceleague.adobe.com/g8v-odwnN-wtyzSh8wr6LSNL7xLIBs8Guw2zY-JW700
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 2%
+source-wordcount: 346
+ht-degree: 32%
 
 ---
 
@@ -17,7 +20,7 @@ ht-degree: 2%
 >
 >シナリオスコアリングエキスパートは一時的に無効になっています。
 
-シナリオスコアリングエキスパートは、ベストプラクティスに従ってシナリオが確実に設定されるようにするのに役立ちます。 シナリオをチェックし、構造と組織に関する推奨事項を提供します。
+シナリオスコアリングエキスパートは、ベストプラクティスに従ってシナリオを設定するのに役立ちます。 シナリオをチェックし、その構造と組織に関する推奨事項を提供します。
 
 ## アクセス要件
 
@@ -29,51 +32,51 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
 +++
 
 ## シナリオスコアリングエキスパートの実行
 
-1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
-1. シナリオ・スコアリング・エキスパートを実行するシナリオを選択します。
-1. シナリオの任意の場所をクリックして、シナリオエディターに移動します。
-1. 画面の下部付近にあるシナリオスコアリングエキスパートアイコン ![&#x200B; シナリオスコアリングエキスパート &#x200B;](assets/scoring-expert-icon.png) をクリックします。
+1. 左側のパネルの「**[!UICONTROL シナリオ]**」タブをクリックします。
+1. シナリオスコアリングエキスパートを実行するシナリオを選択します。
+1. シナリオの任意の場所をクリックして、シナリオエディターに入ります。
+1. 画面の下部にある「シナリオスコアリングのエキスパート」アイコン ![&#x200B; シナリオスコアリングのエキスパート &#x200B;](assets/scoring-expert-icon.png)をクリックします。
 
    シナリオスコアリングエキスパートパネルが開きます。
-1. **評価** をクリックします。
+1. **評価**&#x200B;をクリックします。
 
-シナリオスコアリングエキスパートは、10 点中のスコアを返し、どのチェックに合格または失敗したかを示します。 チェックが失敗した場合、シナリオのスコアリング・エキスパートは、シナリオがこれらのチェックを確実に満たす方法の推奨事項を提供します。
+Scenario Scoring Expertは、10点満点のスコアを返し、どのチェックが成功したか失敗したかを示します。 チェックが失敗した場合、シナリオスコアリングエキスパートは、シナリオがこれらのチェックを満たしていることを確認する方法に関する推奨事項を提供します。
 
 ![&#x200B; シナリオスコア &#x200B;](assets/scenario-score.png)
 
 ## シナリオスコアリングチェック
 
-シナリオスコアリングエキスパートでは、次のチェックを使用します。
+シナリオスコアリングエキスパートは、次のチェックを使用します。
 
-* シナリオに名前を付ける必要があります。
-* すべてのモジュールにラベルを付ける必要があります。
+* シナリオには名前を付ける必要があります。
+* すべてのモジュールにはラベルをつける必要があります。
 * シナリオは、設定されたスケジュールで実行する必要があります。
 
-  手順については、[&#x200B; シナリオのスケジュール設定 &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md) を参照してください。
-* シナリオのブループリントのサイズは 5 MB 未満にする必要があります。
+  手順について詳しくは、[シナリオのスケジュール](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)を参照してください。
+* シナリオブループリントサイズは5 MB未満である必要があります。
 
-  詳しくは、[Fusion パフォーマンスガードレール &#x200B;](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md#scenarios) を参照してください。
+  詳しくは、[Fusionのパフォーマンスガードレール &#x200B;](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md#scenarios)を参照してください。
 * Workfront インスタントトリガーモジュールを使用する場合は、フィルタリングする必要があります。
 
-  手順については、[Workfront/[!UICONTROL &#x200B; イベントをウォッチ &#x200B;] モジュールのイベント購読フィルター &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules) を参照してください。
+  手順については、「[Workfront > [!UICONTROL Watch Events] モジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules)」の「Event サブスクリプションフィルター」を参照してください。

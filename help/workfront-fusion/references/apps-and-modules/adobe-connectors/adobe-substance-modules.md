@@ -4,10 +4,15 @@ description: Adobe Workfront Fusion のシナリオでは、 [!DNL Adobe Substan
 author: Becky
 feature: Workfront Fusion
 exl-id: 85e2e832-0347-4270-b360-4a07224f2bcc
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/TpqnvObLgYeYWDIMW8ufHLTculqL9wgLrWhrgHakGyc
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '830'
-ht-degree: 36%
+source-wordcount: 859
+ht-degree: 35%
 
 ---
 
@@ -59,7 +64,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ## 前提条件
 
-[!DNL Adobe Substance] コネクタを使用する前に、次の前提条件が満たされていることを確認する必要があります。
+[!DNL Adobe Substance] コネクタを使用する前に、以下の前提条件が満たされていることを確認してください。
 
 * アクティブな [!DNL Adobe Substance] アカウントが必要です。
 
@@ -67,9 +72,9 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ## [!DNL Adobe Substance] モジュールとそのフィールド
 
-[!DNL Adobe Substance] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Adobe Substance]」フィールドが表示される場合があります。モジュール内のフィールド名の横にアスタリスク記号が表示されている場合は、必須フィールドを示しています。
+[!DNL Adobe Substance] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。 これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Adobe Substance]」フィールドが表示される場合があります。 モジュール内のフィールド名の横にアスタリスク記号が表示されている場合は、必須フィールドを示しています。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。 詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
 ![マップ切り替え](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 

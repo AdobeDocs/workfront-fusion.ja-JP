@@ -4,9 +4,12 @@ description: 次の数式は、Adobe Workfront Fusion マッピングパネル�
 author: Becky
 feature: Workfront Fusion
 exl-id: 3d08b09d-b395-4226-b7e3-d5650c428a59
-source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
+TQID: https://experienceleague.adobe.com/a0WYFvPFBnXOvKS9ndQ-TD5xSvJz2bCbUbDY5VnXW0w
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: 404
 ht-degree: 62%
 
 ---

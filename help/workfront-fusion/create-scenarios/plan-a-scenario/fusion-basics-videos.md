@@ -1,13 +1,16 @@
 ---
 title: ビデオの概要
-description: これらのビデオは、シナリオを計画する際に役立つ場合があります
+description: これらの動画は、シナリオプランニングに役立つかもしれません
 author: Becky
 feature: Workfront Fusion
 exl-id: 875b4c9a-7065-4960-9fdc-85fb0a4bf146
-source-git-commit: 914f108dc7e13e89806f233812a687cdc06cf1c8
+TQID: https://experienceleague.adobe.com/aWLSSTNkbmQAePryPq8-WPMR6dEhVG1XYiVcKNahRfs
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '60'
-ht-degree: 65%
+source-wordcount: 60
+ht-degree: 55%
 
 ---
 
@@ -17,14 +20,14 @@ ht-degree: 65%
 
 ## ナビゲーション
 
-* [Adobe統合シェルでのWorkfront Fusion](https://video.tv.adobe.com/v/3412392/){target=_blank}
+* [Adobe統合シェル上のWorkfront Fusion](https://video.tv.adobe.com/v/3412392/){target=_blank}
 
 ## 基本
 
-* [Web フック初級](https://video.tv.adobe.com/v/3427025/){target=_blank}
-* [Web フック中級](https://video.tv.adobe.com/v/3427030/){target=_blank}
+* [Webhookの概要](https://video.tv.adobe.com/v/3427025/){target=_blank}
+* [中間Webhook](https://video.tv.adobe.com/v/3427030/){target=_blank}
 * [データストア](https://video.tv.adobe.com/v/3427029/){target=_blank}
-* [Fusion 開発ツール](https://video.tv.adobe.com/v/3427031/){target=_blank}
+* [Fusion開発ツール](https://video.tv.adobe.com/v/3427031/){target=_blank}
 * [フォルダーの同期](https://video.tv.adobe.com/v/3427033/){target=_blank}
 
 ## コネクタ

@@ -1,17 +1,20 @@
 ---
-title: 日時フォーマット用のトークン
+title: 日付と時間の書式設定用トークン
 description: 日時書式設定の次のトークンが [!DNL Adobe Workfront Fusion mapping] パネルで使用可能です。
 author: Becky
 feature: Workfront Fusion
 exl-id: 4a7f288e-d563-4c37-a8bf-efc7e6b759d4
-source-git-commit: 24a6c1558fd6349c022df8a1847a7f39fafddd67
+TQID: https://experienceleague.adobe.com/PVtZkvmHsxtuAH7fXCoXB07zPRlHPJnG-j0M2lb-hGQ
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 91%
+source-wordcount: 253
+ht-degree: 100%
 
 ---
 
-# 日時フォーマット用のトークン
+# 日付と時間の書式設定用トークン
 
 ## 年、月、日のトークン
 
@@ -60,7 +63,7 @@ ht-degree: 91%
   <tr> 
    <td><code>Mo </code> </td> 
    <td><code>1st 2nd ... 11th 12th</code> </td> 
-   <td> <p>[!UICONTROL Month] 序数で</p> </td> 
+   <td> <p>[!UICONTROL Month]（序数付き）</p> </td> 
   </tr> 
   <tr> 
    <td><code>MM</code> </td> 
@@ -100,7 +103,7 @@ ht-degree: 91%
   <tr> 
    <td><code>DDDo</code> </td> 
    <td><code>1st 2nd ... 364th 365th</code> </td> 
-   <td> <p>[!UICONTROL Day of year] 序数で</p> </td> 
+   <td> <p>[!UICONTROL Day of year]（序数付き）</p> </td> 
   </tr> 
   <tr> 
    <td><code>DDDD </code> </td> 
@@ -157,7 +160,7 @@ ht-degree: 91%
   <tr> 
    <td><code>w </code> </td> 
    <td><code>1 2 ... 52 53 </code> </td> 
-   <td> <p>年間通算週</p> </td> 
+   <td> <p>通週</p> </td> 
   </tr> 
   <tr> 
    <td><code>wo </code> </td> 
@@ -269,7 +272,7 @@ ht-degree: 91%
   <tr> 
    <td><code>mm</code> </td> 
    <td><code>00 01 ... 58 59</code> </td> 
-   <td> <p>[!UICONTROL Minutes with] 先頭のゼロ</p> </td> 
+   <td> <p>[!UICONTROL Minutes with]（先頭のゼロで桁揃え）</p> </td> 
   </tr> 
   <tr> 
    <td><code>s</code> </td> 

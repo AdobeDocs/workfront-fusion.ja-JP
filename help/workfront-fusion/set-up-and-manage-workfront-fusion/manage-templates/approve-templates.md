@@ -6,9 +6,17 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: dafecd8b-96e5-46da-9ab6-15f0bc9b52a4
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/YxbvSHbDGHOsRUv8UJ8aDUct1daxudv2IGAqG3dkGZU
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: 526
 ht-degree: 44%
 
 ---
@@ -93,16 +101,16 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 以下のステータスを使用できます。
 
 * **[!UICONTROL 非公開]**：このテンプレートは、テンプレート作成者とそのチームに対してのみ表示されます。
-* **[!UICONTROL 公開済み]**：このテンプレートは、テンプレート作成者とそのチームに対してのみ表示されます。公開したテンプレートは、必要に応じて承認用に送信できます。 共有可能なリンクをコピーすることもできます。
-* **[!UICONTROL 承認済み]**：このテンプレートは、すべての Workfront Fusion ユーザーの「[!UICONTROL 公開テンプレート]」タブに表示されます。画面の右上隅にある[!UICONTROL &#x200B; オプション &#x200B;]をクリックして、共有可能なリンクをコピーすることもできます。
+* **[!UICONTROL 公開済み]**：このテンプレートは、テンプレート作成者とそのチームに対してのみ表示されます。 公開したテンプレートは、必要に応じて承認用に送信できます。 共有可能なリンクをコピーすることもできます。
+* **[!UICONTROL 承認済み]**：このテンプレートは、すべての Workfront Fusion ユーザーの「[!UICONTROL 公開テンプレート]」タブに表示されます。 画面の右上隅にある[!UICONTROL &#x200B; オプション &#x200B;]をクリックして、共有可能なリンクをコピーすることもできます。
 
-「[!UICONTROL チームテンプレート]」タブから、ステータスを確認することができます。テンプレートが公開されると、テンプレート名の右側にアイコンが表示されます。
+「[!UICONTROL チームテンプレート]」タブから、ステータスを確認することができます。 テンプレートが公開されると、テンプレート名の右側にアイコンが表示されます。
 
 * **目のアイコン**: テンプレートが公開されました。テンプレートはチームでのみ表示され、承認リクエストは送信されませんでした。
 * **黄色のチェックマークアイコン**: テンプレートが公開され、チームのみが表示され、「公開テンプレート」タブに追加する承認待ちの状態になっています。
 * **緑のチェックマークアイコン**: テンプレートは「公開テンプレート」タブで使用でき、Workfront Fusion ユーザーなら誰でも表示できます。 [!UICONTROL &#x200B; チームテンプレート &#x200B;] タブにも表示されます。 テンプレート作成者またはチームメンバーは、引き続きテンプレートを編集できます。
 
-アイコンのないテンプレートは[!UICONTROL プライベート]ステータスになります。これらは公開されておらず、チームにのみ表示されます。
+アイコンのないテンプレートは[!UICONTROL プライベート]ステータスになります。 これらは公開されておらず、チームにのみ表示されます。
 
 
 <!--

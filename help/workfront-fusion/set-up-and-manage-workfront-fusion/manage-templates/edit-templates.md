@@ -6,10 +6,19 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 473dba8b-faa4-432f-9357-c2146e86b261
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/J7kDB9abxI53dRs6xZikcHRDbgHZZfEhWLzGDUw2CRg
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 46%
+source-wordcount: 772
+ht-degree: 45%
 
 ---
 
@@ -78,7 +87,7 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 
    >[!IMPORTANT]
    >
-   >言語の選択は、システム設定で使用できる言語に対応し、パブリックテンプレートの名前と説明にのみ関係します。テンプレートを保存した後は、テンプレート言語を変更することはできません。
+   >言語の選択は、システム設定で使用できる言語に対応し、パブリックテンプレートの名前と説明にのみ関係します。 テンプレートを保存した後は、テンプレート言語を変更することはできません。
 
 1. （オプション）テンプレートの説明を編集するには、**[!UICONTROL テンプレートの設定]** ![&#x200B; シナリオ設定アイコン &#x200B;](assets/fusion-scenario-settings-icon.png)をクリックし、説明を入力します。
 1. 標準シナリオを作成する場合と同じ方法で、アプリ、モジュール、ツールを追加または編集します。
@@ -115,16 +124,16 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 以下のステータスを使用できます。
 
 * **[!UICONTROL 非公開]**：このテンプレートは、テンプレート作成者とそのチームに対してのみ表示されます。
-* **[!UICONTROL 公開済み]**：このテンプレートは、テンプレート作成者とそのチームに対してのみ表示されます。公開したテンプレートは、必要に応じて承認用に送信できます。 共有可能なリンクをコピーすることもできます。
-* **[!UICONTROL 承認済み]**：このテンプレートは、すべての Workfront Fusion ユーザーの「[!UICONTROL 公開テンプレート]」タブに表示されます。画面の右上隅にある[!UICONTROL &#x200B; オプション &#x200B;]をクリックして、共有可能なリンクをコピーすることもできます。
+* **[!UICONTROL 公開済み]**：このテンプレートは、テンプレート作成者とそのチームに対してのみ表示されます。 公開したテンプレートは、必要に応じて承認用に送信できます。 共有可能なリンクをコピーすることもできます。
+* **[!UICONTROL 承認済み]**：このテンプレートは、すべての Workfront Fusion ユーザーの「[!UICONTROL 公開テンプレート]」タブに表示されます。 画面の右上隅にある[!UICONTROL &#x200B; オプション &#x200B;]をクリックして、共有可能なリンクをコピーすることもできます。
 
-「[!UICONTROL チームテンプレート]」タブから、ステータスを確認することができます。テンプレートが公開されると、テンプレート名の右側にアイコンが表示されます。
+「[!UICONTROL チームテンプレート]」タブから、ステータスを確認することができます。 テンプレートが公開されると、テンプレート名の右側にアイコンが表示されます。
 
 * **目のアイコン**: テンプレートが公開されました。チームに表示されます。
 * **黄色のチェックマークアイコン**: テンプレートが公開され、チームのみが表示され、「公開テンプレート」タブに追加する承認待ちの状態になっています。
 * **緑のチェックマークアイコン**: テンプレートは「公開テンプレート」タブで使用でき、Workfront Fusion ユーザーなら誰でも表示できます。 [!UICONTROL &#x200B; チームテンプレート &#x200B;] タブにも表示されます。 テンプレート作成者またはチームメンバーは、引き続きテンプレートを編集できます。
 
-アイコンのないテンプレートは[!UICONTROL プライベート]ステータスになります。これらは公開されておらず、チームにのみ表示されます。
+アイコンのないテンプレートは[!UICONTROL プライベート]ステータスになります。 これらは公開されておらず、チームにのみ表示されます。
 
 ## テンプレートのSVG情報を探す
 

@@ -1,19 +1,25 @@
 ---
 title: テキストパーサー
-description: テキストパーサーツールを使用して、他のAdobe Workfront Fusion シナリオモジュールで使用できるようにテキストを解析できます。 テキストパーサーには接続は必要ありません。
+description: テキスト解析ツールを使用すると、他のAdobe Workfront Fusion シナリオモジュールで使用するテキストを解析できます。 テキストパーサーには接続は必要ありません。
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 5be274105bf13a48e7e76eaa6bd3b62c315f97a9
+TQID: https://experienceleague.adobe.com/0hUSiU9zD2vHGXsZkhcfuKYQJrdP6CAjjwEn06CDLNM
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 86%
+source-wordcount: 1324
+ht-degree: 83%
 
 ---
 
 # [!UICONTROL テキストパーサー]
 
-[!UICONTROL &#x200B; テキストパーサーツール &#x200B;] を使用して、他のAdobe Workfront Fusion シナリオモジュールで使用するテキストを解析できます。 [!UICONTROL テキストパーサー]には接続は必要ありません。
+[!UICONTROL &#x200B; テキスト解析ツール &#x200B;]を使用して、他のAdobe Workfront Fusion シナリオモジュールで使用するテキストを解析できます。 [!UICONTROL テキストパーサー]には接続は必要ありません。
 
 ## アクセス要件
 
@@ -46,9 +52,9 @@ ht-degree: 86%
 
 
 
-## テキストパーサー API 情報
+## テキストパーサーAPI情報
 
-テキストパーサーコネクターでは、以下を使用します。
+テキストパーサーコネクタでは、次の機能を使用します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -63,9 +69,9 @@ ht-degree: 86%
 
 ## [!UICONTROL テキストパーサー]モジュールとそのフィールド
 
-[!UICONTROL &#x200B; テキストパーサー &#x200B;] モジュールを設定すると、Adobe Workfront Fusion は以下に示すフィールドを表示します。 モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL &#x200B; テキストパーサー] モジュールを設定すると、Adobe Workfront Fusionには次のフィールドが表示されます。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。 詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
 ![マップ切り替え](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -119,7 +125,7 @@ ht-degree: 86%
   </tr> 
   <tr> 
    <td>[!UICONTROL Pattern]</td> 
-   <td> <p>テキストから解析する要素を反映するパターンを選択します。</p> <p>カスタムの正規表現を入力するには、リストから「カスタム」を選択し、「カスタム正規表現」フィールドにカスタム式を入力します。</td> 
+   <td> <p>テキストから解析する要素を反映するパターンを選択します。</p> <p>カスタム正規表現を入力するには、リストから「カスタム」を選択し、「カスタム正規表現」フィールドにカスタム式を入力します。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Ignore Duplicate Occurrences]</td> 
@@ -151,15 +157,15 @@ ht-degree: 86%
 
 #### [!UICONTROL 一致パターン]
 
-[!UICONTROL 一致パターン]モジュールを使用すると、指定したテキストから検索パターンに一致する文字列要素を検索して抽出できます。このモジュールは正規表現（regex または regexp と表記される場合もあります）を使用します。
+[!UICONTROL 一致パターン]モジュールを使用すると、指定したテキストから検索パターンに一致する文字列要素を検索して抽出できます。 このモジュールは正規表現（regex または regexp と表記される場合もあります）を使用します。
 
-正規表現とは、各文字が特別な意味を持つメタ文字、またはリテラルの意味を持つ正規文字のいずれかである文字のシーケンスです。これらの文字とメタ文字は、テキストの検索に使用できるパターンを識別します。例えば、名前を検索する場合、大文字で始まる 2 つの連続した単語で構成されるパターンを検索する正規表現を設定できます。正規表現は、テキストを検索および操作するための強力なツールです。
+正規表現とは、各文字が特別な意味を持つメタ文字、またはリテラルの意味を持つ正規文字のいずれかである文字のシーケンスです。 これらの文字とメタ文字は、テキストの検索に使用できるパターンを識別します。 例えば、名前を検索する場合、大文字で始まる 2 つの連続した単語で構成されるパターンを検索する正規表現を設定できます。 正規表現は、テキストを検索および操作するための強力なツールです。
 
-正規表現についての詳しい説明は、この記事の範囲外です。次のリソースをお勧めします。
+正規表現についての詳しい説明は、この記事の範囲外です。 次のリソースをお勧めします。
 
 * メタ文字の完全なリストについては、MDN web ドキュメントの[正規表現](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)を参照してください。
 * 正規表現の作成方法を説明するチュートリアルについては、[RegexOne](https://regexone.com/) をお勧めします。
-* 正規表現を試したい方には、[正規表現 101](https://regex101.com/) web サイトをお勧めします。左パネルで ECMAScript（JavaScript）FLAVOR を選択します。
+* 正規表現を試したい方には、[正規表現 101](https://regex101.com/) web サイトをお勧めします。 左パネルで ECMAScript（JavaScript）FLAVOR を選択します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -167,11 +173,11 @@ ht-degree: 86%
  <tbody> 
   <tr> 
    <td>[!UICONTROL Pattern] </td> 
-   <td> <p>正規表現のパターンを入力します。 </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>例：</b></span></span><code>[+-]?(\d+(\.\d+)?|\.\d+)([eE][+-]?\d+)?</code> で指定されたテキスト内のすべての数字を抽出します。</p> <p>メモ：  <p>パターンでは、少なくとも 1 つのキャプチャグループが括弧内に含まれている必要があります<code>()</code>。パターンにキャプチャグループが含まれていない場合、出力バンドルは空になります。</p> </p> </td> 
+   <td> <p>正規表現のパターンを入力します。 </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>例：</b></span></span><code>[+-]?(\d+(\.\d+)?|\.\d+)([eE][+-]?\d+)?</code> で指定されたテキスト内のすべての数字を抽出します。</p> <p>メモ：  <p>パターンでは、少なくとも 1 つのキャプチャグループが括弧内に含まれている必要があります<code>()</code>。 パターンにキャプチャグループが含まれていない場合、出力バンドルは空になります。</p> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Global match]</td> 
-   <td> <p>テキスト内のすべての一致を取得するには、このオプションを有効にします。一致はそれぞれ、個別のバンドルに出力されます。このオプションが無効になっている場合、モジュールは最初のエントリのみを取得します。</p> </td> 
+   <td> <p>テキスト内のすべての一致を取得するには、このオプションを有効にします。 一致はそれぞれ、個別のバンドルに出力されます。 このオプションが無効になっている場合、モジュールは最初のエントリのみを取得します。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Case sensitive]</td> 
@@ -183,7 +189,7 @@ ht-degree: 86%
   </tr> 
   <tr> 
    <td>[!UICONTROL Singleline]</td> 
-   <td>このオプションを有効にすると、ピリオド （.）が改行文字（<code>\n</code>）と一致します。</td> 
+   <td>このオプションを有効にすると、ピリオド（。）が 改行文字（<code>\n</code>）と一致します。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 
@@ -206,15 +212,15 @@ ht-degree: 86%
  <tbody> 
   <tr> 
    <td>[!UICONTROL Pattern] </td> 
-   <td> <p>検索語句を入力します。また、正規表現を使用することもできます。正規表現について詳しくは、<a href="#match-pattern" class="MCXref xref">[!UICONTROL Match Pattern]</a> モジュールを参照してください。</p> </td> 
+   <td> <p>検索語句を入力します。 また、正規表現を使用することもできます。 正規表現について詳しくは、<a href="#match-pattern" class="MCXref xref">[!UICONTROL Match Pattern]</a> モジュールを参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL New value]</td> 
-   <td> <p> 検索語句を置き換える値を入力します。</p> </td> 
+   <td> <p> 検索語を置き換える値を入力します。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Global match]</td> 
-   <td> <p>テキスト内のすべての一致を取得するには、このオプションを有効にします。一致はそれぞれ、個別のバンドルに出力されます。このオプションが無効になっている場合、モジュールは最初のエントリのみを取得します。</p> </td> 
+   <td> <p>テキスト内のすべての一致を取得するには、このオプションを有効にします。 一致はそれぞれ、個別のバンドルに出力されます。 このオプションが無効になっている場合、モジュールは最初のエントリのみを取得します。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Case sensitive]</td> 
@@ -226,7 +232,7 @@ ht-degree: 86%
   </tr> 
   <tr> 
    <td>[!UICONTROL Singleline]</td> 
-   <td>このオプションを有効にすると、ピリオド （.）が改行文字（<code>\n</code>）と一致します。</td> 
+   <td>このオプションを有効にすると、ピリオド（。）が 改行文字（<code>\n</code>）と一致します。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Text] </td> 
@@ -237,7 +243,7 @@ ht-degree: 86%
 
 ### データスクレーピング
 
-データスクレーピング（web スクレーピング、データ抽出、web 収集とも呼ばれます）とは、web サイトからデータを収集し、ローカルのデータベースまたはスプレッドシートに保存するプロセスです。Web サイトからデータを削除する場合で、かつ正規表現に慣れていない場合は、データスクレーピングツールを使用できます。
+データスクレーピング（web スクレーピング、データ抽出、web 収集とも呼ばれます）とは、web サイトからデータを収集し、ローカルのデータベースまたはスプレッドシートに保存するプロセスです。 Web サイトからデータを削除する場合で、かつ正規表現に慣れていない場合は、データスクレーピングツールを使用できます。
 
 データスクレーピングツールが REST API を提供している場合は、ユニバーサル [[!UICONTROL HTTP] モジュール](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)および [Web フック](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)モジュールを通じて接続できます。
 
@@ -249,29 +255,29 @@ ht-degree: 86%
 
 例：
 
-モジュールはファイルドキュメント「filename.docx」のファイルタイプを解析する必要があり、ファイル名の拡張子は DOCX からPDFまで CSV まで異なります。
+モジュールは、ファイルドキュメント「filename.docx」のファイルタイプを解析する必要があり、ファイル名の拡張子はDOCXからPDF、CSVまで異なります。
 
 この場合に使用できる式は [!DNL \..+] です。
 
-この正規表現は通常、完全一致を返します。
+この正規表現は通常、完全に一致します。
 
-ただし、テキストパーサーにこの式を実装しても、一致しません。
+ただし、この式をテキストパーサーに実装しても、次のように一致するわけではありません。
 
-![&#x200B; 一致なし &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-you-dont-get-a-match-350x365.png)
+![一致なし](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-you-dont-get-a-match-350x365.png)
 
-この理由は、「i」が一致あたりの一致数のみを示すので、この場合は 2 回一致があるので、「i」の後に数値「1」と「2」が続きます。このユースケースの場合、2 番目に一致した値のみをフィルターで照合または渡す必要がある場合は、数値で表される値を指定できます。
+この理由は、「i」が一致あたりの一致数のみを示すので、この場合は 2 回一致があるので、「i」の後に数値「1」と「2」が続きます。 このユースケースの場合、2 番目に一致した値のみをフィルターで照合または渡す必要がある場合は、数値で表される値を指定できます。
 
-![&#x200B; 次に一致 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
+![一致](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
 
-解析する部分に括弧を追加する必要のある一致値を取得するには（例えば、「filename.docx」から「docx」のみを抽出する）、このケースシナリオで使用する正規表現式に従って、括弧を \ に適用する必要があります。(.+)
+解析する部分に括弧を追加するために必要な一致値を取得するには（例えば、「filename.docx」 – 「docx」のみから抽出する）、この場合シナリオで使用する正規表現に従って、括弧は\.（。+）に適用する必要があります
 
-これにより、DOCX が取り込まれ、グループに配置され、「.」が残ります。それ以外
+これにより、DOCX が取り込まれ、グループに配置され、「.」が残ります。 それ以外
 
-![&#x200B; 一致を取得 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-get-matches-350x592.png)
+![一致を取得](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-get-matches-350x592.png)
 
 次の図に示す出力では、キャプチャするグループは任意の文字（行末文字を除く）に一致します。
 
-![&#x200B; 出力 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-output-350x389.png)
+![出力](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-output-350x389.png)
 
 正規表現も組み込んだもう 1 つの回避策は、replace 関数を使用することです
 

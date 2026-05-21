@@ -4,9 +4,12 @@ description: 組織のシナリオ作成やアクティブ化などのアクテ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
-source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
+TQID: https://experienceleague.adobe.com/HzeBJonpCSsEnDAgsfveksA7Xc2EKoeywgol9Vp0KGc
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: 504
 ht-degree: 10%
 
 ---
