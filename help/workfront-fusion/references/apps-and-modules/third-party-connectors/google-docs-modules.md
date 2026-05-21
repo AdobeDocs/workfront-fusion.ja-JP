@@ -1,25 +1,29 @@
 ---
 title: Google ドキュメントモジュール
-description: Adobe Workfront Fusion [!DNL Google Docs] module を使用すると、自分の  [!DNL Google Docs]  や  [!DNL Google Docs]  （ユーザー向け）でドキュメントをモニター、作成、編集  [!DNL Google Workspace]  取得できます。
+description: Adobe Workfront Fusion [!DNL Google Docs]  モジュールを使用すると、 [!DNL Google Docs] および [!DNL Google Docs]  （for [!DNL Google Workspace] users）のドキュメントを監視、作成、編集、取得できます。
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: cd44250d-c2cd-46b2-8773-15b30472a8d8
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/8Ssu593A6Le2Z45BVg5T-wbj0Ld3z-efmO6JVRYk9n0
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4093'
-ht-degree: 79%
+source-wordcount: 4106
+ht-degree: 83%
 
 ---
 
 # [!DNL Google Docs] モジュール
 
-Adobe Workfront Fusion [!DNL Google Docs] モジュールを使用すると、（[!DNL Google Docs] のユーザー向けに） [!DNL Google Docs] ージおよび [!DNL Google Workspace] ージ内のドキュメントを監視、作成、編集、取得できます。
+Adobe Workfront Fusion [!DNL Google Docs] モジュールを使用すると、[!DNL Google Docs]および[!DNL Google Docs] （[!DNL Google Workspace] ユーザー向け）のドキュメントを監視、作成、編集、取得できます。
 
-Adobe Workfront Fusion で [!DNL Google Docs] を使用するには、[!DNL Google] アカウントが必要です。 [!DNL Google] アカウントをまだお持ちでない場合は、[!DNL Google] アカウントのヘルプページで作成できます。
+Adobe Workfront Fusionで[!DNL Google Docs]を使用するには、[!DNL Google] アカウントが必要です。 [!DNL Google] アカウントをまだお持ちでない場合は、[!DNL Google] アカウントのヘルプページで作成できます。
 
-シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成手順について詳しくは、[シナリオの作成：記事のインデックス](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
 
-モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、[モジュール：記事インデックス](/help/workfront-fusion/references/modules/modules-toc.md)の記事を参照してください。
 
 ## アクセス要件
 
@@ -31,31 +35,31 @@ Adobe Workfront Fusion で [!DNL Google Docs] を使用するには、[!DNL Goog
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
    <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
-   <p>コネクタベース（従来）：作業の自動化と統合のためのWorkfront Fusion </p>
+   <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
 
 +++
 
@@ -63,9 +67,9 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 [!DNL Google Docs] モジュールを使用するには、Google アカウントが必要です。
 
-## Google Docs API の情報
+## Google Docs APIについて
 
-Google Docs コネクタでは、以下を使用します。
+Google Docs コネクタでは、次の機能が使用されます。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -88,11 +92,11 @@ Google Docs コネクタでは、以下を使用します。
 
 ## [!DNL Google Docs] モジュールとそのフィールド
 
-[!DNL Google Docs] モジュールを設定する際、[!UICONTROL Workfront Fusion] には以下のフィールドが表示されます。これらと共に、アプリやサービスのアクセスレベルなどの要因に応じて、さらに [!DNL Google Docs] フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL Google Docs] モジュールを設定する際、[!UICONTROL Workfront Fusion] には以下のフィールドが表示されます。 これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Google Docs]」フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。 詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![マップ切り替え](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 ### ドキュメント
 
@@ -118,7 +122,7 @@ Google Docs コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Google] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">接続の作成 – 基本手順</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Name] </td> 
@@ -126,15 +130,15 @@ Google Docs コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Content]</td> 
-   <td> <p>ドキュメントのコンテンツを入力します。HTMLを含めて、ドキュメントを書式設定できます。</p> </td> 
+   <td> <p>ドキュメントのコンテンツを入力します。 HTMLを含めて、ドキュメントの書式を設定できます。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
    <td> <p>ドキュメントを作成するドライブのタイプを選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>「新規ドキュメントの場所」フィールドで、ドキュメントを作成するフォルダを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>「新規ドキュメントの場所」フィールドで、ドキュメントを作成するフォルダを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみ使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。[!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>ドキュメントを作成する共有ドライブを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
+     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>「新規ドキュメントの場所」フィールドで、ドキュメントを作成するフォルダーを選択します。</p> </li> 
+     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>「新規ドキュメントの場所」フィールドで、ドキュメントを作成するフォルダーを選択します。</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみ使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>ドキュメントを作成する共有ドライブを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -150,7 +154,7 @@ Google Docs コネクタでは、以下を使用します。
 
 #### [!UICONTROL テンプレートからドキュメントの作成]
 
-このアクションモジュールは、既存のテンプレートドキュメントのコピーを作成し、任意のタグを置き換えます。また、このモジュールでは、画像を URL で新しい画像に置き換えることもできます。
+このアクションモジュールは、既存のテンプレートドキュメントのコピーを作成し、任意のタグを置き換えます。 また、このモジュールでは、画像を URL で新しい画像に置き換えることもできます。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -158,7 +162,7 @@ Google Docs コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Google] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">接続の作成 – 基本手順</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Create a Document from a Template]</p> </td> 
@@ -170,28 +174,28 @@ Google Docs コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
-   <td> <p>テンプレートが配置されているドライブのタイプを選択します。このオプションは、前のフィールドで [!UICONTROL By Dropdown] を選択した場合に使用できます。</p> 
+   <td> <p>テンプレートが配置されているドライブのタイプを選択します。 このオプションは、前のフィールドで [!UICONTROL By Dropdown] を選択した場合に使用できます。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p>  </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみ使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。[!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>テンプレートが配置されている共有ドライブを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみが使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>テンプレートが配置されている共有ドライブを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Document ID]</td> 
-   <td> <p>「マッピング別」を選択した場合は、テンプレートの ID をマッピングします。または、テンプレートおよびテンプレートへのパスを選択します。</p> </td> 
+   <td> <p>「マッピングによる」を選択した場合は、テンプレートのIDをマッピングするか、テンプレートとテンプレートのパスを選択します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Values]</p> </td> 
-   <td> <p>新しい文書で、値を入力するタグごとに <b> アイテムの追加 </b> をクリックし、タグを入力して、タグの代わりに入力する値を入力します。</p> 
+   <td> <p>値を入力する各タグについて、<b>項目を追加</b>をクリックし、タグを入力し、新しい文書にタグの代わりに入力される値を入力します。</p> 
     <ul> 
-     <li><strong>[!UICONTROL Tags]</strong> <br>ドキュメントテンプレートに含まれるタグを入力します。<code>&#123;&#123;&#125;&#125;</code> を使用しないでください。例：<code>&#123;&#123;name&#125;&#125;</code> の代わりに <code>name</code> を使用します。</li> 
+     <li><strong>[!UICONTROL Tags]</strong> <br>ドキュメントテンプレートに含まれるタグを入力します。 <code>&#123;&#123;&#125;&#125;</code> を使用しないでください。 例：<code>&#123;&#123;name&#125;&#125;</code> の代わりに <code>name</code> を使用します。</li> 
      <li><strong>[!UICONTROL Replaced Value]</strong><br>タグの値を入力します。</li> 
     </ul> <p>例えば、ソースドキュメントの <code> &#123;&#123;name&#125;&#125;</code> 変数はここで名前フィールドとして表示され、<code>John</code> などの値を挿入できます。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Images Replacement]</p> </td> 
-   <td> <p>&gt; 値を入力するタグごとに、「<b> 項目を追加 </b>」をクリックして、現在の画像を置き換える [!UICONTROL 画像オブジェクト ID] および [!UICONTROL 画像 URL] へのリンクを入力します。</p> <p>メモ：画像 ID を取得するには、[!UICONTROL Get a Document] モジュールを使用します。このモジュールでは、ID が配列 [!UICONTROL Inline Object Array] に含まれています。</p> <p>[!DNL Google] ドキュメント内の画像に ALT テキストを追加することをお勧めします。 </p> <p>[!DNL Google Docs] 画像に ALT テキストを追加するには、次の手順に従います。</p> 
+   <td> <p>&gt;値を入力する各タグについて、<b>項目を追加</b>をクリックし、現在の画像を置き換える[!UICONTROL Image Object ID]と[!UICONTROL Image URL]へのリンクを入力します。</p> <p>メモ：画像 ID を取得するには、[!UICONTROL Get a Document] モジュールを使用します。このモジュールでは、ID が配列 [!UICONTROL Inline Object Array] に含まれています。</p> <p>[!DNL Google] ドキュメント内の画像に ALT テキストを追加することをお勧めします。 </p> <p>[!DNL Google Docs] 画像に ALT テキストを追加するには、次の手順に従います。</p> 
     <ol> 
      <li value="1">画像を右クリックします。</li> 
      <li value="2">「[!UICONTROL ALT text]」オプションを選択します。</li> 
@@ -204,11 +208,11 @@ Google Docs コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
-   <td> <p>テンプレートが配置されているドライブのタイプを選択します。このオプションは、前のフィールドで [!UICONTROL By Dropdown] を選択した場合に使用できます。</p> 
+   <td> <p>テンプレートが配置されているドライブのタイプを選択します。 このオプションは、前のフィールドで [!UICONTROL By Dropdown] を選択した場合に使用できます。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>ドキュメントを作成するフォルダーを選択します。</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>ドキュメントを作成するフォルダーを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみが使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。[!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>ドキュメントを作成する共有ドライブを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみ使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>ドキュメントを作成する共有ドライブを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -224,7 +228,7 @@ Google Docs コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Google] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">接続の作成 – 基本手順</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
@@ -232,16 +236,16 @@ Google Docs コネクタでは、以下を使用します。
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>削除するドキュメントが保存されているフォルダーを選択し、そのドキュメントを選択します。</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>削除するドキュメントが保存されているフォルダーを選択し、そのドキュメントを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみが使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。[!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>削除するドキュメントが存在する共有ドライブを選択し、ドキュメントを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみ使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>削除するドキュメントが存在する共有ドライブを選択し、ドキュメントを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Shared Drive]</td> 
-   <td> <p>ダウンロードするドキュメントが含まれているドライブを選択し、ドキュメントを選択します。このオプションは、「[!UICONTROL Choose a Drive]」フィールドで「[!DNL My Drive]」を選択した場合に有効です。</p> </td> 
+   <td> <p>ダウンロードするドキュメントが含まれているドライブを選択し、ドキュメントを選択します。 このオプションは、「[!UICONTROL Choose a Drive]」フィールドで「[!DNL My Drive]」を選択した場合に有効です。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Document ID]</td> 
-   <td> <p> 削除するドキュメントを選択またはマッピングします。</p> </td> 
+   <td> <p> 削除するドキュメントを選択するか、マッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -256,7 +260,7 @@ Google Docs コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Google] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">接続の作成 – 基本手順</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
@@ -264,7 +268,7 @@ Google Docs コネクタでは、以下を使用します。
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>「ドキュメント ID」フィールドで、ダウンロードするドキュメントがあるフォルダーを選択し、ドキュメントを選択します。</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>「ドキュメント ID」フィールドで、ダウンロードするドキュメントがあるフォルダーを選択し、ドキュメントを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみ使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。[!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>ダウンロードするドキュメントが保存されている共有ドライブを選択し、ドキュメントを選択します。</p> <p>メモ：このフィールドで [!DNL Google Docs] オプションを選択し、[!DNL Google Workspace] ユーザーでない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみが使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>ダウンロードするドキュメントが保存されている共有ドライブを選択し、ドキュメントを選択します。</p> <p>メモ：このフィールドで [!DNL Google Docs] オプションを選択し、[!DNL Google Workspace] ユーザーでない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -286,7 +290,7 @@ Google Docs コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Google] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">接続の作成 – 基本手順</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Get Content of a Document]</td> 
@@ -298,12 +302,12 @@ Google Docs コネクタでは、以下を使用します。
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>取得するドキュメントを含むフォルダーを選択します。</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>取得するドキュメントを含むフォルダーを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみが使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。[!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>取得するドキュメントを含む共有ドライブを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみ使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>取得するドキュメントを含む共有ドライブを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Document ID]</td> 
-   <td> <p>取得するドキュメントを入力または選択します。</p> </td> 
+   <td> <p>取得する文書を入力または選択します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Filter]</p> </td> 
@@ -312,7 +316,7 @@ Google Docs コネクタでは、以下を使用します。
      <li>[!UICONTROL Image]（デフォルト）</li> 
      <li>[!UICONTROL Drawing]</li> 
      <li>[!UICONTROL Chart]</li> 
-    </ul> <p>メモ：  <p>これらのオブジェクトのさらなるマッピングは、このモジュールの出力で（[!UICONTROL inlineObjects] ではなく）[!UICONTROL Inline Objects Array] 値を使用してください。</p> <p>[!UICONTROL Inline Objects Array] オブジェクトは、ドキュメント内での表示と同じ順序で並べ替えられます。これにより、以後の処理が容易になります。</p> </p> </td> 
+    </ul> <p>メモ：  <p>これらのオブジェクトのさらなるマッピングは、このモジュールの出力で（[!UICONTROL inlineObjects] ではなく）[!UICONTROL Inline Objects Array] 値を使用してください。</p> <p>[!UICONTROL Inline Objects Array] オブジェクトは、ドキュメント内での表示と同じ順序で並べ替えられます。 これにより、以後の処理が容易になります。</p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -327,7 +331,7 @@ Google Docs コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Google] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">接続の作成 – 基本手順</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Select a Document]</p> </td> 
@@ -339,16 +343,16 @@ Google Docs コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
-   <td> <p>段落を追加するドキュメントが存在するドライブのタイプを選択します。このオプションは、前のフィールドで [!UICONTROL By Dropdown] を選択した場合に使用できます。</p> 
+   <td> <p>段落を追加するドキュメントが存在するドライブのタイプを選択します。 このオプションは、前のフィールドで [!UICONTROL By Dropdown] を選択した場合に使用できます。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>段落を追加するドキュメントが配置されているフォルダーを選択します。</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>段落を追加するドキュメントが配置されているフォルダーを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみ使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。[!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>段落を追加するドキュメントが存在する共有ドライブを選択し、そのドキュメントを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみ使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>段落を追加するドキュメントが存在する共有ドライブを選択し、そのドキュメントを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Document ID]</td> 
-   <td> <p>テキストを挿入するドキュメントをマッピングまたは選択します。</p> </td> 
+   <td> <p>テキストを挿入するドキュメントをマップまたは選択します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Insert a Paragraph]</p> </td> 
@@ -358,7 +362,7 @@ Google Docs コネクタでは、以下を使用します。
       <ul> 
        <li> <p><strong>[!UICONTROL By index]</strong> </p> 
         <ul> 
-         <li> <p><strong>[!UICONTROL Index]</strong> </p> <p>テキストを挿入するインデックス番号を入力します。[!UICONTROL Get a Document] モジュールを使用してインデックス番号を取得できます。</p> </li> 
+         <li> <p><strong>[!UICONTROL Index]</strong> </p> <p>テキストを挿入するインデックス番号を入力します。 [!UICONTROL Get a Document] モジュールを使用して、インデックス番号を取得できます。</p> </li> 
          <li> <p><strong>[!UICONTROL Inserted text]</strong> </p> <p>ドキュメントに挿入するテキストを入力します。</p> </li> 
         </ul> </li> 
        <li> <p><strong>[!UICONTROL By segment ID]</strong> </p> <p>テキストコンテンツを挿入するヘッダーとフッターを選択し、挿入するテキストを対応するフィールドに入力します。</p> <p>ヘッダーまたはフッターに既にテキストが含まれている場合は、新しいテキストが既存のテキストの前に追加されます。</p> </li> 
@@ -386,7 +390,7 @@ Google Docs コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Google] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">接続の作成 – 基本手順</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Select a Document]</p> </td> 
@@ -398,16 +402,16 @@ Google Docs コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
-   <td> <p>画像の追加先のドキュメントが存在するドライブのタイプを選択します。このオプションは、前のフィールドで [!UICONTROL By Dropdown] を選択した場合に使用できます。</p> 
+   <td> <p>画像の追加先のドキュメントが存在するドライブのタイプを選択します。 このオプションは、前のフィールドで [!UICONTROL By Dropdown] を選択した場合に使用できます。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>画像の追加先となるドキュメントがあるフォルダーを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>画像の追加先となるドキュメントがあるフォルダーを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみ使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。[!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>画像の追加先のドキュメントが存在する共有ドライブを選択し、ドキュメントを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
+     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>画像を追加するドキュメントが配置されているフォルダーを選択します。</p> </li> 
+     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>画像を追加するドキュメントが配置されているフォルダーを選択します。</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみが使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>画像の追加先のドキュメントが存在する共有ドライブを選択し、ドキュメントを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Document ID]</td> 
-   <td> <p>画像を挿入するドキュメントをマッピングまたは選択します。</p> </td> 
+   <td> <p>画像を挿入するドキュメントをマップまたは選択します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Insert an Image]</p> </td> 
@@ -417,10 +421,10 @@ Google Docs コネクタでは、以下を使用します。
       <ul> 
        <li> <p><strong>[!UICONTROL By index]</strong> </p> 
         <ul> 
-         <li> <p><strong>[!UICONTROL Index]</strong> </p> <p>画像を挿入するインデックス番号を入力します。[!UICONTROL Get a Document] モジュールを使用して、[!UICONTROL Index number] を取得できます。</p>  </li> 
-         <li> <p><strong>[!UICONTROL Image URL]</strong> </p> <p>ドキュメントに挿入する画像の URL を入力します。</p> <p>最大画像サイズは 50 MB です。25 メガピクセルを超えないようにしてください。PNG、JPEG、または GIF 形式のみがサポートされます。</p> </li> 
+         <li> <p><strong>[!UICONTROL Index]</strong> </p> <p>画像を挿入するインデックス番号を入力します。 [!UICONTROL Get a Document] モジュールを使用して、[!UICONTROL Index number] を取得できます。</p>  </li> 
+         <li> <p><strong>[!UICONTROL Image URL]</strong> </p> <p>ドキュメントに挿入する画像の URL を入力します。</p> <p>最大画像サイズは 50 MB です。 25 メガピクセルを超えないようにしてください。 PNG、JPEG、または GIF 形式のみがサポートされます。</p> </li> 
         </ul> </li> 
-       <li> <p><strong>[!UICONTROL By segment ID]</strong> </p> <p>画像を挿入するヘッダーとフッターを選択し、対応するフィールドに画像 URL を入力します。</p> <p>最大画像サイズは 50 MB です。画像は 25 メガピクセルを超えないようにしてください。PNG、JPEG、または GIF 形式のみがサポートされます。</p> </li> 
+       <li> <p><strong>[!UICONTROL By segment ID]</strong> </p> <p>画像を挿入するヘッダーとフッターを選択し、対応するフィールドに画像 URL を入力します。</p> <p>最大画像サイズは 50 MB です。 画像は 25 メガピクセルを超えないようにしてください。 PNG、JPEG、または GIF 形式のみがサポートされます。</p> </li> 
       </ul> </li> 
      <li> <p><strong>[!UICONTROL By appending to the body of the document]</strong> </p> <p>ドキュメントの本文コンテンツの最後に特定の画像を追加します。</p> </li> 
     </ul> 
@@ -430,7 +434,7 @@ Google Docs コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Height Magnitude in Points/Width Magnitude in Points]</p> </td> 
-   <td> <p>挿入する画像の高さまたは幅を定義します。 アスペクト比は維持されます。</p> </td> 
+   <td> <p>挿入した画像の高さや幅を定義します。 アスペクト比は維持されます。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -445,7 +449,7 @@ Google Docs コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Google] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">接続の作成 – 基本手順</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
@@ -453,7 +457,7 @@ Google Docs コネクタでは、以下を使用します。
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>ドキュメントをリストするフォルダーを選択します。</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>ドキュメントをリストするフォルダーを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみが使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。[!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>ドキュメントのリストを表示する共有ドライブを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみ使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>ドキュメントのリストを表示する共有ドライブを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -473,7 +477,7 @@ Google Docs コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Google] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">接続の作成 – 基本手順</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Select a Document]</p> </td> 
@@ -485,20 +489,20 @@ Google Docs コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
-   <td> <p>テキストを追加する文書が保存されているドライブのタイプを選択します。このオプションは、前のフィールドで [!UICONTROL By Dropdown] を選択した場合に使用できます。</p> 
+   <td> <p>テキストを追加する文書が保存されているドライブのタイプを選択します。 このオプションは、前のフィールドで [!UICONTROL By Dropdown] を選択した場合に使用できます。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>テキストを追加したい文書が保存されているフォルダーを選択し、ドキュメントを選択します。</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>テキストを追加したい文書が保存されているフォルダーを選択し、ドキュメントを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみ使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。[!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>テキストを追加したいドキュメントが保存されている共有ドライブを選択し、ドキュメントを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみ使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>テキストを追加したいドキュメントが保存されている共有ドライブを選択し、ドキュメントを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Document ID]</td> 
-   <td> <p>テキストを置き換えるドキュメントをマッピングまたは選択します。</p> </td> 
+   <td> <p>テキストを置き換えるドキュメントをマップまたは選択します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Replace a Text]</p> </td> 
-   <td> <p>置き換えるテキストごとに「<b> アイテムの追加 </b>」をクリックし、以下を入力します。</p> 
+   <td> <p>置換するテキストごとに、<b>項目を追加</b>をクリックし、次の項目を入力します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Old text to be replaced]</strong> </p> <p>置き換えるテキストを入力します。</p> </li> 
      <li> <p><strong>[!UICONTROL New text to be inserted]</strong> </p> <p>新しいテキストを入力します。</p> </li> 
@@ -509,7 +513,7 @@ Google Docs コネクタでは、以下を使用します。
 
 #### [!UICONTROL 画像を新しい画像に置換]
 
-このアクションモジュールは、既存の画像を置き換えます。元の画像のアスペクト比は維持されます。
+このアクションモジュールは、既存の画像を置き換えます。 元の画像のアスペクト比は維持されます。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -517,7 +521,7 @@ Google Docs コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Google] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">接続の作成 – 基本手順</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Select a Document]</p> </td> 
@@ -529,20 +533,20 @@ Google Docs コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
-   <td> <p>画像を置き換えるドキュメントが存在するドライブのタイプを選択します。このオプションは、前のフィールドで [!UICONTROL By Dropdown] を選択した場合に使用できます。</p> 
+   <td> <p>画像を置き換えるドキュメントが存在するドライブのタイプを選択します。 このオプションは、前のフィールドで [!UICONTROL By Dropdown] を選択した場合に使用できます。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>画像を置き換えるドキュメントが存在するフォルダーを選択し、ドキュメントを選択します。</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>画像を置き換えるドキュメントが存在するフォルダーを選択し、ドキュメントを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみ使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。[!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>画像を置き換えるドキュメントが存在する共有ドライブを選択し、ドキュメントを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみが使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>画像を置き換えるドキュメントが存在する共有ドライブを選択し、ドキュメントを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Document ID]</td> 
-   <td> <p>画像を置換するドキュメントをマッピングまたは選択します。</p> </td> 
+   <td> <p>画像を置き換えるドキュメントをマップまたは選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL イメージの置き換え &#x200B;]</p> </td> 
-   <td> 置き換える画像ごとに、「<b> 項目を追加 </b>」をクリックして既存の画像 ID を入力し、既存の画像を置き換える新しい画像の URL を入力またはマップします。 <p>画像は、ドキュメント内での表示順に表示されます。例えば、<code>Body: Image No. 1</code> はドキュメント内の最初の画像です。</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Images replacement]</p> </td> 
+   <td> 置き換える画像ごとに、<b>項目を追加</b>をクリックして既存の画像IDを入力し、既存の画像を置き換える新しい画像のURLを入力またはマッピングします。 <p>画像は、ドキュメント内での表示順に表示されます。 例えば、<code>Body: Image No. 1</code> はドキュメント内の最初の画像です。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -558,7 +562,7 @@ Google Docs コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Google] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">接続の作成 – 基本手順</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Watch Documents]</td> 
@@ -570,7 +574,7 @@ Google Docs コネクタでは、以下を使用します。
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>作成されたドキュメントまたは変更されたドキュメントの監視するフォルダーを選択します。</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>作成されたドキュメントまたは変更されたドキュメントの監視するフォルダーを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみが使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。[!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>監視する共有ドライブを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Shared Drive]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみ使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>監視する共有ドライブを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Shared Drive]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -595,7 +599,7 @@ Google Docs コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Google] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">接続の作成 – 基本手順</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Make All Links in a Document]</p> </td> 
@@ -607,16 +611,16 @@ Google Docs コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
-   <td> <p>リンクをクリック可能にするドキュメントが存在するドライブのタイプを選択します。このオプションは、前のフィールドで [!UICONTROL By Dropdown] を選択した場合に使用できます。</p> 
+   <td> <p>リンクをクリック可能にするドキュメントが存在するドライブのタイプを選択します。 このオプションは、前のフィールドで [!UICONTROL By Dropdown] を選択した場合に使用できます。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>リンクをクリック可能にするドキュメントがあるフォルダーを選択します。</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>リンクをクリック可能にするドキュメントがあるフォルダーを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみ使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。[!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>リンクをクリック可能にするドキュメントが存在する共有ドライブを選択し、ドキュメントを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみが使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>リンクをクリック可能にするドキュメントが存在する共有ドライブを選択し、ドキュメントを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Shared Drive]</td> 
-   <td> <p>リンクを更新するドキュメントが含まれているドライブを選択し、ドキュメントを選択します。このオプションは、「[!UICONTROL Choose a Drive field]」フィールドで「[!DNL My Drive]」を選択した場合に有効です。</p> </td> 
+   <td> <p>リンクを更新するドキュメントが含まれているドライブを選択し、ドキュメントを選択します。 このオプションは、「[!UICONTROL Choose a Drive field]」フィールドで「[!DNL My Drive]」を選択した場合に有効です。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Document ID]</td> 
@@ -635,19 +639,19 @@ Google Docs コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>[!DNL Google] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">接続の作成 – 基本手順</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
-   <td> <p><code>https://docs.googleapis.com/</code> への相対パスを入力します。例：<code>/v1/documents/{presentationID}</code>。 </p> </td> 
+   <td> <p><code>https://docs.googleapis.com/</code> からの相対パスを入力します。 例：<code>/v1/documents/{presentationID}</code>。 </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP リクエストメソッド </a> を参照してください。</p> <p> </p> </td> 
+   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。 詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP リクエスト方法</a>を参照してください。</p> <p> </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。例えば、<code>{"Content-type":"application/json"}</code>。Workfront Fusion は認証ヘッダーを追加します。</p> </td> 
+   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。 例えば、<code>{"Content-type":"application/json"}</code>。 Workfront Fusion は認証ヘッダーを追加します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 
@@ -655,7 +659,7 @@ Google Docs コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件ステートメントを JSON で使用する場合は、条件ステートメントの外側に引用符を挿入します。</p> 
+   <td> <p>標準の JSON オブジェクトの形式で、API 呼び出しの本文の内容を追加します。</p> <p>メモ：  <p><code>if</code> などの条件文を JSON で使用する場合は、条件文を引用符で囲みます。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -675,10 +679,10 @@ Google Docs コネクタでは、以下を使用します。
 
 [!UICONTROL GET]
 
-![API 呼び出しの例 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/api-call-example.png)
+![API呼び出しの例](/help/workfront-fusion/references/apps-and-modules/assets/api-call-example.png)
 
 取得したドキュメントの詳細は、[!UICONTROL バンドル]／[!UICONTROL 本文]の下のモジュールの出力に表示されます。
 
-![API 呼び出しの出力 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/api-output.png)
+![API呼び出し出力](/help/workfront-fusion/references/apps-and-modules/assets/api-output.png)
 
 >[!ENDSHADEBOX]

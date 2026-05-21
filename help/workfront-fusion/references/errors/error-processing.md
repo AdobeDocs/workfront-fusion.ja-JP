@@ -1,22 +1,26 @@
 ---
 content-type: reference
 title: エラータイプ
-description: シナリオ実行中にエラーが発生する場合があります。この問題は通常、サービスへの接続に失敗したためにサービスが使用できない場合や、検証に失敗した場合に発生します。この記事では、発生する可能性のある一般的なエラーについて説明します。
+description: シナリオ実行中にエラーが発生する場合があります。 この問題は通常、サービスへの接続に失敗したためにサービスが使用できない場合や、検証に失敗した場合に発生します。 この記事では、発生する可能性のある一般的なエラーについて説明します。
 author: Becky
 feature: Workfront Fusion
 exl-id: abf5f844-d13b-416e-a8b8-2d4ee1786262
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+TQID: https://experienceleague.adobe.com/t5chLg0xd7CSUyitvH-NCc-YUbMAEXu111sU497Uspc
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: d968a1bc-9a90-4926-a531-bcf272c32aad
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: 1214
 ht-degree: 35%
 
 ---
 
 # エラータイプ
 
-シナリオ実行中にエラーが発生する場合があります。これは通常、サービスへの接続エラーが原因でサービスが利用できなくなった場合や、検証に失敗した場合に発生します。
+シナリオ実行中にエラーが発生する場合があります。 これは通常、サービスへの接続に失敗してサービスが利用できない場合、または検証が失敗した場合に発生します。
 
-Adobe Workfront Fusion は、いくつかの基本的なエラータイプを区別します。 エラーのタイプによって、Fusion シナリオの次のアクションが決まります。
+Adobe Workfront Fusionでは、いくつかの基本的なエラータイプが区別されます。 エラーのタイプによって、Fusion シナリオの次のアクションが決まります。
 
 ## アクセス要件
 
@@ -51,21 +55,21 @@ Adobe Workfront Fusion は、いくつかの基本的なエラータイプを区
 
 `ConnectionError`
 
-接続エラーは、最も一般的なエラーの 1 つです。 通常は、過負荷、メンテナンス、停止など、様々な理由でサードパーティのサービスが利用できないことが原因で発生します。 このエラーのデフォルトの処理は、エラーが発生したモジュールによって異なります。
+接続エラーは、最も一般的なエラーの1つです。 これらは通常、過負荷、メンテナンス、または停止など、さまざまな理由でサードパーティサービスが利用できないことが原因です。 このエラーのデフォルトの処理は、どのモジュールでエラーが発生したかによって異なります。
 
-* 最初のモジュールでエラーが発生した場合、シナリオの実行は警告メッセージとともに終了します。次に、Workfront Fusion は、一定の時間間隔でシナリオの再実行を繰り返し試みます。 すべての試行が失敗した場合、Workfront Fusion はシナリオをアクティベート解除します。
-* 接続エラーが最初のモジュール以外のモジュールで発生した場合、以降の手順は、シナリオの詳細設定の「不完全な実行の保存を許可」オプションによって異なります。
+* 最初のモジュールでエラーが発生した場合、シナリオの実行は警告メッセージとともに終了します。 その後、Workfront Fusionは、時間の間隔を増やしながらシナリオを繰り返し実行しようとします。 すべての試行が失敗した場合、Workfront Fusionはシナリオを無効にします。
+* 接続エラーが最初のモジュール以外のモジュールで発生した場合、後続の手順は、シナリオの詳細設定の「不完全な実行の保存を許可」オプションに依存します。
 
-   * このオプションを有効にした場合、シナリオの実行が [!UICONTROL &#x200B; 不完全な実行 &#x200B;] フォルダーに移動し、Workfront Fusion はシナリオの再実行を繰り返し試みます。 すべての試行が失敗した場合、不完全な実行フォルダーに実行が残り、ユーザーが手動で解決するのを待ちます。
+   * このオプションが有効になっている場合、シナリオの実行は[!UICONTROL 不完全な実行] フォルダーに移動されます。このフォルダーでは、Workfront Fusionが繰り返し時間を増やしながらシナリオを再実行しようとします。 すべての試行が失敗した場合、不完全な実行フォルダーに実行が残り、ユーザーが手動で解決するのを待ちます。
 
-     不完全な実行について詳しくは、[&#x200B; 不完全な実行の表示と解決 &#x200B;](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md) を参照してください。
-   * このオプションが無効になっている場合、シナリオの実行はエラーで終了し、ロールバックフェーズに移ります。次に、Workfront Fusion は、一定の時間間隔でシナリオの再実行を繰り返し試みます。 すべての試行が失敗した場合、Workfront Fusion はシナリオをアクティベート解除します。
+     不完全な実行について詳しくは、[不完全な実行の表示と解決](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)を参照してください。
+   * このオプションが無効になっている場合、シナリオの実行はエラーで終了し、ロールバックフェーズに移ります。 その後、Workfront Fusionは、時間の間隔を増やしながらシナリオを繰り返し実行しようとします。 すべての試行が失敗した場合、Workfront Fusionはシナリオを無効にします。
 
-  不完全な実行の保存を許可する設定について詳しくは、「シナリオの設定」の [&#x200B; 不完全な実行の保存を許可する &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions) を参照してください。
+  不完全な実行の保存を許可する設定について詳しくは、「シナリオ設定の構成」の「[不完全な実行の保存を許可する](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions)」を参照してください。
 
 ### 時間間隔の増加
 
-エラーが発生した場合に試行の間隔を増やすためのアルゴリズムは、指数バックオフと呼ばれます。 時間間隔を増加させるには、次のように設定します。
+エラーが発生した場合の試行間隔を長くするためのアルゴリズムは、指数的バックオフと呼ばれます。 時間間隔を増加させるには、次のように設定します。
 
 1. 10 分
 1. 1 時間
@@ -73,13 +77,13 @@ Adobe Workfront Fusion は、いくつかの基本的なエラータイプを区
 1. 12 時間
 1. 24 時間
 
-時間間隔を増やすと、頻繁に実行するシナリオで繰り返し失敗する試行に対する操作が使用されるのを防ぐことができます。
+時間間隔を長くすると、頻繁に実行されるシナリオが、繰り返し失敗する試行に対して操作を使用するのを防ぐことができます。
 
 >[!BEGINSHADEBOX]
 
 **例：**
 
-シナリオには、[!DNL Google Sheets] トリガーの[!UICONTROL 行を監視]が含まれています。Workfront Fusion[!DNL Google Sheets] シナリオを開始する際、メンテナンスのため 30 分間使用できないので、新しい行を取得できません。 シナリオは停止し、10 分後に再試行します。[!DNL Google Sheets] はまだ利用できないので、Workfront Fusion は新しい行に関する情報を取得できません。 次回のシナリオの実行は、1 時間後にスケジュールされます。[!DNL Google Sheets] はこの時点で再び使用可能になり、シナリオは正常に実行されます。
+シナリオには、[!DNL Google Sheets] トリガーの[!UICONTROL 行を監視]が含まれています。 Workfront Fusionがシナリオを開始する際のメンテナンスにより、[!DNL Google Sheets]は30分間利用できないため、新しい行を取得できません。 シナリオは停止し、10 分後に再試行します。 [!DNL Google Sheets]はまだ利用できないため、Workfront Fusionは新しい行に関する情報を取得できません。 次回のシナリオの実行は、1 時間後にスケジュールされます。 [!DNL Google Sheets] はこの時点で再び使用可能になり、シナリオは正常に実行されます。
 
 >[!ENDSHADEBOX]
 
@@ -87,95 +91,95 @@ Adobe Workfront Fusion は、いくつかの基本的なエラータイプを区
 
 `DataError`
 
-項目が誤ってマッピングされ、Workfront Fusion 側またはサードパーティサービス側で実行された検証に合格しない場合に、データエラーが生成されます。
+アイテムが誤ってマッピングされ、Workfront Fusion側またはサードパーティサービス側で実行された検証に合格しない場合、データエラーが生成されます。
 
-このエラーが発生した場合、シナリオは（モジュールが失敗した場所まで）不完全な実行フォルダーに移動され、問題のトラブルシューティングを行うことができます。 ただし、シナリオは停止せず、スケジュールに従って引き続き実行されます。 データエラーが表示されたときにシナリオの実行を停止するには、シナリオ設定パネルの「順番に処理」オプションを有効にします。
+このエラーが発生した場合、モジュールが失敗した場所までのシナリオは、不完全な実行フォルダーに移動され、問題のトラブルシューティングを行うことができます。 ただし、シナリオは停止せず、そのスケジュールに従って実行し続けます。 データエラーが表示されたときにシナリオの実行を停止するには、シナリオ設定パネルの「順番に処理」オプションを有効にします。
 
-シナリオ設定で「[!UICONTROL &#x200B; 不完全な実行の保存を許可 &#x200B;]」オプションを有効にしていない場合、シナリオの実行はエラーで終了し、ロールバックが実行されます。
+シナリオ設定で「[!UICONTROL 不完全な実行を保存することを許可する]」オプションを有効にしていない場合、シナリオの実行はエラーで終了し、ロールバックが実行されます。
 
 ## 重複データエラー
 
 `DuplicateDataError`
 
-Workfront Fusion が重複データを許可しないサービスに同じバンドルを 2 回挿入しようとすると、重複データエラーが発生します。 このエラーが発生した場合、Workfront Fusion はデータエラーの場合と同じように処理を進めます。
+Workfront Fusionが、重複データを許可しないサービスに同じバンドルを2回挿入しようとすると、重複データエラーが生成されます。 このエラーが発生した場合、Workfront Fusionはデータエラーと同じように処理を進めます。
 
-詳しくは、この記事の [&#x200B; データエラー &#x200B;](#data-error) を参照してください。
+詳しくは、この記事の「[ データエラー](#data-error)」を参照してください。
 
 
 ## 無効なアクセストークンエラー
 
 `InvalidAccessTokenError`
 
-Workfront Fusion がサードパーティのサービスに登録されたアカウントにアクセスできない場合は、無効なアクセストークンエラーが発生します。 これは、通常、特定のサービスの管理でWorkfront Fusion のアクセス権を取り消したときに、そのサービスを使用するシナリオがスケジュールに従って動作し続ける場合に発生します。
+Workfront Fusionがサードパーティサービスで登録されたアカウントにアクセスできない場合、無効なアクセストークンのエラーが発生します。 これは通常、特定のサービスの管理でWorkfront Fusionのアクセス権を取り消すと発生しますが、そのサービスを使用するシナリオはスケジュールに従って実行され続けます。
 
-このエラーが発生した場合、シナリオの実行は直ちに停止します。 エラーが発生したモジュール以降のシナリオは、不完全な実行フォルダーに移動します。
+このエラーが発生すると、シナリオの実行はすぐに停止します。 エラーが発生したモジュールから始まるシナリオの残りの部分は、不完全な実行フォルダーに移動します。
 
 ## レート制限エラー
 
 `RateLimitError`
 
-特定のサービスによって設定された制限を超えると、レート制限エラーが生成されます。このエラーが発生した場合、Workfront Fusion は Connection Error の場合と同じように処理を進めます。
+特定のサービスによって設定された制限を超えると、レート制限エラーが生成されます。 このエラーが発生した場合、Workfront FusionはConnection Errorと同じように処理を進めます。
 
-詳しくは、この記事の [&#x200B; 接続エラー &#x200B;](#connection-error) を参照してください。
+詳しくは、この記事の「[接続エラー](#connection-error)」を参照してください。
 
 ## 不完全なデータエラー
 
 `IncompleteDataError`
 
-不完全なデータエラーは、トリガーでのみ発生します。トリガーが特定のサービスから必要なデータをダウンロードできなかった場合に、このエラーが生成されます。
+不完全なデータエラーは、トリガーでのみ発生します。 トリガーが特定のサービスから必要なデータをダウンロードできなかった場合に、このエラーが生成されます。
 
 シナリオが `IncompleteDataError` で終了した場合、それ以降の動作は「[!UICONTROL 連続エラーの最大数]」の設定によって変わります。
 
-詳しくは、「シナリオの設定」の記事の [&#x200B; 連続エラー数 &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors) を参照してください。
+詳しくは、「シナリオ設定の構成」の「[連続エラーの数](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors)」を参照してください。
 
 >[!BEGINSHADEBOX]
 
 **例：**
 
-シナリオでは、ドキュメントを監視するようにWorkfrontトリガー[!UICONTROL &#x200B; レコードを監視 &#x200B;] が設定されています。 このシナリオは、長時間のビデオなどの大きなドキュメントのアップロード中に実行されます。[!UICONTROL Workfront Fusion] は、Workfront へのアップロードが続いている間にビデオをダウンロードしようとするため、シナリオは `IncompleteDataError` で終了します。
+シナリオでは、ドキュメントを監視するように設定されたWorkfront トリガー [!UICONTROL 監視レコード ]があります。 このシナリオは、長時間のビデオなどの大きなドキュメントのアップロード中に実行されます。 [!UICONTROL Workfront Fusion] は、Workfront へのアップロードが続いている間にビデオをダウンロードしようとするため、シナリオは `IncompleteDataError` で終了します。
 
 >[!ENDSHADEBOX]
 
-## 実行時エラー
+## ランタイムエラー
 
 `RuntimeError`
 
-シナリオの実行中に発生し、これらのエラータイプに該当しないエラーは `RunTimeError` としてレポートされます。
+シナリオの実行中に発生し、これらのエラータイプのいずれでもないエラーは、`RunTimeError`として報告されます。
 
-シナリオが `RuntimeError` で終了した場合、その後の動作は [!UICONTROL &#x200B; 連続エラーの最大数 &#x200B;] の設定に依存します。
+シナリオが`RuntimeError`で終了した場合、その後の動作は[!UICONTROL 連続エラーの最大数]設定に依存します。
 
-詳しくは、「シナリオの設定」の記事の [&#x200B; 連続エラー数 &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors) を参照してください。
+詳しくは、「シナリオ設定の構成」の「[連続エラーの数](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors)」を参照してください。
 
 
 >[!NOTE]
 >
->シナリオが「即時トリガー」で開始され、このエラーが発生した場合、「[!UICONTROL &#x200B; 連続エラーの最大数 &#x200B;] の設定は無視され、シナリオは直ちに非アクティブ化されます。
->詳細については、「モジュールの概要」の「[&#x200B; インスタント トリガー](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers)」を参照してください。
+>シナリオがインスタントトリガーで始まり、このエラーが発生した場合、[!UICONTROL 連続エラーの最大数]の設定は無視され、シナリオはすぐにディアクティベートされます。
+>詳しくは、「トリガーの概要」の「[ インスタント モジュール ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers)」を参照してください。
 
 ## 不整合エラー
 
 `InconsistencyError`
 
-コミットまたはロールバック・フェーズ中にこれらのエラーが発生した場合、シナリオは不整合エラーで終了します。
+コミット フェーズまたはロールバック フェーズでこれらのエラーのいずれかが発生した場合、シナリオは非一貫性エラーで終了します。
 
 このエラーがシナリオに表示された場合、シナリオの実行は直ちに停止します。
 
 ## 警告
 
-シナリオの実行中に、問題を知らせる警告が表示される場合があります。警告を表示しても、シナリオは正常に完了します。
+シナリオの実行中に、問題を知らせる警告が表示される場合があります。 警告を表示しても、シナリオが正常に完了することはありません。
 
-例えば、許可されている最大ファイルサイズを超え、「[!UICONTROL &#x200B; データ損失を有効にする &#x200B;]」オプションが無効の場合は、警告が表示される場合があります。
+例えば、許可される最大ファイルサイズを超え、[!UICONTROL  データ損失を有効にする] オプションが無効になっている場合、警告が表示される場合があります。
 
 ## リソース
 
-マッピングについて詳しくは、[&#x200B; マッピングの概要 &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md) を参照してください。
+マッピングについて詳しくは、[ マッピングの概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md)を参照してください。
 
-不完全な実行について詳しくは、[&#x200B; 不完全な実行の表示と解決 &#x200B;](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md) を参照してください。
+不完全な実行について詳しくは、[不完全な実行の表示と解決](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)を参照してください。
 
-シナリオ設定パネルについて詳しくは、[&#x200B; シナリオ設定の指定 &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md) を参照してください。
+シナリオ設定パネルについて詳しくは、[ シナリオ設定の設定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)を参照してください。
 
-スケジュールについては、[&#x200B; シナリオのスケジュール &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md) を参照してください。
+スケジュールについて詳しくは、[ シナリオのスケジュール ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)を参照してください。
 
-シナリオフェーズについては、[&#x200B; シナリオの実行、サイクル、フェーズ &#x200B;](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md) を参照してください。
+シナリオフェーズについて詳しくは、[ シナリオ実行、サイクルおよびフェーズ ](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)を参照してください。
 
-「データの損失を有効にする」オプションについて詳しくは、「シナリオ設定の指定」の [&#x200B; データの損失を有効にする &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable-data-loss) を参照してください。
+データ損失を有効にするオプションについて詳しくは、「シナリオ設定の構成」の「[ データ損失を有効にする](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable-data-loss)」を参照してください。

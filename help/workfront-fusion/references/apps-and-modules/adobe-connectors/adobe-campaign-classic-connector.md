@@ -4,9 +4,12 @@ description: ' [!DNL Adobe Campaign]  モジュールを使用すると、 [!DNL
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: bbd1ec27e52127c8814188612a1e8d5cfab0cd25
+TQID: https://experienceleague.adobe.com/XOlUFhvSj8JNu8MS5Kgm0VEwEPmrpVwbTggi6rU4jfk
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: 1450
 ht-degree: 83%
 
 ---
@@ -199,11 +202,11 @@ This scheduled trigger module starts a scenario when a record changes.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td>
-   <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >[!DNL Adobe Campaign]</a> への接続を作成を参照してください。</td> 
+   <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >[!DNL Adobe Campaign]</a> への接続の作成を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>作成する[!DNL Adobe Campaign] レコードのタイプを選択するか、「カスタムリソース&#x200B;**を選択して**&#x200B;リソースの詳細を入力します。</td> 
+   <td>作成する[!DNL Adobe Campaign] レコードのタイプを選択するか、「カスタムリソース**を選択して**リソースの詳細を入力します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Fields] </td> 
@@ -226,11 +229,11 @@ This scheduled trigger module starts a scenario when a record changes.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td>
-   <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >[!DNL Adobe Campaign]</a> への接続を作成を参照してください。</td> 
+   <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >[!DNL Adobe Campaign]</a> への接続の作成を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>削除するリソースのタイプを選択するか、「カスタムリソース&#x200B;**を選択して**&#x200B;リソースの詳細を入力します。</td> 
+   <td>削除するリソースのタイプを選択するか、「カスタムリソース**を選択して**リソースの詳細を入力します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
@@ -282,7 +285,7 @@ This scheduled trigger module starts a scenario when a record changes.
 
 このアクションモジュールは、[!DNL Adobe Campaign] API で、選択されたアクションをオブジェクトに対して実行します。
 
-特定のアクションとフィールドについては、[[!DNL Adobe Campaign]  API ドキュメント](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=ja)を参照してください。
+特定のアクションとフィールドについては、[[!DNL Adobe Campaign]  API ドキュメント](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html)を参照してください。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -290,11 +293,11 @@ This scheduled trigger module starts a scenario when a record changes.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td>
-   <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >[!DNL Adobe Campaign]</a> への接続を作成を参照してください。</td> 
+   <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >[!DNL Adobe Campaign]</a> への接続の作成を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>アクションを実行するリソースのタイプを選択するか、**カスタムリソース**&#x200B;を選択して、リソースの詳細を入力します。</td> 
+   <td>アクションを実行するリソースのタイプを選択するか、**カスタムリソース**を選択して、リソースの詳細を入力します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Action]</td> 
@@ -321,11 +324,11 @@ This scheduled trigger module starts a scenario when a record changes.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td>
-   <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >[!DNL Adobe Campaign]</a> への接続を作成を参照してください。</td> 
+   <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >[!DNL Adobe Campaign]</a> への接続の作成を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>読み取る[!DNL Adobe Campaign] レコードのタイプを選択するか、「カスタムリソース&#x200B;**を選択して**&#x200B;リソースの詳細を入力します。</td> 
+   <td>読み取る[!DNL Adobe Campaign] レコードのタイプを選択するか、「カスタムリソース**を選択して**リソースの詳細を入力します。</td> 
   </tr> 
     <tr> 
    <td role="rowheader">[!UICONTROL ID] </td> 
@@ -353,7 +356,7 @@ This scheduled trigger module starts a scenario when a record changes.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td>
-   <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >[!DNL Adobe Campaign]</a>への接続の作成を参照してください。</td> 
+   <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >[!DNL Adobe Campaign]</a> への接続の作成を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Subscribe or unsubscribe]</td> 
@@ -380,11 +383,11 @@ This scheduled trigger module starts a scenario when a record changes.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td>
-   <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >[!DNL Adobe Campaign]</a> への接続を作成を参照してください。</td> 
+   <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >[!DNL Adobe Campaign]</a> への接続の作成を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>更新する[!DNL Adobe Campaign] レコードのタイプを選択するか、「カスタムリソース&#x200B;**を選択して**&#x200B;リソースの詳細を入力します。</td> 
+   <td>更新する[!DNL Adobe Campaign] レコードのタイプを選択するか、「カスタムリソース**を選択して**リソースの詳細を入力します。</td> 
   </tr> 
     <tr> 
    <td role="rowheader">[!UICONTROL ID] </td> 
@@ -413,11 +416,11 @@ This scheduled trigger module starts a scenario when a record changes.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td>
-   <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >[!DNL Adobe Campaign]</a> への接続を作成を参照してください。</td> 
+   <td>[!DNL Adobe Campaign] への接続を作成する手順については、この記事の<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >[!DNL Adobe Campaign]</a> への接続の作成を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>返す[!DNL Adobe Campaign] レコードのタイプを選択するか、「カスタムリソース&#x200B;**を選択して**&#x200B;リソースの詳細を入力します。</td> 
+   <td>返す[!DNL Adobe Campaign] レコードのタイプを選択するか、「カスタムリソース**を選択して**リソースの詳細を入力します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search criteria]</td> 

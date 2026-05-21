@@ -1,31 +1,33 @@
 ---
 title: シナリオでのデータフローの表示
-description: 実行中のシナリオを見て、データのフローを確認できます。
+description: 実行中のシナリオを見て、データがどのように流れるのかを確認できます。
 author: Becky
 feature: Workfront Fusion
 exl-id: 24eeb1d3-b5a7-4486-8d0b-0a43eb154e8e
-source-git-commit: 42be02d6a59a5d7b8faccdcfe40e8b967153c6eb
+TQID: https://experienceleague.adobe.com/Ni0X8egfhVILudqNjtxx8iiMmlSrJa-0JPH-XGeqYeM
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 3%
+source-wordcount: 283
+ht-degree: 36%
 
 ---
 
 # 実行中のシナリオでのデータフローの表示
 
-実行中のシナリオを見て、データのフローを確認できます。
+実行中のシナリオを見て、データがどのように流れるのかを確認できます。
 
-シナリオが実行されている間、アクティブなモジュールは、モジュールの周りにリングが成長してマークされます。 リングは、モジュールが実行中であることを示すだけで、進行状況は示しません。 すばやく実行されるモジュールには、リングの一部しか表示されない場合があります。
+シナリオが実行されている間、アクティブなモジュールは、モジュールの周囲に成長するリングでマークされます。 リングは、モジュールが実行中であることを示すだけで、進行状況は表示されません。 迅速に動作するモジュールは、リングの小さな部分しか表示されない場合があります。
 
-![Ring around module](assets/ring-around-module.png)
+![ モジュール ](assets/ring-around-module.png)の周囲をリング
 
-モジュールが実行されると、出力インジケーターが表示されます。
+モジュールを実行すると、出力インジケーターが表示されます。
 
-![&#x200B; 出力インジケーター &#x200B;](assets/data-flow-output.png)
+![出力インジケーター](assets/data-flow-output.png)
 
-モジュールが複数のバンドルを処理する場合、処理されたバンドルごとにリングが表示され、出力インジケータは出力されたバンドルごとにカウントされます。
+モジュールが複数のバンドルを処理する場合、処理された各バンドルにリングが表示され、出力インジケーターは出力する各バンドルに対してカウントされます。
 
-シナリオデータフローについて詳しくは、[&#x200B; シナリオ実行フロー &#x200B;](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md) を参照してください。
+シナリオデータフローについて詳しくは、[ シナリオ実行フロー](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)を参照してください。
 
 ## アクセス要件
 
@@ -37,30 +39,30 @@ ht-degree: 3%
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
 +++
 
 ## 実行中のシナリオでのデータフローの表示
 
-1. 左側のパネルで「**[!UICONTROL シナリオ]**」タブをクリックします。
+1. 左側のパネルの「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. データフローを表示するシナリオを選択します。
-1. シナリオが実行されていない場合は、アクティブにするか、「**1 回実行**」をクリックしてシナリオの実行を開始します。
+1. シナリオが実行されていない場合は、シナリオをアクティブにするか、**1回実行**&#x200B;をクリックしてシナリオの実行を開始します。
 1. 実行履歴パネルの「現在実行中」セクションで、表示する実行を選択します。
 
-![&#x200B; 現在実行中 &#x200B;](assets/currently-running.png)
+![現在実行中](assets/currently-running.png)

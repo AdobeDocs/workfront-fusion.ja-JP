@@ -4,18 +4,21 @@ description: Adobe Workfront Fusion CSV モジュールを使用すると、CSV 
 author: Becky
 feature: Workfront Fusion
 exl-id: bc6d5ddc-93c3-437b-8537-5bece1351c1d
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+TQID: https://experienceleague.adobe.com/IhvuQxLno-vVgIWarBZG-EFSeu8shwQpZmce7PRBVQs
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 47%
+source-wordcount: 941
+ht-degree: 56%
 
 ---
 
 # CSV
 
-Adobe Workfront Fusion [!UICONTROL CSV] モジュールを使用すると、CSV ファイルを作成し、受信したテキスト値やファイルから CSV テキストを解析できます。
+Adobe Workfront Fusion [!UICONTROL CSV] モジュールを使用すると、CSV ファイルを作成し、受信したテキスト値またはファイルからCSV テキストを解析できます。
 
-これはトランスなので、これらのモジュールには接続は必要ありません。
+これはトランスであるため、これらのモジュールは接続を必要としません。
 
 ## アクセス要件
 
@@ -27,22 +30,22 @@ Adobe Workfront Fusion [!UICONTROL CSV] モジュールを使用すると、CSV 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
 +++
 
@@ -52,12 +55,12 @@ Adobe Workfront Fusion [!UICONTROL CSV] モジュールを使用すると、CSV 
 
 [!UICONTROL CSV を作成]アグリゲータを使用すると、受け取ったテキスト値から CSV テキストを作成できます。
 
-アグリゲータの詳細については、[&#x200B; アグリゲータモジュール &#x200B;](/help/workfront-fusion/references/modules/aggregator-module.md) を参照してください。
+アグリゲーターについて詳しくは、[ アグリゲーターモジュール ](/help/workfront-fusion/references/modules/aggregator-module.md)を参照してください。
 
 <table style="table-layout:auto">
     <tr>
         <td>[!UICONTROL Source Module]</td>
-        <td>CSV の作成に使用するフィールドを出力するモジュールを選択します。</td>
+        <td>CSVの作成に使用するフィールドを出力するモジュールを選択します。</td>
     </tr>
     <tr>
         <td>[!UICONTROL Aggregated Fields]</td>
@@ -69,7 +72,7 @@ Adobe Workfront Fusion [!UICONTROL CSV] モジュールを使用すると、CSV 
     </tr>
     <tr>
         <td>[!UICONTROL Group by]</td>
-        <td>結果をグループ化するフィルターを入力します。例えば、日付を入力します。</td>
+        <td>結果をグループ化するフィルターを入力します。 例えば、日付を入力します。</td>
     </tr>
     <tr>
         <td>[!UICONTROL Stop processing after an empty aggregation]</td>
@@ -79,9 +82,9 @@ Adobe Workfront Fusion [!UICONTROL CSV] モジュールを使用すると、CSV 
 
 ## [!UICONTROL CSV を作成（詳細）]
 
-[!UICONTROL CSV を作成（詳細）]アグリゲータを使用すると、受け取ったテキスト値から CSV テキストを作成できます。結果の CSV ファイルで CSV 列を定義するデータ構造を使用しています。定義が完了すると、列は CSV モジュール設定のフィールドとして表示され、シナリオの後のモジュールにマッピングできます。
+[!UICONTROL CSV を作成（詳細）]アグリゲータを使用すると、受け取ったテキスト値から CSV テキストを作成できます。 結果の CSV ファイルで CSV 列を定義するデータ構造を使用しています。 定義が完了すると、列は CSV モジュール設定のフィールドとして表示され、シナリオの後のモジュールにマッピングできます。
 
-アグリゲータの詳細については、[&#x200B; アグリゲータモジュール &#x200B;](/help/workfront-fusion/references/modules/aggregator-module.md) を参照してください。
+アグリゲーターについて詳しくは、[ アグリゲーターモジュール ](/help/workfront-fusion/references/modules/aggregator-module.md)を参照してください。
 
 <table style="table-layout:auto">
  <col> 
@@ -89,11 +92,11 @@ Adobe Workfront Fusion [!UICONTROL CSV] モジュールを使用すると、CSV 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source Module]</td> 
-        <td>CSV の作成に使用するフィールドを出力するモジュールを選択します。</td>
+        <td>CSVの作成に使用するフィールドを出力するモジュールを選択します。</td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Data Structure]</td> 
-   <td> <p>必要な方法でフィールドを集計するデータ構造を選択します。データ構造を定義した後、項目を対応するフィールドにマッピングできます。</p> <p>詳しくは、<a href="/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md" class="MCXref xref"> データ構造 </a> を参照してください。</p> </td> 
+   <td> <p>必要な方法でフィールドを集計するデータ構造を選択します。 データ構造を定義した後、項目を対応するフィールドにマッピングできます。</p> <p>詳しくは、<a href="/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md" class="MCXref xref"> データ構造</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Include headers in the first row] </td> 
@@ -101,7 +104,7 @@ Adobe Workfront Fusion [!UICONTROL CSV] モジュールを使用すると、CSV 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Group by] </td> 
-   <td>結果をグループ化するフィルターを入力します。例えば、日付を入力します。 </td> 
+   <td>結果をグループ化するフィルターを入力します。 例えば、日付を入力します。 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Stop processing after an empty aggregation] </td> 
@@ -115,10 +118,10 @@ Adobe Workfront Fusion [!UICONTROL CSV] モジュールを使用すると、CSV 
 
 **例**：
 
-この例では、「Full Name」と「Email」という 2 つの列を持つ CSV ファイルにGoogleの連絡先を書き出す方法を示しています。 [!UICONTROL Googleの連絡先 &#x200B;] / [!UICONTROL &#x200B; グループから連絡先を取得 &#x200B;] モジュールの出力バンドルは、次の構造になっています。 メールアドレスは、<code>[!UICONTROL &#x200B; メール []] 内に保存されます</code> item はコレクションの配列で、各コレクションには 2 つの項目が含まれています。<code>Label</code> と <code> メール</code>.
-![&#x200B; 変換 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/transforming-350x546.png)
+この例では、「フルネーム」と「電子メール」という2つの列を持つCSV ファイルにGoogleの連絡先をエクスポートする方法を示します。 [!UICONTROL Google連絡先] > [!UICONTROL  グループ ] モジュールから連絡先を取得する出力バンドルの構造は、次のとおりです。 電子メールアドレスは、<code>[!UICONTROL 電子メール []]内に保存されます</code> item。コレクションの配列で、各コレクションには2つのアイテムが含まれています：<code>Label</code> および<code> メール</code>.
+![変形](/help/workfront-fusion/references/apps-and-modules/assets/transforming-350x546.png)
 
-シンプルな [!DNL Create CSV] モジュールは、バンドルの最上位レベルの項目に対応するチェックボックスのリストを提供します。 <code>Full name</code> と <code> メール</code> [!UICONTROL CSV を作成 &#x200B;] モジュールでは、要求とは異なる次のような出力が生成されます。
+シンプルな[!DNL Create CSV] モジュールには、バンドルの最上位の項目に対応するチェックボックスのリストが表示されます。 <code>氏名を選択しようとすると</code> と<code> メール</code> itemsの場合、[!UICONTROL Create CSV] モジュールは次の出力を生成しますが、これは目的とは異なる場合があります。
 
 ```
 "emails","fullName"
@@ -128,24 +131,24 @@ Adobe Workfront Fusion [!UICONTROL CSV] モジュールを使用すると、CSV 
 "[object Object]","Abby Eisenbarth"
 ```
 
-項目 <code>Full Name</code> は単純なタイプ Text であり、期待どおりに書き出されます。 項目 <code> メール</code>はコレクションの複合型の配列であり、[object オブジェクト ] として書き出されます。このオブジェクトは、コレクションと配列がデフォルトでテキストに変換される方法です。
+項目<code>Full Nameのため</code> はシンプルなタイプのテキストで、期待どおりに書き出されます。 アイテム <code>の電子メール</code>は、複雑なタイプのコレクションの配列で、[ オブジェクトオブジェクト ]として書き出されます。これは、コレクションと配列がデフォルトでテキストに変換される方法です。
 
-詳細については、「[&#x200B; アイテム データ タイプ &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)」を参照してください。
+詳しくは、[項目データタイプ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)を参照してください。
 
 
-<code>E メールのコンテンツをエクスポートするには </code><code>Emails[] の最初のコレクションの項目</code> 代わりに、配列 [!UICONTROL CSV を作成（詳細） &#x200B;] モジュールを使用する必要があります。 このモジュールを使用すると、CSV ファイルの個々の列を定義し、ネストされた列を含め、それらの列に項目をマッピングできます。
+<code> メールのコンテンツを書き出すには </code><code>電子メール []の最初のコレクションのアイテム</code> 代わりに、[!UICONTROL Create CSV （advanced） ] モジュールを使用する必要があります。 このモジュールを使用すると、CSV ファイルの個々の列を定義し、ネストされた列を含むアイテムをそれにマッピングできます。
 
-1. モジュール [!UICONTROL CSV を作成（詳細） &#x200B;] をシナリオに挿入します。
-1. 「<strong>[!UICONTROL &#x200B; データ構造 &#x200B;]</strong>」フィールドの横にある「[!UICONTROL &#x200B; 追加 &#x200B;]」ボタンをクリックして、新しいデータ構造を作成します。
-1. データ構造の名前を入力し、「<strong>[!UICONTROL &#x200B; 項目を追加 &#x200B;]</strong>」をクリックして個々の列を追加します。 「Full Name」と「Email」の 2 つの列を書き出すには、結果のデータ構造は次のようになります。
+1. モジュール [!UICONTROL Create CSV （advanced） ]をシナリオに挿入します。
+1. 「[!UICONTROL  データ構造]」フィールドの横にある「<strong>[!UICONTROL 追加]</strong>」ボタンをクリックして、新しいデータ構造を作成します。
+1. データ構造の名前を入力し、<strong>[!UICONTROL 項目を追加]</strong>をクリックして個々の列を追加します。 「フルネーム」と「電子メール」の2つの列を書き出すと、結果のデータ構造は次のようになります。
 
-   ![Google連絡先の出力 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/google-contacts-350x524.png)
+   ![Google連絡先出力](/help/workfront-fusion/references/apps-and-modules/assets/google-contacts-350x524.png)
 
-1. データ構造を定義すると、個々の列に対応するフィールドが [!UICONTROL CSV を作成（詳細） &#x200B;] モジュールの設定に表示され、項目をマッピングできます。 <code>[!UICONTROL &#x200B; メール []] の最初の項目を取得</code> 配列とその項目のマッピング <code> メール </code>フィールド/列の「電子メール」に対して、次の操作を行います。
+1. データ構造を定義すると、各列に対応するフィールドが[!UICONTROL Create CSV （advanced） ] モジュールの設定に表示されるので、項目をマッピングできます。 <code>[!UICONTROL 電子メール []]の最初の項目を取得</code> アイテム <code>の配列とマッピングの電子メール </code>フィールド/列に電子メール：
 
-   ![CSV 詳細モジュールの作成 &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/create-csv-advanced-350x308.png)
+   ![CSV詳細モジュールの作成](/help/workfront-fusion/references/apps-and-modules/assets/create-csv-advanced-350x308.png)
 
-1. シナリオを実行します。項目 <code>Emails[1]:Email のため</code> 列「メール」にマッピングされたは単純なタイプのテキストであり、正しく書き出されます。
+1. シナリオを実行します。 アイテム <code> メール [1]のため：メール</code> 「メール」列にマッピングされたメールは、単純なタイプのテキストで、正しく書き出されます。
 
 ```
 "Full Name","Email"
@@ -171,15 +174,15 @@ Adobe Workfront Fusion [!UICONTROL CSV] モジュールを使用すると、CSV 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL CSV contains headers]</td> 
-   <td> <p>CSV テキストの最初の行がヘッダーの場合は、このオプションを選択します。</p> <p>メモ：このモジュールでは、ヘッダーを使用して出力の列にラベルを付けません。このフィールドは、ヘッダーが出力データに含まれないようにします。</p> </td> 
+   <td> <p>CSV テキストの最初の行がヘッダーの場合は、このオプションを選択します。</p> <p>メモ：このモジュールでは、ヘッダーを使用して出力の列にラベルを付けません。 このフィールドは、ヘッダーが出力データに含まれないようにします。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL delimiterType]</td> 
-   <td> <p>CSV ファイルの区切り文字を選択します。区切り文字は、値の区切りまたはフィールド間の境界を示すテキスト文字です。</p> 
+   <td> <p>CSV ファイルの区切り文字を選択します。 区切り文字は、値の区切りまたはフィールド間の境界を示すテキスト文字です。</p> 
     <ul> 
      <li>[!UICONTROL Comma]</li> 
      <li>[!UICONTROL Tab]</li> 
-     <li> <p>[!UICONTROL Other]</p> <p>[!UICONTROL Other] を選択した場合は、値を区切るために CSV ファイルで使用する区切り文字を入力します。正確に 1 文字を入力する必要があります。<br></p> </li> 
+     <li> <p>[!UICONTROL Other]</p> <p>[!UICONTROL Other] を選択した場合は、値を区切るために CSV ファイルで使用する区切り文字を入力します。 正確に 1 文字を入力する必要があります。<br></p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 

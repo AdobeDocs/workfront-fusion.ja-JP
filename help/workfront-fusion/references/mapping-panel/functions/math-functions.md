@@ -4,9 +4,11 @@ description: 次の数式は、Adobe Workfront Fusion マッピングパネル�
 author: Becky
 feature: Workfront Fusion
 exl-id: 3d08b09d-b395-4226-b7e3-d5650c428a59
-source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
+TQID: https://experienceleague.adobe.com/a0WYFvPFBnXOvKS9ndQ-TD5xSvJz2bCbUbDY5VnXW0w
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: 404
 ht-degree: 62%
 
 ---
@@ -113,7 +115,7 @@ ht-degree: 62%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL abs （number） &#x200B;]
+### [!UICONTROL abs （number） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -131,7 +133,7 @@ ht-degree: 62%
   3.14を返します
 
 
-### [!UICONTROL div （number1; number2; ...） &#x200B;]
+### [!UICONTROL div （number1; number2; ...） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -149,7 +151,7 @@ ht-degree: 62%
   返品5
 
 
-### [!UICONTROL ln （number） &#x200B;]
+### [!UICONTROL ln （number） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -168,7 +170,7 @@ ht-degree: 62%
   戻り値 1
 
 
-### [!UICONTROL log （number1; number2） &#x200B;]
+### [!UICONTROL log （number1; number2） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -186,7 +188,7 @@ ht-degree: 62%
   戻り値 3
 
 
-### [!UICONTROL number （string） &#x200B;]
+### [!UICONTROL number （string） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -204,7 +206,7 @@ ht-degree: 62%
   42を返します
 
 
-### [!UICONTROL power （number; power） &#x200B;]
+### [!UICONTROL power （number; power） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -222,7 +224,7 @@ ht-degree: 62%
   戻り値 2
 
 
-### [!UICONTROL prod （number1; number2; ...） &#x200B;]
+### [!UICONTROL prod （number1; number2; ...） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -240,7 +242,7 @@ ht-degree: 62%
   25を返します
 
 
-### [!UICONTROL sortAscNum （number1; number2; ...） &#x200B;]
+### [!UICONTROL sortAscNum （number1; number2; ...） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -258,7 +260,7 @@ ht-degree: 62%
   \[3, 4, 5]を返します
 
 
-### [!UICONTROL sortDescNum （number1; number2; ...） &#x200B;]
+### [!UICONTROL sortDescNum （number1; number2; ...） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -276,7 +278,7 @@ ht-degree: 62%
   \[5, 4, 3]を返します
 
 
-### [!UICONTROL sqrt （number） &#x200B;]
+### [!UICONTROL sqrt （number） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -294,7 +296,7 @@ ht-degree: 62%
   戻り値 2
 
 
-### [!UICONTROL sub （number1; number2; ...） &#x200B;]
+### [!UICONTROL sub （number1; number2; ...） ]
 
 [!BADGE 新規！]{type=Informative}
 

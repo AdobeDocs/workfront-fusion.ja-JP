@@ -1,17 +1,19 @@
 ---
-title: 日付と時刻の解析用トークン
+title: 日付と時間の解析用トークン
 description: 日付と時刻の解析用の次のトークンは、 [!DNL Adobe Workfront Fusion mapping]  パネルで使用できます。
 author: Becky
 feature: Workfront Fusion
 exl-id: d3242af3-89e8-45ae-81a1-3b4dadf824fd
-source-git-commit: 24a6c1558fd6349c022df8a1847a7f39fafddd67
+TQID: https://experienceleague.adobe.com/ZU2fO6cE2nEceklQoIj6TrpETBbssJe3FuCpcXHZepI
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 92%
+source-wordcount: 164
+ht-degree: 100%
 
 ---
 
-# 日付と時刻の解析用トークン
+# 日付と時間の解析用トークン
 
 ## 年、月、日のトークン
 
@@ -45,7 +47,7 @@ ht-degree: 92%
   <tr> 
    <td><code>Q</code> </td> 
    <td><code>1..4</code> </td> 
-   <td> <p> 四半期。月を四半期の最初の月に設定します。</p> </td> 
+   <td> <p> 四半期。 月を四半期の最初の月に設定します。</p> </td> 
   </tr> 
   <tr> 
    <td><code>M MM</code> </td> 

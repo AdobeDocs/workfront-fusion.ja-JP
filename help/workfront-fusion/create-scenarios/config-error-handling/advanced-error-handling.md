@@ -1,19 +1,21 @@
 ---
 title: エラー処理ルートへのフィルタリングとネストの追加
-description: フィルタリングとネストを含めることで、エラー処理ルートに高度なエラー処理手法を追加できます。
+description: フィルターとネストを含めることで、エラー処理ルートに高度なエラー処理技術を追加できます。
 author: Becky
 feature: Workfront Fusion
 exl-id: 745bfdc4-1327-4a28-a863-c217f15a7fc5
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+TQID: https://experienceleague.adobe.com/rbQYzfld2LTiuYP90Hz5HzIXpWx7XzqEjdBTf9YszDo
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 10%
+source-wordcount: 886
+ht-degree: 21%
 
 ---
 
 # エラー処理ルートへのフィルタリングとネストの追加
 
-フィルタリングとネストを含めることで、エラー処理ルートに高度なエラー処理手法を追加できます。
+フィルターとネストを含めることで、エラー処理ルートに高度なエラー処理技術を追加できます。
 
 ## アクセス要件
 
@@ -25,22 +27,22 @@ ht-degree: 10%
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
 +++
 
@@ -48,87 +50,87 @@ ht-degree: 10%
 
 エラーハンドラールートで実行できるフィルタリングには 2 種類あります。
 
-* [エラーハンドラールートにフィルターを追加する](#add-a-filter-to-the-error-handler-route)
-* [エラーハンドラールートにルーターを追加し、その後にフィルターを追加します](#add-a-router-followed-by-filters-to-the-error-handler)
+* [エラーハンドラーのルートにフィルターを追加する](#add-a-filter-to-the-error-handler-route)
+* [ルーターを追加し、その後にフィルターをエラーハンドラールートに追加します](#add-a-router-followed-by-filters-to-the-error-handler)
 
-### エラーハンドラールートにフィルターを追加する
+### エラーハンドラーのルートにフィルターを追加する
 
-フィルターを使用して、エラーハンドラールートで処理されるエラーを制御できます。これにより、特定のタイプのエラーのみを処理できます。エラーがフィルターを通過しない場合は、指定されたモジュールに対してエラーハンドラールートが定義されていないものとして扱われます。
+フィルターを使用して、エラーハンドラールートで処理されるエラーを制御できます。 これにより、特定のタイプのエラーのみを処理できます。 エラーがフィルターを通過しない場合は、指定されたモジュールに対してエラーハンドラールートが定義されていないものとして扱われます。
 
-これらのフィルターは、Fusion の他のフィルターと同様に設定されます。 手順については、[&#x200B; シナリオへのフィルターの追加 &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md) を参照してください。
+これらのフィルターは、Fusionの他のフィルターと同様に設定されます。 手順については、[ シナリオへのフィルターの追加](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md)を参照してください。
 
-### ルーターを追加し、その後にフィルターを追加して、エラーハンドラーを削除します
+### ルーターを追加し、その後にフィルターをエラーハンドラーに追加します
 
-エラー処理ルートにルータを追加すると、異なるタイプのエラーに対して異なるルートを設定できます。
+ルータをエラー処理ルートに追加すると、異なるタイプのエラーに対して異なるルートを設定できます。
 
-例えば、エラーが DataError の場合に実行する 1 つのルートを設定するには、マッピングされたエラータイプが DataError の場合にデータを通過させるフィルターを設定できます。
+例えば、エラーがDataErrorの場合に実行するルートを1つ設定するには、マッピングされたエラータイプがDataErrorと等しい場合にデータを通過させるフィルターを設定できます。
 
-![DataError フィルター &#x200B;](assets/filter-dataerror.png)
+![DataError フィルター](assets/filter-dataerror.png)
 
-Fusion が様々なデータタイプを評価して処理する方法について詳しくは、[&#x200B; エラータイプ &#x200B;](/help/workfront-fusion/references/errors/error-processing.md) を参照してください。
+Fusionが様々なデータタイプを評価および処理する方法について詳しくは、[ エラータイプ ](/help/workfront-fusion/references/errors/error-processing.md)を参照してください。
 
 ### 例：フィルターを使用したエラー処理
 
 >[!BEGINSHADEBOX]
 
-次のサンプルシナリオは、これらのフィルターがエラー処理でどのように機能するかを示しています。
+このシナリオの例では、これらのフィルターがエラー処理でどのように機能するかを示します。
 
-Dropbox/フォルダーモジュールを作成を使用したときに、同じ名前のフォルダーが既に存在する場合は、モジュールが DataError をスローします。
+Dropbox/Create a folder moduleを使用し、同じ名前のフォルダーが既に存在する場合、そのフォルダーはDataErrorをスローします。
 
-![Dropboxのエラー &#x200B;](assets/dropbox.png)
+![Dropboxでのエラー](assets/dropbox.png)
 
 完全なシナリオは次のように機能します。
 
-![Dropbox シナリオ &#x200B;](assets/dropbox-scenario.png)
+![Dropbox シナリオ ](assets/dropbox-scenario.png)
 
-1. ツール/変数を設定モジュールにフォルダー名が含まれています。
-1. 「HTTP/ファイルを取得」モジュールは、フォルダーにアップロードする必要があるファイルを取得します
-1. モジュールでマッピングされたフォルダーと同じ名前のフォルダーが既に存在する場合、Dropbox/フォルダーを作成モジュールはエラーをスローします
-1. エラーハンドラールート（透明な泡）には、エラーをフィルタリングするルーターが含まれています
-1 つ目のルートは、`DataError` と呼ばれる指定されたタイプのエラーに対するものです。
+1. ツール/変数を設定モジュールには、フォルダー名が含まれます
+1. HTTP/ファイルを取得モジュールは、フォルダーにアップロードする必要があるファイルを取得します
+1. Dropbox/Create a folder モジュールは、モジュールにマッピングされているフォルダーと同じ名前のフォルダーが既に存在する場合にエラーをスローします
+1. エラーハンドラーのルート（透明なバブル）には、エラーをフィルタリングするルーターが含まれています
+最初のルートは、`DataError`という指定されたタイプのエラーです。
 
-   1. `DataError` ラーが発生し、エラーの詳細がフィルターを通過する場合、Dropbox/フォルダーモジュール内のすべてのファイルやサブフォルダーを一覧表示には、Dropbox内のすべてのフォルダーが一覧表示されます。
-   1. 後続のフィルターはフォルダー名と一致します。
-   1. **Resume** ディレクティブは、既存フォルダーのフォルダー ID とフォルダーパスを指定し、Dropbox/フォルダーモジュールを作成からシナリオの実行が再開されます。 ただし、Fusion は、新しいフォルダーを作成する代わりに、再開ディレクティブの値を使用して次のモジュールに移動し、ファイルを既存のフォルダーにアップロードします。
+   1. `DataError`が発生し、エラーの詳細がフィルターを通過した場合、Dropbox/フォルダーモジュール内のすべてのファイル/サブフォルダーを一覧表示すると、Dropbox内のすべてのフォルダーが一覧表示されます。
+   1. 後続のフィルターは、フォルダー名と一致します。
+   1. **Resume** ディレクティブは、既存のフォルダーのフォルダーIDとフォルダーパスを指定し、シナリオの実行はDropbox/フォルダーモジュールの作成から再開します。 ただし、新しいフォルダーを作成する代わりに、FusionはResume ディレクティブの値を使用して次のモジュールに移動し、既存のフォルダーにファイルをアップロードします。
 
-1. 2 番目のルートは、他のすべてのエラーに対するルートで、最後にロールバックディレクティブが指定されます。これにより、シナリオがすぐに停止します
+1. 2つ目のルートは、他のすべてのエラーに対するもので、Rollback ディレクティブで終了します。これにより、シナリオがすぐに停止されます
 
-DataError ルートの詳細を以下に示します。
+以下に、DataError ルートの詳細な説明を示します。
 
-ファイルのアップロードなど、後続のモジュールで既存のフォルダーを使用するには、モジュールにエラーハンドラールートを追加し、次に示す再開ディレクティブモジュールにマッピングするフォルダーパスを取得する必要があります。
+ファイルのアップロードなど、後続のモジュールで既存のフォルダーを使用するには、モジュールにエラーハンドラーのルートを追加し、次に示すResume ディレクティブモジュールにマッピングするフォルダーパスを取得する必要があります。
 
-![&#x200B; エラーハンドラールートの追加 &#x200B;](assets/add-error-handler-route.png)
+![ エラーハンドラーのルートを追加](assets/add-error-handler-route.png)
 
 最初のルートのフィルターは、同じ名前のフォルダーが既に存在する場合に表示される特定のエラー（DataError）のみを処理するように設定されています。
 
 ![状況](assets/condition.png)
 
-Dropbox/フォルダーモジュール内のすべてのファイルをリストは、ターゲットフォルダー内のすべてのフォルダーを返すように設定されます。 次のフィルターは、最初に作成しようとしたフィルターのみを通過します。 （フォルダー名は 33 に保存されます。 フォルダー名項目。）
+Dropbox/フォルダーモジュール内のすべてのファイルを一覧表示は、ターゲットフォルダー内のすべてのフォルダーを返すように設定されています。 次のフィルターは、最初に作成しようとしていたもののみを渡します。 （フォルダー名は33に保存されます。 フォルダー名項目。）
 
 ![状況](assets/condition2.png)
 
-次に、再開ディレクティブは、失敗したモジュールの出力としてフォルダーパスを提供します。 フォルダー ID は、「ファイルをアップロード」モジュールでは必要ないので、空白のままです。
+次に、「再開」ディレクティブは、失敗したモジュールの出力としてフォルダーパスを提供します。 フォルダーIDは、ファイルモジュールをアップロードする際に必要ではないため、空白のままになっています。
 
-![&#x200B; フロー制御 &#x200B;](assets/flow-control.png)
+![ フロー制御](assets/flow-control.png)
 
 >[!ENDSHADEBOX]
 
 ## ネスト
 
-エラーハンドラールートは、ルーターを除くすべてのモジュールで作成および設定できます。 そのため、既存のエラーハンドラールートに既に含まれているモジュールのエラーハンドラールートを作成できます。
+エラーハンドラールートは、ルーターを除くすべてのモジュールで作成および設定できます。 したがって、既に既存のエラーハンドラールートの一部となっているモジュールに対して、エラーハンドラールートを作成できます。
 
 >[!BEGINSHADEBOX]
 
 例：
 
-フィルターを含むネストされたエラーハンドラールート：
+フィルターを含むネストされたエラーハンドラーのルート：
 
-![&#x200B; ネストされたエラー処理ルート &#x200B;](assets/nested-error-handling-route.png)
+![ ルートを処理するネストされたエラー](assets/nested-error-handling-route.png)
 
-このシナリオでは、2 つ目のエラーハンドラールートが 1 つ目のエラーハンドラールートの下にネストされています。
+このシナリオでは、2番目のエラーハンドラールートは、最初のエラーハンドラールートの下にネストされます。
 
-「Dropbox/フォルダーを作成」モジュールでエラーが発生した場合、実行は最初のルートに移動します。 `DataError Takes Place` フィルターが渡されると、次のモジュールが実行され、Dropbox / フォルダーモジュール内のすべてのファイルやサブフォルダーのリストでエラーが発生しない場合は、再開ディレクティブモジュールが続きます。
+Dropbox/Create a folder モジュールでエラーが発生した場合、実行は最初のルートに移動します。 `DataError Takes Place` フィルターを渡すと、次のモジュールが実行され、Dropbox/フォルダーモジュール内のすべてのファイル/サブフォルダーを一覧表示でエラーが発生しない場合は、再開ディレクティブモジュールが続きます。
 
-ただし、Dropbox/フォルダーモジュール内のすべてのファイル/サブフォルダーをリストでエラーが発生した場合、実行はエラーハンドラールート 2 に移動し、[!UICONTROL &#x200B; 無視 &#x200B;] ディレクティブで終了します。 この場合、[!UICONTROL 再開ディレクティブ]モジュールは実行されません。
+ただし、Dropbox/フォルダーモジュールのすべてのファイル/サブフォルダーを一覧表示でエラーが発生した場合、実行はError Handler Route 2に移動し、[!UICONTROL Ignore] ディレクティブで終了します。 この場合、[!UICONTROL 再開ディレクティブ]モジュールは実行されません。
 
 >[!ENDSHADEBOX]

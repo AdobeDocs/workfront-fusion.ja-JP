@@ -5,20 +5,23 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion
 exl-id: 41179cfe-c0f9-4d18-ab7e-374670ac688b
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/Dq7tbOvvEndH-6k3yX8AvH29kZxp748JeT1HW-zcDDQ
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 68%
+source-wordcount: 657
+ht-degree: 99%
 
 ---
 
 # [!DNL MariaDB] モジュール
 
-Adobe Workfront Fusion のシナリオでは、[!DNL MariaDB] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
+Adobe Workfront Fusion のシナリオでは、[!DNL MariaDB] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりすることができます。
 
-シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成手順について詳しくは、[シナリオの作成：記事のインデックス](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
 
-モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、[モジュール：記事インデックス](/help/workfront-fusion/references/modules/modules-toc.md)の記事を参照してください。
 
 ## アクセス要件
 
@@ -30,31 +33,31 @@ Adobe Workfront Fusion のシナリオでは、[!DNL MariaDB] を使用するワ
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
    <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
-   <p>コネクタベース（従来）：作業の自動化と統合のためのWorkfront Fusion </p>
+   <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
 
 +++
 
@@ -87,14 +90,14 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
         </tr>
      <tr> 
       <td role="rowheader">[!UICONTROL Host]</td> 
-      <td> <p>データベースインスタンスの IP アドレスまたはホスト名を入力します。このホストは、ネットワークの外部からアクセスできる必要があります。</p> <p>例： <code>[!DNL mariadb.hwoh2j5h.us-east-1.rds.amazon.com]</code></p> </td> 
+      <td> <p>データベースインスタンスの IP アドレスまたはホスト名を入力します。 このホストは、ネットワークの外部からアクセスできる必要があります。</p> <p>例： <code>[!DNL mariadb.hwoh2j5h.us-east-1.rds.amazon.com]</code></p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Port]</td> 
-      <td>デフォルトのポートは 3306 です。非標準のポートを使用している場合は、この番号をポートに設定します。 </td> 
+      <td>デフォルトのポートは 3306 です。 非標準のポートを使用している場合は、この番号をポートに設定します。 </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL データベース &#x200B;]</td> 
+      <td role="rowheader">[!UICONTROL Database ]</td> 
       <td>操作するデータベースの名前を入力します。</td> 
      </tr> 
      <tr> 
@@ -112,11 +115,11 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ## [!DNL MariaDB] モジュールとそのフィールド
 
-[!DNL MariaDB] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL MariaDB]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL MariaDB] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。 これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL MariaDB]」フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。 詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![マップ切り替え](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 ### クエリの実行（上級）
 
@@ -128,11 +131,11 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL MariaDB] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL MariaDB] の接続 </a> を参照してください。</td> 
+   <td>[!DNL MariaDB] アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">[!DNL MariaDB] を Workfront Fusion に接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query]</td> 
-   <td> <p>モジュールがデータの取得に使用する SQL クエリを入力します。</p> <p>重要：クエリで使用される変数は不要部分が削除されていません。SQL 挿入を防ぐために、変数の不要部分を適切に削除してください。</p> </td> 
+   <td> <p>モジュールがデータの取得に使用する SQL クエリを入力します。</p> <p>重要：クエリで使用される変数は不要部分が削除されていません。 SQL 挿入を防ぐために、変数の不要部分を適切に削除してください。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -147,7 +150,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL MariaDB] アカウントをWorkfront Fusion に接続する手順については、この記事の <a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">Workfront Fusion への [!DNL MariaDB] の接続 </a> を参照してください。</td> 
+   <td>[!DNL MariaDB] アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">[!DNL MariaDB] を Workfront Fusion に接続</a>を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Table]</td> 

@@ -1,19 +1,22 @@
 ---
-title: 集計モジュール
+title: 集積モジュール
 description: アグリゲーターモジュールは、複数のデータバンドルを 1 つのバンドルに結合するように設計されたモジュールの一種です。
 author: Becky
 feature: Workfront Fusion
 exl-id: 93cde0d0-4013-463a-b19c-d58180632739
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+TQID: https://experienceleague.adobe.com/O99Y6rWAQUUaO20Ts2T87ZaDUayi6I5ZWsyKKqOyONw
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: 810
 ht-degree: 21%
 
 ---
 
 # [!UICONTROL アグリゲーター]モジュール
 
-アグリゲータモジュールは、複数のデータバンドルを 1 つのバンドルに結合するモジュールです。
+アグリゲータモジュールとは、複数のデータバンドルを1つのバンドルに統合するモジュールです。
 
 ## アクセス要件
 
@@ -48,12 +51,12 @@ ht-degree: 21%
 
 [!UICONTROL アグリゲーター]モジュールが実行されると、次の処理が行われます。
 
-* 単一のソースモジュールの操作からすべてのバンドルを蓄積します。
-* 累積されたバンドルごとに 1 つの項目を含む配列を持つ単一のバンドルを出力します。 配列の項目の内容は、特定の [!UICONTROL &#x200B; アグリゲータ &#x200B;] モジュールとその設定に依存します。
+* 1つのソースモジュールの操作からすべてのバンドルを累積します。
+* 累積バンドルごとに1つの項目を含む配列を持つ1つのバンドルを出力します。 配列の項目の内容は、特定の[!UICONTROL Aggregator] モジュールとその設定によって異なります。
 
 次の画像は、[!UICONTROL アグリゲーター]モジュールの通常の設定を表示します。
 
-![&#x200B; 配列アグリゲータ &#x200B;](assets/array-aggregator.png)
+![配列アグリゲーター](assets/array-aggregator.png)
 
 <table style="table-layout:auto">
  <col> 
@@ -61,54 +64,54 @@ ht-degree: 21%
  <tbody> 
   <tr> 
    <td> <p>[!UICONTROL Source Module]</p> </td> 
-   <td> <p>バンドル集計が開始するモジュール。 ソースモジュールは、通常、一連のバンドルを出力するイテレータまたは検索モジュールです。</p><p>アグリゲータのソースモジュールを設定（およびアグリゲータの設定を閉じる）すると、ソースモジュールとアグリゲータモジュールの間のルートがグレーの領域で囲まれ、集計の開始と終了が明確に表示されます。 
-   </p> <p>イテレータについて詳しくは、<a href="/help/workfront-fusion/references/modules/iterator-module.md" class="MCXref xref">[!UICONTROL Iterator] モジュール </a> を参照してください。</p> 
-   <p>検索モジュールについて詳しくは、「モジュールの概要」の <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#search-modules" class="MCXref xref"> 検索モジュール </a> を参照してください。</p> </td> 
+   <td> <p>バンドル集計が開始されるモジュール。 ソースモジュールは通常、一連のバンドルを出力するイテレータまたは検索モジュールです。</p><p>アグリゲーターのソースモジュールを設定する場合（およびアグリゲーターの設定を閉じる場合）、ソースモジュールとアグリゲーターモジュールの間のルートはグレーの領域で囲まれるため、アグリゲーターの開始と終了を明確に確認できます。 
+   </p> <p>イテレーターについて詳しくは、<a href="/help/workfront-fusion/references/modules/iterator-module.md" class="MCXref xref">[!UICONTROL Iterator] モジュール </a>を参照してください。</p> 
+   <p>検索モジュールについて詳しくは、モジュールの概要の<a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#search-modules" class="MCXref xref">検索モジュール </a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Target structure type]</p><p>（[!UICONTROL 配列アグリゲータ &#x200B;] モジュールにのみ適用）</p> </td> 
-   <td> <p> データが集計されるターゲット構造。 デフォルトのオプション [!UICONTROL Custom] を使用すると、[!UICONTROL Array aggregator] の出力バンドルの <code>Array </code>item：に集計する項目を選択できます。</p> <p> <img src="assets/output-bundle-array-item.png"> </p> <p>[!UICONTROL 配列 aggregator] モジュールの後にさらにモジュールを接続し、集計モジュールの設定に戻ると、[!UICONTROL ターゲット &#x200B;] 構造体型ドロップダウンメニューに、次のモジュールと、「コレクションの配列」型のフィールドがすべて含まれます。 <p>この例では、[!DNL Slack] &gt;[!UICONTROL メッセージを作成 &#x200B;] モジュールの [!UICONTROL Attachments] フィールドが、配列アグリゲータ &gt; ターゲット構造タイプ フィールドに表示されます。 </p> <p> <img src="assets/array-aggregator-slack.png"> </p> </td> 
+   <td> <p>[!UICONTROL Target structure type]</p><p>（[!UICONTROL Array aggregator] モジュールにのみ適用されます）。</p> </td> 
+   <td> <p> データが集計されるターゲット構造。 デフォルトのオプションである[!UICONTROL Custom]を使用すると、[!UICONTROL Array aggregator]の出力バンドルの<code>Array </code>項目に集約する項目を選択できます。</p> <p> <img src="assets/output-bundle-array-item.png"> </p> <p>[!UICONTROL Array aggregator] モジュールの後に追加のモジュールを接続し、アグリゲータモジュールの設定に戻ると、[!UICONTROL Target]構造タイプのドロップダウンメニューには、次のすべてのモジュールと「コレクションの配列」タイプであるフィールドが含まれます。 <p>この例では、[!DNL Slack] &gt;[!UICONTROL メッセージを作成] モジュールの[!UICONTROL Attachments] フィールドが、配列アグリゲーター/ターゲット構造タイプ フィールドに表示されます。 </p> <p> <img src="assets/array-aggregator-slack.png"> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Aggregated fields]</td> 
-   <td>集計モジュールの出力に含めるフィールド。</td> 
+   <td>集約モジュール出力に含めるフィールド。</td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Group by]</p> </td> 
-   <td> <p>「グループ化」フィールドを使用すると、1 つ以上のマッピングされた項目を含む式を定義できます。 集計データは、式の値によってグループに分けられます。 各グループは、キーとデータの配列を含む個別のバンドルとして出力します。 結果をグループ化することで、後続のモジュールでキーをフィルターとして使用できます。</p>
+   <td> <p>「グループ別」フィールドを使用すると、1つ以上のマッピング済みアイテムを含む式を定義できます。 集約されたデータは、式の値でグループに分けられます。 各グループは、キーとデータの配列を含む個別のバンドルとして出力されます。 結果をグループ化することで、キーを後続のモジュールのフィルターとして使用できます。</p>
    <p>各バンドルには、次の 2 つの項目が含まれます。</p> 
     <ul> 
-     <li><code>Key</code>：グループ化の基準にする値。</li> 
-     <li><code>Array</code>:<code>Key</code> 値に対して評価された式の対象となるバンドルからの集計データ。</li> 
+     <li><code>Key</code>：グループ化する値。</li> 
+     <li><code>Array</code>：数式が<code>Key</code>値に評価されたバンドルからの集計データ。</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td> <p>空の集計後に処理を停止</p> </td> 
-   <td> <p>デフォルトでは、[!UICONTROL Aggregator] モジュールは、[!UICONTROL Aggregator] モジュールに到達したバンドルがない場合（例えば、集約を含むパスからすべて除外されている場合）でも、集約の結果を出力します。 オプション [!UICONTROL Stop processing after an empty aggregation] が有効になっている場合、[!UICONTROL Aggregator] モジュールは、入力バンドルがないときに出力バンドルを生成しません。 代わりに、フローが停止します。</p> </td> 
+   <td> <p>デフォルトでは、[!UICONTROL Aggregator] モジュールは、バンドルが[!UICONTROL Aggregator] モジュールに到達しなかった場合でも、集約の結果を出力します（例えば、すべてのバンドルが集約を含むパスからフィルタリングされたため）。 「[!UICONTROL Stop processing after an empty aggregation]」オプションが有効になっている場合、[!UICONTROL Aggregator] モジュールは、入力バンドルがない場合、出力バンドルを生成しません。 それどころか、流れが止まってしまいます。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->ソースモジュールと [!UICONTROL Aggregator] モジュール間のモジュールで生成されたバンドルは、[!UICONTROL Aggregator] モジュールでは出力されません。 これらのバンドルは、「アグリゲータ [!UICONTROL &#x200B; 後のフローのモジュールからアクセスでき &#x200B;] せん。 ソースモジュールと [!UICONTROL Aggregator] モジュールの間でモジュールによって出力されるバンドルからのデータが必要な場合は、指定された項目を [!UICONTROL Aggregator] モジュールの設定（[!UICONTROL Array aggregator] モジュールの設定の [!UICONTROL &#x200B; 集計フィールド &#x200B;] フィールドなど）に必ず含めてください。
+>ソースモジュールと[!UICONTROL Aggregator] モジュールの間でモジュールによって生成されたバンドルは、[!UICONTROL Aggregator] モジュールによって出力されません。 これらのバンドルは、[!UICONTROL Aggregator]の後のフローのモジュールからアクセスできません。 ソースモジュールと[!UICONTROL Aggregator] モジュールの間でモジュールによって出力されたバンドルのデータが必要な場合は、必ず[!UICONTROL Aggregator] モジュールの設定（[!UICONTROL Array aggregator] モジュールの設定の[!UICONTROL 集計フィールド ] フィールドなど）に指定された項目を含めてください。
 
 
-## アグリゲータの動作のシナリオの例
+## アグリゲーターの仕組みの例
 
-このサンプルシナリオでは、すべてのメール添付ファイルを zip で圧縮し、その ZIP ファイルを [!DNL Dropbox] にアップロードする方法を示します。
+この例では、すべてのメール添付ファイルをzip形式で送信し、ZIPを[!DNL Dropbox]にアップロードする方法を示します。
 
-![Dropbox アーカイブの例 &#x200B;](assets/dropbox-archive.png)
+![Dropbox アーカイブの例](assets/dropbox-archive.png)
 
 以下のシナリオでは、次の方法を示します。
 
-* 最初のモジュールは、受信メールのメールボックスを監視します。 [!UICONTROL &#x200B; メール &#x200B;] >[!UICONTROL &#x200B; メールをウォッチ &#x200B;]トリガーは、項目 `Attachments[]` を含んだバンドルを出力します。これは、メールのすべての添付ファイルを含んだ配列です。
+* 最初のモジュールは、受信メール用のメールボックスを監視します。 [!UICONTROL 電子メール ] >[!UICONTROL 電子メールを監視] トリガーは、すべての電子メールの添付ファイルを含む配列である項目`Attachments[]`を含むバンドルを出力します。
 
-* 2 つ目のモデルは、メールの添付ファイルを反復します。[!UICONTROL &#x200B; メール &#x200B;] >[!UICONTROL &#x200B; 添付ファイルを反復 &#x200B;] イテレータは、`Attachments[]` 配列から項目を 1 つずつ取得し、それらを別のバンドルとしてさらに送信します。
+* 2番目のモデルは、電子メールの添付ファイルを繰り返します：[!UICONTROL 電子メール ] >[!UICONTROL 添付ファイルを繰り返し] イテレータは、`Attachments[]`配列のアイテムを1つずつ取り出し、さらに別のバンドルとして送信します。
 
-* 3 番目のモジュールはアグリゲータです。 [!UICONTROL Email] >[!UICONTROL Iterate attachments] モジュールによって出力されたバンドルを集計します。 [!UICONTROL &#x200B; アーカイブ &#x200B;] >[!UICONTROL &#x200B; アーカイブアグリゲータを作成 &#x200B;] は、ZIP ファイルを含んだ単一のバンドルを受信して出力するすべてのバンドルを蓄積します。
+* 3つ目のモジュールはアグリゲーターです。 [!UICONTROL 電子メール ] >[!UICONTROL 添付ファイルを繰り返し] モジュールによって出力されたバンドルを集計します。 [!UICONTROL  アーカイブ ] >[!UICONTROL  アーカイブアグリゲーターを作成]すると、受け取ったすべてのバンドルが蓄積され、ZIP ファイルを含む単一のバンドルが出力されます。
 
-* 最後のモジュールは、結果の ZIP ファイルを [!DNL Dropbox] にアップロードします。  [!DNL Dropbox]/[!UICONTROL &#x200B; ファイルをアップロード &#x200B;]&#x200B;[!UICONTROL &#x200B; アーカイブ &#x200B;]/[!UICONTROL &#x200B; アーカイブを作成 &#x200B;] モジュールから ZIP ファイルを取得して、[!DNL Dropbox] にアップロードします。
+* 最後のモジュールは、結果として得られるZIP ファイルを[!DNL Dropbox]にアップロードします。[!DNL Dropbox] > [!UICONTROL  ファイルをアップロード ]は、[!UICONTROL  アーカイブ ] > [!UICONTROL  アーカイブ ] モジュールを作成し、[!DNL Dropbox]にアップロードします。
 
 
 

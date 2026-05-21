@@ -4,22 +4,25 @@ description: ' [!DNL Adobe Workfront Fusion Google Forms]  モジュールを使
 author: Becky
 feature: Workfront Fusion
 exl-id: dc017957-c0f8-4206-916f-21ccda346fb9
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/mH7rS7ZCyRcDWv0F6CFvhZ19FL-sNL0liLT53jeZy54
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1421'
-ht-degree: 73%
+source-wordcount: 1432
+ht-degree: 83%
 
 ---
 
 # [!DNL Google Forms] モジュール
 
-Adobe Workfront Fusion [!DNL Google Forms] モジュールを使用すると、[!DNL Google Forms] ージ上の応答を監視、選択、追加、更新、削除できます。
+Adobe Workfront Fusion [!DNL Google Forms] モジュールを使用すると、[!DNL Google Forms]の応答を監視、選択、追加、更新または削除できます。
 
-Adobe Workfront Fusion で [!DNL Google Docs] を使用するには、[!DNL Google] アカウントが必要です。 [!DNL Google] アカウントをまだお持ちでない場合は、[!DNL Google] アカウントのヘルプページで作成できます。
+Adobe Workfront Fusionで[!DNL Google Docs]を使用するには、[!DNL Google] アカウントが必要です。 [!DNL Google] アカウントをまだお持ちでない場合は、[!DNL Google] アカウントのヘルプページで作成できます。
 
-シナリオの作成方法については、[&#x200B; シナリオの作成：記事のインデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md) の記事を参照してください。
+シナリオの作成手順について詳しくは、[シナリオの作成：記事のインデックス](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
 
-モジュールについて詳しくは、「[&#x200B; モジュール：記事インデックス &#x200B;](/help/workfront-fusion/references/modules/modules-toc.md)」の記事を参照してください。
+モジュールについて詳しくは、[モジュール：記事インデックス](/help/workfront-fusion/references/modules/modules-toc.md)の記事を参照してください。
 
 ## アクセス要件
 
@@ -31,31 +34,31 @@ Adobe Workfront Fusion で [!DNL Google Docs] を使用するには、[!DNL Goog
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
    <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
-   <p>コネクタベース（従来）：作業の自動化と統合のためのWorkfront Fusion </p>
+   <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
-Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md) を参照してください。
+Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfront Fusion ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)を参照してください。
 
 +++
 
@@ -63,9 +66,9 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 [!DNL Google Forms] モジュールを使用するには、[!DNL Google] アカウントが必要です。
 
-## Google Forms API の情報
+## Google Forms APIについて
 
-Google Forms コネクタでは、以下を使用します。
+Google Forms コネクタでは、次の機能が使用されます。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -84,18 +87,18 @@ Google Forms コネクタでは、以下を使用します。
 
 1. フォームを開きます。
 1. 「**[!UICONTROL 応答]**」タブに移動します。
-1. **[!UICONTROL スプレッドシートを作成]** アイコン ![&#x200B; スプレッドシートアイコン &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png) をクリックします。
+1. **[!UICONTROL スプレッドシートを作成]** アイコン ![ スプレッドシート アイコン ](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png)をクリックします。
 
 1. 新規スプレッドシートを作成するか、既存スプレッドシートを作成するかを選択します
 1. 「**[!UICONTROL 作成]**」をクリックします。
 
 ## [!DNL Google Forms] モジュールとそのフィールド
 
-[!DNL Google Forms] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Google Forms]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL Google Forms] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。 これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Google Forms]」フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[&#x200B; モジュール間で情報をマッピングする &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。 詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
-![&#x200B; マップ切り替え &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![マップ切り替え](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [トリガー](#triggers)
 * [アクション](#actions)
@@ -113,7 +116,7 @@ Google Forms コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Google] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">接続の作成 – 基本手順</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Spreadsheet]</td> 
@@ -125,24 +128,24 @@ Google Forms コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Row with headers]</td> 
-   <td>テーブルのヘッダー行を指定します。デフォルトの行は <code>A1:Z1</code> です。</td> 
+   <td>テーブルのヘッダー行を指定します。 デフォルトの行は <code>A1:Z1</code> です。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Value Render Option]</td> 
    <td> <p>出力で値をレンダリングする方法を指定します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Formatted value]</strong> </p> <p>値はセルの書式設定に従って計算され、返信で書式設定されます。書式設定は、リクエスト元のユーザーのロケールではなく、スプレッドシートのロケールに基づいて行われます。例えば、<code>A1</code> が <code>1. 23</code>、<code>A2 </code> が <code>=A1</code> で通貨の形式に設定されている場合、<code>A2</code> は <code>$1. 23</code> を返します。</p> </li> 
-     <li> <p><strong>[!UICONTROL Unformatted value]</strong> </p> <p>値は計算されますが、返信では書式設定されません。例えば、<code>A1</code> が <code>1. 23</code>、<code>A2 </code> が <code>=A1</code> で通貨の形式に設定されている場合、<code>A2</code> は数値 <code>1. 23</code> を返します。</p> </li> 
-     <li> <p><strong>[!UICONTROL Formula]</strong> </p> <p>値は計算されません。返信には数式が含まれます。例えば、<code>A1</code> が <code>1. 23</code>、<code>A2 </code> が <code>=A1</code> で通貨の形式に設定されている場合、<code>A2</code> は <code>=A1</code> を返します。</p> </li> 
+     <li> <p><strong>[!UICONTROL Formatted value]</strong> </p> <p>値はセルの書式設定に従って計算され、返信で書式設定されます。 書式設定は、リクエスト元のユーザーのロケールではなく、スプレッドシートのロケールに基づいて行われます。 例えば、<code>A1</code> が <code>1. 23</code>、<code>A2 </code> が <code>=A1</code> で通貨の形式に設定されている場合、<code>A2</code> は <code>$1. 23</code> を返します。</p> </li> 
+     <li> <p><strong>[!UICONTROL Unformatted value]</strong> </p> <p>値は計算されますが、返信では書式設定されません。 例えば、<code>A1</code> が <code>1. 23</code>、<code>A2 </code> が <code>=A1</code> で通貨の形式に設定されている場合、<code>A2</code> は数値 <code>1. 23</code> を返します。</p> </li> 
+     <li> <p><strong>[!UICONTROL Formula]</strong> </p> <p>値は計算されません。 返信には数式が含まれます。 例えば、<code>A1</code> が <code>1. 23</code>、<code>A2 </code> が <code>=A1</code> で通貨の形式に設定されている場合、<code>A2</code> は <code>=A1</code> を返します。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Date and time render option]</td> 
-   <td>日付、時間および期間を出力に表示する方法を選択します。[!UICONTROL Value Render Option] が [!UICONTROL Formatted Value] に設定されている場合、このフィールドは無視されます。</td> 
+   <td>日付、時間および期間を出力に表示する方法を選択します。 [!UICONTROL Value Render Option] が [!UICONTROL Formatted Value] に設定されている場合、このフィールドは無視されます。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p> Workfront Fusion が 1 つのサイクルで処理する応答の最大数を設定します。</p> </td> 
+   <td> <p> 1回のサイクルでWorkfront Fusionが使用できる最大応答数を設定します。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -165,7 +168,7 @@ Google Forms コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Google] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">接続の作成 – 基本手順</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Spreadsheet]</td> 
@@ -177,21 +180,21 @@ Google Forms コネクタでは、以下を使用します。
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader"> <p>[!UICONTROL Values]</p> </td> 
-   <td> <p>シートの列に目的の値を入力します。 列は、シートに基づいて使用できます。</p> <p>[!UICONTROL Timestamp] 列には、次の値を使用します。</p><pre>formatDate(now;DD/MM/YYYY HH:mm;UTC)</pre> </td> 
+   <td> <p>シート列に必要な値を入力します。 シートに基づいて列を使用できます。</p> <p>[!UICONTROL Timestamp]列には、次の値を使用します。</p><pre>formatDate(now;DD/MM/YYYY HH:mm;UTC)</pre> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL Value input option]</td> 
    <td> 
     <ul> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p> ユーザーが入力した値は解析されず、そのまま保存されます。 </p> </li> 
-     <li> <p><strong>[!UICONTROL User entered]</strong></p> <p>値は、ユーザーが UI に入力したかのように解析されます。数値は数値のまま保持されますが、文字列の場合は [!DNL Google Sheets] UI を経由してセルにテキストを入力する時に適用されるルールと同じルールに従って数値、日付、もしくは他の形式に変換される可能性があります。</p> </li> 
+     <li> <p><strong>[!UICONTROL User entered]</strong></p> <p>値は、ユーザーが UI に入力したかのように解析されます。 数値は数値のまま保持されますが、文字列の場合は [!DNL Google Sheets] UI を経由してセルにテキストを入力する時に適用されるルールと同じルールに従って数値、日付、もしくは他の形式に変換される可能性があります。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL Insert data option]</td> 
    <td> <p>新しいデータが入力されるときの既存のデータの変更方法を指定します。 </p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Overwrite]</strong> </p> <p>新しいデータは、書き込まれたエリアの既存のデータを上書きします。シートの末尾にデータを追加すると、新しい行または列が挿入され、データを書き込むことができます。</p> </li> 
+     <li> <p><strong>[!UICONTROL Overwrite]</strong> </p> <p>新しいデータは、書き込まれたエリアの既存のデータを上書きします。 シートの末尾にデータを追加すると、新しい行または列が挿入され、データを書き込むことができます。</p> </li> 
      <li> <p><strong>[!UICONTROL Insert rows]</strong></p> <p>行が新しいデータ用に挿入されます。</p> </li> 
     </ul> </td> 
   </tr> 
@@ -208,7 +211,7 @@ Google Forms コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Google] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">接続の作成 – 基本手順</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Spreadsheet]</td> 
@@ -237,7 +240,7 @@ Google Forms コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Google] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">接続の作成 – 基本手順</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Spreadsheet]</td> 
@@ -253,14 +256,14 @@ Google Forms コネクタでは、以下を使用します。
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Values]</p> </td> 
-   <td> <p>目的の列に新しい値を入力します。 列は、シートに基づいて使用できます。</p> </td> 
+   <td> <p>目的の列の新しい値を入力します。 シートに基づいて列を使用できます。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL Value input option]</td> 
    <td> 
     <ul> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p> ユーザーが入力した値は解析されず、そのまま保存されます。 </p> </li> 
-     <li> <p><strong>[!UICONTROL User entered]</strong></p> <p>値は、ユーザーが UI に入力したかのように解析されます。数値は数値のまま保持されますが、文字列の場合は [!DNL Google Sheets] UI を経由してセルにテキストを入力する時に適用されるルールと同じルールに従って数値、日付、もしくは他の形式に変換される可能性があります。</p> </li> 
+     <li> <p><strong>[!UICONTROL User entered]</strong></p> <p>値は、ユーザーが UI に入力したかのように解析されます。 数値は数値のまま保持されますが、文字列の場合は [!DNL Google Sheets] UI を経由してセルにテキストを入力する時に適用されるルールと同じルールに従って数値、日付、もしくは他の形式に変換される可能性があります。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -280,7 +283,7 @@ Google Forms コネクタでは、以下を使用します。
  <col data-mc-conditions=""> 
  <tbody> 
     <td>接続</td>
-   <td> <p>[!DNL Google] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">接続の作成 – 基本手順</a>を参照してください。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
     <td>[!UICONTROL Spreadsheet]</td>
@@ -310,25 +313,25 @@ Google Forms コネクタでは、以下を使用します。
    <td role="rowheader">[!UICONTROL Value Render Option]</td> 
    <td> <p>出力で値をレンダリングする方法を指定します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Formatted value]</strong></p> <p>値はセルの書式設定に従って計算され、返信で書式設定されます。書式設定は、リクエスト元のユーザーのロケールではなく、スプレッドシートのロケールに基づいて行われます。例えば、<code>A1</code> が <code>1. 23</code>、<code>A2 </code> が <code>=A1</code> で通貨の形式に設定されている場合、<code>A2</code> は <code>$1. 23</code> を返します。</p> </li> 
-     <li> <p><strong>[!UICONTROL Unformatted value]</strong> </p> <p>値は計算されますが、返信では書式設定されません。例えば、<code>A1</code> が <code>1. 23</code>、<code>A2 </code> が <code>=A1</code> で通貨の形式に設定されている場合、<code>A2</code> は数値 <code>1. 23</code> を返します。</p> </li> 
-     <li> <p><strong>[!UICONTROL Formula]</strong> </p> <p>値は計算されません。返信には数式が含まれます。例えば、<code>A1</code> が <code>1. 23</code>、<code>A2 </code> が <code>=A1</code> で通貨の形式に設定されている場合、<code>A2</code> は <code>=A1</code> を返します。</p> </li> 
+     <li> <p><strong>[!UICONTROL Formatted value]</strong></p> <p>値はセルの書式設定に従って計算され、返信で書式設定されます。 書式設定は、リクエスト元のユーザーのロケールではなく、スプレッドシートのロケールに基づいて行われます。 例えば、<code>A1</code> が <code>1. 23</code>、<code>A2 </code> が <code>=A1</code> で通貨の形式に設定されている場合、<code>A2</code> は <code>$1. 23</code> を返します。</p> </li> 
+     <li> <p><strong>[!UICONTROL Unformatted value]</strong> </p> <p>値は計算されますが、返信では書式設定されません。 例えば、<code>A1</code> が <code>1. 23</code>、<code>A2 </code> が <code>=A1</code> で通貨の形式に設定されている場合、<code>A2</code> は数値 <code>1. 23</code> を返します。</p> </li> 
+     <li> <p><strong>[!UICONTROL Formula]</strong> </p> <p>値は計算されません。 返信には数式が含まれます。 例えば、<code>A1</code> が <code>1. 23</code>、<code>A2 </code> が <code>=A1</code> で通貨の形式に設定されている場合、<code>A2</code> は <code>=A1</code> を返します。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr data-mc-conditions="">
     <td>[!UICONTROL Date and time render option]</td>
-    <td>日付、時間および期間を出力に表示する方法を選択します。「[!UICONTROL Value Render]」オプションが「Formatted Value」に設定されている場合、このフィールドは無視されます。 </td>
+    <td>日付、時間および期間を出力に表示する方法を選択します。 「[!UICONTROL Value Render]」オプションが「Formatted Value」に設定されている場合、このフィールドは無視されます。 </td>
   </tr> 
   <tr>
     <td role="rowheader">[!UICONTROL Maximum number of returned responses]</td>
-   <td> <p> Workfront Fusion が 1 つのサイクルで返す応答の最大数を設定します。</p> </td> 
+   <td> <p> 1回のサイクルでWorkfront Fusionが返す応答の最大数を設定します。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### [!UICONTROL 応答の検索（詳細）]
 
-このモジュールは、[[!DNL Google Charts Query Language]](https://developers.google.com/chart/interactive/docs/querylanguage?hl=ja) を使用して検索を実行します。このモジュールは行番号を返しません。
+このモジュールは、[[!DNL Google Charts Query Language]](https://developers.google.com/chart/interactive/docs/querylanguage?hl=ja) を使用して検索を実行します。 このモジュールは行番号を返しません。
 
 <table style="table-layout:auto"> 
  <col data-mc-conditions=""> 
@@ -336,7 +339,7 @@ Google Forms コネクタでは、以下を使用します。
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
-   <td> <p>[!DNL Google] アカウントをWorkfront Fusion に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref"> 接続の作成 – 基本手順 </a> を参照してください。</p> </td> 
+   <td> <p>[!DNL Google] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">接続の作成 – 基本手順</a>を参照してください。</p> </td> 
   </tr> 
   <tr>
     <td>[!UICONTROL Spreadsheet]</td>
@@ -352,7 +355,7 @@ Google Forms コネクタでは、以下を使用します。
   </tr> 
   <tr>
     <td>[!UICONTROL Maximum number of returned rows]</td>
-   <td> <p> Workfront Fusion が 1 つのサイクルで返す応答の最大数を設定します。</p> </td> 
+   <td> <p> 1回のサイクルでWorkfront Fusionが返す応答の最大数を設定します。</p> </td> 
   </tr> 
  </tbody> 
 </table>

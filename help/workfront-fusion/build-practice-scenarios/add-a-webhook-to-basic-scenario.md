@@ -3,24 +3,27 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: get-started-with-workfront-fusion-2-0
 title: 基本シナリオへの Webhook の追加
-description: Webhook は、インスタントトリガーとも呼ばれ、特定のスケジュールではなく、変更が行われるたびにトリガーを開始できる特定の種類のシナリオモジュールです。
+description: Webhookは、インスタントトリガーとも呼ばれ、特定のスケジュールではなく、変更があるたびにトリガーを開始できる特定の種類のシナリオモジュールです。
 author: Becky
 feature: Workfront Fusion
 exl-id: 28ecca1f-a9c3-4b3d-95f5-73cb9a5dc4b9
-source-git-commit: 3a977d805c10fda7209b0634c6e32e818a980691
+TQID: https://experienceleague.adobe.com/V3cpVf8NzJdGjSZvPA0Hy0Uui-zSdd986plS1Us0oNI
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 4%
+source-wordcount: 513
+ht-degree: 24%
 
 ---
 
 # 基本シナリオへの Webhook の追加
 
-Webhook は、インスタントトリガーとも呼ばれ、特定のスケジュールではなく、変更が行われるたびにトリガーを開始できる特定の種類のシナリオモジュールです。
+Webhookは、インスタントトリガーとも呼ばれ、特定のスケジュールではなく、変更があるたびにトリガーを開始できる特定の種類のシナリオモジュールです。
 
-この例では、特定のリクエストキューにリクエストが送信されたらすぐにシナリオを開始する Webhook を追加します。 次に、シナリオはこれらのリクエストをプロジェクトに変換します。
+この例では、リクエストが特定のリクエストキューに送信されるとすぐにシナリオを開始するWebhookを追加します。 その後、シナリオはこれらのリクエストをプロジェクトに変換します。
 
-この例では、[&#x200B; 基本シナリオの作成 &#x200B;](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) で作成したシナリオを変更します。
+この例では、[基本シナリオの作成](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)で作成したシナリオを変更します。
 
 ## アクセス要件
 
@@ -32,67 +35,67 @@ Webhook は、インスタントトリガーとも呼ばれ、特定のスケジ
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
 +++
 
 ## 前提条件
 
-この手順を実行する前に、[&#x200B; 基本シナリオの作成 &#x200B;](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) で説明されているシナリオを作成する必要があります。
+この手順に従う前に、[基本シナリオの作成](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)で説明したシナリオを作成する必要があります。
 
-## Webhook の追加と設定
+## Webhookの追加と設定
 
 
 ### Webhook モジュールの追加
 
 1. シナリオエディターでシナリオを開きます。
-1. 最初のモジュールを右クリックし、「**モジュールを削除**」を選択します。
+1. 最初のモジュールを右クリックし、**モジュールを削除**&#x200B;を選択します。
 
    モジュールが削除され、空白のプレースホルダーが残ります。
 
-1. 空のモジュールをクリックし、アプリのリストから **0&rbrace;Adobe Workfront&rbrace; を選択します。**
-1. **イベントをウォッチ** を選択します。
-1. Webhook フィールドの横にある「**追加**」をクリックします。
-1. 「レコードタイプ」フィールドで「**イシュー**」を選択すると、イシューの変更がトリガーされるようになります。
-1. 「状態」フィールドで「**新しい状態**」を選択します。 これは、フィルターに使用される必須フィールドですが、この例では扱いません。
-1. 「レコード生成元」フィールドで、「**新しいレコードのみ**」を選択します。 これにより、イシューが更新や削除されたときではなく、イシューが追加されたときにシナリオがトリガーするようになります。
+1. 空白のモジュールをクリックし、アプリケーションのリストから&#x200B;**Adobe Workfront**&#x200B;を選択します。
+1. 「**イベントを視聴**」を選択します。
+1. 「Webhook」フィールドの横にある「**追加**」をクリックします。
+1. 「レコードタイプ」フィールドで「**問題**」を選択すると、問題の変更がトリガーされます。
+1. 「状態」フィールドで、**新しい状態**&#x200B;を選択します。 これは、フィルターに使用される必須フィールドです。この例では説明しません。
+1. 「レコードの生成元」フィールドで、「**新しいレコードのみ**」を選択します。 これにより、問題が追加されたときに、更新または削除されたときではなく、シナリオをトリガーできます。
 1. 「**保存**」をクリックして、モジュール設定を保存します。
 
-## 2 つ目のモジュールの更新
+## 2つ目のモジュールを更新する
 
 1. シナリオを開きます。
-1. **オブジェクトを変換** モジュールをクリックして開きます。
-1. 「イシュー ID」フィールドで、黒の ID ブロックを削除します。 ブロックは、マッピング元のモジュールが使用できなくなったため、黒になります。
-1. 最初のモジュール（イベントを監視）の下にある ID ブロックを選択して、2 番目のモジュールにマッピングします。
+1. 「**オブジェクトを変換**」モジュールをクリックして開きます。
+1. 「問題ID」フィールドで、黒いID ブロックを削除します。 ブロックは黒です。これは、マッピング元のモジュールが使用できなくなったためです。
+1. 最初のモジュール（監視イベント）の下にあるID ブロックを選択して、2番目のモジュールにマッピングします。
 1. 「**OK**」をクリックします。
 
 
 
-### テストしてアクティブ化
+### 検証と活用
 
 1. シナリオエディターの左下隅にある「**[!UICONTROL 1 回実行]**」をクリックします。
 
    新しいリクエストを監視するには、シナリオが実行されている必要があります。
-1. Fusion が接続するWorkfront環境に移動して、問題を追加します。
+1. Fusionが接続しているWorkfront環境に移動し、問題を追加します。
 
    シナリオを実行する必要があります。
-1. 出力を調べて、シナリオが期待どおりに実行されたことを確認します。
-1. シナリオが期待どおりに動作していることを確認したら、画面の左下にある **スケジュール** トグルをクリックして **オン** にします。
+1. 出力を調べて、シナリオが期待どおりに実行されていることを確認します。
+1. シナリオが期待どおりに機能していることを確認したら、画面の左下にある&#x200B;**スケジュール** トグルを&#x200B;**オン**&#x200B;にクリックします。
 
    これにより、シナリオがアクティブになります。
-1. Workfront Fusion で、左下隅付近の **[!UICONTROL 保存]** をクリックして、シナリオの進捗を保存します。
+1. Workfront Fusionで、左下隅付近の&#x200B;**[!UICONTROL 保存]**&#x200B;をクリックして、シナリオの進行状況を保存します。

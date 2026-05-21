@@ -4,10 +4,13 @@ description: ' [!DNL Adobe Workfront Fusion Frame].io modules enable you to moni
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/uL3krmkiGJ5VPBQRbd1ynAApZVNcEaMGVGPmVPXKVV4
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2663'
-ht-degree: 82%
+source-wordcount: 2666
+ht-degree: 83%
 
 ---
 
@@ -17,7 +20,7 @@ ht-degree: 82%
 >
 >この記事では、Frame.io コネクタのレガシーバージョンについて説明します。 このコネクターは、Frame.io バージョン 3 への接続に使用します。
 >
->新しい（ベータ版）バージョンのFrame.io コネクタの手順については、[Frame.io コネクタ &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)を参照してください。
+>新しい（ベータ版）バージョンのFrame.io コネクタの手順については、[Frame.io コネクタ ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)を参照してください。
 
 Adobe Workfront Fusion [!DNL Frame.io] モジュールでは、[!DNL Frame.io] アカウント内のアセットとコメントを監視、作成、更新、取得、削除できます。
 
@@ -28,7 +31,7 @@ Workfront には、接続先の Frame.io のバージョンに基づく 2 つの
 | Frame.io | V4 |
 | Frame.io（レガシー） | V3 |
 
-新しいバージョンのFrame.io コネクタの手順については、[Frame.io コネクタ &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)を参照してください。
+新しいバージョンのFrame.io コネクタの手順については、[Frame.io コネクタ ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)を参照してください。
 
 Frame.io コネクタの紹介ビデオについては、以下を参照してください。
 
@@ -123,7 +126,7 @@ API トークンを使用して[!DNL Frame.io] アカウントをWorkfront Fusio
 
 ### OAuth 2.0 PKCE を使用した [!DNL Frame.io] への接続
 
-OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DNL Frame.io] への接続を作成できます。接続にクライアント ID を含める場合は、[!DNL Frame.io] アカウントで OAuth 2.0 アプリを作成する必要があります。
+OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DNL Frame.io] への接続を作成できます。 接続にクライアント ID を含める場合は、[!DNL Frame.io] アカウントで OAuth 2.0 アプリを作成する必要があります。
 
 * [OAuth 2.0 PKCE（クライアント ID なし）を使用した  [!DNL Frame.io]  への接続](#connect-to-frameio-using-using-oauth-20-pkce-without-client-id)
 * [OAuth 2.0 PKCE（クライアント ID あり）を使用した  [!DNL Frame.io]  への接続](#connect-to-frameio-using-using-oauth-20-pkce-with-client-id)
@@ -137,7 +140,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
 
 #### OAuth 2.0 PKCE（クライアント ID あり）を使用した [!DNL Frame.io] への接続
 
-1. [!DNL Frame.io] で OAuth 2.0 アプリを作成します。手順については、[!DNL Frame.io] ドキュメントの [!UICONTROL OAuth 2.0 コード承認フロー] を参照してください。
+1. [!DNL Frame.io] で OAuth 2.0 アプリを作成します。 手順については、[!DNL Frame.io] ドキュメントの [!UICONTROL OAuth 2.0 コード承認フロー] を参照してください。
 
    >[!IMPORTANT]
    >
@@ -162,9 +165,9 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
 
 ## [!DNL Frame.io] モジュールとそのフィールド
 
-[!DNL Frame.io] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Frame.io]」フィールドが表示される場合があります。モジュール内の太字のタイトルは、必須フィールドを示します。
+[!DNL Frame.io] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。 これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Frame.io]」フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。 詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
 ![マップ切り替え](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -235,7 +238,7 @@ OAuth 2.0 PKCE とオプションのクライアント ID を使用して、[!DN
    <td> <p>ファイルを作成する場合は、アセットの簡単な説明を入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ラベル &#x200B;] </td> 
+   <td role="rowheader">[!UICONTROL ラベル ] </td> 
    <td> <p>ファイルを作成する場合は、ファイルが処理中、レビューが必要、または承認されているかどうかを選択します。</p> </td> 
   </tr> 
  </tbody> 
@@ -735,7 +738,7 @@ Webhookを追加する場合は、次の情報を入力します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>各シナリオ実行サイクル中にモジュールが返すプロジェクトの最大数を入力またはマッピングします。</p> </td> 
+   <td> <p>各シナリオの実行サイクル中にモジュールが返すプロジェクトの最大数を入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -756,11 +759,11 @@ Webhookを追加する場合は、次の情報を入力します。
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
-   <td> <p><code>https://api.frame.io</code> からの相対パスを入力します。例： <code> /v2/teams</code></p> <p>メモ：使用可能なエンドポイントの一覧については、[!DNL Frame.io] API リファレンスを参照してください。</p> </td> 
+   <td> <p><code>https://api.frame.io</code> からの相対パスを入力します。 例： <code> /v2/teams</code></p> <p>メモ：使用可能なエンドポイントの一覧については、[!DNL Frame.io] API リファレンスを参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP リクエスト方法</a>を参照してください。</p> </td> 
+   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。 詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP リクエスト方法</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -768,7 +771,7 @@ Webhookを追加する場合は、次の情報を入力します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String] </td> 
-   <td> <p>リクエストクエリ文字列を入力します。クエリ文字列に含める各パラメーターに対して、<b>[!UICONTROL Add item]</b> をクリックして、フィールドの名前と必要な値を入力します。</p> </td> 
+   <td> <p>リクエストクエリ文字列を入力します。 クエリ文字列に含める各パラメーターに対して、<b>[!UICONTROL Add item]</b> をクリックして、フィールドの名前と必要な値を入力します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 

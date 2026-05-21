@@ -1,15 +1,17 @@
 ---
 content-type: reference
 title: エラー参照：記事インデックス
-description: この節では、Adobe Workfront Fusion のエラーに関する参照資料を示します。
+description: この節では、Adobe Workfront Fusionのエラーに関連する参考資料を示します。
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 80976ddc-a1a8-4a20-807d-b118486eee5b
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+TQID: https://experienceleague.adobe.com/5DkI5yJ6-z6NIVq7EA1dmfuRtEWp0y3tXRMyEQsTFIA
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '26'
-ht-degree: 15%
+source-wordcount: 26
+ht-degree: 23%
 
 ---
 

@@ -4,9 +4,13 @@ description: Adobe Workfront Fusionでは、Microsoft SharePoint Onlineを使用
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/WmECfdPt-a3l2-WT9LMX2HB-7-p-BLIO4F2i3OAc7D0
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4276'
+source-wordcount: 4309
 ht-degree: 52%
 
 ---
@@ -86,7 +90,7 @@ SharePoint コネクタでは、次の機能が使用されます。
 
 ## Microsoft SharePoint OnlineとWorkfront Fusionの連携 {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
-* [&#x200B; [!DNL Microsoft]  アカウントを使用してMicrosoft SharePoint OnlineをWorkfront Fusionに接続する](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
+* [ [!DNL Microsoft]  アカウントを使用してMicrosoft SharePoint OnlineをWorkfront Fusionに接続する](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [詳細設定を使用してMicrosoft SharePoint OnlineをWorkfront Fusionに接続する](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [証明書認証を使用してMicrosoft SharePoint OnlineをWorkfront Fusionに接続する](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 
@@ -200,7 +204,7 @@ SharePoint コネクタでは、次の機能が使用されます。
 
 Microsoft SharePoint Online モジュールを設定すると、Workfront Fusionに次のフィールドが表示されます。 また、アプリやサービスのアクセスレベルなどの要因に応じて、Microsoft SharePoint Onlineの追加フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。 詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
 ![マップ切り替え](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -252,7 +256,7 @@ Microsoft SharePoint Online モジュールを設定すると、Workfront Fusion
 
 このモジュールは、SharePointでファイルを作成します。
 
-パフォーマンスを向上させるには、[&#x200B; ファイルを作成](#create-a-file) モジュールを使用することをお勧めします。
+パフォーマンスを向上させるには、[ ファイルを作成](#create-a-file) モジュールを使用することをお勧めします。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -339,10 +343,10 @@ Microsoft SharePoint Online モジュールを設定すると、Workfront Fusion
    <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusionに接続する方法については、この記事の「<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineをWorkfront Fusionに接続する</a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Enter サイト、ドライブ、およびファイル                ID]</td> 
+   <td role="rowheader">[!UICONTROL Enter サイト、ドライブ、およびファイル ID]</td> 
    <td> <p>取得するファイルの場所を特定する方法を選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>取得するフォルダーの<strong>[!UICONTROL サイト ID]</strong>、<strong>[!UICONTROL リスト ID]</strong>および<strong>[!UICONTROL フォルダーのパス &#x200B;]</strong>を入力またはマッピングします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>取得するフォルダーの<strong>[!UICONTROL サイト ID]</strong>、<strong>[!UICONTROL リスト ID]</strong>および<strong>[!UICONTROL フォルダーのパス ]</strong>を入力またはマッピングします。</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>フォルダーの場所を選択します。 </p> </li> 
     </ul> </td> 
   </tr> 
@@ -362,7 +366,7 @@ Microsoft SharePoint Online モジュールを設定すると、Workfront Fusion
    <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusionに接続する方法については、この記事の「<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineをWorkfront Fusionに接続する</a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Enter サイト、ドライブ、およびファイル                ID]</td> 
+   <td role="rowheader">[!UICONTROL Enter サイト、ドライブ、およびファイル ID]</td> 
    <td> <p>取得するファイルの場所を特定する方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>取得するフォルダーまたはファイルの<strong>[!UICONTROL サイト ID]</strong>、<strong>[!UICONTROL リスト ID]</strong>および<strong>[!UICONTROL フォルダーまたはアイテム ID]</strong>を入力またはマッピングします。</p> </li> 
@@ -433,7 +437,7 @@ Microsoft SharePoint Online モジュールを設定すると、Workfront Fusion
    <td> <p>コピーする項目を含むサイトとドライブを識別する方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>コピーするアイテムの<strong>[!UICONTROL サイト ID]</strong>、<strong>[!UICONTROL ドライブ ID]</strong>および<strong>[!UICONTROL アイテム ID]</strong>を入力またはマッピングします。</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from list that you follow]</strong> </p> <p>「項目タイプ」フィールドで、フィールドを移動するかフォルダーを移動するかを選択します。コピーする項目を含むサイトを選択し、リストを選択して、項目を選択します。 </p> </li> 
+     <li> <p><strong>[!UICONTROL Select from list that you follow]</strong> </p> <p>「項目タイプ」フィールドで、フィールドを移動するかフォルダーを移動するかを選択します。  コピーする項目を含むサイトを選択し、リストを選択して、項目を選択します。 </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -583,7 +587,7 @@ Microsoft SharePoint Online モジュールを設定すると、Workfront Fusion
    <td> <p>移動する項目を含むサイトとリストを識別する方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>移動する項目の<strong>[!UICONTROL サイト ID]</strong>、<strong>[!UICONTROL リスト ID]</strong>および<strong>[!UICONTROL アイテム ID]</strong>を入力またはマッピングします。</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from list that you follow]</strong> </p> <p>「項目タイプ」フィールドで、フィールドを移動するかフォルダーを移動するかを選択します。コピーする項目を含むサイトを選択し、リストを選択して、項目を選択します。 </p> </li> 
+     <li> <p><strong>[!UICONTROL Select from list that you follow]</strong> </p> <p>「項目タイプ」フィールドで、フィールドを移動するかフォルダーを移動するかを選択します。 コピーする項目を含むサイトを選択し、リストを選択して、項目を選択します。 </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -645,7 +649,7 @@ Microsoft SharePoint Online モジュールを設定すると、Workfront Fusion
    <td> <p>監視するサイトとリストを識別する方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>監視する<strong>[!UICONTROL サイト ID]</strong>と<strong>[!UICONTROL リスト ID]</strong>を入力またはマッピングします。</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>監視するサイトを選択し、リストを選択します。これらのドロップダウンは、後続のサイトのみを取得します。</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>監視するサイトを選択し、リストを選択します。 これらのドロップダウンは、後続のサイトのみを取得します。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -737,7 +741,7 @@ Microsoft SharePoint Online モジュールを設定すると、Workfront Fusion
    <td> <p>リストを取得するサイトを識別する方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>返すリストを含む<strong>[!UICONTROL サイト ID]</strong>を入力またはマッピングします。</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>取得するリストが含まれているサイトを選択します。ドロップダウンは、フォローしているサイトのみを取得します。</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>取得するリストが含まれているサイトを選択します。 ドロップダウンは、フォローしているサイトのみを取得します。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -768,7 +772,7 @@ Microsoft SharePoint Online モジュールを設定すると、Workfront Fusion
    <td> <p>リストを監視するサイトを特定する方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>リストを監視する<strong>[!UICONTROL サイト ID]</strong>を入力またはマッピングします。</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>監視するサイトを選択します。ドロップダウンは、ユーザーがフォローしているサイトのみを取得します。</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>監視するサイトを選択します。 ドロップダウンは、ユーザーがフォローしているサイトのみを取得します。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -782,7 +786,7 @@ Microsoft SharePoint Online モジュールを設定すると、Workfront Fusion
 
 >[!NOTE]
 >
->[!DNL Microsoft Graph] のバージョン `beta` の API は変更される場合があります。実稼動アプリケーションでのこれらの API の使用はサポートされていません。
+>[!DNL Microsoft Graph] のバージョン `beta` の API は変更される場合があります。 実稼動アプリケーションでのこれらの API の使用はサポートされていません。
 
 * [ページを取得](#get-a-page)
 * [リストページ](#list-pages)
@@ -825,7 +829,7 @@ Microsoft SharePoint Online モジュールを設定すると、Workfront Fusion
    <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusionに接続する方法については、この記事の「<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineをWorkfront Fusionに接続する</a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL リスト ページ &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL リスト ページ ]</td> 
    <td> <p>リストするページを特定する方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>リストするページを含むサイトの<strong>[!UICONTROL サイト ID]</strong>を入力またはマッピングします。</p> </li> 
@@ -973,7 +977,7 @@ Microsoft SharePoint Online モジュールを設定すると、Workfront Fusion
  </tbody> 
 </table>
 
-#### [!UICONTROL API 呼び出しを実行]
+#### [!UICONTROL API 呼び出しの実行]
 
 このモジュールでは、カスタム API 呼び出しを実行できます。
 
@@ -987,15 +991,15 @@ Microsoft SharePoint Online モジュールを設定すると、Workfront Fusion
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
-   <td> <p><code>https://graph.microsoft.com</code> からの相対パスを入力します。例：<code> /beta/sites</code></p> </td> 
+   <td> <p><code>https://graph.microsoft.com</code> からの相対パスを入力します。 例：<code> /beta/sites</code></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエスト方法</a>を参照してください。</p> </td> 
+   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。 詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP リクエスト方法</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。例えば、<code>{"Content-type":"application/json"}</code>。Workfront Fusion は認証ヘッダーを追加します。</p> </td> 
+   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。 例えば、<code>{"Content-type":"application/json"}</code>。 Workfront Fusion は認証ヘッダーを追加します。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 

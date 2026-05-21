@@ -9,9 +9,12 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 4cd34f0e-bc03-4c2a-bedc-6042ffddef1e
-source-git-commit: a48a7f5f6577782dbc043e322a3c769781ffd63b
+TQID: https://experienceleague.adobe.com/3jtDR8lMiQhg3z6Pk8p8yNdXy4QYpLO79Wpd7oYlh1Y
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: 165
 ht-degree: 100%
 
 ---

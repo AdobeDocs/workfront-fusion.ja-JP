@@ -5,19 +5,23 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: apps-and-their-modules
 title: Adobe InDesign モジュール
-description: Adobe Workfront Fusion のシナリオでは、Adobe InDesignを使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
+description: Adobe Workfront Fusionでは、Adobe InDesignを使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
 author: Becky
-source-git-commit: 30ddefa8519e6f2052308482137d0fa018676902
+exl-id: 8164487a-d114-4e31-9d1c-8404fc89a04b
+TQID: https://experienceleague.adobe.com/D2JdaOqvTA5SUsKm9U8Sjss6dJFMZv2Uo5RGk25QphQ
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 21%
+source-wordcount: 1702
+ht-degree: 22%
 
 ---
 
+# Adobe InDesign Modules
 
-# Adobe InDesign モジュール
-
-Adobe Workfront Fusion のシナリオでは、Adobe InDesignを使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
+Adobe Workfront Fusionでは、Adobe InDesignを使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
 
 ## アクセス要件
 
@@ -63,9 +67,9 @@ Adobe InDesign コネクタを使用する前に、アクティブなAdobe InDes
 
 ## Adobe InDesignへの接続の作成
 
-Adobe InDesign モジュールの接続を作成するには：
+Adobe InDesign モジュールの接続を作成するには、次の手順を実行します。
 
-1. 任意のAdobe InDesign モジュールで、「接続」ボックスの横にある **追加** をクリックします。
+1. 任意のAdobe InDesign モジュールで、接続ボックスの横にある&#x200B;**Add**&#x200B;をクリックします。
 
 1. 次のフィールドに入力します。
 
@@ -95,15 +99,15 @@ Adobe InDesign モジュールの接続を作成するには：
       </tr>
         <tr>
           <td role="rowheader">クライアント ID</td>
-          <td>Adobe クライアント ID を入力します。 これは、Adobe Developer Consoleの「資格情報の詳細」セクションにあります</td>
+          <td>Adobe クライアント IDを入力します。 これは、Adobe Developer Consoleの「資格情報の詳細」セクションにあります</td>
         </tr>
         <tr>
           <td role="rowheader">クライアントシークレット</td>
-          <td>Adobeのクライアントシークレットを入力します。 これは、Adobe Developer Consoleの「資格情報の詳細」セクションにあります</td>
+          <td>Adobe Client Secretを入力します。 これは、Adobe Developer Consoleの「資格情報の詳細」セクションにあります</td>
         </tr>
         <tr>
           <td role="rowheader">IMS 組織 ID</td>
-          <td>Adobeの組織 ID を入力します。 これは、Adobe Developer Consoleの「資格情報の詳細」セクションにあります</td>
+          <td>Adobe組織IDを入力します。 これは、Adobe Developer Consoleの「資格情報の詳細」セクションにあります</td>
         </tr>
       </tbody>
     </table>
@@ -111,23 +115,23 @@ Adobe InDesign モジュールの接続を作成するには：
 
 ## InDesign モジュールとそのフィールド
 
-Workfront Fusion でAdobe InDesign モジュールを設定する場合、以下に示すフィールドが表示されます。 これらに加えて、アプリまたはサービスのアクセスレベルなどの要因に応じて、追加のAdobe InDesign フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
+Adobe InDesign モジュールを設定すると、Workfront Fusionに以下のフィールドが表示されます。 また、アプリやサービスのアクセスレベルなどの要因に応じて、Adobe InDesignの追加フィールドが表示されることがあります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
-フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
+フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。 詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
 ![マップ切り替え](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 ### アクション
 
-* [レンディションの作成](#create-rendition)
+* [レンディションを作成](#create-rendition)
 * [カスタムスクリプトの削除](#delete-a-custom-script)
-* [データの結合](#merge-data)
-* [リンクの再マップ](#remap-links)
-* [カスタムスクリプト実行リクエストを送信](#submit-a-custom-script-execution-request)
+* [データを結合](#merge-data)
+* [リンクの再マッピング](#remap-links)
+* [カスタムスクリプト実行リクエストの送信](#submit-a-custom-script-execution-request)
 
-#### レンディションの作成
+#### レンディションを作成
 
-このアクションモジュールは、特定のInDesign ドキュメントのJPEG、PNG またはPDF レンディションを作成して返します。 `StatusCompletedRespons/output/data` の構造については、`RenditionOutputData` を参照してください。 また、`FailedEvent` で使用可能なエラーコードのリストについては、`RenditionFailedData` を参照してください。
+このアクションモジュールは、特定のInDesign ドキュメントのJPEG、PNGまたはPDF レンディションを作成して返します。 `StatusCompletedRespons/output/data`の構造については、`RenditionOutputData`を参照してください。 また、`FailedEvent`で発生する可能性のあるエラーコードのリストについては、`RenditionFailedData`を参照してください。
 
 <table>
   <col/>
@@ -135,7 +139,7 @@ Workfront Fusion でAdobe InDesign モジュールを設定する場合、以下
   <tbody>
     <tr>
       <td role="rowheader">接続</td>
-      <td>Adobe InDesignへの接続を作成する方法については、この記事の <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Adobe InDesignへの接続の作成 </a> を参照してください。</td>
+      <td>Adobe InDesignへの接続の作成手順については、この記事の「<a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Adobe InDesignへの接続の作成</a>」を参照してください。</td>
     </tr>
        <tr>
       <td role="rowheader">
@@ -149,11 +153,11 @@ Workfront Fusion でAdobe InDesign モジュールを設定する場合、以下
       <td role="rowheader">
         <p>アセット</p>
       </td>
-      <td>レンディションに追加するアセットごとに、次の操作を行います。<ol><li><b> 項目を追加 </b> をクリックします。</li><li>アセットのソースを選択またはマッピングします。</li><li>宛先を入力します。 コピー先は、リソースのダウンロード先となる一時的なベースディレクトリ（作業ディレクトリ）への相対パスです。 これにより、パラメーター内のアセットが識別されます。 「。.」を使用して起動することはできません または「/」。 有効なファイル名が必要です。</td>
+      <td>レンディションに追加する各アセットについて：<ol><li>「<b>項目を追加</b>」をクリックします。</li><li>アセットのソースを選択するか、マッピングします。</li><li>宛先を入力します。 宛先は、リソースがダウンロードされる一時的なベースディレクトリ（作業ディレクトリ）に対する相対パスです。 これにより、パラメーター内のアセットが特定されます。 「。.」または「/」を使用して起動できません。 有効なファイル名が必要です。</td>
     </tr>
     <tr>
       <td role="rowheader">ターゲットドキュメント</td>
-      <td>処理およびレンダリングするドキュメントを入力またはマッピングします。 現在、一度に 1 つのドキュメントのみがサポートされています。</td>
+      <td>処理およびレンダリングされるドキュメントを入力またはマッピングします。 現在、一度に1つのドキュメントのみがサポートされています。</td>
     </tr>
     <tr>
       <td role="rowheader">その他のフィールド</td>
@@ -163,7 +167,7 @@ Workfront Fusion でAdobe InDesign モジュールを設定する場合、以下
 
 #### カスタムスクリプトの削除
 
-このアクションモジュールは、1 つの登録済みカスタムスクリプトを削除します。 スクリプトのすべてのバージョンは完全に削除されます。
+このアクションモジュールは、1つの登録されたカスタムスクリプトを削除します。 スクリプトのすべてのバージョンが完全に削除されます。
 
 <table>
   <col/>
@@ -171,20 +175,20 @@ Workfront Fusion でAdobe InDesign モジュールを設定する場合、以下
   <tbody>
     <tr>
       <td role="rowheader">接続</td>
-      <td>Adobe InDesignへの接続を作成する方法については、この記事の <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Adobe InDesignへの接続の作成 </a> を参照してください。</td>
+      <td>Adobe InDesignへの接続の作成手順については、この記事の「<a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Adobe InDesignへの接続の作成</a>」を参照してください。</td>
     </tr>
        <tr>
       <td role="rowheader">
         <p>スクリプト名</p>
       </td>
-      <td>削除するスクリプトの名前を入力またはマップします。</td>
+      <td>削除するスクリプトの名前を入力するか、マッピングします。</td>
     </tr>
   </tbody>
 </table>
 
-#### データの結合
+#### データを結合
 
-このモジュールは、CSV データをInDesign テンプレートと結合して、InDesign ドキュメントまたは PDF を作成します。 出力形式には、JPEG、PNG、PDF、InDesignのドキュメントが含まれます。
+このモジュールは、CSV データとInDesign テンプレートを結合して、InDesign ドキュメントまたはPDFを作成します。 出力フォーマットには、JPEG、PNG、PDFおよびInDesign ドキュメントが含まれます。
 
 <table>
   <col/>
@@ -192,17 +196,17 @@ Workfront Fusion でAdobe InDesign モジュールを設定する場合、以下
   <tbody>
     <tr>
       <td role="rowheader">接続</td>
-      <td>Adobe InDesignへの接続を作成する方法については、この記事の <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Adobe InDesignへの接続の作成 </a> を参照してください。</td>
+      <td>Adobe InDesignへの接続の作成手順については、この記事の「<a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Adobe InDesignへの接続の作成</a>」を参照してください。</td>
     </tr>
     <tr>
       <td role="rowheader">
         <p>アセット</p>
       </td>
-      <td>データの結合に追加するアセットごとに、次の操作を行います。<ol><li><b> 項目を追加 </b> をクリックします。</li><li>アセットのソースを選択またはマッピングします。</li><li>宛先を入力します。 コピー先は、リソースのダウンロード先となる一時的なベースディレクトリ（作業ディレクトリ）への相対パスです。 これにより、パラメーター内のアセットが識別されます。 「。.」を使用して起動することはできません または「/」。 有効なファイル名が必要です。</td>
+      <td>データ結合に追加する各アセットについて：<ol><li>「<b>項目を追加</b>」をクリックします。</li><li>アセットのソースを選択するか、マッピングします。</li><li>宛先を入力します。 宛先は、リソースがダウンロードされる一時的なベースディレクトリ（作業ディレクトリ）に対する相対パスです。 これにより、パラメーター内のアセットが特定されます。 「。.」または「/」を使用して起動できません。 有効なファイル名が必要です。</td>
     </tr>
     <tr>
       <td role="rowheader">ターゲットドキュメント</td>
-      <td>結合のテンプレートとして使用するドキュメントを入力またはマップします。</td>
+      <td>結合のテンプレートとして使用する文書を入力するか、マッピングします。</td>
     </tr>
     <tr>
       <td role="rowheader">データソース</td>
@@ -214,9 +218,9 @@ Workfront Fusion でAdobe InDesign モジュールを設定する場合、以下
   </tbody>
 </table>
 
-#### リンクの再マップ
+#### リンクの再マッピング
 
-このモジュールでは、InDesign ドキュメント内のファイルベースのリンクをAdobe Experience Manager（AEM）の URL に置き換えます。 これは、Adobe Asset Link を使用してAdobe Experience Managerを操作する場合に役立ちます。
+このモジュールは、InDesign ドキュメントのファイルベースのリンクをAdobe Experience Manager（AEM）のURLに置き換えます。 これは、Adobe Asset Linkを使用してAdobe Experience Managerを操作する場合に便利です。
 
 <table>
   <col/>
@@ -224,25 +228,25 @@ Workfront Fusion でAdobe InDesign モジュールを設定する場合、以下
   <tbody>
     <tr>
       <td role="rowheader">接続</td>
-      <td>Adobe InDesignへの接続を作成する方法については、この記事の <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Adobe InDesignへの接続の作成 </a> を参照してください。</td>
+      <td>Adobe InDesignへの接続の作成手順については、この記事の「<a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Adobe InDesignへの接続の作成</a>」を参照してください。</td>
       </tr>
     <tr>
       <td role="rowheader">AEM トークン</td>
-      <td>AEM テクニカルアカウント用に生成されたベアラートークンを、bearer キーワードなしで入力またはマッピングします。</td>
+      <td>AEM テクニカルアカウント用に生成されたベアラートークンを、ベアラートークンなしで入力またはマッピングします。</td>
     </tr>
     <tr>
       <td role="rowheader">
         <p>アセット</p>
       </td>
-      <td>モジュールに追加するアセットごとに、次の操作を行います。<ol><li><b> 項目を追加 </b> をクリックします。</li><li>アセットのソースを選択またはマッピングします。</li><li>宛先を入力します。 コピー先は、リソースのダウンロード先となる一時的なベースディレクトリ（作業ディレクトリ）への相対パスです。 これにより、パラメーター内のアセットが識別されます。 「。.」を使用して起動することはできません または「/」。 有効なファイル名が必要です。</td>
+      <td>モジュールに追加する各アセットについて：<ol><li>「<b>項目を追加</b>」をクリックします。</li><li>アセットのソースを選択するか、マッピングします。</li><li>宛先を入力します。 宛先は、リソースがダウンロードされる一時的なベースディレクトリ（作業ディレクトリ）に対する相対パスです。 これにより、パラメーター内のアセットが特定されます。 「。.」または「/」を使用して起動できません。 有効なファイル名が必要です。</td>
     </tr>
     <tr>
       <td role="rowheader">ターゲットドキュメント</td>
-      <td>リンクを再マップするドキュメントを入力またはマップします。</td>
+      <td>リンクを再マッピングするドキュメントを入力またはマッピングします。</td>
     </tr>
     <tr>
       <td role="rowheader">データソース</td>
-      <td>タグの抽出および一致に使用するソースファイルを入力またはマッピングします。</td>
+      <td>タグの抽出とマッチングに使用するソースファイルを入力またはマッピングします。</td>
     </tr>
     <tr>
       <td role="rowheader">その他のフィールド</td>
@@ -250,9 +254,9 @@ Workfront Fusion でAdobe InDesign モジュールを設定する場合、以下
   </tbody>
 </table>
 
-#### カスタムスクリプト実行リクエストを送信
+#### カスタムスクリプト実行リクエストの送信
 
-このアクションモジュールは、カスタムスクリプトの実行リクエストを送信します。 実行時にカスタムスクリプトで使用する入力アセットおよびパラメーターを定義します。
+このアクションモジュールは、カスタムスクリプトの実行リクエストを送信します。 カスタムスクリプトが実行時に使用する入力アセットとパラメーターを定義します。
 
 <table>
   <col/>
@@ -260,19 +264,19 @@ Workfront Fusion でAdobe InDesign モジュールを設定する場合、以下
   <tbody>
     <tr>
       <td role="rowheader">接続</td>
-      <td>Adobe InDesignへの接続を作成する方法については、この記事の <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Adobe InDesignへの接続の作成 </a> を参照してください。</td>
+      <td>Adobe InDesignへの接続の作成手順については、この記事の「<a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Adobe InDesignへの接続の作成</a>」を参照してください。</td>
     </tr>
        <tr>
       <td role="rowheader">
         <p>スクリプト ID</p>
       </td>
-      <td>カスタムスクリプトの ID を入力またはマッピングします。</td>
+      <td>カスタムスクリプトのIDを入力またはマッピングします。</td>
     </tr>
     <tr>
       <td role="rowheader">
         <p>アセット</p>
       </td>
-      <td>実行リクエストを送信するアセットごとに、以下を行います。 <ol><li><b> 項目を追加 </b> をクリックします。</li><li>アセットのソースを選択またはマッピングします。</li><li>宛先を入力します。 コピー先は、リソースのダウンロード先となる一時的なベースディレクトリ（作業ディレクトリ）への相対パスです。 これにより、パラメーター内のアセットが識別されます。 「。.」を使用して起動することはできません または「/」。 有効なファイル名が必要です。</td>
+      <td>実行リクエストを送信するアセットごとに， <ol><li>「<b>項目を追加</b>」をクリックします。</li><li>アセットのソースを選択するか、マッピングします。</li><li>宛先を入力します。 宛先は、リソースがダウンロードされる一時的なベースディレクトリ（作業ディレクトリ）に対する相対パスです。 これにより、パラメーター内のアセットが特定されます。 「。.」または「/」を使用して起動できません。 有効なファイル名が必要です。</td>
     </tr>
     <tr>
       <td role="rowheader">その他のフィールド</td>
@@ -289,7 +293,7 @@ Workfront Fusion でAdobe InDesign モジュールを設定する場合、以下
 
 #### カスタムスクリプトの詳細を取得
 
-この検索モジュールは、バージョン、ダウンロードリンク、登録日、スクリプト名など、1 つの登録済みカスタムスクリプトの詳細を取得します。
+この検索モジュールは、バージョン、ダウンロードリンク、登録日、スクリプト名など、登録された1つのカスタムスクリプトの詳細を取得します。
 
 <table>
   <col/>
@@ -297,7 +301,7 @@ Workfront Fusion でAdobe InDesign モジュールを設定する場合、以下
   <tbody>
     <tr>
       <td role="rowheader">接続</td>
-      <td>Adobe InDesignへの接続を作成する方法については、この記事の <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Adobe InDesignへの接続の作成 </a> を参照してください。</td>
+      <td>Adobe InDesignへの接続の作成手順については、この記事の「<a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Adobe InDesignへの接続の作成</a>」を参照してください。</td>
     </tr>
        <tr>
       <td role="rowheader">
@@ -310,7 +314,7 @@ Workfront Fusion でAdobe InDesign モジュールを設定する場合、以下
 
 #### データ結合タグの取得
 
-このモジュールは、ドキュメントからデータ結合タグを取得します。
+このモジュールは、文書からデータ結合タグを取得します。
 
 <table>
   <col/>
@@ -318,21 +322,21 @@ Workfront Fusion でAdobe InDesign モジュールを設定する場合、以下
   <tbody>
     <tr>
       <td role="rowheader">接続</td>
-      <td>Adobe InDesignへの接続を作成する方法については、この記事の <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Adobe InDesignへの接続の作成 </a> を参照してください。</td>
+      <td>Adobe InDesignへの接続の作成手順については、この記事の「<a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Adobe InDesignへの接続の作成</a>」を参照してください。</td>
       </tr>
     <tr>
       <td role="rowheader">
         <p>アセット</p>
       </td>
-      <td>モジュールに追加するアセットごとに、次の操作を行います。<ol><li><b> 項目を追加 </b> をクリックします。</li><li>アセットのソースを選択またはマッピングします。</li><li>宛先を入力します。 コピー先は、リソースのダウンロード先となる一時的なベースディレクトリ（作業ディレクトリ）への相対パスです。 これにより、パラメーター内のアセットが識別されます。 「。.」を使用して起動することはできません または「/」。 有効なファイル名が必要です。</td>
+      <td>モジュールに追加する各アセットについて：<ol><li>「<b>項目を追加</b>」をクリックします。</li><li>アセットのソースを選択するか、マッピングします。</li><li>宛先を入力します。 宛先は、リソースがダウンロードされる一時的なベースディレクトリ（作業ディレクトリ）に対する相対パスです。 これにより、パラメーター内のアセットが特定されます。 「。.」または「/」を使用して起動できません。 有効なファイル名が必要です。</td>
     </tr>
     <tr>
       <td role="rowheader">ターゲットドキュメント</td>
-      <td>タグを取得するドキュメントを入力またはマッピングします。</td>
+      <td>タグを取得するドキュメントを入力するか、マッピングします。</td>
     </tr>
     <tr>
       <td role="rowheader">データソース</td>
-      <td>タグの抽出および一致に使用するソースファイルを入力またはマッピングします。</td>
+      <td>タグの抽出とマッチングに使用するソースファイルを入力またはマッピングします。</td>
     </tr>
     <tr>
       <td role="rowheader">その他のフィールド</td>
@@ -350,17 +354,17 @@ Workfront Fusion でAdobe InDesign モジュールを設定する場合、以下
   <tbody>
     <tr>
       <td role="rowheader">接続</td>
-      <td>Adobe InDesignへの接続を作成する方法については、この記事の <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Adobe InDesignへの接続の作成 </a> を参照してください。</td>
+      <td>Adobe InDesignへの接続の作成手順については、この記事の「<a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Adobe InDesignへの接続の作成</a>」を参照してください。</td>
       </tr>
     <tr>
       <td role="rowheader">
         <p>アセット</p>
       </td>
-      <td>モジュールに追加するアセットごとに、次の操作を行います。<ol><li><b> 項目を追加 </b> をクリックします。</li><li>アセットのソースを選択またはマッピングします。</li><li>宛先を入力します。 コピー先は、リソースのダウンロード先となる一時的なベースディレクトリ（作業ディレクトリ）への相対パスです。 これにより、パラメーター内のアセットが識別されます。 「。.」を使用して起動することはできません または「/」。 有効なファイル名が必要です。</td>
+      <td>モジュールに追加する各アセットについて：<ol><li>「<b>項目を追加</b>」をクリックします。</li><li>アセットのソースを選択するか、マッピングします。</li><li>宛先を入力します。 宛先は、リソースがダウンロードされる一時的なベースディレクトリ（作業ディレクトリ）に対する相対パスです。 これにより、パラメーター内のアセットが特定されます。 「。.」または「/」を使用して起動できません。 有効なファイル名が必要です。</td>
     </tr>
     <tr>
       <td role="rowheader">ターゲットドキュメント</td>
-      <td>情報を取得するドキュメントを入力またはマッピングします。</td>
+      <td>情報を取得するドキュメントを入力するか、マッピングします。</td>
     </tr>
      <tr>
       <td role="rowheader">その他のフィールド</td>
@@ -370,7 +374,7 @@ Workfront Fusion でAdobe InDesign モジュールを設定する場合、以下
 
 #### カスタムスクリプトのリスト
 
-このモジュールは、バージョン、ダウンロードリンク、登録日、スクリプト名など、登録されているすべてのカスタムスクリプトの最新バージョンの詳細を取得します。 結果は、リストの長さに基づいてページ分割されます。
+このモジュールは、バージョン、ダウンロードリンク、登録日、スクリプト名など、登録されたすべてのカスタムスクリプトの最新バージョンの詳細を取得します。 結果は、リストの長さに基づいてページ化されます。
 
 <table>
   <col/>
@@ -378,7 +382,7 @@ Workfront Fusion でAdobe InDesign モジュールを設定する場合、以下
   <tbody>
     <tr>
       <td role="rowheader">接続</td>
-      <td>Adobe InDesignへの接続を作成する方法については、この記事の <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Adobe InDesignへの接続の作成 </a> を参照してください。</td>
+      <td>Adobe InDesignへの接続の作成手順については、この記事の「<a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Adobe InDesignへの接続の作成</a>」を参照してください。</td>
       </tr>
     <tr>
       <td role="rowheader">ページ番号</td>
@@ -386,7 +390,7 @@ Workfront Fusion でAdobe InDesign モジュールを設定する場合、以下
     </tr>
   <tr> 
    <td>返される結果の最大数</td> 
-   <td>Workfront Fusion が 1 つの実行サイクルで返すチームまたはグループの最大数を設定します。</td> 
+   <td>1回の実行サイクルでWorkfront Fusionが返すチームまたはグループの最大数を設定します。</td> 
   </tr> 
   </tbody>
 </table>
@@ -396,7 +400,7 @@ Workfront Fusion でAdobe InDesign モジュールを設定する場合、以下
 
 #### カスタム API 呼び出しの実行
 
-このモジュールは、Adobe InDesign API へのカスタム API 呼び出しを行います。
+このモジュールは、Adobe InDesign APIへのカスタム API呼び出しを行います
 
 <table>
   <col/>
@@ -404,14 +408,14 @@ Workfront Fusion でAdobe InDesign モジュールを設定する場合、以下
   <tbody>
     <tr>
       <td role="rowheader">接続</td>
-      <td>Adobe InDesignへの接続を作成する方法については、この記事の <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Adobe InDesignへの接続の作成 </a> を参照してください。</td>
+      <td>Adobe InDesignへの接続の作成手順については、この記事の「<a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Adobe InDesignへの接続の作成</a>」を参照してください。</td>
     </tr>
        <tr>
       <td role="rowheader">
         <p>パス</p>
       </td>
       <td>
-        <p><code>https://indesign.adobe.io/v3</code> への相対パスを入力します。</p><p> 例： <code>/create-rendition</code></p>
+        <p><code>https://indesign.adobe.io/v3</code> からの相対パスを入力します。</p><p> 例： <code>/create-rendition</code></p>
       </td>
     </tr>
     <tr>
@@ -419,7 +423,7 @@ Workfront Fusion でAdobe InDesign モジュールを設定する場合、以下
         <p>メソッド</p>
       </td>
       <td>
-        <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。詳しくは、[HTTP リクエストメソッド ] （/help/workfront-fusion/references/modules/http-request-methods.md）を参照してください。</p>
+        <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。 詳しくは、[HTTP リクエストメソッド ] （/help/workfront-fusion/references/modules/http-request-methods.md）を参照してください。</p>
       </td>
     </tr>
     <tr>

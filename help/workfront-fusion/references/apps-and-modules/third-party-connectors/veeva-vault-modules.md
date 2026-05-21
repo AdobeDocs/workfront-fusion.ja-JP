@@ -4,9 +4,12 @@ description: Adobe Workfront Fusionでは、Veeva Vaultを使用するワーク�
 author: Becky
 feature: Workfront Fusion
 exl-id: 2ef967b6-0a69-4801-8574-5f17c9ce991d
-source-git-commit: d64d894cfb0e1905c135cdf5ea39f11cd7a6e5f2
+TQID: https://experienceleague.adobe.com/pZThAMSHKt13YUQ3F3MABQiBmxH374XDZBRHElGj05s
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4125'
+source-wordcount: 4125
 ht-degree: 14%
 
 ---

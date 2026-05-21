@@ -3,22 +3,25 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: get-started-with-workfront-fusion-2-0
 title: 基本的なシナリオの作成
-description: Adobe Workfront Fusion を使用してシンプルな自動処理シナリオを作成する方法について説明します。 自動処理シナリオは、データの操作や変換を含む Workfront プロセスを自動化します。この例では、WorkfrontでWorkfront タスクを検索し、によってタスクがプロジェクトに変換されるシナリオの作成手順を説明します。
+description: Adobe Workfront Fusionを活用して、シンプルな自動化シナリオを構築する方法を解説します。 自動処理シナリオは、データの操作や変換を含む Workfront プロセスを自動化します。 この例では、WorkfrontでWorkfront タスクを検索し、それをプロジェクトに変換するシナリオを作成するプロセスを説明します。
 author: Becky
 feature: Workfront Fusion
 exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
-source-git-commit: 6269db7454a63e80de3d770ab1012162d5080565
+TQID: https://experienceleague.adobe.com/4SeGiWeAsMRQbbk15I5IoL8-ZYe5WLeF6z9URFpTQQI
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 29%
+source-wordcount: 1426
+ht-degree: 30%
 
 ---
 
 # 基本的なシナリオの作成
 
-Adobe Workfront Fusion の役割は、プロセスを自動処理することで、ユーザーが同じタスクを何度も繰り返すのではなく、新しいタスクに集中できるようにすることです。これは、アプリ内やサービス内、およびそれらの間でアクションをリンクし、データを自動的に転送および変換するシナリオを作成することで機能します。作成するシナリオは、アプリまたはサービス内のデータを監視し、そのデータを処理して必要な結果を提供します。
+Adobe Workfront Fusion の役割は、プロセスを自動処理することで、ユーザーが同じタスクを何度も繰り返すのではなく、新しいタスクに集中できるようにすることです。 これは、アプリ内やサービス内、およびそれらの間でアクションをリンクし、データを自動的に転送および変換するシナリオを作成することで機能します。 作成するシナリオは、アプリまたはサービス内のデータを監視し、そのデータを処理して必要な結果を提供します。
 
-この例では、Workfrontでリクエストを検索し、によってリクエストがプロジェクトに変換されるシナリオの作成プロセスを説明します。
+この例では、Workfrontでリクエストを検索し、それをプロジェクトに変換するシナリオを作成するプロセスを説明します。
 
 ## アクセス要件
 
@@ -53,146 +56,146 @@ Adobe Workfront Fusion の役割は、プロセスを自動処理することで
 
 ### シナリオの作成を開始
 
-1. **シナリオ** エリアで、「**新しいシナリオを作成**」をクリックします。
+1. **シナリオ**&#x200B;領域で、**新しいシナリオの作成**&#x200B;をクリックします。
 
-   「シナリオ」領域を見つけるには、[Workfront Fusion に移動 &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md) を参照してください。
+   「シナリオ」エリアを見つけるには、[Workfront Fusionの移動](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md)を参照してください。
 
    シナリオエディターが表示され、中央に空のモジュールが含まれます。
 
-1. 左上隅の **[!UICONTROL 新規シナリオ]** プレースホルダー名を選択し、名前を入力します。
-1. [&#x200B; 最初のモジュールを追加して設定 &#x200B;](#add-and-configure-the-first-module) を続行します。
+1. 左上隅の「**[!UICONTROL 新しいシナリオ]**」プレースホルダー名を選択し、名前を入力します。
+1. [に進み、最初のモジュールを追加して設定](#add-and-configure-the-first-module)。
 
 ### 最初のモジュールを追加して設定
 
 1. 空のモジュールをクリックして、モジュールを選択するアプリを選択します。
 
-   アプリのリストがモジュールの右側に表示されます。
+   モジュールの右側にアプリのリストが表示されます。
 
-1. 「**Adobe Workfront**」を選択します。 表示されない場合は、リストの下部にある検索バーをクリックして「Workfront」と入力し、リストに表示されたら選択します。
+1. **Adobe Workfront**&#x200B;を選択します。 表示されていない場合は、リストの下部にある検索バーをクリックし、「Workfront」と入力して、リストに表示されたら選択します。
 
-   リストが変わり、使用可能なすべてのWorkfront モジュールが表示されます。
+   リストが変更され、使用できるすべてのWorkfront モジュールが表示されます。
 
 1. **[!UICONTROL 検索]** モジュールをクリックします。
 
    モジュール設定ウィンドウが開きます。
 
-1. 「[!UICONTROL &#x200B; 接続 &#x200B;]」ボックスで、Workfront接続を選択します。
+1. [!UICONTROL Connection] ボックスで、Workfront接続を選択します。
 
-   Workfrontに接続されていない場合は、[&#x200B; 接続の作成 &#x200B;](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md) を参照してください
-1. 「[!UICONTROL &#x200B; レコードタイプ &#x200B;]」ボックスで、「**[!UICONTROL イシュー]**」を選択します。 これにより、モジュールはリクエストを含む問題のみを検索するように設定されます。
+   Workfront接続がない場合は、[接続の作成](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)を参照してください。
+1. [!UICONTROL  レコードタイプ ] ボックスで、**[!UICONTROL 問題]**&#x200B;を選択します。 これにより、リクエストを含むイシューのみを検索するようにモジュールを設定します。
 
-   「**[!UICONTROL イシュー]**」という単語を入力し始めると、リストに [!UICONTROL &#x200B; イシュー &#x200B;] が表示されます。
+   「[!UICONTROL Issue]」という単語の入力を開始すると、リストに&#x200B;**[!UICONTROL Issue]**&#x200B;が表示されます。
 
-1. 「**[!UICONTROL 結果セット]**」ボックスで、「**[!UICONTROL 最初に一致したレコード]**」を選択します。
+1. **[!UICONTROL 結果セット]** ボックスで、**[!UICONTROL 最初に一致するレコード]**&#x200B;を選択します。
 
-   これにより、条件を満たす最初のレコードのみを返すようにモジュールが設定されます。
-1. **[!UICONTROL 検索条件]** 領域で、特定のタスクを返す条件を設定します。
+   これにより、モジュールは、条件を満たす最初のレコードのみを返すように設定されます。
+1. **[!UICONTROL 検索条件]**&#x200B;領域で、特定のタスクを返すように条件を設定します。
 
-   1. [!UICONTROL &#x200B; 検索条件 &#x200B;] の最初のボックスで、検索に含めるフィールドを選択します。 この例では、「**[!UICONTROL 名前]**」を選択します。
+   1. [!UICONTROL 検索条件]の下の最初のボックスで、検索に含めるフィールドを選択します。 この例では、「**[!UICONTROL 名前]**」を選択します。
 
-      「**[!UICONTROL name]**」という単語を入力し始めると、リストに [!UICONTROL name] が表示されます。
-   1. オペレーターの場合は、「存在する **の横にあるドロップダウン矢印をクリックし** 「含む [!UICONTROL **大文字と小文字を区別しない）**] に変更します。
+      「[!UICONTROL name]」という単語の入力を開始すると、リストに&#x200B;**[!UICONTROL Name]**&#x200B;が表示されます。
+   1. 演算子の場合、**存在**&#x200B;の横にあるドロップダウン矢印をクリックし、[!UICONTROL **含む（大文字と小文字を区別しない）**]&#x200B;に変更します。
 
       これにより、名前全体を入力しない場合または名前に大文字と小文字を区別せずに入力した場合でも、モジュールは名前に選択した単語を含むプロジェクトを検索できます（すべて大文字など）。
-   1. [!UICONTROL &#x200B; 検索条件 &#x200B;] の下の最後のフィールドに、検索するタスクの名前に含まれていることがわかっている単語または語句を入力します。
+   1. [!UICONTROL 検索条件]の最後のフィールドに、検索対象のタスクの名前に含まれる単語または語句を入力します。
 
-1. **[!UICONTROL 出力]**&#x200B;リストで、モジュールを出力するフィールドを選択します。この例では、「**[!UICONTROL ID]**」フィールドおよび「**[!UICONTROL 名前]**」フィールドを選択します。
+1. **[!UICONTROL 出力]**&#x200B;リストで、モジュールを出力するフィールドを選択します。 この例では、「**[!UICONTROL ID]**」フィールドおよび「**[!UICONTROL 名前]**」フィールドを選択します。
 
    >[!TIP]
    >
    >**Cmd+F**（[!DNL Mac] OS）または **Ctrl+F**（[!DNL Windows] OS）を使用して、すばやくフィールドを検索できます。
 
-1. **[!UICONTROL OK]** をクリックして、モジュール設定を保存します。
+1. モジュール設定を保存するには、**[!UICONTROL OK]**&#x200B;をクリックします。
 
-1. モジュールを右クリックして **[!UICONTROL 名前を変更]** をクリックし、モジュールで実行する内容を示す名前（「リクエストを検索」など）を入力して **[!UICONTROL OK]** をクリックします。
+1. モジュールを右クリックし、「**[!UICONTROL 名前を変更]**」をクリックしてから、モジュールの目的を表す名前（「リクエストの検索」など）を入力し、「**[!UICONTROL OK]**」をクリックします。
 
-   名前はモジュールのすぐ下に表示されます。次に、Workfront Fusion でモジュールが実行するアクションの種類について簡単に説明します。
+   名前はモジュールのすぐ下に表示されます。 その下に、Workfront Fusionで実行されるアクションのタイプの簡単な説明が含まれています。
 
-   ![&#x200B; 名前を変更したモジュール &#x200B;](assets/module-renamed-wf.png)
+   ![ モジュール名を変更](assets/module-renamed-wf.png)
 
 1. [2 つ目のモジュールを追加して設定](#add-and-configure-the-second-module)に進みます。
 
 ## 2 つ目のモジュールを追加して設定
 
-1. モジュールの右側にある部分的な円にポインタを合わせ、「**[!UICONTROL 別のモジュールを追加]**」をクリックします。
-1. アプリケーションのリストから「Adobe Workfront」を選択し、モジュール **[!UICONTROL オブジェクトを変換]** を選択します。
-1. 「[!UICONTROL &#x200B; 接続 &#x200B;]」フィールドで、前のモジュールで使用したのと同じWorkfront接続を選択します。
-1. モジュールによってイシューが変換されるので、「**[!UICONTROL レコードタイプ]**」フィールドで「**[!UICONTROL イシュー]**」を選択します。
-1. **[!UICONTROL 変換先]** フィールドで、「**プロジェクト**」を選択します。
-1. 「タスク ID」フィールドの横にある「マップ」切替スイッチをクリックして有効にします。
+1. モジュールの右側にある部分円にカーソルを合わせ、**[!UICONTROL 別のモジュールを追加]**&#x200B;をクリックします。
+1. アプリケーションのリストから「Adobe Workfront」を選択し、「**[!UICONTROL オブジェクトを変換]**」モジュールを選択します。
+1. 「[!UICONTROL Connection]」フィールドで、前のモジュールで使用したのと同じWorkfront接続を選択します。
+1. **[!UICONTROL レコードタイプ]** フィールドで、**[!UICONTROL イシュー]**&#x200B;を選択します。モジュールがイシューを変換するためです。
+1. 「**[!UICONTROL 変換先]**」フィールドで、「**プロジェクト**」を選択します。
+1. タスク ID フィールドの横にあるマップトグルをクリックして有効にします。
 
-   切替スイッチが有効になると青に変わります。 これにより、前のモジュールからタスク ID をマッピングできます。
+   有効にすると、トグルが青に変わります。 これにより、前のモジュールからタスク IDをマッピングできます。
 
    ![マップ切り替え](assets/map-toggle.png)
 1. 「**[!UICONTROL タスク ID]**」フィールドをクリックします。
 
-   パネルが開き、プロジェクトに変換するタスクの ID として使用するものを選択できます。 マッピングを有効にしたため、パネルには以前のモジュールからの出力が含まれます。 以前のモジュールの出力として ID を選択したので、パネルで使用できるようになりました。
+   パネルが開き、プロジェクトに変換するタスクのIDとして使用するものを選択できます。 マッピングを有効にしたので、パネルには以前のモジュールからの出力が含まれます。 前のモジュールの出力としてIDを選択したので、パネルで使用できるようになりました。
 
-   このパネルは、マッピングパネルと呼ばれます。 マッピングパネルについて詳しくは、[&#x200B; マッピングの概要 &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md) を参照してください。
-1. マッピングパネルで **ID** を選択します。
+   このパネルはマッピングパネルと呼ばれます。 マッピングパネルについて詳しくは、[ マッピングの概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md)を参照してください。
+1. マッピングパネルで「**ID**」を選択します。
 
-   「ID」フィールドに ID ブロックが表示されます。 マッピング元のモジュールの数と、マッピングされたフィールドが表示されます。
+   ID フィールドにID ブロックが表示されます。 マッピングされるモジュールの数と、マッピングされるフィールドが表示されます。
 
-   ![&#x200B; マップ ID](assets/map-id.png)
+   ![ マップ ID](assets/map-id.png)
 
 1. 「**テンプレート ID**」フィールドをクリックし、このプロジェクトに使用するWorkfront テンプレートの名前の入力を開始し、リストに表示されたら選択します。
-1. **[!UICONTROL OK]** をクリックして、モジュール設定を保存します。
+1. モジュール設定を保存するには、**[!UICONTROL OK]**&#x200B;をクリックします。
 
-1. モジュールを右クリックして **[!UICONTROL 名前を変更]** をクリックし、モジュールで実行する内容を示す名前（「プロジェクトに変換」など）を入力して **[!UICONTROL OK]** をクリックします。
+1. モジュールを右クリックし、「**[!UICONTROL 名前を変更]**」をクリックし、モジュールの目的を表す名前（「プロジェクトに変換する」など）を入力して、**[!UICONTROL OK]**&#x200B;をクリックします。
 
-1. [&#x200B; シナリオのテスト &#x200B;](#test-the-scenario) に進みます。
+1. 引き続き[ シナリオのテスト ](#test-the-scenario)を行います。
 
 ## シナリオのテスト
 
-シナリオをアクティベートする前にテストすることが重要です。少なくとも 1 回実行して結果を確認します。これは、シナリオにおけるデータの流れを理解し、エラーを見つけるのに役立ちます。
+シナリオをアクティベートする前にテストすることが重要です。少なくとも 1 回実行して結果を確認します。 これは、シナリオにおけるデータの流れを理解し、エラーを見つけるのに役立ちます。
 
-このシナリオでは、テストが成功すると、リクエストが見つかり、プロジェクトに変換されます。
+このシナリオでは、テストが成功すると、リクエストを見つけてプロジェクトに変換します。
 
 1. シナリオエディターの左下隅にある「**[!UICONTROL 1 回実行]**」をクリックします。
-1. シナリオの実行が完了したら、最初のモジュールの上にあるバブルをクリックして、モジュールが処理したデータのバンドルに関する情報（モジュールが返した要求から取り込まれたデータを含む）を表示できます。
+1. シナリオの実行が完了したら、最初のモジュールの上にあるバブルをクリックして、モジュールが処理したデータバンドルに関する情報（モジュールが返したリクエストから取得したデータを含む）を表示できます。
 
-1. 2 番目のモジュールの上にある実行インスペクターのバブルをクリックして、入力（要求）と出力（変換されたプロジェクト）を確認します。
+1. 2番目のモジュールの上にある実行インスペクターバブルをクリックして、入力（リクエスト）と出力（変換されたプロジェクト）を確認します。
 
-   検査バブル内のデータの詳細については、以下を参照してください。
+   検査バブル内のデータの詳細については、次を参照してください。
 
-   * 一般情報については、[&#x200B; シナリオ実行フロー &#x200B;](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md) を参照してください。
-   * 処理されたバンドルについて詳しくは、[&#x200B; シナリオ実行、サイクル、フェーズ &#x200B;](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md) を参照してください。
+   * 一般的な情報については、[ シナリオ実行フロー](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)を参照してください。
+   * 処理されたバンドルについて詳しくは、[ シナリオ実行、サイクル、フェーズ ](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)を参照してください。
 
-1. Workfront Fusion で、左下隅付近の **[!UICONTROL 保存]** をクリックして、シナリオの進捗を保存します。
+1. Workfront Fusionで、左下隅付近の&#x200B;**[!UICONTROL 保存]**&#x200B;をクリックして、シナリオの進行状況を保存します。
 
    >[!IMPORTANT]
    >
-   >シナリオを磨いてテストする際に、頻繁に保存します。 シナリオをトリガーするには、Workfront アカウントに新しいイシューを作成する必要が生じる場合があります。
+   >シナリオを改良、テストするたびに保存するようにしてください。 シナリオをトリガーするには、Workfront アカウントで新しいイシューを作成する必要がある場合があります。
 
 >[!TIP]
 >
 >各モジュールに関するメモを追加する方法として、任意ではあるものの便利な方法をお勧めします。
 >
->1. モジュールを右クリックし、「**[!UICONTROL メモを追加]**」を選択します。
+>1. モジュールを右クリックし、**[!UICONTROL メモを追加]**&#x200B;を選択します。
 >1. 表示されるメモに、モジュールの概要を入力します。
 >
 >    1 つのモジュールに複数のノートを追加できます。
 >
 >1. **[!UICONTROL メモ]**&#x200B;エリアを閉じます。
 >
->     シナリオにメモを追加すると、シナリオエディターの下部にある **[!UICONTROL メモ]** アイコン ![&#x200B; ドット付きのメモアイコン &#x200B;](assets/notes-icon-w-dot.png) にドットが表示されます。
+>     シナリオにメモを追加すると、シナリオエディターの下部にある&#x200B;**[!UICONTROL Notes]** アイコン ![Notes アイコンにドット ](assets/notes-icon-w-dot.png)が表示されます。
 >
->1. **[!UICONTROL メモ]** アイコン ![&#x200B; メモ アイコン（ドット付き &#x200B;](assets/notes-icon-w-dot.png) をクリックして、メモを表示します。 メモを開くと、メモアイコンの周囲に円が表示されます。
+>1. **[!UICONTROL Notes]** アイコン ![Notes アイコンをクリックして、点](assets/notes-icon-w-dot.png)を付けてメモを表示します。 ノートを開くと、メモアイコンの周りに円が表示されます。
 >
 
 ## シナリオをアクティベート
 
-シナリオを作成するための最後の手順は、シナリオをアクティブ化することです。
+シナリオを作成する最後のステップは、シナリオをアクティブ化することです。
 
-このシナリオでは特定の問題を検索するので、アクティブ化する必要はありません。 シナリオをアクティブ化すると、スケジュールに従って、またはアプリケーションで特定のアクションが発生したときにシナリオが実行されます。 シナリオをアクティベートすると、デフォルトでは 15 分ごとに実行されます。これは、実行するタイミングと頻度を定義することで変更できます。
+このシナリオでは特定の問題を検索しているため、アクティブ化する必要はありません。 シナリオをアクティブ化すると、スケジュールで実行されるか、アプリケーションで特定のアクションが発生したときに実行されます。 シナリオをアクティベートすると、デフォルトでは 15 分ごとに実行されます。 これは、実行するタイミングと頻度を定義することで変更できます。
 
-シナリオのアクティブ化の詳細については、[&#x200B; シナリオのアクティブ化または非アクティブ化 &#x200B;](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md) を参照してください。
+シナリオのアクティブ化について詳しくは、[ シナリオのアクティブ化または非アクティブ化](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)を参照してください。
 
-スケジュールについては、[&#x200B; シナリオのスケジュール &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md) を参照してください。
+スケジュールについて詳しくは、[ シナリオのスケジュール ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)を参照してください。
 
 ## 次のステップ
 
-* [トリガーモジュールを追加 &#x200B;](/help/workfront-fusion/build-practice-scenarios/add-a-webhook-to-basic-scenario.md) して、シナリオが定期的に新しいリクエストを検索し、プロジェクトに変換できるようにします。
-* [Webhook を追加 &#x200B;](/help/workfront-fusion/build-practice-scenarios/add-a-webhook-to-basic-scenario.md) して、リクエストが入力されるたびにシナリオを実行できるようにします。
-* [&#x200B; フィルターを追加 &#x200B;](/help/workfront-fusion/build-practice-scenarios/add-filter-basic-scenario.md) して、特定のリクエストのみがプロジェクトに変換されるようにします。
-* 新しいプロジェクトの名前をカスタマイズする [&#x200B; 関数を追加 &#x200B;](/help/workfront-fusion/build-practice-scenarios/use-function-to-build-practice-scenario.md) します。
+* [トリガーモジュール ](/help/workfront-fusion/build-practice-scenarios/add-a-webhook-to-basic-scenario.md)を追加して、新しいリクエストを定期的に検索してプロジェクトに変換できるようにします。
+* [ リクエストが入力されるたびにシナリオを実行できるように、Webhook](/help/workfront-fusion/build-practice-scenarios/add-a-webhook-to-basic-scenario.md)を追加します。
+* [ フィルター](/help/workfront-fusion/build-practice-scenarios/add-filter-basic-scenario.md)を追加して、特定のリクエストのみがプロジェクトに変換されるようにします。
+* [新しいプロジェクトの名前をカスタマイズする関数](/help/workfront-fusion/build-practice-scenarios/use-function-to-build-practice-scenario.md)を追加します。

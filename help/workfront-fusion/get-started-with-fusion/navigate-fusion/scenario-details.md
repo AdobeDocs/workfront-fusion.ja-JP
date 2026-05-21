@@ -1,23 +1,25 @@
 ---
-title: シナリオの詳細の概要
+title: シナリオ詳細の詳細
 description: Adobe Workfront Fusion のシナリオの詳細
 author: Becky
 feature: Workfront Fusion
 exl-id: a6d07ed9-aa55-4993-9f78-7e691aa61049
-source-git-commit: 42be02d6a59a5d7b8faccdcfe40e8b967153c6eb
+TQID: https://experienceleague.adobe.com/-pnW047HSeE6M1LujbfSW6RScI8rY392d7Lmr343q4Q
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 55%
+source-wordcount: 576
+ht-degree: 70%
 
 ---
 
-# シナリオの詳細の概要
+# シナリオ詳細の詳細
 
-シナリオの詳細ページは、特定のシナリオのホームページです。ページに表示されているシナリオの特定の情報へのアクセスを提供します。
+シナリオの詳細ページは、特定のシナリオのホームページです。 ページに表示されているシナリオの特定の情報へのアクセスを提供します。
 
 また、シナリオエディターにアクセスして、シナリオを編集することもできます。
 
-シナリオエディターについて詳しくは、[&#x200B; シナリオエディター &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md) を参照してください
+シナリオエディターについて詳しくは、[ シナリオエディター](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)を参照してください
 
 ## アクセス要件
 
@@ -29,22 +31,22 @@ ht-degree: 55%
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意のAdobe Workfront ワークフローパッケージと任意のAdobe Workfront Automation and Integration パッケージ</p><p>WorkfrontUltimate</p><p>Workfront Fusion を追加購入したWorkfront Primeおよび Select パッケージ。</p> </td> 
+   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>ワークまたはそれ以上</p> </td> 
+   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">製品</td> 
    <td>
-   <p>組織がWorkfront Automation and Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-このテーブルの情報について詳しくは、[&#x200B; ドキュメントのアクセス要件 &#x200B;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md) を参照してください。
+この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
 +++
 
@@ -54,11 +56,11 @@ ht-degree: 55%
 
    または
 
-   シナリオエディターでシナリオに取り組んでいる場合は、ウィンドウの左上隅にある左矢印 ![&#x200B; 編集を終了 &#x200B;](assets/exit-editing-arrow.png) をクリックします。
+   シナリオエディターでシナリオを操作している場合は、ウィンドウの左上隅付近にある左矢印![編集矢印を終了](assets/exit-editing-arrow.png)をクリックします。
 
-1. 表示されるページで、以下の表に示す要素を確認できます。
+1. 表示されるページで、次の表に示す要素を確認できます。
 
-   ![&#x200B; シナリオの詳細 &#x200B;](assets/scenario-detail-350x207.png)
+   ![ シナリオの詳細](assets/scenario-detail-350x207.png)
 
    <table style="table-layout:auto"> 
     <col> 
@@ -66,15 +68,15 @@ ht-degree: 55%
     <tbody> 
      <tr> 
       <td role="rowheader">[!UICONTROL Modules diagram] </td> 
-      <td>このタブには、シナリオが視覚的に表示されます。図は、シナリオエディターで表示されるものと同じです。</td> 
+      <td>このタブには、シナリオが視覚的に表示されます。 図は、シナリオエディターに表示されるものと同じです。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL レポート &#x200B;] タブ </td> 
-      <td> <p>このタブを開いて、過去 30 日間にこのシナリオで実行された操作数のグラフを表示します。</p>  </td> 
+      <td role="rowheader">[!UICONTROL レポート ] タブ </td> 
+      <td> <p>このタブを開くと、このシナリオが過去30日間に実行した操作数のグラフが表示されます。</p>  </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 履歴 &#x200B;] タブ </td> 
-      <td> <p>このタブを開いて、シナリオの編集内容を含むシナリオの履歴を表示します。 </p> <p>「[!UICONTROL History]」タブには、各実行のシナリオ実行履歴も提供されます。これには次の情報が含まれます。</p> 
+      <td role="rowheader">[!UICONTROL History] タブ </td> 
+      <td> <p>このタブを開くと、シナリオに加えられた編集など、シナリオの履歴が表示されます。 </p> <p>「[!UICONTROL History]」タブには、各実行のシナリオ実行履歴も提供されます。これには次の情報が含まれます。</p> 
        <ul> 
         <li>各実行のステータス（成功またはエラー）</li> 
         <li>実行時間</li> 
@@ -85,7 +87,7 @@ ht-degree: 55%
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Incomplete executions]</td> 
-      <td> <p>このタブには、シナリオの実行が不完全な場合に関する情報が提供されます。不完全な実行ごとに、次の情報が含まれます。</p> 
+      <td> <p>このタブには、シナリオの実行が不完全な場合に関する情報が提供されます。 不完全な実行ごとに、次の情報が含まれます。</p> 
        <ul> 
         <li>作成日</li> 
         <li>データ転送のサイズ</li> 
@@ -96,15 +98,15 @@ ht-degree: 55%
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Activate scenario]（「オン／オフ」ボタン）</td> 
-      <td>シナリオを作成したら、スケジュールに従って実行するために、アクティブ化する必要があります。右上隅近くの「オン／オフ」ボタンをクリックすると、シナリオをアクティブ化または非アクティブ化できます。オンにすると、シナリオはスケジュールに従って実行されます。</td> 
+      <td>シナリオを作成したら、スケジュールに従って実行するために、アクティブ化する必要があります。 右上隅近くの「オン／オフ」ボタンをクリックすると、シナリオをアクティブ化または非アクティブ化できます。 オンにすると、シナリオはスケジュールに従って実行されます。</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Edit]</td> 
-      <td>シナリオ図をクリックしてシナリオエディターを開き、シナリオを変更します。</td> 
+      <td>シナリオ図をクリックしてシナリオエディターを開き、シナリオに変更を加えます。</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Options]</td> 
-      <td> <p>このメニューを使用すると、シナリオエディターを開かなくても追加のオプションを使用できます。 改善点には、以下のものが含まれます。</p> 
+      <td> <p>このメニューでは、シナリオエディターを開かずに追加のオプションを使用できます。 改善点には、以下のものが含まれます。</p> 
        <ul> 
         <li>[!UICONTROL Scheduling]</li> 
         <li>[!UICONTROL Rename]</li> 
@@ -117,8 +119,8 @@ ht-degree: 55%
       <td>このエリアには、現在実行中の実行に関連する情報が表示されます。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL 履歴 &#x200B;] パネル</p> <p> </p> </td> 
-      <td> <p>このエリアには、シナリオの最後の実行に関連する情報が表示されます。実行ごとに、次の情報が表示されます。</p> 
+      <td role="rowheader"> <p>[!UICONTROL履歴] パネル</p> <p> </p> </td> 
+      <td> <p>このエリアには、シナリオの最後の実行に関連する情報が表示されます。 実行ごとに、次の情報が表示されます。</p> 
        <ul> 
         <li>実行日</li> 
         <li>ステータス（成功または失敗）</li> 
@@ -128,13 +130,13 @@ ht-degree: 55%
        </ul> </td> 
      </tr> 
          <tr> 
-      <td role="rowheader"> <p>[!UICONTROL イベント &#x200B;] パネル</p>  </td> 
+      <td role="rowheader"> <p>[!UICONTROL イベント ] パネル</p>  </td> 
       <td>この領域には、シナリオに関連するイベントに関する情報が表示されます。  </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Processing banner]</p>  </td>
 
-   <td>シナリオを最近実行した場合は、次のようなバナーが表示されることがあります。<p><code>Data is still being processed. Only partial scenario history will show until processing is complete.</code></p>これは、実行の詳細がストレージに書き込まれる間に表示されます。処理は、シナリオの実行直後に行われます。数分以上続くことはありません。シナリオ実行の処理中は、シナリオ実行の詳細が表示されない場合があります。</td> 
+   <td>シナリオを最近実行した場合は、次のようなバナーが表示されることがあります。<p><code>Data is still being processed. Only partial scenario history will show until processing is complete.</code></p>これは、実行の詳細がストレージに書き込まれる間に表示されます。 処理は、シナリオの実行直後に行われます。 数分以上続くことはありません。 シナリオ実行の処理中は、シナリオ実行の詳細が表示されない場合があります。</td> 
      </tr> 
     </tbody> 
    </table>
