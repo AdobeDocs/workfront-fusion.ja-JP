@@ -7,10 +7,10 @@ exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
 TQID: https://experienceleague.adobe.com/-z2vSjTR1JJTQl--BHM23CbnlaN9TSS6puFTzqLRAEk
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 99a5a892469814f450832dbc4f137fb2c5aa71ee
 workflow-type: tm+mt
-source-wordcount: 1272
-ht-degree: 27%
+source-wordcount: 1300
+ht-degree: 26%
 
 ---
 
@@ -82,6 +82,10 @@ Webhook領域でWebhookのリストを表示できます。
 1. Webhookの優先度を設定するには、「優先度」列のドロップダウンをクリックし、新しい優先度を選択します。
 
    優先度の高いWebhookが最初に処理されます。これは、ワーカープールに多くの自動化がリソースを競合している場合に役立つ可能性があります。
+
+   >[!NOTE]
+   >
+   >[!UICONTROL &#x200B; チーム管理者]の役割、または組織[!UICONTROL 管理者]または[!UICONTROL 所有者]の役割を持つユーザーのみが、Webhookの優先順位を変更できます。 他のユーザーの場合、優先度ドロップダウンは無効になっています。
 1. Webhookを無効または有効にするには、そのWebhookの行のステータス列のトグルを無効または有効にします。
 1. Webhook キューがいっぱいかどうかを確認するには、「Full Queue」列を確認します。 この列の数値は、現在キューにある項目の数です。
 1. Webhookで処理された操作を表示するには、そのWebhookのフルキュー列の&#x200B;**操作**&#x200B;をクリックします。
