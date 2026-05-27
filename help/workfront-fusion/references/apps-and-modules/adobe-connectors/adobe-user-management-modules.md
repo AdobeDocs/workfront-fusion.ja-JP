@@ -9,9 +9,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: e8fe8ec4-4b00-4c9a-81a5-acb2039b153b
 TQID: https://experienceleague.adobe.com/Z8KIPMacTfdO2BJtbczdW3Tsrbb-MTB1rgY60FdPgps
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 2385
@@ -23,7 +26,7 @@ ht-degree: 19%
 
 Adobe Workfront Fusionでは、Adobe アカウントのユーザーを管理するワークフローを自動化できます。
 
-シナリオの作成手順が必要な場合は、[ シナリオの作成：記事インデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
+シナリオの作成手順が必要な場合は、[&#x200B; シナリオの作成：記事インデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
 
 モジュールについて詳しくは、[モジュール：記事インデックス](/help/workfront-fusion/references/modules/modules-toc.md)の記事を参照してください。
 
@@ -106,7 +109,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
         <td>[!DNL Adobe] IMS資格情報を入力します。 組織の一意のID。 これはA495E53@AdobeOrgという形式の文字列で、@の前の接頭辞は16進数です。 この値は、Admin Consoleの組織のURL パスの一部として、またはUser Management統合用のadobe.io コンソールで見つけることができます。</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL追加スコープ ]</td>
+        <td role="rowheader">[!UICONTROL 追加スコープ &#x200B;]</td>
         <td>追加するスコープごとに、<b>項目を追加</b>をクリックし、スコープを入力します。</td>
         </tr>
       </tbody>

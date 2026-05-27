@@ -17,7 +17,7 @@ ht-degree: 21%
 
 連鎖シナリオについて詳しくは、[複数のシナリオを連鎖](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)を参照してください。
 
-連鎖シナリオの設定について詳しくは、[ チェーンモジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)を参照してください
+連鎖シナリオの設定について詳しくは、[&#x200B; チェーンモジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)を参照してください
 
 ## アクセス要件
 
@@ -66,7 +66,7 @@ ht-degree: 21%
 
 1. 「**関係**」タブをクリックします。
 
-   ![関係タブ ](assets/relations-tab.png)
+   ![関係タブ &#x200B;](assets/relations-tab.png)
 
 1. 各チェーン付きシナリオの一般的な詳細については、タグを確認してください。
 
@@ -77,7 +77,7 @@ ht-degree: 21%
    * 子：シナリオは子シナリオです。 シナリオは、親と子の両方にすることができます。
    * 現在：これは、ユーザーが現在表示しているシナリオです。 つまり、ユーザーが関係マップを開いた際のシナリオです。
 
-   関係マップの![ シナリオタグ ](assets/chained-scenario-maps-tag.png)
+   関係マップの![&#x200B; シナリオタグ &#x200B;](assets/chained-scenario-maps-tag.png)
 1. （オプション）シナリオの小さな図を表示するには、シナリオにカーソルを合わせます。
 1. （オプション）マップから別のシナリオに直接移動するには、シナリオをクリックします。
 

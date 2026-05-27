@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
 TQID: https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 625
@@ -73,7 +74,7 @@ ht-degree: 15%
 
    シナリオの入力データとして使用する新しいデータ構造を作成するには、「データ構造」フィールドの横にある「**追加**」をクリックし、データ構造を作成します。
 
-   データ構造の作成手順については、[ データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
+   データ構造の作成手順については、[&#x200B; データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
 
 1. 「**OK**」をクリックして、モジュールを保存します。
 
@@ -121,6 +122,6 @@ ht-degree: 15%
 
    データの新しいデータ構造を作成するには、「データ構造」フィールドの横にある「**追加**」をクリックし、データ構造を作成します。
 
-   データ構造の作成手順については、[ データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
+   データ構造の作成手順については、[&#x200B; データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
 
 1. 「**OK**」をクリックして、モジュールを保存します。
