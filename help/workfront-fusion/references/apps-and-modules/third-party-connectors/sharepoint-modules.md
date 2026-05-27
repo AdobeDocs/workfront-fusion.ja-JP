@@ -1036,7 +1036,7 @@ Microsoft SharePoint Online モジュールを設定すると、Workfront Fusion
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting your Microsoft SharePoint Online account to Workfront Fusion, see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
--->
+  -->
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
    <td> <p>既存のWebhookを選択するか、「追加」をクリックして接続を入力し、新しいWebhookを作成します。</p> 
