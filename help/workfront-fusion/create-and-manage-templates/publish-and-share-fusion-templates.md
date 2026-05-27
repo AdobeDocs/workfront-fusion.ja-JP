@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 99a1227d-bff9-479f-b8b9-efcf7cea3708
 TQID: https://experienceleague.adobe.com/dT1gtKfUvcYgtSEAoxelc8kyCjP99SSlDH5QrU8gB1o
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 485
@@ -75,13 +76,13 @@ ht-degree: 67%
 
    >[!NOTE]
    >
-   >このリンクを共有することはできますが、テンプレート自体は[!UICONTROL  チームテンプレート ] タブに残り、公開されません。
+   >このリンクを共有することはできますが、テンプレート自体は[!UICONTROL &#x200B; チームテンプレート &#x200B;] タブに残り、公開されません。
 
 1. （条件付き）テンプレートを公開したい場合は、「**[!UICONTROL 承認をリクエスト]**」をクリックして、承認を得るために管理者にテンプレートを送信します。
 
    >[!NOTE]
    >
-   >* テンプレートが承認されると、公開されます。 [!UICONTROL 公開テンプレート ]は、組織やチームに関係なく、すべてのWorkfront Fusion ユーザーの「[!UICONTROL 公開テンプレート ]」タブに表示されます。
+   >* テンプレートが承認されると、公開されます。 [!UICONTROL 公開テンプレート &#x200B;]は、組織やチームに関係なく、すべてのWorkfront Fusion ユーザーの「[!UICONTROL 公開テンプレート &#x200B;]」タブに表示されます。
    >* メールでレビューするテンプレートの受信に関する通知は、管理者には送信されません。 承認が急を要する場合は、管理者に直接お問い合わせください。
 
 

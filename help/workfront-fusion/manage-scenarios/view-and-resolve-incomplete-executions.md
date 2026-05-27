@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
 TQID: https://experienceleague.adobe.com/iTS5K7IjJzZdlqX2kCuPBCKojdmM-Id9xa-lRrY2FKI
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 584
@@ -21,7 +22,7 @@ ht-degree: 66%
 >
 >デフォルトでは、未完了の実行の保存は無効になっています。 有効にするには、シナリオの詳細設定で「[!UICONTROL 未完了の実行の保存を許可]」オプションを有効にします。
 >
->シナリオ設定について詳しくは、[ シナリオ設定の設定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)を参照してください。
+>シナリオ設定について詳しくは、[&#x200B; シナリオ設定の設定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)を参照してください。
 
 ## 記事全体を対象としたハイライト表示されたプレビュー {#highlighted-preview-article-level}
 
@@ -45,7 +46,7 @@ ht-degree: 66%
 >
 >未解決の不完全な実行の場合、チームは合計500 MBに制限されます。
 >
->詳細については、「シナリオ設定の構成」の「[ データ損失を有効にする](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable-data-loss)」を参照してください。
+>詳細については、「シナリオ設定の構成」の「[&#x200B; データ損失を有効にする](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable-data-loss)」を参照してください。
 
 
 ## 「不完全な実行」タブから不完全な実行を解決する
@@ -58,7 +59,7 @@ ht-degree: 66%
 1. モジュールのログを開くと、モジュールのすべての操作が表示されます。
 1. 失敗した操作を見つけ、「**[!UICONTROL 解決]**」をクリックします。
 
-   ![解決ボタン ](assets/resolve-btn-350x188.png)
+   ![解決ボタン &#x200B;](assets/resolve-btn-350x188.png)
 
 
 
@@ -72,7 +73,7 @@ ht-degree: 66%
 1. モジュールのログを開くと、モジュールのすべての操作が表示されます。
 1. 失敗した操作を見つけ、「**[!UICONTROL 解決]**」をクリックします。
 
-   ![解決ボタン ](assets/resolve-btn-350x188.png)
+   ![解決ボタン &#x200B;](assets/resolve-btn-350x188.png)
 
 ## 未完了の実行に関連するオプション
 
@@ -82,7 +83,7 @@ ht-degree: 66%
 * 順次処理
 * データ損失を有効にする
 
-これらのオプションについて詳しくは、[ シナリオ設定の設定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)を参照してください。
+これらのオプションについて詳しくは、[&#x200B; シナリオ設定の設定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)を参照してください。
 
 ## 未完了の実行になるエラー
 
