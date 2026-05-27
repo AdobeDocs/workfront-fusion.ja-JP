@@ -40,4 +40,4 @@ MCP Agent モジュールを使用すると、言語モデルとMCP サーバー
 
 MCP Agent モジュールを使用して、シナリオにAI プロンプトを追加できます。
 
-手順については、[MCP エージェントモジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)を参照してください。
+手順については、[MCP エージェントモジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)を参照してください。

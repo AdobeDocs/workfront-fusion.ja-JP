@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: abf41be5-df32-4eaf-b3f4-93ddf005bfe3
 TQID: https://experienceleague.adobe.com/QiQVO7jFPtqkI-ZcsG-Cl7slbYmKlY9HHnTW7MyrO7c
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 482
@@ -44,7 +45,7 @@ ht-degree: 23%
 
 各サイクルは、一連の作業から構成される不可分の作業単位を表し、それぞれにコミットまたはロールバックが適用されます。
 
-サイクルの最大数は、[!UICONTROL  シナリオ設定] パネルで設定できます。 デフォルト値は 1 です。
+サイクルの最大数は、[!UICONTROL &#x200B; シナリオ設定] パネルで設定できます。 デフォルト値は 1 です。
 
 * [操作](#operation)
 * [コミット](#commit)
@@ -55,7 +56,7 @@ ht-degree: 23%
 運用段階では、読み取りまたは書き込み操作が実行されます。
 
 * 読み取り操作は、サービスからデータを取得し、その後、事前に定義されたシナリオに従って他のモジュールによって処理される操作で構成されます。 例えば、[!UICONTROL Workfront] >[!UICONTROL Watch records] モジュールは、前回のシナリオ実行以降に作成された新しいバンドル（レコード）を返します。
-* 書き込み操作は、さらに処理するために特定のサービスにデータを送信することから成ります。 例えば、Workfront >[!UICONTROL  ドキュメントをアップロード ] モジュールは、ファイルをWorkfrontにアップロードします。
+* 書き込み操作は、さらに処理するために特定のサービスにデータを送信することから成ります。 例えば、Workfront >[!UICONTROL &#x200B; ドキュメントをアップロード &#x200B;] モジュールは、ファイルをWorkfrontにアップロードします。
 
 #### コミット
 
@@ -69,7 +70,7 @@ ht-degree: 23%
 >
 >ロールバック（トランザクショナリティとも呼ばれます）をサポートするすべてのWorkfront Fusion モジュールには、ACID タグが付けられます。
 >
->![酸性モジュール ](assets/acid-modules.png)
+>![酸性モジュール &#x200B;](assets/acid-modules.png)
 >
 >このタグでマークされていないモジュールは、他のモジュールでエラーが発生した場合でも、初期状態に戻すことはできません。 非 ACID モジュールの典型的な例は、[!UICONTROL メール]／[!UICONTROL メールの送信]アクションです。 メールの送信後は、送信を取り消すことはできません。
 
@@ -79,4 +80,4 @@ ht-degree: 23%
 
 ## リソース
 
-詳しくは、[ シナリオ設定の設定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)を参照してください。
+詳しくは、[&#x200B; シナリオ設定の設定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)を参照してください。

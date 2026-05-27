@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
 TQID: https://experienceleague.adobe.com/1IX25ZtrWVizi5gZJfFw-acnW5eIuXpGgcXgXW0T-Hw
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 478
@@ -146,7 +147,7 @@ ht-degree: 36%
 
 キーと値のペアを組み合わせることで、2つのコレクションを結合します。 両方のコレクションに同じキーが含まれている場合、2番目のコレクションの値は1番目のコレクションの値を上書きします。
 
-### [!UICONTROL isBlank （value） ]
+### [!UICONTROL isBlank （value） &#x200B;]
 
 値が`null`または空の文字列の場合は`true`を返し、それ以外の場合は`false`を返します。 `ifEmpty`とは異なり、この関数は数値`0`または空白のみの文字列を空白として扱いません。
 
@@ -173,7 +174,7 @@ ht-degree: 36%
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL in （value; value1; value2; ...） ]
+### [!UICONTROL in （value; value1; value2; ...） &#x200B;]
 
 値が指定された値のいずれかに等しい場合、`true`を返します（厳密な等号、型強制なし）。
 
@@ -196,7 +197,7 @@ ht-degree: 36%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL ifin （value; value1; value2; ...; trueExpression; falseExpression） ]
+### [!UICONTROL ifin （value; value1; value2; ...; trueExpression; falseExpression） &#x200B;]
 
 値が指定された一致値のいずれかに一致する場合は`trueExpression`を返し、それ以外の場合は`falseExpression`を返します。 少なくとも3つの引数（値、一致値、trueExpression + falseExpression）が必要です。
 
@@ -216,7 +217,7 @@ ht-degree: 36%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL case （indexNumber；値1；値2; ...） ]
+### [!UICONTROL case （indexNumber；値1；値2; ...） &#x200B;]
 
 インデックス番号（1 ベース）で指定された位置の値を返します。 インデックスが範囲外であるか、0である場合、`null`を返します。
 

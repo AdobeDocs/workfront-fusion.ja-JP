@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 43d39955-3dd7-453d-8eb0-3253a768e114
 TQID: https://experienceleague.adobe.com/FYIH3-R283fCXOmTCvpoGaQb5V05dWU-EHIjYf3IhyM
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 616
@@ -14,9 +16,9 @@ ht-degree: 32%
 
 ---
 
-# [!UICONTROL  イテレーター] モジュール
+# [!UICONTROL &#x200B; イテレーター] モジュール
 
-[!UICONTROL  イテレーター]は、配列を一連のバンドルに変換するモジュールの一種です。 各配列項目は、別々のバンドルとして出力されます。
+[!UICONTROL &#x200B; イテレーター]は、配列を一連のバンドルに変換するモジュールの一種です。 各配列項目は、別々のバンドルとして出力されます。
 
 ## アクセス要件
 
@@ -47,17 +49,17 @@ ht-degree: 32%
 
 +++
 
-## [!UICONTROL  イテレーター] モジュール設定
+## [!UICONTROL &#x200B; イテレーター] モジュール設定
 
 一般イテレーターモジュールには、1つのフィールド「[!UICONTROL 配列]」フィールドがあります。 このフィールドには、変換または個別のバンドルに分割する配列が含まれます。
 
-![ イテレーターの設定](assets/set-up-iterator.jpg)
+![&#x200B; イテレーターの設定](assets/set-up-iterator.jpg)
 
 その他のコネクタには、そのイテレーターに固有のイテレーターモジュールが含まれる場合があります。 これにはSource モジュールフィールドが含まれています。このフィールドを使用すると、反復する配列を出力するモジュールを選択できます。
 
 ![特殊イテレーター](assets/specialized-iterators.jpg)
 
-詳しくは、[ モジュールの設定](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)を参照してください。
+詳しくは、[&#x200B; モジュールの設定](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)を参照してください。
 
 >[!BEGINSHADEBOX]
 
@@ -65,7 +67,7 @@ ht-degree: 32%
 
 * 以下のシナリオは、添付ファイル付きのメールを取得し、その添付ファイルを選択した [!DNL Dropbox] フォルダーに 1 つのファイルとして保存する方法を示しています。
 
-  メールには、添付ファイルの配列を含めることができます。 最初のモジュールの後の[!UICONTROL  イテレータ ] モジュールにより、シナリオで各添付ファイルを個別に処理できるようになります。 [!UICONTROL イテレータ]モジュールは、添付ファイルの配列を 1 つのバンドルに分割します。 1 つの添付ファイルを含む各バンドルは、選択した [!DNL Dropbox] フォルダーに一度に 1 つずつ保存されます。 Iterator モジュールの[!UICONTROL Array] フィールドには、`Attachments`配列を含める必要があります。
+  メールには、添付ファイルの配列を含めることができます。 最初のモジュールの後の[!UICONTROL &#x200B; イテレータ &#x200B;] モジュールにより、シナリオで各添付ファイルを個別に処理できるようになります。 [!UICONTROL イテレータ]モジュールは、添付ファイルの配列を 1 つのバンドルに分割します。 1 つの添付ファイルを含む各バンドルは、選択した [!DNL Dropbox] フォルダーに一度に 1 つずつ保存されます。 Iterator モジュールの[!UICONTROL Array] フィールドには、`Attachments`配列を含める必要があります。
 
   ![添付ファイル配列](assets/attachments-array.jpg)
 
@@ -74,11 +76,11 @@ ht-degree: 32%
 
 ## トラブルシューティング
 
-### 問題：マッピングパネルに、[!UICONTROL  イテレーター] モジュールの下にマッピング可能なアイテムが表示されない
+### 問題：マッピングパネルに、[!UICONTROL &#x200B; イテレーター] モジュールの下にマッピング可能なアイテムが表示されない
 
-[!UICONTROL  イテレーター] モジュールに配列のアイテムの構造に関する情報がない場合、[!UICONTROL  イテレーター] モジュールに続くモジュールのマッピングパネルには、[!UICONTROL  イテレーター] モジュールの下に2つのアイテムのみが表示されます：`Total number of bundles`と`Bundle order position`。
+[!UICONTROL &#x200B; イテレーター] モジュールに配列のアイテムの構造に関する情報がない場合、[!UICONTROL &#x200B; イテレーター] モジュールに続くモジュールのマッピングパネルには、[!UICONTROL &#x200B; イテレーター] モジュールの下に2つのアイテムのみが表示されます：`Total number of bundles`と`Bundle order position`。
 
-![ マッピングパネルが表示されない](assets/mapping-panel-doesnt-display.png)
+![&#x200B; マッピングパネルが表示されない](assets/mapping-panel-doesnt-display.png)
 
 これは、各モジュールが出力する項目に関する情報を提供する責任を負うため、これらの項目を後続のモジュールのマッピングパネルに適切に表示できるためです。 ただし、一部のモジュールでは、この情報を提供できない場合があります。 例えば、[!UICONTROL JSON] > [!UICONTROL JSON]を解析するか、[!UICONTROL Webhook] > [!UICONTROL Custom Webhook] モジュールでデータ構造が見つからない場合、情報は提供されません。
 
@@ -90,9 +92,9 @@ ht-degree: 32%
 
 ![JSON を解析](assets/json-parse-json.png)
 
-このJSON モジュールに接続された[!UICONTROL  イテレーター] モジュールは、モジュールの出力を[!UICONTROL  イテレーター] モジュールのセットアップ パネルの配列フィールドにマッピングできません。
+このJSON モジュールに接続された[!UICONTROL &#x200B; イテレーター] モジュールは、モジュールの出力を[!UICONTROL &#x200B; イテレーター] モジュールのセットアップ パネルの配列フィールドにマッピングできません。
 
-![ イテレーターモジュールを接続](assets/connect-iterator-module.png)
+![&#x200B; イテレーターモジュールを接続](assets/connect-iterator-module.png)
 
 これを解決するには、以下を行います。
 
@@ -108,8 +110,8 @@ ht-degree: 32%
 
 [!UICONTROL JSON] > [!UICONTROL JSON]を解析した後、その出力に関する情報をIterator モジュールを含む後続のすべてのモジュールに提供できます。 イテレータの設定のマッピングパネルには、次の項目が表示されます。
 
-![ マッピングパネルに項目が表示される](assets/mapping-panel-displays-items.png)
+![&#x200B; マッピングパネルに項目が表示される](assets/mapping-panel-displays-items.png)
 
-さらに、[!UICONTROL  イテレーター] モジュールの後に接続されたモジュールのマッピングパネルには、配列に含まれる項目が表示されます。
+さらに、[!UICONTROL &#x200B; イテレーター] モジュールの後に接続されたモジュールのマッピングパネルには、配列に含まれる項目が表示されます。
 
 ![配列](assets/items-contained-in-array.png)に含まれる項目
