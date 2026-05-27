@@ -5,8 +5,7 @@ author: Becky
 feature: Workfront Fusion
 exl-id: e47ab4d9-6612-4d9a-a024-da508a8bbfb2
 TQID: https://experienceleague.adobe.com/7wmBBiCK-UBhGs4HvQWu2JbUgBu-5SfVI9yLNCp-2mE
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 575
@@ -24,7 +23,7 @@ ht-degree: 33%
 >Adobe Workfront Fusionで、シナリオで使用するweb サービス用のアプリが提供されない場合は、次の記事で説明するように、Workfront Fusion HTTPおよびWebhook モジュールを使用してweb サービスに接続できます。
 >
 >* [API トークン認証を使用するweb サービスにAdobe Workfront Fusionを接続する](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-wf-web-service-uses-api-token-auth.md)
->* [&#x200B; コネクタを使用しないweb サービスのWebhookの設定](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)
+>* [ コネクタを使用しないweb サービスのWebhookの設定](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)
 
 ## アクセス要件
 

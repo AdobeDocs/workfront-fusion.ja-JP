@@ -5,12 +5,9 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 6e514204-cd8e-4f30-bbbb-b8fbe48fc670
 TQID: https://experienceleague.adobe.com/Odm53LiZwpv6l-WOLmsvwAdCG1WeyN3CAJfI38o4lXc
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 2717
@@ -315,7 +312,7 @@ Google カレンダーコネクタでは、次の機能が使用されます。
  </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; イベントを取得]
+#### [!UICONTROL  イベントを取得]
 
 このモジュールは、指定した条件に基づいて、選択したカレンダー内のイベントに関する情報を取得します。
 
@@ -362,7 +359,7 @@ Google カレンダーコネクタでは、次の機能が使用されます。
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 返されたイベントの最大数]</td> 
+   <td>[!UICONTROL返されたイベントの最大数]</td> 
    <td> <p>1回の実行サイクルでWorkfront Fusionが返すイベントの最大数を設定します。</p> </td> 
   </tr> 
  </tbody> 
@@ -500,7 +497,7 @@ Google カレンダーコネクタでは、次の機能が使用されます。
 
 1. [!UICONTROL Google Calendar]／[!UICONTROL イベントを更新]モジュールを使用して、イベントにメールリマインダーを追加します。
 
-   ![&#x200B; イベント前のトリガーシナリオ &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/trigger-scen-before-event-350x209.png)
+   ![ イベント前のトリガーシナリオ ](/help/workfront-fusion/references/apps-and-modules/assets/trigger-scen-before-event-350x209.png)
 
 1. [!UICONTROL Webhooks]／[!UICONTROL カスタムメールフック]モジュールから新しいシナリオを作成します。
 
@@ -518,11 +515,11 @@ Google カレンダーコネクタでは、次の機能が使用されます。
    1. モジュールの上のバブルをクリックして、モジュールの出力を調べます。
    1. `Text` 項目を展開して、確認コードをコピーします。
 
-      ![確認コード &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
+      ![確認コード ](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
 
    1. Gmailで、編集ボックスに確認コードを貼り付け、**[!UICONTROL 確認]**&#x200B;をクリックします。
 
-      ![&#x200B; コードを貼り付け](/help/workfront-fusion/references/apps-and-modules/assets/paste-code-350x46.png)
+      ![ コードを貼り付け](/help/workfront-fusion/references/apps-and-modules/assets/paste-code-350x46.png)
 
    1. 「**[!UICONTROL フィルターとブロック済みアドレス]**」タブを開きます。
    1. 「**[!UICONTROL 新規フィルターを作成]**」をクリックします。
@@ -530,7 +527,7 @@ Google カレンダーコネクタでは、次の機能が使用されます。
    1. 「**[!UICONTROL 転送先]**」を選択して、メールフックのメールアドレスをリストから選択します。
    1. 「**[!UICONTROL フィルターを作成]**」をクリックして、フィルターを作成します。
 
-1. （オプション）Workfront Fusionで、[!UICONTROL Webhook] >[!UICONTROL &#x200B; カスタムメールフック &#x200B;] モジュールの後に[!UICONTROL &#x200B; テキストパーサー] > [!UICONTROL Match pattern] モジュールを追加して、必要な情報を取得するためにメールのHTML コードを解析します。
+1. （オプション）Workfront Fusionで、[!UICONTROL Webhook] >[!UICONTROL  カスタムメールフック ] モジュールの後に[!UICONTROL  テキストパーサー] > [!UICONTROL Match pattern] モジュールを追加して、必要な情報を取得するためにメールのHTML コードを解析します。
 
    例えば、モジュールを次のように設定して、イベントの ID を取得できます。
 
