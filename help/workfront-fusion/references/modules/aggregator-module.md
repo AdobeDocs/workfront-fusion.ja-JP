@@ -5,10 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 93cde0d0-4013-463a-b19c-d58180632739
 TQID: https://experienceleague.adobe.com/O99Y6rWAQUUaO20Ts2T87ZaDUayi6I5ZWsyKKqOyONw
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 810
@@ -96,7 +94,7 @@ ht-degree: 21%
 
 >[!NOTE]
 >
->ソースモジュールと[!UICONTROL Aggregator] モジュールの間でモジュールによって生成されたバンドルは、[!UICONTROL Aggregator] モジュールによって出力されません。 これらのバンドルは、[!UICONTROL Aggregator]の後のフローのモジュールからアクセスできません。 ソースモジュールと[!UICONTROL Aggregator] モジュールの間でモジュールによって出力されたバンドルのデータが必要な場合は、必ず[!UICONTROL Aggregator] モジュールの設定（[!UICONTROL Array aggregator] モジュールの設定の[!UICONTROL 集計フィールド &#x200B;] フィールドなど）に指定された項目を含めてください。
+>ソースモジュールと[!UICONTROL Aggregator] モジュールの間でモジュールによって生成されたバンドルは、[!UICONTROL Aggregator] モジュールによって出力されません。 これらのバンドルは、[!UICONTROL Aggregator]の後のフローのモジュールからアクセスできません。 ソースモジュールと[!UICONTROL Aggregator] モジュールの間でモジュールによって出力されたバンドルのデータが必要な場合は、必ず[!UICONTROL Aggregator] モジュールの設定（[!UICONTROL Array aggregator] モジュールの設定の[!UICONTROL 集計フィールド ] フィールドなど）に指定された項目を含めてください。
 
 
 ## アグリゲーターの仕組みの例
@@ -107,13 +105,13 @@ ht-degree: 21%
 
 以下のシナリオでは、次の方法を示します。
 
-* 最初のモジュールは、受信メール用のメールボックスを監視します。 [!UICONTROL 電子メール &#x200B;] >[!UICONTROL 電子メールを監視] トリガーは、すべての電子メールの添付ファイルを含む配列である項目`Attachments[]`を含むバンドルを出力します。
+* 最初のモジュールは、受信メール用のメールボックスを監視します。 [!UICONTROL 電子メール ] >[!UICONTROL 電子メールを監視] トリガーは、すべての電子メールの添付ファイルを含む配列である項目`Attachments[]`を含むバンドルを出力します。
 
-* 2番目のモデルは、電子メールの添付ファイルを繰り返します：[!UICONTROL 電子メール &#x200B;] >[!UICONTROL 添付ファイルを繰り返し] イテレータは、`Attachments[]`配列のアイテムを1つずつ取り出し、さらに別のバンドルとして送信します。
+* 2番目のモデルは、電子メールの添付ファイルを繰り返します：[!UICONTROL 電子メール ] >[!UICONTROL 添付ファイルを繰り返し] イテレータは、`Attachments[]`配列のアイテムを1つずつ取り出し、さらに別のバンドルとして送信します。
 
-* 3つ目のモジュールはアグリゲーターです。 [!UICONTROL 電子メール &#x200B;] >[!UICONTROL 添付ファイルを繰り返し] モジュールによって出力されたバンドルを集計します。 [!UICONTROL &#x200B; アーカイブ &#x200B;] >[!UICONTROL &#x200B; アーカイブアグリゲーターを作成]すると、受け取ったすべてのバンドルが蓄積され、ZIP ファイルを含む単一のバンドルが出力されます。
+* 3つ目のモジュールはアグリゲーターです。 [!UICONTROL 電子メール ] >[!UICONTROL 添付ファイルを繰り返し] モジュールによって出力されたバンドルを集計します。 [!UICONTROL  アーカイブ ] >[!UICONTROL  アーカイブアグリゲーターを作成]すると、受け取ったすべてのバンドルが蓄積され、ZIP ファイルを含む単一のバンドルが出力されます。
 
-* 最後のモジュールは、結果として得られるZIP ファイルを[!DNL Dropbox]にアップロードします。[!DNL Dropbox] > [!UICONTROL &#x200B; ファイルをアップロード &#x200B;]は、[!UICONTROL &#x200B; アーカイブ &#x200B;] > [!UICONTROL &#x200B; アーカイブ &#x200B;] モジュールを作成し、[!DNL Dropbox]にアップロードします。
+* 最後のモジュールは、結果として得られるZIP ファイルを[!DNL Dropbox]にアップロードします。[!DNL Dropbox] > [!UICONTROL  ファイルをアップロード ]は、[!UICONTROL  アーカイブ ] > [!UICONTROL  アーカイブ ] モジュールを作成し、[!DNL Dropbox]にアップロードします。
 
 
 

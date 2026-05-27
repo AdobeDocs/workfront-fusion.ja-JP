@@ -5,10 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: bc6d5ddc-93c3-437b-8537-5bece1351c1d
 TQID: https://experienceleague.adobe.com/IhvuQxLno-vVgIWarBZG-EFSeu8shwQpZmce7PRBVQs
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 941
@@ -57,7 +55,7 @@ Adobe Workfront Fusion [!UICONTROL CSV] モジュールを使用すると、CSV 
 
 [!UICONTROL CSV を作成]アグリゲータを使用すると、受け取ったテキスト値から CSV テキストを作成できます。
 
-アグリゲーターについて詳しくは、[&#x200B; アグリゲーターモジュール &#x200B;](/help/workfront-fusion/references/modules/aggregator-module.md)を参照してください。
+アグリゲーターについて詳しくは、[ アグリゲーターモジュール ](/help/workfront-fusion/references/modules/aggregator-module.md)を参照してください。
 
 <table style="table-layout:auto">
     <tr>
@@ -86,7 +84,7 @@ Adobe Workfront Fusion [!UICONTROL CSV] モジュールを使用すると、CSV 
 
 [!UICONTROL CSV を作成（詳細）]アグリゲータを使用すると、受け取ったテキスト値から CSV テキストを作成できます。 結果の CSV ファイルで CSV 列を定義するデータ構造を使用しています。 定義が完了すると、列は CSV モジュール設定のフィールドとして表示され、シナリオの後のモジュールにマッピングできます。
 
-アグリゲーターについて詳しくは、[&#x200B; アグリゲーターモジュール &#x200B;](/help/workfront-fusion/references/modules/aggregator-module.md)を参照してください。
+アグリゲーターについて詳しくは、[ アグリゲーターモジュール ](/help/workfront-fusion/references/modules/aggregator-module.md)を参照してください。
 
 <table style="table-layout:auto">
  <col> 
@@ -120,7 +118,7 @@ Adobe Workfront Fusion [!UICONTROL CSV] モジュールを使用すると、CSV 
 
 **例**：
 
-この例では、「フルネーム」と「電子メール」という2つの列を持つCSV ファイルにGoogleの連絡先をエクスポートする方法を示します。 [!UICONTROL Google連絡先] > [!UICONTROL &#x200B; グループ &#x200B;] モジュールから連絡先を取得する出力バンドルの構造は、次のとおりです。 電子メールアドレスは、<code>[!UICONTROL 電子メール []]内に保存されます</code> item。コレクションの配列で、各コレクションには2つのアイテムが含まれています：<code>Label</code> および<code> メール</code>.
+この例では、「フルネーム」と「電子メール」という2つの列を持つCSV ファイルにGoogleの連絡先をエクスポートする方法を示します。 [!UICONTROL Google連絡先] > [!UICONTROL  グループ ] モジュールから連絡先を取得する出力バンドルの構造は、次のとおりです。 電子メールアドレスは、<code>[!UICONTROL 電子メール []]内に保存されます</code> item。コレクションの配列で、各コレクションには2つのアイテムが含まれています：<code>Label</code> および<code> メール</code>.
 ![変形](/help/workfront-fusion/references/apps-and-modules/assets/transforming-350x546.png)
 
 シンプルな[!DNL Create CSV] モジュールには、バンドルの最上位の項目に対応するチェックボックスのリストが表示されます。 <code>氏名を選択しようとすると</code> と<code> メール</code> itemsの場合、[!UICONTROL Create CSV] モジュールは次の出力を生成しますが、これは目的とは異なる場合があります。
@@ -138,15 +136,15 @@ Adobe Workfront Fusion [!UICONTROL CSV] モジュールを使用すると、CSV 
 詳しくは、[項目データタイプ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)を参照してください。
 
 
-<code> メールのコンテンツを書き出すには </code><code>電子メール []の最初のコレクションのアイテム</code> 代わりに、[!UICONTROL Create CSV （advanced） &#x200B;] モジュールを使用する必要があります。 このモジュールを使用すると、CSV ファイルの個々の列を定義し、ネストされた列を含むアイテムをそれにマッピングできます。
+<code> メールのコンテンツを書き出すには </code><code>電子メール []の最初のコレクションのアイテム</code> 代わりに、[!UICONTROL Create CSV （advanced） ] モジュールを使用する必要があります。 このモジュールを使用すると、CSV ファイルの個々の列を定義し、ネストされた列を含むアイテムをそれにマッピングできます。
 
-1. モジュール [!UICONTROL Create CSV （advanced） &#x200B;]をシナリオに挿入します。
-1. 「[!UICONTROL &#x200B; データ構造]」フィールドの横にある「<strong>[!UICONTROL 追加]</strong>」ボタンをクリックして、新しいデータ構造を作成します。
+1. モジュール [!UICONTROL Create CSV （advanced） ]をシナリオに挿入します。
+1. 「[!UICONTROL  データ構造]」フィールドの横にある「<strong>[!UICONTROL 追加]</strong>」ボタンをクリックして、新しいデータ構造を作成します。
 1. データ構造の名前を入力し、<strong>[!UICONTROL 項目を追加]</strong>をクリックして個々の列を追加します。 「フルネーム」と「電子メール」の2つの列を書き出すと、結果のデータ構造は次のようになります。
 
    ![Google連絡先出力](/help/workfront-fusion/references/apps-and-modules/assets/google-contacts-350x524.png)
 
-1. データ構造を定義すると、各列に対応するフィールドが[!UICONTROL Create CSV （advanced） &#x200B;] モジュールの設定に表示されるので、項目をマッピングできます。 <code>[!UICONTROL 電子メール []]の最初の項目を取得</code> アイテム <code>の配列とマッピングの電子メール </code>フィールド/列に電子メール：
+1. データ構造を定義すると、各列に対応するフィールドが[!UICONTROL Create CSV （advanced） ] モジュールの設定に表示されるので、項目をマッピングできます。 <code>[!UICONTROL 電子メール []]の最初の項目を取得</code> アイテム <code>の配列とマッピングの電子メール </code>フィールド/列に電子メール：
 
    ![CSV詳細モジュールの作成](/help/workfront-fusion/references/apps-and-modules/assets/create-csv-advanced-350x308.png)
 
