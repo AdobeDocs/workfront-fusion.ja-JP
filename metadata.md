@@ -8,7 +8,7 @@ feature-set: Workfront
 product: experience cloud
 type: Documentation
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/workfront-fusion.en
+git-repo: https://github.com/AdobeDocs/workfront-fusion.ja-JP
 index: true
 source-git-commit: 314c302795cb1659fdbd10327751c2d3a2c6e87b
 workflow-type: tm+mt
