@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
-source-git-commit: 3eb585dc76a751befd6002b1124a52ebbb03be3d
+source-git-commit: 207cda01f5207e0906ddfc20a5d1c50b75e689ea
 workflow-type: tm+mt
-source-wordcount: '2416'
+source-wordcount: '2425'
 ht-degree: 55%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 55%
 * Fusion リリースアクティビティ {#fusion-release-activity}
    * [Adobe Workfront Fusion リリースアクティビティ](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion リリース - 2026 {#fusion-releases-2026}
+      * [Workfront Fusion リリースアクティビティ：2026年5月25日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-5-25.md)
       * [Workfront Fusion リリースアクティビティ：2026年5月11日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-5-11.md)
       * [Workfront Fusion リリースアクティビティ：2026年5月4日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-5-4.md)
       * [Workfront Fusion リリースアクティビティ：2026年4月27日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-4-27.md)
@@ -185,7 +186,7 @@ ht-degree: 55%
       * [ライセンスと操作の概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
       * [Adobe Workfront Fusion ライセンス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
       * [操作](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
-        [&#x200B; ワーカープール &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
+        [ ワーカープール ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
    * 組織とチームの設定と管理 {#set-up-and-manage-orgs-and-teams}
       * [組織とチームの設定と管理：記事インデックス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
       * 組織とチームの設定 {#set-up-orgs-teams-and-users}
@@ -451,7 +452,7 @@ ht-degree: 55%
          * [Markdown モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
          * [数学モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
          * [MIME モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
-         * {hide-from-toc}[&#x200B; モデル コンテキスト プロトコル （MCP） モジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
+         * {hide-from-toc}[ モデル コンテキスト プロトコル （MCP） モジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
          * [テキストパーサーモジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
          * [ツールモジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
          * [XML モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/xml-modules.md)
