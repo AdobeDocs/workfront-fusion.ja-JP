@@ -2,10 +2,10 @@
 user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
-source-git-commit: 207cda01f5207e0906ddfc20a5d1c50b75e689ea
+source-git-commit: 9c05aa1111fd571ea6f0ff86943b2849a39e4973
 workflow-type: tm+mt
-source-wordcount: '2425'
-ht-degree: 55%
+source-wordcount: '2445'
+ht-degree: 54%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 55%
 * Fusion リリースアクティビティ {#fusion-release-activity}
    * [Adobe Workfront Fusion リリースアクティビティ](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion リリース - 2026 {#fusion-releases-2026}
+      * [Workfront Fusion リリースアクティビティ：2026年6月1日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-6-1.md)
       * [Workfront Fusion リリースアクティビティ：2026年5月25日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-5-25.md)
       * [Workfront Fusion リリースアクティビティ：2026年5月11日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-5-11.md)
       * [Workfront Fusion リリースアクティビティ：2026年5月4日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-5-4.md)
@@ -279,6 +280,8 @@ ht-degree: 55%
    * [シナリオ要素の削除](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
    * [「シナリオ」エリアからシナリオを管理します](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
    * [Webhookの編集](/help/workfront-fusion/manage-scenarios/edit-webhooks.md)
+   * [シナリオ実行のリトリガー](/help/workfront-fusion/manage-scenarios/retrigger-specific-execution.md)
+   * [1回実行してシナリオをテストする](/help/workfront-fusion/manage-scenarios/run-once.md)
 * 練習シナリオの作成 {#build-practice-scenarios}
    * [練習シナリオの作成](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
    * [基本的なシナリオの作成](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)
