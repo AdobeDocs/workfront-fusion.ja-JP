@@ -5,63 +5,69 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 22f24c0e-4eb3-4ef7-b012-374ee5e8a844
 TQID: https://experienceleague.adobe.com/MeGV8WNtXy8HkizGkUutuhw2ctdmf3DFIkRWBRXPzA0
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+hide: true
+source-git-commit: b84dea9d44b4112a8d905b631720727e557351df
 workflow-type: tm+mt
-source-wordcount: 310
-ht-degree: 34%
+source-wordcount: 30
+ht-degree: 50%
 
 ---
 
 # Workfront Fusion の AI アシスタント
 
-AI アシスタントは、Workfrontのドキュメントから情報を検索できるため、必要なサポートを受けるためにAdobe Experience Leagueにアクセスする必要はありません。
+この機能は推奨されません。近い将来この記事は削除されます。
 
-## アクセス要件
+<!--
 
-+++ 展開すると、この記事の機能のアクセス要件が表示されます。
+AI Assistant can locate information from Workfront documentation, eliminating the need for you to visit Adobe Experience League to get the help you need. 
+
+## Access requirements
+
++++ Expand to view access requirements for the functionality in this article.
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront パッケージ</td> 
-   <td> <p>任意の Adobe Workfront Workflow パッケージと任意の Adobe Workfront Automation および Integration パッケージ</p><p>Workfront Ultimate</p><p>Workfront Fusion を追加購入した Workfront Prime および Select パッケージ。</p> </td> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront ライセンス</td> 
-   <td> <p>標準</p><p>Work またはそれ以上</p> </td> 
+   <td role="rowheader">Adobe Workfront licenses</td> 
+   <td> <p>Standard</p><p>Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">製品</td> 
+   <td role="rowheader">Product</td> 
    <td>
-   <p>組織が Workfront Automation および Integration を含まない Select またはPrime Workfront パッケージを持っている場合は、Adobe Workfront Fusion を購入する必要があります。</li></ul>
+   <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
-## 前提条件
+## Prerequisites
 
-Adobeには、署名済みのAdobe Gen AI契約書がファイルに登録されている必要があります。
+Adobe must have a signed Adobe Gen AI agreement on file.
 
-契約書への署名について詳しくは、「[Adobe Gen AI契約書に署名する](https://experienceleague.adobe.com/ja/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement)」を参照してください。詳しくは、Workfront ドキュメントのAI アシスタントの概要を参照してください。
+For more information on signing the agreement, see [Sign the Adobe Gen AI agreement](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) in the article AI Assistant overview in the Workfront documentation.
 
-## AI アシスタントから情報を得る
+## Get information from AI Assistant
 
-AI アシスタントを使用してWorkfront Fusionのドキュメントから情報や手順を確認するには、次の手順に従います。
+To get information or instructions from the Workfront Fusion documentation using AI Assistant:
 
-1. 画面の右上隅付近にある&#x200B;**AI アシスタント** アイコン ![AI アシスタント アイコン &#x200B;](assets/ai-assistant-icon.png)をクリックします。
-1. AI アシスタントパネルで、パネルの下部のテキスト領域にプロンプトを入力します。
+1. Click the **AI Assistant** icon ![AI Assistant icon](assets/ai-assistant-icon.png) near the upper-right corner of the screen.
+1. In the AI Assistant panel, enter your prompt in the text area near the bottom of the panel.
 
-   AI アシスタントは、プロンプトの規模や複雑さによっては、情報を見つけるのに少し時間がかかることがあります。 シンプルなプロンプトをお勧めします。
+   AI Assistant may take a few moments to locate the information, depending on how large or complex the prompt is. We recommend simple prompts.
 
-1. AI アシスタントパネルで回答を表示します。
-1. （オプション）応答に必要な情報が含まれていない場合は、応答を絞り込んでもう一度試してください。
-1. （オプションおよび条件付き）応答にAdobe Experience League記事へのリンクが含まれている場合は、リンクをクリックして記事を新しいウィンドウで開きます。
+1. View the response in the AI Assistant panel.
+1. (Optional) If the response does not contain the information you need, refine your response and try again.
+1. (Optional and conditional) If the response includes a link to an Adobe Experience League article, click the link to open the article in a new window.
+
+-->
