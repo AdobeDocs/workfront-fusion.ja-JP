@@ -56,7 +56,7 @@ For more detail about the information in this table, see [Access requirements in
 
 Adobe must have a signed Adobe Gen AI agreement on file.
 
-For more information on signing the agreement, see [Sign the Adobe Gen AI agreement](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) in the article AI Assistant overview in the Workfront documentation.
+For more information on signing the agreement, see [Sign the Adobe Gen AI agreement](https://experienceleague.adobe.com/ja/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) in the article AI Assistant overview in the Workfront documentation.
 
 ## Get information from AI Assistant
 
