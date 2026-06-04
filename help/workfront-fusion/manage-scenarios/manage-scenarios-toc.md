@@ -7,12 +7,11 @@ feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: b2e48618-cc55-429e-9bed-c62ba60a6249
 TQID: https://experienceleague.adobe.com/EUSuZIyMovl2W3PlmmGaJ6rivpwQWZIJMKbZ4VGJDgw
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: c7b8bfa2f26bf6352ad874aacb9bc765039ae34c
 workflow-type: tm+mt
-source-wordcount: 95
-ht-degree: 66%
+source-wordcount: 106
+ht-degree: 59%
 
 ---
 
@@ -35,3 +34,5 @@ ht-degree: 66%
 * [シナリオ要素の削除](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
 * [「シナリオ」エリアからシナリオを管理します](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
 * [Webhookの編集](/help/workfront-fusion/manage-scenarios/edit-webhooks.md)
+* [シナリオ実行のリトリガー](/help/workfront-fusion/manage-scenarios/retrigger-specific-execution.md)
+* [1回実行してシナリオをテストする](/help/workfront-fusion/manage-scenarios/run-once.md)
