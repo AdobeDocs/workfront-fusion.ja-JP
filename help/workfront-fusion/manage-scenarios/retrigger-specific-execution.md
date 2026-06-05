@@ -3,9 +3,8 @@ title: 特定のシナリオ実行のリトリガー
 description: 特定のシナリオ実行を再トリガーして、更新されたシナリオブループリントを使用してデータを処理したり、データフローを表示したりできます。
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 9c05aa1111fd571ea6f0ff86943b2849a39e4973
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 0c732add9c1ec75d7aed43bb7097bb1c95aa6408
 workflow-type: tm+mt
 source-wordcount: 523
 ht-degree: 18%
@@ -97,6 +96,9 @@ Webhook について詳しくは、[インスタントトリガー（Webhook）]
 
 
 ![実行からのリトリガー](assets/retrigger-from-execution.png)
+
+
+
 
 
 
