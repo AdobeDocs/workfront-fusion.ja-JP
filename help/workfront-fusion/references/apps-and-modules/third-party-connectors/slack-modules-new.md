@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 4c14fa36-8333-40d6-bd0a-fc6b0d9f4410
 TQID: https://experienceleague.adobe.com/fHIb5n3hU15APXxrrQiEmT-KS9aIlN-4hjUByFfpG-I
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 4620
@@ -20,7 +22,7 @@ ht-degree: 37%
 >
 >この記事では、2025年11月17日（PT）にリリースされた新しいSlack コネクタで使用可能なモジュールについて説明します。
 >
->従来のSlack コネクタについて詳しくは、[[!DNL Slack] modules （Legacy） ](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)を参照してください。
+>従来のSlack コネクタについて詳しくは、[[!DNL Slack] modules （Legacy） &#x200B;](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)を参照してください。
 
 [!DNL Adobe Workfront Fusion] のシナリオでは、[!DNL Slack] を使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
 
@@ -144,7 +146,7 @@ Slack コネクタでは、次の機能が使用されます。
    <td>ブロックは、メッセージをカスタマイズおよび整理するために使用できる再利用可能なコンポーネントです。 ブロックについて詳しくは、[!DNL Slack] ドキュメント内の <a href="https://api.slack.com/block-kit">Block Kit</a> を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL スレッド メッセージ ID （タイムスタンプ） ]</td> 
+   <td role="rowheader">[!UICONTROL スレッド メッセージ ID （タイムスタンプ） &#x200B;]</td> 
    <td>新しいメッセージが返信の場合は、返信するメッセージのタイムスタンプを入力します。 返信済みのメッセージのタイムスタンプは入力しないでください。</td> 
   </tr> 
   <tr> 
@@ -197,7 +199,7 @@ Slack コネクタでは、次の機能が使用されます。
    <td> <p>チャネル ID を入力またはマッピングします。</p> <p>メモ：チャネル ID は、[!UICONTROL List Channels] モジュールを使用して取得できます。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL メッセージ ID （タイムスタンプ） ]</td> 
+   <td role="rowheader">[!UICONTROL メッセージ ID （タイムスタンプ） &#x200B;]</td> 
    <td> <p> 削除するメッセージのタイムスタンプを入力またはマッピングします。</p> <p>注意：タイムスタンプは、Watch Private Channel Moduleなどの別のモジュールを使用して取得できます。</p> </td> 
   </tr> 
  </tbody> 
@@ -272,7 +274,7 @@ Slack コネクタでは、次の機能が使用されます。
    <td>返信を取得するメッセージを含むチャネルのタイプを選択し、そのチャネルを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL親メッセージ ID （タイムスタンプ） ]</td> 
+   <td role="rowheader">[!UICONTROL 親メッセージ ID （タイムスタンプ） &#x200B;]</td> 
    <td> <p> 返信を取得するメッセージのメッセージタイムスタンプを入力またはマッピングします。</p> <p>注意：タイムスタンプは、[!UICONTROL Watch Public Channel] モジュールなどの別のモジュールを使用して取得できます。</p> </td> 
   </tr> 
   <tr> 
@@ -333,7 +335,7 @@ Slack コネクタでは、次の機能が使用されます。
    <td role="rowheader"> <p>[!UICONTROL Enter a channel ID or name]</p> </td> 
    <td> <p>必要なメッセージを選択する方法を選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p><strong>[!UICONTROL チャネル IDまたは名前]</strong> フィールドに、メッセージを含むチャネル IDまたはチャネルのチャネル IDを入力またはマッピングしてから、メッセージの<strong>[!UICONTROL タイムスタンプ （メッセージ ID） ]</strong>を入力します。 .</p> <p>メモ：チャネル ID は、[!UICONTROL List Channels] モジュールを使用して取得できます。</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p><strong>[!UICONTROL チャネル IDまたは名前]</strong> フィールドに、メッセージを含むチャネル IDまたはチャネルのチャネル IDを入力またはマッピングしてから、メッセージの<strong>[!UICONTROL タイムスタンプ （メッセージ ID） &#x200B;]</strong>を入力します。 .</p> <p>メモ：チャネル ID は、[!UICONTROL List Channels] モジュールを使用して取得できます。</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>チャネルのタイプを選択し、チャネルを選択して、メッセージを選択します。</p> </li> 
     </ul> </td> 
   </tr> 
@@ -581,7 +583,7 @@ This action module downloads a file from a URL. It must follow the [!UICONTROL S
    <td> <p>[!DNL Slack] アカウントを[!DNL Workfront Fusion]に接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">接続を[!DNL Adobe Workfront Fusion]に作成 – 基本的な手順</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL チャンネル ]</td> 
+   <td role="rowheader">[!UICONTROL チャンネル &#x200B;]</td> 
    <td> <p>ファイルをアップロードする各チャネルについて、<b>[!UICONTROL Add item]</b>をクリックし、チャネルタイプとチャネルを選択します。</p> </td> 
   </tr> 
   <tr> 
@@ -593,11 +595,11 @@ This action module downloads a file from a URL. It must follow the [!UICONTROL S
    <td>アップロードするファイルのタイトルを入力します</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL スレッド ID （タイムスタンプ） ]</td> 
+   <td role="rowheader">[!UICONTROL スレッド ID （タイムスタンプ） &#x200B;]</td> 
    <td> <p>ファイルを返信としてアップロードする場合は、返信するメッセージのタイムスタンプを入力またはマッピングします。</p> <p>注意：タイムスタンプは、[!UICONTROL Watch Private Channel] モジュールなどの別のモジュールを使用して取得できます。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL初期コメント ]</td> 
+   <td role="rowheader">[!UICONTROL 初期コメント &#x200B;]</td> 
    <td> <p>ファイルを導入するメッセージのテキストを入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 
@@ -678,7 +680,7 @@ This action module downloads a file from a URL. It must follow the [!UICONTROL S
    <td> <p>新しいチャネルの名前を入力またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROLはプライベートです]</td> 
+   <td role="rowheader">[!UICONTROL はプライベートです]</td> 
    <td>新しいチャネルをプライベートに設定するには、このオプションを有効にします。</td> 
   </tr> 
  </tbody> 
@@ -909,7 +911,7 @@ This action module downloads a file from a URL. It must follow the [!UICONTROL S
    <td>反応を追加するチャネルまたはユーザーを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL メッセージ ID （タイムスタンプ） ]</td> 
+   <td role="rowheader">[!UICONTROL メッセージ ID （タイムスタンプ） &#x200B;]</td> 
    <td> <p> 反応を追加するメッセージのタイムスタンプを入力またはマッピングします。</p> <p>注意：タイムスタンプは、[!UICONTROL Watch Private Channel] モジュールなどの別のモジュールを使用して取得できます。</p> </td> 
   </tr> 
   <tr> 
