@@ -5,20 +5,23 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
 TQID: https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
-source-wordcount: 625
-ht-degree: 15%
+source-wordcount: 883
+ht-degree: 10%
 
 ---
 
 # チェーンモジュール
 
->[!NOTE]
+>[!IMPORTANT]
 >
->この機能は現在Betaにあります。
+>この機能はBetaにあり、ミッションクリティカルな実稼動ワークフローには推奨されません。 Betaの機能では、動作が変更され、エッジケースが完全に処理されない場合があります。
+>
+>安定した統合を実現するには、HTTP リクエストモジュールを使用してWebhookを介して2番目のシナリオをトリガーすることを検討してください。このパターンでは、完全にサポートされているプリミティブを使用し、各シナリオに独立した実行制御を与えます。
+>
+>チェーン付きシナリオを使用する場合は、[複数のシナリオをまとめて](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)設計ガイダンスを確認してください。
 
 チェーンモジュールを使用すると、1つのシナリオを別のシナリオに接続できます。
 
@@ -74,7 +77,7 @@ ht-degree: 15%
 
    シナリオの入力データとして使用する新しいデータ構造を作成するには、「データ構造」フィールドの横にある「**追加**」をクリックし、データ構造を作成します。
 
-   データ構造の作成手順については、[&#x200B; データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
+   データ構造の作成手順については、[ データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
 
 1. 「**OK**」をクリックして、モジュールを保存します。
 
@@ -83,6 +86,16 @@ ht-degree: 15%
 #### 子シナリオの呼び出し
 
 このモジュールは親シナリオにあります。 フィールドには、子シナリオの「親モジュールからデータを受信」モジュールで設定されたデータ構造が反映されます。
+
+>[!IMPORTANT]
+>
+> 実稼動シナリオでこのモジュールを設定する前に、次の点を確認してください。
+>
+> * **火災と忘れが無効になっている場合、このシナリオでトリガーの最後のコミット（CTL）**&#x200B;を有効にしないでください。 CTLは、子レスポンスの待機中を一時停止し、制限のない再試行ループを作成すると、シナリオを再試行します。
+> * **このモジュールをイテレーター内に配置する場合は注意してください。** 大きなイテレーターの各項目に対して子シナリオをディスパッチすると、プラットフォームの負荷が大幅に増大します。 子シナリオのロジックをインライン化するか、イテレーター外で共有ルックアップを事前に計算することを検討してください。
+> * **失火と忘れ**&#x200B;は、親が子の実行または成功を確認できないことを意味します。 子の障害が個別に監視されている場合にのみ使用します。
+>
+> 完全な設計ガイダンスについては、[複数のシナリオを一緒にチェーン ](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)するを参照してください。
 
 >[!NOTE]
 >
@@ -112,7 +125,11 @@ ht-degree: 15%
 
 これは子シナリオにあり、選択した構造のデータを親シナリオに送信します。 このデータは、親シナリオの後のモジュールにマッピングできます。
 
-子シナリオに複数のルートがある場合は、常に他のルートの後で実行されるルートにこのモジュールを追加することをお勧めします。
+>[!IMPORTANT]
+>
+> 子シナリオに複数のルートがある場合は、**親モジュールへの返信応答がすべての実行パスから到達可能であることを確認する必要があります**。 Return応答モジュールがスキップされるか実行されないルート上にある場合、親シナリオは応答が決して届かないように無期限に待機します。
+>
+> ルーターの結果に関係なく常に実行されるルートに、ルーターの後に親モジュールに戻り応答を追加するか、エラーが発生した場合でも常に応答が返されるようにするためにエラー処理を追加します。
 
 レスポンダーを追加モジュールを設定するには：
 
@@ -122,6 +139,6 @@ ht-degree: 15%
 
    データの新しいデータ構造を作成するには、「データ構造」フィールドの横にある「**追加**」をクリックし、データ構造を作成します。
 
-   データ構造の作成手順については、[&#x200B; データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
+   データ構造の作成手順については、[ データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
 
 1. 「**OK**」をクリックして、モジュールを保存します。
