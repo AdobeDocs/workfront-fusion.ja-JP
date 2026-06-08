@@ -96,7 +96,7 @@ ht-degree: 10%
 > * **このモジュールをイテレーター内に配置する場合は注意してください。** 大きなイテレーターの各項目に対して子シナリオをディスパッチすると、プラットフォームの負荷が大幅に増大します。 子シナリオのロジックをインライン化するか、イテレーター外で共有ルックアップを事前に計算することを検討してください。
 > * **失火と忘れ**&#x200B;は、親が子の実行または成功を確認できないことを意味します。 子の障害が個別に監視されている場合にのみ使用します。
 >
-> 完全な設計ガイダンスについては、[複数のシナリオを一緒にチェーン &#x200B;](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)するを参照してください。
+> 完全な設計ガイダンスについては、[複数のシナリオを一緒にチェーン &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)するを参照してください。
 
 >[!NOTE]
 >
