@@ -10,7 +10,7 @@ product_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 7326
 ht-degree: 34%
@@ -111,9 +111,9 @@ HubSpot CRM コネクタでは、次の機能が使用されます。
 * [チケット](#tickets)
 * [フォーム](#forms)
 * [ソーシャルメディア（放送）](#social-media-broadcast)
-* [&#x200B; ブログ投稿](#blog-posts)
+* [ブログ投稿](#blog-posts)
   <!--* [Workflows]()-->
-* [件のサブスクリプション](#subscriptions)
+* [サブスクリプション](#subscriptions)
   <!--* [Associations]()-->
 * [その他](#other)
 
@@ -724,7 +724,7 @@ HubSpot CRM コネクタでは、次の機能が使用されます。
 
 +++ **[!UICONTROL 契約の CRM パイプラインの取得]**
 
-特定の契約パイプラインを返します。
+特定の取引パイプラインを返します。
 
 <table style="table-layout:auto"> 
  <col> 

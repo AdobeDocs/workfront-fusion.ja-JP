@@ -8,7 +8,7 @@ exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
 TQID: https://experienceleague.adobe.com/gze4-OOI8ekVaS71VgkFeT3Yef1xUoqumWYauC9Es2I
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 770
 ht-degree: 25%
@@ -51,7 +51,7 @@ ht-degree: 25%
 
 **例：**&#x200B;このシナリオでは、Adobe Workfrontからドキュメントをダウンロードし、[!DNL Dropbox]のフォルダーに送信すると、データは次のように流れます。
 
-最初のモジュールで実行されるシナリオの最初の手順は、Workfrontでドキュメントを監視することです。見つかった各文書は1つのバンドルと見なされます。 モジュールが実行されてもバンドルが見つからない場合、シナリオは最初のモジュールの後で終了します。
+最初のモジュールで実行されるシナリオの最初の手順は、Workfrontでドキュメントを監視することです。 見つかった各文書は1つのバンドルと見なされます。 モジュールが実行されてもバンドルが見つからない場合、シナリオは最初のモジュールの後で終了します。
 
 バンドルが返されると、そのバンドルは残りのシナリオに渡されていきます。 この例では、シナリオの残りの部分は2番目のモジュールで構成され、バンドルが[!DNL Dropbox] フォルダーにアップロードされます。
 

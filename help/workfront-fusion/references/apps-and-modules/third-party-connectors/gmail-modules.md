@@ -11,10 +11,10 @@ feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 1871
-ht-degree: 86%
+ht-degree: 85%
 
 ---
 
@@ -160,7 +160,7 @@ OAuth クライアントを作成し、[!UICONTROL クライアント ID] およ
 * [[!UICONTROL メールを未読としてマーク]](#mark-an-email-as-unread)
 * [[!UICONTROL メールの移動]](#move-an-email)
 * [[!UICONTROL メールラベルの変更]](#modify-email-labels)
-* [[!UICONTROL 電子メールを送信]](#send-an-email)
+* [[!UICONTROL メールの送信]](#send-an-email)
   <!--* [Delete labels](#delete-labels)-->
   <!--* [Set labels](#set-labels)-->
 
@@ -170,7 +170,7 @@ OAuth クライアントを作成し、[!UICONTROL クライアント ID] およ
 
 このアクションモジュールは、メールまたはメールのドラフトを指定したフォルダーにコピーします。
 
-メールのフォルダー、宛先フォルダー、および ID を指定します。
+フォルダー、宛先フォルダー、メールのIDを指定します。
 
 モジュールは、メールの ID と関連するフィールドのほか、接続がアクセスするカスタムフィールドと値を返します。 この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
@@ -370,7 +370,7 @@ OAuth クライアントを作成し、[!UICONTROL クライアント ID] およ
 
 このアクションモジュールは、メールまたはメールの下書きを指定したフォルダーに移動します。
 
-メールのフォルダー、宛先フォルダー、および ID を指定します。
+フォルダー、宛先フォルダー、メールのIDを指定します。
 
 モジュールは、メールの ID と関連するフィールドのほか、接続がアクセスするカスタムフィールドと値を返します。 この情報は、シナリオ内の後続のモジュールにマッピングできます。
 

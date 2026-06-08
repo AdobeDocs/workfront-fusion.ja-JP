@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 777
-ht-degree: 51%
+ht-degree: 50%
 
 ---
 
@@ -125,7 +125,7 @@ ht-degree: 51%
 単一モジュールを実行するには：
 
 1. モジュールを右クリックし、表示されるメニューで「**[!UICONTROL このモジュールのみを実行]**」をクリックします。
-1. 入力項目のサンプル値を指定し、「**[!UICONTROL OK]**」をクリックします。
+1. 入力項目にサンプル値を指定し、**[!UICONTROL OK]**&#x200B;をクリックします。
 1. モジュールの実行が終了したら、モジュールの上のバブルをクリックして、その出力全体を確認します。
 
    以降のモジュールのマッピングパネルに、モジュールの出力のすべての項目が含まれるようになりました。
