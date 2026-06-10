@@ -7,9 +7,9 @@ exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
 TQID: https://experienceleague.adobe.com/L-0fyqwvahM--LXM15no9APxcFNkAsoYqHwAqO1bAno
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 50a1b6a8f8e3ad09c8734e901f8f0dab36f79e2e
 workflow-type: tm+mt
-source-wordcount: 902
+source-wordcount: 899
 ht-degree: 66%
 
 ---
@@ -93,12 +93,27 @@ Adobe Workfront Fusion公開証明書をweb サービスにアップロードす
 >
 >* これらは非ワイルドカードの mTLS 証明書です。
 
+次のzip ファイルをダウンロードし、それを解凍して、データセンターにPEM ファイルを使用します。
+
+[Workfront Fusion 2026証明書のダウンロード](assets/2026-certs/fusion-prod-mtls-certificate-2026.zip)
+
 | Datacenter | ダウンロードリンク | 日付は有効です |
 | --- | --- | --- |
-| US AWS Datacenter | [Workfront Fusion US証明書2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem)をダウンロード | 2026年1月29日～2027年3月2日 |
-| US Azure クラスター | [Workfront Fusion US Azure Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-az-mtls-certificate.pem)をダウンロード | 2025年9月21日～2026年10月23日 |
-| EU AWS データセンター | [Workfront Fusion EU証明書2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem)をダウンロード | 2026年1月29日～2027年3月2日 |
-| EUAzureクラスター | [Workfront Fusion EU Azure証明書2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem)をダウンロード | 2026年2月4日～2027年3月8日 |
+| US AWS Datacenter | `fusion-prod-us-mtls-certificate-2026.pem` | 2026年1月29日～2027年3月2日 |
+| US Azure クラスター | `fusion-prod-az-mtls-certificate.pem` | 2025年9月21日～2026年10月23日 |
+| EU AWS データセンター | `fusion-prod-eu-mtls-certificate-2026.pem` | 2026年1月29日～2027年3月2日 |
+| EUAzureクラスター | `fusion-prod-eu-az-mtls-certificate-2026.pem` | 2026年2月4日～2027年3月8日 |
+
+<!--
+
+| Datacenter | Download link | Dates valid |
+| --- | --- | --- |
+| US AWS Datacenter | [Download Workfront Fusion US Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | January 29, 2026 to March 2, 2027 |
+| US Azure Cluster | [Download Workfront Fusion US Azure Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-az-mtls-certificate.pem) | September 21, 2025 to October 23, 2026 |
+| EU AWS Datacenter | [Download Workfront Fusion EU Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | January 29, 2026 to March 2, 2027 |
+| EU Azure Cluster | [Download Workfront Fusion EU Azure Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | February 4, 2026 to March 8, 2027 |
+
+-->
 
 ### 2025年の証明書
 
@@ -112,11 +127,26 @@ Adobe Workfront Fusion公開証明書をweb サービスにアップロードす
 >
 >* これらは非ワイルドカードの mTLS 証明書です。
 
-| Datacenter | ダウンロードリンク | 日付は有効です |
+次のzip ファイルをダウンロードし、それを解凍して、データセンターにPEM ファイルを使用します。
+
+[Workfront Fusion 2025証明書のダウンロード](assets/2025-certs/fusion-prod-mtls-certificate-2025.zip)
+
+| Datacenter | ファイル | 日付は有効です |
 | --- | --- | --- |
-| US Datacenter | [Workfront Fusion US証明書2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem)をダウンロード | 2025年3月3日～2026年4月4日 |
-| EU Datacenter | [Workfront Fusion EU証明書2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem)のダウンロード | 2025年3月3日～2026年4月4日 |
-| Azure クラスター | [Workfront Fusion Azure証明書のダウンロード 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | 2024年10月24日～2025年11月25日 |
+| US Datacenter | `fusion-prod-us-mtls-certificate.pem` | 2025年3月3日～2026年4月4日 |
+| EU Datacenter | `fusion-prod-eu-mtls-certificate.pem` | 2025年3月3日～2026年4月4日 |
+| Azure クラスター | `fusion-prod-az-mtls-certificate.pem` | 2024年10月24日～2025年11月25日 |
+
+
+<!--
+
+| Datacenter | Download link | Dates valid |
+| --- | --- | --- |
+| US Datacenter | [Download Workfront Fusion US Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | March 3, 2025 to April 4, 2026 |
+| EU Datacenter | [Download Workfront Fusion EU Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | March 3, 2025 to April 4, 2026 |
+| Azure Cluster | [Download Workfront Fusion Azure Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | October 24, 2024 to November 25, 2025 |
+
+-->
 
 <!--
 
@@ -152,3 +182,4 @@ Adobe Workfront Fusion公開証明書をweb サービスにアップロードす
 
 1. モジュールの下部付近にある「**[!UICONTROL 詳細設定を表示]**」を有効にします。
 1. 「**[!UICONTROL 相互 TLS を使用]**」を有効にします。
+
