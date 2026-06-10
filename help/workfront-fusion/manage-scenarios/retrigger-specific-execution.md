@@ -3,9 +3,8 @@ title: 特定のシナリオ実行のリトリガー
 description: 特定のシナリオ実行を再トリガーして、更新されたシナリオブループリントを使用してデータを処理したり、データフローを表示したりできます。
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 0c732add9c1ec75d7aed43bb7097bb1c95aa6408
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 5859bbef4f45fd4741d89ba1795df8a67fa5beaa
 workflow-type: tm+mt
 source-wordcount: 523
 ht-degree: 18%
@@ -18,7 +17,7 @@ ht-degree: 18%
 
 例えば、シナリオを更新してイシューの作成などのアクションを追加する場合、更新前に発生した実行を再トリガーできます。 更新されたシナリオは、元のシナリオのトリガーイベントを使用して実行されますが、更新されたアクションが含まれます。 この例では、シナリオは新しい実行の一部としてイシューを作成します。
 
-リトリガーは、Webhookトリガーを持つシナリオと子シナリオで使用できます。
+リトリガーは、Webhookトリガーを持つシナリオとチェーン付きシナリオで使用できます。
 
 Webhookを使用するシナリオをリトリガーする場合、元のWebhook イベントを再度使用できるため、シナリオをリトリガーするためにイベントを再作成する必要はありません。
 
