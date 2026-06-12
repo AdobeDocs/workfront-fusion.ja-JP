@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: c9c182d6c6acc34295970f9138067a6cb6c2ba2a
 workflow-type: tm+mt
 source-wordcount: 1360
@@ -48,7 +49,7 @@ ht-degree: 76%
 
   安定した統合を実現するには、HTTP リクエストモジュールを使用してWebhookを介して2番目のシナリオをトリガーすることを検討してください。 このパターンは、完全にサポートされているプリミティブを使用し、各シナリオに独立した実行制御を与えます。
 
-  チェーン付きシナリオを使用する場合は、[複数のシナリオを一緒にチェーン ](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)する記事の設計ガイダンスと制約を確認してください。
+  チェーン付きシナリオを使用する場合は、[複数のシナリオを一緒にチェーン &#x200B;](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)する記事の設計ガイダンスと制約を確認してください。
 
 ## 操作
 
