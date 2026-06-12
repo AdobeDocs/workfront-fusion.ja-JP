@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: c9c182d6c6acc34295970f9138067a6cb6c2ba2a
 workflow-type: tm+mt
-source-wordcount: 1351
-ht-degree: 77%
+source-wordcount: 1360
+ht-degree: 76%
 
 ---
 
@@ -32,7 +31,7 @@ ht-degree: 77%
   >
   > チェーンを使用すると、ワークフローを40分以上実行できますが、これはサポートされる回避策ではなく、設計リスクシグナルとして扱う必要があります。 複数の長時間実行中の子シナリオにまたがる親シナリオには、全体的なタイムアウト境界はありません。 子シナリオがハングするか、プラットフォームの問題が発生した場合、親はエラーなしで無期限に待機し、自動回復は行われません。
   >
-  > シナリオデザインで40分の制限を回避するためにチェーンが必要な場合は、実稼動にデプロイする前にアーキテクチャを確認してください。 設計ガイダンスについては、[複数のシナリオをまとめる](https://experienceleague.adobe.com/ja/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)を参照してください。
+  > シナリオデザインで40分の制限を回避するためにチェーンが必要な場合は、実稼動にデプロイする前にアーキテクチャを確認してください。 設計ガイダンスについては、[複数のシナリオをまとめる](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)を参照してください。
 * シナリオのブループリントの最大サイズは **5 MB** ですが、シナリオのサイズは **3 MB** 以下にすることをお勧めします。
 
   多数のフィールドを持つデータを作成または更新するアプリモジュールは、非常に大きなブループリントが発生する可能性があります。
@@ -41,6 +40,7 @@ ht-degree: 77%
    * 他のアプリを使用する場合は、カスタム API モジュールを使用して、多数のフィールドを持つ任意のレコードタイプを操作します。
 
 * シナリオ内のモジュール数にキャップはありませんが、150 を超えるモジュールを持つシナリオは、Workfront Fusion システムのパフォーマンスに悪影響を与えます。 このため、150 を超えるモジュールを使用したシナリオの作成はお勧めしません。
+* シナリオ名は120文字以内で指定できます。
 
 ## 連鎖したシナリオ
 
@@ -48,7 +48,7 @@ ht-degree: 77%
 
   安定した統合を実現するには、HTTP リクエストモジュールを使用してWebhookを介して2番目のシナリオをトリガーすることを検討してください。 このパターンは、完全にサポートされているプリミティブを使用し、各シナリオに独立した実行制御を与えます。
 
-  チェーン付きシナリオを使用する場合は、[複数のシナリオを一緒にチェーン &#x200B;](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)する記事の設計ガイダンスと制約を確認してください。
+  チェーン付きシナリオを使用する場合は、[複数のシナリオを一緒にチェーン ](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)する記事の設計ガイダンスと制約を確認してください。
 
 ## 操作
 
