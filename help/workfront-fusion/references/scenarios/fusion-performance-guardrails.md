@@ -7,10 +7,10 @@ exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+source-git-commit: c9c182d6c6acc34295970f9138067a6cb6c2ba2a
 workflow-type: tm+mt
-source-wordcount: 1351
-ht-degree: 77%
+source-wordcount: 1360
+ht-degree: 76%
 
 ---
 
@@ -41,6 +41,7 @@ ht-degree: 77%
    * 他のアプリを使用する場合は、カスタム API モジュールを使用して、多数のフィールドを持つ任意のレコードタイプを操作します。
 
 * シナリオ内のモジュール数にキャップはありませんが、150 を超えるモジュールを持つシナリオは、Workfront Fusion システムのパフォーマンスに悪影響を与えます。 このため、150 を超えるモジュールを使用したシナリオの作成はお勧めしません。
+* シナリオ名は120文字以内で指定できます。
 
 ## 連鎖したシナリオ
 
