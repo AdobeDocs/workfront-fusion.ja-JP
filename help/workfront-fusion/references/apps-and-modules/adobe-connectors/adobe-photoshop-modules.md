@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
 TQID: https://experienceleague.adobe.com/RratZmko93V0LMxJ6qTy6cNvRqgPNvNgHTflRngE6BI
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 19cca2c98ca25a7aee5c5c067d7287ab98c8b79f
 workflow-type: tm+mt
-source-wordcount: 5506
-ht-degree: 15%
+source-wordcount: 6526
+ht-degree: 14%
 
 ---
 
@@ -21,7 +19,7 @@ ht-degree: 15%
 Adobe Workfront Fusion のシナリオでは、[!DNL Adobe Photoshop] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりすることができます。
 
 
-シナリオの作成手順が必要な場合は、[&#x200B; シナリオの作成：記事インデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
+シナリオの作成手順が必要な場合は、[ シナリオの作成：記事インデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
 
 モジュールについて詳しくは、[モジュール：記事インデックス](/help/workfront-fusion/references/modules/modules-toc.md)の記事を参照してください。
 
@@ -130,7 +128,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Organization ID]</td>
-        <td>JWT接続を使用している場合は、[!DNL Adobe] [!UICONTROL 組織ID]を入力します。 これは、の[!UICONTROL Credentials]の詳細セクションにあります。 [!DNL Adobe Developer Console]</td>
+        <td>JWT接続を使用している場合は、[!DNL Adobe] [!UICONTROL組織ID]を入力します。 これは、の[!UICONTROL Credentials]の詳細セクションにあります。 [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Private key]</td>
@@ -203,7 +201,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
       <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （Input） ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL （Input） ストレージ ]</td>
       <td>
         <p>編集するファイルが保存されているファイルサービスを選択します。</p>
       </td>
@@ -252,7 +250,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （オプション/ドキュメント） トリミング &#x200B;]</p>
+        <p>[!UICONTROL （オプション/ドキュメント） トリミング ]</p>
       </td>
    <td> 「透明なピクセル」を選択して、画像内の透明なピクセルに基づいてトリムを作成します。 </td> 
     </tr>
@@ -283,11 +281,11 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
     <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>
       <td>
-        <p>作成する編集ファイルごとに、「項目を追加」をクリックし、この表に示すように、ストレージ、場所、タイプを入力します。</p>
+        <p>作成する編集済みファイルごとに、「項目を追加」をクリックし、リストに表示されているストレージ、場所、タイプを入力します。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （Output） ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL （Output） ストレージ ]</td>
       <td>
         <p>新しいファイルを保存するファイルサービスを選択します。</p><p>Fusionの内部ストレージを選択すると、ファイルは後のモジュールで使用できますが、シナリオ外では使用できません。</p>
       </td>
@@ -332,7 +330,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
       <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （Input） ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL （Input） ストレージ ]</td>
       <td>
         <p>カラー補正するファイルが保存されているファイルサービスを選択します。</p>
       </td>
@@ -344,7 +342,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
    <td> カラー補正するファイルのURLまたはパスを入力またはマッピングします。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （Output） ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL （Output） ストレージ ]</td>
       <td>
         <p>新しいファイルを保存するファイルサービスを選択します。</p><p>Fusionの内部ストレージを選択すると、ファイルは後のモジュールで使用できますが、シナリオ外では使用できません。</p>
       </td>
@@ -383,7 +381,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
       <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （Input） ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL （Input） ストレージ ]</td>
       <td>
         <p>背景を削除するファイルが保存されているファイルサービスを選択します。</p>
       </td>
@@ -397,11 +395,11 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
     <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>
       <td>
-        <p>作成する変換された各ファイルについて、「項目を追加」をクリックし、この表に示すように、ストレージ、場所、およびタイプを入力します。</p>
+        <p>作成する変換された各ファイルについて、「項目を追加」をクリックし、リストに表示されているようにストレージ、場所、およびタイプを入力します。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （Output） ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL （Output） ストレージ ]</td>
       <td>
         <p>新しいファイルを保存するファイルサービスを選択します。</p><p>Fusionの内部ストレージを選択すると、ファイルは後のモジュールで使用できますが、シナリオ外では使用できません。</p>
       </td>
@@ -440,7 +438,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
       <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （Input） ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL （Input） ストレージ ]</td>
       <td>
         <p>マスクを作成するファイルが保存されているファイルサービスを選択します。</p>
       </td>
@@ -452,7 +450,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
    <td> マスクを作成するファイルのURLまたはパスを入力またはマッピングします。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （Output） ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL （Output） ストレージ ]</td>
       <td>
         <p>マスクファイルを保存するファイルサービスを選択します。</p><p>Fusionの内部ストレージを選択すると、ファイルは後のモジュールで使用できますが、シナリオ外では使用できません。</p>
       </td>
@@ -471,7 +469,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL カラースペース &#x200B;]</p>
+        <p>[!UICONTROL カラースペース ]</p>
       </td>
    <td>出力画像でRGBとRGBA カラーのどちらを使用するかを選択します。 </td> 
     </tr>
@@ -489,7 +487,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Post プロセス &#x200B;]</p>
+        <p>[!UICONTROL Post プロセス ]</p>
       </td>
    <td>後処理を有効にするかどうかを選択します。</td> 
     </tr>
@@ -512,7 +510,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
+      <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続を作成を参照してください。</td>
     </tr>
     <tr>
       <td role="rowheader">
@@ -534,7 +532,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （オプション &gt; ドキュメント） モード &#x200B;]</p>
+        <p>[!UICONTROL （オプション &gt; ドキュメント） モード ]</p>
       </td>
    <td> 画像のモードを選択します。 </td> 
     </tr>
@@ -577,11 +575,11 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
     <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>
       <td>
-        <p>作成する各ファイルについて、「項目を追加」をクリックし、この表に示すように、ストレージ、場所、およびタイプを入力します。</p>
+        <p>作成する各ファイルについて、「項目を追加」をクリックし、リストに表示されているようにストレージ、場所、およびタイプを入力します。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （Output） ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL （Output） ストレージ ]</td>
       <td>
         <p>新しいファイルを保存するファイルサービスを選択します。</p><p>Fusionの内部ストレージを選択すると、ファイルは後のモジュールで使用できますが、シナリオ外では使用できません。</p>
       </td>
@@ -620,14 +618,14 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
       <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 入力ファイル ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL入力ファイル ストレージ ]</td>
       <td>
         <p>編集するファイルが保存されているファイルサービスを選択します。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 入力ファイル URL]</p>
+        <p>[!UICONTROL入力ファイル URL]</p>
       </td>
    <td> 編集するファイルのURLまたはパスを入力またはマッピングします。 </td> 
     </tr>
@@ -653,7 +651,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
       <td role="rowheader">[!UICONTROL レイヤー]</td>
    <td> <p>編集する各テキストレイヤーについて、<b>項目を追加</b>をクリックし、レイヤーオプションを入力します。<p>レイヤーオプションについて詳しくは、Adobe Photoshop ドキュメントの<a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync"> テキストを編集</a>を参照してください。</p>  </td>     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （Output） ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL （Output） ストレージ ]</td>
       <td>
         <p>編集したファイルを保存するファイルサービスを選択します。</p>
       </td>
@@ -683,7 +681,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
 
 このアクションモジュールは、Photoshop ファイルのテキストレイヤーを編集します。
 
-複数のレイヤーを編集するには、[&#x200B; テキストレイヤーを編集](#edit-text-layers) モジュールを使用します。
+複数のレイヤーを編集するには、[ テキストレイヤーを編集](#edit-text-layers) モジュールを使用します。
 
 <table style="table-layout:auto"> 
   <col/>
@@ -694,14 +692,14 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
       <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 入力ファイル ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL入力ファイル ストレージ ]</td>
       <td>
         <p>編集するファイルが保存されているファイルサービスを選択します。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 入力ファイル URL]</p>
+        <p>[!UICONTROL入力ファイル URL]</p>
       </td>
    <td> 編集するファイルのURLまたはパスを入力またはマッピングします。 </td> 
     </tr>
@@ -727,13 +725,13 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
       <td role="rowheader">[!UICONTROL レイヤー]</td>
    <td> <p>レイヤーオプションについて詳しくは、Adobe Photoshop ドキュメントの<a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync"> テキストレイヤーの編集</a>を参照してください。</p>  </td>     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 出力ファイル ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL出力ファイル ストレージ ]</td>
       <td>
         <p>編集したファイルを保存するファイルサービスを選択します。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （Output） ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL （Output） ストレージ ]</td>
       <td>
         <p>編集したファイルを保存するファイルサービスを選択します。</p>
       </td>
@@ -773,7 +771,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
       <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （Input） ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL （Input） ストレージ ]</td>
       <td>
         <p>編集するファイルが保存されているファイルサービスを選択します。</p>
       </td>
@@ -806,11 +804,11 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
     <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>
       <td>
-        <p>作成する各ファイルについて、「項目を追加」をクリックし、この表に示すように、「ストレージ」、「場所」、「タイプ」、「上書き」オプションを入力します。</p>
+        <p>作成する各ファイルについて、「項目を追加」をクリックし、リストに表示されているストレージ、場所、タイプ、および上書きオプションを入力します。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （出力） ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL （出力） ストレージ ]</td>
       <td>
         <p>編集したファイルを保存するファイルサービスを選択します。</p><p>Fusionの内部ストレージを選択すると、ファイルは後のモジュールで使用できますが、シナリオ外では使用できません。</p>
       </td>
@@ -823,7 +821,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （出力） タイプ &#x200B;]</p>
+        <p>[!UICONTROL （出力） タイプ ]</p>
       </td>
    <td> 編集したファイルのファイルタイプを選択します。 </td> 
     </tr>
@@ -849,19 +847,19 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
       <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 入力ファイル ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL入力ファイル ストレージ ]</td>
       <td>
         <p>編集するファイルが保存されているファイルサービスを選択します。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 入力ファイル URL]</p>
+        <p>[!UICONTROL入力ファイル URL]</p>
       </td>
    <td> 編集するファイルのURLまたはパスを入力またはマッピングします。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （出力） ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL （出力） ストレージ ]</td>
       <td>
         <p>編集したファイルを保存するファイルサービスを選択します。</p><p>Fusionの内部ストレージを選択すると、ファイルは後のモジュールで使用できますが、シナリオ外では使用できません。</p>
       </td>
@@ -874,7 +872,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （出力） タイプ &#x200B;]</p>
+        <p>[!UICONTROL （出力） タイプ ]</p>
       </td>
    <td> 編集したファイルのファイルタイプを選択します。 </td> 
     </tr>
@@ -906,19 +904,19 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
       <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 入力ファイル ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL入力ファイル ストレージ ]</td>
       <td>
         <p>編集するファイルが保存されているファイルサービスを選択します。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 入力ファイル URL]</p>
+        <p>[!UICONTROL入力ファイル URL]</p>
       </td>
    <td> 編集するファイルのURLまたはパスを入力またはマッピングします。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Actions ファイル ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL Actions ファイル ストレージ ]</td>
       <td>
         <p>アクションファイルが保存されているファイルサービスを選択します。</p>
       </td>
@@ -948,7 +946,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
    <td> 使用するファイルのURLまたはパスを入力またはマッピングします。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （出力） ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL （出力） ストレージ ]</td>
       <td>
         <p>編集したファイルを保存するファイルサービスを選択します。</p><p>Fusionの内部ストレージを選択すると、ファイルは後のモジュールで使用できますが、シナリオ外では使用できません。</p>
       </td>
@@ -961,7 +959,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （出力） タイプ &#x200B;]</p>
+        <p>[!UICONTROL （出力） タイプ ]</p>
       </td>
    <td> 編集したファイルのファイルタイプを選択します。 </td> 
     </tr>
@@ -993,14 +991,14 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
       <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 入力ファイル ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL入力ファイル ストレージ ]</td>
       <td>
         <p>切り抜くファイルが保存されているファイルサービスを選択します。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 入力ファイル URL]</p>
+        <p>[!UICONTROL入力ファイル URL]</p>
       </td>
    <td> 切り抜くファイルのURLまたはパスを入力またはマッピングします。 </td> 
     </tr>
@@ -1023,7 +1021,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
    <td> 追加する高さパディングの量を入力またはマッピングします。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （出力） ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL （出力） ストレージ ]</td>
       <td>
         <p>編集したファイルを保存するファイルサービスを選択します。</p><p>Fusionの内部ストレージを選択すると、ファイルは後のモジュールで使用できますが、シナリオ外では使用できません。</p>
       </td>
@@ -1036,7 +1034,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （出力） タイプ &#x200B;]</p>
+        <p>[!UICONTROL （出力） タイプ ]</p>
       </td>
    <td> 編集したファイルのファイルタイプを選択します。 </td> 
     </tr>
@@ -1068,20 +1066,20 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
       <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 入力ファイル ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL入力ファイル ストレージ ]</td>
       <td>
         <p>レイヤー情報を取得するファイルが格納されているファイルサービスを選択します。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 入力ファイル URL]</p>
+        <p>[!UICONTROL入力ファイル URL]</p>
       </td>
    <td> レイヤー情報を取得するファイルのURLまたはパスを入力またはマッピングします。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL サムネール &#x200B;]</p>
+        <p>[!UICONTROL サムネール ]</p>
       </td>
    <td> サムネールを作成するファイルのタイプを選択します。 サムネールは、レンダリング可能なレイヤーの小さなプレビューです。</td> 
     </tr>
@@ -1148,7 +1146,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
       <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （Input） ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL （Input） ストレージ ]</td>
       <td>
         <p>背景を削除するファイルが保存されているファイルサービスを選択します。</p>
       </td>
@@ -1160,7 +1158,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
    <td> 背景を削除するファイルのURLまたはパスを入力またはマッピングします。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （Output） ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL （Output） ストレージ ]</td>
       <td>
         <p>新しいファイルを保存するファイルサービスを選択します。</p><p>Fusionの内部ストレージを選択すると、ファイルは後のモジュールで使用できますが、シナリオ外では使用できません。</p>
       </td>
@@ -1179,7 +1177,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL カラースペース &#x200B;]</p>
+        <p>[!UICONTROL カラースペース ]</p>
       </td>
    <td>出力画像でRGBとRGBA カラーのどちらを使用するかを選択します。 </td> 
     </tr>
@@ -1197,7 +1195,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Post プロセス &#x200B;]</p>
+        <p>[!UICONTROL Post プロセス ]</p>
       </td>
    <td>後処理を有効にするかどうかを選択します。</td> 
     </tr>
@@ -1225,7 +1223,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
       <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （Input） ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL （Input） ストレージ ]</td>
       <td>
         <p>スマートオブジェクトが保存されるファイルサービスを選択します。</p>
       </td>
@@ -1255,7 +1253,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （Output） ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL （Output） ストレージ ]</td>
       <td>
         <p>新しいファイルを保存するファイルサービスを選択します。</p><p>Fusionの内部ストレージを選択すると、ファイルは後のモジュールで使用できますが、シナリオ外では使用できません。</p>
       </td>
@@ -1268,7 +1266,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （出力） タイプ &#x200B;]</p>
+        <p>[!UICONTROL （出力） タイプ ]</p>
       </td>
    <td> 編集したファイルのファイルタイプを選択します。 </td> 
     </tr>
@@ -1290,7 +1288,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
       <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （Input） ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL （Input） ストレージ ]</td>
       <td>
         <p>スマートオブジェクトが保存されるファイルサービスを選択します。</p>
       </td>
@@ -1314,7 +1312,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （Output） ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL （Output） ストレージ ]</td>
       <td>
         <p>新しいファイルを保存するファイルサービスを選択します。</p><p>Fusionの内部ストレージを選択すると、ファイルは後のモジュールで使用できますが、シナリオ外では使用できません。</p>
       </td>
@@ -1352,7 +1350,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
       <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL ストレージ ]</td>
       <td>
         <p>サイズ変更するファイルが格納されているファイルサービスを選択します。</p><p>Fusionの内部ストレージを選択すると、ファイルは後のモジュールで使用できますが、シナリオ外では使用できません。</p>
       </td>
@@ -1366,12 +1364,12 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
     <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>
       <td>
-        <p>作成する変換された各ファイルについて、「項目を追加」をクリックし、この表に示すように、ストレージ、場所、およびその他のオプションを入力します。</p>
+        <p>作成する変換された各ファイルについて、「項目を追加」をクリックし、リストに表示されているストレージ、場所、その他のオプションを入力します。</p>
       </td>
     </tr>
     <tr>
     <tr>
-      <td role="rowheader">[!UICONTROL ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL ストレージ ]</td>
       <td>
         <p>新しいファイルを保存するファイルサービスを選択します。</p><p>Fusionの内部ストレージを選択すると、ファイルは後のモジュールで使用できますが、シナリオ外では使用できません。</p>
       </td>
@@ -1402,7 +1400,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
     </tr>
         <tr>
       <td role="rowheader">
-        <p>[!UICONTROL カンバスにトリミング &#x200B;]</p>
+        <p>[!UICONTROL カンバスにトリミング ]</p>
       </td>
    <td>レンディションをカンバスサイズにトリミングするには「はい」を選択し、レンディションをレイヤーサイズにするには「いいえ」を選択します。</td> 
     </tr>
@@ -1422,7 +1420,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
       <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （Base &gt; Input） ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL （Base &gt; Input） ストレージ ]</td>
       <td>
         <p>透かしを追加するファイルが保存されているファイルサービスを選択します。</p>
       </td>
@@ -1434,13 +1432,13 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
    <td> 透かしを追加するファイルのURLまたはパスを入力またはマッピングします。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （透かし/入力） ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL （透かし/入力） ストレージ ]</td>
       <td>
         <p>追加する透かしが格納されているファイルサービスを選択します。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （透かし/入力） ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL （透かし/入力） ストレージ ]</td>
       <td>
         <p>追加する透かしが格納されているファイルサービスを選択します。</p>
       </td>
@@ -1469,7 +1467,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
    <td> 透かしを配置する画像の上部からの距離をピクセル単位で入力またはマッピングします。</td> 
     </tr>  
     <tr>
-      <td role="rowheader">[!UICONTROL （Output） ストレージ &#x200B;]</td>
+      <td role="rowheader">[!UICONTROL （Output） ストレージ ]</td>
       <td>
         <p>透かし入りファイルを保存するファイルサービスを選択します。</p><p>Fusionの内部ストレージを選択すると、ファイルは後のモジュールで使用できますが、シナリオ外では使用できません。</p>
       </td>
@@ -1499,3 +1497,346 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
       </td>
     </tbody>
 </table>
+
+
+### アートボードの作成
+
+このモジュールは、Photoshopで新しいアートボードを作成します。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Images]</td>
+      <td>
+        <p>このアートボードに追加する画像ごとに、<b>項目を追加</b>をクリックし、画像のソースタイプと場所を入力します。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL アートボードの間隔]</p>
+      </td>
+   <td>各アートボード間の間隔をピクセル単位で入力またはマッピングします。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>作成する変換された各ファイルについて、「項目を追加」をクリックし、リストに表示されているストレージ、場所、その他のオプションを入力します。</p>
+      </td>
+    </tr>
+    </tbody>
+</table>
+
+### コンポジットの作成または編集
+
+このモジュールは、Photoshopでコンポジットを作成または編集します。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Images]</td>
+      <td>
+        <p>このアートボードに追加する画像ごとに、<b>項目を追加</b>をクリックし、画像のソースタイプと場所を入力します。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Width]</p>
+      </td>
+   <td>画像を作成する場合は、画像の幅をピクセル単位で入力します。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Height]</td>
+      <td>
+        <p>画像を作成する場合は、画像の高さをピクセル単位で入力します。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Mode]</td>
+      <td>
+        <p>この画像のカラーモードを選択します。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Fill]</td>
+      <td>
+        <p>背景レイヤーの塗りのタイプを選択します。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Name]</td>
+      <td>
+        <p>新しい画像の名前を入力またはマッピングします。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Pixel scale factor]</td>
+      <td>
+        <p>ピクセル尺度係数を入力またはマッピングします。 0.1から1までの数字を指定してください。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL解像度]</td>
+      <td>
+        <p><b>値</b> フィールドに、解像度の値を密度単位（インチあたりのピクセル数）で入力します。 デフォルト値は72です。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL プロファイル タイプ ]</td>
+      <td>
+        <p>デフォルトのカラープロファイルを上書きする場合は、プロファイルタイプを選択し、表示されているように詳細を入力します。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL切り抜き/上/左/下/右]</td>
+      <td>
+        <p>画像を切り抜く範囲を入力します。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Hide]</td>
+      <td>
+        <p>「はい」を選択して、切り抜き境界の外側のピクセルを非表示にします。 falseに設定すると、切り抜き境界の外側のピクセルが削除されます。 デフォルトはfalseです。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Resize &gt; Width]</td>
+      <td>
+        <p>幅に使用する単位を選択し、目的の幅を表す値を選択します。 </p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL サイズ変更&gt;高さ]</td>
+      <td>
+        <p>高さに使用する単位を選択し、目的の高さを表す値を選択します。 </p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL解像度]</td>
+      <td>
+        <p>解像度に使用する単位を選択し、目的の解像度を表す値を選択します。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Resample]</td>
+      <td>
+        <p>リサイズ時に使用するリサンプリング方法を選択します。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL縦横比を固定]</td>
+      <td>
+        <p>「はい」を選択して、幅と高さの縦横比を維持します。 幅と高さを個別に調整するには、「いいえ」を選択します。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Rasterize]</td>
+      <td>
+        <p>画像をラスタライズするかどうかを選択します。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL スケール スタイル ]</td>
+      <td>
+        <p>画像のサイズを変更するときにスタイルに拡大縮小を適用するかどうかを選択します。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL トリミング時]</td>
+      <td>
+        <p>透明なピクセルをトリミングするかどうかを選択します。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL レイヤー]</td>
+      <td>
+        <p>後で追加する各項目について、<b>項目を追加</b>をクリックし、レイヤーの詳細を入力します。 </p><p>詳しくは、Adobe ドキュメントの<a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/createComposite"> コンポジットの作成または編集</a>を参照してください。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Default font PostScript name]</td>
+      <td>
+        <p>使用するデフォルトフォントのPostScript名を入力するか、マッピングします。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROLにフォント戦略がありません]</td>
+      <td>
+        <p>作成または編集を失敗させるか、フォントが使用できない場合にデフォルトのフォントを使用するかを選択します。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL追加フォント ]</td>
+      <td>
+        <p>追加する各フォントについて、<b>項目を追加</b>をクリックし、フォントのソース URLを入力します。 </p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>作成する編集ファイルごとに、「項目を追加」をクリックし、出力の詳細を入力します。 </p><p>詳しくは、Adobe ドキュメントの<a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/createComposite"> コンポジットの作成または編集</a>を参照してください。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Maximum number of results]</td>
+      <td>
+        <p>1回の実行サイクル中にモジュールが処理する結果の最大数を入力またはマッピングします。</p>
+      </td>
+      </tr>
+      </tbody>
+</table>
+
+### 様々な調整を行った画像の編集
+
+このモジュールは、Lightroom形式の補正を画像に適用します。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Images]</td>
+      <td>
+        <p>画像のソースタイプと場所を入力またはマッピングします。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Other fields]</p>
+      </td>
+   <td><p>詳しくは、Adobe ドキュメントの<a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/edit">様々な調整を含む画像の編集</a>を参照してください。</p></td> 
+    </tr>
+    </tbody>
+</table>
+
+### Photoshopのアクション、スクリプト、変換を実行
+
+このモジュールは、Firefly Photoshop APIで使用できるアクション、スクリプト、変換を実行します。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Images]</td>
+      <td>
+        <p>画像のソースタイプと場所を入力またはマッピングします。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL アクション ]</p>
+      </td>
+   <td><p>追加する各アクションについて、<b>項目を追加</b>をクリックし、アクションのソース、URL、名前を入力します。</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL UXP ソース ]</p>
+      </td>
+   <td><p>UXP スクリプトを使用している場合は、URLまたはインラインコンテンツを提供するかどうかを選択し、URLまたはコンテンツを入力またはマッピングします。</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Additional contents]</p>
+      </td>
+   <td><p>アクションまたはUXPから参照される最大25個のファイルを追加します。</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>作成する編集ファイルごとに、「項目を追加」をクリックし、形式、出力先、出力パターンを入力します。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Maximum number of results]</td>
+      <td>
+        <p>1回の実行サイクル中にモジュールが処理する結果の最大数を入力またはマッピングします。</p>
+      </td>
+      </tr>
+    </tbody>
+</table>
+
+### マニフェストを生成
+
+このモジュールは、指定された入力画像に対してPSD マニフェストを生成します。
+
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Source]</td>
+      <td>
+        <p>画像のソースタイプと場所を入力またはマッピングします。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>作成する編集ファイルごとに、「項目を追加」をクリックし、宛先の詳細を入力します。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL レイヤーのサムネールを含める]</p>
+      </td>
+   <td><p>マニフェストの各レイヤーのサムネールレンディションを生成するモジュールを作成する場合は、「はい」を選択します。</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL サムネールの最大深度]</p>
+      </td>
+   <td><p>サムネールレンディションの最大深度を入力またはマッピングします。 深度が最大でない場合は、<code>0</code>と入力します。</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Layer thumbnail format]</p>
+      </td>
+   <td><p>サムネールをJPEG形式とPNG形式のどちらに設定するかを選択します。</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Extract Smart Object data]</td>
+      <td>
+        <p>埋め込みスマートオブジェクトを抽出し、マニフェストに事前署名済みURLを含めるかどうかを選択します。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL透明部分にトリミング ]</td>
+      <td>
+        <p>各レイヤーサムネールをトリミングして、透明なピクセルを削除するかどうかを選択します。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Maximum number of results]</td>
+      <td>
+        <p>1回の実行サイクル中にモジュールが処理する結果の最大数を入力またはマッピングします。</p>
+      </td>
+      </tr>
+    </tbody>
+</table>
+
