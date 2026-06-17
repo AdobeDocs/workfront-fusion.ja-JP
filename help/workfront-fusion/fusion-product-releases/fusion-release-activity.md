@@ -10,14 +10,12 @@ feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: c37aea95-7cc3-4939-a4d7-9a6a75557b85
 TQID: https://experienceleague.adobe.com/Gk5AKwj-C46H2HyURlUxcndsqWWpJmA1AUxZFYbg4uo
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 9c05aa1111fd571ea6f0ff86943b2849a39e4973
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+source-git-commit: e9ea91840c9be594e98b97202cb46dfa009349a9
 workflow-type: tm+mt
-source-wordcount: 1502
-ht-degree: 90%
+source-wordcount: 1511
+ht-degree: 89%
 
 ---
 
@@ -29,6 +27,7 @@ Adobe Workfront Fusion は、アプリと web サービスをシームレスに�
 
 ### 2026年6月
 
+* [Workfront Fusion リリースアクティビティ：2026年6月15日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-6-15.md)
 * [Workfront Fusion リリースアクティビティ：2026年6月1日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-6-1.md)
 
 ### 2026年5月
