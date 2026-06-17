@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 19cca2c98ca25a7aee5c5c067d7287ab98c8b79f
 workflow-type: tm+mt
-source-wordcount: 5506
-ht-degree: 15%
+source-wordcount: 6526
+ht-degree: 14%
 
 ---
 
@@ -283,7 +283,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
     <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>
       <td>
-        <p>作成する編集ファイルごとに、「項目を追加」をクリックし、この表に示すように、ストレージ、場所、タイプを入力します。</p>
+        <p>作成する編集済みファイルごとに、「項目を追加」をクリックし、リストに表示されているストレージ、場所、タイプを入力します。</p>
       </td>
     </tr>
     <tr>
@@ -397,7 +397,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
     <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>
       <td>
-        <p>作成する変換された各ファイルについて、「項目を追加」をクリックし、この表に示すように、ストレージ、場所、およびタイプを入力します。</p>
+        <p>作成する変換された各ファイルについて、「項目を追加」をクリックし、リストに表示されているようにストレージ、場所、およびタイプを入力します。</p>
       </td>
     </tr>
     <tr>
@@ -512,7 +512,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
+      <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続を作成を参照してください。</td>
     </tr>
     <tr>
       <td role="rowheader">
@@ -577,7 +577,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
     <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>
       <td>
-        <p>作成する各ファイルについて、「項目を追加」をクリックし、この表に示すように、ストレージ、場所、およびタイプを入力します。</p>
+        <p>作成する各ファイルについて、「項目を追加」をクリックし、リストに表示されているようにストレージ、場所、およびタイプを入力します。</p>
       </td>
     </tr>
     <tr>
@@ -806,7 +806,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
     <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>
       <td>
-        <p>作成する各ファイルについて、「項目を追加」をクリックし、この表に示すように、「ストレージ」、「場所」、「タイプ」、「上書き」オプションを入力します。</p>
+        <p>作成する各ファイルについて、「項目を追加」をクリックし、リストに表示されているストレージ、場所、タイプ、および上書きオプションを入力します。</p>
       </td>
     </tr>
     <tr>
@@ -1366,7 +1366,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
     <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>
       <td>
-        <p>作成する変換された各ファイルについて、「項目を追加」をクリックし、この表に示すように、ストレージ、場所、およびその他のオプションを入力します。</p>
+        <p>作成する変換された各ファイルについて、「項目を追加」をクリックし、リストに表示されているストレージ、場所、その他のオプションを入力します。</p>
       </td>
     </tr>
     <tr>
@@ -1499,3 +1499,346 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
       </td>
     </tbody>
 </table>
+
+
+### アートボードの作成
+
+このモジュールは、Photoshopで新しいアートボードを作成します。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Images]</td>
+      <td>
+        <p>このアートボードに追加する画像ごとに、<b>項目を追加</b>をクリックし、画像のソースタイプと場所を入力します。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL アートボードの間隔]</p>
+      </td>
+   <td>各アートボード間の間隔をピクセル単位で入力またはマッピングします。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>作成する変換された各ファイルについて、「項目を追加」をクリックし、リストに表示されているストレージ、場所、その他のオプションを入力します。</p>
+      </td>
+    </tr>
+    </tbody>
+</table>
+
+### コンポジットの作成または編集
+
+このモジュールは、Photoshopでコンポジットを作成または編集します。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Images]</td>
+      <td>
+        <p>このアートボードに追加する画像ごとに、<b>項目を追加</b>をクリックし、画像のソースタイプと場所を入力します。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Width]</p>
+      </td>
+   <td>画像を作成する場合は、画像の幅をピクセル単位で入力します。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Height]</td>
+      <td>
+        <p>画像を作成する場合は、画像の高さをピクセル単位で入力します。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Mode]</td>
+      <td>
+        <p>この画像のカラーモードを選択します。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Fill]</td>
+      <td>
+        <p>背景レイヤーの塗りのタイプを選択します。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Name]</td>
+      <td>
+        <p>新しい画像の名前を入力またはマッピングします。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Pixel scale factor]</td>
+      <td>
+        <p>ピクセル尺度係数を入力またはマッピングします。 0.1から1までの数字を指定してください。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 解像度]</td>
+      <td>
+        <p><b>値</b> フィールドに、解像度の値を密度単位（インチあたりのピクセル数）で入力します。 デフォルト値は72です。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL プロファイル タイプ &#x200B;]</td>
+      <td>
+        <p>デフォルトのカラープロファイルを上書きする場合は、プロファイルタイプを選択し、表示されているように詳細を入力します。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 切り抜き/上/左/下/右]</td>
+      <td>
+        <p>画像を切り抜く範囲を入力します。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Hide]</td>
+      <td>
+        <p>「はい」を選択して、切り抜き境界の外側のピクセルを非表示にします。 falseに設定すると、切り抜き境界の外側のピクセルが削除されます。 デフォルトはfalseです。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Resize &gt; Width]</td>
+      <td>
+        <p>幅に使用する単位を選択し、目的の幅を表す値を選択します。 </p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL サイズ変更&gt;高さ]</td>
+      <td>
+        <p>高さに使用する単位を選択し、目的の高さを表す値を選択します。 </p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 解像度]</td>
+      <td>
+        <p>解像度に使用する単位を選択し、目的の解像度を表す値を選択します。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Resample]</td>
+      <td>
+        <p>リサイズ時に使用するリサンプリング方法を選択します。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 縦横比を固定]</td>
+      <td>
+        <p>「はい」を選択して、幅と高さの縦横比を維持します。 幅と高さを個別に調整するには、「いいえ」を選択します。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Rasterize]</td>
+      <td>
+        <p>画像をラスタライズするかどうかを選択します。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL スケール スタイル &#x200B;]</td>
+      <td>
+        <p>画像のサイズを変更するときにスタイルに拡大縮小を適用するかどうかを選択します。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL トリミング時]</td>
+      <td>
+        <p>透明なピクセルをトリミングするかどうかを選択します。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL レイヤー]</td>
+      <td>
+        <p>後で追加する各項目について、<b>項目を追加</b>をクリックし、レイヤーの詳細を入力します。 </p><p>詳しくは、Adobe ドキュメントの<a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/createComposite"> コンポジットの作成または編集</a>を参照してください。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Default font PostScript name]</td>
+      <td>
+        <p>使用するデフォルトフォントのPostScript名を入力するか、マッピングします。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL にフォント戦略がありません]</td>
+      <td>
+        <p>作成または編集を失敗させるか、フォントが使用できない場合にデフォルトのフォントを使用するかを選択します。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 追加フォント &#x200B;]</td>
+      <td>
+        <p>追加する各フォントについて、<b>項目を追加</b>をクリックし、フォントのソース URLを入力します。 </p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>作成する編集ファイルごとに、「項目を追加」をクリックし、出力の詳細を入力します。 </p><p>詳しくは、Adobe ドキュメントの<a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/createComposite"> コンポジットの作成または編集</a>を参照してください。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Maximum number of results]</td>
+      <td>
+        <p>1回の実行サイクル中にモジュールが処理する結果の最大数を入力またはマッピングします。</p>
+      </td>
+      </tr>
+      </tbody>
+</table>
+
+### 様々な調整を行った画像の編集
+
+このモジュールは、Lightroom形式の補正を画像に適用します。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Images]</td>
+      <td>
+        <p>画像のソースタイプと場所を入力またはマッピングします。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Other fields]</p>
+      </td>
+   <td><p>詳しくは、Adobe ドキュメントの<a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/edit">様々な調整を含む画像の編集</a>を参照してください。</p></td> 
+    </tr>
+    </tbody>
+</table>
+
+### Photoshopのアクション、スクリプト、変換を実行
+
+このモジュールは、Firefly Photoshop APIで使用できるアクション、スクリプト、変換を実行します。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Images]</td>
+      <td>
+        <p>画像のソースタイプと場所を入力またはマッピングします。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL アクション &#x200B;]</p>
+      </td>
+   <td><p>追加する各アクションについて、<b>項目を追加</b>をクリックし、アクションのソース、URL、名前を入力します。</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL UXP ソース &#x200B;]</p>
+      </td>
+   <td><p>UXP スクリプトを使用している場合は、URLまたはインラインコンテンツを提供するかどうかを選択し、URLまたはコンテンツを入力またはマッピングします。</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Additional contents]</p>
+      </td>
+   <td><p>アクションまたはUXPから参照される最大25個のファイルを追加します。</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>作成する編集ファイルごとに、「項目を追加」をクリックし、形式、出力先、出力パターンを入力します。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Maximum number of results]</td>
+      <td>
+        <p>1回の実行サイクル中にモジュールが処理する結果の最大数を入力またはマッピングします。</p>
+      </td>
+      </tr>
+    </tbody>
+</table>
+
+### マニフェストを生成
+
+このモジュールは、指定された入力画像に対してPSD マニフェストを生成します。
+
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>[!DNL Adobe Photoshop] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >[!DNL Adobe Photoshop]</a> への接続の作成を参照してください。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Source]</td>
+      <td>
+        <p>画像のソースタイプと場所を入力またはマッピングします。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>作成する編集ファイルごとに、「項目を追加」をクリックし、宛先の詳細を入力します。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL レイヤーのサムネールを含める]</p>
+      </td>
+   <td><p>マニフェストの各レイヤーのサムネールレンディションを生成するモジュールを作成する場合は、「はい」を選択します。</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL サムネールの最大深度]</p>
+      </td>
+   <td><p>サムネールレンディションの最大深度を入力またはマッピングします。 深度が最大でない場合は、<code>0</code>と入力します。</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Layer thumbnail format]</p>
+      </td>
+   <td><p>サムネールをJPEG形式とPNG形式のどちらに設定するかを選択します。</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Extract Smart Object data]</td>
+      <td>
+        <p>埋め込みスマートオブジェクトを抽出し、マニフェストに事前署名済みURLを含めるかどうかを選択します。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 透明部分にトリミング &#x200B;]</td>
+      <td>
+        <p>各レイヤーサムネールをトリミングして、透明なピクセルを削除するかどうかを選択します。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Maximum number of results]</td>
+      <td>
+        <p>1回の実行サイクル中にモジュールが処理する結果の最大数を入力またはマッピングします。</p>
+      </td>
+      </tr>
+    </tbody>
+</table>
+
