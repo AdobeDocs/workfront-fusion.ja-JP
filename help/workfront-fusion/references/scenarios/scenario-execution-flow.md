@@ -6,11 +6,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
 TQID: https://experienceleague.adobe.com/gze4-OOI8ekVaS71VgkFeT3Yef1xUoqumWYauC9Es2I
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 28b8a270f6cb0e7a42c81153493b983d5b9e428b
 workflow-type: tm+mt
-source-wordcount: 770
+source-wordcount: 771
 ht-degree: 25%
 
 ---
@@ -72,11 +71,11 @@ ht-degree: 25%
 
 >[!NOTE]
 >
->より大きなシナリオでも、このプロセスを通ります。 このプロセスについてシナリオ レベルで詳しくは、[&#x200B; シナリオ実行、サイクル、およびフェーズ &#x200B;](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)を参照してください。
+>より大きなシナリオでも、このプロセスを通ります。 このプロセスについてシナリオ レベルで詳しくは、[ シナリオ実行、サイクル、およびフェーズ ](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)を参照してください。
 
 シナリオ実行が完了すると、各モジュールには、実行された操作数を示すアイコンが表示されます。 このアイコンをクリックすると、プロセスの各ステップで処理されたバンドルに関する詳細情報を表示できます。 どのモジュール設定が使用されたか、各モジュールによって返されたバンドルを確認できます。
 
-![処理済みバンドル &#x200B;](assets/Info-processed-bundles.png)
+![処理済みバンドル ](assets/Info-processed-bundles.png)
 
 この例では、モジュールは次のような入力情報を受け取りました。
 
@@ -93,12 +92,12 @@ ht-degree: 25%
 
 ## シナリオの実行中のエラー
 
-シナリオの実行中にエラーが発生する場合があります。 例えば、モジュールが新しいプロジェクトの作成に使用するテンプレートを削除した場合、シナリオはエラーメッセージで終了します。 エラーの処理方法について詳しくは、[&#x200B; エラーの種類](/help/workfront-fusion/references/errors/error-processing.md)を参照してください。
+シナリオの実行中にエラーが発生する場合があります。 例えば、モジュールが新しいプロジェクトの作成に使用するテンプレートを削除した場合、シナリオはエラーメッセージで終了します。 エラーの処理方法について詳しくは、[ エラーの種類](/help/workfront-fusion/references/errors/error-processing.md)を参照してください。
 
 ## リソース
 
-* シナリオの設定について詳しくは、[&#x200B; シナリオエディター](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)を参照してください。
-* シナリオの詳細ページについて詳しくは、[&#x200B; シナリオの詳細](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md)を参照してください。
-* シナリオのアクティブ化について詳しくは、[&#x200B; シナリオのアクティブ化または非アクティブ化](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)を参照してください。
-* シナリオのスケジュール設定について詳しくは、[&#x200B; シナリオのスケジュール &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)を参照してください。
-* モジュールについて詳しくは、[&#x200B; モジュールの概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md)を参照してください。
+* シナリオの設定について詳しくは、[ シナリオエディター](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)を参照してください。
+* シナリオの詳細ページについて詳しくは、[ シナリオの詳細](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md)を参照してください。
+* シナリオのアクティブ化について詳しくは、[ シナリオのアクティブ化または非アクティブ化](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)を参照してください。
+* シナリオのスケジュール設定について詳しくは、[ シナリオのスケジュール ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)を参照してください。
+* モジュールについて詳しくは、[ モジュールの概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md)を参照してください。
