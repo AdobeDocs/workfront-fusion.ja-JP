@@ -75,7 +75,7 @@ This module allows you to run a code block. You configure the code block when yo
 
 このモジュールでは、以前に設定したカスタム JavaScript関数を関数エリアに格納して使用できます。
 
-カスタム関数の設定方法については、[ カスタム関数を使用したデータのマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)を参照してください。
+カスタム関数の設定方法については、[&#x200B; カスタム関数を使用したデータのマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)を参照してください。
 
 <table style="table-layout:auto"> 
  <col> 
