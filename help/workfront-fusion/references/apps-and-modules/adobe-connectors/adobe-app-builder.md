@@ -3,18 +3,19 @@ title: Adobe App Builder モジュール
 description: Adobe App Builder コネクタを使用すると、シナリオでカスタム関数を使用できます。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 8250d4fdad8ed7ffe63cd003f6e0cb325cbbfa8d
+exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
+source-git-commit: 4392b9d13c49d3d64b2b694bf23cfc227ae36d02
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 31%
+source-wordcount: '365'
+ht-degree: 26%
 
 ---
 
 # Adobe App Builder モジュール
 
-Fusion の関数領域で、カスタム関数を作成できます。 次に、これらの関数を、Adobe App Builder モジュールの形式でシナリオに追加します。
+Fusionの「関数」エリアでカスタム関数を作成できます。 次に、これらの関数をAdobe App Builder モジュールの形式でシナリオに追加します。
 
-カスタム関数はAdobe App Builderを通じて機能するので、使用する組織のAdobe App Builder ライセンスが必要です。
+カスタム関数はAdobe App Builderを通じて機能するため、使用するにはAdobe App Builder ライセンスが必要です。
 
 ## アクセス要件
 
@@ -47,13 +48,30 @@ Fusion の関数領域で、カスタム関数を作成できます。 次に、
 
 ## Adobe App Builder モジュール
 
-現在利用可能なAdobe App Builder モジュールは、アクションを実行のみです。このモジュールでは、以前に設定されたカスタム JavaScript関数を使用できます。
+### カスタムコードブロックの実行
 
-カスタム関数の設定手順については、[&#x200B; カスタム関数を使用したデータのマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md) を参照してください。
+このモジュールでは、コードブロックを実行できます。 コードブロックは、モジュールの設定時に設定し、シナリオの実行中にモジュールが実行されるときに実行されます。
 
-### アクションの実行
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td>
+   <td>実行するカスタム関数を含む接続を選択します。 </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Code ブロック &#x200B;]</td> 
+   <td>モジュールを実行するコードブロックを入力します。<p>読みやすいようにコードを書式設定するには、「<b> コードを書式設定</b>」アイコンをクリックします。</td> 
+  </tr> 
+   </tbody> 
+</table>
 
-このモジュールは、以前に設定されたカスタム関数を実行します。
+### カスタム関数の実行
+
+このモジュールでは、以前に設定したカスタム JavaScript関数を関数エリアに格納して使用できます。
+
+カスタム関数の設定方法については、[&#x200B; カスタム関数を使用したデータのマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)を参照してください。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -68,10 +86,8 @@ Fusion の関数領域で、カスタム関数を作成できます。 次に、
    <td>実行するカスタム関数を選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL パラメーター &#x200B;] </td> 
-   <td>関数のパラメーターの値を入力します。 使用可能なパラメーターは、関数の作成時に設定されたパラメーターに基づいています。<p>パラメーターにデフォルト値がある場合、フィールドには表示されませんが、フィールドに値を入力またはマッピングすることで上書きできます。</p></td> 
+   <td role="rowheader">[!UICONTROL パラメーター] </td> 
+   <td>関数パラメーターの値を入力します。 使用可能なパラメーターは、関数の作成時に設定したパラメーターに基づきます。<p>パラメーターにデフォルト値がある場合、フィールドには表示されませんが、フィールドに値を入力またはマッピングすることで、パラメーターを上書きできます。</p></td> 
   </tr> 
    </tbody> 
 </table>
-
-
