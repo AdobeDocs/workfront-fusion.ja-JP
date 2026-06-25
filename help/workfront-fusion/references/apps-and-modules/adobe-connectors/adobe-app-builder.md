@@ -86,11 +86,11 @@ This module allows you to run a code block. You configure the code block when yo
    <td>実行するカスタム関数を含む接続を選択します。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL パッケージ ]</td> 
+   <td role="rowheader">[!UICONTROL パッケージ &#x200B;]</td> 
    <td>シナリオで実行する関数を含むパッケージを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL変数] </td> 
+   <td role="rowheader">[!UICONTROL 変数] </td> 
    <td>シナリオで実行する関数を選択します。</p></td> 
   </tr> 
    </tbody> 
@@ -111,11 +111,11 @@ This module allows you to run a code block. You configure the code block when yo
    <td>実行するカスタム関数を含む接続を選択します。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL パッケージ ]</td> 
+   <td role="rowheader">[!UICONTROL パッケージ &#x200B;]</td> 
    <td>シナリオに取り込む変数を含むパッケージを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL変数] </td> 
+   <td role="rowheader">[!UICONTROL 変数] </td> 
    <td>シナリオに取り込む変数を選択します。</p></td> 
   </tr> 
    </tbody> 
@@ -125,7 +125,7 @@ This module allows you to run a code block. You configure the code block when yo
 
 このモジュールでは、以前に設定したカスタム JavaScript関数を関数エリアに格納して使用できます。
 
-カスタム関数の設定方法については、[ カスタム関数を使用したデータのマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)を参照してください。
+カスタム関数の設定方法については、[&#x200B; カスタム関数を使用したデータのマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)を参照してください。
 
 <table style="table-layout:auto"> 
  <col> 
