@@ -7,9 +7,9 @@ exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
 TQID: https://experienceleague.adobe.com/ObsbedalglAtYWQlx0w8vZbvsU7z0ttVIehf8STysvw
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 61b8118bed095b526e179c8fae798ece4e11d065
 workflow-type: tm+mt
-source-wordcount: 717
+source-wordcount: 731
 ht-degree: 44%
 
 ---
@@ -18,9 +18,11 @@ ht-degree: 44%
 
 Workfront Fusionには、シンプルな数式や複雑な数式を作成するための関数が組み込まれています。 これらの関数は、配列、文字列、数値、および以前のモジュールのデータに対する関数など、様々なユースケースをカバーします。
 
-さらに、シナリオがデータの変換と操作に使用できるカスタム関数を作成できます。
+さらに、シナリオがデータの変換と操作に使用できるカスタム関数とパッケージを作成できます。
 
 カスタム関数の詳細と手順については、[&#x200B; カスタム関数を使用したデータのマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)を参照してください。
+
+関数パッケージの詳細と手順については、[&#x200B; カスタム関数パッケージの使用](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md)を参照してください。
 
 ## アクセス要件
 

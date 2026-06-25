@@ -3,9 +3,9 @@ user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
 nudge: true
-source-git-commit: 11674a9ee27ae94532a85b6702bafe3e54b26fd7
+source-git-commit: cf686d3b04eadfa7aea314bdd995c25cdea370a5
 workflow-type: tm+mt
-source-wordcount: '2461'
+source-wordcount: '2465'
 ht-degree: 53%
 
 ---
@@ -239,6 +239,7 @@ ht-degree: 53%
       * [モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)
       * [組み込み関数を使用したアイテムのマッピング](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
       * [カスタム関数を使用したデータのマッピング](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)
+      * [カスタム関数パッケージの使用](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md)
       * [配列と配列要素のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)
       * [モジュール間でのファイルのマッピング](/help/workfront-fusion/create-scenarios/map-data/map-files.md)
       * [データストア](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)
