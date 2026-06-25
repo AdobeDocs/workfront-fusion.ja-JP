@@ -73,7 +73,7 @@ exl-id: <existing UUID — never generate or change>
 >Production for everyone: {Month Day, Year}
 ```
 
-5. **Body**：機能の説明、ヘルプドキュメントへのリンク
+&#x200B;5. **Body**：機能の説明、ヘルプドキュメントへのリンク
 
 #### 概要ページ
 
@@ -90,10 +90,10 @@ exl-id: <existing UUID — never generate or change>
 * [Document enhancements](#document-enhancements)
 ```
 
-5. HTML機能テーブルを含む製品領域&#x200B;**ごとの** H3 （。claude/commands/_release-notes-formatter-reference.md#overview-feature-tableを参照）
+&#x200B;5. HTML機能テーブルを含む製品領域&#x200B;**ごとの** H3 （。claude/commands/_release-notes-formatter-reference.md#overview-feature-tableを参照）
    - 各テーブル内では、**最新の機能が最初に** – 最新の行がテーブルの上部（ヘッダー行の後）に表示されます
 
-6. **後続セクション** （H2）：その他の領域のリリースノート、デスクトップ校正ビューアの更新、お知らせ、API バージョン、メンテナンスの更新、トレーニングの更新
+&#x200B;6. **後続セクション** （H2）：その他の領域のリリースノート、デスクトップ校正ビューアの更新、お知らせ、API バージョン、メンテナンスの更新、トレーニングの更新
 
 ### 手順3：リンクの検証
 

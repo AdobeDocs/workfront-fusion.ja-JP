@@ -11,7 +11,7 @@ ht-degree: 0%
 `help/quicksilver/product-announcements/product-releases/release-note-templates/`および
 直近の四半期リリースで使用された実際の書式設定。
 
----
+&#x200B;---
 
 ## 製品領域ページテンプレート
 
@@ -57,15 +57,17 @@ For more information, see [Help article title](/help/quicksilver/path/to/article
   >Production fast release: {date}
   >Production for everyone: {date}
   ```
+
 - 機能が一時的に削除された場合は、日付の後に行を追加します。
 
   ```
   >
   >This feature has been temporarily removed from the Production environment on {date}.
   ```
+
 - ヘルプリンクは、`/help/quicksilver/`で始まる絶対パスを使用します
 
----
+&#x200B;---
 
 ## 概要ページテンプレート
 
@@ -188,7 +190,7 @@ For information about the maintenance updates made during the {Written Quarter} 
 Explore the latest updates made to learning programs, learning paths, videos, and guides for each Adobe Workfront product release. For more information, see the "What's New" section of the [Workfront Tutorials page](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/home.html).
 ```
 
----
+&#x200B;---
 
 ## ルックアンドフィールのページテンプレート
 
@@ -217,7 +219,7 @@ For a list of all changes available with the {Written Quarter} {Year} release, s
 Description of the look-and-feel change.
 ```
 
----
+&#x200B;---
 
 ## 日付コールアウト形式
 
@@ -247,7 +249,7 @@ Description of the look-and-feel change.
 >Preview release: February 9, 2023; Planned Production release: February 23, 2023
 ```
 
----
+&#x200B;---
 
 ## 監視すべき既知の不整合
 
