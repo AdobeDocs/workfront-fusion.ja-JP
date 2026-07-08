@@ -7,7 +7,7 @@ exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
 TQID: https://experienceleague.adobe.com/ObsbedalglAtYWQlx0w8vZbvsU7z0ttVIehf8STysvw
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 61b8118bed095b526e179c8fae798ece4e11d065
+source-git-commit: 314c4535a5ef14794458f40002a53ee529c1a4b6
 workflow-type: tm+mt
 source-wordcount: 731
 ht-degree: 44%
@@ -146,3 +146,4 @@ Workfront Fusionで使用する関数が機能しないが、[!DNL Google Sheets
 1. 手順 4 で使用した同じセル ID を使用して、モジュールを設定します。
 
    ![Google Sheets関数の使用](assets/exploit-google-sheet-functions-2-350x187.png)
+
