@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 754e6eee17449c4b58632702d94941f30efb1d81
 workflow-type: tm+mt
-source-wordcount: 1535
-ht-degree: 83%
+source-wordcount: 1571
+ht-degree: 81%
 
 ---
 
@@ -78,7 +78,8 @@ Webhookを使用してアプリをWorkfront Fusionに接続するには：
 1. 受信データを検証する場合は、**データ構造** フィールドで、使用するデータ構造を選択または追加します。
 
    データ構造について詳しくは、[&#x200B; データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
-1. 「**資格情報**」フィールドに、認証に使用する資格情報を入力できます。 資格情報を入力するには、**Add**&#x200B;をクリックし、資格情報を入力します。
+1. 「**認証タイプ**」フィールドで、このWebhookで基本認証を使用するか、クライアント証明書を使用するかを選択します。
+1. 「**資格情報**」フィールドに、認証に使用する資格情報を入力できます。 資格情報を入力するには、**Add**&#x200B;をクリックし、資格情報を入力します。 これは、基本認証のユーザー名とパスワード、または証明書認証のクライアント証明書と公開鍵です。
 1. 必要に応じて他の設定を有効にします。
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
