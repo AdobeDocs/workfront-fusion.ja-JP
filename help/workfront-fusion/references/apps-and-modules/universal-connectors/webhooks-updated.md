@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 754e6eee17449c4b58632702d94941f30efb1d81
+source-git-commit: 8af4c12773be538823d252f5022e1613e5629d2d
 workflow-type: tm+mt
-source-wordcount: 1571
-ht-degree: 81%
+source-wordcount: 1909
+ht-degree: 71%
 
 ---
 
@@ -68,7 +68,16 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 >
 >サードパーティの web フック（送信 web フック）を呼び出すには、いずれかの HTTP モジュールを使用します。 詳しくは、[HTTP モジュール](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)を参照してください。
 
-Webhookを使用してアプリをWorkfront Fusionに接続するには：
+Webhookを使用してアプリをWorkfront Fusionに接続するには、クライアント証明書（mTLS）または基本認証のいずれかを使用して認証するようにWebhookを設定できます。
+
+* [クライアント証明書（mTLS）でWebhookを使用する](#use-a-webhook-with-a-client-certificate-mtls)
+* [基本認証でのWebhookの使用](#use-a-webhook-with-basic-authentication)
+
+### クライアント証明書（mTLS）を使用したWebhookの使用
+
+mTLSでは、クライアント証明書と秘密鍵を指定します。 Fusionは、Webhookを呼び出す際に、証明書とキーを使用して宛先サービスに対する認証を行います。 この双方向認証により、Webhookは基本認証よりも安全になります。
+
+mTLSについて詳しくは、[相互TLSの概要](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md#mutual-tls-overview)を参照してください。「HTTP モジュールでのmTLSの使用」の記事を参照してください。
 
 1. **[!UICONTROL Webhook]** > **[!UICONTROL カスタム Webhook]** インスタントトリガーモジュールをシナリオに追加します。
 
@@ -78,8 +87,42 @@ Webhookを使用してアプリをWorkfront Fusionに接続するには：
 1. 受信データを検証する場合は、**データ構造** フィールドで、使用するデータ構造を選択または追加します。
 
    データ構造について詳しくは、[&#x200B; データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
-1. 「**認証タイプ**」フィールドで、このWebhookで基本認証を使用するか、クライアント証明書を使用するかを選択します。
-1. 「**資格情報**」フィールドに、認証に使用する資格情報を入力できます。 資格情報を入力するには、**Add**&#x200B;をクリックし、資格情報を入力します。 これは、基本認証のユーザー名とパスワード、または証明書認証のクライアント証明書と公開鍵です。
+1. 「**認証タイプ**」フィールドで、「**[!UICONTROL クライアント証明書]**」を選択します。
+1. **資格情報** フィールドで、認証に使用する資格情報を選択するか、新しい資格情報を追加します。
+1. （条件付き）資格情報を追加するには：
+   1. 「**追加**」をクリック
+   1. 新しい資格情報キーの名前を入力
+   1. 「**証明書**」フィールドに、証明書を貼り付けます。
+   1. 「**秘密鍵**」フィールドに、秘密鍵を貼り付けます。
+
+      >[!TIP]
+      >
+      >結合されたファイルから証明書または秘密鍵を抽出する必要がある場合は、そのフィールドの横にある&#x200B;**Extract**&#x200B;をクリックし、抽出するファイルとパスワードを指定します。
+   1. 「**キーを作成**」をクリックします。
+   1. Webhook パネルの&#x200B;**資格情報** フィールドで、新しいキーを選択します。
+1. 必要に応じて他の設定を有効にします。
+1. 「**[!UICONTROL 保存]**」をクリックします。
+
+Web フックを作成すると、一意の URL が表示されます。 これは、web フックがデータを送信するアドレスです。 Workfront Fusion は、このアドレスに送信されたデータを検証し、そのデータをシナリオでの処理に渡します。
+
+>[!NOTE]
+>
+>Webhookを作成した後、一度に複数のシナリオで使用できます。
+
+### 基本認証でのWebhookの使用
+
+基本認証では、ユーザー名とパスワードを使用して、接続先のサービスに対する認証を行います。
+
+1. **[!UICONTROL Webhook]** > **[!UICONTROL カスタム Webhook]** インスタントトリガーモジュールをシナリオに追加します。
+
+1. Web フックフィールドの横にある「**[!UICONTROL 追加]**」をクリックして、新規 web フックの名前を入力します。
+1. （オプション）「**[!UICONTROL 詳細設定]**」をクリックします。
+1. **[!UICONTROL IP 制限]**&#x200B;フィールドに、モジュールがデータを受け入れることができる IP アドレスのカンマ区切りのリストを入力します。
+1. 受信データを検証する場合は、**データ構造** フィールドで、使用するデータ構造を選択または追加します。
+
+   データ構造について詳しくは、[&#x200B; データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
+1. **認証タイプ** フィールドで、**[!UICONTROL 基本認証]**&#x200B;を選択します。
+1. 「**資格情報**」フィールドに、認証に使用する資格情報を入力します。 資格情報を入力するには、**Add**&#x200B;をクリックし、基本認証のユーザー名とパスワードを入力します。
 1. 必要に応じて他の設定を有効にします。
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
