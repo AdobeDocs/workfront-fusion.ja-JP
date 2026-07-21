@@ -10,7 +10,7 @@ ht-degree: 0%
 実際の最近のページに基づく、`fusion-release-notes` スキルの作業済み例
 `help/workfront-fusion/fusion-product-releases/fusion-releases-2026/`.
 
----
+&#x200B;---
 
 ## 例1：単純なマルチフィーチャー週
 
@@ -50,7 +50,7 @@ To make it easier to understand changes between scenario versions, we've added t
 For more information, see [View and manage scenario versions](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md).
 ```
 
----
+&#x200B;---
 
 ## 例2：アクションが必要/非推奨のコールアウトを含む週
 
@@ -96,7 +96,7 @@ To make it easier to identify routes, we've added labels. Now, routes are labele
 For more information on routes, see [Add a Router module and configure routes](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 ```
 
----
+&#x200B;---
 
 ## 概要ページ （`fusion-release-activity.md`）の更新パターン
 
@@ -129,7 +129,7 @@ For more information on routes, see [Add a Router module and configure routes](/
 +++
 ```
 
----
+&#x200B;---
 
 ## TOC.md更新パターン
 
@@ -144,7 +144,7 @@ For more information on routes, see [Add a Router module and configure routes](/
         ...
 ```
 
----
+&#x200B;---
 
 ## 既存ページの既知の不整合（参照用のみ。新しいページにコピーしないでください）
 

@@ -97,6 +97,7 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
   
   {Regular description paragraph(s).}
   ```
+
 - すべての機能は、「詳細については、[...]」で終わる必要があります。 関連するヘルプ記事へのリンク。 リンクターゲットがリポジトリに存在することを確認します。
 
 ## 手順4：概要インデックスにページを追加する
@@ -111,6 +112,7 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
   ```markdown
   * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
+
 - これが新しい年の最初のリリースである場合は、前の年の見出しの上に新しい`## Fusion releases in {YYYY}`見出しを追加し、まだ展開されていない場合は&#x200B;*前*&#x200B;年のセクションを`+++ **Click to open**` / `+++`折りたたみ可能なブロックにラップします（現在の年のみが展開されます）。
 
 ## 手順5：目次にページを追加する
@@ -123,6 +125,7 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
   ```markdown
         * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
+
 - 現在の年の見出しがまだ存在しない場合は、前年の見出しの上に`* Fusion releases - {YYYY} {#fusion-releases-{YYYY}}`を追加します。
 - **新しいエントリに`{hide-from-toc}` プレフィックスを追加しないでください。これは、古いエントリが表示されているナビゲーションから外れた場合にのみ使用されます（以下の「既知の不整合」を参照）。**
 
