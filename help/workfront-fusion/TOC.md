@@ -3,9 +3,9 @@ user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
 nudge: true
-source-git-commit: 5ed478882eb442ccb7c7a3983aa9187cc80e7ab5
+source-git-commit: dd2b97992f0754107a23102990d86a6913c75395
 workflow-type: tm+mt
-source-wordcount: '2487'
+source-wordcount: '2499'
 ht-degree: 53%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 53%
 * Fusion リリースアクティビティ {#fusion-release-activity}
   * [Adobe Workfront Fusion リリースアクティビティ](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
   * Fusion リリース - 2026 {#fusion-releases-2026}
+    * [Workfront Fusion リリースアクティビティ：2026年7月20日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-20.md)
     * [Workfront Fusion リリースアクティビティ：2026年7月13日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-13.md)
     * [Workfront Fusion リリースアクティビティ：2026年6月22日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-6-22.md)
     * [Workfront Fusion リリースアクティビティ：2026年6月15日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-6-15.md)
@@ -369,6 +370,7 @@ ht-degree: 53%
       * [Adobe Creative Cloud ライブラリモジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
       * [Adobe Experience Manager Assets モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
       * [Adobe Experience Manager Forms モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
+      * [Adobe Expressモジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-express-modules.md)
       * [Adobe Fireflyの音声および動画モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-audio-video.md)
       * [Adobe Firefly モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
       * [Adobe Firefly Lightroom モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-lightroom.md)
