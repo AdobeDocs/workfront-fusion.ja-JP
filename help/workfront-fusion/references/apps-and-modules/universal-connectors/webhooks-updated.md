@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
 TQID: https://experienceleague.adobe.com/VuJQ4w3kfMUJ4H-m1PdN-F8242KOJRPz1holJRxSE0Y
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8af4c12773be538823d252f5022e1613e5629d2d
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: e8ba11636822fc7007e3a331002194f1a3effcbc
 workflow-type: tm+mt
-source-wordcount: 1909
-ht-degree: 71%
+source-wordcount: 2418
+ht-degree: 59%
 
 ---
 
@@ -68,10 +66,11 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 >
 >サードパーティの web フック（送信 web フック）を呼び出すには、いずれかの HTTP モジュールを使用します。 詳しくは、[HTTP モジュール](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)を参照してください。
 
-Webhookを使用してアプリをWorkfront Fusionに接続するには、クライアント証明書（mTLS）または基本認証のいずれかを使用して認証するようにWebhookを設定できます。
+Webhookを使用してアプリをWorkfront Fusionに接続するには、クライアント証明書（mTLS）、基本認証、またはAdobe Identity Management System （IMS）を使用して認証するようにWebhookを設定できます。
 
 * [クライアント証明書（mTLS）でWebhookを使用する](#use-a-webhook-with-a-client-certificate-mtls)
 * [基本認証でのWebhookの使用](#use-a-webhook-with-basic-authentication)
+* [Adobe Identity Management System （IMS）でのWebhookの使用](#use-a-webhook-with-adobe-identity-management-system-ims)
 
 ### クライアント証明書（mTLS）を使用したWebhookの使用
 
@@ -84,9 +83,16 @@ mTLSについて詳しくは、[相互TLSの概要](/help/workfront-fusion/refer
 1. Web フックフィールドの横にある「**[!UICONTROL 追加]**」をクリックして、新規 web フックの名前を入力します。
 1. （オプション）「**[!UICONTROL 詳細設定]**」をクリックします。
 1. **[!UICONTROL IP 制限]**&#x200B;フィールドに、モジュールがデータを受け入れることができる IP アドレスのカンマ区切りのリストを入力します。
+1. （オプション）このWebhookの呼び出しを許可する各オリジンの「**[!UICONTROL オリジン制限]**」フィールドで、「**項目を追加**」をクリックし、オリジンのパターンを入力します。 任意のオリジンを許可する場合は、このフィールドを空白のままにします。
+
+   このフィールドでは、次のパターンを使用できます。
+
+   * 正確なホスト名：`app.example.com`
+   * ワイルドカードサブドメイン：`*.example.com`
+   * Scheme-qualified:` https://app.example.com`または`https://*.example.com`
 1. 受信データを検証する場合は、**データ構造** フィールドで、使用するデータ構造を選択または追加します。
 
-   データ構造について詳しくは、[&#x200B; データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
+   データ構造について詳しくは、[ データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
 1. 「**認証タイプ**」フィールドで、「**[!UICONTROL クライアント証明書]**」を選択します。
 1. **資格情報** フィールドで、認証に使用する資格情報を選択するか、新しい資格情報を追加します。
 1. （条件付き）資格情報を追加するには：
@@ -118,11 +124,50 @@ Web フックを作成すると、一意の URL が表示されます。 これ�
 1. Web フックフィールドの横にある「**[!UICONTROL 追加]**」をクリックして、新規 web フックの名前を入力します。
 1. （オプション）「**[!UICONTROL 詳細設定]**」をクリックします。
 1. **[!UICONTROL IP 制限]**&#x200B;フィールドに、モジュールがデータを受け入れることができる IP アドレスのカンマ区切りのリストを入力します。
+1. （オプション）このWebhookの呼び出しを許可する各オリジンの「**[!UICONTROL オリジン制限]**」フィールドで、「**項目を追加**」をクリックし、オリジンのパターンを入力します。 任意のオリジンを許可する場合は、このフィールドを空白のままにします。
+
+   このフィールドでは、次のパターンを使用できます。
+
+   * 正確なホスト名：`app.example.com`
+   * ワイルドカードサブドメイン：`*.example.com`
+   * Scheme-qualified:` https://app.example.com`または`https://*.example.com`
 1. 受信データを検証する場合は、**データ構造** フィールドで、使用するデータ構造を選択または追加します。
 
-   データ構造について詳しくは、[&#x200B; データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
+   データ構造について詳しくは、[ データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
 1. **認証タイプ** フィールドで、**[!UICONTROL 基本認証]**&#x200B;を選択します。
 1. 「**資格情報**」フィールドに、認証に使用する資格情報を入力します。 資格情報を入力するには、**Add**&#x200B;をクリックし、基本認証のユーザー名とパスワードを入力します。
+1. 必要に応じて他の設定を有効にします。
+1. 「**[!UICONTROL 保存]**」をクリックします。
+
+Web フックを作成すると、一意の URL が表示されます。 これは、web フックがデータを送信するアドレスです。 Workfront Fusion は、このアドレスに送信されたデータを検証し、そのデータをシナリオでの処理に渡します。
+
+>[!NOTE]
+>
+>Webhookを作成した後、一度に複数のシナリオで使用できます。
+
+### Adobe Identity Management System （IMS）でのWebhookの使用
+
+Adobe Identity Management System （IMS）認証では、組織のAdobe IMS資格情報を使用して、接続先のサービスに対する認証を行います。
+
+1. **[!UICONTROL Webhook]** > **[!UICONTROL カスタム Webhook]** インスタントトリガーモジュールをシナリオに追加します。
+
+1. Web フックフィールドの横にある「**[!UICONTROL 追加]**」をクリックして、新規 web フックの名前を入力します。
+1. （オプション）「**[!UICONTROL 詳細設定]**」をクリックします。
+1. **[!UICONTROL IP 制限]**&#x200B;フィールドに、モジュールがデータを受け入れることができる IP アドレスのカンマ区切りのリストを入力します。
+1. （オプション）このWebhookの呼び出しを許可する各オリジンの「**[!UICONTROL オリジン制限]**」フィールドで、「**項目を追加**」をクリックし、オリジンのパターンを入力します。 任意のオリジンを許可する場合は、このフィールドを空白のままにします。
+
+   このフィールドでは、次のパターンを使用できます。
+
+   * 正確なホスト名：`app.example.com`
+   * ワイルドカードサブドメイン：`*.example.com`
+   * Scheme-qualified:` https://app.example.com`または`https://*.example.com`
+1. 受信データを検証する場合は、**データ構造** フィールドで、使用するデータ構造を選択または追加します。
+
+   データ構造について詳しくは、[ データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
+1. 「**Authorization type**」フィールドで、「**Adobe IMS（Authorization headerのBearer token）**」を選択します。
+1. （オプション）「**許可されたクライアント**」フィールドに、このWebhookの呼び出しを許可されたクライアント IDのコンマ区切りリストを入力します。 この設定を空のままにすると、信頼できる発行者とオーディエンスによってトークンが有効に署名されているクライアントを受け入れることができます。
+1. （オプション）「**許可されたユーザー**」フィールドに、このWebhookの呼び出しを許可されたユーザーIDのコンマ区切りリストを入力します。 任意のユーザーを許可するには、この設定を空のままにします。
+1. （オプション）「**必須スコープ**」フィールドに、トークンの`scope`要求に存在する必要があるスコープのコンマ区切りリストを入力します。 スコープチェックをスキップするには、これを空のままにします。
 1. 必要に応じて他の設定を有効にします。
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
@@ -136,7 +181,7 @@ Web フックを作成すると、一意の URL が表示されます。 これ�
 
 受信ペイロードのデータ構造を認識するために、Workfront Fusionは、表示されたアドレスに送信するサンプルデータを解析します。 サンプルデータを指定するには、そのサービスまたはアプリを変更して、サービスまたはアプリが web フックを呼び出すようにします。 例えば、ファイルを削除できます。
 
-または、[!UICONTROL HTTP] > [!UICONTROL &#x200B; リクエストを作成] モジュールを介してサンプルデータを送信できます。
+または、[!UICONTROL HTTP] > [!UICONTROL  リクエストを作成] モジュールを介してサンプルデータを送信できます。
 
 1. **[!UICONTROL HTTP]**／**[!UICONTROL リクエストを実行]**&#x200B;モジュールを使用して、新しいシナリオを作成します。
 
@@ -187,6 +232,10 @@ Web フックを作成すると、一意の URL が表示されます。 これ�
 
    これで、web フックの項目がマッピングパネルに表示され、シナリオの後続モジュールで使用できるようになりました。
 
+## 許可されたオリジン / CORS
+
+Fusionでカスタム Webhookを作成または編集する際に、「許可されたオリジン」フィールドを使用すると、どのブラウザーオリジン（web サイト）がクライアントサイド JavaScriptから直接Webhook エンドポイント（fetch/XHRなど）を呼び出すことができるかを制限できます。 これはCORS （Cross-Origin Resource Sharing）コントロールで、IP制限とは別に、認証タイプ（基本認証/クライアント証明書/Adobe IMS）とは別の境界です。
+
 ## Webhook キュー
 
 Web フックがデータを受け取り、そのデータを期待するアクティブなシナリオがない場合、データはキューに格納されます。 シナリオをアクティベートすると、キューで待機しているすべてのバンドルが順番に処理されます。
@@ -197,7 +246,7 @@ Web フックがデータを受け取り、そのデータを期待するアク�
 
 ## サポートされる受信データ形式
 
-Workfront Fusionでは、次の3つのデータ形式がサポートされています。[!UICONTROL &#x200B; クエリ文字列]、[!UICONTROL &#x200B; フォームデータ &#x200B;]、[!UICONTROL JSON]。
+Workfront Fusionでは、次の3つのデータ形式がサポートされています。[!UICONTROL  クエリ文字列]、[!UICONTROL  フォームデータ ]、[!UICONTROL JSON]。
 
 Workfront Fusionは、すべての受信データを選択したデータ構造に対して検証します。 次に、シナリオの設定に応じて、データは処理用のキューに格納されるか、すぐに処理されます。
 
@@ -290,9 +339,9 @@ Web フックのヘッダーにアクセスするには、web フックの設定
 >
 >以下の例は、`Headers[]` 配列から `authorization` ヘッダーの値を抽出する式を示しています。 この式は、抽出された値と指定されたテキストを比較し、一致する場合に web フックのみを渡すフィルターで使用されます。
 >
->![&#x200B; フィルターの設定](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-350x169.png)
+>![ フィルターの設定](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-350x169.png)
 >
->特定のキーを持つ配列の要素の取得について詳しくは、[特定のキーを持つ配列の要素のマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md#map-an-arrays-element-with-a-given-key)を参照してください。
+>特定のキーを持つ配列の要素の取得について詳しくは、[特定のキーを持つ配列の要素のマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md#map-an-arrays-element-with-a-given-key)を参照してください。
 
 ## Web フックへの応答
 
@@ -338,29 +387,29 @@ Web フックの応答をカスタマイズする場合は、web フックの応
 >[!UICONTROL Web フック応答]モジュールを次のように設定します。
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
->&gt;   <td> <p>2xx 成功 HTTP ステータスコード（例：200）</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
->&gt;   <td> <p>HTML コード</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>キー</strong>：Content-type</li> 
->&gt;     <li><strong>値</strong>：text/html</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+&gt;   <td> <p>2xx 成功 HTTP ステータスコード（例：200）</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
+&gt;   <td> <p>HTML コード</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>キー</strong>：Content-type</li> 
+&gt;     <li><strong>値</strong>：text/html</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
->![&#x200B; カスタムヘッダー](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
+>![ カスタムヘッダー](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
 >これにより、web ブラウザーに表示される HTML 応答が生成されます。
 >
@@ -370,26 +419,26 @@ Web フックの応答をカスタマイズする場合は、web フックの応
 
 >[!INFO]
 >
->**例：**&#x200B;[!UICONTROL web フック応答]モジュールを次のように設定します。
+>**例：**[!UICONTROL web フック応答]モジュールを次のように設定します。
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
->&gt;   <td> <p>3xx リダイレクト HTTP ステータスコード（例：303）</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>[!UICONTROL Key]</strong>：場所</li> 
->&gt;     <li><strong>[!UICONTROL Value]</strong>：リダイレクト先の URL。</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+&gt;   <td> <p>3xx リダイレクト HTTP ステータスコード（例：303）</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>[!UICONTROL Key]</strong>：場所</li> 
+&gt;     <li><strong>[!UICONTROL Value]</strong>：リダイレクト先の URL。</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Webhook応答](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 
@@ -409,6 +458,6 @@ Web フックの応答をカスタマイズする場合は、web フックの応
 
 [!UICONTROL Web フック]／[!UICONTROL カスタム web フック]モジュールに続くモジュールの設定でマッピングパネルに一部の項目が欠落している場合は、**[!UICONTROL Web フック]／[!UICONTROL カスタム web フック]**&#x200B;モジュールを選択して設定を開き、「**[!UICONTROL データ構造を再決定]**」をクリックします。
 
-![&#x200B; データ構造を再決定](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
+![ データ構造を再決定](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
 
 次に、この記事の [web フックのデータ構造の設定](#configure-the-webhook-s-data-structure)の節で説明されている手順に従います。
