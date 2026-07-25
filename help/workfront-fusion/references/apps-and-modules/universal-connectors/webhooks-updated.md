@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8af4c12773be538823d252f5022e1613e5629d2d
+source-git-commit: e8ba11636822fc7007e3a331002194f1a3effcbc
 workflow-type: tm+mt
-source-wordcount: 1909
-ht-degree: 71%
+source-wordcount: 2418
+ht-degree: 59%
 
 ---
 
@@ -68,10 +68,11 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 >
 >サードパーティの web フック（送信 web フック）を呼び出すには、いずれかの HTTP モジュールを使用します。 詳しくは、[HTTP モジュール](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)を参照してください。
 
-Webhookを使用してアプリをWorkfront Fusionに接続するには、クライアント証明書（mTLS）または基本認証のいずれかを使用して認証するようにWebhookを設定できます。
+Webhookを使用してアプリをWorkfront Fusionに接続するには、クライアント証明書（mTLS）、基本認証、またはAdobe Identity Management System （IMS）を使用して認証するようにWebhookを設定できます。
 
 * [クライアント証明書（mTLS）でWebhookを使用する](#use-a-webhook-with-a-client-certificate-mtls)
 * [基本認証でのWebhookの使用](#use-a-webhook-with-basic-authentication)
+* [Adobe Identity Management System （IMS）でのWebhookの使用](#use-a-webhook-with-adobe-identity-management-system-ims)
 
 ### クライアント証明書（mTLS）を使用したWebhookの使用
 
@@ -84,6 +85,13 @@ mTLSについて詳しくは、[相互TLSの概要](/help/workfront-fusion/refer
 1. Web フックフィールドの横にある「**[!UICONTROL 追加]**」をクリックして、新規 web フックの名前を入力します。
 1. （オプション）「**[!UICONTROL 詳細設定]**」をクリックします。
 1. **[!UICONTROL IP 制限]**&#x200B;フィールドに、モジュールがデータを受け入れることができる IP アドレスのカンマ区切りのリストを入力します。
+1. （オプション）このWebhookの呼び出しを許可する各オリジンの「**[!UICONTROL オリジン制限]**」フィールドで、「**項目を追加**」をクリックし、オリジンのパターンを入力します。 任意のオリジンを許可する場合は、このフィールドを空白のままにします。
+
+   このフィールドでは、次のパターンを使用できます。
+
+   * 正確なホスト名：`app.example.com`
+   * ワイルドカードサブドメイン：`*.example.com`
+   * Scheme-qualified:` https://app.example.com`または`https://*.example.com`
 1. 受信データを検証する場合は、**データ構造** フィールドで、使用するデータ構造を選択または追加します。
 
    データ構造について詳しくは、[&#x200B; データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
@@ -118,11 +126,50 @@ Web フックを作成すると、一意の URL が表示されます。 これ�
 1. Web フックフィールドの横にある「**[!UICONTROL 追加]**」をクリックして、新規 web フックの名前を入力します。
 1. （オプション）「**[!UICONTROL 詳細設定]**」をクリックします。
 1. **[!UICONTROL IP 制限]**&#x200B;フィールドに、モジュールがデータを受け入れることができる IP アドレスのカンマ区切りのリストを入力します。
+1. （オプション）このWebhookの呼び出しを許可する各オリジンの「**[!UICONTROL オリジン制限]**」フィールドで、「**項目を追加**」をクリックし、オリジンのパターンを入力します。 任意のオリジンを許可する場合は、このフィールドを空白のままにします。
+
+   このフィールドでは、次のパターンを使用できます。
+
+   * 正確なホスト名：`app.example.com`
+   * ワイルドカードサブドメイン：`*.example.com`
+   * Scheme-qualified:` https://app.example.com`または`https://*.example.com`
 1. 受信データを検証する場合は、**データ構造** フィールドで、使用するデータ構造を選択または追加します。
 
    データ構造について詳しくは、[&#x200B; データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
 1. **認証タイプ** フィールドで、**[!UICONTROL 基本認証]**&#x200B;を選択します。
 1. 「**資格情報**」フィールドに、認証に使用する資格情報を入力します。 資格情報を入力するには、**Add**&#x200B;をクリックし、基本認証のユーザー名とパスワードを入力します。
+1. 必要に応じて他の設定を有効にします。
+1. 「**[!UICONTROL 保存]**」をクリックします。
+
+Web フックを作成すると、一意の URL が表示されます。 これは、web フックがデータを送信するアドレスです。 Workfront Fusion は、このアドレスに送信されたデータを検証し、そのデータをシナリオでの処理に渡します。
+
+>[!NOTE]
+>
+>Webhookを作成した後、一度に複数のシナリオで使用できます。
+
+### Adobe Identity Management System （IMS）でのWebhookの使用
+
+Adobe Identity Management System （IMS）認証では、組織のAdobe IMS資格情報を使用して、接続先のサービスに対する認証を行います。
+
+1. **[!UICONTROL Webhook]** > **[!UICONTROL カスタム Webhook]** インスタントトリガーモジュールをシナリオに追加します。
+
+1. Web フックフィールドの横にある「**[!UICONTROL 追加]**」をクリックして、新規 web フックの名前を入力します。
+1. （オプション）「**[!UICONTROL 詳細設定]**」をクリックします。
+1. **[!UICONTROL IP 制限]**&#x200B;フィールドに、モジュールがデータを受け入れることができる IP アドレスのカンマ区切りのリストを入力します。
+1. （オプション）このWebhookの呼び出しを許可する各オリジンの「**[!UICONTROL オリジン制限]**」フィールドで、「**項目を追加**」をクリックし、オリジンのパターンを入力します。 任意のオリジンを許可する場合は、このフィールドを空白のままにします。
+
+   このフィールドでは、次のパターンを使用できます。
+
+   * 正確なホスト名：`app.example.com`
+   * ワイルドカードサブドメイン：`*.example.com`
+   * Scheme-qualified:` https://app.example.com`または`https://*.example.com`
+1. 受信データを検証する場合は、**データ構造** フィールドで、使用するデータ構造を選択または追加します。
+
+   データ構造について詳しくは、[&#x200B; データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
+1. 「**Authorization type**」フィールドで、「**Adobe IMS（Authorization headerのBearer token）**」を選択します。
+1. （オプション）「**許可されたクライアント**」フィールドに、このWebhookの呼び出しを許可されたクライアント IDのコンマ区切りリストを入力します。 この設定を空のままにすると、信頼できる発行者とオーディエンスによってトークンが有効に署名されているクライアントを受け入れることができます。
+1. （オプション）「**許可されたユーザー**」フィールドに、このWebhookの呼び出しを許可されたユーザーIDのコンマ区切りリストを入力します。 任意のユーザーを許可するには、この設定を空のままにします。
+1. （オプション）「**必須スコープ**」フィールドに、トークンの`scope`要求に存在する必要があるスコープのコンマ区切りリストを入力します。 スコープチェックをスキップするには、これを空のままにします。
 1. 必要に応じて他の設定を有効にします。
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
@@ -186,6 +233,10 @@ Web フックを作成すると、一意の URL が表示されます。 これ�
 1. 「**[!UICONTROL OK]**」をクリックして、データ構造を保存します。
 
    これで、web フックの項目がマッピングパネルに表示され、シナリオの後続モジュールで使用できるようになりました。
+
+## 許可されたオリジン / CORS
+
+Fusionでカスタム Webhookを作成または編集する際に、「許可されたオリジン」フィールドを使用すると、どのブラウザーオリジン（web サイト）がクライアントサイド JavaScriptから直接Webhook エンドポイント（fetch/XHRなど）を呼び出すことができるかを制限できます。 これはCORS （Cross-Origin Resource Sharing）コントロールで、IP制限とは別に、認証タイプ（基本認証/クライアント証明書/Adobe IMS）とは別の境界です。
 
 ## Webhook キュー
 
