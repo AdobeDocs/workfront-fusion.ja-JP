@@ -10,7 +10,7 @@ ht-degree: 0%
 実際の最近のページに基づく、`fusion-release-notes` スキルの作業済み例
 `help/workfront-fusion/fusion-product-releases/fusion-releases-2026/`.
 
----
+&#x200B;---
 
 ## 例1：単純なマルチフィーチャー週
 
@@ -50,7 +50,7 @@ To make it easier to understand changes between scenario versions, we've added t
 For more information, see [View and manage scenario versions](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md).
 ```
 
----
+&#x200B;---
 
 ## 例2：アクションが必要/非推奨のコールアウトを含む週
 
@@ -96,7 +96,7 @@ To make it easier to identify routes, we've added labels. Now, routes are labele
 For more information on routes, see [Add a Router module and configure routes](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 ```
 
----
+&#x200B;---
 
 ## 例3：新しいコネクタの起動
 
@@ -118,7 +118,7 @@ For more information, see [Adobe Content Tagger modules](/help/workfront-fusion/
 
 このようなコネクター起動の場合は、ユーザーがリダイレクトの設定を必要とするかどうかを（スキルの手順1に従って）常に尋ねます。
 
----
+&#x200B;---
 
 ## 概要ページ （`fusion-release-activity.md`）の更新パターン
 
@@ -151,7 +151,7 @@ For more information, see [Adobe Content Tagger modules](/help/workfront-fusion/
 +++
 ```
 
----
+&#x200B;---
 
 ## TOC.md更新パターン
 
@@ -166,7 +166,7 @@ For more information, see [Adobe Content Tagger modules](/help/workfront-fusion/
         ...
 ```
 
----
+&#x200B;---
 
 ## リポジトリ参照をリダイレクトします（手順7の場合）。
 
@@ -181,7 +181,7 @@ For more information, see [Adobe Content Tagger modules](/help/workfront-fusion/
 
 行を追加した後も、PRを`redirects` リポジトリで引き上げ、ライブになる前にマージする必要があります（1:1 リダイレクトのマージ後は約5分）。 このスキルは、ユーザーが確認した後にのみ行を追加します。つまり、PRは上げません。
 
----
+&#x200B;---
 
 ## 既存ページの既知の不整合（参照用のみ。新しいページにコピーしないでください）
 
