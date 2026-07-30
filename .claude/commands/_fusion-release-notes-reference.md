@@ -1,7 +1,7 @@
 ---
-source-git-commit: 59a8d8ee83906bc16fc627bd348accc4e588cf9b
+source-git-commit: 67301a4e3c16eaed28f92a1be7556c5574308429
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -10,7 +10,7 @@ ht-degree: 0%
 実際の最近のページに基づく、`fusion-release-notes` スキルの作業済み例
 `help/workfront-fusion/fusion-product-releases/fusion-releases-2026/`.
 
-&#x200B;---
+---
 
 ## 例1：単純なマルチフィーチャー週
 
@@ -31,7 +31,7 @@ This page describes all enhancements made in Adobe Workfront Fusion the week of 
 
 For a list of all recent changes, see [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/ja/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
+For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/en/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
 
 ## Create custom JavaScript packages to use in scenarios
 
@@ -50,7 +50,7 @@ To make it easier to understand changes between scenario versions, we've added t
 For more information, see [View and manage scenario versions](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md).
 ```
 
-&#x200B;---
+---
 
 ## 例2：アクションが必要/非推奨のコールアウトを含む週
 
@@ -71,7 +71,7 @@ This page describes all enhancements made in Adobe Workfront Fusion the week of 
 
 For a list of all recent changes, see [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/ja/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
+For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/en/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
 
 ## Log in to Fusion through Adobe IMS
 
@@ -96,7 +96,29 @@ To make it easier to identify routes, we've added labels. Now, routes are labele
 For more information on routes, see [Add a Router module and configure routes](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 ```
 
-&#x200B;---
+---
+
+## 例3：新しいコネクタの起動
+
+`fusion-2026-7-27.md`に基づきます。
+
+```markdown
+## Adobe Content Tagger connector and modules now available
+
+You can now use Workfront Fusion to tag content in Adobe documents.
+
+With the Adobe Content Tagger modules, you can:
+
+* Tag colors in an image, returning the percentage covered by different pixel colors
+* Tag keywords or key phrases that best describe the subject of a document
+* Tag text in an image, indicating whether text is present and returning it if so
+
+For more information, see [Adobe Content Tagger modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/content-tagging-modules.md).
+```
+
+このようなコネクター起動の場合は、ユーザーがリダイレクトの設定を必要とするかどうかを（スキルの手順1に従って）常に尋ねます。
+
+---
 
 ## 概要ページ （`fusion-release-activity.md`）の更新パターン
 
@@ -129,7 +151,7 @@ For more information on routes, see [Add a Router module and configure routes](/
 +++
 ```
 
-&#x200B;---
+---
 
 ## TOC.md更新パターン
 
@@ -144,7 +166,22 @@ For more information on routes, see [Add a Router module and configure routes](/
         ...
 ```
 
-&#x200B;---
+---
+
+## リポジトリ参照をリダイレクトします（手順7の場合）。
+
+兄弟`redirects` リポジトリ （`Adobe-Enterprise-Docs/redirects`）は、`redirects/`の下のCSV ファイルに1:1のリダイレクトを保持しており、環境ごとに1つ保持しています：`redirects-dev.csv`、`redirects-stage.csv`、`redirects-prod.csv`。
+
+行ルール（そのリポジトリのREADMEから）:
+
+- `source`は`/en`で始まる必要があり（言語のバリエーションが自動作成されます）、スペースが含まれていません。
+- `destination`は、`/en`で始まる相対パス、または`https`で始まる完全なURLであり、スペースを含めることはできません。
+- 重複する`source`はなく、`source`/`destination` ペアも重複しません。
+- リダイレクトはリダイレクトループを引き起こしてはなりません。
+
+行を追加した後も、PRを`redirects` リポジトリで引き上げ、ライブになる前にマージする必要があります（1:1 リダイレクトのマージ後は約5分）。 このスキルは、ユーザーが確認した後にのみ行を追加します。つまり、PRは上げません。
+
+---
 
 ## 既存ページの既知の不整合（参照用のみ。新しいページにコピーしないでください）
 
