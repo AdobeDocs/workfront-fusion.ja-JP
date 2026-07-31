@@ -15,10 +15,10 @@ subfeature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 86ecf8da00cbae38b4ae48f616ac37e759f84494
 workflow-type: tm+mt
-source-wordcount: 7298
-ht-degree: 98%
+source-wordcount: 7518
+ht-degree: 95%
 
 ---
 
@@ -256,7 +256,7 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
      </tr> 
      <tr> 
       <td>[!UICONTROL Connection]</td> 
-      <td> <p>Workfront アプリを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront を Workfront Fusion に接続</a>を参照してください。</p> </td> 
+      <td> <p>Workfront アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront を Workfront Fusion に接続</a>を参照してください。</p> </td> 
      </tr> 
      <tr> 
       <td>[!UICONTROL Record Type]</td> 
@@ -308,7 +308,7 @@ Webhook を作成した後、イベントの送信先エンドポイントのア
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Workfront アプリを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront を Workfront Fusion に接続</a>を参照してください。</p> </td> 
+   <td> <p>Workfront アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
@@ -479,7 +479,7 @@ Webhook を作成した後、イベントの送信先エンドポイントのア
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Workfront アプリを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront を Workfront Fusion に接続</a>を参照してください。</p> </td> 
+   <td> <p>Workfront アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
@@ -758,7 +758,7 @@ See a list of the Workfront object types for which you can use this module in [W
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Workfront アプリを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront を Workfront Fusion に接続</a>を参照してください。</p> </td> 
+   <td> <p>Workfront アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Record Type]</td> 
@@ -790,6 +790,10 @@ See a list of the Workfront object types for which you can use this module in [W
 このモジュールを使用できる Workfront オブジェクトタイプのリストについて詳しくは、[各 Workfront モジュールで使用可能な Workfront オブジェクトタイプ](#workfront-object-types-available-for-each-workfront-module)を参照してください。
 
 #### その他のアクションオプション
+
+* [タスク](#task)
+* [イシュー](#issue)
+* [プロジェクト](#project)
 
 ##### タスク
 
@@ -959,7 +963,7 @@ See a list of the Workfront object types for which you can use this module in [W
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
-    <td> <p>Workfront アプリを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront を Workfront Fusion に接続</a>を参照してください。</p> </td> 
+    <td> <p>Workfront アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Record Type]</td>
@@ -1289,7 +1293,7 @@ See a list of the Workfront object types for which you can use this module in [W
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Workfront アプリを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront を Workfront Fusion に接続</a>を参照してください。</p> </td> 
+   <td> <p>Workfront アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Record Type]</td> 
@@ -1326,7 +1330,7 @@ See a list of the Workfront object types for which you can use this module in [W
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Workfront アプリを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront を Workfront Fusion に接続</a>を参照してください。</p> </td> 
+   <td> <p>Workfront アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
@@ -1373,8 +1377,8 @@ See a list of the Workfront object types for which you can use this module in [W
 
 >[!IMPORTANT]
 >
->このモジュールは、レコードを検索モジュールに置き換えられました。 新しいシナリオでは、そのモジュールを使用することをお勧めします。
->このモジュールを使用する既存のシナリオは、引き続き期待どおりに機能します。 このモジュールは、2025年5月にモジュールセレクターから削除されます。
+>このモジュールは、レコードの検索モジュールに置き換えられました。新しいシナリオでは、そのモジュールを使用することをおすすめします。
+>このモジュールを使用する既存のシナリオは、引き続き期待どおりに機能します。このモジュールは、2025年5月にモジュールセレクターから削除されます。
 
 この検索モジュールは、指定した検索クエリに一致するレコードを Workfront のオブジェクト内で検索します。
 
@@ -1388,7 +1392,7 @@ See a list of the Workfront object types for which you can use this module in [W
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Workfront アプリを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront を Workfront Fusion に接続</a>を参照してください。</p> </td> 
+   <td> <p>Workfront アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
@@ -2382,6 +2386,13 @@ See a list of the Workfront object types for which you can use this module in [W
 
 ## Workfront／[!UICONTROL イベントを監視]モジュールのイベント登録フィルター
 
+イベントサブスクリプションのフィルターを使用すると、特定のパラメーターが満たされた場合にのみシナリオを実行できます。
+
+* [イベント購読フィルターのベストプラクティス](#event-subscription-filter-best-practices)
+* [高度なフィルターの使用](#using-advanced-filters)
+
+### イベント購読フィルターのベストプラクティス
+
 >[!NOTE]
 >
 >* [!UICONTROL イベントを監視]モジュールでは、イベント登録フィルターを使用することを強くお勧めします。
@@ -2390,7 +2401,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >   新しいイベント登録バージョンについて詳しくは、Workfront ドキュメントの[イベント登録のバージョン管理](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)を参照してください。
 >
->   ウェビナーの録画など、イベント登録のアップグレード中に Workfront Fusion シナリオを保持する方法について詳しくは、[イベント登録 V2 アップグレード中の Fusion シナリオの保持（https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ja）]を参照してください。
+>   ウェビナーの録画など、イベント登録のアップグレード中に Workfront Fusion シナリオを保持する方法について詳しくは、[イベント登録 V2 のアップグレード中の Fusion シナリオの保持](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ja)を参照してください。
 
 Workfront [!UICONTROL イベントを監視]モジュールは、Workfront API でイベント登録を作成する Webhook に基づいてシナリオをトリガーします。 イベント登録は、web フックに送信されるイベントを決定する一連のデータです。 例えば、イシューを監視する[!UICONTROL イベントの監視]モジュールを設定した場合、イベント登録はイシューに関連するイベントのみを送信します。
 
@@ -2408,13 +2419,13 @@ Workfront／イベントの監視フィルターで使用できる演算子は�
 * が次よりも小さいか等しい
 * が次を含む
 * 存在する
-   * この演算子には値は必要ありません。また、値フィールドは存在しません。
+  * この演算子には値は必要ありません。また、値フィールドは存在しません。
 * が存在しません
-   * この演算子には値は必要ありません。また、値フィールドは存在しません。
+  * この演算子には値は必要ありません。また、値フィールドは存在しません。
 * 変更済み
-   * この演算子には値は必要ありません。また、値フィールドは存在しません。
-   * この演算子では、「状態」フィールドを無視します。
-   * `Changed` を使用する際は、「**レコード元**」フィールドで「**更新されたイベントのみ**」を選択します。
+  * この演算子には値は必要ありません。また、値フィールドは存在しません。
+  * この演算子では、「状態」フィールドを無視します。
+  * `Changed` を使用する際は、「**レコード元**」フィールドで「**更新されたイベントのみ**」を選択します。
 
 >[!IMPORTANT]
 >
@@ -2424,7 +2435,7 @@ Workfront／イベントの監視フィルターで使用できる演算子は�
 >
 >**例：** 特定のユーザー Ana に割り当てられた新規イシューを処理するシナリオについて考えます。
 >
->### イベント登録フィルターを使用したイベントのフィルタリング（推奨）
+>#### イベント登録フィルターを使用したイベントのフィルタリング（推奨）
 >
 >イベントフィルターを使用すると、イシューが Ana に割り当てられている場合のシナリオをイシューの作成時にトリガーする web フックを設定できます。 Ana の ユーザー IDは、b378489d8f7cd3cee0539260720a84b7 です。
 >
@@ -2432,7 +2443,7 @@ Workfront／イベントの監視フィルターで使用できる演算子は�
 >
 >1 日に 100 件のイシューが作成され、そのうち 2 件のみが Ana に割り当てられている場合、シナリオは 2 回実行されます。
 >
->### シナリオ内でのイベントのフィルタリング（非推奨）
+>#### シナリオ内でのイベントのフィルタリング（非推奨）
 >
 >Ana に割り当てられたイシューのみを処理するようにイベントをフィルタリングするには、[!UICONTROL イベントを監視]モジュールの後にフィルターを作成できます。
 >
@@ -2445,3 +2456,26 @@ Workfront イベント登録について詳しくは、[FAQ - イベント登録
 Webhook について詳しくは、[Adobe Workfront Fusion のインスタントトリガー（Webhook）](/help/workfront-fusion/references/modules/webhooks-reference.md)を参照してください。
 
 シナリオでのフィルターについて詳しくは、[シナリオへのフィルターの追加](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md)を参照してください。
+
+### 高度なフィルターの使用
+
+Workfront / Watch events モジュールには、2種類のフィルターがあります。
+
+* **シンプル**：このフィルターは、フィールド、演算子、値を選択できるインターフェイスを提供します。また、AND演算子およびOR演算子を使用してフィルターを作成できます。
+* **詳細**：このフィルターを使用すると、フィルターを表すJSONをアップロードできます。
+
+#### シンプルなフィルターと高度なフィルター
+
+2つのタイプの主な違いは、フィルターの状態です。
+
+* **シンプル**：単純なフィルターを設定する際に、フィールドの古い状態と新しい状態のどちらをフィルタリングするかを選択します。 つまり、フィールドが指定された値を&#x200B;**から**&#x200B;に変更したときにシナリオをアクティブにするか、指定された値を&#x200B;**から**&#x200B;に変更するときにアクティブにするかを決定します。 ANDとORを使用すると、複数のフィールドと値を含めることができますが、同じ状態を共有する必要があります。 一部のフィールドには古い状態を、他のフィールドには新しい状態を使用することはできません。
+* **詳細**：高度なフィルターでJSONを設定して、同じフィルター内の古いステートと新しいステートの両方の値を指定できます。 例えば、プロジェクトが計画ステータスから現在ステータスに移行する場合に、シナリオをトリガーするように指定できます。 これにより、計画中から停止に移動するプロジェクトや、保留中から現在に移動するプロジェクトは除外されます。
+
+<!--
+
+#### Advanced filter examples
+
+-->
+
+<!--CHECK ON EDITING FILTERS-->
+

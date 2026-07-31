@@ -1,7 +1,7 @@
 ---
-source-git-commit: 59a8d8ee83906bc16fc627bd348accc4e588cf9b
+source-git-commit: 67301a4e3c16eaed28f92a1be7556c5574308429
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -98,6 +98,28 @@ For more information on routes, see [Add a Router module and configure routes](/
 
 &#x200B;---
 
+## 例3：新しいコネクタの起動
+
+`fusion-2026-7-27.md`に基づきます。
+
+```markdown
+## Adobe Content Tagger connector and modules now available
+
+You can now use Workfront Fusion to tag content in Adobe documents.
+
+With the Adobe Content Tagger modules, you can:
+
+* Tag colors in an image, returning the percentage covered by different pixel colors
+* Tag keywords or key phrases that best describe the subject of a document
+* Tag text in an image, indicating whether text is present and returning it if so
+
+For more information, see [Adobe Content Tagger modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/content-tagging-modules.md).
+```
+
+このようなコネクター起動の場合は、ユーザーがリダイレクトの設定を必要とするかどうかを（スキルの手順1に従って）常に尋ねます。
+
+&#x200B;---
+
 ## 概要ページ （`fusion-release-activity.md`）の更新パターン
 
 2026年7月20日の週を、既存の2026年7月の月セクションに追加します。
@@ -143,6 +165,21 @@ For more information on routes, see [Add a Router module and configure routes](/
         * [Workfront Fusion release activity: Week of July 13 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-13.md)
         ...
 ```
+
+&#x200B;---
+
+## リポジトリ参照をリダイレクトします（手順7の場合）。
+
+兄弟`redirects` リポジトリ （`Adobe-Enterprise-Docs/redirects`）は、`redirects/`の下のCSV ファイルに1:1のリダイレクトを保持しており、環境ごとに1つ保持しています：`redirects-dev.csv`、`redirects-stage.csv`、`redirects-prod.csv`。
+
+行ルール（そのリポジトリのREADMEから）:
+
+- `source`は`/en`で始まる必要があり（言語のバリエーションが自動作成されます）、スペースが含まれていません。
+- `destination`は、`/en`で始まる相対パス、または`https`で始まる完全なURLであり、スペースを含めることはできません。
+- 重複する`source`はなく、`source`/`destination` ペアも重複しません。
+- リダイレクトはリダイレクトループを引き起こしてはなりません。
+
+行を追加した後も、PRを`redirects` リポジトリで引き上げ、ライブになる前にマージする必要があります（1:1 リダイレクトのマージ後は約5分）。 このスキルは、ユーザーが確認した後にのみ行を追加します。つまり、PRは上げません。
 
 &#x200B;---
 
