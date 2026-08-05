@@ -6,14 +6,12 @@ draft: Probably
 feature: Workfront Fusion
 exl-id: 41179cfe-c0f9-4d18-ab7e-374670ac688b
 TQID: https://experienceleague.adobe.com/Dq7tbOvvEndH-6k3yX8AvH29kZxp748JeT1HW-zcDDQ
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 657
-ht-degree: 99%
+source-wordcount: 659
+ht-degree: 98%
 
 ---
 
@@ -44,7 +42,7 @@ Adobe Workfront Fusion のシナリオでは、[!DNL MariaDB] を使用するワ
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>オペレーションベース：オペレーションベースのライセンスを持つ組織で使用できます</p>
    <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
@@ -99,7 +97,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
       <td>デフォルトのポートは 3306 です。 非標準のポートを使用している場合は、この番号をポートに設定します。 </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Database &#x200B;]</td> 
+      <td role="rowheader">[!UICONTROL Database ]</td> 
       <td>操作するデータベースの名前を入力します。</td> 
      </tr> 
      <tr> 

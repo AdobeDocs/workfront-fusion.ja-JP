@@ -5,16 +5,12 @@ author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 81c9b141-4e40-430f-99f1-c44b7a833bcd
 TQID: https://experienceleague.adobe.com/oe0aoid5lPYljLtCBKV7GKd8KGNKh-LGQYD2d83-9eo
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 2040
+source-wordcount: 2042
 ht-degree: 79%
 
 ---
@@ -46,7 +42,7 @@ Adobe Workfront Fusion のシナリオでは、[!DNL Anaplan] を使用するワ
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>オペレーションベース：オペレーションベースのライセンスを持つ組織で使用できます</p>
    <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
@@ -404,7 +400,7 @@ Anaplan コネクタでは、次の機能が使用されます。
    <td>[!DNL Anaplan]への接続の作成手順については、この記事の「<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion</a>への[!DNL Anaplan]の接続」を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL レコードタイプ]</td> 
+   <td role="rowheader">[!UICONTROL Record type]</td> 
    <td> <p>読み取るレコードのタイプを選択します。</p> 
     <ul> 
      <li> <p><b>モデル</b> </p> <p>読み取りたいモデルの ID を選択またはマッピングします。</p> </li> 
@@ -494,7 +490,7 @@ Anaplan コネクタでは、次の機能が使用されます。
    <td>[!DNL Anaplan]への接続の作成手順については、この記事の「<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Workfront Fusion</a>への[!DNL Anaplan]の接続」を参照してください。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL レコードタイプ]</td> 
+   <td role="rowheader">[!UICONTROL Record type]</td> 
    <td> <p>更新するレコードの種類を選択します。</p> 
     <ul> 
      <li> <p><b>[!UICONTROL List item]</b> </p> <p>フィールドについては、この記事の<a href="#create-a-list-item" class="MCXref xref">リスト項目を作成</a>を参照してください。</p> </li> 
@@ -520,7 +516,7 @@ Anaplan コネクタでは、次の機能が使用されます。
  </tbody> 
 </table>
 
-#### [!UICONTROL &#x200B; アクション用にファイルをアップロード &#x200B;]
+#### [!UICONTROL  アクション用にファイルをアップロード ]
 
 このアクションモジュールは、Anaplan内の既存のファイルをAnaplan内の追加の場所にアップロードします。
 <table style="table-layout:auto">
@@ -570,7 +566,7 @@ Anaplan コネクタでは、次の機能が使用されます。
        <li> <p><b>[!UICONTROL Line items]</b> </p> <p>取得する [!DNL line] 項目を含むモデルの ID を、選択またはマッピングします。</p> </li> 
        <li> <p><b>[!UICONTROL Model lists]</b> </p> <p>取得するモデルリストを含むワークスペース ID とモデル ID を、選択またはマッピングします。</p> </li> 
        <li> <p><b>[!UICONTROL Model calendar]</b> </p> <p>取得するモデルカレンダーが含まれるワークスペースの ID を、選択またはマッピングします。</p> </li> 
-       <li> <p><b>[!UICONTROL モデル バージョン &#x200B;]</b> </p> </li> 
+       <li> <p><b>[!UICONTROL モデル バージョン ]</b> </p> </li> 
        <li> <p>取得するモデルバージョンを含むモデルのIDを選択またはマッピングします。</p> </li> 
        <li> <p><b>[!UICONTROL Users]</b> </p> </li> 
        <li> <p><b>[!UICONTROL Views]</b> </p> <p>モジュールまたはモデルのどちらで表示するかを選択し、取得する表示を含むモジュールまたはモデルの ID を、選択またはマッピングします。</p> </li> 

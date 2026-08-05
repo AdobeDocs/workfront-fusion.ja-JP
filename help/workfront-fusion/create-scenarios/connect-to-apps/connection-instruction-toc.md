@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 281403a6-6f88-4976-8a10-1d0848ef9b35
 TQID: https://experienceleague.adobe.com/qjxlwSzWy6FmnASQrhjVKe8A4VyBpw0aBHkNwgQpo3A
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 563
-ht-degree: 53%
+source-wordcount: 565
+ht-degree: 51%
 
 ---
 
@@ -39,7 +37,7 @@ ht-degree: 53%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>オペレーションベース：オペレーションベースのライセンスを持つ組織で使用できます</p>
    <p>コネクターベース（レガシー）: Workfront以外のアプリケーションに接続するには、作業の自動化と統合用のWorkfront Fusionが必要です </p>
    </td> 
   </tr> 
@@ -70,7 +68,7 @@ Adobe アプリまたはサービスに接続するには、組織IDやテクニ
 
 また、Adobe Authenticator モジュールを使用して、1つの接続を使用して任意のAdobe APIに接続することもできます。 これにより、専用のFusion コネクタを持たないAdobe製品に簡単に接続できます。
 
-具体的な手順については、[&#x200B; コネクタの記事](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#connectors-for-adobe-products)を参照してください。
+具体的な手順については、[ コネクタの記事](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#connectors-for-adobe-products)を参照してください。
 
 ## [!DNL Microsoft] アプリまたは web サービスに接続
 
@@ -99,4 +97,4 @@ Workfront Fusionのほとんどの[!DNL Microsoft] アプリでは、追加情�
 
 一部のアプリやサービスは、Workfront Fusion接続の基本設定に従っていません。 これらのアプリに接続する手順は、当該のアプリの記事で確認できます。
 
-具体的な手順については、[&#x200B; コネクタの記事](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#connectors-for-third-party-applications)を参照してください。
+具体的な手順については、[ コネクタの記事](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#connectors-for-third-party-applications)を参照してください。

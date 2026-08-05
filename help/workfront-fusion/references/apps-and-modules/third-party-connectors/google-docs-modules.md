@@ -5,15 +5,12 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: cd44250d-c2cd-46b2-8773-15b30472a8d8
 TQID: https://experienceleague.adobe.com/8Ssu593A6Le2Z45BVg5T-wbj0Ld3z-efmO6JVRYk9n0
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 4106
+source-wordcount: 4108
 ht-degree: 83%
 
 ---
@@ -47,7 +44,7 @@ Adobe Workfront Fusionで[!DNL Google Docs]を使用するには、[!DNL Google]
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>オペレーションベース：オペレーションベースのライセンスを持つ組織で使用できます</p>
    <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
@@ -215,7 +212,7 @@ Google Docs コネクタでは、次の機能が使用されます。
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>ドキュメントを作成するフォルダーを選択します。</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>ドキュメントを作成するフォルダーを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみ使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>ドキュメントを作成する共有ドライブを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみが使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>ドキュメントを作成する共有ドライブを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -239,7 +236,7 @@ Google Docs コネクタでは、次の機能が使用されます。
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>削除するドキュメントが保存されているフォルダーを選択し、そのドキュメントを選択します。</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>削除するドキュメントが保存されているフォルダーを選択し、そのドキュメントを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみ使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>削除するドキュメントが存在する共有ドライブを選択し、ドキュメントを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみが使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>削除するドキュメントが存在する共有ドライブを選択し、ドキュメントを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -271,7 +268,7 @@ Google Docs コネクタでは、次の機能が使用されます。
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>「ドキュメント ID」フィールドで、ダウンロードするドキュメントがあるフォルダーを選択し、ドキュメントを選択します。</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>「ドキュメント ID」フィールドで、ダウンロードするドキュメントがあるフォルダーを選択し、ドキュメントを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみが使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>ダウンロードするドキュメントが保存されている共有ドライブを選択し、ドキュメントを選択します。</p> <p>メモ：このフィールドで [!DNL Google Docs] オプションを選択し、[!DNL Google Workspace] ユーザーでない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみ使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>ダウンロードするドキュメントが保存されている共有ドライブを選択し、ドキュメントを選択します。</p> <p>メモ：このフィールドで [!DNL Google Docs] オプションを選択し、[!DNL Google Workspace] ユーザーでない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -305,7 +302,7 @@ Google Docs コネクタでは、次の機能が使用されます。
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>取得するドキュメントを含むフォルダーを選択します。</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>取得するドキュメントを含むフォルダーを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみ使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>取得するドキュメントを含む共有ドライブを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみが使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>取得するドキュメントを含む共有ドライブを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -409,7 +406,7 @@ Google Docs コネクタでは、次の機能が使用されます。
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>画像を追加するドキュメントが配置されているフォルダーを選択します。</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>画像を追加するドキュメントが配置されているフォルダーを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみが使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>画像の追加先のドキュメントが存在する共有ドライブを選択し、ドキュメントを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみ使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>画像の追加先のドキュメントが存在する共有ドライブを選択し、ドキュメントを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -460,7 +457,7 @@ Google Docs コネクタでは、次の機能が使用されます。
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>ドキュメントをリストするフォルダーを選択します。</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>ドキュメントをリストするフォルダーを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみ使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>ドキュメントのリストを表示する共有ドライブを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみが使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>ドキュメントのリストを表示する共有ドライブを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -540,7 +537,7 @@ Google Docs コネクタでは、次の機能が使用されます。
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>画像を置き換えるドキュメントが存在するフォルダーを選択し、ドキュメントを選択します。</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>画像を置き換えるドキュメントが存在するフォルダーを選択し、ドキュメントを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみが使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>画像を置き換えるドキュメントが存在する共有ドライブを選択し、ドキュメントを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみ使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>画像を置き換えるドキュメントが存在する共有ドライブを選択し、ドキュメントを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -577,7 +574,7 @@ Google Docs コネクタでは、次の機能が使用されます。
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>作成されたドキュメントまたは変更されたドキュメントの監視するフォルダーを選択します。</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>作成されたドキュメントまたは変更されたドキュメントの監視するフォルダーを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみ使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>監視する共有ドライブを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Shared Drive]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみが使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>監視する共有ドライブを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Shared Drive]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -618,7 +615,7 @@ Google Docs コネクタでは、次の機能が使用されます。
     <ul> 
      <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>リンクをクリック可能にするドキュメントがあるフォルダーを選択します。</p> </li> 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>リンクをクリック可能にするドキュメントがあるフォルダーを選択します。</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみが使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>リンクをクリック可能にするドキュメントが存在する共有ドライブを選択し、ドキュメントを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong>（[!DNL Google Workspace] ユーザーのみ使用可能）</p> <p>[!UICONTROL Use Domain Admin Access] するかどうかを選択します。 [!UICONTROL Yes] を選択すると、ドメイン管理者としてリクエストが発行され、リクエスターが管理者である共有ドライブがすべて返されます。</p> <p>リンクをクリック可能にするドキュメントが存在する共有ドライブを選択し、ドキュメントを選択します。</p> <p>メモ：このフィールドで「[!DNL Google Docs]」オプションを選択し、[!DNL Google Workspace] ユーザーではない場合、エラー <code>[400] Invalid Value</code> が返されます。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 

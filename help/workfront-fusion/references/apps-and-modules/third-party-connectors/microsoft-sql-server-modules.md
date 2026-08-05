@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 8f3293f7-8b45-4e42-8ad8-f9d4969b63fd
 TQID: https://experienceleague.adobe.com/etKUNkjJF0UreB6qI-ckU0tOF96RY6Yey1ADVcpOWfo
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 531
-ht-degree: 66%
+source-wordcount: 533
+ht-degree: 64%
 
 ---
 
@@ -39,7 +37,7 @@ Adobe Workfront Fusionを使用して[!UICONTROL Microsoft SQL Server]に接続�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>オペレーションベース：オペレーションベースのライセンスを持つ組織で使用できます</p>
    <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
@@ -74,7 +72,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 [!DNL Fusion] が [!DNL SQL server] の宛先へ接続を確立するとき、[!DNL Fusion] ユーザーはホスト（サーバーがホストされているドメイン名または IP アドレス）とポートを識別します。 [!DNL Fusion] は、使用可能な任意のホストおよびポートに接続できます。
 
-Workfront Fusionで使用される特定のIP アドレスについて詳しくは、[Adobe Workfront Fusionへのアクセス用のIP アドレス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)を参照してください
+Workfront Fusionで使用される特定のIP アドレスについて詳しくは、[Adobe Workfront Fusionへのアクセス用のIP アドレス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)を参照してください
 
 ストアドプロシージャの作成について詳しくは、[!DNL Microsoft SQL Server] ドキュメントを参照してください。
 
@@ -94,6 +92,6 @@ SQL モジュールが実行されると、トランザクションが開始さ�
 
 自動コミットをオンにします。 自動コミットは、モジュールの実行が完了した直後にすべてのトランザクションを完了（コミット）します。
 
-1. 画面下部の[!UICONTROL &#x200B; シナリオ設定] アイコン ![&#x200B; シナリオ設定アイコン &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png)をクリックします。
+1. 画面下部の[!UICONTROL  シナリオ設定] アイコン ![ シナリオ設定アイコン ](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png)をクリックします。
 1. **[!UICONTROL 自動コミット]**&#x200B;チェックボックスをクリックします。
 1. 「**[!UICONTROL OK]**」をクリックして、シナリオ設定を保存します。

@@ -5,14 +5,11 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
 TQID: https://experienceleague.adobe.com/SZwX0GVZYFlIudwirqN6ne-W8mEoXHC-WKI8JFnbzrA
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 2707
+source-wordcount: 2709
 ht-degree: 76%
 
 ---
@@ -44,7 +41,7 @@ Adobe Workfront Fusion のシナリオでは、[!DNL Microsoft 365 Excel] を使
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>オペレーションベース：オペレーションベースのライセンスを持つ組織で使用できます</p>
    <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
@@ -138,7 +135,7 @@ Microsoft Office 365 Excel コネクタでは、次の機能が使用されま�
    <td> <p>モジュールでダウンロードするワークブックを識別する方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL By entering an ID manually]</strong> </p> <p>「[!UICONTROL Workbook ID]」フィールドに、モジュールでダウンロードする特定のワークブックの ID を入力またはマッピングします。</p> </li> 
-     <li> <p><strong>[!UICONTROL By selecting from the path]</strong> </p> <p>[!UICONTROL ワークブック &#x200B;] フィールドで、モジュールをダウンロードするワークブックを選択します。このワークブックがルートフォルダーにない場合は、そのパスを含めます。</p> </li> 
+     <li> <p><strong>[!UICONTROL By selecting from the path]</strong> </p> <p>[!UICONTROL ワークブック ] フィールドで、モジュールをダウンロードするワークブックを選択します。このワークブックがルートフォルダーにない場合は、そのパスを含めます。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -648,7 +645,7 @@ Microsoft Office 365 Excel コネクタでは、次の機能が使用されま�
 >
 >このテーブルは、ワークブックに埋め込まれたテーブル要素を参照します。 テーブル全体（ワークブックやシート）ではありません。
 
-![埋め込みテーブル &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/embedded-table-350x420.png)
+![埋め込みテーブル ](/help/workfront-fusion/references/apps-and-modules/assets/embedded-table-350x420.png)
 
 <table style="table-layout:auto"> 
  <col> 

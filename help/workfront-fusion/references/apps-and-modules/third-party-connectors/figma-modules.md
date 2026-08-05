@@ -5,15 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
 TQID: https://experienceleague.adobe.com/sr5gzukvb4qLZHn0lszB15dVogIfa-VrLwqEAWd69oA
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 2643
-ht-degree: 80%
+source-wordcount: 2645
+ht-degree: 79%
 
 ---
 
@@ -21,7 +18,7 @@ ht-degree: 80%
 
 Adobe Workfront Fusion [!DNL Figma] モジュールを使用すると、コメント、ファイル、ファイルのバージョンまたはプロジェクトのリストを取得できます。 また、コメントを投稿したり、[!DNL Figma] API を呼び出したりすることもできます。
 
-シナリオの作成手順が必要な場合は、[&#x200B; シナリオの作成：記事インデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
+シナリオの作成手順が必要な場合は、[ シナリオの作成：記事インデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
 
 モジュールについて詳しくは、[モジュール：記事インデックス](/help/workfront-fusion/references/modules/modules-toc.md)の記事を参照してください。
 
@@ -44,7 +41,7 @@ Adobe Workfront Fusion [!DNL Figma] モジュールを使用すると、コメ�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>オペレーションベース：オペレーションベースのライセンスを持つ組織で使用できます</p>
    <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
@@ -246,7 +243,7 @@ Figma モジュールの接続を作成するには：
         <p>コメントを投稿するファイルのファイル ID を入力またはマッピングします。 </p>
         <ul>
           <li>
-            <p>ファイルの ID が不明な場合は、「<b>[!UICONTROL Find Files]</b>」をクリックして、ファイルが関連付けられているプロジェクトの ID を入力またはマッピングしたあと、ファイルを選択します。</p>
+            <p>ファイルの ID が不明な場合は、<b>[!UICONTROL Find Files]</b> をクリックし、ファイルが関連付けられているプロジェクトの ID を入力またはマッピングして、ファイルを選択します。</p>
           </li>
           <li>
             <p>ファイルの ID を探していて、プロジェクトの ID が不明な場合は、<b>[!UICONTROL Find Projects]</b> をクリックし、ファイルが関連付けられているプロジェクトを所有するチームの ID を入力またはマッピングします。 プロジェクトを選択したあと、ファイルを選択します。</p>
@@ -513,7 +510,7 @@ Figma モジュールの接続を作成するには：
         <p>バージョン履歴を取得するファイルのファイル ID を入力またはマッピングします。 </p>
         <ul>
           <li>
-            <p>ファイルの ID が不明な場合は、「<b>[!UICONTROL Find Files]</b>」をクリックして、ファイルが関連付けられているプロジェクトの ID を入力またはマッピングしたあと、ファイルを選択します。</p>
+            <p>ファイルの ID が不明な場合は、<b>[!UICONTROL Find Files]</b> をクリックし、ファイルが関連付けられているプロジェクトの ID を入力またはマッピングして、ファイルを選択します。</p>
           </li>
           <li>
             <p>ファイルの ID を探していて、プロジェクトの ID が不明な場合は、<b>[!UICONTROL Find Projects]</b> をクリックし、ファイルが関連付けられているプロジェクトを所有するチームの ID を入力またはマッピングします。 プロジェクトを選択したあと、ファイルを選択します。</p>

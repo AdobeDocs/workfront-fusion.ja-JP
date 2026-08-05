@@ -5,16 +5,13 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 6f5f97b9-b06a-4336-b349-ee9e2606d4bf
 TQID: https://experienceleague.adobe.com/ee8cyxX16UJF8UKtbLB-COA96ZlYFJK-jPNnGNYSrz0
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 2045
-ht-degree: 59%
+source-wordcount: 2047
+ht-degree: 58%
 
 ---
 
@@ -45,7 +42,7 @@ Workfront Fusionで[!DNL Google Slides]を使用するには、[!DNL Google] ア
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>オペレーションベース：オペレーションベースのライセンスを持つ組織で使用できます</p>
    <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
@@ -311,7 +308,7 @@ Google スライドコネクタでは、次の機能が使用されます。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Choose a drive location]</td> 
-   <td> <p>リストするプレゼンテーションがある [!DNL Google Drive] を選択します。</p> 
+   <td> <p>リストするプレゼンテーションが格納されている [!DNL Google Drive] を選択します。</p> 
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
@@ -532,12 +529,12 @@ Google スライドコネクタでは、次の機能が使用されます。
 
 次の API 呼び出しは、プレゼンテーションの詳細を返します。
 
-![&#x200B; プレゼンテーションの詳細](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
+![ プレゼンテーションの詳細](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
 
 一致した検索結果は、モジュールの「出力」にある[!UICONTROL バンドル]／[!UICONTROL 本文]／[!UICONTROL presentationId] で確認できます。
 
 この例では、要求されたプレゼンテーションの詳細が返されました。
 
-![&#x200B; プレゼンテーションの詳細](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
+![ プレゼンテーションの詳細](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
 
 >[!ENDSHADEBOX]
