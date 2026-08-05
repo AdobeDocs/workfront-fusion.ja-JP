@@ -5,9 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: af4da661-eeee-4033-a2bb-a2196e446a3d
 TQID: https://experienceleague.adobe.com/8yRmtq6RJPuw97tGe5lreoyUd85pd1BVvIFaZjmeof4
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
 source-wordcount: 1515
@@ -72,7 +76,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
     または
   * 既存のプロジェクトにAPIを追加します。
 
-  Adobe Developer Console上のプロジェクトにAPIを作成または追加する方法について詳しくは、Adobe ドキュメントの「[ プロジェクトを作成](https://developer.adobe.com/dep/guides/dev-console/create-project/)」を参照してください。
+  Adobe Developer Console上のプロジェクトにAPIを作成または追加する方法について詳しくは、Adobe ドキュメントの「[&#x200B; プロジェクトを作成](https://developer.adobe.com/dep/guides/dev-console/create-project/)」を参照してください。
 
 ## Adobe Authenticator APIについて
 
@@ -99,7 +103,7 @@ Adobe Authenticator接続は、Adobe Developer Console上の1つのプロジェ�
 >
 >Adobe Authenticator コネクタでは、OAuth サーバー間接続を行うか、サービスアカウント（JWT）接続を行うかを選択できます。 AdobeはJWT資格情報を非推奨にしました。この資格情報は、2025年1月1日を過ぎると機能しなくなります。 **したがって、OAuth接続を作成することを強くお勧めします。**
 >
->これらの種類の接続について詳しくは、Adobe ドキュメントの[ サーバー間の認証](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)を参照してください
+>これらの種類の接続について詳しくは、Adobe ドキュメントの[&#x200B; サーバー間の認証](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)を参照してください
 
 接続を作成するには：
 
@@ -251,7 +255,7 @@ Adobe Authenticator接続は、Adobe Developer Console上の1つのプロジェ�
       </td>
       </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL出力タイプ ]  </td>
+      <td role="rowheader">[!UICONTROL 出力タイプ &#x200B;]  </td>
       <td>
         <p>モジュールで出力するデータのタイプを選択します。 タイプを選択しない場合、モジュールはタイプを自動的に選択します。</p>
       </td>
@@ -392,7 +396,7 @@ Adobe Authenticator接続は、Adobe Developer Console上の1つのプロジェ�
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL出力タイプ ]  </td>
+      <td role="rowheader">[!UICONTROL 出力タイプ &#x200B;]  </td>
       <td>
         <p>モジュールで出力するデータのタイプを選択します。 タイプを選択しない場合、モジュールはタイプを自動的に選択します。</p>
       </td>
