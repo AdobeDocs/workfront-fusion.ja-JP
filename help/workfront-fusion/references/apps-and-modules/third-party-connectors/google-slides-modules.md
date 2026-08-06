@@ -11,10 +11,10 @@ feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 2045
-ht-degree: 59%
+source-wordcount: 2047
+ht-degree: 58%
 
 ---
 
@@ -45,7 +45,7 @@ Workfront Fusionで[!DNL Google Slides]を使用するには、[!DNL Google] ア
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>オペレーションベース：オペレーションベースのライセンスを持つ組織で使用できます</p>
    <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
@@ -311,7 +311,7 @@ Google スライドコネクタでは、次の機能が使用されます。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Choose a drive location]</td> 
-   <td> <p>リストするプレゼンテーションがある [!DNL Google Drive] を選択します。</p> 
+   <td> <p>リストするプレゼンテーションが格納されている [!DNL Google Drive] を選択します。</p> 
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 

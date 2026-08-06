@@ -11,9 +11,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 3222
+source-wordcount: 3224
 ht-degree: 95%
 
 ---
@@ -41,7 +41,7 @@ Adobe Workfront Fusion のシナリオでは、CloudConvert を使用するワ�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>オペレーションベース：オペレーションベースのライセンスを持つ組織で使用できます</p>
    <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 

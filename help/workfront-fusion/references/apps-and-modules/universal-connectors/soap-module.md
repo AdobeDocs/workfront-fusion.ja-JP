@@ -11,10 +11,10 @@ feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 647
-ht-degree: 60%
+source-wordcount: 649
+ht-degree: 59%
 
 ---
 
@@ -51,7 +51,7 @@ SOAP コネクタに含まれるモジュールは1つだけです。SOAPの実�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>オペレーションベース：オペレーションベースのライセンスを持つ組織で使用できます</p>
    <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 

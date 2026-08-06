@@ -12,10 +12,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1513
-ht-degree: 37%
+source-wordcount: 1515
+ht-degree: 36%
 
 ---
 
@@ -46,7 +46,7 @@ HTTP モジュールよりも優れているのは、専用アプリと同様に
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>オペレーションベース：オペレーションベースのライセンスを持つ組織で使用できます</p>
    <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
@@ -71,10 +71,10 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 * Adobe Developer Consoleにアクセスする必要があります。
 * Adobe Developer Console上に、モジュールを接続するAPIを含むプロジェクトが必要です。 実行できる操作：
 
-   * APIを使用して新しいプロジェクトを作成します。
+  * APIを使用して新しいプロジェクトを作成します。
 
-     または
-   * 既存のプロジェクトにAPIを追加します。
+    または
+  * 既存のプロジェクトにAPIを追加します。
 
   Adobe Developer Console上のプロジェクトにAPIを作成または追加する方法について詳しくは、Adobe ドキュメントの「[&#x200B; プロジェクトを作成](https://developer.adobe.com/dep/guides/dev-console/create-project/)」を参照してください。
 

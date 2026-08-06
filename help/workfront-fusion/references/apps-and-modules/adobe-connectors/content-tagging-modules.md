@@ -3,10 +3,10 @@ title: Adobe Content Tagger modules
 description: Adobe Workfront Fusionでは、Adobe Content Taggerを使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
-source-git-commit: 737e9b07237960d5833cd21e110ef573ddd0a72c
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 21%
+source-wordcount: '1098'
+ht-degree: 20%
 
 ---
 
@@ -37,7 +37,7 @@ Adobe Workfront Fusionでは、Adobe Content Taggerを使用するワークフ�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>オペレーションベース：オペレーションベースのライセンスを持つ組織で使用できます</p>
    <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 

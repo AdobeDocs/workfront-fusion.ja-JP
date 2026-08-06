@@ -11,10 +11,10 @@ feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1897
-ht-degree: 80%
+source-wordcount: 1899
+ht-degree: 79%
 
 ---
 
@@ -45,7 +45,7 @@ Adobe Workfront Fusion のシナリオでは、[!DNL Azure DevOps] を使用す�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>オペレーションベース：オペレーションベースのライセンスを持つ組織で使用できます</p>
    <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
@@ -183,7 +183,7 @@ Azure DevOps コネクタでは、次の機能が使用されます。
    <td> <p>[!DNL Azure DevOps] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Azure DevOps]を接続する&rbrack;</a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL レコードタイプ]</td> 
+   <td role="rowheader">[!UICONTROL Record type]</td> 
    <td> <p>作業アイテムを作成するか、プロジェクトを作成するかを選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Project]</strong> </p> <p>次のフィールドに入力します。</p> 
@@ -324,7 +324,7 @@ Azure DevOps コネクタでは、次の機能が使用されます。
    <td> <p>[!DNL Azure DevOps] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Azure DevOps]を接続する&rbrack;</a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL レコードタイプ]</td> 
+   <td role="rowheader">[!UICONTROL Record type]</td> 
    <td> <p>プロジェクトを読み取るか作業アイテムを読み取るかを選択</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL プロジェクト &#x200B;]</strong>：読み込むプロジェクトを選択します。</p> </li> 

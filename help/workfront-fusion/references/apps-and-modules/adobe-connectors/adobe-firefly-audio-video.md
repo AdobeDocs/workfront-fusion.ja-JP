@@ -3,9 +3,9 @@ title: Adobe Fireflyの音声および動画モジュール
 description: Adobe Workfront Fusionでは、Adobe Firefly Audio and Videoを使用するワークフローを自動化したり、複数のサードパーティアプリケーションやサービスに接続したりできます。
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
-source-git-commit: f54338aa35b8453ac991c9e16974f2b61fd30168
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: '1618'
+source-wordcount: '1620'
 ht-degree: 14%
 
 ---
@@ -37,7 +37,7 @@ Adobe Workfront Fusionでは、Adobe Firefly Audio and Videoを使用するワ�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>オペレーションベース：オペレーションベースのライセンスを持つ組織で使用できます</p>
    <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 

@@ -10,9 +10,9 @@ product_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 3721
+source-wordcount: 3723
 ht-degree: 30%
 
 ---
@@ -45,7 +45,7 @@ Adobe Workfront Fusion のシナリオでは、[!DNL Adobe Journey Optimizer] �
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>オペレーションベース：オペレーションベースのライセンスを持つ組織で使用できます</p>
    <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
@@ -1037,7 +1037,7 @@ This action module imports a snapshot containing artifacts.
    <li><p><b>メールアドレス</b></p></li>
    <li><p><b>携帯電話番号</b></p></li>
    <li><p><b>名</b></p></li>
-   <li><p><b>名前 (姓)</b></p></li>
+   <li><p><b>姓</b></p></li>
    <li><p><b>製品</b></p>このメッセージに関連付けられている製品を入力またはマッピングします。 これは、メッセージコンテンツでの動的変数置換に使用されます。</li>
    </ul></td> 
   </tr> 

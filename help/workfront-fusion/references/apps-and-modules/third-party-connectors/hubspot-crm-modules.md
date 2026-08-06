@@ -10,9 +10,9 @@ product_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 7326
+source-wordcount: 7331
 ht-degree: 34%
 
 ---
@@ -40,7 +40,7 @@ Adobe Workfront Fusion [!DNL HubSpot CRM] モジュールを使用すると、�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>オペレーションベース：オペレーションベースのライセンスを持つ組織で使用できます</p>
    <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
@@ -111,9 +111,9 @@ HubSpot CRM コネクタでは、次の機能が使用されます。
 * [チケット](#tickets)
 * [フォーム](#forms)
 * [ソーシャルメディア（放送）](#social-media-broadcast)
-* [ブログ投稿](#blog-posts)
+* [&#x200B; ブログ投稿](#blog-posts)
   <!--* [Workflows]()-->
-* [サブスクリプション](#subscriptions)
+* [件のサブスクリプション](#subscriptions)
   <!--* [Associations]()-->
 * [その他](#other)
 

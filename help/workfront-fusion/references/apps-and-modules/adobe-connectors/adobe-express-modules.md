@@ -3,9 +3,9 @@ title: Adobe Expressモジュール
 description: Adobe Workfront Fusionでは、Adobe Expressを使用してワークフローを自動化できます。
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
-source-git-commit: eab04db9a38020ed973f98d7f8f290ccd183251c
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1374'
 ht-degree: 18%
 
 ---
@@ -37,7 +37,7 @@ Adobe Workfront Fusionでは、Adobe Expressを使用するワークフローを
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>オペレーションベース：オペレーションベースのライセンスを持つ組織で使用できます</p>
    <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 

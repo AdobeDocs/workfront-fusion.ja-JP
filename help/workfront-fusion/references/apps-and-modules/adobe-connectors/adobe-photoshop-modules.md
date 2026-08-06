@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: ce3fb5604ac4ed85af1bcc51143732499dfb0404
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 7285
-ht-degree: 13%
+source-wordcount: 7501
+ht-degree: 12%
 
 ---
 
@@ -55,7 +55,7 @@ Adobe Workfront Fusion のシナリオでは、[!DNL Adobe Photoshop] を使用�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>オペレーションベース：オペレーションベースのライセンスを持つ組織で使用できます</p>
    <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
@@ -1170,7 +1170,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
 >[!NOTE]
 >
 >このモジュールは非推奨（廃止予定）となり、2026年7月30日を過ぎると機能しなくなります。
->このモジュールを[Photoshopのアクション、スクリプト、変換の実行](#execute-photoshop-actions-scripts-and-transformations) モジュールに更新します。
+>このモジュールを[Execute Photoshop actions, scripts, and transformations](#execute-photoshop-actions-scripts-and-transformations) moduleに更新します。
 
 このアクションモジュールは、Photoshop ファイルのテキストレイヤーを編集します。 同じファイル内の複数のレイヤーに対して、個別の編集の詳細を入力できます。
 
@@ -1247,7 +1247,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
 >[!NOTE]
 >
 >このモジュールは非推奨（廃止予定）となり、2026年7月30日を過ぎると機能しなくなります。
->このモジュールを[Photoshopのアクション、スクリプト、変換の実行](#execute-photoshop-actions-scripts-and-transformations) モジュールに更新します。
+>このモジュールを[Execute Photoshop actions, scripts, and transformations](#execute-photoshop-actions-scripts-and-transformations) moduleに更新します。
 
 このアクションモジュールは、Photoshop ファイルのテキストレイヤーを編集します。
 
@@ -1333,7 +1333,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
 >[!NOTE]
 >
 >このモジュールは非推奨（廃止予定）となり、2026年7月30日を過ぎると機能しなくなります。
->このモジュールを[Photoshopのアクション、スクリプト、変換の実行](#execute-photoshop-actions-scripts-and-transformations) モジュールに更新します。
+>このモジュールを[Execute Photoshop actions, scripts, and transformations](#execute-photoshop-actions-scripts-and-transformations) moduleに更新します。
 
 このアクションモジュールは、JSON コマンドを使用してPhotoshop アクションを実行します。
 
@@ -1475,7 +1475,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
 >[!NOTE]
 >
 >このモジュールは非推奨（廃止予定）となり、2026年7月30日を過ぎると機能しなくなります。
->このモジュールを[Photoshopのアクション、スクリプト、変換の実行](#execute-photoshop-actions-scripts-and-transformations) モジュールに更新します。
+>このモジュールを[Execute Photoshop actions, scripts, and transformations](#execute-photoshop-actions-scripts-and-transformations) moduleに更新します。
 
 このアクションモジュールは、選択した画像に対してPhotoshop アクションを実行します。
 
@@ -1567,7 +1567,7 @@ Adobe Photoshop コネクタでは、次の機能が使用されます。
 >[!NOTE]
 >
 >このモジュールは非推奨（廃止予定）となり、2026年7月30日を過ぎると機能しなくなります。
->このモジュールを[Photoshopのアクション、スクリプト、変換の実行](#execute-photoshop-actions-scripts-and-transformations) モジュールに更新します。
+>このモジュールを[Execute Photoshop actions, scripts, and transformations](#execute-photoshop-actions-scripts-and-transformations) moduleに更新します。
 
 このアクションモジュールは、選択した画像に対して商品切り抜きを実行します。
 

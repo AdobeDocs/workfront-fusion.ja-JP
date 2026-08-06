@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1382
-ht-degree: 78%
+source-wordcount: 1384
+ht-degree: 77%
 
 ---
 
@@ -47,7 +47,7 @@ Adobe Workfront Fusion のシナリオでは、[!DNL Google Team Drive] を使�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>オペレーションベース：オペレーションベースのライセンスを持つ組織で使用できます</p>
    <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
@@ -108,7 +108,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
   </tr> 
   <tr> 
    <td>[!UICONTROL Convert [!DNL Google Documents] files to format] </td> 
-   <td> <p>監視する [!DNL Google Documents] ファイルの変換形式を選択します。</p> </td> 
+   <td> <p>監視する [!DNL Google Documents] ファイルの変換先の形式を選択します。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Convert [!DNL Google Sheets] files to format] </td> 
@@ -116,7 +116,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
   </tr> 
   <tr> 
    <td>[!UICONTROL Convert [!DNL Google Slides] files to format] </td> 
-   <td> <p>監視する [!DNL Google Slides] ファイルの変換形式を選択します。</p> </td> 
+   <td> <p>監視する [!DNL Google Slides] ファイルの変換先の形式を選択します。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Convert [!DNL Google Drawings] files to format] </td> 

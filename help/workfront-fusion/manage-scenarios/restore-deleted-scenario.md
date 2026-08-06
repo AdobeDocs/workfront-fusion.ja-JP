@@ -7,7 +7,7 @@ exl-id: e7fd0351-b840-422c-b861-82ae110c703b
 TQID: https://experienceleague.adobe.com/xVihxZH-fwPCIkryQAQEOWgeShtPTMXth4jEl5OLdbo
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 6a176c74f45b17ed9fbf80b2d87cf45873067f74
+source-git-commit: d4cfac1293b7c0523cc0e45872013238a7bdb364
 workflow-type: tm+mt
 source-wordcount: 217
 ht-degree: 42%
@@ -55,7 +55,7 @@ Workfront Fusion管理者は、最近削除したシナリオを復元できま�
 
 ## 削除したシナリオの復元
 
-1. 左側のナビゲーションで、「チームの概要」をクリックします。
+1. 左側のナビゲーションで、「組織の概要」をクリックします。
 1. ウィンドウの上部にある「**ごみ箱**」タブをクリックします。
 1. （オプション）削除されたシナリオのリストをフィルタリングするには、**検索** バーに検索語句を入力するか、**削除済み** フィールドで日付範囲を選択するか、**チーム** ドロップダウンから特定のチームを選択します。
 1. 復元する1つ以上のシナリオを選択し、画面の下部にあるバーの&#x200B;**復元**&#x200B;をクリックします。

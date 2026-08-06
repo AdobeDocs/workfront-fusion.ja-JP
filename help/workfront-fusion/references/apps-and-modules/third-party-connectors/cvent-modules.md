@@ -9,9 +9,9 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1134
+source-wordcount: 1136
 ht-degree: 80%
 
 ---
@@ -43,7 +43,7 @@ Adobe Workfront Fusion のシナリオでは、[!DNL Cvent] を使用するワ�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>オペレーションベース：オペレーションベースのライセンスを持つ組織で使用できます</p>
    <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
@@ -321,7 +321,7 @@ Cvent コネクタでは、次の機能が使用されます。
    <td> <p>[!DNL Cvent] アカウントをWorkfront Fusionに接続する方法については、この記事の「<a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">Adobe Workfront Fusion</a>に[!DNL Cvent]を接続する」を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL レコードタイプ]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Record type]</p> </td> 
    <td> <p>リストに表示するレコードのタイプを選択します。</p> 
     <ul> 
      <li> <p>[!DNL Cvent] アカウントからのすべてのイベント</p> </li> 

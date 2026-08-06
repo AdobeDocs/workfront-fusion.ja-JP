@@ -9,9 +9,9 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1417
+source-wordcount: 1419
 ht-degree: 71%
 
 ---
@@ -47,7 +47,7 @@ Adobe Workfront Fusion [!DNL Adobe Creative Cloud Libraries] モジュールを�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>オペレーションベース：オペレーションベースのライセンスを持つ組織で使用できます</p>
    <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
@@ -355,7 +355,7 @@ Adobe Creative Cloud ライブラリコネクタでは、次の機能を使用�
     <tr>
       <td role="rowheader">[!UICONTROL URL]</td>
       <td>
-        <p><code>https://cc-libraries.adobe.io/api</code> からの相対パスを入力します。</p>
+        <p><code>https://cc-libraries.adobe.io/api</code> への相対パスを入力します。</p>
     <p>例：<code>/v1/libraries</code></p>
       </td>
     </tr>

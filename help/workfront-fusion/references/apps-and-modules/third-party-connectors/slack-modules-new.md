@@ -9,9 +9,9 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 4620
+source-wordcount: 4623
 ht-degree: 37%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 37%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>オペレーションベース：オペレーションベースのライセンスを持つ組織で使用できます</p>
    <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
@@ -72,8 +72,8 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 * [!DNL Slack] モジュールを使用するには、[!DNL Slack] アカウントが必要です。
 * OAuth@接続を作成する場合は、組織の接続に次のURLを追加する必要があります。
-   * ボットトークン：`https://oauth.app.workfrontfusion.com/oauth/cb/slack3`
-   * ユーザートークン：` https://oauth.app.workfrontfusion.com/oauth/cb/slack2`
+  * ボットトークン：`https://oauth.app.workfrontfusion.com/oauth/cb/slack3`
+  * ユーザートークン：` https://oauth.app.workfrontfusion.com/oauth/cb/slack2`
 
 ## Slack APIについて
 

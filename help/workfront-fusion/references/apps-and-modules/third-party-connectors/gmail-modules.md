@@ -11,10 +11,10 @@ feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1871
-ht-degree: 85%
+source-wordcount: 1876
+ht-degree: 84%
 
 ---
 
@@ -43,7 +43,7 @@ Adobe Workfront Fusion のシナリオでは、[!DNL Gmail] を使用するワ�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>オペレーションベース：Workfront Fusion ライセンス要件なし</p>
+   <p>オペレーションベース：オペレーションベースのライセンスを持つ組織で使用できます</p>
    <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
@@ -160,7 +160,7 @@ OAuth クライアントを作成し、[!UICONTROL クライアント ID] およ
 * [[!UICONTROL メールを未読としてマーク]](#mark-an-email-as-unread)
 * [[!UICONTROL メールの移動]](#move-an-email)
 * [[!UICONTROL メールラベルの変更]](#modify-email-labels)
-* [[!UICONTROL メールの送信]](#send-an-email)
+* [[!UICONTROL 電子メールを送信]](#send-an-email)
   <!--* [Delete labels](#delete-labels)-->
   <!--* [Set labels](#set-labels)-->
 
