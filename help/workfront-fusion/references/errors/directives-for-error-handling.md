@@ -6,8 +6,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d7b0141f-d99d-4ab7-a60f-ed552a76f05d
 TQID: https://experienceleague.adobe.com/4vL9oj7UXeRWQuSzDZP7GJU30oHUg1m75gWGVUkfCfA
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 5daf7bb8e2912744df6f37ec45110d179875bcb2
 workflow-type: tm+mt
 source-wordcount: 529
@@ -97,5 +99,5 @@ Workfront Fusionでは、次のエラー処理ディレクティブを使用で�
 
 ## リソース
 
-* ロールバックとロールバックフェーズについて詳しくは、「シナリオの実行、サイクル、およびフェーズ」の「[ ロールバック ](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback)」を参照してください。
-* コミット フェーズについて詳しくは、「シナリオの実行、サイクルおよびフェーズ」の記事の[ コミット ](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#commit)を参照してください。
+* ロールバックとロールバックフェーズについて詳しくは、「シナリオの実行、サイクル、およびフェーズ」の「[&#x200B; ロールバック &#x200B;](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback)」を参照してください。
+* コミット フェーズについて詳しくは、「シナリオの実行、サイクルおよびフェーズ」の記事の[&#x200B; コミット &#x200B;](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#commit)を参照してください。
