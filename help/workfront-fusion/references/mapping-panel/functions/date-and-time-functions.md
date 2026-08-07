@@ -5,11 +5,9 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
 TQID: https://experienceleague.adobe.com/E77KZbLpHtYJ-D7haukgux3AnmhfkIh-xqh0j6NbNiU
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 050fb237c489859fa0ffacf2afeb665b8503598b
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: e6873ab923b73175d1889b44df5d7c1baf9d42fb
 workflow-type: tm+mt
 source-wordcount: 2392
 ht-degree: 73%
@@ -102,7 +100,7 @@ ht-degree: 73%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addWeekDays （date; number） &#x200B;]
+### [!UICONTROL addWeekDays （date; number） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -157,7 +155,7 @@ ht-degree: 73%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL dayOfMonth （date） &#x200B;]
+### [!UICONTROL dayOfMonth （date） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -177,7 +175,7 @@ ht-degree: 73%
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL dayOfWeek （date） &#x200B;]
+### [!UICONTROL dayOfWeek （date） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -197,7 +195,7 @@ ht-degree: 73%
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL daysInMonth （date） &#x200B;]
+### [!UICONTROL daysInMonth （date） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -217,7 +215,7 @@ ht-degree: 73%
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL daysInSplitWeek （date） &#x200B;]
+### [!UICONTROL daysInSplitWeek （date） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -237,7 +235,7 @@ ht-degree: 73%
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL daysInYear （date） &#x200B;]
+### [!UICONTROL daysInYear （date） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -257,7 +255,7 @@ ht-degree: 73%
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL dateMax （date1; date2; ...） &#x200B;]
+### [!UICONTROL dateMax （date1; date2; ...） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -278,7 +276,7 @@ ht-degree: 73%
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL dateMin （date1; date2; ...） &#x200B;]
+### [!UICONTROL dateMin （date1; date2; ...） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -299,7 +297,7 @@ ht-degree: 73%
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL endOfMonth （date） &#x200B;]
+### [!UICONTROL endOfMonth （date） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -324,7 +322,7 @@ ht-degree: 73%
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL 時間（日付） &#x200B;]
+### [!UICONTROL 時間（日付） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -344,7 +342,7 @@ ht-degree: 73%
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL isWeekend （date） &#x200B;]
+### [!UICONTROL isWeekend （date） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -373,7 +371,7 @@ ht-degree: 73%
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL 分（日付） &#x200B;]
+### [!UICONTROL 分（日付） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -393,7 +391,7 @@ ht-degree: 73%
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL 月（日付） &#x200B;]
+### [!UICONTROL 月（日付） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -413,7 +411,7 @@ ht-degree: 73%
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL 秒（日付） &#x200B;]
+### [!UICONTROL 秒（日付） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -433,7 +431,7 @@ ht-degree: 73%
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL startOfMonth （date） &#x200B;]
+### [!UICONTROL startOfMonth （date） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -454,7 +452,7 @@ ht-degree: 73%
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL weekDayDiff （date2; date1） &#x200B;]
+### [!UICONTROL weekDayDiff （date2; date1） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -474,7 +472,7 @@ ht-degree: 73%
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL workMinutesDiff （date1; date2） &#x200B;]
+### [!UICONTROL workMinutesDiff （date1; date2） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -494,7 +492,7 @@ ht-degree: 73%
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL 年（日付） &#x200B;]
+### [!UICONTROL 年（日付） ]
 
 [!BADGE 新規！]{type=Informative}
 
@@ -669,7 +667,7 @@ ht-degree: 73%
 
 これは、例えば同じシナリオで 1 つのアプリまたは web サービスの日付形式を、接続されているアプリまたは web サービスの日付形式に変更する必要がある場合に便利です。
 
-詳細については、記事[項目データタイプ &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)の日付とテキストを参照してください。
+詳細については、記事[項目データタイプ ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)の日付とテキストを参照してください。
 
 #### パラメーター
 
@@ -735,7 +733,7 @@ ht-degree: 73%
 
 ### [!UICONTROL parseDate（テキスト、フォーマット、[タイムゾーン]）]
 
-日付を表すテキスト値（`12-10-2019 20:30` または `Aug 18, 2019 10:00 AM`）の場合、この関数を使用して、日付値（バイナリマシンが読み取り可能な表現）に変換（解析）する必要があります。 詳細については、記事[項目データタイプ &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)の日付とテキストを参照してください。
+日付を表すテキスト値（`12-10-2019 20:30` または `Aug 18, 2019 10:00 AM`）の場合、この関数を使用して、日付値（バイナリマシンが読み取り可能な表現）に変換（解析）する必要があります。 詳細については、記事[項目データタイプ ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)の日付とテキストを参照してください。
 
 #### パラメーター
 
@@ -954,3 +952,4 @@ Date1 から Date2 が減算されます。
 `2019-09-01 ≤ D < 2019-10-01`
 
 `2019-09-01T00:00:00.000Z ≤ D < 2019-10-01T00:00:00.000Z`
+
