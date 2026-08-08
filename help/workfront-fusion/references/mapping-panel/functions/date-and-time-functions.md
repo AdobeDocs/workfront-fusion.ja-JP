@@ -9,9 +9,9 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: e6873ab923b73175d1889b44df5d7c1baf9d42fb
 workflow-type: tm+mt
-source-wordcount: 2375
+source-wordcount: 2392
 ht-degree: 73%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 73%
 
 ### now
 
-YYYY-MM-DD-hh:mm:ss形式で現在の時間を取得します。
+現在の時刻を` YYYY-MM-DD-hh:mm:ss`形式で取得します。
 
 ### タイムスタンプ
 
@@ -721,11 +721,11 @@ YYYY-MM-DD-hh:mm:ss形式で現在の時間を取得します。
 
 * `formatDate(1. Date created; YYYY-MM-DD hh:mm A)`
 
-  2018-10-01 09:32 AMを返します
+  Returns 2018-10-01 09:32 AM
 
 * `formatDate(1. Date created;DD.MM.YYYY HH:mm;UTC)`
 
-  01.10.2018 07:32を返します
+  戻り値01.10.2018 07:32
 
 * `formatDate(now;DD.MM.YYYY HH:mm)`
 
@@ -823,7 +823,7 @@ Date1 から Date2 が減算されます。
 
 * `dateDifference(2021-05-11T18:10:00.000Z;2021-05-11T18:00:00.000Z)`
 
-  `600,000` を返します
+  戻り値：`600,000`
 
 * `dateDifference(2021-05-11T18:10:00.000Z;2021-05-11T18:00:00.000Z;hours)`
 
@@ -831,7 +831,7 @@ Date1 から Date2 が減算されます。
 
 * `dateDifference2021-06-11T18:10:00.000Z;2021-05-11T18:00:00.000Z;months)`
 
-  `1` を返します
+  戻り値：`1`
 
 >[!ENDSHADEBOX]
 
@@ -954,3 +954,4 @@ Date1 から Date2 が減算されます。
 `2019-09-01 ≤ D < 2019-10-01`
 
 `2019-09-01T00:00:00.000Z ≤ D < 2019-10-01T00:00:00.000Z`
+
