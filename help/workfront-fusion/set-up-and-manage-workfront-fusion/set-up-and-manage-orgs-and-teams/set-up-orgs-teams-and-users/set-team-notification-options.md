@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 570a09fc-01a9-4952-8a2b-8bfdd86d0bd8
 TQID: https://experienceleague.adobe.com/-HytP4gfrhiiSn-dg5ndg1YC6NTMC-NURYzSFgO5kIo
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 90a58033e240271b88d01b9daef9763f38264056
 workflow-type: tm+mt
 source-wordcount: 665
@@ -79,7 +80,7 @@ ht-degree: 15%
 
    このメニューのシナリオをクリックすると、そのシナリオに直接移動できます。
 
-   ![ シナリオメニューを上書き](assets/view-notification-override.png)
+   ![&#x200B; シナリオメニューを上書き](assets/view-notification-override.png)
 
 1. 通知タイプの既定の設定を復元するには、この記事の「[通知の既定の設定を復元する](#restore-notification-defaults)」を参照してください。
 
@@ -92,7 +93,7 @@ ht-degree: 15%
 1. 左側のパネルの「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. フィルターを追加するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに入ります。
-1. シナリオの下部にある[!UICONTROL  シナリオ設定] アイコン ![ シナリオ設定アイコン ](assets/scenario-settings-icon.png)をクリックします。
+1. シナリオの下部にある[!UICONTROL &#x200B; シナリオ設定] アイコン ![&#x200B; シナリオ設定アイコン &#x200B;](assets/scenario-settings-icon.png)をクリックします。
 1. シナリオ設定パネルで、パネルの下部にある&#x200B;**詳細設定を表示**&#x200B;をクリックします。
 1. 必要に応じて、警告&#x200B;**の**&#x200B;通知、エラー&#x200B;**の**&#x200B;通知、**シナリオが無効な場合の通知**&#x200B;の設定を調整します。
 1. 「**OK**」をクリックして、シナリオ設定を保存して終了します。
@@ -110,7 +111,7 @@ ht-degree: 15%
 
    ![既定の表示に戻す](assets/restore-notification-defaults.png)
 
-1. シナリオの上書きを含め、その通知タイプのデフォルト設定を復元するには、その通知タイプの&#x200B;**デフォルトにリセット** アイコン ![ デフォルトにリセット ](assets/restore-default-icon.png)をクリックします。
+1. シナリオの上書きを含め、その通知タイプのデフォルト設定を復元するには、その通知タイプの&#x200B;**デフォルトにリセット** アイコン ![&#x200B; デフォルトにリセット &#x200B;](assets/restore-default-icon.png)をクリックします。
 
 通知オプションリストへの変更は、自動的に保存されます。
 
