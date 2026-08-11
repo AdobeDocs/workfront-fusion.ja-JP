@@ -8,10 +8,10 @@ exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
 TQID: https://experienceleague.adobe.com/3EtKXHUMeJ7FL9pEJpYVpT59fvnlyeC1BMpMK2KGD6M
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 7c16e9411b334d32e63b88b18f538f69e494b360
 workflow-type: tm+mt
-source-wordcount: 1306
-ht-degree: 47%
+source-wordcount: 1366
+ht-degree: 46%
 
 ---
 
@@ -182,6 +182,12 @@ Workfront/監視レコードモジュールの最大サイクル数は`10`に設
 >[!NOTE]
 >
 >シナリオがインスタントトリガーで始まる場合、設定が無視され、最初のエラーが発生するとシナリオは直ちに非アクティブ化されます。
+
+### 警告時に通知/ エラー時に通知/ シナリオが無効な場合に通知
+
+通知タイプのシナリオレベルの上書きを設定するには、通知タイプの横にあるチェックボックスをオンまたはオフにします。
+
+シナリオレベルの上書きなどの通知設定について詳しくは、[通知オプションの設定](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)を参照してください。
 
 ### ワーカープール
 
