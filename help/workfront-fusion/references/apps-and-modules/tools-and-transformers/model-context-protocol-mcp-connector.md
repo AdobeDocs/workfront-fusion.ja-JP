@@ -6,7 +6,8 @@ feature: Workfront Fusion
 hide: true
 exl-id: 748055ad-d305-4513-9a5c-9c970b74a96e
 TQID: https://experienceleague.adobe.com/KC5YvcNC-EQG4bnPA5pOVbGWZHdqa0XKYHKPMLwY-24
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 4d8599c771c76ee9b6713fd7c8e1b2907fe9599f
 workflow-type: tm+mt
 source-wordcount: 490
