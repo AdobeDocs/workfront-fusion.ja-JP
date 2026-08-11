@@ -3,9 +3,9 @@ user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
 nudge: true
-source-git-commit: 73f52ca232e84750fb67ad7ea8e11d7cb00822dd
+source-git-commit: 4d8599c771c76ee9b6713fd7c8e1b2907fe9599f
 workflow-type: tm+mt
-source-wordcount: '2520'
+source-wordcount: '2521'
 ht-degree: 52%
 
 ---
@@ -283,7 +283,7 @@ ht-degree: 52%
   * [チェーンされたシナリオ関係を表示および管理する](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
   * [実行中のシナリオでのデータフローの表示](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
   * [Webhook のキューの表示](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
-  * {hide-from-toc}[Workfront FusionのAI アシスタント &#x200B;](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
+  * {hide-from-toc}[Workfront FusionのAI アシスタント ](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
   * [シナリオスコアリングエキスパートの実行](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
   * [シナリオ要素の削除](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
   * [「シナリオ」エリアからシナリオを管理します](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
@@ -467,7 +467,7 @@ ht-degree: 52%
       * [Markdown モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
       * [数学モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
       * [MIME モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
-      * {hide-from-toc}[&#x200B; モデル コンテキスト プロトコル （MCP） モジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
+      * [MCP Agent （Model Context Protocol）モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
       * [テキストパーサーモジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
       * [ツールモジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
       * [XML モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/xml-modules.md)

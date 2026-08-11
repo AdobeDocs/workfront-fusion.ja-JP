@@ -6,18 +6,15 @@ feature: Workfront Fusion
 hide: true
 exl-id: 748055ad-d305-4513-9a5c-9c970b74a96e
 TQID: https://experienceleague.adobe.com/KC5YvcNC-EQG4bnPA5pOVbGWZHdqa0XKYHKPMLwY-24
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 4d8599c771c76ee9b6713fd7c8e1b2907fe9599f
 workflow-type: tm+mt
-source-wordcount: 488
+source-wordcount: 490
 ht-degree: 18%
 
 ---
 
 # MCP エージェントモジュール
-
-<!--SET UP REDIRECTS-->
 
 モデルコンテキストプロトコル（MCP）とは、AI言語モデルを他のアプリケーションと安全に接続する方法です。 AI モデルがアプリケーションにアクセスできるようにするMCP サーバーを設定します。 その後、AI モデルにプロンプトを送信し、アプリケーションから情報を返すことができます。
 
@@ -83,7 +80,7 @@ Fusion シナリオのMCPについて詳しくは、[AI プロンプトをシナ
        <li><b>LLM</b>：このキーが関連付けられている大規模言語モデルを選択します。</li>
        <li><b> キー</b>：選択したモデルのAPI キーを入力またはマッピングします。</li>
        <li><b> モデル </b>: キーで使用するLLM モデルを選択します。</li>
-       <li><b>最大トークン </b>: LLMが応答で生成できるトークンの最大数を入力またはマッピングします。<p>1つのトークンは通常4文字、つまり英語では0.75単語に相当します。 「Hello world」は2つのトークンに相当し、「Authentication」は2つのトークンに1つに相当します。</li>
+       <li><b>最大トークン数</b>: LLMが応答で生成できるトークンの最大数を入力またはマッピングします。<p>1つのトークンは通常4文字、つまり英語では0.75単語に相当します。 「Hello world」は2つのトークンに相当し、「Authentication」は2つのトークンに1つに相当します。</li>
       </ul>
     </td> 
   </tr> 
