@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
 TQID: https://experienceleague.adobe.com/xVihxZH-fwPCIkryQAQEOWgeShtPTMXth4jEl5OLdbo
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 93887116991b505676f5c51762b47829dae9bb7a
 workflow-type: tm+mt
 source-wordcount: 754
@@ -55,8 +56,8 @@ Adobe Workfront Fusionは、変更されるたびにシナリオのバージョ�
 
 ## シナリオのバージョン履歴の表示と管理
 
-1. 左側のパネルで「**[!UICONTROL シナリオ]** ![ シナリオアイコン ](assets/scenarios-icon.png)」をクリックし、シナリオをクリックして開きます。
-1. 画面の下部にある[!UICONTROL 詳細] アイコン ![詳細アイコン ](assets/more-icon.png)をクリックし、**[!UICONTROL 以前のバージョン]**&#x200B;をクリックします。
+1. 左側のパネルで「**[!UICONTROL シナリオ]** ![&#x200B; シナリオアイコン &#x200B;](assets/scenarios-icon.png)」をクリックし、シナリオをクリックして開きます。
+1. 画面の下部にある[!UICONTROL 詳細] アイコン ![詳細アイコン &#x200B;](assets/more-icon.png)をクリックし、**[!UICONTROL 以前のバージョン]**&#x200B;をクリックします。
 
    以前のバージョンのリストが表示されます。
 1. （オプション）バージョンの名前を変更するには、そのバージョンの行にある詳細メニュー![詳細メニュー](assets/more-icon-vertical.png)をクリックし、**編集**&#x200B;を選択して、フィールドに名前を入力します。 **保存**&#x200B;をクリックして、新しい名前を保存します。
@@ -65,7 +66,7 @@ Adobe Workfront Fusionは、変更されるたびにシナリオのバージョ�
 1. （オプション）以前のバージョンのブループリントをダウンロードするには、そのバージョンの行の「詳細」メニュー![詳細メニュー](assets/more-icon-vertical.png)をクリックし、「**ダウンロード**」を選択します。
 1. （オプション） 2つのバージョン間の変更点を比較するには、そのバージョンの&#x200B;**変更点を表示**&#x200B;をクリックします。
 
-   バージョンの比較の詳細と手順については、この記事の「[ シナリオバージョンの比較](#compare-scenario-versions)」を参照してください。
+   バージョンの比較の詳細と手順については、この記事の「[&#x200B; シナリオバージョンの比較](#compare-scenario-versions)」を参照してください。
 1. （オプション）バージョンを復元するには、そのバージョンの行の&#x200B;**復元**&#x200B;をクリックします
 
 
@@ -80,8 +81,8 @@ Adobe Workfront Fusionは、変更されるたびにシナリオのバージョ�
 &#x200B;
 変更履歴の表示機能では、2つのシナリオバージョン間で何が異なるかを横に並べて表示できるので、古いバージョンを復元する前に変更された内容を正確に確認できます。
 
-1. 左側のパネルで「**[!UICONTROL シナリオ]** ![ シナリオアイコン ](assets/scenarios-icon.png)」をクリックし、シナリオをクリックして開きます。
-1. 画面の下部にある[!UICONTROL 詳細] アイコン ![詳細アイコン ](assets/more-icon.png)をクリックし、**[!UICONTROL 以前のバージョン]**&#x200B;をクリックします。
+1. 左側のパネルで「**[!UICONTROL シナリオ]** ![&#x200B; シナリオアイコン &#x200B;](assets/scenarios-icon.png)」をクリックし、シナリオをクリックして開きます。
+1. 画面の下部にある[!UICONTROL 詳細] アイコン ![詳細アイコン &#x200B;](assets/more-icon.png)をクリックし、**[!UICONTROL 以前のバージョン]**&#x200B;をクリックします。
 
    以前のバージョンのリストが表示されます。
    &#x200B;
