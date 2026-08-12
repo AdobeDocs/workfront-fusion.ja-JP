@@ -11,10 +11,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 4d018e92863fa3461ea73defe6b83991a7e2083d
+source-git-commit: 79ead2c1fd03403e8e18ecfd7a346be3b1ff890f
 workflow-type: tm+mt
-source-wordcount: 516
-ht-degree: 93%
+source-wordcount: 511
+ht-degree: 94%
 
 ---
 
@@ -153,7 +153,6 @@ Fusion には、多くのサードパーティアプリケーション用コネ�
 * [Lexical モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/lexical-modules.md)
 * [Markdown モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
 * [数学モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
-* [MCP （Model Context Protocol）モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
 * [MIME モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
 * [テキストパーサーモジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
 * [ツールモジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
