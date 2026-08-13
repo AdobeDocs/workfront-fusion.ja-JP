@@ -7,10 +7,10 @@ exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
 TQID: https://experienceleague.adobe.com/0NhWgeBcqYtVJ7XKqZ30O1lg3fKSs7YijEhhYBQ-jfg
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 93887116991b505676f5c51762b47829dae9bb7a
 workflow-type: tm+mt
-source-wordcount: 629
-ht-degree: 40%
+source-wordcount: 659
+ht-degree: 37%
 
 ---
 
@@ -80,7 +80,7 @@ ht-degree: 40%
 
 | アクション | 詳細 |
 | ---------- | ---------- |
-| 保存します。 <p>![保存アイコン &#x200B;](assets/save-icon.png)</p> | シナリオを保存した後、将来アクセスする必要がある場合、「...」メニューから新しいバージョンを使用できます。 以前に保存したシナリオのバージョンは 60 日間のみ使用できます。 |
+| 保存します。 <p>![保存アイコン &#x200B;](assets/save-icon.png)</p> | <p>シナリオを保存した後、将来アクセスする必要がある場合、「...」メニューから新しいバージョンを使用できます。 以前に保存したシナリオのバージョンは、次のシナリオバージョンが作成されてから60日間使用できます。 </p><p>監査の目的で60日を超えるシナリオのバージョン履歴を保持するには、シナリオの設計図を別の場所に保存してアーカイブすることをお勧めします。</p> |
 | シナリオ設定 <p>![&#x200B; シナリオ設定アイコン &#x200B;](assets/scenario-settings-icon.png)</p> | シナリオ設定パネルには、シナリオの詳細設定が表示されます。 使用可能な設定について詳しくは、[&#x200B; シナリオ設定の設定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)を参照してください。 |
 | メモ  <p>![&#x200B; メモアイコン &#x200B;](assets/notes-icon.png)</p> | シナリオに関するメモを作成します。 他のユーザーは、シナリオ内にあるときに、これらのメモを表示できます。 |
 | 自動整列 <p>![自動整列アイコン &#x200B;](assets/auto-align-icon.png)</p> | シナリオ内のモジュールを自動調整します。 |
