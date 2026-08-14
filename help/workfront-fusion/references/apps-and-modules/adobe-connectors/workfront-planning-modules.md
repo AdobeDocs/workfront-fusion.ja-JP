@@ -5,9 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
 TQID: https://experienceleague.adobe.com/QHOFWDOT-18-c0b3wLXsRV5cjGVxlcyLhvZdkev3GFg
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
 workflow-type: tm+mt
 source-wordcount: 6097
@@ -204,7 +207,7 @@ Workfront Planning Fusion モジュール内から直接Workfront Planning ア�
 >[!IMPORTANT]
 >
 >この節のモジュールは、Workfront Planning V2 コネクタに属しています。
->Workfront Planning V1 コネクタのモジュールについては、[[!DNL Adobe Workfront Planning]  バージョン 1 モジュールとそのフィールド ](#adobe-workfront-planning-version-1-modules-and-their-fields)を参照してください。
+>Workfront Planning V1 コネクタのモジュールについては、[[!DNL Adobe Workfront Planning]  バージョン 1 モジュールとそのフィールド &#x200B;](#adobe-workfront-planning-version-1-modules-and-their-fields)を参照してください。
 
 Workfront計画モジュールを設定すると、Workfront Fusionに次のフィールドが表示されます。 これらと共に、アプリやサービスのアクセスレベルなどの要因に応じて、追加の Workfront フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
@@ -499,7 +502,7 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL返されるレコードの最大数]</p>
+        <p>[!UICONTROL 返されるレコードの最大数]</p>
       </td>
       <td>1回の実行サイクル中にモジュールが返す最大レコードタイプ数を入力またはマッピングします。</td> 
     </tr>
@@ -547,7 +550,7 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL返されるレコードの最大数]</p>
+        <p>[!UICONTROL 返されるレコードの最大数]</p>
       </td>
       <td>1回の実行サイクル中にモジュールが返す最大レコードタイプ数を入力またはマッピングします。</td> 
     </tr>
@@ -996,7 +999,7 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL返されるフィールドの最大数]</p>
+        <p>[!UICONTROL 返されるフィールドの最大数]</p>
       </td>
       <td>1回の実行サイクル中にモジュールが返す最大フィールド数を入力またはマッピングします。</td> 
     </tr>
@@ -1017,7 +1020,7 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL リソースタイプ ]</p>
+        <p>[!UICONTROL リソースタイプ &#x200B;]</p>
       </td>
       <td>更新するフィールドを含むリソースタイプを選択します。</td> 
     </tr>
@@ -1029,7 +1032,7 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL表示名]</p>
+        <p>[!UICONTROL 表示名]</p>
       </td>
       <td>フィールドの名前を入力またはマッピングします。</td> 
     </tr>
@@ -1041,7 +1044,7 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROLその他のパラメーター]</p>
+        <p>[!UICONTROL その他のパラメーター]</p>
       </td>
       <td>他のフィールドパラメーターの値を入力します。 使用可能なパラメーターは、選択したフィールドによって異なります。</td> 
     </tr>
@@ -1176,7 +1179,7 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL返されるビューの最大数]</p>
+        <p>[!UICONTROL 返されるビューの最大数]</p>
       </td>
       <td>1回の実行サイクル中にモジュールが返す最大ビュー数を入力またはマッピングします。</td> 
     </tr>
@@ -1246,7 +1249,7 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL リソースタイプ ]</p>
+        <p>[!UICONTROL リソースタイプ &#x200B;]</p>
       </td>
       <td>削除するWorkspaceのIDを入力またはマッピングします。</td> 
     </tr>
@@ -1279,7 +1282,7 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL リソースタイプ ]</p>
+        <p>[!UICONTROL リソースタイプ &#x200B;]</p>
       </td>
       <td>情報を取得するリソースのタイプを選択します。</td> 
     </tr>
@@ -1306,7 +1309,7 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL リソースタイプ ]</p>
+        <p>[!UICONTROL リソースタイプ &#x200B;]</p>
       </td>
       <td>権限を取得するリソースタイプを選択します。</td> 
     </tr>
@@ -1333,7 +1336,7 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL リソースタイプ ]</p>
+        <p>[!UICONTROL リソースタイプ &#x200B;]</p>
       </td>
       <td>情報を取得するリソースのタイプを選択します。</td> 
     </tr>
@@ -1360,7 +1363,7 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL リソースタイプ ]</p>
+        <p>[!UICONTROL リソースタイプ &#x200B;]</p>
       </td>
       <td>アクセスリクエストを作成または更新するリソースのタイプを選択します。</td> 
     </tr>
@@ -1491,7 +1494,7 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
       <td>新しいレコード、更新されたレコード、新しいレコードと更新されたレコードの両方、または削除されたレコードを監視するかどうかを選択します。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL設定タイプ ]</td>
+      <td role="rowheader">[!UICONTROL 設定タイプ &#x200B;]</td>
       <td>シンプルな設定と高度な設定のどちらかを選択します。 <p>高度な設定について詳しくは、この記事の「<a href="#example-of-advanced-logic-in-the-watch-events-module" class="MCXref xref" >監視イベントモジュールの高度なロジックの例</a>」を参照してください。</td>
     </tr>
     <tr>
@@ -1535,7 +1538,7 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
 >[!IMPORTANT]
 >
 >このセクションのモジュールは、Workfront Planning V1 コネクタに属しています。
->Workfront Planning V2 コネクタのモジュールについては、[[!DNL Adobe Workfront Planning]  バージョン 2 モジュールとそのフィールド ](#adobe-workfront-planning-version-2-modules-and-their-fields)を参照してください。
+>Workfront Planning V2 コネクタのモジュールについては、[[!DNL Adobe Workfront Planning]  バージョン 2 モジュールとそのフィールド &#x200B;](#adobe-workfront-planning-version-2-modules-and-their-fields)を参照してください。
 
 Workfront計画モジュールを設定すると、Workfront Fusionに次のフィールドが表示されます。 これらと共に、アプリやサービスのアクセスレベルなどの要因に応じて、追加の Workfront フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
@@ -1904,7 +1907,7 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
 )
 ```
 
-JSONata モジュールの使用について詳しくは、[JSONata モジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md)を参照してください。
+JSONata モジュールの使用について詳しくは、[JSONata モジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md)を参照してください。
 
 ## 監視イベントモジュールの高度なロジックの例
 
