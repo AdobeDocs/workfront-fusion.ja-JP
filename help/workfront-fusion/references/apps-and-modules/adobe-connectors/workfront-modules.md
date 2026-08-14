@@ -15,10 +15,10 @@ subfeature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 86ecf8da00cbae38b4ae48f616ac37e759f84494
+source-git-commit: 997d5af3ff9fe9354976552bbd30edf530da3beb
 workflow-type: tm+mt
-source-wordcount: 7518
-ht-degree: 95%
+source-wordcount: 7626
+ht-degree: 94%
 
 ---
 
@@ -217,13 +217,11 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
 
 ### トリガー
 
-<!--
-* [Watch Events](#watch-events) 
-* [Watch Record](#watch-record) 
-* [Watch Field](#watch-field)
--->
+* [イベントの監視](#watch-events)
+* [監視フィールド](#watch-field)
+* [記録を監視](#watch-record)
 
-+++ **[!UICONTROL イベントを監視]**
+#### [!UICONTROL イベントを監視]
 
 このトリガーモジュールは、Workfront で特定のタイプのオブジェクトが追加、更新、削除された場合に、シナリオをリアルタイムで実行します。
 
@@ -294,9 +292,7 @@ Webhook を作成した後、イベントの送信先エンドポイントのア
 
 このモジュールを使用できる Workfront オブジェクトタイプのリストについて詳しくは、[各 Workfront モジュールで使用可能な Workfront オブジェクトタイプ](#workfront-object-types-available-for-each-workfront-module)を参照してください。
 
-+++
-
-+++ **[!UICONTROL フィールドを監視]**
+#### [!UICONTROL フィールドを監視]
 
 このトリガーモジュールは、指定したフィールドが更新されるとシナリオを実行します。 このモジュールは、指定されたフィールドの古い値と新しい値の両方を返します。 この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
@@ -331,9 +327,7 @@ Webhook を作成した後、イベントの送信先エンドポイントのア
 
 このモジュールを使用できる Workfront オブジェクトタイプのリストについて詳しくは、[各 Workfront モジュールで使用可能な Workfront オブジェクトタイプ](#workfront-object-types-available-for-each-workfront-module)を参照してください。
 
-+++
-
-+++ **[!UICONTROL レコードを監視]**
+#### [!UICONTROL レコードを監視]
 
 このトリガーモジュールは、特定のタイプのオブジェクトが追加、更新、またはその両方が行われた場合にシナリオを実行します。 このモジュールは、レコードに関連付けられたすべての標準フィールドと、接続を介してアクセスされるカスタムフィールドおよび値を返します。 この情報は、シナリオ内の後続のモジュールにマッピングできます。
 
@@ -384,25 +378,21 @@ Webhook を作成した後、イベントの送信先エンドポイントのア
 
 このモジュールを使用できる Workfront オブジェクトタイプのリストについて詳しくは、[各 Workfront モジュールで使用可能な Workfront オブジェクトタイプ](#workfront-object-types-available-for-each-workfront-module)を参照してください。
 
-+++
-
-
 ### アクション
 
-<!--
-* [Convert object](#convert-object) 
-* [Create a record (attaching custom forms)](#create-a-record-attaching-custom-forms) 
-* [Create a record](#create-a-record) 
-* [Custom API Call](#custom-api-call) 
-* [Delete Record](#delete-record) 
-* [Download Document](#download-document) 
-* [Misc Action](#misc-action) 
-* [Read a Record](#read-a-record) 
-* [Update Record](#update-record) 
-* [Upload Document](#upload-document)
--->
+* [オブジェクトを変換](#convert-object)
+* [レコードの作成](#create-a-record)
+* [カスタム API 呼び出し](#custom-api-call)
+* [記録を削除](#delete-record)
+* [ドキュメントのダウンロード](#download-document)
+* [事前署名済みファイル URLの取得](#get-a-presigned-file-url)
+* [関連アクション](#misc-action)
+* [レコードの読み取り](#read-a-record)
+* [イベントペイロードバージョンの更新](#update-events-payload-version)
+* [レコードの更新](#update-a-record)
+* [ドキュメントをアップロード](#upload-document)
 
-+++ **[!UICONTROL オブジェクトの変換]**
+#### [!UICONTROL オブジェクトの変換]
 
 このアクションモジュールは、次のいずれかの変換を行います。
 
@@ -457,9 +447,7 @@ Webhook を作成した後、イベントの送信先エンドポイントのア
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL レコードの作成]** 
+#### [!UICONTROL レコードの作成]
 
 このアクションモジュールは、Workfront のプロジェクト、タスク、イシューなどのオブジェクトを作成し、新しいオブジェクトにカスタムフォームを追加できます。 モジュールを使用すると、モジュールで使用可能なオブジェクトのフィールドを選択できます。
 
@@ -525,8 +513,6 @@ Webhook を作成した後、イベントの送信先エンドポイントのア
 >
 >   手順については、アドビドキュメントの[複数ユーザーの管理 | CSV の一括アップロード](https://helpx.adobe.com/jp/enterprise/using/bulk-upload-users.html)を参照してください。
 
-+++
-
 <!--
 
 +++ **[!UICONTROL Create Record (Legacy)]**
@@ -580,7 +566,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 -->
 
-+++ **[!UICONTROL カスタム API 呼び出し]**
+#### [!UICONTROL カスタム API 呼び出し]
 
 このアクションモジュールでは、Workfront API への認証済みのカスタム呼び出しを実行できます。 これにより、他の Workfront モジュールで達成できないデータフローの自動化を作成できます。
 
@@ -637,9 +623,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 このモジュールを使用できる Workfront オブジェクトタイプのリストについて詳しくは、[各 Workfront モジュールで使用可能な Workfront オブジェクトタイプ](#workfront-object-types-available-for-each-workfront-module)を参照してください。
 
-+++
-
-+++ **[!UICONTROL レコードを削除]**
+#### [!UICONTROL レコードを削除]
 
 このアクションモジュールは、Workfront のプロジェクト、タスクまたはイシューなどのオブジェクトを削除します。
 
@@ -686,9 +670,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >1. レコード削除モジュールにエラー処理を追加し、40 秒のタイムアウトによるエラーを無視します。
 
 
-+++
-
-+++ **[!UICONTROL ドキュメントのダウンロード]**
+#### [!UICONTROL ドキュメントのダウンロード]
 
 このアクションモジュールは、Workfront からドキュメントをダウンロードします。
 
@@ -715,9 +697,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 このモジュールを使用できる Workfront オブジェクトタイプのリストについて詳しくは、[各 Workfront モジュールで使用可能な Workfront オブジェクトタイプ](#workfront-object-types-available-for-each-workfront-module)を参照してください。
 
-+++
-
-+++ **事前署名済みファイルの URL の取得**
+#### 事前署名済みファイル URLの取得
 
 このアクションモジュールは、他の API で後で使用できる事前署名済みファイルの URL を取得します。
 
@@ -740,9 +720,7 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL その他のアクション]**
+#### [!UICONTROL その他のアクション]
 
 このアクションモジュールを使用すると、API に対してアクションを実行できます。
 
@@ -789,13 +767,13 @@ See a list of the Workfront object types for which you can use this module in [W
 
 このモジュールを使用できる Workfront オブジェクトタイプのリストについて詳しくは、[各 Workfront モジュールで使用可能な Workfront オブジェクトタイプ](#workfront-object-types-available-for-each-workfront-module)を参照してください。
 
-#### その他のアクションオプション
+##### その他のアクションオプション
 
 * [タスク](#task)
 * [イシュー](#issue)
 * [プロジェクト](#project)
 
-##### タスク
+###### タスク
 
 <table style="table-layout:auto">
  <col> 
@@ -843,7 +821,7 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-##### イシュー
+###### イシュー
 
 <table style="table-layout:auto">
  <col> 
@@ -890,7 +868,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 
 
-##### プロジェクト
+###### プロジェクト
 
 <table style="table-layout:auto">
  <col> 
@@ -943,9 +921,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 
 
-+++
-
-+++ **[!UICONTROL レコードを読み取り]**
+#### [!UICONTROL レコードを読み取り]
 
 このアクションモジュールは、1 つのレコードからデータを取得します。
 
@@ -995,8 +971,6 @@ See a list of the Workfront object types for which you can use this module in [W
 </table>
 
 このモジュールを使用できる Workfront オブジェクトタイプのリストについて詳しくは、[各 Workfront モジュールで使用可能な Workfront オブジェクトタイプ](#workfront-object-types-available-for-each-workfront-module)を参照してください。
-
-+++
 
 <!--
 
@@ -1052,11 +1026,9 @@ When you are configuring this module, the following fields display.
 
 See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
 -->
 
-+++ **イベントペイロードバージョンの更新**
+#### イベントペイロードバージョンの更新
 
 Workfront は最近、イベント登録サービスの新しいバージョンをリリースしました。 新しいバージョンは Workfront API に対する変更ではなく、イベント登録機能に対する変更です。 このアクションモジュールは、このシナリオで使用されるイベントペイロードバージョンを更新します。
 
@@ -1080,9 +1052,7 @@ Workfront は最近、イベント登録サービスの新しいバージョン�
 </table>
 
 
-+++
-
-+++ **レコードの更新**
+#### レコードの更新
 
 
 このアクションモジュールは、プロジェクト、タスク、イシューなどのオブジェクトを更新します。 モジュールを使用すると、モジュールで使用可能なオブジェクトのフィールドを選択できます。
@@ -1128,8 +1098,6 @@ Workfront は最近、イベント登録サービスの新しいバージョン�
 >
 > カスタムフィールドまたは[!UICONTROL メモ]オブジェクト（コメントまたは返信）にテキストを入力する際、「[!UICONTROL メモテキスト]」フィールドで HTML タグを使用して、太字や斜体などのリッチテキストを作成できます。
 
-
-+++
 
 <!--
 
@@ -1180,11 +1148,9 @@ See a list of the Workfront object types for which you can use this module in [W
 >* When entering the ID of an object, you can begin typing the name of the object, then select it from the list. The module then enters the appropriate ID into the field.
 >* When entering the text for a custom field or a [!UICONTROL Note] object (Comment or reply), you can use HTML tags in the [!UICONTROL Note Text] field to create rich text, such as bold or italic text.
 
-+++
-
 -->
 
-+++ **[!UICONTROL ドキュメントのアップロード]**
+#### [!UICONTROL ドキュメントのアップロード]
 
 このアクションモジュールは、プロジェクト、タスク、イシューなどの Workfront オブジェクトにドキュメントをアップロードします。 このモジュールは、ドキュメントをチャンク単位でアップロードするので、Workfront のアップロードプロセスがスムーズになります。
 
@@ -1224,8 +1190,6 @@ See a list of the Workfront object types for which you can use this module in [W
 </table>
 
 このモジュールを使用できる Workfront オブジェクトタイプのリストについて詳しくは、[各 Workfront モジュールで使用可能な Workfront オブジェクトタイプ](#workfront-object-types-available-for-each-workfront-module)を参照してください。
-
-+++
 
 <!--
 
@@ -1274,12 +1238,11 @@ See a list of the Workfront object types for which you can use this module in [W
 
 ### 検索
 
-<!--
-* [Read Related Records](#read-related-records) 
-* [Search](#search)
--->
+* [関連レコードの読み取り](#read-related-records)
+* [検索](#search)
+* [検索（レガシー）](#search-legacy)
 
-+++ **[!UICONTROL 関連レコードを読み取る]**
+#### [!UICONTROL 関連レコードを読み取る]
 
 この検索モジュールは、特定の親オブジェクト内で、指定した検索クエリに一致するレコードを読み取ります。
 
@@ -1314,9 +1277,7 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL 検索]**
+#### [!UICONTROL 検索]
 
 この検索モジュールは、指定した検索クエリに一致するレコードを Workfront のオブジェクト内で検索します。
 
@@ -1371,14 +1332,12 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL 検索（レガシー）]**
+#### [!UICONTROL 検索（レガシー）]
 
 >[!IMPORTANT]
 >
->このモジュールは、レコードの検索モジュールに置き換えられました。新しいシナリオでは、そのモジュールを使用することをおすすめします。
->このモジュールを使用する既存のシナリオは、引き続き期待どおりに機能します。このモジュールは、2025年5月にモジュールセレクターから削除されます。
+>このモジュールは、レコードを検索モジュールに置き換えられました。 新しいシナリオでは、そのモジュールを使用することをお勧めします。
+>このモジュールを使用する既存のシナリオは、引き続き期待どおりに機能します。 このモジュールは、2025年5月にモジュールセレクターから削除されます。
 
 この検索モジュールは、指定した検索クエリに一致するレコードを Workfront のオブジェクト内で検索します。
 
@@ -1428,8 +1387,6 @@ See a list of the Workfront object types for which you can use this module in [W
   </tr> 
  </tbody> 
 </table>
-
-+++
 
 <!--
 not visible Jan 6, 2025
@@ -1488,13 +1445,11 @@ See a list of the Workfront object types for which you can use this module in [W
 
 ## 各 Workfront モジュールで使用可能な Workfront オブジェクトタイプ
 
-<!--
-[Object types available for each Workfront trigger module](#object-types-available-for-each-workfront-trigger-module)
-* [Object types available for each Workfront action module](#object-types-available-for-each-workfront-action-module) 
-* [Object types available for each Workfront search module](#object-types-available-for-each-workfront-search-module)
--->
+* [各Workfront トリガーモジュールで使用できるオブジェクトタイプ](#object-types-available-for-each-workfront-trigger-module)
+* [各Workfront アクションモジュールで使用できるオブジェクトタイプ](#object-types-available-for-each-workfront-action-module)
+* [各Workfront検索モジュールで使用できるオブジェクトタイプ](#object-types-available-for-each-workfront-search-module)
 
-+++**各 Workfront トリガーモジュールで使用可能なオブジェクトタイプ**
+### 各Workfront トリガーモジュールで使用できるオブジェクトタイプ
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1758,9 +1713,7 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-+++
-
-+++**各 Workfront アクションモジュールで使用可能なオブジェクトタイプ**
+### 各Workfront アクションモジュールで使用できるオブジェクトタイプ
 
 >[!NOTE]
 >
@@ -2181,9 +2134,7 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-+++
-
-+++**各 Workfront 検索モジュールで使用可能なオブジェクトタイプ**
+### 各Workfront検索モジュールで使用できるオブジェクトタイプ
 
 <table style="table-layout:auto"> 
  <col> 
@@ -2381,8 +2332,6 @@ See a list of the Workfront object types for which you can use this module in [W
 </table>
 
 これが期待どおりに機能することを再確認することをお勧めします。
-
-+++
 
 ## Workfront／[!UICONTROL イベントを監視]モジュールのイベント登録フィルター
 
