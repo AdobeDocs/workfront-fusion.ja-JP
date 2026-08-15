@@ -11,10 +11,10 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: f0e185778e01b71a91837531a082e88485e97ca2
+source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
 workflow-type: tm+mt
-source-wordcount: 6075
-ht-degree: 44%
+source-wordcount: 6097
+ht-degree: 43%
 
 ---
 
@@ -206,7 +206,8 @@ Workfront Planning Fusion モジュール内から直接Workfront Planning ア�
 
 >[!IMPORTANT]
 >
->この節のモジュールは、Workfront Planning V2 コネクタに属しています。Workfront Planning V1 コネクタのモジュールについては、[[!DNL Adobe Workfront Planning]  バージョン 1 モジュールとそのフィールド &#x200B;](#adobe-workfront-planning-version-1-modules-and-their-fields)を参照してください。
+>この節のモジュールは、Workfront Planning V2 コネクタに属しています。
+>Workfront Planning V1 コネクタのモジュールについては、[[!DNL Adobe Workfront Planning]  バージョン 1 モジュールとそのフィールド &#x200B;](#adobe-workfront-planning-version-1-modules-and-their-fields)を参照してください。
 
 Workfront計画モジュールを設定すると、Workfront Fusionに次のフィールドが表示されます。 これらと共に、アプリやサービスのアクセスレベルなどの要因に応じて、追加の Workfront フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
@@ -576,7 +577,7 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Record type]</p>
+        <p>[!UICONTROL レコードタイプ]</p>
       </td>
       <td>レコードタイプを更新するワークスペースを選択します。</td> 
     </tr>
@@ -744,7 +745,7 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Record type]</p>
+        <p>[!UICONTROL レコードタイプ]</p>
       </td>
       <td>返すレコードのタイプを選択します。</td> 
     </tr>
@@ -777,7 +778,7 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Record type]</p>
+        <p>[!UICONTROL レコードタイプ]</p>
       </td>
       <td>移動するレコードのタイプを選択します。</td> 
     </tr>
@@ -816,7 +817,7 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Record type]</p>
+        <p>[!UICONTROL レコードタイプ]</p>
       </td>
       <td>取得するレコードを含むレコードタイプを選択します。</td> 
     </tr>
@@ -899,7 +900,7 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Record type]</p>
+        <p>[!UICONTROL レコードタイプ]</p>
       </td>
       <td>フィールドを作成するレコードタイプを選択します。</td> 
     </tr>
@@ -992,7 +993,7 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Record type]</p>
+        <p>[!UICONTROL レコードタイプ]</p>
       </td>
       <td>フィールドを返すレコードタイプを選択します。</td> 
     </tr>
@@ -1079,7 +1080,7 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Record type]</p>
+        <p>[!UICONTROL レコードタイプ]</p>
       </td>
       <td>ビューを作成するレコードタイプを選択します。</td> 
     </tr>
@@ -1172,7 +1173,7 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Record type]</p>
+        <p>[!UICONTROL レコードタイプ]</p>
       </td>
       <td>取得するビューを含むレコードタイプを選択します。</td> 
     </tr>
@@ -1205,7 +1206,7 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Record type]</p>
+        <p>[!UICONTROL レコードタイプ]</p>
       </td>
       <td>ビューを更新するレコードタイプを選択します。</td> 
     </tr>
@@ -1467,6 +1468,11 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
 >
 >Webhookの編集について詳しくは、[Webhookの編集](/help/workfront-fusion/manage-scenarios/edit-webhooks.md)を参照してください。
 
+>[!NOTE]
+>
+>2026年8月23日以降、Fusionは、既存のモジュールを含むすべてのWorkfront Planning/Watch Event モジュールに対して、デフォルトでauthToken ベースのセキュリティを有効にします。
+
+
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -1531,7 +1537,8 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
 
 >[!IMPORTANT]
 >
->このセクションのモジュールは、Workfront Planning V1 コネクタに属しています。Workfront Planning V2 コネクタのモジュールについては、[[!DNL Adobe Workfront Planning]  バージョン 2 モジュールとそのフィールド &#x200B;](#adobe-workfront-planning-version-2-modules-and-their-fields)を参照してください。
+>このセクションのモジュールは、Workfront Planning V1 コネクタに属しています。
+>Workfront Planning V2 コネクタのモジュールについては、[[!DNL Adobe Workfront Planning]  バージョン 2 モジュールとそのフィールド &#x200B;](#adobe-workfront-planning-version-2-modules-and-their-fields)を参照してください。
 
 Workfront計画モジュールを設定すると、Workfront Fusionに次のフィールドが表示されます。 これらと共に、アプリやサービスのアクセスレベルなどの要因に応じて、追加の Workfront フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 

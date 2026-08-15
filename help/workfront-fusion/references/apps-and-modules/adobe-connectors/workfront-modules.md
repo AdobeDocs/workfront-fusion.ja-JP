@@ -15,10 +15,10 @@ subfeature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 997d5af3ff9fe9354976552bbd30edf530da3beb
+source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
 workflow-type: tm+mt
-source-wordcount: 7626
-ht-degree: 94%
+source-wordcount: 7689
+ht-degree: 93%
 
 ---
 
@@ -277,6 +277,13 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
       <td>
        <p>[!UICONTROL New Records Only]、[!UICONTROL Updated Records Only]、[!UICONTROL New and Updated Records]、または [!DNL Deleted Records Only] をシナリオで監視するかどうかを選択します。</p>
        <p><b>メモ</b>：[!UICONTROL New and Updated Records] を選択した場合、Webhook の作成により 2 つのイベント登録が（同じ Webhook アドレスに対して）作成されます。</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Enable secured hook]</td> 
+      <td>
+       <p>このWebhookにenableauthToken ベースのセキュリティを使用するかどうかを選択します。</p><p>
+       <b> メモ </b>: 2026年8月23日以降、Fusionは、既存のモジュールを含むすべてのWorkfront/Watch Event モジュールに対して、デフォルトでauthToken ベースのセキュリティを有効にします。 特定のWebhookが壊れた場合、または互換性の理由でこれを無効にする必要がある場合は、2026年8月23日より前に「セキュアフックを有効にする」オプションをオフにすることができます。</p>
        </td> 
      </tr> 
     </tbody> 
