@@ -9,8 +9,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: bbc94bb0-7432-44c5-8000-9aea25916b28
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 source-git-commit: a9dd86f7dc4070ad98c7c4a526a6a38939097940
 workflow-type: tm+mt
 source-wordcount: 440
@@ -29,7 +31,7 @@ ht-degree: 0%
 
 このプロセスでは、拡張機能が、非表示の&#x200B;**登録** フレームと表示される&#x200B;**UI** フレームの2つのフレームで実行されていることを確認することが重要です。
 
-カスタム拡張機能に関連するフレームについて詳しくは、[UI拡張機能に含まれるフレーム ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-01-overview.md#frames-included-in-a-ui-extension)を参照してください。
+カスタム拡張機能に関連するフレームについて詳しくは、[UI拡張機能に含まれるフレーム &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-01-overview.md#frames-included-in-a-ui-extension)を参照してください。
 
 登録フレームの作成手順については、[UI拡張機能のプロジェクトの作成](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-03-04-create-project-configure-fusion.md)を参照してください。
 
@@ -63,7 +65,7 @@ ht-degree: 0%
    これらのルートは、次のように以前の設定にマッピングされます。
 
    * 既定のルート （`index`）は、`register(...)`を呼び出す非表示フレーム **`ExtensionRegistration`**&#x200B;をレンダリングします。
-   * `my-widget` ルートは、表示されるUIである&#x200B;**`DashboardWidget`**&#x200B;をレンダリングします。 これは、[前のページ ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-03-04-create-project-configure-fusion.md)の`getWidget()`から返された`url: "/index.html#/my-widget"`と一致します。
+   * `my-widget` ルートは、表示されるUIである&#x200B;**`DashboardWidget`**&#x200B;をレンダリングします。 これは、[前のページ &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-03-04-create-project-configure-fusion.md)の`getWidget()`から返された`url: "/index.html#/my-widget"`と一致します。
 
    >[!NOTE]
    >
@@ -175,6 +177,6 @@ export default function DashboardWidget() {
 * **`attach`の直後に`connection.sharedContext.get(key)`から初期値**&#x200B;を読み取ります。
 * **同期を維持するために`contextchange`**&#x200B;を購読します。 Fusionは、アクティブな組織、チーム、またはユーザーが変更されるたびに、このイベントを起動します。 新しい値は`event.detail.context`に到達します。
 
-キーの完全なリストと各キーに含まれるものは、[Fusion コンテキスト リファレンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-06-context-reference.md)に含まれています。
+キーの完全なリストと各キーに含まれるものは、[Fusion コンテキスト リファレンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-06-context-reference.md)に含まれています。
 
-カスタム拡張機能の設定プロセスを続行するには、[Fusionのコンテキストリファレンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-06-context-reference.md)に移動します。
+カスタム拡張機能の設定プロセスを続行するには、[Fusionのコンテキストリファレンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-06-context-reference.md)に移動します。

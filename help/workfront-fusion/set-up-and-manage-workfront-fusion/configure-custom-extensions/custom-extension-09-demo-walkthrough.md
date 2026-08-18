@@ -9,8 +9,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: bbc94bb0-7432-44c5-8000-9aea25916b28
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 source-git-commit: a9dd86f7dc4070ad98c7c4a526a6a38939097940
 workflow-type: tm+mt
 source-wordcount: 964
@@ -54,7 +56,7 @@ aio console org select  # pick the org you'll demo in (same org as Fusion)
 
 デモ組織では、次の2つのことが当てはまる必要があります。
 
-* 組織の`fusion/nav-organization/1`拡張ポイントがオンボーディングされました。 オンボーディングされていない場合、デプロイはエラー1060で失敗します。 詳しくは、[ カスタム拡張機能のトラブルシューティング ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md)を参照してください。
+* 組織の`fusion/nav-organization/1`拡張ポイントがオンボーディングされました。 オンボーディングされていない場合、デプロイはエラー1060で失敗します。 詳しくは、[&#x200B; カスタム拡張機能のトラブルシューティング &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md)を参照してください。
 * カスタム拡張機能は、Fusion ホストで有効になります。 （この機能はデフォルトでオンになっています）。 公開されたビルドではなくステージのビルドをデモするため、Fusion プロファイルで&#x200B;**ステージ拡張機能** スイッチも有効になります。 （このスイッチは、手順7で示します）。 公開された拡張機能のみが表示されます。
 
 ## 手順1：汎用テンプレートからアプリを生成する
@@ -249,7 +251,7 @@ UIがメインパネルに読み込まれ、ライブユーザー、組織、チ
 
 >[!TIP]
 >
->ボタンが表示されない場合は、検出はセッションごとにキャッシュされるので、1回リロードします。 次に、[ カスタム拡張機能のトラブルシューティング ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md)を参照してください。
+>ボタンが表示されない場合は、検出はセッションごとにキャッシュされるので、1回リロードします。 次に、[&#x200B; カスタム拡張機能のトラブルシューティング &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md)を参照してください。
 
 
 ## デモ中の反復
@@ -262,7 +264,7 @@ aio app build && aio app deploy
 
 ## デモの後、本番環境に移行する
 
-デモするにはステージで十分です。 組織全体でリリースするには、実稼動ワークスペースに切り替えて、デプロイし、承認リクエストを送信します。 リクエストは、システム管理者の役割を使用して送信する必要があります。 完全なプロセスについては、[実稼動環境でのリリース ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-07-publish.md#release-on-production)を参照してください。
+デモするにはステージで十分です。 組織全体でリリースするには、実稼動ワークスペースに切り替えて、デプロイし、承認リクエストを送信します。 リクエストは、システム管理者の役割を使用して送信する必要があります。 完全なプロセスについては、[実稼動環境でのリリース &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-07-publish.md#release-on-production)を参照してください。
 
 ## デモトークトラック（オプション）
 

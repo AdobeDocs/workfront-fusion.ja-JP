@@ -9,8 +9,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: bbc94bb0-7432-44c5-8000-9aea25916b28
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 source-git-commit: a9dd86f7dc4070ad98c7c4a526a6a38939097940
 workflow-type: tm+mt
 source-wordcount: 1136
@@ -73,7 +75,7 @@ useEffect(() => {
 }, []);
 ```
 
-詳しくは、[ カスタム拡張機能UIの作成](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-05-build-ui-procedure.md)を参照してください。
+詳しくは、[&#x200B; カスタム拡張機能UIの作成](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-05-build-ui-procedure.md)を参照してください。
 
 
 
@@ -81,8 +83,8 @@ useEffect(() => {
 
 カスタム拡張機能のナビゲーションボタンがFusionに表示されない場合は、次の項目を順番に確認します。
 
-1. **適切な拡張機能セットをお探しですか？** デフォルトでは、公開された拡張機能のみが表示され、実稼動環境にデプロイされ、承認されています。 ステージのビルドをテストする場合は、Fusion プロファイル（製品設定/Fusion プロファイル/環境設定）のステージ拡張機能スイッチをオンにしてリロードします。 ステージ項目には&#x200B;**（ステージ）**というラベルが付いています。
-詳しくは、[ カスタム拡張機能を公開](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-07-publish.md)を参照してください。
+1. **適切な拡張機能セットをお探しですか？** デフォルトでは、公開された拡張機能のみが表示され、実稼動環境にデプロイされ、承認されています。 ステージのビルドをテストする場合は、Fusion プロファイル（製品設定/Fusion プロファイル/環境設定）のステージ拡張機能スイッチをオンにしてリロードします。 ステージ項目には&#x200B;**（ステージ）**&#x200B;というラベルが付いています。
+詳しくは、[&#x200B; カスタム拡張機能を公開](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-07-publish.md)を参照してください。
 1. **取り消されたか、取り消されたか？** 失効または取り消された拡張機能が、エラーなしでFusionに表示されなくなります。 以前に動作していたボタンが消えた場合は、コードの問題を探す前に、Adobe Exchangeで引き続きアクティブであることを確認します。
 1. **正しいワークスペースにデプロイされていますか？** ステージテスト スイッチを使用しているときに、実際に読み込んでいるワークスペースであるステージワークスペースにデプロイします。
 1. **正しい組織にデプロイされていますか？** デプロイ先の&#x200B;**same** IMS組織のアカウントでFusionにログインします。

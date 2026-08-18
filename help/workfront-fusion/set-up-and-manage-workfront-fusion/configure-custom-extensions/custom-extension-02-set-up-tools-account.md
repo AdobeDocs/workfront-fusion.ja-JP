@@ -9,8 +9,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: bbc94bb0-7432-44c5-8000-9aea25916b28
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 source-git-commit: a9dd86f7dc4070ad98c7c4a526a6a38939097940
 workflow-type: tm+mt
 source-wordcount: 500
@@ -38,7 +40,7 @@ UI拡張機能ツールとアカウントを設定するには、次の手順を
 * 最後のリリースステップの&#x200B;**システム管理者** <!--Adobe? Fusion?--> （チームの他のユーザーの可能性があります）です。 作成とデプロイには開発者の役割のみが必要ですが、**承認/公開用に拡張機能を送信するには、システム管理者の役割**&#x200B;が必要です。
 
   Adobeのアクセスレベルについて詳しくは、を参照してください
-  Adobe ドキュメントの[ アクセスを取得する方法](https://developer.adobe.com/uix/docs/guides/get-access/)。
+  Adobe ドキュメントの[&#x200B; アクセスを取得する方法](https://developer.adobe.com/uix/docs/guides/get-access/)。
 
 * **ソフトウェアをインストールし、ターミナル コマンド （macOS、Windows、またはLinux）を実行できるコンピューター**。
 
@@ -59,7 +61,7 @@ Adobe ツールは&#x200B;**Node.js**&#x200B;で実行されます。 **LTS** �
 
 1. （条件付き） `node`が見つからない場合は、ターミナルを閉じて再度開くか、コンピューターを再起動してください。
 
-1. 引き続き[Adobe I/O CLI （`aio`） ](#install-the-adobe-io-cli-aio)をインストールします。
+1. 引き続き[Adobe I/O CLI （`aio`） &#x200B;](#install-the-adobe-io-cli-aio)をインストールします。
 
 >[!TIP]
 >
@@ -86,7 +88,7 @@ Adobe ツールは&#x200B;**Node.js**&#x200B;で実行されます。 **LTS** �
 
    `@adobe/aio-cli/11.x.x`のような表示になります。
 
-1. 引き続き[Adobeにログイン ](#sign-in-to-adobe)します。
+1. 引き続き[Adobeにログイン &#x200B;](#sign-in-to-adobe)します。
 
 >[!NOTE]
 >
@@ -105,7 +107,7 @@ Adobe ツールは&#x200B;**Node.js**&#x200B;で実行されます。 **LTS** �
 1. ログインが成功したら、ブラウザーのタブを閉じてターミナルに戻ります。
 
 1. （オプション）後でログアウトするには（アカウントの切り替えなど）、次のコマンドを使用します：`aio logout`。
-1. 引き続き[ アクティブな組織を確認](#confirm-your-active-organization)してください。
+1. 引き続き[&#x200B; アクティブな組織を確認](#confirm-your-active-organization)してください。
 
 ## アクティブな組織を確認
 

@@ -9,8 +9,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: bbc94bb0-7432-44c5-8000-9aea25916b28
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 source-git-commit: a9dd86f7dc4070ad98c7c4a526a6a38939097940
 workflow-type: tm+mt
 source-wordcount: 1360
@@ -71,7 +73,7 @@ Adobe Fusion AI拡張機能で使用するプロジェクトの作成に関す�
 
    このコマンドは、ファイルを`my-fusion-extension` フォルダーに生成し、`npm install`を実行します。
 
-1. [ プロジェクト作成の確認](#confirm-project-creation)に進みます。
+1. [&#x200B; プロジェクト作成の確認](#confirm-project-creation)に進みます。
 
 >[!NOTE]
 >
@@ -127,7 +129,7 @@ Adobe Fusion AI拡張機能で使用するプロジェクトの作成に関す�
    npm install react react-dom react-router-dom
    ```
 
-1. 続行[ プロジェクトのビルドを確認](#confirm-the-project-builds)します。
+1. 続行[&#x200B; プロジェクトのビルドを確認](#confirm-the-project-builds)します。
 
 ## プロジェクトの構築を確認する
 
@@ -145,8 +147,8 @@ Adobe Fusion AI拡張機能で使用するプロジェクトの作成に関す�
    >
    > **ビルドが失敗した場合、**&#x200B;最も一般的な原因は、サポートされていないNode.js バージョンです。 `node --version`を実行し、18または20であることを確認します。
    >
-   >* Node.jsのインストールについて詳しくは、[ ツールの設定](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-02-set-up-tools-account.md)を参照してください。
-   >* その他の考えられるエラーについては、[ トラブルシューティング ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md)を参照してください。
+   >* Node.jsのインストールについて詳しくは、[&#x200B; ツールの設定](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-02-set-up-tools-account.md)を参照してください。
+   >* その他の考えられるエラーについては、[&#x200B; トラブルシューティング &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md)を参照してください。
 
 1. 引き続き[Fusion](#configure-the-project-for-fusion)用にプロジェクトを設定します。
 
@@ -247,7 +249,7 @@ Adobe Fusion AI拡張機能で使用するプロジェクトの作成に関す�
 
 拡張機能には、両方のフレームが共有する一意のIDが必要です。
 
-カスタム拡張機能に関連するフレームについて詳しくは、[UI拡張機能に含まれるフレーム ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-01-overview.md#frames-included-in-a-ui-extension)を参照してください。
+カスタム拡張機能に関連するフレームについて詳しくは、[UI拡張機能に含まれるフレーム &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-01-overview.md#frames-included-in-a-ui-extension)を参照してください。
 
 1. `src/fusion-nav-organization-1/web-src/src/components/Constants.js`を作成：
 
@@ -258,7 +260,7 @@ Adobe Fusion AI拡張機能で使用するプロジェクトの作成に関す�
    ```
 
    コードが拡張機能IDを参照するあらゆる場所で同じ値を使用します。
-1. [ ウィジェットの登録](#register-your-widget)に進みます。
+1. [&#x200B; ウィジェットの登録](#register-your-widget)に進みます。
 
 
 ## ウィジェットを登録
@@ -305,4 +307,4 @@ Adobe Fusion AI拡張機能で使用するプロジェクトの作成に関す�
 
 拡張機能のバックエンドが完了しました。 次のステップは、拡張機能のUIを構築することです。
 
-UIの構築手順については、[ カスタム拡張機能UIの構築](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-05-build-ui-procedure.md)を参照してください。
+UIの構築手順については、[&#x200B; カスタム拡張機能UIの構築](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-05-build-ui-procedure.md)を参照してください。

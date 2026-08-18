@@ -9,8 +9,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: bbc94bb0-7432-44c5-8000-9aea25916b28
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 source-git-commit: a9dd86f7dc4070ad98c7c4a526a6a38939097940
 workflow-type: tm+mt
 source-wordcount: 757
@@ -31,7 +33,7 @@ UIが`attach(...)`を呼び出すと、Fusionは現在のセッションを説�
 * **初期値：** `connection.sharedContext.get("<key>")`
 * **更新：** `contextchange` イベントをリッスンします。 最新のオブジェクトは`event.detail.context`に届きます。
 
-完全なコードパターンについては、[ カスタム拡張機能UIの構築](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-05-build-ui-procedure.md)を参照してください。
+完全なコードパターンについては、[&#x200B; カスタム拡張機能UIの構築](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-05-build-ui-procedure.md)を参照してください。
 
 ```js
 const organization = connection.sharedContext.get("organization");
@@ -46,9 +48,9 @@ const imsOrgId     = connection.sharedContext.get("imsOrgId"); // Adobe IMS org 
 | `imsToken` | 文字列 | サインイン ユーザーのAdobe **IMS アクセス トークン**。 これを`Bearer` トークンとして使用して、ユーザーの代わりにAdobeまたはFusion APIを呼び出します。 **機密性が高いため、ログを記録したり、表示したりしないでください。** |
 | `imsOrgId` | 文字列 | フォーム `XXXXXXXXXXXX@AdobeOrg`のAdobe **IMS組織ID**。 |
 | `imsUserId` | 文字列 | サインイン ユーザーのAdobe **IMS ユーザーID**。 |
-| `organization` | オブジェクト | **完全にアクティブなFusion組織**。 詳しくは、この記事の[`organization` フィールド ](#organization-fields)を参照してください。 |
-| `team` | オブジェクト \|未定義 | アクティブな&#x200B;**フルアクティブなFusion チーム** （常に`fusion/nav-team/1`に関連）。 詳しくは、この記事の[`team` フィールド ](#team-fields)を参照してください。 |
-| `user` | オブジェクト | **フル サインイン Fusion ユーザー**&#x200B;です。 詳しくは、この記事の[`user` フィールド ](#user-fields)を参照してください。 |
+| `organization` | オブジェクト | **完全にアクティブなFusion組織**。 詳しくは、この記事の[`organization` フィールド &#x200B;](#organization-fields)を参照してください。 |
+| `team` | オブジェクト \|未定義 | アクティブな&#x200B;**フルアクティブなFusion チーム** （常に`fusion/nav-team/1`に関連）。 詳しくは、この記事の[`team` フィールド &#x200B;](#team-fields)を参照してください。 |
+| `user` | オブジェクト | **フル サインイン Fusion ユーザー**&#x200B;です。 詳しくは、この記事の[`user` フィールド &#x200B;](#user-fields)を参照してください。 |
 
 ### Fusion IDとIMS ID
 

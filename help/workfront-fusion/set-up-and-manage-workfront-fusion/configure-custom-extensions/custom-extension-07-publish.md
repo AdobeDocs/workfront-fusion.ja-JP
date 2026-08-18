@@ -9,8 +9,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: bbc94bb0-7432-44c5-8000-9aea25916b28
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 source-git-commit: 925a8ee910434c474d527c2914897d7c42e4a3d1
 workflow-type: tm+mt
 source-wordcount: 1236
@@ -37,18 +39,18 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> **役割：**&#x200B;を作成およびデプロイするには&#x200B;**開発者**&#x200B;の役割が必要です。パブリッシュに承認要求を送信するには、**システム管理者**の役割が必要です。
+> **役割：**&#x200B;を作成およびデプロイするには&#x200B;**開発者**&#x200B;の役割が必要です。パブリッシュに承認要求を送信するには、**システム管理者**&#x200B;の役割が必要です。
 >詳しくは、以下を参照してください。
 >
 > * [UI拡張機能ツールとアカウントを設定](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-02-set-up-tools-account.md)
-> * Adobe ドキュメントの[ アクセスを取得する方法](https://developer.adobe.com/uix/docs/guides/get-access/)。
+> * Adobe ドキュメントの[&#x200B; アクセスを取得する方法](https://developer.adobe.com/uix/docs/guides/get-access/)。
 
 デフォルトでは、Fusionには&#x200B;**公開済み**&#x200B;の拡張機能のみが表示されます。 これらは、**実稼動** ワークスペースにデプロイしてから、**承認**&#x200B;用に送信した拡張機能です。 これは安全なデフォルトであるため、作業中のデプロイが組織全体に誤って表示されることはありません。
 
 **ステージ** ワークスペースへのデプロイは公開されないので、Fusionに表示されません。 拡張機能を公開する前に、次の2つの方法で試すことができます。
 
 * **ローカルで**&#x200B;を`aio app run`と共にプレビューします（[Adobe ドキュメントのUI拡張機能のローカルプレビュー](https://developer.adobe.com/uix/docs/guides/preview-extension-locally/)を参照）。 何も展開されず、見るだけです。
-* **Fusion プロファイルでユーザーごとのテストスイッチをオンにして、Fusion**&#x200B;内のステージから読み込みます。 これは、この記事の[Fusionでのステージビルドのテスト ](#test-a-stage-build-in-fusion)で説明します。
+* **Fusion プロファイルでユーザーごとのテストスイッチをオンにして、Fusion**&#x200B;内のステージから読み込みます。 これは、この記事の[Fusionでのステージビルドのテスト &#x200B;](#test-a-stage-build-in-fusion)で説明します。
 
 ## Fusionでのステージビルドのテスト
 
@@ -109,9 +111,9 @@ Fusionは、ユーザーごとにオプトインした場合にのみステー�
    `getWidget()`で設定したタイトルのボタンが表示され、**（ステージ）**&#x200B;とマークされます。
 1. 表示されたボタンをクリックします。
 
-UIが読み込まれ、[Fusion コンテキスト ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-06-context-reference.md)が受け取られます。
+UIが読み込まれ、[Fusion コンテキスト &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-06-context-reference.md)が受け取られます。
 
-ボタンが表示されない場合、またはパネルにエラーが表示される場合は、[ トラブルシューティング ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md)を参照してください。
+ボタンが表示されない場合、またはパネルにエラーが表示される場合は、[&#x200B; トラブルシューティング &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md)を参照してください。
 
 ## 実稼動環境でのリリース
 

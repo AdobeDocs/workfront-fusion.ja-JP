@@ -9,8 +9,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: bbc94bb0-7432-44c5-8000-9aea25916b28
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 source-git-commit: 925a8ee910434c474d527c2914897d7c42e4a3d1
 workflow-type: tm+mt
 source-wordcount: 835
@@ -121,7 +123,7 @@ Fusionがゲストを読み込むと、拡張機能が&#x200B;**2** フレーム
 
 UIの構築時には、両方のフレームが書き込まれます。 重要なことは、表示されるページ **は**&#x200B;が`attach`を呼び出さなければならないことを覚えておくことです。
 
-UIの構築について詳しくは、[ カスタム拡張機能UIの構築](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-05-build-ui-procedure.md)を参照してください。
+UIの構築について詳しくは、[&#x200B; カスタム拡張機能UIの構築](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-05-build-ui-procedure.md)を参照してください。
 
 ## Fusionからのコンテキスト
 
@@ -134,19 +136,19 @@ UIの構築について詳しくは、[ カスタム拡張機能UIの構築](/he
 
 Adobe Workfront Fusionはアップデートもプッシュします。 たとえば、UIを開いているときにユーザーが組織やチームを切り替えた場合、UIが即座に反応できるように、Fusionは新しいコンテキストを送信します。
 
-コンテキストフィールドの完全なリストについては、[Fusion コンテキストリファレンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-06-context-reference.md)を参照してください。
+コンテキストフィールドの完全なリストについては、[Fusion コンテキストリファレンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-06-context-reference.md)を参照してください。
 
 ## UI拡張機能の作成
 
 UI拡張機能を作成するには、次の手順に従います。
 
-1. [ ツールをインストールして、Adobe プロジェクトを作成](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-02-set-up-tools-account.md)。
+1. [&#x200B; ツールをインストールして、Adobe プロジェクトを作成](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-02-set-up-tools-account.md)。
 1. [空のApp Builder プロジェクトを生成し、Fusion拡張機能ポイントに指定して、ウィジェットを登録します](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-03-04-create-project-configure-fusion.md)。
 1. [UIを作成し、Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-05-build-ui-procedure.md)に接続します。
 1. [Fusionが送信するコンテキストを使用](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-06-context-reference.md)。
 1. [Fusionが見つけられるように公開](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-07-publish.md)。
 1. （オプション） [CORS](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-10-calling-apis.md)を使用せずに、Workfront/Fusion APIを呼び出して実際のデータを取得します。
 
-プロセスを開始するには、[ ツールとAdobe アカウントの設定](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-02-set-up-tools-account.md)に移動します。
+プロセスを開始するには、[&#x200B; ツールとAdobe アカウントの設定](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-02-set-up-tools-account.md)に移動します。
 
 

@@ -9,8 +9,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: bbc94bb0-7432-44c5-8000-9aea25916b28
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 source-git-commit: 925a8ee910434c474d527c2914897d7c42e4a3d1
 workflow-type: tm+mt
 source-wordcount: 1083
@@ -200,7 +202,7 @@ const fusionOrgId = connection.sharedContext.get("organization")?.id; // Fusion 
 const teamId      = connection.sharedContext.get("team")?.id;
 ```
 
-コンテキストについて詳しくは、[Fusionのコンテキストリファレンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-06-context-reference.md)を参照してください。
+コンテキストについて詳しくは、[Fusionのコンテキストリファレンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-06-context-reference.md)を参照してください。
 
 ## Fusion v3 APIの詳細
 
