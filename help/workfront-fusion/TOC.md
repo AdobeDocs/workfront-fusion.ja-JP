@@ -3,9 +3,9 @@ user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
 nudge: true
-source-git-commit: ba08d797f0376cc8d19fdc815087ae59a01eb537
+source-git-commit: 87cf44856e55fc9bddd2c540c2b09bdc29c4286f
 workflow-type: tm+mt
-source-wordcount: '2577'
+source-wordcount: '2586'
 ht-degree: 51%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 51%
 * Fusion リリースアクティビティ {#fusion-release-activity}
   * [Adobe Workfront Fusion リリースアクティビティ](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
   * Fusion リリース - 2026 {#fusion-releases-2026}
+    * [Workfront Fusion リリースアクティビティ：2026年8月17日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-17.md)
     * [Workfront Fusion リリースアクティビティ：2026年8月10日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-10.md)
     * [Workfront Fusion リリースアクティビティ：2026年7月27日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-27.md)
     * [Workfront Fusion リリースアクティビティ：2026年7月20日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-20.md)
@@ -294,7 +295,7 @@ ht-degree: 51%
   * [チェーンされたシナリオ関係を表示および管理する](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
   * [実行中のシナリオでのデータフローの表示](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
   * [Webhook のキューの表示](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
-  * {hide-from-toc}[Workfront FusionのAI アシスタント &#x200B;](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
+  * {hide-from-toc}[Workfront FusionのAI アシスタント ](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
   * [シナリオスコアリングエキスパートの実行](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
   * [シナリオ要素の削除](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
   * [「シナリオ」エリアからシナリオを管理します](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
@@ -478,7 +479,7 @@ ht-degree: 51%
       * [Markdown モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
       * [数学モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
       * [MIME モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
-      * {hide-from-toc}[MCP Agent （Model Context Protocol） モジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
+      * {hide-from-toc}[MCP Agent （Model Context Protocol） モジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
       * [テキストパーサーモジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
       * [ツールモジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
       * [XML モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/xml-modules.md)
