@@ -3,10 +3,10 @@ user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
 nudge: true
-source-git-commit: 79ead2c1fd03403e8e18ecfd7a346be3b1ff890f
+source-git-commit: a482c81a3813d1f3a2e37e5f123907f98b216655
 workflow-type: tm+mt
-source-wordcount: '2521'
-ht-degree: 52%
+source-wordcount: '2586'
+ht-degree: 51%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 52%
 * Fusion リリースアクティビティ {#fusion-release-activity}
   * [Adobe Workfront Fusion リリースアクティビティ](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
   * Fusion リリース - 2026 {#fusion-releases-2026}
+    * [Workfront Fusion リリースアクティビティ：2026年8月17日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-17.md)
     * [Workfront Fusion リリースアクティビティ：2026年8月10日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-10.md)
     * [Workfront Fusion リリースアクティビティ：2026年7月27日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-27.md)
     * [Workfront Fusion リリースアクティビティ：2026年7月20日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-20.md)
@@ -214,6 +215,17 @@ ht-degree: 52%
       * [ユーザーの役割を表示または編集](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md)
       * [チームの表示と管理](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-teams.md)
       * [Adobe Admin Console でのユーザーの削除](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/delete-users-admin-console.md)
+  * カスタム拡張機能を設定 {#configure-custom-extensions}
+    * [カスタム UI拡張機能：記事インデックス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-00-readme.md)
+    * [UI拡張機能の概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-01-overview.md)
+    * [UI拡張機能ツールとアカウントの設定](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-02-set-up-tools-account.md)
+    * [UI拡張性用のプロジェクトの作成](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-03-04-create-project-configure-fusion.md)
+    * [カスタム拡張機能UIの構築](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-05-build-ui-procedure.md)
+    * [Fusionのコンテキスト参照](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-06-context-reference.md)
+    * [カスタム拡張機能の公開](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-07-publish.md)
+    * [カスタム拡張機能のトラブルシューティング](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md)
+    * [Fusionでカスタム拡張機能を作成するデモチュートリアル](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-09-demo-walkthrough.md)
+    * [拡張機能からのWorkfrontおよびFusion APIの呼び出し](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-10-calling-apis.md)
   * テンプレートの管理 {#manage-templates-admin}
     * [テンプレートの管理](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/manage-templates-toc.md)
     * [テンプレートの承認または不承認](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/approve-templates.md)
@@ -467,7 +479,7 @@ ht-degree: 52%
       * [Markdown モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
       * [数学モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
       * [MIME モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
-      * {hide-from-toc}[MCP Agent （Model Context Protocol） モジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
+      * [MCP Agent （Model Context Protocol）モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
       * [テキストパーサーモジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
       * [ツールモジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
       * [XML モジュール](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/xml-modules.md)

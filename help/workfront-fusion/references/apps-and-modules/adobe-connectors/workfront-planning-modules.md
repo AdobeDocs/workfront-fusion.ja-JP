@@ -11,10 +11,10 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
+source-git-commit: 6a90d388cc362b24cc9313a000aa5170f015cbf8
 workflow-type: tm+mt
-source-wordcount: 6097
-ht-degree: 43%
+source-wordcount: 6620
+ht-degree: 42%
 
 ---
 
@@ -642,17 +642,61 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
 
 ### レコード （V2）
 
-* [レコードの作成](#create-a-record-v2)
+* [レコードの作成（V2）](#create-a-record-v2)
+* [レコードの作成（レガシー）](#create-a-record-legacy)
 * [レコードの削除](#delete-a-record-v2)
 * [レコードを取得](#get-a-record-v2)
 * [レコードタイプ別にレコードの取得](#get-records-by-record-type-v2)
 * [レコードを移動](#move-records-v2)
-* [レコードの検索](#search-records-v2)
-* [レコードの更新](#update-a-record-v2)
+* [レコードの検索（V2）](#search-records-v2)
+* [レコードの検索（レガシー）](#search-records-legacy)
+* [レコードの更新（V2）](#update-a-record-v2)
+* [レコードの更新（レガシー）](#update-a-record-legacy)
 
 #### レコードの作成（V2）
 
+このアクションは、Workfront計画で1つのレコードを作成します。 このバージョンのモジュールでは、値を指定するフィールドを選択できます。これにより、レコードの作成時に、より小さく効率的なペイロードが作成されます。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>[!DNL Adobe Workfront Planning] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a> への接続の作成を参照してください。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>レコードを作成するワークスペースを選択します。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>作成するレコードのタイプを選択します。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>マッピングするフィールドを選択</p>
+      </td>
+      <td>モジュールの作成時に値を指定するフィールドを選択します。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>その他のフィールド</p>
+      </td>
+      <td>新しいレコードの値を入力します。 これらのフィールドは、選択したレコードタイプとフィールドに基づいており、Workfront Planning組織に固有です。</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### レコードの作成（レガシー）
+
 このアクションは、Workfront計画で1つのレコードを作成します。
+
+新しい「レコードを作成」モジュールを使用することをお勧めします。これにより、値を指定するフィールドを選択できます。 フィールドを選択すると、レコードの作成時に、より小さく効率的なペイロードが作成されます。
 
 <table style="table-layout:auto"> 
   <col/>
@@ -799,7 +843,48 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
 
 #### レコードの検索（V2）
 
+指定した条件に基づいてレコードを返します。このバージョンのモジュールでは、値を指定するフィールドを選択できます。これにより、レコードの検索時に、より小さく効率的なペイロードが作成されます。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>[!DNL Adobe Workfront Planning] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a> への接続の作成を参照してください。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>取得するレコードを含むワークスペースを選択します。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL レコードタイプ]</p>
+      </td>
+      <td>取得するレコードを含むレコードタイプを選択します。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>マッピングするフィールドを選択</p>
+      </td>
+      <td>値を更新するフィールドを選択します。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Other fields]</p>
+      </td>
+      <td>フィルターを適用する各フィールドについて、そのフィールドの演算子と値を入力します。 これらのフィールドは、選択したレコードタイプとフィールドに基づいており、Workfront Planning組織に固有です。</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### レコードの検索（レガシー）
+
 指定した条件に基づいてレコードを返します
+
+新しい「レコードを更新」モジュールを使用することをお勧めします。これにより、値を指定するフィールドを選択できます。 フィールドを選択すると、レコードを更新する際に、より小さく効率的なペイロードが作成されます。
 
 <table style="table-layout:auto"> 
   <col/>
@@ -832,8 +917,56 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
 
 #### レコードの更新（V2）
 
+このモジュールは、指定されたレコードを更新します。 このバージョンのモジュールでは、値を指定するフィールドを選択できます。これにより、レコードの更新時に、より小さく効率的なペイロードが作成されます。
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>[!DNL Adobe Workfront Planning] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a> への接続の作成を参照してください。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>更新するレコードを含むワークスペースを選択します。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type ID]</p>
+      </td>
+      <td>更新するレコードのタイプを選択します。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record ID]</p>
+      </td>
+      <td>更新するレコードの ID を入力またはマッピングします。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>マッピングするフィールドを選択</p>
+      </td>
+      <td>値を更新するフィールドを選択します。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Other fields]</p>
+      </td>
+      <td>他のフィールドの値を入力します。 使用可能なフィールドは、選択したレコードとフィールドによって異なります。</td> 
+    </tr>
+  </tbody>
+</table>
+
+
+#### レコードの更新（レガシー）
+
 このモジュールは、指定されたレコードを更新します。
 
+新しい「レコードを更新」モジュールを使用することをお勧めします。これにより、値を指定するフィールドを選択できます。 フィールドを選択すると、レコードを更新する際に、より小さく効率的なペイロードが作成されます。
 
 
 <table style="table-layout:auto"> 
@@ -870,7 +1003,6 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
     </tr>
   </tbody>
 </table>
-
 
 ### フィールド （V2）
 

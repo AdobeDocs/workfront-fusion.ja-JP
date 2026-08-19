@@ -10,9 +10,9 @@ product_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+source-git-commit: 5f20b0ae5439723dffbc3d2f2ba1f608fbd068b3
 workflow-type: tm+mt
-source-wordcount: 1859
+source-wordcount: 1865
 ht-degree: 79%
 
 ---
@@ -44,7 +44,7 @@ Adobe Workfront Fusion のシナリオでは、[!DNL Bynder] を使用するワ�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion ライセンス</td> 
    <td>
-   <p>操作ベース：含まれています</p>
+   <p>オペレーションベース：オペレーションベースのライセンスを持つ組織で使用できます</p>
    <p>コネクターベース（レガシー）：Workfront Fusion for Work Automation および Integration </p>
    </td> 
   </tr> 
