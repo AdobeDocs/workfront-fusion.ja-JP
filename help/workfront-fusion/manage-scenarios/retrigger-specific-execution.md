@@ -3,12 +3,11 @@ title: 特定のシナリオ実行のリトリガー
 description: 特定のシナリオ実行を再トリガーして、更新されたシナリオブループリントを使用してデータを処理したり、データフローを表示したりできます。
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: a078120f0c16d7c2f2084c95a6129844489cfdb6
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: a7b9f754dfc987330e3a446830f37b004f7b2e4e
 workflow-type: tm+mt
-source-wordcount: 561
-ht-degree: 17%
+source-wordcount: 599
+ht-degree: 16%
 
 ---
 
@@ -27,6 +26,12 @@ Webhookを使用するシナリオをリトリガーする場合、元のWebhook
 Webhook について詳しくは、[インスタントトリガー（Webhook）](/help/workfront-fusion/references/modules/webhooks-reference.md)を参照してください。
 
 シナリオの連鎖について詳しくは、[複数のシナリオを連鎖させる](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)を参照してください。
+
+
+
+>[!NOTE]
+>
+>実行履歴には、最大256 KBのデータのみが保持されます。 その結果、入力データが256 KBを超える実行は再試行できません。 このような実行を再試行すると、エラーメッセージで失敗します。
 
 ## アクセス要件
 
