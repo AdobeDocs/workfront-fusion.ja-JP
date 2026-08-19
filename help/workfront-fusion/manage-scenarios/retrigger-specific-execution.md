@@ -3,7 +3,8 @@ title: 特定のシナリオ実行のリトリガー
 description: 特定のシナリオ実行を再トリガーして、更新されたシナリオブループリントを使用してデータを処理したり、データフローを表示したりできます。
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: a078120f0c16d7c2f2084c95a6129844489cfdb6
 workflow-type: tm+mt
 source-wordcount: 561
