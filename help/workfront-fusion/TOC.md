@@ -3,9 +3,9 @@ user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
 nudge: true
-source-git-commit: a482c81a3813d1f3a2e37e5f123907f98b216655
+source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
-source-wordcount: '2586'
+source-wordcount: '2590'
 ht-degree: 51%
 
 ---
@@ -295,7 +295,7 @@ ht-degree: 51%
   * [チェーンされたシナリオ関係を表示および管理する](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
   * [実行中のシナリオでのデータフローの表示](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
   * [Webhook のキューの表示](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
-  * {hide-from-toc}[Workfront FusionのAI アシスタント &#x200B;](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
+  * {hide-from-toc}[Workfront FusionのAI アシスタント ](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
   * [シナリオスコアリングエキスパートの実行](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
   * [シナリオ要素の削除](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
   * [「シナリオ」エリアからシナリオを管理します](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
@@ -402,6 +402,7 @@ ht-degree: 51%
       * [Adobe Storage モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-storage-modules.md)
       * [Adobe Target モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
       * [Adobe User Management モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
+      * [Adobe Workfront MCP モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-mcp-modules.md)
       * [Adobe Workfront モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
       * [Adobe Workfront Planning モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
       * [Adobe Workfrontの統合レビューと承認のモジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)

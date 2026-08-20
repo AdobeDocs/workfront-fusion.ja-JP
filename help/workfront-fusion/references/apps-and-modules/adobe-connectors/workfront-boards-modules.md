@@ -5,13 +5,10 @@ author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
 TQID: https://experienceleague.adobe.com/0yHy2mMpsOxPH-cphARzE3LmIlAmYLNQTpXxFgb6dvo
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
 source-wordcount: 2906
 ht-degree: 20%
@@ -190,7 +187,7 @@ Workfront Boards モジュールを設定すると、Workfront Fusionに以下�
       <td> <p>既存のWorkfront接続を使用してWorkfront ボードに接続したり、特定のWorkfront ボード接続を使用したりできます。 </p><p>Workfront アプリをWorkfront Fusionに接続する方法については、この記事の「<a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront ボードへの接続の作成</a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 親カード ID]</td> 
+   <td>[!UICONTROL親カード ID]</td> 
    <td>サブタスクを追加するカードのIDを入力またはマッピングします。<p>Workfrontでカードを表示すると、URLにカード IDが表示されます。</p></td> 
   </tr> 
   <tr> 
@@ -221,7 +218,7 @@ Workfront Boards モジュールを設定すると、Workfront Fusionに以下�
    <td>カードを追加するボードのIDを入力またはマッピングします。<p>Workfrontで掲示板を表示すると、URLに掲示板IDが表示されます。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 列ID]</td> 
+   <td>[!UICONTROL列ID]</td> 
    <td>サブタスクを追加する列のIDを入力またはマッピングします。<p>列IDは、ボードを読み取りモジュールから返される情報で確認できます。</p></td> 
   </tr> 
   <tr> 
@@ -400,11 +397,11 @@ Workfront Boards モジュールを設定すると、Workfront Fusionに以下�
    <td>列を追加するボードのIDを入力またはマッピングします。<p>Workfrontで掲示板を表示すると、URLに掲示板IDが表示されます。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 列ID]</td> 
+   <td>[!UICONTROL列ID]</td> 
    <td>更新する列のIDを入力またはマッピングします。<p>列IDは、ボードを読み取りモジュールから返される情報で確認できます。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 列名]</td> 
+   <td>[!UICONTROL列名]</td> 
    <td>列の新しい名前を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -427,7 +424,7 @@ Workfront Boards モジュールを設定すると、Workfront Fusionに以下�
    <td>取得する列を含むボードのIDを入力またはマッピングします。<p>Workfrontで掲示板を表示すると、URLに掲示板IDが表示されます。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 列名]</td> 
+   <td>[!UICONTROL列名]</td> 
    <td>取得する列の名前を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -450,7 +447,7 @@ Workfront Boards モジュールを設定すると、Workfront Fusionに以下�
    <td>取得する列を含むボードのIDを入力またはマッピングします。<p>Workfrontで掲示板を表示すると、URLに掲示板IDが表示されます。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 列名]</td> 
+   <td>[!UICONTROL列名]</td> 
    <td>取得する列の名前を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
@@ -632,7 +629,7 @@ Workfront Boards モジュールを設定すると、Workfront Fusionに以下�
    <td> <p>API 呼び出しのクエリを標準 JSON オブジェクトの形式で追加します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 操作名]</td> 
+   <td role="rowheader">[!UICONTROL操作名]</td> 
    <td> <p>この操作の名前を入力します。 これにより、呼び出しの追跡とデバッグが簡単になります。</p> </td> 
   </tr> 
   <tr> 

@@ -1,10 +1,10 @@
 ---
 name: fusion-release-notes
 description: 新しいWorkfront Fusion週次リリースノートを作成し、リリースアクティビティの概要ページと目次に接続します。 ユーザーが新しいFusion リリースノートまたは週次リリースページの作成、追加、ドラフトを作成する場合、またはリリースの新しいFusion機能のドキュメント作成を依頼する場合に使用します。 product-announcements/product-releasesのWorkfront（Quicksilver）リリースノートには使用しないでください。これにはrelease-notes-formatterを使用します。
-source-git-commit: 59a8d8ee83906bc16fc627bd348accc4e588cf9b
+source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 1%
+source-wordcount: '1042'
+ht-degree: 0%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 1%
 - 何が変更されたのか、なぜ重要なのかを明確に説明することで
 - リンク先のヘルプ記事（パスが存在することを確認します。推測しないでください）
 - ユーザー/管理者の操作が必要か、非推奨か（コールアウト `>[!IMPORTANT]`が必要）
+- **新しいコネクタのローンチかどうか** （既存のコネクタに追加された新しいモジュールだけでなく、新しいコネクタやアプリが利用可能になる）。 はいの場合、このトリガーは&#x200B;**ステップ 7** - リリースノート自体が完了したからといって、リダイレクトに関する問い合わせをスキップしないでください。
 
 ## 手順2：ファイル名と日付を決定する
 
@@ -68,7 +69,7 @@ This page describes all enhancements made in Adobe Workfront Fusion the week of 
 
 For a list of all recent changes, see [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/ja/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
+For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/en/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
 
 ## {Feature title}
 
@@ -97,7 +98,6 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
   
   {Regular description paragraph(s).}
   ```
-
 - すべての機能は、「詳細については、[...]」で終わる必要があります。 関連するヘルプ記事へのリンク。 リンクターゲットがリポジトリに存在することを確認します。
 
 ## 手順4：概要インデックスにページを追加する
@@ -112,7 +112,6 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
   ```markdown
   * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
-
 - これが新しい年の最初のリリースである場合は、前の年の見出しの上に新しい`## Fusion releases in {YYYY}`見出しを追加し、まだ展開されていない場合は&#x200B;*前*&#x200B;年のセクションを`+++ **Click to open**` / `+++`折りたたみ可能なブロックにラップします（現在の年のみが展開されます）。
 
 ## 手順5：目次にページを追加する
@@ -125,7 +124,6 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
   ```markdown
         * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
-
 - 現在の年の見出しがまだ存在しない場合は、前年の見出しの上に`* Fusion releases - {YYYY} {#fusion-releases-{YYYY}}`を追加します。
 - **新しいエントリに`{hide-from-toc}` プレフィックスを追加しないでください。これは、古いエントリが表示されているナビゲーションから外れた場合にのみ使用されます（以下の「既知の不整合」を参照）。**
 
@@ -134,7 +132,23 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
 - ページ自体が2026年リリースであるにもかかわらず、`Fusion releases - 2025`の見出しの下に2026年初頭の目次エントリがいくつかネストされています。 新しいエントリを追加する場合は、前のエントリが配置される場所ではなく、常に&#x200B;**自身の年**&#x200B;に一致する見出しの下に表示されることを再確認してください。
 - 古いページタイトル/H1では、年（`July 13, 2026`ではなく`July 13 2026`）の前にコンマが省略されています。 新しいページでは常にコンマを使用する。
 
-## ステップ 6：最終的なチェックリスト
+## 手順7：新しいコネクタの起動 – リダイレクトについて尋ねる（スキップしない）
+
+**この手順は、手順1で新しいコネクタの起動が特定されるたびに適用されます。** 手順5の後にリリースノートを「完了」と見なして、これを忘れてしまうと、この手順が何らかの方法で解決されるまで、新しいコネクタ機能を不完全として扱うことができます。
+
+ユーザーに問い合わせます：*「新しいコネクタ記事にリダイレクトを設定しますか？」*
+
+- **no**&#x200B;の場合は、その点に注意して次に進んでください。他に何もしないでください。
+- **yes**&#x200B;の場合は、次の情報を収集します。
+  - **ソースパス** （先頭が`/en`である必要があります。スペースはありません）
+  - **destination** — `/en`で始まる相対パス、または完全な`https` URL （スペースなし）
+- 行を兄弟`Adobe-Enterprise-Docs/redirects` リポジトリ（`redirects/`の下）に追加し、環境ごとに1つのファイル（`redirects-dev.csv`、`redirects-stage.csv`、`redirects-prod.csv`）を格納します。
+- 行ルール（そのリポジトリのREADMEから）:
+  - 重複する`source`はなく、`source`/`destination` ペアも重複しません。
+  - リダイレクトはリダイレクトループを引き起こしてはなりません。
+- **このスキルは、ユーザーが確認した後にのみCSV行を追加します。** `redirects` リポジトリでPRを引き上げることは、このスキルが行わない別のステップです。リダイレクトが公開される前に、PRを開いてマージする必要があることをユーザーに伝えます（1:1 リダイレクトのマージ後5分ほど）。
+
+## ステップ 8：最終的なチェックリスト
 
 - [ ] ファイルが正しいパスで作成され、日付に先頭ゼロが含まれていません
 - [ ] Frontmatterは`hidefromtoc: true`を使用していますが、`exl-id`/`TQID`は発明されていません
@@ -144,6 +158,7 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
 - [ ]新しいページが`fusion-release-activity.md`の最新のエントリとして正しい年/月に追加されました
 - [ ]新しいページが`TOC.md`の最新のエントリとして正しい年の見出しの下に追加されました
 - [ ]必要に応じて新しい年/月の見出しを作成し、前年は`fusion-release-activity.md`で折りたたまれます
+- [ ] **いずれかの機能が新しいコネクタの起動であった場合：リダイレクトについて尋ねられ（ステップ 7）、1つを設定するか、明示的に辞退するか**
 
 ## 追加のリソース
 
