@@ -11,7 +11,7 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
 source-wordcount: 2906
 ht-degree: 20%
@@ -602,7 +602,7 @@ Workfront Boards モジュールを設定すると、Workfront Fusionに以下�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>JSON埋め込みGraphql形式のAPI呼び出しの本文コンテンツを追加します </p> <p>例：</p><p>次の使用例は、列名を更新します。 <code>boardId</code>と<code>columnId</code>は、ハードコードされているか、以前のモジュールからマッピングされているGUIDとして含めることができます。<p><pre>{<br> "query": "mutation { updateColumn （boardId: \"\", columnId: \"\", updateColumnInput: { name: \"\" }） { id name }}"<br>}</pre><p>メモ：  <p><code>if</code> などの条件文を JSON で使用する場合は、条件文を引用符で囲みます。</p> 
+   <td> <p>JSON埋め込みGraphql形式のAPI呼び出しの本文コンテンツを追加します </p> <p>例：</p><p>次の使用例は、列名を更新します。 <code>boardId</code>と<code>columnId</code>は、ハードコードされているか、以前のモジュールからマッピングされているGUIDとして含めることができます。<p><pre>{<br> "query": "mutation { updateColumn （boardId: \"\", columnId: \"\", updateColumnInput: { name: \"\" }） { id name }&#x200B;}"<br>}</pre><p>メモ：  <p><code>if</code> などの条件文を JSON で使用する場合は、条件文を引用符で囲みます。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 

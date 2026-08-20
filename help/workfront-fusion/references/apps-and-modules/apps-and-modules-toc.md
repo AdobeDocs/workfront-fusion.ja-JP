@@ -11,10 +11,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 79ead2c1fd03403e8e18ecfd7a346be3b1ff890f
+source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
-source-wordcount: 511
-ht-degree: 94%
+source-wordcount: 515
+ht-degree: 93%
 
 ---
 
@@ -68,6 +68,7 @@ Fusion には、アドビの多くの製品とサービス用コネクターが�
 * [Adobe Substance モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-substance-modules.md)
 * [Adobe Target モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
 * [Adobe User Management モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
+* [Adobe Workfront MCP モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-mcp-modules.md)
 * [Adobe Workfront モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
 * [Adobe Workfront Planning モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
 * [Adobe Workfrontの統合レビューと承認のモジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)
