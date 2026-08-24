@@ -139,7 +139,7 @@ Workfront Fusionにリダイレクトされ、新しいコネクションがモ�
   </tr>  </tbody> 
 </table>
 
-読み取り専用ツールと書き込み/削除ツール フィールドに選択できるツールの一覧については、Workfront ドキュメントの[Adobe Workfront MCP server tools](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools)を参照してください。
+読み取り専用ツールと書き込み/削除ツール フィールドに選択できるツールの一覧については、Workfront ドキュメントの[Adobe Workfront MCP server tools](https://experienceleague.adobe.com/ja/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools)を参照してください。
 
 モジュールは次の情報を返します。この情報は、シナリオの後続のモジュールにマッピングできます。
 
