@@ -3,12 +3,11 @@ title: Adobe Workfront MCP モジュール
 description: Adobe Workfront MCP モジュールを使用すると、Adobe WorkfrontのMCP サーバーに平易な英語のプロンプトを送信し、AI モデルにリクエストを実行させることができます。
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 71573ee33f852111d4541ee61567a51b137c7df5
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 88515edc81bafe2d1a81df627fd51dd4ed674c02
 workflow-type: tm+mt
-source-wordcount: 871
-ht-degree: 17%
+source-wordcount: 884
+ht-degree: 16%
 
 ---
 
@@ -21,6 +20,10 @@ Adobe Workfront MCP コネクタは、Adobe Workfront独自のModel Context Prot
 AIが実行できるWorkfrontのアクションを制限できるため、無人シナリオでも予期しない破壊的なアクションが実行されないようにすることができます。
 
 デフォルトでは、このモジュールは`claude-sonnet-5` モデルを使用するAdobe Managed AIを使用します。 キーやその他の資格情報を使用して、別のLLMを使用するようにモジュールを設定できます。
+
+>[!NOTE]
+>
+>Adobe Managed AIの使用は、1組織あたり月額25 ドルに制限されています。
 
 Fusion シナリオのMCPについて詳しくは、[AI プロンプトをシナリオに追加する](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)を参照してください。
 
@@ -135,7 +138,7 @@ Workfront Fusionにリダイレクトされ、新しいコネクションがモ�
   </tr>  </tbody> 
 </table>
 
-読み取り専用ツールと書き込み/削除ツール フィールドに選択できるツールの一覧については、Workfront ドキュメントの[Adobe Workfront MCP server tools](https://experienceleague.adobe.com/ja/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools)を参照してください。
+読み取り専用ツールと書き込み/削除ツール フィールドに選択できるツールの一覧については、Workfront ドキュメントの[Adobe Workfront MCP server tools](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools)を参照してください。
 
 モジュールは次の情報を返します。この情報は、シナリオの後続のモジュールにマッピングできます。
 
