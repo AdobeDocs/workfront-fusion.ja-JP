@@ -3,7 +3,8 @@ title: Adobe Workfront MCP モジュール
 description: Adobe Workfront MCP モジュールを使用すると、Adobe WorkfrontのMCP サーバーに平易な英語のプロンプトを送信し、AI モデルにリクエストを実行させることができます。
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 88515edc81bafe2d1a81df627fd51dd4ed674c02
 workflow-type: tm+mt
 source-wordcount: 884
