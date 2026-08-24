@@ -5,17 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
 TQID: https://experienceleague.adobe.com/WmECfdPt-a3l2-WT9LMX2HB-7-p-BLIO4F2i3OAc7D0
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0b7298ce53bf59695ce52cb46cb8d25b6ede5fc8
 workflow-type: tm+mt
-source-wordcount: 4311
-ht-degree: 51%
+source-wordcount: 4850
+ht-degree: 46%
 
 ---
 
@@ -94,9 +90,10 @@ SharePoint コネクタでは、次の機能が使用されます。
 
 ## Microsoft SharePoint OnlineとWorkfront Fusionの連携 {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
-* [&#x200B; [!DNL Microsoft]  アカウントを使用してMicrosoft SharePoint OnlineをWorkfront Fusionに接続する](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
+* [ [!DNL Microsoft]  アカウントを使用してMicrosoft SharePoint OnlineをWorkfront Fusionに接続する](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [詳細設定を使用してMicrosoft SharePoint OnlineをWorkfront Fusionに接続する](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [証明書認証を使用してMicrosoft SharePoint OnlineをWorkfront Fusionに接続する](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
+* [サービスプリンシパルを使用してMicrosoft SharePoint OnlineをWorkfront Fusionに接続する](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
 
 ### [!DNL Microsoft] アカウントを使用してMicrosoft SharePoint OnlineをWorkfront Fusionに接続する
 
@@ -204,6 +201,97 @@ SharePoint コネクタでは、次の機能が使用されます。
 
 1. 「**続行**」をクリックして接続を保存し、モジュールに戻ります。
 
+### サービスプリンシパルを使用してMicrosoft SharePoint OnlineをWorkfront Fusionに接続する
+
+個人アカウントの代わりにサービスプリンシパル（アプリケーション API接続）を使用する接続を作成できます。 これは、接続を特定のユーザーではなく、アプリケーションまたはサービス IDとして実行したい場合に便利です。例えば、そのユーザーが会社を辞めたり、パスワードを変更したりしても、統合が壊れることはありません。
+
+>[!IMPORTANT]
+>
+>この接続タイプは、[API呼び出しを作成](#make-an-api-call) モジュールでのみ使用できます。 その他のSharePoint モジュールには、この記事で説明したその他の種類の接続が必要です。
+
+* [サービスプリンシパルを使用してMicrosoft SharePoint OnlineをWorkfront Fusionに接続するための前提条件](#prerequisites-to-connecting-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
+* [Microsoft Entra IDでアプリ登録を作成する](#create-the-app-registration-in-microsoft-entra-id)
+* [クライアントシークレットの作成](#create-a-client-secret)
+* [API権限の付与](#grant-api-permissions)
+* [接続の詳細を収集](#collect-your-connection-details)
+* [接続の作成](#create-the-connection)
+
+#### サービスプリンシパルを使用してMicrosoft SharePoint OnlineをWorkfront Fusionに接続するための前提条件
+
+アプリを登録して権限を付与するには、Microsoft Entra IDで&#x200B;**グローバル管理者**、**アプリケーション管理者**、または&#x200B;**特権ロール管理者**&#x200B;のアクセス権が必要です。 このアクセス権をお持ちでない場合は、IT チームまたはID チームの誰かに、これらの手順を完了するように依頼してください。
+
+引き続き[Microsoft Entra ID](#create-the-app-registration-in-microsoft-entra-id)でアプリ登録を作成します。
+
+#### Microsoft Entra IDでアプリ登録を作成する
+
+1. [!DNL Microsoft Entra]管理センターにログインします。
+1. **[!UICONTROL アプリ登録]** > **[!UICONTROL 新規登録]**&#x200B;に移動します。
+1. アプリに明確で認識可能な名前を付けます。 例：`Make - SharePoint Integration`
+1. **[!UICONTROL リダイレクト URI]**&#x200B;を空白のままにします。 この接続には、ブラウザーを介してログインするユーザーは含まれません。
+1. **[!UICONTROL 登録]**&#x200B;を選択します。
+1. 引き続き[ クライアントシークレットの作成](#create-a-client-secret)を続行します。
+
+#### クライアントシークレットの作成
+
+1. 新しいアプリの登録で、**[!UICONTROL 証明書とシークレット]**&#x200B;に移動します。
+1. **[!UICONTROL 新しいクライアントシークレット]**&#x200B;を選択し、説明を追加して、有効期限を選択します。
+1. 「**[!UICONTROL 追加]**」を選択します。
+1. 秘密鍵の&#x200B;**[!UICONTROL 値]**&#x200B;をすぐにコピーします。 1回だけ表示されます。 コピーする前に移動する場合は、新しいコピーを作成する必要があります。
+1. 引き続き[API権限の付与](#grant-api-permissions)を続行します。
+
+#### API権限の付与
+
+>[!IMPORTANT]
+>
+>BECKY CHECK ME: Azure DevOpsとは異なり、Microsoft Graphはこの手順でアプリケーション権限を直接サポートしています。 このセクションを公開する前に、「API呼び出しを作成」モジュールが必要とする正確な権限（Sites権限スコープなど）を確認し、それに応じて以下の手順を更新します。
+
+1. アプリ登録で、**[!UICONTROL API権限]**&#x200B;に移動します。
+1. 「**[!UICONTROL 権限を追加]**」を選択し、「**[!UICONTROL Microsoft Graph]**」を選択します。
+1. **[!UICONTROL アプリケーション権限]**&#x200B;を選択します。
+1. API呼び出しに必要な権限または権限を選択し、**[!UICONTROL 権限を追加]**&#x200B;を選択します。
+1. 「**[!UICONTROL 組織に管理者の同意を付与する]**」を選択し、確認します。
+1. 引き続き[接続の詳細を収集](#collect-your-connection-details)してください。
+
+#### 接続の詳細を収集
+
+アプリ登録の&#x200B;**[!UICONTROL 概要]** ページから、次の値に注意してください。 モジュールで接続を作成する際に、これらの項目を入力します。
+
+<table style="table-layout:auto">
+ <col>
+ <col>
+ <tbody>
+  <tr>
+   <td role="rowheader">[!UICONTROL テナント ID]</td>
+   <td>概要ページで、<b> ディレクトリ （テナント） ID</b>というラベルが付いています。</td>
+  </tr>
+  <tr>
+   <td role="rowheader">[!UICONTROL Client ID]</td>
+   <td>概要ページに「<b> アプリケーション （クライアント） ID</b>」というラベルが付いています。</td>
+  </tr>
+  <tr>
+   <td role="rowheader">[!UICONTROL Client Secret]</td>
+   <td><a href="#create-a-client-secret" class="MCXref xref">でコピーした値は、クライアントシークレットを作成</a>します。</td>
+  </tr>
+ </tbody>
+</table>
+
+引き続き[接続を作成](#create-the-connection)します。
+
+#### 接続の作成
+
+1. [!UICONTROL API呼び出しを行う] モジュールで、接続フィールドの近くの&#x200B;**[!UICONTROL 追加]**&#x200B;をクリックして、**[!UICONTROL 接続を作成]** ボックスを開きます。
+1. 「**[!UICONTROL 詳細設定を表示]**」をクリックします。
+1. 「[!UICONTROL 接続タイプ ]」フィールドで、「**[!UICONTROL サービスプリンシパル]**」を選択します。
+1. 以下の情報を入力します。
+
+   * [!UICONTROL  テナント ID]
+   * [!UICONTROL クライアント ID]
+   * [!UICONTROL クライアント秘密鍵]
+
+1. 「**続行**」をクリックして接続を保存し、モジュールに戻ります。
+
+   すべてが正しく設定されていれば、接続は正常に検証されます。
+
 ## Microsoft SharePointのモジュールとそのフィールド
 
 Microsoft SharePoint Online モジュールを設定すると、Workfront Fusionに次のフィールドが表示されます。 また、アプリやサービスのアクセスレベルなどの要因に応じて、Microsoft SharePoint Onlineの追加フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
@@ -222,6 +310,7 @@ Microsoft SharePoint Online モジュールを設定すると、Workfront Fusion
 ### ドライブ項目
 
 * [ファイルを作成](#create-a-file)
+* [ファイルの作成（レガシー）](#create-a-file-legacy)
 * [フォルダーの作成](#create-a-folder)
 * [ファイルの取得](#get-a-file)
 * [フォルダーを取得](#get-a-folder)
@@ -260,7 +349,7 @@ Microsoft SharePoint Online モジュールを設定すると、Workfront Fusion
 
 このモジュールは、SharePointでファイルを作成します。
 
-パフォーマンスを向上させるには、[&#x200B; ファイルを作成](#create-a-file) モジュールを使用することをお勧めします。
+パフォーマンスを向上させるには、[ ファイルを作成](#create-a-file) モジュールを使用することをお勧めします。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -350,7 +439,7 @@ Microsoft SharePoint Online モジュールを設定すると、Workfront Fusion
    <td role="rowheader">[!UICONTROL Enter サイト、ドライブ、およびファイル ID]</td> 
    <td> <p>取得するファイルの場所を特定する方法を選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>取得するフォルダーの<strong>[!UICONTROL サイト ID]</strong>、<strong>[!UICONTROL リスト ID]</strong>および<strong>[!UICONTROL フォルダーのパス &#x200B;]</strong>を入力またはマッピングします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>取得するフォルダーの<strong>[!UICONTROL サイト ID]</strong>、<strong>[!UICONTROL リスト ID]</strong>および<strong>[!UICONTROL フォルダーのパス ]</strong>を入力またはマッピングします。</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>フォルダーの場所を選択します。 </p> </li> 
     </ul> </td> 
   </tr> 
@@ -417,7 +506,7 @@ Microsoft SharePoint Online モジュールを設定すると、Workfront Fusion
 * [[!UICONTROL 項目の作成]](#create-an-item)
 * [[!UICONTROL 項目の削除]](#delete-an-item)
 * [[!UICONTROL 項目の取得]](#get-an-item)
-* [詳細を見る](#get-details)
+* [詳細を取得](#get-details)
 * [[!UICONTROL 項目のリスト]](#list-items)
 * [[!UICONTROL 項目を移動]](#move-an-item)
 * [[!UICONTROL 項目を更新]](#update-an-item)
@@ -833,7 +922,7 @@ Microsoft SharePoint Online モジュールを設定すると、Workfront Fusion
    <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusionに接続する方法については、この記事の「<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineをWorkfront Fusionに接続する</a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL リスト ページ &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL リスト ページ ]</td> 
    <td> <p>リストするページを特定する方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>リストするページを含むサイトの<strong>[!UICONTROL サイト ID]</strong>を入力またはマッピングします。</p> </li> 
@@ -952,7 +1041,7 @@ Microsoft SharePoint Online モジュールを設定すると、Workfront Fusion
 
 * [変更を取得](#get-changes)
 * [API 呼び出しを実行](#make-an-api-call)
-* [イベントの監視](#watch-events)
+* [イベントを監視する](#watch-events)
 
 #### 変更を取得
 
@@ -1036,7 +1125,7 @@ Microsoft SharePoint Online モジュールを設定すると、Workfront Fusion
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting your Microsoft SharePoint Online account to Workfront Fusion, see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
-  -->
+-->
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
    <td> <p>既存のWebhookを選択するか、「追加」をクリックして接続を入力し、新しいWebhookを作成します。</p> 
