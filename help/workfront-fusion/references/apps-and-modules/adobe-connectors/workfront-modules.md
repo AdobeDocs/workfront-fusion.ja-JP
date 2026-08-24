@@ -5,19 +5,13 @@ author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
 TQID: https://experienceleague.adobe.com/CjzJP-U4P5bVop8ktivUH3pPOjVVgamqqc--cUsLm8U
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-subfeature_v2:
-  - id: ec8965fc-2f75-47f6-a9bb-730e8c2725f3
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+subfeature_v2: id: ec8965fc-2f75-47f6-a9bb-730e8c2725f3
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
 workflow-type: tm+mt
-source-wordcount: 7689
+source-wordcount: 7687
 ht-degree: 93%
 
 ---
@@ -282,8 +276,8 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
      <tr> 
       <td>[!UICONTROL Enable secured hook]</td> 
       <td>
-       <p>このWebhookにenableauthToken ベースのセキュリティを使用するかどうかを選択します。</p><p>
-       <b> メモ </b>: 2026年8月23日以降、Fusionは、既存のモジュールを含むすべてのWorkfront/Watch Event モジュールに対して、デフォルトでauthToken ベースのセキュリティを有効にします。 特定のWebhookが壊れた場合、または互換性の理由でこれを無効にする必要がある場合は、2026年8月23日より前に「セキュアフックを有効にする」オプションをオフにすることができます。</p>
+       <p>このWebhookに対してauthToken ベースのセキュリティを有効にするかどうかを選択します。</p><p>
+       <b> メモ </b>: 2026年8月23日現在、Fusionでは、既存のモジュールを含むすべてのWorkfront/Watch Event モジュールに対して、デフォルトでauthToken ベースのセキュリティが有効になっています。 特定のWebhookが壊れた場合、または互換性の理由でこれを無効にする必要がある場合は、「セキュアフックを有効にする」オプションをオフにできます。</p>
        </td> 
      </tr> 
     </tbody> 
@@ -505,9 +499,9 @@ Webhook を作成した後、イベントの送信先エンドポイントのア
 >
 >ユーザーは、アクティブ化解除および承認保留中のステータスで作成されます。 組織が Adobe Admin Console に移行され、承認保留中バッジが数分以内に削除されない場合は、ユーザーを承認できます。
 >
->* **個々のユーザーの解決**
+>* **個人ユーザーの解決**
 >
->      ユーザーリストで個々のユーザーを解決できます。
+>      ユーザーリストで個人ユーザーを解決できます。
 >
 >      1. ユーザーリストで 1 人または複数のユーザーを選択します。
 >      1. リストヘッダーの 3 点メニューをクリックします。
@@ -1041,7 +1035,7 @@ Workfront は最近、イベント登録サービスの新しいバージョン�
 
 新しいイベント登録バージョンについて詳しくは、Workfront ドキュメントの[イベント登録のバージョン管理](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)を参照してください。
 
-ウェビナーの録画など、イベント登録のアップグレード中に Workfront Fusion シナリオを保持する方法について詳しくは、[イベント登録 V2 のアップグレード中の Fusion シナリオの保持](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ja)を参照してください。
+ウェビナーの録画など、イベント登録のアップグレード中に Workfront Fusion シナリオを保持する方法について詳しくは、[イベント登録 V2 のアップグレード中の Fusion シナリオの保持](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)を参照してください。
 
 <table style="table-layout:auto">
  <col> 
@@ -2357,7 +2351,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >   新しいイベント登録バージョンについて詳しくは、Workfront ドキュメントの[イベント登録のバージョン管理](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)を参照してください。
 >
->   ウェビナーの録画など、イベント登録のアップグレード中に Workfront Fusion シナリオを保持する方法について詳しくは、[イベント登録 V2 のアップグレード中の Fusion シナリオの保持](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ja)を参照してください。
+>   ウェビナーの録画など、イベント登録のアップグレード中に Workfront Fusion シナリオを保持する方法について詳しくは、[イベント登録 V2 のアップグレード中の Fusion シナリオの保持](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)を参照してください。
 
 Workfront [!UICONTROL イベントを監視]モジュールは、Workfront API でイベント登録を作成する Webhook に基づいてシナリオをトリガーします。 イベント登録は、web フックに送信されるイベントを決定する一連のデータです。 例えば、イシューを監視する[!UICONTROL イベントの監視]モジュールを設定した場合、イベント登録はイシューに関連するイベントのみを送信します。
 
