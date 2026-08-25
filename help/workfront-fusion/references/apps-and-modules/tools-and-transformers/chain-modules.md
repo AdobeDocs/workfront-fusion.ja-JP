@@ -7,9 +7,9 @@ exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
 TQID: https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
 workflow-type: tm+mt
-source-wordcount: 883
+source-wordcount: 913
 ht-degree: 10%
 
 ---
@@ -29,6 +29,10 @@ ht-degree: 10%
 <!--This article will be about the specific module configuration-->
 
 連鎖シナリオの計画の手順については、[複数のシナリオを連鎖させる](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)を参照してください。
+
+>[!NOTE]
+>
+>これらのモジュールを手動で設定する代わりに、シナリオ内の既存のモジュールを選択し、新しい子シナリオに移動できます。 手順については、[&#x200B; モジュールをチェーンに移動](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)するを参照してください。
 
 
 ## アクセス要件

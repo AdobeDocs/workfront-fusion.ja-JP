@@ -7,9 +7,9 @@ exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
 TQID: https://experienceleague.adobe.com/ypbKUSaT72N2r75oYX9tZsJaj6H39cUCumApjMw69j0
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
 workflow-type: tm+mt
-source-wordcount: 1705
+source-wordcount: 1744
 ht-degree: 9%
 
 ---
@@ -33,6 +33,8 @@ ht-degree: 9%
 タイムアウトを含むFusionのパフォーマンスガードレールについて詳しくは、[Fusionのパフォーマンスガードレール &#x200B;](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md)を参照してください。
 
 チェーンモジュールの設定方法については、[&#x200B; チェーンモジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)を参照してください。
+
+シナリオ内の既存のモジュールを選択して新しい子シナリオに移行する方法については、[&#x200B; モジュールをチェーンに移動](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)するを参照してください。
 
 ## 親シナリオと子シナリオ
 

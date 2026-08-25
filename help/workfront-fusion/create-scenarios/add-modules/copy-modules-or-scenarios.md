@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
 workflow-type: tm+mt
-source-wordcount: 914
-ht-degree: 69%
+source-wordcount: 941
+ht-degree: 67%
 
 ---
 
@@ -83,6 +83,10 @@ Adobe Workfront Fusionでは、モジュール、モジュールのグループ�
 1. ペーストしたモジュールをシナリオ内の適切な場所にドラッグして、シナリオに接続します。
 
    キーボードショートカットを使用してコピー＆ペーストすることもできます。
+
+>[!NOTE]
+>
+>モジュールのグループをコピーする代わりに、モジュールのグループを新しい連鎖シナリオに移動できます。 手順については、[&#x200B; モジュールをチェーンに移動](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)するを参照してください。
 
 ## クローンによるシナリオのコピー
 
