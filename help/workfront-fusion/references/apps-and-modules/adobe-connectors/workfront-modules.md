@@ -15,9 +15,9 @@ subfeature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
+source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
 workflow-type: tm+mt
-source-wordcount: 7689
+source-wordcount: 7687
 ht-degree: 93%
 
 ---
@@ -282,8 +282,8 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
      <tr> 
       <td>[!UICONTROL Enable secured hook]</td> 
       <td>
-       <p>このWebhookにenableauthToken ベースのセキュリティを使用するかどうかを選択します。</p><p>
-       <b> メモ </b>: 2026年8月23日以降、Fusionは、既存のモジュールを含むすべてのWorkfront/Watch Event モジュールに対して、デフォルトでauthToken ベースのセキュリティを有効にします。 特定のWebhookが壊れた場合、または互換性の理由でこれを無効にする必要がある場合は、2026年8月23日より前に「セキュアフックを有効にする」オプションをオフにすることができます。</p>
+       <p>このWebhookに対してauthToken ベースのセキュリティを有効にするかどうかを選択します。</p><p>
+       <b> メモ </b>: 2026年8月23日現在、Fusionでは、既存のモジュールを含むすべてのWorkfront/Watch Event モジュールに対して、デフォルトでauthToken ベースのセキュリティが有効になっています。 特定のWebhookが壊れた場合、または互換性の理由でこれを無効にする必要がある場合は、「セキュアフックを有効にする」オプションをオフにできます。</p>
        </td> 
      </tr> 
     </tbody> 
@@ -505,9 +505,9 @@ Webhook を作成した後、イベントの送信先エンドポイントのア
 >
 >ユーザーは、アクティブ化解除および承認保留中のステータスで作成されます。 組織が Adobe Admin Console に移行され、承認保留中バッジが数分以内に削除されない場合は、ユーザーを承認できます。
 >
->* **個々のユーザーの解決**
+>* **個人ユーザーの解決**
 >
->      ユーザーリストで個々のユーザーを解決できます。
+>      ユーザーリストで個人ユーザーを解決できます。
 >
 >      1. ユーザーリストで 1 人または複数のユーザーを選択します。
 >      1. リストヘッダーの 3 点メニューをクリックします。

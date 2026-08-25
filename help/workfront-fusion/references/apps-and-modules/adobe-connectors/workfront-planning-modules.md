@@ -11,10 +11,10 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 6a90d388cc362b24cc9313a000aa5170f015cbf8
+source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
 workflow-type: tm+mt
-source-wordcount: 6620
-ht-degree: 42%
+source-wordcount: 6660
+ht-degree: 41%
 
 ---
 
@@ -1600,11 +1600,6 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
 >
 >Webhookの編集について詳しくは、[Webhookの編集](/help/workfront-fusion/manage-scenarios/edit-webhooks.md)を参照してください。
 
->[!NOTE]
->
->2026年8月23日以降、Fusionは、既存のモジュールを含むすべてのWorkfront Planning/Watch Event モジュールに対して、デフォルトでauthToken ベースのセキュリティを有効にします。
-
-
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -1654,6 +1649,13 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
         <p>[!UICONTROL Exclude updates made by this connection]</p>
       </td>
       <td>このオプションを有効にすると、このモジュールが使用する接続によって変更が行われた場合にシナリオがトリガーされなくなります。 これにより、このシナリオがトリガーアクションを実行した場合に、シナリオの別のインスタンスがトリガーされるのを防ぎます。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Enable secured hook]</td>
+      <td>
+       <p>このWebhookに対してauthToken ベースのセキュリティを有効にするかどうかを選択します。</p><p>
+       <b> メモ </b>: 2026年8月23日現在、Fusionでは、既存のモジュールを含むすべてのWorkfront Planning/Watch Event モジュールに対して、デフォルトでauthToken ベースのセキュリティが有効になっています。 特定のWebhookが壊れた場合、または互換性の理由でこれを無効にする必要がある場合は、「セキュアフックを有効にする」オプションをオフにできます。</p>
+      </td>
     </tr>
   </tbody>
 </table>
