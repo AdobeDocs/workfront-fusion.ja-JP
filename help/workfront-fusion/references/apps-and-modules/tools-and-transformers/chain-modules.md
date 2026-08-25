@@ -5,11 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
 TQID: https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
 workflow-type: tm+mt
-source-wordcount: 883
+source-wordcount: 913
 ht-degree: 10%
 
 ---
@@ -29,6 +28,10 @@ ht-degree: 10%
 <!--This article will be about the specific module configuration-->
 
 連鎖シナリオの計画の手順については、[複数のシナリオを連鎖させる](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)を参照してください。
+
+>[!NOTE]
+>
+>これらのモジュールを手動で設定する代わりに、シナリオ内の既存のモジュールを選択し、新しい子シナリオに移動できます。 手順については、[ モジュールをチェーンに移動](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)するを参照してください。
 
 
 ## アクセス要件
@@ -78,7 +81,7 @@ ht-degree: 10%
 
    シナリオの入力データとして使用する新しいデータ構造を作成するには、「データ構造」フィールドの横にある「**追加**」をクリックし、データ構造を作成します。
 
-   データ構造の作成手順については、[&#x200B; データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
+   データ構造の作成手順については、[ データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
 
 1. 「**OK**」をクリックして、モジュールを保存します。
 
@@ -96,7 +99,7 @@ ht-degree: 10%
 > * **このモジュールをイテレーター内に配置する場合は注意してください。** 大きなイテレーターの各項目に対して子シナリオをディスパッチすると、プラットフォームの負荷が大幅に増大します。 子シナリオのロジックをインライン化するか、イテレーター外で共有ルックアップを事前に計算することを検討してください。
 > * **失火と忘れ**&#x200B;は、親が子の実行または成功を確認できないことを意味します。 子の障害が個別に監視されている場合にのみ使用します。
 >
-> 完全な設計ガイダンスについては、[複数のシナリオを一緒にチェーン &#x200B;](https://experienceleague.adobe.com/ja/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)するを参照してください。
+> 完全な設計ガイダンスについては、[複数のシナリオを一緒にチェーン ](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)するを参照してください。
 
 >[!NOTE]
 >
@@ -140,6 +143,6 @@ ht-degree: 10%
 
    データの新しいデータ構造を作成するには、「データ構造」フィールドの横にある「**追加**」をクリックし、データ構造を作成します。
 
-   データ構造の作成手順については、[&#x200B; データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
+   データ構造の作成手順については、[ データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
 
 1. 「**OK**」をクリックして、モジュールを保存します。

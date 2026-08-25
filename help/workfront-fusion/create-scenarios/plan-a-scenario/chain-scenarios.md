@@ -5,11 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
 TQID: https://experienceleague.adobe.com/ypbKUSaT72N2r75oYX9tZsJaj6H39cUCumApjMw69j0
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
 workflow-type: tm+mt
-source-wordcount: 1705
+source-wordcount: 1744
 ht-degree: 9%
 
 ---
@@ -22,7 +21,7 @@ ht-degree: 9%
 >
 >安定した統合を実現するには、HTTP リクエストモジュールを使用してWebhookを介して2番目のシナリオをトリガーすることを検討してください。このパターンでは、完全にサポートされているプリミティブを使用し、各シナリオに独立した実行制御を与えます。
 >
->チェーン付きシナリオを使用する場合は、この記事の設計ガイダンスと制約、特に[&#x200B; ベストプラクティス &#x200B;](#best-practices) セクションを慎重に確認してください。
+>チェーン付きシナリオを使用する場合は、この記事の設計ガイダンスと制約、特に[ ベストプラクティス ](#best-practices) セクションを慎重に確認してください。
 
 シナリオを連鎖させ、あるシナリオが別のシナリオをトリガーできるようにし、2番目のシナリオで出力されたデータを最初のシナリオに戻すことができます。 これにより、複数のシナリオでシナリオセクションを複製する必要がない、よりモジュール化されたシナリオ作成が可能になります。
 
@@ -30,9 +29,11 @@ ht-degree: 9%
 
 親シナリオが子シナリオがデータを返すのを待っている場合、その時間は親シナリオのタイムアウトに対してカウントされません。 例えば、親シナリオは5つの子シナリオを呼び出し、それぞれが実行するのに10分かかり、合計50分かかります。 親シナリオ自体のモジュールの実行には15分かかります。 合計65分が経過しても、親シナリオはタイムアウトしません。これは、タイムアウト制限の40分を超えています。
 
-タイムアウトを含むFusionのパフォーマンスガードレールについて詳しくは、[Fusionのパフォーマンスガードレール &#x200B;](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md)を参照してください。
+タイムアウトを含むFusionのパフォーマンスガードレールについて詳しくは、[Fusionのパフォーマンスガードレール ](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md)を参照してください。
 
-チェーンモジュールの設定方法については、[&#x200B; チェーンモジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)を参照してください。
+チェーンモジュールの設定方法については、[ チェーンモジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)を参照してください。
+
+シナリオ内の既存のモジュールを選択して新しい子シナリオに移行する方法については、[ モジュールをチェーンに移動](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)するを参照してください。
 
 ## 親シナリオと子シナリオ
 
@@ -45,9 +46,9 @@ ht-degree: 9%
 
 Workfront Fusionでは、データ構造を使用して、親シナリオから子シナリオに情報を転送します。 データ構造は、子シナリオで設定されます。 親シナリオから子シナリオを選択すると、子シナリオの入力として使用されるデータ構造のフィールドが親シナリオに表示されます。 これらのフィールドに値をマッピングできます。このフィールドは、トリガーされたときに子シナリオに渡されます。
 
-親シナリオと子シナリオで設定するモジュールについて詳しくは、[&#x200B; チェーンモジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)を参照してください。
+親シナリオと子シナリオで設定するモジュールについて詳しくは、[ チェーンモジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)を参照してください。
 
-データ構造について詳しくは、[&#x200B; データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
+データ構造について詳しくは、[ データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)を参照してください。
 
 ## データフロー
 
@@ -69,7 +70,7 @@ Workfront Fusionでは、データ構造を使用して、親シナリオから�
 
 * **時間の延長**：合計処理時間が1つのシナリオの実行制限の40分を超える大規模なバッチ操作にチェーンを使用できます。 ただし、このパターンは慎重に扱ってください。複数の長時間実行中の子シナリオに連鎖する親シナリオには、全体的なタイムアウト境界はありません。 子シナリオがハングしたり、プラットフォームの問題が発生した場合、親はエラーを表示することなく無期限に待機します。
 
-  チェーンを使用して実行時間を延長する前に、バッチサイズを小さくできるか、頻度を増やすか、長いシーケンシャルチェーンを避けるために設計を再構築するかを検討します。 以下の[&#x200B; ベストプラクティス &#x200B;](#best-practices)を参照してください。
+  チェーンを使用して実行時間を延長する前に、バッチサイズを小さくできるか、頻度を増やすか、長いシーケンシャルチェーンを避けるために設計を再構築するかを検討します。 以下の[ ベストプラクティス ](#best-practices)を参照してください。
 
 * **イテレーターの置き換え** イテレーターを子シナリオに置き換えると、イテレーションでメモリ不足エラーが発生する複雑な操作など、メモリ使用量を削減できます。 複雑な操作のために別のシナリオを作成し、イテレータを子シナリオモジュールの呼び出しに置き換えることができます
 
