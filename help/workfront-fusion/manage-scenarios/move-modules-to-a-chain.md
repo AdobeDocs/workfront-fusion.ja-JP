@@ -3,7 +3,8 @@ title: チェーンへのモジュールの移動
 description: シナリオ内のモジュールのグループを選択し、マッピングやデータ構造を手動で再作成することなく、新しいチェーン化されたシナリオに移動できます。
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: f1a80f64edc410ae76bfbba1280df7232e2d09c5
 workflow-type: tm+mt
 source-wordcount: 513
@@ -33,7 +34,7 @@ Workfront Fusionは、モジュールグループをチェーンに移動し、�
 
 連鎖シナリオの計画について詳しくは、[複数のシナリオを連鎖させる](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)を参照してください。
 
-チェーンモジュールの設定方法については、[ チェーンモジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)を参照してください。
+チェーンモジュールの設定方法については、[&#x200B; チェーンモジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)を参照してください。
 
 ## アクセス要件
 
