@@ -1,5 +1,5 @@
 ---
-title: 組織のパフォーマンスダッシュボードの表示
+title: 組織のインサイトダッシュボードの表示
 description: Fusion管理者は、組織の実行指標を表示するダッシュボードを表示できます。
 author: Becky
 feature: Workfront Fusion
@@ -7,16 +7,16 @@ exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
 TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
 workflow-type: tm+mt
 source-wordcount: 694
-ht-degree: 9%
+ht-degree: 7%
 
 ---
 
-# 組織のパフォーマンスダッシュボードの表示
+# 組織のインサイトダッシュボードの表示
 
-Fusion Performance Dashboardを使用すると、どのシナリオが最も実行されているか、どこで遅延が発生しているか、ワーカープールがどの程度効果的に動作しているかをすばやく確認できます。 これにより、実行ボリューム、キューの深さ、プールの使用率、シナリオレベルのパフォーマンスをリアルタイムで可視化できます。
+Fusion Insights ダッシュボードでは、どのシナリオが最も頻繁に実行されているか、どこで遅延が発生しているか、ワーカープールがどの程度効果的に動作しているかをすばやく確認できます。 これにより、実行ボリューム、キューの深さ、プールの使用率、シナリオレベルのパフォーマンスをリアルタイムで可視化できます。
 
 ## アクセス要件
 
@@ -47,7 +47,7 @@ Fusion Performance Dashboardを使用すると、どのシナリオが最も実�
 
 +++
 
-## パフォーマンスダッシュボードコンポーネント
+## インサイトダッシュボードコンポーネント
 
 >[!NOTE]
 >
@@ -61,7 +61,7 @@ Fusion Performance Dashboardを使用すると、どのシナリオが最も実�
 
 -->
 
-Fusion パフォーマンスダッシュボードでは、次の指標を確認できます。
+Fusion Insights ダッシュボードでは、次の指標を確認できます。
 
 * **処理待ちの実行**
 このグラフは、特定の時点で処理を待っている実行の数（実行バックログとも呼ばれます）を示しています。
@@ -80,9 +80,9 @@ Fusion パフォーマンスダッシュボードでは、次の指標を確認�
 
   このグラフを使用すると、接続されたアプリまたはサービスの問題の影響を受けるシナリオなど、通常よりも時間がかかるシナリオを特定できます。
 
-## Fusion Performance Dashboardの表示
+## Fusion Insights ダッシュボードを見る
 
-1. Fusionで、左側のナビゲーションで「**パフォーマンス**」をクリックします。
+1. Fusionで、左側のナビゲーションで「**インサイト**」をクリックします。
 
    ダッシュボードが開きます。
 

@@ -3,10 +3,10 @@ user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
 nudge: true
-source-git-commit: fedd3e509b76cb7db5bf814c1677a2a5a6699aa7
+source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
 workflow-type: tm+mt
-source-wordcount: '2604'
-ht-degree: 50%
+source-wordcount: '2652'
+ht-degree: 49%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 50%
 * Fusion リリースアクティビティ {#fusion-release-activity}
   * [Adobe Workfront Fusion リリースアクティビティ](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
   * Fusion リリース - 2026 {#fusion-releases-2026}
+    * [Workfront Fusion リリースアクティビティ：2026年8月31日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-31.md)
     * [Workfront Fusion リリースアクティビティ：2026年8月24日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-24.md)
     * [Workfront Fusion リリースアクティビティ：2026年8月17日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-17.md)
     * [Workfront Fusion リリースアクティビティ：2026年8月10日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-10.md)
@@ -208,7 +209,7 @@ ht-degree: 50%
       * [チームにユーザーを追加](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md)
       * [通知オプションの設定](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)
       * [組織のアクティビティログの表示](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-activity-logs-for-an-org.md)
-      * [組織のパフォーマンスダッシュボードの表示](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-performance-dashboard.md)
+      * [組織のインサイトダッシュボードの表示](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-insights-dashboard.md)
     * ユーザーとチームの管理 {#manage-users-and-teams}
       * [ユーザーとチームの管理：記事インデックス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/manage-users-and-teams.md)
       * [組織内のユーザーの表示](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-users-in-an-org.md)
@@ -231,6 +232,16 @@ ht-degree: 50%
     * [テンプレートの管理](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/manage-templates-toc.md)
     * [テンプレートの承認または不承認](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/approve-templates.md)
     * [テンプレートを編集](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/edit-templates.md)
+  * Workfront ストレージの使用 {#use-workfront-storage}
+    * [Workfront ストレージの使用](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/use-workfront-storage-toc.md)
+    * [ストレージの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)
+    * [ストレージの初期化](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/initialize-storage.md)
+    * [Workfront Fusionでのストレージの表示と管理](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/view-and-manage-storage-in-workfront-fusion.md)
+    * [ストレージへのファイルのアップロード](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/upload-files-to-storage.md)
+    * [ストレージからファイルをダウンロード](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/download-files-from-storage.md)
+    * [ストレージからファイルを削除](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/delete-files-from-storage.md)
+    * [ストレージでのファイルのバージョン履歴の表示](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/view-storage-file-version-history.md)
+    * [ストレージからのシナリオの作成](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/create-scenarios-from-storage.md)
 * シナリオの作成 {#create-scenarios}
   * [シナリオの作成](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
   * シナリオの計画 {#plan-a-scenario}
