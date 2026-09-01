@@ -3,7 +3,8 @@ title: ストレージからのシナリオの作成
 description: ストレージはFusionのシナリオビルダーと統合されているので、事前に設定されたシナリオをストレージページから直接作成して、ファイルをダウンロードまたはアップロードできます。
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: aef1685cb25c0cdcb0dcdf9b0c73fb482d392e5f
 workflow-type: tm+mt
 source-wordcount: 272
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # ストレージからのシナリオの作成
 
-ストレージの概要については、[ ストレージの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)を参照してください。
+ストレージの概要については、[&#x200B; ストレージの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)を参照してください。
 
 ストレージはFusionのシナリオビルダーと統合されています。 ストレージ ページから、選択したファイルをダウンロードするシナリオを作成できます。
 

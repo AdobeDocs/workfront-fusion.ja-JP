@@ -3,7 +3,8 @@ title: ストレージからファイルをダウンロード
 description: ストレージ内のファイルの最新バージョンをダウンロードするか、特定の以前のバージョンをダウンロードできます。
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: a2632cb3184cd555555136288e78ab1e05e4ea9d
 workflow-type: tm+mt
 source-wordcount: 211
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 Fusion ストレージ領域を使用すると、Adobe ストレージからファイルをダウンロードできます。
 
-ストレージの概要については、[ ストレージの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)を参照してください。
+ストレージの概要については、[&#x200B; ストレージの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)を参照してください。
 
 ## ファイルをダウンロード
 
@@ -42,4 +43,4 @@ Fusion ストレージ領域を使用すると、Adobe ストレージからフ�
 
 ダウンロードに失敗した場合、トースト通知が表示されます。「*」ダウンロードに失敗しました – ファイルをダウンロードできませんでした。 もう一度やり直してください。&quot;*
 
-ファイルのバージョンについて詳しくは、[ ストレージでのファイルのバージョン履歴の表示](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/view-storage-file-version-history.md)を参照してください。
+ファイルのバージョンについて詳しくは、[&#x200B; ストレージでのファイルのバージョン履歴の表示](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/view-storage-file-version-history.md)を参照してください。

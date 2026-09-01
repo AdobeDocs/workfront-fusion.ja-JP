@@ -3,7 +3,8 @@ title: ストレージへのファイルのアップロード
 description: ファイルをストレージ内のフォルダーに直接アップロードすることも、自動シナリオを作成してアップロードを処理することもできます。
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: a2632cb3184cd555555136288e78ab1e05e4ea9d
 workflow-type: tm+mt
 source-wordcount: 196
@@ -17,8 +18,8 @@ ht-degree: 2%
 
 アップロードは、フォルダー内（最上位のフォルダーリストではなく）を参照する場合に使用できます。
 
-* ストレージの概要については、[ ストレージの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)を参照してください。
-* アップロードシナリオの作成手順については、[ ストレージからのシナリオの作成](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/create-scenarios-from-storage.md)を参照してください。
+* ストレージの概要については、[&#x200B; ストレージの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)を参照してください。
+* アップロードシナリオの作成手順については、[&#x200B; ストレージからのシナリオの作成](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/create-scenarios-from-storage.md)を参照してください。
 
 
 ## ファイルのアップロード

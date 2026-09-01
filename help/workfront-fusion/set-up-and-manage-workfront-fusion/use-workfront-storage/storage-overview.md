@@ -3,7 +3,8 @@ title: ストレージの概要
 description: Storageとは、Workfront Fusionのページで、Adobe Enterprise Storage Management （ESM）リポジトリに直接アクセスでき、フォルダーの閲覧、ファイルのアップロードとダウンロード、バージョン履歴の表示、自動化シナリオの作成が可能です。
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: d5568479d43bd5518adae5b66b132b4075e7f356
 workflow-type: tm+mt
 source-wordcount: 279

@@ -3,7 +3,8 @@ title: ストレージの初期化
 description: ユーザーが初めてストレージに移動すると、チームの代わりにAdobe Storageへの安全な接続を作成する初期化画面が表示されます。
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: a2632cb3184cd555555136288e78ab1e05e4ea9d
 workflow-type: tm+mt
 source-wordcount: 216
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 Adobe クラウドストレージ内のリポジトリ、フォルダー、ファイルを表示するには、事前にFusion ストレージ領域を初期化する必要があります。
 
-ストレージの概要については、[ ストレージの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)を参照してください。
+ストレージの概要については、[&#x200B; ストレージの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)を参照してください。
 
 ## ストレージの初期化
 
