@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
 TQID: https://experienceleague.adobe.com/95RrU217DFpxtEVaO3FyIx0wNR6p-sJw9J4ZDaqPkXw
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
 workflow-type: tm+mt
-source-wordcount: 775
-ht-degree: 94%
+source-wordcount: 895
+ht-degree: 82%
 
 ---
 
@@ -23,6 +22,7 @@ ht-degree: 94%
 | 領域 | 説明 | 詳しくは、次を参照してください。 |
 | --- | --- | --- |
 | 組織の概要<br> ![組織アイコン](assets/org-icon.png) | ここでは、Fusion 組織に関する情報を確認できます。 この組織のシナリオで実行された操作の数と、アクティブなシナリオのリストを表示できます。 また、この組織のチーム、ユーザー、環境のリストを表示することもできます。<br>現在選択されている組織は、このアイコンの上に表示されます。 | [組織とチーム](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
+| インサイト <br> ![ インサイトアイコン ](assets/insights-icon.png) | ここでは、最も実行されているシナリオ、遅延が発生している場所、ワーカープールの稼働率など、組織の実行指標のダッシュボードが表示されます。 | [組織のインサイトダッシュボードを表示](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-insights-dashboard.md) |
 | チームの概要<br> ![チームアイコン](assets/team-icon.png) | ここでは、このチームのシナリオで実行された操作の数やアクティブなシナリオのリストなど、Fusion チームに関する情報を確認できます。 また、このチームのユーザーを表示および管理することもできます。 チームを表示する際に、このページの上部にあるドロップダウンから別のチームを選択できます。<br>現在選択されているチームは、このアイコンの上に表示されます。<br>チームの概要またはこの記事にリストされているチームセクションを表示するには、チームを作成する必要がある場合があります。 | [組織とチーム](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
 | シナリオ<br> ![シナリオアイコン](assets/scenarios-icon.png) | Fusion のシナリオは、自動ワークフローを表します。 例えば、あるシナリオでは、受信する Workfront リクエストを監視してプロジェクトに変換し、別のシナリオでは、画像を生成してドキュメントプロバイダーにアップロードし、Workfront に承認タスクを追加するといった処理を行います。 Fusion での作業のほとんどは、シナリオの設定と管理です。 シナリオ領域では、チームのシナリオのリストを表示および整理したり、表示または変更する個々のシナリオを選択したり、新しいシナリオの作成を開始したりできます。 | [シナリオの概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md) |
 | テンプレート<br> ![テンプレートアイコン](assets/templates-icon.png) | テンプレートは、独自のユースケース用に設定できる事前構築済みシナリオです。 ここでは、Workfront Fusion が提供するパブリックシナリオと、チームが作成したテンプレートを確認できます。 | [テンプレートの作成と管理：記事インデックス](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md) |
@@ -31,7 +31,9 @@ ht-degree: 94%
 | キー<br> ![キーアイコン](assets/keys-icon.png) | 公開鍵と秘密鍵は、データの暗号化と復号化に使用されます。 公開鍵は配布でき、公開鍵を持つすべてのユーザーがデータを暗号化できますが、復号化できるのは秘密鍵のみです。 同様に、同様に、秘密鍵を持つユーザーは、公開鍵を持つ誰もが復号化できるデータを暗号化できます。 キー領域では、チームが所有するキーを表示および管理できます。 | [キー](/help/workfront-fusion/references/modules/keys.md) |
 | データストア<br> ![データストアアイコン](assets/data-store-icon.png) | データストアは、シナリオの外部に存在する小さなデータベースです。 データストアを使用すると、シナリオ間またはシナリオの別々の実行間でデータを転送できます。 データストア領域では、チームが所有するデータストアを表示および管理できます。 | [データストア](/help/workfront-fusion/create-scenarios/map-data/data-stores.md) |
 | データ構造<br> ![データ構造アイコン](assets/data-structure-icon.png) | データ構造は、Fusion に転送されるデータの形式を記述し、JSON、XML、CSV などの形式をシリアル化したり解析したりするのに一般的に使用されます。 データ構造では、チームが所有するデータ構造を表示および管理できます。 | [データ構造](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md) |
-| 関数<br> ![関数アイコン &#x200B;](assets/functions-icon.png) | カスタム関数は、データを操作および変換するためにシナリオに追加できるJavaScript関数です。 <br> カスタム関数を作成して使用するには、Adobe App Builderのライセンスが必要です。 | [&#x200B; カスタム関数を使用してデータをマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md) |
+| 関数<br> ![関数アイコン ](assets/functions-icon.png) | カスタム関数は、データを操作および変換するためにシナリオに追加できるJavaScript関数です。 <br> カスタム関数を作成して使用するには、Adobe App Builderのライセンスが必要です。 | [ カスタム関数を使用してデータをマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md) |
+| パッケージ <br> ![ パッケージアイコン ](assets/packages-icon.png) | パッケージを使用すると、Fusion インターフェイスから離れることなく、Fusion内で独自のカスタムロジックを構築して実行できます。 パッケージ エリアでは、チームが所有するパッケージを表示および管理できます。 | [ カスタム関数パッケージを使用](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md) |
+| ストレージ <br> ![ ストレージアイコン ](assets/storage-icon.png) | ストレージを使用すると、Adobe Enterprise Storage Management （ESM）リポジトリに直接アクセスできます。 Fusionを離れることなく、フォルダーの参照、ファイルのアップロードとダウンロード、ファイルのバージョン履歴の表示、自動化シナリオの作成を行うことができます。 | [ ストレージの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md) |
 
 >[!NOTE]
 >
