@@ -11,9 +11,9 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
+source-git-commit: 9521866c29e4e08eaf815080162735f0f70299a5
 workflow-type: tm+mt
-source-wordcount: 6660
+source-wordcount: 6739
 ht-degree: 41%
 
 ---
@@ -408,6 +408,7 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
 * [グローバルなレコードタイプを取得](#get-global-record-types-v2)
 * [レコードタイプを取得](#get-a-record-type-v2)
 * [レコードタイプの取得](#get-record-types-v2)
+* [レコードタイプの設定を変更](#recast-record-type-configuration-v2)
 * [レコードタイプの更新](#update-a-record-type-v2)
 
 #### レコードタイプ（V2）の作成
@@ -553,6 +554,27 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
         <p>[!UICONTROL 返されるレコードの最大数]</p>
       </td>
       <td>1回の実行サイクル中にモジュールが返す最大レコードタイプ数を入力またはマッピングします。</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### レコードタイプ設定の再作成（V2）
+
+このモジュールは、ワークスペース内のすべてのレコードタイプを、各レコードタイプのフィールドと各フィールドの選択オプションとともに、セクションでグループ化して取得します。 出力は、セクション/レコードタイプ/フィールドとして構造化されます。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>[!DNL Adobe Workfront Planning] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >[!DNL Adobe Workfront Planning]</a> への接続の作成を参照してください。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace ID]</p>
+      </td>
+      <td>レコードタイプ設定を取得するワークスペースのIDを入力またはマッピングします。</td> 
     </tr>
   </tbody>
 </table>
