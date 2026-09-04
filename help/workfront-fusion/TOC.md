@@ -3,9 +3,9 @@ user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
 nudge: true
-source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
+source-git-commit: b2d2634c72b044898b656852e57ef36a8b5f2fe9
 workflow-type: tm+mt
-source-wordcount: '2652'
+source-wordcount: '2655'
 ht-degree: 49%
 
 ---
@@ -308,7 +308,7 @@ ht-degree: 49%
   * [チェーンへのモジュールの移動](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)
   * [実行中のシナリオでのデータフローの表示](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
   * [Webhook のキューの表示](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
-  * {hide-from-toc}[Workfront FusionのAI アシスタント &#x200B;](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
+  * {hide-from-toc}[Workfront FusionのAI アシスタント ](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
   * [シナリオスコアリングエキスパートの実行](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
   * [シナリオ要素の削除](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
   * [「シナリオ」エリアからシナリオを管理します](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
@@ -420,6 +420,7 @@ ht-degree: 49%
       * [Adobe Workfront Planning モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
       * [Adobe Workfrontの統合レビューと承認のモジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)
       * [Workfront Boards モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
+      * [Workfront Fusion モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-fusion-modules.md)
       * [Workfront Proof モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-proof-modules.md)
     * サードパーティアプリケーション用コネクター {#third-party-app-connectors}
       * [Airtable モジュール](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/airtable-modules.md)
