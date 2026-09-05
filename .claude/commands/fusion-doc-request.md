@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: null
-source-git-commit: e354c51f13bd4f15172de068cac9720bd097eb8d
+source-git-commit: 6726c582294758de0bbab19d6014ad80bb66e553
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '1120'
 ht-degree: 0%
 
 ---
@@ -33,12 +33,18 @@ Slack リンクが指定されている場合は、URLから`channel_id`と`mess
 
 リクエストが完全な仕様を持つConfluence Wiki ページにリンクしている場合は、ドキュメントを書く前にリクエストを取得します（`get_wiki_content`）。 技術的な詳細（正確なフィールド名、手順、UI ラベル）については、Slackの概要だけを参照しないでください。リンクされている場合は、Wiki仕様から取得します。
 
+代わりに、リクエストが権限のある仕様ではなく、Confluence以外のセカンダリソース（Experience League コミュニティ投稿、サポート記事、AI生成の概要など）にリンクされている場合は、Slack テキストに欠けている技術的な詳細を入力するために使用できますが、Slack リクエスト自体よりも信頼性が低いと扱うことができます。 Slackのテキスト（同じボタンやフィールドに異なる名前、Slackにはまったく記載されていない詳細）と競合したり追加したりする場合は、静かに1つを選択しないでください。Slack リクエストの文言をプライマリソースとして使用してドキュメントを書き込み、手順2のガイダンスに従ってHTML コメント（例：`<!-- BECKY CHECK ME: Slack calls this "Activate," but the linked community post calls it "Reactivate" - confirm against the live UI. -->`）で不一致をフラグ付けします。
+
 ## 手順2：ドキュメントの更新
 
 このリポジトリ内の関連する既存の記事を検索します（関連するモジュール名、UI ラベル、または設定名のgrep - ファイルを推測しないでください）。 記事の既存の構造、見出しレベル、および家のスタイルに従って、変更を反映するように更新します。
 
 &#x200B;* Slack リクエストまたはリンクされたWiki仕様にない技術的な詳細（正確なフィールド名、権限範囲、設定ステップ）を作成しないでください。 何かが未確認の場合は、インラインでHTML コメント （例：`<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`）としてフラグを付けます。推測ではなく、見えるコールアウトとしてフラグを立てることはありません。 公開されたページでレンダリングしてはなりません。
-&#x200B;* これが真新しい記事ファイル（既存の記事ファイルへの編集だけでなく）を必要とする場合は、このリポジトリの常識に従ってください。frontmatterで`exl-id`/`TQID`を作成せず、新しいページを関連する目次に接続し、作成後にファイルをCRLF/no-BOMに変換します（`Write` ツールのデフォルトはLF）。
+&#x200B;* これが真新しい記事ファイル（既存の記事ファイルへの編集だけでなく）を必要とする場合は、このリポジトリの常識に従ってください。frontmatterで`exl-id`/`TQID`を作成せず、作成後にファイルをCRLF/no-BOMに変換します（`Write` ツールはデフォルトでLFに変換します）。
+&#x200B;* 新しいページを「目次」に接続すると、1つだけでなく、両方のページがサブインデックスからリンクされ、読者には表示されなくなります。
+  - 製品領域のマスターナビゲーションファイル （例：`help/workfront-fusion/TOC.md`） – これは、公開されたナビゲーションツリーを実際に駆動するものです。
+  - この種類の記事にもリンクしているコンテンツ内のサブインデックス/ランディングページ（新しいコネクタモジュールページの場合は`apps-and-modules-toc.md`など）。
+    両方を明示的にチェックし、新しいエントリが同じリストに配置されていることを確認します。各ファイル内の最も近い兄弟の記事と同じネストレベルで、一方に追加すると他のファイルをカバーすると仮定しないでください。
 
 ## 手順3:Workfront タスクの作成
 
@@ -50,6 +56,7 @@ Slack リンクが指定されている場合は、URLから`channel_id`と`mess
 |---|---|
 | `name` | `Becky - {Feature Title}` |
 | `projectID` | 上のプロジェクトルックアップから |
+| `parentID` | 親タスク ID （`parentID`、システム フィールド - `DE:` プレフィックスなし） – 以下の「既知の値」を参照してください。 これにより、プロジェクトのトップレベルのタスクではなく、新しいタスクがサブタスクになります。 |
 | `assignedToID` | `insights_get_current_user`からの現在のユーザー |
 | `categoryID` | 製品ドキュメントのカスタムフォーム ID – 以下の「既知の値」を参照してください。 不明な点がある場合は、このプロジェクトの最近の兄弟タスクに対して`task.task_categoryID`をクエリして確認します。 |
 | `description` | **complete Slack message text** （リクエストテンプレートのすべてのフィールド、言い換えではありません）の後に、Slackの会話へのリンクが続きます |
@@ -88,5 +95,6 @@ For more information, see [{Article title}](/help/workfront-fusion/{path-to-arti
 これらは永続的であると仮定するのではなく、依然として解決することを確認します。
 
 &#x200B;* プロジェクト「製品ドキュメント タスク – メッセージを必要とする開発問題」はID `5e69583f00236b9f767c3e3944100ee4`にマッピングされます
+&#x200B;* 親タスク「Becky - Tasks from Fusion-Documentation channel」は、ID `6a9b065100003a7554832780c2015e93` （同じプロジェクト）にマッピングされます。変更が生じた場合は、ハードコーディングではなく`insights_find_id_by_name` （エンティティ `task`）で解決されます
 &#x200B;* 製品ドキュメント カスタムフォーム （`categoryID`）は`5d7275b9000514604bd969d418725843`です
 &#x200B;* 使用されるカスタムフィールド：`DE:Release notes`、`DE:Preview Date Known`、`DE:Preview Date`

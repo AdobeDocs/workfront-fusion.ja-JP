@@ -7,9 +7,9 @@ exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
 TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 557ec6de4ccf0753005fed3e4772d2eb9317537d
+source-git-commit: 069ab0fd3d72da3b67d50e4f8e62823c825ef934
 workflow-type: tm+mt
-source-wordcount: 848
+source-wordcount: 849
 ht-degree: 6%
 
 ---
@@ -63,6 +63,9 @@ Fusion Insights ダッシュボードでは、どのシナリオが最も頻繁�
 
 Fusion Insights ダッシュボードでは、次の指標を確認できます。
 
+* **失敗した実行ログ**
+この表には、組織全体で失敗したシナリオまたは警告したシナリオの実行がすべて一覧表示されるため、ダッシュボードを離れることなく問題の実行を検索してトラブルシューティングを行うことができます。
+
 * **処理待ちの実行**
 このグラフは、特定の時点で処理を待っている実行の数（実行バックログとも呼ばれます）を示しています。
 
@@ -79,8 +82,6 @@ Fusion Insights ダッシュボードでは、次の指標を確認できます�
 このグラフには、シナリオごとの実行が表示されます。 色が異なれば、シナリオも異なります。 グラフにカーソルを合わせると、どの色がどのシナリオであるかを示すウィンドウが表示されます。
 
   このグラフを使用すると、接続されたアプリまたはサービスの問題の影響を受けるシナリオなど、通常よりも時間がかかるシナリオを特定できます。
-* **実行ログ**
-この表には、組織全体で失敗したシナリオまたは警告したシナリオの実行がすべて一覧表示されるため、ダッシュボードを離れることなく問題の実行を検索してトラブルシューティングを行うことができます。
 
 ## Fusion Insights ダッシュボードを見る
 
@@ -116,6 +117,6 @@ Fusion Insights ダッシュボードでは、次の指標を確認できます�
 1. 実行をクリックすると、そのエラーに関する詳細が表示されます。
 1. 繰り返しエラーが発生した後に自動的に非アクティブ化された1つ以上のシナリオを再アクティブ化するには、実行を選択し、**アクティブ化**&#x200B;をクリックします。
 
-   <!-- BECKY CHECK ME: confirm this button's exact label against the live UI. The Slack feature request calls it "Activate," but a related community post describes the same action as "Reactivate." -->
-
-   シナリオを再アクティブ化する前に、期限が切れた資格情報やコネクタの問題など、エラーの原因を調査して、シナリオがすぐに再び失敗しないようにします。
+   >[!NOTE]
+   >
+   >シナリオを再アクティブ化する前に、期限が切れた資格情報やコネクタの問題など、エラーの原因を調査して、シナリオがすぐに再び失敗しないようにします。
