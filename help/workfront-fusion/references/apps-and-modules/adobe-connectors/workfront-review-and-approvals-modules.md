@@ -4,9 +4,12 @@ description: Adobe Workfrontのコンテンツと承認モジュールを使用�
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 68b973fd27c2c5a40000096a29b38b46481ae190
 workflow-type: tm+mt
 source-wordcount: 4194
