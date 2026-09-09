@@ -4,16 +4,13 @@ description: Adobe Workfrontのコンテンツと承認モジュールを使用�
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: e9ea91840c9be594e98b97202cb46dfa009349a9
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 68b973fd27c2c5a40000096a29b38b46481ae190
 workflow-type: tm+mt
-source-wordcount: 3743
-ht-degree: 17%
+source-wordcount: 4194
+ht-degree: 15%
 
 ---
 
@@ -21,7 +18,7 @@ ht-degree: 17%
 
 Adobe Workfrontの統合レビューと承認のモジュールを使用すると、承認の詳細の取得、アセットに関する意思決定、承認参加者の追加または削除、承認ステージの追加または更新、ステージのロックまたはロック解除、カスタム API呼び出しの実行を行うことができます。
 
-Workfrontの統合レビューと承認について詳しくは、Workfront ドキュメントの[統合レビューと承認の概要](https://experienceleague.adobe.com/ja/docs/workfront/using/review-and-approve-work/document-approvals-overview)を参照してください。
+Workfrontの統合レビューと承認について詳しくは、Workfront ドキュメントの[統合レビューと承認の概要](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview)を参照してください。
 
 ## アクセス要件
 
@@ -136,16 +133,21 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
 * [テンプレートの一括削除](#bulk-delete-templates)
 * [テンプレートの作成](#create-a-template)
 * [承認の作成](#create-an-approval)
+* [グループ化された承認の作成](#create-grouped-approval)
 * [ステージを作成](#create-stages)
 * [ステージでの決定の削除](#delete-a-decision-on-a-stage)
 * [ステージの削除](#delete-a-stage)
 * [テンプレートを削除](#delete-a-template)
 * [承認の削除](#delete-an-approval)
 * [決定の削除](#delete-decisions)
+* [グループ化された承認の削除](#delete-grouped-approval)
 * [参加者を削除](#delete-participants)
 * [ステージをロック](#lock-a-stage)
 * [決定を下す](#make-a-decision)
 * [ステージで決定する](#make-a-decision-on-a-stage)
+* [グループ化された承認でのAssetsの管理](#manage-assets-on-a-grouped-approval)
+* [ステージ参加者の管理](#manage-stage-participants)
+* [グループ化された承認でのステージの管理](#manage-stages-on-a-grouped-approval)
 * [ステージの参加者にリマインドする](#remind-a-participant-on-a-stage)
 * [参加者に通知](#remind-participant)
 * [未決定の参加者に通知](#remind-undecided-participants)
@@ -154,6 +156,7 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
 * [ステージの更新](#update-a-stage)
 * [テンプレートの更新](#update-a-template)
 * [すべてのステージを更新](#update-all-stages)
+* [グループ化された承認の更新（フルステート）](#update-grouped-approval-full-state)
 
 
 #### 参加者の追加または更新
@@ -269,6 +272,23 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
       </tr>
   </tbody>
 </table>
+
+#### グループ化された承認の作成
+
+このアクションモジュールは、グループ化された承認を作成します。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">接続</td>
+      <td>Adobe Workfront Unified Review and Approvalsへの接続の作成手順については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront Unified Review and Approvalsへの接続</a>」を参照してください。</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Create Grouped Approval"), without field detail. -->
 
 #### ステージを作成
 
@@ -404,6 +424,23 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
   </tbody>
 </table>
 
+#### グループ化された承認の削除
+
+このアクションモジュールは、指定したグループ化された承認を削除します。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">接続</td>
+      <td>Adobe Workfront Unified Review and Approvalsへの接続の作成手順については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront Unified Review and Approvalsへの接続</a>」を参照してください。</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Delete Grouped Approval"), without field detail. -->
+
 #### 参加者を削除
 
 このアクションモジュールは、承認から参加者を削除します。
@@ -515,6 +552,57 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
       </tr>
   </tbody>
 </table>
+
+#### グループ化された承認でのAssetsの管理
+
+このアクションモジュールは、グループ化された承認に含まれるアセットを管理します。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">接続</td>
+      <td>Adobe Workfront Unified Review and Approvalsへの接続の作成手順については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront Unified Review and Approvalsへの接続</a>」を参照してください。</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Assets on a Grouped Approval"), without field detail. -->
+
+#### ステージ参加者の管理
+
+このアクションモジュールは、ステージ上の参加者を管理します。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">接続</td>
+      <td>Adobe Workfront Unified Review and Approvalsへの接続の作成手順については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront Unified Review and Approvalsへの接続</a>」を参照してください。</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Stage Participants"), without field detail. -->
+
+#### グループ化された承認でのステージの管理
+
+このアクションモジュールは、グループ化された承認のステージを管理します。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">接続</td>
+      <td>Adobe Workfront Unified Review and Approvalsへの接続の作成手順については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront Unified Review and Approvalsへの接続</a>」を参照してください。</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Stages on a Grouped Approval"), without field detail. -->
 
 #### ステージの参加者にリマインドする
 
@@ -755,16 +843,37 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
   </tbody>
 </table>
 
+#### グループ化された承認の更新（フルステート）
+
+このアクションモジュールは、指定されたグループ化された承認の完全な状態を置き換えます。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">接続</td>
+      <td>Adobe Workfront Unified Review and Approvalsへの接続の作成手順については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront Unified Review and Approvalsへの接続</a>」を参照してください。</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Update Grouped Approval (Full State)"), without field detail. -->
+
 ### 検索
 
 * [テンプレートを入手](#get-a-template)
 * [承認の詳細を取得](#get-approval-details)
+* [グループ化された承認での承認の取得](#get-approvals-in-a-grouped-approval)
+* [グループ化された承認の詳細を取得](#get-grouped-approval-details)
 * [複数の承認を取得](#get-multiple-approvals)
 * [提案された承認を取得](#get-suggested-approvals)
 * [推奨される参加者を取得](#get-suggested-participants)
 * [ボットのリストアップ](#list-bots)
+* [親別グループ化された承認のリスト](#list-grouped-approvals-by-parent)
 * [テンプレートをリスト表示](#list-templates)
 * [AI ブランドレビュアーを検索](#search-ai-brand-reviews)
+* [グループ化された承認の検索](#search-grouped-approvals)
 
 
 #### テンプレートを入手
@@ -816,6 +925,40 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
       </tr>
   </tbody>
 </table>
+
+#### グループ化された承認での承認の取得
+
+この検索モジュールは、グループ化された承認に含まれる個々の承認を返します。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">接続</td>
+      <td>Adobe Workfront Unified Review and Approvalsへの接続の作成手順については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront Unified Review and Approvalsへの接続</a>」を参照してください。</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Get Approvals in a Grouped Approval"), without field detail. -->
+
+#### グループ化された承認の詳細を取得
+
+この検索モジュールは、指定したグループ化された承認の詳細を取得します。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">接続</td>
+      <td>Adobe Workfront Unified Review and Approvalsへの接続の作成手順については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront Unified Review and Approvalsへの接続</a>」を参照してください。</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Get Grouped Approval Details"), without field detail. -->
 
 #### 複数の承認を取得
 
@@ -925,6 +1068,23 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
   </tbody>
 </table>
 
+#### 親別グループ化された承認のリスト
+
+この検索モジュールは、指定した親に対するグループ化された承認のリストを返します。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">接続</td>
+      <td>Adobe Workfront Unified Review and Approvalsへの接続の作成手順については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront Unified Review and Approvalsへの接続</a>」を参照してください。</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("List Grouped Approvals by Parent"), without field detail. -->
+
 #### リストテンプレート
 
 このモジュールは、現在のユーザーが使用できるすべての承認テンプレートのリストを返します。 現在のユーザーは、このモジュールで使用される接続で資格情報が使用されるユーザーです。
@@ -984,6 +1144,23 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
        </tr>
   </tbody>
 </table>
+
+#### グループ化された承認の検索
+
+この検索モジュールは、指定した条件に一致するグループ化された承認を検索します。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">接続</td>
+      <td>Adobe Workfront Unified Review and Approvalsへの接続の作成手順については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront Unified Review and Approvalsへの接続</a>」を参照してください。</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Search Grouped Approvals"), without field detail. -->
 
 ### その他
 
