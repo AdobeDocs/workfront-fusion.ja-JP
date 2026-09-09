@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: null
-source-git-commit: 6726c582294758de0bbab19d6014ad80bb66e553
+source-git-commit: 2b1e8c3281334ac0846bd7cc6297f972dc1bad61
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 手順1：リクエストの詳細を取得する
 
-Slack リンクが指定されている場合は、URLから`channel_id`と`message_ts`を解析し、接続されているSlack MCP ツールに応じてスレッド（`slack_get_thread_replies`または`slack_read_thread`）を取得します。どちらか一方が失敗した場合は、両方を試してください）。 スレッドのパーマリンク/URLを維持する – ステップ 3で必要です。
+Slack リンクが指定されている場合は、URLから`channel_id`と`message_ts`を解析し、接続されているSlack MCP ツールに応じてスレッド（`slack_get_thread_replies`または`slack_read_thread`）を取得します。どちらか一方が失敗した場合は、両方を試してください）。 スレッドのパーマリンク/URLを維持する – ステップ 4で必要です。
 
 この環境のSlack接続は不安定です（期限切れのトークン、セッションの途中で切断）。 フェッチが失敗した場合：
 - 1回再試行してください。
@@ -33,9 +33,17 @@ Slack リンクが指定されている場合は、URLから`channel_id`と`mess
 
 リクエストが完全な仕様を持つConfluence Wiki ページにリンクしている場合は、ドキュメントを書く前にリクエストを取得します（`get_wiki_content`）。 技術的な詳細（正確なフィールド名、手順、UI ラベル）については、Slackの概要だけを参照しないでください。リンクされている場合は、Wiki仕様から取得します。
 
-代わりに、リクエストが権限のある仕様ではなく、Confluence以外のセカンダリソース（Experience League コミュニティ投稿、サポート記事、AI生成の概要など）にリンクされている場合は、Slack テキストに欠けている技術的な詳細を入力するために使用できますが、Slack リクエスト自体よりも信頼性が低いと扱うことができます。 Slackのテキスト（同じボタンやフィールドに異なる名前、Slackにはまったく記載されていない詳細）と競合したり追加したりする場合は、静かに1つを選択しないでください。Slack リクエストの文言をプライマリソースとして使用してドキュメントを書き込み、手順2のガイダンスに従ってHTML コメント（例：`<!-- BECKY CHECK ME: Slack calls this "Activate," but the linked community post calls it "Reactivate" - confirm against the live UI. -->`）で不一致をフラグ付けします。
+代わりに、リクエストが権限のある仕様ではなく、Confluence以外のセカンダリソース（Experience League コミュニティ投稿、サポート記事、AI生成の概要など）にリンクされている場合は、Slack テキストに欠けている技術的な詳細を入力するために使用できますが、Slack リクエスト自体よりも信頼性が低いと扱うことができます。 Slackのテキスト（同じボタンやフィールドに異なる名前、Slackにはまったく記載されていない詳細）と競合したり追加したりする場合は、静かに1つを選択しないでください。Slack リクエストの文言をプライマリソースとして使用してドキュメントを書き込み、手順3のガイダンスに従ってHTML コメント（例：`<!-- BECKY CHECK ME: Slack calls this "Activate," but the linked community post calls it "Reactivate" - confirm against the live UI. -->`）で不一致をフラグ付けします。
 
-## 手順2：ドキュメントの更新
+## 手順2：リクエスト用のブランチの作成
+
+ファイルにアクセスする前に、このリクエスト用に新しいGit ブランチを作成してチェックアウトします。 現在のデフォルトブランチ （`main`）から分岐します。チェックアウトされるブランチは分岐しません。
+
+**機能タイトル**&#x200B;から派生した分岐`becky-{short-kebab-case-description}`に名前を付けます。最初の単語は`becky`で、このリポジトリの既存の分岐規則（例：`becky-webhook-update`、`becky-storage-beta-sos`）と一致する必要があります。 タイトル全体の言葉ではなく、短い単語を使用します。
+
+作業用ツリーがクリーンでない場合（関係のない作業からの未着手の変更）、停止して、分岐せずにユーザーに伝えます。
+
+## 手順3：ドキュメントの更新
 
 このリポジトリ内の関連する既存の記事を検索します（関連するモジュール名、UI ラベル、または設定名のgrep - ファイルを推測しないでください）。 記事の既存の構造、見出しレベル、および家のスタイルに従って、変更を反映するように更新します。
 
@@ -46,7 +54,7 @@ Slack リンクが指定されている場合は、URLから`channel_id`と`mess
   - この種類の記事にもリンクしているコンテンツ内のサブインデックス/ランディングページ（新しいコネクタモジュールページの場合は`apps-and-modules-toc.md`など）。
     両方を明示的にチェックし、新しいエントリが同じリストに配置されていることを確認します。各ファイル内の最も近い兄弟の記事と同じネストレベルで、一方に追加すると他のファイルをカバーすると仮定しないでください。
 
-## 手順3:Workfront タスクの作成
+## 手順4:Workfront タスクの作成
 
 プロジェクト：**製品ドキュメント タスク – メッセージを必要とする開発問題**&#x200B;について。 変更される場合に備えて、ハードコーディングではなく`insights_find_id_by_name` （エンティティ `project`）でIDを解決します。最後に解決されたIDについては、以下の「既知の値」を参照してください。
 
@@ -81,10 +89,11 @@ For more information, see [{Article title}](/help/workfront-fusion/{path-to-arti
 
 作成呼び出しの前に、`read_workflow_docs`を`workfront://tools/create-any-object`で呼び出します。この呼び出しは、カスタムフィールドと列挙値（`DE:Preview Date Known`）を設定します。この値は、MCP サーバーのルールに従って必要です。
 
-## 手順4：ユーザーに確認する
+## 手順5：ユーザーに確認する
 
 わかりやすい報告：
 
+&#x200B;* 作成したブランチ。
 &#x200B;* 変更したドキュメントファイルと追加したドキュメント。
 &#x200B;* タスク名とURL。
 &#x200B;* プレビュー日フィールドを含め、設定した正確なフィールド値。
