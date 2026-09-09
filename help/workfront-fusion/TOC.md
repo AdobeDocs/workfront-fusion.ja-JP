@@ -3,9 +3,9 @@ user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
 nudge: true
-source-git-commit: b2d2634c72b044898b656852e57ef36a8b5f2fe9
+source-git-commit: 3df43d17c2e6ecd9625e67f4aa75eea8c8b4eecc
 workflow-type: tm+mt
-source-wordcount: '2655'
+source-wordcount: '2664'
 ht-degree: 49%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 49%
 * Fusion リリースアクティビティ {#fusion-release-activity}
   * [Adobe Workfront Fusion リリースアクティビティ](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
   * Fusion リリース - 2026 {#fusion-releases-2026}
+    * [Workfront Fusion リリースアクティビティ：2026年9月7日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-9-7.md)
     * [Workfront Fusion リリースアクティビティ：2026年8月31日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-31.md)
     * [Workfront Fusion リリースアクティビティ：2026年8月24日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-24.md)
     * [Workfront Fusion リリースアクティビティ：2026年8月17日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-17.md)
@@ -308,7 +309,7 @@ ht-degree: 49%
   * [チェーンへのモジュールの移動](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)
   * [実行中のシナリオでのデータフローの表示](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
   * [Webhook のキューの表示](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
-  * {hide-from-toc}[Workfront FusionのAI アシスタント &#x200B;](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
+  * {hide-from-toc}[Workfront FusionのAI アシスタント ](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
   * [シナリオスコアリングエキスパートの実行](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
   * [シナリオ要素の削除](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
   * [「シナリオ」エリアからシナリオを管理します](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
@@ -417,7 +418,7 @@ ht-degree: 49%
       * [Adobe User Management モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
       * [Adobe Workfront MCP モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-mcp-modules.md)
       * [Adobe Workfront モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
-      * [Adobe Workfront Planning モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
+      * [Adobe Workfront プランニングモジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
       * [Adobe Workfrontの統合レビューと承認のモジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)
       * [Workfront Boards モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
       * [Workfront Fusion モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-fusion-modules.md)
