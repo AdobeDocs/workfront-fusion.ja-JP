@@ -3,9 +3,9 @@ user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
 nudge: true
-source-git-commit: 3df43d17c2e6ecd9625e67f4aa75eea8c8b4eecc
+source-git-commit: cf0fb30b7cf399846a5eb7a859589d12d685f078
 workflow-type: tm+mt
-source-wordcount: '2664'
+source-wordcount: '2669'
 ht-degree: 49%
 
 ---
@@ -309,7 +309,7 @@ ht-degree: 49%
   * [チェーンへのモジュールの移動](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)
   * [実行中のシナリオでのデータフローの表示](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
   * [Webhook のキューの表示](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
-  * {hide-from-toc}[Workfront FusionのAI アシスタント &#x200B;](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
+  * {hide-from-toc}[Workfront FusionのAI アシスタント ](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
   * [シナリオスコアリングエキスパートの実行](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
   * [シナリオ要素の削除](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
   * [「シナリオ」エリアからシナリオを管理します](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
@@ -399,6 +399,7 @@ ht-degree: 49%
       * [Adobe Creative Cloud ライブラリモジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
       * [Adobe Experience Manager Assets モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
       * [Adobe Experience Manager Forms モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
+      * [Adobe Experience Manager MCP モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-mcp-modules.md)
       * [Adobe Expressモジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-express-modules.md)
       * [Adobe Fireflyの音声および動画モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-audio-video.md)
       * [Adobe Firefly モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
