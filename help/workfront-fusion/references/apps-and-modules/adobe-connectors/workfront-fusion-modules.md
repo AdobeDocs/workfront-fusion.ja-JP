@@ -3,7 +3,8 @@ title: Workfront Fusion モジュール
 description: Workfront Fusion コネクタを使用すると、レコード、フック、シナリオ、接続などのシナリオ内から独自のFusionの編成を管理できます。
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 7606f1b15aac0f2baef1b4ef16e3bcaa39dad27c
 workflow-type: tm+mt
 source-wordcount: 1430
