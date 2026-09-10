@@ -3,12 +3,11 @@ title: Workfront Fusion モジュール
 description: Workfront Fusion コネクタを使用すると、レコード、フック、シナリオ、接続などのシナリオ内から独自のFusionの編成を管理できます。
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 557ec6de4ccf0753005fed3e4772d2eb9317537d
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 7606f1b15aac0f2baef1b4ef16e3bcaa39dad27c
 workflow-type: tm+mt
-source-wordcount: 1374
-ht-degree: 25%
+source-wordcount: 1430
+ht-degree: 24%
 
 ---
 
@@ -276,6 +275,9 @@ Workfront Fusion モジュールを設定すると、Workfront Fusionに以下�
 
 ### 書き出し
 
+* [アクティビティログの書き出し](#export-activity-logs)
+* [シナリオの書き出し](#export-scenarios)
+
 #### アクティビティログの書き出し
 
 このモジュールは、アクティビティログを書き出します。
@@ -311,6 +313,25 @@ Workfront Fusion モジュールを設定すると、Workfront Fusionに以下�
   <tr> 
    <td role="rowheader">方向</td> 
    <td>結果を昇順と降順のどちらで注文するかを選択します。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### シナリオの書き出し
+
+このモジュールは、1つ以上のシナリオのFusion ブループリントを書き出します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Workfront FusionをWorkfront Fusionに接続する方法については、この記事の「<a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Workfront FusionをWorkfront Fusionに接続</a>」を参照してください。</p> </td> 
+  <tr> 
+   <td role="rowheader">シナリオ ID</td> 
+   <td>書き出すシナリオごとに、<b>項目を追加</b>をクリックし、シナリオ IDを入力します。</td> 
+  </tr> 
   </tr> 
  </tbody> 
 </table>
