@@ -7,7 +7,7 @@ exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
 TQID: https://experienceleague.adobe.com/L-0fyqwvahM--LXM15no9APxcFNkAsoYqHwAqO1bAno
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+source-git-commit: ffd91f83940f37b15229b79fa04b5a3596bd97fb
 workflow-type: tm+mt
 source-wordcount: 901
 ht-degree: 65%
@@ -95,12 +95,12 @@ Adobe Workfront Fusion公開証明書をweb サービスにアップロードす
 
 次のzip ファイルをダウンロードし、それを解凍して、データセンターにPEM ファイルを使用します。
 
-[Workfront Fusion 2026証明書のダウンロード](assets/2026-certs/fusion-prod-mtls-certificate-2026.zip)
+[Workfront Fusion 2026証明書のダウンロード](assets/fusion-prod-mtls-certificate-2026-updated.zip)
 
 | Datacenter | ダウンロードリンク | 日付は有効です |
 | --- | --- | --- |
 | US AWS Datacenter | `fusion-prod-us-mtls-certificate-2026.pem` | 2026年1月29日～2027年3月2日 |
-| US Azure クラスター | `fusion-prod-az-mtls-certificate.pem` | 2025年9月21日～2026年10月23日 |
+| US Azure クラスター | `fusion-prod-az-mtls-certificate-2026-sept.pem` | 2026年8月19日～2027年3月6日 |
 | EU AWS データセンター | `fusion-prod-eu-mtls-certificate-2026.pem` | 2026年1月29日～2027年3月2日 |
 | EUAzureクラスター | `fusion-prod-eu-az-mtls-certificate-2026.pem` | 2026年2月4日～2027年3月8日 |
 
