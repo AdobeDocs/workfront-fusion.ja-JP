@@ -3,7 +3,8 @@ title: Adobe Experience Manager MCP モジュール
 description: Adobe Experience Manager MCP モジュールを使用すると、Adobe Experience ManagerのMCP サーバーに平易な英語のプロンプトを送信し、AI モデルにリクエストを実行させることができます。
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 4c23409465b4be9fd10ff6938a750bc662ba2fe4
 workflow-type: tm+mt
 source-wordcount: 1020
@@ -17,7 +18,7 @@ Adobe Experience Manager MCP コネクタは、Adobe Experience Manager独自の
 
 このコネクタは、Adobe Experience Manager独自のMCP サーバー専用です。 他の無関係なMCP サーバーはサポートしていません。 コネクタの場合は、代わりに任意のMCP サーバーを指定できます。MCP エージェントコネクタを使用します。
 
-MCP エージェントコネクタについて詳しくは、[MCP エージェントモジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)を参照してください。
+MCP エージェントコネクタについて詳しくは、[MCP エージェントモジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)を参照してください。
 
 >[!NOTE]
 >
@@ -97,7 +98,7 @@ Workfront Fusionにリダイレクトされ、新しいコネクションがモ�
 
 それぞれの実行は独立しているため、モジュールには以前の実行のメモリがありません。 複数のランをまたいで、複数のターンによる会話体験を構築するには、前の質問と回答を保存します。 データストアを使用し、その履歴を次のプロンプトの先頭にテキストとして含め、その後に新しい質問を入力することができます。
 
-データストアについて詳しくは、[ データストア ](/help/workfront-fusion/create-scenarios/data-stores/data-store-overview.md)を参照してください。
+データストアについて詳しくは、[&#x200B; データストア &#x200B;](/help/workfront-fusion/create-scenarios/data-stores/data-store-overview.md)を参照してください。
 
 <table style="table-layout:auto"> 
  <col/>
