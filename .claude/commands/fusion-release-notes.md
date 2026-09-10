@@ -1,9 +1,9 @@
 ---
 name: fusion-release-notes
 description: 新しいWorkfront Fusion週次リリースノートを作成し、リリースアクティビティの概要ページと目次に接続します。 ユーザーが新しいFusion リリースノートまたは週次リリースページの作成、追加、ドラフトを作成する場合、またはリリースの新しいFusion機能のドキュメント作成を依頼する場合に使用します。 product-announcements/product-releasesのWorkfront（Quicksilver）リリースノートには使用しないでください。これにはrelease-notes-formatterを使用します。
-source-git-commit: fcdbfd246808c5cc7a81c4f01990a077ca189112
+source-git-commit: 6610b43b1f313e29654acd8cfcd339240a718f5d
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1090'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ This page describes all enhancements made in Adobe Workfront Fusion the week of 
 
 For a list of all recent changes, see [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/ja/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
+For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/en/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
 
 ## {Feature title}
 
@@ -98,7 +98,6 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
   
   {Regular description paragraph(s).}
   ```
-
 - すべての機能は、「詳細については、[...]」で終わる必要があります。 関連するヘルプ記事へのリンク。 リンクターゲットがリポジトリに存在することを確認します。
 
 ## 手順4：概要インデックスにページを追加する
@@ -113,7 +112,6 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
   ```markdown
   * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
-
 - これが新しい年の最初のリリースである場合は、前の年の見出しの上に新しい`## Fusion releases in {YYYY}`見出しを追加し、まだ展開されていない場合は&#x200B;*前*&#x200B;年のセクションを`+++ **Click to open**` / `+++`折りたたみ可能なブロックにラップします（現在の年のみが展開されます）。
 
 ## 手順5：目次にページを追加する
@@ -126,7 +124,6 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
   ```markdown
         * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
-
 - 現在の年の見出しがまだ存在しない場合は、前年の見出しの上に`* Fusion releases - {YYYY} {#fusion-releases-{YYYY}}`を追加します。
 - **新しいエントリに`{hide-from-toc}` プレフィックスを追加しないでください。これは、古いエントリが表示されているナビゲーションから外れた場合にのみ使用されます（以下の「既知の不整合」を参照）。**
 
@@ -145,10 +142,11 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
 - **yes**&#x200B;の場合は、次の情報を収集します。
   - **ソースパス** （先頭が`/en`である必要があります。スペースはありません）
   - **destination** — `/en`で始まる相対パス、または完全な`https` URL （スペースなし）
-- `redirects/redirects-prod.csv` **のみ**&#x200B;の下にある兄弟`Adobe-Enterprise-Docs/redirects` リポジトリに行を追加します。 `redirects-dev.csv`または`redirects-stage.csv`には絶対に追加しないでください。このスキルが触れる環境は製品のみです。
+- 行を兄弟`Adobe-Enterprise-Docs/redirects` リポジトリに追加し、`redirects/redirects-prod.csv` **に追加します。他のファイルは追加しません**。 そのリポジトリ内の`redirects-dev.csv`、`redirects-stage.csv`またはその他のファイルには絶対に追加しないでください。prodは、このスキルが触れる唯一の環境であり、ブランチには、そのファイルの変更のみを含める必要があります。
 - 行ルール（そのリポジトリのREADMEから）:
   - 重複する`source`はなく、`source`/`destination` ペアも重複しません。
   - リダイレクトはリダイレクトループを引き起こしてはなりません。
+- `redirects` リポジトリ内の`workfront-{month}-{day}-{year}-{topic}` （小文字、例：`workfront-sep-10-2026-aem-mcp-redirect`）という名前の新しいブランチで変更を行います。ここでは`main`に直接コミットしないでください。
 - **このスキルは、ユーザーが確認した後にのみCSV行を追加します。** `redirects` リポジトリでPRを引き上げることは、このスキルが行わない別のステップです。リダイレクトが公開される前に、PRを開いてマージする必要があることをユーザーに伝えます（1:1 リダイレクトのマージ後5分ほど）。
 
 ## ステップ 8：最終的なチェックリスト
