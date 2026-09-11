@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: null
-source-git-commit: 2b1e8c3281334ac0846bd7cc6297f972dc1bad61
+source-git-commit: ac9a22b254b591ccf55270df62a85d158bb03697
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -70,10 +70,13 @@ Slack リンクが指定されている場合は、URLから`channel_id`と`mess
 | `description` | **complete Slack message text** （リクエストテンプレートのすべてのフィールド、言い換えではありません）の後に、Slackの会話へのリンクが続きます |
 | `DE:Release notes` | 書式設定されたリリースノート。以下の形式を参照してください。 |
 | `DE:Preview Date Known` | `Yes` （デフォルト） |
-| `DE:Preview Date` | リクエストの&#x200B;**リリース予定日** （デフォルト） |
+| `DE:Preview Date` | 元のSlack メッセージに記載されている日付（リクエストの&#x200B;**リリース予定日**）（デフォルト） |
+| `taskConstraint` + `constraintDate` | `taskConstraint`を`MFO`に設定し、`constraintDate`で終了する必要があります。=元のSlack メッセージに引用された日付（リクエストの&#x200B;**リリース予定日**）を指定します。これにより、タスクの予定完了日も一致します。 |
 | 製品/地域 | `Fusion`を選択します（製品ドキュメント フォームの列挙フィールド。不明な場合は`insights_search_fields`で正確なフィールド名を確認してください） |
 
-プレビューの日付フィールドをこの同じ作成呼び出しの一部として設定します。後で表示したり、質問を待ったりしないでください。 ユーザーが後で別の日付を指定したり、日付がまだ知られていないと言った場合は、それに応じて更新しますが、毎回デフォルトで入力します。
+プレビュー日フィールドと予定完了日を、この同じ作成呼び出しの一部として設定します。後で使用したり、質問されるのを待ったりしないでください。 ユーザーが後で別の日付を指定したり、日付がまだ知られていないと言った場合は、それに応じて更新しますが、毎回デフォルトで入力します。
+
+新しいタスクは、デフォルトで、0時間の「可能な限り早く」制約に設定され、その下の`plannedStartDate`/`plannedCompletionDate`はスケジューラーによって派生され、どちらか一方への直接書き込みはサイレントドロップされます（エラーなし、日付は変更されません）。 `taskConstraint: "MFO"`を`constraintDate`に設定することは、Slack メッセージで引用された日付に予定完了日を固定する信頼性の高い方法です。 この書き込みの前に`workfront://knowledge/task/update`を読み取ります。これは、MCP サーバーのルールに従ったスケジュール/日付フィールドです。
 
 `DE:Release notes` フィールドのリリースノート形式。 常に独自の行で`***FUSION***`から始まり、空白行、タイトルを入力します。これにより、メモが一目でFusionに属していることが示されます（core Workfrontとは異なります）。
 

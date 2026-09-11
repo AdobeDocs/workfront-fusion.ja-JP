@@ -1,5 +1,5 @@
 ---
-title: Adobe Workfront Planning モジュール
+title: Adobe Workfront プランニングモジュール
 description: ' [!DNL Adobe Workfront Planning]  モジュールを使用すると、Workfront Planning アカウント内のイベントに基づいてAdobe Workfront Fusion シナリオを開始し、契約書やその他のレコードを作成、読み取りまたは更新し、設定した条件を使用してレコードを検索し、ドキュメントをアップロードできます。 [!DNL Adobe] '
 author: Becky
 feature: Workfront Fusion
@@ -11,15 +11,15 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 9521866c29e4e08eaf815080162735f0f70299a5
+source-git-commit: 77d29cea134abe6e048fd744151acffe256f5992
 workflow-type: tm+mt
-source-wordcount: 6739
+source-wordcount: 6777
 ht-degree: 41%
 
 ---
 
 
-# Adobe Workfront Planning モジュール
+# Adobe Workfront プランニングモジュール
 
 [!DNL Adobe Workfront Planning] モジュールを使用すると、Workfront Planningでイベントが発生したときにシナリオをトリガーできます。 レコードを作成、読み取り、更新、削除したり、[!DNL Adobe Workfront Planning] アカウントへのカスタム API の呼び出しを実行したりできます。
 
@@ -1677,6 +1677,12 @@ Workfront計画モジュールを設定すると、Workfront Fusionに次のフ�
       <td>
        <p>このWebhookに対してauthToken ベースのセキュリティを有効にするかどうかを選択します。</p><p>
        <b> メモ </b>: 2026年8月23日現在、Fusionでは、既存のモジュールを含むすべてのWorkfront Planning/Watch Event モジュールに対して、デフォルトでauthToken ベースのセキュリティが有効になっています。 特定のWebhookが壊れた場合、または互換性の理由でこれを無効にする必要がある場合は、「セキュアフックを有効にする」オプションをオフにできます。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL カスタム トークン &#x200B;]</td>
+      <td>
+       <p>（オプション） [!UICONTROL Enable secured hook]が[!UICONTROL Yes]に設定されている場合、独自のトークン値を入力してWebhookを保護できます。 このフィールドを空白のままにすると、Fusionが自動的にトークンを生成します。</p>
       </td>
     </tr>
   </tbody>

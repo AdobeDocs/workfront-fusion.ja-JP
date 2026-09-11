@@ -1,9 +1,9 @@
 ---
 name: fusion-release-notes
 description: 新しいWorkfront Fusion週次リリースノートを作成し、リリースアクティビティの概要ページと目次に接続します。 ユーザーが新しいFusion リリースノートまたは週次リリースページの作成、追加、ドラフトを作成する場合、またはリリースの新しいFusion機能のドキュメント作成を依頼する場合に使用します。 product-announcements/product-releasesのWorkfront（Quicksilver）リリースノートには使用しないでください。これにはrelease-notes-formatterを使用します。
-source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
+source-git-commit: 6610b43b1f313e29654acd8cfcd339240a718f5d
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1090'
 ht-degree: 0%
 
 ---
@@ -145,10 +145,11 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
 - **yes**&#x200B;の場合は、次の情報を収集します。
   - **ソースパス** （先頭が`/en`である必要があります。スペースはありません）
   - **destination** — `/en`で始まる相対パス、または完全な`https` URL （スペースなし）
-- 行を兄弟`Adobe-Enterprise-Docs/redirects` リポジトリ（`redirects/`の下）に追加し、環境ごとに1つのファイル（`redirects-dev.csv`、`redirects-stage.csv`、`redirects-prod.csv`）を格納します。
+- 行を兄弟`Adobe-Enterprise-Docs/redirects` リポジトリに追加し、`redirects/redirects-prod.csv` **に追加します。他のファイルは追加しません**。 そのリポジトリ内の`redirects-dev.csv`、`redirects-stage.csv`またはその他のファイルには絶対に追加しないでください。prodは、このスキルが触れる唯一の環境であり、ブランチには、そのファイルの変更のみを含める必要があります。
 - 行ルール（そのリポジトリのREADMEから）:
   - 重複する`source`はなく、`source`/`destination` ペアも重複しません。
   - リダイレクトはリダイレクトループを引き起こしてはなりません。
+- `redirects` リポジトリ内の`workfront-{month}-{day}-{year}-{topic}` （小文字、例：`workfront-sep-10-2026-aem-mcp-redirect`）という名前の新しいブランチで変更を行います。ここでは`main`に直接コミットしないでください。
 - **このスキルは、ユーザーが確認した後にのみCSV行を追加します。** `redirects` リポジトリでPRを引き上げることは、このスキルが行わない別のステップです。リダイレクトが公開される前に、PRを開いてマージする必要があることをユーザーに伝えます（1:1 リダイレクトのマージ後5分ほど）。
 
 ## ステップ 8：最終的なチェックリスト
