@@ -21,7 +21,7 @@ ht-degree: 17%
 
 Adobe Workfrontの統合レビューと承認のモジュールを使用すると、承認の詳細の取得、アセットに関する意思決定、承認参加者の追加または削除、承認ステージの追加または更新、ステージのロックまたはロック解除、カスタム API呼び出しの実行を行うことができます。
 
-Workfrontの統合レビューと承認について詳しくは、Workfront ドキュメントの[統合レビューと承認の概要](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview)を参照してください。
+Workfrontの統合レビューと承認について詳しくは、Workfront ドキュメントの[統合レビューと承認の概要](https://experienceleague.adobe.com/ja/docs/workfront/using/review-and-approve-work/document-approvals-overview)を参照してください。
 
 ## アクセス要件
 
