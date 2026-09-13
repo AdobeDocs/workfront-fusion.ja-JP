@@ -4,15 +4,12 @@ description: Adobe Workfrontのコンテンツと承認モジュールを使用�
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: edf962333554869d75f0956dfceccce04dd36ec6
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: bb6db3153c3c85ef1df1a0d49d127c3e712dbc3c
 workflow-type: tm+mt
-source-wordcount: 3743
+source-wordcount: 3631
 ht-degree: 17%
 
 ---
@@ -21,7 +18,7 @@ ht-degree: 17%
 
 Adobe Workfrontの統合レビューと承認のモジュールを使用すると、承認の詳細の取得、アセットに関する意思決定、承認参加者の追加または削除、承認ステージの追加または更新、ステージのロックまたはロック解除、カスタム API呼び出しの実行を行うことができます。
 
-Workfrontの統合レビューと承認について詳しくは、Workfront ドキュメントの[統合レビューと承認の概要](https://experienceleague.adobe.com/ja/docs/workfront/using/review-and-approve-work/document-approvals-overview)を参照してください。
+Workfrontの統合レビューと承認について詳しくは、Workfront ドキュメントの[統合レビューと承認の概要](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview)を参照してください。
 
 ## アクセス要件
 
@@ -135,7 +132,6 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
 * [参加者の追加または更新](#add-or-update-participants)
 * [テンプレートの一括削除](#bulk-delete-templates)
 * [テンプレートの作成](#create-a-template)
-* [承認の作成](#create-an-approval)
 * [ステージを作成](#create-stages)
 * [ステージでの決定の削除](#delete-a-decision-on-a-stage)
 * [ステージの削除](#delete-a-stage)
@@ -237,35 +233,6 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
     <tr>
       <td role="rowheader"><p>共有対象</p></td>
       <td>テンプレートを共有する各ユーザーについて、<b>項目を追加</b>をクリックし、ユーザーIDと必要なアクセスレベルをクリックします。</td> 
-      </tr>
-  </tbody>
-</table>
-
-#### 承認の作成
-
-このアクションモジュールは、ステージデータやテンプレートを含むAdobe クラウドストレージ上のドキュメントの承認を作成します。
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">接続</td>
-      <td>Adobe Workfront Unified Review and Approvalsへの接続の作成手順については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront Unified Review and Approvalsへの接続</a>」を参照してください。</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>ドキュメント ID</p></td>
-      <td>承認を作成するアセットのIDを入力またはマッピングします。</td> 
-      </tr>
-     <tr>
-      <td role="rowheader">
-        <p>ステージ</p>
-      </td>
-      <td>追加する各ステージについて、<b>項目を追加</b>をクリックし、ステージデータを入力します。<p>詳細については、この記事の「<a href="#stages-fields" class="MCXref xref" > ステージフィールド </a>」を参照してください。 </p> </td> 
-      </tr>
-    <tr>
-      <td role="rowheader"><p>テンプレート ID</p></td>
-      <td>この承認に使用するテンプレートのIDを入力するか、マッピングします。</td> 
       </tr>
   </tbody>
 </table>
