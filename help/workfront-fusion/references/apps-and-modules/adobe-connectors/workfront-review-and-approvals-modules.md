@@ -6,22 +6,23 @@ feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: bb6db3153c3c85ef1df1a0d49d127c3e712dbc3c
+    internal-label: Customer experience
+source-git-commit: 56b4c0736c60131ed83635a55cd4a86a35759586
 workflow-type: tm+mt
-source-wordcount: 3631
-ht-degree: 17%
-
+source-wordcount: '5202'
+ht-degree: 12%
 ---
-
 # Adobe Workfrontの統合レビューと承認のモジュール
 
 Adobe Workfrontの統合レビューと承認のモジュールを使用すると、承認の詳細の取得、アセットに関する意思決定、承認参加者の追加または削除、承認ステージの追加または更新、ステージのロックまたはロック解除、カスタム API呼び出しの実行を行うことができます。
 
-Workfrontの統合レビューと承認について詳しくは、Workfront ドキュメントの[統合レビューと承認の概要](https://experienceleague.adobe.com/ja/docs/workfront/using/review-and-approve-work/document-approvals-overview)を参照してください。
+Workfrontの統合レビューと承認について詳しくは、Workfront ドキュメントの[統合レビューと承認の概要](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview)を参照してください。
 
 ## アクセス要件
 
@@ -135,16 +136,14 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
 * [参加者の追加または更新](#add-or-update-participants)
 * [テンプレートの一括削除](#bulk-delete-templates)
 * [テンプレートの作成](#create-a-template)
+* [グループ化された承認の作成](#create-grouped-approval)
 * [ステージを作成](#create-stages)
-* [ステージでの決定の削除](#delete-a-decision-on-a-stage)
-* [ステージの削除](#delete-a-stage)
-* [テンプレートを削除](#delete-a-template)
-* [承認の削除](#delete-an-approval)
-* [決定の削除](#delete-decisions)
-* [参加者を削除](#delete-participants)
 * [ステージをロック](#lock-a-stage)
 * [決定を下す](#make-a-decision)
 * [ステージで決定する](#make-a-decision-on-a-stage)
+* [グループ化された承認でのアセットの管理](#manage-assets-on-a-grouped-approval)
+* [ステージ参加者の管理](#manage-stage-participants)
+* [グループ化された承認でのステージの管理](#manage-stages-on-a-grouped-approval)
 * [ステージの参加者にリマインドする](#remind-a-participant-on-a-stage)
 * [参加者に通知](#remind-participant)
 * [未決定の参加者に通知](#remind-undecided-participants)
@@ -153,6 +152,7 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
 * [ステージの更新](#update-a-stage)
 * [テンプレートの更新](#update-a-template)
 * [すべてのステージを更新](#update-all-stages)
+* [グループ化された承認の更新（フルステート）](#update-grouped-approval-full-state)
 
 
 #### 参加者の追加または更新
@@ -240,26 +240,66 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
   </tbody>
 </table>
 
-<!--
+#### グループ化された承認の作成
 
-#### Create Grouped Approval
-
-This action module creates a grouped approval.
+このアクションモジュールは、グループ化された承認を作成します。1つまたは複数の承認パスを通じて一緒に移動する一連のドキュメントのバージョンを作成し、各ステージの順序付きシーケンスと独自の参加者を作成します。
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">接続</td>
+      <td>Adobe Workfront Unified Review and Approvalsへの接続の作成手順については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront Unified Review and Approvalsへの接続</a>」を参照してください。</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>名前</p></td>
+      <td>グループ化された承認の表示名を入力またはマッピングします。 名前は1 ～ 255文字にする必要があります。</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>アセット</p></td>
+      <td>グループに含める各ドキュメントバージョンについて、<b>項目を追加</b>をクリックし、ドキュメントバージョン （DOCV） IDを入力します。</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>パス</p></td>
+      <td>追加する各承認パスについて、<b>項目を追加</b>をクリックし、パス ID、名前、およびステージを入力します。 各パスには、順序付きの一連のステージが含まれます。 各ステージの「ステージ」フィールドで、「<b>項目を追加</b>」をクリックし、次のデータを入力します。
+      <ul>
+      <li><b>ステージ ID</b><p>すべてのパスで一意な、ステージのクライアント割り当てIDを入力します。 英数字で、アンダースコアまたはハイフンを使用でき、64文字以下である必要があります。</p></li>
+      <li><b>ステージ名</b><p>ステージの名前を入力またはマッピングします。</p></li>
+      <li><b>親ステージ ID</b><p>ステージに追加する親ステージごとに、<b>項目を追加</b>をクリックし、親IDを入力します。</p></li>
+      <li><b>参加者</b><p>ステージに追加する各参加者について、<b>項目を追加</b>をクリックし、参加者の詳細を入力します。
+      <ul>
+      <li><b>参加者ID</b><p>参加者のIDを入力またはマッピングします。</p></li>
+      <li><b>参加者タイプ</b><p>参加者がユーザーかチームかを選択します。</p></li>
+      <li><b>参加者の役割</b><p>参加者が承認者かレビュアーかを選択します。</p></li>
+      </ul>
+      </p></li>
+      <li><b>期限日</b><p>期限が特定の日付の場合は、日付を入力またはマッピングします。</p></li>
+      <li><b>締め切りまでの日数</b><p>期限が特定の営業日後の場合は、日数を入力またはマッピングします。</p></li>
+      <li><b>期限時間：時間</b><p>期限（0 ～ 23）の時間帯を入力またはマッピングします。 締め切り時間：分と組み合わせます。</p></li>
+      <li><b>締切時間：分</b><p>期限（0 ～ 59）の時間を入力またはマッピングします。 締め切り時間：時間と組み合わせる。</p></li>
+      <li><b>カスタムメッセージ</b><p>ステージのカスタムメッセージを入力またはマッピングします。</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>親オブジェクト ID</p></td>
+      <td>グループ化された承認に関連付けるWorkfront親オブジェクト（プロジェクトやタスクなど）のIDを入力またはマッピングします。 このフィールドを使用する場合は、オブジェクトコードも入力する必要があります。</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>オブジェクトコード</p></td>
+      <td>親オブジェクトのWorkfront オブジェクト型コードを入力またはマッピングします（例：<code>PROJ</code>または<code>TASK</code>）。 親オブジェクト IDを入力する場合は必須です。</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>テンプレート ID</p></td>
+      <td>（オプション）テンプレート IDを入力またはマッピングして、グループ化された承認に記録し、トレーサビリティを確保します。</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>制限</p></td>
+      <td>各シナリオ実行サイクル中にモジュールが使用する結果の最大数を入力またはマッピングします。</td> 
+      </tr>
   </tbody>
 </table>
-
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Create Grouped Approval"), without field detail.
-
--->
 
 #### ステージを作成
 
@@ -291,115 +331,11 @@ BECKY CHECK ME: confirm this module's field-level UI before publishing - the Sla
   </tbody>
 </table>
 
-#### ステージでの決定の削除
+<!-- BECKY CHECK ME: The following block of Delete-prefixed Actions modules (Delete a decision on a stage, Delete a stage, Delete a template, Delete an approval, Delete decisions, Delete grouped approval, Delete participants) is not confirmed to be current in the live connector as of this update - status uncertain. Commented out for now; restore (and remove this comment) once confirmed, or delete for good if confirmed removed.
 
-このモジュールは、指定されたステージから現在のユーザーの決定を削除します。 現在のユーザーは、このモジュールで使用される接続で資格情報が使用されるユーザーです。
+#### Delete a decision on a stage
 
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">接続</td>
-      <td>Adobe Workfront Unified Review and Approvalsへの接続の作成手順については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront Unified Review and Approvalsへの接続</a>」を参照してください。</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>ドキュメント ID</p></td>
-      <td>決定を削除するドキュメントのIDを入力またはマッピングします。</td> 
-      </tr>
-     <tr>
-      <td role="rowheader"><p>ステージ ID</p></td>
-      <td>削除するステージのIDを入力またはマッピングします。</td> 
-      </tr>
-   </tbody>
-</table>
-
-
-#### ステージの削除
-
-このアクションモジュールは、指定されたステージを承認から削除します。
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">接続</td>
-      <td>Adobe Workfront Unified Review and Approvalsへの接続の作成手順については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront Unified Review and Approvalsへの接続</a>」を参照してください。</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>ドキュメント ID</p></td>
-      <td>ステージを削除するドキュメントのIDを入力またはマッピングします。</td> 
-      </tr>
-     <tr>
-      <td role="rowheader"><p>ステージ ID</p></td>
-      <td>削除するステージのIDを入力またはマッピングします。</td> 
-      </tr>
-  </tbody>
-</table>
-
-#### テンプレートを削除
-
-このモジュールは、指定した承認テンプレートを削除します。
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">接続</td>
-      <td>Adobe Workfront Unified Review and Approvalsへの接続の作成手順については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront Unified Review and Approvalsへの接続</a>」を参照してください。</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>テンプレート ID</p></td>
-      <td>削除するテンプレートのIDを入力するか、マッピングします。</td> 
-      </tr>
-  </tbody>
-</table>
-
-#### 承認の削除
-
-このアクションモジュールは、指定されたドキュメントの承認を削除します。
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">接続</td>
-      <td>Adobe Workfront Unified Review and Approvalsへの接続の作成手順については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront Unified Review and Approvalsへの接続</a>」を参照してください。</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>ドキュメント ID</p></td>
-      <td>承認を削除するドキュメントのIDを入力またはマッピングします。</td> 
-      </tr>
-  </tbody>
-</table>
-
-#### 決定の削除
-
-このモジュールは、指定されたステージから現在のユーザーの決定を削除します。 現在のユーザーは、このモジュールで使用される接続で資格情報が使用されるユーザーです。
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">接続</td>
-      <td>Adobe Workfront Unified Review and Approvalsへの接続の作成手順については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront Unified Review and Approvalsへの接続</a>」を参照してください。</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>ドキュメント ID</p></td>
-      <td>決定を削除するドキュメントのIDを入力またはマッピングします。</td> 
-      </tr>
-  </tbody>
-</table>
-
-<!--
-
-#### Delete Grouped Approval
-
-This action module deletes the specified grouped approval.
+This module removes the current user's decision from the specified stage. The current user is the user whose credentials are used in the connection used in this module.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -409,43 +345,152 @@ This action module deletes the specified grouped approval.
       <td role="rowheader">Connection</td>
       <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
-  </tbody>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the document that you want to delete a decision from.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Stage ID</p></td>
+      <td>Enter or map the ID of the stage that you want to delete.</td> 
+      </tr>
+   </tbody>
 </table>
 
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Delete Grouped Approval"), without field detail.
 
--->
+#### Delete a stage
 
-#### 参加者を削除
-
-このアクションモジュールは、承認から参加者を削除します。
+This action module deletes the specified stage from the approval.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">接続</td>
-      <td>Adobe Workfront Unified Review and Approvalsへの接続の作成手順については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront Unified Review and Approvalsへの接続</a>」を参照してください。</td>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
      <tr>
-      <td role="rowheader"><p>ドキュメント ID</p></td>
-      <td>参加者を削除するアセットのIDを入力またはマッピングします。</td> 
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the document that you want to delete a stage from.</td> 
       </tr>
      <tr>
-      <td role="rowheader">
-        <p>参加者タイプ</p>
-      </td>
-      <td>参加者がユーザーかチームかを選択します。</td> 
-      </tr>
-     <tr>
-      <td role="rowheader">
-        <p>参加者ID</p>
-      </td>
-      <td>参加者のIDを入力またはマッピングします。</td> 
+      <td role="rowheader"><p>Stage ID</p></td>
+      <td>Enter or map the ID of the stage that you want to delete.</td> 
       </tr>
   </tbody>
 </table>
+
+#### Delete a template
+
+This module deletes the specified approval template.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Template ID</p></td>
+      <td>Enter or map the ID of the template that you want to delete.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Delete an approval
+
+This action module deletes the approval for the given document.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the document that you want to delete an approval from.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Delete decisions
+
+This module removes the current user's decision from the specified stage. The current user is the user whose credentials are used in the connection used in this module.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the document that you want to delete a decision from.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Delete grouped approval
+
+This action module deletes a grouped approval, cascading to its child asset approvals and paths.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Group GUID</p></td>
+      <td>Enter or map the GUID of the grouped approval that you want to delete.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limit</p></td>
+      <td>Enter or map the maximum number of results you want the module to work with during each scenario execution cycle.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Delete participants
+
+This action module deletes participants from an approval.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the asset that you want to delete participants from.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Participant type</p>
+      </td>
+      <td>Select whether the participants is a user or a team.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Participant ID</p>
+      </td>
+      <td>Enter or map the ID of the participant.</td> 
+      </tr>
+  </tbody>
+</table>
+-->
 
 #### ステージをロック
 
@@ -528,68 +573,143 @@ BECKY CHECK ME: confirm this module's field-level UI before publishing - the Sla
   </tbody>
 </table>
 
-<!--
+#### グループ化された承認でのアセットの管理
 
-#### Manage Assets on a Grouped Approval
-
-This action module manages which assets are included in a grouped approval.
+このアクションモジュールは、グループ化された承認時にドキュメントバージョンを追加または削除します。
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">接続</td>
+      <td>Adobe Workfront Unified Review and Approvalsへの接続の作成手順については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront Unified Review and Approvalsへの接続</a>」を参照してください。</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>グループ化された承認ID</p></td>
+      <td>アセットを管理するグループ化された承認のGUIDを入力またはマッピングします。</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Assetsを追加</p></td>
+      <td>グループに追加する各ドキュメントバージョンについて、<b>項目を追加</b>をクリックし、ドキュメントバージョン（DOCV） IDを入力します。</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Assetsを削除</p></td>
+      <td>グループから削除する各ドキュメントバージョンについて、<b>項目を追加</b>をクリックし、ドキュメントバージョン（DOCV） IDを入力します。</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>制限</p></td>
+      <td>各シナリオ実行サイクル中にモジュールが使用する結果の最大数を入力またはマッピングします。</td> 
+      </tr>
   </tbody>
 </table>
 
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Assets on a Grouped Approval"), without field detail.
+#### ステージ参加者の管理
 
--->
-
-<!--
-
-#### Manage Stage Participants
-
-This action module manages participants on a stage.
+このアクションモジュールは、グループ化された承認の特定のステージにおける参加者の追加、更新、および/または削除を行います。
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">接続</td>
+      <td>Adobe Workfront Unified Review and Approvalsへの接続の作成手順については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront Unified Review and Approvalsへの接続</a>」を参照してください。</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>グループ化された承認ID</p></td>
+      <td>グループ化された承認のGUIDを入力またはマッピングします。</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>ステージ ID</p></td>
+      <td>参加者を管理するステージのIDを入力またはマッピングします。</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>参加者を追加</p></td>
+      <td>ステージに追加する各参加者について、<b>項目を追加</b>をクリックし、次の詳細を入力します。
+      <ul>
+      <li><b>参加者タイプ</b><p>参加者がユーザーかチームかを選択します。</p></li>
+      <li><b>参加者</b><p>参加者のIDを入力またはマッピングします。</p></li>
+      <li><b>役割</b><p>参加者が承認者かレビュアーかを選択します。</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>参加者を更新</p></td>
+      <td>ステージで更新する各参加者について、<b>項目を追加</b>をクリックし、次の詳細を入力します。
+      <ul>
+      <li><b>参加者タイプ</b><p>参加者がユーザーかチームかを選択します。</p></li>
+      <li><b>参加者</b><p>参加者のIDを入力またはマッピングします。</p></li>
+      <li><b>役割</b><p>参加者が承認者かレビュアーかを選択します。</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>参加者を削除</p></td>
+      <td>ステージから削除する各参加者について、<b>項目を追加</b>をクリックし、次の詳細を入力します。
+      <ul>
+      <li><b>参加者タイプ</b><p>参加者がユーザーかチームかを選択します。</p></li>
+      <li><b>参加者</b><p>参加者のIDを入力またはマッピングします。</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>制限</p></td>
+      <td>各シナリオ実行サイクル中にモジュールが使用する結果の最大数を入力またはマッピングします。</td> 
+      </tr>
   </tbody>
 </table>
 
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Stage Participants"), without field detail.
+#### グループ化された承認でのステージの管理
 
--->
-
-<!--
-
-#### Manage Stages on a Grouped Approval
-
-This action module manages the stages on a grouped approval.
+このアクションモジュールは、グループ化された承認のステージを追加、更新、削除します。
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">接続</td>
+      <td>Adobe Workfront Unified Review and Approvalsへの接続の作成手順については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront Unified Review and Approvalsへの接続</a>」を参照してください。</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>グループ化された承認ID</p></td>
+      <td>グループ化された承認のGUIDを入力またはマッピングします。</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>ステージを追加</p></td>
+      <td>追加する各ステージについて、<b>項目を追加</b>をクリックし、次の詳細を入力します。
+      <ul>
+      <li><b>ステージ ID</b><p>ステージの識別子を入力またはマッピングします。</p></li>
+      <li><b>ステージ名</b><p>ステージの名前を入力またはマッピングします。</p></li>
+      <li><b>期限日</b><p>期限が特定の日付の場合は、日付を入力またはマッピングします。</p></li>
+      <li><b>締め切りまでの日数</b><p>期限が特定の営業日後の場合は、日数を入力またはマッピングします。</p></li>
+      <li><b>カスタムメッセージ</b><p>ステージのカスタムメッセージを入力またはマッピングします。</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>ステージを更新</p></td>
+      <td>更新する各ステージについて、<b>項目を追加</b>をクリックし、次の詳細を入力します。
+      <ul>
+      <li><b>ステージ ID</b><p>更新するステージのIDを入力またはマッピングします。</p></li>
+      <li><b>ステージ名</b><p>ステージの名前を入力またはマッピングします。</p></li>
+      <li><b>期限日</b><p>期限が特定の日付の場合は、日付を入力またはマッピングします。</p></li>
+      <li><b>締め切りまでの日数</b><p>期限が特定の営業日後の場合は、日数を入力またはマッピングします。</p></li>
+      <li><b>カスタムメッセージ</b><p>ステージのカスタムメッセージを入力またはマッピングします。</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>ステージの削除</p></td>
+      <td>削除する各ステージについて、<b>項目を追加</b>をクリックし、ステージ IDを入力します。</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>制限</p></td>
+      <td>各シナリオ実行サイクル中にモジュールが使用する結果の最大数を入力またはマッピングします。</td> 
+      </tr>
   </tbody>
 </table>
-
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Stages on a Grouped Approval"), without field detail.
-
--->
 
 #### ステージの参加者にリマインドする
 
@@ -830,37 +950,73 @@ BECKY CHECK ME: confirm this module's field-level UI before publishing - the Sla
   </tbody>
 </table>
 
-<!--
+#### グループ化された承認の更新（フルステート）
 
-#### Update Grouped Approval (Full State)
-
-This action module replaces the full state of the specified grouped approval.
+このアクションモジュールは、グループ化された承認にフルステート更新を適用します。
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">接続</td>
+      <td>Adobe Workfront Unified Review and Approvalsへの接続の作成手順については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront Unified Review and Approvalsへの接続</a>」を参照してください。</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>グループ化された承認ID</p></td>
+      <td>更新するグループ化された承認のGUIDを入力またはマッピングします。 例：<code>9f8b60820000462ecf66c409d1248fa9</code></td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>パス</p></td>
+      <td>グループ化された承認を持つ各承認パスについて、<b>項目を追加</b>をクリックし、パス ID、名前、およびステージを入力します。 Adobe Workfront Fusionでは、送信した内容に合わせて、パスの追加、更新、削除を行い、現在の状態と照合します。 各パスには、順序付きの一連のステージが含まれます。 各ステージの「ステージ」フィールドで、「<b>項目を追加</b>」をクリックし、次のデータを入力します。
+      <ul>
+      <li><b>ステージ ID</b><p>すべてのパスで一意な、ステージのクライアント割り当てIDを入力します。 英数字で、アンダースコアまたはハイフンを使用でき、64文字以下である必要があります。</p></li>
+      <li><b>ステージ名</b><p>ステージの名前を入力またはマッピングします。</p></li>
+      <li><b>親ステージ ID</b><p>ステージに追加する親ステージごとに、<b>項目を追加</b>をクリックし、親IDを入力します。</p></li>
+      <li><b>参加者</b><p>ステージに追加する各参加者について、<b>項目を追加</b>をクリックし、参加者の詳細を入力します。
+      <ul>
+      <li><b>参加者ID</b><p>参加者のIDを入力またはマッピングします。</p></li>
+      <li><b>参加者タイプ</b><p>参加者がユーザーかチームかを選択します。</p></li>
+      <li><b>参加者の役割</b><p>参加者が承認者かレビュアーかを選択します。</p></li>
+      </ul>
+      </p></li>
+      <li><b>期限日</b><p>期限が特定の日付の場合は、日付を入力またはマッピングします。</p></li>
+      <li><b>締め切りまでの日数</b><p>期限が特定の営業日後の場合は、日数を入力またはマッピングします。</p></li>
+      <li><b>期限時間：時間</b><p>期限（0 ～ 23）の時間帯を入力またはマッピングします。 締め切り時間：分と組み合わせます。</p></li>
+      <li><b>締切時間：分</b><p>期限（0 ～ 59）の時間を入力またはマッピングします。 締め切り時間：時間と組み合わせる。</p></li>
+      <li><b>カスタムメッセージ</b><p>ステージのカスタムメッセージを入力またはマッピングします。</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>アセット</p></td>
+      <td>（オプション）グループに含める各ドキュメントバージョンについて、<b>項目を追加</b>をクリックし、ドキュメントバージョン（DOCV） IDを入力します。 このフィールドを省略すると、現在のアセットは変更されません。</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Idempotency Key</p></td>
+      <td>（オプション）再試行されたリクエストを安全にする、クライアントが提供したキー（最大128文字）を入力またはマッピングします。 同じキーを再度送信した場合、モジュールは2回目の更新を適用しません。</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>制限</p></td>
+      <td>各シナリオ実行サイクル中にモジュールが使用する結果の最大数を入力またはマッピングします。</td> 
+      </tr>
   </tbody>
 </table>
-
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Update Grouped Approval (Full State)"), without field detail.
-
--->
 
 ### 検索
 
 * [テンプレートを入手](#get-a-template)
 * [承認の詳細を取得](#get-approval-details)
+* [グループ化された承認での承認の取得](#get-approvals-in-a-grouped-approval)
+* [グループ化された承認の詳細を取得](#get-grouped-approval-details)
 * [複数の承認を取得](#get-multiple-approvals)
 * [提案された承認を取得](#get-suggested-approvals)
 * [推奨される参加者を取得](#get-suggested-participants)
 * [ボットのリストアップ](#list-bots)
+* [グループ化された承認を親別に一覧表示](#list-grouped-approvals-by-parent)
 * [テンプレートをリスト表示](#list-templates)
-* [AI ブランドレビュアーを検索](#search-ai-brand-reviews)
+* [AI ブランドのレビューを検索](#search-ai-brand-reviews)
+* [グループ化された承認の検索](#search-grouped-approvals)
 
 
 #### テンプレートを入手
@@ -913,47 +1069,55 @@ BECKY CHECK ME: confirm this module's field-level UI before publishing - the Sla
   </tbody>
 </table>
 
-<!--
+#### グループ化された承認での承認の取得
 
-#### Get Approvals in a Grouped Approval
-
-This search module returns the individual approvals contained in a grouped approval.
+この検索モジュールは、グループ化された承認を構成する個々のアセット承認を返します。
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">接続</td>
+      <td>Adobe Workfront Unified Review and Approvalsへの接続の作成手順については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront Unified Review and Approvalsへの接続</a>」を参照してください。</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>グループ GUID</p></td>
+      <td>承認を取得するグループ化された承認のGUIDを入力またはマッピングします。</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>ドキュメントのバージョンデータ</p></td>
+      <td>Redrock documentVersion レコードを各ドキュメントバージョン （DOCV）の承認に添付するかどうかを選択します。 </td>
+      </tr>
+     <tr>
+      <td role="rowheader"><p>制限</p></td>
+      <td>各シナリオ実行サイクル中にモジュールが使用する結果の最大数を入力またはマッピングします。</td> 
+      </tr>
   </tbody>
 </table>
 
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Get Approvals in a Grouped Approval"), without field detail.
+#### グループ化された承認の詳細を取得
 
--->
-
-<!--
-
-#### Get Grouped Approval Details
-
-This search module retrieves details for the specified grouped approval.
+この検索モジュールは、グループ化された承認をGUIDで返します。
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">接続</td>
+      <td>Adobe Workfront Unified Review and Approvalsへの接続の作成手順については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront Unified Review and Approvalsへの接続</a>」を参照してください。</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>グループ GUID</p></td>
+      <td>詳細を取得するグループ化された承認のGUIDを入力またはマッピングします。</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>制限</p></td>
+      <td>各シナリオ実行サイクル中にモジュールが使用する結果の最大数を入力またはマッピングします。</td> 
+      </tr>
   </tbody>
 </table>
-
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Get Grouped Approval Details"), without field detail.
-
--->
 
 #### 複数の承認を取得
 
@@ -1063,28 +1227,34 @@ BECKY CHECK ME: confirm this module's field-level UI before publishing - the Sla
   </tbody>
 </table>
 
-<!--
+#### グループ化された承認を親別に一覧表示
 
-#### List Grouped Approvals by Parent
-
-This search module returns a list of grouped approvals for the specified parent.
+この検索モジュールは、Workfrontの親オブジェクトに関連付けられたグループ化された承認を返します。
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">接続</td>
+      <td>Adobe Workfront Unified Review and Approvalsへの接続の作成手順については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront Unified Review and Approvalsへの接続</a>」を参照してください。</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>親 ID</p></td>
+      <td>グループ化された承認を取得するWorkfront親オブジェクト（プロジェクトやタスクなど）のIDを入力またはマッピングします。</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>オブジェクトコード</p></td>
+      <td>（オプション）親オブジェクトのWorkfront オブジェクトタイプコードを入力またはマッピングします（例：<code>PROJ</code>または<code>TASK</code>）。</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>制限</p></td>
+      <td>各シナリオ実行サイクル中にモジュールが使用する結果の最大数を入力またはマッピングします。</td> 
+      </tr>
   </tbody>
 </table>
 
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("List Grouped Approvals by Parent"), without field detail.
-
--->
-
-#### リストテンプレート
+#### テンプレートをリスト表示
 
 このモジュールは、現在のユーザーが使用できるすべての承認テンプレートのリストを返します。 現在のユーザーは、このモジュールで使用される接続で資格情報が使用されるユーザーです。
 
@@ -1144,26 +1314,42 @@ BECKY CHECK ME: confirm this module's field-level UI before publishing - the Sla
   </tbody>
 </table>
 
-<!--
+#### グループ化された承認の検索
 
-#### Search Grouped Approvals
-
-This search module searches for grouped approvals matching the specified criteria.
+この検索モジュールは、名前付きビューを使用して、グループ化された承認を検索します。
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">接続</td>
+      <td>Adobe Workfront Unified Review and Approvalsへの接続の作成手順については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Adobe Workfront Unified Review and Approvalsへの接続</a>」を参照してください。</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>表示</p></td>
+      <td>（オプション）応答の形状を決定する名前付きビューを選択またはマッピングします。 現在、承認待ちのみサポートされています。</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>制限</p></td>
+      <td>（オプション）結果の最初のページのページサイズを入力またはマッピングします。 最大値は100、デフォルトは20です。</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>カーソル</p></td>
+      <td>（オプション）前の応答の不透明なカーソルを入力またはマッピングして、結果の次のページを取得します。 カーソルを指定すると、モジュールは「制限」フィールドを無視します。</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>チーム ID</p></td>
+      <td>（オプション）グループ化された承認を（チームが参加者である）別に照合する各チームについて、<b>項目を追加</b>をクリックし、チーム IDを入力します。</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>制限</p></td>
+      <td>各シナリオ実行サイクル中にモジュールが使用する結果の最大数を入力またはマッピングします。</td> 
+      </tr>
   </tbody>
 </table>
 
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Search Grouped Approvals"), without field detail.
-
--->
+<!-- BECKY CHECK ME: the screenshot shows two separate fields both labeled "Limit" - an optional pagination page-size field (max 100, default 20, ignored if Cursor is set) and a required general execution-cycle limit, matching the Limit field used in every other module in this article. Confirm this isn't a UI labeling issue before publishing, and that both rows are needed/correctly distinguished. -->
 
 ### その他
 
@@ -1284,4 +1470,3 @@ BECKY CHECK ME: confirm this module's field-level UI before publishing - the Sla
       <td>ステージのカスタムメッセージを入力またはマッピングします。</td> 
       </tr>
 </table>
-
