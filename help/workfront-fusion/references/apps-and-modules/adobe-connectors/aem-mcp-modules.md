@@ -5,20 +5,19 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 06271bbe8dd3c5eb7e3c6b45b71e7e0f7fd4d444
+    internal-label: Workfront
+source-git-commit: f39af7ec908c7ae62924635ef2d08584cf79310a
 workflow-type: tm+mt
-source-wordcount: 1020
+source-wordcount: '1020'
 ht-degree: 11%
-
 ---
-
 # Adobe Experience Manager MCP モジュール
 
 Adobe Experience Manager MCP コネクタは、Adobe Experience Manager独自のModel Context Protocol （MCP）サーバ用の専用のFusion統合です。 各モジュールが1つの固定アクションを実行する一般的なコネクタとは異なり、このコネクタには、オープンエンドの平易な英語の指示を受け入れ、AI モデルが、サイト、デジタルアセット、コンテンツフラグメント、フォルダー、コンテンツリポジトリー、コンテンツ AIなどの領域をまたいで、それを実行するために必要なAdobe Experience Managerの操作を決定できる1つのモジュールがあります。
 
 このコネクタは、Adobe Experience Manager独自のMCP サーバー専用です。 他の無関係なMCP サーバーはサポートしていません。 コネクタの場合は、代わりに任意のMCP サーバーを指定できます。MCP エージェントコネクタを使用します。
 
-MCP エージェントコネクタについて詳しくは、[MCP エージェントモジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)を参照してください。
+MCP エージェントコネクタについて詳しくは、[MCP エージェントモジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)を参照してください。
 
 >[!NOTE]
 >
@@ -98,7 +97,7 @@ Workfront Fusionにリダイレクトされ、新しいコネクションがモ�
 
 それぞれの実行は独立しているため、モジュールには以前の実行のメモリがありません。 複数のランをまたいで、複数のターンによる会話体験を構築するには、前の質問と回答を保存します。 データストアを使用し、その履歴を次のプロンプトの先頭にテキストとして含め、その後に新しい質問を入力することができます。
 
-データストアについて詳しくは、[&#x200B; データストア &#x200B;](/help/workfront-fusion/create-scenarios/data-stores/data-store-overview.md)を参照してください。
+データストアについて詳しくは、[ データストア ](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)を参照してください。
 
 <table style="table-layout:auto"> 
  <col/>

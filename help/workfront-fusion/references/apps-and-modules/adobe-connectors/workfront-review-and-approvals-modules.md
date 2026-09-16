@@ -13,7 +13,7 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 56b4c0736c60131ed83635a55cd4a86a35759586
+source-git-commit: 4f637dcb9d7865f73b41faa5b0acf397944bb559
 workflow-type: tm+mt
 source-wordcount: '5202'
 ht-degree: 12%
@@ -22,7 +22,7 @@ ht-degree: 12%
 
 Adobe Workfrontの統合レビューと承認のモジュールを使用すると、承認の詳細の取得、アセットに関する意思決定、承認参加者の追加または削除、承認ステージの追加または更新、ステージのロックまたはロック解除、カスタム API呼び出しの実行を行うことができます。
 
-Workfrontの統合レビューと承認について詳しくは、Workfront ドキュメントの[統合レビューと承認の概要](https://experienceleague.adobe.com/ja/docs/workfront/using/review-and-approve-work/document-approvals-overview)を参照してください。
+Workfrontの統合レビューと承認について詳しくは、Workfront ドキュメントの[統合レビューと承認の概要](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview)を参照してください。
 
 ## アクセス要件
 
@@ -331,7 +331,8 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
   </tbody>
 </table>
 
-<!-- BECKY CHECK ME: The following block of Delete-prefixed Actions modules (Delete a decision on a stage, Delete a stage, Delete a template, Delete an approval, Delete decisions, Delete grouped approval, Delete participants) is not confirmed to be current in the live connector as of this update - status uncertain. Commented out for now; restore (and remove this comment) once confirmed, or delete for good if confirmed removed.
+<!--
+BECKY CHECK ME: The following block of Delete-prefixed Actions modules (Delete a decision on a stage, Delete a stage, Delete a template, Delete an approval, Delete decisions, Delete grouped approval, Delete participants) is not confirmed to be current in the live connector as of this update - status uncertain. Commented out for now; restore (and remove this comment) once confirmed, or delete for good if confirmed removed.
 
 #### Delete a decision on a stage
 
