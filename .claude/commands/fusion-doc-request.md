@@ -1,13 +1,11 @@
 ---
 name: fusion-doc-request
-description: null
-source-git-commit: ac9a22b254b591ccf55270df62a85d158bb03697
+description: からのFusion ドキュメントリクエストの処理 #fusion-documentation Slack template - update the relevant Fusion docs article(s) in this repo, then create a matching task in the Product Documentation Workfront project with the feature description and a formatted release note filled in on the custom form. Use when the user shares a Slack documentation-request thread/message for a Fusion feature, or says something like "please update and create a task" for one.
+source-git-commit: faa0716f7e0a8ce496f8f65085de32288a4b6066
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1454'
 ht-degree: 0%
-
 ---
-
 
 # Fusion Documentation リクエスト
 
@@ -43,6 +41,8 @@ Slack リンクが指定されている場合は、URLから`channel_id`と`mess
 
 作業用ツリーがクリーンでない場合（関係のない作業からの未着手の変更）、停止して、分岐せずにユーザーに伝えます。
 
+このスキルは、ブランチを作成してコミットしますが、プッシュしたりプルリクエストを開いたりすることはありません。個別にリクエストしない限り、そのスキルはユーザーに残します。
+
 ## 手順3：ドキュメントの更新
 
 このリポジトリ内の関連する既存の記事を検索します（関連するモジュール名、UI ラベル、または設定名のgrep - ファイルを推測しないでください）。 記事の既存の構造、見出しレベル、および家のスタイルに従って、変更を反映するように更新します。
@@ -53,6 +53,7 @@ Slack リンクが指定されている場合は、URLから`channel_id`と`mess
   - 製品領域のマスターナビゲーションファイル （例：`help/workfront-fusion/TOC.md`） – これは、公開されたナビゲーションツリーを実際に駆動するものです。
   - この種類の記事にもリンクしているコンテンツ内のサブインデックス/ランディングページ（新しいコネクタモジュールページの場合は`apps-and-modules-toc.md`など）。
     両方を明示的にチェックし、新しいエントリが同じリストに配置されていることを確認します。各ファイル内の最も近い兄弟の記事と同じネストレベルで、一方に追加すると他のファイルをカバーすると仮定しないでください。
+&#x200B;* ブランチでドキュメントの変更をコミットしないままにします。 このスキルの一部として`git commit` （または`git add`）を実行しないでください。ユーザーは、変更を確認した後、準備ができたときにコミットします。 ユーザーが明示的にするように求めた場合にのみコミットします。
 
 ## 手順4:Workfront タスクの作成
 
@@ -78,6 +79,11 @@ Slack リンクが指定されている場合は、URLから`channel_id`と`mess
 
 新しいタスクは、デフォルトで、0時間の「可能な限り早く」制約に設定され、その下の`plannedStartDate`/`plannedCompletionDate`はスケジューラーによって派生され、どちらか一方への直接書き込みはサイレントドロップされます（エラーなし、日付は変更されません）。 `taskConstraint: "MFO"`を`constraintDate`に設定することは、Slack メッセージで引用された日付に予定完了日を固定する信頼性の高い方法です。 この書き込みの前に`workfront://knowledge/task/update`を読み取ります。これは、MCP サーバーのルールに従ったスケジュール/日付フィールドです。
 
+`description` フィールドには、4000文字のハード制限があります。 Slackのメッセージテキスト全体が適合しない場合：
+
+1. 代わりに、短い`description`を含むタスクを最初に作成します。機能タイトル、リリース予定日、必要な通知、リクエストの1行の要約、完全なリクエストテキストがタスクの最初のコメントとして投稿されることに注意、およびSlack スレッドリンク。
+1. 次に、`comment-stream_create_comment` （`objectCode` `task`, `objectID`を介して、新しく作成されたタスクに関するコメントとして、完全な口語形式のSlack メッセージテキスト（すべてのテンプレートフィールド、言い換えではありません）を投稿します。このツールには、同等の長さの制限はありません。 `content` （プレーンテキスト）と`contentHTML` （単なる`<p>` タグではなく、見出し/リストで構造化）の両方を含めます。
+
 `DE:Release notes` フィールドのリリースノート形式。 常に独自の行で`***FUSION***`から始まり、空白行、タイトルを入力します。これにより、メモが一目でFusionに属していることが示されます（core Workfrontとは異なります）。
 
 ```markdown
@@ -96,8 +102,9 @@ For more information, see [{Article title}](/help/workfront-fusion/{path-to-arti
 
 わかりやすい報告：
 
-&#x200B;* 作成したブランチ。
+&#x200B;* 作成したブランチ（ローカルにコミットされ、プッシュされず、プル要求が開かれていない – ステップ 2に従って）。
 &#x200B;* 変更したドキュメントファイルと追加したドキュメント。
+&#x200B;* 変更がブランチ上でコミットされず、ユーザーのレビューを待つこと。
 &#x200B;* タスク名とURL。
 &#x200B;* プレビュー日フィールドを含め、設定した正確なフィールド値。
 &#x200B;* 完全に自信を持っていなかったこと – 例えば、Slackが届かず、ペーストされたテキストのみから作業していたこと、ターゲットのドキュメント記事があいまいだったこと、または技術的な詳細がソース資料になかったため、推測ではなくフラグが立てられたこと。
