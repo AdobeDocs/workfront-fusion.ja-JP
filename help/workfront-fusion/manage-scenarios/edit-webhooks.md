@@ -3,13 +3,12 @@ title: Webhookの編集
 description: WorkfrontおよびWorkfront Planning コネクタの既存のWebhookを編集できます。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 2561c911b9b542a7b143fae745baf4e1de45be38
+exl-id: 86849d21-5a74-43f7-9ccf-dff4421cc981
+source-git-commit: 25ba44b8ab1aab8ad6e2d6a989f55366d48a0575
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 5%
-
 ---
-
 # Web フックを編集
 
 既存のWebhookを編集できます。 これらのWebhookを使用するシナリオでは、新しい設定が使用されるため、新しいWebhookを作成して、影響を受けるすべてのシナリオに手動で割り当てる必要はありません。
@@ -46,9 +45,8 @@ Webhookは、次のコネクタに対してのみ編集できます。
 
 ### Webhook リストからのWebhookの編集
 
-1. 左側のナビゲーションで、**Webhook** ![Webhook アイコン &#x200B;](assets/webhooks-icon.png)を選択します。
+1. 左側のナビゲーションで、**Webhook** ![Webhook アイコン ](assets/webhooks-icon.png)を選択します。
 1. 編集するWebhookの横にあるチェックボックスをクリックします。
 1. 画面下部の青いバナーで、**編集**&#x200B;をクリックします。
 1. Webhookに必要な編集を加えます。
 1. **保存**&#x200B;をクリックしてWebhookを保存し、Webhook リストに戻ります。
-
