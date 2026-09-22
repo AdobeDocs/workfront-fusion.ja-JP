@@ -7,16 +7,21 @@ exl-id: 6e2df1a0-c1f9-4833-b1c2-65efb3be9657
 TQID: https://experienceleague.adobe.com/t3FcOEcjniaGfX9Ag25kYrcU6-2LKwaIdnRojHRpI5Q
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+source-git-commit: 1feb4fce42c7759ca8fc91d4270dd00c0a59da24
 workflow-type: tm+mt
-source-wordcount: 767
+source-wordcount: '800'
 ht-degree: 28%
-
 ---
-
 # Adobe Workfront Fusion ライセンス
 
 Workfront Fusionには、2つのライセンスモデル、新しいオペレーションベースモデル、および従来のコネクタベースモデルがあります。
+
+>[!NOTE]
+>
+>Workfront Fusion シナリオでの大きなファイルのサポートは、使用するFusion ライセンスモデルに関係なく、Workfront Ultimate パッケージ上の組織でのみ使用できます。
+>
+>詳しくは、[大きなファイルの処理](/help/workfront-fusion/references/scenarios/fusion-large-files.md)を参照してください。
 
 ## 操作ベースのライセンスモデル（新規）
 
@@ -60,14 +65,14 @@ Workfront Fusion for Work Automation ライセンスを使用すると、次の�
 * Webhook
 * 次のようなツールおよび変換サービスモジュール。
 
-   * アーカイブ
-   * CSV
-   * データストア
-   * 画像
-   * JSON
-   * 数学
-   * MIME
-   * XML
+  * アーカイブ
+  * CSV
+  * データストア
+  * 画像
+  * JSON
+  * 数学
+  * MIME
+  * XML
 
 #### Adobe Workfront Fusion for Work Automationの例
 
@@ -97,7 +102,7 @@ Workfront Fusion for Work Automation and Integration ライセンスの利点は
 
 #### Workfront Fusion for Work Automation and Integrationで利用可能なコネクタとモジュール
 
-使用可能な専用コネクタのリストについては、[Fusion アプリケーションとそのモジュールの参照：記事インデックス &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)を参照してください。
+使用可能な専用コネクタのリストについては、[Fusion アプリケーションとそのモジュールの参照：記事インデックス ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)を参照してください。
 
 >[!IMPORTANT]
 >
