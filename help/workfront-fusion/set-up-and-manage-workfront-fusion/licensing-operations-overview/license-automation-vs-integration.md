@@ -102,7 +102,7 @@ Workfront Fusion for Work Automation and Integration ライセンスの利点は
 
 #### Workfront Fusion for Work Automation and Integrationで利用可能なコネクタとモジュール
 
-使用可能な専用コネクタのリストについては、[Fusion アプリケーションとそのモジュールの参照：記事インデックス ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)を参照してください。
+使用可能な専用コネクタのリストについては、[Fusion アプリケーションとそのモジュールの参照：記事インデックス &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)を参照してください。
 
 >[!IMPORTANT]
 >
