@@ -4,16 +4,18 @@ description: Adobe Workfront Fusion の組織とチームの機能を使用す�
 author: Becky
 feature: Workfront Fusion
 exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
-TQID: https://experienceleague.adobe.com/rWg9TitUlX092UIFTY1LUZsR7UlmWwE5dItl6wnlBMA
+TQID: 'https://experienceleague.adobe.com/rWg9TitUlX092UIFTY1LUZsR7UlmWwE5dItl6wnlBMA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 612
+source-wordcount: '612'
 ht-degree: 51%
-
 ---
-
 # Adobe Workfront Fusion組織とチームの概要
 
 Adobe Workfront Fusion の組織とチームの機能を使用すると、企業は Fusion 内のシナリオや他の機能へのアクセスを制御できます。
@@ -22,7 +24,7 @@ Adobe Workfront Fusion最大の事業体です。 たとえば、Fusion組織は
 
 チームは、組織内の小さなグループで、シナリオ、接続、テンプレートなどのFusion リソースを共有します。
 
-チームの作成手順については、[&#x200B; チームの作成](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/create-a-team.md)を参照してください。
+チームの作成手順については、[ チームの作成](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/create-a-team.md)を参照してください。
 
 ## 組織
 
@@ -36,7 +38,7 @@ Workfront Fusion ユーザーは組織に属しています。
 
 * **ワーカープール：**: ワーカープールは、特定の組織に特化したWorkfront Fusion処理リソースの量です。
 
-  詳しくは、[&#x200B; ワーカープール &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)を参照してください。
+  詳しくは、[ ワーカープール ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)を参照してください。
 
 * **操作**: Adobe Workfront Fusionでの操作は、モジュールによって実行されるタスクです。
 

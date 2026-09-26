@@ -4,19 +4,23 @@ description: データストアは、データベースやシンプルなテー�
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-TQID: https://experienceleague.adobe.com/pCDU9BMkWEcUJZ9r4XN0dxEA8L89rWJyGQSWk10TiDs
+TQID: 'https://experienceleague.adobe.com/pCDU9BMkWEcUJZ9r4XN0dxEA8L89rWJyGQSWk10TiDs'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Troubleshooting
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1366
+source-wordcount: '1366'
 ht-degree: 69%
-
 ---
-
 # データストアの作成と管理
 
 データストアは、データベースやシンプルなテーブルと同様に、シナリオのデータを保存できるので、個々のシナリオ間やシナリオ実行間でデータを転送できるようになります。 データストアを使用すると、同期中に様々なシステムから新しいデータを保存できます。
@@ -79,7 +83,7 @@ Ultimate パッケージのFusion インスタンスは、次を受け取りま�
 
 ### SelectおよびPrime プラン
 
-Select パッケージまたはPrime パッケージのFusion インスタンスは:-->を受け取ります
+Select パッケージまたはPrime パッケージのFusion インスタンスは次を受け取ります。—>
 
 * 最初の500,000の操作には100 MBを使用します。
 
@@ -180,7 +184,7 @@ Select パッケージまたはPrime パッケージのFusion インスタンス
 
 ## 既存のデータストアの編集
 
-既存のデータストアのプロパティとコンテンツは、Workfront Fusionの[!UICONTROL &#x200B; データストア &#x200B;]領域で編集できます。
+既存のデータストアのプロパティとコンテンツは、Workfront Fusionの[!UICONTROL  データストア ]領域で編集できます。
 
 * [データストアのプロパティの編集](#edit-the-properties-of-a-data-store)
 * [データストアの内容の編集](#edit-the-contents-of-a-data-store)
@@ -189,7 +193,7 @@ Select パッケージまたはPrime パッケージのFusion インスタンス
 
 データストアのプロパティには、データストアで使用されているデータ構造と、データストアのサイズが含まれます。
 
-1. 左側のナビゲーションパネルの&#x200B;**[!UICONTROL データストア]** ![&#x200B; データストアアイコン &#x200B;](assets/data-store-icon.png)をクリックして、[!UICONTROL &#x200B; データストア &#x200B;]領域を開きます。
+1. 左側のナビゲーションパネルの&#x200B;**[!UICONTROL データストア]** ![ データストアアイコン ](assets/data-store-icon.png)をクリックして、[!UICONTROL  データストア ]領域を開きます。
 1. 編集するデータストアの横にあるチェックボックスをクリックし、画面の下部にあるバナーの「**編集**」をクリックします。
 1. （オプション）このデータストアで使用するデータ構造を別の既存のデータ構造に変更する場合は、**[!UICONTROL データ構造]**&#x200B;ドロップダウンから選択します。
 
@@ -202,7 +206,7 @@ Select パッケージまたはPrime パッケージのFusion インスタンス
 
 ### データストアの内容の編集
 
-1. 左側のナビゲーションパネルの&#x200B;**[!UICONTROL データストア]** アイコン ![&#x200B; データストアアイコン &#x200B;](assets/data-store-icon.png)をクリックして、[!UICONTROL &#x200B; データストア &#x200B;]領域を開きます。
+1. 左側のナビゲーションパネルの&#x200B;**[!UICONTROL データストア]** アイコン ![ データストアアイコン ](assets/data-store-icon.png)をクリックして、[!UICONTROL  データストア ]領域を開きます。
 1. 編集するデータストアの横にあるチェックボックスをクリックし、画面の下部にあるバナーの「**参照**」をクリックします。
 1. （オプション）データストアに新しい項目を追加する場合は、「**[!UICONTROL 追加]**」をクリックしてから新しい項目の情報を入力します。
 1. （オプション）その項目のチェックボックスをクリックし、画面の右上隅にある&#x200B;**選択した項目を削除**&#x200B;または&#x200B;**すべてを削除**&#x200B;をクリックして、データストアから1つ以上の項目を削除します。
@@ -222,7 +226,7 @@ Select パッケージまたはPrime パッケージのFusion インスタンス
 
 1. 項目がデータストアに挿入されたシナリオのすべての実行ログを調べます。
 
-   実行ログの調査について詳しくは、[&#x200B; シナリオの実行履歴の表示](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)を参照してください。
+   実行ログの調査について詳しくは、[ シナリオの実行履歴の表示](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)を参照してください。
 
 1. データをコピーします。
 1. データをデータストアに再度挿入します。

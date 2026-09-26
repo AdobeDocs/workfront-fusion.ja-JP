@@ -5,13 +5,15 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: f1a80f64edc410ae76bfbba1280df7232e2d09c5
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 513
+source-wordcount: '513'
 ht-degree: 17%
-
 ---
-
 # チェーンへのモジュールの移動
 
 >[!IMPORTANT]
@@ -34,7 +36,7 @@ Workfront Fusionは、モジュールグループをチェーンに移動し、�
 
 連鎖シナリオの計画について詳しくは、[複数のシナリオを連鎖させる](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)を参照してください。
 
-チェーンモジュールの設定方法については、[&#x200B; チェーンモジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)を参照してください。
+チェーンモジュールの設定方法については、[ チェーンモジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)を参照してください。
 
 ## アクセス要件
 

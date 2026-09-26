@@ -4,13 +4,17 @@ description: シナリオに、接続するAI プロンプトを含めること�
 author: Becky
 feature: Workfront Fusion
 exl-id: d0ac0d0b-e3a0-46de-801d-e53c1c4d63ff
-source-git-commit: 3d957c219cdc5fed4fdf9b0649cab724fae21871
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
-
 ---
-
 # シナリオにAI プロンプトを追加する
 
 モデルコンテキストプロトコル（MCP）と大規模言語モデル（LLM）を組み合わせて使用して、AI プロンプトをシナリオに含めることができます。 MCP Agent モジュールでこれらを設定することで、AIを利用して、効率的、安全、柔軟なワークフローを設定することができます。
@@ -40,4 +44,4 @@ MCP Agent モジュールを使用すると、言語モデルとMCP サーバー
 
 MCP Agent モジュールを使用して、シナリオにAI プロンプトを追加できます。
 
-手順については、[MCP エージェントモジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)を参照してください。
+手順については、[MCP エージェントモジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)を参照してください。

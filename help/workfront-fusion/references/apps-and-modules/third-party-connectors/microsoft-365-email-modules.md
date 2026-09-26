@@ -4,19 +4,23 @@ description: Adobe Workfront Fusionでは、Microsoft Office 365 メールを使
 author: Becky
 feature: Workfront Fusion
 exl-id: 5d4072ba-c598-4347-a42f-c59c7add0a1b
-TQID: https://experienceleague.adobe.com/w1Mx5-fbOF8JlvmgHd0P-ARF20jBLM0Bm3BnZZy6YsY
+TQID: 'https://experienceleague.adobe.com/w1Mx5-fbOF8JlvmgHd0P-ARF20jBLM0Bm3BnZZy6YsY'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2979
+source-wordcount: '2979'
 ht-degree: 48%
-
 ---
-
 # [!DNL Microsoft Office 365 Email] モジュール
 
 Adobe Workfront Fusionのシナリオでは、[!UICONTROL Microsoft Office 365 Email]を使用するワークフローを自動化し、複数のサードパーティ製アプリケーションやサービスに接続できます。
@@ -111,7 +115,7 @@ Microsoft Office 365電子メールコネクタでは、次の機能が使用さ
 
 ### メッセージ
 
-* [[!UICONTROL &#x200B; メッセージの作成と送信（レガシー） &#x200B;]](#create-and-send-a-message)
+* [[!UICONTROL  メッセージの作成と送信（レガシー） ]](#create-and-send-a-message)
 * [[!UICONTROL メッセージの削除]](#delete-a-message)
 * [[!UICONTROL メッセージの取得]](#get-a-message)
 * [[!UICONTROL メッセージの移動]](#move-a-message)
@@ -120,7 +124,7 @@ Microsoft Office 365電子メールコネクタでは、次の機能が使用さ
 
 
 
-#### [!UICONTROL &#x200B; メッセージの作成と送信（レガシー） &#x200B;]
+#### [!UICONTROL  メッセージの作成と送信（レガシー） ]
 
 このアクションモジュールは、メールメッセージを作成して送信します。
 
@@ -177,7 +181,7 @@ Microsoft Office 365電子メールコネクタでは、次の機能が使用さ
    <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
    <td> <p>電子メールに追加する添付ファイルごとに、<b>項目を追加</b>をクリックし、次の項目を入力します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Source ファイル &#x200B;]</strong> </p> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Source ファイル ]</strong> </p> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -286,7 +290,7 @@ Microsoft Office 365電子メールコネクタでは、次の機能が使用さ
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search]</td> 
-   <td>検索クエリを入力します。 検索クエリの記述方法については、[!DNL Microsoft] サポート記事の「<a href="https://support.microsoft.com/ja-jp/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=ja-jp&rs=ja-jp&ad=jp">[!DNL Outlook.com]</a> でメールや連絡先を検索する」を参照してください。</td> 
+   <td>検索クエリを入力します。 検索クエリの記述方法については、[!DNL Microsoft] サポート記事の「<a href="https://support.microsoft.com/ja-jp/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=ja-jp&amp;rs=ja-jp&amp;ad=jp">[!DNL Outlook.com]</a> でメールや連絡先を検索する」を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Order by]</td> 
@@ -332,7 +336,7 @@ Microsoft Office 365電子メールコネクタでは、次の機能が使用さ
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search]</td> 
-   <td>検索クエリを入力します。 モジュールは、このクエリに一致するメッセージを返します。 検索クエリの作成方法について詳しくは、[!DNL Microsoft]サポート記事の<a href="https://support.microsoft.com/ja-jp/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=ja-jp&rs=ja-jp&ad=jp">[!DNL Outlook.com]</a> でメールと人物を検索を参照してください。</td> 
+   <td>検索クエリを入力します。 モジュールは、このクエリに一致するメッセージを返します。 検索クエリの作成方法について詳しくは、[!DNL Microsoft]サポート記事の<a href="https://support.microsoft.com/ja-jp/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=ja-jp&amp;rs=ja-jp&amp;ad=jp">[!DNL Outlook.com]</a> でメールと人物を検索を参照してください。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
@@ -408,7 +412,7 @@ Microsoft Office 365電子メールコネクタでは、次の機能が使用さ
    <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
    <td> <p>電子メールに追加する添付ファイルごとに、<b>項目を追加</b>をクリックし、次の項目を入力します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Source ファイル &#x200B;]</strong> </p> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Source ファイル ]</strong> </p> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -510,7 +514,7 @@ Microsoft Office 365電子メールコネクタでは、次の機能が使用さ
    <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
    <td> <p>電子メールに追加する添付ファイルごとに、<b>項目を追加</b>をクリックし、次の項目を入力します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Source ファイル &#x200B;]</strong> </p> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Source ファイル ]</strong> </p> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -668,7 +672,7 @@ Microsoft Office 365電子メールコネクタでは、次の機能が使用さ
    <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
    <td> <p>電子メールに追加する添付ファイルごとに、<b>項目を追加</b>をクリックし、次の項目を入力します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Source ファイル &#x200B;]</strong> </p> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Source ファイル ]</strong> </p> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 

@@ -4,21 +4,23 @@ description: この記事では、異なる状況でアクティブなシナリ�
 author: Becky
 feature: Workfront Fusion
 exl-id: ecfcab45-5492-4e20-af8d-63ec9d233046
-TQID: https://experienceleague.adobe.com/QaZIR-nQ7cvBLmy2XfGDfqm1C7KrZqoY9Kz4sqRPDFA
+TQID: 'https://experienceleague.adobe.com/QaZIR-nQ7cvBLmy2XfGDfqm1C7KrZqoY9Kz4sqRPDFA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 300
+source-wordcount: '300'
 ht-degree: 67%
-
 ---
-
 # シナリオのアクティブ化または非アクティブ化
 
 シナリオは、アクティブ状態または非アクティブ状態で使用できます。
 
-* アクティブなシナリオは、[&#x200B; シナリオのスケジュール &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)で説明されているように、定義されたスケジュールに従って定期的に実行されます。
+* アクティブなシナリオは、[ シナリオのスケジュール ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)で説明されているように、定義されたスケジュールに従って定期的に実行されます。
 
   これは、シナリオの機能を自動化する場合に役立ちます。
 
@@ -63,11 +65,11 @@ ht-degree: 67%
 
 シナリオをアクティブ化する前に、シナリオを作成する必要があります。
 
-シナリオの作成手順については、[&#x200B; シナリオの作成ワークフロー](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md)を参照してください
+シナリオの作成手順については、[ シナリオの作成ワークフロー](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md)を参照してください
 
 ## シナリオをアクティブ化または非アクティブ化するには、次の手順に従います。
 
-1. 左側のパネルで「**[!UICONTROL シナリオ]** ![&#x200B; シナリオアイコン &#x200B;](assets/scenarios-icon.png)」をクリックし、シナリオをクリックして開きます。
+1. 左側のパネルで「**[!UICONTROL シナリオ]** ![ シナリオアイコン ](assets/scenarios-icon.png)」をクリックし、シナリオをクリックして開きます。
 1. シナリオの詳細ページの右上隅にあるオン/オフ切り替えスイッチをクリックします。
 
    ![詳細アクティベーション切り替え](assets/active-toggle-details-page.png)
@@ -76,4 +78,4 @@ ht-degree: 67%
 
    図をクリックしてシナリオエディターに入り、ウィンドウの左下隅にある&#x200B;**[!UICONTROL オン/オフ]** トグルをクリックします。
 
-   ![&#x200B; スイッチをオフ &#x200B;](assets/on-off-switch.jpg)
+   ![ スイッチをオフ ](assets/on-off-switch.jpg)

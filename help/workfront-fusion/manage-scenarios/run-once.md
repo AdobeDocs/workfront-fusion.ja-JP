@@ -5,13 +5,15 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 74faab448149276b8d769dfde0260c96d4b0712a
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 307
+source-wordcount: '332'
 ht-degree: 0%
-
 ---
-
 # 1回実行してシナリオをテストする
 
 シナリオを作成、更新、または改良する際は、「1回実行」ボタンを使用して、シナリオをオンデマンドでトリガーできます。 これにより、特定のイベントやポーリング間隔などのトリガーロジックを待たずにシナリオをテストできます。

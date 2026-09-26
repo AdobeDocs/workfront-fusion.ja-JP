@@ -1,23 +1,31 @@
 ---
 title: Google ドキュメントモジュール
-description: Adobe Workfront Fusion [!DNL Google Docs]  モジュールを使用すると、 [!DNL Google Docs] および [!DNL Google Docs]  （for [!DNL Google Workspace] users）のドキュメントを監視、作成、編集、取得できます。
+description: Adobe Workfront Fusion [!DNL Google Docs] モジュールを使用すると、[!DNL Google Docs]および[!DNL Google Docs] （[!DNL Google Workspace] ユーザー向け）のドキュメントを監視、作成、編集、取得できます。
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: cd44250d-c2cd-46b2-8773-15b30472a8d8
-TQID: https://experienceleague.adobe.com/8Ssu593A6Le2Z45BVg5T-wbj0Ld3z-efmO6JVRYk9n0
+TQID: 'https://experienceleague.adobe.com/8Ssu593A6Le2Z45BVg5T-wbj0Ld3z-efmO6JVRYk9n0'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+    internal-label: APIs
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: e14a7f57-c82c-4874-a495-5d036cbbdc3d
+    internal-label: Resource management
+subfeature_v2:
+  - id: b70a979b-965d-47a9-a360-e7ec2a19b8c1
+    internal-label: Digital content and documents
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 4108
+source-wordcount: '4111'
 ht-degree: 83%
-
 ---
-
 # [!DNL Google Docs] モジュール
 
 Adobe Workfront Fusion [!DNL Google Docs] モジュールを使用すると、[!DNL Google Docs]および[!DNL Google Docs] （[!DNL Google Workspace] ユーザー向け）のドキュメントを監視、作成、編集、取得できます。

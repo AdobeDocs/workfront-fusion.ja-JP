@@ -4,18 +4,21 @@ description: Adobe Workfront Fusion HTTP アプリは、Hypertext Transfer Proto
 author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
-TQID: https://experienceleague.adobe.com/OMMUuYStE-zaML4-bBkPQmq9jTprC-GKYx-yt3tiFzQ
+TQID: 'https://experienceleague.adobe.com/OMMUuYStE-zaML4-bBkPQmq9jTprC-GKYx-yt3tiFzQ'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 633
+source-wordcount: '633'
 ht-degree: 73%
-
 ---
-
 # HTTP／その他のモジュール
 
 Adobe Workfront Fusion [!UICONTROL HTTP] アプリは、Hypertext Transfer Protocol （HTTP）プロトコルに基づいた様々な通信モジュールを提供します。 HTTP は、World Wide Web のためのデータ通信基盤です。 このモジュールを使用すると、web のページやファイルをダウンロードしたり、web フックや API エンドポイントを呼び出したりできます。
@@ -76,7 +79,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 特定のリクエストモジュールの手順については、次の記事を参照してください。
 
-* [[!UICONTROL HTTP] > [!UICONTROL &#x200B; リクエストを作成] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL  リクエストを作成] モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
 * [[!UICONTROL HTTP]／[!UICONTROL 基本認証リクエストの作成]モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
 * [[!UICONTROL HTTP]／[!UICONTROL OAuth 2.0 リクエストを実行]モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
 * [[!UICONTROL HTTP]／[!UICONTROL クライアント証明書認証リクエストの作成]モジュール](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
@@ -162,7 +165,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ペイロード：
 
-![JWT ペイロード &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/jwt-payload-350x17.png)
+![JWT ペイロード ](/help/workfront-fusion/references/apps-and-modules/assets/jwt-payload-350x17.png)
 
 コピーおよび貼り付けのコード：
 
@@ -172,7 +175,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 トークン：
 
-![JWT トークン &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/jwt-token-350x15.png)
+![JWT トークン ](/help/workfront-fusion/references/apps-and-modules/assets/jwt-token-350x15.png)
 
 コピーおよび貼り付けのコード：
 

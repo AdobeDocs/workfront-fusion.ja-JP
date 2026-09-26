@@ -4,19 +4,28 @@ description: Adobe Workfront Fusionでは、Dropboxを使用するワークフ�
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-TQID: https://experienceleague.adobe.com/O5O0hXjHDhY2Av6eXrujFgXNF7K--iU55gy38ao770Q
+TQID: 'https://experienceleague.adobe.com/O5O0hXjHDhY2Av6eXrujFgXNF7K--iU55gy38ao770Q'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: e14a7f57-c82c-4874-a495-5d036cbbdc3d
+    internal-label: Resource management
+subfeature_v2:
+  - id: b70a979b-965d-47a9-a360-e7ec2a19b8c1
+    internal-label: Digital content and documents
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 3311
+source-wordcount: '3311'
 ht-degree: 74%
-
 ---
-
 # [!DNL Dropbox] モジュール
 
 Adobe Workfront Fusionのシナリオでは、[!UICONTROL Dropbox]または[!DNL Dropbox Business]を使用するワークフローを自動化したり、複数のサードパーティ製アプリケーションやサービスに接続したりできます。これにより、[!UICONTROL Dropbox]内のファイルやフォルダーの監視、検索、取得、一覧表示、作成、編集などの作業を自動化できます。
@@ -155,8 +164,8 @@ Dropbox コネクタでは、次の機能が使用されます。
 ![マップ切り替え](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [トリガーモジュール](#trigger-modules)
-* [&#x200B; [!DNL Dropbox] ファイルおよびフォルダーを取得するためのモジュール](#modules-for-getting-dropbox-files-and-folders)
-* [&#x200B; [!DNL Dropbox] ファイルおよびフォルダーを作成および編集するためのモジュール](#modules-for-creating-and-editing-dropbox-files-and-folders)
+* [ [!DNL Dropbox] ファイルおよびフォルダーを取得するためのモジュール](#modules-for-getting-dropbox-files-and-folders)
+* [ [!DNL Dropbox] ファイルおよびフォルダーを作成および編集するためのモジュール](#modules-for-creating-and-editing-dropbox-files-and-folders)
 * [その他のモジュール](#other-modules)
 
 ### トリガーモジュール
@@ -500,7 +509,7 @@ Dropbox コネクタでは、次の機能が使用されます。
    <td> <p> ファイルパスをマッピングするか入力するか、手動でファイルを選択するかを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL ファイルまたはフォルダーのパス &#x200B;] / [!UICONTROL ファイルまたはフォルダー]</p> </td> 
+   <td> <p>[!UICONTROL ファイルまたはフォルダーのパス ] / [!UICONTROL ファイルまたはフォルダー]</p> </td> 
    <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>ターゲットパスを入力するか、ファイルまたはフォルダーにマッピングします。</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>メニューからファイルまたはフォルダーを選択します。</p> </td> 
   </tr> 
  </tbody> 
@@ -529,7 +538,7 @@ Dropbox コネクタでは、次の機能が使用されます。
    <td> <p>ファイルまたはフォルダーのパスをマップまたは入力するか、ファイルまたはフォルダーを手動で選択するかを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL ファイル / フォルダーパス &#x200B;] /</p> </td> 
+   <td> <p>[!UICONTROL ファイル / フォルダーパス ] /</p> </td> 
    <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>ターゲットパスを入力するか、ファイルまたはフォルダーにマッピングします。</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>ファイルまたはフォルダーのどちらを移動するかを選択し、次にファイルまたはフォルダーを選択します。</p> </td> 
   </tr> 
   <tr> 

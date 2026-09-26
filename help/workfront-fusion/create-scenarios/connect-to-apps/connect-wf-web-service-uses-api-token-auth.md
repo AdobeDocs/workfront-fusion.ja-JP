@@ -4,19 +4,23 @@ description: 一部のサービスでは、Adobe Workfront Fusionなどの統合
 author: Becky
 feature: Workfront Fusion
 exl-id: 4a8ac816-52de-41e8-96d7-1c8cde2ebe32
-TQID: https://experienceleague.adobe.com/y1H-y57MvK4LScn9Z6sUYuua3kr3iqyY-ElYkmCgxrI
+TQID: 'https://experienceleague.adobe.com/y1H-y57MvK4LScn9Z6sUYuua3kr3iqyY-ElYkmCgxrI'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Security
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 987
+source-wordcount: '987'
 ht-degree: 49%
-
 ---
-
 # API トークン認証を使用する web サービスに Adobe Workfront Fusion を接続
 
 一部のサービスでは、Adobe Workfront Fusionなどの統合ソリューションでは、シナリオで簡単に使用できるアプリを作成できません。
@@ -85,7 +89,7 @@ API トークンを介してサービスに接続する手順は、ほとんど�
 >Pushover API キーを取得する手順は、検索対象の例として記載しているだけです。
 
 1. プッシュオーバーアカウントにログインします。
-1. ページの下部にある「**Create an Application/API Token**」をクリックします。
+1. ページの下部にある「**アプリケーションまたは API トークンを作成**」をクリックします。
 1. アプリケーション情報を入力し、「**Create an Application**」をクリックします。
 1. 提供された API トークンを安全な場所に保存します。 Workfront Fusion HTTP/リクエストモジュールを作成して、目的のweb サービス（この場合はプッシュオーバー）に接続する必要があります。
 

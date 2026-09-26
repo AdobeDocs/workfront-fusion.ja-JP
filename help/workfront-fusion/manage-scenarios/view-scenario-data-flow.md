@@ -4,23 +4,25 @@ description: 実行中のシナリオを見て、データがどのように流�
 author: Becky
 feature: Workfront Fusion
 exl-id: 24eeb1d3-b5a7-4486-8d0b-0a43eb154e8e
-TQID: https://experienceleague.adobe.com/Ni0X8egfhVILudqNjtxx8iiMmlSrJa-0JPH-XGeqYeM
+TQID: 'https://experienceleague.adobe.com/Ni0X8egfhVILudqNjtxx8iiMmlSrJa-0JPH-XGeqYeM'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 283
+source-wordcount: '283'
 ht-degree: 36%
-
 ---
-
 # 実行中のシナリオでのデータフローの表示
 
 実行中のシナリオを見て、データがどのように流れるのかを確認できます。
 
 シナリオが実行されている間、アクティブなモジュールは、モジュールの周囲に成長するリングでマークされます。 リングは、モジュールが実行中であることを示すだけで、進行状況は表示されません。 迅速に動作するモジュールは、リングの小さな部分しか表示されない場合があります。
 
-![&#x200B; モジュール &#x200B;](assets/ring-around-module.png)の周囲をリング
+![ モジュール ](assets/ring-around-module.png)の周囲をリング
 
 モジュールを実行すると、出力インジケーターが表示されます。
 
@@ -28,7 +30,7 @@ ht-degree: 36%
 
 モジュールが複数のバンドルを処理する場合、処理された各バンドルにリングが表示され、出力インジケーターは出力する各バンドルに対してカウントされます。
 
-シナリオデータフローについて詳しくは、[&#x200B; シナリオ実行フロー](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)を参照してください。
+シナリオデータフローについて詳しくは、[ シナリオ実行フロー](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)を参照してください。
 
 ## アクセス要件
 

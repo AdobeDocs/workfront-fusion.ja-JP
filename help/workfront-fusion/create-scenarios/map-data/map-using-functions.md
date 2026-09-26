@@ -4,25 +4,27 @@ description: 項目をマッピングする場合、関数を使用して単純�
 author: Becky
 feature: Workfront Fusion
 exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
-TQID: https://experienceleague.adobe.com/ObsbedalglAtYWQlx0w8vZbvsU7z0ttVIehf8STysvw
+TQID: 'https://experienceleague.adobe.com/ObsbedalglAtYWQlx0w8vZbvsU7z0ttVIehf8STysvw'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 314c4535a5ef14794458f40002a53ee529c1a4b6
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 731
+source-wordcount: '731'
 ht-degree: 44%
-
 ---
-
 # 組み込み関数を使用したアイテムのマッピング
 
 Workfront Fusionには、シンプルな数式や複雑な数式を作成するための関数が組み込まれています。 これらの関数は、配列、文字列、数値、および以前のモジュールのデータに対する関数など、様々なユースケースをカバーします。
 
 さらに、シナリオがデータの変換と操作に使用できるカスタム関数とパッケージを作成できます。
 
-カスタム関数の詳細と手順については、[&#x200B; カスタム関数を使用したデータのマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)を参照してください。
+カスタム関数の詳細と手順については、[ カスタム関数を使用したデータのマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)を参照してください。
 
-関数パッケージの詳細と手順については、[&#x200B; カスタム関数パッケージの使用](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md)を参照してください。
+関数パッケージの詳細と手順については、[ カスタム関数パッケージの使用](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md)を参照してください。
 
 ## アクセス要件
 
@@ -80,7 +82,7 @@ Workfront Fusionには、シンプルな数式や複雑な数式を作成する�
 
    関数パラメーターの説明を表示するには、マッピングパネルの関数にカーソルを合わせます。
 
-   関数とそのパラメーターについて詳しくは、[関数参照：記事インデックス &#x200B;](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)の記事を参照してください。
+   関数とそのパラメーターについて詳しくは、[関数参照：記事インデックス ](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)の記事を参照してください。
 
 1. モジュールの設定を続行するか、**OK**&#x200B;をクリックします。
 
@@ -109,7 +111,7 @@ Workfront Fusionには、シンプルな数式や複雑な数式を作成する�
 
 この例では、部分文字列関数は、トリミングされたプロジェクト名を50文字に制限します。
 
-![&#x200B; トリミングされた名前](assets/trimmed-name-under-50.png)
+![ トリミングされた名前](assets/trimmed-name-under-50.png)
 
 >[!ENDSHADEBOX]
 

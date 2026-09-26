@@ -4,20 +4,28 @@ description: Adobe Workfront Fusion Google Slides モジュールを使用する
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 6f5f97b9-b06a-4336-b349-ee9e2606d4bf
-TQID: https://experienceleague.adobe.com/ee8cyxX16UJF8UKtbLB-COA96ZlYFJK-jPNnGNYSrz0
+TQID: 'https://experienceleague.adobe.com/ee8cyxX16UJF8UKtbLB-COA96ZlYFJK-jPNnGNYSrz0'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+    internal-label: APIs
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: e14a7f57-c82c-4874-a495-5d036cbbdc3d
+    internal-label: Resource management
+subfeature_v2:
+  - id: b70a979b-965d-47a9-a360-e7ec2a19b8c1
+    internal-label: Digital content and documents
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2047
+source-wordcount: '2047'
 ht-degree: 58%
-
 ---
-
 # [!DNL Google Slides] モジュール
 
 Adobe Workfront Fusion [!DNL Google Slides] モジュールを使用すると、プレゼンテーションを作成、更新、リスト化または削除したり、画像を[!DNL Google Slides] アカウントのプレゼンテーションにアップロードしたりできます。
@@ -532,12 +540,12 @@ Google スライドコネクタでは、次の機能が使用されます。
 
 次の API 呼び出しは、プレゼンテーションの詳細を返します。
 
-![&#x200B; プレゼンテーションの詳細](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
+![ プレゼンテーションの詳細](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
 
 一致した検索結果は、モジュールの「出力」にある[!UICONTROL バンドル]／[!UICONTROL 本文]／[!UICONTROL presentationId] で確認できます。
 
 この例では、要求されたプレゼンテーションの詳細が返されました。
 
-![&#x200B; プレゼンテーションの詳細](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
+![ プレゼンテーションの詳細](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
 
 >[!ENDSHADEBOX]

@@ -6,7 +6,10 @@ feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
-source-git-commit: f39af7ec908c7ae62924635ef2d08584cf79310a
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 11%
@@ -17,7 +20,7 @@ Adobe Experience Manager MCP コネクタは、Adobe Experience Manager独自の
 
 このコネクタは、Adobe Experience Manager独自のMCP サーバー専用です。 他の無関係なMCP サーバーはサポートしていません。 コネクタの場合は、代わりに任意のMCP サーバーを指定できます。MCP エージェントコネクタを使用します。
 
-MCP エージェントコネクタについて詳しくは、[MCP エージェントモジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)を参照してください。
+MCP エージェントコネクタについて詳しくは、[MCP エージェントモジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)を参照してください。
 
 >[!NOTE]
 >
@@ -97,7 +100,7 @@ Workfront Fusionにリダイレクトされ、新しいコネクションがモ�
 
 それぞれの実行は独立しているため、モジュールには以前の実行のメモリがありません。 複数のランをまたいで、複数のターンによる会話体験を構築するには、前の質問と回答を保存します。 データストアを使用し、その履歴を次のプロンプトの先頭にテキストとして含め、その後に新しい質問を入力することができます。
 
-データストアについて詳しくは、[&#x200B; データストア &#x200B;](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)を参照してください。
+データストアについて詳しくは、[ データストア ](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)を参照してください。
 
 <table style="table-layout:auto"> 
  <col/>

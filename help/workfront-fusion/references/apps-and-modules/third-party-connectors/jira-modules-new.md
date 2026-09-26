@@ -4,23 +4,26 @@ description: Adobe Workfront Fusionでは、Jira Softwareを使用するワー�
 author: Becky
 feature: Workfront Fusion
 exl-id: b74a3618-c4a1-4965-a88d-1643bfab12db
-TQID: https://experienceleague.adobe.com/fSi-9BIxl4qI-Vz7Yw9WJoqIX-GlmYDc5u-PGSh5mfc
+TQID: 'https://experienceleague.adobe.com/fSi-9BIxl4qI-Vz7Yw9WJoqIX-GlmYDc5u-PGSh5mfc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2469
-ht-degree: 38%
-
+source-wordcount: '2406'
+ht-degree: 37%
 ---
-
 # Jira モジュール
 
 >[!NOTE]
 >
->これらの手順は、Jiraという単なるラベルが付いたJira コネクタの新しいバージョンに適用されます。 従来のJira CloudおよびJira Server コネクタの手順については、[Jira ソフトウェア モジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md)を参照してください。
+>これらの手順は、Jiraという単なるラベルが付いたJira コネクタの新しいバージョンに適用されます。 従来のJira CloudおよびJira Server コネクタの手順については、[Jira ソフトウェア モジュール ](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md)を参照してください。
 
 Adobe Workfront Fusionでは、Jiraを使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
@@ -581,7 +584,7 @@ Jira モジュールを設定すると、Workfront Fusionに次のフィール�
 >
 >このエラーが発生した場合は、従来の Jira コネクターの検索モジュールを新しいコネクターの検索モジュールに置き換えることができます。 新しいコネクターでは、使用する API バージョンを選択できます。 接続を作成する際は、必ずV3を選択してください。
 >
-> 新しいJira コネクタの![API バージョン オプション &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/jira-version-option.png)
+> 新しいJira コネクタの![API バージョン オプション ](/help/workfront-fusion/references/apps-and-modules/assets/jira-version-option.png)
 >
 >メモ：
 >

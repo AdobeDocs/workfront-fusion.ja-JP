@@ -4,16 +4,18 @@ description: 次の配列関数は、Adobe Workfront Fusion マッピングパ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 16c3915c-add1-4aab-a0e1-75fc590c42a6
-TQID: https://experienceleague.adobe.com/9ymbGLulR1RFFm15f76YA0qbp9sxPu1vVbTqnoE2ZEM
+TQID: 'https://experienceleague.adobe.com/9ymbGLulR1RFFm15f76YA0qbp9sxPu1vVbTqnoE2ZEM'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 648
+source-wordcount: '648'
 ht-degree: 79%
-
 ---
-
 # 配列関数
 
 ## [!UICONTROL join (array; separator)]
@@ -66,7 +68,7 @@ ht-degree: 79%
 
 >[!ENDSHADEBOX]
 
-詳しくは、[配列または配列要素のマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)を参照してください。
+詳しくは、[配列または配列要素のマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)を参照してください。
 
 ## shuffle
 
@@ -238,7 +240,7 @@ yourArray = [3,4,5,6,7]
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL arrayElement （array; index） &#x200B;]
+### [!UICONTROL arrayElement （array; index） ]
 
 [!BADGE 新規！]{type=Informative}
 

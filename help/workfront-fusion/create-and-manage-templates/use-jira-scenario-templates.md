@@ -7,24 +7,30 @@ description: これらのテンプレートを使用して、Adobe Workfront Fus
 author: Becky
 feature: Workfront Fusion
 exl-id: 7e30c105-54be-4499-b573-949137e6a5e6
-TQID: https://experienceleague.adobe.com/1p8mg0HzgKs1U67uaAGxXshn5POSXIll9qTDfZmrzUM
+TQID: 'https://experienceleague.adobe.com/1p8mg0HzgKs1U67uaAGxXshn5POSXIll9qTDfZmrzUM'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+    internal-label: Administration
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 subfeature_v2:
   - id: d87de1f9-8e24-4c4d-aa4c-a403075091a1
+    internal-label: Custom forms
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Administration
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 4277
+source-wordcount: '4283'
 ht-degree: 4%
-
 ---
-
 # テンプレートを使用して Adobe Workfront Fusion と Jira を接続
 
 Adobe workfront Fusionでは、FusionとJira間の共通ワークフローを自動化できるテンプレートを提供しています。
@@ -68,10 +74,10 @@ Adobe workfront Fusionでは、FusionとJira間の共通ワークフローを自
 
 * Adobe Developer Consoleのテクニカルアカウントが必要です。
 
-  詳しくは、Adobe ドキュメントの[&#x200B; テクニカルアカウントの設定](https://developer.adobe.com/cloud-storage/guides/getting-started/technical-account-setup)を参照してください。
+  詳しくは、Adobe ドキュメントの[ テクニカルアカウントの設定](https://developer.adobe.com/cloud-storage/guides/getting-started/technical-account-setup)を参照してください。
 * Adobe Admin Console製品プロファイル領域のテクニカルアカウントにシステム管理者権限を付与する必要があります。
 
-  詳しくは、「[Adobe Admin Consoleを使用してWorkfrontでシステム管理者を作成する](https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)」を参照してください。
+  詳しくは、「[Adobe Admin Consoleを使用してWorkfrontでシステム管理者を作成する](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)」を参照してください。
 
 ### Jira
 
@@ -166,13 +172,13 @@ Jira統合テンプレートを使用するには、次の設定を実行する�
 
 1. Workfrontで、System Integration ユーザーを作成します。 このユーザーはWorkfront Fusionでのみ使用され、人間のユーザーを表すものではありません。 このユーザーに割り当てられたタスクは、WorkfrontとJiraを同期するシナリオをトリガーします。
 
-   手順については、Workfront ドキュメントの「[&#x200B; ユーザーを追加](https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users)」を参照してください。
+   手順については、Workfront ドキュメントの「[ ユーザーを追加](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users)」を参照してください。
 
 #### Workfrontでのカスタムフォームの作成
 
 1. Workfrontでは、カスタムフォームの作成を開始します。
 
-   手順については、Workfront ドキュメントの「[&#x200B; カスタムフォームの作成](https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form)」を参照してください。
+   手順については、Workfront ドキュメントの「[ カスタムフォームの作成](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form)」を参照してください。
 1. フォームに「**JIRA Fields**」という名前を付けます。
 1. カスタムフォームに次のフィールドを含めます。
 
@@ -189,7 +195,7 @@ Jira統合テンプレートを使用するには、次の設定を実行する�
 >
 >他のユーザーによる編集からこのフォームを制限することをお勧めします。 これを実現するには、カスタムフォームに追加したユーザーに表示アクセス権のみを付与します。
 >
->手順については、Workfront ドキュメントの「[&#x200B; カスタムフォームを共有する](https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form)」を参照してください。
+>手順については、Workfront ドキュメントの「[ カスタムフォームを共有する](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form)」を参照してください。
 
 ### Workfront Fusionでの接続の設定
 
@@ -228,10 +234,10 @@ Jira統合テンプレートを使用するには、次の設定を実行する�
 * **wfBaseURL**: Workfront インスタンスのベース URL。  通常：`https://<domain>.my.workfront.com` （`<domain>`は特定のWorkfront ドメイン名）。
 * **defaultJIRAReporterID**：問題を作成するJIRAのユーザーのID。 （例：`557058:5aedf933-2312-40bc-b328-0c21314167f0`）
 このIDは、次のいずれかの操作を行うことで取得できます。
-   * JIRAでユーザーのプロファイルをクリックし、ブラウザーでURLを確認します。
-（例`https://myjira.atlassian.net/jira/people/<JiraUserID>`）
-   * JIRA インスタンスで次のAPI呼び出しを実行して、JIRAの特定のアカウントのIDを取得します。
-     `GET /rest/api/3/user/search?query=email@example.com`
+  * JIRAでユーザーのプロファイルをクリックし、ブラウザーでURLを確認します。
+    （例`https://myjira.atlassian.net/jira/people/<JiraUserID>`）
+  * JIRA インスタンスで次のAPI呼び出しを実行して、JIRAの特定のアカウントのIDを取得します。
+    `GET /rest/api/3/user/search?query=email@example.com`
 
 
 ### シナリオ 1: WorkfrontからJiraへ：Workfront タスクまたはイシューの割り当てからJIRA イシューを作成する
@@ -244,7 +250,7 @@ Workfront タスクが割り当てられている場合、Jiraの問題はタス
 
 #### トリガーモジュールの設定
 
-1. 左側のナビゲーションパネルで「**テンプレート**」タブ「![&#x200B; テンプレート」アイコン &#x200B;](assets/templates-icon.png)」をクリックします。
+1. 左側のナビゲーションパネルで「**テンプレート**」タブ「![ テンプレート」アイコン ](assets/templates-icon.png)」をクリックします。
 1. 画面の左上隅付近にある検索バーを使用して、テンプレートを検索します。 テンプレート名または含まれるアプリケーションで検索できます。
 1. 「**WorkfrontからJiraへ：Workfront タスクまたはイシュー割り当て** テンプレートからJIRA イシューを作成」をクリックします。
 
@@ -270,7 +276,7 @@ Workfront タスクが割り当てられている場合、Jiraの問題はタス
 
 1. **各** Workfront モジュールの「接続」フィールドで、[Configure connections in Workfront Fusion](#configure-connections-in-workfront-fusion)で作成したWorkfront接続を選択し、**OK**&#x200B;をクリックして、そのモジュールへの接続を保存します。
 1. **各** Jira モジュールの「接続」フィールドで、[Configure connections in Workfront Fusion](#configure-connections-in-workfront-fusion)で作成したWorkfront接続を選択し、**OK**&#x200B;をクリックして、そのモジュールへの接続を保存します。
-1. 引き続き[一般パラメーターモジュール &#x200B;](#update-the-general-parameters-module)を更新します。
+1. 引き続き[一般パラメーターモジュール ](#update-the-general-parameters-module)を更新します。
 
 #### 一般パラメーターモジュールの更新
 
@@ -282,7 +288,7 @@ Workfront タスクが割り当てられている場合、Jiraの問題はタス
    | JiraBaseURL | 接続先のJira アカウントのベース URLを入力します。 |
    | wfBaseURL | 接続先のWorkfront アカウントのベース URLを入力します。 |
 
-1. 続行[Jiraでカスタムフィールドをマッピング &#x200B;](#map-custom-fields-in-jira)する
+1. 続行[Jiraでカスタムフィールドをマッピング ](#map-custom-fields-in-jira)する
 
 <!--
 #### Map custom fields in Jira.
@@ -303,7 +309,7 @@ Awaiting feedback
 
 +++**展開すると、シナリオ 2の設定手順が表示されます。JIRAからWorkfrontへ：JiraからWorkfrontに対して、問題とコメントに関する更新を送り返します**
 
-1. 左側のナビゲーションパネルで「**テンプレート**」タブ「![&#x200B; テンプレート」アイコン &#x200B;](assets/templates-icon.png)」をクリックします。
+1. 左側のナビゲーションパネルで「**テンプレート**」タブ「![ テンプレート」アイコン ](assets/templates-icon.png)」をクリックします。
 1. 画面の左上隅付近にある検索バーを使用して、テンプレートを検索します。 テンプレート名または含まれるアプリケーションで検索できます。
 1. 「**パート 2: JIRAからWorkfrontへ：問題に関する更新とコメントをJira** テンプレートからWorkfrontに送り返す」をクリックします。
 
@@ -330,12 +336,12 @@ Awaiting feedback
    * **コメント**：作成、削除
 
 
-1. 引き続き[&#x200B; テンプレートモジュールをWorkfrontとJiraに接続（モジュール 2） &#x200B;](#connect-template-modules-to-workfront-and-jira-module-2)
+1. 引き続き[ テンプレートモジュールをWorkfrontとJiraに接続（モジュール 2） ](#connect-template-modules-to-workfront-and-jira-module-2)
 
 #### テンプレートモジュールをWorkfrontとJiraに接続する（Module 2）
 
 1. **各** Workfront モジュールの「接続」フィールドで、[Configure connections in Workfront Fusion](#configure-connections-in-workfront-fusion)で作成したWorkfront接続を選択し、**OK**&#x200B;をクリックして、そのモジュールへの接続を保存します。
-1. **各** Jira モジュールの「接続」フィールドで、[Configure connections in Workfront Fusion](#configure-connections-in-workfront-fusion)で作成したWorkfront接続を選択し、**OK**&#x200B;をクリックして、そのモジュールへの接続を保存します。
+1. **各** Jira モジュールの「接続」フィールドで、[Configure connections in Workfront Fusion](#configure-connections-in-workfront-fusion)で作成したWorkfront接続を選択し、**OK**をクリックして、そのモジュールへの接続を保存します。
    <!--#### Map custom fields-->
 
 +++
@@ -344,7 +350,7 @@ Awaiting feedback
 
 +++**展開すると、シナリオ 3の設定手順が表示されます：WF-to-Jiraの変更（タスク）**
 
-1. 左側のナビゲーションパネルで「**テンプレート**」タブ「![&#x200B; テンプレート」アイコン &#x200B;](assets/templates-icon.png)」をクリックします。
+1. 左側のナビゲーションパネルで「**テンプレート**」タブ「![ テンプレート」アイコン ](assets/templates-icon.png)」をクリックします。
 1. 画面の左上隅付近にある検索バーを使用して、テンプレートを検索します。 テンプレート名または含まれるアプリケーションで検索できます。
 1. 「**パート 3: WorkfrontからJiraへ：Workfront タスクからJIRA問題** テンプレートへの変更」をクリックします。
 
@@ -386,7 +392,7 @@ Awaiting feedback
 
 +++**展開すると、シナリオ 4を設定する手順が表示されます：WorkfrontからJira: Workfrontの問題をJIRAの問題に変更**
 
-1. 左側のナビゲーションパネルで「**テンプレート**」タブ「![&#x200B; テンプレート」アイコン &#x200B;](assets/templates-icon.png)」をクリックします。
+1. 左側のナビゲーションパネルで「**テンプレート**」タブ「![ テンプレート」アイコン ](assets/templates-icon.png)」をクリックします。
 1. 画面の左上隅付近にある検索バーを使用して、テンプレートを検索します。 テンプレート名または含まれるアプリケーションで検索できます。
 1. 「**シナリオ 4: WF-to-Jira Changes （Issues）**」テンプレートをクリックします。
 
@@ -426,7 +432,7 @@ Awaiting feedback
 
 +++**展開すると、シナリオ 5を設定する手順が表示されます。WorkfrontからJira: Workfront タスクまたはイシューに関する新しいメモが作成されたときに、JIRAでコメントを作成します**
 
-1. 左側のナビゲーションパネルで「**テンプレート**」タブ「![&#x200B; テンプレート」アイコン &#x200B;](assets/templates-icon.png)」をクリックします。
+1. 左側のナビゲーションパネルで「**テンプレート**」タブ「![ テンプレート」アイコン ](assets/templates-icon.png)」をクリックします。
 1. 画面の左上隅付近にある検索バーを使用して、テンプレートを検索します。 テンプレート名または含まれるアプリケーションで検索できます。
 1. 「**シナリオ 5: WF-to-Jiraの新しいメモ（タスクとイシュー）**」テンプレートをクリックします。
 
@@ -463,7 +469,7 @@ Awaiting feedback
 
 +++**展開すると、シナリオ 6を設定する手順が表示されます：WorkfrontからJiraへ：Workfront タスクまたは問題に関する削除されたメモに対するJIRAでのコメントの作成**
 
-1. 左側のナビゲーションパネルで「**テンプレート**」タブ「![&#x200B; テンプレート」アイコン &#x200B;](assets/templates-icon.png)」をクリックします。
+1. 左側のナビゲーションパネルで「**テンプレート**」タブ「![ テンプレート」アイコン ](assets/templates-icon.png)」をクリックします。
 1. 画面の左上隅付近にある検索バーを使用して、テンプレートを検索します。 テンプレート名または含まれるアプリケーションで検索できます。
 1. 「**シナリオ 6: WF-to-Jiraのメモの削除（タスクと問題）**」テンプレートをクリックします。
 
@@ -500,7 +506,7 @@ Awaiting feedback
 
 +++**展開すると、シナリオ 7を設定する手順が表示されます：WorkfrontからJira: Workfront タスクまたはイシューに対する新しいドキュメントの場合は、JIRAでコメントを作成します**
 
-1. 左側のナビゲーションパネルで「**テンプレート**」タブ「![&#x200B; テンプレート」アイコン &#x200B;](assets/templates-icon.png)」をクリックします。
+1. 左側のナビゲーションパネルで「**テンプレート**」タブ「![ テンプレート」アイコン ](assets/templates-icon.png)」をクリックします。
 1. 画面の左上隅付近にある検索バーを使用して、テンプレートを検索します。 テンプレート名または含まれるアプリケーションで検索できます。
 1. 「**シナリオ 7: WF-to-Jiraの新しい添付ファイル（タスクとイシュー）**」テンプレートをクリックします。
 
@@ -536,7 +542,7 @@ Awaiting feedback
 
 +++**展開すると、シナリオ 8を設定する手順が表示されます：WorkfrontからJiraへ：Workfront タスクまたはイシューの削除済みドキュメントに対するJIRAでのコメントの作成**
 
-1. 左側のナビゲーションパネルで「**テンプレート**」タブ「![&#x200B; テンプレート」アイコン &#x200B;](assets/templates-icon.png)」をクリックします。
+1. 左側のナビゲーションパネルで「**テンプレート**」タブ「![ テンプレート」アイコン ](assets/templates-icon.png)」をクリックします。
 1. 画面の左上隅付近にある検索バーを使用して、テンプレートを検索します。 テンプレート名または含まれるアプリケーションで検索できます。
 1. 「**シナリオ 8: WF-to-Jiraの添付ファイルの削除（タスクとイシュー）**」テンプレートをクリックします。
 

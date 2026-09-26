@@ -9,18 +9,25 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 4cd34f0e-bc03-4c2a-bedc-6042ffddef1e
-TQID: https://experienceleague.adobe.com/3jtDR8lMiQhg3z6Pk8p8yNdXy4QYpLO79Wpd7oYlh1Y
+TQID: 'https://experienceleague.adobe.com/3jtDR8lMiQhg3z6Pk8p8yNdXy4QYpLO79Wpd7oYlh1Y'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+    internal-label: Administration
+subfeature_v2:
+  - id: a29813d3-f0cc-4b60-9396-13b558370803
+    internal-label: Product announcements
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 165
+source-wordcount: '165'
 ht-degree: 100%
-
 ---
-
 # Workfront Fusion リリースアクティビティ：2021年1月4日（PT）の週
 
 このページでは、2021年1月4日（PT）の週に Adobe Workfront Fusion で行われたすべての機能強化について説明します。

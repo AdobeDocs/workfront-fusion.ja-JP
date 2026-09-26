@@ -4,19 +4,23 @@ description: Adobe Workfront Fusionでは、Boxを使用するワークフロー
 author: Becky
 feature: Workfront Fusion
 exl-id: 9e741dce-05a6-4e13-8d58-fbe3b4900d7e
-TQID: https://experienceleague.adobe.com/1gzJh1C9Trah5ABH9oSeihxOyA7K2oTXkU021jHpoCI
+TQID: 'https://experienceleague.adobe.com/1gzJh1C9Trah5ABH9oSeihxOyA7K2oTXkU021jHpoCI'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1558
+source-wordcount: '1558'
 ht-degree: 38%
-
 ---
-
 # Box モジュール
 
 Adobe Workfront Fusion のシナリオでは、[!DNL Box] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりすることができます。 指定されたフォルダーを監視して、ファイルの変更を確認したり、既存のファイルを変更および削除したり、新しいファイルをフォルダーにアップロードしたりします。
@@ -103,11 +107,11 @@ Box コネクタでは、次の機能が使用されます。
 
 ### トリガー
 
-* [[!UICONTROL 新しいファイルイベント &#x200B;]](#new-file-event)
+* [[!UICONTROL 新しいファイルイベント ]](#new-file-event)
 * [新規フォルダーイベント](#new-folder-event)
 * [[!UICONTROL ファイルの監視]](#watch-files)
 
-#### [!UICONTROL 新しいファイルイベント &#x200B;]
+#### [!UICONTROL 新しいファイルイベント ]
 
 このインスタントトリガーモジュールは、選択したアクションがファイルに対して発生したときにシナリオを開始します。
 
@@ -299,15 +303,15 @@ You specify the file. You can also provide a new filename for the file.
    <td> <p>新しいフォルダーの名前を入力またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 親フォルダー]</td> 
+   <td role="rowheader">[!UICONTROL親フォルダー]</td> 
    <td> <p>新しいフォルダーを作成するフォルダーを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL フォルダーのアップロード メール アクセス &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL フォルダーのアップロード メール アクセス ]</td> 
    <td> <p>このパラメーターが設定されている場合、ユーザーはこのフォルダー用に自動的に作成されたメールアドレスにファイルを電子メールで送信できます。 「共同作業者」オプションでは、共同作業者に登録済みの電子メールのみが許可されます。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 同期状態]</td> 
+   <td role="rowheader">[!UICONTROL同期状態]</td> 
    <td> <p>フォルダーをユーザーのデバイスに同期するかどうかを指定します。 これはBox Sync （廃止）で使用され、Box Driveでは使用されません。</p> </td> 
   </tr> 
  </tbody> 
@@ -450,11 +454,11 @@ You specify the file. You can also provide a new filename for the file.
    <td> <p>関連度で並べ替えるか、変更日で並べ替えるかを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ゴミ箱コンテンツ &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL ゴミ箱コンテンツ ]</td> 
    <td> <p>ゴミ箱に移動したコンテンツとゴミ箱に移動していないコンテンツのどちらを検索するかを選択します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 親フォルダーID]</td> 
+   <td role="rowheader">[!UICONTROL親フォルダーID]</td> 
    <td> <p>特定のフォルダーで検索するには、検索する各フォルダーについて、<b>項目を追加</b>をクリックし、フォルダーのIDを入力します。 </p> </td> 
   </tr> 
   <tr> 
@@ -466,11 +470,11 @@ You specify the file. You can also provide a new filename for the file.
    <td> <p>特定の日付範囲で作成されたアセットを検索するには、その範囲内の最新の日付を入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 更新元]</td> 
+   <td role="rowheader">[!UICONTROL更新元]</td> 
    <td> <p>特定の日付範囲で更新されたアセットを検索するには、範囲内の最も早い日付を入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL がに更新されました]</td> 
+   <td role="rowheader">[!UICONTROLがに更新されました]</td> 
    <td> <p>特定の日付範囲で更新されたアセットを検索するには、その範囲内に最新の日付を入力します。</p> </td> 
   </tr> 
   <tr> 
@@ -486,7 +490,7 @@ You specify the file. You can also provide a new filename for the file.
    <td> <p>特定のサイズ範囲のアセットを検索するには、範囲の小さい末尾をバイト単位で入力します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL のサイズを変更]</td> 
+   <td role="rowheader">[!UICONTROLのサイズを変更]</td> 
    <td> <p>特定のサイズ範囲のアセットを検索するには、範囲の大きな末尾をバイト単位で入力します。</p> </td> 
   </tr> 
   <tr> 

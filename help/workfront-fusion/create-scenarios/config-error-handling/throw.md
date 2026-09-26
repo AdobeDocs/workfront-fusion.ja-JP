@@ -8,18 +8,20 @@ description: 場合によっては、Adobe Workfront Fusion でシナリオの�
 author: Becky
 feature: Workfront Fusion
 exl-id: 4bf2a6c7-16b2-4545-9adf-be3947a7017d
-TQID: https://experienceleague.adobe.com/zdEDHRJhIt8dc4Ql835IDypV-CM3YRT5w41mjGDVpSE
+TQID: 'https://experienceleague.adobe.com/zdEDHRJhIt8dc4Ql835IDypV-CM3YRT5w41mjGDVpSE'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 367
+source-wordcount: '367'
 ht-degree: 43%
-
 ---
-
 # `throw` エラー回避策の設定
 
 場合によっては、シナリオ実行の後にロールバックまたはコミット フェーズを強制的に停止したり、ルートの処理を停止して、オプションで不完全な実行のキューに保存したりすることができます。
@@ -30,7 +32,7 @@ ht-degree: 43%
 
 不完全な実行について詳しくは、[Adobe Workfront Fusion での不完全な実行の表示と解決](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)を参照してください。
 
-エラー処理ディレクティブについて詳しくは、[Adobe Workfront Fusionでのエラー処理に関するディレクティブ &#x200B;](/help/workfront-fusion/references/errors/directives-for-error-handling.md)を参照してください。
+エラー処理ディレクティブについて詳しくは、[Adobe Workfront Fusionでのエラー処理に関するディレクティブ ](/help/workfront-fusion/references/errors/directives-for-error-handling.md)を参照してください。
 
 ## アクセス要件
 
@@ -76,4 +78,4 @@ ht-degree: 43%
 
 [!DNL Rollback] ディレクティブの使用例を以下に示します。
 
-![&#x200B; ロールバック ディレクティブ &#x200B;](assets/rollback-directive.png)
+![ ロールバック ディレクティブ ](assets/rollback-directive.png)

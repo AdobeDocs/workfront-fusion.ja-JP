@@ -4,16 +4,18 @@ description: 組織のチームのリストを表示し、チーム名を編集�
 author: Becky
 feature: Workfront Fusion
 exl-id: 80899745-de1e-4fa8-a398-e5e8e35aa6f4
-TQID: https://experienceleague.adobe.com/1cqWKL8dU7DQmLbQz8ig9az1pcDz1AOSE8G0RAOExss
+TQID: 'https://experienceleague.adobe.com/1cqWKL8dU7DQmLbQz8ig9az1pcDz1AOSE8G0RAOExss'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 308
+source-wordcount: '308'
 ht-degree: 43%
-
 ---
-
 # チームの表示と管理
 
 チームとは、特定のリソースへのアクセスを共有するユーザーのグループです。 これらのリソースには以下が含まれます。
@@ -28,7 +30,7 @@ ht-degree: 43%
 
 組織のチームのリストを表示したり、チームの名前を編集したりできます。
 
-チームにユーザーを追加するには、[&#x200B; チームにユーザーを追加](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md)を参照してください。
+チームにユーザーを追加するには、[ チームにユーザーを追加](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md)を参照してください。
 
 ## アクセス要件
 
@@ -73,7 +75,7 @@ ht-degree: 43%
 
    グループのリストが開きます。
 
-1. （オプション）任意の列でTeams リストを並べ替えるには、その列の&#x200B;**並べ替え** アイコン ![並べ替えアイコン &#x200B;](assets/sort-icon.png)をクリックします。
-1. （オプション）列を非表示または表示するには、リストの右上隅付近にある&#x200B;**列** アイコン ![列アイコン &#x200B;](assets/columns-icon.png)をクリックし、列を有効または無効にします。
+1. （オプション）任意の列でTeams リストを並べ替えるには、その列の&#x200B;**並べ替え** アイコン ![並べ替えアイコン ](assets/sort-icon.png)をクリックします。
+1. （オプション）列を非表示または表示するには、リストの右上隅付近にある&#x200B;**列** アイコン ![列アイコン ](assets/columns-icon.png)をクリックし、列を有効または無効にします。
 1. （オプション）リストをフィルタリングするには、検索バーに入力を開始します。 リストには、検索語を含むチームのみが含まれます。
 1. （オプション）チーム名を変更するには、そのチームの行の&#x200B;**編集**&#x200B;をクリックし、新しいチーム名を入力して&#x200B;**保存**&#x200B;をクリックします。

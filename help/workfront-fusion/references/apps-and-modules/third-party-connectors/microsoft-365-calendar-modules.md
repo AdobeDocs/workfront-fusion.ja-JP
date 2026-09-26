@@ -4,18 +4,21 @@ description: Adobe Workfront Fusionでは、Microsoft Office 365 カレンダー
 author: Becky
 feature: Workfront Fusion
 exl-id: fdecf740-e735-4569-b1a2-7c25c751ba42
-TQID: https://experienceleague.adobe.com/yq8DHWbrroXJ-Rc2j1LQqDejh6JuKOsffdd3bQaFAyA
+TQID: 'https://experienceleague.adobe.com/yq8DHWbrroXJ-Rc2j1LQqDejh6JuKOsffdd3bQaFAyA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2055
+source-wordcount: '2055'
 ht-degree: 75%
-
 ---
-
 # [!DNL Microsoft Office 365 Calendar]
 
 Adobe Workfront Fusion のシナリオでは、[!DNL Microsoft Office 365 Calendar] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりすることができます。
@@ -204,7 +207,7 @@ Microsoft Office 365 カレンダーコネクタでは、次の機能が使用�
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL カテゴリ &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL カテゴリ ]</td> 
    <td>イベントをカレンダーに表示する各カテゴリについて、<b>項目を追加</b>をクリックし、カテゴリを入力またはマッピングします。</td> 
   </tr> 
  </tbody> 

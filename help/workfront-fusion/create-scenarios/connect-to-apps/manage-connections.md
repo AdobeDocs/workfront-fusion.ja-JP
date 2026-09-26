@@ -7,20 +7,23 @@ description: ほとんどのアプリでは、接続を作成する必要があ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 26d7caad-8e12-4f04-ac7c-f71686c90ee6
-TQID: https://experienceleague.adobe.com/P-zEd2tJCk9-uzE1xW6COpTCdFJiIq4NwGRLDdpCSVU
+TQID: 'https://experienceleague.adobe.com/P-zEd2tJCk9-uzE1xW6COpTCdFJiIq4NwGRLDdpCSVU'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Metadata
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 588
+source-wordcount: '588'
 ht-degree: 28%
-
 ---
-
 # 接続の管理
 
 接続は、Fusion がアプリケーションへのアクセスに使用する認証と権限を表します。 アプリケーションごとに1つ以上の接続を作成でき、複数のモジュールまたはシナリオで同じ接続を使用できます。
@@ -77,7 +80,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 >
 >新しいチームを選択するには、左側のナビゲーションでチーム名をクリックし、新しいチームを選択します。
 
-1. 「接続」領域を開くには、左側のナビゲーションで「**接続** ![接続」アイコン &#x200B;](assets/connections-icon.png)」をクリックします。
+1. 「接続」領域を開くには、左側のナビゲーションで「**接続** ![接続」アイコン ](assets/connections-icon.png)」をクリックします。
 1. 管理する接続を見つけ、その接続の行で次の1つ以上の手順を実行します。
 1. （オプション）環境と接続タイプを割り当てるには、**環境**&#x200B;および&#x200B;**タイプ** ドロップダウンをクリックし、オプションを選択します。
 1. （オプション）接続に対してWorkfront Fusionに付与された権限を表示するには、表示アイコン ![接続の権限を表示](assets/view-connection-permissions.png)をクリックします。
@@ -93,10 +96,10 @@ Workfront Fusionは通常、特定のサービスに対するアクセス権を�
 
 接続を更新するには：
 
-1. 「接続」領域を開くには、左側のナビゲーションで「**接続** ![接続」アイコン &#x200B;](assets/connections-icon.png)」をクリックします。
+1. 「接続」領域を開くには、左側のナビゲーションで「**接続** ![接続」アイコン ](assets/connections-icon.png)」をクリックします。
 1. 更新する接続を探します。
 1. その接続の行で、接続の横にあるチェックボックスをオンにし、画面下部の「**再認証**」をクリックします。
 
 ## リソース
 
-* 環境やタイプなどの接続メタデータについて詳しくは、[接続メタデータ &#x200B;](/help/workfront-fusion/references/connections/connection-metadata.md)を参照してください。
+* 環境やタイプなどの接続メタデータについて詳しくは、[接続メタデータ ](/help/workfront-fusion/references/connections/connection-metadata.md)を参照してください。

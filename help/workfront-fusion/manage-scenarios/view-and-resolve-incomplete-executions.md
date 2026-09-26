@@ -4,16 +4,18 @@ description: 「[!UICONTROL 未完了の実行]」フォルダーには、エラ
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-TQID: https://experienceleague.adobe.com/iTS5K7IjJzZdlqX2kCuPBCKojdmM-Id9xa-lRrY2FKI
+TQID: 'https://experienceleague.adobe.com/iTS5K7IjJzZdlqX2kCuPBCKojdmM-Id9xa-lRrY2FKI'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 584
+source-wordcount: '584'
 ht-degree: 66%
-
 ---
-
 # 未完了の実行の表示と解決
 
 「[!UICONTROL 未完了の実行]」フォルダーには、エラーが原因で正常に終了されなかったシナリオの実行が保存されます。 保存された未完了の実行は、手動または自動で解決できます。
@@ -22,7 +24,7 @@ ht-degree: 66%
 >
 >デフォルトでは、未完了の実行の保存は無効になっています。 有効にするには、シナリオの詳細設定で「[!UICONTROL 未完了の実行の保存を許可]」オプションを有効にします。
 >
->シナリオ設定について詳しくは、[&#x200B; シナリオ設定の設定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)を参照してください。
+>シナリオ設定について詳しくは、[ シナリオ設定の設定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)を参照してください。
 
 ## 記事全体を対象としたハイライト表示されたプレビュー {#highlighted-preview-article-level}
 
@@ -46,7 +48,7 @@ ht-degree: 66%
 >
 >未解決の不完全な実行の場合、チームは合計500 MBに制限されます。
 >
->詳細については、「シナリオ設定の構成」の「[&#x200B; データ損失を有効にする](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable-data-loss)」を参照してください。
+>詳細については、「シナリオ設定の構成」の「[ データ損失を有効にする](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable-data-loss)」を参照してください。
 
 
 ## 「不完全な実行」タブから不完全な実行を解決する
@@ -59,7 +61,7 @@ ht-degree: 66%
 1. モジュールのログを開くと、モジュールのすべての操作が表示されます。
 1. 失敗した操作を見つけ、「**[!UICONTROL 解決]**」をクリックします。
 
-   ![解決ボタン &#x200B;](assets/resolve-btn-350x188.png)
+   ![解決ボタン ](assets/resolve-btn-350x188.png)
 
 
 
@@ -73,7 +75,7 @@ ht-degree: 66%
 1. モジュールのログを開くと、モジュールのすべての操作が表示されます。
 1. 失敗した操作を見つけ、「**[!UICONTROL 解決]**」をクリックします。
 
-   ![解決ボタン &#x200B;](assets/resolve-btn-350x188.png)
+   ![解決ボタン ](assets/resolve-btn-350x188.png)
 
 ## 未完了の実行に関連するオプション
 
@@ -83,7 +85,7 @@ ht-degree: 66%
 * 順次処理
 * データ損失を有効にする
 
-これらのオプションについて詳しくは、[&#x200B; シナリオ設定の設定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)を参照してください。
+これらのオプションについて詳しくは、[ シナリオ設定の設定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)を参照してください。
 
 ## 未完了の実行になるエラー
 
@@ -98,18 +100,18 @@ ht-degree: 66%
 
 * 自動再試行を含む不完全な実行レコードは、次のエラータイプに対して保存されます。
 
-   * `ConnectionError`
-   * `RateLimitError`
-   * `OutOfSpaceError`
-   * `ModuleTimeoutError`
+  * `ConnectionError`
+  * `RateLimitError`
+  * `OutOfSpaceError`
+  * `ModuleTimeoutError`
 
 * 自動再試行のない不完全な実行レコードは、次のエラータイプに対して保存されます。
 
-   * `DataError`
-   * `InvalidConfigurationError`
-   * `InvalidAccessTokenError`
-   * `UnexpectedError`
-   * `MaxFileSizeExceededError`
-   * `MaxResultsExceededError`
+  * `DataError`
+  * `InvalidConfigurationError`
+  * `InvalidAccessTokenError`
+  * `UnexpectedError`
+  * `MaxFileSizeExceededError`
+  * `MaxResultsExceededError`
 
 * エラータイプが上記以外の場合、実行は失敗します。

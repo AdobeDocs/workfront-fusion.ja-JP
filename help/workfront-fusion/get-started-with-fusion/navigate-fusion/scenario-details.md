@@ -4,23 +4,25 @@ description: Adobe Workfront Fusion のシナリオの詳細
 author: Becky
 feature: Workfront Fusion
 exl-id: a6d07ed9-aa55-4993-9f78-7e691aa61049
-TQID: https://experienceleague.adobe.com/-pnW047HSeE6M1LujbfSW6RScI8rY392d7Lmr343q4Q
+TQID: 'https://experienceleague.adobe.com/-pnW047HSeE6M1LujbfSW6RScI8rY392d7Lmr343q4Q'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 576
+source-wordcount: '576'
 ht-degree: 70%
-
 ---
-
 # シナリオ詳細の詳細
 
 シナリオの詳細ページは、特定のシナリオのホームページです。 ページに表示されているシナリオの特定の情報へのアクセスを提供します。
 
 また、シナリオエディターにアクセスして、シナリオを編集することもできます。
 
-シナリオエディターについて詳しくは、[&#x200B; シナリオエディター](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)を参照してください
+シナリオエディターについて詳しくは、[ シナリオエディター](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)を参照してください
 
 ## アクセス要件
 
@@ -61,7 +63,7 @@ ht-degree: 70%
 
 1. 表示されるページで、次の表に示す要素を確認できます。
 
-   ![&#x200B; シナリオの詳細](assets/scenario-detail-350x207.png)
+   ![ シナリオの詳細](assets/scenario-detail-350x207.png)
 
    <table style="table-layout:auto"> 
     <col> 
@@ -72,7 +74,7 @@ ht-degree: 70%
       <td>このタブには、シナリオが視覚的に表示されます。 図は、シナリオエディターに表示されるものと同じです。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL レポート &#x200B;] タブ </td> 
+      <td role="rowheader">[!UICONTROL レポート ] タブ </td> 
       <td> <p>このタブを開くと、このシナリオが過去30日間に実行した操作数のグラフが表示されます。</p>  </td> 
      </tr> 
      <tr> 
@@ -120,7 +122,7 @@ ht-degree: 70%
       <td>このエリアには、現在実行中の実行に関連する情報が表示されます。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL 履歴] パネル</p> <p> </p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL履歴] パネル</p> <p> </p> </td> 
       <td> <p>このエリアには、シナリオの最後の実行に関連する情報が表示されます。 実行ごとに、次の情報が表示されます。</p> 
        <ul> 
         <li>実行日</li> 
@@ -131,7 +133,7 @@ ht-degree: 70%
        </ul> </td> 
      </tr> 
          <tr> 
-      <td role="rowheader"> <p>[!UICONTROL イベント &#x200B;] パネル</p>  </td> 
+      <td role="rowheader"> <p>[!UICONTROL イベント ] パネル</p>  </td> 
       <td>この領域には、シナリオに関連するイベントに関する情報が表示されます。  </td> 
      </tr> 
      <tr> 

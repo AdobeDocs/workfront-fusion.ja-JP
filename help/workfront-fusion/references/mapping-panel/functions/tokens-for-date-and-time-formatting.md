@@ -1,19 +1,21 @@
 ---
 title: 日付と時間の書式設定用トークン
-description: 日時書式設定の次のトークンが [!DNL Adobe Workfront Fusion mapping] パネルで使用可能です。
+description: 日付と時刻の書式設定に使用できる次のトークンは、[!DNL Adobe Workfront Fusion mapping] パネルで使用できます。
 author: Becky
 feature: Workfront Fusion
 exl-id: 4a7f288e-d563-4c37-a8bf-efc7e6b759d4
-TQID: https://experienceleague.adobe.com/PVtZkvmHsxtuAH7fXCoXB07zPRlHPJnG-j0M2lb-hGQ
+TQID: 'https://experienceleague.adobe.com/PVtZkvmHsxtuAH7fXCoXB07zPRlHPJnG-j0M2lb-hGQ'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 253
-ht-degree: 100%
-
+source-wordcount: '254'
+ht-degree: 94%
 ---
-
 # 日付と時間の書式設定用トークン
 
 ## 年、月、日のトークン
@@ -160,7 +162,7 @@ ht-degree: 100%
   <tr> 
    <td><code>w </code> </td> 
    <td><code>1 2 ... 52 53 </code> </td> 
-   <td> <p>通週</p> </td> 
+   <td> <p>年間通算週</p> </td> 
   </tr> 
   <tr> 
    <td><code>wo </code> </td> 

@@ -4,11 +4,14 @@ description: 作業の自動化には高速な処理が必要なので、Adobe W
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
+TQID: 'https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
-source-git-commit: e9450b468ff8df80286ebd8a0c1aa4070b6cb01b
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
 source-wordcount: '1445'
 ht-degree: 72%
@@ -31,7 +34,7 @@ ht-degree: 72%
   >
   > チェーンを使用すると、ワークフローを40分以上実行できますが、これはサポートされる回避策ではなく、設計リスクシグナルとして扱う必要があります。 複数の長時間実行中の子シナリオにまたがる親シナリオには、全体的なタイムアウト境界はありません。 子シナリオがハングするか、プラットフォームの問題が発生した場合、親はエラーなしで無期限に待機し、自動回復は行われません。
   >
-  > シナリオデザインで40分の制限を回避するためにチェーンが必要な場合は、実稼動にデプロイする前にアーキテクチャを確認してください。 設計ガイダンスについては、[複数のシナリオをまとめる](https://experienceleague.adobe.com/ja/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)を参照してください。
+  > シナリオデザインで40分の制限を回避するためにチェーンが必要な場合は、実稼動にデプロイする前にアーキテクチャを確認してください。 設計ガイダンスについては、[複数のシナリオをまとめる](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)を参照してください。
 * シナリオのブループリントの最大サイズは **5 MB** ですが、シナリオのサイズは **3 MB** 以下にすることをお勧めします。
 
   多数のフィールドを持つデータを作成または更新するアプリモジュールは、非常に大きなブループリントが発生する可能性があります。
@@ -48,7 +51,7 @@ ht-degree: 72%
 
   安定した統合を実現するには、HTTP リクエストモジュールを使用してWebhookを介して2番目のシナリオをトリガーすることを検討してください。 このパターンは、完全にサポートされているプリミティブを使用し、各シナリオに独立した実行制御を与えます。
 
-  チェーン付きシナリオを使用する場合は、[複数のシナリオを一緒にチェーン &#x200B;](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)する記事の設計ガイダンスと制約を確認してください。
+  チェーン付きシナリオを使用する場合は、[複数のシナリオを一緒にチェーン ](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)する記事の設計ガイダンスと制約を確認してください。
 
 ## 操作
 

@@ -4,18 +4,21 @@ description: Fusion ではメタデータを使用して接続の重要な属性
 author: Becky
 feature: Workfront Fusion
 exl-id: b41fbe8c-30fa-49d0-8a24-3535642b97ae
-TQID: https://experienceleague.adobe.com/95OLgw45L7WeFuTtNYYD1lVYf916pkSNVVw0O8eZ9y8
+TQID: 'https://experienceleague.adobe.com/95OLgw45L7WeFuTtNYYD1lVYf916pkSNVVw0O8eZ9y8'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Metadata
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 289
+source-wordcount: '289'
 ht-degree: 55%
-
 ---
-
 # 接続メタデータ
 
 Fusion ではメタデータを使用して接続の重要な属性を識別します。

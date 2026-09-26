@@ -4,16 +4,18 @@ description: マッピングとは、項目に構造化されたモジュール�
 author: Becky
 feature: Workfront Fusion
 exl-id: 9208ce20-0757-427a-9669-ce4274d05522
-TQID: https://experienceleague.adobe.com/P3u8zyUET3--vugSBysaE59lNIPOBGLpzjYMqDrU9Pc
+TQID: 'https://experienceleague.adobe.com/P3u8zyUET3--vugSBysaE59lNIPOBGLpzjYMqDrU9Pc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 441
+source-wordcount: '441'
 ht-degree: 96%
-
 ---
-
 # マッピングの概要
 
 マッピングとは、あるモジュールの出力を別のモジュールの入力フィールドに割り当てるプロセスです。
@@ -68,7 +70,7 @@ ht-degree: 96%
 
 関数タブについて詳しくは、[関数の概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)を参照してください。
 
-関数を使用したアイテムのマッピングについて詳しくは、[組み込み関数を使用したアイテムのマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)を参照してください。
+関数を使用したアイテムのマッピングについて詳しくは、[組み込み関数を使用したアイテムのマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)を参照してください。
 
 ## コレクション
 

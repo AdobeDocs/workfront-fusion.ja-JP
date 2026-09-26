@@ -4,19 +4,23 @@ description: Adobe Workfront Fusion 開発ツールを使用すると、シナ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-TQID: https://experienceleague.adobe.com/7NXYVXxbQvgKnqvRUNV-ySBApe9kl-Kn57sSKCh4NLE
+TQID: 'https://experienceleague.adobe.com/7NXYVXxbQvgKnqvRUNV-ySBApe9kl-Kn57sSKCh4NLE'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Troubleshooting
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1487
+source-wordcount: '1487'
 ht-degree: 75%
-
 ---
-
 # シナリオのデバッグ
 
 Adobe Workfront Fusion開発ツールは、シナリオの理解とトラブルシューティングに役立ちます。 開発ツールを使用すると、シナリオのすべての手動実行を確認し、実行されたすべての操作を確認し、実行されたすべてのAPI呼び出しの詳細を確認できます。 エラーが発生したモジュール、操作または単一の応答を確認し、その知識を使用してシナリオを改良できます。
@@ -63,13 +67,13 @@ Fusion 開発ツールの概要ビデオとチュートリアルについては�
 
 Adobe統合シェルでFusionを使用する場合、または新しいFusion エクスペリエンスに更新した場合は、シナリオエディターから開発ツールにアクセスできます。
 
-1. 画面の下部にある「**ヘルパーツール** ![&#x200B; ヘルパーツール &#x200B;](assets/debugger-icon.png)」アイコンをクリックします。
+1. 画面の下部にある「**ヘルパーツール** ![ ヘルパーツール ](assets/debugger-icon.png)」アイコンをクリックします。
 
 または
 
 1. デバッグするシナリオのシナリオエディターに移動します。
 
-   シナリオエディターを見つけるには、[&#x200B; シナリオエディター](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)を参照してください。
+   シナリオエディターを見つけるには、[ シナリオエディター](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)を参照してください。
 
 1. ページの何もないエリア（モジュール上以外）を右クリックします。
 1. 「**開発者ツールを開く**」を選択します。
@@ -86,7 +90,7 @@ Workfront Fusion 開発ツールは、3 つの主なセクションに分かれ�
 
 ライブストリームは、シナリオで「1 回実行」をクリックすると、バックグラウンドで発生していることを表示します。
 
-1. **[!UICONTROL ライブストリーム]** アイコン ![&#x200B; ライブストリームアイコン &#x200B;](assets/live-stream-icon.png)をクリックして、「ライブストリーム」セクションを開きます。
+1. **[!UICONTROL ライブストリーム]** アイコン ![ ライブストリームアイコン ](assets/live-stream-icon.png)をクリックして、「ライブストリーム」セクションを開きます。
 1. 次のいずれかの操作を行います。
 
    <table style="table-layout:auto"> 
@@ -140,11 +144,11 @@ Workfront Fusion 開発ツールは、3 つの主なセクションに分かれ�
 >
 >エラーが発生したシナリオからデバッガーにすばやく移動するには、モジュール出力のエラーメッセージで「**詳細を取得**」をクリックします。
 >
->![&#x200B; モジュール出力の詳細を取得](assets/go-to-debugger.png)
+>![ モジュール出力の詳細を取得](assets/go-to-debugger.png)
 
 シナリオデバッガーは、より複雑なシナリオで役に立ちます。 シナリオ実行の履歴が表示され、名前または ID でモジュールを検索できます。
 
-1. **[!UICONTROL Scenario Debugger]** アイコン ![Debugger アイコン &#x200B;](assets/scenario-debugger-icon.png)をクリックして、Scenario Debuggerを開きます。
+1. **[!UICONTROL Scenario Debugger]** アイコン ![Debugger アイコン ](assets/scenario-debugger-icon.png)をクリックして、Scenario Debuggerを開きます。
 1. （オプション）検索フィールドに検索語（名前またはモジュール ID）を入力します。
 1. モジュール名をクリックします。
 1. 操作をクリックして、リクエストの詳細を表示します。
@@ -153,7 +157,7 @@ Workfront Fusion 開発ツールは、3 つの主なセクションに分かれ�
 
 Workfront Fusionの開発ツールは、容易にシナリオを設定できます。
 
-1. **[!UICONTROL ツール]** アイコン ![&#x200B; コンソールツールアイコン &#x200B;](assets/console-tools-icon.png)をクリックして、ツールを開きます。
+1. **[!UICONTROL ツール]** アイコン ![ コンソールツールアイコン ](assets/console-tools-icon.png)をクリックして、ツールを開きます。
 1. 使用するツールを選択します。
 1. 下記のフィールドを設定します。
 1. 「**[!UICONTROL 実行]**」をクリックします。
@@ -299,7 +303,7 @@ ID で指定したモジュールの設定が開きます。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Variable to Find]</td> 
-   <td> <p> シナリオの変数モジュールから置換する変数ピルを見つけ、この（[!UICONTROL 変数を検索]）フィールドにコピーします。 フィールドには二重波括弧で囲まれて表示されます。 例：<code>&#123;&#123;5.value&#125;&#125;</code>。</p> </td> 
+   <td> <p> シナリオの変数モジュールから置換する変数ピルを見つけ、この（[!UICONTROL変数を検索]）フィールドにコピーします。 フィールドには二重波括弧で囲まれて表示されます。 例：<code>&#123;&#123;5.value&#125;&#125;</code>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Replace With]</p> </td> 

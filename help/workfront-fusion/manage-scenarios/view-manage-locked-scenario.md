@@ -7,18 +7,20 @@ description: Adobe Workfront Fusionでロックされたシナリオを管理す
 author: Becky
 feature: Workfront Fusion
 exl-id: b5e92bdc-cc1d-4b22-8c5f-42cc279d5590
-TQID: https://experienceleague.adobe.com/1eVGWr4SwutYzNmCKB62CCWbQ6ExdXtpjC5BORh-kxo
+TQID: 'https://experienceleague.adobe.com/1eVGWr4SwutYzNmCKB62CCWbQ6ExdXtpjC5BORh-kxo'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 327
+source-wordcount: '327'
 ht-degree: 77%
-
 ---
-
 # ロックされたシナリオの管理
 
 場合によっては、Workfront Fusionで一時的にシナリオがロックされることがあります。 ロックされたシナリオは、2～4時間以内に自動的にロック解除されます。 シナリオのロックを手動で解除できますが、一般的にはお勧めしません。
@@ -73,4 +75,4 @@ ht-degree: 77%
 1. 画面の右上隅にある「**[!UICONTROL オプション]**」をクリックします。
 1. 「**[!UICONTROL 実行のロックを解除]**」を選択します。
 1. 「**[!UICONTROL ロックを解除]**」をクリックします。
-   ![&#x200B; シナリオのロック解除](assets/unlock-scenario.png)
+   ![ シナリオのロック解除](assets/unlock-scenario.png)

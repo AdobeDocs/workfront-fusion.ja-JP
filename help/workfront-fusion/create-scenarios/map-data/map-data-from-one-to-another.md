@@ -4,18 +4,21 @@ description: マッピングとは、項目に構造化されたモジュール�
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e3f7729-f48e-451e-a90b-d680c9e3bcbc
-TQID: https://experienceleague.adobe.com/wKSHupk1Gx2g7ydAOilpbfRnqu-TMY5W8zKEyKd8Slk
+TQID: 'https://experienceleague.adobe.com/wKSHupk1Gx2g7ydAOilpbfRnqu-TMY5W8zKEyKd8Slk'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+    internal-label: Troubleshooting
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 777
+source-wordcount: '777'
 ht-degree: 50%
-
 ---
-
 # モジュール間での情報のマッピング
 
 マッピングとは、あるモジュールの出力を別のモジュールの入力フィールドに割り当てるプロセスです。
@@ -72,11 +75,11 @@ ht-degree: 50%
    検索結果には検索語が含まれ、大文字と小文字は区別されません。
 1. コレクションの要素である値を選択するには、そのコレクションの横にある矢印をクリックし、表示される要素を選択します。
 
-   ![&#x200B; コレクション要素](assets/collection-dropdown.png)
+   ![ コレクション要素](assets/collection-dropdown.png)
 
 1. マッピングパネルから項目をクリックして、フィールドに挿入します。
 
-詳しくは、[&#x200B; モジュールの設定](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)を参照してください。
+詳しくは、[ モジュールの設定](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)を参照してください。
 
 
 ## トラブルシューティング

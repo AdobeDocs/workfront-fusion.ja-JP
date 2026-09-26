@@ -4,18 +4,21 @@ description: Adobe Workfront Fusionでは、モジュール、モジュールの
 author: Becky
 feature: Workfront Fusion
 exl-id: 5cece7d4-b2c7-4276-8a6f-f65bad799c7a
-TQID: https://experienceleague.adobe.com/JLouqKhRBefW2RU5BnwYQfapJz-SWcSmtqAqg--kOjo
+TQID: 'https://experienceleague.adobe.com/JLouqKhRBefW2RU5BnwYQfapJz-SWcSmtqAqg--kOjo'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
+    internal-label: Troubleshooting
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 941
+source-wordcount: '941'
 ht-degree: 67%
-
 ---
-
 # モジュールまたはシナリオのコピー
 
 Adobe Workfront Fusionでは、モジュール、モジュールのグループ、シナリオ全体をコピーできます。 この機能により、シナリオやシナリオの一部を再作成することなく、再利用できます。
@@ -86,7 +89,7 @@ Adobe Workfront Fusionでは、モジュール、モジュールのグループ�
 
 >[!NOTE]
 >
->モジュールのグループをコピーする代わりに、モジュールのグループを新しい連鎖シナリオに移動できます。 手順については、[&#x200B; モジュールをチェーンに移動](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)するを参照してください。
+>モジュールのグループをコピーする代わりに、モジュールのグループを新しい連鎖シナリオに移動できます。 手順については、[ モジュールをチェーンに移動](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)するを参照してください。
 
 ## クローンによるシナリオのコピー
 
@@ -124,7 +127,7 @@ Adobe Workfront Fusionでは、モジュール、モジュールのグループ�
 
 >[!NOTE]
 >
->シナリオの以前のバージョンのブループリントをエクスポートするには、[&#x200B; シナリオバージョンの表示と管理](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)を参照してください。
+>シナリオの以前のバージョンのブループリントをエクスポートするには、[ シナリオバージョンの表示と管理](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)を参照してください。
 
 ### ブループリントの読み込み
 
@@ -145,8 +148,8 @@ Adobe Workfront Fusionでは、モジュール、モジュールのグループ�
 
 Workfront Fusionのシナリオのベースとして、テンプレートを作成できます。 テンプレートからシナリオを作成する場合、テンプレートを変更せずにシナリオを変更できます。 テンプレートには、フィールドの値は保存されません。
 
-テンプレートを使用したシナリオの作成について詳しくは、[&#x200B; テンプレートを使用したシナリオの作成](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)を参照してください。
+テンプレートを使用したシナリオの作成について詳しくは、[ テンプレートを使用したシナリオの作成](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)を参照してください。
 
 ## トラブルシューティング
 
-「[&#x200B; モジュールまたはモジュールのグループをコピー](#copy-a-module-or-a-group-of-modules)」の説明に従ってモジュールをコピーして貼り付けている場合、貼り付け時に何も表示されない場合は、ブラウザーのサイト設定を確認して、クリップボードからの貼り付けが許可されていることを確認します。
+「[ モジュールまたはモジュールのグループをコピー](#copy-a-module-or-a-group-of-modules)」の説明に従ってモジュールをコピーして貼り付けている場合、貼り付け時に何も表示されない場合は、ブラウザーのサイト設定を確認して、クリップボードからの貼り付けが許可されていることを確認します。

@@ -4,16 +4,18 @@ description: Adobe Workfront Fusion を使用するには、Adobe Workfront ラ�
 author: Becky
 feature: Workfront Fusion
 exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
-TQID: https://experienceleague.adobe.com/3bzje0OOFp4aA6KeWzSGU-hIUHSCBhAerh8GIX3GNWc
+TQID: 'https://experienceleague.adobe.com/3bzje0OOFp4aA6KeWzSGU-hIUHSCBhAerh8GIX3GNWc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 705
+source-wordcount: '705'
 ht-degree: 100%
-
 ---
-
 # シナリオの概要
 
 Adobe Workfront Fusion の役割は、プロセスを自動化して、ユーザーが通常のタスクに多くの時間を費やさなくてもいいようにすることです。 これは、アプリ内やサービス内、およびそれらの間でアクションをリンクし、データを自動的に転送および変換するシナリオを作成することで機能します。 作成するシナリオは、アプリまたはサービス内のデータを監視し、そのデータを処理して必要な結果を提供します。
@@ -111,5 +113,5 @@ Workfront Fusion は、他のアプリケーションや web サービスに接�
 * Adobe Workfront Fusion で使用される用語について詳しくは、[Adobe Workfront Fusion 用語集](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md)を参照してください。
 * 練習シナリオの作成を開始方法について詳しくは、[基本シナリオの作成](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)を参照してください。
 * シナリオの作成と管理について詳しくは、以下にリストされている記事を参照してください。
-   * [シナリオの作成](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
-   * [シナリオの管理](/help/workfront-fusion/manage-scenarios/manage-scenarios-toc.md)
+  * [シナリオの作成](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
+  * [シナリオの管理](/help/workfront-fusion/manage-scenarios/manage-scenarios-toc.md)

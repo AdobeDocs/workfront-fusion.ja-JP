@@ -4,16 +4,18 @@ description: エラーの原因が迅速に解決される可能性がある場�
 author: Becky
 feature: Workfront Fusion
 exl-id: d568942c-2cd5-430c-bdbf-e1496da25b50
-TQID: https://experienceleague.adobe.com/2Gw-2VZoILhCB-96exxTRry7S5mgOetJ-lkl-APgypI
+TQID: 'https://experienceleague.adobe.com/2Gw-2VZoILhCB-96exxTRry7S5mgOetJ-lkl-APgypI'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 516
+source-wordcount: '516'
 ht-degree: 67%
-
 ---
-
 # Break ディレクティブによって処理されたエラーの解決
 
 Break ディレクティブによってエラーが処理されると、不完全な実行フォルダーにレコードが作成されます。 このレコードには、シナリオの実行の状態と共に、前のモジュールのデータが格納されます。 レコードは、エラーが発生したモジュールを参照し、モジュールが入力として受信したデータに関する情報を含みます。 エラーの原因となるデータのバンドルごとに、別々のレコードが作成されます。
@@ -58,14 +60,14 @@ Break ディレクティブによってエラーが処理されると、不完�
 1. 左側のパネルの「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. 回避策を追加するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに入ります。
-1. **フローコントロール** アイコン ![&#x200B; フローコントロール &#x200B;](assets/flow-control-icon.png)をクリックし、**ブレーク**&#x200B;を選択します。
+1. **フローコントロール** アイコン ![ フローコントロール ](assets/flow-control-icon.png)をクリックし、**ブレーク**&#x200B;を選択します。
 1. Break モジュール内で、[!UICONTROL **自動的に実行を完了する**]&#x200B;オプションを有効にします。
 1. **試行回数**&#x200B;フィールドに、モジュールが実行を再試行する最大回数を入力またはマッピングします
 
    この数は 1 ～ 100 の範囲で指定する必要があります。
 1. **試行間隔**&#x200B;フィールドに、各再試行の間隔の分数を入力またはマッピングします。
 
-このオプションを有効にすると、エラーが発生した場合、試行間隔フィールドで指定された時間後に未完了の実行が取得され、元の入力データで実行されます。 この処理は、エラーなしでモジュールの実行が完了するか、指定された試行回数に達するまで繰り返されます。
+このオプションを有効にすると、エラーが発生した場合、]試行間隔[!UICONTROL フィールドで指定された時間後に未完了の実行が取得され、元の入力データで実行されます。 この処理は、エラーなしでモジュールの実行が完了するか、指定された試行回数に達するまで繰り返されます。
 
 >[!NOTE]
 >

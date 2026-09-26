@@ -4,17 +4,19 @@ description: Workfront Fusion の AI アシスタント
 author: Becky
 feature: Workfront Fusion
 exl-id: 22f24c0e-4eb3-4ef7-b012-374ee5e8a844
-TQID: https://experienceleague.adobe.com/MeGV8WNtXy8HkizGkUutuhw2ctdmf3DFIkRWBRXPzA0
+hide: true
+TQID: 'https://experienceleague.adobe.com/MeGV8WNtXy8HkizGkUutuhw2ctdmf3DFIkRWBRXPzA0'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-hide: true
-source-git-commit: b84dea9d44b4112a8d905b631720727e557351df
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 30
+source-wordcount: '30'
 ht-degree: 50%
-
 ---
-
 # Workfront Fusion の AI アシスタント
 
 この機能は推奨されません。近い将来この記事は削除されます。
@@ -56,7 +58,7 @@ For more detail about the information in this table, see [Access requirements in
 
 Adobe must have a signed Adobe Gen AI agreement on file.
 
-For more information on signing the agreement, see [Sign the Adobe Gen AI agreement](https://experienceleague.adobe.com/ja/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) in the article AI Assistant overview in the Workfront documentation.
+For more information on signing the agreement, see [Sign the Adobe Gen AI agreement](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) in the article AI Assistant overview in the Workfront documentation.
 
 ## Get information from AI Assistant
 

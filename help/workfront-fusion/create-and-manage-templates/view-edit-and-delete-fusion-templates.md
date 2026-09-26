@@ -7,23 +7,25 @@ description: Adobe Workfront Fusion を使用するには、Adobe Workfront ラ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 97e3402c-d1d0-44f6-9752-11b0f5abee22
-TQID: https://experienceleague.adobe.com/OHwMJdhw3YevvWt3K-20ly90b2S0EfQ-gUz-U9J807U
+TQID: 'https://experienceleague.adobe.com/OHwMJdhw3YevvWt3K-20ly90b2S0EfQ-gUz-U9J807U'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 880
+source-wordcount: '880'
 ht-degree: 52%
-
 ---
-
 # テンプレートの表示、編集および削除
 
 Workfront Fusion テンプレート機能を使用すると、既存のテンプレートを作成し、Workfront Fusion シナリオのベースとして使用できます。 テンプレートには、組織のニーズと特定のユースケースに合わせて設定や変更をおこなう一般的なユースケースが含まれています。
 
-現在使用可能なFusion テンプレートの一覧については、[現在使用可能なAdobe Workfront Fusion テンプレート &#x200B;](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)を参照してください。
+現在使用可能なFusion テンプレートの一覧については、[現在使用可能なAdobe Workfront Fusion テンプレート ](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)を参照してください。
 
 ## アクセス要件
 
@@ -58,7 +60,7 @@ Workfront Fusion テンプレート機能を使用すると、既存のテンプ
 
 「テンプレート」領域では、使用可能なテンプレート、そのテンプレートに含まれるアプリケーションおよび構造を表示できます。 また、特定のアプリや名前を検索し、BBのユースケースをフィルタリングすることもできます。
 
-1. 左側のナビゲーションで「**テンプレート** ![&#x200B; テンプレートアイコン &#x200B;](assets/templates-icon.png)」をクリックします。
+1. 左側のナビゲーションで「**テンプレート** ![ テンプレートアイコン ](assets/templates-icon.png)」をクリックします。
 1. 公開されているテンプレートを表示するには、「公開テンプレート」タブをクリックします。
 
    または
@@ -95,7 +97,7 @@ Workfront Fusion テンプレート機能を使用すると、既存のテンプ
 
    チームテンプレートからシナリオの作成を開始するには、図をクリックし、モジュールをクリックして設定を開始します。
 
-テンプレートからシナリオを作成する手順については、[&#x200B; テンプレートを使用したシナリオの作成](/help/workfront-fusion/create-and-manage-templates/create-scenarios-with-fusion-templates.md)を参照してください。
+テンプレートからシナリオを作成する手順については、[ テンプレートを使用したシナリオの作成](/help/workfront-fusion/create-and-manage-templates/create-scenarios-with-fusion-templates.md)を参照してください。
 
 
 
@@ -108,7 +110,7 @@ Workfront Fusion テンプレート機能を使用すると、既存のテンプ
 
 「[!UICONTROL チームテンプレート]」タブで任意のテンプレートを編集できます。
 
-1. サイドナビゲーションメニューの&#x200B;**[!UICONTROL テンプレート]** アイコン ![&#x200B; テンプレートアイコン &#x200B;](assets/templates-icon.png)をクリックします。
+1. サイドナビゲーションメニューの&#x200B;**[!UICONTROL テンプレート]** アイコン ![ テンプレートアイコン ](assets/templates-icon.png)をクリックします。
 1. 「**[!UICONTROL チームテンプレート]**」タブをクリックします。
 1. 「**[!UICONTROL プライベート]**」タブをクリックします。
 1. 編集するテンプレートをクリックします。
@@ -119,11 +121,11 @@ Workfront Fusion テンプレート機能を使用すると、既存のテンプ
    テンプレートダイアグラムをクリックします。
 
 1. テンプレートに変更を加えます。 テンプレートの作成時に使用できたすべてのオプションにアクセスできます。 これらのオプションを確認するには、[新しいテンプレートの作成](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md)を参照してください。
-1. **[!UICONTROL 保存]** アイコン ![保存アイコン &#x200B;](assets/save-icon.png)をクリックします。
+1. **[!UICONTROL 保存]** アイコン ![保存アイコン ](assets/save-icon.png)をクリックします。
 
 >[!NOTE]
 >
->「[!UICONTROL チームテンプレート]」タブには、公開されたテンプレートだけでなく、管理者が既に公開したテンプレートのコピーも含まれます。 これにより、すでに全員に表示されているテンプレートを編集できます。 これらのテンプレートのいずれかを変更しても、変更によって公開テンプレートがすぐに上書きされることはありません。 「[!UICONTROL 公開テンプレート &#x200B;]」タブのテンプレートはまだ操作されず、公開されたままですが、[!UICONTROL &#x200B; チームテンプレート &#x200B;]からの変更を含む新しいバージョンが公開プロセスを開始します。 変更されたバージョンが公開されて承認されると、元の公開テンプレートが上書きされます。
+>「[!UICONTROL チームテンプレート]」タブには、公開されたテンプレートだけでなく、管理者が既に公開したテンプレートのコピーも含まれます。 これにより、すでに全員に表示されているテンプレートを編集できます。 これらのテンプレートのいずれかを変更しても、変更によって公開テンプレートがすぐに上書きされることはありません。 「[!UICONTROL 公開テンプレート ]」タブのテンプレートはまだ操作されず、公開されたままですが、[!UICONTROL  チームテンプレート ]からの変更を含む新しいバージョンが公開プロセスを開始します。 変更されたバージョンが公開されて承認されると、元の公開テンプレートが上書きされます。
 
 ## テンプレートを削除
 
@@ -131,7 +133,7 @@ Workfront Fusion テンプレート機能を使用すると、既存のテンプ
 
 テンプレートを削除した後は、復元できないことに注意してください。 チームテンプレートは、チームのすべてのメンバーが利用できるので、テンプレートを削除する前に、チームと確認して、テンプレートが必要でないことを確認することをお勧めします。
 
-1. サイドナビゲーションメニューの&#x200B;**[!UICONTROL テンプレート]** アイコン ![&#x200B; テンプレートアイコン &#x200B;](assets/templates-icon.png)をクリックします。
+1. サイドナビゲーションメニューの&#x200B;**[!UICONTROL テンプレート]** アイコン ![ テンプレートアイコン ](assets/templates-icon.png)をクリックします。
 1. 「**[!UICONTROL チームテンプレート]**」タブをクリックします。
 1. テンプレート名の横にある「**[!UICONTROL 削除]**」をクリックします。
 

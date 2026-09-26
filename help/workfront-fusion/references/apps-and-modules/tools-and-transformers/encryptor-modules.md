@@ -4,16 +4,18 @@ description: Adobe Workfront Fusion 暗号化モジュールを使用すると�
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b119efe-6762-445e-bbc7-c59437fd5060
-TQID: https://experienceleague.adobe.com/C4okceW3ZngBJrcDS-qymjR16GwTb3pFfdZpG-CoSwc
+TQID: 'https://experienceleague.adobe.com/C4okceW3ZngBJrcDS-qymjR16GwTb3pFfdZpG-CoSwc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 863
+source-wordcount: '863'
 ht-degree: 34%
-
 ---
-
 # 暗号化
 
 Adobe Workfront Fusion [!UICONTROL Encryptor] モジュールを使用すると、任意のテキストデータを暗号化できます。 現在、AES256 と PGP（[!UICONTROL OpenPGP]）を介したメッセージの暗号化をサポートしています。
@@ -57,7 +59,7 @@ PGP で暗号化および復号する場合、キーチェーンを使用し、�
 
 公開鍵と秘密鍵について詳しくは、[Adobe Workfront Fusion用語集](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md)を参照してください。
 
-キーについて詳しくは、[&#x200B; キー](/help/workfront-fusion/references/modules/keys.md)を参照してください。
+キーについて詳しくは、[ キー](/help/workfront-fusion/references/modules/keys.md)を参照してください。
 
 ## [!UICONTROL 暗号化]モジュールとそのフィールド
 

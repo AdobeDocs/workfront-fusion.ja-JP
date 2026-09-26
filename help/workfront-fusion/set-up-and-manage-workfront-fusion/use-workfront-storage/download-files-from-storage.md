@@ -5,18 +5,20 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: a2632cb3184cd555555136288e78ab1e05e4ea9d
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 211
+source-wordcount: '211'
 ht-degree: 0%
-
 ---
-
 # ストレージからファイルをダウンロード
 
 Fusion ストレージ領域を使用すると、Adobe ストレージからファイルをダウンロードできます。
 
-ストレージの概要については、[&#x200B; ストレージの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)を参照してください。
+ストレージの概要については、[ ストレージの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)を参照してください。
 
 ## ファイルをダウンロード
 
@@ -43,4 +45,4 @@ Fusion ストレージ領域を使用すると、Adobe ストレージからフ�
 
 ダウンロードに失敗した場合、トースト通知が表示されます。「*」ダウンロードに失敗しました – ファイルをダウンロードできませんでした。 もう一度やり直してください。&quot;*
 
-ファイルのバージョンについて詳しくは、[&#x200B; ストレージでのファイルのバージョン履歴の表示](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/view-storage-file-version-history.md)を参照してください。
+ファイルのバージョンについて詳しくは、[ ストレージでのファイルのバージョン履歴の表示](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/view-storage-file-version-history.md)を参照してください。

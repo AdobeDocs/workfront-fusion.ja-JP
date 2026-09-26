@@ -4,16 +4,18 @@ description: シナリオを作成するには、次の一般的なワークフ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-TQID: https://experienceleague.adobe.com/5j4My9ds8RdA3frEKdRHBFiWpQr-6fI0DfVyWSIgBPc
+TQID: 'https://experienceleague.adobe.com/5j4My9ds8RdA3frEKdRHBFiWpQr-6fI0DfVyWSIgBPc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 782
+source-wordcount: '782'
 ht-degree: 21%
-
 ---
-
 # シナリオ作成のワークフロー
 
 シナリオは、組織のニーズを満たすように構築されており、ユースケースに対応するアプリケーションやモジュールが揃っています。 ただし、シナリオの作成は、ユースケースに関係なく、同じ基本ワークフローに従います。 この記事では、シナリオを作成する基本的なプロセスについて説明します。
@@ -38,29 +40,29 @@ ht-degree: 21%
 ## シナリオの作成と名前の付け
 
 1. Workfront Fusion アカウントにログインします。
-1. 左側のパネルで「**[!UICONTROL シナリオ]** ![&#x200B; シナリオアイコン &#x200B;](assets/scenarios-icon.png)」をクリックします。
+1. 左側のパネルで「**[!UICONTROL シナリオ]** ![ シナリオアイコン ](assets/scenarios-icon.png)」をクリックします。
 
    >[!NOTE]
    >
    >左側のナビゲーションパネルまたはアイコンが表示されない場合は、メニュー ![メニュー](assets/main-menu-icon-left-nav.png) アイコンをクリックします。
 
-1. （オプション） [!UICONTROL **フォルダー**] パネルで、**[!UICONTROL フォルダーを追加]** アイコン ![&#x200B; フォルダーを追加アイコン &#x200B;](assets/add-folder-icon.png)をクリックし、最初のフォルダーに「練習シナリオ」のような名前を入力します。
+1. （オプション） [!UICONTROL **フォルダー**] パネルで、**[!UICONTROL フォルダーを追加]** アイコン ![ フォルダーを追加アイコン ](assets/add-folder-icon.png)をクリックし、最初のフォルダーに「練習シナリオ」のような名前を入力します。
 
 1. （オプション）フォルダーを開き、ページの右上隅にある「**[!UICONTROL 新しいシナリオを作成]**」をクリックします。
 
 1. 左上隅にある「**[!UICONTROL 新規シナリオ]**」プレースホルダー名を選択し、「練習用シナリオ 1」などの名前を入力します。
 
-   ![&#x200B; シナリオに名前を付ける](assets/name-the-scenario.png)
+   ![ シナリオに名前を付ける](assets/name-the-scenario.png)
 
-1. 以下の最初のモジュール [&#128279;](#2-connect-the-first-module)を接続して続行します。
+1. 以下の最初のモジュール ](#2-connect-the-first-module)を[接続して続行します。
 
 ## 最初のモジュールを追加して設定
 
 シナリオの最初のモジュールはトリガーモジュールで、特定の条件が満たされるとシナリオが開始されます。
 
-シナリオに最初のモジュールを追加する手順については、「[&#x200B; シナリオに最初のモジュールを追加する](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-basic.md#add-the-first-module-to-a-scenario)」の「シナリオにモジュールを追加する」を参照してください。
+シナリオに最初のモジュールを追加する手順については、「[ シナリオに最初のモジュールを追加する](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-basic.md#add-the-first-module-to-a-scenario)」の「シナリオにモジュールを追加する」を参照してください。
 
-モジュールの設定手順については、[&#x200B; モジュールの設定](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)を参照してください
+モジュールの設定手順については、[ モジュールの設定](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)を参照してください
 
 ## 接続の作成
 
@@ -68,37 +70,37 @@ ht-degree: 21%
 
 接続の作成方法に関する基本的な手順については、[接続の作成 – 基本的な手順](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)を参照してください。
 
-Google、Microsoft、または専用コネクタのないアプリケーションに関する特定のユースケースについては、[&#x200B; アプリケーションへの接続：記事インデックス &#x200B;](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-apps-toc.md)の他の記事を参照してください。
+Google、Microsoft、または専用コネクタのないアプリケーションに関する特定のユースケースについては、[ アプリケーションへの接続：記事インデックス ](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-apps-toc.md)の他の記事を参照してください。
 
 ## 追加モジュールの追加と設定
 
 追加モジュールの追加と設定を続行します。
 
-モジュールの追加方法については、[&#x200B; モジュールの追加：記事インデックス &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)に記載されている記事を参照してください。
+モジュールの追加方法については、[ モジュールの追加：記事インデックス ](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)に記載されている記事を参照してください。
 
 ## モジュール間のデータのマッピング
 
 以前のモジュールの出力を、後続のモジュールへの入力として使用できます。 例えば、1つのモジュールでWorkfront プロジェクトを作成し、後続のモジュールでそのモジュールにドキュメントをアップロードできます。
 
-手順については、[&#x200B; マップデータ：記事インデックス &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)の記事を参照してください。
+手順については、[ マップデータ：記事インデックス ](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)の記事を参照してください。
 
 ## ルーティングの設定
 
 ルーティングにより、シナリオはデータ値に基づいて異なるアクションを実行できます。
 
-手順については、[&#x200B; ルーターモジュールの追加とルートの設定](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)を参照してください。
+手順については、[ ルーターモジュールの追加とルートの設定](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)を参照してください。
 
 ## エラー処理の設定
 
 エラー処理を使用すると、シナリオをエラーから回復できます。 様々なエラー状況でシナリオがどのように反応するかを選択できます。
 
-手順については、[&#x200B; エラー処理の追加](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)を参照してください。
+手順については、[ エラー処理の追加](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)を参照してください。
 
 ## シナリオ設定の指定
 
 シナリオのスケジュール設定、メモの作成、データの保存方法の決定など、シナリオ全体の設定を行うことができます。
 
-手順については、[&#x200B; シナリオ設定の設定：記事インデックス &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)の記事を参照してください。
+手順については、[ シナリオ設定の設定：記事インデックス ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)の記事を参照してください。
 
 ## テストと修正
 
@@ -107,10 +109,10 @@ Google、Microsoft、または専用コネクタのないアプリケーショ�
 1. シナリオエディターの左下隅にある「**[!UICONTROL 1 回実行]**」をクリックします。
 1. シナリオの実行が完了したら、各モジュールの上にある実行インスペクターのバブルをクリックして、情報の入力とそのモジュールの出力を確認します。
 
-   * シナリオ実行情報の読み取りに関する一般的な情報については、[&#x200B; シナリオ実行フロー](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)を参照してください。
-   * 処理されたバンドルについて詳しくは、[Adobe Workfront Fusionでのシナリオ実行、サイクル、フェーズ &#x200B;](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)を参照してください。
+   * シナリオ実行情報の読み取りに関する一般的な情報については、[ シナリオ実行フロー](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)を参照してください。
+   * 処理されたバンドルについて詳しくは、[Adobe Workfront Fusionでのシナリオ実行、サイクル、フェーズ ](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)を参照してください。
 
-1. Workfront Fusionで、左下隅付近の&#x200B;**[!UICONTROL 保存]** ![保存アイコン &#x200B;](assets/save-icon.png)をクリックして、シナリオの進行状況を保存します。
+1. Workfront Fusionで、左下隅付近の&#x200B;**[!UICONTROL 保存]** ![保存アイコン ](assets/save-icon.png)をクリックして、シナリオの進行状況を保存します。
 
    >[!IMPORTANT]
    >
@@ -120,9 +122,9 @@ Google、Microsoft、または専用コネクタのないアプリケーショ�
 
 シナリオをアクティベートすると、デフォルトでは 15 分ごとに実行されます。 これは、実行するタイミングと頻度を定義することで変更できます。
 
-シナリオのアクティブ化について詳しくは、[&#x200B; シナリオのアクティブ化または非アクティブ化](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)を参照してください。
+シナリオのアクティブ化について詳しくは、[ シナリオのアクティブ化または非アクティブ化](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)を参照してください。
 
-スケジュールについて詳しくは、[&#x200B; シナリオのスケジュール &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)を参照してください。
+スケジュールについて詳しくは、[ シナリオのスケジュール ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)を参照してください。
 
 ## Workfront Fusion のシナリオのキーボードショートカット
 
@@ -156,7 +158,7 @@ Google、Microsoft、または専用コネクタのないアプリケーショ�
    <td>Ctrl+Fn+F12</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 複数のモジュールを選択]</td> 
+   <td role="rowheader">[!UICONTROL複数のモジュールを選択]</td> 
    <td>Shift+ドラッグ</td> 
    <td>Shift+ドラッグ </span> </td> 
   </tr> 

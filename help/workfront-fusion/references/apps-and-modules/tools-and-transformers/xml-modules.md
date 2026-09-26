@@ -4,19 +4,23 @@ description: XML アプリを使用すると、XML &gt；解析XML モジュー�
 author: Becky
 feature: Workfront Fusion
 exl-id: ab323361-cd04-4dcc-ab02-0fb468334fdb
-TQID: https://experienceleague.adobe.com/WAXpNvb43E4nAZ8lD4Ch55gwqdgRbG3bhPmZDSvnFx4
+TQID: 'https://experienceleague.adobe.com/WAXpNvb43E4nAZ8lD4Ch55gwqdgRbG3bhPmZDSvnFx4'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Troubleshooting
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1433
+source-wordcount: '1433'
 ht-degree: 86%
-
 ---
-
 # XML
 
 [!UICONTROL XML] アプリを使用すると、[!UICONTROL XML]／[!UICONTROL Parse XML] モジュールを介して XML 形式のテキストを解析し、それをバンドルに変換して、他のモジュールでデータの使用が可能になります。 [!UICONTROL XML]／[!UICONTROL Create XML] モジュールを使用して、バンドルを XML 形式のテキストに変換することもできます。
@@ -105,7 +109,7 @@ ht-degree: 86%
 
 1. 「**[!UICONTROL ジェネレーター]**」ボタンをクリックし、XML サンプルを「[!UICONTROL サンプルデータ]」フィールドに貼り付けます。
 
-   ![&#x200B; サンプルデータフィールド &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
+   ![ サンプルデータフィールド ](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
 
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
@@ -192,7 +196,7 @@ ht-degree: 86%
 URLからXML ファイルをダウンロードし、そのコンテンツを解析するには：
 
 1. 新しいシナリオを開始します。
-1. [!UICONTROL HTTP] > [!UICONTROL &#x200B; ファイルを取得] モジュールを追加します
+1. [!UICONTROL HTTP] > [!UICONTROL  ファイルを取得] モジュールを追加します
 1. モジュールの設定を開き、次のように設定します。
 
    **URL**：XML ファイルの URL（例：`https://siftrss.com/f/rqLy05ayMBJ`）

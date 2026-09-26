@@ -4,16 +4,18 @@ description: Adobe Workfront Fusion テンプレート機能を使用すると�
 author: Becky
 feature: Workfront Fusion
 exl-id: 9bc5f195-c406-45e9-9a1e-5c8a2a0e0ded
-TQID: https://experienceleague.adobe.com/b6P6739Vad2S9ZkYJr24KVCv5FE99Cz6ZGAwkcF-yYE
+TQID: 'https://experienceleague.adobe.com/b6P6739Vad2S9ZkYJr24KVCv5FE99Cz6ZGAwkcF-yYE'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 415
+source-wordcount: '415'
 ht-degree: 46%
-
 ---
-
 # テンプレートを使用したシナリオの作成
 
 Adobe Workfront Fusion テンプレートを使用すると、既存のテンプレートを作成し、Workfront Fusion シナリオのベースとして使用できます。
@@ -55,7 +57,7 @@ Adobe Workfront Fusion テンプレートを使用すると、既存のテンプ
 
 ## テンプレートからシナリオを作成
 
-1. 左側のナビゲーションパネルで「**テンプレート**」タブ「![&#x200B; テンプレート」アイコン &#x200B;](assets/templates-icon.png)」をクリックします。
+1. 左側のナビゲーションパネルで「**テンプレート**」タブ「![ テンプレート」アイコン ](assets/templates-icon.png)」をクリックします。
 1. 使用するテンプレート（**パブリックテンプレート**&#x200B;または&#x200B;**チームテンプレート**）が含まれているタブをクリックします。
 1. 画面の左上隅付近にある検索バーを使用して、特定のテンプレートを検索します。 テンプレート名または含まれるアプリケーションで検索できます。
 1. シナリオの作成に使用するテンプレートをクリックします。
@@ -73,6 +75,6 @@ Adobe Workfront Fusion テンプレートを使用すると、既存のテンプ
 
 1. テンプレートに必要なすべての設定を設定すると、テンプレートの準備が整ったことを知らせる通知が届き、標準シナリオオプションが画面の下部に表示されます。 これで、シナリオの作成に移れます。
 
-1. 画面の下部にある&#x200B;**保存** アイコン ![保存アイコン &#x200B;](assets/save-icon.png)をクリックして、シナリオを保存します。
+1. 画面の下部にある&#x200B;**保存** アイコン ![保存アイコン ](assets/save-icon.png)をクリックして、シナリオを保存します。
 
    このシナリオは、Workfront Fusionのシナリオ領域に保存されます。
