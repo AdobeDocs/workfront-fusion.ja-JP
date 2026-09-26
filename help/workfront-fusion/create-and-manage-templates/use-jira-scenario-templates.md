@@ -77,7 +77,7 @@ Adobe workfront Fusionでは、FusionとJira間の共通ワークフローを自
   詳しくは、Adobe ドキュメントの[&#x200B; テクニカルアカウントの設定](https://developer.adobe.com/cloud-storage/guides/getting-started/technical-account-setup)を参照してください。
 * Adobe Admin Console製品プロファイル領域のテクニカルアカウントにシステム管理者権限を付与する必要があります。
 
-  詳しくは、「[Adobe Admin Consoleを使用してWorkfrontでシステム管理者を作成する](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)」を参照してください。
+  詳しくは、「[Adobe Admin Consoleを使用してWorkfrontでシステム管理者を作成する](https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)」を参照してください。
 
 ### Jira
 
@@ -172,13 +172,13 @@ Jira統合テンプレートを使用するには、次の設定を実行する�
 
 1. Workfrontで、System Integration ユーザーを作成します。 このユーザーはWorkfront Fusionでのみ使用され、人間のユーザーを表すものではありません。 このユーザーに割り当てられたタスクは、WorkfrontとJiraを同期するシナリオをトリガーします。
 
-   手順については、Workfront ドキュメントの「[&#x200B; ユーザーを追加](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users)」を参照してください。
+   手順については、Workfront ドキュメントの「[&#x200B; ユーザーを追加](https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users)」を参照してください。
 
 #### Workfrontでのカスタムフォームの作成
 
 1. Workfrontでは、カスタムフォームの作成を開始します。
 
-   手順については、Workfront ドキュメントの「[&#x200B; カスタムフォームの作成](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form)」を参照してください。
+   手順については、Workfront ドキュメントの「[&#x200B; カスタムフォームの作成](https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form)」を参照してください。
 1. フォームに「**JIRA Fields**」という名前を付けます。
 1. カスタムフォームに次のフィールドを含めます。
 
@@ -195,7 +195,7 @@ Jira統合テンプレートを使用するには、次の設定を実行する�
 >
 >他のユーザーによる編集からこのフォームを制限することをお勧めします。 これを実現するには、カスタムフォームに追加したユーザーに表示アクセス権のみを付与します。
 >
->手順については、Workfront ドキュメントの「[&#x200B; カスタムフォームを共有する](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form)」を参照してください。
+>手順については、Workfront ドキュメントの「[&#x200B; カスタムフォームを共有する](https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form)」を参照してください。
 
 ### Workfront Fusionでの接続の設定
 

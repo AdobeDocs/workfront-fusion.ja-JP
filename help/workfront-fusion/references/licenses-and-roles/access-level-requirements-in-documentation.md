@@ -51,7 +51,7 @@ Adobe Workfront Fusionのドキュメントのハウツー記事には、その�
    <td role="rowheader">Adobe Workfront パッケージ 
    <td> Adobe Workfrontのパッケージとは、組織が購入した機能セットを指します。 Fusion機能のほとんどは、すべてのプランで利用できますが、Ultimate Workfront パッケージを持つ組織のみが利用できる例外もあります。 
    <ul><li>お客様の組織が使用しているAdobe Workfront パッケージ（新しいパッケージモデルまたは現在のパッケージモデルのいずれの場合も含む）については、Workfront管理者にお問い合わせください。</li>
-   <li>Workfront管理者が組織のWorkfront パッケージを見つける方法について詳しくは、「ファイアウォールの概要」の「<a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-package">組織のクラスターとWorkfront プランを表示</a>」を参照してください。</li><li>新しいWorkfront パッケージについて詳しくは、<a href="https://business.adobe.com/products/workfront/pricing.html">Adobe Workfrontの価格とパッケージ </a>を参照してください。</li></ul> </td> 
+   <li>Workfront管理者が組織のWorkfront パッケージを見つける方法について詳しくは、「ファイアウォールの概要」の「<a href="https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-package">組織のクラスターとWorkfront プランを表示</a>」を参照してください。</li><li>新しいWorkfront パッケージについて詳しくは、<a href="https://business.adobe.com/jp/products/workfront/pricing.html">Adobe Workfrontの価格とパッケージ </a>を参照してください。</li></ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront ライセンス</td> 
@@ -60,9 +60,9 @@ Adobe Workfront Fusionのドキュメントのハウツー記事には、その�
    <li>割り当てられているライセンスを確認するには、Workfront 管理者にお問い合わせください。</li>
    <li>Adobe Workfront は、新しい価格設定のパッケージモデルに移行しつつあります。 ライセンスについては、以下を参照してください。
    <ul>
-   <li>新規：<a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">新しいライセンスの概要</a></li>
-   <li>現在：<a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">ライセンスの概要</a></li></ul></li>
-   <li>正しいアクセスレベルがあるにも関わらずアクセスできない場合は、アクセスレベルにその他の制限が設定されていないか Workfront 管理者にお問い合わせください。 Workfront管理者がアクセス レベルを変更する方法について詳しくは、<a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/configure-access/create-modify-access-levels" class="MCXref xref"> カスタム アクセス レベルの作成と変更</a>を参照してください。
+   <li>新規：<a href="https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">新しいライセンスの概要</a></li>
+   <li>現在：<a href="https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">ライセンスの概要</a></li></ul></li>
+   <li>正しいアクセスレベルがあるにも関わらずアクセスできない場合は、アクセスレベルにその他の制限が設定されていないか Workfront 管理者にお問い合わせください。 Workfront管理者がアクセス レベルを変更する方法について詳しくは、<a href="https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/add-users/configure-access/create-modify-access-levels" class="MCXref xref"> カスタム アクセス レベルの作成と変更</a>を参照してください。
    </ul>
       </p> </td> 
   </tr> 
