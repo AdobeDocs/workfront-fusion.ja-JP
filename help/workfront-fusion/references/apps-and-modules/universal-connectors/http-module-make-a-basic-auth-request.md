@@ -4,18 +4,21 @@ description: Adobe Workfront Fusion を使用するには、Adobe Workfront ラ�
 author: Becky
 feature: Workfront Fusion
 exl-id: e544768e-7023-473f-8d51-631b04183743
-TQID: https://experienceleague.adobe.com/tcZa29ScrpuQdLtY973vxCXPoPvuJ-X15ms7wDs5p04
+TQID: 'https://experienceleague.adobe.com/tcZa29ScrpuQdLtY973vxCXPoPvuJ-X15ms7wDs5p04'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 988
+source-wordcount: '988'
 ht-degree: 81%
-
 ---
-
 # [!UICONTROL HTTP]／[!UICONTROL 基本認証リクエストの作成]モジュール
 
 このAdobe Workfront Fusion モジュールを使用すると、HTTP基本認証を使用してHTTP リクエストを設定し、サーバーに送信できます。 受信した HTTP 応答は、出力バンドルに含まれます。

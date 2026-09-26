@@ -1,25 +1,35 @@
 ---
 title: Google Drive のモジュール
-description: ' [!DNL Adobe Workfront Fusion Google Drive]  モジュールを使用すると、 [!DNL Google Drive] 内のファイル、フォルダー、または共有ドライブを監視、検索、作成、更新、削除、管理できます。'
+description: '[!DNL Adobe Workfront Fusion Google Drive] モジュールを使用すると、[!DNL Google Drive]内のファイル、フォルダー、または共有ドライブを監視、検索、作成、更新、削除、管理できます。'
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 788f4e1b-d774-45ad-a8be-b16922c1d5dc
-TQID: https://experienceleague.adobe.com/CZbsq-vawa775PIQ-LzGRxjRIaiHJinVSrwikRnsNPs
+TQID: 'https://experienceleague.adobe.com/CZbsq-vawa775PIQ-LzGRxjRIaiHJinVSrwikRnsNPs'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+    internal-label: APIs
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: e14a7f57-c82c-4874-a495-5d036cbbdc3d
+    internal-label: Resource management
+subfeature_v2:
+  - id: b70a979b-965d-47a9-a360-e7ec2a19b8c1
+    internal-label: Digital content and documents
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Troubleshooting
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2110
+source-wordcount: '2111'
 ht-degree: 63%
-
 ---
-
 # [!DNL Google Drive] モジュール
 
 Adobe Workfront Fusion [!DNL Google Drive] モジュールを使用すると、[!DNL Google Drive]内のファイル、フォルダー、または共有ドライブを監視、検索、作成、更新、削除、管理できます。

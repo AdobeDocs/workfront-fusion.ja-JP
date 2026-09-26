@@ -4,16 +4,18 @@ description: 次の数式は、Adobe Workfront Fusion マッピングパネル�
 author: Becky
 feature: Workfront Fusion
 exl-id: 3d08b09d-b395-4226-b7e3-d5650c428a59
-TQID: https://experienceleague.adobe.com/a0WYFvPFBnXOvKS9ndQ-TD5xSvJz2bCbUbDY5VnXW0w
+TQID: 'https://experienceleague.adobe.com/a0WYFvPFBnXOvKS9ndQ-TD5xSvJz2bCbUbDY5VnXW0w'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 404
+source-wordcount: '404'
 ht-degree: 62%
-
 ---
-
 # 数学関数
 
 ## [!UICONTROL average ([値の配列]）average (1;[値2], ...)]

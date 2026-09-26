@@ -6,16 +6,18 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 920fa2d8-96eb-4d1d-a747-f7f3b8a2fb39
-TQID: https://experienceleague.adobe.com/jSyCT-PE2H8cQ5t-M9zbBhQiMpBJG3STuWcqU7FsNMQ
+TQID: 'https://experienceleague.adobe.com/jSyCT-PE2H8cQ5t-M9zbBhQiMpBJG3STuWcqU7FsNMQ'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 47
+source-wordcount: '47'
 ht-degree: 38%
-
 ---
-
 # エラー処理の設定：記事インデックス
 
 * [エラー処理の追加](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)

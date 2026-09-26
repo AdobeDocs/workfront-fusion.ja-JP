@@ -5,13 +5,15 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 88515edc81bafe2d1a81df627fd51dd4ed674c02
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 884
+source-wordcount: '884'
 ht-degree: 16%
-
 ---
-
 # Adobe Workfront MCP モジュール
 
 Adobe Workfront MCP コネクタは、Adobe Workfront独自のModel Context Protocol （MCP）サーバ用の専用のFusion統合です。 各モジュールが1つの固定アクションを実行する一般的なコネクタとは異なり、このコネクタには、オープンエンドの平易な英語の命令を受け入れ、AI モデルがそれを実行するために必要なWorkfrontの操作を決定できる1つのモジュールがあります。

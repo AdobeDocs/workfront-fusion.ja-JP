@@ -4,7 +4,13 @@ description: WorkfrontおよびWorkfront Planning コネクタの既存のWebhoo
 author: Becky
 feature: Workfront Fusion
 exl-id: 86849d21-5a74-43f7-9ccf-dff4421cc981
-source-git-commit: 25ba44b8ab1aab8ad6e2d6a989f55366d48a0575
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 5%

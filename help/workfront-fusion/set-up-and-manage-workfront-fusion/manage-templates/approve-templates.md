@@ -6,21 +6,25 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: dafecd8b-96e5-46da-9ab6-15f0bc9b52a4
-TQID: https://experienceleague.adobe.com/YxbvSHbDGHOsRUv8UJ8aDUct1daxudv2IGAqG3dkGZU
+TQID: 'https://experienceleague.adobe.com/YxbvSHbDGHOsRUv8UJ8aDUct1daxudv2IGAqG3dkGZU'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+    internal-label: Administration
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Administration
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 526
+source-wordcount: '526'
 ht-degree: 44%
-
 ---
-
 # 「パブリック」タブのテンプレートを承認または却下
 
 Adobe Workfront Fusionのテンプレートは、さまざまなワークフローを自動化および合理化するように設計されている、事前定義済みのシナリオです。 テンプレートを活用すれば、ゼロから統合や自動化プロセスを構築する必要がなくなり、すばやく構築できます。

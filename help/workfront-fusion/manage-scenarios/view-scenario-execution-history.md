@@ -4,16 +4,18 @@ description: シナリオのイベントまたは実行に関する情報を表�
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-TQID: https://experienceleague.adobe.com/V2lG2ns3rokHSCoYYsfjfZiRfsqqOUteLJTD52RcQdQ
+TQID: 'https://experienceleague.adobe.com/V2lG2ns3rokHSCoYYsfjfZiRfsqqOUteLJTD52RcQdQ'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 915
+source-wordcount: '915'
 ht-degree: 63%
-
 ---
-
 # シナリオの実行履歴の表示
 
 シナリオのイベントまたは実行に関する情報を表示したり、シナリオのすべての実行で特定のデータを検索したりできます。
@@ -144,7 +146,7 @@ You can sort the scenario execution history.
    または
 
    **Ctrl+Shift+F** （Windows）または&#x200B;**Cmd+Shift+F** （Mac）と入力します
-「[!UICONTROL 履歴を検索]」ウィンドウが開きます。
+   「[!UICONTROL 履歴を検索]」ウィンドウが開きます。
 
 1. (オプション）特定のテキストを含む実行を検索するには、**[!UICONTROL 履歴で検索]**&#x200B;ウィンドウの検索バーにテキストを入力します。
 

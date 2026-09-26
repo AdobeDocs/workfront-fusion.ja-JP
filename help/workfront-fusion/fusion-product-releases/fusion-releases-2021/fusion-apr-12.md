@@ -1,16 +1,17 @@
 ---
-title: Workfront Fusion リリースアクティビティ：2021年4月12日（PT）の週
-description: Workfront Fusion リリースアクティビティ：2021年4月12日（PT）の週
+title: Workfront Fusion リリースアクティビティ：2021年4月12日の週
+description: Workfront Fusion リリースアクティビティ：2021年4月12日の週
 author: Luke
 draft: Probably
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 100%
-
+source-wordcount: '127'
+ht-degree: 85%
 ---
-
-# Workfront Fusion リリースアクティビティ：2021年4月12日（PT）の週
+# Workfront Fusion リリースアクティビティ：2021年4月12日の週
 
 このページでは、2021年4月12日（PT）の週に Adobe Workfront Fusion で行われたすべての機能強化について説明します。
 
@@ -20,4 +21,4 @@ Workfront Fusion での最近のバグ修正のリストについては、[Workf
 
 ## NetSuite アプリとモジュールが利用可能に
 
-Workfront Fusion 2.0 を使用して NetSuite アカウントに接続できるようになりました。NetSuite Make an API Call モジュールを使用すると、NetSuite アカウントへの API 呼び出しを自動化できます。
+Workfront Fusion 2.0 を使用して NetSuite アカウントに接続できるようになりました。 NetSuite Make an API Call モジュールを使用すると、NetSuite アカウントへの API 呼び出しを自動化できます。

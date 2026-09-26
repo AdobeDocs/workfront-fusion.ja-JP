@@ -7,13 +7,15 @@ feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 21da39fa108568d9614dcb4f2841255b03fb6847
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 55
+source-wordcount: '55'
 ht-degree: 3%
-
 ---
-
 # Workfront ストレージの使用：記事インデックス
 
 * [ストレージの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)

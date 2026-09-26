@@ -4,16 +4,18 @@ description: 作成するモジュールごとに設定を指定する必要が�
 author: Becky
 feature: Workfront Fusion
 exl-id: ae82d1fe-31e1-424a-9c1a-42dc1a20b749
-TQID: https://experienceleague.adobe.com/yDENFBx9N8X2hxJOmKJYYj2yqCkasYLgunIJwFf-JY4
+TQID: 'https://experienceleague.adobe.com/yDENFBx9N8X2hxJOmKJYYj2yqCkasYLgunIJwFf-JY4'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 301
+source-wordcount: '301'
 ht-degree: 59%
-
 ---
-
 # モジュールの設定
 
 作成するモジュールごとに設定を指定する必要があります。

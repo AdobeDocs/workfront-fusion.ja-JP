@@ -4,16 +4,18 @@ description: Adobe Workfront Fusion の操作は、モジュールによって�
 author: Becky
 feature: Workfront Fusion
 exl-id: c14e2bb2-1cce-48ff-8bea-acc9829d3cf2
-TQID: https://experienceleague.adobe.com/wkdEgGMzJVgzuiZpNJy4Y8-Fd435VqlQFON-WIRjwmA
+TQID: 'https://experienceleague.adobe.com/wkdEgGMzJVgzuiZpNJy4Y8-Fd435VqlQFON-WIRjwmA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 413
+source-wordcount: '413'
 ht-degree: 64%
-
 ---
-
 # 操作
 
 Adobe Workfront Fusion の操作は、モジュールによって実行されるタスクです。 トラッキングの目的上、モジュールによって実行された成功アクションは操作とみなします。
@@ -26,10 +28,10 @@ Adobe Workfront Fusion の操作は、モジュールによって実行される
 * 操作の価値が異なる場合があります。 操作が小さくてシンプルなものもあれば、より複雑なものもあります。 業務は、単純なものや複雑なものに関係なく、合計数で計算されます。
 * 操作は、シナリオ実行の[!UICONTROL 最終化]ステージでカウントされます。
 * 次は、操作としてカウント&#x200B;**されません**。
-   * 任意のフィルター手順。
-   * エラーまたは停止するアクション。
-   * フォールバックや無効なルートなどの、ルートのルールが満たされなかったために実行されないルート。
-   * フィルターがデータを許可していないか、エラーが原因でシナリオが停止したために、実行されないアクション。
+  * 任意のフィルター手順。
+  * エラーまたは停止するアクション。
+  * フォールバックや無効なルートなどの、ルートのルールが満たされなかったために実行されないルート。
+  * フィルターがデータを許可していないか、エラーが原因でシナリオが停止したために、実行されないアクション。
 
 >[!NOTE]
 >

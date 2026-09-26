@@ -4,16 +4,18 @@ description: ルーターモジュールを使用すると、フローを複数�
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-TQID: https://experienceleague.adobe.com/ZKrvE8zGuVmfPCTMx7LZHw979aPLo89lARWejMCSETs
+TQID: 'https://experienceleague.adobe.com/ZKrvE8zGuVmfPCTMx7LZHw979aPLo89lARWejMCSETs'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 986
+source-wordcount: '986'
 ht-degree: 18%
-
 ---
-
 # ルーターモジュールの追加とルートの設定
 
 ルーターモジュールを使用すると、シナリオを複数のルートに分岐し、各ルート内のデータを異なる方法で処理できます。 ルーターモジュールがバンドルを受信すると、ルーターモジュールにルートが取り付けられた順序で、接続されている各ルートに転送されます。

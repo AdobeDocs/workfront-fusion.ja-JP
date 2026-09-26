@@ -4,18 +4,21 @@ description: このAdobe Workfront Fusion モジュールを使用すると、HT
 author: Becky
 feature: Workfront Fusion
 exl-id: cc33530c-3010-4955-8819-5eb8373a0e10
-TQID: https://experienceleague.adobe.com/LOlgXwSKNDk4QsIENzfa-QOBPR-6w4soBKe0laN-W-A
+TQID: 'https://experienceleague.adobe.com/LOlgXwSKNDk4QsIENzfa-QOBPR-6w4soBKe0laN-W-A'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1085
+source-wordcount: '1085'
 ht-degree: 80%
-
 ---
-
 # HTTP > [!UICONTROL &#x200B; クライアント証明書認証リクエストを作成] モジュール
 
 >[!NOTE]

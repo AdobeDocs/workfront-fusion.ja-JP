@@ -4,18 +4,21 @@ description: Adobe Workfront Fusion HTTP/リクエストモジュールは、HTT
 author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
-TQID: https://experienceleague.adobe.com/-SRXhwpwmvCKhZVVqiUf8Pvh5h0hN8H5CyazYxNLCXw
+TQID: 'https://experienceleague.adobe.com/-SRXhwpwmvCKhZVVqiUf8Pvh5h0hN8H5CyazYxNLCXw'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 991
+source-wordcount: '991'
 ht-degree: 72%
-
 ---
-
 # [!UICONTROL HTTP] > [!UICONTROL &#x200B; リクエストを作成] モジュール
 
 Adobe Workfront Fusion [!UICONTROL HTTP] > [!UICONTROL &#x200B; リクエストモジュールを作成]は、HTTP リクエストを設定してサーバーに送信できるユニバーサルモジュールです。 受信した HTTP 応答は、出力バンドルに含まれます。

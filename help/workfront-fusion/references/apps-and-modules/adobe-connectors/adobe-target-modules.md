@@ -1,22 +1,26 @@
 ---
 title: Adobe Target モジュール
-description: Adobe Workfront Fusion シナリオでは、 [!DNL Adobe Target], as well as connect it to multiple third-party applications and services. [!DNL Adobe Target]  モジュールを使用してレコードを作成、読み取り、更新、削除したり、特定のタイプのすべてのレコードを一覧表示したり、指定した条件に基づいてレコードを検索したり、 [!DNL Adobe Target] APIにカスタム API呼び出しを実行したりできるワークフローを自動化できます。
+description: Adobe Workfront Fusion のシナリオでは、[!DNL Adobe Target] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりすることができます。 [!DNL Adobe Target] モジュールを使用すると、レコードの作成、読み取り、更新、削除、特定のタイプのすべてのレコードのリスト、指定した条件に基づくレコードの検索、または[!DNL Adobe Target] APIへのカスタム API呼び出しの実行を行うことができます。
 author: Becky
 feature: Workfront Fusion
 exl-id: f3c1ed7b-b69b-478a-8240-1a2ab89e11e5
-TQID: https://experienceleague.adobe.com/WIVzoQxjp0cEeUgQPWN49Vp-cNreFyaBdQM8yPOvqsM
+TQID: 'https://experienceleague.adobe.com/WIVzoQxjp0cEeUgQPWN49Vp-cNreFyaBdQM8yPOvqsM'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2370
-ht-degree: 78%
-
+source-wordcount: '2384'
+ht-degree: 79%
 ---
-
 # [!DNL Adobe Target] モジュール
 
 Adobe Workfront Fusion のシナリオでは、[!DNL Adobe Target] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりすることができます。 [!DNL Adobe Target] モジュールを使用すると、レコードの作成、読み取り、更新、または削除、特定のタイプのすべてのレコードのリスト、指定した条件に基づくレコードの検索、または[!DNL Adobe Target] APIへのカスタム API呼び出しの実行を行うことができます。

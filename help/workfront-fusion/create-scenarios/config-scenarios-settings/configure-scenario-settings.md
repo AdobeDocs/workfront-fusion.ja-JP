@@ -5,16 +5,18 @@ description: シナリオ設定パネルで、シナリオの特定の設定を�
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-TQID: https://experienceleague.adobe.com/3EtKXHUMeJ7FL9pEJpYVpT59fvnlyeC1BMpMK2KGD6M
+TQID: 'https://experienceleague.adobe.com/3EtKXHUMeJ7FL9pEJpYVpT59fvnlyeC1BMpMK2KGD6M'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 5c5f46e2ec05d6f3e1fdde8d13fb1e38d2a99690
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1389
+source-wordcount: '1389'
 ht-degree: 46%
-
 ---
-
 # シナリオ設定の指定
 
 シナリオ設定パネルで、シナリオの特定の設定を行うことができます。

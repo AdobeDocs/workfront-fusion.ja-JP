@@ -1,22 +1,26 @@
 ---
 title: Adobe Campaign v7／v8 モジュール
-description: ' [!DNL Adobe Campaign]  モジュールを使用すると、 [!DNL Adobe Campaign]  アカウント内のイベントに基づいてAdobe Workfront Fusion シナリオを開始したり、契約書やその他のレコードを作成、読み取り、更新したり、設定した条件を使用してレコードを検索したり、ドキュメントをアップロードしたりできます。'
+description: '[!DNL Adobe Campaign] モジュールを使用すると、[!DNL Adobe Campaign] アカウント内のイベントに基づいてAdobe Workfront Fusion シナリオを開始したり、契約書やその他のレコードを作成、読み取り、更新したり、設定した条件を使用してレコードを検索したり、ドキュメントをアップロードしたりできます。'
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-TQID: https://experienceleague.adobe.com/XOlUFhvSj8JNu8MS5Kgm0VEwEPmrpVwbTggi6rU4jfk
+TQID: 'https://experienceleague.adobe.com/XOlUFhvSj8JNu8MS5Kgm0VEwEPmrpVwbTggi6rU4jfk'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Security
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1452
+source-wordcount: '1454'
 ht-degree: 82%
-
 ---
-
 # [!DNL Adobe Campaign] モジュール
 
 [!DNL Adobe Campaign] モジュールを使用すると、[!DNL Adobe Campaign v7/v8] アカウント内のイベントに基づいてAdobe Workfront Fusion シナリオを開始し、レコードを作成、読み取りまたは更新し、設定した条件を使用してレコードを検索し、カスタム API呼び出しを実行できます。

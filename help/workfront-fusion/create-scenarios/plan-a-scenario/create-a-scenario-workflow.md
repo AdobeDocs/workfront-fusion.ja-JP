@@ -4,16 +4,18 @@ description: シナリオを作成するには、次の一般的なワークフ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-TQID: https://experienceleague.adobe.com/5j4My9ds8RdA3frEKdRHBFiWpQr-6fI0DfVyWSIgBPc
+TQID: 'https://experienceleague.adobe.com/5j4My9ds8RdA3frEKdRHBFiWpQr-6fI0DfVyWSIgBPc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 782
+source-wordcount: '782'
 ht-degree: 21%
-
 ---
-
 # シナリオ作成のワークフロー
 
 シナリオは、組織のニーズを満たすように構築されており、ユースケースに対応するアプリケーションやモジュールが揃っています。 ただし、シナリオの作成は、ユースケースに関係なく、同じ基本ワークフローに従います。 この記事では、シナリオを作成する基本的なプロセスについて説明します。

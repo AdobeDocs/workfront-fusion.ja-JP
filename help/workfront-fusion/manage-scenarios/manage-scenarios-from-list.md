@@ -5,13 +5,17 @@ description: この節では、Adobe Workfront Fusionでのシナリオの管理
 author: Becky
 feature: Workfront Fusion
 exl-id: 4e2f1bbb-fcd6-4724-bd0f-c028f3ea8d69
-source-git-commit: e63ec5927f2844f94fd0c7cd3f9890b7d236aede
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 19%
-
 ---
-
 # 「シナリオ」エリアからシナリオを管理します
 
 「シナリオ」エリアでは、チームが所有するシナリオに関する情報を表示できます。 シナリオを複製、移動、削除したり、特定のワーカープールに割り当てることもできます。

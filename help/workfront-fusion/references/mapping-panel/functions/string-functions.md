@@ -4,16 +4,18 @@ description: Adobe Workfront Fusion マッピングパネルでは、次の文�
 author: Becky
 feature: Workfront Fusion
 exl-id: d3e49fce-85bc-4ee6-9a94-497a306e0c74
-TQID: https://experienceleague.adobe.com/n1069qGTzCI9vCLsUgEF36uF0Hh9wZufa4xGTGoAeIc
+TQID: 'https://experienceleague.adobe.com/n1069qGTzCI9vCLsUgEF36uF0Hh9wZufa4xGTGoAeIc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 9dd50e3b7a65813ce454da393a7beacf49cc943a
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 778
-ht-degree: 78%
-
+source-wordcount: '778'
+ht-degree: 79%
 ---
-
 # 文字列関数
 
 ## [!UICONTROL 長さ（テキストまたはバッファー）]

@@ -4,18 +4,21 @@ description: データベースや単純なテーブルと同様に、Adobe Work
 author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
-TQID: https://experienceleague.adobe.com/xxcj73D3UZawazZrK92lAZTYaFTVj92o74zPRsnfFPA
+TQID: 'https://experienceleague.adobe.com/xxcj73D3UZawazZrK92lAZTYaFTVj92o74zPRsnfFPA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Troubleshooting
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1139
+source-wordcount: '1139'
 ht-degree: 84%
-
 ---
-
 # [!UICONTROL データストア]モジュール
 
 データベースや単純なテーブルと同様に、Adobe Workfront Fusion データストアでは、シナリオからのデータを保存できるので、個々のシナリオやシナリオ実行の間でデータを転送できます。 データストアを使用すると、同期中に様々なシステムから新しいデータを保存できます。
@@ -116,7 +119,7 @@ Workfront Fusion のデータストアの紹介ビデオについては、以下
    <td> <p>レコードを上書きする場合は、このオプションを有効にします。 上書きするレコードは、上記の「キー」フィールドで指定する必要があります。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL レコード] </td> 
+   <td>[!UICONTROL Record] </td> 
    <td> <p>レコードのフィールドに目的の値を入力します。</p> </td> 
   </tr> 
  </tbody> 

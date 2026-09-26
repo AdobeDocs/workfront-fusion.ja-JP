@@ -4,16 +4,18 @@ description: Adobe Workfront Fusionでは、SDL Managed Translation アカウン
 author: Becky
 feature: Workfront Fusion
 exl-id: 41953b04-9011-4ddb-9f53-cdf11e807e04
-TQID: https://experienceleague.adobe.com/J6v5bxEi3MzcrkaiQQFOpToDzon0K-BhpmuJQe8sdgY
+TQID: 'https://experienceleague.adobe.com/J6v5bxEi3MzcrkaiQQFOpToDzon0K-BhpmuJQe8sdgY'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 569
+source-wordcount: '569'
 ht-degree: 88%
-
 ---
-
 # [!DNL SDL Managed Translation] モジュール
 
 Adobe Workfront Fusion シナリオでは、[!DNL SDL Managed Translation] アカウントを複数のサードパーティ製アプリケーションやサービスに接続できます。

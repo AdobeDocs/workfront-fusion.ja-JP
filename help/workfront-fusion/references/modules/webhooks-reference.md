@@ -4,16 +4,18 @@ description: 多くのサービスでは、サービスで特定の変更が発�
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-TQID: https://experienceleague.adobe.com/-z2vSjTR1JJTQl--BHM23CbnlaN9TSS6puFTzqLRAEk
+TQID: 'https://experienceleague.adobe.com/-z2vSjTR1JJTQl--BHM23CbnlaN9TSS6puFTzqLRAEk'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 99a5a892469814f450832dbc4f137fb2c5aa71ee
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1300
+source-wordcount: '1311'
 ht-degree: 26%
-
 ---
-
 # インスタントトリガー（webhook）
 
 多くのサービスでは、サービス内で特定の変更（イベント）が発生するたびに、即座に通知を配信するためのWebhookを提供しています。 これらのイベントを処理するには、インスタントトリガーを使用することをお勧めします。 インスタントトリガーは、特定のコネクタのモジュールのリストに`Instant` タグを表示します。

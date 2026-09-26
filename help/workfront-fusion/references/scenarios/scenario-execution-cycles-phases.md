@@ -4,31 +4,33 @@ description: この記事では、Adobe Workfront Fusion シナリオの実行�
 author: Becky
 feature: Workfront Fusion
 exl-id: abf41be5-df32-4eaf-b3f4-93ddf005bfe3
-TQID: https://experienceleague.adobe.com/QiQVO7jFPtqkI-ZcsG-Cl7slbYmKlY9HHnTW7MyrO7c
+TQID: 'https://experienceleague.adobe.com/QiQVO7jFPtqkI-ZcsG-Cl7slbYmKlY9HHnTW7MyrO7c'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 482
+source-wordcount: '482'
 ht-degree: 23%
-
 ---
-
 # シナリオの実行、サイクル、フェーズ
 
 各シナリオ実行は初期化フェーズから始まり、操作フェーズとコミット/ロールバックフェーズで構成される少なくとも1つのサイクルで続き、最終化フェーズで終了します
 
 * 初期化
 * サイクル 1
-   * 操作（読み取りまたは書き込み）
-   * コミットまたはロールバック
+  * 操作（読み取りまたは書き込み）
+  * コミットまたはロールバック
 * サイクル 2
-   * 操作（読み取りまたは書き込み）
-   * コミットまたはロールバック
+  * 操作（読み取りまたは書き込み）
+  * コミットまたはロールバック
 * ...
 * サイクル#n
-   * 操作（読み取りまたは書き込み）
-   * コミットまたはロールバック
+  * 操作（読み取りまたは書き込み）
+  * コミットまたはロールバック
 * 最終化
 
 小規模な場合は、各モジュールも次のフェーズに従います。 モジュールフェーズに関する情報は、シナリオが実行された後、各モジュールの右上にある番号付きバブルに表示される処理済みバンドル情報にあります。 処理されたバンドル情報の検索について詳しくは、「[処理されたバンドルに関する情報](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md#information-about-processed-bundles)」を参照してください。

@@ -6,16 +6,18 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 56837f45-12f9-44b7-b48f-9a3a4fa966c8
-TQID: https://experienceleague.adobe.com/hIUqXXvCzmn-uAnDxJFDJ-jPY2JgE5smZzryufBbwtA
+TQID: 'https://experienceleague.adobe.com/hIUqXXvCzmn-uAnDxJFDJ-jPY2JgE5smZzryufBbwtA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: cd35c4de13296dcc403df78f69a1e562229ab5f9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 75
+source-wordcount: '75'
 ht-degree: 52%
-
 ---
-
 # 組織、チーム、ユーザーの設定：記事インデックス
 
 * [組織とチームの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md)

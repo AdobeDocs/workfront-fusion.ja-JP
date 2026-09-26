@@ -4,16 +4,18 @@ description: メール通知オプションは、チームレベルで設定さ�
 author: Becky
 feature: Workfront Fusion
 exl-id: 570a09fc-01a9-4952-8a2b-8bfdd86d0bd8
-TQID: https://experienceleague.adobe.com/-HytP4gfrhiiSn-dg5ndg1YC6NTMC-NURYzSFgO5kIo
+TQID: 'https://experienceleague.adobe.com/-HytP4gfrhiiSn-dg5ndg1YC6NTMC-NURYzSFgO5kIo'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 90a58033e240271b88d01b9daef9763f38264056
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 665
+source-wordcount: '665'
 ht-degree: 15%
-
 ---
-
 # 通知オプションの設定
 
 組織でAdobe統合シェルを使用している場合は、Adobe通知領域から通知を受け取ります。
@@ -32,7 +34,7 @@ ht-degree: 15%
 
 >[!IMPORTANT]
 >
->Workfront Fusionから通知を受け取るには、Adobe CX Enterprise通知設定でFusion通知を有効にする必要があります。 これらの設定にアクセスするには、画面の右上隅にある通知ベルをクリックし、設定アイコンをクリックします。
+>Workfront Fusionから通知を受け取るには、Adobe CX Enterpriseの通知設定でFusion通知を有効にする必要があります。 これらの設定にアクセスするには、画面の右上隅にある通知ベルをクリックし、設定アイコンをクリックします。
 
 ## アクセス要件
 

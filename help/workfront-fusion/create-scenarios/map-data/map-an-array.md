@@ -4,18 +4,21 @@ description: Adobe Workfront Fusionでは、配列または個々の配列要素
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-TQID: https://experienceleague.adobe.com/4C5kCTIb-pX7zlMxx0tMHn-0UeMPkunWAlkov-lEqPQ
+TQID: 'https://experienceleague.adobe.com/4C5kCTIb-pX7zlMxx0tMHn-0UeMPkunWAlkov-lEqPQ'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Metadata
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 898
+source-wordcount: '898'
 ht-degree: 33%
-
 ---
-
 # 配列または配列要素のマッピング
 
 配列は、次を含めることができるバンドルアイテムです。
@@ -141,28 +144,28 @@ Workfront Fusionの一部のフィールドでは、エレメントを配列に�
 
 * `map`
 
-   1. `map()` の最初のパラメーター関数は配列の項目全体です。
-   1. 2 つ目のパラメーターは、値の項目の未加工の名前です。 未加工の名前を取得するには、[!UICONTROL マッピング]パネルの項目にポインタを合わせます。
+  1. `map()` の最初のパラメーター関数は配列の項目全体です。
+  1. 2 つ目のパラメーターは、値の項目の未加工の名前です。 未加工の名前を取得するには、[!UICONTROL マッピング]パネルの項目にポインタを合わせます。
 
-      ![生の名前を取得](assets/obtain-raw-name-350x124.png)
+     ![生の名前を取得](assets/obtain-raw-name-350x124.png)
 
-      >[!NOTE]
-      >
-      >すべてのパラメーターでは大文字と小文字が区別されます。 この例では、アイテムのラベルが大文字のみ生の名前と異なっていても、生の名前を使用する必要があります。
+     >[!NOTE]
+     >
+     >すべてのパラメーターでは大文字と小文字が区別されます。 この例では、アイテムのラベルが大文字のみ生の名前と異なっていても、生の名前を使用する必要があります。
 
-   1. 3つ目のパラメーターは、キーアイテムの生の名前です。
+  1. 3つ目のパラメーターは、キーアイテムの生の名前です。
 
-      ![3番目のパラメーター](assets/3rd-parameter-350x166.png)
+     ![3番目のパラメーター](assets/3rd-parameter-350x166.png)
 
-   1. 4番目のパラメーターは、指定されたキー値です。
+  1. 4番目のパラメーターは、指定されたキー値です。
 
   `map()` 関数は配列を返すので（指定されたキー値を持つ他の要素が存在する可能性があるため）、その最初の要素を取得するために `get()` 関数を適用する必要があります。
 
 * `get`
 
-   1. `get()`関数の最初のパラメーターは、`map()`関数の結果です。
+  1. `get()`関数の最初のパラメーターは、`map()`関数の結果です。
 
-   1. 2番目のパラメーターは、要素のインデックスです。 この例では、インデックスは`1`です。
+  1. 2番目のパラメーターは、要素のインデックスです。 この例では、インデックスは`1`です。
 
 この例では、次の出力を生成します。
 
