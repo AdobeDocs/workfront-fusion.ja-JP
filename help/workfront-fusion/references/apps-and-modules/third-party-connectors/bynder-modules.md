@@ -97,7 +97,7 @@ Bynder コネクタでは、次の機能が使用されます。
 >Bynderは、認証コード/更新トークン付与タイプを使用します。 これは、Fusion Bynder コネクタが使用する唯一の付与タイプです。
 
 * [Workfront Fusionから [!DNL Bynder] への接続を作成](#create-a-connection-to-bynder-from-workfront-fusion)
-* [ [!DNL Bynder]  での[!UICONTROL クライアント ID] と [!UICONTROL クライアントシークレット]の生成（オプション）](#generate-a-client-id-and-client-secret-in-bynder-optional)
+* [&#x200B; [!DNL Bynder]  での[!UICONTROL クライアント ID] と [!UICONTROL クライアントシークレット]の生成（オプション）](#generate-a-client-id-and-client-secret-in-bynder-optional)
 
 ### Workfront Fusionから[!DNL Bynder]への接続を作成
 
@@ -107,7 +107,7 @@ Bynder コネクタでは、次の機能が使用されます。
 1. 接続する [!DNL Bynder] ドメインを選択します。
 1. （オプション）「**[!UICONTROL 詳細設定]**」を選択し、「[!UICONTROL クライアント ID]」および「[!UICONTROL クライアントシークレット]」を入力します。
 
-   クライアント ID とクライアントシークレットの生成手順については、[ [!DNL Bynder]  でのクライアント ID とクライアントシークレットの生成（オプション）](#generate-a-client-id-and-client-secret-in-bynder-optional) を参照してください。
+   クライアント ID とクライアントシークレットの生成手順については、[&#x200B; [!DNL Bynder]  でのクライアント ID とクライアントシークレットの生成（オプション）](#generate-a-client-id-and-client-secret-in-bynder-optional) を参照してください。
 
 1. [!UICONTROL ログイン]ウィンドウで、ユーザー名（メールアドレス）とパスワードを入力します。
 1. 「**[!UICONTROL 続行]**」をクリックし、接続を作成して、モジュールに戻ります。
@@ -383,7 +383,7 @@ Bynder コネクタでは、次の機能が使用されます。
    <td>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL非同期ファイルのアップロード ]</td> 
+   <td role="rowheader">[!UICONTROL 非同期ファイルのアップロード &#x200B;]</td> 
    <td>大きなファイルをアップロードする場合は、このオプションを有効にします。 これにより、大きなファイルがシナリオ実行をブロックするのを防ぐことができます。</td> 
   </tr> 
  </tbody> 

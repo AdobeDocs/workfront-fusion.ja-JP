@@ -102,7 +102,7 @@ SFTP アカウントをWorkfront Fusionに接続するには、ターゲット�
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL キー交換アルゴリズム ] </td> 
+   <td role="rowheader">[!UICONTROL キー交換アルゴリズム &#x200B;] </td> 
    <td> <p>キー交換用のアルゴリズムのセットを入力できます。 モジュールは、追加された順序に基づいてアルゴリズムの優先順位を付けます。 追加する各アルゴリズムについて、<b>項目を追加</b>をクリックし、アルゴリズムを選択します。</p> </td> 
   </tr> 
   <tr> 
@@ -238,7 +238,7 @@ SFTP コネクタは、接続の作成時に次をサポートします。
 
 >[!NOTE]
 >
->フォルダーが既に存在する場合はエラーが返されます。 フローを中断せずに続行するには、エラーハンドラールートをモジュールに接続してエラーを検出し、[!UICONTROL 再開]ディレクティブを適用します。 エラーハンドラールートの添付について詳しくは、[Adobe Workfront Fusionでのエラー処理](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)を参照してください。 エラーハンドラーのルートについて詳しくは、[Adobe Workfront Fusionでのエラー処理に関するディレクティブ ](/help/workfront-fusion/references/errors/directives-for-error-handling.md)を参照してください。
+>フォルダーが既に存在する場合はエラーが返されます。 フローを中断せずに続行するには、エラーハンドラールートをモジュールに接続してエラーを検出し、[!UICONTROL 再開]ディレクティブを適用します。 エラーハンドラールートの添付について詳しくは、[Adobe Workfront Fusionでのエラー処理](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)を参照してください。 エラーハンドラーのルートについて詳しくは、[Adobe Workfront Fusionでのエラー処理に関するディレクティブ &#x200B;](/help/workfront-fusion/references/errors/directives-for-error-handling.md)を参照してください。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -258,7 +258,7 @@ SFTP コネクタは、接続の作成時に次をサポートします。
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
-   <td> <p>必要なフォルダー権限を設定します。 chmod パラメーターを使用します。 例：<code>777</code>または<code>-rwxrwxrwx</code></p> <p>これらの権限はパターンと一致する必要があります <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>chmodについて詳しくは、<a href="https://ss64.com/bash/chmod.html?lang=ja">chmod ドキュメント </a>を参照してください。</p> </td> 
+   <td> <p>必要なフォルダー権限を設定します。 chmod パラメーターを使用します。 例：<code>777</code>または<code>-rwxrwxrwx</code></p> <p>これらの権限はパターンと一致する必要があります <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>chmodについて詳しくは、<a href="https://ss64.com/bash/chmod.html?lang=ja">chmod ドキュメント </a>を参照してください。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -320,7 +320,7 @@ SFTP コネクタは、接続の作成時に次をサポートします。
  </tbody> 
 </table>
 
-#### [!UICONTROL  ファイルを取得]
+#### [!UICONTROL &#x200B; ファイルを取得]
 
 このモジュールは、指定したフォルダーからファイルを返します。
 
@@ -466,7 +466,7 @@ SFTP コネクタは、接続の作成時に次をサポートします。
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
-   <td> <p>必要なファイル権限を設定します。 chmod パラメーターを使用します。 例：<code>777</code>または<code>-rwxrwxrwx</code></p> <p>これらの権限はパターンと一致する必要があります <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>chmodについて詳しくは、<a href="https://ss64.com/bash/chmod.html?lang=ja">chmod ドキュメント </a>を参照してください。</p> </td> 
+   <td> <p>必要なファイル権限を設定します。 chmod パラメーターを使用します。 例：<code>777</code>または<code>-rwxrwxrwx</code></p> <p>これらの権限はパターンと一致する必要があります <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>chmodについて詳しくは、<a href="https://ss64.com/bash/chmod.html?lang=ja">chmod ドキュメント </a>を参照してください。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -493,10 +493,10 @@ SFTP コネクタは、接続の作成時に次をサポートします。
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
-   <td> <p>ファイルまたはフォルダーに必要な権限を設定します。 chmod パラメーターを使用します。 例：<code>777</code>または<code>-rwxrwxrwx</code></p> <p>これらの権限はパターンと一致する必要があります <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>chmodについて詳しくは、<a href="https://ss64.com/bash/chmod.html?lang=ja">chmod ドキュメント </a>を参照してください。</p> </td> 
+   <td> <p>ファイルまたはフォルダーに必要な権限を設定します。 chmod パラメーターを使用します。 例：<code>777</code>または<code>-rwxrwxrwx</code></p> <p>これらの権限はパターンと一致する必要があります <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>chmodについて詳しくは、<a href="https://ss64.com/bash/chmod.html?lang=ja">chmod ドキュメント </a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL バッファーサイズ （B） ]</p> </td> 
+   <td> <p>[!UICONTROL バッファーサイズ （B） &#x200B;]</p> </td> 
    <td> <p>ファイルのアップロード時の各チャンクのサイズ（バイト単位）を設定します。 これは、大きなファイルの場合や、サーバーのメモリ制限により小さなアップロードが必要な場合に便利です。 この値が設定されていない場合、ファイルは1回の操作で書き込まれます。</p> </td> 
   </tr> 
  </tbody> 

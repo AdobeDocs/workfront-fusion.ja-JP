@@ -295,7 +295,7 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
        </td> 
      </tr> 
      <tr> 
-      <td>[!UICONTROL カスタム トークン ]</td> 
+      <td>[!UICONTROL カスタム トークン &#x200B;]</td> 
       <td>
        <p>（オプション） [!UICONTROL Enable secured hook]が[!UICONTROL Yes]に設定されている場合、独自のトークン値を入力してWebhookを保護できます。 このフィールドを空白のままにすると、Fusionが自動的にトークンを生成します。</p>
        </td> 

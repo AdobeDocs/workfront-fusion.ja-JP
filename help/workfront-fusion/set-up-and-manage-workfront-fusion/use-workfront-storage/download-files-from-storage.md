@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Fusion ストレージ領域を使用すると、Adobe ストレージからファイルをダウンロードできます。
 
-ストレージの概要については、[ ストレージの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)を参照してください。
+ストレージの概要については、[&#x200B; ストレージの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)を参照してください。
 
 ## ファイルをダウンロード
 
@@ -45,4 +45,4 @@ Fusion ストレージ領域を使用すると、Adobe ストレージからフ�
 
 ダウンロードに失敗した場合、トースト通知が表示されます。「*」ダウンロードに失敗しました – ファイルをダウンロードできませんでした。 もう一度やり直してください。&quot;*
 
-ファイルのバージョンについて詳しくは、[ ストレージでのファイルのバージョン履歴の表示](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/view-storage-file-version-history.md)を参照してください。
+ファイルのバージョンについて詳しくは、[&#x200B; ストレージでのファイルのバージョン履歴の表示](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/view-storage-file-version-history.md)を参照してください。

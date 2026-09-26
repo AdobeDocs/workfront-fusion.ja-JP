@@ -20,7 +20,7 @@ ht-degree: 67%
 
 シナリオは、アクティブ状態または非アクティブ状態で使用できます。
 
-* アクティブなシナリオは、[ シナリオのスケジュール ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)で説明されているように、定義されたスケジュールに従って定期的に実行されます。
+* アクティブなシナリオは、[&#x200B; シナリオのスケジュール &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)で説明されているように、定義されたスケジュールに従って定期的に実行されます。
 
   これは、シナリオの機能を自動化する場合に役立ちます。
 
@@ -65,11 +65,11 @@ ht-degree: 67%
 
 シナリオをアクティブ化する前に、シナリオを作成する必要があります。
 
-シナリオの作成手順については、[ シナリオの作成ワークフロー](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md)を参照してください
+シナリオの作成手順については、[&#x200B; シナリオの作成ワークフロー](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md)を参照してください
 
 ## シナリオをアクティブ化または非アクティブ化するには、次の手順に従います。
 
-1. 左側のパネルで「**[!UICONTROL シナリオ]** ![ シナリオアイコン ](assets/scenarios-icon.png)」をクリックし、シナリオをクリックして開きます。
+1. 左側のパネルで「**[!UICONTROL シナリオ]** ![&#x200B; シナリオアイコン &#x200B;](assets/scenarios-icon.png)」をクリックし、シナリオをクリックして開きます。
 1. シナリオの詳細ページの右上隅にあるオン/オフ切り替えスイッチをクリックします。
 
    ![詳細アクティベーション切り替え](assets/active-toggle-details-page.png)
@@ -78,4 +78,4 @@ ht-degree: 67%
 
    図をクリックしてシナリオエディターに入り、ウィンドウの左下隅にある&#x200B;**[!UICONTROL オン/オフ]** トグルをクリックします。
 
-   ![ スイッチをオフ ](assets/on-off-switch.jpg)
+   ![&#x200B; スイッチをオフ &#x200B;](assets/on-off-switch.jpg)

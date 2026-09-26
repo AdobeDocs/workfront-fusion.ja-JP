@@ -76,7 +76,7 @@ ht-degree: 33%
 
    1 つの配列には、任意の数の項目を追加できます。
 
-イテレータを使用して、配列を個々のバンドルに分割できます。 詳しくは、Adobe Workfront Fusion](/help/workfront-fusion/references/modules/iterator-module.md)の[[!UICONTROL Iterator] モジュールを参照してください。
+イテレータを使用して、配列を個々のバンドルに分割できます。 詳しくは、Adobe Workfront Fusion[&#128279;](/help/workfront-fusion/references/modules/iterator-module.md)の[!UICONTROL Iterator] モジュールを参照してください。
 
 ## アイテムを新しい配列にマッピングする
 
@@ -100,7 +100,7 @@ Workfront Fusionの一部のフィールドでは、エレメントを配列に�
 
 配列要素は、配列名の後に角括弧で囲まれた数値として表示されます。 このインデックス番号を使用して、配列の個々の要素をフィールドにマッピングできます。
 
-![最初の要素をマップ ](assets/map-array-1st-element.png)
+![最初の要素をマップ &#x200B;](assets/map-array-1st-element.png)
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ Workfront Fusionの一部のフィールドでは、エレメントを配列に�
 
 1. 配列の別の要素をマッピングするには、[1]をクリックし、マッピングする配列要素のインデックス番号を入力します。
 
-   ![別の要素にアクセス ](assets/access-another-element.png)
+   ![別の要素にアクセス &#x200B;](assets/access-another-element.png)
 
 ### 指定されたキーで配列の要素をマッピングする
 
@@ -179,6 +179,6 @@ Workfront Fusionの一部のフィールドでは、エレメントを配列に�
 
 ## 配列要素を一連のバンドルに変換する
 
-配列は[!UICONTROL イテレータ]モジュールを使用して、一連のバンドルに変換することができます。 詳しくは、[[!UICONTROL  イテレーター] モジュール ](/help/workfront-fusion/references/modules/iterator-module.md)を参照してください。
+配列は[!UICONTROL イテレータ]モジュールを使用して、一連のバンドルに変換することができます。 詳しくは、[[!UICONTROL &#x200B; イテレーター] モジュール &#x200B;](/help/workfront-fusion/references/modules/iterator-module.md)を参照してください。
 
-![一連のバンドル ](assets/series-of-bundles.png)
+![一連のバンドル &#x200B;](assets/series-of-bundles.png)

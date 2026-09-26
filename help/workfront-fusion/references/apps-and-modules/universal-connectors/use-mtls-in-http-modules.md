@@ -82,7 +82,7 @@ Adobe Workfront Fusion公開証明書をweb サービスにアップロードす
 >
 >証明書に加えて、その他の情報も提供する必要がある場合があります。 Web サービスに必要な情報について詳しくは、web サービスの API ドキュメントを参照してください。
 
-次のリンクを使用して、Workfront Fusionの公開証明書をダウンロードできます。 データセンターを見つけるには、組織の「FusionのIP アドレスの設定」の記事の「[ データセンターの特定](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)」を参照してください。
+次のリンクを使用して、Workfront Fusionの公開証明書をダウンロードできます。 データセンターを見つけるには、組織の「FusionのIP アドレスの設定」の記事の「[&#x200B; データセンターの特定](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)」を参照してください。
 
 ### 2026年の証明書
 
@@ -180,7 +180,7 @@ Adobe Workfront Fusion公開証明書をweb サービスにアップロードす
 1. [!UICONTROL HTTP] リクエストモジュールをシナリオに追加します。
 1. モジュールの設定を開始します。
 
-   [!UICONTROL HTTP] リクエストモジュールの設定方法については、[ ユニバーサルコネクタ ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)の下にある適切な記事を参照してください。
+   [!UICONTROL HTTP] リクエストモジュールの設定方法については、[&#x200B; ユニバーサルコネクタ &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)の下にある適切な記事を参照してください。
 
 1. モジュールの下部付近にある「**[!UICONTROL 詳細設定を表示]**」を有効にします。
 1. 「**[!UICONTROL 相互 TLS を使用]**」を有効にします。

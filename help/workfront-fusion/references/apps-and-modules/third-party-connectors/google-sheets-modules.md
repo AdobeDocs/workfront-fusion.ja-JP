@@ -736,12 +736,12 @@ Google Sheets コネクタでは、次の機能が使用されます。
 
 ## ヒントとテクニック
 
-* [ [!DNL Google]  シートから空のセルを取得](#get-empty-cells-from-a-google-sheet)
+* [&#x200B; [!DNL Google]  シートから空のセルを取得](#get-empty-cells-from-a-google-sheet)
 * [シートへのシナリオを実行するためのボタンの追加](#add-a-button-in-a-sheet-to-run-a-scenario)
 
 ### [!DNL Google Sheet]から空のセルを取得
 
-空のセルを取得するには、[!UICONTROL 行の検索（詳細） ] モジュールを使用できます。 この数式を使用して、空の列を取得します。
+空のセルを取得するには、[!UICONTROL 行の検索（詳細） &#x200B;] モジュールを使用できます。 この数式を使用して、空の列を取得します。
 
 ```
 select * where E is null
@@ -757,7 +757,7 @@ select * where E is null
 1. シナリオを実行します。
 1. Google Sheet のメインメニューバーから&#x200B;**[!UICONTROL 挿入]**／**[!UICONTROL 図面]**... を選択します。
 
-1. [!UICONTROL 描画] ウィンドウで、ウィンドウの上部付近にある&#x200B;**[!UICONTROL テキストボックス]** アイコン ![ テキストボックス ](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png)をクリックします。
+1. [!UICONTROL 描画] ウィンドウで、ウィンドウの上部付近にある&#x200B;**[!UICONTROL テキストボックス]** アイコン ![&#x200B; テキストボックス &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png)をクリックします。
 1. ボタンをデザインし、右上隅にある「**[!UICONTROL 保存して閉じる]**」ボタンをクリックします。
 1. ボタンはワークシートに配置されます。 ボタンの右上隅にある 3 つの縦並びのドットをクリックします。
 1. メニューから「**[!UICONTROL スクリプトを割り当て…].**」を選択します。
@@ -789,7 +789,7 @@ select * where E is null
 
 [!DNL Google Sheets]が日付を理解できるように、`formatDate`関数でフォーマットします。 2 番目の引数として関数に渡される正しい形式は、スプレッドシートのロケール設定によって異なります。
 
-この関数について詳しくは、日付と時刻の関数の記事「[[!UICONTROL formatDate] （date; format; [timezone]） ](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md#formatdate-date-format-timezone)」を参照してください。
+この関数について詳しくは、日付と時刻の関数の記事「[[!UICONTROL formatDate] （date; format; [timezone]） &#x200B;](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md#formatdate-date-format-timezone)」を参照してください。
 
 正しい形式を判断するには、次の手順を実行します。
 
@@ -797,7 +797,7 @@ select * where E is null
 
 1. 適切なロケールを検証または設定したら、メインメニューから&#x200B;**[!UICONTROL 形式]** > **[!UICONTROL 番号]**&#x200B;を選択して、対応する日付と時刻の形式を決定します。 形式は、日付と時刻メニュー項目の横に表示されます。
 
-1. [!UICONTROL formatDate （） ]関数に渡す必要がある正しい形式を作成するには、日付と時刻の書式設定](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)の[ トークンのリストを参照してください。
+1. [!UICONTROL formatDate （） &#x200B;]関数に渡す必要がある正しい形式を作成するには、日付と時刻の書式設定[&#128279;](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)の トークンのリストを参照してください。
 
 >[!BEGINSHADEBOX]
 
@@ -805,7 +805,7 @@ select * where E is null
 
 `MM/DD/YYYY HH:mm:ss`形式（米国ロケールの場合）:
 
-![ ロケール時間の数式](/help/workfront-fusion/references/apps-and-modules/assets/locale-time-350x83.png)
+![&#x200B; ロケール時間の数式](/help/workfront-fusion/references/apps-and-modules/assets/locale-time-350x83.png)
 
 >[!ENDSHADEBOX]
 

@@ -92,7 +92,7 @@ Google Forms コネクタでは、次の機能が使用されます。
 
 1. フォームを開きます。
 1. 「**[!UICONTROL 応答]**」タブに移動します。
-1. **[!UICONTROL スプレッドシートを作成]** アイコン ![ スプレッドシート アイコン ](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png)をクリックします。
+1. **[!UICONTROL スプレッドシートを作成]** アイコン ![&#x200B; スプレッドシート アイコン &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png)をクリックします。
 
 1. 新規スプレッドシートを作成するか、既存スプレッドシートを作成するかを選択します
 1. 「**[!UICONTROL 作成]**」をクリックします。

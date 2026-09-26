@@ -59,7 +59,7 @@ Webhook について詳しくは、[インスタントトリガー（Webhook）]
 
 シナリオに現在キューがある場合、そのシナリオにバナーが表示されます。
 
-![ キューのバナー](assets/queue-banner.png)
+![&#x200B; キューのバナー](assets/queue-banner.png)
 
 Webhookのキューを表示するには：
 

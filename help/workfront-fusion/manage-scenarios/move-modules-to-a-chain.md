@@ -36,7 +36,7 @@ Workfront Fusionは、モジュールグループをチェーンに移動し、�
 
 連鎖シナリオの計画について詳しくは、[複数のシナリオを連鎖させる](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)を参照してください。
 
-チェーンモジュールの設定方法については、[ チェーンモジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)を参照してください。
+チェーンモジュールの設定方法については、[&#x200B; チェーンモジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)を参照してください。
 
 ## アクセス要件
 

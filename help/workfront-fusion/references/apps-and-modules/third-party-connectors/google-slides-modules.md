@@ -540,12 +540,12 @@ Google スライドコネクタでは、次の機能が使用されます。
 
 次の API 呼び出しは、プレゼンテーションの詳細を返します。
 
-![ プレゼンテーションの詳細](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
+![&#x200B; プレゼンテーションの詳細](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
 
 一致した検索結果は、モジュールの「出力」にある[!UICONTROL バンドル]／[!UICONTROL 本文]／[!UICONTROL presentationId] で確認できます。
 
 この例では、要求されたプレゼンテーションの詳細が返されました。
 
-![ プレゼンテーションの詳細](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
+![&#x200B; プレゼンテーションの詳細](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
 
 >[!ENDSHADEBOX]

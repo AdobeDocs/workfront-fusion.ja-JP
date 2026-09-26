@@ -19,7 +19,7 @@ workflow-type: tm+mt
 source-wordcount: '1085'
 ht-degree: 80%
 ---
-# HTTP > [!UICONTROL  クライアント証明書認証リクエストを作成] モジュール
+# HTTP > [!UICONTROL &#x200B; クライアント証明書認証リクエストを作成] モジュール
 
 >[!NOTE]
 >
@@ -71,9 +71,9 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 +++
 
-## [!UICONTROL HTTP] > [!UICONTROL  クライアント証明書認証リクエストを作成] モジュール設定
+## [!UICONTROL HTTP] > [!UICONTROL &#x200B; クライアント証明書認証リクエストを作成] モジュール設定
 
-[!UICONTROL HTTP] > [!UICONTROL  クライアント証明書認証リクエストを作成] モジュールを設定すると、Adobe Workfront Fusionに以下のフィールドが表示されます。 モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL HTTP] > [!UICONTROL &#x200B; クライアント証明書認証リクエストを作成] モジュールを設定すると、Adobe Workfront Fusionに以下のフィールドが表示されます。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。 詳しくは、[Adobe Workfront Fusion でのモジュール間の情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 

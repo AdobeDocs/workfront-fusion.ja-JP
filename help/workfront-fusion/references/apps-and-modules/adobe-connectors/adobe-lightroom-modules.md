@@ -34,7 +34,7 @@ ht-degree: 21%
 
 Adobe Workfront Fusion のシナリオでは、[!DNL Adobe Lightroom] を使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりすることができます。
 
-シナリオの作成手順が必要な場合は、[ シナリオの作成：記事インデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
+シナリオの作成手順が必要な場合は、[&#x200B; シナリオの作成：記事インデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
 
 モジュールについて詳しくは、[モジュール：記事インデックス](/help/workfront-fusion/references/modules/modules-toc.md)の記事を参照してください。
 
@@ -281,7 +281,7 @@ Adobe Lightroomに接続するには、まずAdobe Admin ConsoleでOAuth アプ�
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL コンテンツの長さ（バイト） ]</td>
+      <td role="rowheader">[!UICONTROL コンテンツの長さ（バイト） &#x200B;]</td>
       <td>
         <p>コンテンツの長さをバイト単位で入力またはマッピングします。</p>
       </td>
@@ -344,7 +344,7 @@ Adobe Lightroomに接続するには、まずAdobe Admin ConsoleでOAuth アプ�
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROLの取得日]</td>
+      <td role="rowheader">[!UICONTROL の取得日]</td>
       <td>
         <p>アセットの取得日を形式<code>YYYY-MM-DDT00:00:00-00:00</code>で入力またはマッピングします。 取得された日付が<code>0000-00-00T00:00:00</code>に設定されている場合、これはサーバーによって設定されます。 </p>
       </td>
@@ -368,7 +368,7 @@ Adobe Lightroomに接続するには、まずAdobe Admin ConsoleでOAuth アプ�
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL インポートタイムスタンプ ]</td>
+      <td role="rowheader">[!UICONTROL インポートタイムスタンプ &#x200B;]</td>
       <td>
         <p>日付を入力するか、形式<code>YYYY-MM-DDT00:00:00-00:00</code>でマッピングします。</p>
       </td>
@@ -389,13 +389,13 @@ Adobe Lightroomに接続するには、まずAdobe Admin ConsoleでOAuth アプ�
       <td>[!DNL Adobe Lightroom] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >[!DNL Adobe Lightroom]</a> への接続の作成を参照してください。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL コンテンツ長（バイト単位） ]</td>
+      <td role="rowheader">[!UICONTROL コンテンツ長（バイト単位） &#x200B;]</td>
       <td>
         <p>コンテンツの長さをバイト単位で入力またはマッピングします。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL新規アップロードまたはXMP/develop ファイルのコピー]</td>
+      <td role="rowheader">[!UICONTROL 新規アップロードまたはXMP/develop ファイルのコピー]</td>
       <td>
         <p>新しいファイルをアップロードするか、既存のアセットからファイルをコピーするかを選択します。</p>
       </td>
@@ -434,13 +434,13 @@ Adobe Lightroomに接続するには、まずAdobe Admin ConsoleでOAuth アプ�
       <td>[!DNL Adobe Lightroom] への接続を作成する手順については、この記事の<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >[!DNL Adobe Lightroom]</a> への接続の作成を参照してください。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Rendition Type （s） （セミコロン区切り） ]</td>
+      <td role="rowheader">[!UICONTROL Rendition Type （s） （セミコロン区切り） &#x200B;]</td>
       <td>
         <p>作成するレンディションのレンディションタイプを入力します。 複数のタイプを入力する場合は、セミコロン（;）で区切ります。 <p>考えられるタイプは次のとおりです。</p><ul><li><code>fullsize</code></li><li><code>2560</code></li></ul></p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL コンテンツの長さ（バイト） ]</td>
+      <td role="rowheader">[!UICONTROL コンテンツの長さ（バイト） &#x200B;]</td>
       <td>
         <p>コンテンツの長さをバイト単位で入力またはマッピングします。</p>
       </td>
@@ -567,19 +567,19 @@ Adobe Lightroomに接続するには、まずAdobe Admin ConsoleでOAuth アプ�
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL開始タイムスタンプ ]</td>
+      <td role="rowheader">[!UICONTROL 開始タイムスタンプ &#x200B;]</td>
       <td>
         <p>タイムスタンプを入力またはマッピングします。 モジュールは、このタイムスタンプの後に更新されたレコードを返します。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL指定した時間より前に取得したアセットを返す]</td>
+      <td role="rowheader">[!UICONTROL 指定した時間より前に取得したアセットを返す]</td>
       <td>
         <p>日付を形式<code>YYYY-MM-DDT00:00:00</code>で入力してください。 モジュールは、この日付より前にキャプチャされた結果を返します。</p><p> このフィールドをフィールド <code>Return assets captured after given time</code>と共に使用することはできません。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL指定された時間が経過した後に取得されたアセットを返します]</td>
+      <td role="rowheader">[!UICONTROL 指定された時間が経過した後に取得されたアセットを返します]</td>
       <td>
         <p>日付を形式<code>YYYY-MM-DDT00:00:00</code>で入力してください。 モジュールは、この日付より前にキャプチャされた結果を返します。</p><p> このフィールドをフィールド <code>Return assets captured before given time</code>と共に使用することはできません。</p>
       </td>
@@ -591,7 +591,7 @@ Adobe Lightroomに接続するには、まずAdobe Admin ConsoleでOAuth アプ�
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL SHA256 ハッシュ値の元のファイル ]</td>
+      <td role="rowheader">[!UICONTROL SHA256 ハッシュ値の元のファイル &#x200B;]</td>
       <td>
         <p>元のファイルのハッシュ値を入力またはマッピングします。 一致するハッシュを持つAssetsが返されます。</p>
       </td>
@@ -615,7 +615,7 @@ Adobe Lightroomに接続するには、まずAdobe Admin ConsoleでOAuth アプ�
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL除外するアセットの種類]</td>
+      <td role="rowheader">[!UICONTROL 除外するアセットの種類]</td>
       <td>
         <p>完全なアセットと不完全なアセットのどちらを除外するかを選択します。 すべてのアセットを含めるには、このフィールドを空白のままにします。</p>
       </td>
@@ -632,7 +632,7 @@ Adobe Lightroomに接続するには、まずAdobe Admin ConsoleでOAuth アプ�
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROLのお気に入りステータス ]</td>
+      <td role="rowheader">[!UICONTROL のお気に入りステータス &#x200B;]</td>
       <td>
         <p>結果を返すお気に入りのステータスを入力またはマッピングします。</p>
       </td>
@@ -686,7 +686,7 @@ Adobe Lightroomに接続するには、まずAdobe Admin ConsoleでOAuth アプ�
         <p>アルバムに追加するアセットのIDを入力またはマッピングします</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL]このアセットはアルバムカバーですか？]</td>
+      <td role="rowheader">このアセットはアルバムカバーですか？&rbrack;</td>
       <td>
         <p>このアセットをアルバムを表す画像として表示するかどうかを選択します。</p>
       </td>
@@ -696,7 +696,7 @@ Adobe Lightroomに接続するには、まずAdobe Admin ConsoleでOAuth アプ�
         <p>アセットの順序を指定します。</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL サービス ペイロード ]</td>
+      <td role="rowheader">[!UICONTROL サービス ペイロード &#x200B;]</td>
       <td>
         <p>アセットに含めるメタデータを入力するか、マッピングします。 これは、最大長1～24文字の単一のテキスト文字列である必要があります。</p>
       </td>
@@ -734,7 +734,7 @@ Adobe Lightroomに接続するには、まずAdobe Admin ConsoleでOAuth アプ�
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL サブタイプ ]</td>
+      <td role="rowheader">[!UICONTROL サブタイプ &#x200B;]</td>
       <td>
         <p>アルバムのサブタイプを選択します。</p>
       </td>
@@ -774,7 +774,7 @@ Adobe Lightroomに接続するには、まずAdobe Admin ConsoleでOAuth アプ�
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL サービス ペイロード ]</td>
+      <td role="rowheader">[!UICONTROL サービス ペイロード &#x200B;]</td>
       <td>
         <p>アルバムメタデータを文字列として入力またはマッピングします。</p>
       </td>
@@ -791,7 +791,7 @@ Adobe Lightroomに接続するには、まずAdobe Admin ConsoleでOAuth アプ�
         <p>日付を入力するか、形式<code>YYYY-MM-DDT00:00:00-00:00Z</code>でマッピングします。</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL更新日]</td>
+      <td role="rowheader">[!UICONTROL 更新日]</td>
       <td>
         <p>日付を入力するか、形式<code>YYYY-MM-DDT00:00:00-00:00Z</code>でマッピングします。</p>
       </td>
@@ -844,7 +844,7 @@ Adobe Lightroomに接続するには、まずAdobe Admin ConsoleでOAuth アプ�
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL子アルバムを削除？]</td>
+      <td role="rowheader">[!UICONTROL 子アルバムを削除？]</td>
       <td>
         <p>削除したアルバムの子アルバムを削除するかどうかを選択します。</p>
       </td>
@@ -928,7 +928,7 @@ Adobe Lightroomに接続するには、まずAdobe Admin ConsoleでOAuth アプ�
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Number of Assets to Return （1-500） ]</td>
+      <td role="rowheader">[!UICONTROL Number of Assets to Return （1-500） &#x200B;]</td>
       <td>
         <p>シナリオの実行サイクルごとにモジュールが返すレコードの最大数を入力します。 この数値は1 ～ 500である必要があります。</p>
       </td>
@@ -940,25 +940,25 @@ Adobe Lightroomに接続するには、まずAdobe Admin ConsoleでOAuth アプ�
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL サブタイプ値（セミコロン区切り） ]</td>
+      <td role="rowheader">[!UICONTROL サブタイプ値（セミコロン区切り） &#x200B;]</td>
       <td>
         <p>返すサブタイプ値のセミコロン区切りリストを入力またはマッピングします。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL フラグ値（セミコロン区切り） ]</td>
+      <td role="rowheader">[!UICONTROL フラグ値（セミコロン区切り） &#x200B;]</td>
       <td>
         <p>返すフラグ値のセミコロン区切りリストを入力またはマッピングします。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Additional Data Fields to Include （セミコロン区切り） ]</td>
+      <td role="rowheader">[!UICONTROL Additional Data Fields to Include （セミコロン区切り） &#x200B;]</td>
       <td>
         <p>アセットが含まれている場合は、すべてのフィールドが含まれます。含まれていない場合は、IDと自己参照リンクのみが返されます。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL除外するアセットの種類]</td>
+      <td role="rowheader">[!UICONTROL 除外するアセットの種類]</td>
       <td>
         <p>完全なアセットと不完全なアセットのどちらを除外するかを選択します。 すべてのアセットを含めるには、このフィールドを空白のままにします。</p>
       </td>
@@ -970,7 +970,7 @@ Adobe Lightroomに接続するには、まずAdobe Admin ConsoleでOAuth アプ�
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL プレゼンテーション フィルターに基づいてアルバムアセットをフィルタリング ]</td>
+      <td role="rowheader">[!UICONTROL プレゼンテーション フィルターに基づいてアルバムアセットをフィルタリング &#x200B;]</td>
       <td>
         <p>このフィールドを「true」に設定すると、アルバムに設定されているプレゼンテーションフィルターに基づいて、すべてのアルバムアセットがフィルタリングされます。 このパラメーターを使用すると、プレゼンテーションフィルターの設定に関係なく、拒否されたアセットが常に除外されます。 album_filtersに「true」以外の値が設定されている場合、プレゼンテーションフィルターは適用されません。 デフォルトの動作は、すべてのアセットを表示することです。 このパラメーターは、フラグパラメーターと共に使用することはできません。 </p>
       </td>
@@ -1003,7 +1003,7 @@ Adobe Lightroomに接続するには、まずAdobe Admin ConsoleでOAuth アプ�
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL現在の結果より前のアルバム名]</td>
+      <td role="rowheader">[!UICONTROL 現在の結果より前のアルバム名]</td>
       <td>
         <p>結果をページネーションする場合は、前のページに最後のアルバムの名前を入力するか、マッピングします。</p>
       </td>

@@ -18,11 +18,11 @@ ht-degree: 1%
 
 Workfront Fusionのストレージエリアでは、Adobe クラウドストレージ内のリポジトリを表示したり、操作したりできます。
 
-ストレージの概要については、[ ストレージの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)を参照してください。
+ストレージの概要については、[&#x200B; ストレージの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)を参照してください。
 
 >[!TIP]
 >
->リポジトリを表示する前に、ストレージを初期化する必要があります。 手順については、[ ストレージの初期化](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/initialize-storage.md)を参照してください。
+>リポジトリを表示する前に、ストレージを初期化する必要があります。 手順については、[&#x200B; ストレージの初期化](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/initialize-storage.md)を参照してください。
 
 ## リポジトリ、フォルダー、ファイルの表示
 

@@ -51,7 +51,7 @@ ht-degree: 72%
 
   安定した統合を実現するには、HTTP リクエストモジュールを使用してWebhookを介して2番目のシナリオをトリガーすることを検討してください。 このパターンは、完全にサポートされているプリミティブを使用し、各シナリオに独立した実行制御を与えます。
 
-  チェーン付きシナリオを使用する場合は、[複数のシナリオを一緒にチェーン ](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)する記事の設計ガイダンスと制約を確認してください。
+  チェーン付きシナリオを使用する場合は、[複数のシナリオを一緒にチェーン &#x200B;](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)する記事の設計ガイダンスと制約を確認してください。
 
 ## 操作
 

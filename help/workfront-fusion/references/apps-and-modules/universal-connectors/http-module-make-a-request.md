@@ -19,9 +19,9 @@ workflow-type: tm+mt
 source-wordcount: '991'
 ht-degree: 72%
 ---
-# [!UICONTROL HTTP] > [!UICONTROL  リクエストを作成] モジュール
+# [!UICONTROL HTTP] > [!UICONTROL &#x200B; リクエストを作成] モジュール
 
-Adobe Workfront Fusion [!UICONTROL HTTP] > [!UICONTROL  リクエストモジュールを作成]は、HTTP リクエストを設定してサーバーに送信できるユニバーサルモジュールです。 受信した HTTP 応答は、出力バンドルに含まれます。
+Adobe Workfront Fusion [!UICONTROL HTTP] > [!UICONTROL &#x200B; リクエストモジュールを作成]は、HTTP リクエストを設定してサーバーに送信できるユニバーサルモジュールです。 受信した HTTP 応答は、出力バンドルに含まれます。
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 +++
 
-## [!UICONTROL HTTP] > [!UICONTROL  リクエストを作成] モジュール設定
+## [!UICONTROL HTTP] > [!UICONTROL &#x200B; リクエストを作成] モジュール設定
 
 [!UICONTROL HTTP] > [!UICONTROL Make a request] モジュールを設定すると、Adobe Workfront Fusionに次のフィールドが表示されます。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
@@ -106,7 +106,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
        <p>結果の HTTP リクエスト形式の例は、次のようになります。</p> 
        <p><code>field1=value1&amp;field2=value2</code> </p> 
       </div> </li> 
-     <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL  Multipart/form-data] は、ファイルとデータの送信に使用される HTTP マルチパートリクエストです。 通常、ファイルをサーバーにアップロードする際に使用されます。</p> <p>リクエストで送信するフィールドを追加します。 各フィールドには、キーと値のペアが含まれている必要があります。</p> 
+     <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL &#x200B; Multipart/form-data] は、ファイルとデータの送信に使用される HTTP マルチパートリクエストです。 通常、ファイルをサーバーにアップロードする際に使用されます。</p> <p>リクエストで送信するフィールドを追加します。 各フィールドには、キーと値のペアが含まれている必要があります。</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>リクエスト本文内で送信するキーと値を入力します。</p> </li> 
        <li> <p><strong>[!UICONTROL File]</strong> </p> <p>キーを入力し、リクエスト本文で送信するソースファイルを指定します。</p> <p>前のモジュールからアップロードするファイル（[!UICONTROL HTTP] &gt; [!UICONTROL Get a File]または[!UICONTROL Google Drive] &gt; Download a Fileなど）をマッピングするか、ファイル名とファイルデータを手動で入力します。</p> </li> 
@@ -186,8 +186,8 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 **例：**&#x200B;この例では、JSON ペイロードを使用して [!UICONTROL POST] リクエストを送信するようにモジュールを設定する方法を示します。
 
-![ リクエストの例を作成](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
+![&#x200B; リクエストの例を作成](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
 
-JSON部分を[!UICONTROL  コンテンツをリクエスト ] フィールドで式や項目と直接混在することは推奨しません。これにより、JSONが無効になる可能性があります。
+JSON部分を[!UICONTROL &#x200B; コンテンツをリクエスト &#x200B;] フィールドで式や項目と直接混在することは推奨しません。これにより、JSONが無効になる可能性があります。
 
 >[!ENDSHADEBOX]

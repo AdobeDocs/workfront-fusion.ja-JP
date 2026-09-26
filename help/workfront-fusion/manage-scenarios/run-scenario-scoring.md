@@ -58,14 +58,14 @@ ht-degree: 32%
 1. 左側のパネルの「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. シナリオスコアリングエキスパートを実行するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに入ります。
-1. 画面の下部にある「シナリオスコアリングのエキスパート」アイコン ![ シナリオスコアリングのエキスパート ](assets/scoring-expert-icon.png)をクリックします。
+1. 画面の下部にある「シナリオスコアリングのエキスパート」アイコン ![&#x200B; シナリオスコアリングのエキスパート &#x200B;](assets/scoring-expert-icon.png)をクリックします。
 
    シナリオスコアリングエキスパートパネルが開きます。
 1. **評価**&#x200B;をクリックします。
 
 Scenario Scoring Expertは、10点満点のスコアを返し、どのチェックが成功したか失敗したかを示します。 チェックが失敗した場合、シナリオスコアリングエキスパートは、シナリオがこれらのチェックを満たしていることを確認する方法に関する推奨事項を提供します。
 
-![ シナリオスコア ](assets/scenario-score.png)
+![&#x200B; シナリオスコア &#x200B;](assets/scenario-score.png)
 
 ## シナリオスコアリングチェック
 
@@ -78,7 +78,7 @@ Scenario Scoring Expertは、10点満点のスコアを返し、どのチェッ�
   手順について詳しくは、[シナリオのスケジュール](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)を参照してください。
 * シナリオブループリントサイズは5 MB未満である必要があります。
 
-  詳しくは、[Fusionのパフォーマンスガードレール ](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md#scenarios)を参照してください。
+  詳しくは、[Fusionのパフォーマンスガードレール &#x200B;](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md#scenarios)を参照してください。
 * Workfront インスタントトリガーモジュールを使用する場合は、フィルタリングする必要があります。
 
-  手順については、「[Workfront > [!UICONTROL Watch Events] モジュール ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules)」の「Event サブスクリプションフィルター」を参照してください。
+  手順については、「[Workfront > [!UICONTROL Watch Events] モジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules)」の「Event サブスクリプションフィルター」を参照してください。

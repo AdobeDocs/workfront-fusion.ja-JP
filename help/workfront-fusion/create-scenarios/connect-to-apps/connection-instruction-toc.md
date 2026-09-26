@@ -73,7 +73,7 @@ Adobe アプリまたはサービスに接続するには、組織IDやテクニ
 
 また、Adobe Authenticator モジュールを使用して、1つの接続を使用して任意のAdobe APIに接続することもできます。 これにより、専用のFusion コネクタを持たないAdobe製品に簡単に接続できます。
 
-具体的な手順については、[ コネクタの記事](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#connectors-for-adobe-products)を参照してください。
+具体的な手順については、[&#x200B; コネクタの記事](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#connectors-for-adobe-products)を参照してください。
 
 ## [!DNL Microsoft] アプリまたは web サービスに接続
 
@@ -102,4 +102,4 @@ Workfront Fusionのほとんどの[!DNL Microsoft] アプリでは、追加情�
 
 一部のアプリやサービスは、Workfront Fusion接続の基本設定に従っていません。 これらのアプリに接続する手順は、当該のアプリの記事で確認できます。
 
-具体的な手順については、[ コネクタの記事](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#connectors-for-third-party-applications)を参照してください。
+具体的な手順については、[&#x200B; コネクタの記事](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#connectors-for-third-party-applications)を参照してください。

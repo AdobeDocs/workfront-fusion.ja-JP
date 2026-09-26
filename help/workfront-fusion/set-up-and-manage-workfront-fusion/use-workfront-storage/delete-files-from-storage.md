@@ -16,7 +16,7 @@ ht-degree: 0%
 ---
 # ストレージからファイルを削除
 
-ストレージの概要については、[ ストレージの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)を参照してください。
+ストレージの概要については、[&#x200B; ストレージの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)を参照してください。
 
 1. Workfront Fusionで、左側のナビゲーションで「**ストレージ**」をクリックします。
 1. 削除するファイルを含むリポジトリとフォルダーに移動します。

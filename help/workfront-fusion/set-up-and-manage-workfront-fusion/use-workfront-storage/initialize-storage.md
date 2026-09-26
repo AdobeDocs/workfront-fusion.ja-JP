@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Adobe クラウドストレージ内のリポジトリ、フォルダー、ファイルを表示するには、事前にFusion ストレージ領域を初期化する必要があります。
 
-ストレージの概要については、[ ストレージの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)を参照してください。
+ストレージの概要については、[&#x200B; ストレージの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)を参照してください。
 
 ## ストレージの初期化
 

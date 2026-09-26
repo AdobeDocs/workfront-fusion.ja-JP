@@ -213,7 +213,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>作成する[!DNL Adobe Campaign] レコードのタイプを選択するか、「カスタムリソース**を選択して**リソースの詳細を入力します。</td> 
+   <td>作成する[!DNL Adobe Campaign] レコードのタイプを選択するか、「カスタムリソース&#x200B;**を選択して**&#x200B;リソースの詳細を入力します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Fields] </td> 
@@ -240,7 +240,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>削除するリソースのタイプを選択するか、「カスタムリソース**を選択して**リソースの詳細を入力します。</td> 
+   <td>削除するリソースのタイプを選択するか、「カスタムリソース&#x200B;**を選択して**&#x200B;リソースの詳細を入力します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
@@ -304,7 +304,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>アクションを実行するリソースのタイプを選択するか、**カスタムリソース**を選択して、リソースの詳細を入力します。</td> 
+   <td>アクションを実行するリソースのタイプを選択するか、**カスタムリソース**&#x200B;を選択して、リソースの詳細を入力します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Action]</td> 
@@ -335,7 +335,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>読み取る[!DNL Adobe Campaign] レコードのタイプを選択するか、「カスタムリソース**を選択して**リソースの詳細を入力します。</td> 
+   <td>読み取る[!DNL Adobe Campaign] レコードのタイプを選択するか、「カスタムリソース&#x200B;**を選択して**&#x200B;リソースの詳細を入力します。</td> 
   </tr> 
     <tr> 
    <td role="rowheader">[!UICONTROL ID] </td> 
@@ -394,7 +394,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>更新する[!DNL Adobe Campaign] レコードのタイプを選択するか、「カスタムリソース**を選択して**リソースの詳細を入力します。</td> 
+   <td>更新する[!DNL Adobe Campaign] レコードのタイプを選択するか、「カスタムリソース&#x200B;**を選択して**&#x200B;リソースの詳細を入力します。</td> 
   </tr> 
     <tr> 
    <td role="rowheader">[!UICONTROL ID] </td> 
@@ -427,7 +427,7 @@ This scheduled trigger module starts a scenario when a record changes.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>返す[!DNL Adobe Campaign] レコードのタイプを選択するか、「カスタムリソース**を選択して**リソースの詳細を入力します。</td> 
+   <td>返す[!DNL Adobe Campaign] レコードのタイプを選択するか、「カスタムリソース&#x200B;**を選択して**&#x200B;リソースの詳細を入力します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search criteria]</td> 

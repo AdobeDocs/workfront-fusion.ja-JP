@@ -27,7 +27,7 @@ ht-degree: 44%
 
 チームまたは組織が他のチーム作成テンプレートを使用できる場合があります。
 
-使用可能なテンプレートを表示するには、Fusionのサイドナビゲーションメニューで&#x200B;**テンプレート** アイコン ![ テンプレートアイコン ](assets/templates-icon.png)をクリックします。
+使用可能なテンプレートを表示するには、Fusionのサイドナビゲーションメニューで&#x200B;**テンプレート** アイコン ![&#x200B; テンプレートアイコン &#x200B;](assets/templates-icon.png)をクリックします。
 
 ## Workfront テンプレート
 
@@ -270,7 +270,7 @@ WorkfrontとAnaplanの連携について詳しくは、[Adobe WorkfrontとAnapla
 
 これらのテンプレートは、WorkfrontとJiraの間の共通ワークフローを表します。
 
-これらのテンプレートについて詳しくは、[ テンプレートを使用したAdobe Workfront FusionとJira](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md)の連携を参照してください。
+これらのテンプレートについて詳しくは、[&#x200B; テンプレートを使用したAdobe Workfront FusionとJira](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md)の連携を参照してください。
 
 * [WorkfrontからJiraへ：Workfront タスクまたはイシューの割り当てからJIRA イシューを作成](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-1-workfront-to-jira-create-jira-issue-from-workfront-task-or-issue-assignment)
 * [JIRAからWorkfrontへ：JIRAからWorkfrontへ：JiraからWorkfrontに対して、問題とコメントに関する更新情報を送り返します](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-2-jira-to-workfront-send-updates-on-issues-and-comments-back-to-workfront-from-jira)

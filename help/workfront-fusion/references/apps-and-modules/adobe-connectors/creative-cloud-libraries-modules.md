@@ -23,7 +23,7 @@ ht-degree: 70%
 
 Adobe Workfront Fusion [!DNL Adobe Creative Cloud Libraries] モジュールを使用すると、エレメントまたはライブラリが作成または更新されたときにシナリオを開始できます。 また、要素をアップロード、取得、アーカイブまたはリストすることも、[!DNL Adobe Creative Cloud Libraries] API を呼び出すこともできます。
 
-シナリオの作成手順が必要な場合は、[ シナリオの作成：記事インデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
+シナリオの作成手順が必要な場合は、[&#x200B; シナリオの作成：記事インデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
 
 モジュールについて詳しくは、[モジュール：記事インデックス](/help/workfront-fusion/references/modules/modules-toc.md)の記事を参照してください。
 
@@ -94,7 +94,7 @@ Adobe Creative Cloud ライブラリコネクタでは、次の機能を使用�
 
 ## [!UICONTROL Adobe Creative Cloud ライブラリ]モジュールおよびそのフィールド
 
-[!UICONTROL Adobe Creative Cloud ライブラリ ] モジュールを設定すると、Workfront Fusionには次のフィールドが表示されます。 これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Adobe Creative Cloud Libraries]」フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL Adobe Creative Cloud ライブラリ &#x200B;] モジュールを設定すると、Workfront Fusionには次のフィールドが表示されます。 これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL Adobe Creative Cloud Libraries]」フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。 詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
@@ -118,7 +118,7 @@ Adobe Creative Cloud ライブラリコネクタでは、次の機能を使用�
 
 * [[!UICONTROL 要素のアップロード]](#upload-an-element)
 
-* [!UICONTROL [Watch New Element in Library]](#watch-new-element-in-library)
+* [[!UICONTROL [Watch New Element in Library]]](#watch-new-element-in-library)
 
 * [[!UICONTROL 更新された要素の監視]](#watch-updated-elements)
 
@@ -403,7 +403,7 @@ Adobe Creative Cloud ライブラリコネクタでは、次の機能を使用�
 </table>
 
 
-#### [!UICONTROL  アセットのアップロード ]
+#### [!UICONTROL &#x200B; アセットのアップロード &#x200B;]
 
 このアクションモジュールは、小さなファイルアセットを既存のライブラリにアップロードします。 最大ファイルサイズは 1 GB です。
 
@@ -442,7 +442,7 @@ Adobe Creative Cloud ライブラリコネクタでは、次の機能を使用�
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL エレメントタイプ ]</td>
+      <td role="rowheader">[!UICONTROL エレメントタイプ &#x200B;]</td>
       <td >アップロードする要素のタイプを選択します</td>
     </tr>
     <tr>

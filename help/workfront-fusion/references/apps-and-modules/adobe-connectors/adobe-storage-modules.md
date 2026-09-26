@@ -31,7 +31,7 @@ ht-degree: 28%
 
 Adobe Workfront Fusionでは、Adobe Admin Consoleでプロジェクトを作成および管理できます。
 
-シナリオの作成手順が必要な場合は、[ シナリオの作成：記事インデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
+シナリオの作成手順が必要な場合は、[&#x200B; シナリオの作成：記事インデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
 
 モジュールについて詳しくは、[モジュール：記事インデックス](/help/workfront-fusion/references/modules/modules-toc.md)の記事を参照してください。
 
@@ -134,11 +134,11 @@ Adobe Admin Console ページで、上部のナビゲーションバーの「製
         </td>
         </tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>[!UICONTROL Adobe] [!UICONTROL Client ID]を入力します。 これは、[!DNL Adobe Developer Console]のプロジェクトの[!UICONTROL資格情報の詳細] セクションにあります。</td>
+        <td>[!UICONTROL Adobe] [!UICONTROL Client ID]を入力します。 これは、[!DNL Adobe Developer Console]のプロジェクトの[!UICONTROL 資格情報の詳細] セクションにあります。</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。 これは、[!DNL Adobe Developer Console]のプロジェクトの[!UICONTROL資格情報の詳細] セクションにあります。</td>
+        <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。 これは、[!DNL Adobe Developer Console]のプロジェクトの[!UICONTROL 資格情報の詳細] セクションにあります。</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL IMS組織ID]</td>

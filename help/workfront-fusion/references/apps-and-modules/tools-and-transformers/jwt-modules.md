@@ -77,7 +77,7 @@ JWT コネクタでは、次の機能を使用します。
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL アルゴリズム ]</td> 
+   <td role="rowheader">[!UICONTROL アルゴリズム &#x200B;]</td> 
    <td> <p>JWTを生成するアルゴリズムを選択します。</p> <ul>
    <li><b>HS256</b>: SHA-256 ハッシュアルゴリズムを使用するHMAC</li>
    <li><b>HS384</b>: SHA-384 ハッシュアルゴリズムを使用するHMAC</li>
@@ -94,7 +94,7 @@ JWT コネクタでは、次の機能を使用します。
    </ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ペイロード ] </td> 
+   <td role="rowheader">[!UICONTROL ペイロード &#x200B;] </td> 
    <td> <p>追加するペイロード項目ごとに、<b>項目を追加</b>をクリックし、項目のキーと値を入力します。</p> </td> 
   </tr> 
   <tr> 

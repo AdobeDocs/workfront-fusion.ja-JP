@@ -169,7 +169,7 @@ Datadog コネクタでは、次の機能を使用します。
    <td> <p>[!DNL Datadog] アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">[!DNL Datadog] を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL専用ドメインを使用]</td> 
+   <td role="rowheader">[!UICONTROL 専用ドメインを使用]</td> 
    <td>多くの着信トラフィックを期待するDatadog API エンドポイントの一部は、専用ドメインで実行されています。 API呼び出しに専用ドメインを使用するには、このチェックボックスをオンにします。</td> 
   </tr> 
   <tr> 

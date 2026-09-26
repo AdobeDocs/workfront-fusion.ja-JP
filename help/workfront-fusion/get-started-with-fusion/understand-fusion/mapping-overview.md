@@ -70,7 +70,7 @@ ht-degree: 96%
 
 関数タブについて詳しくは、[関数の概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)を参照してください。
 
-関数を使用したアイテムのマッピングについて詳しくは、[組み込み関数を使用したアイテムのマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)を参照してください。
+関数を使用したアイテムのマッピングについて詳しくは、[組み込み関数を使用したアイテムのマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)を参照してください。
 
 ## コレクション
 

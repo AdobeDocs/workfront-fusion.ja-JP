@@ -175,7 +175,7 @@ DocuSign コネクタは次の機能を使用します。
 
 ### アクション
 
-* [[!UICONTROL  カスタムフィールドを追加]](#add-a-custom-field)
+* [[!UICONTROL &#x200B; カスタムフィールドを追加]](#add-a-custom-field)
 * [[!UICONTROL エンベロープへの受信者の追加]](#add-recipient-to-envelope)
 * [[!UICONTROL エンベロープの新規作成]](#create-a-new-envelope)
 * [[!UICONTROL カスタム API 呼び出し]](#custom-api-call)
@@ -185,7 +185,7 @@ DocuSign コネクタは次の機能を使用します。
 * [[!UICONTROL エンベロープの送信]](#send-envelope)
 * [[!UICONTROL エンベロープにファイルをアップロード]](#upload-a-file-to-an-envelope)
 
-#### [!UICONTROL  カスタムフィールドを追加]
+#### [!UICONTROL &#x200B; カスタムフィールドを追加]
 
 このアクションモジュールは、カスタムフィールドをドキュメントに追加します
 
@@ -333,7 +333,7 @@ DocuSign コネクタは次の機能を使用します。
     </tr>
   <tr> 
    <td role="rowheader">
-     [!UICONTROL印刷と署名を許可]
+     [!UICONTROL 印刷と署名を許可]
    </td> 
    <td> <p>このオプションを有効にすると、受信者は文書を印刷して紙に署名できます。</p> </td> 
   </tr> 
@@ -357,7 +357,7 @@ DocuSign コネクタは次の機能を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">
-     [!UICONTROL自動ナビゲーション ]
+     [!UICONTROL 自動ナビゲーション &#x200B;]
    </td> 
    <td> <p>受信者の自動ナビゲーションを設定するには、このオプションを有効にします。</p> </td> 
   </tr> 

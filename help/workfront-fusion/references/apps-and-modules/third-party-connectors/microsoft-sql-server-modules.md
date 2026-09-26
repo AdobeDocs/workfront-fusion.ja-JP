@@ -77,7 +77,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 [!DNL Fusion] が [!DNL SQL server] の宛先へ接続を確立するとき、[!DNL Fusion] ユーザーはホスト（サーバーがホストされているドメイン名または IP アドレス）とポートを識別します。 [!DNL Fusion] は、使用可能な任意のホストおよびポートに接続できます。
 
-Workfront Fusionで使用される特定のIP アドレスについて詳しくは、[Adobe Workfront Fusionへのアクセス用のIP アドレス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)を参照してください
+Workfront Fusionで使用される特定のIP アドレスについて詳しくは、[Adobe Workfront Fusionへのアクセス用のIP アドレス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)を参照してください
 
 ストアドプロシージャの作成について詳しくは、[!DNL Microsoft SQL Server] ドキュメントを参照してください。
 
@@ -97,6 +97,6 @@ SQL モジュールが実行されると、トランザクションが開始さ�
 
 自動コミットをオンにします。 自動コミットは、モジュールの実行が完了した直後にすべてのトランザクションを完了（コミット）します。
 
-1. 画面下部の[!UICONTROL  シナリオ設定] アイコン ![ シナリオ設定アイコン ](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png)をクリックします。
+1. 画面下部の[!UICONTROL &#x200B; シナリオ設定] アイコン ![&#x200B; シナリオ設定アイコン &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png)をクリックします。
 1. **[!UICONTROL 自動コミット]**&#x200B;チェックボックスをクリックします。
 1. 「**[!UICONTROL OK]**」をクリックして、シナリオ設定を保存します。

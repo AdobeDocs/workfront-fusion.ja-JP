@@ -195,7 +195,7 @@ Workfront Boards モジュールを設定すると、Workfront Fusionに以下�
       <td> <p>既存のWorkfront接続を使用してWorkfront ボードに接続したり、特定のWorkfront ボード接続を使用したりできます。 </p><p>Workfront アプリをWorkfront Fusionに接続する方法については、この記事の「<a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Workfront ボードへの接続の作成</a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL親カード ID]</td> 
+   <td>[!UICONTROL 親カード ID]</td> 
    <td>サブタスクを追加するカードのIDを入力またはマッピングします。<p>Workfrontでカードを表示すると、URLにカード IDが表示されます。</p></td> 
   </tr> 
   <tr> 
@@ -226,7 +226,7 @@ Workfront Boards モジュールを設定すると、Workfront Fusionに以下�
    <td>カードを追加するボードのIDを入力またはマッピングします。<p>Workfrontで掲示板を表示すると、URLに掲示板IDが表示されます。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL列ID]</td> 
+   <td>[!UICONTROL 列ID]</td> 
    <td>サブタスクを追加する列のIDを入力またはマッピングします。<p>列IDは、ボードを読み取りモジュールから返される情報で確認できます。</p></td> 
   </tr> 
   <tr> 
@@ -405,11 +405,11 @@ Workfront Boards モジュールを設定すると、Workfront Fusionに以下�
    <td>列を追加するボードのIDを入力またはマッピングします。<p>Workfrontで掲示板を表示すると、URLに掲示板IDが表示されます。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL列ID]</td> 
+   <td>[!UICONTROL 列ID]</td> 
    <td>更新する列のIDを入力またはマッピングします。<p>列IDは、ボードを読み取りモジュールから返される情報で確認できます。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL列名]</td> 
+   <td>[!UICONTROL 列名]</td> 
    <td>列の新しい名前を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -432,7 +432,7 @@ Workfront Boards モジュールを設定すると、Workfront Fusionに以下�
    <td>取得する列を含むボードのIDを入力またはマッピングします。<p>Workfrontで掲示板を表示すると、URLに掲示板IDが表示されます。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL列名]</td> 
+   <td>[!UICONTROL 列名]</td> 
    <td>取得する列の名前を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
@@ -455,7 +455,7 @@ Workfront Boards モジュールを設定すると、Workfront Fusionに以下�
    <td>取得する列を含むボードのIDを入力またはマッピングします。<p>Workfrontで掲示板を表示すると、URLに掲示板IDが表示されます。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL列名]</td> 
+   <td>[!UICONTROL 列名]</td> 
    <td>取得する列の名前を入力またはマッピングします。</td> 
   </tr> 
   <tr> 
@@ -607,7 +607,7 @@ Workfront Boards モジュールを設定すると、Workfront Fusionに以下�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>JSON埋め込みGraphql形式のAPI呼び出しの本文コンテンツを追加します </p> <p>例：</p><p>次の使用例は、列名を更新します。 <code>boardId</code>と<code>columnId</code>は、ハードコードされているか、以前のモジュールからマッピングされているGUIDとして含めることができます。<p><pre>{<br> "query": "mutation { updateColumn （boardId: \"\", columnId: \"\", updateColumnInput: { name: \"\" }） { id name }}"<br>}</pre><p>メモ：  <p><code>if</code> などの条件文を JSON で使用する場合は、条件文を引用符で囲みます。</p> 
+   <td> <p>JSON埋め込みGraphql形式のAPI呼び出しの本文コンテンツを追加します </p> <p>例：</p><p>次の使用例は、列名を更新します。 <code>boardId</code>と<code>columnId</code>は、ハードコードされているか、以前のモジュールからマッピングされているGUIDとして含めることができます。<p><pre>{<br> "query": "mutation { updateColumn （boardId: \"\", columnId: \"\", updateColumnInput: { name: \"\" }） { id name }&#x200B;}"<br>}</pre><p>メモ：  <p><code>if</code> などの条件文を JSON で使用する場合は、条件文を引用符で囲みます。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -637,7 +637,7 @@ Workfront Boards モジュールを設定すると、Workfront Fusionに以下�
    <td> <p>API 呼び出しのクエリを標準 JSON オブジェクトの形式で追加します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL操作名]</td> 
+   <td role="rowheader">[!UICONTROL 操作名]</td> 
    <td> <p>この操作の名前を入力します。 これにより、呼び出しの追跡とデバッグが簡単になります。</p> </td> 
   </tr> 
   <tr> 

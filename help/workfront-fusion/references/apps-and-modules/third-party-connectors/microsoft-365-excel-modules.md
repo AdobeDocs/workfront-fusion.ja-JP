@@ -147,7 +147,7 @@ Microsoft Office 365 Excel コネクタでは、次の機能が使用されま�
    <td> <p>モジュールでダウンロードするワークブックを識別する方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL By entering an ID manually]</strong> </p> <p>「[!UICONTROL Workbook ID]」フィールドに、モジュールでダウンロードする特定のワークブックの ID を入力またはマッピングします。</p> </li> 
-     <li> <p><strong>[!UICONTROL By selecting from the path]</strong> </p> <p>[!UICONTROL ワークブック ] フィールドで、モジュールをダウンロードするワークブックを選択します。このワークブックがルートフォルダーにない場合は、そのパスを含めます。</p> </li> 
+     <li> <p><strong>[!UICONTROL By selecting from the path]</strong> </p> <p>[!UICONTROL ワークブック &#x200B;] フィールドで、モジュールをダウンロードするワークブックを選択します。このワークブックがルートフォルダーにない場合は、そのパスを含めます。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -657,7 +657,7 @@ Microsoft Office 365 Excel コネクタでは、次の機能が使用されま�
 >
 >このテーブルは、ワークブックに埋め込まれたテーブル要素を参照します。 テーブル全体（ワークブックやシート）ではありません。
 
-![埋め込みテーブル ](/help/workfront-fusion/references/apps-and-modules/assets/embedded-table-350x420.png)
+![埋め込みテーブル &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/embedded-table-350x420.png)
 
 <table style="table-layout:auto"> 
  <col> 

@@ -25,7 +25,7 @@ ht-degree: 79%
 
 Adobe Workfront Fusion [!DNL Figma] モジュールを使用すると、コメント、ファイル、ファイルのバージョンまたはプロジェクトのリストを取得できます。 また、コメントを投稿したり、[!DNL Figma] API を呼び出したりすることもできます。
 
-シナリオの作成手順が必要な場合は、[ シナリオの作成：記事インデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
+シナリオの作成手順が必要な場合は、[&#x200B; シナリオの作成：記事インデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
 
 モジュールについて詳しくは、[モジュール：記事インデックス](/help/workfront-fusion/references/modules/modules-toc.md)の記事を参照してください。
 

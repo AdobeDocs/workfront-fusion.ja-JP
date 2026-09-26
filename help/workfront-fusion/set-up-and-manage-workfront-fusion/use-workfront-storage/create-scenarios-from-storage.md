@@ -16,7 +16,7 @@ ht-degree: 0%
 ---
 # ストレージからのシナリオの作成
 
-ストレージの概要については、[ ストレージの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)を参照してください。
+ストレージの概要については、[&#x200B; ストレージの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)を参照してください。
 
 ストレージはFusionのシナリオビルダーと統合されています。 ストレージ ページから、選択したファイルをダウンロードするシナリオを作成できます。
 

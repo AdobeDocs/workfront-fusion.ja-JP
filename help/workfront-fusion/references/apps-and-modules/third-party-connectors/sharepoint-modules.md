@@ -98,7 +98,7 @@ SharePoint コネクタでは、次の機能が使用されます。
 
 ## Microsoft SharePoint OnlineとWorkfront Fusionの連携 {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
-* [ [!DNL Microsoft]  アカウントを使用してMicrosoft SharePoint OnlineをWorkfront Fusionに接続する](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
+* [&#x200B; [!DNL Microsoft]  アカウントを使用してMicrosoft SharePoint OnlineをWorkfront Fusionに接続する](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [詳細設定を使用してMicrosoft SharePoint OnlineをWorkfront Fusionに接続する](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [証明書認証を使用してMicrosoft SharePoint OnlineをWorkfront Fusionに接続する](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 * [サービスプリンシパルを使用してMicrosoft SharePoint OnlineをWorkfront Fusionに接続する](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
@@ -237,7 +237,7 @@ SharePoint コネクタでは、次の機能が使用されます。
 1. アプリに明確で認識可能な名前を付けます。 例：`Make - SharePoint Integration`
 1. **[!UICONTROL リダイレクト URI]**&#x200B;を空白のままにします。 この接続には、ブラウザーを介してログインするユーザーは含まれません。
 1. **[!UICONTROL 登録]**&#x200B;を選択します。
-1. 引き続き[ クライアントシークレットの作成](#create-a-client-secret)を続行します。
+1. 引き続き[&#x200B; クライアントシークレットの作成](#create-a-client-secret)を続行します。
 
 #### クライアントシークレットの作成
 
@@ -289,10 +289,10 @@ SharePoint コネクタでは、次の機能が使用されます。
 
 1. [!UICONTROL API呼び出しを行う] モジュールで、接続フィールドの近くの&#x200B;**[!UICONTROL 追加]**&#x200B;をクリックして、**[!UICONTROL 接続を作成]** ボックスを開きます。
 1. 「**[!UICONTROL 詳細設定を表示]**」をクリックします。
-1. 「[!UICONTROL 接続タイプ ]」フィールドで、「**[!UICONTROL サービスプリンシパル]**」を選択します。
+1. 「[!UICONTROL 接続タイプ &#x200B;]」フィールドで、「**[!UICONTROL サービスプリンシパル]**」を選択します。
 1. 以下の情報を入力します。
 
-   * [!UICONTROL  テナント ID]
+   * [!UICONTROL &#x200B; テナント ID]
    * [!UICONTROL クライアント ID]
    * [!UICONTROL クライアント秘密鍵]
 
@@ -357,7 +357,7 @@ Microsoft SharePoint Online モジュールを設定すると、Workfront Fusion
 
 このモジュールは、SharePointでファイルを作成します。
 
-パフォーマンスを向上させるには、[ ファイルを作成](#create-a-file) モジュールを使用することをお勧めします。
+パフォーマンスを向上させるには、[&#x200B; ファイルを作成](#create-a-file) モジュールを使用することをお勧めします。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -447,7 +447,7 @@ Microsoft SharePoint Online モジュールを設定すると、Workfront Fusion
    <td role="rowheader">[!UICONTROL Enter サイト、ドライブ、およびファイル ID]</td> 
    <td> <p>取得するファイルの場所を特定する方法を選択します。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>取得するフォルダーの<strong>[!UICONTROL サイト ID]</strong>、<strong>[!UICONTROL リスト ID]</strong>および<strong>[!UICONTROL フォルダーのパス ]</strong>を入力またはマッピングします。</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>取得するフォルダーの<strong>[!UICONTROL サイト ID]</strong>、<strong>[!UICONTROL リスト ID]</strong>および<strong>[!UICONTROL フォルダーのパス &#x200B;]</strong>を入力またはマッピングします。</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>フォルダーの場所を選択します。 </p> </li> 
     </ul> </td> 
   </tr> 
@@ -930,7 +930,7 @@ Microsoft SharePoint Online モジュールを設定すると、Workfront Fusion
    <td> <p>Microsoft SharePoint Online アカウントをWorkfront Fusionに接続する方法については、この記事の「<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Microsoft SharePoint OnlineをWorkfront Fusionに接続する</a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL リスト ページ ]</td> 
+   <td role="rowheader">[!UICONTROL リスト ページ &#x200B;]</td> 
    <td> <p>リストするページを特定する方法を選択します。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>リストするページを含むサイトの<strong>[!UICONTROL サイト ID]</strong>を入力またはマッピングします。</p> </li> 
@@ -1133,7 +1133,7 @@ Microsoft SharePoint Online モジュールを設定すると、Workfront Fusion
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting your Microsoft SharePoint Online account to Workfront Fusion, see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
--->
+  -->
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
    <td> <p>既存のWebhookを選択するか、「追加」をクリックして接続を入力し、新しいWebhookを作成します。</p> 

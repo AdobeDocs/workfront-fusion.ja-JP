@@ -53,15 +53,15 @@ ht-degree: 44%
 ## メモを追加
 
 1. Workfront モジュールを右クリックし、**[!UICONTROL メモを追加]**&#x200B;をクリックします。
-1. 表示されるメモで、編集アイコン ![編集アイコン ](assets/edit-note.png)をクリックします。
+1. 表示されるメモで、編集アイコン ![編集アイコン &#x200B;](assets/edit-note.png)をクリックします。
 1. メモのテキストを入力します。
 1. 「**完了**」をクリックして、メモを保存します。
 1. メモをシナリオエディターの目的の場所にドラッグします。
 
-   シナリオにメモを追加すると、シナリオエディターの下部にある&#x200B;**[!UICONTROL Notes]** アイコン ![Notes アイコンに青いドットが表示され、ドット ](assets/notes-icon-w-dot.png)が表示されます。
+   シナリオにメモを追加すると、シナリオエディターの下部にある&#x200B;**[!UICONTROL Notes]** アイコン ![Notes アイコンに青いドットが表示され、ドット &#x200B;](assets/notes-icon-w-dot.png)が表示されます。
 
-1. すべてのメモを表示または非表示にするには、**[!UICONTROL Notes]** アイコン ![Notes アイコンをクリックし、ドット ](assets/notes-icon-w-dot.png)を付けます。
+1. すべてのメモを表示または非表示にするには、**[!UICONTROL Notes]** アイコン ![Notes アイコンをクリックし、ドット &#x200B;](assets/notes-icon-w-dot.png)を付けます。
 
    ノートを開くと、メモアイコンの周りに円が表示されます。
 
-   ![円を含む注釈アイコン ](assets/notes-icon-with-circle.png)
+   ![円を含む注釈アイコン &#x200B;](assets/notes-icon-with-circle.png)

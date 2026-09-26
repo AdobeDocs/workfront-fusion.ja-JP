@@ -59,7 +59,7 @@ PGP で暗号化および復号する場合、キーチェーンを使用し、�
 
 公開鍵と秘密鍵について詳しくは、[Adobe Workfront Fusion用語集](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md)を参照してください。
 
-キーについて詳しくは、[ キー](/help/workfront-fusion/references/modules/keys.md)を参照してください。
+キーについて詳しくは、[&#x200B; キー](/help/workfront-fusion/references/modules/keys.md)を参照してください。
 
 ## [!UICONTROL 暗号化]モジュールとそのフィールド
 

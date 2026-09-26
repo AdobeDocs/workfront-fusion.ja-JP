@@ -149,7 +149,7 @@ Microsoft Dynamics 365財務および運用モジュールの接続を作成す�
     <td> <p>Microsoft Dynamics 365 Finance and OperationsをWorkfront Fusionに接続する手順については、この記事の「<a href="#create-a-connection" class="MCXref xref">接続を作成</a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL エンティティ ]</td>
+    <td>[!UICONTROL エンティティ &#x200B;]</td>
      <td>作成するDynamics FinanceおよびOperations エンティティ タイプを入力するか、マッピングします。</td> 
   </tr> 
   <tr> 
@@ -174,11 +174,11 @@ Microsoft Dynamics 365財務および運用モジュールの接続を作成す�
     <td> <p>Microsoft Dynamics 365 Finance and OperationsをWorkfront Fusionに接続する手順については、この記事の「<a href="#create-a-connection" class="MCXref xref">接続を作成</a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL エンティティ ]</td>
+    <td>[!UICONTROL エンティティ &#x200B;]</td>
      <td>削除するDynamics FinanceおよびOperations エンティティ タイプを入力するか、マッピングします。</td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL プライマリキーフィールド ]</td>
+    <td>[!UICONTROL プライマリキーフィールド &#x200B;]</td>
      <td> プライマリキーフィールドで項目を識別します。 指定するプライマリキーフィールドごとに、<b>項目を追加</b>をクリックし、その項目を識別する一意のキーと値を入力またはマッピングします。 </td> 
   </tr> 
  </tbody> 
@@ -237,11 +237,11 @@ Microsoft Dynamics 365財務および運用モジュールの接続を作成す�
     <td> <p>Microsoft Dynamics 365 Finance and OperationsをWorkfront Fusionに接続する手順については、この記事の「<a href="#create-a-connection" class="MCXref xref">接続を作成</a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL エンティティ ]</td>
+    <td>[!UICONTROL エンティティ &#x200B;]</td>
      <td>読み取るDynamics FinanceおよびOperations エンティティの種類を入力するか、マッピングします。</td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL プライマリキーフィールド ]</td>
+    <td>[!UICONTROL プライマリキーフィールド &#x200B;]</td>
      <td> プライマリキーフィールドで項目を識別します。 指定するプライマリキーフィールドごとに、<b>項目を追加</b>をクリックし、その項目を識別する一意のキーと値を入力またはマッピングします。 </td> 
   </tr> 
  </tbody> 
@@ -258,11 +258,11 @@ Microsoft Dynamics 365財務および運用モジュールの接続を作成す�
     <td> <p>Microsoft Dynamics 365 Finance and OperationsをWorkfront Fusionに接続する手順については、この記事の「<a href="#create-a-connection" class="MCXref xref">接続を作成</a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL エンティティ ]</td>
+    <td>[!UICONTROL エンティティ &#x200B;]</td>
      <td>更新するDynamics FinanceおよびOperations エンティティの種類を入力するか、マッピングします。</td> 
   </tr>  
   <tr> 
-    <td>[!UICONTROL プライマリキーフィールド ]</td>
+    <td>[!UICONTROL プライマリキーフィールド &#x200B;]</td>
      <td> プライマリキーフィールドで項目を識別します。 指定するプライマリキーフィールドごとに、<b>項目を追加</b>をクリックし、その項目を識別する一意のキーと値を入力またはマッピングします。 </td> 
   </tr> 
   <tr> 
@@ -285,7 +285,7 @@ Microsoft Dynamics 365財務および運用モジュールの接続を作成す�
    <td> <p>Workfront アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Workfront を Workfront Fusion に接続</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL エンティティ ]</td> 
+   <td>[!UICONTROL エンティティ &#x200B;]</td> 
    <td>検索するDynamics FinanceおよびOperations エンティティの種類を入力するか、マッピングします。</td> 
   </tr> 
   <tr> 

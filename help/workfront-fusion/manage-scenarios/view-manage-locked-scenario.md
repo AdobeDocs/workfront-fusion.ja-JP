@@ -75,4 +75,4 @@ ht-degree: 77%
 1. 画面の右上隅にある「**[!UICONTROL オプション]**」をクリックします。
 1. 「**[!UICONTROL 実行のロックを解除]**」を選択します。
 1. 「**[!UICONTROL ロックを解除]**」をクリックします。
-   ![ シナリオのロック解除](assets/unlock-scenario.png)
+   ![&#x200B; シナリオのロック解除](assets/unlock-scenario.png)

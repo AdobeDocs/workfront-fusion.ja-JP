@@ -204,7 +204,7 @@ const fusionOrgId = connection.sharedContext.get("organization")?.id; // Fusion 
 const teamId      = connection.sharedContext.get("team")?.id;
 ```
 
-コンテキストについて詳しくは、[Fusionのコンテキストリファレンス ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-06-context-reference.md)を参照してください。
+コンテキストについて詳しくは、[Fusionのコンテキストリファレンス &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-06-context-reference.md)を参照してください。
 
 ## Fusion v3 APIの詳細
 

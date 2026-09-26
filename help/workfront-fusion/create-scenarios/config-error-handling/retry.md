@@ -55,7 +55,7 @@ Adobe Workfront Fusionでは現在、`retry` エラー処理ディレクティ�
 
 Workfront Fusionは現在、`retry` エラー処理ディレクティブを提供していません。 次のいずれかの回避策を使用して、再試行機能を模倣します。
 
-手順については、[ エラー処理のディレクティブ ](/help/workfront-fusion/references/errors/directives-for-error-handling.md)を参照してください。
+手順については、[&#x200B; エラー処理のディレクティブ &#x200B;](/help/workfront-fusion/references/errors/directives-for-error-handling.md)を参照してください。
 
 * [Break ディレクティブの使用](#use-the-break-directive)
 * [リピータモジュールの使用](#use-the-repeater-module)
@@ -73,7 +73,7 @@ Break ディレクティブが実行されると、シナリオ実行の状態�
 * 最小再試行間隔は 1 分です。
 * モジュールが複数のバンドルを処理していて、バンドルの処理が失敗した場合、部分的な実行（エラーの原因となったバンドルのみ）が未完了の実行フォルダーに移動され、[!UICONTROL 一時停止]ディレクティブの設定に従って再試行がスケジュールされます。 ただし、現在の実行は続行され、モジュールは後続のバンドルを処理し続けます。
 
-  不完全な実行フォルダーに保存されている実行が正常に解決されるまで、シナリオが再度実行されないようにするには、[!UICONTROL  シナリオ設定]で「[!UICONTROL  シーケンシャル処理]」オプションを有効にします。
+  不完全な実行フォルダーに保存されている実行が正常に解決されるまで、シナリオが再度実行されないようにするには、[!UICONTROL &#x200B; シナリオ設定]で「[!UICONTROL &#x200B; シーケンシャル処理]」オプションを有効にします。
 
 不完全な実行について詳しくは、[不完全な実行の表示と解決](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)を参照してください。
 
@@ -86,26 +86,26 @@ Break ディレクティブが実行されると、シナリオ実行の状態�
 1. 左側のパネルの「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. 回避策を追加するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに入ります。
-1. **フローコントロール** アイコン ![ フローコントロール ](assets/flow-control-icon.png)をクリックし、**リピーター**&#x200B;を選択します。
+1. **フローコントロール** アイコン ![&#x200B; フローコントロール &#x200B;](assets/flow-control-icon.png)をクリックし、**リピーター**&#x200B;を選択します。
 1. リピータモジュールで、**[!UICONTROL Repeats]** フィールドを、シナリオを再試行する最大回数に設定します。
 1. **[!UICONTROL Repeater]** モジュールの後に、失敗する可能性のあるモジュールを添付します。
 1. エラーが発生する可能性のあるモジュールにエラーハンドラーのルートを添付します。
 
-   手順については、[ エラー処理の追加](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)を参照してください。
-1. **[!UICONTROL ツール ] > [!UICONTROL  スリープ]** モジュールをエラーハンドラーのルートに追加し、その&#x200B;**[!UICONTROL 遅延]** フィールドを再試行の間の秒数に設定します。
+   手順については、[&#x200B; エラー処理の追加](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)を参照してください。
+1. **[!UICONTROL ツール &#x200B;] > [!UICONTROL &#x200B; スリープ]** モジュールをエラーハンドラーのルートに追加し、その&#x200B;**[!UICONTROL 遅延]** フィールドを再試行の間の秒数に設定します。
 
-1. **[!UICONTROL ツール ] > [!UICONTROL  スリープ]** モジュールの後に&#x200B;**[!UICONTROL Ignore]** ディレクティブを追加します。
-1. 引き続き[ デフォルトのルートを設定](#configure-the-default-route)します。
+1. **[!UICONTROL ツール &#x200B;] > [!UICONTROL &#x200B; スリープ]** モジュールの後に&#x200B;**[!UICONTROL Ignore]** ディレクティブを追加します。
+1. 引き続き[&#x200B; デフォルトのルートを設定](#configure-the-default-route)します。
 
 #### デフォルトルートの設定
 
-1. エラーが発生する可能性があるモジュールの後にある別の（エラーハンドラー以外の）ルートに&#x200B;**[!UICONTROL ツール ] > [!UICONTROL 変数]** モジュールを追加し、モジュールの結果を`Result`などの名前の変数に格納するように設定します。
+1. エラーが発生する可能性があるモジュールの後にある別の（エラーハンドラー以外の）ルートに&#x200B;**[!UICONTROL ツール &#x200B;] > [!UICONTROL 変数]** モジュールを追加し、モジュールの結果を`Result`などの名前の変数に格納するように設定します。
 
 1. **[!UICONTROL Tools] > [!UICONTROL Set variable]**&#x200B;の後に&#x200B;**[!UICONTROL Array aggregator]** モジュールを追加し、Source Module フィールドで&#x200B;**[!DNL Repeater]** モジュールを選択します。
 
 1. **[!UICONTROL Array aggregator]** モジュールの後に&#x200B;**[!UICONTROL Tools] > [!UICONTROL Get variable]** モジュールを追加し、`Result`変数の値をそれにマッピングします。
 
-1. **[!UICONTROL Repeater]** モジュールと失敗する可能性のあるモジュールの間に&#x200B;**[!UICONTROL ツール ] > [!UICONTROL 変数]** モジュールを挿入し、`Result`変数の値をそれにマッピングします。
+1. **[!UICONTROL Repeater]** モジュールと失敗する可能性のあるモジュールの間に&#x200B;**[!UICONTROL ツール &#x200B;] > [!UICONTROL 変数]** モジュールを挿入し、`Result`変数の値をそれにマッピングします。
 
 1. `Result` 変数が存在しない場合にのみ続行するには、この&#x200B;**[!UICONTROL ツール]／[!UICONTROL 変数の取得]**&#x200B;モジュールと失敗する可能性があるモジュールの間にフィルターを挿入します。
 
@@ -113,7 +113,7 @@ Break ディレクティブが実行されると、シナリオ実行の状態�
 
 **例：**
 
-このシナリオの例では、[!UICONTROL HTTP] > [!UICONTROL  リクエストを作成] モジュールは、失敗する可能性のあるモジュールを表しています。
+このシナリオの例では、[!UICONTROL HTTP] > [!UICONTROL &#x200B; リクエストを作成] モジュールは、失敗する可能性のあるモジュールを表しています。
 
 ![HTTP リクエストを作成](assets/http-make-request.png)
 
@@ -121,7 +121,7 @@ Break ディレクティブが実行されると、シナリオ実行の状態�
 
 失敗する可能性のあるモジュールの結果が複雑すぎて単純な変数に格納できない場合は、データストアを使用して結果を保存および取得できます。 データストアにはレコードが 1 つだけ含まれます。 レコードのキーは、例えば `Result` などです。
 
-データストアについて詳しくは、[ データストア ](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)を参照してください。
+データストアについて詳しくは、[&#x200B; データストア &#x200B;](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)を参照してください。
 
 #### 欠点
 
@@ -130,5 +130,5 @@ Break ディレクティブが実行されると、シナリオ実行の状態�
 
 ## リソース
 
-* リピータ モジュールとブレーク ディレクティブについて詳しくは、[ フロー制御](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/flow-control.md)を参照してください。
-* 変数モジュールの取得について詳しくは、[ ツール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)を参照してください。
+* リピータ モジュールとブレーク ディレクティブについて詳しくは、[&#x200B; フロー制御](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/flow-control.md)を参照してください。
+* 変数モジュールの取得について詳しくは、[&#x200B; ツール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)を参照してください。

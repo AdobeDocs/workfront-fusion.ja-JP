@@ -20,8 +20,8 @@ ht-degree: 2%
 
 アップロードは、フォルダー内（最上位のフォルダーリストではなく）を参照する場合に使用できます。
 
-* ストレージの概要については、[ ストレージの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)を参照してください。
-* アップロードシナリオの作成手順については、[ ストレージからのシナリオの作成](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/create-scenarios-from-storage.md)を参照してください。
+* ストレージの概要については、[&#x200B; ストレージの概要](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)を参照してください。
+* アップロードシナリオの作成手順については、[&#x200B; ストレージからのシナリオの作成](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/create-scenarios-from-storage.md)を参照してください。
 
 
 ## ファイルのアップロード

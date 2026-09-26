@@ -236,8 +236,8 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 次の例は、[!UICONTROL HTTP]／[!UICONTROL OAuth 2.0 実行]リクエストモジュールを使用して [!DNL Google] に接続する方法を示しています。
 
-1. カスタム OAuth クライアント ](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)を使用してAdobe Workfront Fusionを [!DNL Google Services] に接続する[の記事に記載されているように、プロジェクトを作成し、OAuth設定を設定し、資格情報を生成していることを確認します。
-1. [!UICONTROL HTTP] > [!UICONTROL OAuth 2.0 リクエスト ] モジュールを開きます。
+1. カスタム OAuth クライアント [&#128279;](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)を使用してAdobe Workfront Fusionを [!DNL Google Services] に接続するの記事に記載されているように、プロジェクトを作成し、OAuth設定を設定し、資格情報を生成していることを確認します。
+1. [!UICONTROL HTTP] > [!UICONTROL OAuth 2.0 リクエスト &#x200B;] モジュールを開きます。
 1. 任意のモジュールで、接続ボックスの横にある&#x200B;**[!UICONTROL 追加]**&#x200B;をクリックします。
 1. 次の値を入力します。
 

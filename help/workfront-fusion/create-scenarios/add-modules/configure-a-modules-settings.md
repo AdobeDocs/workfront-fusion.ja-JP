@@ -73,9 +73,9 @@ ht-degree: 59%
 
    以前のモジュールからの出力をフィールドにマッピングします。
 
-   マッピングについて詳しくは、[ マッピングの概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md)を参照してください。
+   マッピングについて詳しくは、[&#x200B; マッピングの概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md)を参照してください。
 
-   Workfront Fusionが認識できる様々な項目データタイプ（日付、番号、テキストなど）について詳しくは、[項目データタイプ ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)を参照してください。
+   Workfront Fusionが認識できる様々な項目データタイプ（日付、番号、テキストなど）について詳しくは、[項目データタイプ &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)を参照してください。
 
    >[!NOTE]
    >

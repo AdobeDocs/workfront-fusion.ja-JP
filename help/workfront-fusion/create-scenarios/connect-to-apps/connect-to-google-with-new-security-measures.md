@@ -85,11 +85,11 @@ Workfront Fusionでは、ドメイン全体のインストール例外が使用�
 
 ### Google Workspaceと別のOAuth クライアント
 
-Google Fusion OAuth クライアントを使用する代わりに独自のOAuth クライアントを使用するWorkfront Workspace ユーザーは、内部使用アプローチを使用してGoogle サービスに接続できます。 このオプションは、上級ユーザー向けです。 手順については、[ カスタム OAuth クライアントを使用してAdobe Workfront FusionをGoogle サービスに接続する](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)を参照してください。
+Google Fusion OAuth クライアントを使用する代わりに独自のOAuth クライアントを使用するWorkfront Workspace ユーザーは、内部使用アプローチを使用してGoogle サービスに接続できます。 このオプションは、上級ユーザー向けです。 手順については、[&#x200B; カスタム OAuth クライアントを使用してAdobe Workfront FusionをGoogle サービスに接続する](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)を参照してください。
 
 ### @gmail.comおよび@googlemail.com {#gmailcom-and-googlemailcom}
 
-@gmail.comまたは@googlemail.comを介してGoogle サービスにアクセスするユーザーは、個人使用アプローチを使用してGoogle サービスに接続できます。 このオプションは、上級ユーザー向けです。 手順については、[ カスタム OAuth クライアントを使用してAdobe Workfront FusionをGoogle サービスに接続する](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)を参照してください。
+@gmail.comまたは@googlemail.comを介してGoogle サービスにアクセスするユーザーは、個人使用アプローチを使用してGoogle サービスに接続できます。 このオプションは、上級ユーザー向けです。 手順については、[&#x200B; カスタム OAuth クライアントを使用してAdobe Workfront FusionをGoogle サービスに接続する](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)を参照してください。
 
 ## よくある質問
 
@@ -116,7 +116,7 @@ Google Drive、Gmail、およびメール（Gmail アカウントに接続）。
 
 * カスタム OAuth クライアントを作成。 このオプションは、上級ユーザー向けです。
 
-  手順については、[ カスタム OAuth クライアントを使用してAdobe Workfront FusionをGoogle サービスに接続する](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)を参照してください。
+  手順については、[&#x200B; カスタム OAuth クライアントを使用してAdobe Workfront FusionをGoogle サービスに接続する](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)を参照してください。
 
 Google DriveまたはGmail以外のサービスを統合する場合は、これらの制限は適用されません。
 

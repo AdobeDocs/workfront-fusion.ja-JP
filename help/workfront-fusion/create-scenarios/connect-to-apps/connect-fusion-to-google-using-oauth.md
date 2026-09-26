@@ -100,7 +100,7 @@ Google Cloud Platformでプロジェクトを作成するには：
 
 1. プロジェクトのOAuthの設定を開始します
 
-   手順については、[OAuth同意画面の設定を参照し、Google ドキュメントのスコープ ](https://developers.google.com/workspace/guides/configure-oauth-consent)を選択してください。
+   手順については、[OAuth同意画面の設定を参照し、Google ドキュメントのスコープ &#x200B;](https://developers.google.com/workspace/guides/configure-oauth-consent)を選択してください。
 1. **外部**&#x200B;を選択し、続いて「**作成**」をクリックします。
 
    >[!NOTE]
@@ -167,7 +167,7 @@ Google Cloud Platformでプロジェクトを作成するには：
 
 1. OAuth クライアント ID資格情報の作成を開始します。
 
-   手順については、Google ドキュメントの「[ アクセス資格情報を作成する](https://developers.google.com/workspace/guides/create-credentials)」を参照してください。
+   手順については、Google ドキュメントの「[&#x200B; アクセス資格情報を作成する](https://developers.google.com/workspace/guides/create-credentials)」を参照してください。
 
    >[!NOTE]
    >

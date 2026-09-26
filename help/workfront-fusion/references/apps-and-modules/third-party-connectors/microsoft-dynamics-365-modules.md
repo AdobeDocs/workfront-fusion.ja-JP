@@ -31,7 +31,7 @@ Adobe Workfront Fusion のシナリオでは、[!DNL Microsoft Dynamics 365] を
 >
 >[!DNL Microsoft Dynamics 365] コネクタでは [!DNL Dynamics Finance and Operations] をサポートしていません。
 >
->[!DNL Microsoft Dynamics 365 Finance and Operations] コネクタについて詳しくは、[[!DNL Microsoft Dynamics 365 Finance and Operations]  モジュール ](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dynamics-finance-operations-modules.md)を参照してください。
+>[!DNL Microsoft Dynamics 365 Finance and Operations] コネクタについて詳しくは、[[!DNL Microsoft Dynamics 365 Finance and Operations]  モジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dynamics-finance-operations-modules.md)を参照してください。
 
 シナリオの作成手順について詳しくは、[シナリオの作成：記事のインデックス](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
 

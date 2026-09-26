@@ -22,7 +22,7 @@ ht-degree: 67%
 
 また、すべてのバンドルを取得するか、特定の日付以降のバンドルのみを取得するかを指定することもできます。
 
-トリガーモジュールについて詳しくは、モジュールの概要の「[トリガーモジュール ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules)」の節を参照してください。
+トリガーモジュールについて詳しくは、モジュールの概要の「[トリガーモジュール &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules)」の節を参照してください。
 
 ## アクセス要件
 
@@ -87,7 +87,7 @@ ht-degree: 67%
     <td>使用可能なすべてのバンドルを取得します</td>
      </tr>
       <tr>
-    <td>[!UICONTROL手動で選択]</td>
+    <td>[!UICONTROL 手動で選択]</td>
     <td>バンドルの取得を開始する最初のバンドルを選択できます</td>
      </tr>
      </tbody>

@@ -22,7 +22,7 @@ ht-degree: 70%
 
 また、シナリオエディターにアクセスして、シナリオを編集することもできます。
 
-シナリオエディターについて詳しくは、[ シナリオエディター](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)を参照してください
+シナリオエディターについて詳しくは、[&#x200B; シナリオエディター](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)を参照してください
 
 ## アクセス要件
 
@@ -63,7 +63,7 @@ ht-degree: 70%
 
 1. 表示されるページで、次の表に示す要素を確認できます。
 
-   ![ シナリオの詳細](assets/scenario-detail-350x207.png)
+   ![&#x200B; シナリオの詳細](assets/scenario-detail-350x207.png)
 
    <table style="table-layout:auto"> 
     <col> 
@@ -74,7 +74,7 @@ ht-degree: 70%
       <td>このタブには、シナリオが視覚的に表示されます。 図は、シナリオエディターに表示されるものと同じです。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL レポート ] タブ </td> 
+      <td role="rowheader">[!UICONTROL レポート &#x200B;] タブ </td> 
       <td> <p>このタブを開くと、このシナリオが過去30日間に実行した操作数のグラフが表示されます。</p>  </td> 
      </tr> 
      <tr> 
@@ -122,7 +122,7 @@ ht-degree: 70%
       <td>このエリアには、現在実行中の実行に関連する情報が表示されます。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL履歴] パネル</p> <p> </p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL 履歴] パネル</p> <p> </p> </td> 
       <td> <p>このエリアには、シナリオの最後の実行に関連する情報が表示されます。 実行ごとに、次の情報が表示されます。</p> 
        <ul> 
         <li>実行日</li> 
@@ -133,7 +133,7 @@ ht-degree: 70%
        </ul> </td> 
      </tr> 
          <tr> 
-      <td role="rowheader"> <p>[!UICONTROL イベント ] パネル</p>  </td> 
+      <td role="rowheader"> <p>[!UICONTROL イベント &#x200B;] パネル</p>  </td> 
       <td>この領域には、シナリオに関連するイベントに関する情報が表示されます。  </td> 
      </tr> 
      <tr> 

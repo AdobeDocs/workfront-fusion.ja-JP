@@ -29,7 +29,7 @@ ht-degree: 19%
 
 Adobe Workfront Fusionでは、Adobe アカウントのユーザーを管理するワークフローを自動化できます。
 
-シナリオの作成手順が必要な場合は、[ シナリオの作成：記事インデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
+シナリオの作成手順が必要な場合は、[&#x200B; シナリオの作成：記事インデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
 
 モジュールについて詳しくは、[モジュール：記事インデックス](/help/workfront-fusion/references/modules/modules-toc.md)の記事を参照してください。
 
@@ -112,7 +112,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
         <td>[!DNL Adobe] IMS資格情報を入力します。 組織の一意のID。 これはA495E53@AdobeOrgという形式の文字列で、@の前の接頭辞は16進数です。 この値は、Admin Consoleの組織のURL パスの一部として、またはUser Management統合用のadobe.io コンソールで見つけることができます。</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL追加スコープ ]</td>
+        <td role="rowheader">[!UICONTROL 追加スコープ &#x200B;]</td>
         <td>追加するスコープごとに、<b>項目を追加</b>をクリックし、スコープを入力します。</td>
         </tr>
       </tbody>

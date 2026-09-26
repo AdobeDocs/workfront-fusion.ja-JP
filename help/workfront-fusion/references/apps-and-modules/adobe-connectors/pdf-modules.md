@@ -566,7 +566,7 @@ ZIP として出力されると、PDF は 1 ページにつき 1 つの画像に
 
 [!UICONTROL [!DNL Adobe PDF Services]ドキュメントの生成]機能について詳しくは、[!DNL Adobe Document Services] ドキュメントの[ドキュメント生成の概要](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html)を参照してください。
 
-* [ [!DNL Microsoft Word]  テンプレートで[!UICONTROL ドキュメントの生成]モジュールの使用](#use-the-generate-document-module-with-a-microsoft-word-template)
+* [&#x200B; [!DNL Microsoft Word]  テンプレートで[!UICONTROL ドキュメントの生成]モジュールの使用](#use-the-generate-document-module-with-a-microsoft-word-template)
 * [JSON で[!UICONTROL ドキュメントの生成]モジュールの使用](#use-the-generate-document-module-with-json)
 
 #### [!DNL Microsoft Word] テンプレートで[!UICONTROL ドキュメントの生成]モジュールの使用

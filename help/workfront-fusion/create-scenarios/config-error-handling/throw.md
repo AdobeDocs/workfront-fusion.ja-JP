@@ -32,7 +32,7 @@ ht-degree: 43%
 
 不完全な実行について詳しくは、[Adobe Workfront Fusion での不完全な実行の表示と解決](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)を参照してください。
 
-エラー処理ディレクティブについて詳しくは、[Adobe Workfront Fusionでのエラー処理に関するディレクティブ ](/help/workfront-fusion/references/errors/directives-for-error-handling.md)を参照してください。
+エラー処理ディレクティブについて詳しくは、[Adobe Workfront Fusionでのエラー処理に関するディレクティブ &#x200B;](/help/workfront-fusion/references/errors/directives-for-error-handling.md)を参照してください。
 
 ## アクセス要件
 
@@ -78,4 +78,4 @@ ht-degree: 43%
 
 [!DNL Rollback] ディレクティブの使用例を以下に示します。
 
-![ ロールバック ディレクティブ ](assets/rollback-directive.png)
+![&#x200B; ロールバック ディレクティブ &#x200B;](assets/rollback-directive.png)

@@ -117,11 +117,11 @@ Adobe Workfront Fusion [!UICONTROL JSONata] コネクタを使用すると、JSO
    <td> <p>このモジュールで使用する大規模言語モデル（LLM）への接続に使用する接続を選択します。</p> <p>現時点では、Anthropic API キーのみがサポートされています。</p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL入力スキーマ ]</td> 
+   <td role="rowheader">[!UICONTROL 入力スキーマ &#x200B;]</td> 
    <td> <p>この式に使用する入力スキーマを入力またはマッピングします。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL出力スキーマ ]</td> 
+   <td role="rowheader">[!UICONTROL 出力スキーマ &#x200B;]</td> 
    <td> <p>この式に使用する出力スキーマを入力またはマッピングします。</p> </td> 
   </tr> 
  </tbody> 

@@ -35,7 +35,7 @@ UIが`attach(...)`を呼び出すと、Fusionは現在のセッションを説�
 * **初期値：** `connection.sharedContext.get("<key>")`
 * **更新：** `contextchange` イベントをリッスンします。 最新のオブジェクトは`event.detail.context`に届きます。
 
-完全なコードパターンについては、[ カスタム拡張機能UIの構築](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-05-build-ui-procedure.md)を参照してください。
+完全なコードパターンについては、[&#x200B; カスタム拡張機能UIの構築](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-05-build-ui-procedure.md)を参照してください。
 
 ```js
 const organization = connection.sharedContext.get("organization");
@@ -50,9 +50,9 @@ const imsOrgId     = connection.sharedContext.get("imsOrgId"); // Adobe IMS org 
 | `imsToken` | 文字列 | サインイン ユーザーのAdobe **IMS アクセス トークン**。 これを`Bearer` トークンとして使用して、ユーザーの代わりにAdobeまたはFusion APIを呼び出します。 **機密性が高いため、ログを記録したり、表示したりしないでください。** |
 | `imsOrgId` | 文字列 | フォーム `XXXXXXXXXXXX@AdobeOrg`のAdobe **IMS組織ID**。 |
 | `imsUserId` | 文字列 | サインイン ユーザーのAdobe **IMS ユーザーID**。 |
-| `organization` | オブジェクト | **完全にアクティブなFusion組織**。 詳しくは、この記事の[`organization` フィールド ](#organization-fields)を参照してください。 |
-| `team` | オブジェクト \|未定義 | アクティブな&#x200B;**フルアクティブなFusion チーム** （常に`fusion/nav-team/1`に関連）。 詳しくは、この記事の[`team` フィールド ](#team-fields)を参照してください。 |
-| `user` | オブジェクト | **フル サインイン Fusion ユーザー**&#x200B;です。 詳しくは、この記事の[`user` フィールド ](#user-fields)を参照してください。 |
+| `organization` | オブジェクト | **完全にアクティブなFusion組織**。 詳しくは、この記事の[`organization` フィールド &#x200B;](#organization-fields)を参照してください。 |
+| `team` | オブジェクト \|未定義 | アクティブな&#x200B;**フルアクティブなFusion チーム** （常に`fusion/nav-team/1`に関連）。 詳しくは、この記事の[`team` フィールド &#x200B;](#team-fields)を参照してください。 |
+| `user` | オブジェクト | **フル サインイン Fusion ユーザー**&#x200B;です。 詳しくは、この記事の[`user` フィールド &#x200B;](#user-fields)を参照してください。 |
 
 ### Fusion IDとIMS ID
 

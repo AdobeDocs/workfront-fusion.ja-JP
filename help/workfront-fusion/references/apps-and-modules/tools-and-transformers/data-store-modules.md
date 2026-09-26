@@ -66,9 +66,9 @@ Workfront Fusion のデータストアの紹介ビデオについては、以下
 
 [!UICONTROL データストア]を使用するには、まずデータストアを作成する必要があります。
 
-データストアの作成について詳しくは、[ データストアの作成と管理](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)を参照してください。
+データストアの作成について詳しくは、[&#x200B; データストアの作成と管理](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)を参照してください。
 
-## [!UICONTROL  データストア ] モジュールとそのフィールド
+## [!UICONTROL &#x200B; データストア &#x200B;] モジュールとそのフィールド
 
 データストアモジュールを設定すると、Workfront Fusionに次のフィールドが表示されます。 これらのほか、アプリやサービスでのアクセスレベルなどの要因に応じて、追加のデータストアフィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 

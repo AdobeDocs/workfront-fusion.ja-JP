@@ -557,10 +557,10 @@ ZIP、RAR、7Z、TAR、TAR.GZ または TAR.BZ2 アーカイブに 1 つまた�
 
 >[!NOTE]
 >
->* 配列アグリゲーターを使用する場合（変換するファイルが異なる形式で多数ある場合）、タスクを追加]ダイアログにある&#x200B;**[!UICONTROL 入力形式がわかりません]**&#x200B;のオプションを[!UICONTROL 使用します。 それ以外の場合は、エラーが返されます。
+>* 配列アグリゲーターを使用する場合（変換するファイルが異なる形式で多数ある場合）、タスクを追加ダイアログにある&#x200B;**[!UICONTROL 入力形式がわかりません]**&#x200B;のオプションを使用します。 それ以外の場合は、エラーが返されます。
 >* 業務内のタスクをリンクしています（名前／入力、名前／入力、…）：
 >
->  ![ ジョブ間で名前をリンクしています](/help/workfront-fusion/references/apps-and-modules/assets/linking-name-across-jobs-350x808.png)>
+>  ![&#x200B; ジョブ間で名前をリンクしています](/help/workfront-fusion/references/apps-and-modules/assets/linking-name-across-jobs-350x808.png)>
 
 ### タスク
 

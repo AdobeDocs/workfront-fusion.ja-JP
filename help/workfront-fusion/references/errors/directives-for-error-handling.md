@@ -102,6 +102,6 @@ Workfront Fusionでは、次のエラー処理ディレクティブを使用で�
 
 ## リソース
 
-* ロールバックとロールバックフェーズについて詳しくは、「シナリオの実行、サイクル、およびフェーズ」の「[ ロールバック ](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback)」を参照してください。
-* コミット フェーズについて詳しくは、「シナリオの実行、サイクルおよびフェーズ」の記事の[ コミット ](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#commit)を参照してください。
+* ロールバックとロールバックフェーズについて詳しくは、「シナリオの実行、サイクル、およびフェーズ」の「[&#x200B; ロールバック &#x200B;](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback)」を参照してください。
+* コミット フェーズについて詳しくは、「シナリオの実行、サイクルおよびフェーズ」の記事の[&#x200B; コミット &#x200B;](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#commit)を参照してください。
 

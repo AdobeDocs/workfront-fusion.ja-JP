@@ -80,7 +80,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 >
 >新しいチームを選択するには、左側のナビゲーションでチーム名をクリックし、新しいチームを選択します。
 
-1. 「接続」領域を開くには、左側のナビゲーションで「**接続** ![接続」アイコン ](assets/connections-icon.png)」をクリックします。
+1. 「接続」領域を開くには、左側のナビゲーションで「**接続** ![接続」アイコン &#x200B;](assets/connections-icon.png)」をクリックします。
 1. 管理する接続を見つけ、その接続の行で次の1つ以上の手順を実行します。
 1. （オプション）環境と接続タイプを割り当てるには、**環境**&#x200B;および&#x200B;**タイプ** ドロップダウンをクリックし、オプションを選択します。
 1. （オプション）接続に対してWorkfront Fusionに付与された権限を表示するには、表示アイコン ![接続の権限を表示](assets/view-connection-permissions.png)をクリックします。
@@ -96,10 +96,10 @@ Workfront Fusionは通常、特定のサービスに対するアクセス権を�
 
 接続を更新するには：
 
-1. 「接続」領域を開くには、左側のナビゲーションで「**接続** ![接続」アイコン ](assets/connections-icon.png)」をクリックします。
+1. 「接続」領域を開くには、左側のナビゲーションで「**接続** ![接続」アイコン &#x200B;](assets/connections-icon.png)」をクリックします。
 1. 更新する接続を探します。
 1. その接続の行で、接続の横にあるチェックボックスをオンにし、画面下部の「**再認証**」をクリックします。
 
 ## リソース
 
-* 環境やタイプなどの接続メタデータについて詳しくは、[接続メタデータ ](/help/workfront-fusion/references/connections/connection-metadata.md)を参照してください。
+* 環境やタイプなどの接続メタデータについて詳しくは、[接続メタデータ &#x200B;](/help/workfront-fusion/references/connections/connection-metadata.md)を参照してください。
