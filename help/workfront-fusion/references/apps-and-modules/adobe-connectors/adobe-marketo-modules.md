@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: e84d0b7b77dd55c6f045c0b8d4d13aa16bfd29e6
 workflow-type: tm+mt
-source-wordcount: '2257'
-ht-degree: 99%
+source-wordcount: '2657'
+ht-degree: 87%
 ---
 # [!DNL Marketo] モジュール
 
@@ -214,9 +214,12 @@ Marketo コネクターは、次を使用します。
 
 * [[!UICONTROL リードをリストに追加]](#add-leads-to-a-list)
 * [[!UICONTROL プログラムの複製]](#clone-a-program)
+* [[!UICONTROL 一括抽出ジョブの作成]](#create-a-bulk-extract-job)
 * [[!UICONTROL レコードの作成]](#create-a-record)
 * [[!UICONTROL カスタム API 呼び出し]](#custom-api-call)
-* [[!UICONTROL ファイルのダウンロード]](#download-a-file)
+* [[!UICONTROL 一括抽出ファイルのダウンロード ]](#download-a-bulk-extract-file)
+* [[!UICONTROL ファイルをダウンロード]](#download-a-file)
+* [[!UICONTROL 一括抽出ジョブのステータスを取得]](#get-bulk-extract-job-status)
 * [[!UICONTROL レコードの読み取り]](#read-a-record)
 * [[!UICONTROL リストからリードを削除]](#remove-leads-from-a-list)
 * [[!UICONTROL キャンペーンをスケジュール]](#schedule-a-campaign)
@@ -269,6 +272,45 @@ Marketo コネクターは、次を使用します。
   <tr> 
    <td role="rowheader">[!UICONTROL Folder ID]</td> 
    <td>新しいプログラムを配置するフォルダーの ID を入力またはマップします。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL 一括抽出ジョブの作成]
+
+このアクションモジュールは、リードおよび人物レコードの一括抽出ジョブを作成します。 [!UICONTROL 一括抽出ジョブのステータスを取得]を使用してジョブを確認し、[!UICONTROL 一括抽出ファイルをダウンロード ]して完了した書き出しを取得します。 このモジュールは、ステータスモジュールとダウンロードモジュールで使用される書き出しIDを返します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>[!DNL Marketo] アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">[!DNL Marketo] を Workfront Fusion に接続</a>を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Fields]</td> 
+   <td> <p>一括抽出ジョブに追加する各フィールドについて、<b>項目を追加</b>をクリックし、フィールド API名を入力します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Output format]</td> 
+   <td> <p>抽出ファイルの形式として、CSV、TSVまたはSSVを選択します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Filter by]</td> 
+   <td> <p>このモジュールのフィルターを選択し、表示されるフィールドに必要な情報を入力します。</p>
+   <ul> 
+    <li> <p><strong>[!UICONTROL スマート リスト ]</strong> </p> <p>スマートリスト IDを入力またはマッピングします。</p> </li> 
+    <li> <p><strong>[!UICONTROLが日付範囲]</strong>を作成しました </p> <p>検索する開始日と終了日を選択します。</p> </li> 
+   </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL カスタム列ヘッダー]</td> 
+   <td> <p>抽出ジョブに含めるカスタム列ヘッダーごとに、<b>項目を追加</b>をクリックし、フィールドのAPI名と列ヘッダーのテキストを入力します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Enqueue job immediately]</td> 
+   <td> <p>「はい」を選択すると、作成直後に実行するジョブをキューに入れます。 「いいえ」を選択して、後で別の手順でジョブをキューに入れます。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -362,6 +404,33 @@ Marketo コネクターは、次を使用します。
    <td role="rowheader">[!UICONTROL Fields]</td> 
    <td> <p>API 呼び出しに追加するフィールドごとに、「<b>項目を追加</b>」をクリックして、フィールドのキーと値を入力します。</td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Body Type]</td> 
+   <td> <p>リクエスト本文の形式を選択します：<b>[!UICONTROL URL エンコード済み（フィールド） ]</b>または<b>[!UICONTROL JSON]</b>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL リクエスト本文（JSON） ]</td> 
+   <td> <p>[!UICONTROL Body Type]が[!UICONTROL JSON]に設定されている場合にのみ使用されます。 生のJSON本文を入力します。</p> <p>重要：JSONを使用する場合は、上記の[!UICONTROL Content-Type] ヘッダーを<code>application/x-www-form-urlencoded</code>から<code>application/json</code>に変更してください。そうしないと、Marketoでリクエストが拒否される可能性があります。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL 一括抽出ファイルのダウンロード ]
+
+このアクションモジュールは、完了した一括抽出ジョブのファイルを取得します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>[!DNL Marketo] アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">[!DNL Marketo] を Workfront Fusion に接続</a>を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Export ID]</td> 
+   <td>ファイルをダウンロードする一括抽出ジョブのIDを入力またはマッピングします。</td> 
+  </tr> 
  </tbody> 
 </table>
 
@@ -380,6 +449,25 @@ Marketo コネクターは、次を使用します。
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
    <td>ダウンロードするファイルの ID を入力またはマッピングします。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL 一括抽出ジョブのステータスを取得]
+
+このアクションモジュールは、ジョブ IDを使用して、一括抽出ジョブのステータスを取得します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>[!DNL Marketo] アカウントを Workfront Fusion に接続する手順について詳しくは、この記事の <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">[!DNL Marketo] を Workfront Fusion に接続</a>を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Export ID]</td> 
+   <td>ステータスを確認する一括抽出ジョブのIDを入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
 </table>
