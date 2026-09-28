@@ -217,7 +217,7 @@ Marketo コネクターは、次を使用します。
 * [[!UICONTROL 一括抽出ジョブの作成]](#create-a-bulk-extract-job)
 * [[!UICONTROL レコードの作成]](#create-a-record)
 * [[!UICONTROL カスタム API 呼び出し]](#custom-api-call)
-* [[!UICONTROL 一括抽出ファイルのダウンロード ]](#download-a-bulk-extract-file)
+* [[!UICONTROL 一括抽出ファイルのダウンロード &#x200B;]](#download-a-bulk-extract-file)
 * [[!UICONTROL ファイルをダウンロード]](#download-a-file)
 * [[!UICONTROL 一括抽出ジョブのステータスを取得]](#get-bulk-extract-job-status)
 * [[!UICONTROL レコードの読み取り]](#read-a-record)
@@ -278,7 +278,7 @@ Marketo コネクターは、次を使用します。
 
 #### [!UICONTROL 一括抽出ジョブの作成]
 
-このアクションモジュールは、リードおよび人物レコードの一括抽出ジョブを作成します。 [!UICONTROL 一括抽出ジョブのステータスを取得]を使用してジョブを確認し、[!UICONTROL 一括抽出ファイルをダウンロード ]して完了した書き出しを取得します。 このモジュールは、ステータスモジュールとダウンロードモジュールで使用される書き出しIDを返します。
+このアクションモジュールは、リードおよび人物レコードの一括抽出ジョブを作成します。 [!UICONTROL 一括抽出ジョブのステータスを取得]を使用してジョブを確認し、[!UICONTROL 一括抽出ファイルをダウンロード &#x200B;]して完了した書き出しを取得します。 このモジュールは、ステータスモジュールとダウンロードモジュールで使用される書き出しIDを返します。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -300,8 +300,8 @@ Marketo コネクターは、次を使用します。
    <td role="rowheader">[!UICONTROL Filter by]</td> 
    <td> <p>このモジュールのフィルターを選択し、表示されるフィールドに必要な情報を入力します。</p>
    <ul> 
-    <li> <p><strong>[!UICONTROL スマート リスト ]</strong> </p> <p>スマートリスト IDを入力またはマッピングします。</p> </li> 
-    <li> <p><strong>[!UICONTROLが日付範囲]</strong>を作成しました </p> <p>検索する開始日と終了日を選択します。</p> </li> 
+    <li> <p><strong>[!UICONTROL スマート リスト &#x200B;]</strong> </p> <p>スマートリスト IDを入力またはマッピングします。</p> </li> 
+    <li> <p><strong>[!UICONTROL が日付範囲]</strong>を作成しました </p> <p>検索する開始日と終了日を選択します。</p> </li> 
    </ul> </td> 
   </tr> 
   <tr> 
@@ -406,16 +406,16 @@ Marketo コネクターは、次を使用します。
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body Type]</td> 
-   <td> <p>リクエスト本文の形式を選択します：<b>[!UICONTROL URL エンコード済み（フィールド） ]</b>または<b>[!UICONTROL JSON]</b>。</p> </td> 
+   <td> <p>リクエスト本文の形式を選択します：<b>[!UICONTROL URL エンコード済み（フィールド） &#x200B;]</b>または<b>[!UICONTROL JSON]</b>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL リクエスト本文（JSON） ]</td> 
+   <td role="rowheader">[!UICONTROL リクエスト本文（JSON） &#x200B;]</td> 
    <td> <p>[!UICONTROL Body Type]が[!UICONTROL JSON]に設定されている場合にのみ使用されます。 生のJSON本文を入力します。</p> <p>重要：JSONを使用する場合は、上記の[!UICONTROL Content-Type] ヘッダーを<code>application/x-www-form-urlencoded</code>から<code>application/json</code>に変更してください。そうしないと、Marketoでリクエストが拒否される可能性があります。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL 一括抽出ファイルのダウンロード ]
+#### [!UICONTROL 一括抽出ファイルのダウンロード &#x200B;]
 
 このアクションモジュールは、完了した一括抽出ジョブのファイルを取得します。
 
