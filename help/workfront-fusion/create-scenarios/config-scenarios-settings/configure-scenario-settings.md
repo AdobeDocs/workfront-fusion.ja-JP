@@ -12,7 +12,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 850372a59529141a31a1a55035c55a3e506e69fb
 workflow-type: tm+mt
 source-wordcount: '1389'
 ht-degree: 46%
