@@ -1,7 +1,7 @@
 ---
 title: Adobe Workfront Fusion MCP サーバーの設定
 description: Adobe Workfront Fusionを、MCP対応のAI エージェンティックプラットフォームまたはCoworker （スタンドアロンまたはFusionの右側パネル）に接続します。
-source-git-commit: 6d447c16d199c69ae670f59bb56cf79464cbe057
+source-git-commit: 5f3bd6b7b8837632af245ea2c172205625e4ecba
 workflow-type: tm+mt
 source-wordcount: '1177'
 ht-degree: 1%
@@ -11,7 +11,7 @@ ht-degree: 1%
 
 Adobe Workfront Fusion MCP サーバーでは、サポート対象のAI エージェント基盤での自然言語の会話を通じて、Fusion組織のシナリオ、実行、接続、webhook、データストアなどと連携できます。
 
-Adobe Workfront Fusion MCP サーバーで使用できるツールの一覧については、[Adobe Workfront Fusion MCP サーバーツール &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/fusion-mcp-server-tools.md)を参照してください。
+Adobe Workfront Fusion MCP サーバーで使用できるツールの一覧については、[Adobe Workfront Fusion MCP サーバーツール ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/fusion-mcp-server-tools.md)を参照してください。
 
 ## サポートされているAI エージェント型プラットフォーム
 
@@ -49,7 +49,7 @@ Adobe Workfront FusionをAI エージェント型プラットフォームに接�
 
 CoworkerはAdobeのAI エージェントです。 FusionはCoworkerに組み込まれているため、MCP URLを入力したり、OAuth アプリを登録したりする必要はありません。 Coworker with Fusionは、次の2つの場所で使用できます。
 
-* [同僚（スタンドアロン） &#x200B;](#use-fusion-in-coworker)：他のAdobe アプリケーションと一緒にFusionを使用します。
+* [同僚（スタンドアロン） ](#use-fusion-in-coworker)：他のAdobe アプリケーションと一緒にFusionを使用します。
 * [Fusionの右側パネルの同僚](#use-coworker-in-the-fusion-right-rail): Fusion UI内のパネルで同僚を開きます。
 
 どちらも、同じFusion MCP ツール、Adobe ID、Fusion権限を使用します。 MCP ツールの読み取りまたは書き込み設定は、両方で適用されます。 削除、キューのクリア、上書きなどの破壊的なアクションは、常に確認を求めます。
@@ -82,7 +82,7 @@ Fusionをカスタムコネクタとして追加します。
 
 >[!NOTE]
 >
-> Claude Team/Enterpriseでは、カスタムコネクタを追加するには所有者である必要があります。 詳しくは、Claude ドキュメントの「[&#x200B; リモート MCP](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp)を使用したカスタムコネクタの基本を学ぶ」を参照してください。
+> Claude Team/Enterpriseでは、カスタムコネクタを追加するには所有者である必要があります。 詳しくは、Claude ドキュメントの「[ リモート MCP](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp)を使用したカスタムコネクタの基本を学ぶ」を参照してください。
 
 1. [Claude](https://claude.ai)にログインします。
 2. 左側のメニューで、**カスタマイズ**&#x200B;を選択します。
@@ -178,3 +178,4 @@ Fusionをカスタム MCP サーバーとして追加します。
 ### エージェントは私の接続シークレットを見ますか？
 
 いいえ。 接続ツールとキーツールは、資格情報や秘密鍵の値ではなく、メタデータ（名前、タイプ、スコープ、有効期限）を返します。
+
