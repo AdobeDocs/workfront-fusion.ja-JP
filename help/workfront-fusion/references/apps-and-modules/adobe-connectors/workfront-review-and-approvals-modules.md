@@ -15,16 +15,16 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: a6430648344a5d02960bac7447331679e8abebe4
 workflow-type: tm+mt
-source-wordcount: '5202'
-ht-degree: 12%
+source-wordcount: '5905'
+ht-degree: 17%
 ---
 # Adobe Workfrontの統合レビューと承認のモジュール
 
 Adobe Workfrontの統合レビューと承認のモジュールを使用すると、承認の詳細の取得、アセットに関する意思決定、承認参加者の追加または削除、承認ステージの追加または更新、ステージのロックまたはロック解除、カスタム API呼び出しの実行を行うことができます。
 
-Workfrontの統合レビューと承認について詳しくは、Workfront ドキュメントの[統合レビューと承認の概要](https://experienceleague.adobe.com/ja/docs/workfront/using/review-and-approve-work/document-approvals-overview)を参照してください。
+Workfrontの統合レビューと承認について詳しくは、Workfront ドキュメントの[統合レビューと承認の概要](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview)を参照してください。
 
 ## アクセス要件
 
@@ -131,6 +131,7 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
 
 * [アクション](#actions)
 * [検索](#searches)
+* [トリガー](#triggers)
 * [その他](#other)
 
 ### アクション
@@ -1353,6 +1354,89 @@ This action module deletes participants from an approval.
 </table>
 
 <!-- BECKY CHECK ME: the screenshot shows two separate fields both labeled "Limit" - an optional pagination page-size field (max 100, default 20, ignored if Cursor is set) and a required general execution-cycle limit, matching the Limit field used in every other module in this article. Confirm this isn't a UI labeling issue before publishing, and that both rows are needed/correctly distinguished. -->
+
+### トリガー
+
+* [承認イベントを見る](#watch-approval-events)
+
+#### 承認イベントを見る
+
+このトリガーモジュールは、Adobe Workfront Unified Review and Approvalsで承認関連のイベントが発生した場合に、リアルタイムでシナリオを実行します。
+
+このモジュールは、承認イベントに関連付けられている任意の標準フィールドと、接続がアクセスする任意のカスタムフィールドおよび値を返します。 この情報は、シナリオ内の後続のモジュールにマッピングできます。
+
+監視の承認イベントモジュールのWebhookを設定するには：
+
+1. 「**Web フック**」ボックスの右側にある「**[!UICONTROL 追加]**」をクリックします。
+
+1. 表示される「**[!UICONTROL フックを追加]**」ボックスで Web フックを設定します。
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td>[!UICONTROL Webhook name]</td> 
+      <td>Web フックの名前を入力します。</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Connection]</td> 
+      <td> <p>Workfront アプリをWorkfront Fusionに接続する方法については、この記事の「<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref">Adobe Workfront Unified Review and Approvalsに接続</a>」を参照してください。</p> </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Record Type]</td> 
+      <td>モジュールで監視する承認レコードのタイプを選択します。</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL設定タイプ ]</td> 
+      <td>シンプルなフィルターと高度なフィルターのどちらを使用するかを選択します。<p>シンプルまたは高度なフィルターについて詳しくは、Workfront モジュールの記事の<a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#using-advanced-filters" class="MCXref xref">高度なフィルターの使用</a>を参照してください。</p></td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Events filter payload]</td> 
+      <td>高度なフィルターを使用している場合は、フィルターを説明するJSONを入力します。</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Filter Connector]</td> 
+      <td>詳細フィルターを使用している場合は、フィルターに使用するコネクタを選択します。</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL State]</td> 
+      <td>単純なフィルターを使用している場合は、古い状態と新しい状態のどちらを監視するかを選択します。<ul><li><p><b>[!UICONTROL New state]</b></p><p>レコードが指定された値<b>に</b>変化したときにシナリオをトリガーします。</p><p>例えば、状態が [!UICONTROL New State] に設定され、フィルターが [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress] に設定されている場合、[!UICONTROL Status] が [!UICONTROL In Progress] に変わると、以前のステータスに関係なく、web フックがシナリオをトリガーします。</p></li><li><p><b>[!UICONTROL Old state]</b></p><p>レコードが指定された値<b>から</b>変化したときにシナリオをトリガーします。</p><p>例えば、状態が [!UICONTROL Old State] に設定され、フィルターが [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress] に設定されている場合、現在 [!UICONTROL In Progress] である [!UICONTROL Status] が別のステータスに変わると、web フックがシナリオをトリガーします。</p></li></ul></td> 
+     </tr> 
+     <tr data-mc-conditions=""> 
+      <td> <p>[!UICONTROL イベントフィルター]</p> </td> 
+      <td> <p>単純なフィルターを使用している場合は、フィルターを設定します。</p> <p>各フィルターに対して、フィルターを評価するフィールド、演算子、およびフィルターに許可する値を入力します。 AND ルールを追加すると、複数のフィルターを使用できます。</p> <p><b>メモ</b>：既存の Workfront Webhook のフィルターは編集できません。 Workfront イベントのサブスクリプションに別のフィルターを設定するには、現在の Webhook を削除し、新しい Webhook を作成します。</p> <p>イベントフィルターについて詳しくは、Workfront モジュールの「Workfront &gt; [!UICONTROL Watch Events] modules</a>」の「<a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref"> イベントサブスクリプションフィルター」を参照してください。</p> </td> 
+     </tr> 
+     <tr data-mc-conditions=""> 
+      <td>Exclude events made by this connection</td> 
+      <td>シンプルなフィルターを使用している場合は、このトリガーモジュールが使用するのと同じコネクタを使用して作成または更新されたイベントを除外する場合に、このオプションを有効にします。 これにより、シナリオが自分自身をトリガーし、無限ループが繰り返されることを防ぐことができます。 このオプションは、すべての承認イベントタイプでは使用できない場合があります。</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Record Origin]</td> 
+      <td>
+       <p>[!UICONTROL New Records Only]、[!UICONTROL Updated Records Only]、[!UICONTROL New and Updated Records]、または [!DNL Deleted Records Only] をシナリオで監視するかどうかを選択します。</p>
+       <p><b>メモ</b>：[!UICONTROL New and Updated Records] を選択した場合、Webhook の作成により 2 つのイベント登録が（同じ Webhook アドレスに対して）作成されます。</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Enable secured hook]</td> 
+      <td>
+       <p>このWebhookに対してauthToken ベースのセキュリティを有効にするかどうかを選択します。</p><p>
+       <b> メモ </b>: 2026年8月23日現在、Fusionでは、既存のモジュールを含むすべてのWorkfront/Watch Event モジュールに対して、デフォルトでauthToken ベースのセキュリティが有効になっています。 特定のWebhookが壊れた場合、または互換性の理由でこれを無効にする必要がある場合は、「セキュアフックを有効にする」オプションをオフにできます。</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL カスタム トークン ]</td> 
+      <td>
+       <p>（オプション） [!UICONTROL Enable secured hook]が[!UICONTROL Yes]に設定されている場合、独自のトークン値を入力してWebhookを保護できます。 このフィールドを空白のままにすると、Fusionが自動的にトークンを生成します。</p>
+       </td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+Webhook を作成した後、イベントの送信先エンドポイントのアドレスを表示できます。
+
+詳しくは、Workfront ドキュメントのイベント登録 API の記事の[イベントペイロードの例](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads)の節を参照してください。
 
 ### その他
 
