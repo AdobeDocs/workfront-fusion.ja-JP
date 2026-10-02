@@ -46,7 +46,7 @@ MCP Agent モジュールを使用して、シナリオにAI プロンプトを�
 
 手順については、特定のサーバーに関する次の記事を参照してください。
 
-* [Adobe Experience Manager MCP モジュール ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-mcp-modules.md)。
-* [Adobe Marketo Engage MCP モジュール ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-engage-mcp-module.md)。
-* [Adobe Workfront MCP モジュール ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-mcp-modules.md)。
-* [MCP エージェント モジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)。
+* [Adobe Experience Manager MCP モジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-mcp-modules.md)。
+* [Adobe Marketo Engage MCP モジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-engage-mcp-module.md)。
+* [Adobe Workfront MCP モジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-mcp-modules.md)。
+* [MCP エージェント モジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)。
