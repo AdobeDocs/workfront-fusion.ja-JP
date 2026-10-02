@@ -243,6 +243,6 @@ AIは、プロンプトが実際に要求した場合にのみ、書き込み、
 ## Reference links used while compiling this
 
 * Adobe Marketo Engage MCP server (developer documentation):
-  https://experienceleague.adobe.com/en/docs/marketo-developer/marketo/mcp-server
+  https://experienceleague.adobe.com/ja/docs/marketo-developer/marketo/mcp-server
 
   -->
