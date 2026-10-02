@@ -1388,7 +1388,7 @@ This action module deletes participants from an approval.
       <td>モジュールで監視する承認レコードのタイプを選択します。</td> 
      </tr> 
      <tr> 
-      <td>[!UICONTROL設定タイプ ]</td> 
+      <td>[!UICONTROL 設定タイプ &#x200B;]</td> 
       <td>シンプルなフィルターと高度なフィルターのどちらを使用するかを選択します。<p>シンプルまたは高度なフィルターについて詳しくは、Workfront モジュールの記事の<a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#using-advanced-filters" class="MCXref xref">高度なフィルターの使用</a>を参照してください。</p></td> 
      </tr> 
      <tr> 
@@ -1426,7 +1426,7 @@ This action module deletes participants from an approval.
        </td> 
      </tr> 
      <tr> 
-      <td>[!UICONTROL カスタム トークン ]</td> 
+      <td>[!UICONTROL カスタム トークン &#x200B;]</td> 
       <td>
        <p>（オプション） [!UICONTROL Enable secured hook]が[!UICONTROL Yes]に設定されている場合、独自のトークン値を入力してWebhookを保護できます。 このフィールドを空白のままにすると、Fusionが自動的にトークンを生成します。</p>
        </td> 
