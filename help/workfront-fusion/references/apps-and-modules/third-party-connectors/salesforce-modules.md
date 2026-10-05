@@ -14,9 +14,9 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 08224dc1e04d56e422cb177c65efadf5db71b136
 workflow-type: tm+mt
-source-wordcount: '3056'
+source-wordcount: '3078'
 ht-degree: 81%
 ---
 # [!DNL Salesforce] モジュール
@@ -115,6 +115,13 @@ Salesforce コネクタでは、次の機能が使用されます。
 ## [!DNL Salesforce] への接続の作成
 
 [!DNL Salesforce] モジュールの接続を作成するには、OAuth 2またはPKCEを使用して認証を行います。
+
+>[!NOTE]
+>
+>PKCEで認証を行う場合は、Salesforceで次のスコープを有効にする必要があります。
+>
+>* 完全アクセス：`full`
+>* いつでもリクエストを実行：`refresh_token`、`offline_access`
 
 1. 任意の [!DNL Salesforce] モジュールで、「接続」ボックスの横にある「**[!UICONTROL 追加]**」をクリックします。
 
