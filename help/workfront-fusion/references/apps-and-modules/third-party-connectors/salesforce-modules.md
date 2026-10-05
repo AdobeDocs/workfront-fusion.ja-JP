@@ -14,9 +14,9 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 08224dc1e04d56e422cb177c65efadf5db71b136
 workflow-type: tm+mt
-source-wordcount: '3056'
+source-wordcount: '3078'
 ht-degree: 81%
 ---
 # [!DNL Salesforce] モジュール
@@ -116,6 +116,13 @@ Salesforce コネクタでは、次の機能が使用されます。
 
 [!DNL Salesforce] モジュールの接続を作成するには、OAuth 2またはPKCEを使用して認証を行います。
 
+>[!NOTE]
+>
+>PKCEで認証を行う場合は、Salesforceで次のスコープを有効にする必要があります。
+>
+>* 完全アクセス：`full`
+>* いつでもリクエストを実行：`refresh_token`、`offline_access`
+
 1. 任意の [!DNL Salesforce] モジュールで、「接続」ボックスの横にある「**[!UICONTROL 追加]**」をクリックします。
 
 1. 次のフィールドに入力します。
@@ -198,7 +205,7 @@ Salesforce コネクタでは、次の機能が使用されます。
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type] </td> 
-   <td> <p>モジュールで監視するフィールドが含まれているレコードのタイプを選択します。 [!DNL Salesforce] 設定で [!UICONTROL Field History] がオンになっているレコードタイプを選択する必要があります。 詳しくは、[!DNL Salesforce] ドキュメントで<a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&type=5">フィールド履歴のトラッキング</a>を参照してください。 </p> </td> 
+   <td> <p>モジュールで監視するフィールドが含まれているレコードのタイプを選択します。 [!DNL Salesforce] 設定で [!UICONTROL Field History] がオンになっているレコードタイプを選択する必要があります。 詳しくは、[!DNL Salesforce] ドキュメントで<a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&amp;type=5">フィールド履歴のトラッキング</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Field]</td> 
@@ -250,8 +257,8 @@ Salesforce コネクタでは、次の機能が使用されます。
 
 このモジュールには、追加の設定が必要です。 アウトバウンドメッセージ用に設定されたフローが必要です。
 
-* Salesforceのフローの手順については、Salesforce ドキュメントの「[&#x200B; フローを使用したタスクの自動化](https://help.salesforce.com/s/articleView?id=platform.flow.htm)」を参照してください。
-* Salesforceでのアウトバウンドメッセージの設定について詳しくは、Salesforce ドキュメントの「[&#x200B; レコードでトリガーされたフローからアウトバウンドメッセージを送信](https://help.salesforce.com/s/articleView?id=release-notes.rn_automate_flow_builder_outbound_message.htm)」を参照してください
+* Salesforceのフローの手順については、Salesforce ドキュメントの「[ フローを使用したタスクの自動化](https://help.salesforce.com/s/articleView?id=platform.flow.htm)」を参照してください。
+* Salesforceでのアウトバウンドメッセージの設定について詳しくは、Salesforce ドキュメントの「[ レコードでトリガーされたフローからアウトバウンドメッセージを送信](https://help.salesforce.com/s/articleView?id=release-notes.rn_automate_flow_builder_outbound_message.htm)」を参照してください
 
 <!--
 
@@ -287,7 +294,7 @@ Salesforce コネクタでは、次の機能が使用されます。
  <tbody> 
   <tr> 
    <td>[!UICONTROL Webhook]</td> 
-   <td> <p>送信メッセージの監視に使用する web フックを選択します。 Web フックを追加するには、「<strong>[!UICONTROL Add]</strong>」をクリックして、web フックの名前と接続を入力します。</p> <p>[!DNL Salesforce] アカウントをWorkfront Fusionに接続する手順については、「<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusionへの接続の作成&rbrack; – 基本手順</a>」を参照してください。</p> </td> 
+   <td> <p>送信メッセージの監視に使用する web フックを選択します。 Web フックを追加するには、「<strong>[!UICONTROL Add]</strong>」をクリックして、web フックの名前と接続を入力します。</p> <p>[!DNL Salesforce] アカウントをWorkfront Fusionに接続する手順については、「<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusionへの接続の作成] – 基本手順</a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type] </td> 
@@ -586,14 +593,14 @@ Salesforce コネクタでは、次の機能が使用されます。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Salesforce] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">接続の作成[!DNL &#x200B; Adobe Workfront Fusion] – 基本手順</a>を参照してください</td> 
+   <td>[!DNL Salesforce] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">接続の作成[!DNL  Adobe Workfront Fusion] – 基本手順</a>を参照してください</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
    <td> <p>以前のモジュールで使用したソースファイルを選択するか、ソースファイルの名前とデータをマッピングします。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ドキュメントのリンク &#x200B;]</td> 
+   <td role="rowheader">[!UICONTROL ドキュメントのリンク ]</td> 
    <td>コンテンツドキュメントリンクを適用するかどうかを選択します。</td> 
   </tr> 
   <tr> 
@@ -626,7 +633,7 @@ Salesforce コネクタでは、次の機能が使用されます。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>[!DNL Salesforce] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">接続の作成[!DNL &#x200B; Adobe Workfront Fusion] – 基本手順</a>を参照してください</td> 
+   <td>[!DNL Salesforce] アカウントをWorkfront Fusionに接続する手順については、<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">接続の作成[!DNL  Adobe Workfront Fusion] – 基本手順</a>を参照してください</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Type]</td> 
