@@ -14,16 +14,16 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 818b14eb26bab6d81f95daf1c8c7ee831402c879
 workflow-type: tm+mt
-source-wordcount: '2406'
-ht-degree: 37%
+source-wordcount: '2675'
+ht-degree: 34%
 ---
 # Jira モジュール
 
 >[!NOTE]
 >
->これらの手順は、Jiraという単なるラベルが付いたJira コネクタの新しいバージョンに適用されます。 従来のJira CloudおよびJira Server コネクタの手順については、[Jira ソフトウェア モジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md)を参照してください。
+>これらの手順は、Jiraという単なるラベルが付いたJira コネクタの新しいバージョンに適用されます。 従来のJira CloudおよびJira Server コネクタの手順については、[Jira ソフトウェア モジュール ](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md)を参照してください。
 
 Adobe Workfront Fusionでは、Jiraを使用するワークフローを自動化したり、複数のサードパーティのアプリケーションやサービスに接続したりできます。
 
@@ -78,10 +78,14 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ## JiraとWorkfront Fusionの連携
 
-Jiraへの接続を作成する手順は、基本的な接続を作成するか、OAuth2接続を作成するかによって異なります。
+Jiraへの接続を作成する手順は、使用しているアカウントの種類と認証方法によって異なります。 接続が個々のJira ユーザーに関連付けられている場合は、個人アカウント接続を使用します。 専用の自動処理または非ユーザーIDを使用して実行する接続の場合は、サービスアカウント接続を使用します。
+
+「**接続タイプ**」フィールドで、Jira アカウントに適した認証方法を選択します。
 
 * [JiraへのOAuth2接続の作成](#create-an-oauth2-connection-to-jira)
 * [Jiraへの基本的な接続の作成](#create-a-basic-connection-to-jira)
+* [Jiraへのサービスアカウント API トークン接続の作成](#create-a-service-account-api-token-connection-to-jira)
+* [Jiraへのサービスアカウント OAuth2接続の作成](#create-a-service-account-oauth2-connection-to-jira)
 
 ### JiraへのOAuth2接続の作成
 
@@ -195,7 +199,7 @@ Jiraへの基本的な接続の作成は、Jira CloudまたはJira Data Center�
     <tbody> 
      <tr> 
       <td role="rowheader"> <p>接続タイプ</p> </td> 
-      <td> <p>基本接続とOAuth 2接続のどちらを作成するかを選択します。</p> </td> 
+      <td> <p>この接続に<b>Basic</b>を選択します。</p></td>
      </tr> 
      <tr> 
       <td role="rowheader"> <p>接続名</p> </td> 
@@ -243,7 +247,7 @@ Jiraへの基本的な接続の作成は、Jira CloudまたはJira Data Center�
     <tbody> 
      <tr> 
       <td role="rowheader"> <p>接続タイプ</p> </td> 
-      <td> <p>基本接続とOAuth 2接続のどちらを作成するかを選択します。</p> </td> 
+      <td> <p>この接続に<b>Basic</b>を選択します。</p></td>
      </tr> 
      <tr> 
       <td role="rowheader"> <p>接続名</p> </td> 
@@ -294,6 +298,33 @@ PATを使用するには、ファイル `jira-config.properties`のファイル 
 * `jira.rest.csrf.disabled = true`
 
 このファイルが存在しない場合は、作成する必要があります。
+
+### Jiraへのサービスアカウント API トークン接続の作成
+
+このオプションは、API トークンで認証するJira サービス アカウントに対して使用します。 **接続タイプ** フィールドで、**サービスアカウント API トークン**&#x200B;を選択します。
+
+1. 任意のJira モジュールで、**接続** フィールドの横にある&#x200B;**追加**&#x200B;をクリックします。
+1. **接続タイプ** フィールドで、**サービスアカウント API トークン**&#x200B;を選択します。
+1. **接続名**&#x200B;を入力します。
+1. Jira インスタンスの&#x200B;**サービス URL**&#x200B;を入力します。
+1. 適切な&#x200B;**Jira アカウントの種類**&#x200B;を選択します。
+1. Jira サービス アカウントのAPI トークンを入力します。
+1. この接続で使用する&#x200B;**API バージョン**&#x200B;を選択します。
+1. 「**続行**」をクリックして接続を作成し、モジュールに戻ります。
+
+### Jiraへのサービスアカウント OAuth2接続の作成
+
+OAuth 2で認証するJira サービス アカウントに対して、このオプションを使用します。 **接続タイプ** フィールドで、**サービスアカウント OAuth 2**&#x200B;を選択します。
+
+1. 任意のJira モジュールで、**接続** フィールドの横にある&#x200B;**追加**&#x200B;をクリックします。
+1. **接続タイプ** フィールドで、**サービスアカウント OAuth 2**&#x200B;を選択します。
+1. **接続名**&#x200B;を入力します。
+1. Jira インスタンスの&#x200B;**サービス URL**&#x200B;を入力します。
+1. 適切な&#x200B;**Jira アカウントの種類**&#x200B;を選択します。
+1. サービスアカウントに関連付けられたJira OAuth 2 アプリケーションの&#x200B;**クライアント ID**&#x200B;と&#x200B;**クライアントシークレット**&#x200B;を入力します。
+1. オプションで、接続に必要な&#x200B;**追加スコープ**&#x200B;を入力します。
+1. この接続で使用する&#x200B;**API バージョン**&#x200B;を選択します。
+1. 「**続行**」をクリックして接続を作成し、モジュールに戻ります。
 
 ## Jira モジュールとそのフィールド
 
@@ -584,7 +615,7 @@ Jira モジュールを設定すると、Workfront Fusionに次のフィール�
 >
 >このエラーが発生した場合は、従来の Jira コネクターの検索モジュールを新しいコネクターの検索モジュールに置き換えることができます。 新しいコネクターでは、使用する API バージョンを選択できます。 接続を作成する際は、必ずV3を選択してください。
 >
-> 新しいJira コネクタの![API バージョン オプション &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/jira-version-option.png)
+> 新しいJira コネクタの![API バージョン オプション ](/help/workfront-fusion/references/apps-and-modules/assets/jira-version-option.png)
 >
 >メモ：
 >
