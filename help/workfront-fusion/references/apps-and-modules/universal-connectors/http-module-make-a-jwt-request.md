@@ -21,9 +21,9 @@ ht-degree: 20%
 ---
 # [!UICONTROL HTTP] > [!UICONTROL JWT リクエストを作成] モジュール
 
-Adobe Workfront Fusion [!UICONTROL HTTP] > [!UICONTROL JWT リクエストを作成] モジュールは、HTTP （S） リクエストをURLに送信し、すべての呼び出しでモジュールが署名するJSON Web Token （JWT）を使用して認証します。 その後、応答は、標準の[!UICONTROL HTTP] > [!UICONTROL  リクエストを作成] モジュールと同じように処理されます。
+Adobe Workfront Fusion [!UICONTROL HTTP] > [!UICONTROL JWT リクエストを作成] モジュールは、HTTP （S） リクエストをURLに送信し、すべての呼び出しでモジュールが署名するJSON Web Token （JWT）を使用して認証します。 その後、応答は、標準の[!UICONTROL HTTP] > [!UICONTROL &#x200B; リクエストを作成] モジュールと同じように処理されます。
 
-このモジュールは、標準の[!UICONTROL  リクエストを作成] モジュールと同様に動作します。主な違いは、提供したクレームからJWTに自動的に署名し、デフォルトで`Authorization: Bearer <token>`としてリクエストに追加することです。
+このモジュールは、標準の[!UICONTROL &#x200B; リクエストを作成] モジュールと同様に動作します。主な違いは、提供したクレームからJWTに自動的に署名し、デフォルトで`Authorization: Bearer <token>`としてリクエストに追加することです。
 
 このモジュールを使用すると、別の手順でトークンを作成することなく、共有秘密（HMAC）または秘密鍵（RSA/ECDSA）で署名された短期間有効なベアラートークンを必要とするサービスなど、認証のために署名されたJWTを必要とするAPIを呼び出すことができます。
 
@@ -79,7 +79,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ### FusionでのJWT接続の作成
 
-1. シナリオに[!UICONTROL HTTP] > [!UICONTROL JWT リクエスト ] モジュールを追加します。
+1. シナリオに[!UICONTROL HTTP] > [!UICONTROL JWT リクエスト &#x200B;] モジュールを追加します。
 1. 「**[!UICONTROL 接続]**」フィールドの横にある「**[!UICONTROL 追加]**」をクリックします。
 1. 接続フィールドを設定します。
 
@@ -130,9 +130,9 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 >
 >JWT接続は、1つのアルゴリズムのみで署名します。 シナリオで複数の署名アルゴリズムが必要な場合は、各アルゴリズムに個別の接続を作成します。 これは、既存のスタンドアロン JWT アプリの動作と一致します。
 
-## [!UICONTROL HTTP] > [!UICONTROL JWT リクエスト ] モジュールとそのフィールドを作成する
+## [!UICONTROL HTTP] > [!UICONTROL JWT リクエスト &#x200B;] モジュールとそのフィールドを作成する
 
-[!UICONTROL HTTP] > [!UICONTROL JWT リクエスト ] モジュールを設定すると、Adobe Workfront Fusionは、モジュール UIに表示されるのと同じ順序で、以下に示すフィールドを表示します。 モジュール内の太字のタイトルは、必須フィールドを示します。 詳細設定としてマークされたフィールドは、**[!UICONTROL 詳細設定を表示]**&#x200B;を選択しない限り非表示になります。
+[!UICONTROL HTTP] > [!UICONTROL JWT リクエスト &#x200B;] モジュールを設定すると、Adobe Workfront Fusionは、モジュール UIに表示されるのと同じ順序で、以下に示すフィールドを表示します。 モジュール内の太字のタイトルは、必須フィールドを示します。 詳細設定としてマークされたフィールドは、**[!UICONTROL 詳細設定を表示]**&#x200B;を選択しない限り非表示になります。
 
 <table style="table-layout:auto">
  <col>
@@ -167,15 +167,15 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
    <td><p>有効にすると、Fusionは応答コンテンツタイプに基づいて応答本文を解析します。</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[!UICONTROL JWT ペイロード （クレーム） ]</p></td>
+   <td role="rowheader"><p>[!UICONTROL JWT ペイロード （クレーム） &#x200B;]</p></td>
    <td><p>JWT ペイロードにクレームとして含まれるキー/値のペア。 予約された要求<code>exp</code>、<code>iat</code>および<code>nbf</code>は、NumericDate （Unixのエポックからの秒数）である必要があります。 要求の値はJSON タイプを保持するので、数値は数値のままになり、ブール値はブール値のままになります。</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[!UICONTROL タイムアウト ] （詳細）</p></td>
+   <td role="rowheader"><p>[!UICONTROL タイムアウト &#x200B;] （詳細）</p></td>
    <td><p>リクエストのタイムアウトを秒単位で指定します（1～300）。 デフォルトは 40 秒です。</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[!UICONTROL再試行回数] （詳細）</p></td>
+   <td role="rowheader"><p>[!UICONTROL 再試行回数] （詳細）</p></td>
    <td><p>再試行可能なエラーが原因でリクエストが失敗した場合に、リクエストを再試行する回数を指定します。</p></td>
   </tr>
   <tr>
@@ -187,7 +187,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
    <td><p>このオプションを有効にすると、シナリオ内のすべての HTTP モジュールとサーバーから Cookie を共有できます。</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[!UICONTROL自己署名証明書] （詳細）</p></td>
+   <td role="rowheader"><p>[!UICONTROL 自己署名証明書] （詳細）</p></td>
    <td><p>自己署名証明書を使用してTLSを使用する場合は、証明書をアップロードします。</p></td>
   </tr>
   <tr>
@@ -199,7 +199,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
    <td><p>このオプションを有効にすると、3xx 応答で URL リダイレクトに従います。</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[!UICONTROL複数の同じクエリ文字列キーのシリアル化を配列として無効にする] （詳細）</p></td>
+   <td role="rowheader"><p>[!UICONTROL 複数の同じクエリ文字列キーのシリアル化を配列として無効にする] （詳細）</p></td>
    <td><p>デフォルトでは、Workfront Fusionは、同じURL クエリ文字列パラメーターキーの複数の値を配列として処理します。 例えば、<code>www.test.com?foo=bar&amp;foo=baz</code> が <code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code> に変換されます。 このオプションをアクティブ化すると、この機能は無効になります。</p></td>
   </tr>
   <tr>
@@ -219,7 +219,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
    <td><p>署名済みJWTを受け取るリクエストヘッダーの名前を入力またはマッピングします。 デフォルト：<code>Authorization</code>。 ヘッダー名にドット （<code>.</code>）を含めることはできません。これは、点線の名前が拒否され、リクエストログでマスクできないためです。</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[!UICONTROL トークンタイプ ] （詳細）</p></td>
+   <td role="rowheader"><p>[!UICONTROL トークンタイプ &#x200B;] （詳細）</p></td>
    <td><p>トークンの前に配置された認証スキーム（<code>Bearer</code>など）を入力するか、マッピングします。 接頭辞なしで生のトークンを送信するには、この空白のままにします。</p></td>
   </tr>
  </tbody>
@@ -227,12 +227,12 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 ## トークンの構築方法
 
-1. モジュールは、[!UICONTROL JWT ペイロード （要求） ] フィールドで要求を収集します。
+1. モジュールは、[!UICONTROL JWT ペイロード （要求） &#x200B;] フィールドで要求を収集します。
 1. <code>expなどの予約済み要求</code>, <code>iat</code>、および<code>nbf</code> NumericDate値に変換されます。
-1. モジュールは[!UICONTROL 署名オプション ]を適用し、接続のアルゴリズムを使用してトークンに署名します。
-1. 署名済みトークンは、[!UICONTROL  ヘッダー名]によって定義されたリクエストヘッダーに配置されます。
-1. [!UICONTROL  トークンタイプ ]が設定されている場合、モジュールはトークンの前にプレフィックスを追加します。 例えば、<code>Bearer eyJ...</code>.
-1. リクエストが送信され、応答は標準の[!UICONTROL HTTP] > [!UICONTROL  リクエストを作成] モジュールと同じように処理されます。
+1. モジュールは[!UICONTROL 署名オプション &#x200B;]を適用し、接続のアルゴリズムを使用してトークンに署名します。
+1. 署名済みトークンは、[!UICONTROL &#x200B; ヘッダー名]によって定義されたリクエストヘッダーに配置されます。
+1. [!UICONTROL &#x200B; トークンタイプ &#x200B;]が設定されている場合、モジュールはトークンの前にプレフィックスを追加します。 例えば、<code>Bearer eyJ...</code>.
+1. リクエストが送信され、応答は標準の[!UICONTROL HTTP] > [!UICONTROL &#x200B; リクエストを作成] モジュールと同じように処理されます。
 
 署名されたトークンは、デバッグログとエラーログで自動的にマスクされるので、公開されることはありません。
 
@@ -281,11 +281,11 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 
 ### カスタムヘッダーでトークンを送信できますか？
 
-はい。 [!UICONTROL  ヘッダー名] フィールドをカスタム名に設定しますが、ドット （`.`）を含めることはできません。
+はい。 [!UICONTROL &#x200B; ヘッダー名] フィールドをカスタム名に設定しますが、ドット （`.`）を含めることはできません。
 
 ### `Bearer`なしで生のトークンを送信できますか？
 
-はい。 [!UICONTROL  トークンタイプ ]を空のままにします。
+はい。 [!UICONTROL &#x200B; トークンタイプ &#x200B;]を空のままにします。
 
 ### トークンはログに表示されますか？
 
