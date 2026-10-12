@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: e3b9a5e08e78c9ddd4829ab288c353a058409a5c
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 72%
+source-wordcount: '1194'
+ht-degree: 60%
 ---
 # [!UICONTROL HTTP] > [!UICONTROL &#x200B; リクエストを作成] モジュール
 
@@ -128,6 +128,14 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
   <tr> 
    <td role="rowheader">[!UICONTROL Timeout] </td> 
    <td> <p>リクエストのタイムアウトを秒単位で指定します（1～300）。 デフォルトは 40 秒です。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 再試行回数]</td> 
+   <td> <p>接続エラー（ETIMEDOUT、ECONNRESET、EPROTO）でリクエストを再試行する回数を指定します。 デフォルトは3です。 再試行を無効にするには、0に設定します。</p> <p>この設定は、[!UICONTROL Evaluate all states as errors]が有効になっている場合にのみ有効になります。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Additional Retry Status Codes]</td> 
+   <td> <p>[!UICONTROL Evaluate all states as errors]が有効になっている場合に再試行可能として扱う追加のHTTP ステータスコードを指定します。 デフォルトでは、408、429、およびすべての5xx コードのみが再試行可能です。</p> <p>このフィールドにステータスコードを追加すると、再試行可能な接続エラーになり、[!UICONTROL Retry Count]設定に従ってトリガーが再試行されます。 ここに表示されていないステータスコードは、デフォルトの動作を維持します。 404や422など、通常は再試行できないコードは、ここに追加することで再試行可能にできます。</p> <p><b>例：</b>すべての状態をエラーとして評価するを有効にし、[!UICONTROL Retry Count]を4に設定し、このフィールドに422を追加すると、HTTP 422応答は再試行可能として扱われ、他の接続タイプのエラーと同様に再試行されます。</p> <p><b> メモ：</b> [!UICONTROL タイムアウト &#x200B;]設定では、各試行の待機時間を制御します。 再試行の間の一時停止は定義されません。 この設定は、[!UICONTROL Evaluate all states as errors]が有効になっている場合にのみ有効になります。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Share cookies with other HTTP modules]</td> 
