@@ -16,10 +16,10 @@ topic_v2:
     internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 7c25013f7a94000651e8331199ad985d40651ae3
 workflow-type: tm+mt
-source-wordcount: '1564'
-ht-degree: 79%
+source-wordcount: '2637'
+ht-degree: 47%
 ---
 # AWS S3 モジュール
 
@@ -88,6 +88,195 @@ AWS S3 コネクタでは、次の機能が使用されます。
 
 ## [!DNL AWS] を Workfront Fusion に接続 {#connect-aws-to-workfront-fusion}
 
+* [連合コネクションを使用してAWSをWorkfront Fusionに接続します](#connect-aws-to-workfront-fusion-using-a-federated-connection)
+* [API ユーザーを使用してAWSをWorkfront Fusionに接続する](#connect-aws-to-workfront-fusion-using-an-api-user)
+
+### 連合コネクションを使用してAWSをWorkfront Fusionに接続します
+
++++ 展開して、この接続タイプの手順を表示します。
+
+* [フェデレーション接続を使用してAWSをWorkfront Fusionに接続するための前提条件](#prerequisites-to-connecting-aws-to-workfront-fusion-using-a-federated-connection)
+* [Workfront FusionをAWSのID プロバイダーとして追加する](#add-workfront-fusion-as-an-identity-provider-in-aws)
+* [IAM ロールの作成](#create-the-iam-role)
+* [Workfront Fusionでコネクションを作成する](#create-the-connection-in-workfront-fusion)
+* [役割の信頼ポリシーへの接続の追加](#add-the-connection-to-the-roles-trust-policy)
+* [接続を確認する](#verify-the-connection)
+* [トラブルシューティング](#troubleshooting)
+
+フェデレーション接続を使用すると、Workfront Fusionは、IAM ユーザーを作成したり、Fusionにアクセスキーを保存したりすることなく、AWS アカウントにアクセスできます。
+代わりに、Workfront FusionをAWS アカウントの信頼できるID プロバイダーとして登録し、特定のIAM ロールを使用できる1つのFusion接続を設定します。 接続が実行されると、Fusionは短期間有効なIDの証明を表示し、AWSは独自に有効期限が切れる一時的な資格情報を返します。 長期間有効なキーが作成、保存、回転されることはありません。
+
+>[!NOTE]
+>
+>この接続を設定するには、AWS コンソールに2回訪問する必要があります。 最初にロールを作成し、次にWorkfront Fusionでコネクションを作成し、次にAWSに戻ってトラストポリシーを完了します。 これは、信頼ポリシーの一部が1つの特定の接続を識別し、その識別子が接続が作成されるまで存在しないためです。
+
+#### フェデレーション接続を使用してAWSをWorkfront Fusionに接続するための前提条件
+
+この接続を作成するには、次のものが必要です。
+
+* ID プロバイダーを作成し、役割を作成および編集するためのAWS IAMの権限。 これは通常、ポリシーまたはそれに相当するポリシーを意味します。 このアクセス権をお持ちでない場合は、クラウド上の誰かに依頼するか、または
+セキュリティチームがAWSのステップを完了します。
+* Workfront Fusionで接続を作成する機能。
+
+
+#### Workfront FusionをAWSのID プロバイダーとして追加する
+
+この手順では、AWS Fusionで発行されたトークンが信頼できることをWorkfrontに伝えます。 これは、AWS アカウントごとに1回おこないます。 組織内の誰かがこのプロバイダーを既に追加している場合は、[IAM ロールの作成](#create-the-iam-role)にスキップします。
+
+1. AWS コンソールにログインし、**IAM** > **ID プロバイダー**&#x200B;に移動します。
+1. 「**プロバイダーを追加**」を選択します。
+1. プロバイダータイプで、**OpenID Connect**&#x200B;を選択します。
+1. プロバイダーURLに次の情報を入力し、**サムプリントを取得**&#x200B;を選択します。
+
+   ```
+   https://oidc.automations.adobe.com
+   ```
+
+1. 「オーディエンス」に、次の情報を入力します。
+
+   ```
+   sts.amazonaws.com
+   ```
+
+1. 「**プロバイダーを追加**」を選択します。
+1. 引き続き[IAM ロールの作成](#create-the-iam-role)を続行します。
+
+#### IAM ロールの作成
+
+このロールは、AWS アカウントで許可されるコネクションを定義します。 接続ごとに1つの役割を作成して、各接続のアクセス権を個別に付与および取り消しできるようにします。
+
+1. IAMで、**役割**&#x200B;に移動し、**役割を作成**&#x200B;を選択します。
+1. 信頼済みエンティティ タイプの場合は、**Web ID**&#x200B;を選択します。
+1. ID プロバイダーで、`oidc.automations.adobe.com`を選択します。
+1. 「オーディエンス」で、「`sts.amazonaws.com`」を選択します。
+1. 「**次へ**」を選択し、この接続に必要な権限ポリシーを添付します。
+接続が実際に使用する権限のみを付与します。 例えば、からのみ読み取れる接続は
+1つのバケットには`AmazonS3FullAccess`は必要ありません。
+1. 役割に明確で認識可能な名前を付けます。 例：`WorkfrontFusionFederatedConnection`
+1. 「**役割を作成**」を選択します。
+1. 作成した役割を開き、「概要」領域からそのARNをコピーします。 次のようになります：`arn:aws:iam::123456789012:role/WorkfrontFusionFederatedConnection`
+
+1. 引き続き[Workfront Fusion](#create-the-connection-in-workfront-fusion)で接続を作成します。
+
+#### Workfront Fusionでコネクションを作成する
+
+1. モジュールの接続設定画面で、フェデレーション接続タイプを選択します。
+1. [IAM ロールを作成](#create-the-iam-role)でコピーしたロール ARNを入力します。
+1. 「**作成**」を選択します。
+Workfront Fusionには3つの値が表示されます。 次の手順で使用します。
+
+<table>
+  <tr>
+    <td>問題</td>
+    <td>常に<code>https://oidc.automations.adobe.com</code>。 これは、AWSで追加したID プロバイダーと一致します。</td>
+  </tr>
+  <tr>
+    <td>件名</td>
+    <td>この1つの接続を識別します。 <code>fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964</code>のようです。 作成する接続ごとに異なります。</td>
+  </tr>
+  <tr>
+    <td>オーディエンス</td>
+    <td>常に<code>sts.amazonaws.com</code>。</td>
+  </tr>
+</table>
+
+1. このパネルを開いたままにして、件名の値をコピーします。
+
+   >[!NOTE]
+   >
+   >パネルを閉じたり、「キャンセル」を選択したりしないでください。 残りの手順を完了するまで、接続は完了しません。 パネルを閉じた場合は、新しい接続が新しい件名を受信するので、接続を削除して再度開始する必要があります。
+
+1. 引き続き[役割の信頼ポリシーへの接続を追加](#add-the-connection-to-the-roles-trust-policy)します。
+
+#### 役割の信頼ポリシーへの接続の追加
+
+この手順を完了するまで、ロールはWorkfront Fusionを一般的に信頼していますが、この特定の接続を使用することはできません。
+
+1. 新しいブラウザータブで、AWS コンソールに戻り、作成したロールを開きます。
+1. 「**信頼関係**」タブを選択し、「**信頼ポリシーを編集**」を選択します。
+1. ポリシーを次の値に置き換え、独自の値を置き換えます。
+
+   * `123456789012`をAWS アカウント IDに置き換えます
+   * `sub`の値を、Workfront Fusionからコピーした被写体に置き換えます。
+
+
+   ```
+   {
+     "Version": "2012-10-17",
+     "Statement": [
+       {
+         "Effect": "Allow", 
+         "Principal": {
+           "Federated": "arn:aws:iam::123456789012:oidc-provider/oidc.automations.adobe.com"
+       },
+       "Action": "sts:AssumeRoleWithWebIdentity", "Condition": {
+        "StringEquals": {
+          "oidc.automations.adobe.com:sub": "fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964", 
+          "oidc.automations.adobe.com:aud": "sts.amazonaws.com"
+        }
+       }
+      }
+    ]
+   }
+   ```
+
+1. 「**ポリシーを更新**」を選択します。
+1. 引き続き[接続の確認](#verify-the-connection)を行います。
+
+>[!TIP]
+>
+>複数の接続で同じ役割を使用できるようにするには、オブジェクトを配列としてリストします。 AWSでは、トークンがリスト内の任意の値と一致する場合にロールを使用できます。
+>
+>```
+>"oidc.automations.adobe.com:sub": [ "fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964", "fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:29011"
+>]
+>```
+>
+>サブ値をワイルドカードに置き換えないでください。 これにより、組織内の任意の接続で、後で他のユーザーが作成した接続を含め、役割を使用できます
+
+
+#### 接続を確認する
+
+1. Workfront Fusion ブラウザータブに戻ります。接続パネルはまだ開いています。
+1. 「**保存**」をクリックします。
+
+   Workfront FusionはAWSに連絡し、トラストポリシーを確認して一時的な資格情報を返します。 すべてが正しく設定されている場合、接続は正常に検証され、モジュールの設定を続行できます。
+   検証に失敗した場合、パネルは開いたままになり、エラーが表示されます。 AWSで問題を修正し、「保存」をもう一度選択します。 接続を再作成する必要はなく、被写体は変更されません。
+
+この時点から、接続は独自の資格情報を更新します。 回転するキーはなく、維持する必要がある有効期限はありません。
+
+#### トラブルシューティング
+
+
+<table>
+  <tr>
+    <th>エラー</th>
+    <th>意味</th>
+    <th>確認すべきこと</th>
+  </tr>
+  <tr>
+    <td>InvalidIdentityToken</td>
+    <td>AWSは、トークンを登録済みID プロバイダーと一致させることができませんでした。</td>
+    <td>「Workfront FusionをAWSのID プロバイダーとして追加」に記載されているID プロバイダーを追加し、そのURLが末尾のスラッシュを含まない正確にhttps://oidc.automations.adobe.comであることを確認します。</td>
+  </tr>
+  <tr>
+    <td>ロールを引き受ける際にAccessDenied</td>
+    <td>ID プロバイダーが登録されていますが、信頼ポリシーがこの接続と一致しません。</td>
+    <td>トラストポリシーのサブ値がWorkfront Fusionに表示されている被写体と同じ文字のサブ値であり、audがsts.amazonaws.comであることを確認します。 別の接続からコピーされた被写体が最も一般的な原因です。</td>
+  </tr>
+  <tr>
+    <td>接続は動作し、後で失敗します</td>
+    <td> </td>
+    <td>役割の権限ポリシーが変更されたかどうか、または役割が削除および再作成されたかどうかを確認します。 役割を再作成してもARNは変更されませんが、信頼ポリシーはリセットされます。</td>
+  </tr>
+</table>
+
++++
+
+### API ユーザーを使用してAWSをWorkfront Fusionに接続する
+
++++ 展開して、この接続タイプの手順を表示します。
+
 [!DNL AWS S3]をWorkfront Fusionに接続するには、[!DNL AWS] アカウントをWorkfront Fusionに接続する必要があります。 これを行うには、まず [!DNL AWS] [!UICONTROL IAM] で API ユーザーを作成します。
 
 1. [!DNL AWS] [!UICONTROL IAM] アカウントにログインします。
@@ -105,7 +294,12 @@ AWS S3 コネクタでは、次の機能が使用されます。
 
 接続が確立されました。 モジュールの設定に進むことができます。
 
++++
+
 ## [!DNL AWS S3] モジュールとそのフィールド
+
+* [アクション](#actions)
+* [検索](#searches)
 
 [!DNL AWS S3] モジュールを設定すると、Workfront Fusion には以下のフィールドが表示されます。 これらとともに、アプリやサービスのアクセスレベルなどの要因に応じて、追加の「[!DNL AWS S3]」フィールドが表示される場合があります。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
