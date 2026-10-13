@@ -183,7 +183,7 @@ Azure DevOps コネクタでは、次の機能が使用されます。
     <col>
     <tbody>
      <tr>
-      <td role="rowheader">[!UICONTROL イシュア ]</td>
+      <td role="rowheader">[!UICONTROL イシュア &#x200B;]</td>
       <td><code>https://oidc.automations.adobe.com</code>.</td>
      </tr>
      <tr>
@@ -219,7 +219,7 @@ Azure DevOps コネクタでは、次の機能が使用されます。
     <col>
     <tbody>
      <tr>
-      <td role="rowheader">[!UICONTROL イシュア ]</td>
+      <td role="rowheader">[!UICONTROL イシュア &#x200B;]</td>
       <td><code>https://oidc.automations.adobe.com</code></td>
      </tr>
      <tr>
@@ -289,11 +289,11 @@ EntraAppを使用して、Azure DevOpsをWorkfront Fusionに接続できます�
 
 1. [!DNL Azure DevOps] モジュールをシナリオに追加します。
 1. 「[!UICONTROL 接続]」フィールドの横にある「**[!UICONTROL 追加]**」をクリックします。
-1. 「[!UICONTROL 接続タイプ ]」フィールドで、使用する接続タイプを選択します。
+1. 「[!UICONTROL 接続タイプ &#x200B;]」フィールドで、使用する接続タイプを選択します。
 
    >[!NOTE]
    >
-   >[!UICONTROL [!DNL Azure DevOps] （EntraApp） ]を使用すると、接続のすべてのスコープをリクエストできます。
+   >[!UICONTROL [!DNL Azure DevOps] （EntraApp） &#x200B;]を使用すると、接続のすべてのスコープをリクエストできます。
 
 1. 次のフィールドに入力します。
 
@@ -315,7 +315,7 @@ EntraAppを使用して、Azure DevOpsをWorkfront Fusionに接続できます�
             <td>接続先のDevOps アプリケーションのクライアントシークレットを入力します。</td>
       </tr>
       <tr>
-            <td>[!UICONTROLすべてのスコープをリクエスト ]</td>
+            <td>[!UICONTROL すべてのスコープをリクエスト &#x200B;]</td>
             <td>[!DNL Azure DevOps] （EntraApp）接続タイプを使用している場合は、このオプションを有効にして、接続のすべてのスコープを要求します。</td>
       </tr>
    </table>
@@ -360,7 +360,7 @@ EntraAppを使用して、Azure DevOpsをWorkfront Fusionに接続できます�
 1. アプリに明確で認識可能な名前を付けます。 例：`Workfront Fusion Azure DevOps Integration`
 1. **[!UICONTROL リダイレクト URI]**&#x200B;を空白のままにします。 この接続には、ブラウザーを介したログインは含まれません。
 1. **[!UICONTROL 登録]**&#x200B;を選択します。
-1. 引き続き[ クライアントシークレットの作成](#create-a-client-secret)を続行します。
+1. 引き続き[&#x200B; クライアントシークレットの作成](#create-a-client-secret)を続行します。
 
 #### クライアントシークレットの作成
 
@@ -425,7 +425,7 @@ Microsoft Entra IDにアプリを登録すると、そのIDのみが作成され
 1. モジュールの接続設定画面で、**[!UICONTROL サービスプリンシパル]**&#x200B;接続タイプを選択します。
 1. 以下の情報を入力します。
 
-   * [!UICONTROL  テナント ID]
+   * [!UICONTROL &#x200B; テナント ID]
    * [!UICONTROL クライアント ID]
    * [!UICONTROL クライアント秘密鍵]
    * [!UICONTROL 組織]
@@ -491,7 +491,7 @@ Microsoft Entra IDにアプリを登録すると、そのIDのみが作成され
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Azure DevOps] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Azure DevOps]を接続する]</a>」を参照してください。</p> </td> 
+   <td> <p>[!DNL Azure DevOps] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Azure DevOps]を接続する&rbrack;</a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record type]</td> 
@@ -503,13 +503,13 @@ Microsoft Entra IDにアプリを登録すると、そのIDのみが作成され
        <li> <p><strong>[!UICONTROL Description]</strong>：新しいプロジェクトの説明を入力またはマッピングします。 </p> </li> 
        <li> <p><strong>[!UICONTROL Visibility]</strong>：プロジェクトを公開または非公開にするかを選択します。 ユーザーが非公開プロジェクトとやり取りするには、組織にサインインし、プロジェクトへのアクセス権を付与されている必要があります。 公開プロジェクトは、組織にサインインしていないユーザーに表示されます。</p> </li> 
        <li> <p><strong>[!UICONTROL Version control]</strong>：プロジェクトでバージョン管理に[!DNL Git]または[!UICONTROL Team Foundation Version Control (TFCV)]を使用するかどうかを選択します。</p> </li> 
-       <li> <p><strong>[!UICONTROL Work item process]</strong>：プロジェクトに使用する作業プロセスを選択します。 [!UICONTROL Basic]、[!UICONTROL Scrum]、[!UICONTROL Capability Maturity Model Integration (CMMI)]、[!UICONTROL Agile]を選択できます。</p> <p>[!DNL Azure DevOps] プロセスについて詳しくは、[!DNL Azure DevOps] ドキュメントの<a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=basic-process"> デフォルトプロセスとプロセステンプレート </a>を参照してください。</p> </li> 
+       <li> <p><strong>[!UICONTROL Work item process]</strong>：プロジェクトに使用する作業プロセスを選択します。 [!UICONTROL Basic]、[!UICONTROL Scrum]、[!UICONTROL Capability Maturity Model Integration (CMMI)]、[!UICONTROL Agile]を選択できます。</p> <p>[!DNL Azure DevOps] プロセスについて詳しくは、[!DNL Azure DevOps] ドキュメントの<a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&tabs=basic-process"> デフォルトプロセスとプロセステンプレート </a>を参照してください。</p> </li> 
       </ul> </li> 
      <li> <p><strong>[!UICONTROL Work item]</strong> </p> <p>次のフィールドに入力します。</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Project]</strong>：作業アイテムを作成するプロジェクトを選択します。</p> </li> 
        <li> <p><strong>[!UICONTROL Work item type]</strong>：作成する作業アイテムのタイプを選択します。</p> </li> 
-       <li> <p><strong>[!UICONTROLその他のフィールド ]</strong>：これらのフィールドに、特定のプロパティに対して作業項目に含める値を入力します。 使用可能なフィールドは、作業アイテムのタイプによって異なります。</p> </li> 
+       <li> <p><strong>[!UICONTROL その他のフィールド &#x200B;]</strong>：これらのフィールドに、特定のプロパティに対して作業項目に含める値を入力します。 使用可能なフィールドは、作業アイテムのタイプによって異なります。</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
@@ -528,7 +528,7 @@ Microsoft Entra IDにアプリを登録すると、そのIDのみが作成され
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Azure DevOps] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Azure DevOps]を接続する]</a>」を参照してください。</p> </td> 
+   <td> <p>[!DNL Azure DevOps] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Azure DevOps]を接続する&rbrack;</a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Base URL]</td> 
@@ -576,7 +576,7 @@ Microsoft Entra IDにアプリを登録すると、そのIDのみが作成され
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Azure DevOps] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Azure DevOps]を接続する]</a>」を参照してください。</p> </td> 
+   <td> <p>[!DNL Azure DevOps] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Azure DevOps]を接続する&rbrack;</a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Attachment URL]</td> 
@@ -595,7 +595,7 @@ Microsoft Entra IDにアプリを登録すると、そのIDのみが作成され
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Azure DevOps] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Azure DevOps]を接続する]</a>」を参照してください。</p> </td> 
+   <td> <p>[!DNL Azure DevOps] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Azure DevOps]を接続する&rbrack;</a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Work item ID]</td> 
@@ -632,13 +632,13 @@ Microsoft Entra IDにアプリを登録すると、そのIDのみが作成され
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Azure DevOps] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Azure DevOps]を接続する]</a>」を参照してください。</p> </td> 
+   <td> <p>[!DNL Azure DevOps] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Azure DevOps]を接続する&rbrack;</a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record type]</td> 
    <td> <p>プロジェクトを読み取るか作業アイテムを読み取るかを選択</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL プロジェクト ]</strong>：読み込むプロジェクトを選択します。</p> </li> 
+     <li> <p><strong>[!UICONTROL プロジェクト &#x200B;]</strong>：読み込むプロジェクトを選択します。</p> </li> 
      <li> <p><strong>[!UICONTROL Work item]</strong>：読み取る作業アイテムを含むプロジェクトを選択し、作業アイテムのタイプを選択します。</p> </li> 
     </ul> </td> 
   </tr> 
@@ -665,7 +665,7 @@ Microsoft Entra IDにアプリを登録すると、そのIDのみが作成され
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Azure DevOps] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Azure DevOps]を接続する]</a>」を参照してください。</p> </td> 
+   <td> <p>[!DNL Azure DevOps] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Azure DevOps]を接続する&rbrack;</a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project]</td> 
@@ -698,7 +698,7 @@ Microsoft Entra IDにアプリを登録すると、そのIDのみが作成され
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Azure DevOps] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Azure DevOps]を接続する]</a>」を参照してください。</p> </td> 
+   <td> <p>[!DNL Azure DevOps] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Azure DevOps]を接続する&rbrack;</a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project] </td> 
@@ -735,7 +735,7 @@ Microsoft Entra IDにアプリを登録すると、そのIDのみが作成され
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>[!DNL Azure DevOps] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Azure DevOps]を接続する]</a>」を参照してください。</p> </td> 
+   <td> <p>[!DNL Azure DevOps] アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Workfront Fusionに[!DNL Azure DevOps]を接続する&rbrack;</a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project]</td> 
