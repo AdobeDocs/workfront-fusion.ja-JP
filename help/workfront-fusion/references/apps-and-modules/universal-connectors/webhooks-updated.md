@@ -14,9 +14,9 @@ feature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 983b7ab013c49747760da4a22a47715c68555ec0
 workflow-type: tm+mt
-source-wordcount: '3236'
+source-wordcount: '3219'
 ht-degree: 49%
 ---
 # Webhook
@@ -126,10 +126,6 @@ mTLSについて詳しくは、[相互TLSの概要](/help/workfront-fusion/refer
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
 Web フックを作成すると、一意の URL が表示されます。 これは、web フックがデータを送信するアドレスです。 Workfront Fusion は、このアドレスに送信されたデータを検証し、そのデータをシナリオでの処理に渡します。
-
->[!NOTE]
->
->Webhookを作成した後、一度に複数のシナリオで使用できます。
 
 #### 基本認証でのWebhookの使用
 
@@ -551,3 +547,4 @@ Web フックの応答をカスタマイズする場合は、web フックの応
 ![&#x200B; データ構造を再決定](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
 
 次に、この記事の [web フックのデータ構造の設定](#configure-the-webhook-s-data-structure)の節で説明されている手順に従います。
+

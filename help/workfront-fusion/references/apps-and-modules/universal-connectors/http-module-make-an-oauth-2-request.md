@@ -16,7 +16,7 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 3cd582ee1b763897cbbaba7f2c040897e3581742
 workflow-type: tm+mt
 source-wordcount: '2373'
 ht-degree: 73%
@@ -95,7 +95,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
    1. クライアントを作成する際に、適切な URL を `[!UICONTROL Redirect URL]` または `[!UICONTROL Callback URL]` フィールドに入力します：
 
       | 南北アメリカ／APAC | `https://app.workfrontfusion.com/oauth/cb/oauth2` |
-      |---|---|
+      | --- | --- |
       | **EMEA** | `https://app-eu.workfrontfusion.com/oauth/cb/oauth2` |
 
    1. クライアントを作成すると、指定されたサービスは次の 2 つのキー（`[!UICONTROL Client ID]` と `[!UICONTROL Client Secret]`）が表示されます。 一部のサービスでは、これらを`[!UICONTROL App Key]`および`[!UICONTROL App Secret]`と呼んでいます。 キーと秘密鍵を安全な場所に保存して、Workfront Fusion で接続を作成する際に指定できるようにします。

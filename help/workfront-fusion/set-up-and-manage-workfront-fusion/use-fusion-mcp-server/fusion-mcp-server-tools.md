@@ -1,9 +1,9 @@
 ---
 title: Adobe Workfront Fusion MCP Server Tools
 description: Adobe Workfront Fusion MCP サーバーがAI エージェンティックプラットフォームとCoworkerに公開するツールのリファレンスリスト。
-source-git-commit: 5f3bd6b7b8837632af245ea2c172205625e4ecba
+source-git-commit: 1bfcdb6abe42eca27d2f3ae5a1a1d2cfd3901d33
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1546'
 ht-degree: 7%
 ---
 
@@ -31,6 +31,25 @@ ht-degree: 7%
 | --- | --- | --- | --- |
 | 組織のリスト | `fusion_orgs_list` | 読み取り | アクセスできるFusion組織を、ID、地域（ゾーン）、ラベル付きで一覧表示します。 |
 | アクティブな組織を設定 | `fusion_orgs_set` | Session | 現在のセッションのアクティブな組織を切り替えます。 Fusion データは変更されません。 |
+| 現在の組織を取得 | `fusion_organizations_get` | 読み取り | 現在の組織を返します。 |
+| 組織のリスト | `fusion_organizations_list` | 読み取り | 表示できるすべての組織を一覧表示します。 |
+
+## チーム
+
+| ツール | 名前 | アクション | 説明 |
+| --- | --- | --- | --- |
+| チームのリストアップ | `fusion_teams_list` | 読み取り | 表示できる組織のチームが一覧表示されます。 |
+| チームを見る | `fusion_teams_get` | 読み取り | 組織内の1つのチームを返します。 |
+| チームの削除 | `fusion_teams_delete` | 編集 | チームを削除します。 これにより、シナリオも停止し、権限も削除されます。 APIを介して元に戻すことはできず、確認が必要です。 |
+
+## ユーザー
+
+| ツール | 名前 | アクション | 説明 |
+| --- | --- | --- | --- |
+| Fusionのリージョンを取得 | `fusion_users_get_regions` | 読み取り | アクセスできるFusionのリージョンと組織を返します。 有効な組織IDを見つけるために使用します。 |
+| 現在のユーザーを取得 | `fusion_users_get_me` | 読み取り | 組織およびチームの役割を含むプロファイルを返します。 |
+| ユーザーのリスト | `fusion_users_list` | 読み取り | 組織のユーザーを一覧表示します。 |
+| ユーザーを取得 | `fusion_users_get` | 読み取り | 組織内の1人のユーザーを返します。 |
 
 ## シナリオツール
 
@@ -40,6 +59,7 @@ ht-degree: 7%
 | --- | --- | --- | --- |
 | シナリオをリストする | `fusion_scenarios_list` | 読み取り | 組織内のシナリオのリストを表示します。 |
 | シナリオを入手 | `fusion_scenarios_get` | 読み取り | 完全なブループリントを含むシナリオを返します。 |
+| シナリオリンクを取得 | `fusion_scenarios_get_link` | 読み取り | Fusion UI リンクを返して、ブラウザーでシナリオを開きます。 |
 | シナリオの依存関係を取得 | `fusion_scenarios_getDependencies` | 読み取り | シナリオのブループリント参照の接続、キー、データストア、データ構造、およびwebhookを返します。 |
 | 依存シナリオの検索 | `fusion_scenarios_dependents` | 読み取り | 特定のWebhook、データストア、データ構造、接続、キー、またはシナリオを参照するシナリオを検索します。 リソースを変更または削除する前の影響分析に役立ちます。 |
 | ブループリントの検証 | `fusion_scenarios_validate_blueprint` | 読み取り | ブループリントを保存することなく、チーム（モジュール参照、接続、必須フィールド）と照らし合わせて構造的に検証します。 |
@@ -63,6 +83,7 @@ ht-degree: 7%
 | --- | --- | --- | --- |
 | シナリオのバージョンのリスト | `fusion_scenario_versions_list` | 読み取り | シナリオの保存されたバージョンを一覧表示します。 `version`、`createdAt`、`comment`でフィルタリングします。 |
 | シナリオのバージョンを取得 | `fusion_scenario_versions_get` | 読み取り | 特定のバージョンのブループリントとメタデータを返します。 |
+| シナリオバージョンの作成 | `fusion_scenario_versions_create` | 編集 | ブループリントを新しいシナリオバージョンとして公開し、ライブブループリントになります。 以前のバージョンは保持され、同じブループリントを公開しても何もしません。 |
 
 プロンプトの例：
 
@@ -109,8 +130,10 @@ ht-degree: 7%
 | --- | --- | --- | --- |
 | 接続を検索 | `fusion_connections_search` | 読み取り | 接続を一覧表示します。 `name`、`accountName`、`accountType`、`expire`、`teamId`、`scopesCount`、`editable`、`environmentType`、`authenticationType`でフィルタリングします。 |
 | つながる | `fusion_connections_get` | 読み取り | 1つの接続の詳細を返します。 |
+| 接続を削除 | `fusion_connections_delete` | 編集 | 接続を削除します。 Webhookがまだ依存している場合は、失敗します。 それを使用するシナリオは、削除をブロックするのではなく切り離されます。 |
 | 検索キー | `fusion_keys_search` | 読み取り | キーを一覧表示します。 `name`、`typeName`、`teamId`でフィルタリングします。 |
 | キーを取得 | `fusion_keys_get` | 読み取り | 単一のキーの詳細を返します。 |
+| キーを削除 | `fusion_keys_delete` | 編集 | キーを削除します。 これを使用するシナリオは、削除をブロックしません。 |
 
 プロンプトの例：
 
@@ -124,6 +147,9 @@ ht-degree: 7%
 | --- | --- | --- | --- |
 | Web フックをリスト表示 | `fusion_hooks_list` | 読み取り | Webhook （フック）を一覧表示します。 `name`、`teamId`、`type`、`enabled`、`gone`、`typeName`、`scenarioId`、`priority`、`detached`などでフィルタリングします。 |
 | Webhookを入手 | `fusion_hooks_get` | 読み取り | Webhookの設定、所有者のバインディングおよび外部参照を返します。 |
+| Webhook依存関係の取得 | `fusion_hooks_dependencies` | 読み取り | Webhookが参照する接続、データ構造、キーを一覧表示します。 複製する前に実行します。 |
+| Clone Webhook | `fusion_hooks_clone` | 編集 | 新しいURLを含むWebhookを、オプションで別のチームにコピーします。 接続、データ構造、またはキーを置き換えることができます。 |
+| Webhookの削除 | `fusion_hooks_delete` | 編集 | Webhookとそのキューに入ったイベントを削除します。 Webhookの作成者のみが削除できます。 |
 | 依存するWebhookの検索 | `fusion_hooks_dependents` | 読み取り | 特定の接続を参照するWebhookを検索します。 |
 
 ### Webhook キュー
@@ -133,7 +159,7 @@ ht-degree: 7%
 | キューの統計情報を取得 | `fusion_queue_stats` | 読み取り | キューに入れられたイベントの数、キュー制限、およびwebhookが有効かどうかを返します。 |
 | リストキュー | `fusion_queue_list` | 読み取り | 処理待ちのWebhook イベントを受信したリストです。 |
 | キュー項目を取得 | `fusion_queue_get` | 読み取り | デコードされたペイロードを含む、キューに入った1つのイベントを返します。 |
-| キュー項目の削除 | `fusion_queue_delete` | 編集 | 特定のキューに入ったイベント（最大50）を削除するか、キューをクリアします（オプションで一部のイベントを除く）。 現在処理中のイベントは削除できません。 |
+| キュー項目の削除 | `fusion_hook_queue_delete` | 編集 | キューに入ったWebhook イベントをID別（最大50）に削除するか、オプションの除外付きでそのすべてを削除します。 接続されているツール名は`fusion_hook_queue_delete`で、古い`fusion_queue_delete`名と一致しません。 |
 
 プロンプトの例：
 
@@ -146,10 +172,14 @@ ht-degree: 7%
 | --- | --- | --- | --- |
 | データストアをリスト表示 | `fusion_datastores_list` | 読み取り | レコード数、サイズ、最大サイズのデータストアを一覧表示します。 |
 | データストアを取得 | `fusion_datastores_get` | 読み取り | データストアのメタデータと使用状況、リンクされたデータ構造、厳密な検証設定を返します。 |
+| データストアを削除 | `fusion_datastores_delete` | 編集 | データストアとそのすべてのレコードを削除します。 シナリオがまだ使用している場合は失敗します。 |
 | データストアレコードのリスト | `fusion_data_list` | 読み取り | オフセットページングを使用して、データストアからレコード（キー+ JSON データ）を読み取ります。 |
+| データストアレコードの削除 | `fusion_data_stores_data_delete` | 編集 | キー別に複数のレコード、またはオプションの除外付きのすべてのレコードを削除します。 |
+| データストアレコードの削除 | `fusion_data_stores_data_key_delete` | 編集 | キーで1つのレコードを削除します。 キーが存在しない場合でも成功します。 |
 | 依存データストアの検索 | `fusion_datastores_dependents` | 読み取り | 特定のデータ構造を使用するデータストアを検索します。 |
 | 検索データ構造 | `fusion_data_structures_search` | 読み取り | データ構造のリスト。 `name`、`strict`、`teamId`でフィルタリングします。 |
 | データ構造を取得 | `fusion_data_structures_get` | 読み取り | フィールド全体の指定を含むデータ構造を返します。 |
+| データ構造の削除 | `fusion_data_structures_delete` | 編集 | データ構造を削除します。 データストアがまだ使用している場合は失敗します。 |
 
 プロンプトの例：
 
@@ -167,6 +197,12 @@ ht-degree: 7%
 
 * _過去7日間にシナリオを削除したのは誰ですか？_
 * _すべての接続の変更を今四半期にExcelにエクスポートします。_
+
+## フィードバック
+
+| ツール | 名前 | アクション | 説明 |
+| --- | --- | --- | --- |
+| フィードバックを送信 | `fusion_feedback_submit` | 編集 | フィードバック（バグ、間違った結果、機能リクエスト、賞賛など）をFusion チームに送信します。 |
 
 ## 同僚
 
