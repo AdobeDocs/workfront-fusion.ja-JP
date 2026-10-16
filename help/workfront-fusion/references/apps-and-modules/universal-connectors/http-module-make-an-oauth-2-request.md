@@ -16,7 +16,7 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 3cd582ee1b763897cbbaba7f2c040897e3581742
 workflow-type: tm+mt
 source-wordcount: '2373'
 ht-degree: 73%
@@ -95,7 +95,7 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
    1. クライアントを作成する際に、適切な URL を `[!UICONTROL Redirect URL]` または `[!UICONTROL Callback URL]` フィールドに入力します：
 
       | 南北アメリカ／APAC | `https://app.workfrontfusion.com/oauth/cb/oauth2` |
-      |---|---|
+      | --- | --- |
       | **EMEA** | `https://app-eu.workfrontfusion.com/oauth/cb/oauth2` |
 
    1. クライアントを作成すると、指定されたサービスは次の 2 つのキー（`[!UICONTROL Client ID]` と `[!UICONTROL Client Secret]`）が表示されます。 一部のサービスでは、これらを`[!UICONTROL App Key]`および`[!UICONTROL App Secret]`と呼んでいます。 キーと秘密鍵を安全な場所に保存して、Workfront Fusion で接続を作成する際に指定できるようにします。
@@ -236,8 +236,8 @@ Adobe Workfront Fusion ライセンスについて詳しくは、[Adobe Workfron
 
 次の例は、[!UICONTROL HTTP]／[!UICONTROL OAuth 2.0 実行]リクエストモジュールを使用して [!DNL Google] に接続する方法を示しています。
 
-1. カスタム OAuth クライアント [&#128279;](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)を使用してAdobe Workfront Fusionを [!DNL Google Services] に接続するの記事に記載されているように、プロジェクトを作成し、OAuth設定を設定し、資格情報を生成していることを確認します。
-1. [!UICONTROL HTTP] > [!UICONTROL OAuth 2.0 リクエスト &#x200B;] モジュールを開きます。
+1. カスタム OAuth クライアント ](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)を使用してAdobe Workfront Fusionを [!DNL Google Services] に接続する[の記事に記載されているように、プロジェクトを作成し、OAuth設定を設定し、資格情報を生成していることを確認します。
+1. [!UICONTROL HTTP] > [!UICONTROL OAuth 2.0 リクエスト ] モジュールを開きます。
 1. 任意のモジュールで、接続ボックスの横にある&#x200B;**[!UICONTROL 追加]**&#x200B;をクリックします。
 1. 次の値を入力します。
 
