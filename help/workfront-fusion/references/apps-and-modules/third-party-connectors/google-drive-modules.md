@@ -25,7 +25,7 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cd90795caaf835de238b52e30fddbcc6da9e9443
 workflow-type: tm+mt
 source-wordcount: '2111'
 ht-degree: 63%
@@ -133,7 +133,7 @@ OAuth クライアントを作成する手順（および[!UICONTROL &#x200B; �
 
 #### [!UICONTROL すべてのファイルを見る]
 
-このトリガーモジュールは、[!DNL Google Drive]内のファイルが追加または変更されたときに開始されます。
+このトリガーモジュールは、[!DNL Google Drive]内のファイルが追加または変更されたときにシナリオを開始します。
 
 <table style="table-layout:auto"> 
  <col> 

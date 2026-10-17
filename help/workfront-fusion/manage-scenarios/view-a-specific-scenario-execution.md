@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cd90795caaf835de238b52e30fddbcc6da9e9443
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 26%
@@ -88,7 +88,7 @@ ht-degree: 26%
 >特定のモジュールへのリンクを作成するには、次のページを表示するときにURLに`?moduleId=<module-id>`を追加します。
 >
 >* シナリオ編集ページ （URLの末尾は`/edit`）
->* 特定のシナリオの実行（URLの末尾は`/logs/<log-id>`）
+>* 特定のシナリオ実行（URLの末尾は`/logs/<log-id>`）
 >
 >`<module-id>`は、シナリオを表示する際に、モジュールラベルの横にある番号を参照します。
 >
