@@ -15,7 +15,7 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: a6430648344a5d02960bac7447331679e8abebe4
+source-git-commit: 8ea986eb6573bb49accfad312bb0796faa2642ab
 workflow-type: tm+mt
 source-wordcount: '5905'
 ht-degree: 17%
@@ -24,7 +24,7 @@ ht-degree: 17%
 
 Adobe Workfrontの統合レビューと承認のモジュールを使用すると、承認の詳細の取得、アセットに関する意思決定、承認参加者の追加または削除、承認ステージの追加または更新、ステージのロックまたはロック解除、カスタム API呼び出しの実行を行うことができます。
 
-Workfrontの統合レビューと承認について詳しくは、Workfront ドキュメントの[統合レビューと承認の概要](https://experienceleague.adobe.com/ja/docs/workfront/using/review-and-approve-work/document-approvals-overview)を参照してください。
+Workfrontの統合レビューと承認について詳しくは、Workfront ドキュメントの[統合レビューと承認の概要](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview)を参照してください。
 
 ## アクセス要件
 
@@ -335,7 +335,12 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
 </table>
 
 <!--
-BECKY CHECK ME: The following block of Delete-prefixed Actions modules (Delete a decision on a stage, Delete a stage, Delete a template, Delete an approval, Delete decisions, Delete grouped approval, Delete participants) is not confirmed to be current in the live connector as of this update - status uncertain. Commented out for now; restore (and remove this comment) once confirmed, or delete for good if confirmed removed.
+
+AUTHOR: The following block of Delete-prefixed Actions modules (Delete a decision on a stage, Delete a stage, Delete a template, Delete an approval, Delete decisions, Delete grouped approval, Delete participants) is not confirmed to be current in the live connector as of this update - status uncertain. Commented out for now; restore (and remove this comment) once confirmed, or delete for good if confirmed removed.
+
+-->
+
+<!--
 
 #### Delete a decision on a stage
 
@@ -1353,8 +1358,6 @@ This action module deletes participants from an approval.
   </tbody>
 </table>
 
-<!-- BECKY CHECK ME: the screenshot shows two separate fields both labeled "Limit" - an optional pagination page-size field (max 100, default 20, ignored if Cursor is set) and a required general execution-cycle limit, matching the Limit field used in every other module in this article. Confirm this isn't a UI labeling issue before publishing, and that both rows are needed/correctly distinguished. -->
-
 ### トリガー
 
 * [承認イベントを見る](#watch-approval-events)
@@ -1388,7 +1391,7 @@ This action module deletes participants from an approval.
       <td>モジュールで監視する承認レコードのタイプを選択します。</td> 
      </tr> 
      <tr> 
-      <td>[!UICONTROL 設定タイプ &#x200B;]</td> 
+      <td>[!UICONTROL設定タイプ ]</td> 
       <td>シンプルなフィルターと高度なフィルターのどちらを使用するかを選択します。<p>シンプルまたは高度なフィルターについて詳しくは、Workfront モジュールの記事の<a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#using-advanced-filters" class="MCXref xref">高度なフィルターの使用</a>を参照してください。</p></td> 
      </tr> 
      <tr> 
@@ -1426,7 +1429,7 @@ This action module deletes participants from an approval.
        </td> 
      </tr> 
      <tr> 
-      <td>[!UICONTROL カスタム トークン &#x200B;]</td> 
+      <td>[!UICONTROL カスタム トークン ]</td> 
       <td>
        <p>（オプション） [!UICONTROL Enable secured hook]が[!UICONTROL Yes]に設定されている場合、独自のトークン値を入力してWebhookを保護できます。 このフィールドを空白のままにすると、Fusionが自動的にトークンを生成します。</p>
        </td> 

@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 8ea986eb6573bb49accfad312bb0796faa2642ab
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 37%
+source-wordcount: '750'
+ht-degree: 24%
 ---
 # 一般的な関数
 
@@ -22,11 +22,39 @@ ht-degree: 37%
 
 これらの一般変数を使用して、実行に関する詳細を特定できます。
 
-* `executionID`：このシナリオ実行のID
-* `triggerTimestamp`：この実行がトリガーされた時間
-* `scenarioID`：現在実行中のシナリオの ID
+* `executionId`：このシナリオ実行のID
+* `scenarioId`：現在実行中のシナリオの ID
 * `scenarioName`：現在実行中のシナリオの名前
+* `scenarioUrl`: Fusion ユーザーインターフェイスの現在のシナリオへのリンク
+* `executionUrl`: Fusion ユーザーインターフェイスの現在のシナリオ実行へのリンク
+* `scenarioApiUrl`：現在のシナリオのFusion API URL
+* `executionApiUrl`：現在の実行の詳細のFusion API URL
+* `teamId`：現在のシナリオを所有するFusion チームのID
+* `organizationId`：現在の実行に関連付けられているFusion組織のID。 これはAdobe IMS組織IDではありません。
+* `triggerTimestamp`：この実行がトリガーされた時間
 * `operationsConsumed`：シナリオのその時点で使用された操作の数。
+
+変数名では、大文字と小文字が区別されます。 例えば、`scenarioURL`ではなく`scenarioUrl`を使用します。
+
+URLを作成したり、チームや組織のIDをハードコーディングしたりすることなく、マッピングされたフィールドでこれらの変数を使用できます。 例えば、通知のマッピング済みテキストフィールドに次の項目を含めることができます。
+
+<pre><code>
+Scenario: &#123;&#123;scenarioName&#125;&#125;
+Open scenario: &#123;&#123;scenarioUrl&#125;&#125;
+Open execution: &#123;&#123;executionUrl&#125;&#125;
+Team: &#123;&#123;teamId&#125;&#125;
+Organization: &#123;&#123;organizationId&#125;&#125;
+</code></pre>
+
+これらの変数を使用する場合は、次の点に注意してください。
+
+* 値は、シナリオの実行時に解決されます。 マッピングパネルには変数が一覧表示されますが、値はプレビューされません。
+* `scenarioUrl`と`executionUrl`は、シナリオとFusion ユーザーインターフェイスの実行にリンクしています。 `scenarioApiUrl`と`executionApiUrl`はAPI エンドポイント URLであり、Fusion ページへのリンクではありません。
+* API URL変数は、テキストのみを返します。 リクエストを行ったり、認証情報を提供したりすることはありません。 通常のAPI認証と権限は引き続き適用されます。
+* リンクは追加のアクセス権を付与しません。 通常のFusion権限が適用されます。
+* サンドボックスの実行や履歴同期がオフになっている実行など、実行履歴に保存されていない実行に対しては、`executionUrl`は生成されません。 生成されたリンクは、使用した時点で実行の詳細が利用可能であることを保証するものではありません。
+* テンプレートまたは保存されていないシナリオに対して`scenarioUrl`を生成することはできません。
+* URLを生成できない場合、変数には値がありません。
 
 ## [!UICONTROL GET（オブジェクトまたは配列パス）]
 
@@ -149,7 +177,7 @@ ht-degree: 37%
 
 キーと値のペアを組み合わせることで、2つのコレクションを結合します。 両方のコレクションに同じキーが含まれている場合、2番目のコレクションの値は1番目のコレクションの値を上書きします。
 
-### [!UICONTROL isBlank （value） &#x200B;]
+### [!UICONTROL isBlank （value） ]
 
 値が`null`または空の文字列の場合は`true`を返し、それ以外の場合は`false`を返します。 `ifEmpty`とは異なり、この関数は数値`0`または空白のみの文字列を空白として扱いません。
 
@@ -176,7 +204,7 @@ ht-degree: 37%
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL in （value; value1; value2; ...） &#x200B;]
+### [!UICONTROL in （value; value1; value2; ...） ]
 
 値が指定された値のいずれかに等しい場合、`true`を返します（厳密な等号、型強制なし）。
 
@@ -199,7 +227,7 @@ ht-degree: 37%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL ifin （value; value1; value2; ...; trueExpression; falseExpression） &#x200B;]
+### [!UICONTROL ifin （value; value1; value2; ...; trueExpression; falseExpression） ]
 
 値が指定された一致値のいずれかに一致する場合は`trueExpression`を返し、それ以外の場合は`falseExpression`を返します。 少なくとも3つの引数（値、一致値、trueExpression + falseExpression）が必要です。
 
@@ -219,7 +247,7 @@ ht-degree: 37%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL case （indexNumber；値1；値2; ...） &#x200B;]
+### [!UICONTROL case （indexNumber；値1；値2; ...） ]
 
 インデックス番号（1 ベース）で指定された位置の値を返します。 インデックスが範囲外であるか、0である場合、`null`を返します。
 
