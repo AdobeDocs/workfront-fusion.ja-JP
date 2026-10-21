@@ -3,9 +3,9 @@ user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
 nudge: true
-source-git-commit: 316b112552e5383fdca3f408223594a2fbb6f535
+source-git-commit: d31db4d825746ac3e7b19cd8f7efcc593bc03bf7
 workflow-type: tm+mt
-source-wordcount: '2748'
+source-wordcount: '2752'
 ht-degree: 48%
 ---
 
@@ -316,7 +316,7 @@ ht-degree: 48%
   * [チェーンへのモジュールの移動](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)
   * [実行中のシナリオでのデータフローの表示](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
   * [Webhook のキューの表示](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
-  * {hide-from-toc}[Workfront FusionのAI アシスタント &#x200B;](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
+  * {hide-from-toc}[Workfront FusionのAI アシスタント ](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
   * [シナリオスコアリングエキスパートの実行](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
   * [シナリオ要素の削除](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
   * [「シナリオ」エリアからシナリオを管理します](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
@@ -414,6 +414,7 @@ ht-degree: 48%
       * [Adobe Firefly Lightroom モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-lightroom.md)
       * [Adobe Frame.io Beta（V4）モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)
       * [Adobe Frame.io レガシー（V3）モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
+      * [Adobe Fusion MCP モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-fusion-mcp-modules.md)
       * [Adobe I/O Events モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
       * [Adobe InDesign モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/indesign-modules.md)
       * [Adobe Journey Optimizer モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-journey-optimizer-modules.md)
