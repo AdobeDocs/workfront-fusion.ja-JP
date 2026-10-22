@@ -9,10 +9,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: d50909b128b469ef3e25b93c7dbdede5d4226064
 workflow-type: tm+mt
-source-wordcount: '1430'
-ht-degree: 24%
+source-wordcount: '1550'
+ht-degree: 22%
 ---
 # Workfront Fusion モジュール
 
@@ -127,12 +127,12 @@ Workfront Fusion モジュールを設定すると、Workfront Fusionに以下�
    <td> 複製するレコードタイプを選択します。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">シナリオ ID</td> 
-   <td> 複製するシナリオのIDを入力またはマッピングします。 </td> 
+   <td role="rowheader">シナリオ ID / フック ID / データ構造ID</td> 
+   <td> 複製するアイテムのIDを入力またはマッピングします。 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">名前</td> 
-   <td> 新しいシナリオの名前を入力またはマッピングします。</td> 
+   <td> 新しいシナリオ、フック、またはデータ構造の名前を入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -202,6 +202,10 @@ Workfront Fusion モジュールを設定すると、Workfront Fusionに以下�
   <tr> 
    <td role="rowheader">レコードタイプ</td> 
    <td>リストを返すレコードのタイプを選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">フィールド</td> 
+   <td>結果に含めるフィールドを選択します。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">プロパティ</td> 
@@ -380,9 +384,36 @@ Workfront Fusion モジュールを設定すると、Workfront Fusionに以下�
    <td> 依存関係を取得するレコードタイプを選択します。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">シナリオ ID</td> 
+   <td role="rowheader">シナリオ ID / フック ID</td> 
    <td> 依存関係を取得するレコードのIDを入力またはマッピングします。 </td> 
   </tr> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### レコードの依存関係を取得
+
+このモジュールは、特定のリソースに依存するものを特定します。 リソースを削除する前に、このモジュールを使用して、何かがそのリソースに依存し、その削除の影響を受ける可能性があるかどうかを確認します。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Workfront FusionをWorkfront Fusionに接続する方法については、この記事の「<a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Workfront FusionをWorkfront Fusionに接続</a>」を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">レコードタイプ</td> 
+   <td>扶養家族を確認するレコードタイプを選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">種類</td> 
+   <td>確認する依存関係の種類を選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID</td> 
+   <td>扶養家族を返すレコードのIDを入力またはマッピングします。</td> 
   </tr> 
  </tbody> 
 </table>
