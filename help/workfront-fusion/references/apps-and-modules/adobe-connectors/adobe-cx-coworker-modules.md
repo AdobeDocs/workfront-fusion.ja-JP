@@ -138,7 +138,7 @@ Coworkerおよびリクエストに必要なサービスにアクセスできる
   </tr> 
   <tr> 
    <td>[!UICONTROL Task ID]</td> 
-   <td> <p><b>[!UICONTROLが返したタスク IDをマッピングします。プロンプトを実行します]</b>。 返されたテキストとまったく同じようにしてください。</p> </td> 
+   <td> <p><b>[!UICONTROL が返したタスク IDをマッピングします。プロンプトを実行します]</b>。 返されたテキストとまったく同じようにしてください。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -158,7 +158,7 @@ Coworkerおよびリクエストに必要なサービスにアクセスできる
    <td> <p>Coworker接続を選択します。 手順については、この記事の「<a href="#connect-adobe-cx-coworker-to-workfront-fusion" class="MCXref xref">Adobe CX Enterprise CoworkerをWorkfront Fusionに接続する</a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL ユーザープロンプト ]</td> 
+   <td>[!UICONTROL ユーザープロンプト &#x200B;]</td> 
    <td> <p>命令を入力してください。 複数の行を使用して、以前のモジュールの情報をマッピングできます。</p> </td> 
   </tr> 
   <tr> 
@@ -214,7 +214,7 @@ Coworkerおよびリクエストに必要なサービスにアクセスできる
    <td> <p>Trueを指定すると、タスクが完了するか、共同作業者がすぐに回答します。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROLは注意が必要です]</td> 
+   <td role="rowheader">[!UICONTROL は注意が必要です]</td> 
    <td> <p>同僚が入力または承認を必要とする場合はTrueです。</p><p>詳しくは、この記事の「<a href="#requests-that-need-attention">注意が必要なリクエスト </a>」を参照してください。</p> </td> 
   </tr> 
   <tr> 
@@ -222,11 +222,11 @@ Coworkerおよびリクエストに必要なサービスにアクセスできる
    <td> <p>タスクが完了した時点での最終回答。 タスクが保留中または注意が必要な場合は、このフィールドは空です。 回答が完成した場合は、回答テキストがない場合もあります。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL テキスト アーティファクト （中間テキストを含める場合があります） ]</td> 
+   <td role="rowheader">[!UICONTROL テキスト アーティファクト （中間テキストを含める場合があります） &#x200B;]</td> 
    <td> <p>作業中にテキストが返されます。 各アイテムには、アーティファクト ID、名前、テキストを含めることができます。 これらの項目は必ずしも最終的な答えではない。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Raw結果（オプトイン） ]</td> 
+   <td role="rowheader">[!UICONTROL Raw結果（オプトイン） &#x200B;]</td> 
    <td> <p>完全な回答です。 これは、<b>[!UICONTROL Include raw result]</b>がオンの場合にのみ含まれます。</p> </td> 
   </tr> 
  </tbody> 
