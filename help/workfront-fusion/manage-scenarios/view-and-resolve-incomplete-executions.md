@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 66%
+source-wordcount: '580'
+ht-degree: 68%
 ---
 # 未完了の実行の表示と解決
 
@@ -24,11 +24,13 @@ ht-degree: 66%
 >
 >デフォルトでは、未完了の実行の保存は無効になっています。 有効にするには、シナリオの詳細設定で「[!UICONTROL 未完了の実行の保存を許可]」オプションを有効にします。
 >
->シナリオ設定について詳しくは、[&#x200B; シナリオ設定の設定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)を参照してください。
+>シナリオ設定について詳しくは、[ シナリオ設定の設定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)を参照してください。
 
-## 記事全体を対象としたハイライト表示されたプレビュー {#highlighted-preview-article-level}
+記事全文{#highlighted-preview-article-level}のハイライト表示されたプレビュー
 
-<span class="preview">このページの情報は、まだ一般に提供されていない機能を指します。 サンドボックスのプレビュー環境でのみ使用できます。</span>##不完全な実行を表示する
+<span class="preview">このページの情報は、まだ一般に提供されていない機能を指します。 プレビューサンドボックス環境でのみ使用できます。</span>
+
+## 不完全な実行を表示
 
 モジュールの処理中にエラーが発生した場合、新しい未完了の実行が「未完了の実行」フォルダーに追加されます。 未完了の実行にはそれぞれ、シナリオのブループリントと、失敗したモジュールにマッピングできるすべてのバンドルが含まれます。 不完全な実行のリストは、シナリオの詳細ページの「[!UICONTROL 不完全な実行]」タブをクリックして開くことができます。
 
@@ -48,7 +50,7 @@ ht-degree: 66%
 >
 >未解決の不完全な実行の場合、チームは合計500 MBに制限されます。
 >
->詳細については、「シナリオ設定の構成」の「[&#x200B; データ損失を有効にする](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable-data-loss)」を参照してください。
+>詳細については、「シナリオ設定の構成」の「[ データ損失を有効にする](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable-data-loss)」を参照してください。
 
 
 ## 「不完全な実行」タブから不完全な実行を解決する
@@ -61,7 +63,7 @@ ht-degree: 66%
 1. モジュールのログを開くと、モジュールのすべての操作が表示されます。
 1. 失敗した操作を見つけ、「**[!UICONTROL 解決]**」をクリックします。
 
-   ![解決ボタン &#x200B;](assets/resolve-btn-350x188.png)
+   <!--![Resolve button](assets/resolve-btn-350x188.png)-->
 
 
 
@@ -75,7 +77,7 @@ ht-degree: 66%
 1. モジュールのログを開くと、モジュールのすべての操作が表示されます。
 1. 失敗した操作を見つけ、「**[!UICONTROL 解決]**」をクリックします。
 
-   ![解決ボタン &#x200B;](assets/resolve-btn-350x188.png)
+   <!--![Resolve button](assets/resolve-btn-350x188.png)-->
 
 ## 未完了の実行に関連するオプション
 
@@ -85,7 +87,7 @@ ht-degree: 66%
 * 順次処理
 * データ損失を有効にする
 
-これらのオプションについて詳しくは、[&#x200B; シナリオ設定の設定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)を参照してください。
+これらのオプションについて詳しくは、[ シナリオ設定の設定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)を参照してください。
 
 ## 未完了の実行になるエラー
 

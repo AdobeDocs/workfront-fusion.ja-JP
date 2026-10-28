@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 70%
+source-wordcount: '583'
+ht-degree: 69%
 ---
 # シナリオ詳細の詳細
 
@@ -22,7 +22,7 @@ ht-degree: 70%
 
 また、シナリオエディターにアクセスして、シナリオを編集することもできます。
 
-シナリオエディターについて詳しくは、[&#x200B; シナリオエディター](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)を参照してください
+シナリオエディターについて詳しくは、[ シナリオエディター](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)を参照してください
 
 ## アクセス要件
 
@@ -59,11 +59,11 @@ ht-degree: 70%
 
    または
 
-   シナリオエディターでシナリオを操作している場合は、ウィンドウの左上隅付近にある左矢印![編集矢印を終了](assets/exit-editing-arrow.png)をクリックします。
+   シナリオエディターでシナリオを操作している場合は、ウィンドウの左上隅付近にある左矢印![編集矢印を終了](/help/workfront-fusion/manage-scenarios/assets/new-exit-editing-arrow.png)をクリックします。
 
 1. 表示されるページで、次の表に示す要素を確認できます。
 
-   ![&#x200B; シナリオの詳細](assets/scenario-detail-350x207.png)
+   ![ シナリオの詳細](assets/new-scenario-detail.png)
 
    <table style="table-layout:auto"> 
     <col> 
@@ -74,7 +74,7 @@ ht-degree: 70%
       <td>このタブには、シナリオが視覚的に表示されます。 図は、シナリオエディターに表示されるものと同じです。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL レポート &#x200B;] タブ </td> 
+      <td role="rowheader">[!UICONTROL レポート ] タブ </td> 
       <td> <p>このタブを開くと、このシナリオが過去30日間に実行した操作数のグラフが表示されます。</p>  </td> 
      </tr> 
      <tr> 
@@ -111,9 +111,11 @@ ht-degree: 70%
       <td role="rowheader">[!UICONTROL Options]</td> 
       <td> <p>このメニューでは、シナリオエディターを開かずに追加のオプションを使用できます。 改善点には、以下のものが含まれます。</p> 
        <ul> 
+        <li>[!UICONTROL ロック解除の実行]</li> 
         <li>[!UICONTROL Scheduling]</li> 
         <li>[!UICONTROL Rename]</li> 
         <li>[!UICONTROL Clone]</li> 
+        <li>[!UICONTROL Clone as template]</li> 
         <li>[!UICONTROL Delete]</li> 
        </ul> </td> 
      </tr> 
@@ -122,7 +124,7 @@ ht-degree: 70%
       <td>このエリアには、現在実行中の実行に関連する情報が表示されます。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL 履歴] パネル</p> <p> </p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL履歴] パネル</p> <p> </p> </td> 
       <td> <p>このエリアには、シナリオの最後の実行に関連する情報が表示されます。 実行ごとに、次の情報が表示されます。</p> 
        <ul> 
         <li>実行日</li> 
@@ -133,7 +135,7 @@ ht-degree: 70%
        </ul> </td> 
      </tr> 
          <tr> 
-      <td role="rowheader"> <p>[!UICONTROL イベント &#x200B;] パネル</p>  </td> 
+      <td role="rowheader"> <p>[!UICONTROL イベント ] パネル</p>  </td> 
       <td>この領域には、シナリオに関連するイベントに関する情報が表示されます。  </td> 
      </tr> 
      <tr> 

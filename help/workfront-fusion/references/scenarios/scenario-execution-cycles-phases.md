@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 23%
@@ -47,7 +47,7 @@ ht-degree: 23%
 
 各サイクルは、一連の作業から構成される不可分の作業単位を表し、それぞれにコミットまたはロールバックが適用されます。
 
-サイクルの最大数は、[!UICONTROL &#x200B; シナリオ設定] パネルで設定できます。 デフォルト値は 1 です。
+サイクルの最大数は、[!UICONTROL  シナリオ設定] パネルで設定できます。 デフォルト値は 1 です。
 
 * [操作](#operation)
 * [コミット](#commit)
@@ -58,7 +58,7 @@ ht-degree: 23%
 運用段階では、読み取りまたは書き込み操作が実行されます。
 
 * 読み取り操作は、サービスからデータを取得し、その後、事前に定義されたシナリオに従って他のモジュールによって処理される操作で構成されます。 例えば、[!UICONTROL Workfront] >[!UICONTROL Watch records] モジュールは、前回のシナリオ実行以降に作成された新しいバンドル（レコード）を返します。
-* 書き込み操作は、さらに処理するために特定のサービスにデータを送信することから成ります。 例えば、Workfront >[!UICONTROL &#x200B; ドキュメントをアップロード &#x200B;] モジュールは、ファイルをWorkfrontにアップロードします。
+* 書き込み操作は、さらに処理するために特定のサービスにデータを送信することから成ります。 例えば、Workfront >[!UICONTROL  ドキュメントをアップロード ] モジュールは、ファイルをWorkfrontにアップロードします。
 
 #### コミット
 
@@ -68,11 +68,13 @@ ht-degree: 23%
 
 任意のモジュールの操作フェーズまたはコミットフェーズ中にエラーが発生した場合、フェーズは中止され、ロールバックフェーズが開始され、特定のサイクル中のすべての操作が無効になります。
 
+<!-- BECKY CHECK ME: acid-modules.png shows the classic module list with ACID badges (Watch Events, Watch Field, Watch Record). Retake it from the new module browser, and confirm the ACID badge still displays there (the release notes mention badges for private, premium, and beta apps only). -->
+
 >[!IMPORTANT]
 >
 >ロールバック（トランザクショナリティとも呼ばれます）をサポートするすべてのWorkfront Fusion モジュールには、ACID タグが付けられます。
 >
->![酸性モジュール &#x200B;](assets/acid-modules.png)
+>![酸性モジュール ](assets/acid-modules.png)
 >
 >このタグでマークされていないモジュールは、他のモジュールでエラーが発生した場合でも、初期状態に戻すことはできません。 非 ACID モジュールの典型的な例は、[!UICONTROL メール]／[!UICONTROL メールの送信]アクションです。 メールの送信後は、送信を取り消すことはできません。
 
@@ -82,4 +84,4 @@ ht-degree: 23%
 
 ## リソース
 
-詳しくは、[&#x200B; シナリオ設定の設定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)を参照してください。
+詳しくは、[ シナリオ設定の設定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)を参照してください。

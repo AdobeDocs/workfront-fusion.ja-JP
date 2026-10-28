@@ -13,10 +13,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '82'
-ht-degree: 68%
+source-wordcount: '89'
+ht-degree: 62%
 ---
 # モジュールを追加：記事インデックス
 
@@ -24,6 +24,7 @@ ht-degree: 68%
 * [モジュールの設定](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
 * [シナリオにAI プロンプトを追加する](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)
 * [モジュールまたはシナリオのコピー](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
+* [スニペットを使用したシナリオセクションの保存と再利用](/help/workfront-fusion/create-scenarios/add-modules/use-snippets.md)
 * [Adobe Workfront Fusion テンプレートを使用したシナリオの作成](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)
 * [cURL を使用した HTTP モジュールの追加](/help/workfront-fusion/create-scenarios/add-modules/use-curl-create-http.md)
 * [コネクターを使用しない web サービスの Webhook の設定](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)

@@ -9,10 +9,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 17%
+source-wordcount: '563'
+ht-degree: 16%
 ---
 # チェーンへのモジュールの移動
 
@@ -21,6 +21,10 @@ ht-degree: 17%
 >この機能はBetaにあり、ミッションクリティカルな実稼動ワークフローには推奨されません。 Betaの機能では、動作が変更され、エッジケースが完全に処理されない場合があります。
 
 シナリオ内のモジュールのグループを選択し、マッピングやデータ構造を手動で再作成することなく、新しいチェーン化されたシナリオに移動できます。 これにより、大規模なシナリオを簡単にモジュール化できます。
+
+>[!NOTE]
+>
+>Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス ](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
 
 Workfront Fusionは、モジュールグループをチェーンに移動し、次のような機能を提供します。
 
@@ -36,7 +40,7 @@ Workfront Fusionは、モジュールグループをチェーンに移動し、�
 
 連鎖シナリオの計画について詳しくは、[複数のシナリオを連鎖させる](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)を参照してください。
 
-チェーンモジュールの設定方法については、[&#x200B; チェーンモジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)を参照してください。
+チェーンモジュールの設定方法については、[ チェーンモジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)を参照してください。
 
 ## アクセス要件
 

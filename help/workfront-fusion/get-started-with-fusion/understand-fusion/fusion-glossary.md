@@ -16,15 +16,18 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 98%
+source-wordcount: '976'
+ht-degree: 93%
 ---
 # Adobe Workfront Fusion 用語集
 
 次の用語集では、Adobe Workfront Fusion の一般的な用語をいくつか説明します。
 
+>[!NOTE]
+>
+>Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス ](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
 
 <table style="table-layout:auto">
  <col> 
@@ -88,7 +91,7 @@ ht-degree: 98%
   </tr> 
   <tr> 
    <td role="rowheader"> <p>モジュール</p> </td> 
-   <td> <p>関連するアプリまたはサービス内で、レコードの作成などの機能を実行するシナリオ内の 1 つの手順。</p> <p>それぞれのアプリやサービスには、リクエストへの応答方法を定義する様々なモジュールがあります。</p>  <p> <img src="assets/module.png"> </p> <p>詳しくは、<a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md" class="MCXref xref">モジュールの概要</a>を参照してください。</p> </td> 
+   <td> <p>関連するアプリまたはサービス内で、レコードの作成などの機能を実行するシナリオ内の 1 つの手順。</p> <p>それぞれのアプリやサービスには、リクエストへの応答方法を定義する様々なモジュールがあります。</p>  <p> <img src="assets/new-module.png"> </p> <p>詳しくは、<a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md" class="MCXref xref">モジュールの概要</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>操作</p> </td> 
@@ -104,7 +107,7 @@ ht-degree: 98%
   </tr> 
   <tr> 
    <td role="rowheader"> <p>シナリオ</p> </td> 
-   <td> <p>ユーザーが作成した一連の自動化された手順で、それぞれがモジュールによって表され、実行されます。 シナリオの目的は、データの移動と操作です。</p> <p> <img src="assets/entire-scenario-blank.png" style="width: 350;height: 178;"> </p> <p> 詳しくは、<a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md" class="MCXref xref">シナリオの概要</a>を参照してください。</p> </td> 
+   <td> <p>ユーザーが作成した一連の自動化された手順で、それぞれがモジュールによって表され、実行されます。 シナリオの目的は、データの移動と操作です。</p> <p> <img src="assets/new-scenario-example-unmarked.png" style="width: 350;height: 92;"> </p> <p> 詳しくは、<a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md" class="MCXref xref">シナリオの概要</a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>シナリオセグメント</p> </td> 

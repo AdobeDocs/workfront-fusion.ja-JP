@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 28%
+source-wordcount: '371'
+ht-degree: 29%
 ---
 # モジュールを新しいバージョンにアップグレードする
 
@@ -22,7 +22,7 @@ Workfront Fusionが接続するアプリケーションは新しいバージョ�
 
 シナリオでモジュールに緑色の「モジュールをアップグレード」アイコンが表示された場合、Workfront Fusionはそのモジュールの新しいバージョンをリリースしました。
 
-![更新アイコン &#x200B;](assets/update-indicator-workfront.png)
+![更新アイコン ](assets/update-indicator-workfront.png)
 
 新しいシナリオを作成せずにモジュールを更新できます。
 
@@ -57,11 +57,11 @@ Workfront Fusionが接続するアプリケーションは新しいバージョ�
 
 ## Workfront モジュールを新しいバージョンにアップグレードする
 
-1. 新しいバージョンにアップグレードするモジュールの&#x200B;**アップグレードモジュール** アイコン ![&#x200B; アップグレードアイコン &#x200B;](assets/upgrade-icon.png)をクリックします。
-   ![更新アイコン &#x200B;](assets/update-indicator-workfront.png)
+1. 新しいバージョンにアップグレードするモジュールの&#x200B;**アップグレードモジュール** アイコン ![ アップグレードアイコン ](assets/upgrade-icon.png)をクリックします。
+   ![更新アイコン ](assets/update-indicator-workfront.png)
 1. 以下のうちのいずれかを選択します。
 
-   * このモジュールを置き換える新しいモジュールを選択するには、**新しいモジュールを選択**&#x200B;をクリックし、[Workfront以外のモジュールを新しいバージョンにアップグレード &#x200B;](#upgrade-a-non-workfront-module-to-a-new-version)の説明に従って進みます。
+   * このモジュールを置き換える新しいモジュールを選択するには、**新しいモジュールを選択**&#x200B;をクリックし、[Workfront以外のモジュールを新しいバージョンにアップグレード ](#upgrade-a-non-workfront-module-to-a-new-version)の説明に従って進みます。
    * このモジュールのみをアップグレードし、モジュール設定を保持するには、**アップグレード**&#x200B;をクリックします。
    * シナリオ内のすべてのWorkfront モジュールをアップグレードするには、**すべてアップグレード**&#x200B;をクリックします。
 
@@ -73,8 +73,8 @@ Workfront Fusionが接続するアプリケーションは新しいバージョ�
 
 ## Workfront以外のモジュールを新しいバージョンにアップグレードする
 
-1. 新しいバージョンにアップグレードするモジュールの&#x200B;**アップグレードモジュール** アイコン ![&#x200B; アップグレードアイコン &#x200B;](assets/upgrade-icon.png)をクリックします。
-   ![更新アイコン &#x200B;](assets/update-indicator.png)
+1. 新しいバージョンにアップグレードするモジュールの&#x200B;**アップグレードモジュール** アイコン ![ アップグレードアイコン ](assets/upgrade-icon.png)をクリックします。
+   <!--![Update icon](assets/update-indicator.png)-->
 1. **新しい**&#x200B;を選択をクリックします。
 1. 前のモジュールを置き換えるモジュールを選択します。
 1. 既存のモジュールと同じ設定でモジュールを設定します。

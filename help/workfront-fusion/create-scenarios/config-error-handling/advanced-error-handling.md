@@ -11,14 +11,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 21%
+source-wordcount: '950'
+ht-degree: 19%
 ---
 # エラー処理ルートへのフィルタリングとネストの追加
 
 フィルターとネストを含めることで、エラー処理ルートに高度なエラー処理技術を追加できます。
+
+>[!NOTE]
+>
+>Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス ](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
 
 ## アクセス要件
 
@@ -60,7 +64,7 @@ ht-degree: 21%
 
 フィルターを使用して、エラーハンドラールートで処理されるエラーを制御できます。 これにより、特定のタイプのエラーのみを処理できます。 エラーがフィルターを通過しない場合は、指定されたモジュールに対してエラーハンドラールートが定義されていないものとして扱われます。
 
-これらのフィルターは、Fusionの他のフィルターと同様に設定されます。 手順については、[&#x200B; シナリオへのフィルターの追加](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md)を参照してください。
+これらのフィルターは、Fusionの他のフィルターと同様に設定されます。 手順については、[ シナリオへのフィルターの追加](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md)を参照してください。
 
 ### ルーターを追加し、その後にフィルターをエラーハンドラーに追加します
 
@@ -70,11 +74,17 @@ ht-degree: 21%
 
 ![DataError フィルター](assets/filter-dataerror.png)
 
-Fusionが様々なデータタイプを評価および処理する方法について詳しくは、[&#x200B; エラータイプ &#x200B;](/help/workfront-fusion/references/errors/error-processing.md)を参照してください。
+Fusionが様々なデータタイプを評価および処理する方法について詳しくは、[ エラータイプ ](/help/workfront-fusion/references/errors/error-processing.md)を参照してください。
 
 ### 例：フィルターを使用したエラー処理
 
+<!-- BECKY CHECK ME: this example scenario (through the end of the Nesting example below) is built and illustrated entirely in the classic experience. It needs a new example scenario built in the new experience (recommend using Workfront modules instead of Dropbox, consistent with other rebuilt articles) - not just new screenshots of this same Dropbox scenario. Flagging only, not editing - see tracking spreadsheet. -->
+
 >[!BEGINSHADEBOX]
+
+>[!NOTE]
+>
+>この例では、従来のシナリオエディターを使用しています。
 
 このシナリオの例では、これらのフィルターがエラー処理でどのように機能するかを示します。
 
@@ -84,7 +94,7 @@ Dropbox/Create a folder moduleを使用し、同じ名前のフォルダーが�
 
 完全なシナリオは次のように機能します。
 
-![Dropbox シナリオ &#x200B;](assets/dropbox-scenario.png)
+![Dropbox シナリオ ](assets/dropbox-scenario.png)
 
 1. ツール/変数を設定モジュールには、フォルダー名が含まれます
 1. HTTP/ファイルを取得モジュールは、フォルダーにアップロードする必要があるファイルを取得します
@@ -102,7 +112,7 @@ Dropbox/Create a folder moduleを使用し、同じ名前のフォルダーが�
 
 ファイルのアップロードなど、後続のモジュールで既存のフォルダーを使用するには、モジュールにエラーハンドラーのルートを追加し、次に示すResume ディレクティブモジュールにマッピングするフォルダーパスを取得する必要があります。
 
-![&#x200B; エラーハンドラーのルートを追加](assets/add-error-handler-route.png)
+![ エラーハンドラーのルートを追加](assets/add-error-handler-route.png)
 
 最初のルートのフィルターは、同じ名前のフォルダーが既に存在する場合に表示される特定のエラー（DataError）のみを処理するように設定されています。
 
@@ -114,7 +124,7 @@ Dropbox/フォルダーモジュール内のすべてのファイルを一覧表
 
 次に、「再開」ディレクティブは、失敗したモジュールの出力としてフォルダーパスを提供します。 フォルダーIDは、ファイルモジュールをアップロードする際に必要ではないため、空白のままになっています。
 
-![&#x200B; フロー制御](assets/flow-control.png)
+![ フロー制御](assets/flow-control.png)
 
 >[!ENDSHADEBOX]
 
@@ -122,13 +132,19 @@ Dropbox/フォルダーモジュール内のすべてのファイルを一覧表
 
 エラーハンドラールートは、ルーターを除くすべてのモジュールで作成および設定できます。 したがって、既に既存のエラーハンドラールートの一部となっているモジュールに対して、エラーハンドラールートを作成できます。
 
+<!-- BECKY CHECK ME: this example scenario is built and illustrated entirely in the classic experience. It needs a new example scenario built in the new experience - see the flag on the "Example: Error handling with filters" example above. -->
+
 >[!BEGINSHADEBOX]
+
+>[!NOTE]
+>
+>この例では、従来のシナリオエディターを使用しています。
 
 例：
 
 フィルターを含むネストされたエラーハンドラーのルート：
 
-![&#x200B; ルートを処理するネストされたエラー](assets/nested-error-handling-route.png)
+![ ルートを処理するネストされたエラー](assets/nested-error-handling-route.png)
 
 このシナリオでは、2番目のエラーハンドラールートは、最初のエラーハンドラールートの下にネストされます。
 

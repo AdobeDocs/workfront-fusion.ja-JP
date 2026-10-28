@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 22%
+source-wordcount: '1677'
+ht-degree: 16%
 ---
 # エラー処理の追加
 
@@ -31,14 +31,18 @@ ht-degree: 22%
 
 エラーハンドラーをモジュールまたはルートに追加することで、デフォルトのエラー処理ロジックを独自のロジックに置き換えることができます。 Adobe Workfront Fusionには、エラーハンドラールートの最後に挿入できる5つの異なるディレクティブが用意されています。
 
-デフォルトのエラー処理について詳しくは、[&#x200B; エラータイプ &#x200B;](/help/workfront-fusion/references/errors/error-processing.md)を参照してください。
+デフォルトのエラー処理について詳しくは、[ エラータイプ ](/help/workfront-fusion/references/errors/error-processing.md)を参照してください。
 
-エラー処理ディレクティブについて詳しくは、[&#x200B; エラー処理のディレクティブ &#x200B;](/help/workfront-fusion/references/errors/directives-for-error-handling.md)を参照してください。
+エラー処理ディレクティブについて詳しくは、[ エラー処理のディレクティブ ](/help/workfront-fusion/references/errors/directives-for-error-handling.md)を参照してください。
 
 >[!NOTE]
 >
 >Workfront Fusionは、ルートレベルのエラー処理をサポートしており、個々のモジュールにエラーハンドラーを添付するのではなく、ルートごとに1回エラー処理ロジックを定義できます。
 >ルートレベルのエラー処理は、特に高度なマルチブランチ自動処理では、よりスケーラブルで一貫性のある、アーキテクチャ的にクリーンな方法でエラーを管理できるので、ルートレベルのエラー処理をベストプラクティスとして使用することをお勧めします。
+
+>[!NOTE]
+>
+>Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス ](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
 
 ## アクセス要件
 
@@ -88,9 +92,9 @@ ht-degree: 22%
 
 ### 例
 
-次のシナリオ例を考えてみましょう。
+次のシナリオの例を考えてみましょう。この例は、読みやすさのためにコンパクト表示で示されています。
 
-![&#x200B; ルートとエラーハンドラーを示すシナリオの例](assets/error-handling-route-example-with-numbers.png)
+![ ルートとエラーハンドラーを示すシナリオの例](assets/new-error-handler-examples-with-numbers.png)
 
 1. このモジュールにはエラーハンドラーがあります。 このモジュールのエラーは、Commit ディレクティブによって処理されます。
 1. このモジュールにはエラーハンドラーがありません。 このモジュールでエラーが発生した場合、そのエラーはモジュールのルートを作成したルータ上のハンドラによって処理されます。 このモジュール上のエラーは、Rollback ディレクティブによって処理されます。
@@ -113,20 +117,23 @@ ht-degree: 22%
 
 ### モジュールへのエラーハンドラーの追加
 
-モジュールにエラーハンドラーを追加するには：
+* [新しいエクスペリエンスのモジュールへのエラーハンドラーの追加（推奨）](#add-an-error-handler-to-a-module-in-the-new-experience-recommended)
+* [クラシックエクスペリエンスのモジュールにエラーハンドラーを追加する](#add-an-error-handler-to-a-module-in-the-classic-experience)
+
+#### 新しいエクスペリエンスのモジュールへのエラーハンドラーの追加（推奨）
 
 1. 左側のパネルの「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. エラー処理ルートを追加するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに入ります。
 1. エラーハンドラーのルートを追加するモジュールを右クリックし、**[!UICONTROL エラーハンドラーを追加]**&#x200B;を選択します。
 
-   ![&#x200B; エラーハンドラーのルート &#x200B;](assets/error-handler-route.png)
+   ![ エラーハンドラーをメニュー](assets/new-add-error-handler-in-menu.png)に追加
 
    エラーハンドラーのルートがモジュールに追加されます。 モジュールがルートの最後のモジュールである場合、エラーハンドラーはモジュールに直接従います。 モジュールの後にモジュールが多い場合は、別のエラーハンドラールートが追加されます。
 
    エラー処理モジュールには、ディレクティブのリストと、シナリオで使用されているアプリが表示されます。
 
-   ![&#x200B; エラーのルート &#x200B;](assets/error-route.png)
+   ![ ディレクティブの処理エラー](assets/new-error-handling-directives.png)
 
 1. いずれかのディレクティブを選択します。
 
@@ -136,9 +143,40 @@ ht-degree: 22%
 
    ルートにさらにモジュールを追加する場合は、デフォルトでIgnore ディレクティブが適用されます。 エラーが発生した場合は、そのルートの後続のモジュールが処理されます。
 
-   ディレクティブについて詳しくは、この記事の「[&#x200B; ディレクティブの処理エラー](#error-handling-directives)」を参照してください。
+   ディレクティブについて詳しくは、この記事の「[ ディレクティブの処理エラー](#error-handling-directives)」を参照してください。
 
-1. （オプション）エラー処理ルートにフィルターを追加します。 手順については、「[&#x200B; フィルターとネストをエラー処理ルートに追加](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md)」を参照してください。
+1. （オプション）エラー処理ルートにフィルターを追加します。 手順については、「[ フィルターとネストをエラー処理ルートに追加](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md)」を参照してください。
+
+>[!NOTE]
+>
+>エラーハンドラーのルートは、赤い&#x200B;**[!UICONTROL エラーハンドラー]** ラベルの点線で示されます。
+
+#### クラシックエクスペリエンスのモジュールにエラーハンドラーを追加する
+
+1. 左側のパネルの「**[!UICONTROL シナリオ]**」タブをクリックします。
+1. エラー処理ルートを追加するシナリオを選択します。
+1. シナリオの任意の場所をクリックして、シナリオエディターに入ります。
+1. エラーハンドラーのルートを追加するモジュールを右クリックし、**[!UICONTROL エラーハンドラーを追加]**&#x200B;を選択します。
+
+   ![ エラーハンドラーのルート ](assets/error-handler-route.png)
+
+   エラーハンドラーのルートがモジュールに追加されます。 モジュールがルートの最後のモジュールである場合、エラーハンドラーはモジュールに直接従います。 モジュールの後にモジュールが多い場合は、別のエラーハンドラールートが追加されます。
+
+   エラー処理モジュールには、ディレクティブのリストと、シナリオで使用されているアプリが表示されます。
+
+   ![ エラーのルート ](assets/error-route.png)
+
+1. いずれかのディレクティブを選択します。
+
+   または
+
+   1 つ以上のモジュールをエラーハンドラールートに追加します。
+
+   ルートにさらにモジュールを追加する場合は、デフォルトでIgnore ディレクティブが適用されます。 エラーが発生した場合は、そのルートの後続のモジュールが処理されます。
+
+   ディレクティブについて詳しくは、この記事の「[ ディレクティブの処理エラー](#error-handling-directives)」を参照してください。
+
+1. （オプション）エラー処理ルートにフィルターを追加します。 手順については、「[ フィルターとネストをエラー処理ルートに追加](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md)」を参照してください。
 
 >[!NOTE]
 >
@@ -146,18 +184,21 @@ ht-degree: 22%
 
 ### ルーターへのエラーハンドラーの追加
 
+* [新しいエクスペリエンスでルーターにエラーハンドラーを追加する（推奨）](#add-an-error-handler-to-a-router-in-the-new-experience-recommended)
+* [クラシックエクスペリエンスのルーターにエラーハンドラーを追加する](#add-an-error-handler-to-a-router-in-the-classic-experience)
+
+#### 新しいエクスペリエンスでルーターにエラーハンドラーを追加する（推奨）
+
 1. 左側のパネルの「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. エラー処理ルートを追加するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに入ります。
-1. エラーハンドラーのルートを追加するルーターを右クリックし、**[!UICONTROL エラーハンドラーを追加]**&#x200B;を選択します。
-
-   ![&#x200B; エラーハンドラーのルート &#x200B;](assets/error-handler-on-router.png)
+1. エラーハンドラーのルートを追加するルーターを右クリックし、**[!UICONTROL エラーハンドラーの追加]**&#x200B;を選択します。
 
    エラーハンドラーのルートがルーターに追加されます。
 
    エラー処理モジュールには、ディレクティブのリストと、シナリオで使用されているアプリが表示されます。
 
-   ![&#x200B; エラーのルート &#x200B;](assets/error-handler-route-from-router.png)
+   ![ ディレクティブの処理エラー](assets/new-error-handling-directives.png)
 
 1. いずれかのディレクティブを選択します。
 
@@ -167,13 +208,44 @@ ht-degree: 22%
 
    ルートにさらにモジュールを追加する場合は、デフォルトでIgnore ディレクティブが適用されます。 エラーが発生した場合は、そのルートの後続のモジュールが処理されます。
 
-   ディレクティブについて詳しくは、この記事の「[&#x200B; ディレクティブの処理エラー](#error-handling-directives)」を参照してください。
+   ディレクティブについて詳しくは、この記事の「[ ディレクティブの処理エラー](#error-handling-directives)」を参照してください。
 
-1. （オプション）エラー処理ルートにフィルターを追加します。 手順については、「[&#x200B; フィルターとネストをエラー処理ルートに追加](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md)」を参照してください。
+1. （オプション）エラー処理ルートにフィルターを追加します。 手順については、「[ フィルターとネストをエラー処理ルートに追加](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md)」を参照してください。
+
+>[!NOTE]
+>
+>エラーハンドラーのルートは、赤い&#x200B;**[!UICONTROL エラーハンドラー]** ラベルの点線で示されます。
+
+#### クラシックエクスペリエンスのルーターにエラーハンドラーを追加する
+
+1. 左側のパネルの「**[!UICONTROL シナリオ]**」タブをクリックします。
+1. エラー処理ルートを追加するシナリオを選択します。
+1. シナリオの任意の場所をクリックして、シナリオエディターに入ります。
+1. エラーハンドラーのルートを追加するルーターを右クリックし、**[!UICONTROL エラーハンドラーを追加]**&#x200B;を選択します。
+
+   ![ エラーハンドラーのルート ](assets/error-handler-on-router.png)
+
+   エラーハンドラーのルートがルーターに追加されます。
+
+   エラー処理モジュールには、ディレクティブのリストと、シナリオで使用されているアプリが表示されます。
+
+   ![ エラーのルート ](assets/error-handler-route-from-router.png)
+
+1. いずれかのディレクティブを選択します。
+
+   または
+
+   1 つ以上のモジュールをエラーハンドラールートに追加します。
+
+   ルートにさらにモジュールを追加する場合は、デフォルトでIgnore ディレクティブが適用されます。 エラーが発生した場合は、そのルートの後続のモジュールが処理されます。
+
+   ディレクティブについて詳しくは、この記事の「[ ディレクティブの処理エラー](#error-handling-directives)」を参照してください。
+
+1. （オプション）エラー処理ルートにフィルターを追加します。 手順については、「[ フィルターとネストをエラー処理ルートに追加](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md)」を参照してください。
 
 ## エラー処理ディレクティブ
 
-ディレクティブについて、以下で簡単に説明します。 詳しくは、[&#x200B; エラー処理のディレクティブ &#x200B;](/help/workfront-fusion/references/errors/directives-for-error-handling.md)を参照してください。
+ディレクティブについて、以下で簡単に説明します。 詳しくは、[ エラー処理のディレクティブ ](/help/workfront-fusion/references/errors/directives-for-error-handling.md)を参照してください。
 
 5つのディレクティブがあり、エラー後にシナリオ実行が続行されるかどうかに基づいて、次のカテゴリに分類できます。
 

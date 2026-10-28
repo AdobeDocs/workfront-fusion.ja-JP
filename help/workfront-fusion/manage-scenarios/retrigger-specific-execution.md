@@ -9,7 +9,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 16%
@@ -82,7 +82,7 @@ Webhook について詳しくは、[インスタントトリガー（Webhook）]
 1. ページの右側にある実行リストで、リトリガーする実行を探します。
 1. そのシナリオの&#x200B;**Retrigger**&#x200B;をクリックします。
 
-![図からのリトリガー](assets/retrigger-from-diagram.png)
+![図からのリトリガー](assets/new-retrigger-from-diagram.png)
 
 ### シナリオ履歴から実行を再トリガー
 
@@ -95,7 +95,7 @@ Webhook について詳しくは、[インスタントトリガー（Webhook）]
 1. リトリガーする実行を探します。 必要に応じて、フルテキスト検索を使用して検索できます。
 1. そのシナリオの&#x200B;**Retrigger**&#x200B;をクリックします。
 
-![履歴からのリトリガー](assets/retrigger-from-history.png)
+![履歴からのリトリガー](assets/new-retrigger-from-history.png)
 
 ### シナリオ実行ページからシナリオをリトリガーする
 
@@ -108,7 +108,7 @@ Webhook について詳しくは、[インスタントトリガー（Webhook）]
 1. 実行ページで、**Retrigger**&#x200B;をクリックします。
 
 
-![実行からのリトリガー](assets/retrigger-from-execution.png)
+![実行からのリトリガー](assets/new-retrigger-from-execution.png)
 
 
 

@@ -10,15 +10,15 @@ exl-id: 28ecca1f-a9c3-4b3d-95f5-73cb9a5dc4b9
 TQID: https://experienceleague.adobe.com/V3cpVf8NzJdGjSZvPA0Hy0Uui-zSdd986plS1Us0oNI
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Integrations
+source-git-commit: 4cd8b43e9ce9a16aca16397ce140cdd2467bf7d4
 workflow-type: tm+mt
-source-wordcount: 513
-ht-degree: 24%
-
+source-wordcount: '905'
+ht-degree: 14%
 ---
-
 # 基本シナリオへの Webhook の追加
 
 Webhookは、インスタントトリガーとも呼ばれ、特定のスケジュールではなく、変更があるたびにトリガーを開始できる特定の種類のシナリオモジュールです。
@@ -26,6 +26,10 @@ Webhookは、インスタントトリガーとも呼ばれ、特定のスケジ�
 この例では、リクエストが特定のリクエストキューに送信されるとすぐにシナリオを開始するWebhookを追加します。 その後、シナリオはこれらのリクエストをプロジェクトに変換します。
 
 この例では、[基本シナリオの作成](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)で作成したシナリオを変更します。
+
+>[!NOTE]
+>
+>Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス ](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
 
 ## アクセス要件
 
@@ -60,10 +64,67 @@ Webhookは、インスタントトリガーとも呼ばれ、特定のスケジ�
 
 この手順に従う前に、[基本シナリオの作成](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)で説明したシナリオを作成する必要があります。
 
-## Webhookの追加と設定
+## 新しいエクスペリエンスでWebhookを追加して設定する（推奨）
 
+* [Webhook モジュールの追加](#add-the-webhook-module)
+* [2つ目のモジュールを更新する](#update-the-second-module)
+* [検証と活用](#test-and-activate)
 
 ### Webhook モジュールの追加
+
+1. シナリオエディターでシナリオを開きます。
+1. 最初のモジュールを右クリックし、**[!UICONTROL モジュールを削除]**&#x200B;を選択します。
+
+   モジュールが削除され、空白のプレースホルダーが残ります。
+
+1. 空白のモジュールをクリックして、アプリとサービスのリストを開きます。
+
+   ![ アプリとサービス ピッカー](/help/workfront-fusion/build-practice-scenarios/assets/new-connector-picker.png)
+
+1. **Adobe Workfront**&#x200B;を選択します。
+1. 「**イベントを視聴**」を選択します。
+1. 「Webhook」フィールドの横にある「**追加**」をクリックします。
+1. 「レコードタイプ」フィールドで「**問題**」を選択すると、問題の変更がトリガーされます。
+1. 「状態」フィールドで、**新しい状態**&#x200B;を選択します。 これは、フィルターに使用される必須フィールドです。この例では説明しません。
+1. 「レコードの生成元」フィールドで、「**新しいレコードのみ**」を選択します。 これにより、問題が追加されたときに、更新または削除されたときではなく、シナリオをトリガーできます。
+1. 「**保存**」をクリックして、モジュール設定を保存します。
+
+### 2つ目のモジュールを更新する
+
+1. シナリオを開きます。
+1. 「**オブジェクトを変換**」モジュールをクリックして開きます。
+1. 「問題ID」フィールドで、黒いID ブロックを削除します。 ブロックは黒です。これは、マッピング元のモジュールが使用できなくなったためです。
+1. 最初のモジュール（監視イベント）の下にあるID ブロックを選択して、2番目のモジュールにマッピングします。
+1. 「**OK**」をクリックします。
+
+### 検証と活用
+
+1. 「**[!UICONTROL 1回実行]**」アイコンをクリックします。
+
+   「1回実行」は、新しいエクスペリエンスではアイコンのみです。 アイコンにカーソルを合わせると、**[!UICONTROL 1回実行]**&#x200B;のツールヒントが表示されます。
+
+   ![ シナリオボタンを実行](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/run-once-new.png)
+
+   新しいリクエストを監視するには、シナリオが実行されている必要があります。
+1. Fusionが接続しているWorkfront環境に移動し、問題を追加します。
+
+   シナリオを実行する必要があります。
+1. 出力を調べて、シナリオが期待どおりに実行されていることを確認します。
+1. シナリオが期待どおりに機能していることを確認したら、**スケジュール**&#x200B;切り替え&#x200B;**オン**&#x200B;をクリックします。
+
+   これにより、シナリオがアクティブになります。
+
+   ![ スケジュール設定の切り替え](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scheduling-new.png)
+
+1. コントロール領域の&#x200B;**保存** アイコン ![保存アイコン ](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png)をクリックして、シナリオの進行状況を保存します。
+
+## クラシックエクスペリエンスでのWebhookの追加と設定
+
+* [Webhook モジュールの追加（Classic）](#add-the-webhook-module-classic)
+* [2つ目のモジュールを更新する（クラシック）](#update-the-second-module-classic)
+* [テストとアクティブ化（クラシック）](#test-and-activate-classic)
+
+### Webhook モジュールの追加（Classic）
 
 1. シナリオエディターでシナリオを開きます。
 1. 最初のモジュールを右クリックし、**モジュールを削除**&#x200B;を選択します。
@@ -78,7 +139,7 @@ Webhookは、インスタントトリガーとも呼ばれ、特定のスケジ�
 1. 「レコードの生成元」フィールドで、「**新しいレコードのみ**」を選択します。 これにより、問題が追加されたときに、更新または削除されたときではなく、シナリオをトリガーできます。
 1. 「**保存**」をクリックして、モジュール設定を保存します。
 
-## 2つ目のモジュールを更新する
+### 2つ目のモジュールを更新する（クラシック）
 
 1. シナリオを開きます。
 1. 「**オブジェクトを変換**」モジュールをクリックして開きます。
@@ -86,9 +147,7 @@ Webhookは、インスタントトリガーとも呼ばれ、特定のスケジ�
 1. 最初のモジュール（監視イベント）の下にあるID ブロックを選択して、2番目のモジュールにマッピングします。
 1. 「**OK**」をクリックします。
 
-
-
-### 検証と活用
+### テストとアクティブ化（クラシック）
 
 1. シナリオエディターの左下隅にある「**[!UICONTROL 1 回実行]**」をクリックします。
 

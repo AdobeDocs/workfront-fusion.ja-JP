@@ -14,7 +14,7 @@ feature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 50%
@@ -75,11 +75,11 @@ ht-degree: 50%
    検索結果には検索語が含まれ、大文字と小文字は区別されません。
 1. コレクションの要素である値を選択するには、そのコレクションの横にある矢印をクリックし、表示される要素を選択します。
 
-   ![&#x200B; コレクション要素](assets/collection-dropdown.png)
+   ![ コレクション要素](/help/workfront-fusion/get-started-with-fusion/understand-fusion/assets/new-collection-dropdown.png)
 
 1. マッピングパネルから項目をクリックして、フィールドに挿入します。
 
-詳しくは、[&#x200B; モジュールの設定](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)を参照してください。
+詳しくは、[ モジュールの設定](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)を参照してください。
 
 
 ## トラブルシューティング

@@ -23,9 +23,9 @@ feature_v2:
 subfeature_v2:
   - id: a29813d3-f0cc-4b60-9396-13b558370803
     internal-label: Product announcements
-source-git-commit: 316b112552e5383fdca3f408223594a2fbb6f535
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '1645'
+source-wordcount: '1654'
 ht-degree: 82%
 ---
 # Adobe Workfront Fusion リリースアクティビティの概要
@@ -36,6 +36,7 @@ Adobe Workfront Fusion は、アプリと web サービスをシームレスに�
 
 ### 2026年10月
 
+* [Workfront Fusion リリースアクティビティ：2026年10月26日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-26.md)
 * [Workfront Fusion リリースアクティビティ：2026年10月19日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-19.md)
 * [Workfront Fusion リリースアクティビティ：2026年10月12日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-12.md)
 * [Workfront Fusion リリースアクティビティ：2026年10月5日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-5.md)

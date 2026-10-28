@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 96%
+source-wordcount: '488'
+ht-degree: 75%
 ---
 # マッピングの概要
 
@@ -23,6 +23,10 @@ ht-degree: 96%
 モジュールの操作により、その出力として 0 個、1 個または複数のバンドルが生成されます。 バンドルは、1 つ以上の項目で構成されます。
 
 これらの項目は、後のモジュールのフィールドにマッピングできます。
+
+>[!NOTE]
+>
+>Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス ](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
 
 シナリオで前のモジュールから出力された値を挿入するフィールドをクリックすると、マッピングパネルが表示されます。 ここでは、マッピングする項目を選択できます。 マッピングには、次のうち 1 つ以上を含めることができます。
 
@@ -37,15 +41,15 @@ ht-degree: 96%
 
 単一の項目
 
-![単一の項目のマッピング](assets/map-single.png)
+![単一の項目のマッピング](assets/new-map-single.png)
 
 テキストを含む複数の項目
 
-![複数の項目のマッピング](assets/map-multiple-with-text.png)
+![複数の項目のマッピング](assets/new-map-multiple-with-text.png)
 
 複数の項目とテキストを含む関数
 
-![テキストを含む数式のマッピング](assets/map-formula-with-text.png)
+![テキストを含む数式のマッピング](assets/new-map-formula-with-text.png)
 
 
 >[!ENDSHADEBOX]
@@ -61,16 +65,16 @@ ht-degree: 96%
 
 データをマッピングできるフィールドをクリックすると、マッピングパネルが開きます。
 
-最初のタブの![他のモジュールからのマッピング](assets/toolbar-icon-functions-you-map-from-other-modules.png)は、他のモジュールからマッピングできる項目を表示します。
+最初のタブには、他のモジュールからマッピングできる項目が表示されます。
 
 その他のタブには、数式の作成に使用できる関数、演算子およびキーワードが含まれます。 これらは、処理するデータのタイプに基づいて異なるタブに並べ替えられます。
 
-![マッピングパネル](assets/mapping-panel-blank.png)
+![マッピングパネル](assets/new-mapping-panel-blank.png)
 
 
 関数タブについて詳しくは、[関数の概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)を参照してください。
 
-関数を使用したアイテムのマッピングについて詳しくは、[組み込み関数を使用したアイテムのマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)を参照してください。
+関数を使用したアイテムのマッピングについて詳しくは、[組み込み関数を使用したアイテムのマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)を参照してください。
 
 ## コレクション
 
@@ -78,13 +82,13 @@ ht-degree: 96%
 
 コレクションタイプのバンドルは、モジュール出力のバンドルラベルの横に `(Collection)` を表示します。
 
-![コレクション](assets/collection.png)
+![コレクション](assets/new-collection.png)
 
 ほとんどの場合、コレクション全体を表す項目ではなく、コレクションの要素をマッピングします。
 
 マッピングパネルでコレクションの要素を見つけるには、コレクションの横にある矢印をクリックします。
 
-![コレクションドロップダウン](assets/collection-dropdown.png)
+![コレクションドロップダウン](assets/new-collection-dropdown.png)
 
 配列について詳しくは、[項目データタイプ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)を参照してください。
 
@@ -96,8 +100,8 @@ ht-degree: 96%
 
 配列タイプのバンドルは、モジュール出力のバンドルラベルの横に `(Array)` を表示します。
 
-マッピングパネルでは、配列は角括弧で表示されます。 配列タイプの項目は、項目のラベルの最後にある角括弧で識別できます。 マッピングパネルで特定の配列要素を見つけるには、配列の横にある矢印をクリックします。
+マッピングパネルでは、配列は角括弧で表示されます。 配列タイプの項目は、項目のラベルの末尾にある角括弧で識別できます。 マッピングパネルで特定の配列要素を見つけるには、配列の横にある矢印をクリックします。
 
-![配列](assets/array.png)
+![配列](assets/new-array.png)
 
 配列および配列要素のマッピングについて詳しくは、[配列および配列要素のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)を参照してください。
