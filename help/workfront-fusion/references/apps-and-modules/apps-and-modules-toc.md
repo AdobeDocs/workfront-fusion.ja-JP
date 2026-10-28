@@ -16,10 +16,10 @@ feature_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: d1a3b44e3b96a7b54a96f96dec9869ae5d928e77
+source-git-commit: 6efe84af0487893a3c33ba2bf6e3db5200f25446
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 89%
+source-wordcount: '543'
+ht-degree: 88%
 ---
 # Fusion アプリケーションとそのモジュールの参照：記事インデックス
 
@@ -53,6 +53,7 @@ Fusion には、アドビの多くの製品とサービス用コネクターが�
 * [Adobe Campaign モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-campaign-classic-connector.md)
 * [Adobe Content Tagger modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/content-tagging-modules.md)
 * [Adobe Creative Cloud ライブラリモジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
+* [Adobe CX Enterprise Coworkerモジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-cx-coworker-modules.md)
 * [Adobe Experience Manager Assets モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
 * [Adobe Experience Manager Forms モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
 * [Adobe Experience Manager MCP モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-mcp-modules.md)
