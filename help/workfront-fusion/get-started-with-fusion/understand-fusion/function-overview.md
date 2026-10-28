@@ -52,4 +52,4 @@ Fusionの「関数」エリアでカスタム関数を作成できます。 次�
 
 カスタム関数はAdobe App Builderを通じて機能するため、使用するにはAdobe App Builder ライセンスが必要です。
 
-カスタム関数の詳細と手順については、[ カスタム関数を使用したデータのマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)を参照してください。
+カスタム関数の詳細と手順については、[&#x200B; カスタム関数を使用したデータのマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)を参照してください。

@@ -22,7 +22,7 @@ ht-degree: 27%
 
 >[!NOTE]
 >
->Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス ](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
+>Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
 
 シナリオの実行中に、アクティブなモジュールは、新しいエクスペリエンスのモジュールのアイコンに回転するリング、またはクラシックエクスペリエンスのモジュールの周りに成長するリングでマークされます。 リングは、モジュールが実行中であることを示すだけで、進行状況は表示されません。 迅速に動作するモジュールは、リングの小さな部分しか表示されない場合があります。
 
@@ -42,11 +42,11 @@ ht-degree: 27%
 
 従来のエクスペリエンス
 
-![ クラシックエクスペリエンスの出力インジケーター](assets/data-flow-output.png)
+![&#x200B; クラシックエクスペリエンスの出力インジケーター](assets/data-flow-output.png)
 
 モジュールが複数のバンドルを処理する場合、処理された各バンドルにリングが表示され、出力インジケーターは出力する各バンドルに対してカウントされます。
 
-シナリオデータフローについて詳しくは、[ シナリオ実行フロー](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)を参照してください。
+シナリオデータフローについて詳しくは、[&#x200B; シナリオ実行フロー](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)を参照してください。
 
 ## アクセス要件
 

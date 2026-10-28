@@ -45,7 +45,7 @@ Adobe Workfront Fusion開発ツールは、シナリオの理解とトラブル�
 >
 >これらのツールは、DevToolの「**ツール**」タブでも、モジュールのフォーカス、マッピングによるモジュールの検索、Base 64で引き続き利用できます。 マッピングで`base64()`関数とバイナリ変換関数を使用することもできます。
 >
->また、シナリオエディターで[Live Trail](/help/workfront-fusion/manage-scenarios/live-trail.md)と実行履歴からリクエストと応答の詳細を直接表示することもできます。 検索と置換について詳しくは、[ シナリオ内の変数、ソース、接続の検索と置換](/help/workfront-fusion/manage-scenarios/find-and-replace.md)を参照してください。
+>また、シナリオエディターで[Live Trail](/help/workfront-fusion/manage-scenarios/live-trail.md)と実行履歴からリクエストと応答の詳細を直接表示することもできます。 検索と置換について詳しくは、[&#x200B; シナリオ内の変数、ソース、接続の検索と置換](/help/workfront-fusion/manage-scenarios/find-and-replace.md)を参照してください。
 <!-- BECKY CHECK ME: DevTool screenshots (10/27/26) show all ten tools still on the Tools tab, so this note now says the seven built-in tools are available in both places. The release notes implied only Focus a module, Find modules by mapping, and Base 64 would remain. Confirm after release whether the other seven are removed from the DevTool, and update this note and the Tools section if so.  -->
 <!-- BECKY CHECK ME: note added from the 10/23/26 release notes; the DevTool is NOT being removed. This article still needs a fuller restructure (new/classic split for the seven tools, Live Trail section or separate article). Confirm the menu labels. -->
 
@@ -91,7 +91,7 @@ Adobe統合シェルでFusionを使用する場合、または新しいFusion �
 
 1. デバッグするシナリオのシナリオエディターに移動します。
 
-   シナリオエディターを見つけるには、[ シナリオエディター](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)を参照してください。
+   シナリオエディターを見つけるには、[&#x200B; シナリオエディター](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)を参照してください。
 
 1. コントロール領域の3点アイコンをクリックし、**開発ツール**&#x200B;を選択します。
 
@@ -107,13 +107,13 @@ Adobe統合シェルでFusionを使用する場合、または新しいFusion �
 
 ### クラシックエクスペリエンスの開発ツールへのアクセス
 
-1. 画面の下部にある「**ヘルパーツール** ![ ヘルパーツール ](assets/debugger-icon.png)」アイコンをクリックします。
+1. 画面の下部にある「**ヘルパーツール** ![&#x200B; ヘルパーツール &#x200B;](assets/debugger-icon.png)」アイコンをクリックします。
 
 または
 
 1. デバッグするシナリオのシナリオエディターに移動します。
 
-   シナリオエディターを見つけるには、[ シナリオエディター](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)を参照してください。
+   シナリオエディターを見つけるには、[&#x200B; シナリオエディター](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)を参照してください。
 
 1. ページの何もないエリア（モジュール上以外）を右クリックします。
 1. 「**開発者ツールを開く**」を選択します。
@@ -135,7 +135,7 @@ Workfront Fusion Devtoolは、3つの主要セクションとヘルプリンク�
 
 <!-- BECKY CHECK ME: HOLD: in the new experience, Live Stream shows a 'no events available' message even while a scenario is running, which may be a bug. No updates have been made to this section. Re-test after release before changing anything here. If it is intended behavior, this section may need to point to Live Trail instead. -->
 
-1. **[!UICONTROL ライブストリーム]** アイコン ![ ライブストリームアイコン ](assets/live-stream-icon.png)をクリックして、「ライブストリーム」セクションを開きます。
+1. **[!UICONTROL ライブストリーム]** アイコン ![&#x200B; ライブストリームアイコン &#x200B;](assets/live-stream-icon.png)をクリックして、「ライブストリーム」セクションを開きます。
 1. 次のいずれかの操作を行います。
 
    <table style="table-layout:auto"> 
@@ -189,11 +189,11 @@ Workfront Fusion Devtoolは、3つの主要セクションとヘルプリンク�
 >
 >エラーが発生したシナリオからデバッガーにすばやく移動するには、モジュール出力のエラーメッセージで「**詳細を取得**」をクリックします。
 >
->![ モジュール出力の詳細を取得](assets/go-to-debugger.png)
+>![&#x200B; モジュール出力の詳細を取得](assets/go-to-debugger.png)
 
 シナリオデバッガーは、より複雑なシナリオで役に立ちます。 シナリオ実行の履歴が表示され、名前または ID でモジュールを検索できます。
 
-1. **[!UICONTROL Scenario Debugger]** アイコン ![Debugger アイコン ](assets/scenario-debugger-icon.png)をクリックして、Scenario Debuggerを開きます。
+1. **[!UICONTROL Scenario Debugger]** アイコン ![Debugger アイコン &#x200B;](assets/scenario-debugger-icon.png)をクリックして、Scenario Debuggerを開きます。
 
    シナリオデバッガーには、シナリオ内のモジュールが一覧表示されます。 各モジュールには、名前、アプリとアクション、モジュール IDを含む番号付きバッジが表示されます。
 
@@ -221,7 +221,7 @@ Workfront Fusion Devtoolは、3つの主要セクションとヘルプリンク�
 
 Workfront Fusionの開発ツールは、容易にシナリオを設定できます。
 
-1. **[!UICONTROL ツール]** アイコン ![ コンソールツールアイコン ](assets/console-tools-icon.png)をクリックして、ツールを開きます。
+1. **[!UICONTROL ツール]** アイコン ![&#x200B; コンソールツールアイコン &#x200B;](assets/console-tools-icon.png)をクリックして、ツールを開きます。
 1. （オプション）ツールを見つけるには、**ツール名で検索** フィールドにそのツール名を入力します。
 1. 使用するツールを選択します。
 1. 下記のフィールドを設定します。
@@ -372,7 +372,7 @@ ID で指定したモジュールの設定が開きます。
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Variable to Find]</td> 
-   <td> <p> シナリオの変数モジュールから置換する変数ピルを見つけ、この（[!UICONTROL変数を検索]）フィールドにコピーします。 フィールドには二重波括弧で囲まれて表示されます。 例：<code>&#123;&#123;5.value&#125;&#125;</code>。</p> </td> 
+   <td> <p> シナリオの変数モジュールから置換する変数ピルを見つけ、この（[!UICONTROL 変数を検索]）フィールドにコピーします。 フィールドには二重波括弧で囲まれて表示されます。 例：<code>&#123;&#123;5.value&#125;&#125;</code>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Replace With]</p> </td> 

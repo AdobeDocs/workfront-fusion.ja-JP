@@ -26,7 +26,7 @@ ht-degree: 75%
 
 >[!NOTE]
 >
->Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス ](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
+>Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
 
 シナリオで前のモジュールから出力された値を挿入するフィールドをクリックすると、マッピングパネルが表示されます。 ここでは、マッピングする項目を選択できます。 マッピングには、次のうち 1 つ以上を含めることができます。
 
@@ -74,7 +74,7 @@ ht-degree: 75%
 
 関数タブについて詳しくは、[関数の概要](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)を参照してください。
 
-関数を使用したアイテムのマッピングについて詳しくは、[組み込み関数を使用したアイテムのマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)を参照してください。
+関数を使用したアイテムのマッピングについて詳しくは、[組み込み関数を使用したアイテムのマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)を参照してください。
 
 ## コレクション
 

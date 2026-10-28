@@ -29,7 +29,7 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->* Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス ](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
+>* Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
 >* Workfrontのトリガーモジュールには、特定の条件が満たされた場合にのみシナリオを開始できるフィルターが含まれています。 ただし、モジュール間のフィルターは、トリガー以外のユースケースやWorkfront以外のユースケースごとに使用されるため、モジュール間のフィルターの使用方法を学習することが重要です。 この例では、モジュール内フィルターで満たすことができる機能にモジュール間フィルターを使用します。
 
 ## アクセス要件
@@ -97,7 +97,7 @@ ht-degree: 12%
 1. 「ラベル」フィールドに、「リクエストキュー用のフィルター」など、このフィルターのラベルを入力します。
 1. **条件**&#x200B;領域の上部フィールドで、最初のモジュールから`projectID`をマッピングします。
 
-   ![ プロジェクト IDのマッピング ](assets/new-map-in-filter.png)
+   ![&#x200B; プロジェクト IDのマッピング &#x200B;](assets/new-map-in-filter.png)
 
 1. **Condition**&#x200B;演算子は次のままにします。
 1. **条件**&#x200B;領域の下部のフィールドに、[のプロジェクト URLからメモしたプロジェクト IDを貼り付けて、フィルター](#prepare-to-add-the-filter)を追加する準備をします。
@@ -110,7 +110,7 @@ ht-degree: 12%
 
    「1回実行」は、新しいエクスペリエンスではアイコンのみです。 アイコンにカーソルを合わせると、**[!UICONTROL 1回実行]**&#x200B;のツールヒントが表示されます。
 
-   ![ シナリオボタンを実行](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/run-once-new.png)
+   ![&#x200B; シナリオボタンを実行](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/run-once-new.png)
 
 1. 出力を調べて、シナリオが期待どおりに実行されていることを確認します。
 
@@ -119,9 +119,9 @@ ht-degree: 12%
 
    これにより、シナリオがアクティブになります。
 
-   ![ スケジュール設定の切り替え](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scheduling-new.png)
+   ![&#x200B; スケジュール設定の切り替え](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scheduling-new.png)
 
-1. コントロール領域の&#x200B;**保存** アイコン ![保存アイコン ](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png)をクリックして、シナリオの進行状況を保存します。
+1. コントロール領域の&#x200B;**保存** アイコン ![保存アイコン &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png)をクリックして、シナリオの進行状況を保存します。
 
    >[!IMPORTANT]
    >
@@ -152,13 +152,13 @@ ht-degree: 12%
 ### フィルターの追加と設定（クラシック）
 
 1. シナリオエディターのシナリオに戻ります。
-1. 最初と2番目のモジュールの間にあるレンチアイコン ![ レンチアイコン ](assets/wrench-icon.png)をクリックし、**フィルターの設定**&#x200B;を選択します。
+1. 最初と2番目のモジュールの間にあるレンチアイコン ![&#x200B; レンチアイコン &#x200B;](assets/wrench-icon.png)をクリックし、**フィルターの設定**&#x200B;を選択します。
 1. 「ラベル」フィールドに、「リクエストキュー用のフィルター」など、このフィルターのラベルを入力します。
 1. **条件**&#x200B;領域の上部フィールドで、最初のモジュールから`projectID`をマッピングします。
 
-   ![ プロジェクト IDのマッピング ](assets/map-proj-id.png)
+   ![&#x200B; プロジェクト IDのマッピング &#x200B;](assets/map-proj-id.png)
 1. **Condition**&#x200B;演算子は次のままにします。
-1. **条件**&#x200B;領域の下部のフィールドに、[のプロジェクト URLからメモしたプロジェクト IDを貼り付けて、フィルター（クラシック） ](#prepare-to-add-the-filter-classic)を追加する準備をします。
+1. **条件**&#x200B;領域の下部のフィールドに、[のプロジェクト URLからメモしたプロジェクト IDを貼り付けて、フィルター（クラシック） &#x200B;](#prepare-to-add-the-filter-classic)を追加する準備をします。
 1. **OK**&#x200B;をクリックして、フィルター設定を保存します。
 
 ### テストとアクティブ化（クラシック）
@@ -179,4 +179,4 @@ ht-degree: 12%
 
 ## リソース
 
-* フィルターについて詳しくは、[ シナリオへのフィルターの追加](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md)を参照してください。
+* フィルターについて詳しくは、[&#x200B; シナリオへのフィルターの追加](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md)を参照してください。

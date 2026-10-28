@@ -22,7 +22,7 @@ ht-degree: 71%
 
 >[!NOTE]
 >
->Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス ](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
+>Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
 
 ## アクセス要件
 
@@ -62,7 +62,7 @@ ht-degree: 71%
 
 <table>
     <tr>
-        <td>[!UICONTROL初期値]</td>
+        <td>[!UICONTROL 初期値]</td>
         <td>最初のイテレーションでモジュールに含める値を入力するか、マッピングします。 デフォルト値は 1 です。</td>
     </tr>
     <tr>
@@ -70,7 +70,7 @@ ht-degree: 71%
         <td>モジュールが繰り返す回数を入力またはマッピングします。 この数は、0 以上 10,000 以下である必要があります。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL ステップ ]</td>
+        <td>[!UICONTROL ステップ &#x200B;]</td>
         <td>これは、モジュールが値を増やす回数です。 デフォルト値は 1 です。</td>
     </tr>
 </table>
@@ -79,7 +79,7 @@ ht-degree: 71%
 
 例えば、[!UICONTROL リピーター]モジュールを使用して「こんにちは 1」、「こんにちは 2」などの件名のメールを 5 通送信するには、**[!UICONTROL メール]／[!UICONTROL 自分にメール]**&#x200B;モジュールを[!UICONTROL リピーター]モジュールに接続します。
 
-1. 画面下部の[!UICONTROL  フロー制御] アイコン ![ フロー制御アイコン ](/help/workfront-fusion/references/apps-and-modules/assets/new-flow-control-icon.png)をクリックし、表示されるメニューの&#x200B;**[!UICONTROL リピータ]**&#x200B;をクリックします。
+1. 画面下部の[!UICONTROL &#x200B; フロー制御] アイコン ![&#x200B; フロー制御アイコン &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/new-flow-control-icon.png)をクリックし、表示されるメニューの&#x200B;**[!UICONTROL リピータ]**&#x200B;をクリックします。
 1. [!UICONTROL Repeater] モジュールをクリックし、表示されるボックスで&#x200B;**[!UICONTROL 自動的に接続]**&#x200B;をクリックします。
 
    リピータ モジュールが開きます。
@@ -88,7 +88,7 @@ ht-degree: 71%
 
    この例では、5と入力します。
 
-   ![ リピーター](/help/workfront-fusion/references/apps-and-modules/assets/new-repeater.png)
+   ![&#x200B; リピーター](/help/workfront-fusion/references/apps-and-modules/assets/new-repeater.png)
 
    アイテムの値は、繰り返されるごとに、**[!UICONTROL ステップ]**&#x200B;フィールドで指定したこの数ずつ増加します。この値は、**[!UICONTROL 詳細設定を表示]**&#x200B;を選択すると表示できます。 この数値は、デフォルトでは 1 です。
 
@@ -99,7 +99,7 @@ ht-degree: 71%
 
    ここでのメールの例では、[!UICONTROL 件名]ボックスに「こんにちは」と入力し、リピーターモジュールから `i` をマッピングします。
 
-   ![ リピーター](/help/workfront-fusion/references/apps-and-modules/assets/new-repeater-3.png)
+   ![&#x200B; リピーター](/help/workfront-fusion/references/apps-and-modules/assets/new-repeater-3.png)
 
 
 
@@ -111,7 +111,7 @@ ht-degree: 71%
 
 ## [!UICONTROL イテレーター]
 
-[!UICONTROL イテレーター]は、配列を一連のバンドルに変換する特別なタイプのモジュールです。 配列の各項目は、[!UICONTROL イテレーター]モジュールの出力では個別のバンドルになります。 詳しくは、[ イテレーターモジュール ](/help/workfront-fusion/references/modules/iterator-module.md)を参照してください。
+[!UICONTROL イテレーター]は、配列を一連のバンドルに変換する特別なタイプのモジュールです。 配列の各項目は、[!UICONTROL イテレーター]モジュールの出力では個別のバンドルになります。 詳しくは、[&#x200B; イテレーターモジュール &#x200B;](/help/workfront-fusion/references/modules/iterator-module.md)を参照してください。
 
 ## 配列アグリゲーター
 
@@ -119,11 +119,11 @@ ht-degree: 71%
 
 ## [!UICONTROL ルーター]
 
-[!UICONTROL ルーター]モジュールを使用すると、フローを複数のルートに分岐し、データを各ルートで別々に処理できます。 [!UICONTROL ルーター]モジュールはバンドルを受け取ると、ルートが[!UICONTROL ルーター]モジュールに接続された順序で、接続されている各ルートにバンドルを転送します。 詳しくは、[Adobe Workfront Fusionのルーターモジュール ](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)を参照してください。
+[!UICONTROL ルーター]モジュールを使用すると、フローを複数のルートに分岐し、データを各ルートで別々に処理できます。 [!UICONTROL ルーター]モジュールはバンドルを受け取ると、ルートが[!UICONTROL ルーター]モジュールに接続された順序で、接続されている各ルートにバンドルを転送します。 詳しくは、[Adobe Workfront Fusionのルーターモジュール &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)を参照してください。
 
 ## 指令
 
 エラー処理ディレクティブを使用すると、シナリオがエラーにどのように反応するかを制御できます。
 
-エラー処理ディレクティブについて詳しくは、[ エラー処理ディレクティブ ](/help/workfront-fusion/references/errors/directives-for-error-handling.md)を参照してください。
+エラー処理ディレクティブについて詳しくは、[&#x200B; エラー処理ディレクティブ &#x200B;](/help/workfront-fusion/references/errors/directives-for-error-handling.md)を参照してください。
 

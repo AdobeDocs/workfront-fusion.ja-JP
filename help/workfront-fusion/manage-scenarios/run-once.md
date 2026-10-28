@@ -26,7 +26,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->新しいエクスペリエンスでは、1回実行すると、リクエストと応答の詳細が常に保持されます。 シナリオの通常の実行の場合は、シナリオ設定で「一時デバッグログ」をオンにすることで、シナリオを収集できます。 詳しくは、[ シナリオ設定の設定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs)を参照してください。
+>新しいエクスペリエンスでは、1回実行すると、リクエストと応答の詳細が常に保持されます。 シナリオの通常の実行の場合は、シナリオ設定で「一時デバッグログ」をオンにすることで、シナリオを収集できます。 詳しくは、[&#x200B; シナリオ設定の設定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs)を参照してください。
 
 ## 1回実行の機能の使用
 

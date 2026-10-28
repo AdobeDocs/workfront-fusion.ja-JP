@@ -29,7 +29,7 @@ Fusionには、データに対して条件付きロジックを変換および�
 
 >[!NOTE]
 >
->Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス ](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
+>Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
 
 ## アクセス要件
 
@@ -77,7 +77,7 @@ Fusionには、データに対して条件付きロジックを変換および�
 1. アプリケーションのリストから「Adobe Workfront」を選択し、「**[!UICONTROL レコードを更新]**」モジュールを選択します。
 1. 「ID」フィールドで、オブジェクトを変換モジュールの下にあるID ブロックを選択します。 これは、そのモジュールによって出力されたプロジェクトのIDです。
 
-   ![ レコードモジュールの更新](assets/new-mapped-update-record.png)でマッピングされたID
+   ![&#x200B; レコードモジュールの更新](assets/new-mapped-update-record.png)でマッピングされたID
 
 1. 更新するオブジェクトがプロジェクトであるため、「レコードタイプ」フィールドで「プロジェクト」を選択します。
 1. 「マップするフィールドを選択」領域で、「名前」を選択します。
@@ -92,7 +92,7 @@ Fusionには、データに対して条件付きロジックを変換および�
 1. 「**名前**」フィールドをクリックします。
 
    マッピングパネルが開きます。
-1. マッピングパネルで、**テキスト関数とバイナリ関数** アイコンをクリックします。 ![ テキスト関数アイコン ](assets/new-text-binary-function.png)
+1. マッピングパネルで、**テキスト関数とバイナリ関数** アイコンをクリックします。 ![&#x200B; テキスト関数アイコン &#x200B;](assets/new-text-binary-function.png)
 1. 関数&#x200B;**upper**&#x200B;を選択します。
 
    関数は、「名前」フィールドに表示されます。これには、想定される入力の書式が含まれます。
@@ -100,7 +100,7 @@ Fusionには、データに対して条件付きロジックを変換および�
    この例の入力は、プロジェクトが変換されたイシューの名前です。
 
 1. 入力が行われる場所なので、括弧の間にカーソルを移動します。
-1. マッピングパネルで、**モジュール出力** アイコンをクリックします。 ![ モジュール出力アイコン ](assets/new-module-output-icon.png)
+1. マッピングパネルで、**モジュール出力** アイコンをクリックします。 ![&#x200B; モジュール出力アイコン &#x200B;](assets/new-module-output-icon.png)
 1. 最初のモジュールによって出力された名前ブロックを選択します。
 
    名前ブロックが関数に表示されます。
@@ -115,16 +115,16 @@ Fusionには、データに対して条件付きロジックを変換および�
 
    「1回実行」は、新しいエクスペリエンスではアイコンのみです。 アイコンにカーソルを合わせると、**[!UICONTROL 1回実行]**&#x200B;のツールヒントが表示されます。
 
-   ![ シナリオボタンを実行](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/run-once-new.png)
+   ![&#x200B; シナリオボタンを実行](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/run-once-new.png)
 
 1. 出力を調べて、シナリオが期待どおりに実行されていることを確認します。
 1. シナリオが期待どおりに機能していることを確認したら、**スケジュール**&#x200B;切り替え&#x200B;**オン**&#x200B;をクリックします。
 
    これにより、シナリオがアクティブになります。 アクティブなシナリオは、トリガーモジュールで設定されたスケジュールに従って実行されます。
 
-   ![ スケジュール設定の切り替え](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scheduling-new.png)
+   ![&#x200B; スケジュール設定の切り替え](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scheduling-new.png)
 
-1. コントロール領域の&#x200B;**保存** アイコン ![保存アイコン ](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png)をクリックして、シナリオの進行状況を保存します。
+1. コントロール領域の&#x200B;**保存** アイコン ![保存アイコン &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png)をクリックして、シナリオの進行状況を保存します。
 
    >[!IMPORTANT]
    >
@@ -149,7 +149,7 @@ Fusionには、データに対して条件付きロジックを変換および�
 1. 「マップするフィールドを選択」領域で、「名前」を選択します。
 
    「名前」フィールドが開きます。
-1. [引き続き、名前の更新（Classic） ](#map-the-function-for-the-name-update-classic)の関数をマッピングします。
+1. [引き続き、名前の更新（Classic） &#x200B;](#map-the-function-for-the-name-update-classic)の関数をマッピングします。
 
 ### 名前の更新（クラシック）の関数をマッピング
 
@@ -158,7 +158,7 @@ Fusionには、データに対して条件付きロジックを変換および�
 1. 「**名前**」フィールドをクリックします。
 
    マッピングパネルが開きます。
-1. マッピングパネルで、**テキスト関数とバイナリ関数** アイコンをクリックします。 ![ テキスト関数アイコン ](assets/toolbar-icon-text-binary-functions.png)
+1. マッピングパネルで、**テキスト関数とバイナリ関数** アイコンをクリックします。 ![&#x200B; テキスト関数アイコン &#x200B;](assets/toolbar-icon-text-binary-functions.png)
 1. 関数&#x200B;**upper**&#x200B;を選択します。
 
    関数は、「名前」フィールドに表示されます。これには、想定される入力の書式が含まれます。
@@ -166,7 +166,7 @@ Fusionには、データに対して条件付きロジックを変換および�
    この例の入力は、プロジェクトが変換されたイシューの名前です。
 
 1. 入力が行われる場所なので、括弧の間にカーソルを移動します。
-1. マッピングパネルで、**モジュール出力** アイコンをクリックします。 ![ モジュール出力アイコン ](assets/toolbar-icon-functions-you-map-from-other-modules.png)
+1. マッピングパネルで、**モジュール出力** アイコンをクリックします。 ![&#x200B; モジュール出力アイコン &#x200B;](assets/toolbar-icon-functions-you-map-from-other-modules.png)
 1. 最初のモジュールによって出力された名前ブロックを選択します。
 
    名前ブロックが関数に表示されます。

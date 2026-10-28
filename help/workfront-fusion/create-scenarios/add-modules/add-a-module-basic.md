@@ -20,11 +20,11 @@ ht-degree: 8%
 
 シナリオは、アプリ内でのデータの変換方法や、アプリと web サービスの間でのデータの転送方法を示す、一連のモジュールで構成されます。 モジュールを作成するには、モジュールを追加および設定します。
 
-この記事では、シナリオにモジュールを追加する基本的なプロセスについて説明します。 シナリオの追加方法について詳しくは、[ モジュールの追加：記事インデックス ](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)の他の記事を参照してください。
+この記事では、シナリオにモジュールを追加する基本的なプロセスについて説明します。 シナリオの追加方法について詳しくは、[&#x200B; モジュールの追加：記事インデックス &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)の他の記事を参照してください。
 
 >[!NOTE]
 >
->Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス ](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
+>Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
 
 ## アクセス要件
 
@@ -59,7 +59,7 @@ ht-degree: 8%
 
 シナリオの最初のモジュールは、通常、トリガーモジュールです。
 
-トリガーモジュールについて詳しくは、「モジュールの概要」の「[トリガーモジュール ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules)」を参照してください。
+トリガーモジュールについて詳しくは、「モジュールの概要」の「[トリガーモジュール &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules)」を参照してください。
 
 * [新しいエクスペリエンスに最初のモジュールを追加する（推奨）](#add-the-first-module-in-the-new-experience-recommended)
 * [クラシックエクスペリエンスに最初のモジュールを追加する](#add-the-first-module-in-the-classic-experience)
@@ -71,13 +71,13 @@ ht-degree: 8%
 
    シナリオエディターが開き、プレースホルダーモジュールと使用可能なコネクタのリストが表示されます。
 
-   ![ プレースホルダーモジュール ](/help/workfront-fusion/build-practice-scenarios/assets/new-placeholder-module.png)
+   ![&#x200B; プレースホルダーモジュール &#x200B;](/help/workfront-fusion/build-practice-scenarios/assets/new-placeholder-module.png)
 
-   ![ アプリとサービス ピッカー](/help/workfront-fusion/build-practice-scenarios/assets/new-connector-picker.png)
+   ![&#x200B; アプリとサービス ピッカー](/help/workfront-fusion/build-practice-scenarios/assets/new-connector-picker.png)
 
 1. このシナリオを開始するコネクタまたはWebhookを選択します。
 
-   * 左側のパネル（[!UICONTROL お気に入り]、[!UICONTROL すべてのアプリケーション ]、[!UICONTROL Adobe Workfront]、[!UICONTROL Adobe Firefly Services]、[!UICONTROL Adobe Creativeとコンテンツ ]、[!UICONTROL Adobe Cloud Services]、[!UICONTROL 生成AI]、または[!UICONTROL 組み込み]）を使用してカテゴリ別に参照するか、
+   * 左側のパネル（[!UICONTROL お気に入り]、[!UICONTROL すべてのアプリケーション &#x200B;]、[!UICONTROL Adobe Workfront]、[!UICONTROL Adobe Firefly Services]、[!UICONTROL Adobe Creativeとコンテンツ &#x200B;]、[!UICONTROL Adobe Cloud Services]、[!UICONTROL 生成AI]、または[!UICONTROL 組み込み]）を使用してカテゴリ別に参照するか、
    * 検索ボックスに語句を入力します。 入力すると結果が更新され、コネクタの一致はモジュール名と説明の一致の前に一覧表示されます。
 
 1. シナリオに追加するモジュールをクリックします。
@@ -86,7 +86,7 @@ ht-degree: 8%
 
    モジュールの設定は、カンバスの右側にあるパネルで開きます。
 
-   特定のモジュールの設定の手順については、[Fusion アプリケーションとそのモジュールのリファレンスに記載されている、選択したアプリケーションの記事を参照してください。記事インデックス ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)。
+   特定のモジュールの設定の手順については、[Fusion アプリケーションとそのモジュールのリファレンスに記載されている、選択したアプリケーションの記事を参照してください。記事インデックス &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)。
 
 >[!NOTE]
 >
@@ -106,12 +106,12 @@ ht-degree: 8%
 
    シナリオエディターが開き、プレースホルダー（疑問符）モジュールと使用可能なコネクタのリストが表示されます。
 
-   ![ プレースホルダーモジュール ](assets/placeholder-module.png)
+   ![&#x200B; プレースホルダーモジュール &#x200B;](assets/placeholder-module.png)
 
 1. このシナリオを開始するコネクタまたはWebhookを選択します。 リストの検索バーにコネクタの名前を入力して、リストをフィルタリングできます。
 1. モジュールを設定します。
 
-   特定のモジュールの設定の手順については、[Fusion アプリケーションとそのモジュールのリファレンスに記載されている、選択したアプリケーションの記事を参照してください。記事インデックス ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)。
+   特定のモジュールの設定の手順については、[Fusion アプリケーションとそのモジュールのリファレンスに記載されている、選択したアプリケーションの記事を参照してください。記事インデックス &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)。
 
 >[!NOTE]
 >
@@ -132,7 +132,7 @@ ht-degree: 8%
 
 1. （オプション）別のコネクタを選択するには、リストで「**別のモジュールを追加**」をクリックし、コネクタを選択します。
 
-   * 左側のパネル（[!UICONTROL お気に入り]、[!UICONTROL すべてのアプリケーション ]、[!UICONTROL Adobe Workfront]、[!UICONTROL Adobe Firefly Services]、[!UICONTROL Adobe Creativeとコンテンツ ]、[!UICONTROL Adobe Cloud Services]、[!UICONTROL 生成AI]、または[!UICONTROL 組み込み]）を使用してカテゴリ別に参照するか、
+   * 左側のパネル（[!UICONTROL お気に入り]、[!UICONTROL すべてのアプリケーション &#x200B;]、[!UICONTROL Adobe Workfront]、[!UICONTROL Adobe Firefly Services]、[!UICONTROL Adobe Creativeとコンテンツ &#x200B;]、[!UICONTROL Adobe Cloud Services]、[!UICONTROL 生成AI]、または[!UICONTROL 組み込み]）を使用してカテゴリ別に参照するか、
    * 検索ボックスに語句を入力します。 入力すると結果が更新され、コネクタの一致はモジュール名と説明の一致の前に一覧表示されます。
 
 1. シナリオに追加するモジュールをクリックします。
@@ -141,7 +141,7 @@ ht-degree: 8%
 
    モジュールの設定は、カンバスの右側にあるパネルで開きます。
 
-   特定のモジュールの設定の手順については、[Fusion アプリケーションとそのモジュールのリファレンスに記載されている、選択したアプリケーションの記事を参照してください。記事インデックス ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)。
+   特定のモジュールの設定の手順については、[Fusion アプリケーションとそのモジュールのリファレンスに記載されている、選択したアプリケーションの記事を参照してください。記事インデックス &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)。
 
 ### クラシックエクスペリエンスに別のモジュールを追加する
 
@@ -154,7 +154,7 @@ ht-degree: 8%
 1. （オプション）別のコネクタを選択するには、リストで「**別のモジュールを追加**」をクリックし、コネクタを選択します。 リストの検索バーにコネクタの名前を入力して、リストをフィルタリングできます。
 1. モジュールを設定します。
 
-   特定のモジュールの設定の手順については、[Fusion アプリケーションとそのモジュールのリファレンスに記載されている、選択したアプリケーションの記事を参照してください。記事インデックス ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)。
+   特定のモジュールの設定の手順については、[Fusion アプリケーションとそのモジュールのリファレンスに記載されている、選択したアプリケーションの記事を参照してください。記事インデックス &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)。
 
 ## シナリオ内の既存のモジュール間にモジュールを挿入する
 
@@ -173,7 +173,7 @@ ht-degree: 8%
 
 1. （オプション）別のコネクタを選択するには、リストで「**別のモジュールを追加**」をクリックし、コネクタを選択します。
 
-   * 左側のパネル（[!UICONTROL お気に入り]、[!UICONTROL すべてのアプリケーション ]、[!UICONTROL Adobe Workfront]、[!UICONTROL Adobe Firefly Services]、[!UICONTROL Adobe Creativeとコンテンツ ]、[!UICONTROL Adobe Cloud Services]、[!UICONTROL 生成AI]、または[!UICONTROL 組み込み]）を使用してカテゴリ別に参照するか、
+   * 左側のパネル（[!UICONTROL お気に入り]、[!UICONTROL すべてのアプリケーション &#x200B;]、[!UICONTROL Adobe Workfront]、[!UICONTROL Adobe Firefly Services]、[!UICONTROL Adobe Creativeとコンテンツ &#x200B;]、[!UICONTROL Adobe Cloud Services]、[!UICONTROL 生成AI]、または[!UICONTROL 組み込み]）を使用してカテゴリ別に参照するか、
    * 検索ボックスに語句を入力します。 入力すると結果が更新され、コネクタの一致はモジュール名と説明の一致の前に一覧表示されます。
 
 1. シナリオに追加するモジュールをクリックします。
@@ -182,7 +182,7 @@ ht-degree: 8%
 
    モジュールの設定は、カンバスの右側にあるパネルで開きます。
 
-   特定のモジュールの設定の手順については、[Fusion アプリケーションとそのモジュールのリファレンスに記載されている、選択したアプリケーションの記事を参照してください。記事インデックス ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)。
+   特定のモジュールの設定の手順については、[Fusion アプリケーションとそのモジュールのリファレンスに記載されている、選択したアプリケーションの記事を参照してください。記事インデックス &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)。
 
 >[!NOTE]
 >
@@ -207,7 +207,7 @@ ht-degree: 8%
 1. （オプション）別のコネクタを選択するには、リストで「**別のモジュールを追加**」をクリックし、コネクタを選択します。 リストの検索バーにコネクタの名前を入力して、リストをフィルタリングできます。
 1. モジュールを設定します。
 
-   特定のモジュールの設定の手順については、[Fusion アプリケーションとそのモジュールのリファレンスに記載されている、選択したアプリケーションの記事を参照してください。記事インデックス ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)。
+   特定のモジュールの設定の手順については、[Fusion アプリケーションとそのモジュールのリファレンスに記載されている、選択したアプリケーションの記事を参照してください。記事インデックス &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)。
 
 >[!NOTE]
 >

@@ -29,7 +29,7 @@ Webhookは、インスタントトリガーとも呼ばれ、特定のスケジ�
 
 >[!NOTE]
 >
->Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス ](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
+>Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
 
 ## アクセス要件
 
@@ -79,7 +79,7 @@ Webhookは、インスタントトリガーとも呼ばれ、特定のスケジ�
 
 1. 空白のモジュールをクリックして、アプリとサービスのリストを開きます。
 
-   ![ アプリとサービス ピッカー](/help/workfront-fusion/build-practice-scenarios/assets/new-connector-picker.png)
+   ![&#x200B; アプリとサービス ピッカー](/help/workfront-fusion/build-practice-scenarios/assets/new-connector-picker.png)
 
 1. **Adobe Workfront**&#x200B;を選択します。
 1. 「**イベントを視聴**」を選択します。
@@ -103,7 +103,7 @@ Webhookは、インスタントトリガーとも呼ばれ、特定のスケジ�
 
    「1回実行」は、新しいエクスペリエンスではアイコンのみです。 アイコンにカーソルを合わせると、**[!UICONTROL 1回実行]**&#x200B;のツールヒントが表示されます。
 
-   ![ シナリオボタンを実行](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/run-once-new.png)
+   ![&#x200B; シナリオボタンを実行](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/run-once-new.png)
 
    新しいリクエストを監視するには、シナリオが実行されている必要があります。
 1. Fusionが接続しているWorkfront環境に移動し、問題を追加します。
@@ -114,9 +114,9 @@ Webhookは、インスタントトリガーとも呼ばれ、特定のスケジ�
 
    これにより、シナリオがアクティブになります。
 
-   ![ スケジュール設定の切り替え](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scheduling-new.png)
+   ![&#x200B; スケジュール設定の切り替え](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scheduling-new.png)
 
-1. コントロール領域の&#x200B;**保存** アイコン ![保存アイコン ](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png)をクリックして、シナリオの進行状況を保存します。
+1. コントロール領域の&#x200B;**保存** アイコン ![保存アイコン &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png)をクリックして、シナリオの進行状況を保存します。
 
 ## クラシックエクスペリエンスでのWebhookの追加と設定
 

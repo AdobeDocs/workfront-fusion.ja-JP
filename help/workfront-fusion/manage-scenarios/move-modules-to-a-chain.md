@@ -24,7 +24,7 @@ ht-degree: 16%
 
 >[!NOTE]
 >
->Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス ](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
+>Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
 
 Workfront Fusionは、モジュールグループをチェーンに移動し、次のような機能を提供します。
 
@@ -40,7 +40,7 @@ Workfront Fusionは、モジュールグループをチェーンに移動し、�
 
 連鎖シナリオの計画について詳しくは、[複数のシナリオを連鎖させる](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)を参照してください。
 
-チェーンモジュールの設定方法については、[ チェーンモジュール ](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)を参照してください。
+チェーンモジュールの設定方法については、[&#x200B; チェーンモジュール &#x200B;](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)を参照してください。
 
 ## アクセス要件
 

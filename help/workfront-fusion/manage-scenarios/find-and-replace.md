@@ -16,7 +16,7 @@ ht-degree: 15%
 
 >[!NOTE]
 >
->この機能は、新しいシナリオエディターエクスペリエンスでのみ使用できます。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス ](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
+>この機能は、新しいシナリオエディターエクスペリエンスでのみ使用できます。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
 
 「検索して置換」を使用すると、一度に多くのモジュールで同じ変更を行うことができます。 実行できる操作：
 
@@ -26,7 +26,7 @@ ht-degree: 15%
 
 変更を行う前に、「検索と置換」を選択すると、影響を受けるモジュールのプレビューが表示されます。
 
-従来のエクスペリエンスでは、開発ツールのスワップ変数、リマップソース、およびスワップ接続ツールを使用して、これらのタスクを実行できます。 詳しくは、[ シナリオのデバッグ ](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)を参照してください。
+従来のエクスペリエンスでは、開発ツールのスワップ変数、リマップソース、およびスワップ接続ツールを使用して、これらのタスクを実行できます。 詳しくは、[&#x200B; シナリオのデバッグ &#x200B;](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)を参照してください。
 
 ## アクセス要件
 
