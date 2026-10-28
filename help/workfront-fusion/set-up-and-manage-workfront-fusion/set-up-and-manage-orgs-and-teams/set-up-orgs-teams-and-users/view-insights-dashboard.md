@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 45c755a2f6152b6e230864e4c840d0334705bd22
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 6%
+source-wordcount: '1307'
+ht-degree: 5%
 ---
 # 組織のインサイトダッシュボードの表示
 
@@ -67,23 +67,31 @@ Fusion Insights ダッシュボードでは、次の指標を確認できます�
 
 * **失敗した実行ログ**
 この表には、組織全体で失敗したシナリオまたは警告したシナリオの実行がすべて一覧表示されるため、ダッシュボードを離れることなく問題の実行を検索してトラブルシューティングを行うことができます。
+* **組織操作**
+このグラフでは、組織で使用されている操作の数を表示できます。 特定のチームまたはシナリオを選択し、先週、月、または年の操作を表示できます。
+* **操作ごとの上位シナリオ**
+このグラフでは、最も多くの操作を使用しているシナリオを表示できます。 特定のチームを選択するか、最終日、週、または月のデータを表示できます。
 
-* **処理待ちの実行**
-このグラフは、特定の時点で処理を待っている実行の数（実行バックログとも呼ばれます）を示しています。
+<!--
 
-  処理待ちの実行数が多いと、Fusion インスタンスのパフォーマンスに影響する場合があります。 実行バックログの実行数が5,000件に達すると、通知が届きます。 責任あるシナリオを特定し、変更または無効化することをお勧めします。 高い実行バックログが保持される場合、Fusion チームは責任あるシナリオを無効にすることで、Fusion インスタンスのパフォーマンスを保護します。
-* **プール稼働率**
-このグラフは、時間の経過に伴うワーカープールの使用率を示しています。 このグラフにワーカープールの使用率が日常的に表示される場合は、いくつかのシナリオを別のプールに割り当てることができます。
+* **Executions waiting to be processed**
+   This chart shows the number of executions waiting to be processed (also known as the execution backlog) at a given point in time. 
 
-  プールの使用率が100%に近づいている場合、同じプールを使用する他のリソースが遅延または中断される可能性があります。 このような場合は、使用率の高いシナリオを別のワーカープールに再割り当てするか、既存のシナリオを変更してリソースの負荷を軽減することをお勧めします。
-* シナリオごとの&#x200B;**実行**
-このグラフには、シナリオごとの実行が表示されます。 色が異なれば、シナリオも異なります。 グラフにカーソルを合わせると、どの色がどのシナリオであるかを示すウィンドウが表示されます。
+   A high number of executions waiting to be processed may affect performance in your Fusion instance. You will receive a notification if your execution backlog reaches 5000 executions. We recommend identifying responsible scenarios and modifying or disabling them. If the high execution backlog persists, the Fusion team will protect the performance of your Fusion instance by disabling the responsible scenarios.
+* **Pool Utilization**
+   This chart shows worker pool utilization over time. If this chart routinely shows worker pool utilization, you may want to assign some scenarios to another pool.
 
-  このグラフを使用して、実行バックログまたはワーカープールの使用率が高い原因となるシナリオを特定できます。
-* **実行の期間**
-このグラフには、シナリオごとの実行が表示されます。 色が異なれば、シナリオも異なります。 グラフにカーソルを合わせると、どの色がどのシナリオであるかを示すウィンドウが表示されます。
+   If a pool is nearing 100% utilization, other resources that use the same pool may be delayed or disrupted. If this occurs, we recommend reassigning a high-usage scenario to another worker pool, or modifying existing scenarios to be less resource intensive.
+* **Executions per scenario**
+   This chart displays executions per scenario. Different colors represent different scenarios. When you hover over the chart, a window appears that shows which color is which scenario.
 
-  このグラフを使用すると、接続されたアプリまたはサービスの問題の影響を受けるシナリオなど、通常よりも時間がかかるシナリオを特定できます。
+   You can use this chart to identify which scenarios may be causing an execution backlog or high worker pool utilization. 
+* **Duration of executions**
+   This chart displays executions per scenario. Different colors represent different scenarios. When you hover over the chart, a window appears that shows which color is which scenario.
+
+   You can use this chart to identify scenarios that are taking longer than usual, including those affected by issues with a connected app or service.
+
+-->
 
 ## Fusion Insights ダッシュボードを見る
 
@@ -96,10 +104,93 @@ Fusion Insights ダッシュボードでは、次の指標を確認できます�
    すべてのグラフにその時点に線が表示され、各グラフにその時点のデータを示すウィンドウが表示されます。
 1. シナリオごとの実行チャートまたは実行の期間チャートで特定のシナリオのデータを表示するには、データを表示するシナリオの色のバーをクリックします。 すべてのシナリオを表示するビューに戻るには、グラフをもう一度クリックします。
 1. シナリオごとの実行チャートまたは実行の期間チャートに表示される特定のシナリオに移動するには、シナリオの色のバーを右クリックし、**新しいタブでシナリオを開く**&#x200B;を選択します。
-1. グラフを展開するには、そのグラフの右上隅にある&#x200B;**展開** アイコン ![展開アイコン &#x200B;](assets/expand-icon.png)をクリックします。
+1. グラフを展開するには、そのグラフの右上隅にある&#x200B;**展開** アイコン ![展開アイコン ](assets/expand-icon.png)をクリックします。
 1. ダッシュボードの時間範囲を変更するには、ダッシュボードの右上隅にある「時間範囲」フィールドで、新しい時間枠を選択します。 使用可能な最長時間は24時間で、最短は15分です。
 1. グラフを更新するには、ダッシュボードの右上隅付近にある「更新」アイコンをクリックします。
 1. 別のワーカープールを表示するには、ダッシュボードの左上隅付近にある「プール」フィールドをクリックし、表示するプールを選択します。
+
+## インサイトダッシュボードのカスタマイズ
+
+インサイトダッシュボードに表示するウィジェットと、その順序を選択できます。
+
+### ウィジェットの追加、削除、並べ替え
+
+1. 左側のナビゲーションで、**インサイト** ![ インサイトアイコン ](assets/insights-icon.png)をクリックします。
+1. インサイトヘッダーの「**[!UICONTROL カスタマイズ]**」をクリックします。
+
+   サイドパネルが開きます。 すべてのウィジェットが、プレビュー、ウィジェット名、説明を表示するカードとしてリストされます。
+
+1. ウィジェットを表示または非表示にするには、そのカードをクリックするか、カードの「**[!UICONTROL ウィジェットを追加]**」または「**[!UICONTROL ウィジェットを削除]**」ボタンをクリックします。
+
+   表示されるウィジェットにはチェックマークが付きます。
+1. ウィジェットを並べ替えるには、ウィジェットカードをパネル内の新しい位置にドラッグします。
+
+   破線で囲まれたプレースホルダーとドロップバーにカードの到達場所が表示されます。
+
+選択肢はブラウザーごとに保存されます。 後のリリースで追加されたウィジェットは、パネルに自動的に表示されます。
+
+すべてのウィジェットを削除すると、「このページにはウィジェットがありません」というメッセージが表示されます。
+
+## インサイトダッシュボードを更新する
+
+各ウィジェットのデータを再読み込みするには、**[!UICONTROL カスタマイズ]**&#x200B;の横にある&#x200B;**[!UICONTROL 更新]**&#x200B;をクリックします。
+
+* 各ウィジェットはフィルターを保持します。
+* すべてのウィジェットの読み込みが完了するまで、**[!UICONTROL 更新]** ボタンに保留状態が表示されます。
+* グラフは前のグラフを読み込み中のスピナーの下に置き、実行ログはデータの再読み込み中にスピナーの下のテーブルを暗くします。
+* 更新が失敗した場合、ウィジェットは最後の良好なデータを保持します。
+
+## インサイトツアーを見る
+
+インサイトダッシュボードを初めて開いたときに、ウェルカムダイアログでツアーを開始するかスキップするかを選択できます。
+
+ツアーでは、保存された順序で各ウィジェットがハイライト表示されます。また、タイトルバーの&#x200B;**[!UICONTROL カスタマイズ]** ボタンとパネル、**[!UICONTROL 更新]** ボタン、および&#x200B;**[!UICONTROL ツアーを再生]** ボタンもハイライト表示されます。
+
+ツアーをいつでも再開するには、タイトルバーのツアー情報アイコン ![情報アイコン ](assets/insights-tour-information.png)をクリックします。
+
+シナリオのリンクからインサイトダッシュボードを開くと、ツアーは開始されません。 詳しくは、この記事の「[ シナリオからインサイトダッシュボードを開く](#open-the-insights-dashboard-from-a-scenario)」を参照してください。
+
+## IDでシナリオとチームを検索
+
+**[!UICONTROL 組織の操作]**&#x200B;および&#x200B;**[!UICONTROL 操作ごとの上位シナリオ]** ウィジェットでは、**[!UICONTROL シナリオ]**&#x200B;および&#x200B;**[!UICONTROL チーム]**&#x200B;のフィールドがIDと名前で一致します。 各オプションは、「ID 123」などの名前の下にIDを表示します。
+
+* リストには、最初の500のシナリオと最初の200のチームが読み込まれます。 読み込まれたリストにないIDを入力すると、Fusionは短い遅延後に自動的に検索します。
+* シナリオをクリアすると、そのシナリオに対して自動的に入力されたチームもクリアされます。
+
+>[!NOTE]
+>
+>実行ログのシナリオフィルターがIDで一致しません。
+
+## シナリオからインサイトダッシュボードを開く
+
+特定のシナリオとチームに絞り込まれた&#x200B;**[!UICONTROL 組織操作]** ウィジェットで、インサイトダッシュボードを開くことができます。
+
+シナリオからインサイトページに移動するには：
+
+1. シナリオの詳細ページを開きます。
+
+   1. 左パネルの「**[!UICONTROL シナリオ]**」タブをクリックし、詳細が必要なシナリオをクリックします。
+
+      または
+
+      シナリオエディターでシナリオを操作している場合は、ウィンドウの左上隅付近にある左矢印![編集矢印を終了](assets/exit-editing-arrow.png)をクリックします。
+      1. ページの上部にある「**レポート**」タブをクリックします。
+
+* **[!UICONTROL 組織操作]** ウィジェットが開き、そのシナリオとチームがフィルタリングされ、ページがウィジェットにスクロールされます。
+* ページからウィジェットを削除した場合は、代わりに「**[!UICONTROL ウィジェットを追加]**」ボタン付きの警告が表示されます。
+
+## ダークモードの使用
+
+インサイトダッシュボードとそのウィジェットは、ダークモード設定に自動的に従います。 設定を変更すると、ページは再読み込みなしで即座に更新され、現在の状態が維持されます。 ライトモードは変更されません。
+
+## パフォーマンスウィジェットアクセス
+
+**[!UICONTROL パフォーマンス]** ウィジェットは、次のいずれかの権限を持つユーザーにのみ表示されます。
+
+* アクティブな組織内の組織編集
+* 管理者ページの組織ビュー
+
+ウィジェットは、ページと他のユーザー用の&#x200B;**[!UICONTROL カスタマイズ]** パネルから非表示になっています。 後でユーザーにアクセス権が付与されると、ウィジェットは保存された位置に戻ります。 インサイト URLを直接開いても、このチェックはバイパスされません。
 
 ## 実行ログの実行のフィルタリングとトリアージ
 
@@ -109,10 +200,10 @@ Fusion Insights ダッシュボードでは、次の指標を確認できます�
 
    * [!UICONTROL チーム]
    * [!UICONTROL シナリオ]
-   * [!UICONTROL 実行タイプ &#x200B;]
+   * [!UICONTROL 実行タイプ ]
    * [!UICONTROL 日付範囲]
    * [!UICONTROL 非アクティブ化状態]
-   * [!UICONTROL &#x200B; エラーメッセージ &#x200B;]
+   * [!UICONTROL  エラーメッセージ ]
 
    ほとんどのフィルターでは、選択した値のみ、またはそれ以外のすべての値に一致するように選択できます。
 
