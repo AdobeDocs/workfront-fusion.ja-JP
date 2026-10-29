@@ -17,7 +17,7 @@ feature_v2:
     internal-label: Integrations
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 43%
@@ -67,7 +67,7 @@ ht-degree: 43%
 
 条件付きでエラーをスローするには、モジュールを設定して、その操作中に意図的に失敗するようにします。 1つの可能性として、[!UICONTROL JSON] > [!UICONTROL JSON]を解析モジュールを使用し、オプションでエラーをスローするように設定します（この場合は`BundleValidationError`）。
 
-![JSON エラー](assets/json-parse-json.png)
+![JSON エラー](assets/new-json-parse-json.png)
 
 次に、エラー処理ルートにエラー処理ディレクティブのいずれかを添付できます。
 
@@ -78,4 +78,4 @@ ht-degree: 43%
 
 [!DNL Rollback] ディレクティブの使用例を以下に示します。
 
-![&#x200B; ロールバック ディレクティブ &#x200B;](assets/rollback-directive.png)
+![&#x200B; ロールバック ディレクティブ &#x200B;](assets/new-rollback-directive.png)

@@ -11,14 +11,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 77%
+source-wordcount: '684'
+ht-degree: 71%
 ---
 # フロー制御
 
 シナリオを作成または編集する際、シナリオ内でのデータの流れを制御する設定を行うことができます。
+
+>[!NOTE]
+>
+>Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
 
 ## アクセス要件
 
@@ -75,7 +79,7 @@ ht-degree: 77%
 
 例えば、[!UICONTROL リピーター]モジュールを使用して「こんにちは 1」、「こんにちは 2」などの件名のメールを 5 通送信するには、**[!UICONTROL メール]／[!UICONTROL 自分にメール]**&#x200B;モジュールを[!UICONTROL リピーター]モジュールに接続します。
 
-1. 画面下部の[!UICONTROL &#x200B; フロー制御] アイコン ![&#x200B; フロー制御アイコン &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif)をクリックし、表示されるメニューの&#x200B;**[!UICONTROL リピータ]**&#x200B;をクリックします。
+1. 画面下部の[!UICONTROL &#x200B; フロー制御] アイコン ![&#x200B; フロー制御アイコン &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/new-flow-control-icon.png)をクリックし、表示されるメニューの&#x200B;**[!UICONTROL リピータ]**&#x200B;をクリックします。
 1. [!UICONTROL Repeater] モジュールをクリックし、表示されるボックスで&#x200B;**[!UICONTROL 自動的に接続]**&#x200B;をクリックします。
 
    リピータ モジュールが開きます。
@@ -84,7 +88,7 @@ ht-degree: 77%
 
    この例では、5と入力します。
 
-   ![&#x200B; リピーター](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
+   ![&#x200B; リピーター](/help/workfront-fusion/references/apps-and-modules/assets/new-repeater.png)
 
    アイテムの値は、繰り返されるごとに、**[!UICONTROL ステップ]**&#x200B;フィールドで指定したこの数ずつ増加します。この値は、**[!UICONTROL 詳細設定を表示]**&#x200B;を選択すると表示できます。 この数値は、デフォルトでは 1 です。
 
@@ -95,7 +99,7 @@ ht-degree: 77%
 
    ここでのメールの例では、[!UICONTROL 件名]ボックスに「こんにちは」と入力し、リピーターモジュールから `i` をマッピングします。
 
-   ![&#x200B; リピーター](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
+   ![&#x200B; リピーター](/help/workfront-fusion/references/apps-and-modules/assets/new-repeater-3.png)
 
 
 

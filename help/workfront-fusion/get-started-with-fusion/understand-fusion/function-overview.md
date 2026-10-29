@@ -13,7 +13,7 @@ feature_v2:
     internal-label: APIs
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 59%
@@ -44,7 +44,7 @@ Workfront Fusionには、シンプルな数式や複雑な数式を作成する�
 | **日付と時間** <br> ![日付と時間関数](assets/toolbar-icon-date-time-functions.png) | <ul><li>[日付と時間関数](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)</li><li>[日付と時間の書式設定用トークン](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)</li><li> [日付と時間の解析用トークン](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)</li></ul> |
 | **配列操作用関数**<br> ![配列関数](assets/toolbar-icon-functions-for-arrays.png) | [配列関数](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md) |
 
-![関数ツールバー](assets/functions-toolbar-350x189.png)
+![関数ツールバー](assets/new-functions-toolbar.png)
 
 ## カスタム関数
 
@@ -52,4 +52,4 @@ Fusionの「関数」エリアでカスタム関数を作成できます。 次�
 
 カスタム関数はAdobe App Builderを通じて機能するため、使用するにはAdobe App Builder ライセンスが必要です。
 
-カスタム関数の詳細と手順については、「カスタム関数を使用したAP データ」を参照してください。
+カスタム関数の詳細と手順については、[&#x200B; カスタム関数を使用したデータのマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)を参照してください。

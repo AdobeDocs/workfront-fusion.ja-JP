@@ -16,10 +16,10 @@ topic_v2:
     internal-label: Metadata
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 75%
+source-wordcount: '1962'
+ht-degree: 58%
 ---
 # シナリオのデバッグ
 
@@ -28,6 +28,26 @@ Adobe Workfront Fusion開発ツールは、シナリオの理解とトラブル�
 >[!NOTE]
 >
 >デバッガーパネルへのログインは、機密シナリオ、自動実行、正常な操作に対して制限されるか、利用できなくなります。
+
+>[!NOTE]
+>
+>新しいエクスペリエンスでは、いくつかの開発ツール ツールがシナリオエディターに組み込まれているため、開発ツールを開かずに使用できます。
+>
+>| ツール | 新しいエクスペリエンスのどこにあるか |
+>| ---------- | ---------- |
+>| アプリのメタデータを取得 | モジュールを右クリックし、**アプリメタデータ**&#x200B;を選択します。 |
+>| マッピングをコピー | ソースモジュールを右クリックし、**マッピングをコピー**&#x200B;を選択してから、互換性のあるモジュールに貼り付けます。 |
+>| フィルターをコピー | フィルターされたリンクを右クリックし、**フィルターをコピー**&#x200B;を選択してから、別のリンクに貼り付けます。 |
+>| モジュール名をコピー | モジュールを右クリックし、**モジュール名をコピー**&#x200B;または&#x200B;**モジュール名を貼り付け**&#x200B;を選択します。 |
+>| スワップ接続 | 検索と置換を開き、「**接続**」タブを使用します。 |
+>| スワップ変数 | 検索と置換を開き、「**変数**」タブを使用します。 |
+>| リマップソース | 検索と置換を開き、「**Source**」タブを使用します。 |
+>
+>これらのツールは、DevToolの「**ツール**」タブでも、モジュールのフォーカス、マッピングによるモジュールの検索、Base 64で引き続き利用できます。 マッピングで`base64()`関数とバイナリ変換関数を使用することもできます。
+>
+>また、シナリオエディターで[Live Trail](/help/workfront-fusion/manage-scenarios/live-trail.md)と実行履歴からリクエストと応答の詳細を直接表示することもできます。 検索と置換について詳しくは、[&#x200B; シナリオ内の変数、ソース、接続の検索と置換](/help/workfront-fusion/manage-scenarios/find-and-replace.md)を参照してください。
+<!-- BECKY CHECK ME: DevTool screenshots (10/27/26) show all ten tools still on the Tools tab, so this note now says the seven built-in tools are available in both places. The release notes implied only Focus a module, Find modules by mapping, and Base 64 would remain. Confirm after release whether the other seven are removed from the DevTool, and update this note and the Tools section if so.  -->
+<!-- BECKY CHECK ME: note added from the 10/23/26 release notes; the DevTool is NOT being removed. This article still needs a fuller restructure (new/classic split for the seven tools, Live Trail section or separate article). Confirm the menu labels. -->
 
 Fusion 開発ツールの概要ビデオとチュートリアルについては、
 
@@ -67,6 +87,26 @@ Fusion 開発ツールの概要ビデオとチュートリアルについては�
 
 Adobe統合シェルでFusionを使用する場合、または新しいFusion エクスペリエンスに更新した場合は、シナリオエディターから開発ツールにアクセスできます。
 
+### 新しいエクスペリエンスでの開発ツールへのアクセス
+
+1. デバッグするシナリオのシナリオエディターに移動します。
+
+   シナリオエディターを見つけるには、[&#x200B; シナリオエディター](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)を参照してください。
+
+1. コントロール領域の3点アイコンをクリックし、**開発ツール**&#x200B;を選択します。
+
+または
+
+1. デバッグするシナリオのシナリオエディターに移動します。
+1. ページの空の領域（モジュールではなく）を右クリックします。
+1. 「**開発者ツールを開く**」を選択します。
+
+開発ツールがカンバスの下のパネルで開きます。
+
+<!-- BECKY CHECK ME: new-experience access steps from your 10/27/26 notes (three-dot menu in Controls, or right-click). Confirm the menu label ('DevTool') and the 'panel below the canvas' description, and add a screenshot. I assumed the Helper tools icon steps below apply to the classic experience only; confirm. -->
+
+### クラシックエクスペリエンスの開発ツールへのアクセス
+
 1. 画面の下部にある「**ヘルパーツール** ![&#x200B; ヘルパーツール &#x200B;](assets/debugger-icon.png)」アイコンをクリックします。
 
 または
@@ -80,15 +120,20 @@ Adobe統合シェルでFusionを使用する場合、または新しいFusion �
 
 ## Workfront Fusion開発ツールの使用
 
-Workfront Fusion 開発ツールは、3 つの主なセクションに分かれています。 これらは、開発ツールウィンドウの左パネルにあります。
+Workfront Fusion Devtoolは、3つの主要セクションとヘルプリンクに分かれています。 これらは、開発ツールウィンドウの左パネルにあります。
 
 * [ライブストリーム](#live-stream)
 * [シナリオデバッガー](#scenario-debugger)
 * [ツール](#tools)
+* **開発ツールのヘルプ**：疑問符アイコンをクリックして、開発ツールに関する記事を開きます。
+
+<!-- BECKY CHECK ME: the DevTool left panel now has a fourth item, 'DevTool help' (question mark icon), per your 10/27/26 screenshots. Confirm the label, that it opens this article or another one, and whether to apply this to the classic experience too. Retake the left-panel screenshot. -->
 
 ### ライブストリーム
 
 ライブストリームは、シナリオで「1 回実行」をクリックすると、バックグラウンドで発生していることを表示します。
+
+<!-- BECKY CHECK ME: HOLD: in the new experience, Live Stream shows a 'no events available' message even while a scenario is running, which may be a bug. No updates have been made to this section. Re-test after release before changing anything here. If it is intended behavior, this section may need to point to Live Trail instead. -->
 
 1. **[!UICONTROL ライブストリーム]** アイコン ![&#x200B; ライブストリームアイコン &#x200B;](assets/live-stream-icon.png)をクリックして、「ライブストリーム」セクションを開きます。
 1. 次のいずれかの操作を行います。
@@ -149,18 +194,42 @@ Workfront Fusion 開発ツールは、3 つの主なセクションに分かれ�
 シナリオデバッガーは、より複雑なシナリオで役に立ちます。 シナリオ実行の履歴が表示され、名前または ID でモジュールを検索できます。
 
 1. **[!UICONTROL Scenario Debugger]** アイコン ![Debugger アイコン &#x200B;](assets/scenario-debugger-icon.png)をクリックして、Scenario Debuggerを開きます。
-1. （オプション）検索フィールドに検索語（名前またはモジュール ID）を入力します。
+
+   シナリオデバッガーには、シナリオ内のモジュールが一覧表示されます。 各モジュールには、名前、アプリとアクション、モジュール IDを含む番号付きバッジが表示されます。
+
+1. （オプション）「**名前またはIDでモジュールを検索」フィールドに検索語（名前またはモジュール ID）を入力します。**
 1. モジュール名をクリックします。
-1. 操作をクリックして、リクエストの詳細を表示します。
+
+   モジュールの最新の実行のサイクルは、モジュールリストの横に表示されます。 モジュールに実行データがない場合、シナリオデバッガーに&#x200B;**結果が見つかりません**&#x200B;と表示されます。
+
+1. サイクルを展開し、操作をクリックします。
+
+   各操作は、成功したかどうか、およびそれにかかる時間（例：**操作1**、所要時間0 ミリ秒）を示します。
+
+1. リクエストの詳細を確認します。 タブを使用して以下を表示：
+
+   * **リクエストヘッダー**: API エンドポイント URL、HTTP メソッド、リクエストの呼び出し時、リクエストヘッダー。
+   * **リクエスト本文**
+   * **応答ヘッダー**
+   * **応答本文**
+
+1. （オプション）リクエストをコピーするには、**Copy RAW**&#x200B;または&#x200B;**Copy cURL**&#x200B;をクリックします。
+
+<!-- BECKY CHECK ME: Scenario Debugger steps expanded from your 10/27/26 new-experience DevTool screenshots. Confirm: (1) the 'Search modules by Name or ID' label; (2) that the module list sub-labels, badge (module ID), cycle/operation layout, and 'No Result found' state are described correctly; (3) the tab names, since Response Body was partly hidden behind the Copy buttons in the screenshot; (4) whether Copy RAW and Copy cURL copy the request only or the request and response; (5) whether the classic experience's Scenario Debugger looks the same, or this needs a new/classic split. The screenshot also shows a collapsed 'Live trail' tab with an event count on the right edge of the editor; see the Live Trail article. Retake the Scenario Debugger screenshots. -->
 
 ### ツール
 
 Workfront Fusionの開発ツールは、容易にシナリオを設定できます。
 
 1. **[!UICONTROL ツール]** アイコン ![&#x200B; コンソールツールアイコン &#x200B;](assets/console-tools-icon.png)をクリックして、ツールを開きます。
+1. （オプション）ツールを見つけるには、**ツール名で検索** フィールドにそのツール名を入力します。
 1. 使用するツールを選択します。
 1. 下記のフィールドを設定します。
 1. 「**[!UICONTROL 実行]**」をクリックします。
+
+ツールを選択するまで、パネルの右側でツールを選択するよう求められます。 「ツール」タブの下部にあるリンクをクリックすると、開発ツールに関する記事に移動します。
+
+<!-- BECKY CHECK ME: added from your 10/27/26 screenshots: the 'Search tool by name' field, the select-a-tool prompt, and the link to the DevTool article. Confirm the field label and link destination; retake the Tools screenshot. -->
 
 ツールとそのフィールド：
 

@@ -11,14 +11,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 21%
+source-wordcount: '950'
+ht-degree: 19%
 ---
 # エラー処理ルートへのフィルタリングとネストの追加
 
 フィルターとネストを含めることで、エラー処理ルートに高度なエラー処理技術を追加できます。
+
+>[!NOTE]
+>
+>Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
 
 ## アクセス要件
 
@@ -74,7 +78,13 @@ Fusionが様々なデータタイプを評価および処理する方法につ�
 
 ### 例：フィルターを使用したエラー処理
 
+<!-- BECKY CHECK ME: this example scenario (through the end of the Nesting example below) is built and illustrated entirely in the classic experience. It needs a new example scenario built in the new experience (recommend using Workfront modules instead of Dropbox, consistent with other rebuilt articles) - not just new screenshots of this same Dropbox scenario. Flagging only, not editing - see tracking spreadsheet. -->
+
 >[!BEGINSHADEBOX]
+
+>[!NOTE]
+>
+>この例では、従来のシナリオエディターを使用しています。
 
 このシナリオの例では、これらのフィルターがエラー処理でどのように機能するかを示します。
 
@@ -122,7 +132,13 @@ Dropbox/フォルダーモジュール内のすべてのファイルを一覧表
 
 エラーハンドラールートは、ルーターを除くすべてのモジュールで作成および設定できます。 したがって、既に既存のエラーハンドラールートの一部となっているモジュールに対して、エラーハンドラールートを作成できます。
 
+<!-- BECKY CHECK ME: this example scenario is built and illustrated entirely in the classic experience. It needs a new example scenario built in the new experience - see the flag on the "Example: Error handling with filters" example above. -->
+
 >[!BEGINSHADEBOX]
+
+>[!NOTE]
+>
+>この例では、従来のシナリオエディターを使用しています。
 
 例：
 

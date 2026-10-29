@@ -3,10 +3,10 @@ user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
 nudge: true
-source-git-commit: d31db4d825746ac3e7b19cd8f7efcc593bc03bf7
+source-git-commit: e4bc75f0536c96896254f97d276a88b7a1aa18ce
 workflow-type: tm+mt
-source-wordcount: '2752'
-ht-degree: 48%
+source-wordcount: '2791'
+ht-degree: 47%
 ---
 
 # Adobe Workfront Fusion ドキュメント {#using}
@@ -15,6 +15,7 @@ ht-degree: 48%
 * Fusion リリースアクティビティ {#fusion-release-activity}
   * [Adobe Workfront Fusion リリースアクティビティ](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
   * Fusion リリース - 2026 {#fusion-releases-2026}
+    * [Workfront Fusion リリースアクティビティ：2026年10月26日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-26.md)
     * [Workfront Fusion リリースアクティビティ：2026年10月19日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-19.md)
     * [Workfront Fusion リリースアクティビティ：2026年10月12日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-12.md)
     * [Workfront Fusion リリースアクティビティ：2026年10月5日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-5.md)
@@ -265,6 +266,7 @@ ht-degree: 48%
     * [シナリオにAI プロンプトを追加する](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)
     * {hide-from-toc}[AIを使用してシナリオセグメントを生成](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)
     * [モジュールまたはシナリオのコピー](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
+    * [スニペットを使用したシナリオセクションの保存と再利用](/help/workfront-fusion/create-scenarios/add-modules/use-snippets.md)
     * [Adobe Workfront Fusion テンプレートを使用したシナリオの作成](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)
     * [cURL を使用した HTTP モジュールの追加](/help/workfront-fusion/create-scenarios/add-modules/use-curl-create-http.md)
     * [コネクターを使用しない web サービスの Webhook の設定](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)
@@ -306,6 +308,8 @@ ht-degree: 48%
   * [接続の管理](/help/workfront-fusion/manage-scenarios/manage-connections.md)
   * [シナリオのアクティブ化または非アクティブ化](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)
   * [シナリオのデバッグ](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)
+  * [ライブトレイルを使用したシナリオ実行のレビュー](/help/workfront-fusion/manage-scenarios/live-trail.md)
+  * [シナリオ内の変数、ソース、接続の検索と置換](/help/workfront-fusion/manage-scenarios/find-and-replace.md)
   * [シナリオバージョンの復元](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)
   * [モジュールの新しいバージョンへの更新](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md)
   * [ロックされたシナリオの管理](/help/workfront-fusion/manage-scenarios/view-manage-locked-scenario.md)
@@ -405,6 +409,7 @@ ht-degree: 48%
       * [Adobe Campaign モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-campaign-classic-connector.md)
       * [Adobe Content Tagger modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/content-tagging-modules.md)
       * [Adobe Creative Cloud ライブラリモジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
+      * [Adobe CX Enterprise Coworkerモジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-cx-coworker-modules.md)
       * [Adobe Experience Manager Assets モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
       * [Adobe Experience Manager Forms モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
       * [Adobe Experience Manager MCP モジュール](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-mcp-modules.md)

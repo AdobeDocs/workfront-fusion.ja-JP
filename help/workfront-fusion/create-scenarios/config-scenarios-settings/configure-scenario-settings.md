@@ -12,14 +12,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 850372a59529141a31a1a55035c55a3e506e69fb
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 46%
+source-wordcount: '1757'
+ht-degree: 36%
 ---
 # シナリオ設定の指定
 
 シナリオ設定パネルで、シナリオの特定の設定を行うことができます。
+
+>[!NOTE]
+>
+>Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
 
 ## アクセス要件
 
@@ -51,6 +55,23 @@ ht-degree: 46%
 +++
 
 ## シナリオ設定を開く
+
+* [新しいエクスペリエンスでシナリオ設定を開く（推奨）](#open-the-scenario-settings-in-the-new-experience-recommended)
+* [クラシックなエクスペリエンスでシナリオ設定を開く](#open-the-scenario-settings-in-the-classic-experience)
+
+### 新しいエクスペリエンスでシナリオ設定を開く（推奨）
+
+1. 左側のパネルで「**シナリオ**」をクリックします。
+1. 必要なシナリオを見つけて、名前をクリックします。
+1. シナリオの任意の場所をクリックして、シナリオエディターに入ります。
+1. コントロール領域の&#x200B;**シナリオ設定** アイコン ![&#x200B; シナリオ設定アイコン &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scenario-settings-icon-new.png)をクリックします。
+
+   最初にコントロール領域の3点アイコンをクリックして表示する必要がある場合があります。
+
+   表示される[!UICONTROL シナリオ設定]パネルで、シナリオの様々な詳細設定ができます。
+1. 必要に応じて、シナリオ設定を有効または無効にします。 以下の[&#x200B; シナリオ設定オプション &#x200B;](#scenario-settings-options)を参照してください。
+
+### クラシックなエクスペリエンスでシナリオ設定を開く
 
 1. 左側のパネルで「**シナリオ**」をクリックします。
 1. 必要なシナリオを見つけて、名前をクリックします。
@@ -150,13 +171,13 @@ ht-degree: 46%
 
 **例：** Workfront > [!UICONTROL &#x200B; レコード &#x200B;]が新しい問題を監視し、Workfront >[!UICONTROL Convert object]が新しいリクエストをプロジェクトに変換し、適切なテンプレートを割り当てます。
 
-![&#x200B; シナリオ設定](assets/scenario-settings-ex-1-350x157.png)
+![&#x200B; シナリオ設定](assets/new-scenario-settings-ex-1.png)
 
 [!UICONTROL より多くのサイクル]設定は、シナリオの実行をスケジュールする場合にのみ適用されます。 「[!UICONTROL 1 回実行]」ボタンを使用する場合、サイクル設定を考慮します。
 
 #### サイクルの最大数は 1 に設定されています（デフォルト）
 
-![最大サイクル数](assets/max-number-cycles-1-350x201.png)
+![最大サイクル数](assets/new-max-number-cycles.png)
 
 Workfront/監視レコードモジュールの最大サイクル数は`10`に設定されています。
 100件のリクエストがWorkfrontに送信され、「最大サイクル数」フィールドが10に設定されている場合、1回のシナリオ実行後に90個のファイルが未処理のままになります。 次の 10 個のファイルは、スケジュールされた次のシナリオの実行で処理されます。
@@ -169,9 +190,7 @@ Workfront/監視レコードモジュールの最大サイクル数は`10`に設
 
 すべてのファイルは、1 回のシナリオ実行の間に処理されます。
 
-シナリオの詳細には、既に実行されたサイクルが表示されます。
-
-![&#x200B; シナリオの詳細](assets/scenario-detail-350x207.png)
+シナリオの詳細ページの「履歴」領域に、既に実行されているサイクルが表示されます。
 
 このページについて詳しくは、[&#x200B; シナリオの詳細](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md)を参照してください。
 
@@ -192,6 +211,34 @@ Workfront/監視レコードモジュールの最大サイクル数は`10`に設
 通知タイプのシナリオレベルの上書きを設定するには、通知タイプの横にあるチェックボックスをオンまたはオフにします。
 
 シナリオレベルの上書きなどの通知設定について詳しくは、[通知オプションの設定](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)を参照してください。
+
+### 一時的なデバッグログ
+
+>[!NOTE]
+>
+>* 一時的なデバッグログは、新しいシナリオデザイナーでのみ使用でき、組織で機能が有効になっている場合にのみ使用できます。
+>* 設定を変更するには、シナリオを編集するための権限が必要です。
+
+リクエストとレスポンスの詳細は、スケジュールまたはトリガーされた実行ごとに保持されるわけではありません。これは、大量のストレージを必要とするためです。 1回実行すると、常に維持されます。
+
+シナリオの通常の実行のリクエストと応答の詳細を収集するには、収集する期間を選択します。
+
+* 次の1時間
+* 次の1日間
+* 次の実行のために
+* 次の10 ラン
+
+変更はすぐに適用されます。 シナリオを保存する必要はありません。
+
+一時的なデバッグログがオンになっている間、設定は、いつまでオンのままか、または残っている実行数を示します。 その前にリクエストと応答の詳細の収集を停止するには、**オフ**&#x200B;をクリックします。
+
+デバッグログは、実行時間または実行数が使い切られると、自動的にオフになります。 新しいデータが見つからないスケジュールされた実行を含め、すべての実行がカウントされます。
+
+>[!NOTE]
+>
+>一時的なデバッグログは、新しいエクスペリエンスでのみ使用でき、組織で機能が有効になっている場合にのみ使用できます。 この設定を変更するには、シナリオを編集する権限が必要です。
+
+<!-- BECKY CHECK ME: section added from the 10/23/26 release notes. Confirm the exact option labels, where the setting sits in the panel (I placed it before Worker pool), and the access requirement wording. Add a screenshot. -->
 
 ### ワーカープール
 

@@ -12,14 +12,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 25%
+source-wordcount: '821'
+ht-degree: 24%
 ---
 # シナリオ実行フロー
 
 この記事では、シナリオの実行方法とデータの流れ、各モジュールで処理されるデータの表示方法について説明します。
+
+>[!NOTE]
+>
+>Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
 
 アクティブなシナリオでのデータの流れを確認するには、[実行中のシナリオでのデータフローの表示](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)を参照してください。
 
@@ -43,7 +47,7 @@ ht-degree: 25%
 
 最初のモジュールがバンドルを返した場合、そのバンドルは残りのシナリオに渡されていきます。 この例では、バンドルは2番目のモジュールに移動し、リクエストをプロジェクトに変換します。
 
-![Workfront シナリオの実行フロー](assets/example-execution-flow-wf-only.png)
+![Workfront シナリオの実行フロー](assets/new-example-execution-flow-wf-only.png)
 
 >[!ENDSHADEBOX]
 
@@ -51,13 +55,13 @@ ht-degree: 25%
 
 >[!BEGINSHADEBOX]
 
-**例：**&#x200B;このシナリオでは、Adobe Workfrontからドキュメントをダウンロードし、[!DNL Dropbox]のフォルダーに送信すると、データは次のように流れます。
+**例：**&#x200B;このシナリオでは、Adobe Workfrontからドキュメントをダウンロードし、[!DNL Dropbox]のフォルダーに送信すると、データは次のようになります。
 
 最初のモジュールで実行されるシナリオの最初の手順は、Workfrontでドキュメントを監視することです。 見つかった各文書は1つのバンドルと見なされます。 モジュールが実行されてもバンドルが見つからない場合、シナリオは最初のモジュールの後で終了します。
 
 バンドルが返されると、そのバンドルは残りのシナリオに渡されていきます。 この例では、シナリオの残りの部分は2番目のモジュールで構成され、バンドルが[!DNL Dropbox] フォルダーにアップロードされます。
 
-![統合シナリオの実行フロー](assets/example-execution-flow-wf-dropbox.png)
+![統合シナリオの実行フロー](assets/new-example-execution-flow-wf-dropbox.png)
 
 最初のモジュールが複数のバンドルを返した場合、最初のバンドルが [!DNL Dropbox] にアップロードされてから、2 番目のバンドルがアップロードされます。 次に、2 番目のバンドルがアップロードされたあと、3 番目のバンドルがアップロードされ、以下同様の処理が繰り返されます。
 
@@ -78,7 +82,7 @@ ht-degree: 25%
 
 シナリオ実行が完了すると、各モジュールには、実行された操作数を示すアイコンが表示されます。 このアイコンをクリックすると、プロセスの各ステップで処理されたバンドルに関する詳細情報を表示できます。 どのモジュール設定が使用されたか、各モジュールによって返されたバンドルを確認できます。
 
-![処理済みバンドル &#x200B;](assets/Info-processed-bundles.png)
+![処理済みバンドル &#x200B;](assets/new-Info-processed-bundles.png)
 
 この例では、モジュールは次のような入力情報を受け取りました。
 

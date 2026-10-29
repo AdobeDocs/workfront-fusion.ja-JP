@@ -10,15 +10,15 @@ exl-id: 78ab27fe-e2dd-4b52-b986-77b4b7ea3b5e
 TQID: https://experienceleague.adobe.com/KEVVlHp7OzsV6SJHNdJaUgI6GGiBX9abWqD6U6fiiB0
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Integrations
+source-git-commit: 4cd8b43e9ce9a16aca16397ce140cdd2467bf7d4
 workflow-type: tm+mt
-source-wordcount: 617
-ht-degree: 21%
-
+source-wordcount: '1072'
+ht-degree: 12%
 ---
-
 # 基本シナリオへのフィルターの追加
 
 フィルターを使用すると、特定の条件が満たされた場合にのみ、シナリオを確実に進行させることができます。
@@ -29,7 +29,8 @@ ht-degree: 21%
 
 >[!NOTE]
 >
->Workfrontのトリガーモジュールには、特定の条件が満たされた場合にのみシナリオを開始できるフィルターが含まれています。 ただし、モジュール間のフィルターは、トリガー以外のユースケースやWorkfront以外のユースケースごとに使用されるため、モジュール間のフィルターの使用方法を学習することが重要です。 この例では、モジュール内フィルターで満たすことができる機能にモジュール間フィルターを使用します。
+>* Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
+>* Workfrontのトリガーモジュールには、特定の条件が満たされた場合にのみシナリオを開始できるフィルターが含まれています。 ただし、モジュール間のフィルターは、トリガー以外のユースケースやWorkfront以外のユースケースごとに使用されるため、モジュール間のフィルターの使用方法を学習することが重要です。 この例では、モジュール内フィルターで満たすことができる機能にモジュール間フィルターを使用します。
 
 ## アクセス要件
 
@@ -64,7 +65,11 @@ ht-degree: 21%
 
 この手順に従う前に、[基本シナリオの作成](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)で説明したシナリオを作成する必要があります。
 
-## フィルターの追加
+## 新しいエクスペリエンスにフィルターを追加（推奨）
+
+* [フィルターを追加する準備](#prepare-to-add-the-filter)
+* [フィルターの追加と設定](#add-and-configure-the-filter)
+* [検証と活用](#test-and-activate)
 
 ### フィルターを追加する準備
 
@@ -85,16 +90,78 @@ ht-degree: 21%
 ### フィルターの追加と設定
 
 1. シナリオエディターのシナリオに戻ります。
+1. 最初と2番目のモジュールの間のパスを左クリックします。
+
+   **[!UICONTROL フィルターの設定]** ウィンドウが開きます。
+
+1. 「ラベル」フィールドに、「リクエストキュー用のフィルター」など、このフィルターのラベルを入力します。
+1. **条件**&#x200B;領域の上部フィールドで、最初のモジュールから`projectID`をマッピングします。
+
+   ![&#x200B; プロジェクト IDのマッピング &#x200B;](assets/new-map-in-filter.png)
+
+1. **Condition**&#x200B;演算子は次のままにします。
+1. **条件**&#x200B;領域の下部のフィールドに、[のプロジェクト URLからメモしたプロジェクト IDを貼り付けて、フィルター](#prepare-to-add-the-filter)を追加する準備をします。
+1. **OK**&#x200B;をクリックして、フィルター設定を保存します。
+
+### 検証と活用
+
+1. Fusionが接続しているWorkfront環境に移動し、フィルターで指定したプロジェクトにイシューを追加します。 別の問題を別のプロジェクトに追加します。
+1. 「**[!UICONTROL 1回実行]**」アイコンをクリックします。
+
+   「1回実行」は、新しいエクスペリエンスではアイコンのみです。 アイコンにカーソルを合わせると、**[!UICONTROL 1回実行]**&#x200B;のツールヒントが表示されます。
+
+   ![&#x200B; シナリオボタンを実行](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/run-once-new.png)
+
+1. 出力を調べて、シナリオが期待どおりに実行されていることを確認します。
+
+   両方の問題は最初のモジュールの出力に表示されますが、指定したプロジェクトの問題のみが2番目のモジュールの入力として表示されます。
+1. シナリオが期待どおりに機能していることを確認したら、**スケジュール**&#x200B;切り替え&#x200B;**オン**&#x200B;をクリックします。
+
+   これにより、シナリオがアクティブになります。
+
+   ![&#x200B; スケジュール設定の切り替え](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scheduling-new.png)
+
+1. コントロール領域の&#x200B;**保存** アイコン ![保存アイコン &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png)をクリックして、シナリオの進行状況を保存します。
+
+   >[!IMPORTANT]
+   >
+   >シナリオを改良、テストするたびに保存するようにしてください。 シナリオをトリガーするには、Workfront アカウントで新しいイシューを作成する必要がある場合があります。
+
+## クラシックエクスペリエンスにフィルターを追加する
+
+* [フィルターを追加する準備（クラシック）](#prepare-to-add-the-filter-classic)
+* [フィルターの追加と設定（クラシック）](#add-and-configure-the-filter-classic)
+* [テストとアクティブ化（クラシック）](#test-and-activate-classic)
+
+### フィルターを追加する準備（クラシック）
+
+1. シナリオを開きます。
+1. 最初のモジュールをクリックして開きます。
+1. **出力**&#x200B;領域で、`Project`を選択します。
+これで、`ID`、`Name`、`Project`が選択されました。
+1. 「OK」をクリックして、モジュール設定を保存します。
+1. Workfrontを開きます。
+1. Workfrontで、Fusion シナリオが操作するリクエストキューを表すプロジェクトを見つけます。
+
+   このプロジェクトは、Fusion接続が設定されているのと同じWorkfront アカウントにある必要があります。
+
+1. URLにプロジェクト IDを書き留めます。
+
+   例：https://\&lt;MyDomain\>.my.workfront.com/project/\&lt;ProjectID\>/tasks
+
+### フィルターの追加と設定（クラシック）
+
+1. シナリオエディターのシナリオに戻ります。
 1. 最初と2番目のモジュールの間にあるレンチアイコン ![&#x200B; レンチアイコン &#x200B;](assets/wrench-icon.png)をクリックし、**フィルターの設定**&#x200B;を選択します。
 1. 「ラベル」フィールドに、「リクエストキュー用のフィルター」など、このフィルターのラベルを入力します。
 1. **条件**&#x200B;領域の上部フィールドで、最初のモジュールから`projectID`をマッピングします。
 
    ![&#x200B; プロジェクト IDのマッピング &#x200B;](assets/map-proj-id.png)
 1. **Condition**&#x200B;演算子は次のままにします。
-1. **条件**&#x200B;領域の下部のフィールドに、[のプロジェクト URLからメモしたプロジェクト IDを貼り付けて、フィルター](#prepare-to-add-the-filter)を追加する準備をします。
+1. **条件**&#x200B;領域の下部のフィールドに、[のプロジェクト URLからメモしたプロジェクト IDを貼り付けて、フィルター（クラシック） &#x200B;](#prepare-to-add-the-filter-classic)を追加する準備をします。
 1. **OK**&#x200B;をクリックして、フィルター設定を保存します。
 
-### 検証と活用
+### テストとアクティブ化（クラシック）
 
 1. Fusionが接続しているWorkfront環境に移動し、フィルターで指定したプロジェクトにイシューを追加します。 別の問題を別のプロジェクトに追加します。
 1. シナリオエディターの左下隅にある「**[!UICONTROL 1 回実行]**」をクリックします。

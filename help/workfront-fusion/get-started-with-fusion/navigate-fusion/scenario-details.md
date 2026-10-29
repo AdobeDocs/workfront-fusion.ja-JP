@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 70%
+source-wordcount: '583'
+ht-degree: 69%
 ---
 # シナリオ詳細の詳細
 
@@ -59,11 +59,11 @@ ht-degree: 70%
 
    または
 
-   シナリオエディターでシナリオを操作している場合は、ウィンドウの左上隅付近にある左矢印![編集矢印を終了](assets/exit-editing-arrow.png)をクリックします。
+   シナリオエディターでシナリオを操作している場合は、ウィンドウの左上隅付近にある左矢印![編集矢印を終了](/help/workfront-fusion/manage-scenarios/assets/new-exit-editing-arrow.png)をクリックします。
 
 1. 表示されるページで、次の表に示す要素を確認できます。
 
-   ![&#x200B; シナリオの詳細](assets/scenario-detail-350x207.png)
+   ![&#x200B; シナリオの詳細](assets/new-scenario-detail.png)
 
    <table style="table-layout:auto"> 
     <col> 
@@ -111,9 +111,11 @@ ht-degree: 70%
       <td role="rowheader">[!UICONTROL Options]</td> 
       <td> <p>このメニューでは、シナリオエディターを開かずに追加のオプションを使用できます。 改善点には、以下のものが含まれます。</p> 
        <ul> 
+        <li>[!UICONTROL ロック解除の実行]</li> 
         <li>[!UICONTROL Scheduling]</li> 
         <li>[!UICONTROL Rename]</li> 
         <li>[!UICONTROL Clone]</li> 
+        <li>[!UICONTROL Clone as template]</li> 
         <li>[!UICONTROL Delete]</li> 
        </ul> </td> 
      </tr> 

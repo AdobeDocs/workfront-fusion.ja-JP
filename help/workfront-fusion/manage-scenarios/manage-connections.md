@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 26%
+source-wordcount: '446'
+ht-degree: 24%
 ---
 # 接続の管理
 
@@ -71,6 +71,10 @@ ht-degree: 26%
 1. （オプション）接続を再認証するには、その接続の行の&#x200B;**再認証**&#x200B;をクリックします。
 1. （オプション）サービスへの接続が機能していることを確認するには、その接続の行の&#x200B;**Verify**&#x200B;をクリックします。
 1. （オプション）接続を削除するには、その接続の行の&#x200B;**削除**&#x200B;をクリックし、**本当に？**&#x200B;をクリックします。
+
+>[!NOTE]
+>
+>シナリオのモジュールで別の接続を使用するには、シナリオエディターで同じアプリから1つまたはすべての互換性のあるモジュールに接続をコピーできます。 詳細については、[&#x200B; シナリオ内の変数、ソース、接続の検索と置換](/help/workfront-fusion/manage-scenarios/find-and-replace.md)を参照してください。
 
 ## 接続を更新する
 

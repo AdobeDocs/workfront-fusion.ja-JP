@@ -11,16 +11,20 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 100%
+source-wordcount: '756'
+ht-degree: 91%
 ---
 # シナリオの概要
 
 Adobe Workfront Fusion の役割は、プロセスを自動化して、ユーザーが通常のタスクに多くの時間を費やさなくてもいいようにすることです。 これは、アプリ内やサービス内、およびそれらの間でアクションをリンクし、データを自動的に転送および変換するシナリオを作成することで機能します。 作成するシナリオは、アプリまたはサービス内のデータを監視し、そのデータを処理して必要な結果を提供します。
 
 シナリオは、アプリ内でのデータの変換方法や、アプリと web サービスの間でのデータの転送方法を示す、一連のモジュールで構成されます。
+
+>[!NOTE]
+>
+>Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
 
 ## シナリオ要素の概要
 
@@ -37,37 +41,37 @@ Adobe Workfront Fusion の役割は、プロセスを自動化して、ユーザ
 
 **シナリオ**&#x200B;は、データの移動と操作を目的にユーザーが作成した一連の自動ステップです。 「シナリオ」という用語は、関連する一連のステップ全体を指します。
 
-![シナリオ](assets/entire-scenario-scenario.png)
+![シナリオ](assets/new-entire-scenario-scenario.png)
 
 ### トリガー
 
 シナリオは&#x200B;**トリガー**&#x200B;によって開始されます。 トリガーは、新しいデータおよび更新されたデータを監視し、モジュールで設定された特定の条件が適用されるとシナリオを開始します。 トリガーは、スケジュール（ポーリング）に従って、またはデータの変更が発生した場合（インスタント）にシナリオを開始するように設定できます。
 
-![トリガー](assets/scenario-trigger.png)
+![トリガー](assets/new-scenario-trigger.png)
 
 ### モジュール
 
-トリガーの後に、多数の&#x200B;**モジュール**&#x200B;が続きます。 モジュールは、特定のアクションを実行するシナリオの 1 つの手順を表します。 モジュールは、シナリオを作成するのに設定され、連結されています。
+トリガーの後に、多数の&#x200B;**モジュール**&#x200B;が続きます。 モジュールは、特定のアクションを実行するシナリオの1つのステップを表します。 モジュールは、シナリオを作成するのに設定され、連結されています。
 
-![モジュール](assets/scenario-module.png)
+![モジュール](assets/new-scenario-module.png)
 
 ### ルート
 
 シナリオは、**ルート**&#x200B;に分割できます。 ルートとは、特定のデータバンドルに使用される場合とされない場合がある、シナリオのセクションです。 ルートは、ルーターモジュールとフィルターを使用して設定されます。
 
-![ルート](assets/scenario-route.png)
+![ルート](assets/new-scenario-route.png)
 
 ### シナリオセグメント
 
 シナリオセグメントは、同じアプリケーションに接続される一連の連続したモジュールで構成される 1 つのシナリオの 1 つのセクションです。 シナリオセグメントは、多くの場合、アプリケーションの短いワークフローを表します。
 
-![シナリオセグメント](assets/scenario-segment.png)
+![シナリオセグメント](assets/new-scenario-segment.png)
 
 ### コネクター
 
 コネクターは、特定のアプリケーション向けのモジュールのセットです。 Workfront Fusion には、Workfront、Salesforce、Jira など多くの一般的な作業アプリケーションへのコネクターや、任意の web サービスに使用できる汎用コネクターが用意されています。
 
-![コネクター](assets/scenario-connectors.png)
+![コネクター](assets/new-scenario-connectors.png)
 
 ## 例
 
@@ -79,7 +83,7 @@ Workfront Fusion では、Workfront 内で単純または複雑なワークフ�
 
 この例では、指定したフィールドが Workfront のタスクまたはイシューで変更されるとシナリオがトリガーされます。 トリガーされると、シナリオは関連プロジェクトの情報を取得し、プロジェクトの特定の役割に割り当てられたユーザーに合わせて更新を作成します。
 
-![テンプレートの例](assets/fusion-template-example.png)
+![テンプレートの例](assets/new-fusion-automation-example.png)
 
 +++
 
@@ -95,7 +99,7 @@ Workfront Fusion は、他のアプリケーションや web サービスに接�
 
 この例では、ユーザーが [!DNL Excel] スプレッドシートに追加されるとシナリオがトリガーされます。 シナリオでは、ユーザーが Workfront に存在するかどうかがチェックされます。 存在しない場合は Workfront でユーザーが作成され、その Workfront ユーザー ID がスプレッドシートに追加されます。
 
-![統合の例](assets/fusion-integration-example.png)
+![統合の例](assets/new-scenario-example-unmarked.png)
 
 専用コネクターのリストについて詳しくは、[Fusion アプリケーションとそのモジュールの参照：記事のインデックス](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)を参照してください。
 

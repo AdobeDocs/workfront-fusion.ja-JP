@@ -10,9 +10,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '554'
 ht-degree: 18%
 ---
 # チェーンされたシナリオ関係を表示および管理する
@@ -64,21 +64,17 @@ ht-degree: 18%
 
 現在のシナリオとその親または子シナリオのマップを表示できます。 マップには、連鎖したシナリオ全体のデータフローの図が表示されます。
 
-![連結されたシナリオ関係](assets/chained-scenario-relationships-2.png)
-
-<!--get a better picture-->
-
 連鎖シナリオの関係マップを表示するには：
 
 1. 左パネルの「**[!UICONTROL シナリオ]**」タブ、シナリオの順にクリックします。
 
    または
 
-   シナリオエディターでシナリオを操作している場合は、ウィンドウの左上隅付近にある左矢印![編集矢印を終了](assets/exit-editing-arrow.png)をクリックします。
+   シナリオエディターでシナリオを操作している場合は、ウィンドウの左上隅付近にある左矢印![編集矢印を終了](/help/workfront-fusion/manage-scenarios/assets/new-exit-editing-arrow.png)をクリックします。
 
 1. 「**関係**」タブをクリックします。
 
-   ![関係タブ &#x200B;](assets/relations-tab.png)
+   ![関係タブ &#x200B;](assets/new-relationships-tab.png)
 
 1. 各チェーン付きシナリオの一般的な詳細については、タグを確認してください。
 

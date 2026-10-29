@@ -9,9 +9,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '370'
 ht-degree: 0%
 ---
 # 1回実行してシナリオをテストする
@@ -23,6 +23,10 @@ ht-degree: 0%
 >[!TIP]
 >
 >シナリオの作成と調整を行う際には、頻繁にテストすることをお勧めします。
+
+>[!NOTE]
+>
+>新しいエクスペリエンスでは、1回実行すると、リクエストと応答の詳細が常に保持されます。 シナリオの通常の実行の場合は、シナリオ設定で「一時デバッグログ」をオンにすることで、シナリオを収集できます。 詳しくは、[&#x200B; シナリオ設定の設定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs)を参照してください。
 
 ## 1回実行の機能の使用
 

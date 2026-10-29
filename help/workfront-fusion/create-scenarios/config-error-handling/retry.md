@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 25%
@@ -115,7 +115,7 @@ Break ディレクティブが実行されると、シナリオ実行の状態�
 
 このシナリオの例では、[!UICONTROL HTTP] > [!UICONTROL &#x200B; リクエストを作成] モジュールは、失敗する可能性のあるモジュールを表しています。
 
-![HTTP リクエストを作成](assets/http-make-request.png)
+![HTTP リクエストを作成](assets/new-http-make-request.png)
 
 >[!ENDSHADEBOX]
 
