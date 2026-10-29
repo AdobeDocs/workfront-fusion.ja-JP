@@ -295,7 +295,7 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
        </td> 
      </tr> 
      <tr> 
-      <td>[!UICONTROL カスタム トークン ]</td> 
+      <td>[!UICONTROL カスタム トークン &#x200B;]</td> 
       <td>
        <p>（オプション） [!UICONTROL Enable secured hook]が[!UICONTROL Yes]に設定されている場合、独自のトークン値を入力してWebhookを保護できます。 このフィールドを空白のままにすると、Fusionが自動的にトークンを生成します。</p>
        </td> 
@@ -317,7 +317,7 @@ Webhook を作成した後、イベントの送信先エンドポイントのア
 >
 >重複検出は、`x-event-id` ヘッダーを含み、`User-Agent`を`Workfront Event Subscription`として識別する通知に適用されます。
 >
->Fusionが適格な通知を受信すると、そのWebhookのイベント IDが&#x200B;**1時間**記録されます。 この期間中に同じイベント IDを持つ別の通知が同じWebhookに到達した場合、Fusionはシナリオ処理のために転送することなく通知を確認します。
+>Fusionが適格な通知を受信すると、そのWebhookのイベント IDが&#x200B;**1時間**&#x200B;記録されます。 この期間中に同じイベント IDを持つ別の通知が同じWebhookに到達した場合、Fusionはシナリオ処理のために転送することなく通知を確認します。
 >重複検出は、各Webhookに固有です。 同じイベントを異なるWebhookで個別に処理できます。 重複を受信しても、1時間の期間は再開されません。
 
 #### [!UICONTROL フィールドを監視]
