@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 36bcfdbb0e88a4c742f7c3d0a6c9295a8e64b99a
 workflow-type: tm+mt
-source-wordcount: '7725'
-ht-degree: 93%
+source-wordcount: '7804'
+ht-degree: 92%
 ---
 # Adobe Workfront モジュール
 
@@ -312,6 +312,13 @@ Webhook を作成した後、イベントの送信先エンドポイントのア
 詳しくは、Workfront ドキュメントのイベント登録 API の記事の[イベントペイロードの例](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads)の節を参照してください。
 
 このモジュールを使用できる Workfront オブジェクトタイプのリストについて詳しくは、[各 Workfront モジュールで使用可能な Workfront オブジェクトタイプ](#workfront-object-types-available-for-each-workfront-module)を参照してください。
+
+>[!NOTE]
+>
+>重複検出は、`x-event-id` ヘッダーを含み、`User-Agent`を`Workfront Event Subscription`として識別する通知に適用されます。
+>
+>Fusionが適格な通知を受信すると、そのWebhookのイベント IDが&#x200B;**1時間**&#x200B;記録されます。 この期間中に同じイベント IDを持つ別の通知が同じWebhookに到達した場合、Fusionはシナリオ処理のために転送することなく通知を確認します。
+>重複検出は、各Webhookに固有です。 同じイベントを異なるWebhookで個別に処理できます。 重複を受信しても、1時間の期間は再開されません。
 
 #### [!UICONTROL フィールドを監視]
 
