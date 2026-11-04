@@ -3,9 +3,9 @@ user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
 nudge: true
-source-git-commit: e4bc75f0536c96896254f97d276a88b7a1aa18ce
+source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
 workflow-type: tm+mt
-source-wordcount: '2791'
+source-wordcount: '2797'
 ht-degree: 47%
 ---
 
@@ -308,6 +308,7 @@ ht-degree: 47%
   * [接続の管理](/help/workfront-fusion/manage-scenarios/manage-connections.md)
   * [シナリオのアクティブ化または非アクティブ化](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)
   * [シナリオのデバッグ](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)
+  * [AIによるシナリオエラーの説明](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md)
   * [ライブトレイルを使用したシナリオ実行のレビュー](/help/workfront-fusion/manage-scenarios/live-trail.md)
   * [シナリオ内の変数、ソース、接続の検索と置換](/help/workfront-fusion/manage-scenarios/find-and-replace.md)
   * [シナリオバージョンの復元](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)
@@ -320,7 +321,7 @@ ht-degree: 47%
   * [チェーンへのモジュールの移動](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)
   * [実行中のシナリオでのデータフローの表示](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
   * [Webhook のキューの表示](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
-  * {hide-from-toc}[Workfront FusionのAI アシスタント &#x200B;](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
+  * {hide-from-toc}[Workfront FusionのAI アシスタント ](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
   * [シナリオスコアリングエキスパートの実行](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
   * [シナリオ要素の削除](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
   * [「シナリオ」エリアからシナリオを管理します](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
