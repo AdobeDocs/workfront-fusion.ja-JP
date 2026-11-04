@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 6e900ea61e12b9e5adfd6bc374479aeeff0408d5
+source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '980'
 ht-degree: 12%
 ---
 # 特定のシナリオの実行の表示
@@ -85,6 +85,7 @@ ht-degree: 12%
    フィルターで処理された特定のバンドルを表示するには、フィルターの検索バーを使用するか、特定のステータス（合格または失敗など）のバンドルをフィルターできます。
 1. 実行パネルで特定のモジュールまたはイベントを検索するには、**実行イベントを検索** ボックスに検索語を入力します。 入力時に結果が表示されます。
 1. 成功や警告などのステータスで実行パネルの検索結果を制限するには、「**ステータスフィルター**」ドロップダウンをクリックし、ステータスを選択します。
+1. 実行時のエラーについて平易な言葉で説明するには、エラーの下にある&#x200B;**[!UICONTROL 説明]**&#x200B;をクリックします。 詳しくは、[AIを使用したシナリオエラーの説明](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md)を参照してください。
 
 
 

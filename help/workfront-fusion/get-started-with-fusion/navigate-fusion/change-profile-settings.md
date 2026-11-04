@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 8f8ecad04a66f3859bba69460b316e8ba20984e6
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 78%
+source-wordcount: '208'
+ht-degree: 68%
 ---
 # プロファイル設定を変更
 
@@ -59,3 +59,5 @@ Adobe Workfront Fusion アカウントプロファイルで情報を変更でき
 * メイン言語とサブ言語の環境設定を含む、[!DNL Adobe Experience Cloud] の&#x200B;**[!UICONTROL 環境設定]**&#x200B;を設定します。
 * **[!UICONTROL Workfront プロファイル]**&#x200B;にアクセスします。 プロファイルにアクセスしたら、**[!UICONTROL 詳細]** メニューをクリックし、**[!UICONTROL 編集]**&#x200B;を選択します。
 * Adobe Experience Cloud の&#x200B;**[!UICONTROL ログアウト]**
+
+Fusion プロファイルには、日付と時刻の表示と解釈に影響するタイムゾーン設定も含まれています。 詳しくは、[&#x200B; タイムゾーンの表示と管理](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md)を参照してください。

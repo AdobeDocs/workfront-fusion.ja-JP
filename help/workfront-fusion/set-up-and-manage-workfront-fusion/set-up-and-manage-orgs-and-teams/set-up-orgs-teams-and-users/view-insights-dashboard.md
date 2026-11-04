@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 45c755a2f6152b6e230864e4c840d0334705bd22
+source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1334'
 ht-degree: 5%
 ---
 # 組織のインサイトダッシュボードの表示
@@ -208,6 +208,7 @@ Fusion Insights ダッシュボードでは、次の指標を確認できます�
    ほとんどのフィルターでは、選択した値のみ、またはそれ以外のすべての値に一致するように選択できます。
 
 1. 実行をクリックすると、そのエラーに関する詳細が表示されます。
+1. エラーの平易な説明を取得するには、失敗した実行にカーソルを合わせて、**[!UICONTROL 説明]**&#x200B;をクリックします。 詳しくは、[AIを使用したシナリオエラーの説明](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md)を参照してください。
 1. 繰り返しエラーが発生した後に自動的に非アクティブ化された1つ以上のシナリオを再アクティブ化するには、実行を選択し、**アクティブ化**&#x200B;をクリックします。
 
    >[!NOTE]
