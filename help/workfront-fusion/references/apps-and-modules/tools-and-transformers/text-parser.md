@@ -28,7 +28,7 @@ ht-degree: 83%
 ---
 # [!UICONTROL テキストパーサー]
 
-[!UICONTROL  テキスト解析ツール ]を使用して、他のAdobe Workfront Fusion シナリオモジュールで使用するテキストを解析できます。 [!UICONTROL テキストパーサー]には接続は必要ありません。
+[!UICONTROL &#x200B; テキスト解析ツール &#x200B;]を使用して、他のAdobe Workfront Fusion シナリオモジュールで使用するテキストを解析できます。 [!UICONTROL テキストパーサー]には接続は必要ありません。
 
 ## アクセス要件
 
@@ -78,7 +78,7 @@ ht-degree: 83%
 
 ## [!UICONTROL テキストパーサー]モジュールとそのフィールド
 
-[!UICONTROL  テキストパーサー] モジュールを設定すると、Adobe Workfront Fusionには次のフィールドが表示されます。 モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL &#x200B; テキストパーサー] モジュールを設定すると、Adobe Workfront Fusionには次のフィールドが表示されます。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。 詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 

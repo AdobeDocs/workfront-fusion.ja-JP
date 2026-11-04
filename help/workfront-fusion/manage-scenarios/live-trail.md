@@ -18,7 +18,7 @@ Live Trailは、シナリオの実行を表示します。 モジュールのリ
 
 >[!NOTE]
 >
->この機能は、新しいシナリオエディターエクスペリエンスでのみ使用できます。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス ](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
+>この機能は、新しいシナリオエディターエクスペリエンスでのみ使用できます。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
 
 ## アクセス要件
 
@@ -93,6 +93,6 @@ Live Trailは、モジュールリクエストと実行アクティビティを�
 リクエストとレスポンスの詳細は、スケジュールまたはトリガーされた実行ごとに保持されるわけではありません。これは、大量のストレージを必要とするためです。
 
 * 1回実行すると、リクエストと応答の詳細が常に保持されます。
-* シナリオの通常の実行の場合は、検査する実行の前に、シナリオ設定で「一時デバッグログ」をオンにします。 詳しくは、「シナリオ設定の構成」の「[一時デバッグログ ](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs)」を参照してください。
+* シナリオの通常の実行の場合は、検査する実行の前に、シナリオ設定で「一時デバッグログ」をオンにします。 詳しくは、「シナリオ設定の構成」の「[一時デバッグログ &#x200B;](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs)」を参照してください。
 
 実行履歴から実行を開き、リクエストと応答パネルにデータがない場合、パネルは一時デバッグログ設定に移動します。
