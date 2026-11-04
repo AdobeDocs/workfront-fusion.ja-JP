@@ -22,7 +22,7 @@ Workfront Fusionの次の領域のエラーを説明できます。
 
 * シナリオデザイナーでのモジュールエラーの詳細
 * シナリオの実行履歴の実行の詳細
-* インサイトページの[!UICONTROL 失敗した実行ログ ] テーブル
+* インサイトページの[!UICONTROL 失敗した実行ログ &#x200B;] テーブル
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ Workfront Fusionの次の領域のエラーを説明できます。
 
    ボタンはエラーの下にあります。
 
-   ![ モジュール出力の説明エラー](assets/explain-in-module-output.png)
+   ![&#x200B; モジュール出力の説明エラー](assets/explain-in-module-output.png)
 
 説明はエラーの下に表示されます。
 
@@ -92,7 +92,7 @@ Workfront Fusionの次の領域のエラーを説明できます。
 
    ![実行履歴で説明する](assets/explain-in-execution-details.png)
 
-実行の表示について詳しくは、[ シナリオの実行履歴を表示](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)および[特定のシナリオ実行を表示](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md)を参照してください。
+実行の表示について詳しくは、[&#x200B; シナリオの実行履歴を表示](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)および[特定のシナリオ実行を表示](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md)を参照してください。
 
 >[!NOTE]
 >
@@ -109,7 +109,7 @@ Workfront Fusionの次の領域のエラーを説明できます。
 
 1. 「**[!UICONTROL 説明]**」をクリックします。
 
-   ![ インサイトページで説明](assets/explain-failed-execution-log.png)
+   ![&#x200B; インサイトページで説明](assets/explain-failed-execution-log.png)
 
    ポップアップが開き、エラーとAIの説明が表示されます。
 
