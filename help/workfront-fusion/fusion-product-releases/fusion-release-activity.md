@@ -23,16 +23,20 @@ feature_v2:
 subfeature_v2:
   - id: a29813d3-f0cc-4b60-9396-13b558370803
     internal-label: Product announcements
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 41ba069a36eeddbadbd993602a3b5f7ede60cefa
 workflow-type: tm+mt
-source-wordcount: '1654'
-ht-degree: 82%
+source-wordcount: '1665'
+ht-degree: 81%
 ---
 # Adobe Workfront Fusion リリースアクティビティの概要
 
 Adobe Workfront Fusion は、アプリと web サービスをシームレスに接続するので、ユーザーは同じタスクを何度も繰り返すのではなく、新しいタスクに集中することができます。
 
 ## 2026年の Fusion リリース
+
+### 2026年11月
+
+* [Workfront Fusion リリースアクティビティ：2026年11月2日の週](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-11-2.md)
 
 ### 2026年10月
 

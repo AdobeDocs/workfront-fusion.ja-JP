@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 8f8ecad04a66f3859bba69460b316e8ba20984e6
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 70%
+source-wordcount: '616'
+ht-degree: 66%
 ---
 # 項目データタイプ
 
@@ -47,7 +47,7 @@ Workfront Fusionで相互に変換できるアイテムの種類については�
   </tr> 
   <tr> 
    <td role="rowheader"> <p>日付</p> </td> 
-   <td> <p>日付は、ISO 8601 の日付形式で入力します（例：<code>2015-09-18T11:58Z</code>）。 タイムゾーンは、プロファイル設定で変更できます。 </p> <p>日付を必要とするフィールドをクリックすると、モジュール設定にポップアップカレンダーが表示されます。 一部の項目では時間は必須ではありません。</p> <p>日付項目の値は、プロファイルで選択されたローカルタイムゾーンと web タイムゾーンを使用して形式設定されます。 項目の上にポインタを合わせると、日付項目の値の ISO 8601 バージョンを表示できます。</p> <p>メモ：ISO 値が表示されない場合、項目はおそらくテキストで、日付ではありません。</p> <p>時間は <code>hours:minutes:seconds</code> 形式で入力します（例：<code>14:03:52</code>）。</p> </td> 
+   <td> <p>日付は、ISO 8601 の日付形式で入力します（例：<code>2015-09-18T11:58Z</code>）。 タイムゾーンは、プロファイル設定で変更できます。 </p> <p>日付を必要とするフィールドをクリックすると、モジュール設定にポップアップカレンダーが表示されます。 一部の項目では時間は必須ではありません。</p> <p>日付項目の値は、プロファイルで選択されたローカルタイムゾーンと web タイムゾーンを使用して形式設定されます。 項目の上にポインタを合わせると、日付項目の値の ISO 8601 バージョンを表示できます。</p> <p>Fusion プロファイルでのタイムゾーン設定の表示と管理について詳しくは、[ タイムゾーンの表示と管理] （/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md）を参照してください。</p> <p>メモ：ISO 値が表示されない場合、項目はおそらくテキストで、日付ではありません。</p> <p>時間は <code>hours:minutes:seconds</code> 形式で入力します（例：<code>14:03:52</code>）。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>バッファー（バイナリデータ）</p> </td> 
