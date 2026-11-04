@@ -9,7 +9,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 6e900ea61e12b9e5adfd6bc374479aeeff0408d5
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
@@ -59,6 +59,4 @@ ht-degree: 0%
    * **手動で入力を提供する**: シナリオ入力にWebhook ペイロードを提供する必要があります。 JSON形式にする必要があります。
 
      入力するには、**Webhook ペイロード** ボックスにテキストを入力し、**実行**&#x200B;をクリックします。
-
-
 
