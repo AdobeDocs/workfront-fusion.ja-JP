@@ -21,14 +21,14 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 2e3a811de0e4336305997cbf46e86db3553f4770
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 83%
 ---
 # [!UICONTROL テキストパーサー]
 
-[!UICONTROL &#x200B; テキスト解析ツール &#x200B;]を使用して、他のAdobe Workfront Fusion シナリオモジュールで使用するテキストを解析できます。 [!UICONTROL テキストパーサー]には接続は必要ありません。
+[!UICONTROL  テキスト解析ツール ]を使用して、他のAdobe Workfront Fusion シナリオモジュールで使用するテキストを解析できます。 [!UICONTROL テキストパーサー]には接続は必要ありません。
 
 ## アクセス要件
 
@@ -78,7 +78,7 @@ ht-degree: 83%
 
 ## [!UICONTROL テキストパーサー]モジュールとそのフィールド
 
-[!UICONTROL &#x200B; テキストパーサー] モジュールを設定すると、Adobe Workfront Fusionには次のフィールドが表示されます。 モジュール内の太字のタイトルは、必須フィールドを示します。
+[!UICONTROL  テキストパーサー] モジュールを設定すると、Adobe Workfront Fusionには次のフィールドが表示されます。 モジュール内の太字のタイトルは、必須フィールドを示します。
 
 フィールドまたは関数の上にマップボタンが表示されている場合は、このボタンを使用すると、そのフィールドの変数や関数を設定できます。 詳しくは、[モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
@@ -182,7 +182,7 @@ ht-degree: 83%
  <tbody> 
   <tr> 
    <td>[!UICONTROL Pattern] </td> 
-   <td> <p>正規表現のパターンを入力します。 </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>例：</b></span></span><code>[+-]?(\d+(\.\d+)?|\.\d+)([eE]&#x200B;[+-]?\d+)?</code> で指定されたテキスト内のすべての数字を抽出します。</p> <p>メモ：  <p>パターンでは、少なくとも 1 つのキャプチャグループが括弧内に含まれている必要があります<code>()</code>。 パターンにキャプチャグループが含まれていない場合、出力バンドルは空になります。</p> </p> </td> 
+   <td> <p>正規表現のパターンを入力します。 </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>例：</b></span></span><code>&#91;+-&#93;?(\d+(\.\d+)?|\.\d+)(&#91;eE&#93;&#91;+-&#93;?\d+)?</code> で指定されたテキスト内のすべての数字を抽出します。</p> <p>メモ：  <p>パターンでは、少なくとも 1 つのキャプチャグループが括弧内に含まれている必要があります<code>()</code>。 パターンにキャプチャグループが含まれていない場合、出力バンドルは空になります。</p> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Global match]</td> 

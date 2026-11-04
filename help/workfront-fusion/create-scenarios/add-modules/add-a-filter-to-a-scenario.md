@@ -11,16 +11,16 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 27%
+source-wordcount: '1012'
+ht-degree: 25%
 ---
 # シナリオへのフィルターの追加
 
 場合によっては、特定の条件を満たすバンドルのみで作業する必要があります。 フィルターを使用すると、そのようなバンドルを選択できます。
 
-例えば、Workfrontの[!UICONTROL &#x200B; レコードを監視]トリガーを使用して、特定のユーザーに割り当てられたタスクのみをキャプチャするシナリオを作成できます。
+例えば、Workfrontの[!UICONTROL  レコードを監視]トリガーを使用して、特定のユーザーに割り当てられたタスクのみをキャプチャするシナリオを作成できます。
 
 2 つのモジュール間にフィルターを追加すると、前のモジュールから受け取ったバンドルが特定のフィルター条件を満たしているかどうかを確認できます。
 
@@ -29,7 +29,7 @@ ht-degree: 27%
 
 >[!NOTE]
 >
->Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
+>Workfront Fusionは、シナリオエディターを新しいエクスペリエンスに移行中です。 この移行中は、従来のエクスペリエンスと新しいエクスペリエンスの両方を利用でき、いつでも切り替えることができます。 新しいエクスペリエンスを使用することをお勧めします。 詳しくは、シナリオエディターの記事「[新しいエクスペリエンスと従来のエクスペリエンス ](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)」を参照してください。
 
 ## アクセス要件
 
@@ -78,6 +78,10 @@ ht-degree: 27%
 
    **[!UICONTROL フィルターの設定]** ウィンドウが直接開きます。 （パスを右クリックすると、代わりに別のメニューが開きます）。
 
+   フィルターパネルには、フィルターが配置されている2つのモジュールが表示されます。 パネルのタイトルの横に、モジュール ID （例：**#12 → #13**&#x200B;が表示されます。 フィルター設定の上に、**Between ● Router #12 → ● HTTP #13**&#x200B;などの行が、各モジュールの色と名前を示しています。 モジュール名にカーソルを合わせると、そのアクションが表示されます。 パネルが開いている間は、接続上のフィルターのラベルに動く破線のアウトラインが表示されます。
+
+   ![フィルターパネル](/help/workfront-fusion/fusion-product-releases/assets/04-filter-panel-light.png)
+
 1. 表示されるボックスに、フィルターの&#x200B;**[!UICONTROL ラベル]**&#x200B;を入力します。
 1. フィルター&#x200B;**[!UICONTROL 条件]**&#x200B;を定義します。
 
@@ -86,11 +90,11 @@ ht-degree: 27%
    >[!TIP]
    >
    >マッピングパネルからフィルターフィールドに値を入力できます
-   >マッピングについて詳しくは、[あるモジュールから別のモジュールへの情報のマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
+   >マッピングについて詳しくは、[あるモジュールから別のモジュールへの情報のマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
    例えば、フィルターでXMLで終わるAdobe Workfrontのファイルを渡す場合は、最初のボックスに&#x200B;**[!UICONTROL ファイル名]**、2番目のボックスに「。**[!UICONTROL xml]**」と入力します。 それらの間のドロップダウンメニューで、「**[!UICONTROL 次で終わる（大文字と小文字を区別しない）]**」を選択します。 このフィルターは、最初のモジュール（Workfront）からの受信バンドルに適用されます。 XML ファイルを含むバンドルのみが次のモジュールに渡されます。
 
-   ![&#x200B; フィルターの設定](assets/new-filter-setup-xml-example.png)
+   ![ フィルターの設定](assets/new-filter-setup-xml-example.png)
 
 1. **[!DNL OK]** をクリックします。
 
@@ -99,7 +103,7 @@ ht-degree: 27%
 1. 左側のパネルの「**[!UICONTROL シナリオ]**」タブをクリックします。
 1. フィルターを追加するシナリオを選択します。
 1. シナリオの任意の場所をクリックして、シナリオエディターに入ります。
-1. フィルターを追加するモジュール間のレンチアイコン ![&#x200B; レンチアイコン &#x200B;](assets/wrench-icon.png)をクリックし、**フィルターの設定**&#x200B;を選択します。
+1. フィルターを追加するモジュール間のレンチアイコン ![ レンチアイコン ](assets/wrench-icon.png)をクリックし、**フィルターの設定**&#x200B;を選択します。
 1. 表示されるボックスに、フィルターの&#x200B;**[!UICONTROL ラベル]**&#x200B;を入力します。
 1. フィルター&#x200B;**[!UICONTROL 条件]**&#x200B;を定義します。
 
@@ -108,11 +112,11 @@ ht-degree: 27%
    >[!TIP]
    >
    >マッピングパネルからフィルターフィールドに値を入力できます
-   >マッピングについて詳しくは、[あるモジュールから別のモジュールへの情報のマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
+   >マッピングについて詳しくは、[あるモジュールから別のモジュールへの情報のマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)を参照してください。
 
    例えば、フィルターでXMLで終わるAdobe Workfrontのファイルを渡す場合は、最初のボックスに&#x200B;**[!UICONTROL ファイル名]**、2番目のボックスに「。**[!UICONTROL xml]**」と入力します。 それらの間のドロップダウンメニューで、「**[!UICONTROL 次で終わる（大文字と小文字を区別しない）]**」を選択します。 このフィルターは、最初のモジュール（Workfront）からの受信バンドルに適用されます。 XML ファイルを含むバンドルのみが次のモジュールに渡されます。
 
-   ![&#x200B; フィルターの設定](assets/set-up-filter-box.png)
+   ![ フィルターの設定](assets/set-up-filter-box.png)
 
 1. **[!DNL OK]** をクリックします。
 
@@ -143,7 +147,7 @@ ht-degree: 27%
 1. 「**フィルターをコピー**」を選択します。
 1. フィルターを貼り付けるモジュール間の接続点を右クリックします。
 1. **貼り付け** フィルターを選択
-1. （オプション）フィルターを調整するには、フィルターアイコンまたはラベルをクリックし、この記事の[&#x200B; クラシックエクスペリエンスの2つのモジュール間でフィルターを追加する](#add-a-filter-between-two-modules-in-the-classic-experience)の説明に従って値を入力します。
+1. （オプション）フィルターを調整するには、フィルターアイコンまたはラベルをクリックし、この記事の[ クラシックエクスペリエンスの2つのモジュール間でフィルターを追加する](#add-a-filter-between-two-modules-in-the-classic-experience)の説明に従って値を入力します。
 
 
 

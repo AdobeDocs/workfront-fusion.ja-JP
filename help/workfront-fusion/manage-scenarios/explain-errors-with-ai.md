@@ -9,9 +9,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: e2420c8a25fd9e38c4b0300b00560fe1837a5e43
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '577'
 ht-degree: 15%
 ---
 # AIによるシナリオエラーの説明
@@ -22,11 +22,13 @@ Workfront Fusionの次の領域のエラーを説明できます。
 
 * シナリオデザイナーでのモジュールエラーの詳細
 * シナリオの実行履歴の実行の詳細
-* インサイトページの[!UICONTROL 失敗した実行ログ &#x200B;] テーブル
+* インサイトページの[!UICONTROL 失敗した実行ログ ] テーブル
 
 >[!NOTE]
 >
 >「**[!UICONTROL 説明]**」ボタンは、新しいシナリオデザイナーでのみ使用できます。 レガシーシナリオデザイナーでは使用できません。
+>
+>この機能を使用するには、組織にAI ライセンスが必要です。
 
 ## アクセス要件
 
@@ -68,7 +70,7 @@ Workfront Fusionの次の領域のエラーを説明できます。
 
    ボタンはエラーの下にあります。
 
-   ![&#x200B; モジュール出力の説明エラー](assets/explain-in-module-output.png)
+   ![ モジュール出力の説明エラー](assets/explain-in-module-output.png)
 
 説明はエラーの下に表示されます。
 
@@ -92,7 +94,7 @@ Workfront Fusionの次の領域のエラーを説明できます。
 
    ![実行履歴で説明する](assets/explain-in-execution-details.png)
 
-実行の表示について詳しくは、[&#x200B; シナリオの実行履歴を表示](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)および[特定のシナリオ実行を表示](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md)を参照してください。
+実行の表示について詳しくは、[ シナリオの実行履歴を表示](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)および[特定のシナリオ実行を表示](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md)を参照してください。
 
 >[!NOTE]
 >
@@ -109,7 +111,7 @@ Workfront Fusionの次の領域のエラーを説明できます。
 
 1. 「**[!UICONTROL 説明]**」をクリックします。
 
-   ![&#x200B; インサイトページで説明](assets/explain-failed-execution-log.png)
+   ![ インサイトページで説明](assets/explain-failed-execution-log.png)
 
    ポップアップが開き、エラーとAIの説明が表示されます。
 
