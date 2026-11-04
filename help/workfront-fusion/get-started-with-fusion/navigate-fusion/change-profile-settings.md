@@ -60,4 +60,4 @@ Adobe Workfront Fusion アカウントプロファイルで情報を変更でき
 * **[!UICONTROL Workfront プロファイル]**&#x200B;にアクセスします。 プロファイルにアクセスしたら、**[!UICONTROL 詳細]** メニューをクリックし、**[!UICONTROL 編集]**&#x200B;を選択します。
 * Adobe Experience Cloud の&#x200B;**[!UICONTROL ログアウト]**
 
-Fusion プロファイルには、日付と時刻の表示と解釈に影響するタイムゾーン設定も含まれています。 詳しくは、[ タイムゾーンの表示と管理](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md)を参照してください。
+Fusion プロファイルには、日付と時刻の表示と解釈に影響するタイムゾーン設定も含まれています。 詳しくは、[&#x200B; タイムゾーンの表示と管理](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md)を参照してください。
