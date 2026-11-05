@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 27%
+source-wordcount: '1012'
+ht-degree: 25%
 ---
 # シナリオへのフィルターの追加
 
@@ -77,6 +77,10 @@ ht-degree: 27%
 1. フィルターを追加するモジュール間のパスを左クリックします。
 
    **[!UICONTROL フィルターの設定]** ウィンドウが直接開きます。 （パスを右クリックすると、代わりに別のメニューが開きます）。
+
+   フィルターパネルには、フィルターが配置されている2つのモジュールが表示されます。 パネルのタイトルの横に、モジュール ID （例：**#12 → #13**&#x200B;が表示されます。 フィルター設定の上に、**Between ● Router #12 → ● HTTP #13**&#x200B;などの行が、各モジュールの色と名前を示しています。 モジュール名にカーソルを合わせると、そのアクションが表示されます。 パネルが開いている間は、接続上のフィルターのラベルに動く破線のアウトラインが表示されます。
+
+   ![フィルターパネル](/help/workfront-fusion/fusion-product-releases/assets/04-filter-panel-light.png)
 
 1. 表示されるボックスに、フィルターの&#x200B;**[!UICONTROL ラベル]**&#x200B;を入力します。
 1. フィルター&#x200B;**[!UICONTROL 条件]**&#x200B;を定義します。

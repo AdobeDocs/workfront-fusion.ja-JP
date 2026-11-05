@@ -6,9 +6,9 @@ feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
-source-git-commit: 94449f8511d7480f1a4fc0ac6e8db9b067977abd
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '539'
 ht-degree: 17%
 ---
 
@@ -58,7 +58,7 @@ Live Trailは、シナリオの実行を表示します。 モジュールのリ
 
 
 
-カンバスの右側のパネルでライブトレイルが開きます。 実行中にパネルを閉じると、画面の右側にある小さなタブを使用して、キャプチャしたイベントを失うことなく、パネルを再度開くことができます。
+カンバスの右側のパネルでライブトレイルが開きます。 パネルの左端をドラッグして、サイズを変更できます。 実行中にパネルを閉じると、画面の右側にある小さなタブを使用して、キャプチャしたイベントを失うことなく、パネルを再度開くことができます。
 
 ## ライブトレイルでのイベントの確認
 

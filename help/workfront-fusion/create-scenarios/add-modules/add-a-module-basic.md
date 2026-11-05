@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 78612057a0bfc76a7c9bf9d0efd6fc632a152369
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1538'
 ht-degree: 8%
 ---
 # シナリオへのモジュールの追加
@@ -84,7 +84,7 @@ ht-degree: 8%
 
 1. モジュールを設定します。
 
-   モジュールの設定は、カンバスの右側にあるパネルで開きます。
+   モジュールの設定は、カンバスの右側にあるパネルで開きます。 パネルの左端をドラッグして、サイズを変更できます。
 
    特定のモジュールの設定の手順については、[Fusion アプリケーションとそのモジュールのリファレンスに記載されている、選択したアプリケーションの記事を参照してください。記事インデックス &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)。
 
@@ -139,7 +139,7 @@ ht-degree: 8%
 
 1. モジュールを設定します。
 
-   モジュールの設定は、カンバスの右側にあるパネルで開きます。
+   モジュールの設定は、カンバスの右側にあるパネルで開きます。 パネルの左端をドラッグして、サイズを変更できます。
 
    特定のモジュールの設定の手順については、[Fusion アプリケーションとそのモジュールのリファレンスに記載されている、選択したアプリケーションの記事を参照してください。記事インデックス &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)。
 
@@ -180,7 +180,7 @@ ht-degree: 8%
 
 1. モジュールを設定します。
 
-   モジュールの設定は、カンバスの右側にあるパネルで開きます。
+   モジュールの設定は、カンバスの右側にあるパネルで開きます。 パネルの左端をドラッグして、サイズを変更できます。
 
    特定のモジュールの設定の手順については、[Fusion アプリケーションとそのモジュールのリファレンスに記載されている、選択したアプリケーションの記事を参照してください。記事インデックス &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)。
 

@@ -14,7 +14,7 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 2e3a811de0e4336305997cbf46e86db3553f4770
 workflow-type: tm+mt
 source-wordcount: '2241'
 ht-degree: 67%
@@ -258,7 +258,7 @@ SFTP コネクタは、接続の作成時に次をサポートします。
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
-   <td> <p>必要なフォルダー権限を設定します。 chmod パラメーターを使用します。 例：<code>777</code>または<code>-rwxrwxrwx</code></p> <p>これらの権限はパターンと一致する必要があります <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>chmodについて詳しくは、<a href="https://ss64.com/bash/chmod.html?lang=ja">chmod ドキュメント </a>を参照してください。</p> </td> 
+   <td> <p>必要なフォルダー権限を設定します。 chmod パラメーターを使用します。 例：<code>777</code>または<code>-rwxrwxrwx</code></p> <p>これらの権限はパターンと一致する必要があります <code>/(.?(&#91;r-&#93;&#91;w-&#93;&#91;x-&#93;){3})|&#91;0-7&#93;{3}/.</code></p> <p>chmodについて詳しくは、<a href="https://ss64.com/bash/chmod.html?lang=ja">chmod ドキュメント </a>を参照してください。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -466,7 +466,7 @@ SFTP コネクタは、接続の作成時に次をサポートします。
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
-   <td> <p>必要なファイル権限を設定します。 chmod パラメーターを使用します。 例：<code>777</code>または<code>-rwxrwxrwx</code></p> <p>これらの権限はパターンと一致する必要があります <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>chmodについて詳しくは、<a href="https://ss64.com/bash/chmod.html?lang=ja">chmod ドキュメント </a>を参照してください。</p> </td> 
+   <td> <p>必要なファイル権限を設定します。 chmod パラメーターを使用します。 例：<code>777</code>または<code>-rwxrwxrwx</code></p> <p>これらの権限はパターンと一致する必要があります <code>/(.?(&#91;r-&#93;&#91;w-&#93;&#91;x-&#93;){3})|&#91;0-7&#93;{3}/.</code></p> <p>chmodについて詳しくは、<a href="https://ss64.com/bash/chmod.html?lang=ja">chmod ドキュメント </a>を参照してください。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -493,7 +493,7 @@ SFTP コネクタは、接続の作成時に次をサポートします。
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
-   <td> <p>ファイルまたはフォルダーに必要な権限を設定します。 chmod パラメーターを使用します。 例：<code>777</code>または<code>-rwxrwxrwx</code></p> <p>これらの権限はパターンと一致する必要があります <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>chmodについて詳しくは、<a href="https://ss64.com/bash/chmod.html?lang=ja">chmod ドキュメント </a>を参照してください。</p> </td> 
+   <td> <p>ファイルまたはフォルダーに必要な権限を設定します。 chmod パラメーターを使用します。 例：<code>777</code>または<code>-rwxrwxrwx</code></p> <p>これらの権限はパターンと一致する必要があります <code>/(.?(&#91;r-&#93;&#91;w-&#93;&#91;x-&#93;){3})|&#91;0-7&#93;{3}/.</code></p> <p>chmodについて詳しくは、<a href="https://ss64.com/bash/chmod.html?lang=ja">chmod ドキュメント </a>を参照してください。</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL バッファーサイズ （B） &#x200B;]</p> </td> 

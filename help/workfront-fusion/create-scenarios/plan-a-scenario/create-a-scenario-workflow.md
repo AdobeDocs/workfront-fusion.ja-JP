@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 21%
+source-wordcount: '810'
+ht-degree: 20%
 ---
 # シナリオ作成のワークフロー
 
@@ -185,6 +185,10 @@ Google、Microsoft、または専用コネクタのないアプリケーショ�
   </tr> 
  </tbody> 
 </table>
+
+>[!NOTE]
+>
+>新しいシナリオエディターには、パネルを確認または閉じたり、モジュール間を移動したり、すべてのショートカットのリストを開くなどのキーボードショートカットが追加されています。 詳しくは、「シナリオエディター」の「[&#x200B; キーボードショートカット &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#keyboard-shortcuts)」を参照してください。
 
 
 
