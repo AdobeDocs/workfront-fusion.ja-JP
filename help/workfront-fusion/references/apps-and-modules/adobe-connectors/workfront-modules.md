@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 36bcfdbb0e88a4c742f7c3d0a6c9295a8e64b99a
+source-git-commit: 4d64f865dd3e826daef02abaaf3c68daa7ed363e
 workflow-type: tm+mt
-source-wordcount: '7804'
-ht-degree: 92%
+source-wordcount: '7761'
+ht-degree: 90%
 ---
 # Adobe Workfront モジュール
 
@@ -84,14 +84,15 @@ Adobe Workfront Fusion Adobe Workfront コネクターを使用すると、Workf
 
 ## Workfront から Workfront Fusion への接続
 
-Workfront コネクターは、OAuth 2.0 を使用して Workfront に継続します。
-
 Workfront アカウントへの接続を Workfront Fusion モジュール内から直接作成できます。
 
-* [クライアント ID とクライアントシークレットを使用した Workfront への接続](#connect-to-workfront-using-client-id-and-client-secret)
+新しい接続や再認証した接続は、Adobe アカウント（Adobe IMSまたはExperience Cloud ログイン）でログインします。 Workfront OAuth2 アプリケーションは使用しません。
+
+* [Adobe アカウントを使用してWorkfrontに接続する](#connect-to-workfront-using-your-adobe-account)
+* [既存の接続の再認証](#reauthorize-an-existing-connection)
 * [サーバー間接続を使用した Workfront への接続](#connect-to-workfront-using-a-server-to-server-connection)
 
-### クライアント ID とクライアントシークレットを使用した Workfront への接続
+### Adobe アカウントを使用してWorkfrontに接続する
 
 1. 任意の Adobe Workfront モジュールで、「接続」フィールドの横にある「**追加**」をクリックします。
 1. 次のフィールドに入力します。
@@ -115,32 +116,38 @@ Workfront アカウントへの接続を Workfront Fusion モジュール内か�
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Workfront クライアント ID を入力します。 これは、Workfront の設定エリアの OAuth2 アプリケーションエリアにあります。 接続している特定のアプリケーションを開いて、クライアント ID を確認します。</td>
+        <td role="rowheader">[!UICONTROL Instance name]</td>
+        <td>
+          <p>インスタンス（ドメインとも呼ばれます）の名前を入力します。</p><p>例：URL が <code>https://example.my.workfront.com</code> の場合は、<code>example</code> と入力します。</p>
+        </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Workfront クライアントシークレットを入力します。 これは、Workfront の設定エリアの OAuth2 アプリケーションエリアにあります。 Workfront で OAuth2 アプリケーションのクライアントシークレットがない場合は、別のシークレットを生成できます。 手順について詳しくは、Workfront ドキュメントを参照してください。</td>
+        <td role="rowheader">[!UICONTROL Instance lane]</td>
+        <td>
+          <p>この接続の接続先となる環境タイプを入力します。</p><p>例：URL が <code>https://example.my.workfront.com</code> の場合は、<code>my</code> と入力します。</p>
+        </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Authentication URL]</td>
-        <td>これはデフォルト値のままにすることもできますし、Workfront インスタンスの URL に続けて <code>/integrations/oauth2</code> を入力することもできます。 <p>例： <code>https://mydomain.my.workfront.com/integrations/oauth2</code></p></td>
+        <td role="rowheader">[!UICONTROL スコープ ] <i> （オプション） </i></td>
+        <td>この接続の追加の範囲を入力します。 デフォルトのスコープを使用するには、このフィールドを空のままにします。</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Host prefix]</td>
-        <td>ほとんどの場合、この値は <code>origin</code> にしてください。
+        <td>ほとんどの場合、この値は <code>origin</code> にしてください。</td>
       </tr>
     </tbody>
     </table>
 
 1. 「**[!UICONTROL 続行]**」をクリックして接続を保存し、モジュールに戻ります。
 
-   Workfront にログインしていない場合は、ログイン画面が表示されます。 ログイン後、接続を許可できます。
+   Adobe アカウントにログインしていない場合は、Adobeのログインページに移動します。 ログインしたら、接続を許可できます。
 
 >[!NOTE]
 >
->* Workfront API への OAuth 2.0 接続は API キーに依存しなくなりました。
->* Workfront サンドボックス環境への接続を作成するには、その環境で OAuth2 アプリケーションを作成し、接続でそのアプリケーションによって生成されたクライアント ID とクライアントシークレットを使用する必要があります。
+>2026年11月5日より前に作成した接続は引き続き機能します。 既存の接続をAdobe ログインに切り替えるには、再認証します。
+
+接続を再認証するには、[接続の管理](/help/workfront-fusion/manage-scenarios/manage-connections.md)を参照してください。
+
 
 ### サーバー間接続を使用した Workfront への接続
 
@@ -295,7 +302,7 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
        </td> 
      </tr> 
      <tr> 
-      <td>[!UICONTROL カスタム トークン &#x200B;]</td> 
+      <td>[!UICONTROL カスタム トークン ]</td> 
       <td>
        <p>（オプション） [!UICONTROL Enable secured hook]が[!UICONTROL Yes]に設定されている場合、独自のトークン値を入力してWebhookを保護できます。 このフィールドを空白のままにすると、Fusionが自動的にトークンを生成します。</p>
        </td> 
@@ -317,7 +324,7 @@ Webhook を作成した後、イベントの送信先エンドポイントのア
 >
 >重複検出は、`x-event-id` ヘッダーを含み、`User-Agent`を`Workfront Event Subscription`として識別する通知に適用されます。
 >
->Fusionが適格な通知を受信すると、そのWebhookのイベント IDが&#x200B;**1時間**&#x200B;記録されます。 この期間中に同じイベント IDを持つ別の通知が同じWebhookに到達した場合、Fusionはシナリオ処理のために転送することなく通知を確認します。
+>Fusionが適格な通知を受信すると、そのWebhookのイベント IDが&#x200B;**1時間**記録されます。 この期間中に同じイベント IDを持つ別の通知が同じWebhookに到達した場合、Fusionはシナリオ処理のために転送することなく通知を確認します。
 >重複検出は、各Webhookに固有です。 同じイベントを異なるWebhookで個別に処理できます。 重複を受信しても、1時間の期間は再開されません。
 
 #### [!UICONTROL フィールドを監視]
@@ -1062,7 +1069,7 @@ Workfront は最近、イベント登録サービスの新しいバージョン�
 
 新しいイベント登録バージョンについて詳しくは、Workfront ドキュメントの[イベント登録のバージョン管理](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)を参照してください。
 
-ウェビナーの録画など、イベント登録のアップグレード中に Workfront Fusion シナリオを保持する方法について詳しくは、[イベント登録 V2 のアップグレード中の Fusion シナリオの保持](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ja)を参照してください。
+ウェビナーの録画など、イベント登録のアップグレード中に Workfront Fusion シナリオを保持する方法について詳しくは、[イベント登録 V2 のアップグレード中の Fusion シナリオの保持](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)を参照してください。
 
 <table style="table-layout:auto">
  <col> 
@@ -2378,7 +2385,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >   新しいイベント登録バージョンについて詳しくは、Workfront ドキュメントの[イベント登録のバージョン管理](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)を参照してください。
 >
->   ウェビナーの録画など、イベント登録のアップグレード中に Workfront Fusion シナリオを保持する方法について詳しくは、[イベント登録 V2 のアップグレード中の Fusion シナリオの保持](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ja)を参照してください。
+>   ウェビナーの録画など、イベント登録のアップグレード中に Workfront Fusion シナリオを保持する方法について詳しくは、[イベント登録 V2 のアップグレード中の Fusion シナリオの保持](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)を参照してください。
 
 Workfront [!UICONTROL イベントを監視]モジュールは、Workfront API でイベント登録を作成する Webhook に基づいてシナリオをトリガーします。 イベント登録は、web フックに送信されるイベントを決定する一連のデータです。 例えば、イシューを監視する[!UICONTROL イベントの監視]モジュールを設定した場合、イベント登録はイシューに関連するイベントのみを送信します。
 
