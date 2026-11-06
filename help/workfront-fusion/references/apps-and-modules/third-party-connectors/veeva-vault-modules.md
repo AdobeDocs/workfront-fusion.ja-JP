@@ -1210,7 +1210,7 @@ Veeva Vault モジュールを設定すると、Workfront Fusionには以下の�
 
 #### カスタム API呼び出しを行う（レガシー）
 
-このアクションモジュールは、Veeva Vault APIをカスタム呼び出します。 このモジュールは`raw` ボディタイプのみをサポートします。 他のボディタイプを使用するには、[ カスタム API呼び出しを作成](#make-a-custom-api-call) モジュールを使用します。
+このアクションモジュールは、Veeva Vault APIをカスタム呼び出します。 このモジュールは`raw` ボディタイプのみをサポートします。 他のボディタイプを使用するには、[&#x200B; カスタム API呼び出しを作成](#make-a-custom-api-call) モジュールを使用します。
 
 <table style="table-layout:auto"> 
  <col> 
