@@ -16,10 +16,10 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cb90aa39325068566e17bbb102969a537e527dc2
 workflow-type: tm+mt
-source-wordcount: '4127'
-ht-degree: 14%
+source-wordcount: '4353'
+ht-degree: 15%
 ---
 # Veeva Vault モジュール
 
@@ -1153,12 +1153,64 @@ Veeva Vault モジュールを設定すると、Workfront Fusionには以下の�
 ### その他
 
 * [カスタム API 呼び出しの実行](#make-a-custom-api-call)
+* [カスタム API呼び出しを行う（レガシー）](#make-a-custom-api-call-legacy)
 * [VQL クエリの作成](#make-a-vql-query)
 * [ログの読み取り](#read-logs)
 
 #### カスタム API 呼び出しの実行
 
-このアクションモジュールは、Veeva Vault APIをカスタム呼び出します。
+このアクションモジュールは、Veeva Vault APIをカスタム呼び出します。 複数のリクエスト本文タイプをサポートしています。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">接続</td> 
+   <td> <p>Veeva Vault アカウントをWorkfront Fusionに接続する手順については、この記事の「<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Veeva VaultをWorkfront Fusionに接続する</a>」を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">URL</td> 
+   <td><code>baseurl/api/v</code> からの相対パスを入力します。  例：<code>/objects/documents</code> <code>baseurl/api/v/</code>は既に含まれているため、含めないでください。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">メソッド</td> 
+   <td> <p>API 呼び出しの設定に必要な HTTP リクエストメソッドを選択します。 詳しくは、<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP リクエスト方法</a>を参照してください。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ヘッダー</td> 
+   <td> <p>リクエストのヘッダーを標準 JSON オブジェクトの形式で追加します。</p> <p>例： <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion は認証ヘッダーを追加します。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">クエリ文字列</td> 
+   <td> <p>API 呼び出しのクエリを標準 JSON オブジェクトの形式で追加します。</p> <p>例： <code>{"name":"something-urgent"}</code></p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Body type</td> 
+   <td> <p>リクエストで送信する本文のタイプを選択します。</p>
+     <ul>
+       <li><code>urlencoded</code></li>
+       <li><code>multipart_form_data</code></li>
+       <li><code>raw</code></li>
+       <li><code>binary</code></li>
+     </ul>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">コンテンツを依頼</td> 
+   <td> <p>生またはバイナリの本文タイプを使用している場合は、API呼び出しの本文コンテンツを入力またはマッピングします。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">フィールド</td> 
+   <td> <p>urlencodedまたはマルチパートのフォームデータ本文タイプ、またはバイナリボディタイプを使用している場合は、データを追加する各フィールドについて、<b>項目を追加</b>をクリックし、フィールドのキーと値を入力します。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+#### カスタム API呼び出しを行う（レガシー）
+
+このアクションモジュールは、Veeva Vault APIをカスタム呼び出します。 このモジュールは`raw` ボディタイプのみをサポートします。 他のボディタイプを使用するには、[&#x200B; カスタム API呼び出しを作成](#make-a-custom-api-call) モジュールを使用します。
 
 <table style="table-layout:auto"> 
  <col> 
