@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 4d64f865dd3e826daef02abaaf3c68daa7ed363e
+source-git-commit: d3bb4ef202fd92ab7663ad5c2816c70e8bab6685
 workflow-type: tm+mt
-source-wordcount: '7761'
-ht-degree: 90%
+source-wordcount: '7773'
+ht-degree: 89%
 ---
 # Adobe Workfront モジュール
 
@@ -2403,11 +2403,11 @@ Workfront／イベントの監視フィルターで使用できる演算子は�
 * が次よりも小さいか等しい
 * が次を含む
 * 存在する
-  * この演算子には値は必要ありません。また、値フィールドは存在しません。
+  * この演算子は値を必要としないので、値フィールドはフィルターに含まれません。
 * が存在しません
-  * この演算子には値は必要ありません。また、値フィールドは存在しません。
+  * この演算子は値を必要としないので、値フィールドはフィルターに含まれません。
 * 変更済み
-  * この演算子には値は必要ありません。また、値フィールドは存在しません。
+  * この演算子は値を必要としないので、値フィールドはフィルターに含まれません。
   * この演算子では、「状態」フィールドを無視します。
   * `Changed` を使用する際は、「**レコード元**」フィールドで「**更新されたイベントのみ**」を選択します。
 
