@@ -11,7 +11,7 @@ ht-degree: 8%
 
 Adobe Workfront Fusion MCP サーバーでは、サポート対象のAI エージェント基盤での自然言語の会話を通じて、Fusion組織のシナリオ、実行、接続、webhook、データストアなどと連携できます。
 
-Adobe Workfront Fusion MCP サーバーで使用できるツールの一覧については、[Adobe Workfront Fusion MCP サーバーツール ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/fusion-mcp-server-tools.md)を参照してください。
+Adobe Workfront Fusion MCP サーバーで使用できるツールの一覧については、[Adobe Workfront Fusion MCP サーバーツール &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/fusion-mcp-server-tools.md)を参照してください。
 
 ## アクセス要件
 
@@ -143,7 +143,7 @@ Fusionをカスタムコネクタとして追加します。
 
 >[!NOTE]
 >
-> Claude Team/Enterpriseでは、カスタムコネクタを追加するには所有者である必要があります。 詳しくは、Claude ドキュメントの「[ リモート MCP](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp)を使用したカスタムコネクタの基本を学ぶ」を参照してください。
+> Claude Team/Enterpriseでは、カスタムコネクタを追加するには所有者である必要があります。 詳しくは、Claude ドキュメントの「[&#x200B; リモート MCP](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp)を使用したカスタムコネクタの基本を学ぶ」を参照してください。
 
 1. [Claude](https://claude.ai)にログインします。
 1. 左側のメニューで、**カスタマイズ**&#x200B;を選択します。
