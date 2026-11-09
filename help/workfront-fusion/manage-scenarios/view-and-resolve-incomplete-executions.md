@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: ddf7d3e48a5aee72d8f39b5b6746d1e3e884a7d0
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 68%
+source-wordcount: '554'
+ht-degree: 67%
 ---
 # 未完了の実行の表示と解決
 
@@ -24,11 +24,7 @@ ht-degree: 68%
 >
 >デフォルトでは、未完了の実行の保存は無効になっています。 有効にするには、シナリオの詳細設定で「[!UICONTROL 未完了の実行の保存を許可]」オプションを有効にします。
 >
->シナリオ設定について詳しくは、[&#x200B; シナリオ設定の設定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)を参照してください。
-
-記事全文{#highlighted-preview-article-level}のハイライト表示されたプレビュー
-
-<span class="preview">このページの情報は、まだ一般に提供されていない機能を指します。 プレビューサンドボックス環境でのみ使用できます。</span>
+>シナリオ設定について詳しくは、[ シナリオ設定の設定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)を参照してください。
 
 ## 不完全な実行を表示
 
@@ -50,7 +46,7 @@ ht-degree: 68%
 >
 >未解決の不完全な実行の場合、チームは合計500 MBに制限されます。
 >
->詳細については、「シナリオ設定の構成」の「[&#x200B; データ損失を有効にする](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable-data-loss)」を参照してください。
+>詳細については、「シナリオ設定の構成」の「[ データ損失を有効にする](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable-data-loss)」を参照してください。
 
 
 ## 「不完全な実行」タブから不完全な実行を解決する
@@ -87,7 +83,7 @@ ht-degree: 68%
 * 順次処理
 * データ損失を有効にする
 
-これらのオプションについて詳しくは、[&#x200B; シナリオ設定の設定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)を参照してください。
+これらのオプションについて詳しくは、[ シナリオ設定の設定](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)を参照してください。
 
 ## 未完了の実行になるエラー
 
