@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 4d64f865dd3e826daef02abaaf3c68daa7ed363e
+source-git-commit: d3bb4ef202fd92ab7663ad5c2816c70e8bab6685
 workflow-type: tm+mt
-source-wordcount: '7761'
-ht-degree: 90%
+source-wordcount: '7773'
+ht-degree: 89%
 ---
 # Adobe Workfront モジュール
 
@@ -128,7 +128,7 @@ Workfront アカウントへの接続を Workfront Fusion モジュール内か�
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL スコープ &#x200B;] <i> （オプション） </i></td>
+        <td role="rowheader">[!UICONTROL スコープ ] <i> （オプション） </i></td>
         <td>この接続の追加の範囲を入力します。 デフォルトのスコープを使用するには、このフィールドを空のままにします。</td>
       </tr>
       <tr>
@@ -302,7 +302,7 @@ Workfront モジュールを設定すると、Workfront Fusion には以下の�
        </td> 
      </tr> 
      <tr> 
-      <td>[!UICONTROL カスタム トークン &#x200B;]</td> 
+      <td>[!UICONTROL カスタム トークン ]</td> 
       <td>
        <p>（オプション） [!UICONTROL Enable secured hook]が[!UICONTROL Yes]に設定されている場合、独自のトークン値を入力してWebhookを保護できます。 このフィールドを空白のままにすると、Fusionが自動的にトークンを生成します。</p>
        </td> 
@@ -324,7 +324,7 @@ Webhook を作成した後、イベントの送信先エンドポイントのア
 >
 >重複検出は、`x-event-id` ヘッダーを含み、`User-Agent`を`Workfront Event Subscription`として識別する通知に適用されます。
 >
->Fusionが適格な通知を受信すると、そのWebhookのイベント IDが&#x200B;**1時間**&#x200B;記録されます。 この期間中に同じイベント IDを持つ別の通知が同じWebhookに到達した場合、Fusionはシナリオ処理のために転送することなく通知を確認します。
+>Fusionが適格な通知を受信すると、そのWebhookのイベント IDが&#x200B;**1時間**記録されます。 この期間中に同じイベント IDを持つ別の通知が同じWebhookに到達した場合、Fusionはシナリオ処理のために転送することなく通知を確認します。
 >重複検出は、各Webhookに固有です。 同じイベントを異なるWebhookで個別に処理できます。 重複を受信しても、1時間の期間は再開されません。
 
 #### [!UICONTROL フィールドを監視]
@@ -1069,7 +1069,7 @@ Workfront は最近、イベント登録サービスの新しいバージョン�
 
 新しいイベント登録バージョンについて詳しくは、Workfront ドキュメントの[イベント登録のバージョン管理](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)を参照してください。
 
-ウェビナーの録画など、イベント登録のアップグレード中に Workfront Fusion シナリオを保持する方法について詳しくは、[イベント登録 V2 のアップグレード中の Fusion シナリオの保持](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ja)を参照してください。
+ウェビナーの録画など、イベント登録のアップグレード中に Workfront Fusion シナリオを保持する方法について詳しくは、[イベント登録 V2 のアップグレード中の Fusion シナリオの保持](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)を参照してください。
 
 <table style="table-layout:auto">
  <col> 
@@ -2385,7 +2385,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >   新しいイベント登録バージョンについて詳しくは、Workfront ドキュメントの[イベント登録のバージョン管理](https://experienceleague.adobe.com/ja/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)を参照してください。
 >
->   ウェビナーの録画など、イベント登録のアップグレード中に Workfront Fusion シナリオを保持する方法について詳しくは、[イベント登録 V2 のアップグレード中の Fusion シナリオの保持](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=ja)を参照してください。
+>   ウェビナーの録画など、イベント登録のアップグレード中に Workfront Fusion シナリオを保持する方法について詳しくは、[イベント登録 V2 のアップグレード中の Fusion シナリオの保持](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)を参照してください。
 
 Workfront [!UICONTROL イベントを監視]モジュールは、Workfront API でイベント登録を作成する Webhook に基づいてシナリオをトリガーします。 イベント登録は、web フックに送信されるイベントを決定する一連のデータです。 例えば、イシューを監視する[!UICONTROL イベントの監視]モジュールを設定した場合、イベント登録はイシューに関連するイベントのみを送信します。
 
@@ -2403,11 +2403,11 @@ Workfront／イベントの監視フィルターで使用できる演算子は�
 * が次よりも小さいか等しい
 * が次を含む
 * 存在する
-  * この演算子には値は必要ありません。また、値フィールドは存在しません。
+  * この演算子は値を必要としないので、値フィールドはフィルターに含まれません。
 * が存在しません
-  * この演算子には値は必要ありません。また、値フィールドは存在しません。
+  * この演算子は値を必要としないので、値フィールドはフィルターに含まれません。
 * 変更済み
-  * この演算子には値は必要ありません。また、値フィールドは存在しません。
+  * この演算子は値を必要としないので、値フィールドはフィルターに含まれません。
   * この演算子では、「状態」フィールドを無視します。
   * `Changed` を使用する際は、「**レコード元**」フィールドで「**更新されたイベントのみ**」を選択します。
 
