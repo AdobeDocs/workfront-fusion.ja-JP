@@ -89,7 +89,7 @@ Adobe Workfront Fusionの管理者とチーム管理者は、ユーザーロー�
 
 >[!NOTE]
 >
->定義済みの役割に加えて、チームにはカスタムの役割を設定できます。 カスタムロールの作成と管理について詳しくは、[ チームロールの表示と管理](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md)を参照してください。
+>定義済みの役割に加えて、チームにはカスタムの役割を設定できます。 カスタムロールの作成と管理について詳しくは、[&#x200B; チームロールの表示と管理](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md)を参照してください。
 
 1. Workfront Fusion管理者としてログインしている間、左側のナビゲーションで「**[!UICONTROL すべてのユーザー]**」を選択します。
 1. 表示したいユーザーの行で&#x200B;**[!UICONTROL 詳細]**&#x200B;をクリックします。

@@ -24,7 +24,7 @@ Adobe Workfront Fusion最大の事業体です。 たとえば、Fusion組織は
 
 チームは、組織内の小さなグループで、シナリオ、接続、テンプレートなどのFusion リソースを共有します。
 
-チームの作成手順については、[ チームの作成](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/create-a-team.md)を参照してください。
+チームの作成手順については、[&#x200B; チームの作成](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/create-a-team.md)を参照してください。
 
 ## 組織
 
@@ -38,7 +38,7 @@ Workfront Fusion ユーザーは組織に属しています。
 
 * **ワーカープール：**: ワーカープールは、特定の組織に特化したWorkfront Fusion処理リソースの量です。
 
-  詳しくは、[ ワーカープール ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)を参照してください。
+  詳しくは、[&#x200B; ワーカープール &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)を参照してください。
 
 * **操作**: Adobe Workfront Fusionでの操作は、モジュールによって実行されるタスクです。
 
@@ -94,7 +94,7 @@ Workfront Fusion ユーザーは組織に属しています。
 
 定義済みのチームの役割に加えて、各チームには&#x200B;**[!UICONTROL 役割]** タブがあり、独自の役割を作成できます。 役割を作成、更新、削除し、各役割に含まれる権限を正確に選択できます。 固定された役割セットに限定されなくなりました。
 
-手順については、[ チームの役割の表示と管理](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md)を参照してください。
+手順については、[&#x200B; チームの役割の表示と管理](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md)を参照してください。
 
 カスタム役割を使用すると、次のことが可能になります。
 

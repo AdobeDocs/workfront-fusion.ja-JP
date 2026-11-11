@@ -85,7 +85,7 @@ ht-degree: 65%
 
 >[!NOTE]
 >
->次の表に、定義済みのチームロールの権限を示します。 これらの役割に加えて、チームのカスタムロールを作成することもできます。 詳しくは、[ カスタムチームロール ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md#custom-team-roles)および[ チームロールの表示と管理](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md)を参照してください。
+>次の表に、定義済みのチームロールの権限を示します。 これらの役割に加えて、チームのカスタムロールを作成することもできます。 詳しくは、[&#x200B; カスタムチームロール &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md#custom-team-roles)および[&#x200B; チームロールの表示と管理](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md)を参照してください。
 
 ### シナリオ
 

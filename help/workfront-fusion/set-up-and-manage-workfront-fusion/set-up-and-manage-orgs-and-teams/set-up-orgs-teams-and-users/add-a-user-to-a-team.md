@@ -69,4 +69,4 @@ Fusionにユーザーを追加するには、「[Adobe Admin Consoleを介して
 
    >[!NOTE]
    >
-   >定義済みの役割に加えて、チームにはカスタムの役割を設定できます。 カスタムロールの作成について詳しくは、[ チームロールの表示と管理](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md)を参照してください。
+   >定義済みの役割に加えて、チームにはカスタムの役割を設定できます。 カスタムロールの作成について詳しくは、[&#x200B; チームロールの表示と管理](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md)を参照してください。

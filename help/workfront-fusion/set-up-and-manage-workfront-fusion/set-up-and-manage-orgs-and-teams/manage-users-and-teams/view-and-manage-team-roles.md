@@ -97,7 +97,7 @@ ht-degree: 11%
    * エリア内のすべての権限を一度に設定するには、エリア名の横にある&#x200B;**[!UICONTROL アクセスなし]**、**[!UICONTROL 表示のみ]**、または&#x200B;**[!UICONTROL フルアクセス]**&#x200B;をクリックします。
    * 特定の権限を選択するには、各権限のチェックボックスをオンまたはオフにします。
 
-   権限のリストについては、この記事の役割](#permissions-that-you-can-include-in-a-role)に含めることができる[権限を参照してください。
+   権限のリストについては、この記事の役割[&#128279;](#permissions-that-you-can-include-in-a-role)に含めることができる権限を参照してください。
 
    <!-- BECKY CHECK ME: Confirm the options in the Role template dropdown and what each one selects. Confirm exactly what No access, View only, and Full access select in each area (in the screenshot, View only selects the view permissions). Confirm whether there is a Description field, and whether there are areas below Team on the page (the screenshots end at Team). -->
 
@@ -141,7 +141,7 @@ ht-degree: 11%
    <td>表示、作成、編集、削除</td>
   </tr>
  <tr>
-   <td role="rowheader">[!UICONTROL データ ストア ]</td>
+   <td role="rowheader">[!UICONTROL データ ストア &#x200B;]</td>
    <td>リストの表示、レコードの参照、作成、編集、削除</td>
   </tr>
  <tr>
@@ -193,7 +193,7 @@ ht-degree: 11%
       <td> <p>ソースの役割がコピーされるターゲットチームの役割。</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROLの変更]</td> 
+      <td role="rowheader">[!UICONTROL の変更]</td> 
       <td> <p>ターゲットの役割とソースの役割が異なるかどうか。 例えば、<b>[!UICONTROL Already in sync]</b>は、ターゲットの役割がソースの役割と同じ権限を既に持っていることを意味します。</p> </td> 
      </tr> 
      <tr> 
@@ -215,7 +215,7 @@ ht-degree: 11%
 
 ## ユーザーへの役割の割り当て
 
-カスタムの役割は、定義済みの役割を割り当てるのと同じように割り当てます。 手順については、[ チームへのユーザーの追加](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md)および[ ユーザーの役割の表示または編集](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md#view-or-edit-user-roles-for-a-team)を参照してください。
+カスタムの役割は、定義済みの役割を割り当てるのと同じように割り当てます。 手順については、[&#x200B; チームへのユーザーの追加](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md)および[&#x200B; ユーザーの役割の表示または編集](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md#view-or-edit-user-roles-for-a-team)を参照してください。
 
 <!-- BECKY CHECK ME: Confirm that custom roles appear in the role dropdowns in both of these procedures. -->
 
