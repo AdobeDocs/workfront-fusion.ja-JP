@@ -3,9 +3,9 @@ user-guide-title: Adobe Workfront Fusion ドキュメント
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 組織で Adobe Workfront Fusion を実装し、効果的に使用する方法を学ぶには、本ドキュメント、チュートリアル、その他のリソースを使用します。
 nudge: true
-source-git-commit: 41ba069a36eeddbadbd993602a3b5f7ede60cefa
+source-git-commit: f5e074eee39c7626f8ccd0ecb722d26d9667b908
 workflow-type: tm+mt
-source-wordcount: '2821'
+source-wordcount: '2826'
 ht-degree: 46%
 ---
 
@@ -225,6 +225,7 @@ ht-degree: 46%
       * [ユーザーの詳細を表示または編集](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-details.md)
       * [ユーザーの役割を表示または編集](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md)
       * [チームの表示と管理](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-teams.md)
+      * [チームの役割の表示と管理](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md)
       * [Adobe Admin Console でのユーザーの削除](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/delete-users-admin-console.md)
   * カスタム拡張機能を設定 {#configure-custom-extensions}
     * [カスタム UI拡張機能：記事インデックス](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-00-readme.md)
@@ -325,7 +326,7 @@ ht-degree: 46%
   * [チェーンへのモジュールの移動](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)
   * [実行中のシナリオでのデータフローの表示](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
   * [Webhook のキューの表示](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
-  * {hide-from-toc}[Workfront FusionのAI アシスタント &#x200B;](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
+  * {hide-from-toc}[Workfront FusionのAI アシスタント ](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
   * [シナリオスコアリングエキスパートの実行](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
   * [シナリオ要素の削除](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
   * [「シナリオ」エリアからシナリオを管理します](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)

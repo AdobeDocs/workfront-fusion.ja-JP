@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 62dff65d6de1c2301ca8e99f5aaeda05e6a34ffe
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 25%
+source-wordcount: '542'
+ht-degree: 24%
 ---
 # ユーザーの役割を表示または編集
 
@@ -87,7 +87,12 @@ Adobe Workfront Fusion管理者は、組織のユーザーロールを表示お�
 
 Adobe Workfront Fusionの管理者とチーム管理者は、ユーザーロールを表示および更新できます。
 
+>[!NOTE]
+>
+>定義済みの役割に加えて、チームにはカスタムの役割を設定できます。 カスタムロールの作成と管理について詳しくは、[ チームロールの表示と管理](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md)を参照してください。
+
 1. Workfront Fusion管理者としてログインしている間、左側のナビゲーションで「**[!UICONTROL すべてのユーザー]**」を選択します。
 1. 表示したいユーザーの行で&#x200B;**[!UICONTROL 詳細]**&#x200B;をクリックします。
 1. ユーザーの役割を表示または編集するチームを含む組織の行の&#x200B;**[!DNL Role]**&#x200B;列にある「チーム」アイコンをクリックします。
 1. （オプション）チーム内のユーザーの役割を更新するには、ユーザーの役割を変更するチームの行の&#x200B;**[!DNL Role]**&#x200B;列にあるドロップダウンをクリックし、新しい役割を選択します。
+
