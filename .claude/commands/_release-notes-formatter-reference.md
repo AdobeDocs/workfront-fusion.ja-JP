@@ -1,9 +1,8 @@
 ---
-source-git-commit: 4d32e8aab5b3b8a12dbc23e61f517fc4fd6dc9e5
+source-git-commit: 873d91ff9db954bfad835ccb4d8f423ea7f46102
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '295'
 ht-degree: 0%
-
 ---
 # リリースノートのリファレンステンプレート
 
@@ -11,7 +10,7 @@ ht-degree: 0%
 `help/quicksilver/product-announcements/product-releases/release-note-templates/`および
 直近の四半期リリースで使用された実際の書式設定。
 
-&#x200B;---
+---
 
 ## 製品領域ページテンプレート
 
@@ -57,17 +56,15 @@ For more information, see [Help article title](/help/quicksilver/path/to/article
   >Production fast release: {date}
   >Production for everyone: {date}
   ```
-
 - 機能が一時的に削除された場合は、日付の後に行を追加します。
 
   ```
   >
   >This feature has been temporarily removed from the Production environment on {date}.
   ```
-
 - ヘルプリンクは、`/help/quicksilver/`で始まる絶対パスを使用します
 
-&#x200B;---
+---
 
 ## 概要ページテンプレート
 
@@ -144,8 +141,7 @@ The enhancements on this page are available in the Preview environment. This pag
 - 機能セル：`<a>` タグに`class="MCXref xref" xrefformat="{para}"`が付けられ、その後`<p>`の説明が続きます
 - `href`は製品領域ページにリンクします（特定のアンカーではありません）
 - 日付セル：`<p>` タグで折り返されています
-- スケジュール外の項目の場合は、リンクの後に`<p>[!BADGE Off schedule]{type=Neutral}</p>`を追加します
-- バッジが不要な場合、リンクが許可された後に`<p></p>`が空になります
+- スケジュール外の項目の場合は、説明の段落の前に直接リンク段落の下に`<p>[!BADGE Off schedule]{type=Neutral}</p>`を独自の段落として追加します。バッジが不要な場合は、リンクの後に空の`<p></p>`を指定できます
 - HTMLのインデントを既存のファイルと一致させる
 
 ### 概要の末尾のセクション
@@ -157,7 +153,7 @@ The enhancements on this page are available in the Preview environment. This pag
 
 ### Workfront Fusion enhancements
 
-New features in Workfront Fusion are available in Production at a cadence outside of the standard release schedule. For more information about the latest features, see [Adobe Workfront Fusion release activity](https://experienceleague.adobe.com/ja/docs/workfront-fusion/using/fusion-release-activity/fusion-release-activity).
+New features in Workfront Fusion are available in Production at a cadence outside of the standard release schedule. For more information about the latest features, see [Adobe Workfront Fusion release activity](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/fusion-release-activity/fusion-release-activity).
 
 ### Workfront Planning enhancements
 
@@ -183,14 +179,14 @@ There are no updates for the following at this point in the release:
 
 ### Workfront Maintenance Updates
 
-For information about the maintenance updates made during the {Written Quarter} {Year} release, see [Workfront Maintenance Updates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=ja).
+For information about the maintenance updates made during the {Written Quarter} {Year} release, see [Workfront Maintenance Updates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html).
 
 ### Training updates
 
-Explore the latest updates made to learning programs, learning paths, videos, and guides for each Adobe Workfront product release. For more information, see the "What's New" section of the [Workfront Tutorials page](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/home.html?lang=ja).
+Explore the latest updates made to learning programs, learning paths, videos, and guides for each Adobe Workfront product release. For more information, see the "What's New" section of the [Workfront Tutorials page](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/home.html).
 ```
 
-&#x200B;---
+---
 
 ## ルックアンドフィールのページテンプレート
 
@@ -219,7 +215,7 @@ For a list of all changes available with the {Written Quarter} {Year} release, s
 Description of the look-and-feel change.
 ```
 
-&#x200B;---
+---
 
 ## 日付コールアウト形式
 
@@ -249,7 +245,7 @@ Description of the look-and-feel change.
 >Preview release: February 9, 2023; Planned Production release: February 23, 2023
 ```
 
-&#x200B;---
+---
 
 ## 監視すべき既知の不整合
 
