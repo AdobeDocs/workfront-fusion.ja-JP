@@ -92,7 +92,7 @@ Fusionの「関数」エリアでカスタム関数を作成できます。 次�
       <td>ワークスペースの<code>auth</code>値（コロンの後の部分）からパスワードを入力します。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL名前空間]</td> 
+      <td role="rowheader">[!UICONTROL 名前空間]</td> 
       <td>ワークスペース設定ファイルの<code>runtime</code> セクションから<code>namespace</code>値を入力します。</td> 
      </tr> 
     </tbody> 
@@ -115,7 +115,7 @@ Fusionの「関数」エリアでカスタム関数を作成できます。 次�
    <td>実行するカスタム関数を含む接続を選択します。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Code ブロック ]</td> 
+   <td role="rowheader">[!UICONTROL Code ブロック &#x200B;]</td> 
    <td>モジュールを実行するコードブロックを入力します。<p>読みやすいようにコードを書式設定するには、「<b> コードを書式設定</b>」アイコンをクリックします。</td> 
   </tr> 
    </tbody> 
@@ -125,7 +125,7 @@ Fusionの「関数」エリアでカスタム関数を作成できます。 次�
 
 このモジュールは、パッケージから関数を実行します。
 
-パッケージについて詳しくは、[ カスタム関数パッケージの使用](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md)を参照してください。
+パッケージについて詳しくは、[&#x200B; カスタム関数パッケージの使用](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md)を参照してください。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -136,11 +136,11 @@ Fusionの「関数」エリアでカスタム関数を作成できます。 次�
    <td>実行するカスタム関数を含む接続を選択します。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL パッケージ ]</td> 
+   <td role="rowheader">[!UICONTROL パッケージ &#x200B;]</td> 
    <td>シナリオで実行する関数を含むパッケージを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL変数] </td> 
+   <td role="rowheader">[!UICONTROL 変数] </td> 
    <td>シナリオで実行する関数を選択します。</p></td> 
   </tr> 
    </tbody> 
@@ -150,7 +150,7 @@ Fusionの「関数」エリアでカスタム関数を作成できます。 次�
 
 このモジュールは、パッケージで設定された変数をシナリオに取り込みます。
 
-パッケージについて詳しくは、[ カスタム関数パッケージの使用](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md)を参照してください。
+パッケージについて詳しくは、[&#x200B; カスタム関数パッケージの使用](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md)を参照してください。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -161,11 +161,11 @@ Fusionの「関数」エリアでカスタム関数を作成できます。 次�
    <td>実行するカスタム関数を含む接続を選択します。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL パッケージ ]</td> 
+   <td role="rowheader">[!UICONTROL パッケージ &#x200B;]</td> 
    <td>シナリオに取り込む変数を含むパッケージを選択します。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL変数] </td> 
+   <td role="rowheader">[!UICONTROL 変数] </td> 
    <td>シナリオに取り込む変数を選択します。</p></td> 
   </tr> 
    </tbody> 
@@ -175,7 +175,7 @@ Fusionの「関数」エリアでカスタム関数を作成できます。 次�
 
 このモジュールでは、以前に設定したカスタム JavaScript関数を関数エリアに格納して使用できます。
 
-カスタム関数の設定方法については、[ カスタム関数を使用したデータのマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)を参照してください。
+カスタム関数の設定方法については、[&#x200B; カスタム関数を使用したデータのマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)を参照してください。
 
 <table style="table-layout:auto"> 
  <col> 
