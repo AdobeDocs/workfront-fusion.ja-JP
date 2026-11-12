@@ -4,13 +4,11 @@ description: Adobe App Builder コネクタを使用すると、シナリオで�
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: e24fc726107fcfa34e9288e9a35af445fc0cc765
+source-git-commit: 02c396f33b6398635462bac8741f446eb82bf5a9
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 19%
-
+source-wordcount: '754'
+ht-degree: 16%
 ---
-
 # Adobe App Builder モジュール
 
 Fusionの「関数」エリアでカスタム関数を作成できます。 次に、これらの関数をAdobe App Builder モジュールの形式でシナリオに追加します。
@@ -45,6 +43,62 @@ Fusionの「関数」エリアでカスタム関数を作成できます。 次�
 この表の情報について詳しくは、[ドキュメントのアクセス要件](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)を参照してください。
 
 +++
+
+## Adobe App Builderへの接続の作成
+
+接続は、App Builder プロジェクトワークスペースのAdobe I/O Runtime資格情報を使用します。 接続を作成する前に、Adobe Developer Consoleからこれらの資格情報を取得します。
+
+### Runtime資格情報を取得する
+
+1. App Builder ライセンスを持つ組織で[Adobe Developer Console](https://developer.adobe.com/console)にログインします。
+1. 関数を含むApp Builder プロジェクトを開き、接続するワークスペースを選択します（例：**実稼動**）。
+1. 右上隅の&#x200B;**すべてをダウンロード**&#x200B;をクリックして、ワークスペース設定JSON ファイルをダウンロードします。
+1. ファイルを開き、`runtime` セクションを見つけます。 次が含まれます。
+
+   * `namespace`: **名前空間** フィールドに入力する値
+   * `auth`：形式`username:password`の値。 コロンの前の部分は&#x200B;**ユーザー名**&#x200B;で、コロンの後の部分は&#x200B;**パスワード**&#x200B;です。
+
+   >[!NOTE]
+   >
+   >Adobe I/O CLIで`aio runtime namespace get`または`aio app use`を実行して、名前空間と認証値を検索することもできます。
+
+### 接続の作成
+
+1. モジュールで、**接続** フィールドの横にある&#x200B;**追加**&#x200B;をクリックします。
+1. 次のフィールドに入力します。
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Connection name]</td> 
+      <td>この接続の名前を入力します。</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Environment]</td> 
+      <td>実稼動環境と非実稼動環境のどちらに接続するかを選択します。</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Type]</td> 
+      <td><b> サービスアカウント </b>を選択します。</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Username]</td> 
+      <td>ワークスペースの<code>auth</code>値（コロンの前の部分）からユーザー名を入力します。</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Password]</td> 
+      <td>ワークスペースの<code>auth</code>値（コロンの後の部分）からパスワードを入力します。</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL 名前空間]</td> 
+      <td>ワークスペース設定ファイルの<code>runtime</code> セクションから<code>namespace</code>値を入力します。</td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+1. **続行**&#x200B;をクリックして接続を保存します。
 
 ## Adobe App Builder モジュール
 
