@@ -1,9 +1,8 @@
 ---
-source-git-commit: 4d32e8aab5b3b8a12dbc23e61f517fc4fd6dc9e5
+source-git-commit: 873d91ff9db954bfad835ccb4d8f423ea7f46102
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '295'
 ht-degree: 0%
-
 ---
 # リリースノートのリファレンステンプレート
 
@@ -144,8 +143,7 @@ The enhancements on this page are available in the Preview environment. This pag
 - 機能セル：`<a>` タグに`class="MCXref xref" xrefformat="{para}"`が付けられ、その後`<p>`の説明が続きます
 - `href`は製品領域ページにリンクします（特定のアンカーではありません）
 - 日付セル：`<p>` タグで折り返されています
-- スケジュール外の項目の場合は、リンクの後に`<p>[!BADGE Off schedule]{type=Neutral}</p>`を追加します
-- バッジが不要な場合、リンクが許可された後に`<p></p>`が空になります
+- スケジュール外の項目の場合は、説明の段落の前に直接リンク段落の下に`<p>[!BADGE Off schedule]{type=Neutral}</p>`を独自の段落として追加します。バッジが不要な場合は、リンクの後に空の`<p></p>`を指定できます
 - HTMLのインデントを既存のファイルと一致させる
 
 ### 概要の末尾のセクション
