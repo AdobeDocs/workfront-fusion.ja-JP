@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: f9cdbcf936fc6b022f6513f47b9b377424731419
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 51%
+source-wordcount: '795'
+ht-degree: 39%
 ---
 # Adobe Workfront Fusion組織とチームの概要
 
@@ -87,3 +87,25 @@ Workfront Fusion ユーザーは組織に属しています。
 * **[!UICONTROL チーム制限メンバー]**：この役割の機能は現在使用できません。近い将来に使用可能になる予定です。 現時点では、この役割にユーザーを割り当てることはお勧めしません。
 
 各チームの役割でユーザーが使用できる特定のアクションについて詳しくは、[組織とチームの役割](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md)を参照してください。
+
+### カスタムチームの役割
+
+<!-- BECKY CHECK ME: The source material (the Slack announcement) says flexible permissions are live in QA and for internal customers, with a limited pilot with paid customers next, then general availability. Confirm availability at the 2026-11-12 release before publishing, and whether this section should say that the feature is available only to some organizations. -->
+
+定義済みのチームの役割に加えて、各チームには&#x200B;**[!UICONTROL 役割]** タブがあり、独自の役割を作成できます。 役割を作成、更新、削除し、各役割に含まれる権限を正確に選択できます。 固定された役割セットに限定されなくなりました。
+
+手順については、[&#x200B; チームの役割の表示と管理](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md)を参照してください。
+
+カスタム役割を使用すると、次のことが可能になります。
+
+* 各従業員に必要なアクセス権のみを付与し、重要なシナリオを誤って変更するリスクを低減します。
+* あらかじめ定義された役割にチームを組み込むのではなく、組織の働き方に合わせてアクセス権を設定できます。
+* サポートに連絡することなく、自分でアクセスを管理。
+
+チームの&#x200B;**[!UICONTROL メンバーの管理]**&#x200B;権限を持つユーザーは誰でも、そのチームの役割を作成、更新、削除、割り当てることができます。 定義済みの役割では、この権限はチーム管理者と組織所有者の役割に含まれます。
+
+* 組織の所有者は、すべてのチームで役割を作成および管理できます。
+* 組織管理者は、自分がメンバーであり、**[!UICONTROL メンバーを管理]**&#x200B;権限を持つチームでのみ役割を管理できます。
+* チーム管理者は、チーム内の役割を管理できます。
+
+<!-- BECKY CHECK ME: The source does not describe the steps in the Roles tab, the list of permissions that you can choose from, or whether you can edit or delete the predefined roles. Add the steps and permissions list once confirmed. Also confirm that Team Admins can manage roles (the source says the Manage members permission was previously given to Team Admin and Org Owner roles, and that team and org admins can create roles only in the teams where they are admins). -->
