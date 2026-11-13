@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: からのFusion ドキュメントリクエストの処理 #fusion-documentation Slack template - update the relevant Fusion docs article(s) in this repo, then create a matching task in the Product Documentation Workfront project with the feature description and a formatted release note filled in on the custom form. Use when the user shares a Slack documentation-request thread/message for a Fusion feature, or says something like "please update and create a task" for one.
-source-git-commit: 535a10407766d054b00d31869e511753bf07a9b7
+source-git-commit: 17a2d521197e676e41b4b899f7be142430a18c2f
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1704'
 ht-degree: 0%
 ---
 
@@ -36,6 +36,8 @@ Slack リンクが指定されている場合は、URLから`channel_id`と`mess
 ## 手順2：リクエスト用のブランチの作成
 
 ファイルにアクセスする前に、このリクエスト用に新しいGit ブランチを作成してチェックアウトします。 現在のデフォルトブランチ （`main`）から分岐します。チェックアウトされるブランチは分岐しません。
+
+ユーザーが既にブランチを作成して名前を付けている場合は、新しいブランチを作成する代わりにブランチを使用し、手順4のタスクの`Documentation Branch` フィールドにその名前を記録します。
 
 **機能タイトル**&#x200B;から派生した分岐`becky-{short-kebab-case-description}`に名前を付けます。最初の単語は`becky`で、このリポジトリの既存の分岐規則（例：`becky-webhook-update`、`becky-storage-beta-sos`）と一致する必要があります。 タイトル全体の言葉ではなく、短い単語を使用します。
 
@@ -74,9 +76,12 @@ Slack リンクが指定されている場合は、URLから`channel_id`と`mess
 | `DE:Preview Date` | 元のSlack メッセージに記載されている日付（リクエストの&#x200B;**リリース予定日**）（デフォルト） |
 | `taskConstraint` + `constraintDate` | `taskConstraint`を`MFO`に設定し、`constraintDate`で終了する必要があります。=元のSlack メッセージに引用された日付（リクエストの&#x200B;**リリース予定日**）を指定します。これにより、タスクの予定完了日も一致します。 |
 | `DE:Articles to update` | このリクエスト用に作成または更新した記事のリスト（以下を参照） |
+| `DE:Documentation Branch` | ドキュメントの変更が行われるgit ブランチの名前（以下を参照） |
 | 製品/地域 | `Fusion`を選択します（製品ドキュメント フォームの列挙フィールド。不明な場合は`insights_search_fields`で正確なフィールド名を確認してください） |
 
 `DE:Articles to update` （製品ドキュメント フォームのテキストフィールド）には、手順3で作成または変更したすべての記事ファイル、1行につき1つのリポジトリ相対パス （例：`help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md`）が一覧表示されます。 新しい記事（パスの後に`(new)`を追加）と、編集した目次または索引ファイルを含めます。 ドキュメントの編集は手順3で行われるので、タスクが作成されるまでにリストが把握されるため、同じcreate呼び出しで設定します。 ユーザーがドキュメントを編集せずにタスクの作成を求める場合は、フィールドを空のままにし、ドキュメントを編集した場合は後で更新します。
+
+`DE:Documentation Branch` （製品ドキュメント フォームのテキストフィールド）には、ドキュメント編集が行われているGit ブランチの正確な名前（例：`becky-explain-errors-with-ai`）が格納されます。 編集したリポジトリでユーザー名または現在チェックアウトされているブランチを使用します。名前は作成しないでください。 他のフィールドと同じcreate呼び出しで設定します。 ユーザーがドキュメントを編集せずにタスクを作成するように求められ、ブランチがまだ存在しない場合は、フィールドを空のままにして、後で更新します。
 
 プレビュー日フィールドと予定完了日を、この同じ作成呼び出しの一部として設定します。後で使用したり、質問されるのを待ったりしないでください。 ユーザーが後で別の日付を指定したり、日付がまだ知られていないと言った場合は、それに応じて更新しますが、毎回デフォルトで入力します。
 
@@ -108,6 +113,7 @@ For more information, see [{Article title}](/help/workfront-fusion/{path-to-arti
 * 作成したブランチ（ローカルにコミットされ、プッシュされず、プル要求が開かれていない – ステップ 2に従って）。
 * 変更したドキュメントファイルと追加したドキュメント。
 * 変更された記事がタスクの`Articles to update` フィールドに一覧表示されていることを確認します。
+* タスクの`Documentation Branch` フィールドに入力したブランチ名。
 * 変更がブランチ上でコミットされず、ユーザーのレビューを待つこと。
 * タスク名とURL。
 * プレビュー日フィールドを含め、設定した正確なフィールド値。
@@ -120,4 +126,4 @@ For more information, see [{Article title}](/help/workfront-fusion/{path-to-arti
 * プロジェクト「製品ドキュメント タスク – メッセージを必要とする開発問題」はID `5e69583f00236b9f767c3e3944100ee4`にマッピングされます
 * 親タスク「Becky - Tasks from Fusion-Documentation channel」は、ID `6a9b065100003a7554832780c2015e93` （同じプロジェクト）にマッピングされます。変更が生じた場合は、ハードコーディングではなく`insights_find_id_by_name` （エンティティ `task`）で解決されます
 * 製品ドキュメント カスタムフォーム （`categoryID`）は`5d7275b9000514604bd969d418725843`です
-* 使用されるカスタムフィールド：`DE:Release notes`、`DE:Preview Date Known`、`DE:Preview Date`
+* 使用されるカスタムフィールド：`DE:Release notes`、`DE:Preview Date Known`、`DE:Preview Date`、`DE:Articles to update`、`DE:Documentation Branch`
