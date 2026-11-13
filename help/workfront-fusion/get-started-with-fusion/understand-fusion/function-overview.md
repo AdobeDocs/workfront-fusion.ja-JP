@@ -38,7 +38,7 @@ Workfront Fusionには、シンプルな数式や複雑な数式を作成する�
 | 関数のタイプ | 詳しくは、次を参照してください。 |
 | --- | --- |
 | **他のモジュールからのマッピング**<br>![&#x200B;他のモジュールからのマッピング](assets/toolbar-icon-functions-you-map-from-other-modules.png) | [モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) |
-| **AIで入力**<br>![ AIで入力](assets/toolbar-icon-fill-by-ai.png) | [AIを使用して式を生成](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md#generate-an-expression-with-ai) |
+| **AIで入力**<br>![&#x200B; AIで入力](assets/toolbar-icon-fill-by-ai.png) | [AIを使用して式を生成](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md#generate-an-expression-with-ai) |
 | **一般的な関数**<br>![&#x200B;一般的な関数](assets/toolbar-icon-general-function.png) | [一般的な関数](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) |
 | **数学関数**<br>![&#x200B;数学関数](assets/toolbar-icon-math-functions.png) | [数学関数](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md) |
 | **テキスト関数とバイナリ関数**<br>![&#x200B;文字列関数](assets/toolbar-icon-text-binary-functions.png) | [文字列関数](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md) |
@@ -54,4 +54,4 @@ Fusionの「関数」エリアでカスタム関数を作成できます。 次�
 
 カスタム関数はAdobe App Builderを通じて機能するため、使用するにはAdobe App Builder ライセンスが必要です。
 
-カスタム関数の詳細と手順については、[ カスタム関数を使用したデータのマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)を参照してください。
+カスタム関数の詳細と手順については、[&#x200B; カスタム関数を使用したデータのマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)を参照してください。

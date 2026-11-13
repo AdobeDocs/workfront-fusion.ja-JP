@@ -22,9 +22,9 @@ Workfront Fusionには、シンプルな数式や複雑な数式を作成する�
 
 さらに、シナリオがデータの変換と操作に使用できるカスタム関数とパッケージを作成できます。
 
-カスタム関数の詳細と手順については、[ カスタム関数を使用したデータのマッピング ](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)を参照してください。
+カスタム関数の詳細と手順については、[&#x200B; カスタム関数を使用したデータのマッピング &#x200B;](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)を参照してください。
 
-関数パッケージの詳細と手順については、[ カスタム関数パッケージの使用](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md)を参照してください。
+関数パッケージの詳細と手順については、[&#x200B; カスタム関数パッケージの使用](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md)を参照してください。
 
 ## アクセス要件
 
@@ -82,7 +82,7 @@ Workfront Fusionには、シンプルな数式や複雑な数式を作成する�
 
    関数パラメーターの説明を表示するには、マッピングパネルの関数にカーソルを合わせます。
 
-   関数とそのパラメーターについて詳しくは、[関数参照：記事インデックス ](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)の記事を参照してください。
+   関数とそのパラメーターについて詳しくは、[関数参照：記事インデックス &#x200B;](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)の記事を参照してください。
 
 1. モジュールの設定を続行するか、**OK**&#x200B;をクリックします。
 
@@ -111,7 +111,7 @@ Workfront Fusionには、シンプルな数式や複雑な数式を作成する�
 
 この例では、部分文字列関数は、トリミングされたプロジェクト名を50文字に制限します。
 
-![ トリミングされた名前](assets/trimmed-name-under-50.png)
+![&#x200B; トリミングされた名前](assets/trimmed-name-under-50.png)
 
 >[!ENDSHADEBOX]
 
