@@ -13,10 +13,10 @@ feature_v2:
     internal-label: APIs
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 9396113bb466ef309e8fcdb06e423a100b6fb271
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 59%
+source-wordcount: '306'
+ht-degree: 57%
 ---
 # 関数の概要
 
@@ -38,11 +38,13 @@ Workfront Fusionには、シンプルな数式や複雑な数式を作成する�
 | 関数のタイプ | 詳しくは、次を参照してください。 |
 | --- | --- |
 | **他のモジュールからのマッピング**<br>![&#x200B;他のモジュールからのマッピング](assets/toolbar-icon-functions-you-map-from-other-modules.png) | [モジュール間での情報のマッピング](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) |
+| **AIで入力**<br>![&#x200B; AIで入力](assets/toolbar-icon-fill-by-ai.png) | [AIを使用して式を生成](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md#generate-an-expression-with-ai) |
 | **一般的な関数**<br>![&#x200B;一般的な関数](assets/toolbar-icon-general-function.png) | [一般的な関数](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) |
 | **数学関数**<br>![&#x200B;数学関数](assets/toolbar-icon-math-functions.png) | [数学関数](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md) |
 | **テキスト関数とバイナリ関数**<br>![&#x200B;文字列関数](assets/toolbar-icon-text-binary-functions.png) | [文字列関数](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md) |
 | **日付と時間** <br> ![日付と時間関数](assets/toolbar-icon-date-time-functions.png) | <ul><li>[日付と時間関数](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)</li><li>[日付と時間の書式設定用トークン](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)</li><li> [日付と時間の解析用トークン](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)</li></ul> |
 | **配列操作用関数**<br> ![配列関数](assets/toolbar-icon-functions-for-arrays.png) | [配列関数](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md) |
+
 
 ![関数ツールバー](assets/new-functions-toolbar.png)
 

@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 9396113bb466ef309e8fcdb06e423a100b6fb271
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 75%
+source-wordcount: '522'
+ht-degree: 70%
 ---
 # マッピングの概要
 
@@ -68,6 +68,9 @@ ht-degree: 75%
 最初のタブには、他のモジュールからマッピングできる項目が表示されます。
 
 その他のタブには、数式の作成に使用できる関数、演算子およびキーワードが含まれます。 これらは、処理するデータのタイプに基づいて異なるタブに並べ替えられます。
+
+「**[!UICONTROL AIで入力]**」タブを使用すると、フィールドに含める内容を平易な言語で説明でき、AIが式を生成します。 詳しくは、[AIを使用した式の生成](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md#generate-an-expression-with-ai)を参照してください。
+
 
 ![マッピングパネル](assets/new-mapping-panel-blank.png)
 
