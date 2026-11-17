@@ -16,10 +16,10 @@ feature_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 29913d8252c39b66cfe4688d760bffb074dbf56c
+source-git-commit: 88b8663ed3f2ec4da1234e5c1c93531133d1e61c
 workflow-type: tm+mt
-source-wordcount: '2732'
-ht-degree: 40%
+source-wordcount: '2436'
+ht-degree: 44%
 ---
 # 現在利用可能な Adobe Workfront Fusion テンプレート
 
@@ -162,36 +162,6 @@ ht-degree: 40%
 #### Workfront – 連続番号シリーズ：問題
 
 このテンプレートでは、イシューに順次番号を付けます。 Workfront – 連続番号系列：オブジェクトのカスタムフォームとフィールドのテンプレートを作成しますが、既存のフォームとフィールドを使用できます。
-
-### Workfront - AEM ワークフローを使用したプロジェクトの作成
-
-[!BADGE 新規！]{type=Informative}
-
-<!--New November 11, 2026-->
-
-<!-- BECKY CHECK ME: The request is titled "Automation New Templates" and lists the fields of two templates, "Create project with AEM workflow" and "Create multiple records". It does not give the exact template names, the trigger, or a description of what each template does. I wrote the descriptions from the field list. Confirm the template names as they appear in the Templates area, the trigger for each template, and the descriptions. -->
-
-このテンプレートは、プロジェクトテンプレートからプロジェクトを作成し、プロジェクトテンプレート用に設定されたAEM リンク済みフォルダーを作成して、新しいプロジェクトにリンクさせることができます。
-
->[!TIP]
->
->* AEMにリンクされたフォルダーは、選択したプロジェクトテンプレートに有効な[AEM ワークフロー](https://experienceleague.adobe.com/ja/docs/workfront/using/administration-and-setup/configure-integrations/configure-aacs-integration#set-up-workflows-optional)があり、少なくとも1つのフォルダーツリーがある場合にのみ作成されます。 そうでない場合は、リンクされたフォルダーを使用せずにプロジェクトが作成されます。
->* 自動処理を保存すると、フォルダーツリーがプロジェクトテンプレートから取得されます。 後でプロジェクトテンプレートのフォルダーツリーを追加または削除する場合は、変更を含めるようにオートメーションを再度編集して保存する必要があります。
-
-### Workfront – 複数のレコードを作成する
-
-[!BADGE 新規！]{type=Informative}
-
-<!--New November 11, 2026-->
-
-このテンプレートは、現在のレコードのフィールドの選択肢に基づいて、レコードタイプに1つ以上のレコードを作成します。
-
->[!TIP]
->
->* 現在のレコードに存在し、フィールドマッピングを持つ選択肢ごとに1つのレコードが作成されます。 マッピングのない選択肢はスキップされ、レコードは作成されません。
->* 作成したレコードに名前を付けるには、ソースフィールドを新しいレコードタイプのプライマリ（名前）フィールドにマッピングします。 各レコードには、*[現在のレコード名]の選択値*&#x200B;という名前が付けられます。 プライマリフィールドをマッピングしない場合、レコードの名前は空のままになります。
->* 選択したレコードのどれも選択したフィールドにマッピングされた選択肢を保持していない場合、レコードは作成されず、メッセージはどのフィールドが空であるかを示します。
->* 自動処理を保存すると、フィールドの選択肢とマッピングが現在のレコードタイプから読み取られます。 後でフィールドまたは選択肢を追加または変更する場合は、変更を含めるように自動処理を編集して再度保存する必要があります。
 
 ## Workfront - Workfront Proof テンプレート
 
