@@ -22,16 +22,16 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 231f1c67031a396b8752fb84a5ff6d017df94267
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 28%
+source-wordcount: '1542'
+ht-degree: 26%
 ---
 # Adobe Storage モジュール
 
 Adobe Workfront Fusionでは、Adobe Admin Consoleでプロジェクトを作成および管理できます。
 
-シナリオの作成手順が必要な場合は、[&#x200B; シナリオの作成：記事インデックス &#x200B;](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
+シナリオの作成手順が必要な場合は、[ シナリオの作成：記事インデックス ](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)の記事を参照してください。
 
 モジュールについて詳しくは、[モジュール：記事インデックス](/help/workfront-fusion/references/modules/modules-toc.md)の記事を参照してください。
 
@@ -134,11 +134,11 @@ Adobe Admin Console ページで、上部のナビゲーションバーの「製
         </td>
         </tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>[!UICONTROL Adobe] [!UICONTROL Client ID]を入力します。 これは、[!DNL Adobe Developer Console]のプロジェクトの[!UICONTROL 資格情報の詳細] セクションにあります。</td>
+        <td>[!UICONTROL Adobe] [!UICONTROL Client ID]を入力します。 これは、[!DNL Adobe Developer Console]のプロジェクトの[!UICONTROL資格情報の詳細] セクションにあります。</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。 これは、[!DNL Adobe Developer Console]のプロジェクトの[!UICONTROL 資格情報の詳細] セクションにあります。</td>
+        <td>[!DNL Adobe] [!UICONTROL Client Secret] を入力します。 これは、[!DNL Adobe Developer Console]のプロジェクトの[!UICONTROL資格情報の詳細] セクションにあります。</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL IMS組織ID]</td>
@@ -366,4 +366,35 @@ Adobe User Management モジュールを設定すると、Workfront Fusionに以
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
   </tbody>
+</table>
+
+#### ファイルのアップロード
+
+このアクションモジュールは、1つの手順でファイルをAdobe ストレージにアップロードします。 宛先ファイルを作成し、アップロードを初期化し、事前署名されたURLを介してファイルコンテンツを転送し、アップロードを最終処理します。 個別の転送および最終化手順を設定する必要はありません。
+
+このモジュールは大きなファイルをサポートします。
+
+<!-- BECKY CHECK ME: Add the module's output (the screenshot shows only the setup fields). Confirm what the Project and Folder fields list, whether Folder is required, what the File Content field accepts (the hint says binary or text data), and whether the Limit field applies to this module, since the module uploads one file. Also confirm whether the Show advanced settings option contains any fields, and whether the request's comparison to "Generate Presigned Upload URL" should be mentioned here. That module is not documented in this article. -->
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">接続</td> 
+   <td>Adobe ストレージへの接続の作成手順については、この記事の「<a href="#create-a-connection-to-adobe-storage" class="MCXref xref" >Adobe ストレージへの接続の作成</a>」を参照してください。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">プロジェクト</td> 
+   <td>ファイルをアップロードするフォルダーを含むプロジェクトを選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">フォルダー</td> 
+   <td>ファイルをアップロードするフォルダーを選択します。 プロジェクトのルートにファイルをアップロードするには、<code>/</code>を選択します。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ソースファイル</td> 
+   <td>前のモジュールからファイルを選択するか、ファイルの名前、コンテンツおよびコンテンツタイプをマッピングします。</td> 
+  </tr> 
+ </tbody> 
 </table>
