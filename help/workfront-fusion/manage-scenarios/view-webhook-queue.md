@@ -59,7 +59,7 @@ Webhook について詳しくは、[インスタントトリガー（Webhook）]
 
 シナリオに現在キューがある場合、そのシナリオにバナーが表示されます。
 
-![ キューのバナー](assets/queue-banner.png)
+![&#x200B; キューのバナー](assets/queue-banner.png)
 
 Webhookのキューページのレイアウトは、**[!UICONTROL シナリオ]**&#x200B;および&#x200B;**[!UICONTROL Webhook]**&#x200B;のリストと同じです。
 
